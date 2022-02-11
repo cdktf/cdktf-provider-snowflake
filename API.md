@@ -75,7 +75,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.AccountGrant.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -83,7 +83,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.AccountGrant.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.AccountGrant.addOverride.parameter.path"></a>
@@ -101,7 +101,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.AccountGrant.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -117,7 +117,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.AccountGrant.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -125,13 +125,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.AccountGrant.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.AccountGrant.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -139,7 +139,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.AccountGrant.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.AccountGrant.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -151,7 +151,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.AccountGrant.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.AccountGrant.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -163,7 +163,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.AccountGrant.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.AccountGrant.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -175,7 +175,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.AccountGrant.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.AccountGrant.getListAttribute.parameter.terraformAttribute"></a>
@@ -187,7 +187,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.AccountGrant.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.AccountGrant.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -199,7 +199,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.AccountGrant.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.AccountGrant.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -211,7 +211,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.AccountGrant.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.AccountGrant.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -223,7 +223,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.AccountGrant.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.AccountGrant.getStringAttribute.parameter.terraformAttribute"></a>
@@ -235,7 +235,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.AccountGrant.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.AccountGrant.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -247,7 +247,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.AccountGrant.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.AccountGrant.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -259,19 +259,19 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetPrivilege` <a name="resetPrivilege" id="@cdktf/provider-snowflake.AccountGrant.resetPrivilege"></a>
 
 ```typescript
-public resetPrivilege()
+public resetPrivilege(): void
 ```
 
 ##### `resetRoles` <a name="resetRoles" id="@cdktf/provider-snowflake.AccountGrant.resetRoles"></a>
 
 ```typescript
-public resetRoles()
+public resetRoles(): void
 ```
 
 ##### `resetWithGrantOption` <a name="resetWithGrantOption" id="@cdktf/provider-snowflake.AccountGrant.resetWithGrantOption"></a>
 
 ```typescript
-public resetWithGrantOption()
+public resetWithGrantOption(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -600,7 +600,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.ApiIntegration.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -608,7 +608,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.ApiIntegration.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.ApiIntegration.addOverride.parameter.path"></a>
@@ -626,7 +626,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.ApiIntegration.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -642,7 +642,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.ApiIntegration.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -650,13 +650,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.ApiIntegration.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.ApiIntegration.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -664,7 +664,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.ApiIntegration.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ApiIntegration.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -676,7 +676,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.ApiIntegration.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ApiIntegration.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -688,7 +688,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.ApiIntegration.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ApiIntegration.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -700,7 +700,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.ApiIntegration.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ApiIntegration.getListAttribute.parameter.terraformAttribute"></a>
@@ -712,7 +712,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.ApiIntegration.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ApiIntegration.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -724,7 +724,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.ApiIntegration.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ApiIntegration.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -736,7 +736,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.ApiIntegration.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ApiIntegration.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -748,7 +748,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.ApiIntegration.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ApiIntegration.getStringAttribute.parameter.terraformAttribute"></a>
@@ -760,7 +760,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.ApiIntegration.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ApiIntegration.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -772,7 +772,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.ApiIntegration.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ApiIntegration.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -784,31 +784,31 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetApiAwsRoleArn` <a name="resetApiAwsRoleArn" id="@cdktf/provider-snowflake.ApiIntegration.resetApiAwsRoleArn"></a>
 
 ```typescript
-public resetApiAwsRoleArn()
+public resetApiAwsRoleArn(): void
 ```
 
 ##### `resetApiBlockedPrefixes` <a name="resetApiBlockedPrefixes" id="@cdktf/provider-snowflake.ApiIntegration.resetApiBlockedPrefixes"></a>
 
 ```typescript
-public resetApiBlockedPrefixes()
+public resetApiBlockedPrefixes(): void
 ```
 
 ##### `resetAzureAdApplicationId` <a name="resetAzureAdApplicationId" id="@cdktf/provider-snowflake.ApiIntegration.resetAzureAdApplicationId"></a>
 
 ```typescript
-public resetAzureAdApplicationId()
+public resetAzureAdApplicationId(): void
 ```
 
 ##### `resetAzureTenantId` <a name="resetAzureTenantId" id="@cdktf/provider-snowflake.ApiIntegration.resetAzureTenantId"></a>
 
 ```typescript
-public resetAzureTenantId()
+public resetAzureTenantId(): void
 ```
 
 ##### `resetEnabled` <a name="resetEnabled" id="@cdktf/provider-snowflake.ApiIntegration.resetEnabled"></a>
 
 ```typescript
-public resetEnabled()
+public resetEnabled(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -1302,7 +1302,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.Database.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -1310,7 +1310,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.Database.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.Database.addOverride.parameter.path"></a>
@@ -1328,7 +1328,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.Database.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -1344,7 +1344,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.Database.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -1352,13 +1352,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.Database.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.Database.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -1366,7 +1366,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.Database.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Database.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -1378,7 +1378,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.Database.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Database.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -1390,7 +1390,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.Database.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Database.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -1402,7 +1402,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.Database.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Database.getListAttribute.parameter.terraformAttribute"></a>
@@ -1414,7 +1414,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.Database.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Database.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -1426,7 +1426,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.Database.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Database.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -1438,7 +1438,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.Database.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Database.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -1450,7 +1450,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.Database.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Database.getStringAttribute.parameter.terraformAttribute"></a>
@@ -1462,7 +1462,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.Database.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Database.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -1474,7 +1474,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.Database.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Database.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -1486,31 +1486,31 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetComment` <a name="resetComment" id="@cdktf/provider-snowflake.Database.resetComment"></a>
 
 ```typescript
-public resetComment()
+public resetComment(): void
 ```
 
 ##### `resetDataRetentionTimeInDays` <a name="resetDataRetentionTimeInDays" id="@cdktf/provider-snowflake.Database.resetDataRetentionTimeInDays"></a>
 
 ```typescript
-public resetDataRetentionTimeInDays()
+public resetDataRetentionTimeInDays(): void
 ```
 
 ##### `resetFromDatabase` <a name="resetFromDatabase" id="@cdktf/provider-snowflake.Database.resetFromDatabase"></a>
 
 ```typescript
-public resetFromDatabase()
+public resetFromDatabase(): void
 ```
 
 ##### `resetFromShare` <a name="resetFromShare" id="@cdktf/provider-snowflake.Database.resetFromShare"></a>
 
 ```typescript
-public resetFromShare()
+public resetFromShare(): void
 ```
 
 ##### `resetTag` <a name="resetTag" id="@cdktf/provider-snowflake.Database.resetTag"></a>
 
 ```typescript
-public resetTag()
+public resetTag(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -1904,7 +1904,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.DatabaseGrant.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -1912,7 +1912,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.DatabaseGrant.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.DatabaseGrant.addOverride.parameter.path"></a>
@@ -1930,7 +1930,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.DatabaseGrant.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -1946,7 +1946,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.DatabaseGrant.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -1954,13 +1954,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.DatabaseGrant.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.DatabaseGrant.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -1968,7 +1968,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DatabaseGrant.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DatabaseGrant.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -1980,7 +1980,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DatabaseGrant.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DatabaseGrant.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -1992,7 +1992,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DatabaseGrant.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DatabaseGrant.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -2004,7 +2004,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DatabaseGrant.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DatabaseGrant.getListAttribute.parameter.terraformAttribute"></a>
@@ -2016,7 +2016,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DatabaseGrant.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DatabaseGrant.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -2028,7 +2028,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DatabaseGrant.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DatabaseGrant.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -2040,7 +2040,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DatabaseGrant.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DatabaseGrant.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -2052,7 +2052,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DatabaseGrant.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DatabaseGrant.getStringAttribute.parameter.terraformAttribute"></a>
@@ -2064,7 +2064,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DatabaseGrant.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DatabaseGrant.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -2076,7 +2076,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DatabaseGrant.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DatabaseGrant.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -2088,25 +2088,25 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetPrivilege` <a name="resetPrivilege" id="@cdktf/provider-snowflake.DatabaseGrant.resetPrivilege"></a>
 
 ```typescript
-public resetPrivilege()
+public resetPrivilege(): void
 ```
 
 ##### `resetRoles` <a name="resetRoles" id="@cdktf/provider-snowflake.DatabaseGrant.resetRoles"></a>
 
 ```typescript
-public resetRoles()
+public resetRoles(): void
 ```
 
 ##### `resetShares` <a name="resetShares" id="@cdktf/provider-snowflake.DatabaseGrant.resetShares"></a>
 
 ```typescript
-public resetShares()
+public resetShares(): void
 ```
 
 ##### `resetWithGrantOption` <a name="resetWithGrantOption" id="@cdktf/provider-snowflake.DatabaseGrant.resetWithGrantOption"></a>
 
 ```typescript
-public resetWithGrantOption()
+public resetWithGrantOption(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -2474,7 +2474,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.DataSnowflakeCurrentAccount.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -2482,7 +2482,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.DataSnowflakeCurrentAccount.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.DataSnowflakeCurrentAccount.addOverride.parameter.path"></a>
@@ -2500,7 +2500,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeCurrentAccount.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -2516,7 +2516,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeCurrentAccount.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -2524,13 +2524,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.DataSnowflakeCurrentAccount.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.DataSnowflakeCurrentAccount.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -2538,7 +2538,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeCurrentAccount.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeCurrentAccount.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -2550,7 +2550,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeCurrentAccount.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeCurrentAccount.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -2562,7 +2562,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeCurrentAccount.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeCurrentAccount.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -2574,7 +2574,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeCurrentAccount.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeCurrentAccount.getListAttribute.parameter.terraformAttribute"></a>
@@ -2586,7 +2586,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeCurrentAccount.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeCurrentAccount.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -2598,7 +2598,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeCurrentAccount.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeCurrentAccount.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -2610,7 +2610,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeCurrentAccount.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeCurrentAccount.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -2622,7 +2622,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeCurrentAccount.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeCurrentAccount.getStringAttribute.parameter.terraformAttribute"></a>
@@ -2634,7 +2634,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeCurrentAccount.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeCurrentAccount.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -2646,7 +2646,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeCurrentAccount.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeCurrentAccount.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -2944,7 +2944,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctions.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -2952,7 +2952,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctions.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctions.addOverride.parameter.path"></a>
@@ -2970,7 +2970,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctions.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -2986,7 +2986,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctions.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -2994,13 +2994,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctions.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctions.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -3008,7 +3008,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctions.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctions.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -3020,7 +3020,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctions.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctions.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -3032,7 +3032,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctions.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctions.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -3044,7 +3044,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctions.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctions.getListAttribute.parameter.terraformAttribute"></a>
@@ -3056,7 +3056,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctions.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctions.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -3068,7 +3068,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctions.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctions.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -3080,7 +3080,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctions.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctions.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -3092,7 +3092,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctions.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctions.getStringAttribute.parameter.terraformAttribute"></a>
@@ -3104,7 +3104,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctions.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctions.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -3116,7 +3116,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctions.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctions.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -3128,7 +3128,7 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `externalFunctions` <a name="externalFunctions" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctions.externalFunctions"></a>
 
 ```typescript
-public externalFunctions(index: string)
+public externalFunctions(index: string): DataSnowflakeExternalFunctionsExternalFunctions
 ```
 
 ###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctions.externalFunctions.parameter.index"></a>
@@ -3437,7 +3437,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.DataSnowflakeExternalTables.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -3445,7 +3445,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.DataSnowflakeExternalTables.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.DataSnowflakeExternalTables.addOverride.parameter.path"></a>
@@ -3463,7 +3463,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeExternalTables.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -3479,7 +3479,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeExternalTables.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -3487,13 +3487,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.DataSnowflakeExternalTables.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.DataSnowflakeExternalTables.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -3501,7 +3501,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTables.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTables.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -3513,7 +3513,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTables.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTables.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -3525,7 +3525,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTables.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTables.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -3537,7 +3537,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTables.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTables.getListAttribute.parameter.terraformAttribute"></a>
@@ -3549,7 +3549,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTables.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTables.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -3561,7 +3561,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTables.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTables.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -3573,7 +3573,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTables.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTables.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -3585,7 +3585,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTables.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTables.getStringAttribute.parameter.terraformAttribute"></a>
@@ -3597,7 +3597,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTables.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTables.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -3609,7 +3609,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTables.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTables.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -3621,7 +3621,7 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `externalTables` <a name="externalTables" id="@cdktf/provider-snowflake.DataSnowflakeExternalTables.externalTables"></a>
 
 ```typescript
-public externalTables(index: string)
+public externalTables(index: string): DataSnowflakeExternalTablesExternalTables
 ```
 
 ###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeExternalTables.externalTables.parameter.index"></a>
@@ -3930,7 +3930,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.DataSnowflakeFileFormats.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -3938,7 +3938,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.DataSnowflakeFileFormats.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.DataSnowflakeFileFormats.addOverride.parameter.path"></a>
@@ -3956,7 +3956,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeFileFormats.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -3972,7 +3972,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeFileFormats.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -3980,13 +3980,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.DataSnowflakeFileFormats.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.DataSnowflakeFileFormats.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -3994,7 +3994,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormats.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormats.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -4006,7 +4006,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormats.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormats.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -4018,7 +4018,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormats.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormats.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -4030,7 +4030,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormats.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormats.getListAttribute.parameter.terraformAttribute"></a>
@@ -4042,7 +4042,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormats.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormats.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -4054,7 +4054,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormats.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormats.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -4066,7 +4066,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormats.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormats.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -4078,7 +4078,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormats.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormats.getStringAttribute.parameter.terraformAttribute"></a>
@@ -4090,7 +4090,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormats.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormats.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -4102,7 +4102,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormats.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormats.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -4114,7 +4114,7 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `fileFormats` <a name="fileFormats" id="@cdktf/provider-snowflake.DataSnowflakeFileFormats.fileFormats"></a>
 
 ```typescript
-public fileFormats(index: string)
+public fileFormats(index: string): DataSnowflakeFileFormatsFileFormats
 ```
 
 ###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeFileFormats.fileFormats.parameter.index"></a>
@@ -4423,7 +4423,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.DataSnowflakeFunctions.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -4431,7 +4431,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.DataSnowflakeFunctions.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.DataSnowflakeFunctions.addOverride.parameter.path"></a>
@@ -4449,7 +4449,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeFunctions.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -4465,7 +4465,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeFunctions.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -4473,13 +4473,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.DataSnowflakeFunctions.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.DataSnowflakeFunctions.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -4487,7 +4487,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctions.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctions.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -4499,7 +4499,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctions.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctions.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -4511,7 +4511,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctions.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctions.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -4523,7 +4523,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctions.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctions.getListAttribute.parameter.terraformAttribute"></a>
@@ -4535,7 +4535,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctions.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctions.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -4547,7 +4547,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctions.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctions.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -4559,7 +4559,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctions.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctions.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -4571,7 +4571,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctions.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctions.getStringAttribute.parameter.terraformAttribute"></a>
@@ -4583,7 +4583,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctions.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctions.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -4595,7 +4595,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctions.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctions.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -4607,7 +4607,7 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `functions` <a name="functions" id="@cdktf/provider-snowflake.DataSnowflakeFunctions.functions"></a>
 
 ```typescript
-public functions(index: string)
+public functions(index: string): DataSnowflakeFunctionsFunctions
 ```
 
 ###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeFunctions.functions.parameter.index"></a>
@@ -4916,7 +4916,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPolicies.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -4924,7 +4924,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPolicies.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPolicies.addOverride.parameter.path"></a>
@@ -4942,7 +4942,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPolicies.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -4958,7 +4958,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPolicies.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -4966,13 +4966,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPolicies.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPolicies.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -4980,7 +4980,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPolicies.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPolicies.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -4992,7 +4992,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPolicies.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPolicies.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -5004,7 +5004,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPolicies.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPolicies.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -5016,7 +5016,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPolicies.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPolicies.getListAttribute.parameter.terraformAttribute"></a>
@@ -5028,7 +5028,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPolicies.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPolicies.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -5040,7 +5040,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPolicies.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPolicies.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -5052,7 +5052,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPolicies.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPolicies.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -5064,7 +5064,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPolicies.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPolicies.getStringAttribute.parameter.terraformAttribute"></a>
@@ -5076,7 +5076,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPolicies.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPolicies.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -5088,7 +5088,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPolicies.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPolicies.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -5100,7 +5100,7 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `maskingPolicies` <a name="maskingPolicies" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPolicies.maskingPolicies"></a>
 
 ```typescript
-public maskingPolicies(index: string)
+public maskingPolicies(index: string): DataSnowflakeMaskingPoliciesMaskingPolicies
 ```
 
 ###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPolicies.maskingPolicies.parameter.index"></a>
@@ -5409,7 +5409,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViews.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -5417,7 +5417,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViews.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViews.addOverride.parameter.path"></a>
@@ -5435,7 +5435,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViews.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -5451,7 +5451,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViews.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -5459,13 +5459,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViews.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViews.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -5473,7 +5473,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViews.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViews.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -5485,7 +5485,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViews.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViews.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -5497,7 +5497,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViews.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViews.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -5509,7 +5509,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViews.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViews.getListAttribute.parameter.terraformAttribute"></a>
@@ -5521,7 +5521,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViews.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViews.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -5533,7 +5533,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViews.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViews.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -5545,7 +5545,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViews.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViews.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -5557,7 +5557,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViews.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViews.getStringAttribute.parameter.terraformAttribute"></a>
@@ -5569,7 +5569,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViews.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViews.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -5581,7 +5581,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViews.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViews.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -5593,7 +5593,7 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `materializedViews` <a name="materializedViews" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViews.materializedViews"></a>
 
 ```typescript
-public materializedViews(index: string)
+public materializedViews(index: string): DataSnowflakeMaterializedViewsMaterializedViews
 ```
 
 ###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViews.materializedViews.parameter.index"></a>
@@ -5902,7 +5902,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.DataSnowflakePipes.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -5910,7 +5910,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.DataSnowflakePipes.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.DataSnowflakePipes.addOverride.parameter.path"></a>
@@ -5928,7 +5928,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakePipes.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -5944,7 +5944,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakePipes.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -5952,13 +5952,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.DataSnowflakePipes.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.DataSnowflakePipes.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -5966,7 +5966,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipes.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipes.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -5978,7 +5978,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipes.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipes.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -5990,7 +5990,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipes.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipes.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -6002,7 +6002,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipes.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipes.getListAttribute.parameter.terraformAttribute"></a>
@@ -6014,7 +6014,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipes.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipes.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -6026,7 +6026,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipes.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipes.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -6038,7 +6038,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipes.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipes.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -6050,7 +6050,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipes.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipes.getStringAttribute.parameter.terraformAttribute"></a>
@@ -6062,7 +6062,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipes.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipes.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -6074,7 +6074,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipes.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipes.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -6086,7 +6086,7 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `pipes` <a name="pipes" id="@cdktf/provider-snowflake.DataSnowflakePipes.pipes"></a>
 
 ```typescript
-public pipes(index: string)
+public pipes(index: string): DataSnowflakePipesPipes
 ```
 
 ###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakePipes.pipes.parameter.index"></a>
@@ -6395,7 +6395,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.DataSnowflakeProcedures.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -6403,7 +6403,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.DataSnowflakeProcedures.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.DataSnowflakeProcedures.addOverride.parameter.path"></a>
@@ -6421,7 +6421,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeProcedures.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -6437,7 +6437,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeProcedures.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -6445,13 +6445,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.DataSnowflakeProcedures.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.DataSnowflakeProcedures.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -6459,7 +6459,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProcedures.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProcedures.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -6471,7 +6471,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProcedures.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProcedures.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -6483,7 +6483,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProcedures.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProcedures.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -6495,7 +6495,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProcedures.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProcedures.getListAttribute.parameter.terraformAttribute"></a>
@@ -6507,7 +6507,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProcedures.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProcedures.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -6519,7 +6519,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProcedures.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProcedures.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -6531,7 +6531,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProcedures.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProcedures.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -6543,7 +6543,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProcedures.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProcedures.getStringAttribute.parameter.terraformAttribute"></a>
@@ -6555,7 +6555,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProcedures.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProcedures.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -6567,7 +6567,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProcedures.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProcedures.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -6579,7 +6579,7 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `procedures` <a name="procedures" id="@cdktf/provider-snowflake.DataSnowflakeProcedures.procedures"></a>
 
 ```typescript
-public procedures(index: string)
+public procedures(index: string): DataSnowflakeProceduresProcedures
 ```
 
 ###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeProcedures.procedures.parameter.index"></a>
@@ -6888,7 +6888,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitors.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -6896,7 +6896,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitors.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitors.addOverride.parameter.path"></a>
@@ -6914,7 +6914,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitors.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -6930,7 +6930,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitors.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -6938,13 +6938,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitors.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitors.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -6952,7 +6952,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitors.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitors.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -6964,7 +6964,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitors.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitors.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -6976,7 +6976,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitors.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitors.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -6988,7 +6988,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitors.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitors.getListAttribute.parameter.terraformAttribute"></a>
@@ -7000,7 +7000,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitors.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitors.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -7012,7 +7012,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitors.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitors.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -7024,7 +7024,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitors.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitors.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -7036,7 +7036,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitors.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitors.getStringAttribute.parameter.terraformAttribute"></a>
@@ -7048,7 +7048,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitors.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitors.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -7060,7 +7060,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitors.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitors.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -7072,7 +7072,7 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resourceMonitors` <a name="resourceMonitors" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitors.resourceMonitors"></a>
 
 ```typescript
-public resourceMonitors(index: string)
+public resourceMonitors(index: string): DataSnowflakeResourceMonitorsResourceMonitors
 ```
 
 ###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitors.resourceMonitors.parameter.index"></a>
@@ -7337,7 +7337,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPolicies.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -7345,7 +7345,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPolicies.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPolicies.addOverride.parameter.path"></a>
@@ -7363,7 +7363,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPolicies.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -7379,7 +7379,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPolicies.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -7387,13 +7387,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPolicies.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPolicies.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -7401,7 +7401,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPolicies.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPolicies.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -7413,7 +7413,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPolicies.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPolicies.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -7425,7 +7425,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPolicies.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPolicies.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -7437,7 +7437,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPolicies.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPolicies.getListAttribute.parameter.terraformAttribute"></a>
@@ -7449,7 +7449,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPolicies.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPolicies.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -7461,7 +7461,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPolicies.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPolicies.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -7473,7 +7473,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPolicies.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPolicies.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -7485,7 +7485,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPolicies.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPolicies.getStringAttribute.parameter.terraformAttribute"></a>
@@ -7497,7 +7497,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPolicies.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPolicies.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -7509,7 +7509,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPolicies.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPolicies.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -7521,7 +7521,7 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `rowAccessPolicies` <a name="rowAccessPolicies" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPolicies.rowAccessPolicies"></a>
 
 ```typescript
-public rowAccessPolicies(index: string)
+public rowAccessPolicies(index: string): DataSnowflakeRowAccessPoliciesRowAccessPolicies
 ```
 
 ###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPolicies.rowAccessPolicies.parameter.index"></a>
@@ -7830,7 +7830,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.DataSnowflakeSchemas.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -7838,7 +7838,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.DataSnowflakeSchemas.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.DataSnowflakeSchemas.addOverride.parameter.path"></a>
@@ -7856,7 +7856,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeSchemas.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -7872,7 +7872,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeSchemas.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -7880,13 +7880,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.DataSnowflakeSchemas.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.DataSnowflakeSchemas.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -7894,7 +7894,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemas.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemas.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -7906,7 +7906,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemas.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemas.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -7918,7 +7918,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemas.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemas.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -7930,7 +7930,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemas.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemas.getListAttribute.parameter.terraformAttribute"></a>
@@ -7942,7 +7942,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemas.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemas.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -7954,7 +7954,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemas.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemas.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -7966,7 +7966,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemas.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemas.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -7978,7 +7978,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemas.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemas.getStringAttribute.parameter.terraformAttribute"></a>
@@ -7990,7 +7990,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemas.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemas.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -8002,7 +8002,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemas.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemas.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -8014,7 +8014,7 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `schemas` <a name="schemas" id="@cdktf/provider-snowflake.DataSnowflakeSchemas.schemas"></a>
 
 ```typescript
-public schemas(index: string)
+public schemas(index: string): DataSnowflakeSchemasSchemas
 ```
 
 ###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeSchemas.schemas.parameter.index"></a>
@@ -8301,7 +8301,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.DataSnowflakeSequences.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -8309,7 +8309,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.DataSnowflakeSequences.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.DataSnowflakeSequences.addOverride.parameter.path"></a>
@@ -8327,7 +8327,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeSequences.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -8343,7 +8343,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeSequences.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -8351,13 +8351,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.DataSnowflakeSequences.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.DataSnowflakeSequences.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -8365,7 +8365,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequences.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequences.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -8377,7 +8377,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequences.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequences.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -8389,7 +8389,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequences.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequences.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -8401,7 +8401,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequences.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequences.getListAttribute.parameter.terraformAttribute"></a>
@@ -8413,7 +8413,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequences.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequences.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -8425,7 +8425,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequences.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequences.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -8437,7 +8437,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequences.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequences.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -8449,7 +8449,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequences.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequences.getStringAttribute.parameter.terraformAttribute"></a>
@@ -8461,7 +8461,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequences.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequences.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -8473,7 +8473,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequences.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequences.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -8485,7 +8485,7 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `sequences` <a name="sequences" id="@cdktf/provider-snowflake.DataSnowflakeSequences.sequences"></a>
 
 ```typescript
-public sequences(index: string)
+public sequences(index: string): DataSnowflakeSequencesSequences
 ```
 
 ###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeSequences.sequences.parameter.index"></a>
@@ -8794,7 +8794,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.DataSnowflakeStages.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -8802,7 +8802,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.DataSnowflakeStages.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.DataSnowflakeStages.addOverride.parameter.path"></a>
@@ -8820,7 +8820,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeStages.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -8836,7 +8836,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeStages.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -8844,13 +8844,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.DataSnowflakeStages.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.DataSnowflakeStages.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -8858,7 +8858,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStages.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStages.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -8870,7 +8870,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStages.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStages.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -8882,7 +8882,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStages.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStages.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -8894,7 +8894,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStages.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStages.getListAttribute.parameter.terraformAttribute"></a>
@@ -8906,7 +8906,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStages.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStages.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -8918,7 +8918,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStages.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStages.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -8930,7 +8930,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStages.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStages.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -8942,7 +8942,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStages.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStages.getStringAttribute.parameter.terraformAttribute"></a>
@@ -8954,7 +8954,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStages.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStages.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -8966,7 +8966,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStages.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStages.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -8978,7 +8978,7 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `stages` <a name="stages" id="@cdktf/provider-snowflake.DataSnowflakeStages.stages"></a>
 
 ```typescript
-public stages(index: string)
+public stages(index: string): DataSnowflakeStagesStages
 ```
 
 ###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeStages.stages.parameter.index"></a>
@@ -9287,7 +9287,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrations.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -9295,7 +9295,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrations.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrations.addOverride.parameter.path"></a>
@@ -9313,7 +9313,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrations.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -9329,7 +9329,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrations.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -9337,13 +9337,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrations.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrations.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -9351,7 +9351,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrations.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrations.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -9363,7 +9363,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrations.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrations.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -9375,7 +9375,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrations.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrations.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -9387,7 +9387,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrations.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrations.getListAttribute.parameter.terraformAttribute"></a>
@@ -9399,7 +9399,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrations.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrations.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -9411,7 +9411,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrations.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrations.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -9423,7 +9423,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrations.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrations.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -9435,7 +9435,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrations.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrations.getStringAttribute.parameter.terraformAttribute"></a>
@@ -9447,7 +9447,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrations.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrations.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -9459,7 +9459,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrations.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrations.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -9471,7 +9471,7 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `storageIntegrations` <a name="storageIntegrations" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrations.storageIntegrations"></a>
 
 ```typescript
-public storageIntegrations(index: string)
+public storageIntegrations(index: string): DataSnowflakeStorageIntegrationsStorageIntegrations
 ```
 
 ###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrations.storageIntegrations.parameter.index"></a>
@@ -9736,7 +9736,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.DataSnowflakeStreams.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -9744,7 +9744,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.DataSnowflakeStreams.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.DataSnowflakeStreams.addOverride.parameter.path"></a>
@@ -9762,7 +9762,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeStreams.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -9778,7 +9778,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeStreams.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -9786,13 +9786,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.DataSnowflakeStreams.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.DataSnowflakeStreams.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -9800,7 +9800,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreams.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreams.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -9812,7 +9812,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreams.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreams.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -9824,7 +9824,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreams.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreams.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -9836,7 +9836,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreams.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreams.getListAttribute.parameter.terraformAttribute"></a>
@@ -9848,7 +9848,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreams.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreams.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -9860,7 +9860,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreams.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreams.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -9872,7 +9872,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreams.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreams.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -9884,7 +9884,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreams.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreams.getStringAttribute.parameter.terraformAttribute"></a>
@@ -9896,7 +9896,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreams.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreams.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -9908,7 +9908,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreams.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreams.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -9920,7 +9920,7 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `streams` <a name="streams" id="@cdktf/provider-snowflake.DataSnowflakeStreams.streams"></a>
 
 ```typescript
-public streams(index: string)
+public streams(index: string): DataSnowflakeStreamsStreams
 ```
 
 ###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeStreams.streams.parameter.index"></a>
@@ -10228,7 +10228,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.DataSnowflakeSystemGenerateScimAccessToken.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -10236,7 +10236,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.DataSnowflakeSystemGenerateScimAccessToken.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.DataSnowflakeSystemGenerateScimAccessToken.addOverride.parameter.path"></a>
@@ -10254,7 +10254,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeSystemGenerateScimAccessToken.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -10270,7 +10270,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeSystemGenerateScimAccessToken.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -10278,13 +10278,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.DataSnowflakeSystemGenerateScimAccessToken.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.DataSnowflakeSystemGenerateScimAccessToken.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -10292,7 +10292,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGenerateScimAccessToken.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGenerateScimAccessToken.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -10304,7 +10304,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGenerateScimAccessToken.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGenerateScimAccessToken.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -10316,7 +10316,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGenerateScimAccessToken.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGenerateScimAccessToken.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -10328,7 +10328,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGenerateScimAccessToken.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGenerateScimAccessToken.getListAttribute.parameter.terraformAttribute"></a>
@@ -10340,7 +10340,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGenerateScimAccessToken.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGenerateScimAccessToken.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -10352,7 +10352,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGenerateScimAccessToken.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGenerateScimAccessToken.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -10364,7 +10364,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGenerateScimAccessToken.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGenerateScimAccessToken.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -10376,7 +10376,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGenerateScimAccessToken.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGenerateScimAccessToken.getStringAttribute.parameter.terraformAttribute"></a>
@@ -10388,7 +10388,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGenerateScimAccessToken.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGenerateScimAccessToken.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -10400,7 +10400,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGenerateScimAccessToken.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGenerateScimAccessToken.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -10697,7 +10697,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetAwsSnsIamPolicy.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -10705,7 +10705,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetAwsSnsIamPolicy.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetAwsSnsIamPolicy.addOverride.parameter.path"></a>
@@ -10723,7 +10723,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetAwsSnsIamPolicy.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -10739,7 +10739,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetAwsSnsIamPolicy.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -10747,13 +10747,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetAwsSnsIamPolicy.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetAwsSnsIamPolicy.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -10761,7 +10761,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetAwsSnsIamPolicy.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetAwsSnsIamPolicy.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -10773,7 +10773,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetAwsSnsIamPolicy.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetAwsSnsIamPolicy.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -10785,7 +10785,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetAwsSnsIamPolicy.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetAwsSnsIamPolicy.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -10797,7 +10797,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetAwsSnsIamPolicy.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetAwsSnsIamPolicy.getListAttribute.parameter.terraformAttribute"></a>
@@ -10809,7 +10809,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetAwsSnsIamPolicy.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetAwsSnsIamPolicy.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -10821,7 +10821,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetAwsSnsIamPolicy.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetAwsSnsIamPolicy.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -10833,7 +10833,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetAwsSnsIamPolicy.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetAwsSnsIamPolicy.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -10845,7 +10845,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetAwsSnsIamPolicy.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetAwsSnsIamPolicy.getStringAttribute.parameter.terraformAttribute"></a>
@@ -10857,7 +10857,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetAwsSnsIamPolicy.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetAwsSnsIamPolicy.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -10869,7 +10869,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetAwsSnsIamPolicy.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetAwsSnsIamPolicy.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -11166,7 +11166,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetPrivatelinkConfig.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -11174,7 +11174,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetPrivatelinkConfig.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetPrivatelinkConfig.addOverride.parameter.path"></a>
@@ -11192,7 +11192,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetPrivatelinkConfig.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -11208,7 +11208,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetPrivatelinkConfig.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -11216,13 +11216,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetPrivatelinkConfig.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetPrivatelinkConfig.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -11230,7 +11230,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetPrivatelinkConfig.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetPrivatelinkConfig.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -11242,7 +11242,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetPrivatelinkConfig.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetPrivatelinkConfig.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -11254,7 +11254,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetPrivatelinkConfig.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetPrivatelinkConfig.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -11266,7 +11266,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetPrivatelinkConfig.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetPrivatelinkConfig.getListAttribute.parameter.terraformAttribute"></a>
@@ -11278,7 +11278,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetPrivatelinkConfig.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetPrivatelinkConfig.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -11290,7 +11290,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetPrivatelinkConfig.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetPrivatelinkConfig.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -11302,7 +11302,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetPrivatelinkConfig.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetPrivatelinkConfig.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -11314,7 +11314,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetPrivatelinkConfig.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetPrivatelinkConfig.getStringAttribute.parameter.terraformAttribute"></a>
@@ -11326,7 +11326,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetPrivatelinkConfig.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetPrivatelinkConfig.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -11338,7 +11338,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetPrivatelinkConfig.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetPrivatelinkConfig.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -11657,7 +11657,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetSnowflakePlatformInfo.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -11665,7 +11665,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetSnowflakePlatformInfo.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetSnowflakePlatformInfo.addOverride.parameter.path"></a>
@@ -11683,7 +11683,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetSnowflakePlatformInfo.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -11699,7 +11699,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetSnowflakePlatformInfo.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -11707,13 +11707,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetSnowflakePlatformInfo.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetSnowflakePlatformInfo.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -11721,7 +11721,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetSnowflakePlatformInfo.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetSnowflakePlatformInfo.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -11733,7 +11733,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetSnowflakePlatformInfo.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetSnowflakePlatformInfo.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -11745,7 +11745,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetSnowflakePlatformInfo.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetSnowflakePlatformInfo.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -11757,7 +11757,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetSnowflakePlatformInfo.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetSnowflakePlatformInfo.getListAttribute.parameter.terraformAttribute"></a>
@@ -11769,7 +11769,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetSnowflakePlatformInfo.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetSnowflakePlatformInfo.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -11781,7 +11781,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetSnowflakePlatformInfo.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetSnowflakePlatformInfo.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -11793,7 +11793,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetSnowflakePlatformInfo.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetSnowflakePlatformInfo.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -11805,7 +11805,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetSnowflakePlatformInfo.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetSnowflakePlatformInfo.getStringAttribute.parameter.terraformAttribute"></a>
@@ -11817,7 +11817,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetSnowflakePlatformInfo.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetSnowflakePlatformInfo.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -11829,7 +11829,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetSnowflakePlatformInfo.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetSnowflakePlatformInfo.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -12116,7 +12116,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.DataSnowflakeTables.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -12124,7 +12124,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.DataSnowflakeTables.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.DataSnowflakeTables.addOverride.parameter.path"></a>
@@ -12142,7 +12142,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeTables.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -12158,7 +12158,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeTables.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -12166,13 +12166,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.DataSnowflakeTables.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.DataSnowflakeTables.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -12180,7 +12180,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTables.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTables.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -12192,7 +12192,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTables.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTables.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -12204,7 +12204,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTables.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTables.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -12216,7 +12216,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTables.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTables.getListAttribute.parameter.terraformAttribute"></a>
@@ -12228,7 +12228,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTables.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTables.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -12240,7 +12240,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTables.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTables.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -12252,7 +12252,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTables.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTables.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -12264,7 +12264,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTables.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTables.getStringAttribute.parameter.terraformAttribute"></a>
@@ -12276,7 +12276,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTables.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTables.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -12288,7 +12288,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTables.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTables.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -12300,7 +12300,7 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `tables` <a name="tables" id="@cdktf/provider-snowflake.DataSnowflakeTables.tables"></a>
 
 ```typescript
-public tables(index: string)
+public tables(index: string): DataSnowflakeTablesTables
 ```
 
 ###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeTables.tables.parameter.index"></a>
@@ -12609,7 +12609,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.DataSnowflakeTasks.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -12617,7 +12617,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.DataSnowflakeTasks.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.DataSnowflakeTasks.addOverride.parameter.path"></a>
@@ -12635,7 +12635,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeTasks.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -12651,7 +12651,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeTasks.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -12659,13 +12659,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.DataSnowflakeTasks.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.DataSnowflakeTasks.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -12673,7 +12673,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasks.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasks.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -12685,7 +12685,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasks.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasks.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -12697,7 +12697,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasks.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasks.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -12709,7 +12709,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasks.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasks.getListAttribute.parameter.terraformAttribute"></a>
@@ -12721,7 +12721,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasks.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasks.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -12733,7 +12733,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasks.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasks.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -12745,7 +12745,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasks.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasks.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -12757,7 +12757,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasks.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasks.getStringAttribute.parameter.terraformAttribute"></a>
@@ -12769,7 +12769,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasks.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasks.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -12781,7 +12781,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasks.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasks.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -12793,7 +12793,7 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `tasks` <a name="tasks" id="@cdktf/provider-snowflake.DataSnowflakeTasks.tasks"></a>
 
 ```typescript
-public tasks(index: string)
+public tasks(index: string): DataSnowflakeTasksTasks
 ```
 
 ###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeTasks.tasks.parameter.index"></a>
@@ -13102,7 +13102,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.DataSnowflakeViews.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -13110,7 +13110,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.DataSnowflakeViews.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.DataSnowflakeViews.addOverride.parameter.path"></a>
@@ -13128,7 +13128,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeViews.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -13144,7 +13144,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeViews.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -13152,13 +13152,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.DataSnowflakeViews.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.DataSnowflakeViews.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -13166,7 +13166,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViews.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViews.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -13178,7 +13178,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViews.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViews.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -13190,7 +13190,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViews.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViews.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -13202,7 +13202,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViews.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViews.getListAttribute.parameter.terraformAttribute"></a>
@@ -13214,7 +13214,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViews.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViews.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -13226,7 +13226,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViews.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViews.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -13238,7 +13238,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViews.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViews.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -13250,7 +13250,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViews.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViews.getStringAttribute.parameter.terraformAttribute"></a>
@@ -13262,7 +13262,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViews.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViews.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -13274,7 +13274,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViews.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViews.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -13286,7 +13286,7 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `views` <a name="views" id="@cdktf/provider-snowflake.DataSnowflakeViews.views"></a>
 
 ```typescript
-public views(index: string)
+public views(index: string): DataSnowflakeViewsViews
 ```
 
 ###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeViews.views.parameter.index"></a>
@@ -13595,7 +13595,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.DataSnowflakeWarehouses.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -13603,7 +13603,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.DataSnowflakeWarehouses.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.DataSnowflakeWarehouses.addOverride.parameter.path"></a>
@@ -13621,7 +13621,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeWarehouses.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -13637,7 +13637,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeWarehouses.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -13645,13 +13645,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.DataSnowflakeWarehouses.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.DataSnowflakeWarehouses.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -13659,7 +13659,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehouses.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehouses.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -13671,7 +13671,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehouses.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehouses.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -13683,7 +13683,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehouses.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehouses.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -13695,7 +13695,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehouses.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehouses.getListAttribute.parameter.terraformAttribute"></a>
@@ -13707,7 +13707,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehouses.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehouses.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -13719,7 +13719,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehouses.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehouses.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -13731,7 +13731,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehouses.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehouses.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -13743,7 +13743,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehouses.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehouses.getStringAttribute.parameter.terraformAttribute"></a>
@@ -13755,7 +13755,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehouses.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehouses.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -13767,7 +13767,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehouses.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehouses.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -13779,7 +13779,7 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `warehouses` <a name="warehouses" id="@cdktf/provider-snowflake.DataSnowflakeWarehouses.warehouses"></a>
 
 ```typescript
-public warehouses(index: string)
+public warehouses(index: string): DataSnowflakeWarehousesWarehouses
 ```
 
 ###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeWarehouses.warehouses.parameter.index"></a>
@@ -14051,7 +14051,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.ExternalFunction.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -14059,7 +14059,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.ExternalFunction.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.ExternalFunction.addOverride.parameter.path"></a>
@@ -14077,7 +14077,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.ExternalFunction.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -14093,7 +14093,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.ExternalFunction.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -14101,13 +14101,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.ExternalFunction.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.ExternalFunction.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -14115,7 +14115,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.ExternalFunction.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ExternalFunction.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -14127,7 +14127,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.ExternalFunction.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ExternalFunction.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -14139,7 +14139,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.ExternalFunction.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ExternalFunction.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -14151,7 +14151,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.ExternalFunction.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ExternalFunction.getListAttribute.parameter.terraformAttribute"></a>
@@ -14163,7 +14163,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.ExternalFunction.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ExternalFunction.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -14175,7 +14175,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.ExternalFunction.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ExternalFunction.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -14187,7 +14187,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.ExternalFunction.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ExternalFunction.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -14199,7 +14199,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.ExternalFunction.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ExternalFunction.getStringAttribute.parameter.terraformAttribute"></a>
@@ -14211,7 +14211,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.ExternalFunction.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ExternalFunction.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -14223,7 +14223,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.ExternalFunction.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ExternalFunction.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -14235,49 +14235,49 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetArg` <a name="resetArg" id="@cdktf/provider-snowflake.ExternalFunction.resetArg"></a>
 
 ```typescript
-public resetArg()
+public resetArg(): void
 ```
 
 ##### `resetComment` <a name="resetComment" id="@cdktf/provider-snowflake.ExternalFunction.resetComment"></a>
 
 ```typescript
-public resetComment()
+public resetComment(): void
 ```
 
 ##### `resetCompression` <a name="resetCompression" id="@cdktf/provider-snowflake.ExternalFunction.resetCompression"></a>
 
 ```typescript
-public resetCompression()
+public resetCompression(): void
 ```
 
 ##### `resetContextHeaders` <a name="resetContextHeaders" id="@cdktf/provider-snowflake.ExternalFunction.resetContextHeaders"></a>
 
 ```typescript
-public resetContextHeaders()
+public resetContextHeaders(): void
 ```
 
 ##### `resetHeader` <a name="resetHeader" id="@cdktf/provider-snowflake.ExternalFunction.resetHeader"></a>
 
 ```typescript
-public resetHeader()
+public resetHeader(): void
 ```
 
 ##### `resetMaxBatchRows` <a name="resetMaxBatchRows" id="@cdktf/provider-snowflake.ExternalFunction.resetMaxBatchRows"></a>
 
 ```typescript
-public resetMaxBatchRows()
+public resetMaxBatchRows(): void
 ```
 
 ##### `resetNullInputBehavior` <a name="resetNullInputBehavior" id="@cdktf/provider-snowflake.ExternalFunction.resetNullInputBehavior"></a>
 
 ```typescript
-public resetNullInputBehavior()
+public resetNullInputBehavior(): void
 ```
 
 ##### `resetReturnNullAllowed` <a name="resetReturnNullAllowed" id="@cdktf/provider-snowflake.ExternalFunction.resetReturnNullAllowed"></a>
 
 ```typescript
-public resetReturnNullAllowed()
+public resetReturnNullAllowed(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -14884,7 +14884,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.ExternalTable.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -14892,7 +14892,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.ExternalTable.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.ExternalTable.addOverride.parameter.path"></a>
@@ -14910,7 +14910,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.ExternalTable.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -14926,7 +14926,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.ExternalTable.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -14934,13 +14934,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.ExternalTable.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.ExternalTable.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -14948,7 +14948,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.ExternalTable.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ExternalTable.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -14960,7 +14960,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.ExternalTable.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ExternalTable.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -14972,7 +14972,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.ExternalTable.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ExternalTable.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -14984,7 +14984,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.ExternalTable.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ExternalTable.getListAttribute.parameter.terraformAttribute"></a>
@@ -14996,7 +14996,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.ExternalTable.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ExternalTable.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -15008,7 +15008,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.ExternalTable.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ExternalTable.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -15020,7 +15020,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.ExternalTable.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ExternalTable.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -15032,7 +15032,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.ExternalTable.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ExternalTable.getStringAttribute.parameter.terraformAttribute"></a>
@@ -15044,7 +15044,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.ExternalTable.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ExternalTable.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -15056,7 +15056,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.ExternalTable.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ExternalTable.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -15068,49 +15068,49 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetAutoRefresh` <a name="resetAutoRefresh" id="@cdktf/provider-snowflake.ExternalTable.resetAutoRefresh"></a>
 
 ```typescript
-public resetAutoRefresh()
+public resetAutoRefresh(): void
 ```
 
 ##### `resetAwsSnsTopic` <a name="resetAwsSnsTopic" id="@cdktf/provider-snowflake.ExternalTable.resetAwsSnsTopic"></a>
 
 ```typescript
-public resetAwsSnsTopic()
+public resetAwsSnsTopic(): void
 ```
 
 ##### `resetComment` <a name="resetComment" id="@cdktf/provider-snowflake.ExternalTable.resetComment"></a>
 
 ```typescript
-public resetComment()
+public resetComment(): void
 ```
 
 ##### `resetCopyGrants` <a name="resetCopyGrants" id="@cdktf/provider-snowflake.ExternalTable.resetCopyGrants"></a>
 
 ```typescript
-public resetCopyGrants()
+public resetCopyGrants(): void
 ```
 
 ##### `resetPartitionBy` <a name="resetPartitionBy" id="@cdktf/provider-snowflake.ExternalTable.resetPartitionBy"></a>
 
 ```typescript
-public resetPartitionBy()
+public resetPartitionBy(): void
 ```
 
 ##### `resetPattern` <a name="resetPattern" id="@cdktf/provider-snowflake.ExternalTable.resetPattern"></a>
 
 ```typescript
-public resetPattern()
+public resetPattern(): void
 ```
 
 ##### `resetRefreshOnCreate` <a name="resetRefreshOnCreate" id="@cdktf/provider-snowflake.ExternalTable.resetRefreshOnCreate"></a>
 
 ```typescript
-public resetRefreshOnCreate()
+public resetRefreshOnCreate(): void
 ```
 
 ##### `resetTag` <a name="resetTag" id="@cdktf/provider-snowflake.ExternalTable.resetTag"></a>
 
 ```typescript
-public resetTag()
+public resetTag(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -15693,7 +15693,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.ExternalTableGrant.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -15701,7 +15701,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.ExternalTableGrant.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.ExternalTableGrant.addOverride.parameter.path"></a>
@@ -15719,7 +15719,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.ExternalTableGrant.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -15735,7 +15735,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.ExternalTableGrant.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -15743,13 +15743,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.ExternalTableGrant.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.ExternalTableGrant.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -15757,7 +15757,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.ExternalTableGrant.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ExternalTableGrant.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -15769,7 +15769,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.ExternalTableGrant.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ExternalTableGrant.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -15781,7 +15781,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.ExternalTableGrant.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ExternalTableGrant.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -15793,7 +15793,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.ExternalTableGrant.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ExternalTableGrant.getListAttribute.parameter.terraformAttribute"></a>
@@ -15805,7 +15805,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.ExternalTableGrant.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ExternalTableGrant.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -15817,7 +15817,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.ExternalTableGrant.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ExternalTableGrant.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -15829,7 +15829,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.ExternalTableGrant.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ExternalTableGrant.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -15841,7 +15841,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.ExternalTableGrant.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ExternalTableGrant.getStringAttribute.parameter.terraformAttribute"></a>
@@ -15853,7 +15853,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.ExternalTableGrant.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ExternalTableGrant.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -15865,7 +15865,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.ExternalTableGrant.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ExternalTableGrant.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -15877,37 +15877,37 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetExternalTableName` <a name="resetExternalTableName" id="@cdktf/provider-snowflake.ExternalTableGrant.resetExternalTableName"></a>
 
 ```typescript
-public resetExternalTableName()
+public resetExternalTableName(): void
 ```
 
 ##### `resetOnFuture` <a name="resetOnFuture" id="@cdktf/provider-snowflake.ExternalTableGrant.resetOnFuture"></a>
 
 ```typescript
-public resetOnFuture()
+public resetOnFuture(): void
 ```
 
 ##### `resetPrivilege` <a name="resetPrivilege" id="@cdktf/provider-snowflake.ExternalTableGrant.resetPrivilege"></a>
 
 ```typescript
-public resetPrivilege()
+public resetPrivilege(): void
 ```
 
 ##### `resetRoles` <a name="resetRoles" id="@cdktf/provider-snowflake.ExternalTableGrant.resetRoles"></a>
 
 ```typescript
-public resetRoles()
+public resetRoles(): void
 ```
 
 ##### `resetShares` <a name="resetShares" id="@cdktf/provider-snowflake.ExternalTableGrant.resetShares"></a>
 
 ```typescript
-public resetShares()
+public resetShares(): void
 ```
 
 ##### `resetWithGrantOption` <a name="resetWithGrantOption" id="@cdktf/provider-snowflake.ExternalTableGrant.resetWithGrantOption"></a>
 
 ```typescript
-public resetWithGrantOption()
+public resetWithGrantOption(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -16373,7 +16373,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.FileFormat.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -16381,7 +16381,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.FileFormat.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.FileFormat.addOverride.parameter.path"></a>
@@ -16399,7 +16399,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.FileFormat.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -16415,7 +16415,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.FileFormat.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -16423,13 +16423,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.FileFormat.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.FileFormat.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -16437,7 +16437,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.FileFormat.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.FileFormat.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -16449,7 +16449,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.FileFormat.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.FileFormat.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -16461,7 +16461,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.FileFormat.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.FileFormat.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -16473,7 +16473,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.FileFormat.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.FileFormat.getListAttribute.parameter.terraformAttribute"></a>
@@ -16485,7 +16485,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.FileFormat.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.FileFormat.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -16497,7 +16497,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.FileFormat.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.FileFormat.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -16509,7 +16509,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.FileFormat.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.FileFormat.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -16521,7 +16521,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.FileFormat.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.FileFormat.getStringAttribute.parameter.terraformAttribute"></a>
@@ -16533,7 +16533,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.FileFormat.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.FileFormat.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -16545,7 +16545,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.FileFormat.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.FileFormat.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -16557,193 +16557,193 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetAllowDuplicate` <a name="resetAllowDuplicate" id="@cdktf/provider-snowflake.FileFormat.resetAllowDuplicate"></a>
 
 ```typescript
-public resetAllowDuplicate()
+public resetAllowDuplicate(): void
 ```
 
 ##### `resetBinaryAsText` <a name="resetBinaryAsText" id="@cdktf/provider-snowflake.FileFormat.resetBinaryAsText"></a>
 
 ```typescript
-public resetBinaryAsText()
+public resetBinaryAsText(): void
 ```
 
 ##### `resetBinaryFormat` <a name="resetBinaryFormat" id="@cdktf/provider-snowflake.FileFormat.resetBinaryFormat"></a>
 
 ```typescript
-public resetBinaryFormat()
+public resetBinaryFormat(): void
 ```
 
 ##### `resetComment` <a name="resetComment" id="@cdktf/provider-snowflake.FileFormat.resetComment"></a>
 
 ```typescript
-public resetComment()
+public resetComment(): void
 ```
 
 ##### `resetCompression` <a name="resetCompression" id="@cdktf/provider-snowflake.FileFormat.resetCompression"></a>
 
 ```typescript
-public resetCompression()
+public resetCompression(): void
 ```
 
 ##### `resetDateFormat` <a name="resetDateFormat" id="@cdktf/provider-snowflake.FileFormat.resetDateFormat"></a>
 
 ```typescript
-public resetDateFormat()
+public resetDateFormat(): void
 ```
 
 ##### `resetDisableAutoConvert` <a name="resetDisableAutoConvert" id="@cdktf/provider-snowflake.FileFormat.resetDisableAutoConvert"></a>
 
 ```typescript
-public resetDisableAutoConvert()
+public resetDisableAutoConvert(): void
 ```
 
 ##### `resetDisableSnowflakeData` <a name="resetDisableSnowflakeData" id="@cdktf/provider-snowflake.FileFormat.resetDisableSnowflakeData"></a>
 
 ```typescript
-public resetDisableSnowflakeData()
+public resetDisableSnowflakeData(): void
 ```
 
 ##### `resetEmptyFieldAsNull` <a name="resetEmptyFieldAsNull" id="@cdktf/provider-snowflake.FileFormat.resetEmptyFieldAsNull"></a>
 
 ```typescript
-public resetEmptyFieldAsNull()
+public resetEmptyFieldAsNull(): void
 ```
 
 ##### `resetEnableOctal` <a name="resetEnableOctal" id="@cdktf/provider-snowflake.FileFormat.resetEnableOctal"></a>
 
 ```typescript
-public resetEnableOctal()
+public resetEnableOctal(): void
 ```
 
 ##### `resetEncoding` <a name="resetEncoding" id="@cdktf/provider-snowflake.FileFormat.resetEncoding"></a>
 
 ```typescript
-public resetEncoding()
+public resetEncoding(): void
 ```
 
 ##### `resetErrorOnColumnCountMismatch` <a name="resetErrorOnColumnCountMismatch" id="@cdktf/provider-snowflake.FileFormat.resetErrorOnColumnCountMismatch"></a>
 
 ```typescript
-public resetErrorOnColumnCountMismatch()
+public resetErrorOnColumnCountMismatch(): void
 ```
 
 ##### `resetEscape` <a name="resetEscape" id="@cdktf/provider-snowflake.FileFormat.resetEscape"></a>
 
 ```typescript
-public resetEscape()
+public resetEscape(): void
 ```
 
 ##### `resetEscapeUnenclosedField` <a name="resetEscapeUnenclosedField" id="@cdktf/provider-snowflake.FileFormat.resetEscapeUnenclosedField"></a>
 
 ```typescript
-public resetEscapeUnenclosedField()
+public resetEscapeUnenclosedField(): void
 ```
 
 ##### `resetFieldDelimiter` <a name="resetFieldDelimiter" id="@cdktf/provider-snowflake.FileFormat.resetFieldDelimiter"></a>
 
 ```typescript
-public resetFieldDelimiter()
+public resetFieldDelimiter(): void
 ```
 
 ##### `resetFieldOptionallyEnclosedBy` <a name="resetFieldOptionallyEnclosedBy" id="@cdktf/provider-snowflake.FileFormat.resetFieldOptionallyEnclosedBy"></a>
 
 ```typescript
-public resetFieldOptionallyEnclosedBy()
+public resetFieldOptionallyEnclosedBy(): void
 ```
 
 ##### `resetFileExtension` <a name="resetFileExtension" id="@cdktf/provider-snowflake.FileFormat.resetFileExtension"></a>
 
 ```typescript
-public resetFileExtension()
+public resetFileExtension(): void
 ```
 
 ##### `resetIgnoreUtf8Errors` <a name="resetIgnoreUtf8Errors" id="@cdktf/provider-snowflake.FileFormat.resetIgnoreUtf8Errors"></a>
 
 ```typescript
-public resetIgnoreUtf8Errors()
+public resetIgnoreUtf8Errors(): void
 ```
 
 ##### `resetNullIf` <a name="resetNullIf" id="@cdktf/provider-snowflake.FileFormat.resetNullIf"></a>
 
 ```typescript
-public resetNullIf()
+public resetNullIf(): void
 ```
 
 ##### `resetPreserveSpace` <a name="resetPreserveSpace" id="@cdktf/provider-snowflake.FileFormat.resetPreserveSpace"></a>
 
 ```typescript
-public resetPreserveSpace()
+public resetPreserveSpace(): void
 ```
 
 ##### `resetRecordDelimiter` <a name="resetRecordDelimiter" id="@cdktf/provider-snowflake.FileFormat.resetRecordDelimiter"></a>
 
 ```typescript
-public resetRecordDelimiter()
+public resetRecordDelimiter(): void
 ```
 
 ##### `resetReplaceInvalidCharacters` <a name="resetReplaceInvalidCharacters" id="@cdktf/provider-snowflake.FileFormat.resetReplaceInvalidCharacters"></a>
 
 ```typescript
-public resetReplaceInvalidCharacters()
+public resetReplaceInvalidCharacters(): void
 ```
 
 ##### `resetSkipBlankLines` <a name="resetSkipBlankLines" id="@cdktf/provider-snowflake.FileFormat.resetSkipBlankLines"></a>
 
 ```typescript
-public resetSkipBlankLines()
+public resetSkipBlankLines(): void
 ```
 
 ##### `resetSkipByteOrderMark` <a name="resetSkipByteOrderMark" id="@cdktf/provider-snowflake.FileFormat.resetSkipByteOrderMark"></a>
 
 ```typescript
-public resetSkipByteOrderMark()
+public resetSkipByteOrderMark(): void
 ```
 
 ##### `resetSkipHeader` <a name="resetSkipHeader" id="@cdktf/provider-snowflake.FileFormat.resetSkipHeader"></a>
 
 ```typescript
-public resetSkipHeader()
+public resetSkipHeader(): void
 ```
 
 ##### `resetStripNullValues` <a name="resetStripNullValues" id="@cdktf/provider-snowflake.FileFormat.resetStripNullValues"></a>
 
 ```typescript
-public resetStripNullValues()
+public resetStripNullValues(): void
 ```
 
 ##### `resetStripOuterArray` <a name="resetStripOuterArray" id="@cdktf/provider-snowflake.FileFormat.resetStripOuterArray"></a>
 
 ```typescript
-public resetStripOuterArray()
+public resetStripOuterArray(): void
 ```
 
 ##### `resetStripOuterElement` <a name="resetStripOuterElement" id="@cdktf/provider-snowflake.FileFormat.resetStripOuterElement"></a>
 
 ```typescript
-public resetStripOuterElement()
+public resetStripOuterElement(): void
 ```
 
 ##### `resetTimeFormat` <a name="resetTimeFormat" id="@cdktf/provider-snowflake.FileFormat.resetTimeFormat"></a>
 
 ```typescript
-public resetTimeFormat()
+public resetTimeFormat(): void
 ```
 
 ##### `resetTimestampFormat` <a name="resetTimestampFormat" id="@cdktf/provider-snowflake.FileFormat.resetTimestampFormat"></a>
 
 ```typescript
-public resetTimestampFormat()
+public resetTimestampFormat(): void
 ```
 
 ##### `resetTrimSpace` <a name="resetTrimSpace" id="@cdktf/provider-snowflake.FileFormat.resetTrimSpace"></a>
 
 ```typescript
-public resetTrimSpace()
+public resetTrimSpace(): void
 ```
 
 ##### `resetValidateUtf8` <a name="resetValidateUtf8" id="@cdktf/provider-snowflake.FileFormat.resetValidateUtf8"></a>
 
 ```typescript
-public resetValidateUtf8()
+public resetValidateUtf8(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -17798,7 +17798,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.FileFormatGrant.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -17806,7 +17806,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.FileFormatGrant.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.FileFormatGrant.addOverride.parameter.path"></a>
@@ -17824,7 +17824,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.FileFormatGrant.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -17840,7 +17840,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.FileFormatGrant.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -17848,13 +17848,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.FileFormatGrant.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.FileFormatGrant.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -17862,7 +17862,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.FileFormatGrant.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.FileFormatGrant.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -17874,7 +17874,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.FileFormatGrant.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.FileFormatGrant.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -17886,7 +17886,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.FileFormatGrant.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.FileFormatGrant.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -17898,7 +17898,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.FileFormatGrant.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.FileFormatGrant.getListAttribute.parameter.terraformAttribute"></a>
@@ -17910,7 +17910,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.FileFormatGrant.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.FileFormatGrant.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -17922,7 +17922,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.FileFormatGrant.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.FileFormatGrant.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -17934,7 +17934,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.FileFormatGrant.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.FileFormatGrant.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -17946,7 +17946,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.FileFormatGrant.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.FileFormatGrant.getStringAttribute.parameter.terraformAttribute"></a>
@@ -17958,7 +17958,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.FileFormatGrant.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.FileFormatGrant.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -17970,7 +17970,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.FileFormatGrant.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.FileFormatGrant.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -17982,31 +17982,31 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetFileFormatName` <a name="resetFileFormatName" id="@cdktf/provider-snowflake.FileFormatGrant.resetFileFormatName"></a>
 
 ```typescript
-public resetFileFormatName()
+public resetFileFormatName(): void
 ```
 
 ##### `resetOnFuture` <a name="resetOnFuture" id="@cdktf/provider-snowflake.FileFormatGrant.resetOnFuture"></a>
 
 ```typescript
-public resetOnFuture()
+public resetOnFuture(): void
 ```
 
 ##### `resetPrivilege` <a name="resetPrivilege" id="@cdktf/provider-snowflake.FileFormatGrant.resetPrivilege"></a>
 
 ```typescript
-public resetPrivilege()
+public resetPrivilege(): void
 ```
 
 ##### `resetRoles` <a name="resetRoles" id="@cdktf/provider-snowflake.FileFormatGrant.resetRoles"></a>
 
 ```typescript
-public resetRoles()
+public resetRoles(): void
 ```
 
 ##### `resetWithGrantOption` <a name="resetWithGrantOption" id="@cdktf/provider-snowflake.FileFormatGrant.resetWithGrantOption"></a>
 
 ```typescript
-public resetWithGrantOption()
+public resetWithGrantOption(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -18426,7 +18426,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.Function.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -18434,7 +18434,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.Function.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.Function.addOverride.parameter.path"></a>
@@ -18452,7 +18452,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.Function.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -18468,7 +18468,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.Function.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -18476,13 +18476,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.Function.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.Function.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -18490,7 +18490,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.Function.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Function.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -18502,7 +18502,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.Function.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Function.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -18514,7 +18514,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.Function.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Function.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -18526,7 +18526,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.Function.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Function.getListAttribute.parameter.terraformAttribute"></a>
@@ -18538,7 +18538,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.Function.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Function.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -18550,7 +18550,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.Function.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Function.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -18562,7 +18562,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.Function.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Function.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -18574,7 +18574,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.Function.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Function.getStringAttribute.parameter.terraformAttribute"></a>
@@ -18586,7 +18586,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.Function.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Function.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -18598,7 +18598,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.Function.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Function.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -18610,49 +18610,49 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetArguments` <a name="resetArguments" id="@cdktf/provider-snowflake.Function.resetArguments"></a>
 
 ```typescript
-public resetArguments()
+public resetArguments(): void
 ```
 
 ##### `resetComment` <a name="resetComment" id="@cdktf/provider-snowflake.Function.resetComment"></a>
 
 ```typescript
-public resetComment()
+public resetComment(): void
 ```
 
 ##### `resetHandler` <a name="resetHandler" id="@cdktf/provider-snowflake.Function.resetHandler"></a>
 
 ```typescript
-public resetHandler()
+public resetHandler(): void
 ```
 
 ##### `resetImports` <a name="resetImports" id="@cdktf/provider-snowflake.Function.resetImports"></a>
 
 ```typescript
-public resetImports()
+public resetImports(): void
 ```
 
 ##### `resetLanguage` <a name="resetLanguage" id="@cdktf/provider-snowflake.Function.resetLanguage"></a>
 
 ```typescript
-public resetLanguage()
+public resetLanguage(): void
 ```
 
 ##### `resetNullInputBehavior` <a name="resetNullInputBehavior" id="@cdktf/provider-snowflake.Function.resetNullInputBehavior"></a>
 
 ```typescript
-public resetNullInputBehavior()
+public resetNullInputBehavior(): void
 ```
 
 ##### `resetReturnBehavior` <a name="resetReturnBehavior" id="@cdktf/provider-snowflake.Function.resetReturnBehavior"></a>
 
 ```typescript
-public resetReturnBehavior()
+public resetReturnBehavior(): void
 ```
 
 ##### `resetTargetPath` <a name="resetTargetPath" id="@cdktf/provider-snowflake.Function.resetTargetPath"></a>
 
 ```typescript
-public resetTargetPath()
+public resetTargetPath(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -19204,7 +19204,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.FunctionGrant.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -19212,7 +19212,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.FunctionGrant.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.FunctionGrant.addOverride.parameter.path"></a>
@@ -19230,7 +19230,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.FunctionGrant.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -19246,7 +19246,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.FunctionGrant.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -19254,13 +19254,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.FunctionGrant.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.FunctionGrant.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -19268,7 +19268,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.FunctionGrant.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.FunctionGrant.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -19280,7 +19280,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.FunctionGrant.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.FunctionGrant.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -19292,7 +19292,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.FunctionGrant.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.FunctionGrant.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -19304,7 +19304,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.FunctionGrant.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.FunctionGrant.getListAttribute.parameter.terraformAttribute"></a>
@@ -19316,7 +19316,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.FunctionGrant.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.FunctionGrant.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -19328,7 +19328,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.FunctionGrant.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.FunctionGrant.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -19340,7 +19340,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.FunctionGrant.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.FunctionGrant.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -19352,7 +19352,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.FunctionGrant.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.FunctionGrant.getStringAttribute.parameter.terraformAttribute"></a>
@@ -19364,7 +19364,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.FunctionGrant.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.FunctionGrant.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -19376,7 +19376,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.FunctionGrant.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.FunctionGrant.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -19388,49 +19388,49 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetArguments` <a name="resetArguments" id="@cdktf/provider-snowflake.FunctionGrant.resetArguments"></a>
 
 ```typescript
-public resetArguments()
+public resetArguments(): void
 ```
 
 ##### `resetFunctionName` <a name="resetFunctionName" id="@cdktf/provider-snowflake.FunctionGrant.resetFunctionName"></a>
 
 ```typescript
-public resetFunctionName()
+public resetFunctionName(): void
 ```
 
 ##### `resetOnFuture` <a name="resetOnFuture" id="@cdktf/provider-snowflake.FunctionGrant.resetOnFuture"></a>
 
 ```typescript
-public resetOnFuture()
+public resetOnFuture(): void
 ```
 
 ##### `resetPrivilege` <a name="resetPrivilege" id="@cdktf/provider-snowflake.FunctionGrant.resetPrivilege"></a>
 
 ```typescript
-public resetPrivilege()
+public resetPrivilege(): void
 ```
 
 ##### `resetReturnType` <a name="resetReturnType" id="@cdktf/provider-snowflake.FunctionGrant.resetReturnType"></a>
 
 ```typescript
-public resetReturnType()
+public resetReturnType(): void
 ```
 
 ##### `resetRoles` <a name="resetRoles" id="@cdktf/provider-snowflake.FunctionGrant.resetRoles"></a>
 
 ```typescript
-public resetRoles()
+public resetRoles(): void
 ```
 
 ##### `resetShares` <a name="resetShares" id="@cdktf/provider-snowflake.FunctionGrant.resetShares"></a>
 
 ```typescript
-public resetShares()
+public resetShares(): void
 ```
 
 ##### `resetWithGrantOption` <a name="resetWithGrantOption" id="@cdktf/provider-snowflake.FunctionGrant.resetWithGrantOption"></a>
 
 ```typescript
-public resetWithGrantOption()
+public resetWithGrantOption(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -19911,7 +19911,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.IntegrationGrant.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -19919,7 +19919,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.IntegrationGrant.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.IntegrationGrant.addOverride.parameter.path"></a>
@@ -19937,7 +19937,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.IntegrationGrant.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -19953,7 +19953,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.IntegrationGrant.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -19961,13 +19961,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.IntegrationGrant.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.IntegrationGrant.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -19975,7 +19975,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.IntegrationGrant.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.IntegrationGrant.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -19987,7 +19987,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.IntegrationGrant.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.IntegrationGrant.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -19999,7 +19999,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.IntegrationGrant.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.IntegrationGrant.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -20011,7 +20011,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.IntegrationGrant.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.IntegrationGrant.getListAttribute.parameter.terraformAttribute"></a>
@@ -20023,7 +20023,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.IntegrationGrant.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.IntegrationGrant.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -20035,7 +20035,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.IntegrationGrant.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.IntegrationGrant.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -20047,7 +20047,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.IntegrationGrant.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.IntegrationGrant.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -20059,7 +20059,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.IntegrationGrant.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.IntegrationGrant.getStringAttribute.parameter.terraformAttribute"></a>
@@ -20071,7 +20071,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.IntegrationGrant.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.IntegrationGrant.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -20083,7 +20083,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.IntegrationGrant.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.IntegrationGrant.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -20095,19 +20095,19 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetPrivilege` <a name="resetPrivilege" id="@cdktf/provider-snowflake.IntegrationGrant.resetPrivilege"></a>
 
 ```typescript
-public resetPrivilege()
+public resetPrivilege(): void
 ```
 
 ##### `resetRoles` <a name="resetRoles" id="@cdktf/provider-snowflake.IntegrationGrant.resetRoles"></a>
 
 ```typescript
-public resetRoles()
+public resetRoles(): void
 ```
 
 ##### `resetWithGrantOption` <a name="resetWithGrantOption" id="@cdktf/provider-snowflake.IntegrationGrant.resetWithGrantOption"></a>
 
 ```typescript
-public resetWithGrantOption()
+public resetWithGrantOption(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -20455,7 +20455,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.ManagedAccount.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -20463,7 +20463,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.ManagedAccount.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.ManagedAccount.addOverride.parameter.path"></a>
@@ -20481,7 +20481,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.ManagedAccount.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -20497,7 +20497,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.ManagedAccount.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -20505,13 +20505,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.ManagedAccount.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.ManagedAccount.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -20519,7 +20519,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.ManagedAccount.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ManagedAccount.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -20531,7 +20531,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.ManagedAccount.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ManagedAccount.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -20543,7 +20543,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.ManagedAccount.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ManagedAccount.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -20555,7 +20555,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.ManagedAccount.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ManagedAccount.getListAttribute.parameter.terraformAttribute"></a>
@@ -20567,7 +20567,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.ManagedAccount.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ManagedAccount.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -20579,7 +20579,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.ManagedAccount.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ManagedAccount.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -20591,7 +20591,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.ManagedAccount.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ManagedAccount.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -20603,7 +20603,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.ManagedAccount.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ManagedAccount.getStringAttribute.parameter.terraformAttribute"></a>
@@ -20615,7 +20615,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.ManagedAccount.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ManagedAccount.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -20627,7 +20627,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.ManagedAccount.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ManagedAccount.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -20639,13 +20639,13 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetComment` <a name="resetComment" id="@cdktf/provider-snowflake.ManagedAccount.resetComment"></a>
 
 ```typescript
-public resetComment()
+public resetComment(): void
 ```
 
 ##### `resetType` <a name="resetType" id="@cdktf/provider-snowflake.ManagedAccount.resetType"></a>
 
 ```typescript
-public resetType()
+public resetType(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -21069,7 +21069,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.MaskingPolicy.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -21077,7 +21077,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.MaskingPolicy.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.MaskingPolicy.addOverride.parameter.path"></a>
@@ -21095,7 +21095,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.MaskingPolicy.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -21111,7 +21111,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.MaskingPolicy.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -21119,13 +21119,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.MaskingPolicy.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.MaskingPolicy.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -21133,7 +21133,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.MaskingPolicy.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.MaskingPolicy.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -21145,7 +21145,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.MaskingPolicy.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.MaskingPolicy.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -21157,7 +21157,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.MaskingPolicy.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.MaskingPolicy.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -21169,7 +21169,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.MaskingPolicy.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.MaskingPolicy.getListAttribute.parameter.terraformAttribute"></a>
@@ -21181,7 +21181,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.MaskingPolicy.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.MaskingPolicy.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -21193,7 +21193,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.MaskingPolicy.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.MaskingPolicy.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -21205,7 +21205,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.MaskingPolicy.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.MaskingPolicy.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -21217,7 +21217,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.MaskingPolicy.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.MaskingPolicy.getStringAttribute.parameter.terraformAttribute"></a>
@@ -21229,7 +21229,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.MaskingPolicy.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.MaskingPolicy.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -21241,7 +21241,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.MaskingPolicy.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.MaskingPolicy.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -21253,7 +21253,7 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetComment` <a name="resetComment" id="@cdktf/provider-snowflake.MaskingPolicy.resetComment"></a>
 
 ```typescript
-public resetComment()
+public resetComment(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -21668,7 +21668,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.MaskingPolicyGrant.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -21676,7 +21676,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.MaskingPolicyGrant.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.MaskingPolicyGrant.addOverride.parameter.path"></a>
@@ -21694,7 +21694,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.MaskingPolicyGrant.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -21710,7 +21710,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.MaskingPolicyGrant.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -21718,13 +21718,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.MaskingPolicyGrant.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.MaskingPolicyGrant.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -21732,7 +21732,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.MaskingPolicyGrant.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.MaskingPolicyGrant.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -21744,7 +21744,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.MaskingPolicyGrant.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.MaskingPolicyGrant.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -21756,7 +21756,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.MaskingPolicyGrant.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.MaskingPolicyGrant.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -21768,7 +21768,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.MaskingPolicyGrant.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.MaskingPolicyGrant.getListAttribute.parameter.terraformAttribute"></a>
@@ -21780,7 +21780,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.MaskingPolicyGrant.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.MaskingPolicyGrant.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -21792,7 +21792,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.MaskingPolicyGrant.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.MaskingPolicyGrant.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -21804,7 +21804,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.MaskingPolicyGrant.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.MaskingPolicyGrant.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -21816,7 +21816,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.MaskingPolicyGrant.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.MaskingPolicyGrant.getStringAttribute.parameter.terraformAttribute"></a>
@@ -21828,7 +21828,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.MaskingPolicyGrant.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.MaskingPolicyGrant.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -21840,7 +21840,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.MaskingPolicyGrant.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.MaskingPolicyGrant.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -21852,19 +21852,19 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetPrivilege` <a name="resetPrivilege" id="@cdktf/provider-snowflake.MaskingPolicyGrant.resetPrivilege"></a>
 
 ```typescript
-public resetPrivilege()
+public resetPrivilege(): void
 ```
 
 ##### `resetRoles` <a name="resetRoles" id="@cdktf/provider-snowflake.MaskingPolicyGrant.resetRoles"></a>
 
 ```typescript
-public resetRoles()
+public resetRoles(): void
 ```
 
 ##### `resetWithGrantOption` <a name="resetWithGrantOption" id="@cdktf/provider-snowflake.MaskingPolicyGrant.resetWithGrantOption"></a>
 
 ```typescript
-public resetWithGrantOption()
+public resetWithGrantOption(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -22258,7 +22258,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.MaterializedView.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -22266,7 +22266,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.MaterializedView.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.MaterializedView.addOverride.parameter.path"></a>
@@ -22284,7 +22284,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.MaterializedView.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -22300,7 +22300,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.MaterializedView.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -22308,13 +22308,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.MaterializedView.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.MaterializedView.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -22322,7 +22322,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.MaterializedView.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.MaterializedView.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -22334,7 +22334,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.MaterializedView.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.MaterializedView.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -22346,7 +22346,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.MaterializedView.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.MaterializedView.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -22358,7 +22358,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.MaterializedView.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.MaterializedView.getListAttribute.parameter.terraformAttribute"></a>
@@ -22370,7 +22370,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.MaterializedView.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.MaterializedView.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -22382,7 +22382,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.MaterializedView.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.MaterializedView.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -22394,7 +22394,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.MaterializedView.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.MaterializedView.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -22406,7 +22406,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.MaterializedView.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.MaterializedView.getStringAttribute.parameter.terraformAttribute"></a>
@@ -22418,7 +22418,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.MaterializedView.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.MaterializedView.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -22430,7 +22430,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.MaterializedView.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.MaterializedView.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -22442,25 +22442,25 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetComment` <a name="resetComment" id="@cdktf/provider-snowflake.MaterializedView.resetComment"></a>
 
 ```typescript
-public resetComment()
+public resetComment(): void
 ```
 
 ##### `resetIsSecure` <a name="resetIsSecure" id="@cdktf/provider-snowflake.MaterializedView.resetIsSecure"></a>
 
 ```typescript
-public resetIsSecure()
+public resetIsSecure(): void
 ```
 
 ##### `resetOrReplace` <a name="resetOrReplace" id="@cdktf/provider-snowflake.MaterializedView.resetOrReplace"></a>
 
 ```typescript
-public resetOrReplace()
+public resetOrReplace(): void
 ```
 
 ##### `resetTag` <a name="resetTag" id="@cdktf/provider-snowflake.MaterializedView.resetTag"></a>
 
 ```typescript
-public resetTag()
+public resetTag(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -22923,7 +22923,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.MaterializedViewGrant.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -22931,7 +22931,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.MaterializedViewGrant.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.MaterializedViewGrant.addOverride.parameter.path"></a>
@@ -22949,7 +22949,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.MaterializedViewGrant.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -22965,7 +22965,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.MaterializedViewGrant.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -22973,13 +22973,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.MaterializedViewGrant.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.MaterializedViewGrant.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -22987,7 +22987,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.MaterializedViewGrant.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.MaterializedViewGrant.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -22999,7 +22999,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.MaterializedViewGrant.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.MaterializedViewGrant.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -23011,7 +23011,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.MaterializedViewGrant.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.MaterializedViewGrant.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -23023,7 +23023,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.MaterializedViewGrant.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.MaterializedViewGrant.getListAttribute.parameter.terraformAttribute"></a>
@@ -23035,7 +23035,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.MaterializedViewGrant.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.MaterializedViewGrant.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -23047,7 +23047,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.MaterializedViewGrant.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.MaterializedViewGrant.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -23059,7 +23059,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.MaterializedViewGrant.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.MaterializedViewGrant.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -23071,7 +23071,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.MaterializedViewGrant.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.MaterializedViewGrant.getStringAttribute.parameter.terraformAttribute"></a>
@@ -23083,7 +23083,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.MaterializedViewGrant.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.MaterializedViewGrant.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -23095,7 +23095,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.MaterializedViewGrant.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.MaterializedViewGrant.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -23107,43 +23107,43 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetMaterializedViewName` <a name="resetMaterializedViewName" id="@cdktf/provider-snowflake.MaterializedViewGrant.resetMaterializedViewName"></a>
 
 ```typescript
-public resetMaterializedViewName()
+public resetMaterializedViewName(): void
 ```
 
 ##### `resetOnFuture` <a name="resetOnFuture" id="@cdktf/provider-snowflake.MaterializedViewGrant.resetOnFuture"></a>
 
 ```typescript
-public resetOnFuture()
+public resetOnFuture(): void
 ```
 
 ##### `resetPrivilege` <a name="resetPrivilege" id="@cdktf/provider-snowflake.MaterializedViewGrant.resetPrivilege"></a>
 
 ```typescript
-public resetPrivilege()
+public resetPrivilege(): void
 ```
 
 ##### `resetRoles` <a name="resetRoles" id="@cdktf/provider-snowflake.MaterializedViewGrant.resetRoles"></a>
 
 ```typescript
-public resetRoles()
+public resetRoles(): void
 ```
 
 ##### `resetSchemaName` <a name="resetSchemaName" id="@cdktf/provider-snowflake.MaterializedViewGrant.resetSchemaName"></a>
 
 ```typescript
-public resetSchemaName()
+public resetSchemaName(): void
 ```
 
 ##### `resetShares` <a name="resetShares" id="@cdktf/provider-snowflake.MaterializedViewGrant.resetShares"></a>
 
 ```typescript
-public resetShares()
+public resetShares(): void
 ```
 
 ##### `resetWithGrantOption` <a name="resetWithGrantOption" id="@cdktf/provider-snowflake.MaterializedViewGrant.resetWithGrantOption"></a>
 
 ```typescript
-public resetWithGrantOption()
+public resetWithGrantOption(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -23579,7 +23579,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.NetworkPolicy.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -23587,7 +23587,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.NetworkPolicy.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.NetworkPolicy.addOverride.parameter.path"></a>
@@ -23605,7 +23605,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.NetworkPolicy.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -23621,7 +23621,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.NetworkPolicy.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -23629,13 +23629,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.NetworkPolicy.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.NetworkPolicy.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -23643,7 +23643,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.NetworkPolicy.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.NetworkPolicy.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -23655,7 +23655,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.NetworkPolicy.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.NetworkPolicy.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -23667,7 +23667,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.NetworkPolicy.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.NetworkPolicy.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -23679,7 +23679,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.NetworkPolicy.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.NetworkPolicy.getListAttribute.parameter.terraformAttribute"></a>
@@ -23691,7 +23691,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.NetworkPolicy.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.NetworkPolicy.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -23703,7 +23703,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.NetworkPolicy.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.NetworkPolicy.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -23715,7 +23715,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.NetworkPolicy.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.NetworkPolicy.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -23727,7 +23727,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.NetworkPolicy.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.NetworkPolicy.getStringAttribute.parameter.terraformAttribute"></a>
@@ -23739,7 +23739,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.NetworkPolicy.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.NetworkPolicy.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -23751,7 +23751,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.NetworkPolicy.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.NetworkPolicy.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -23763,13 +23763,13 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetBlockedIpList` <a name="resetBlockedIpList" id="@cdktf/provider-snowflake.NetworkPolicy.resetBlockedIpList"></a>
 
 ```typescript
-public resetBlockedIpList()
+public resetBlockedIpList(): void
 ```
 
 ##### `resetComment` <a name="resetComment" id="@cdktf/provider-snowflake.NetworkPolicy.resetComment"></a>
 
 ```typescript
-public resetComment()
+public resetComment(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -24117,7 +24117,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.NetworkPolicyAttachment.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -24125,7 +24125,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.NetworkPolicyAttachment.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.NetworkPolicyAttachment.addOverride.parameter.path"></a>
@@ -24143,7 +24143,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.NetworkPolicyAttachment.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -24159,7 +24159,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.NetworkPolicyAttachment.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -24167,13 +24167,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.NetworkPolicyAttachment.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.NetworkPolicyAttachment.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -24181,7 +24181,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.NetworkPolicyAttachment.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.NetworkPolicyAttachment.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -24193,7 +24193,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.NetworkPolicyAttachment.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.NetworkPolicyAttachment.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -24205,7 +24205,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.NetworkPolicyAttachment.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.NetworkPolicyAttachment.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -24217,7 +24217,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.NetworkPolicyAttachment.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.NetworkPolicyAttachment.getListAttribute.parameter.terraformAttribute"></a>
@@ -24229,7 +24229,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.NetworkPolicyAttachment.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.NetworkPolicyAttachment.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -24241,7 +24241,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.NetworkPolicyAttachment.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.NetworkPolicyAttachment.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -24253,7 +24253,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.NetworkPolicyAttachment.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.NetworkPolicyAttachment.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -24265,7 +24265,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.NetworkPolicyAttachment.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.NetworkPolicyAttachment.getStringAttribute.parameter.terraformAttribute"></a>
@@ -24277,7 +24277,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.NetworkPolicyAttachment.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.NetworkPolicyAttachment.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -24289,7 +24289,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.NetworkPolicyAttachment.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.NetworkPolicyAttachment.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -24301,13 +24301,13 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetSetForAccount` <a name="resetSetForAccount" id="@cdktf/provider-snowflake.NetworkPolicyAttachment.resetSetForAccount"></a>
 
 ```typescript
-public resetSetForAccount()
+public resetSetForAccount(): void
 ```
 
 ##### `resetUsers` <a name="resetUsers" id="@cdktf/provider-snowflake.NetworkPolicyAttachment.resetUsers"></a>
 
 ```typescript
-public resetUsers()
+public resetUsers(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -24643,7 +24643,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.NotificationIntegration.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -24651,7 +24651,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.NotificationIntegration.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.NotificationIntegration.addOverride.parameter.path"></a>
@@ -24669,7 +24669,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.NotificationIntegration.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -24685,7 +24685,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.NotificationIntegration.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -24693,13 +24693,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.NotificationIntegration.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.NotificationIntegration.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -24707,7 +24707,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.NotificationIntegration.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.NotificationIntegration.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -24719,7 +24719,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.NotificationIntegration.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.NotificationIntegration.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -24731,7 +24731,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.NotificationIntegration.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.NotificationIntegration.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -24743,7 +24743,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.NotificationIntegration.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.NotificationIntegration.getListAttribute.parameter.terraformAttribute"></a>
@@ -24755,7 +24755,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.NotificationIntegration.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.NotificationIntegration.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -24767,7 +24767,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.NotificationIntegration.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.NotificationIntegration.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -24779,7 +24779,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.NotificationIntegration.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.NotificationIntegration.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -24791,7 +24791,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.NotificationIntegration.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.NotificationIntegration.getStringAttribute.parameter.terraformAttribute"></a>
@@ -24803,7 +24803,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.NotificationIntegration.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.NotificationIntegration.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -24815,7 +24815,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.NotificationIntegration.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.NotificationIntegration.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -24827,73 +24827,73 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetAwsSnsRoleArn` <a name="resetAwsSnsRoleArn" id="@cdktf/provider-snowflake.NotificationIntegration.resetAwsSnsRoleArn"></a>
 
 ```typescript
-public resetAwsSnsRoleArn()
+public resetAwsSnsRoleArn(): void
 ```
 
 ##### `resetAwsSnsTopicArn` <a name="resetAwsSnsTopicArn" id="@cdktf/provider-snowflake.NotificationIntegration.resetAwsSnsTopicArn"></a>
 
 ```typescript
-public resetAwsSnsTopicArn()
+public resetAwsSnsTopicArn(): void
 ```
 
 ##### `resetAwsSqsArn` <a name="resetAwsSqsArn" id="@cdktf/provider-snowflake.NotificationIntegration.resetAwsSqsArn"></a>
 
 ```typescript
-public resetAwsSqsArn()
+public resetAwsSqsArn(): void
 ```
 
 ##### `resetAwsSqsRoleArn` <a name="resetAwsSqsRoleArn" id="@cdktf/provider-snowflake.NotificationIntegration.resetAwsSqsRoleArn"></a>
 
 ```typescript
-public resetAwsSqsRoleArn()
+public resetAwsSqsRoleArn(): void
 ```
 
 ##### `resetAzureStorageQueuePrimaryUri` <a name="resetAzureStorageQueuePrimaryUri" id="@cdktf/provider-snowflake.NotificationIntegration.resetAzureStorageQueuePrimaryUri"></a>
 
 ```typescript
-public resetAzureStorageQueuePrimaryUri()
+public resetAzureStorageQueuePrimaryUri(): void
 ```
 
 ##### `resetAzureTenantId` <a name="resetAzureTenantId" id="@cdktf/provider-snowflake.NotificationIntegration.resetAzureTenantId"></a>
 
 ```typescript
-public resetAzureTenantId()
+public resetAzureTenantId(): void
 ```
 
 ##### `resetComment` <a name="resetComment" id="@cdktf/provider-snowflake.NotificationIntegration.resetComment"></a>
 
 ```typescript
-public resetComment()
+public resetComment(): void
 ```
 
 ##### `resetDirection` <a name="resetDirection" id="@cdktf/provider-snowflake.NotificationIntegration.resetDirection"></a>
 
 ```typescript
-public resetDirection()
+public resetDirection(): void
 ```
 
 ##### `resetEnabled` <a name="resetEnabled" id="@cdktf/provider-snowflake.NotificationIntegration.resetEnabled"></a>
 
 ```typescript
-public resetEnabled()
+public resetEnabled(): void
 ```
 
 ##### `resetGcpPubsubSubscriptionName` <a name="resetGcpPubsubSubscriptionName" id="@cdktf/provider-snowflake.NotificationIntegration.resetGcpPubsubSubscriptionName"></a>
 
 ```typescript
-public resetGcpPubsubSubscriptionName()
+public resetGcpPubsubSubscriptionName(): void
 ```
 
 ##### `resetNotificationProvider` <a name="resetNotificationProvider" id="@cdktf/provider-snowflake.NotificationIntegration.resetNotificationProvider"></a>
 
 ```typescript
-public resetNotificationProvider()
+public resetNotificationProvider(): void
 ```
 
 ##### `resetType` <a name="resetType" id="@cdktf/provider-snowflake.NotificationIntegration.resetType"></a>
 
 ```typescript
-public resetType()
+public resetType(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -25498,7 +25498,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.OauthIntegration.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -25506,7 +25506,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.OauthIntegration.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.OauthIntegration.addOverride.parameter.path"></a>
@@ -25524,7 +25524,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.OauthIntegration.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -25540,7 +25540,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.OauthIntegration.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -25548,13 +25548,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.OauthIntegration.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.OauthIntegration.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -25562,7 +25562,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.OauthIntegration.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.OauthIntegration.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -25574,7 +25574,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.OauthIntegration.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.OauthIntegration.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -25586,7 +25586,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.OauthIntegration.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.OauthIntegration.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -25598,7 +25598,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.OauthIntegration.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.OauthIntegration.getListAttribute.parameter.terraformAttribute"></a>
@@ -25610,7 +25610,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.OauthIntegration.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.OauthIntegration.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -25622,7 +25622,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.OauthIntegration.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.OauthIntegration.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -25634,7 +25634,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.OauthIntegration.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.OauthIntegration.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -25646,7 +25646,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.OauthIntegration.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.OauthIntegration.getStringAttribute.parameter.terraformAttribute"></a>
@@ -25658,7 +25658,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.OauthIntegration.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.OauthIntegration.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -25670,7 +25670,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.OauthIntegration.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.OauthIntegration.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -25682,37 +25682,37 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetBlockedRolesList` <a name="resetBlockedRolesList" id="@cdktf/provider-snowflake.OauthIntegration.resetBlockedRolesList"></a>
 
 ```typescript
-public resetBlockedRolesList()
+public resetBlockedRolesList(): void
 ```
 
 ##### `resetComment` <a name="resetComment" id="@cdktf/provider-snowflake.OauthIntegration.resetComment"></a>
 
 ```typescript
-public resetComment()
+public resetComment(): void
 ```
 
 ##### `resetEnabled` <a name="resetEnabled" id="@cdktf/provider-snowflake.OauthIntegration.resetEnabled"></a>
 
 ```typescript
-public resetEnabled()
+public resetEnabled(): void
 ```
 
 ##### `resetOauthIssueRefreshTokens` <a name="resetOauthIssueRefreshTokens" id="@cdktf/provider-snowflake.OauthIntegration.resetOauthIssueRefreshTokens"></a>
 
 ```typescript
-public resetOauthIssueRefreshTokens()
+public resetOauthIssueRefreshTokens(): void
 ```
 
 ##### `resetOauthRefreshTokenValidity` <a name="resetOauthRefreshTokenValidity" id="@cdktf/provider-snowflake.OauthIntegration.resetOauthRefreshTokenValidity"></a>
 
 ```typescript
-public resetOauthRefreshTokenValidity()
+public resetOauthRefreshTokenValidity(): void
 ```
 
 ##### `resetOauthUseSecondaryRoles` <a name="resetOauthUseSecondaryRoles" id="@cdktf/provider-snowflake.OauthIntegration.resetOauthUseSecondaryRoles"></a>
 
 ```typescript
-public resetOauthUseSecondaryRoles()
+public resetOauthUseSecondaryRoles(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -26162,7 +26162,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.Pipe.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -26170,7 +26170,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.Pipe.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.Pipe.addOverride.parameter.path"></a>
@@ -26188,7 +26188,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.Pipe.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -26204,7 +26204,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.Pipe.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -26212,13 +26212,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.Pipe.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.Pipe.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -26226,7 +26226,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.Pipe.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Pipe.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -26238,7 +26238,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.Pipe.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Pipe.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -26250,7 +26250,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.Pipe.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Pipe.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -26262,7 +26262,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.Pipe.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Pipe.getListAttribute.parameter.terraformAttribute"></a>
@@ -26274,7 +26274,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.Pipe.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Pipe.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -26286,7 +26286,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.Pipe.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Pipe.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -26298,7 +26298,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.Pipe.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Pipe.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -26310,7 +26310,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.Pipe.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Pipe.getStringAttribute.parameter.terraformAttribute"></a>
@@ -26322,7 +26322,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.Pipe.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Pipe.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -26334,7 +26334,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.Pipe.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Pipe.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -26346,31 +26346,31 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetAutoIngest` <a name="resetAutoIngest" id="@cdktf/provider-snowflake.Pipe.resetAutoIngest"></a>
 
 ```typescript
-public resetAutoIngest()
+public resetAutoIngest(): void
 ```
 
 ##### `resetAwsSnsTopicArn` <a name="resetAwsSnsTopicArn" id="@cdktf/provider-snowflake.Pipe.resetAwsSnsTopicArn"></a>
 
 ```typescript
-public resetAwsSnsTopicArn()
+public resetAwsSnsTopicArn(): void
 ```
 
 ##### `resetComment` <a name="resetComment" id="@cdktf/provider-snowflake.Pipe.resetComment"></a>
 
 ```typescript
-public resetComment()
+public resetComment(): void
 ```
 
 ##### `resetErrorIntegration` <a name="resetErrorIntegration" id="@cdktf/provider-snowflake.Pipe.resetErrorIntegration"></a>
 
 ```typescript
-public resetErrorIntegration()
+public resetErrorIntegration(): void
 ```
 
 ##### `resetIntegration` <a name="resetIntegration" id="@cdktf/provider-snowflake.Pipe.resetIntegration"></a>
 
 ```typescript
-public resetIntegration()
+public resetIntegration(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -26853,7 +26853,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.PipeGrant.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -26861,7 +26861,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.PipeGrant.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.PipeGrant.addOverride.parameter.path"></a>
@@ -26879,7 +26879,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.PipeGrant.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -26895,7 +26895,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.PipeGrant.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -26903,13 +26903,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.PipeGrant.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.PipeGrant.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -26917,7 +26917,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.PipeGrant.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.PipeGrant.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -26929,7 +26929,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.PipeGrant.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.PipeGrant.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -26941,7 +26941,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.PipeGrant.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.PipeGrant.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -26953,7 +26953,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.PipeGrant.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.PipeGrant.getListAttribute.parameter.terraformAttribute"></a>
@@ -26965,7 +26965,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.PipeGrant.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.PipeGrant.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -26977,7 +26977,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.PipeGrant.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.PipeGrant.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -26989,7 +26989,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.PipeGrant.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.PipeGrant.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -27001,7 +27001,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.PipeGrant.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.PipeGrant.getStringAttribute.parameter.terraformAttribute"></a>
@@ -27013,7 +27013,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.PipeGrant.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.PipeGrant.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -27025,7 +27025,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.PipeGrant.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.PipeGrant.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -27037,31 +27037,31 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetOnFuture` <a name="resetOnFuture" id="@cdktf/provider-snowflake.PipeGrant.resetOnFuture"></a>
 
 ```typescript
-public resetOnFuture()
+public resetOnFuture(): void
 ```
 
 ##### `resetPipeName` <a name="resetPipeName" id="@cdktf/provider-snowflake.PipeGrant.resetPipeName"></a>
 
 ```typescript
-public resetPipeName()
+public resetPipeName(): void
 ```
 
 ##### `resetPrivilege` <a name="resetPrivilege" id="@cdktf/provider-snowflake.PipeGrant.resetPrivilege"></a>
 
 ```typescript
-public resetPrivilege()
+public resetPrivilege(): void
 ```
 
 ##### `resetRoles` <a name="resetRoles" id="@cdktf/provider-snowflake.PipeGrant.resetRoles"></a>
 
 ```typescript
-public resetRoles()
+public resetRoles(): void
 ```
 
 ##### `resetWithGrantOption` <a name="resetWithGrantOption" id="@cdktf/provider-snowflake.PipeGrant.resetWithGrantOption"></a>
 
 ```typescript
-public resetWithGrantOption()
+public resetWithGrantOption(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -27478,7 +27478,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.Procedure.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -27486,7 +27486,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.Procedure.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.Procedure.addOverride.parameter.path"></a>
@@ -27504,7 +27504,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.Procedure.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -27520,7 +27520,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.Procedure.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -27528,13 +27528,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.Procedure.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.Procedure.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -27542,7 +27542,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.Procedure.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Procedure.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -27554,7 +27554,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.Procedure.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Procedure.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -27566,7 +27566,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.Procedure.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Procedure.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -27578,7 +27578,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.Procedure.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Procedure.getListAttribute.parameter.terraformAttribute"></a>
@@ -27590,7 +27590,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.Procedure.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Procedure.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -27602,7 +27602,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.Procedure.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Procedure.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -27614,7 +27614,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.Procedure.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Procedure.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -27626,7 +27626,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.Procedure.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Procedure.getStringAttribute.parameter.terraformAttribute"></a>
@@ -27638,7 +27638,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.Procedure.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Procedure.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -27650,7 +27650,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.Procedure.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Procedure.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -27662,31 +27662,31 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetArguments` <a name="resetArguments" id="@cdktf/provider-snowflake.Procedure.resetArguments"></a>
 
 ```typescript
-public resetArguments()
+public resetArguments(): void
 ```
 
 ##### `resetComment` <a name="resetComment" id="@cdktf/provider-snowflake.Procedure.resetComment"></a>
 
 ```typescript
-public resetComment()
+public resetComment(): void
 ```
 
 ##### `resetExecuteAs` <a name="resetExecuteAs" id="@cdktf/provider-snowflake.Procedure.resetExecuteAs"></a>
 
 ```typescript
-public resetExecuteAs()
+public resetExecuteAs(): void
 ```
 
 ##### `resetNullInputBehavior` <a name="resetNullInputBehavior" id="@cdktf/provider-snowflake.Procedure.resetNullInputBehavior"></a>
 
 ```typescript
-public resetNullInputBehavior()
+public resetNullInputBehavior(): void
 ```
 
 ##### `resetReturnBehavior` <a name="resetReturnBehavior" id="@cdktf/provider-snowflake.Procedure.resetReturnBehavior"></a>
 
 ```typescript
-public resetReturnBehavior()
+public resetReturnBehavior(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -28172,7 +28172,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.ProcedureGrant.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -28180,7 +28180,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.ProcedureGrant.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.ProcedureGrant.addOverride.parameter.path"></a>
@@ -28198,7 +28198,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.ProcedureGrant.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -28214,7 +28214,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.ProcedureGrant.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -28222,13 +28222,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.ProcedureGrant.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.ProcedureGrant.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -28236,7 +28236,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.ProcedureGrant.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ProcedureGrant.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -28248,7 +28248,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.ProcedureGrant.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ProcedureGrant.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -28260,7 +28260,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.ProcedureGrant.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ProcedureGrant.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -28272,7 +28272,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.ProcedureGrant.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ProcedureGrant.getListAttribute.parameter.terraformAttribute"></a>
@@ -28284,7 +28284,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.ProcedureGrant.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ProcedureGrant.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -28296,7 +28296,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.ProcedureGrant.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ProcedureGrant.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -28308,7 +28308,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.ProcedureGrant.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ProcedureGrant.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -28320,7 +28320,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.ProcedureGrant.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ProcedureGrant.getStringAttribute.parameter.terraformAttribute"></a>
@@ -28332,7 +28332,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.ProcedureGrant.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ProcedureGrant.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -28344,7 +28344,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.ProcedureGrant.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ProcedureGrant.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -28356,49 +28356,49 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetArguments` <a name="resetArguments" id="@cdktf/provider-snowflake.ProcedureGrant.resetArguments"></a>
 
 ```typescript
-public resetArguments()
+public resetArguments(): void
 ```
 
 ##### `resetOnFuture` <a name="resetOnFuture" id="@cdktf/provider-snowflake.ProcedureGrant.resetOnFuture"></a>
 
 ```typescript
-public resetOnFuture()
+public resetOnFuture(): void
 ```
 
 ##### `resetPrivilege` <a name="resetPrivilege" id="@cdktf/provider-snowflake.ProcedureGrant.resetPrivilege"></a>
 
 ```typescript
-public resetPrivilege()
+public resetPrivilege(): void
 ```
 
 ##### `resetProcedureName` <a name="resetProcedureName" id="@cdktf/provider-snowflake.ProcedureGrant.resetProcedureName"></a>
 
 ```typescript
-public resetProcedureName()
+public resetProcedureName(): void
 ```
 
 ##### `resetReturnType` <a name="resetReturnType" id="@cdktf/provider-snowflake.ProcedureGrant.resetReturnType"></a>
 
 ```typescript
-public resetReturnType()
+public resetReturnType(): void
 ```
 
 ##### `resetRoles` <a name="resetRoles" id="@cdktf/provider-snowflake.ProcedureGrant.resetRoles"></a>
 
 ```typescript
-public resetRoles()
+public resetRoles(): void
 ```
 
 ##### `resetShares` <a name="resetShares" id="@cdktf/provider-snowflake.ProcedureGrant.resetShares"></a>
 
 ```typescript
-public resetShares()
+public resetShares(): void
 ```
 
 ##### `resetWithGrantOption` <a name="resetWithGrantOption" id="@cdktf/provider-snowflake.ProcedureGrant.resetWithGrantOption"></a>
 
 ```typescript
-public resetWithGrantOption()
+public resetWithGrantOption(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -28885,7 +28885,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.ResourceMonitor.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -28893,7 +28893,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.ResourceMonitor.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.ResourceMonitor.addOverride.parameter.path"></a>
@@ -28911,7 +28911,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.ResourceMonitor.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -28927,7 +28927,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.ResourceMonitor.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -28935,13 +28935,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.ResourceMonitor.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.ResourceMonitor.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -28949,7 +28949,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.ResourceMonitor.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ResourceMonitor.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -28961,7 +28961,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.ResourceMonitor.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ResourceMonitor.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -28973,7 +28973,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.ResourceMonitor.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ResourceMonitor.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -28985,7 +28985,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.ResourceMonitor.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ResourceMonitor.getListAttribute.parameter.terraformAttribute"></a>
@@ -28997,7 +28997,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.ResourceMonitor.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ResourceMonitor.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -29009,7 +29009,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.ResourceMonitor.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ResourceMonitor.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -29021,7 +29021,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.ResourceMonitor.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ResourceMonitor.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -29033,7 +29033,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.ResourceMonitor.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ResourceMonitor.getStringAttribute.parameter.terraformAttribute"></a>
@@ -29045,7 +29045,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.ResourceMonitor.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ResourceMonitor.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -29057,7 +29057,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.ResourceMonitor.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ResourceMonitor.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -29069,55 +29069,55 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetCreditQuota` <a name="resetCreditQuota" id="@cdktf/provider-snowflake.ResourceMonitor.resetCreditQuota"></a>
 
 ```typescript
-public resetCreditQuota()
+public resetCreditQuota(): void
 ```
 
 ##### `resetEndTimestamp` <a name="resetEndTimestamp" id="@cdktf/provider-snowflake.ResourceMonitor.resetEndTimestamp"></a>
 
 ```typescript
-public resetEndTimestamp()
+public resetEndTimestamp(): void
 ```
 
 ##### `resetFrequency` <a name="resetFrequency" id="@cdktf/provider-snowflake.ResourceMonitor.resetFrequency"></a>
 
 ```typescript
-public resetFrequency()
+public resetFrequency(): void
 ```
 
 ##### `resetNotifyTriggers` <a name="resetNotifyTriggers" id="@cdktf/provider-snowflake.ResourceMonitor.resetNotifyTriggers"></a>
 
 ```typescript
-public resetNotifyTriggers()
+public resetNotifyTriggers(): void
 ```
 
 ##### `resetSetForAccount` <a name="resetSetForAccount" id="@cdktf/provider-snowflake.ResourceMonitor.resetSetForAccount"></a>
 
 ```typescript
-public resetSetForAccount()
+public resetSetForAccount(): void
 ```
 
 ##### `resetStartTimestamp` <a name="resetStartTimestamp" id="@cdktf/provider-snowflake.ResourceMonitor.resetStartTimestamp"></a>
 
 ```typescript
-public resetStartTimestamp()
+public resetStartTimestamp(): void
 ```
 
 ##### `resetSuspendImmediateTriggers` <a name="resetSuspendImmediateTriggers" id="@cdktf/provider-snowflake.ResourceMonitor.resetSuspendImmediateTriggers"></a>
 
 ```typescript
-public resetSuspendImmediateTriggers()
+public resetSuspendImmediateTriggers(): void
 ```
 
 ##### `resetSuspendTriggers` <a name="resetSuspendTriggers" id="@cdktf/provider-snowflake.ResourceMonitor.resetSuspendTriggers"></a>
 
 ```typescript
-public resetSuspendTriggers()
+public resetSuspendTriggers(): void
 ```
 
 ##### `resetWarehouses` <a name="resetWarehouses" id="@cdktf/provider-snowflake.ResourceMonitor.resetWarehouses"></a>
 
 ```typescript
-public resetWarehouses()
+public resetWarehouses(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -29598,7 +29598,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.ResourceMonitorGrant.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -29606,7 +29606,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.ResourceMonitorGrant.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.ResourceMonitorGrant.addOverride.parameter.path"></a>
@@ -29624,7 +29624,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.ResourceMonitorGrant.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -29640,7 +29640,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.ResourceMonitorGrant.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -29648,13 +29648,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.ResourceMonitorGrant.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.ResourceMonitorGrant.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -29662,7 +29662,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.ResourceMonitorGrant.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ResourceMonitorGrant.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -29674,7 +29674,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.ResourceMonitorGrant.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ResourceMonitorGrant.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -29686,7 +29686,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.ResourceMonitorGrant.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ResourceMonitorGrant.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -29698,7 +29698,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.ResourceMonitorGrant.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ResourceMonitorGrant.getListAttribute.parameter.terraformAttribute"></a>
@@ -29710,7 +29710,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.ResourceMonitorGrant.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ResourceMonitorGrant.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -29722,7 +29722,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.ResourceMonitorGrant.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ResourceMonitorGrant.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -29734,7 +29734,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.ResourceMonitorGrant.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ResourceMonitorGrant.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -29746,7 +29746,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.ResourceMonitorGrant.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ResourceMonitorGrant.getStringAttribute.parameter.terraformAttribute"></a>
@@ -29758,7 +29758,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.ResourceMonitorGrant.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ResourceMonitorGrant.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -29770,7 +29770,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.ResourceMonitorGrant.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ResourceMonitorGrant.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -29782,19 +29782,19 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetPrivilege` <a name="resetPrivilege" id="@cdktf/provider-snowflake.ResourceMonitorGrant.resetPrivilege"></a>
 
 ```typescript
-public resetPrivilege()
+public resetPrivilege(): void
 ```
 
 ##### `resetRoles` <a name="resetRoles" id="@cdktf/provider-snowflake.ResourceMonitorGrant.resetRoles"></a>
 
 ```typescript
-public resetRoles()
+public resetRoles(): void
 ```
 
 ##### `resetWithGrantOption` <a name="resetWithGrantOption" id="@cdktf/provider-snowflake.ResourceMonitorGrant.resetWithGrantOption"></a>
 
 ```typescript
-public resetWithGrantOption()
+public resetWithGrantOption(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -30142,7 +30142,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.Role.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -30150,7 +30150,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.Role.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.Role.addOverride.parameter.path"></a>
@@ -30168,7 +30168,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.Role.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -30184,7 +30184,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.Role.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -30192,13 +30192,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.Role.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.Role.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -30206,7 +30206,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.Role.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Role.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -30218,7 +30218,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.Role.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Role.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -30230,7 +30230,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.Role.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Role.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -30242,7 +30242,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.Role.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Role.getListAttribute.parameter.terraformAttribute"></a>
@@ -30254,7 +30254,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.Role.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Role.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -30266,7 +30266,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.Role.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Role.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -30278,7 +30278,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.Role.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Role.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -30290,7 +30290,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.Role.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Role.getStringAttribute.parameter.terraformAttribute"></a>
@@ -30302,7 +30302,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.Role.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Role.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -30314,7 +30314,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.Role.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Role.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -30326,13 +30326,13 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetComment` <a name="resetComment" id="@cdktf/provider-snowflake.Role.resetComment"></a>
 
 ```typescript
-public resetComment()
+public resetComment(): void
 ```
 
 ##### `resetTag` <a name="resetTag" id="@cdktf/provider-snowflake.Role.resetTag"></a>
 
 ```typescript
-public resetTag()
+public resetTag(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -30658,7 +30658,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.RoleGrants.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -30666,7 +30666,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.RoleGrants.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.RoleGrants.addOverride.parameter.path"></a>
@@ -30684,7 +30684,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.RoleGrants.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -30700,7 +30700,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.RoleGrants.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -30708,13 +30708,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.RoleGrants.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.RoleGrants.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -30722,7 +30722,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.RoleGrants.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.RoleGrants.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -30734,7 +30734,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.RoleGrants.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.RoleGrants.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -30746,7 +30746,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.RoleGrants.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.RoleGrants.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -30758,7 +30758,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.RoleGrants.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.RoleGrants.getListAttribute.parameter.terraformAttribute"></a>
@@ -30770,7 +30770,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.RoleGrants.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.RoleGrants.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -30782,7 +30782,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.RoleGrants.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.RoleGrants.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -30794,7 +30794,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.RoleGrants.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.RoleGrants.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -30806,7 +30806,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.RoleGrants.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.RoleGrants.getStringAttribute.parameter.terraformAttribute"></a>
@@ -30818,7 +30818,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.RoleGrants.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.RoleGrants.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -30830,7 +30830,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.RoleGrants.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.RoleGrants.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -30842,13 +30842,13 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetRoles` <a name="resetRoles" id="@cdktf/provider-snowflake.RoleGrants.resetRoles"></a>
 
 ```typescript
-public resetRoles()
+public resetRoles(): void
 ```
 
 ##### `resetUsers` <a name="resetUsers" id="@cdktf/provider-snowflake.RoleGrants.resetUsers"></a>
 
 ```typescript
-public resetUsers()
+public resetUsers(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -31173,7 +31173,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.RowAccessPolicy.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -31181,7 +31181,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.RowAccessPolicy.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.RowAccessPolicy.addOverride.parameter.path"></a>
@@ -31199,7 +31199,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.RowAccessPolicy.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -31215,7 +31215,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.RowAccessPolicy.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -31223,13 +31223,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.RowAccessPolicy.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.RowAccessPolicy.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -31237,7 +31237,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.RowAccessPolicy.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.RowAccessPolicy.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -31249,7 +31249,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.RowAccessPolicy.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.RowAccessPolicy.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -31261,7 +31261,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.RowAccessPolicy.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.RowAccessPolicy.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -31273,7 +31273,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.RowAccessPolicy.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.RowAccessPolicy.getListAttribute.parameter.terraformAttribute"></a>
@@ -31285,7 +31285,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.RowAccessPolicy.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.RowAccessPolicy.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -31297,7 +31297,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.RowAccessPolicy.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.RowAccessPolicy.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -31309,7 +31309,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.RowAccessPolicy.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.RowAccessPolicy.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -31321,7 +31321,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.RowAccessPolicy.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.RowAccessPolicy.getStringAttribute.parameter.terraformAttribute"></a>
@@ -31333,7 +31333,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.RowAccessPolicy.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.RowAccessPolicy.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -31345,7 +31345,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.RowAccessPolicy.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.RowAccessPolicy.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -31357,7 +31357,7 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetComment` <a name="resetComment" id="@cdktf/provider-snowflake.RowAccessPolicy.resetComment"></a>
 
 ```typescript
-public resetComment()
+public resetComment(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -31750,7 +31750,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.RowAccessPolicyGrant.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -31758,7 +31758,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.RowAccessPolicyGrant.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.RowAccessPolicyGrant.addOverride.parameter.path"></a>
@@ -31776,7 +31776,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.RowAccessPolicyGrant.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -31792,7 +31792,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.RowAccessPolicyGrant.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -31800,13 +31800,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.RowAccessPolicyGrant.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.RowAccessPolicyGrant.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -31814,7 +31814,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.RowAccessPolicyGrant.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.RowAccessPolicyGrant.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -31826,7 +31826,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.RowAccessPolicyGrant.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.RowAccessPolicyGrant.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -31838,7 +31838,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.RowAccessPolicyGrant.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.RowAccessPolicyGrant.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -31850,7 +31850,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.RowAccessPolicyGrant.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.RowAccessPolicyGrant.getListAttribute.parameter.terraformAttribute"></a>
@@ -31862,7 +31862,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.RowAccessPolicyGrant.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.RowAccessPolicyGrant.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -31874,7 +31874,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.RowAccessPolicyGrant.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.RowAccessPolicyGrant.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -31886,7 +31886,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.RowAccessPolicyGrant.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.RowAccessPolicyGrant.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -31898,7 +31898,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.RowAccessPolicyGrant.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.RowAccessPolicyGrant.getStringAttribute.parameter.terraformAttribute"></a>
@@ -31910,7 +31910,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.RowAccessPolicyGrant.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.RowAccessPolicyGrant.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -31922,7 +31922,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.RowAccessPolicyGrant.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.RowAccessPolicyGrant.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -31934,19 +31934,19 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetPrivilege` <a name="resetPrivilege" id="@cdktf/provider-snowflake.RowAccessPolicyGrant.resetPrivilege"></a>
 
 ```typescript
-public resetPrivilege()
+public resetPrivilege(): void
 ```
 
 ##### `resetRoles` <a name="resetRoles" id="@cdktf/provider-snowflake.RowAccessPolicyGrant.resetRoles"></a>
 
 ```typescript
-public resetRoles()
+public resetRoles(): void
 ```
 
 ##### `resetWithGrantOption` <a name="resetWithGrantOption" id="@cdktf/provider-snowflake.RowAccessPolicyGrant.resetWithGrantOption"></a>
 
 ```typescript
-public resetWithGrantOption()
+public resetWithGrantOption(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -32346,7 +32346,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.SamlIntegration.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -32354,7 +32354,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.SamlIntegration.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.SamlIntegration.addOverride.parameter.path"></a>
@@ -32372,7 +32372,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.SamlIntegration.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -32388,7 +32388,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.SamlIntegration.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -32396,13 +32396,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.SamlIntegration.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.SamlIntegration.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -32410,7 +32410,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.SamlIntegration.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.SamlIntegration.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -32422,7 +32422,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.SamlIntegration.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.SamlIntegration.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -32434,7 +32434,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.SamlIntegration.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.SamlIntegration.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -32446,7 +32446,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.SamlIntegration.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.SamlIntegration.getListAttribute.parameter.terraformAttribute"></a>
@@ -32458,7 +32458,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.SamlIntegration.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.SamlIntegration.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -32470,7 +32470,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.SamlIntegration.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.SamlIntegration.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -32482,7 +32482,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.SamlIntegration.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.SamlIntegration.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -32494,7 +32494,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.SamlIntegration.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.SamlIntegration.getStringAttribute.parameter.terraformAttribute"></a>
@@ -32506,7 +32506,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.SamlIntegration.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.SamlIntegration.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -32518,7 +32518,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.SamlIntegration.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.SamlIntegration.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -32530,61 +32530,61 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetEnabled` <a name="resetEnabled" id="@cdktf/provider-snowflake.SamlIntegration.resetEnabled"></a>
 
 ```typescript
-public resetEnabled()
+public resetEnabled(): void
 ```
 
 ##### `resetSaml2EnableSpInitiated` <a name="resetSaml2EnableSpInitiated" id="@cdktf/provider-snowflake.SamlIntegration.resetSaml2EnableSpInitiated"></a>
 
 ```typescript
-public resetSaml2EnableSpInitiated()
+public resetSaml2EnableSpInitiated(): void
 ```
 
 ##### `resetSaml2ForceAuthn` <a name="resetSaml2ForceAuthn" id="@cdktf/provider-snowflake.SamlIntegration.resetSaml2ForceAuthn"></a>
 
 ```typescript
-public resetSaml2ForceAuthn()
+public resetSaml2ForceAuthn(): void
 ```
 
 ##### `resetSaml2PostLogoutRedirectUrl` <a name="resetSaml2PostLogoutRedirectUrl" id="@cdktf/provider-snowflake.SamlIntegration.resetSaml2PostLogoutRedirectUrl"></a>
 
 ```typescript
-public resetSaml2PostLogoutRedirectUrl()
+public resetSaml2PostLogoutRedirectUrl(): void
 ```
 
 ##### `resetSaml2RequestedNameidFormat` <a name="resetSaml2RequestedNameidFormat" id="@cdktf/provider-snowflake.SamlIntegration.resetSaml2RequestedNameidFormat"></a>
 
 ```typescript
-public resetSaml2RequestedNameidFormat()
+public resetSaml2RequestedNameidFormat(): void
 ```
 
 ##### `resetSaml2SignRequest` <a name="resetSaml2SignRequest" id="@cdktf/provider-snowflake.SamlIntegration.resetSaml2SignRequest"></a>
 
 ```typescript
-public resetSaml2SignRequest()
+public resetSaml2SignRequest(): void
 ```
 
 ##### `resetSaml2SnowflakeAcsUrl` <a name="resetSaml2SnowflakeAcsUrl" id="@cdktf/provider-snowflake.SamlIntegration.resetSaml2SnowflakeAcsUrl"></a>
 
 ```typescript
-public resetSaml2SnowflakeAcsUrl()
+public resetSaml2SnowflakeAcsUrl(): void
 ```
 
 ##### `resetSaml2SnowflakeIssuerUrl` <a name="resetSaml2SnowflakeIssuerUrl" id="@cdktf/provider-snowflake.SamlIntegration.resetSaml2SnowflakeIssuerUrl"></a>
 
 ```typescript
-public resetSaml2SnowflakeIssuerUrl()
+public resetSaml2SnowflakeIssuerUrl(): void
 ```
 
 ##### `resetSaml2SnowflakeX509Cert` <a name="resetSaml2SnowflakeX509Cert" id="@cdktf/provider-snowflake.SamlIntegration.resetSaml2SnowflakeX509Cert"></a>
 
 ```typescript
-public resetSaml2SnowflakeX509Cert()
+public resetSaml2SnowflakeX509Cert(): void
 ```
 
 ##### `resetSaml2SpInitiatedLoginPageLabel` <a name="resetSaml2SpInitiatedLoginPageLabel" id="@cdktf/provider-snowflake.SamlIntegration.resetSaml2SpInitiatedLoginPageLabel"></a>
 
 ```typescript
-public resetSaml2SpInitiatedLoginPageLabel()
+public resetSaml2SpInitiatedLoginPageLabel(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -33221,7 +33221,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.Schema.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -33229,7 +33229,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.Schema.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.Schema.addOverride.parameter.path"></a>
@@ -33247,7 +33247,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.Schema.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -33263,7 +33263,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.Schema.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -33271,13 +33271,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.Schema.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.Schema.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -33285,7 +33285,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.Schema.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Schema.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -33297,7 +33297,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.Schema.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Schema.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -33309,7 +33309,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.Schema.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Schema.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -33321,7 +33321,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.Schema.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Schema.getListAttribute.parameter.terraformAttribute"></a>
@@ -33333,7 +33333,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.Schema.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Schema.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -33345,7 +33345,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.Schema.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Schema.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -33357,7 +33357,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.Schema.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Schema.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -33369,7 +33369,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.Schema.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Schema.getStringAttribute.parameter.terraformAttribute"></a>
@@ -33381,7 +33381,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.Schema.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Schema.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -33393,7 +33393,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.Schema.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Schema.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -33405,31 +33405,31 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetComment` <a name="resetComment" id="@cdktf/provider-snowflake.Schema.resetComment"></a>
 
 ```typescript
-public resetComment()
+public resetComment(): void
 ```
 
 ##### `resetDataRetentionDays` <a name="resetDataRetentionDays" id="@cdktf/provider-snowflake.Schema.resetDataRetentionDays"></a>
 
 ```typescript
-public resetDataRetentionDays()
+public resetDataRetentionDays(): void
 ```
 
 ##### `resetIsManaged` <a name="resetIsManaged" id="@cdktf/provider-snowflake.Schema.resetIsManaged"></a>
 
 ```typescript
-public resetIsManaged()
+public resetIsManaged(): void
 ```
 
 ##### `resetIsTransient` <a name="resetIsTransient" id="@cdktf/provider-snowflake.Schema.resetIsTransient"></a>
 
 ```typescript
-public resetIsTransient()
+public resetIsTransient(): void
 ```
 
 ##### `resetTag` <a name="resetTag" id="@cdktf/provider-snowflake.Schema.resetTag"></a>
 
 ```typescript
-public resetTag()
+public resetTag(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -33847,7 +33847,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.SchemaGrant.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -33855,7 +33855,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.SchemaGrant.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.SchemaGrant.addOverride.parameter.path"></a>
@@ -33873,7 +33873,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.SchemaGrant.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -33889,7 +33889,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.SchemaGrant.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -33897,13 +33897,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.SchemaGrant.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.SchemaGrant.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -33911,7 +33911,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.SchemaGrant.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.SchemaGrant.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -33923,7 +33923,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.SchemaGrant.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.SchemaGrant.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -33935,7 +33935,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.SchemaGrant.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.SchemaGrant.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -33947,7 +33947,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.SchemaGrant.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.SchemaGrant.getListAttribute.parameter.terraformAttribute"></a>
@@ -33959,7 +33959,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.SchemaGrant.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.SchemaGrant.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -33971,7 +33971,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.SchemaGrant.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.SchemaGrant.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -33983,7 +33983,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.SchemaGrant.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.SchemaGrant.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -33995,7 +33995,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.SchemaGrant.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.SchemaGrant.getStringAttribute.parameter.terraformAttribute"></a>
@@ -34007,7 +34007,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.SchemaGrant.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.SchemaGrant.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -34019,7 +34019,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.SchemaGrant.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.SchemaGrant.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -34031,37 +34031,37 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetOnFuture` <a name="resetOnFuture" id="@cdktf/provider-snowflake.SchemaGrant.resetOnFuture"></a>
 
 ```typescript
-public resetOnFuture()
+public resetOnFuture(): void
 ```
 
 ##### `resetPrivilege` <a name="resetPrivilege" id="@cdktf/provider-snowflake.SchemaGrant.resetPrivilege"></a>
 
 ```typescript
-public resetPrivilege()
+public resetPrivilege(): void
 ```
 
 ##### `resetRoles` <a name="resetRoles" id="@cdktf/provider-snowflake.SchemaGrant.resetRoles"></a>
 
 ```typescript
-public resetRoles()
+public resetRoles(): void
 ```
 
 ##### `resetSchemaName` <a name="resetSchemaName" id="@cdktf/provider-snowflake.SchemaGrant.resetSchemaName"></a>
 
 ```typescript
-public resetSchemaName()
+public resetSchemaName(): void
 ```
 
 ##### `resetShares` <a name="resetShares" id="@cdktf/provider-snowflake.SchemaGrant.resetShares"></a>
 
 ```typescript
-public resetShares()
+public resetShares(): void
 ```
 
 ##### `resetWithGrantOption` <a name="resetWithGrantOption" id="@cdktf/provider-snowflake.SchemaGrant.resetWithGrantOption"></a>
 
 ```typescript
-public resetWithGrantOption()
+public resetWithGrantOption(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -34474,7 +34474,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.ScimIntegration.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -34482,7 +34482,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.ScimIntegration.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.ScimIntegration.addOverride.parameter.path"></a>
@@ -34500,7 +34500,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.ScimIntegration.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -34516,7 +34516,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.ScimIntegration.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -34524,13 +34524,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.ScimIntegration.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.ScimIntegration.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -34538,7 +34538,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.ScimIntegration.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ScimIntegration.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -34550,7 +34550,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.ScimIntegration.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ScimIntegration.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -34562,7 +34562,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.ScimIntegration.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ScimIntegration.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -34574,7 +34574,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.ScimIntegration.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ScimIntegration.getListAttribute.parameter.terraformAttribute"></a>
@@ -34586,7 +34586,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.ScimIntegration.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ScimIntegration.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -34598,7 +34598,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.ScimIntegration.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ScimIntegration.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -34610,7 +34610,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.ScimIntegration.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ScimIntegration.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -34622,7 +34622,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.ScimIntegration.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ScimIntegration.getStringAttribute.parameter.terraformAttribute"></a>
@@ -34634,7 +34634,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.ScimIntegration.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ScimIntegration.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -34646,7 +34646,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.ScimIntegration.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ScimIntegration.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -34658,7 +34658,7 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetNetworkPolicy` <a name="resetNetworkPolicy" id="@cdktf/provider-snowflake.ScimIntegration.resetNetworkPolicy"></a>
 
 ```typescript
-public resetNetworkPolicy()
+public resetNetworkPolicy(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -35017,7 +35017,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.Sequence.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -35025,7 +35025,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.Sequence.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.Sequence.addOverride.parameter.path"></a>
@@ -35043,7 +35043,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.Sequence.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -35059,7 +35059,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.Sequence.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -35067,13 +35067,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.Sequence.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.Sequence.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -35081,7 +35081,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.Sequence.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Sequence.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -35093,7 +35093,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.Sequence.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Sequence.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -35105,7 +35105,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.Sequence.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Sequence.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -35117,7 +35117,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.Sequence.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Sequence.getListAttribute.parameter.terraformAttribute"></a>
@@ -35129,7 +35129,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.Sequence.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Sequence.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -35141,7 +35141,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.Sequence.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Sequence.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -35153,7 +35153,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.Sequence.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Sequence.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -35165,7 +35165,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.Sequence.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Sequence.getStringAttribute.parameter.terraformAttribute"></a>
@@ -35177,7 +35177,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.Sequence.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Sequence.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -35189,7 +35189,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.Sequence.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Sequence.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -35201,13 +35201,13 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetComment` <a name="resetComment" id="@cdktf/provider-snowflake.Sequence.resetComment"></a>
 
 ```typescript
-public resetComment()
+public resetComment(): void
 ```
 
 ##### `resetIncrement` <a name="resetIncrement" id="@cdktf/provider-snowflake.Sequence.resetIncrement"></a>
 
 ```typescript
-public resetIncrement()
+public resetIncrement(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -35602,7 +35602,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.SequenceGrant.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -35610,7 +35610,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.SequenceGrant.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.SequenceGrant.addOverride.parameter.path"></a>
@@ -35628,7 +35628,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.SequenceGrant.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -35644,7 +35644,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.SequenceGrant.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -35652,13 +35652,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.SequenceGrant.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.SequenceGrant.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -35666,7 +35666,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.SequenceGrant.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.SequenceGrant.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -35678,7 +35678,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.SequenceGrant.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.SequenceGrant.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -35690,7 +35690,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.SequenceGrant.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.SequenceGrant.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -35702,7 +35702,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.SequenceGrant.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.SequenceGrant.getListAttribute.parameter.terraformAttribute"></a>
@@ -35714,7 +35714,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.SequenceGrant.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.SequenceGrant.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -35726,7 +35726,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.SequenceGrant.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.SequenceGrant.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -35738,7 +35738,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.SequenceGrant.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.SequenceGrant.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -35750,7 +35750,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.SequenceGrant.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.SequenceGrant.getStringAttribute.parameter.terraformAttribute"></a>
@@ -35762,7 +35762,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.SequenceGrant.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.SequenceGrant.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -35774,7 +35774,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.SequenceGrant.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.SequenceGrant.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -35786,31 +35786,31 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetOnFuture` <a name="resetOnFuture" id="@cdktf/provider-snowflake.SequenceGrant.resetOnFuture"></a>
 
 ```typescript
-public resetOnFuture()
+public resetOnFuture(): void
 ```
 
 ##### `resetPrivilege` <a name="resetPrivilege" id="@cdktf/provider-snowflake.SequenceGrant.resetPrivilege"></a>
 
 ```typescript
-public resetPrivilege()
+public resetPrivilege(): void
 ```
 
 ##### `resetRoles` <a name="resetRoles" id="@cdktf/provider-snowflake.SequenceGrant.resetRoles"></a>
 
 ```typescript
-public resetRoles()
+public resetRoles(): void
 ```
 
 ##### `resetSequenceName` <a name="resetSequenceName" id="@cdktf/provider-snowflake.SequenceGrant.resetSequenceName"></a>
 
 ```typescript
-public resetSequenceName()
+public resetSequenceName(): void
 ```
 
 ##### `resetWithGrantOption` <a name="resetWithGrantOption" id="@cdktf/provider-snowflake.SequenceGrant.resetWithGrantOption"></a>
 
 ```typescript
-public resetWithGrantOption()
+public resetWithGrantOption(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -36224,7 +36224,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.Share.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -36232,7 +36232,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.Share.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.Share.addOverride.parameter.path"></a>
@@ -36250,7 +36250,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.Share.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -36266,7 +36266,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.Share.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -36274,13 +36274,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.Share.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.Share.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -36288,7 +36288,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.Share.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Share.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -36300,7 +36300,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.Share.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Share.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -36312,7 +36312,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.Share.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Share.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -36324,7 +36324,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.Share.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Share.getListAttribute.parameter.terraformAttribute"></a>
@@ -36336,7 +36336,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.Share.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Share.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -36348,7 +36348,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.Share.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Share.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -36360,7 +36360,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.Share.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Share.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -36372,7 +36372,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.Share.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Share.getStringAttribute.parameter.terraformAttribute"></a>
@@ -36384,7 +36384,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.Share.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Share.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -36396,7 +36396,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.Share.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Share.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -36408,13 +36408,13 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetAccounts` <a name="resetAccounts" id="@cdktf/provider-snowflake.Share.resetAccounts"></a>
 
 ```typescript
-public resetAccounts()
+public resetAccounts(): void
 ```
 
 ##### `resetComment` <a name="resetComment" id="@cdktf/provider-snowflake.Share.resetComment"></a>
 
 ```typescript
-public resetComment()
+public resetComment(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -36742,7 +36742,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.SnowflakeProvider.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -36750,7 +36750,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.SnowflakeProvider.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.SnowflakeProvider.addOverride.parameter.path"></a>
@@ -36768,7 +36768,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.SnowflakeProvider.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -36784,7 +36784,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.SnowflakeProvider.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -36792,13 +36792,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.SnowflakeProvider.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.SnowflakeProvider.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -36806,85 +36806,85 @@ Adds this resource to the terraform JSON output.
 ##### `resetAlias` <a name="resetAlias" id="@cdktf/provider-snowflake.SnowflakeProvider.resetAlias"></a>
 
 ```typescript
-public resetAlias()
+public resetAlias(): void
 ```
 
 ##### `resetBrowserAuth` <a name="resetBrowserAuth" id="@cdktf/provider-snowflake.SnowflakeProvider.resetBrowserAuth"></a>
 
 ```typescript
-public resetBrowserAuth()
+public resetBrowserAuth(): void
 ```
 
 ##### `resetOauthAccessToken` <a name="resetOauthAccessToken" id="@cdktf/provider-snowflake.SnowflakeProvider.resetOauthAccessToken"></a>
 
 ```typescript
-public resetOauthAccessToken()
+public resetOauthAccessToken(): void
 ```
 
 ##### `resetOauthClientId` <a name="resetOauthClientId" id="@cdktf/provider-snowflake.SnowflakeProvider.resetOauthClientId"></a>
 
 ```typescript
-public resetOauthClientId()
+public resetOauthClientId(): void
 ```
 
 ##### `resetOauthClientSecret` <a name="resetOauthClientSecret" id="@cdktf/provider-snowflake.SnowflakeProvider.resetOauthClientSecret"></a>
 
 ```typescript
-public resetOauthClientSecret()
+public resetOauthClientSecret(): void
 ```
 
 ##### `resetOauthEndpoint` <a name="resetOauthEndpoint" id="@cdktf/provider-snowflake.SnowflakeProvider.resetOauthEndpoint"></a>
 
 ```typescript
-public resetOauthEndpoint()
+public resetOauthEndpoint(): void
 ```
 
 ##### `resetOauthRedirectUrl` <a name="resetOauthRedirectUrl" id="@cdktf/provider-snowflake.SnowflakeProvider.resetOauthRedirectUrl"></a>
 
 ```typescript
-public resetOauthRedirectUrl()
+public resetOauthRedirectUrl(): void
 ```
 
 ##### `resetOauthRefreshToken` <a name="resetOauthRefreshToken" id="@cdktf/provider-snowflake.SnowflakeProvider.resetOauthRefreshToken"></a>
 
 ```typescript
-public resetOauthRefreshToken()
+public resetOauthRefreshToken(): void
 ```
 
 ##### `resetPassword` <a name="resetPassword" id="@cdktf/provider-snowflake.SnowflakeProvider.resetPassword"></a>
 
 ```typescript
-public resetPassword()
+public resetPassword(): void
 ```
 
 ##### `resetPrivateKey` <a name="resetPrivateKey" id="@cdktf/provider-snowflake.SnowflakeProvider.resetPrivateKey"></a>
 
 ```typescript
-public resetPrivateKey()
+public resetPrivateKey(): void
 ```
 
 ##### `resetPrivateKeyPassphrase` <a name="resetPrivateKeyPassphrase" id="@cdktf/provider-snowflake.SnowflakeProvider.resetPrivateKeyPassphrase"></a>
 
 ```typescript
-public resetPrivateKeyPassphrase()
+public resetPrivateKeyPassphrase(): void
 ```
 
 ##### `resetPrivateKeyPath` <a name="resetPrivateKeyPath" id="@cdktf/provider-snowflake.SnowflakeProvider.resetPrivateKeyPath"></a>
 
 ```typescript
-public resetPrivateKeyPath()
+public resetPrivateKeyPath(): void
 ```
 
 ##### `resetRegion` <a name="resetRegion" id="@cdktf/provider-snowflake.SnowflakeProvider.resetRegion"></a>
 
 ```typescript
-public resetRegion()
+public resetRegion(): void
 ```
 
 ##### `resetRole` <a name="resetRole" id="@cdktf/provider-snowflake.SnowflakeProvider.resetRole"></a>
 
 ```typescript
-public resetRole()
+public resetRole(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -37460,7 +37460,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.Stage.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -37468,7 +37468,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.Stage.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.Stage.addOverride.parameter.path"></a>
@@ -37486,7 +37486,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.Stage.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -37502,7 +37502,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.Stage.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -37510,13 +37510,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.Stage.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.Stage.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -37524,7 +37524,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.Stage.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Stage.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -37536,7 +37536,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.Stage.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Stage.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -37548,7 +37548,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.Stage.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Stage.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -37560,7 +37560,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.Stage.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Stage.getListAttribute.parameter.terraformAttribute"></a>
@@ -37572,7 +37572,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.Stage.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Stage.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -37584,7 +37584,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.Stage.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Stage.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -37596,7 +37596,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.Stage.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Stage.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -37608,7 +37608,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.Stage.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Stage.getStringAttribute.parameter.terraformAttribute"></a>
@@ -37620,7 +37620,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.Stage.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Stage.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -37632,7 +37632,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.Stage.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Stage.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -37644,61 +37644,61 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetAwsExternalId` <a name="resetAwsExternalId" id="@cdktf/provider-snowflake.Stage.resetAwsExternalId"></a>
 
 ```typescript
-public resetAwsExternalId()
+public resetAwsExternalId(): void
 ```
 
 ##### `resetComment` <a name="resetComment" id="@cdktf/provider-snowflake.Stage.resetComment"></a>
 
 ```typescript
-public resetComment()
+public resetComment(): void
 ```
 
 ##### `resetCopyOptions` <a name="resetCopyOptions" id="@cdktf/provider-snowflake.Stage.resetCopyOptions"></a>
 
 ```typescript
-public resetCopyOptions()
+public resetCopyOptions(): void
 ```
 
 ##### `resetCredentials` <a name="resetCredentials" id="@cdktf/provider-snowflake.Stage.resetCredentials"></a>
 
 ```typescript
-public resetCredentials()
+public resetCredentials(): void
 ```
 
 ##### `resetEncryption` <a name="resetEncryption" id="@cdktf/provider-snowflake.Stage.resetEncryption"></a>
 
 ```typescript
-public resetEncryption()
+public resetEncryption(): void
 ```
 
 ##### `resetFileFormat` <a name="resetFileFormat" id="@cdktf/provider-snowflake.Stage.resetFileFormat"></a>
 
 ```typescript
-public resetFileFormat()
+public resetFileFormat(): void
 ```
 
 ##### `resetSnowflakeIamUser` <a name="resetSnowflakeIamUser" id="@cdktf/provider-snowflake.Stage.resetSnowflakeIamUser"></a>
 
 ```typescript
-public resetSnowflakeIamUser()
+public resetSnowflakeIamUser(): void
 ```
 
 ##### `resetStorageIntegration` <a name="resetStorageIntegration" id="@cdktf/provider-snowflake.Stage.resetStorageIntegration"></a>
 
 ```typescript
-public resetStorageIntegration()
+public resetStorageIntegration(): void
 ```
 
 ##### `resetTag` <a name="resetTag" id="@cdktf/provider-snowflake.Stage.resetTag"></a>
 
 ```typescript
-public resetTag()
+public resetTag(): void
 ```
 
 ##### `resetUrl` <a name="resetUrl" id="@cdktf/provider-snowflake.Stage.resetUrl"></a>
 
 ```typescript
-public resetUrl()
+public resetUrl(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -38248,7 +38248,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.StageGrant.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -38256,7 +38256,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.StageGrant.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.StageGrant.addOverride.parameter.path"></a>
@@ -38274,7 +38274,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.StageGrant.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -38290,7 +38290,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.StageGrant.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -38298,13 +38298,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.StageGrant.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.StageGrant.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -38312,7 +38312,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.StageGrant.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.StageGrant.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -38324,7 +38324,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.StageGrant.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.StageGrant.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -38336,7 +38336,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.StageGrant.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.StageGrant.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -38348,7 +38348,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.StageGrant.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.StageGrant.getListAttribute.parameter.terraformAttribute"></a>
@@ -38360,7 +38360,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.StageGrant.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.StageGrant.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -38372,7 +38372,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.StageGrant.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.StageGrant.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -38384,7 +38384,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.StageGrant.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.StageGrant.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -38396,7 +38396,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.StageGrant.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.StageGrant.getStringAttribute.parameter.terraformAttribute"></a>
@@ -38408,7 +38408,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.StageGrant.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.StageGrant.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -38420,7 +38420,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.StageGrant.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.StageGrant.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -38432,37 +38432,37 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetOnFuture` <a name="resetOnFuture" id="@cdktf/provider-snowflake.StageGrant.resetOnFuture"></a>
 
 ```typescript
-public resetOnFuture()
+public resetOnFuture(): void
 ```
 
 ##### `resetPrivilege` <a name="resetPrivilege" id="@cdktf/provider-snowflake.StageGrant.resetPrivilege"></a>
 
 ```typescript
-public resetPrivilege()
+public resetPrivilege(): void
 ```
 
 ##### `resetRoles` <a name="resetRoles" id="@cdktf/provider-snowflake.StageGrant.resetRoles"></a>
 
 ```typescript
-public resetRoles()
+public resetRoles(): void
 ```
 
 ##### `resetShares` <a name="resetShares" id="@cdktf/provider-snowflake.StageGrant.resetShares"></a>
 
 ```typescript
-public resetShares()
+public resetShares(): void
 ```
 
 ##### `resetStageName` <a name="resetStageName" id="@cdktf/provider-snowflake.StageGrant.resetStageName"></a>
 
 ```typescript
-public resetStageName()
+public resetStageName(): void
 ```
 
 ##### `resetWithGrantOption` <a name="resetWithGrantOption" id="@cdktf/provider-snowflake.StageGrant.resetWithGrantOption"></a>
 
 ```typescript
-public resetWithGrantOption()
+public resetWithGrantOption(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -38903,7 +38903,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.StorageIntegration.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -38911,7 +38911,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.StorageIntegration.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.StorageIntegration.addOverride.parameter.path"></a>
@@ -38929,7 +38929,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.StorageIntegration.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -38945,7 +38945,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.StorageIntegration.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -38953,13 +38953,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.StorageIntegration.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.StorageIntegration.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -38967,7 +38967,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.StorageIntegration.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.StorageIntegration.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -38979,7 +38979,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.StorageIntegration.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.StorageIntegration.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -38991,7 +38991,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.StorageIntegration.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.StorageIntegration.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -39003,7 +39003,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.StorageIntegration.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.StorageIntegration.getListAttribute.parameter.terraformAttribute"></a>
@@ -39015,7 +39015,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.StorageIntegration.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.StorageIntegration.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -39027,7 +39027,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.StorageIntegration.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.StorageIntegration.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -39039,7 +39039,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.StorageIntegration.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.StorageIntegration.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -39051,7 +39051,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.StorageIntegration.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.StorageIntegration.getStringAttribute.parameter.terraformAttribute"></a>
@@ -39063,7 +39063,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.StorageIntegration.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.StorageIntegration.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -39075,7 +39075,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.StorageIntegration.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.StorageIntegration.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -39087,43 +39087,43 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetAzureTenantId` <a name="resetAzureTenantId" id="@cdktf/provider-snowflake.StorageIntegration.resetAzureTenantId"></a>
 
 ```typescript
-public resetAzureTenantId()
+public resetAzureTenantId(): void
 ```
 
 ##### `resetComment` <a name="resetComment" id="@cdktf/provider-snowflake.StorageIntegration.resetComment"></a>
 
 ```typescript
-public resetComment()
+public resetComment(): void
 ```
 
 ##### `resetEnabled` <a name="resetEnabled" id="@cdktf/provider-snowflake.StorageIntegration.resetEnabled"></a>
 
 ```typescript
-public resetEnabled()
+public resetEnabled(): void
 ```
 
 ##### `resetStorageAwsObjectAcl` <a name="resetStorageAwsObjectAcl" id="@cdktf/provider-snowflake.StorageIntegration.resetStorageAwsObjectAcl"></a>
 
 ```typescript
-public resetStorageAwsObjectAcl()
+public resetStorageAwsObjectAcl(): void
 ```
 
 ##### `resetStorageAwsRoleArn` <a name="resetStorageAwsRoleArn" id="@cdktf/provider-snowflake.StorageIntegration.resetStorageAwsRoleArn"></a>
 
 ```typescript
-public resetStorageAwsRoleArn()
+public resetStorageAwsRoleArn(): void
 ```
 
 ##### `resetStorageBlockedLocations` <a name="resetStorageBlockedLocations" id="@cdktf/provider-snowflake.StorageIntegration.resetStorageBlockedLocations"></a>
 
 ```typescript
-public resetStorageBlockedLocations()
+public resetStorageBlockedLocations(): void
 ```
 
 ##### `resetType` <a name="resetType" id="@cdktf/provider-snowflake.StorageIntegration.resetType"></a>
 
 ```typescript
-public resetType()
+public resetType(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -39672,7 +39672,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.Stream.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -39680,7 +39680,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.Stream.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.Stream.addOverride.parameter.path"></a>
@@ -39698,7 +39698,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.Stream.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -39714,7 +39714,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.Stream.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -39722,13 +39722,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.Stream.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.Stream.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -39736,7 +39736,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.Stream.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Stream.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -39748,7 +39748,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.Stream.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Stream.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -39760,7 +39760,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.Stream.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Stream.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -39772,7 +39772,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.Stream.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Stream.getListAttribute.parameter.terraformAttribute"></a>
@@ -39784,7 +39784,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.Stream.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Stream.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -39796,7 +39796,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.Stream.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Stream.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -39808,7 +39808,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.Stream.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Stream.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -39820,7 +39820,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.Stream.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Stream.getStringAttribute.parameter.terraformAttribute"></a>
@@ -39832,7 +39832,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.Stream.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Stream.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -39844,7 +39844,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.Stream.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Stream.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -39856,31 +39856,31 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetAppendOnly` <a name="resetAppendOnly" id="@cdktf/provider-snowflake.Stream.resetAppendOnly"></a>
 
 ```typescript
-public resetAppendOnly()
+public resetAppendOnly(): void
 ```
 
 ##### `resetComment` <a name="resetComment" id="@cdktf/provider-snowflake.Stream.resetComment"></a>
 
 ```typescript
-public resetComment()
+public resetComment(): void
 ```
 
 ##### `resetInsertOnly` <a name="resetInsertOnly" id="@cdktf/provider-snowflake.Stream.resetInsertOnly"></a>
 
 ```typescript
-public resetInsertOnly()
+public resetInsertOnly(): void
 ```
 
 ##### `resetOnTable` <a name="resetOnTable" id="@cdktf/provider-snowflake.Stream.resetOnTable"></a>
 
 ```typescript
-public resetOnTable()
+public resetOnTable(): void
 ```
 
 ##### `resetShowInitialRows` <a name="resetShowInitialRows" id="@cdktf/provider-snowflake.Stream.resetShowInitialRows"></a>
 
 ```typescript
-public resetShowInitialRows()
+public resetShowInitialRows(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -40330,7 +40330,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.StreamGrant.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -40338,7 +40338,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.StreamGrant.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.StreamGrant.addOverride.parameter.path"></a>
@@ -40356,7 +40356,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.StreamGrant.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -40372,7 +40372,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.StreamGrant.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -40380,13 +40380,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.StreamGrant.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.StreamGrant.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -40394,7 +40394,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.StreamGrant.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.StreamGrant.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -40406,7 +40406,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.StreamGrant.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.StreamGrant.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -40418,7 +40418,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.StreamGrant.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.StreamGrant.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -40430,7 +40430,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.StreamGrant.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.StreamGrant.getListAttribute.parameter.terraformAttribute"></a>
@@ -40442,7 +40442,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.StreamGrant.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.StreamGrant.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -40454,7 +40454,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.StreamGrant.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.StreamGrant.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -40466,7 +40466,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.StreamGrant.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.StreamGrant.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -40478,7 +40478,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.StreamGrant.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.StreamGrant.getStringAttribute.parameter.terraformAttribute"></a>
@@ -40490,7 +40490,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.StreamGrant.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.StreamGrant.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -40502,7 +40502,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.StreamGrant.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.StreamGrant.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -40514,31 +40514,31 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetOnFuture` <a name="resetOnFuture" id="@cdktf/provider-snowflake.StreamGrant.resetOnFuture"></a>
 
 ```typescript
-public resetOnFuture()
+public resetOnFuture(): void
 ```
 
 ##### `resetPrivilege` <a name="resetPrivilege" id="@cdktf/provider-snowflake.StreamGrant.resetPrivilege"></a>
 
 ```typescript
-public resetPrivilege()
+public resetPrivilege(): void
 ```
 
 ##### `resetRoles` <a name="resetRoles" id="@cdktf/provider-snowflake.StreamGrant.resetRoles"></a>
 
 ```typescript
-public resetRoles()
+public resetRoles(): void
 ```
 
 ##### `resetStreamName` <a name="resetStreamName" id="@cdktf/provider-snowflake.StreamGrant.resetStreamName"></a>
 
 ```typescript
-public resetStreamName()
+public resetStreamName(): void
 ```
 
 ##### `resetWithGrantOption` <a name="resetWithGrantOption" id="@cdktf/provider-snowflake.StreamGrant.resetWithGrantOption"></a>
 
 ```typescript
-public resetWithGrantOption()
+public resetWithGrantOption(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -40957,7 +40957,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.Table.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -40965,7 +40965,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.Table.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.Table.addOverride.parameter.path"></a>
@@ -40983,7 +40983,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.Table.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -40999,7 +40999,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.Table.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -41007,13 +41007,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.Table.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.Table.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -41021,7 +41021,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.Table.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Table.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -41033,7 +41033,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.Table.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Table.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -41045,7 +41045,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.Table.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Table.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -41057,7 +41057,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.Table.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Table.getListAttribute.parameter.terraformAttribute"></a>
@@ -41069,7 +41069,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.Table.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Table.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -41081,7 +41081,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.Table.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Table.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -41093,7 +41093,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.Table.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Table.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -41105,7 +41105,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.Table.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Table.getStringAttribute.parameter.terraformAttribute"></a>
@@ -41117,7 +41117,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.Table.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Table.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -41129,7 +41129,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.Table.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Table.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -41141,7 +41141,7 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `putPrimaryKey` <a name="putPrimaryKey" id="@cdktf/provider-snowflake.Table.putPrimaryKey"></a>
 
 ```typescript
-public putPrimaryKey(value: TablePrimaryKey)
+public putPrimaryKey(value: TablePrimaryKey): void
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-snowflake.Table.putPrimaryKey.parameter.value"></a>
@@ -41153,37 +41153,37 @@ public putPrimaryKey(value: TablePrimaryKey)
 ##### `resetChangeTracking` <a name="resetChangeTracking" id="@cdktf/provider-snowflake.Table.resetChangeTracking"></a>
 
 ```typescript
-public resetChangeTracking()
+public resetChangeTracking(): void
 ```
 
 ##### `resetClusterBy` <a name="resetClusterBy" id="@cdktf/provider-snowflake.Table.resetClusterBy"></a>
 
 ```typescript
-public resetClusterBy()
+public resetClusterBy(): void
 ```
 
 ##### `resetComment` <a name="resetComment" id="@cdktf/provider-snowflake.Table.resetComment"></a>
 
 ```typescript
-public resetComment()
+public resetComment(): void
 ```
 
 ##### `resetDataRetentionDays` <a name="resetDataRetentionDays" id="@cdktf/provider-snowflake.Table.resetDataRetentionDays"></a>
 
 ```typescript
-public resetDataRetentionDays()
+public resetDataRetentionDays(): void
 ```
 
 ##### `resetPrimaryKey` <a name="resetPrimaryKey" id="@cdktf/provider-snowflake.Table.resetPrimaryKey"></a>
 
 ```typescript
-public resetPrimaryKey()
+public resetPrimaryKey(): void
 ```
 
 ##### `resetTag` <a name="resetTag" id="@cdktf/provider-snowflake.Table.resetTag"></a>
 
 ```typescript
-public resetTag()
+public resetTag(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -41679,7 +41679,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.TableGrant.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -41687,7 +41687,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.TableGrant.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.TableGrant.addOverride.parameter.path"></a>
@@ -41705,7 +41705,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.TableGrant.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -41721,7 +41721,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.TableGrant.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -41729,13 +41729,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.TableGrant.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.TableGrant.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -41743,7 +41743,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.TableGrant.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TableGrant.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -41755,7 +41755,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.TableGrant.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TableGrant.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -41767,7 +41767,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.TableGrant.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TableGrant.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -41779,7 +41779,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.TableGrant.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TableGrant.getListAttribute.parameter.terraformAttribute"></a>
@@ -41791,7 +41791,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.TableGrant.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TableGrant.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -41803,7 +41803,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.TableGrant.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TableGrant.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -41815,7 +41815,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.TableGrant.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TableGrant.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -41827,7 +41827,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.TableGrant.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TableGrant.getStringAttribute.parameter.terraformAttribute"></a>
@@ -41839,7 +41839,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.TableGrant.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TableGrant.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -41851,7 +41851,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.TableGrant.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TableGrant.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -41863,43 +41863,43 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetOnFuture` <a name="resetOnFuture" id="@cdktf/provider-snowflake.TableGrant.resetOnFuture"></a>
 
 ```typescript
-public resetOnFuture()
+public resetOnFuture(): void
 ```
 
 ##### `resetPrivilege` <a name="resetPrivilege" id="@cdktf/provider-snowflake.TableGrant.resetPrivilege"></a>
 
 ```typescript
-public resetPrivilege()
+public resetPrivilege(): void
 ```
 
 ##### `resetRoles` <a name="resetRoles" id="@cdktf/provider-snowflake.TableGrant.resetRoles"></a>
 
 ```typescript
-public resetRoles()
+public resetRoles(): void
 ```
 
 ##### `resetSchemaName` <a name="resetSchemaName" id="@cdktf/provider-snowflake.TableGrant.resetSchemaName"></a>
 
 ```typescript
-public resetSchemaName()
+public resetSchemaName(): void
 ```
 
 ##### `resetShares` <a name="resetShares" id="@cdktf/provider-snowflake.TableGrant.resetShares"></a>
 
 ```typescript
-public resetShares()
+public resetShares(): void
 ```
 
 ##### `resetTableName` <a name="resetTableName" id="@cdktf/provider-snowflake.TableGrant.resetTableName"></a>
 
 ```typescript
-public resetTableName()
+public resetTableName(): void
 ```
 
 ##### `resetWithGrantOption` <a name="resetWithGrantOption" id="@cdktf/provider-snowflake.TableGrant.resetWithGrantOption"></a>
 
 ```typescript
-public resetWithGrantOption()
+public resetWithGrantOption(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -42334,7 +42334,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.Tag.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -42342,7 +42342,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.Tag.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.Tag.addOverride.parameter.path"></a>
@@ -42360,7 +42360,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.Tag.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -42376,7 +42376,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.Tag.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -42384,13 +42384,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.Tag.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.Tag.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -42398,7 +42398,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.Tag.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Tag.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -42410,7 +42410,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.Tag.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Tag.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -42422,7 +42422,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.Tag.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Tag.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -42434,7 +42434,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.Tag.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Tag.getListAttribute.parameter.terraformAttribute"></a>
@@ -42446,7 +42446,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.Tag.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Tag.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -42458,7 +42458,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.Tag.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Tag.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -42470,7 +42470,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.Tag.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Tag.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -42482,7 +42482,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.Tag.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Tag.getStringAttribute.parameter.terraformAttribute"></a>
@@ -42494,7 +42494,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.Tag.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Tag.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -42506,7 +42506,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.Tag.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Tag.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -42518,7 +42518,7 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetComment` <a name="resetComment" id="@cdktf/provider-snowflake.Tag.resetComment"></a>
 
 ```typescript
-public resetComment()
+public resetComment(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -42874,7 +42874,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.Task.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -42882,7 +42882,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.Task.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.Task.addOverride.parameter.path"></a>
@@ -42900,7 +42900,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.Task.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -42916,7 +42916,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.Task.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -42924,13 +42924,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.Task.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.Task.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -42938,7 +42938,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.Task.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Task.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -42950,7 +42950,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.Task.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Task.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -42962,7 +42962,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.Task.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Task.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -42974,7 +42974,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.Task.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Task.getListAttribute.parameter.terraformAttribute"></a>
@@ -42986,7 +42986,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.Task.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Task.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -42998,7 +42998,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.Task.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Task.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -43010,7 +43010,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.Task.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Task.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -43022,7 +43022,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.Task.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Task.getStringAttribute.parameter.terraformAttribute"></a>
@@ -43034,7 +43034,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.Task.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Task.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -43046,7 +43046,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.Task.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Task.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -43058,61 +43058,61 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetAfter` <a name="resetAfter" id="@cdktf/provider-snowflake.Task.resetAfter"></a>
 
 ```typescript
-public resetAfter()
+public resetAfter(): void
 ```
 
 ##### `resetComment` <a name="resetComment" id="@cdktf/provider-snowflake.Task.resetComment"></a>
 
 ```typescript
-public resetComment()
+public resetComment(): void
 ```
 
 ##### `resetEnabled` <a name="resetEnabled" id="@cdktf/provider-snowflake.Task.resetEnabled"></a>
 
 ```typescript
-public resetEnabled()
+public resetEnabled(): void
 ```
 
 ##### `resetErrorIntegration` <a name="resetErrorIntegration" id="@cdktf/provider-snowflake.Task.resetErrorIntegration"></a>
 
 ```typescript
-public resetErrorIntegration()
+public resetErrorIntegration(): void
 ```
 
 ##### `resetSchedule` <a name="resetSchedule" id="@cdktf/provider-snowflake.Task.resetSchedule"></a>
 
 ```typescript
-public resetSchedule()
+public resetSchedule(): void
 ```
 
 ##### `resetSessionParameters` <a name="resetSessionParameters" id="@cdktf/provider-snowflake.Task.resetSessionParameters"></a>
 
 ```typescript
-public resetSessionParameters()
+public resetSessionParameters(): void
 ```
 
 ##### `resetUserTaskManagedInitialWarehouseSize` <a name="resetUserTaskManagedInitialWarehouseSize" id="@cdktf/provider-snowflake.Task.resetUserTaskManagedInitialWarehouseSize"></a>
 
 ```typescript
-public resetUserTaskManagedInitialWarehouseSize()
+public resetUserTaskManagedInitialWarehouseSize(): void
 ```
 
 ##### `resetUserTaskTimeoutMs` <a name="resetUserTaskTimeoutMs" id="@cdktf/provider-snowflake.Task.resetUserTaskTimeoutMs"></a>
 
 ```typescript
-public resetUserTaskTimeoutMs()
+public resetUserTaskTimeoutMs(): void
 ```
 
 ##### `resetWarehouse` <a name="resetWarehouse" id="@cdktf/provider-snowflake.Task.resetWarehouse"></a>
 
 ```typescript
-public resetWarehouse()
+public resetWarehouse(): void
 ```
 
 ##### `resetWhen` <a name="resetWhen" id="@cdktf/provider-snowflake.Task.resetWhen"></a>
 
 ```typescript
-public resetWhen()
+public resetWhen(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -43683,7 +43683,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.TaskGrant.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -43691,7 +43691,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.TaskGrant.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.TaskGrant.addOverride.parameter.path"></a>
@@ -43709,7 +43709,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.TaskGrant.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -43725,7 +43725,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.TaskGrant.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -43733,13 +43733,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.TaskGrant.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.TaskGrant.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -43747,7 +43747,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.TaskGrant.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TaskGrant.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -43759,7 +43759,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.TaskGrant.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TaskGrant.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -43771,7 +43771,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.TaskGrant.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TaskGrant.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -43783,7 +43783,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.TaskGrant.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TaskGrant.getListAttribute.parameter.terraformAttribute"></a>
@@ -43795,7 +43795,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.TaskGrant.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TaskGrant.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -43807,7 +43807,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.TaskGrant.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TaskGrant.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -43819,7 +43819,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.TaskGrant.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TaskGrant.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -43831,7 +43831,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.TaskGrant.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TaskGrant.getStringAttribute.parameter.terraformAttribute"></a>
@@ -43843,7 +43843,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.TaskGrant.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TaskGrant.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -43855,7 +43855,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.TaskGrant.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TaskGrant.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -43867,31 +43867,31 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetOnFuture` <a name="resetOnFuture" id="@cdktf/provider-snowflake.TaskGrant.resetOnFuture"></a>
 
 ```typescript
-public resetOnFuture()
+public resetOnFuture(): void
 ```
 
 ##### `resetPrivilege` <a name="resetPrivilege" id="@cdktf/provider-snowflake.TaskGrant.resetPrivilege"></a>
 
 ```typescript
-public resetPrivilege()
+public resetPrivilege(): void
 ```
 
 ##### `resetRoles` <a name="resetRoles" id="@cdktf/provider-snowflake.TaskGrant.resetRoles"></a>
 
 ```typescript
-public resetRoles()
+public resetRoles(): void
 ```
 
 ##### `resetTaskName` <a name="resetTaskName" id="@cdktf/provider-snowflake.TaskGrant.resetTaskName"></a>
 
 ```typescript
-public resetTaskName()
+public resetTaskName(): void
 ```
 
 ##### `resetWithGrantOption` <a name="resetWithGrantOption" id="@cdktf/provider-snowflake.TaskGrant.resetWithGrantOption"></a>
 
 ```typescript
-public resetWithGrantOption()
+public resetWithGrantOption(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -44318,7 +44318,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.User.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -44326,7 +44326,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.User.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.User.addOverride.parameter.path"></a>
@@ -44344,7 +44344,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.User.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -44360,7 +44360,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.User.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -44368,13 +44368,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.User.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.User.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -44382,7 +44382,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.User.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.User.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -44394,7 +44394,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.User.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.User.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -44406,7 +44406,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.User.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.User.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -44418,7 +44418,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.User.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.User.getListAttribute.parameter.terraformAttribute"></a>
@@ -44430,7 +44430,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.User.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.User.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -44442,7 +44442,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.User.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.User.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -44454,7 +44454,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.User.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.User.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -44466,7 +44466,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.User.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.User.getStringAttribute.parameter.terraformAttribute"></a>
@@ -44478,7 +44478,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.User.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.User.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -44490,7 +44490,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.User.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.User.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -44502,91 +44502,91 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetComment` <a name="resetComment" id="@cdktf/provider-snowflake.User.resetComment"></a>
 
 ```typescript
-public resetComment()
+public resetComment(): void
 ```
 
 ##### `resetDefaultNamespace` <a name="resetDefaultNamespace" id="@cdktf/provider-snowflake.User.resetDefaultNamespace"></a>
 
 ```typescript
-public resetDefaultNamespace()
+public resetDefaultNamespace(): void
 ```
 
 ##### `resetDefaultRole` <a name="resetDefaultRole" id="@cdktf/provider-snowflake.User.resetDefaultRole"></a>
 
 ```typescript
-public resetDefaultRole()
+public resetDefaultRole(): void
 ```
 
 ##### `resetDefaultWarehouse` <a name="resetDefaultWarehouse" id="@cdktf/provider-snowflake.User.resetDefaultWarehouse"></a>
 
 ```typescript
-public resetDefaultWarehouse()
+public resetDefaultWarehouse(): void
 ```
 
 ##### `resetDisabled` <a name="resetDisabled" id="@cdktf/provider-snowflake.User.resetDisabled"></a>
 
 ```typescript
-public resetDisabled()
+public resetDisabled(): void
 ```
 
 ##### `resetDisplayName` <a name="resetDisplayName" id="@cdktf/provider-snowflake.User.resetDisplayName"></a>
 
 ```typescript
-public resetDisplayName()
+public resetDisplayName(): void
 ```
 
 ##### `resetEmail` <a name="resetEmail" id="@cdktf/provider-snowflake.User.resetEmail"></a>
 
 ```typescript
-public resetEmail()
+public resetEmail(): void
 ```
 
 ##### `resetFirstName` <a name="resetFirstName" id="@cdktf/provider-snowflake.User.resetFirstName"></a>
 
 ```typescript
-public resetFirstName()
+public resetFirstName(): void
 ```
 
 ##### `resetLastName` <a name="resetLastName" id="@cdktf/provider-snowflake.User.resetLastName"></a>
 
 ```typescript
-public resetLastName()
+public resetLastName(): void
 ```
 
 ##### `resetLoginName` <a name="resetLoginName" id="@cdktf/provider-snowflake.User.resetLoginName"></a>
 
 ```typescript
-public resetLoginName()
+public resetLoginName(): void
 ```
 
 ##### `resetMustChangePassword` <a name="resetMustChangePassword" id="@cdktf/provider-snowflake.User.resetMustChangePassword"></a>
 
 ```typescript
-public resetMustChangePassword()
+public resetMustChangePassword(): void
 ```
 
 ##### `resetPassword` <a name="resetPassword" id="@cdktf/provider-snowflake.User.resetPassword"></a>
 
 ```typescript
-public resetPassword()
+public resetPassword(): void
 ```
 
 ##### `resetRsaPublicKey` <a name="resetRsaPublicKey" id="@cdktf/provider-snowflake.User.resetRsaPublicKey"></a>
 
 ```typescript
-public resetRsaPublicKey()
+public resetRsaPublicKey(): void
 ```
 
 ##### `resetRsaPublicKey2` <a name="resetRsaPublicKey2" id="@cdktf/provider-snowflake.User.resetRsaPublicKey2"></a>
 
 ```typescript
-public resetRsaPublicKey2()
+public resetRsaPublicKey2(): void
 ```
 
 ##### `resetTag` <a name="resetTag" id="@cdktf/provider-snowflake.User.resetTag"></a>
 
 ```typescript
-public resetTag()
+public resetTag(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -45209,7 +45209,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.UserPublicKeys.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -45217,7 +45217,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.UserPublicKeys.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.UserPublicKeys.addOverride.parameter.path"></a>
@@ -45235,7 +45235,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.UserPublicKeys.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -45251,7 +45251,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.UserPublicKeys.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -45259,13 +45259,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.UserPublicKeys.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.UserPublicKeys.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -45273,7 +45273,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.UserPublicKeys.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.UserPublicKeys.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -45285,7 +45285,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.UserPublicKeys.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.UserPublicKeys.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -45297,7 +45297,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.UserPublicKeys.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.UserPublicKeys.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -45309,7 +45309,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.UserPublicKeys.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.UserPublicKeys.getListAttribute.parameter.terraformAttribute"></a>
@@ -45321,7 +45321,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.UserPublicKeys.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.UserPublicKeys.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -45333,7 +45333,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.UserPublicKeys.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.UserPublicKeys.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -45345,7 +45345,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.UserPublicKeys.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.UserPublicKeys.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -45357,7 +45357,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.UserPublicKeys.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.UserPublicKeys.getStringAttribute.parameter.terraformAttribute"></a>
@@ -45369,7 +45369,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.UserPublicKeys.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.UserPublicKeys.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -45381,7 +45381,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.UserPublicKeys.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.UserPublicKeys.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -45393,13 +45393,13 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetRsaPublicKey` <a name="resetRsaPublicKey" id="@cdktf/provider-snowflake.UserPublicKeys.resetRsaPublicKey"></a>
 
 ```typescript
-public resetRsaPublicKey()
+public resetRsaPublicKey(): void
 ```
 
 ##### `resetRsaPublicKey2` <a name="resetRsaPublicKey2" id="@cdktf/provider-snowflake.UserPublicKeys.resetRsaPublicKey2"></a>
 
 ```typescript
-public resetRsaPublicKey2()
+public resetRsaPublicKey2(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -45727,7 +45727,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.View.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -45735,7 +45735,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.View.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.View.addOverride.parameter.path"></a>
@@ -45753,7 +45753,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.View.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -45769,7 +45769,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.View.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -45777,13 +45777,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.View.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.View.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -45791,7 +45791,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.View.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.View.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -45803,7 +45803,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.View.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.View.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -45815,7 +45815,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.View.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.View.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -45827,7 +45827,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.View.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.View.getListAttribute.parameter.terraformAttribute"></a>
@@ -45839,7 +45839,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.View.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.View.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -45851,7 +45851,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.View.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.View.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -45863,7 +45863,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.View.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.View.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -45875,7 +45875,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.View.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.View.getStringAttribute.parameter.terraformAttribute"></a>
@@ -45887,7 +45887,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.View.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.View.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -45899,7 +45899,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.View.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.View.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -45911,25 +45911,25 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetComment` <a name="resetComment" id="@cdktf/provider-snowflake.View.resetComment"></a>
 
 ```typescript
-public resetComment()
+public resetComment(): void
 ```
 
 ##### `resetIsSecure` <a name="resetIsSecure" id="@cdktf/provider-snowflake.View.resetIsSecure"></a>
 
 ```typescript
-public resetIsSecure()
+public resetIsSecure(): void
 ```
 
 ##### `resetOrReplace` <a name="resetOrReplace" id="@cdktf/provider-snowflake.View.resetOrReplace"></a>
 
 ```typescript
-public resetOrReplace()
+public resetOrReplace(): void
 ```
 
 ##### `resetTag` <a name="resetTag" id="@cdktf/provider-snowflake.View.resetTag"></a>
 
 ```typescript
-public resetTag()
+public resetTag(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -46370,7 +46370,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.ViewGrant.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -46378,7 +46378,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.ViewGrant.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.ViewGrant.addOverride.parameter.path"></a>
@@ -46396,7 +46396,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.ViewGrant.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -46412,7 +46412,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.ViewGrant.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -46420,13 +46420,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.ViewGrant.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.ViewGrant.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -46434,7 +46434,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.ViewGrant.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ViewGrant.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -46446,7 +46446,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.ViewGrant.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ViewGrant.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -46458,7 +46458,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.ViewGrant.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ViewGrant.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -46470,7 +46470,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.ViewGrant.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ViewGrant.getListAttribute.parameter.terraformAttribute"></a>
@@ -46482,7 +46482,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.ViewGrant.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ViewGrant.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -46494,7 +46494,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.ViewGrant.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ViewGrant.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -46506,7 +46506,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.ViewGrant.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ViewGrant.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -46518,7 +46518,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.ViewGrant.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ViewGrant.getStringAttribute.parameter.terraformAttribute"></a>
@@ -46530,7 +46530,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.ViewGrant.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ViewGrant.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -46542,7 +46542,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.ViewGrant.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ViewGrant.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -46554,43 +46554,43 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetOnFuture` <a name="resetOnFuture" id="@cdktf/provider-snowflake.ViewGrant.resetOnFuture"></a>
 
 ```typescript
-public resetOnFuture()
+public resetOnFuture(): void
 ```
 
 ##### `resetPrivilege` <a name="resetPrivilege" id="@cdktf/provider-snowflake.ViewGrant.resetPrivilege"></a>
 
 ```typescript
-public resetPrivilege()
+public resetPrivilege(): void
 ```
 
 ##### `resetRoles` <a name="resetRoles" id="@cdktf/provider-snowflake.ViewGrant.resetRoles"></a>
 
 ```typescript
-public resetRoles()
+public resetRoles(): void
 ```
 
 ##### `resetSchemaName` <a name="resetSchemaName" id="@cdktf/provider-snowflake.ViewGrant.resetSchemaName"></a>
 
 ```typescript
-public resetSchemaName()
+public resetSchemaName(): void
 ```
 
 ##### `resetShares` <a name="resetShares" id="@cdktf/provider-snowflake.ViewGrant.resetShares"></a>
 
 ```typescript
-public resetShares()
+public resetShares(): void
 ```
 
 ##### `resetViewName` <a name="resetViewName" id="@cdktf/provider-snowflake.ViewGrant.resetViewName"></a>
 
 ```typescript
-public resetViewName()
+public resetViewName(): void
 ```
 
 ##### `resetWithGrantOption` <a name="resetWithGrantOption" id="@cdktf/provider-snowflake.ViewGrant.resetWithGrantOption"></a>
 
 ```typescript
-public resetWithGrantOption()
+public resetWithGrantOption(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -47038,7 +47038,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.Warehouse.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -47046,7 +47046,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.Warehouse.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.Warehouse.addOverride.parameter.path"></a>
@@ -47064,7 +47064,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.Warehouse.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -47080,7 +47080,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.Warehouse.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -47088,13 +47088,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.Warehouse.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.Warehouse.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -47102,7 +47102,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.Warehouse.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Warehouse.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -47114,7 +47114,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.Warehouse.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Warehouse.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -47126,7 +47126,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.Warehouse.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Warehouse.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -47138,7 +47138,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.Warehouse.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Warehouse.getListAttribute.parameter.terraformAttribute"></a>
@@ -47150,7 +47150,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.Warehouse.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Warehouse.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -47162,7 +47162,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.Warehouse.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Warehouse.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -47174,7 +47174,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.Warehouse.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Warehouse.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -47186,7 +47186,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.Warehouse.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Warehouse.getStringAttribute.parameter.terraformAttribute"></a>
@@ -47198,7 +47198,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.Warehouse.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Warehouse.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -47210,7 +47210,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.Warehouse.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.Warehouse.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -47222,85 +47222,85 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetAutoResume` <a name="resetAutoResume" id="@cdktf/provider-snowflake.Warehouse.resetAutoResume"></a>
 
 ```typescript
-public resetAutoResume()
+public resetAutoResume(): void
 ```
 
 ##### `resetAutoSuspend` <a name="resetAutoSuspend" id="@cdktf/provider-snowflake.Warehouse.resetAutoSuspend"></a>
 
 ```typescript
-public resetAutoSuspend()
+public resetAutoSuspend(): void
 ```
 
 ##### `resetComment` <a name="resetComment" id="@cdktf/provider-snowflake.Warehouse.resetComment"></a>
 
 ```typescript
-public resetComment()
+public resetComment(): void
 ```
 
 ##### `resetInitiallySuspended` <a name="resetInitiallySuspended" id="@cdktf/provider-snowflake.Warehouse.resetInitiallySuspended"></a>
 
 ```typescript
-public resetInitiallySuspended()
+public resetInitiallySuspended(): void
 ```
 
 ##### `resetMaxClusterCount` <a name="resetMaxClusterCount" id="@cdktf/provider-snowflake.Warehouse.resetMaxClusterCount"></a>
 
 ```typescript
-public resetMaxClusterCount()
+public resetMaxClusterCount(): void
 ```
 
 ##### `resetMaxConcurrencyLevel` <a name="resetMaxConcurrencyLevel" id="@cdktf/provider-snowflake.Warehouse.resetMaxConcurrencyLevel"></a>
 
 ```typescript
-public resetMaxConcurrencyLevel()
+public resetMaxConcurrencyLevel(): void
 ```
 
 ##### `resetMinClusterCount` <a name="resetMinClusterCount" id="@cdktf/provider-snowflake.Warehouse.resetMinClusterCount"></a>
 
 ```typescript
-public resetMinClusterCount()
+public resetMinClusterCount(): void
 ```
 
 ##### `resetResourceMonitor` <a name="resetResourceMonitor" id="@cdktf/provider-snowflake.Warehouse.resetResourceMonitor"></a>
 
 ```typescript
-public resetResourceMonitor()
+public resetResourceMonitor(): void
 ```
 
 ##### `resetScalingPolicy` <a name="resetScalingPolicy" id="@cdktf/provider-snowflake.Warehouse.resetScalingPolicy"></a>
 
 ```typescript
-public resetScalingPolicy()
+public resetScalingPolicy(): void
 ```
 
 ##### `resetStatementQueuedTimeoutInSeconds` <a name="resetStatementQueuedTimeoutInSeconds" id="@cdktf/provider-snowflake.Warehouse.resetStatementQueuedTimeoutInSeconds"></a>
 
 ```typescript
-public resetStatementQueuedTimeoutInSeconds()
+public resetStatementQueuedTimeoutInSeconds(): void
 ```
 
 ##### `resetStatementTimeoutInSeconds` <a name="resetStatementTimeoutInSeconds" id="@cdktf/provider-snowflake.Warehouse.resetStatementTimeoutInSeconds"></a>
 
 ```typescript
-public resetStatementTimeoutInSeconds()
+public resetStatementTimeoutInSeconds(): void
 ```
 
 ##### `resetTag` <a name="resetTag" id="@cdktf/provider-snowflake.Warehouse.resetTag"></a>
 
 ```typescript
-public resetTag()
+public resetTag(): void
 ```
 
 ##### `resetWaitForProvisioning` <a name="resetWaitForProvisioning" id="@cdktf/provider-snowflake.Warehouse.resetWaitForProvisioning"></a>
 
 ```typescript
-public resetWaitForProvisioning()
+public resetWaitForProvisioning(): void
 ```
 
 ##### `resetWarehouseSize` <a name="resetWarehouseSize" id="@cdktf/provider-snowflake.Warehouse.resetWarehouseSize"></a>
 
 ```typescript
-public resetWarehouseSize()
+public resetWarehouseSize(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -47891,7 +47891,7 @@ Must be unique amongst siblings in the same scope
 ##### `toString` <a name="toString" id="@cdktf/provider-snowflake.WarehouseGrant.toString"></a>
 
 ```typescript
-public toString()
+public toString(): string
 ```
 
 Returns a string representation of this construct.
@@ -47899,7 +47899,7 @@ Returns a string representation of this construct.
 ##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.WarehouseGrant.addOverride"></a>
 
 ```typescript
-public addOverride(path: string, value: any)
+public addOverride(path: string, value: any): void
 ```
 
 ###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.WarehouseGrant.addOverride.parameter.path"></a>
@@ -47917,7 +47917,7 @@ public addOverride(path: string, value: any)
 ##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.WarehouseGrant.overrideLogicalId"></a>
 
 ```typescript
-public overrideLogicalId(newLogicalId: string)
+public overrideLogicalId(newLogicalId: string): void
 ```
 
 Overrides the auto-generated logical ID with a specific ID.
@@ -47933,7 +47933,7 @@ The new logical ID to use for this stack element.
 ##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.WarehouseGrant.resetOverrideLogicalId"></a>
 
 ```typescript
-public resetOverrideLogicalId()
+public resetOverrideLogicalId(): void
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -47941,13 +47941,13 @@ Resets a previously passed logical Id to use the auto-generated logical id again
 ##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.WarehouseGrant.toMetadata"></a>
 
 ```typescript
-public toMetadata()
+public toMetadata(): any
 ```
 
 ##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.WarehouseGrant.toTerraform"></a>
 
 ```typescript
-public toTerraform()
+public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
@@ -47955,7 +47955,7 @@ Adds this resource to the terraform JSON output.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.WarehouseGrant.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.WarehouseGrant.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -47967,7 +47967,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.WarehouseGrant.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.WarehouseGrant.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -47979,7 +47979,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.WarehouseGrant.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.WarehouseGrant.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -47991,7 +47991,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.WarehouseGrant.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.WarehouseGrant.getListAttribute.parameter.terraformAttribute"></a>
@@ -48003,7 +48003,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.WarehouseGrant.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.WarehouseGrant.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -48015,7 +48015,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.WarehouseGrant.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.WarehouseGrant.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -48027,7 +48027,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.WarehouseGrant.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.WarehouseGrant.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -48039,7 +48039,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.WarehouseGrant.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.WarehouseGrant.getStringAttribute.parameter.terraformAttribute"></a>
@@ -48051,7 +48051,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.WarehouseGrant.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.WarehouseGrant.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -48063,7 +48063,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.WarehouseGrant.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(terraformAttribute: string)
+public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.WarehouseGrant.interpolationForAttribute.parameter.terraformAttribute"></a>
@@ -48075,19 +48075,19 @@ public interpolationForAttribute(terraformAttribute: string)
 ##### `resetPrivilege` <a name="resetPrivilege" id="@cdktf/provider-snowflake.WarehouseGrant.resetPrivilege"></a>
 
 ```typescript
-public resetPrivilege()
+public resetPrivilege(): void
 ```
 
 ##### `resetRoles` <a name="resetRoles" id="@cdktf/provider-snowflake.WarehouseGrant.resetRoles"></a>
 
 ```typescript
-public resetRoles()
+public resetRoles(): void
 ```
 
 ##### `resetWithGrantOption` <a name="resetWithGrantOption" id="@cdktf/provider-snowflake.WarehouseGrant.resetWithGrantOption"></a>
 
 ```typescript
-public resetWithGrantOption()
+public resetWithGrantOption(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -62016,7 +62016,7 @@ new DataSnowflakeExternalFunctionsExternalFunctions(terraformResource: IInterpol
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -62028,7 +62028,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -62040,7 +62040,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -62052,7 +62052,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.getListAttribute.parameter.terraformAttribute"></a>
@@ -62064,7 +62064,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -62076,7 +62076,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -62088,7 +62088,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -62100,7 +62100,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.getStringAttribute.parameter.terraformAttribute"></a>
@@ -62112,7 +62112,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -62124,7 +62124,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(property: string)
+public interpolationForAttribute(property: string): IResolvable
 ```
 
 ###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.interpolationForAttribute.parameter.property"></a>
@@ -62260,7 +62260,7 @@ new DataSnowflakeExternalTablesExternalTables(terraformResource: IInterpolatingP
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -62272,7 +62272,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -62284,7 +62284,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -62296,7 +62296,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.getListAttribute.parameter.terraformAttribute"></a>
@@ -62308,7 +62308,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -62320,7 +62320,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -62332,7 +62332,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -62344,7 +62344,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.getStringAttribute.parameter.terraformAttribute"></a>
@@ -62356,7 +62356,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -62368,7 +62368,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(property: string)
+public interpolationForAttribute(property: string): IResolvable
 ```
 
 ###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.interpolationForAttribute.parameter.property"></a>
@@ -62493,7 +62493,7 @@ new DataSnowflakeFileFormatsFileFormats(terraformResource: IInterpolatingParent,
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -62505,7 +62505,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -62517,7 +62517,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -62529,7 +62529,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.getListAttribute.parameter.terraformAttribute"></a>
@@ -62541,7 +62541,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -62553,7 +62553,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -62565,7 +62565,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -62577,7 +62577,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.getStringAttribute.parameter.terraformAttribute"></a>
@@ -62589,7 +62589,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -62601,7 +62601,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(property: string)
+public interpolationForAttribute(property: string): IResolvable
 ```
 
 ###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.interpolationForAttribute.parameter.property"></a>
@@ -62737,7 +62737,7 @@ new DataSnowflakeFunctionsFunctions(terraformResource: IInterpolatingParent, ter
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -62749,7 +62749,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -62761,7 +62761,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -62773,7 +62773,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.getListAttribute.parameter.terraformAttribute"></a>
@@ -62785,7 +62785,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -62797,7 +62797,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -62809,7 +62809,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -62821,7 +62821,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.getStringAttribute.parameter.terraformAttribute"></a>
@@ -62833,7 +62833,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -62845,7 +62845,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(property: string)
+public interpolationForAttribute(property: string): IResolvable
 ```
 
 ###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.interpolationForAttribute.parameter.property"></a>
@@ -62992,7 +62992,7 @@ new DataSnowflakeMaskingPoliciesMaskingPolicies(terraformResource: IInterpolatin
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -63004,7 +63004,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -63016,7 +63016,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -63028,7 +63028,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.getListAttribute.parameter.terraformAttribute"></a>
@@ -63040,7 +63040,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -63052,7 +63052,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -63064,7 +63064,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -63076,7 +63076,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.getStringAttribute.parameter.terraformAttribute"></a>
@@ -63088,7 +63088,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -63100,7 +63100,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(property: string)
+public interpolationForAttribute(property: string): IResolvable
 ```
 
 ###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.interpolationForAttribute.parameter.property"></a>
@@ -63236,7 +63236,7 @@ new DataSnowflakeMaterializedViewsMaterializedViews(terraformResource: IInterpol
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -63248,7 +63248,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -63260,7 +63260,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -63272,7 +63272,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.getListAttribute.parameter.terraformAttribute"></a>
@@ -63284,7 +63284,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -63296,7 +63296,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -63308,7 +63308,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -63320,7 +63320,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.getStringAttribute.parameter.terraformAttribute"></a>
@@ -63332,7 +63332,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -63344,7 +63344,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(property: string)
+public interpolationForAttribute(property: string): IResolvable
 ```
 
 ###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.interpolationForAttribute.parameter.property"></a>
@@ -63469,7 +63469,7 @@ new DataSnowflakePipesPipes(terraformResource: IInterpolatingParent, terraformAt
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -63481,7 +63481,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -63493,7 +63493,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -63505,7 +63505,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes.getListAttribute.parameter.terraformAttribute"></a>
@@ -63517,7 +63517,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -63529,7 +63529,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -63541,7 +63541,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -63553,7 +63553,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes.getStringAttribute.parameter.terraformAttribute"></a>
@@ -63565,7 +63565,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -63577,7 +63577,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(property: string)
+public interpolationForAttribute(property: string): IResolvable
 ```
 
 ###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes.interpolationForAttribute.parameter.property"></a>
@@ -63713,7 +63713,7 @@ new DataSnowflakeProceduresProcedures(terraformResource: IInterpolatingParent, t
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -63725,7 +63725,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -63737,7 +63737,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -63749,7 +63749,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.getListAttribute.parameter.terraformAttribute"></a>
@@ -63761,7 +63761,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -63773,7 +63773,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -63785,7 +63785,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -63797,7 +63797,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.getStringAttribute.parameter.terraformAttribute"></a>
@@ -63809,7 +63809,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -63821,7 +63821,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(property: string)
+public interpolationForAttribute(property: string): IResolvable
 ```
 
 ###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.interpolationForAttribute.parameter.property"></a>
@@ -63968,7 +63968,7 @@ new DataSnowflakeResourceMonitorsResourceMonitors(terraformResource: IInterpolat
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -63980,7 +63980,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -63992,7 +63992,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -64004,7 +64004,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.getListAttribute.parameter.terraformAttribute"></a>
@@ -64016,7 +64016,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -64028,7 +64028,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -64040,7 +64040,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -64052,7 +64052,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.getStringAttribute.parameter.terraformAttribute"></a>
@@ -64064,7 +64064,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -64076,7 +64076,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(property: string)
+public interpolationForAttribute(property: string): IResolvable
 ```
 
 ###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.interpolationForAttribute.parameter.property"></a>
@@ -64201,7 +64201,7 @@ new DataSnowflakeRowAccessPoliciesRowAccessPolicies(terraformResource: IInterpol
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -64213,7 +64213,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -64225,7 +64225,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -64237,7 +64237,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.getListAttribute.parameter.terraformAttribute"></a>
@@ -64249,7 +64249,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -64261,7 +64261,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -64273,7 +64273,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -64285,7 +64285,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.getStringAttribute.parameter.terraformAttribute"></a>
@@ -64297,7 +64297,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -64309,7 +64309,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(property: string)
+public interpolationForAttribute(property: string): IResolvable
 ```
 
 ###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.interpolationForAttribute.parameter.property"></a>
@@ -64434,7 +64434,7 @@ new DataSnowflakeSchemasSchemas(terraformResource: IInterpolatingParent, terrafo
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -64446,7 +64446,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -64458,7 +64458,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -64470,7 +64470,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.getListAttribute.parameter.terraformAttribute"></a>
@@ -64482,7 +64482,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -64494,7 +64494,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -64506,7 +64506,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -64518,7 +64518,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.getStringAttribute.parameter.terraformAttribute"></a>
@@ -64530,7 +64530,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -64542,7 +64542,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(property: string)
+public interpolationForAttribute(property: string): IResolvable
 ```
 
 ###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.interpolationForAttribute.parameter.property"></a>
@@ -64656,7 +64656,7 @@ new DataSnowflakeSequencesSequences(terraformResource: IInterpolatingParent, ter
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -64668,7 +64668,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -64680,7 +64680,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -64692,7 +64692,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.getListAttribute.parameter.terraformAttribute"></a>
@@ -64704,7 +64704,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -64716,7 +64716,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -64728,7 +64728,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -64740,7 +64740,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.getStringAttribute.parameter.terraformAttribute"></a>
@@ -64752,7 +64752,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -64764,7 +64764,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(property: string)
+public interpolationForAttribute(property: string): IResolvable
 ```
 
 ###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.interpolationForAttribute.parameter.property"></a>
@@ -64889,7 +64889,7 @@ new DataSnowflakeStagesStages(terraformResource: IInterpolatingParent, terraform
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -64901,7 +64901,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -64913,7 +64913,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -64925,7 +64925,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages.getListAttribute.parameter.terraformAttribute"></a>
@@ -64937,7 +64937,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -64949,7 +64949,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -64961,7 +64961,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -64973,7 +64973,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages.getStringAttribute.parameter.terraformAttribute"></a>
@@ -64985,7 +64985,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -64997,7 +64997,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(property: string)
+public interpolationForAttribute(property: string): IResolvable
 ```
 
 ###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages.interpolationForAttribute.parameter.property"></a>
@@ -65133,7 +65133,7 @@ new DataSnowflakeStorageIntegrationsStorageIntegrations(terraformResource: IInte
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -65145,7 +65145,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -65157,7 +65157,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -65169,7 +65169,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.getListAttribute.parameter.terraformAttribute"></a>
@@ -65181,7 +65181,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -65193,7 +65193,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -65205,7 +65205,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -65217,7 +65217,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.getStringAttribute.parameter.terraformAttribute"></a>
@@ -65229,7 +65229,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -65241,7 +65241,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(property: string)
+public interpolationForAttribute(property: string): IResolvable
 ```
 
 ###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.interpolationForAttribute.parameter.property"></a>
@@ -65366,7 +65366,7 @@ new DataSnowflakeStreamsStreams(terraformResource: IInterpolatingParent, terrafo
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -65378,7 +65378,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -65390,7 +65390,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -65402,7 +65402,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.getListAttribute.parameter.terraformAttribute"></a>
@@ -65414,7 +65414,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -65426,7 +65426,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -65438,7 +65438,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -65450,7 +65450,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.getStringAttribute.parameter.terraformAttribute"></a>
@@ -65462,7 +65462,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -65474,7 +65474,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(property: string)
+public interpolationForAttribute(property: string): IResolvable
 ```
 
 ###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.interpolationForAttribute.parameter.property"></a>
@@ -65610,7 +65610,7 @@ new DataSnowflakeTablesTables(terraformResource: IInterpolatingParent, terraform
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -65622,7 +65622,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -65634,7 +65634,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -65646,7 +65646,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables.getListAttribute.parameter.terraformAttribute"></a>
@@ -65658,7 +65658,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -65670,7 +65670,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -65682,7 +65682,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -65694,7 +65694,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables.getStringAttribute.parameter.terraformAttribute"></a>
@@ -65706,7 +65706,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -65718,7 +65718,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(property: string)
+public interpolationForAttribute(property: string): IResolvable
 ```
 
 ###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables.interpolationForAttribute.parameter.property"></a>
@@ -65843,7 +65843,7 @@ new DataSnowflakeTasksTasks(terraformResource: IInterpolatingParent, terraformAt
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -65855,7 +65855,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -65867,7 +65867,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -65879,7 +65879,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks.getListAttribute.parameter.terraformAttribute"></a>
@@ -65891,7 +65891,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -65903,7 +65903,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -65915,7 +65915,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -65927,7 +65927,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks.getStringAttribute.parameter.terraformAttribute"></a>
@@ -65939,7 +65939,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -65951,7 +65951,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(property: string)
+public interpolationForAttribute(property: string): IResolvable
 ```
 
 ###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks.interpolationForAttribute.parameter.property"></a>
@@ -66087,7 +66087,7 @@ new DataSnowflakeViewsViews(terraformResource: IInterpolatingParent, terraformAt
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -66099,7 +66099,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -66111,7 +66111,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -66123,7 +66123,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews.getListAttribute.parameter.terraformAttribute"></a>
@@ -66135,7 +66135,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -66147,7 +66147,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -66159,7 +66159,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -66171,7 +66171,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews.getStringAttribute.parameter.terraformAttribute"></a>
@@ -66183,7 +66183,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -66195,7 +66195,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(property: string)
+public interpolationForAttribute(property: string): IResolvable
 ```
 
 ###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews.interpolationForAttribute.parameter.property"></a>
@@ -66320,7 +66320,7 @@ new DataSnowflakeWarehousesWarehouses(terraformResource: IInterpolatingParent, t
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -66332,7 +66332,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -66344,7 +66344,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -66356,7 +66356,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.getListAttribute.parameter.terraformAttribute"></a>
@@ -66368,7 +66368,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -66380,7 +66380,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -66392,7 +66392,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -66404,7 +66404,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.getStringAttribute.parameter.terraformAttribute"></a>
@@ -66416,7 +66416,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -66428,7 +66428,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(property: string)
+public interpolationForAttribute(property: string): IResolvable
 ```
 
 ###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.interpolationForAttribute.parameter.property"></a>
@@ -66577,7 +66577,7 @@ True if this is a block, false if it's a list.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.TableColumnDefaultOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TableColumnDefaultOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -66589,7 +66589,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.TableColumnDefaultOutputReference.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TableColumnDefaultOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -66601,7 +66601,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.TableColumnDefaultOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TableColumnDefaultOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -66613,7 +66613,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.TableColumnDefaultOutputReference.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TableColumnDefaultOutputReference.getListAttribute.parameter.terraformAttribute"></a>
@@ -66625,7 +66625,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.TableColumnDefaultOutputReference.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TableColumnDefaultOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -66637,7 +66637,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.TableColumnDefaultOutputReference.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TableColumnDefaultOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -66649,7 +66649,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.TableColumnDefaultOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TableColumnDefaultOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -66661,7 +66661,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.TableColumnDefaultOutputReference.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TableColumnDefaultOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
@@ -66673,7 +66673,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.TableColumnDefaultOutputReference.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TableColumnDefaultOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -66685,7 +66685,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.TableColumnDefaultOutputReference.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(property: string)
+public interpolationForAttribute(property: string): IResolvable
 ```
 
 ###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.TableColumnDefaultOutputReference.interpolationForAttribute.parameter.property"></a>
@@ -66697,19 +66697,19 @@ public interpolationForAttribute(property: string)
 ##### `resetConstant` <a name="resetConstant" id="@cdktf/provider-snowflake.TableColumnDefaultOutputReference.resetConstant"></a>
 
 ```typescript
-public resetConstant()
+public resetConstant(): void
 ```
 
 ##### `resetExpression` <a name="resetExpression" id="@cdktf/provider-snowflake.TableColumnDefaultOutputReference.resetExpression"></a>
 
 ```typescript
-public resetExpression()
+public resetExpression(): void
 ```
 
 ##### `resetSequence` <a name="resetSequence" id="@cdktf/provider-snowflake.TableColumnDefaultOutputReference.resetSequence"></a>
 
 ```typescript
-public resetSequence()
+public resetSequence(): void
 ```
 
 
@@ -66862,7 +66862,7 @@ True if this is a block, false if it's a list.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.TableColumnIdentityOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TableColumnIdentityOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -66874,7 +66874,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.TableColumnIdentityOutputReference.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TableColumnIdentityOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -66886,7 +66886,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.TableColumnIdentityOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TableColumnIdentityOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -66898,7 +66898,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.TableColumnIdentityOutputReference.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TableColumnIdentityOutputReference.getListAttribute.parameter.terraformAttribute"></a>
@@ -66910,7 +66910,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.TableColumnIdentityOutputReference.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TableColumnIdentityOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -66922,7 +66922,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.TableColumnIdentityOutputReference.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TableColumnIdentityOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -66934,7 +66934,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.TableColumnIdentityOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TableColumnIdentityOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -66946,7 +66946,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.TableColumnIdentityOutputReference.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TableColumnIdentityOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
@@ -66958,7 +66958,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.TableColumnIdentityOutputReference.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TableColumnIdentityOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -66970,7 +66970,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.TableColumnIdentityOutputReference.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(property: string)
+public interpolationForAttribute(property: string): IResolvable
 ```
 
 ###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.TableColumnIdentityOutputReference.interpolationForAttribute.parameter.property"></a>
@@ -66982,13 +66982,13 @@ public interpolationForAttribute(property: string)
 ##### `resetStartNum` <a name="resetStartNum" id="@cdktf/provider-snowflake.TableColumnIdentityOutputReference.resetStartNum"></a>
 
 ```typescript
-public resetStartNum()
+public resetStartNum(): void
 ```
 
 ##### `resetStepNum` <a name="resetStepNum" id="@cdktf/provider-snowflake.TableColumnIdentityOutputReference.resetStepNum"></a>
 
 ```typescript
-public resetStepNum()
+public resetStepNum(): void
 ```
 
 
@@ -67118,7 +67118,7 @@ True if this is a block, false if it's a list.
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.TablePrimaryKeyOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
-public getAnyMapAttribute(terraformAttribute: string)
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TablePrimaryKeyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
@@ -67130,7 +67130,7 @@ public getAnyMapAttribute(terraformAttribute: string)
 ##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.TablePrimaryKeyOutputReference.getBooleanAttribute"></a>
 
 ```typescript
-public getBooleanAttribute(terraformAttribute: string)
+public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TablePrimaryKeyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
@@ -67142,7 +67142,7 @@ public getBooleanAttribute(terraformAttribute: string)
 ##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.TablePrimaryKeyOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
-public getBooleanMapAttribute(terraformAttribute: string)
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TablePrimaryKeyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
@@ -67154,7 +67154,7 @@ public getBooleanMapAttribute(terraformAttribute: string)
 ##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.TablePrimaryKeyOutputReference.getListAttribute"></a>
 
 ```typescript
-public getListAttribute(terraformAttribute: string)
+public getListAttribute(terraformAttribute: string): string[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TablePrimaryKeyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
@@ -67166,7 +67166,7 @@ public getListAttribute(terraformAttribute: string)
 ##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.TablePrimaryKeyOutputReference.getNumberAttribute"></a>
 
 ```typescript
-public getNumberAttribute(terraformAttribute: string)
+public getNumberAttribute(terraformAttribute: string): number
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TablePrimaryKeyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
@@ -67178,7 +67178,7 @@ public getNumberAttribute(terraformAttribute: string)
 ##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.TablePrimaryKeyOutputReference.getNumberListAttribute"></a>
 
 ```typescript
-public getNumberListAttribute(terraformAttribute: string)
+public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TablePrimaryKeyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
@@ -67190,7 +67190,7 @@ public getNumberListAttribute(terraformAttribute: string)
 ##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.TablePrimaryKeyOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
-public getNumberMapAttribute(terraformAttribute: string)
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TablePrimaryKeyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
@@ -67202,7 +67202,7 @@ public getNumberMapAttribute(terraformAttribute: string)
 ##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.TablePrimaryKeyOutputReference.getStringAttribute"></a>
 
 ```typescript
-public getStringAttribute(terraformAttribute: string)
+public getStringAttribute(terraformAttribute: string): string
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TablePrimaryKeyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
@@ -67214,7 +67214,7 @@ public getStringAttribute(terraformAttribute: string)
 ##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.TablePrimaryKeyOutputReference.getStringMapAttribute"></a>
 
 ```typescript
-public getStringMapAttribute(terraformAttribute: string)
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TablePrimaryKeyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
@@ -67226,7 +67226,7 @@ public getStringMapAttribute(terraformAttribute: string)
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.TablePrimaryKeyOutputReference.interpolationForAttribute"></a>
 
 ```typescript
-public interpolationForAttribute(property: string)
+public interpolationForAttribute(property: string): IResolvable
 ```
 
 ###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.TablePrimaryKeyOutputReference.interpolationForAttribute.parameter.property"></a>
@@ -67238,7 +67238,7 @@ public interpolationForAttribute(property: string)
 ##### `resetName` <a name="resetName" id="@cdktf/provider-snowflake.TablePrimaryKeyOutputReference.resetName"></a>
 
 ```typescript
-public resetName()
+public resetName(): void
 ```
 
 
