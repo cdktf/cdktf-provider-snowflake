@@ -2172,10 +2172,10 @@ jsii-diff@^1.54.0:
     typescript "~3.9.10"
     yargs "^16.2.0"
 
-jsii-docgen@^6.1.15:
-  version "6.1.15"
-  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-6.1.15.tgz#54152f7b80dce31ef36736a9a7078a928dda9ba0"
-  integrity sha512-x5iBa5UgY5yj6sxr4QL7AOm84eTwhIuilv4bY/3VmA5aD/9qQpVJCCz0awV/z0fpy4XlYm2wSbCMfPFKmn5TCw==
+jsii-docgen@^6.1.16:
+  version "6.1.16"
+  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-6.1.16.tgz#dc5a086d240e2ff8cec73438bd5a96602895e5f7"
+  integrity sha512-NcPNdIzmOZog9L7j8+41cVdxG/YYbb8jGbSZyh5dYKRLwvmYFXM5uf865V+YmKfwvph8HicinR/+qoNMlPjweQ==
   dependencies:
     "@jsii/spec" "^1.54.0"
     case "^1.6.3"
@@ -4243,9 +4243,9 @@ yargs-parser@^20.2.2, yargs-parser@^20.2.3:
   integrity sha512-y11nGElTIV+CT3Zv9t7VKl+Q3hTQoT9a1Qzezhhl6Rp21gJ/IVTW7Z3y9EWXhuUBC2Shnf+DX0antecpAwSP8w==
 
 yargs-parser@^21.0.0:
-  version "21.0.0"
-  resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-21.0.0.tgz#a485d3966be4317426dd56bdb6a30131b281dc55"
-  integrity sha512-z9kApYUOCwoeZ78rfRYYWdiU/iNL6mwwYlkkZfJoyMR1xps+NEBX5X7XmRpxkZHhXJ6+Ey00IwKxBBSW9FIjyA==
+  version "21.0.1"
+  resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-21.0.1.tgz#0267f286c877a4f0f728fceb6f8a3e4cb95c6e35"
+  integrity sha512-9BK1jFpLzJROCI5TzwZL/TU4gqjK5xiHV/RfWLOahrjAko/e4DJkRDZQXfvqAsiZzzYhgAzbgz6lg48jcm4GLg==
 
 yargs@^15.4.1:
   version "15.4.1"
