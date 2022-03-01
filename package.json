@@ -50,11 +50,11 @@
     "dot-prop": "^5.2.0",
     "jsii": "^1.53.0",
     "jsii-diff": "^1.54.0",
-    "jsii-docgen": "^6.1.16",
+    "jsii-docgen": "^6.1.17",
     "npm-check-updates": "^12",
     "projen": "^0.52.31",
     "standard-version": "^9",
-    "typescript": "^4.5.5"
+    "typescript": "^4.6.2"
   },
   "peerDependencies": {
     "cdktf": "^0.9",
