@@ -876,9 +876,9 @@ constant-case@^3.0.4:
     upper-case "^2.0.2"
 
 constructs@^10.0.0, constructs@^10.0.25:
-  version "10.0.80"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.0.80.tgz#5fef0a46ec8175d26d4430eea7f99ba36b88c69d"
-  integrity sha512-UIcVdxoQCOnrf/u7LK0y1sa2vFcbFYX4+gqoDVN1O3nXG6vpMCxLTi26O6KmtJQil+7W01pjvSIjWLK6V322Bg==
+  version "10.0.81"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.0.81.tgz#fc8563c5196e7c2b7ca3c9fde6e47fc0a17848bb"
+  integrity sha512-5+3bCzKPfcxo8ZQ3GOaiOpDmIux8PZXgkXqNwEopjTRCypcMWMt1AT8ORHPVht3Iqsj36/qG3wV72WaiCKe3mQ==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
@@ -2158,10 +2158,10 @@ jsii-diff@^1.54.0:
     typescript "~3.9.10"
     yargs "^16.2.0"
 
-jsii-docgen@^6.1.22:
-  version "6.1.22"
-  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-6.1.22.tgz#cd2c05c082aebd365f4f435733fad4cf40fad0dd"
-  integrity sha512-NFCren8u+c4QjMSma1yPn+z3eFNAiWJ6/qXNeY7N9oi5e827toLLdV9kKVroI+tb1VlUD1i1Cd5LOW3GwLQDyA==
+jsii-docgen@^6.1.23:
+  version "6.1.23"
+  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-6.1.23.tgz#6b273942202dccbcbd9c8365adec00e8c0aefbcb"
+  integrity sha512-LHewRf1t2W2FmeuCU3U+TJSsfP0hotIHw+Ui6ot7i8Rmr2ju9jrowTOa3lpgb1Aky6lQpVDuOym6SMx3+vqVVg==
   dependencies:
     "@jsii/spec" "^1.54.0"
     case "^1.6.3"
@@ -2224,9 +2224,9 @@ jsii-rosetta@^1.54.0:
     yargs "^16.2.0"
 
 jsii-srcmak@^0.1.482:
-  version "0.1.493"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.493.tgz#b01459c3a68f2175dfab1e0a742a7f8108572e92"
-  integrity sha512-GHQvqr3opGK5vuFJjhAIrkEw+IRPoZNFSA2fnMMWJFjqgT+gREYpaO721pB0SkKoxJVzfBv6LCo4weYoO+JRyg==
+  version "0.1.495"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.495.tgz#aa7b9decbe61151ff65226c0539be7fe7383b212"
+  integrity sha512-zAfFT/y52spvqFZJ5UDB29eAiyXvLce1ouTY/7GtJbRzlNxfwDOpmwZfNtnR6KQTfeW9DWtl6zJQQscIzdn38g==
   dependencies:
     fs-extra "^9.1.0"
     jsii "^1.54.0"
