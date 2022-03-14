@@ -1294,6 +1294,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.Database.resetComment">resetComment</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Database.resetDataRetentionTimeInDays">resetDataRetentionTimeInDays</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Database.resetFromDatabase">resetFromDatabase</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.Database.resetFromReplica">resetFromReplica</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Database.resetFromShare">resetFromShare</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Database.resetTag">resetTag</a></code> | *No description.* |
 
@@ -1501,6 +1502,12 @@ public resetDataRetentionTimeInDays(): void
 public resetFromDatabase(): void
 ```
 
+##### `resetFromReplica` <a name="resetFromReplica" id="@cdktf/provider-snowflake.Database.resetFromReplica"></a>
+
+```typescript
+public resetFromReplica(): void
+```
+
 ##### `resetFromShare` <a name="resetFromShare" id="@cdktf/provider-snowflake.Database.resetFromShare"></a>
 
 ```typescript
@@ -1558,12 +1565,14 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.Database.property.commentInput">commentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Database.property.dataRetentionTimeInDaysInput">dataRetentionTimeInDaysInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Database.property.fromDatabaseInput">fromDatabaseInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.Database.property.fromReplicaInput">fromReplicaInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Database.property.fromShareInput">fromShareInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Database.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Database.property.tagInput">tagInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.DatabaseTag">DatabaseTag</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Database.property.comment">comment</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Database.property.dataRetentionTimeInDays">dataRetentionTimeInDays</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Database.property.fromDatabase">fromDatabase</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.Database.property.fromReplica">fromReplica</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Database.property.fromShare">fromShare</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Database.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Database.property.tag">tag</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.DatabaseTag">DatabaseTag</a>[]</code> | *No description.* |
@@ -1722,6 +1731,16 @@ public readonly fromDatabaseInput: string;
 
 ---
 
+##### `fromReplicaInput`<sup>Optional</sup> <a name="fromReplicaInput" id="@cdktf/provider-snowflake.Database.property.fromReplicaInput"></a>
+
+```typescript
+public readonly fromReplicaInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `fromShareInput`<sup>Optional</sup> <a name="fromShareInput" id="@cdktf/provider-snowflake.Database.property.fromShareInput"></a>
 
 ```typescript
@@ -1776,6 +1795,16 @@ public readonly dataRetentionTimeInDays: number;
 
 ```typescript
 public readonly fromDatabase: string;
+```
+
+- *Type:* string
+
+---
+
+##### `fromReplica`<sup>Required</sup> <a name="fromReplica" id="@cdktf/provider-snowflake.Database.property.fromReplica"></a>
+
+```typescript
+public readonly fromReplica: string;
 ```
 
 - *Type:* string
@@ -2864,6 +2893,1001 @@ public readonly url: string;
 ---
 
 ##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-snowflake.DataSnowflakeCurrentAccount.property.tfResourceType"></a>
+
+```typescript
+public readonly tfResourceType: string;
+```
+
+- *Type:* string
+
+---
+
+### DataSnowflakeDatabase <a name="DataSnowflakeDatabase" id="@cdktf/provider-snowflake.DataSnowflakeDatabase"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/snowflake/d/database snowflake_database}.
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.Initializer"></a>
+
+```typescript
+import { DataSnowflakeDatabase } from '@cdktf/provider-snowflake'
+
+new DataSnowflakeDatabase(scope: Construct, id: string, config: DataSnowflakeDatabaseConfig)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabase.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabase.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabase.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabaseConfig">DataSnowflakeDatabaseConfig</a></code> | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.Initializer.parameter.config"></a>
+
+- *Type:* <a href="#@cdktf/provider-snowflake.DataSnowflakeDatabaseConfig">DataSnowflakeDatabaseConfig</a>
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabase.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabase.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabase.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabase.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabase.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabase.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabase.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabase.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabase.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabase.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabase.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabase.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabase.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabase.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabase.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabase.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Returns a string representation of this construct.
+
+##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.addOverride"></a>
+
+```typescript
+public addOverride(path: string, value: any): void
+```
+
+###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.addOverride.parameter.path"></a>
+
+- *Type:* string
+
+---
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.addOverride.parameter.value"></a>
+
+- *Type:* any
+
+---
+
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.overrideLogicalId"></a>
+
+```typescript
+public overrideLogicalId(newLogicalId: string): void
+```
+
+Overrides the auto-generated logical ID with a specific ID.
+
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.overrideLogicalId.parameter.newLogicalId"></a>
+
+- *Type:* string
+
+The new logical ID to use for this stack element.
+
+---
+
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.resetOverrideLogicalId"></a>
+
+```typescript
+public resetOverrideLogicalId(): void
+```
+
+Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.toMetadata"></a>
+
+```typescript
+public toMetadata(): any
+```
+
+##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.toTerraform"></a>
+
+```typescript
+public toTerraform(): any
+```
+
+Adds this resource to the terraform JSON output.
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.interpolationForAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabase.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+
+---
+
+##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.isConstruct"></a>
+
+```typescript
+import { DataSnowflakeDatabase } from '@cdktf/provider-snowflake'
+
+DataSnowflakeDatabase.isConstruct(x: any)
+```
+
+Checks if `x` is a construct.
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.isConstruct.parameter.x"></a>
+
+- *Type:* any
+
+Any object.
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabase.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabase.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabase.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabase.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabase.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabase.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabase.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabase.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabase.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabase.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabase.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabase.property.comment">comment</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabase.property.createdOn">createdOn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabase.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabase.property.isCurrent">isCurrent</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabase.property.isDefault">isDefault</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabase.property.options">options</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabase.property.origin">origin</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabase.property.owner">owner</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabase.property.retentionTime">retentionTime</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabase.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabase.property.name">name</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.property.node"></a>
+
+```typescript
+public readonly node: Node;
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.property.cdktfStack"></a>
+
+```typescript
+public readonly cdktfStack: TerraformStack;
+```
+
+- *Type:* cdktf.TerraformStack
+
+---
+
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.property.friendlyUniqueId"></a>
+
+```typescript
+public readonly friendlyUniqueId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.property.terraformMetaArguments"></a>
+
+```typescript
+public readonly terraformMetaArguments: {[ key: string ]: any};
+```
+
+- *Type:* {[ key: string ]: any}
+
+---
+
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.property.terraformResourceType"></a>
+
+```typescript
+public readonly terraformResourceType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.property.terraformGeneratorMetadata"></a>
+
+```typescript
+public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
+```
+
+- *Type:* cdktf.TerraformProviderGeneratorMetadata
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* number
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
+##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.property.comment"></a>
+
+```typescript
+public readonly comment: string;
+```
+
+- *Type:* string
+
+---
+
+##### `createdOn`<sup>Required</sup> <a name="createdOn" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.property.createdOn"></a>
+
+```typescript
+public readonly createdOn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
+##### `isCurrent`<sup>Required</sup> <a name="isCurrent" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.property.isCurrent"></a>
+
+```typescript
+public readonly isCurrent: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `isDefault`<sup>Required</sup> <a name="isDefault" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.property.isDefault"></a>
+
+```typescript
+public readonly isDefault: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `options`<sup>Required</sup> <a name="options" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.property.options"></a>
+
+```typescript
+public readonly options: string;
+```
+
+- *Type:* string
+
+---
+
+##### `origin`<sup>Required</sup> <a name="origin" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.property.origin"></a>
+
+```typescript
+public readonly origin: string;
+```
+
+- *Type:* string
+
+---
+
+##### `owner`<sup>Required</sup> <a name="owner" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.property.owner"></a>
+
+```typescript
+public readonly owner: string;
+```
+
+- *Type:* string
+
+---
+
+##### `retentionTime`<sup>Required</sup> <a name="retentionTime" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.property.retentionTime"></a>
+
+```typescript
+public readonly retentionTime: number;
+```
+
+- *Type:* number
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.property.nameInput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+#### Constants <a name="Constants" id="Constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabase.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.property.tfResourceType"></a>
+
+```typescript
+public readonly tfResourceType: string;
+```
+
+- *Type:* string
+
+---
+
+### DataSnowflakeDatabases <a name="DataSnowflakeDatabases" id="@cdktf/provider-snowflake.DataSnowflakeDatabases"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/snowflake/d/databases snowflake_databases}.
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.Initializer"></a>
+
+```typescript
+import { DataSnowflakeDatabases } from '@cdktf/provider-snowflake'
+
+new DataSnowflakeDatabases(scope: Construct, id: string, config?: DataSnowflakeDatabasesConfig)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabases.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabases.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabases.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesConfig">DataSnowflakeDatabasesConfig</a></code> | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.Initializer.parameter.config"></a>
+
+- *Type:* <a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesConfig">DataSnowflakeDatabasesConfig</a>
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabases.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabases.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabases.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabases.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabases.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabases.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabases.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabases.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabases.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabases.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabases.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabases.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabases.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabases.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabases.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabases.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabases.databases">databases</a></code> | *No description.* |
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Returns a string representation of this construct.
+
+##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.addOverride"></a>
+
+```typescript
+public addOverride(path: string, value: any): void
+```
+
+###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.addOverride.parameter.path"></a>
+
+- *Type:* string
+
+---
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.addOverride.parameter.value"></a>
+
+- *Type:* any
+
+---
+
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.overrideLogicalId"></a>
+
+```typescript
+public overrideLogicalId(newLogicalId: string): void
+```
+
+Overrides the auto-generated logical ID with a specific ID.
+
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.overrideLogicalId.parameter.newLogicalId"></a>
+
+- *Type:* string
+
+The new logical ID to use for this stack element.
+
+---
+
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.resetOverrideLogicalId"></a>
+
+```typescript
+public resetOverrideLogicalId(): void
+```
+
+Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.toMetadata"></a>
+
+```typescript
+public toMetadata(): any
+```
+
+##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.toTerraform"></a>
+
+```typescript
+public toTerraform(): any
+```
+
+Adds this resource to the terraform JSON output.
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.interpolationForAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `databases` <a name="databases" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.databases"></a>
+
+```typescript
+public databases(index: string): DataSnowflakeDatabasesDatabases
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.databases.parameter.index"></a>
+
+- *Type:* string
+
+---
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabases.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+
+---
+
+##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.isConstruct"></a>
+
+```typescript
+import { DataSnowflakeDatabases } from '@cdktf/provider-snowflake'
+
+DataSnowflakeDatabases.isConstruct(x: any)
+```
+
+Checks if `x` is a construct.
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.isConstruct.parameter.x"></a>
+
+- *Type:* any
+
+Any object.
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabases.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabases.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabases.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabases.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabases.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabases.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabases.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabases.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabases.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabases.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabases.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabases.property.id">id</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.property.node"></a>
+
+```typescript
+public readonly node: Node;
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.property.cdktfStack"></a>
+
+```typescript
+public readonly cdktfStack: TerraformStack;
+```
+
+- *Type:* cdktf.TerraformStack
+
+---
+
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.property.friendlyUniqueId"></a>
+
+```typescript
+public readonly friendlyUniqueId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.property.terraformMetaArguments"></a>
+
+```typescript
+public readonly terraformMetaArguments: {[ key: string ]: any};
+```
+
+- *Type:* {[ key: string ]: any}
+
+---
+
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.property.terraformResourceType"></a>
+
+```typescript
+public readonly terraformResourceType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.property.terraformGeneratorMetadata"></a>
+
+```typescript
+public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
+```
+
+- *Type:* cdktf.TerraformProviderGeneratorMetadata
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* number
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
+#### Constants <a name="Constants" id="Constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabases.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -14806,6 +15830,846 @@ public readonly tfResourceType: string;
 
 ---
 
+### ExternalOauthIntegration <a name="ExternalOauthIntegration" id="@cdktf/provider-snowflake.ExternalOauthIntegration"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/external_oauth_integration snowflake_external_oauth_integration}.
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.ExternalOauthIntegration.Initializer"></a>
+
+```typescript
+import { ExternalOauthIntegration } from '@cdktf/provider-snowflake'
+
+new ExternalOauthIntegration(scope: Construct, id: string, config: ExternalOauthIntegrationConfig)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegrationConfig">ExternalOauthIntegrationConfig</a></code> | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-snowflake.ExternalOauthIntegration.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.ExternalOauthIntegration.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-snowflake.ExternalOauthIntegration.Initializer.parameter.config"></a>
+
+- *Type:* <a href="#@cdktf/provider-snowflake.ExternalOauthIntegrationConfig">ExternalOauthIntegrationConfig</a>
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.resetAllowedRoles">resetAllowedRoles</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.resetAnyRoleMode">resetAnyRoleMode</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.resetAudienceUrls">resetAudienceUrls</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.resetBlockedRoles">resetBlockedRoles</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.resetComment">resetComment</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.resetJwsKeysUrls">resetJwsKeysUrls</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.resetRsaPublicKey">resetRsaPublicKey</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.resetRsaPublicKey2">resetRsaPublicKey2</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.resetScopeDelimiter">resetScopeDelimiter</a></code> | *No description.* |
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-snowflake.ExternalOauthIntegration.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Returns a string representation of this construct.
+
+##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.ExternalOauthIntegration.addOverride"></a>
+
+```typescript
+public addOverride(path: string, value: any): void
+```
+
+###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.ExternalOauthIntegration.addOverride.parameter.path"></a>
+
+- *Type:* string
+
+---
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-snowflake.ExternalOauthIntegration.addOverride.parameter.value"></a>
+
+- *Type:* any
+
+---
+
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.ExternalOauthIntegration.overrideLogicalId"></a>
+
+```typescript
+public overrideLogicalId(newLogicalId: string): void
+```
+
+Overrides the auto-generated logical ID with a specific ID.
+
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-snowflake.ExternalOauthIntegration.overrideLogicalId.parameter.newLogicalId"></a>
+
+- *Type:* string
+
+The new logical ID to use for this stack element.
+
+---
+
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.ExternalOauthIntegration.resetOverrideLogicalId"></a>
+
+```typescript
+public resetOverrideLogicalId(): void
+```
+
+Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.ExternalOauthIntegration.toMetadata"></a>
+
+```typescript
+public toMetadata(): any
+```
+
+##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.ExternalOauthIntegration.toTerraform"></a>
+
+```typescript
+public toTerraform(): any
+```
+
+Adds this resource to the terraform JSON output.
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.ExternalOauthIntegration.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ExternalOauthIntegration.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.ExternalOauthIntegration.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ExternalOauthIntegration.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.ExternalOauthIntegration.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ExternalOauthIntegration.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.ExternalOauthIntegration.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ExternalOauthIntegration.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.ExternalOauthIntegration.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ExternalOauthIntegration.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.ExternalOauthIntegration.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ExternalOauthIntegration.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.ExternalOauthIntegration.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ExternalOauthIntegration.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.ExternalOauthIntegration.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ExternalOauthIntegration.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.ExternalOauthIntegration.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ExternalOauthIntegration.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.ExternalOauthIntegration.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.ExternalOauthIntegration.interpolationForAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `resetAllowedRoles` <a name="resetAllowedRoles" id="@cdktf/provider-snowflake.ExternalOauthIntegration.resetAllowedRoles"></a>
+
+```typescript
+public resetAllowedRoles(): void
+```
+
+##### `resetAnyRoleMode` <a name="resetAnyRoleMode" id="@cdktf/provider-snowflake.ExternalOauthIntegration.resetAnyRoleMode"></a>
+
+```typescript
+public resetAnyRoleMode(): void
+```
+
+##### `resetAudienceUrls` <a name="resetAudienceUrls" id="@cdktf/provider-snowflake.ExternalOauthIntegration.resetAudienceUrls"></a>
+
+```typescript
+public resetAudienceUrls(): void
+```
+
+##### `resetBlockedRoles` <a name="resetBlockedRoles" id="@cdktf/provider-snowflake.ExternalOauthIntegration.resetBlockedRoles"></a>
+
+```typescript
+public resetBlockedRoles(): void
+```
+
+##### `resetComment` <a name="resetComment" id="@cdktf/provider-snowflake.ExternalOauthIntegration.resetComment"></a>
+
+```typescript
+public resetComment(): void
+```
+
+##### `resetJwsKeysUrls` <a name="resetJwsKeysUrls" id="@cdktf/provider-snowflake.ExternalOauthIntegration.resetJwsKeysUrls"></a>
+
+```typescript
+public resetJwsKeysUrls(): void
+```
+
+##### `resetRsaPublicKey` <a name="resetRsaPublicKey" id="@cdktf/provider-snowflake.ExternalOauthIntegration.resetRsaPublicKey"></a>
+
+```typescript
+public resetRsaPublicKey(): void
+```
+
+##### `resetRsaPublicKey2` <a name="resetRsaPublicKey2" id="@cdktf/provider-snowflake.ExternalOauthIntegration.resetRsaPublicKey2"></a>
+
+```typescript
+public resetRsaPublicKey2(): void
+```
+
+##### `resetScopeDelimiter` <a name="resetScopeDelimiter" id="@cdktf/provider-snowflake.ExternalOauthIntegration.resetScopeDelimiter"></a>
+
+```typescript
+public resetScopeDelimiter(): void
+```
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+
+---
+
+##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.ExternalOauthIntegration.isConstruct"></a>
+
+```typescript
+import { ExternalOauthIntegration } from '@cdktf/provider-snowflake'
+
+ExternalOauthIntegration.isConstruct(x: any)
+```
+
+Checks if `x` is a construct.
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.ExternalOauthIntegration.isConstruct.parameter.x"></a>
+
+- *Type:* any
+
+Any object.
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.createdOn">createdOn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.allowedRolesInput">allowedRolesInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.anyRoleModeInput">anyRoleModeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.audienceUrlsInput">audienceUrlsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.blockedRolesInput">blockedRolesInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.commentInput">commentInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.issuerInput">issuerInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.jwsKeysUrlsInput">jwsKeysUrlsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.rsaPublicKey2Input">rsaPublicKey2Input</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.rsaPublicKeyInput">rsaPublicKeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.scopeDelimiterInput">scopeDelimiterInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.snowflakeUserMappingAttributeInput">snowflakeUserMappingAttributeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.tokenUserMappingClaimsInput">tokenUserMappingClaimsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.typeInput">typeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.allowedRoles">allowedRoles</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.anyRoleMode">anyRoleMode</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.audienceUrls">audienceUrls</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.blockedRoles">blockedRoles</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.comment">comment</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.issuer">issuer</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.jwsKeysUrls">jwsKeysUrls</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.rsaPublicKey">rsaPublicKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.rsaPublicKey2">rsaPublicKey2</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.scopeDelimiter">scopeDelimiter</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.snowflakeUserMappingAttribute">snowflakeUserMappingAttribute</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.tokenUserMappingClaims">tokenUserMappingClaims</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.type">type</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-snowflake.ExternalOauthIntegration.property.node"></a>
+
+```typescript
+public readonly node: Node;
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-snowflake.ExternalOauthIntegration.property.cdktfStack"></a>
+
+```typescript
+public readonly cdktfStack: TerraformStack;
+```
+
+- *Type:* cdktf.TerraformStack
+
+---
+
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-snowflake.ExternalOauthIntegration.property.friendlyUniqueId"></a>
+
+```typescript
+public readonly friendlyUniqueId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.ExternalOauthIntegration.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-snowflake.ExternalOauthIntegration.property.terraformMetaArguments"></a>
+
+```typescript
+public readonly terraformMetaArguments: {[ key: string ]: any};
+```
+
+- *Type:* {[ key: string ]: any}
+
+---
+
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-snowflake.ExternalOauthIntegration.property.terraformResourceType"></a>
+
+```typescript
+public readonly terraformResourceType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-snowflake.ExternalOauthIntegration.property.terraformGeneratorMetadata"></a>
+
+```typescript
+public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
+```
+
+- *Type:* cdktf.TerraformProviderGeneratorMetadata
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.ExternalOauthIntegration.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* number
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-snowflake.ExternalOauthIntegration.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-snowflake.ExternalOauthIntegration.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-snowflake.ExternalOauthIntegration.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
+##### `createdOn`<sup>Required</sup> <a name="createdOn" id="@cdktf/provider-snowflake.ExternalOauthIntegration.property.createdOn"></a>
+
+```typescript
+public readonly createdOn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.ExternalOauthIntegration.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
+##### `allowedRolesInput`<sup>Optional</sup> <a name="allowedRolesInput" id="@cdktf/provider-snowflake.ExternalOauthIntegration.property.allowedRolesInput"></a>
+
+```typescript
+public readonly allowedRolesInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `anyRoleModeInput`<sup>Optional</sup> <a name="anyRoleModeInput" id="@cdktf/provider-snowflake.ExternalOauthIntegration.property.anyRoleModeInput"></a>
+
+```typescript
+public readonly anyRoleModeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `audienceUrlsInput`<sup>Optional</sup> <a name="audienceUrlsInput" id="@cdktf/provider-snowflake.ExternalOauthIntegration.property.audienceUrlsInput"></a>
+
+```typescript
+public readonly audienceUrlsInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `blockedRolesInput`<sup>Optional</sup> <a name="blockedRolesInput" id="@cdktf/provider-snowflake.ExternalOauthIntegration.property.blockedRolesInput"></a>
+
+```typescript
+public readonly blockedRolesInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `commentInput`<sup>Optional</sup> <a name="commentInput" id="@cdktf/provider-snowflake.ExternalOauthIntegration.property.commentInput"></a>
+
+```typescript
+public readonly commentInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `enabledInput`<sup>Optional</sup> <a name="enabledInput" id="@cdktf/provider-snowflake.ExternalOauthIntegration.property.enabledInput"></a>
+
+```typescript
+public readonly enabledInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `issuerInput`<sup>Optional</sup> <a name="issuerInput" id="@cdktf/provider-snowflake.ExternalOauthIntegration.property.issuerInput"></a>
+
+```typescript
+public readonly issuerInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `jwsKeysUrlsInput`<sup>Optional</sup> <a name="jwsKeysUrlsInput" id="@cdktf/provider-snowflake.ExternalOauthIntegration.property.jwsKeysUrlsInput"></a>
+
+```typescript
+public readonly jwsKeysUrlsInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-snowflake.ExternalOauthIntegration.property.nameInput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `rsaPublicKey2Input`<sup>Optional</sup> <a name="rsaPublicKey2Input" id="@cdktf/provider-snowflake.ExternalOauthIntegration.property.rsaPublicKey2Input"></a>
+
+```typescript
+public readonly rsaPublicKey2Input: string;
+```
+
+- *Type:* string
+
+---
+
+##### `rsaPublicKeyInput`<sup>Optional</sup> <a name="rsaPublicKeyInput" id="@cdktf/provider-snowflake.ExternalOauthIntegration.property.rsaPublicKeyInput"></a>
+
+```typescript
+public readonly rsaPublicKeyInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `scopeDelimiterInput`<sup>Optional</sup> <a name="scopeDelimiterInput" id="@cdktf/provider-snowflake.ExternalOauthIntegration.property.scopeDelimiterInput"></a>
+
+```typescript
+public readonly scopeDelimiterInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `snowflakeUserMappingAttributeInput`<sup>Optional</sup> <a name="snowflakeUserMappingAttributeInput" id="@cdktf/provider-snowflake.ExternalOauthIntegration.property.snowflakeUserMappingAttributeInput"></a>
+
+```typescript
+public readonly snowflakeUserMappingAttributeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tokenUserMappingClaimsInput`<sup>Optional</sup> <a name="tokenUserMappingClaimsInput" id="@cdktf/provider-snowflake.ExternalOauthIntegration.property.tokenUserMappingClaimsInput"></a>
+
+```typescript
+public readonly tokenUserMappingClaimsInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `typeInput`<sup>Optional</sup> <a name="typeInput" id="@cdktf/provider-snowflake.ExternalOauthIntegration.property.typeInput"></a>
+
+```typescript
+public readonly typeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `allowedRoles`<sup>Required</sup> <a name="allowedRoles" id="@cdktf/provider-snowflake.ExternalOauthIntegration.property.allowedRoles"></a>
+
+```typescript
+public readonly allowedRoles: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `anyRoleMode`<sup>Required</sup> <a name="anyRoleMode" id="@cdktf/provider-snowflake.ExternalOauthIntegration.property.anyRoleMode"></a>
+
+```typescript
+public readonly anyRoleMode: string;
+```
+
+- *Type:* string
+
+---
+
+##### `audienceUrls`<sup>Required</sup> <a name="audienceUrls" id="@cdktf/provider-snowflake.ExternalOauthIntegration.property.audienceUrls"></a>
+
+```typescript
+public readonly audienceUrls: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `blockedRoles`<sup>Required</sup> <a name="blockedRoles" id="@cdktf/provider-snowflake.ExternalOauthIntegration.property.blockedRoles"></a>
+
+```typescript
+public readonly blockedRoles: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.ExternalOauthIntegration.property.comment"></a>
+
+```typescript
+public readonly comment: string;
+```
+
+- *Type:* string
+
+---
+
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-snowflake.ExternalOauthIntegration.property.enabled"></a>
+
+```typescript
+public readonly enabled: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `issuer`<sup>Required</sup> <a name="issuer" id="@cdktf/provider-snowflake.ExternalOauthIntegration.property.issuer"></a>
+
+```typescript
+public readonly issuer: string;
+```
+
+- *Type:* string
+
+---
+
+##### `jwsKeysUrls`<sup>Required</sup> <a name="jwsKeysUrls" id="@cdktf/provider-snowflake.ExternalOauthIntegration.property.jwsKeysUrls"></a>
+
+```typescript
+public readonly jwsKeysUrls: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.ExternalOauthIntegration.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `rsaPublicKey`<sup>Required</sup> <a name="rsaPublicKey" id="@cdktf/provider-snowflake.ExternalOauthIntegration.property.rsaPublicKey"></a>
+
+```typescript
+public readonly rsaPublicKey: string;
+```
+
+- *Type:* string
+
+---
+
+##### `rsaPublicKey2`<sup>Required</sup> <a name="rsaPublicKey2" id="@cdktf/provider-snowflake.ExternalOauthIntegration.property.rsaPublicKey2"></a>
+
+```typescript
+public readonly rsaPublicKey2: string;
+```
+
+- *Type:* string
+
+---
+
+##### `scopeDelimiter`<sup>Required</sup> <a name="scopeDelimiter" id="@cdktf/provider-snowflake.ExternalOauthIntegration.property.scopeDelimiter"></a>
+
+```typescript
+public readonly scopeDelimiter: string;
+```
+
+- *Type:* string
+
+---
+
+##### `snowflakeUserMappingAttribute`<sup>Required</sup> <a name="snowflakeUserMappingAttribute" id="@cdktf/provider-snowflake.ExternalOauthIntegration.property.snowflakeUserMappingAttribute"></a>
+
+```typescript
+public readonly snowflakeUserMappingAttribute: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tokenUserMappingClaims`<sup>Required</sup> <a name="tokenUserMappingClaims" id="@cdktf/provider-snowflake.ExternalOauthIntegration.property.tokenUserMappingClaims"></a>
+
+```typescript
+public readonly tokenUserMappingClaims: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-snowflake.ExternalOauthIntegration.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
+
+- *Type:* string
+
+---
+
+#### Constants <a name="Constants" id="Constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-snowflake.ExternalOauthIntegration.property.tfResourceType"></a>
+
+```typescript
+public readonly tfResourceType: string;
+```
+
+- *Type:* string
+
+---
+
 ### ExternalTable <a name="ExternalTable" id="@cdktf/provider-snowflake.ExternalTable"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/external_table snowflake_external_table}.
@@ -24942,6 +26806,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.NotificationIntegration.property.awsSqsExternalId">awsSqsExternalId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NotificationIntegration.property.awsSqsIamUserArn">awsSqsIamUserArn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NotificationIntegration.property.createdOn">createdOn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.NotificationIntegration.property.gcpPubsubServiceAccount">gcpPubsubServiceAccount</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NotificationIntegration.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NotificationIntegration.property.awsSnsRoleArnInput">awsSnsRoleArnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NotificationIntegration.property.awsSnsTopicArnInput">awsSnsTopicArnInput</a></code> | <code>string</code> | *No description.* |
@@ -25128,6 +26993,16 @@ public readonly awsSqsIamUserArn: string;
 
 ```typescript
 public readonly createdOn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `gcpPubsubServiceAccount`<sup>Required</sup> <a name="gcpPubsubServiceAccount" id="@cdktf/provider-snowflake.NotificationIntegration.property.gcpPubsubServiceAccount"></a>
+
+```typescript
+public readonly gcpPubsubServiceAccount: string;
 ```
 
 - *Type:* string
@@ -37448,6 +39323,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.Stage.resetComment">resetComment</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Stage.resetCopyOptions">resetCopyOptions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Stage.resetCredentials">resetCredentials</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.Stage.resetDirectory">resetDirectory</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Stage.resetEncryption">resetEncryption</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Stage.resetFileFormat">resetFileFormat</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Stage.resetSnowflakeIamUser">resetSnowflakeIamUser</a></code> | *No description.* |
@@ -37665,6 +39541,12 @@ public resetCopyOptions(): void
 public resetCredentials(): void
 ```
 
+##### `resetDirectory` <a name="resetDirectory" id="@cdktf/provider-snowflake.Stage.resetDirectory"></a>
+
+```typescript
+public resetDirectory(): void
+```
+
 ##### `resetEncryption` <a name="resetEncryption" id="@cdktf/provider-snowflake.Stage.resetEncryption"></a>
 
 ```typescript
@@ -37748,6 +39630,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.Stage.property.copyOptionsInput">copyOptionsInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Stage.property.credentialsInput">credentialsInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Stage.property.databaseInput">databaseInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.Stage.property.directoryInput">directoryInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Stage.property.encryptionInput">encryptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Stage.property.fileFormatInput">fileFormatInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Stage.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
@@ -37761,6 +39644,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.Stage.property.copyOptions">copyOptions</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Stage.property.credentials">credentials</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Stage.property.database">database</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.Stage.property.directory">directory</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Stage.property.encryption">encryption</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Stage.property.fileFormat">fileFormat</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Stage.property.name">name</a></code> | <code>string</code> | *No description.* |
@@ -37944,6 +39828,16 @@ public readonly databaseInput: string;
 
 ---
 
+##### `directoryInput`<sup>Optional</sup> <a name="directoryInput" id="@cdktf/provider-snowflake.Stage.property.directoryInput"></a>
+
+```typescript
+public readonly directoryInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `encryptionInput`<sup>Optional</sup> <a name="encryptionInput" id="@cdktf/provider-snowflake.Stage.property.encryptionInput"></a>
 
 ```typescript
@@ -38068,6 +39962,16 @@ public readonly credentials: string;
 
 ```typescript
 public readonly database: string;
+```
+
+- *Type:* string
+
+---
+
+##### `directory`<sup>Required</sup> <a name="directory" id="@cdktf/provider-snowflake.Stage.property.directory"></a>
+
+```typescript
+public readonly directory: string;
 ```
 
 - *Type:* string
@@ -48674,6 +50578,7 @@ const databaseConfig: DatabaseConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.DatabaseConfig.property.comment">comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/database#comment Database#comment}. |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseConfig.property.dataRetentionTimeInDays">dataRetentionTimeInDays</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/database#data_retention_time_in_days Database#data_retention_time_in_days}. |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseConfig.property.fromDatabase">fromDatabase</a></code> | <code>string</code> | Specify a database to create a clone from. |
+| <code><a href="#@cdktf/provider-snowflake.DatabaseConfig.property.fromReplica">fromReplica</a></code> | <code>string</code> | Specify a fully-qualified path to a database to create a replica from. |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseConfig.property.fromShare">fromShare</a></code> | <code>{[ key: string ]: string}</code> | Specify a provider and a share in this map to create a database from a share. |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseConfig.property.tag">tag</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.DatabaseTag">DatabaseTag</a>[]</code> | tag block. |
 
@@ -48766,6 +50671,20 @@ public readonly fromDatabase: string;
 Specify a database to create a clone from.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/database#from_database Database#from_database}
+
+---
+
+##### `fromReplica`<sup>Optional</sup> <a name="fromReplica" id="@cdktf/provider-snowflake.DatabaseConfig.property.fromReplica"></a>
+
+```typescript
+public readonly fromReplica: string;
+```
+
+- *Type:* string
+
+Specify a fully-qualified path to a database to create a replica from.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/database#from_replica Database#from_replica}
 
 ---
 
@@ -49062,6 +50981,143 @@ public readonly lifecycle: TerraformResourceLifecycle;
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-snowflake.DataSnowflakeCurrentAccountConfig.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
+### DataSnowflakeDatabaseConfig <a name="DataSnowflakeDatabaseConfig" id="@cdktf/provider-snowflake.DataSnowflakeDatabaseConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.DataSnowflakeDatabaseConfig.Initializer"></a>
+
+```typescript
+import { DataSnowflakeDatabaseConfig } from '@cdktf/provider-snowflake'
+
+const dataSnowflakeDatabaseConfig: DataSnowflakeDatabaseConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabaseConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabaseConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabaseConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabaseConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabaseConfig.property.name">name</a></code> | <code>string</code> | The database from which to return its metadata. |
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.DataSnowflakeDatabaseConfig.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* number
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-snowflake.DataSnowflakeDatabaseConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* cdktf.ITerraformDependable[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-snowflake.DataSnowflakeDatabaseConfig.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-snowflake.DataSnowflakeDatabaseConfig.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.DataSnowflakeDatabaseConfig.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+The database from which to return its metadata.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/database#name DataSnowflakeDatabase#name}
+
+---
+
+### DataSnowflakeDatabasesConfig <a name="DataSnowflakeDatabasesConfig" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesConfig.Initializer"></a>
+
+```typescript
+import { DataSnowflakeDatabasesConfig } from '@cdktf/provider-snowflake'
+
+const dataSnowflakeDatabasesConfig: DataSnowflakeDatabasesConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesConfig.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* number
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* cdktf.ITerraformDependable[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesConfig.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesConfig.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -51346,6 +53402,292 @@ public readonly value: string;
 Header value.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_function#value ExternalFunction#value}
+
+---
+
+### ExternalOauthIntegrationConfig <a name="ExternalOauthIntegrationConfig" id="@cdktf/provider-snowflake.ExternalOauthIntegrationConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.Initializer"></a>
+
+```typescript
+import { ExternalOauthIntegrationConfig } from '@cdktf/provider-snowflake'
+
+const externalOauthIntegrationConfig: ExternalOauthIntegrationConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies whether to initiate operation of the integration or suspend it. |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.issuer">issuer</a></code> | <code>string</code> | Specifies the URL to define the OAuth 2.0 authorization server. |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.name">name</a></code> | <code>string</code> | Specifies the name of the External Oath integration. |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.snowflakeUserMappingAttribute">snowflakeUserMappingAttribute</a></code> | <code>string</code> | Indicates which Snowflake user record attribute should be used to map the access token to a Snowflake user record. |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.tokenUserMappingClaims">tokenUserMappingClaims</a></code> | <code>string[]</code> | Specifies the access token claim or claims that can be used to map the access token to a Snowflake user record. |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.type">type</a></code> | <code>string</code> | Specifies the OAuth 2.0 authorization server to be Okta, Microsoft Azure AD, Ping Identity PingFederate, or a Custom OAuth 2.0 authorization server. |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.allowedRoles">allowedRoles</a></code> | <code>string[]</code> | Specifies the list of roles that the client can set as the primary role. |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.anyRoleMode">anyRoleMode</a></code> | <code>string</code> | Specifies whether the OAuth client or user can use a role that is not defined in the OAuth access token. |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.audienceUrls">audienceUrls</a></code> | <code>string[]</code> | Specifies additional values that can be used for the access token's audience validation on top of using the Customer's Snowflake Account URL. |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.blockedRoles">blockedRoles</a></code> | <code>string[]</code> | Specifies the list of roles that a client cannot set as the primary role. |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.comment">comment</a></code> | <code>string</code> | Specifies a comment for the OAuth integration. |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.jwsKeysUrls">jwsKeysUrls</a></code> | <code>string[]</code> | Specifies the endpoint or a list of endpoints from which to download public keys or certificates to validate an External OAuth access token. |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.rsaPublicKey">rsaPublicKey</a></code> | <code>string</code> | Specifies a Base64-encoded RSA public key, without the -----BEGIN PUBLIC KEY----- and -----END PUBLIC KEY----- headers. |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.rsaPublicKey2">rsaPublicKey2</a></code> | <code>string</code> | Specifies a second RSA public key, without the -----BEGIN PUBLIC KEY----- and -----END PUBLIC KEY----- headers. |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.scopeDelimiter">scopeDelimiter</a></code> | <code>string</code> | Specifies the scope delimiter in the authorization token. |
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* number
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* cdktf.ITerraformDependable[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.enabled"></a>
+
+```typescript
+public readonly enabled: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Specifies whether to initiate operation of the integration or suspend it.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_oauth_integration#enabled ExternalOauthIntegration#enabled}
+
+---
+
+##### `issuer`<sup>Required</sup> <a name="issuer" id="@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.issuer"></a>
+
+```typescript
+public readonly issuer: string;
+```
+
+- *Type:* string
+
+Specifies the URL to define the OAuth 2.0 authorization server.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_oauth_integration#issuer ExternalOauthIntegration#issuer}
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+Specifies the name of the External Oath integration.
+
+This name follows the rules for Object Identifiers. The name should be unique among security integrations in your account.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_oauth_integration#name ExternalOauthIntegration#name}
+
+---
+
+##### `snowflakeUserMappingAttribute`<sup>Required</sup> <a name="snowflakeUserMappingAttribute" id="@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.snowflakeUserMappingAttribute"></a>
+
+```typescript
+public readonly snowflakeUserMappingAttribute: string;
+```
+
+- *Type:* string
+
+Indicates which Snowflake user record attribute should be used to map the access token to a Snowflake user record.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_oauth_integration#snowflake_user_mapping_attribute ExternalOauthIntegration#snowflake_user_mapping_attribute}
+
+---
+
+##### `tokenUserMappingClaims`<sup>Required</sup> <a name="tokenUserMappingClaims" id="@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.tokenUserMappingClaims"></a>
+
+```typescript
+public readonly tokenUserMappingClaims: string[];
+```
+
+- *Type:* string[]
+
+Specifies the access token claim or claims that can be used to map the access token to a Snowflake user record.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_oauth_integration#token_user_mapping_claims ExternalOauthIntegration#token_user_mapping_claims}
+
+---
+
+##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
+
+- *Type:* string
+
+Specifies the OAuth 2.0 authorization server to be Okta, Microsoft Azure AD, Ping Identity PingFederate, or a Custom OAuth 2.0 authorization server.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_oauth_integration#type ExternalOauthIntegration#type}
+
+---
+
+##### `allowedRoles`<sup>Optional</sup> <a name="allowedRoles" id="@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.allowedRoles"></a>
+
+```typescript
+public readonly allowedRoles: string[];
+```
+
+- *Type:* string[]
+
+Specifies the list of roles that the client can set as the primary role.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_oauth_integration#allowed_roles ExternalOauthIntegration#allowed_roles}
+
+---
+
+##### `anyRoleMode`<sup>Optional</sup> <a name="anyRoleMode" id="@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.anyRoleMode"></a>
+
+```typescript
+public readonly anyRoleMode: string;
+```
+
+- *Type:* string
+
+Specifies whether the OAuth client or user can use a role that is not defined in the OAuth access token.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_oauth_integration#any_role_mode ExternalOauthIntegration#any_role_mode}
+
+---
+
+##### `audienceUrls`<sup>Optional</sup> <a name="audienceUrls" id="@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.audienceUrls"></a>
+
+```typescript
+public readonly audienceUrls: string[];
+```
+
+- *Type:* string[]
+
+Specifies additional values that can be used for the access token's audience validation on top of using the Customer's Snowflake Account URL.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_oauth_integration#audience_urls ExternalOauthIntegration#audience_urls}
+
+---
+
+##### `blockedRoles`<sup>Optional</sup> <a name="blockedRoles" id="@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.blockedRoles"></a>
+
+```typescript
+public readonly blockedRoles: string[];
+```
+
+- *Type:* string[]
+
+Specifies the list of roles that a client cannot set as the primary role.
+
+Do not include ACCOUNTADMIN, ORGADMIN or SECURITYADMIN as they are already implicitly enforced and will cause in-place updates.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_oauth_integration#blocked_roles ExternalOauthIntegration#blocked_roles}
+
+---
+
+##### `comment`<sup>Optional</sup> <a name="comment" id="@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.comment"></a>
+
+```typescript
+public readonly comment: string;
+```
+
+- *Type:* string
+
+Specifies a comment for the OAuth integration.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_oauth_integration#comment ExternalOauthIntegration#comment}
+
+---
+
+##### `jwsKeysUrls`<sup>Optional</sup> <a name="jwsKeysUrls" id="@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.jwsKeysUrls"></a>
+
+```typescript
+public readonly jwsKeysUrls: string[];
+```
+
+- *Type:* string[]
+
+Specifies the endpoint or a list of endpoints from which to download public keys or certificates to validate an External OAuth access token.
+
+The maximum number of URLs that can be specified in the list is 3.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_oauth_integration#jws_keys_urls ExternalOauthIntegration#jws_keys_urls}
+
+---
+
+##### `rsaPublicKey`<sup>Optional</sup> <a name="rsaPublicKey" id="@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.rsaPublicKey"></a>
+
+```typescript
+public readonly rsaPublicKey: string;
+```
+
+- *Type:* string
+
+Specifies a Base64-encoded RSA public key, without the -----BEGIN PUBLIC KEY----- and -----END PUBLIC KEY----- headers.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_oauth_integration#rsa_public_key ExternalOauthIntegration#rsa_public_key}
+
+---
+
+##### `rsaPublicKey2`<sup>Optional</sup> <a name="rsaPublicKey2" id="@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.rsaPublicKey2"></a>
+
+```typescript
+public readonly rsaPublicKey2: string;
+```
+
+- *Type:* string
+
+Specifies a second RSA public key, without the -----BEGIN PUBLIC KEY----- and -----END PUBLIC KEY----- headers.
+
+Used for key rotation.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_oauth_integration#rsa_public_key_2 ExternalOauthIntegration#rsa_public_key_2}
+
+---
+
+##### `scopeDelimiter`<sup>Optional</sup> <a name="scopeDelimiter" id="@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.scopeDelimiter"></a>
+
+```typescript
+public readonly scopeDelimiter: string;
+```
+
+- *Type:* string
+
+Specifies the scope delimiter in the authorization token.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_oauth_integration#scope_delimiter ExternalOauthIntegration#scope_delimiter}
 
 ---
 
@@ -58231,6 +60573,7 @@ const stageConfig: StageConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.StageConfig.property.comment">comment</a></code> | <code>string</code> | Specifies a comment for the stage. |
 | <code><a href="#@cdktf/provider-snowflake.StageConfig.property.copyOptions">copyOptions</a></code> | <code>string</code> | Specifies the copy options for the stage. |
 | <code><a href="#@cdktf/provider-snowflake.StageConfig.property.credentials">credentials</a></code> | <code>string</code> | Specifies the credentials for the stage. |
+| <code><a href="#@cdktf/provider-snowflake.StageConfig.property.directory">directory</a></code> | <code>string</code> | Specifies the directory settings for the stage. |
 | <code><a href="#@cdktf/provider-snowflake.StageConfig.property.encryption">encryption</a></code> | <code>string</code> | Specifies the encryption settings for the stage. |
 | <code><a href="#@cdktf/provider-snowflake.StageConfig.property.fileFormat">fileFormat</a></code> | <code>string</code> | Specifies the file format for the stage. |
 | <code><a href="#@cdktf/provider-snowflake.StageConfig.property.snowflakeIamUser">snowflakeIamUser</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stage#snowflake_iam_user Stage#snowflake_iam_user}. |
@@ -58373,6 +60716,20 @@ public readonly credentials: string;
 Specifies the credentials for the stage.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stage#credentials Stage#credentials}
+
+---
+
+##### `directory`<sup>Optional</sup> <a name="directory" id="@cdktf/provider-snowflake.StageConfig.property.directory"></a>
+
+```typescript
+public readonly directory: string;
+```
+
+- *Type:* string
+
+Specifies the directory settings for the stage.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stage#directory Stage#directory}
 
 ---
 
@@ -61952,6 +64309,294 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### DataSnowflakeDatabasesDatabases <a name="DataSnowflakeDatabasesDatabases" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.Initializer"></a>
+
+```typescript
+import { DataSnowflakeDatabasesDatabases } from '@cdktf/provider-snowflake'
+
+new DataSnowflakeDatabasesDatabases(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.Initializer.parameter.complexComputedListIndex">complexComputedListIndex</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | *No description.* |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `complexComputedListIndex`<sup>Required</sup> <a name="complexComputedListIndex" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.Initializer.parameter.complexComputedListIndex"></a>
+
+- *Type:* string
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="wrapsSet" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+
+---
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.property.comment">comment</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.property.createdOn">createdOn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.property.isCurrent">isCurrent</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.property.isDefault">isDefault</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.property.options">options</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.property.origin">origin</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.property.owner">owner</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.property.retentionTime">retentionTime</a></code> | <code>number</code> | *No description.* |
+
+---
+
+##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.property.comment"></a>
+
+```typescript
+public readonly comment: string;
+```
+
+- *Type:* string
+
+---
+
+##### `createdOn`<sup>Required</sup> <a name="createdOn" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.property.createdOn"></a>
+
+```typescript
+public readonly createdOn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `isCurrent`<sup>Required</sup> <a name="isCurrent" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.property.isCurrent"></a>
+
+```typescript
+public readonly isCurrent: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `isDefault`<sup>Required</sup> <a name="isDefault" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.property.isDefault"></a>
+
+```typescript
+public readonly isDefault: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `options`<sup>Required</sup> <a name="options" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.property.options"></a>
+
+```typescript
+public readonly options: string;
+```
+
+- *Type:* string
+
+---
+
+##### `origin`<sup>Required</sup> <a name="origin" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.property.origin"></a>
+
+```typescript
+public readonly origin: string;
+```
+
+- *Type:* string
+
+---
+
+##### `owner`<sup>Required</sup> <a name="owner" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.property.owner"></a>
+
+```typescript
+public readonly owner: string;
+```
+
+- *Type:* string
+
+---
+
+##### `retentionTime`<sup>Required</sup> <a name="retentionTime" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.property.retentionTime"></a>
+
+```typescript
+public readonly retentionTime: number;
+```
+
+- *Type:* number
+
+---
+
 
 ### DataSnowflakeExternalFunctionsExternalFunctions <a name="DataSnowflakeExternalFunctionsExternalFunctions" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions"></a>
 
