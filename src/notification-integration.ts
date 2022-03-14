@@ -303,6 +303,11 @@ export class NotificationIntegration extends cdktf.TerraformResource {
     return this._enabled;
   }
 
+  // gcp_pubsub_service_account - computed: true, optional: false, required: false
+  public get gcpPubsubServiceAccount() {
+    return this.getStringAttribute('gcp_pubsub_service_account');
+  }
+
   // gcp_pubsub_subscription_name - computed: false, optional: true, required: false
   private _gcpPubsubSubscriptionName?: string; 
   public get gcpPubsubSubscriptionName() {

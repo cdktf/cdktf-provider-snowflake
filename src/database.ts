@@ -22,6 +22,12 @@ export interface DatabaseConfig extends cdktf.TerraformMetaArguments {
   */
   readonly fromDatabase?: string;
   /**
+  * Specify a fully-qualified path to a database to create a replica from.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/database#from_replica Database#from_replica}
+  */
+  readonly fromReplica?: string;
+  /**
   * Specify a provider and a share in this map to create a database from a share.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/database#from_share Database#from_share}
@@ -114,6 +120,7 @@ export class Database extends cdktf.TerraformResource {
     this._comment = config.comment;
     this._dataRetentionTimeInDays = config.dataRetentionTimeInDays;
     this._fromDatabase = config.fromDatabase;
+    this._fromReplica = config.fromReplica;
     this._fromShare = config.fromShare;
     this._name = config.name;
     this._tag = config.tag;
@@ -169,6 +176,22 @@ export class Database extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get fromDatabaseInput() {
     return this._fromDatabase;
+  }
+
+  // from_replica - computed: false, optional: true, required: false
+  private _fromReplica?: string; 
+  public get fromReplica() {
+    return this.getStringAttribute('from_replica');
+  }
+  public set fromReplica(value: string) {
+    this._fromReplica = value;
+  }
+  public resetFromReplica() {
+    this._fromReplica = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fromReplicaInput() {
+    return this._fromReplica;
   }
 
   // from_share - computed: false, optional: true, required: false
@@ -231,6 +254,7 @@ export class Database extends cdktf.TerraformResource {
       comment: cdktf.stringToTerraform(this._comment),
       data_retention_time_in_days: cdktf.numberToTerraform(this._dataRetentionTimeInDays),
       from_database: cdktf.stringToTerraform(this._fromDatabase),
+      from_replica: cdktf.stringToTerraform(this._fromReplica),
       from_share: cdktf.hashMapper(cdktf.stringToTerraform)(this._fromShare),
       name: cdktf.stringToTerraform(this._name),
       tag: cdktf.listMapper(databaseTagToTerraform)(this._tag),

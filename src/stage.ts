@@ -36,6 +36,12 @@ export interface StageConfig extends cdktf.TerraformMetaArguments {
   */
   readonly database: string;
   /**
+  * Specifies the directory settings for the stage.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stage#directory Stage#directory}
+  */
+  readonly directory?: string;
+  /**
   * Specifies the encryption settings for the stage.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stage#encryption Stage#encryption}
@@ -160,6 +166,7 @@ export class Stage extends cdktf.TerraformResource {
     this._copyOptions = config.copyOptions;
     this._credentials = config.credentials;
     this._database = config.database;
+    this._directory = config.directory;
     this._encryption = config.encryption;
     this._fileFormat = config.fileFormat;
     this._name = config.name;
@@ -249,6 +256,22 @@ export class Stage extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get databaseInput() {
     return this._database;
+  }
+
+  // directory - computed: false, optional: true, required: false
+  private _directory?: string; 
+  public get directory() {
+    return this.getStringAttribute('directory');
+  }
+  public set directory(value: string) {
+    this._directory = value;
+  }
+  public resetDirectory() {
+    this._directory = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get directoryInput() {
+    return this._directory;
   }
 
   // encryption - computed: false, optional: true, required: false
@@ -390,6 +413,7 @@ export class Stage extends cdktf.TerraformResource {
       copy_options: cdktf.stringToTerraform(this._copyOptions),
       credentials: cdktf.stringToTerraform(this._credentials),
       database: cdktf.stringToTerraform(this._database),
+      directory: cdktf.stringToTerraform(this._directory),
       encryption: cdktf.stringToTerraform(this._encryption),
       file_format: cdktf.stringToTerraform(this._fileFormat),
       name: cdktf.stringToTerraform(this._name),
