@@ -40143,7 +40143,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.StageGrant.resetOnFuture">resetOnFuture</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StageGrant.resetPrivilege">resetPrivilege</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StageGrant.resetRoles">resetRoles</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.StageGrant.resetShares">resetShares</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StageGrant.resetStageName">resetStageName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StageGrant.resetWithGrantOption">resetWithGrantOption</a></code> | *No description.* |
 
@@ -40351,12 +40350,6 @@ public resetPrivilege(): void
 public resetRoles(): void
 ```
 
-##### `resetShares` <a name="resetShares" id="@cdktf/provider-snowflake.StageGrant.resetShares"></a>
-
-```typescript
-public resetShares(): void
-```
-
 ##### `resetStageName` <a name="resetStageName" id="@cdktf/provider-snowflake.StageGrant.resetStageName"></a>
 
 ```typescript
@@ -40416,7 +40409,6 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.StageGrant.property.privilegeInput">privilegeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StageGrant.property.rolesInput">rolesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StageGrant.property.schemaNameInput">schemaNameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.StageGrant.property.sharesInput">sharesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StageGrant.property.stageNameInput">stageNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StageGrant.property.withGrantOptionInput">withGrantOptionInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StageGrant.property.databaseName">databaseName</a></code> | <code>string</code> | *No description.* |
@@ -40424,7 +40416,6 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.StageGrant.property.privilege">privilege</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StageGrant.property.roles">roles</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StageGrant.property.schemaName">schemaName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.StageGrant.property.shares">shares</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StageGrant.property.stageName">stageName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StageGrant.property.withGrantOption">withGrantOption</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 
@@ -40602,16 +40593,6 @@ public readonly schemaNameInput: string;
 
 ---
 
-##### `sharesInput`<sup>Optional</sup> <a name="sharesInput" id="@cdktf/provider-snowflake.StageGrant.property.sharesInput"></a>
-
-```typescript
-public readonly sharesInput: string[];
-```
-
-- *Type:* string[]
-
----
-
 ##### `stageNameInput`<sup>Optional</sup> <a name="stageNameInput" id="@cdktf/provider-snowflake.StageGrant.property.stageNameInput"></a>
 
 ```typescript
@@ -40679,16 +40660,6 @@ public readonly schemaName: string;
 ```
 
 - *Type:* string
-
----
-
-##### `shares`<sup>Required</sup> <a name="shares" id="@cdktf/provider-snowflake.StageGrant.property.shares"></a>
-
-```typescript
-public readonly shares: string[];
-```
-
-- *Type:* string[]
 
 ---
 
@@ -55422,7 +55393,7 @@ const functionGrantConfig: FunctionGrantConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.FunctionGrantConfig.property.arguments">arguments</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.FunctionGrantArguments">FunctionGrantArguments</a>[]</code> | arguments block. |
 | <code><a href="#@cdktf/provider-snowflake.FunctionGrantConfig.property.functionName">functionName</a></code> | <code>string</code> | The name of the function on which to grant privileges immediately (only valid if on_future is false). |
 | <code><a href="#@cdktf/provider-snowflake.FunctionGrantConfig.property.onFuture">onFuture</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true and a schema_name is provided, apply this grant on all future functions in the given schema. |
-| <code><a href="#@cdktf/provider-snowflake.FunctionGrantConfig.property.privilege">privilege</a></code> | <code>string</code> | The privilege to grant on the current or future function. |
+| <code><a href="#@cdktf/provider-snowflake.FunctionGrantConfig.property.privilege">privilege</a></code> | <code>string</code> | The privilege to grant on the current or future function. Must be one of `USAGE` or `OWNERSHIP`. |
 | <code><a href="#@cdktf/provider-snowflake.FunctionGrantConfig.property.returnType">returnType</a></code> | <code>string</code> | The return type of the function (must be present if function_name is present). |
 | <code><a href="#@cdktf/provider-snowflake.FunctionGrantConfig.property.roles">roles</a></code> | <code>string[]</code> | Grants privilege to these roles. |
 | <code><a href="#@cdktf/provider-snowflake.FunctionGrantConfig.property.shares">shares</a></code> | <code>string[]</code> | Grants privilege to these shares (only valid if on_future is false). |
@@ -55548,7 +55519,7 @@ public readonly privilege: string;
 
 - *Type:* string
 
-The privilege to grant on the current or future function.
+The privilege to grant on the current or future function. Must be one of `USAGE` or `OWNERSHIP`.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function_grant#privilege FunctionGrant#privilege}
 
@@ -60838,7 +60809,6 @@ const stageGrantConfig: StageGrantConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.StageGrantConfig.property.onFuture">onFuture</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true and a schema_name is provided, apply this grant on all future stages in the given schema. |
 | <code><a href="#@cdktf/provider-snowflake.StageGrantConfig.property.privilege">privilege</a></code> | <code>string</code> | The privilege to grant on the stage. |
 | <code><a href="#@cdktf/provider-snowflake.StageGrantConfig.property.roles">roles</a></code> | <code>string[]</code> | Grants privilege to these roles. |
-| <code><a href="#@cdktf/provider-snowflake.StageGrantConfig.property.shares">shares</a></code> | <code>string[]</code> | Grants privilege to these shares (only valid if on_future is false). |
 | <code><a href="#@cdktf/provider-snowflake.StageGrantConfig.property.stageName">stageName</a></code> | <code>string</code> | The name of the stage on which to grant privilege (only valid if on_future is false). |
 | <code><a href="#@cdktf/provider-snowflake.StageGrantConfig.property.withGrantOption">withGrantOption</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, allows the recipient role to grant the privileges to other roles. |
 
@@ -60922,7 +60892,7 @@ public readonly onFuture: boolean | IResolvable;
 
 When this is set to true and a schema_name is provided, apply this grant on all future stages in the given schema.
 
-When this is true and no schema_name is provided apply this grant on all future stages in the given database. The stage_name and shares fields must be unset in order to use on_future.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stage_grant#on_future StageGrant#on_future}
+When this is true and no schema_name is provided apply this grant on all future stages in the given database. The stage_name field must be unset in order to use on_future.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stage_grant#on_future StageGrant#on_future}
 
 ---
 
@@ -60951,20 +60921,6 @@ public readonly roles: string[];
 Grants privilege to these roles.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stage_grant#roles StageGrant#roles}
-
----
-
-##### `shares`<sup>Optional</sup> <a name="shares" id="@cdktf/provider-snowflake.StageGrantConfig.property.shares"></a>
-
-```typescript
-public readonly shares: string[];
-```
-
-- *Type:* string[]
-
-Grants privilege to these shares (only valid if on_future is false).
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stage_grant#shares StageGrant#shares}
 
 ---
 

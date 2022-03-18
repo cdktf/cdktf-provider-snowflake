@@ -26,7 +26,7 @@ export interface FunctionGrantConfig extends cdktf.TerraformMetaArguments {
   */
   readonly onFuture?: boolean | cdktf.IResolvable;
   /**
-  * The privilege to grant on the current or future function.
+  * The privilege to grant on the current or future function. Must be one of `USAGE` or `OWNERSHIP`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function_grant#privilege FunctionGrant#privilege}
   */
