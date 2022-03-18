@@ -14,7 +14,7 @@ export interface StageGrantConfig extends cdktf.TerraformMetaArguments {
   */
   readonly databaseName: string;
   /**
-  * When this is set to true and a schema_name is provided, apply this grant on all future stages in the given schema. When this is true and no schema_name is provided apply this grant on all future stages in the given database. The stage_name and shares fields must be unset in order to use on_future.
+  * When this is set to true and a schema_name is provided, apply this grant on all future stages in the given schema. When this is true and no schema_name is provided apply this grant on all future stages in the given database. The stage_name field must be unset in order to use on_future.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stage_grant#on_future StageGrant#on_future}
   */
@@ -37,12 +37,6 @@ export interface StageGrantConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stage_grant#schema_name StageGrant#schema_name}
   */
   readonly schemaName: string;
-  /**
-  * Grants privilege to these shares (only valid if on_future is false).
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stage_grant#shares StageGrant#shares}
-  */
-  readonly shares?: string[];
   /**
   * The name of the stage on which to grant privilege (only valid if on_future is false).
   * 
@@ -94,7 +88,6 @@ export class StageGrant extends cdktf.TerraformResource {
     this._privilege = config.privilege;
     this._roles = config.roles;
     this._schemaName = config.schemaName;
-    this._shares = config.shares;
     this._stageName = config.stageName;
     this._withGrantOption = config.withGrantOption;
   }
@@ -182,22 +175,6 @@ export class StageGrant extends cdktf.TerraformResource {
     return this._schemaName;
   }
 
-  // shares - computed: false, optional: true, required: false
-  private _shares?: string[]; 
-  public get shares() {
-    return cdktf.Fn.tolist(this.getListAttribute('shares'));
-  }
-  public set shares(value: string[]) {
-    this._shares = value;
-  }
-  public resetShares() {
-    this._shares = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sharesInput() {
-    return this._shares;
-  }
-
   // stage_name - computed: false, optional: true, required: false
   private _stageName?: string; 
   public get stageName() {
@@ -241,7 +218,6 @@ export class StageGrant extends cdktf.TerraformResource {
       privilege: cdktf.stringToTerraform(this._privilege),
       roles: cdktf.listMapper(cdktf.stringToTerraform)(this._roles),
       schema_name: cdktf.stringToTerraform(this._schemaName),
-      shares: cdktf.listMapper(cdktf.stringToTerraform)(this._shares),
       stage_name: cdktf.stringToTerraform(this._stageName),
       with_grant_option: cdktf.booleanToTerraform(this._withGrantOption),
     };
