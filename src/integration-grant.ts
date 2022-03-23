@@ -8,6 +8,12 @@ import * as cdktf from 'cdktf';
 
 export interface IntegrationGrantConfig extends cdktf.TerraformMetaArguments {
   /**
+  * When this is set to true, multiple grants of the same type can be created. This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/integration_grant#enable_multiple_grants IntegrationGrant#enable_multiple_grants}
+  */
+  readonly enableMultipleGrants?: boolean | cdktf.IResolvable;
+  /**
   * Identifier for the integration; must be unique for your account.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/integration_grant#integration_name IntegrationGrant#integration_name}
@@ -65,6 +71,7 @@ export class IntegrationGrant extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._enableMultipleGrants = config.enableMultipleGrants;
     this._integrationName = config.integrationName;
     this._privilege = config.privilege;
     this._roles = config.roles;
@@ -74,6 +81,22 @@ export class IntegrationGrant extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // enable_multiple_grants - computed: false, optional: true, required: false
+  private _enableMultipleGrants?: boolean | cdktf.IResolvable; 
+  public get enableMultipleGrants() {
+    return this.getBooleanAttribute('enable_multiple_grants');
+  }
+  public set enableMultipleGrants(value: boolean | cdktf.IResolvable) {
+    this._enableMultipleGrants = value;
+  }
+  public resetEnableMultipleGrants() {
+    this._enableMultipleGrants = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableMultipleGrantsInput() {
+    return this._enableMultipleGrants;
+  }
 
   // id - computed: true, optional: true, required: false
   public get id() {
@@ -147,6 +170,7 @@ export class IntegrationGrant extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      enable_multiple_grants: cdktf.booleanToTerraform(this._enableMultipleGrants),
       integration_name: cdktf.stringToTerraform(this._integrationName),
       privilege: cdktf.stringToTerraform(this._privilege),
       roles: cdktf.listMapper(cdktf.stringToTerraform)(this._roles),

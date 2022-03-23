@@ -14,6 +14,12 @@ export interface MaskingPolicyGrantConfig extends cdktf.TerraformMetaArguments {
   */
   readonly databaseName: string;
   /**
+  * When this is set to true, multiple grants of the same type can be created. This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/masking_policy_grant#enable_multiple_grants MaskingPolicyGrant#enable_multiple_grants}
+  */
+  readonly enableMultipleGrants?: boolean | cdktf.IResolvable;
+  /**
   * The name of the masking policy on which to grant privileges immediately.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/masking_policy_grant#masking_policy_name MaskingPolicyGrant#masking_policy_name}
@@ -78,6 +84,7 @@ export class MaskingPolicyGrant extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._databaseName = config.databaseName;
+    this._enableMultipleGrants = config.enableMultipleGrants;
     this._maskingPolicyName = config.maskingPolicyName;
     this._privilege = config.privilege;
     this._roles = config.roles;
@@ -100,6 +107,22 @@ export class MaskingPolicyGrant extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get databaseNameInput() {
     return this._databaseName;
+  }
+
+  // enable_multiple_grants - computed: false, optional: true, required: false
+  private _enableMultipleGrants?: boolean | cdktf.IResolvable; 
+  public get enableMultipleGrants() {
+    return this.getBooleanAttribute('enable_multiple_grants');
+  }
+  public set enableMultipleGrants(value: boolean | cdktf.IResolvable) {
+    this._enableMultipleGrants = value;
+  }
+  public resetEnableMultipleGrants() {
+    this._enableMultipleGrants = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableMultipleGrantsInput() {
+    return this._enableMultipleGrants;
   }
 
   // id - computed: true, optional: true, required: false
@@ -188,6 +211,7 @@ export class MaskingPolicyGrant extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       database_name: cdktf.stringToTerraform(this._databaseName),
+      enable_multiple_grants: cdktf.booleanToTerraform(this._enableMultipleGrants),
       masking_policy_name: cdktf.stringToTerraform(this._maskingPolicyName),
       privilege: cdktf.stringToTerraform(this._privilege),
       roles: cdktf.listMapper(cdktf.stringToTerraform)(this._roles),

@@ -14,6 +14,12 @@ export interface PipeGrantConfig extends cdktf.TerraformMetaArguments {
   */
   readonly databaseName: string;
   /**
+  * When this is set to true, multiple grants of the same type can be created. This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/pipe_grant#enable_multiple_grants PipeGrant#enable_multiple_grants}
+  */
+  readonly enableMultipleGrants?: boolean | cdktf.IResolvable;
+  /**
   * When this is set to true and a schema_name is provided, apply this grant on all future pipes in the given schema. When this is true and no schema_name is provided apply this grant on all future pipes in the given database. The pipe_name field must be unset in order to use on_future.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/pipe_grant#on_future PipeGrant#on_future}
@@ -84,6 +90,7 @@ export class PipeGrant extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._databaseName = config.databaseName;
+    this._enableMultipleGrants = config.enableMultipleGrants;
     this._onFuture = config.onFuture;
     this._pipeName = config.pipeName;
     this._privilege = config.privilege;
@@ -107,6 +114,22 @@ export class PipeGrant extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get databaseNameInput() {
     return this._databaseName;
+  }
+
+  // enable_multiple_grants - computed: false, optional: true, required: false
+  private _enableMultipleGrants?: boolean | cdktf.IResolvable; 
+  public get enableMultipleGrants() {
+    return this.getBooleanAttribute('enable_multiple_grants');
+  }
+  public set enableMultipleGrants(value: boolean | cdktf.IResolvable) {
+    this._enableMultipleGrants = value;
+  }
+  public resetEnableMultipleGrants() {
+    this._enableMultipleGrants = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableMultipleGrantsInput() {
+    return this._enableMultipleGrants;
   }
 
   // id - computed: true, optional: true, required: false
@@ -214,6 +237,7 @@ export class PipeGrant extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       database_name: cdktf.stringToTerraform(this._databaseName),
+      enable_multiple_grants: cdktf.booleanToTerraform(this._enableMultipleGrants),
       on_future: cdktf.booleanToTerraform(this._onFuture),
       pipe_name: cdktf.stringToTerraform(this._pipeName),
       privilege: cdktf.stringToTerraform(this._privilege),
