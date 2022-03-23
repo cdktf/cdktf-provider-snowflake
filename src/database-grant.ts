@@ -14,6 +14,12 @@ export interface DatabaseGrantConfig extends cdktf.TerraformMetaArguments {
   */
   readonly databaseName: string;
   /**
+  * When this is set to true, multiple grants of the same type can be created. This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/database_grant#enable_multiple_grants DatabaseGrant#enable_multiple_grants}
+  */
+  readonly enableMultipleGrants?: boolean | cdktf.IResolvable;
+  /**
   * The privilege to grant on the database.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/database_grant#privilege DatabaseGrant#privilege}
@@ -72,6 +78,7 @@ export class DatabaseGrant extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._databaseName = config.databaseName;
+    this._enableMultipleGrants = config.enableMultipleGrants;
     this._privilege = config.privilege;
     this._roles = config.roles;
     this._shares = config.shares;
@@ -93,6 +100,22 @@ export class DatabaseGrant extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get databaseNameInput() {
     return this._databaseName;
+  }
+
+  // enable_multiple_grants - computed: false, optional: true, required: false
+  private _enableMultipleGrants?: boolean | cdktf.IResolvable; 
+  public get enableMultipleGrants() {
+    return this.getBooleanAttribute('enable_multiple_grants');
+  }
+  public set enableMultipleGrants(value: boolean | cdktf.IResolvable) {
+    this._enableMultipleGrants = value;
+  }
+  public resetEnableMultipleGrants() {
+    this._enableMultipleGrants = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableMultipleGrantsInput() {
+    return this._enableMultipleGrants;
   }
 
   // id - computed: true, optional: true, required: false
@@ -171,6 +194,7 @@ export class DatabaseGrant extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       database_name: cdktf.stringToTerraform(this._databaseName),
+      enable_multiple_grants: cdktf.booleanToTerraform(this._enableMultipleGrants),
       privilege: cdktf.stringToTerraform(this._privilege),
       roles: cdktf.listMapper(cdktf.stringToTerraform)(this._roles),
       shares: cdktf.listMapper(cdktf.stringToTerraform)(this._shares),

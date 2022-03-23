@@ -29,6 +29,7 @@ export * from './resource-monitor';
 export * from './resource-monitor-grant';
 export * from './role';
 export * from './role-grants';
+export * from './role-ownership-grant';
 export * from './row-access-policy';
 export * from './row-access-policy-grant';
 export * from './saml-integration';

@@ -66,6 +66,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.AccountGrant.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.AccountGrant.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.AccountGrant.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.AccountGrant.resetEnableMultipleGrants">resetEnableMultipleGrants</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.AccountGrant.resetPrivilege">resetPrivilege</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.AccountGrant.resetRoles">resetRoles</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.AccountGrant.resetWithGrantOption">resetWithGrantOption</a></code> | *No description.* |
@@ -256,6 +257,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetEnableMultipleGrants` <a name="resetEnableMultipleGrants" id="@cdktf/provider-snowflake.AccountGrant.resetEnableMultipleGrants"></a>
+
+```typescript
+public resetEnableMultipleGrants(): void
+```
+
 ##### `resetPrivilege` <a name="resetPrivilege" id="@cdktf/provider-snowflake.AccountGrant.resetPrivilege"></a>
 
 ```typescript
@@ -316,9 +323,11 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.AccountGrant.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.AccountGrant.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.AccountGrant.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.AccountGrant.property.enableMultipleGrantsInput">enableMultipleGrantsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.AccountGrant.property.privilegeInput">privilegeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.AccountGrant.property.rolesInput">rolesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.AccountGrant.property.withGrantOptionInput">withGrantOptionInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.AccountGrant.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.AccountGrant.property.privilege">privilege</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.AccountGrant.property.roles">roles</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.AccountGrant.property.withGrantOption">withGrantOption</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
@@ -447,6 +456,16 @@ public readonly id: string;
 
 ---
 
+##### `enableMultipleGrantsInput`<sup>Optional</sup> <a name="enableMultipleGrantsInput" id="@cdktf/provider-snowflake.AccountGrant.property.enableMultipleGrantsInput"></a>
+
+```typescript
+public readonly enableMultipleGrantsInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `privilegeInput`<sup>Optional</sup> <a name="privilegeInput" id="@cdktf/provider-snowflake.AccountGrant.property.privilegeInput"></a>
 
 ```typescript
@@ -471,6 +490,16 @@ public readonly rolesInput: string[];
 
 ```typescript
 public readonly withGrantOptionInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `enableMultipleGrants`<sup>Required</sup> <a name="enableMultipleGrants" id="@cdktf/provider-snowflake.AccountGrant.property.enableMultipleGrants"></a>
+
+```typescript
+public readonly enableMultipleGrants: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktf.IResolvable
@@ -1923,6 +1952,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.DatabaseGrant.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseGrant.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseGrant.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DatabaseGrant.resetEnableMultipleGrants">resetEnableMultipleGrants</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseGrant.resetPrivilege">resetPrivilege</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseGrant.resetRoles">resetRoles</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseGrant.resetShares">resetShares</a></code> | *No description.* |
@@ -2114,6 +2144,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetEnableMultipleGrants` <a name="resetEnableMultipleGrants" id="@cdktf/provider-snowflake.DatabaseGrant.resetEnableMultipleGrants"></a>
+
+```typescript
+public resetEnableMultipleGrants(): void
+```
+
 ##### `resetPrivilege` <a name="resetPrivilege" id="@cdktf/provider-snowflake.DatabaseGrant.resetPrivilege"></a>
 
 ```typescript
@@ -2181,11 +2217,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.DatabaseGrant.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseGrant.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseGrant.property.databaseNameInput">databaseNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DatabaseGrant.property.enableMultipleGrantsInput">enableMultipleGrantsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseGrant.property.privilegeInput">privilegeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseGrant.property.rolesInput">rolesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseGrant.property.sharesInput">sharesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseGrant.property.withGrantOptionInput">withGrantOptionInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseGrant.property.databaseName">databaseName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DatabaseGrant.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseGrant.property.privilege">privilege</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseGrant.property.roles">roles</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseGrant.property.shares">shares</a></code> | <code>string[]</code> | *No description.* |
@@ -2325,6 +2363,16 @@ public readonly databaseNameInput: string;
 
 ---
 
+##### `enableMultipleGrantsInput`<sup>Optional</sup> <a name="enableMultipleGrantsInput" id="@cdktf/provider-snowflake.DatabaseGrant.property.enableMultipleGrantsInput"></a>
+
+```typescript
+public readonly enableMultipleGrantsInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `privilegeInput`<sup>Optional</sup> <a name="privilegeInput" id="@cdktf/provider-snowflake.DatabaseGrant.property.privilegeInput"></a>
 
 ```typescript
@@ -2372,6 +2420,16 @@ public readonly databaseName: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `enableMultipleGrants`<sup>Required</sup> <a name="enableMultipleGrants" id="@cdktf/provider-snowflake.DatabaseGrant.property.enableMultipleGrants"></a>
+
+```typescript
+public readonly enableMultipleGrants: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -17545,6 +17603,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.ExternalTableGrant.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTableGrant.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTableGrant.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalTableGrant.resetEnableMultipleGrants">resetEnableMultipleGrants</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTableGrant.resetExternalTableName">resetExternalTableName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTableGrant.resetOnFuture">resetOnFuture</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTableGrant.resetPrivilege">resetPrivilege</a></code> | *No description.* |
@@ -17738,6 +17797,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetEnableMultipleGrants` <a name="resetEnableMultipleGrants" id="@cdktf/provider-snowflake.ExternalTableGrant.resetEnableMultipleGrants"></a>
+
+```typescript
+public resetEnableMultipleGrants(): void
+```
+
 ##### `resetExternalTableName` <a name="resetExternalTableName" id="@cdktf/provider-snowflake.ExternalTableGrant.resetExternalTableName"></a>
 
 ```typescript
@@ -17817,6 +17882,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.ExternalTableGrant.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTableGrant.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTableGrant.property.databaseNameInput">databaseNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalTableGrant.property.enableMultipleGrantsInput">enableMultipleGrantsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTableGrant.property.externalTableNameInput">externalTableNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTableGrant.property.onFutureInput">onFutureInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTableGrant.property.privilegeInput">privilegeInput</a></code> | <code>string</code> | *No description.* |
@@ -17825,6 +17891,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.ExternalTableGrant.property.sharesInput">sharesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTableGrant.property.withGrantOptionInput">withGrantOptionInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTableGrant.property.databaseName">databaseName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalTableGrant.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTableGrant.property.externalTableName">externalTableName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTableGrant.property.onFuture">onFuture</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTableGrant.property.privilege">privilege</a></code> | <code>string</code> | *No description.* |
@@ -17967,6 +18034,16 @@ public readonly databaseNameInput: string;
 
 ---
 
+##### `enableMultipleGrantsInput`<sup>Optional</sup> <a name="enableMultipleGrantsInput" id="@cdktf/provider-snowflake.ExternalTableGrant.property.enableMultipleGrantsInput"></a>
+
+```typescript
+public readonly enableMultipleGrantsInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `externalTableNameInput`<sup>Optional</sup> <a name="externalTableNameInput" id="@cdktf/provider-snowflake.ExternalTableGrant.property.externalTableNameInput"></a>
 
 ```typescript
@@ -18044,6 +18121,16 @@ public readonly databaseName: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `enableMultipleGrants`<sup>Required</sup> <a name="enableMultipleGrants" id="@cdktf/provider-snowflake.ExternalTableGrant.property.enableMultipleGrants"></a>
+
+```typescript
+public readonly enableMultipleGrants: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -19651,6 +19738,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.FileFormatGrant.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FileFormatGrant.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FileFormatGrant.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.FileFormatGrant.resetEnableMultipleGrants">resetEnableMultipleGrants</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FileFormatGrant.resetFileFormatName">resetFileFormatName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FileFormatGrant.resetOnFuture">resetOnFuture</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FileFormatGrant.resetPrivilege">resetPrivilege</a></code> | *No description.* |
@@ -19843,6 +19931,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetEnableMultipleGrants` <a name="resetEnableMultipleGrants" id="@cdktf/provider-snowflake.FileFormatGrant.resetEnableMultipleGrants"></a>
+
+```typescript
+public resetEnableMultipleGrants(): void
+```
+
 ##### `resetFileFormatName` <a name="resetFileFormatName" id="@cdktf/provider-snowflake.FileFormatGrant.resetFileFormatName"></a>
 
 ```typescript
@@ -19916,6 +20010,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.FileFormatGrant.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FileFormatGrant.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FileFormatGrant.property.databaseNameInput">databaseNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.FileFormatGrant.property.enableMultipleGrantsInput">enableMultipleGrantsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FileFormatGrant.property.fileFormatNameInput">fileFormatNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FileFormatGrant.property.onFutureInput">onFutureInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FileFormatGrant.property.privilegeInput">privilegeInput</a></code> | <code>string</code> | *No description.* |
@@ -19923,6 +20018,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.FileFormatGrant.property.schemaNameInput">schemaNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FileFormatGrant.property.withGrantOptionInput">withGrantOptionInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FileFormatGrant.property.databaseName">databaseName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.FileFormatGrant.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FileFormatGrant.property.fileFormatName">fileFormatName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FileFormatGrant.property.onFuture">onFuture</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FileFormatGrant.property.privilege">privilege</a></code> | <code>string</code> | *No description.* |
@@ -20064,6 +20160,16 @@ public readonly databaseNameInput: string;
 
 ---
 
+##### `enableMultipleGrantsInput`<sup>Optional</sup> <a name="enableMultipleGrantsInput" id="@cdktf/provider-snowflake.FileFormatGrant.property.enableMultipleGrantsInput"></a>
+
+```typescript
+public readonly enableMultipleGrantsInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `fileFormatNameInput`<sup>Optional</sup> <a name="fileFormatNameInput" id="@cdktf/provider-snowflake.FileFormatGrant.property.fileFormatNameInput"></a>
 
 ```typescript
@@ -20131,6 +20237,16 @@ public readonly databaseName: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `enableMultipleGrants`<sup>Required</sup> <a name="enableMultipleGrants" id="@cdktf/provider-snowflake.FileFormatGrant.property.enableMultipleGrants"></a>
+
+```typescript
+public readonly enableMultipleGrants: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -21055,6 +21171,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.FunctionGrant.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FunctionGrant.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FunctionGrant.resetArguments">resetArguments</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.FunctionGrant.resetEnableMultipleGrants">resetEnableMultipleGrants</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FunctionGrant.resetFunctionName">resetFunctionName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FunctionGrant.resetOnFuture">resetOnFuture</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FunctionGrant.resetPrivilege">resetPrivilege</a></code> | *No description.* |
@@ -21255,6 +21372,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 public resetArguments(): void
 ```
 
+##### `resetEnableMultipleGrants` <a name="resetEnableMultipleGrants" id="@cdktf/provider-snowflake.FunctionGrant.resetEnableMultipleGrants"></a>
+
+```typescript
+public resetEnableMultipleGrants(): void
+```
+
 ##### `resetFunctionName` <a name="resetFunctionName" id="@cdktf/provider-snowflake.FunctionGrant.resetFunctionName"></a>
 
 ```typescript
@@ -21341,6 +21464,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.FunctionGrant.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FunctionGrant.property.argumentsInput">argumentsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.FunctionGrantArguments">FunctionGrantArguments</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FunctionGrant.property.databaseNameInput">databaseNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.FunctionGrant.property.enableMultipleGrantsInput">enableMultipleGrantsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FunctionGrant.property.functionNameInput">functionNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FunctionGrant.property.onFutureInput">onFutureInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FunctionGrant.property.privilegeInput">privilegeInput</a></code> | <code>string</code> | *No description.* |
@@ -21351,6 +21475,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.FunctionGrant.property.withGrantOptionInput">withGrantOptionInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FunctionGrant.property.arguments">arguments</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.FunctionGrantArguments">FunctionGrantArguments</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FunctionGrant.property.databaseName">databaseName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.FunctionGrant.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FunctionGrant.property.functionName">functionName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FunctionGrant.property.onFuture">onFuture</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FunctionGrant.property.privilege">privilege</a></code> | <code>string</code> | *No description.* |
@@ -21504,6 +21629,16 @@ public readonly databaseNameInput: string;
 
 ---
 
+##### `enableMultipleGrantsInput`<sup>Optional</sup> <a name="enableMultipleGrantsInput" id="@cdktf/provider-snowflake.FunctionGrant.property.enableMultipleGrantsInput"></a>
+
+```typescript
+public readonly enableMultipleGrantsInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `functionNameInput`<sup>Optional</sup> <a name="functionNameInput" id="@cdktf/provider-snowflake.FunctionGrant.property.functionNameInput"></a>
 
 ```typescript
@@ -21601,6 +21736,16 @@ public readonly databaseName: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `enableMultipleGrants`<sup>Required</sup> <a name="enableMultipleGrants" id="@cdktf/provider-snowflake.FunctionGrant.property.enableMultipleGrants"></a>
+
+```typescript
+public readonly enableMultipleGrants: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -21766,6 +21911,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.IntegrationGrant.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.IntegrationGrant.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.IntegrationGrant.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.IntegrationGrant.resetEnableMultipleGrants">resetEnableMultipleGrants</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.IntegrationGrant.resetPrivilege">resetPrivilege</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.IntegrationGrant.resetRoles">resetRoles</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.IntegrationGrant.resetWithGrantOption">resetWithGrantOption</a></code> | *No description.* |
@@ -21956,6 +22102,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetEnableMultipleGrants` <a name="resetEnableMultipleGrants" id="@cdktf/provider-snowflake.IntegrationGrant.resetEnableMultipleGrants"></a>
+
+```typescript
+public resetEnableMultipleGrants(): void
+```
+
 ##### `resetPrivilege` <a name="resetPrivilege" id="@cdktf/provider-snowflake.IntegrationGrant.resetPrivilege"></a>
 
 ```typescript
@@ -22016,10 +22168,12 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.IntegrationGrant.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.IntegrationGrant.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.IntegrationGrant.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.IntegrationGrant.property.enableMultipleGrantsInput">enableMultipleGrantsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.IntegrationGrant.property.integrationNameInput">integrationNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.IntegrationGrant.property.privilegeInput">privilegeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.IntegrationGrant.property.rolesInput">rolesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.IntegrationGrant.property.withGrantOptionInput">withGrantOptionInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.IntegrationGrant.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.IntegrationGrant.property.integrationName">integrationName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.IntegrationGrant.property.privilege">privilege</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.IntegrationGrant.property.roles">roles</a></code> | <code>string[]</code> | *No description.* |
@@ -22149,6 +22303,16 @@ public readonly id: string;
 
 ---
 
+##### `enableMultipleGrantsInput`<sup>Optional</sup> <a name="enableMultipleGrantsInput" id="@cdktf/provider-snowflake.IntegrationGrant.property.enableMultipleGrantsInput"></a>
+
+```typescript
+public readonly enableMultipleGrantsInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `integrationNameInput`<sup>Optional</sup> <a name="integrationNameInput" id="@cdktf/provider-snowflake.IntegrationGrant.property.integrationNameInput"></a>
 
 ```typescript
@@ -22183,6 +22347,16 @@ public readonly rolesInput: string[];
 
 ```typescript
 public readonly withGrantOptionInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `enableMultipleGrants`<sup>Required</sup> <a name="enableMultipleGrants" id="@cdktf/provider-snowflake.IntegrationGrant.property.enableMultipleGrants"></a>
+
+```typescript
+public readonly enableMultipleGrants: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktf.IResolvable
@@ -23523,6 +23697,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrant.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrant.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrant.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrant.resetEnableMultipleGrants">resetEnableMultipleGrants</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrant.resetPrivilege">resetPrivilege</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrant.resetRoles">resetRoles</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrant.resetWithGrantOption">resetWithGrantOption</a></code> | *No description.* |
@@ -23713,6 +23888,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetEnableMultipleGrants` <a name="resetEnableMultipleGrants" id="@cdktf/provider-snowflake.MaskingPolicyGrant.resetEnableMultipleGrants"></a>
+
+```typescript
+public resetEnableMultipleGrants(): void
+```
+
 ##### `resetPrivilege` <a name="resetPrivilege" id="@cdktf/provider-snowflake.MaskingPolicyGrant.resetPrivilege"></a>
 
 ```typescript
@@ -23774,12 +23955,14 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrant.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrant.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrant.property.databaseNameInput">databaseNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrant.property.enableMultipleGrantsInput">enableMultipleGrantsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrant.property.maskingPolicyNameInput">maskingPolicyNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrant.property.privilegeInput">privilegeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrant.property.rolesInput">rolesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrant.property.schemaNameInput">schemaNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrant.property.withGrantOptionInput">withGrantOptionInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrant.property.databaseName">databaseName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrant.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrant.property.maskingPolicyName">maskingPolicyName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrant.property.privilege">privilege</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrant.property.roles">roles</a></code> | <code>string[]</code> | *No description.* |
@@ -23920,6 +24103,16 @@ public readonly databaseNameInput: string;
 
 ---
 
+##### `enableMultipleGrantsInput`<sup>Optional</sup> <a name="enableMultipleGrantsInput" id="@cdktf/provider-snowflake.MaskingPolicyGrant.property.enableMultipleGrantsInput"></a>
+
+```typescript
+public readonly enableMultipleGrantsInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `maskingPolicyNameInput`<sup>Optional</sup> <a name="maskingPolicyNameInput" id="@cdktf/provider-snowflake.MaskingPolicyGrant.property.maskingPolicyNameInput"></a>
 
 ```typescript
@@ -23977,6 +24170,16 @@ public readonly databaseName: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `enableMultipleGrants`<sup>Required</sup> <a name="enableMultipleGrants" id="@cdktf/provider-snowflake.MaskingPolicyGrant.property.enableMultipleGrants"></a>
+
+```typescript
+public readonly enableMultipleGrants: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -24774,6 +24977,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrant.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrant.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrant.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrant.resetEnableMultipleGrants">resetEnableMultipleGrants</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrant.resetMaterializedViewName">resetMaterializedViewName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrant.resetOnFuture">resetOnFuture</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrant.resetPrivilege">resetPrivilege</a></code> | *No description.* |
@@ -24968,6 +25172,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetEnableMultipleGrants` <a name="resetEnableMultipleGrants" id="@cdktf/provider-snowflake.MaterializedViewGrant.resetEnableMultipleGrants"></a>
+
+```typescript
+public resetEnableMultipleGrants(): void
+```
+
 ##### `resetMaterializedViewName` <a name="resetMaterializedViewName" id="@cdktf/provider-snowflake.MaterializedViewGrant.resetMaterializedViewName"></a>
 
 ```typescript
@@ -25053,6 +25263,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrant.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrant.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrant.property.databaseNameInput">databaseNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrant.property.enableMultipleGrantsInput">enableMultipleGrantsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrant.property.materializedViewNameInput">materializedViewNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrant.property.onFutureInput">onFutureInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrant.property.privilegeInput">privilegeInput</a></code> | <code>string</code> | *No description.* |
@@ -25061,6 +25272,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrant.property.sharesInput">sharesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrant.property.withGrantOptionInput">withGrantOptionInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrant.property.databaseName">databaseName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrant.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrant.property.materializedViewName">materializedViewName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrant.property.onFuture">onFuture</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrant.property.privilege">privilege</a></code> | <code>string</code> | *No description.* |
@@ -25203,6 +25415,16 @@ public readonly databaseNameInput: string;
 
 ---
 
+##### `enableMultipleGrantsInput`<sup>Optional</sup> <a name="enableMultipleGrantsInput" id="@cdktf/provider-snowflake.MaterializedViewGrant.property.enableMultipleGrantsInput"></a>
+
+```typescript
+public readonly enableMultipleGrantsInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `materializedViewNameInput`<sup>Optional</sup> <a name="materializedViewNameInput" id="@cdktf/provider-snowflake.MaterializedViewGrant.property.materializedViewNameInput"></a>
 
 ```typescript
@@ -25280,6 +25502,16 @@ public readonly databaseName: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `enableMultipleGrants`<sup>Required</sup> <a name="enableMultipleGrants" id="@cdktf/provider-snowflake.MaterializedViewGrant.property.enableMultipleGrants"></a>
+
+```typescript
+public readonly enableMultipleGrants: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -28717,6 +28949,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.PipeGrant.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.PipeGrant.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.PipeGrant.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.PipeGrant.resetEnableMultipleGrants">resetEnableMultipleGrants</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.PipeGrant.resetOnFuture">resetOnFuture</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.PipeGrant.resetPipeName">resetPipeName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.PipeGrant.resetPrivilege">resetPrivilege</a></code> | *No description.* |
@@ -28909,6 +29142,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetEnableMultipleGrants` <a name="resetEnableMultipleGrants" id="@cdktf/provider-snowflake.PipeGrant.resetEnableMultipleGrants"></a>
+
+```typescript
+public resetEnableMultipleGrants(): void
+```
+
 ##### `resetOnFuture` <a name="resetOnFuture" id="@cdktf/provider-snowflake.PipeGrant.resetOnFuture"></a>
 
 ```typescript
@@ -28982,6 +29221,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.PipeGrant.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.PipeGrant.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.PipeGrant.property.databaseNameInput">databaseNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.PipeGrant.property.enableMultipleGrantsInput">enableMultipleGrantsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.PipeGrant.property.onFutureInput">onFutureInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.PipeGrant.property.pipeNameInput">pipeNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.PipeGrant.property.privilegeInput">privilegeInput</a></code> | <code>string</code> | *No description.* |
@@ -28989,6 +29229,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.PipeGrant.property.schemaNameInput">schemaNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.PipeGrant.property.withGrantOptionInput">withGrantOptionInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.PipeGrant.property.databaseName">databaseName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.PipeGrant.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.PipeGrant.property.onFuture">onFuture</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.PipeGrant.property.pipeName">pipeName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.PipeGrant.property.privilege">privilege</a></code> | <code>string</code> | *No description.* |
@@ -29130,6 +29371,16 @@ public readonly databaseNameInput: string;
 
 ---
 
+##### `enableMultipleGrantsInput`<sup>Optional</sup> <a name="enableMultipleGrantsInput" id="@cdktf/provider-snowflake.PipeGrant.property.enableMultipleGrantsInput"></a>
+
+```typescript
+public readonly enableMultipleGrantsInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `onFutureInput`<sup>Optional</sup> <a name="onFutureInput" id="@cdktf/provider-snowflake.PipeGrant.property.onFutureInput"></a>
 
 ```typescript
@@ -29197,6 +29448,16 @@ public readonly databaseName: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `enableMultipleGrants`<sup>Required</sup> <a name="enableMultipleGrants" id="@cdktf/provider-snowflake.PipeGrant.property.enableMultipleGrants"></a>
+
+```typescript
+public readonly enableMultipleGrants: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -30034,6 +30295,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.ProcedureGrant.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ProcedureGrant.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ProcedureGrant.resetArguments">resetArguments</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ProcedureGrant.resetEnableMultipleGrants">resetEnableMultipleGrants</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ProcedureGrant.resetOnFuture">resetOnFuture</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ProcedureGrant.resetPrivilege">resetPrivilege</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ProcedureGrant.resetProcedureName">resetProcedureName</a></code> | *No description.* |
@@ -30234,6 +30496,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 public resetArguments(): void
 ```
 
+##### `resetEnableMultipleGrants` <a name="resetEnableMultipleGrants" id="@cdktf/provider-snowflake.ProcedureGrant.resetEnableMultipleGrants"></a>
+
+```typescript
+public resetEnableMultipleGrants(): void
+```
+
 ##### `resetOnFuture` <a name="resetOnFuture" id="@cdktf/provider-snowflake.ProcedureGrant.resetOnFuture"></a>
 
 ```typescript
@@ -30320,6 +30588,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.ProcedureGrant.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ProcedureGrant.property.argumentsInput">argumentsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.ProcedureGrantArguments">ProcedureGrantArguments</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ProcedureGrant.property.databaseNameInput">databaseNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ProcedureGrant.property.enableMultipleGrantsInput">enableMultipleGrantsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ProcedureGrant.property.onFutureInput">onFutureInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ProcedureGrant.property.privilegeInput">privilegeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ProcedureGrant.property.procedureNameInput">procedureNameInput</a></code> | <code>string</code> | *No description.* |
@@ -30330,6 +30599,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.ProcedureGrant.property.withGrantOptionInput">withGrantOptionInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ProcedureGrant.property.arguments">arguments</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.ProcedureGrantArguments">ProcedureGrantArguments</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ProcedureGrant.property.databaseName">databaseName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ProcedureGrant.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ProcedureGrant.property.onFuture">onFuture</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ProcedureGrant.property.privilege">privilege</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ProcedureGrant.property.procedureName">procedureName</a></code> | <code>string</code> | *No description.* |
@@ -30483,6 +30753,16 @@ public readonly databaseNameInput: string;
 
 ---
 
+##### `enableMultipleGrantsInput`<sup>Optional</sup> <a name="enableMultipleGrantsInput" id="@cdktf/provider-snowflake.ProcedureGrant.property.enableMultipleGrantsInput"></a>
+
+```typescript
+public readonly enableMultipleGrantsInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `onFutureInput`<sup>Optional</sup> <a name="onFutureInput" id="@cdktf/provider-snowflake.ProcedureGrant.property.onFutureInput"></a>
 
 ```typescript
@@ -30580,6 +30860,16 @@ public readonly databaseName: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `enableMultipleGrants`<sup>Required</sup> <a name="enableMultipleGrants" id="@cdktf/provider-snowflake.ProcedureGrant.property.enableMultipleGrants"></a>
+
+```typescript
+public readonly enableMultipleGrants: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -31464,6 +31754,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrant.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrant.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrant.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrant.resetEnableMultipleGrants">resetEnableMultipleGrants</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrant.resetPrivilege">resetPrivilege</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrant.resetRoles">resetRoles</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrant.resetWithGrantOption">resetWithGrantOption</a></code> | *No description.* |
@@ -31654,6 +31945,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetEnableMultipleGrants` <a name="resetEnableMultipleGrants" id="@cdktf/provider-snowflake.ResourceMonitorGrant.resetEnableMultipleGrants"></a>
+
+```typescript
+public resetEnableMultipleGrants(): void
+```
+
 ##### `resetPrivilege` <a name="resetPrivilege" id="@cdktf/provider-snowflake.ResourceMonitorGrant.resetPrivilege"></a>
 
 ```typescript
@@ -31714,10 +32011,12 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrant.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrant.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrant.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrant.property.enableMultipleGrantsInput">enableMultipleGrantsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrant.property.monitorNameInput">monitorNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrant.property.privilegeInput">privilegeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrant.property.rolesInput">rolesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrant.property.withGrantOptionInput">withGrantOptionInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrant.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrant.property.monitorName">monitorName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrant.property.privilege">privilege</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrant.property.roles">roles</a></code> | <code>string[]</code> | *No description.* |
@@ -31847,6 +32146,16 @@ public readonly id: string;
 
 ---
 
+##### `enableMultipleGrantsInput`<sup>Optional</sup> <a name="enableMultipleGrantsInput" id="@cdktf/provider-snowflake.ResourceMonitorGrant.property.enableMultipleGrantsInput"></a>
+
+```typescript
+public readonly enableMultipleGrantsInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `monitorNameInput`<sup>Optional</sup> <a name="monitorNameInput" id="@cdktf/provider-snowflake.ResourceMonitorGrant.property.monitorNameInput"></a>
 
 ```typescript
@@ -31881,6 +32190,16 @@ public readonly rolesInput: string[];
 
 ```typescript
 public readonly withGrantOptionInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `enableMultipleGrants`<sup>Required</sup> <a name="enableMultipleGrants" id="@cdktf/provider-snowflake.ResourceMonitorGrant.property.enableMultipleGrants"></a>
+
+```typescript
+public readonly enableMultipleGrants: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktf.IResolvable
@@ -32525,6 +32844,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.RoleGrants.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleGrants.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleGrants.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RoleGrants.resetEnableMultipleGrants">resetEnableMultipleGrants</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleGrants.resetRoles">resetRoles</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleGrants.resetUsers">resetUsers</a></code> | *No description.* |
 
@@ -32714,6 +33034,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetEnableMultipleGrants` <a name="resetEnableMultipleGrants" id="@cdktf/provider-snowflake.RoleGrants.resetEnableMultipleGrants"></a>
+
+```typescript
+public resetEnableMultipleGrants(): void
+```
+
 ##### `resetRoles` <a name="resetRoles" id="@cdktf/provider-snowflake.RoleGrants.resetRoles"></a>
 
 ```typescript
@@ -32768,9 +33094,11 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.RoleGrants.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleGrants.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleGrants.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RoleGrants.property.enableMultipleGrantsInput">enableMultipleGrantsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleGrants.property.roleNameInput">roleNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleGrants.property.rolesInput">rolesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleGrants.property.usersInput">usersInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RoleGrants.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleGrants.property.roleName">roleName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleGrants.property.roles">roles</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleGrants.property.users">users</a></code> | <code>string[]</code> | *No description.* |
@@ -32899,6 +33227,16 @@ public readonly id: string;
 
 ---
 
+##### `enableMultipleGrantsInput`<sup>Optional</sup> <a name="enableMultipleGrantsInput" id="@cdktf/provider-snowflake.RoleGrants.property.enableMultipleGrantsInput"></a>
+
+```typescript
+public readonly enableMultipleGrantsInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `roleNameInput`<sup>Optional</sup> <a name="roleNameInput" id="@cdktf/provider-snowflake.RoleGrants.property.roleNameInput"></a>
 
 ```typescript
@@ -32926,6 +33264,16 @@ public readonly usersInput: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `enableMultipleGrants`<sup>Required</sup> <a name="enableMultipleGrants" id="@cdktf/provider-snowflake.RoleGrants.property.enableMultipleGrants"></a>
+
+```typescript
+public readonly enableMultipleGrants: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -32968,6 +33316,515 @@ public readonly users: string[];
 ---
 
 ##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-snowflake.RoleGrants.property.tfResourceType"></a>
+
+```typescript
+public readonly tfResourceType: string;
+```
+
+- *Type:* string
+
+---
+
+### RoleOwnershipGrant <a name="RoleOwnershipGrant" id="@cdktf/provider-snowflake.RoleOwnershipGrant"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/role_ownership_grant snowflake_role_ownership_grant}.
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.RoleOwnershipGrant.Initializer"></a>
+
+```typescript
+import { RoleOwnershipGrant } from '@cdktf/provider-snowflake'
+
+new RoleOwnershipGrant(scope: Construct, id: string, config: RoleOwnershipGrantConfig)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrantConfig">RoleOwnershipGrantConfig</a></code> | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-snowflake.RoleOwnershipGrant.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.RoleOwnershipGrant.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-snowflake.RoleOwnershipGrant.Initializer.parameter.config"></a>
+
+- *Type:* <a href="#@cdktf/provider-snowflake.RoleOwnershipGrantConfig">RoleOwnershipGrantConfig</a>
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.resetCurrentGrants">resetCurrentGrants</a></code> | *No description.* |
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-snowflake.RoleOwnershipGrant.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Returns a string representation of this construct.
+
+##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.RoleOwnershipGrant.addOverride"></a>
+
+```typescript
+public addOverride(path: string, value: any): void
+```
+
+###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.RoleOwnershipGrant.addOverride.parameter.path"></a>
+
+- *Type:* string
+
+---
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-snowflake.RoleOwnershipGrant.addOverride.parameter.value"></a>
+
+- *Type:* any
+
+---
+
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.RoleOwnershipGrant.overrideLogicalId"></a>
+
+```typescript
+public overrideLogicalId(newLogicalId: string): void
+```
+
+Overrides the auto-generated logical ID with a specific ID.
+
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-snowflake.RoleOwnershipGrant.overrideLogicalId.parameter.newLogicalId"></a>
+
+- *Type:* string
+
+The new logical ID to use for this stack element.
+
+---
+
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.RoleOwnershipGrant.resetOverrideLogicalId"></a>
+
+```typescript
+public resetOverrideLogicalId(): void
+```
+
+Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.RoleOwnershipGrant.toMetadata"></a>
+
+```typescript
+public toMetadata(): any
+```
+
+##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.RoleOwnershipGrant.toTerraform"></a>
+
+```typescript
+public toTerraform(): any
+```
+
+Adds this resource to the terraform JSON output.
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.RoleOwnershipGrant.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.RoleOwnershipGrant.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.RoleOwnershipGrant.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.RoleOwnershipGrant.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.RoleOwnershipGrant.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.RoleOwnershipGrant.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.RoleOwnershipGrant.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.RoleOwnershipGrant.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.RoleOwnershipGrant.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.RoleOwnershipGrant.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.RoleOwnershipGrant.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.RoleOwnershipGrant.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.RoleOwnershipGrant.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.RoleOwnershipGrant.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.RoleOwnershipGrant.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.RoleOwnershipGrant.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.RoleOwnershipGrant.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.RoleOwnershipGrant.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.RoleOwnershipGrant.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.RoleOwnershipGrant.interpolationForAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `resetCurrentGrants` <a name="resetCurrentGrants" id="@cdktf/provider-snowflake.RoleOwnershipGrant.resetCurrentGrants"></a>
+
+```typescript
+public resetCurrentGrants(): void
+```
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+
+---
+
+##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.RoleOwnershipGrant.isConstruct"></a>
+
+```typescript
+import { RoleOwnershipGrant } from '@cdktf/provider-snowflake'
+
+RoleOwnershipGrant.isConstruct(x: any)
+```
+
+Checks if `x` is a construct.
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.RoleOwnershipGrant.isConstruct.parameter.x"></a>
+
+- *Type:* any
+
+Any object.
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.property.currentGrantsInput">currentGrantsInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.property.onRoleNameInput">onRoleNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.property.toRoleNameInput">toRoleNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.property.currentGrants">currentGrants</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.property.onRoleName">onRoleName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.property.toRoleName">toRoleName</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-snowflake.RoleOwnershipGrant.property.node"></a>
+
+```typescript
+public readonly node: Node;
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-snowflake.RoleOwnershipGrant.property.cdktfStack"></a>
+
+```typescript
+public readonly cdktfStack: TerraformStack;
+```
+
+- *Type:* cdktf.TerraformStack
+
+---
+
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-snowflake.RoleOwnershipGrant.property.friendlyUniqueId"></a>
+
+```typescript
+public readonly friendlyUniqueId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.RoleOwnershipGrant.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-snowflake.RoleOwnershipGrant.property.terraformMetaArguments"></a>
+
+```typescript
+public readonly terraformMetaArguments: {[ key: string ]: any};
+```
+
+- *Type:* {[ key: string ]: any}
+
+---
+
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-snowflake.RoleOwnershipGrant.property.terraformResourceType"></a>
+
+```typescript
+public readonly terraformResourceType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-snowflake.RoleOwnershipGrant.property.terraformGeneratorMetadata"></a>
+
+```typescript
+public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
+```
+
+- *Type:* cdktf.TerraformProviderGeneratorMetadata
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.RoleOwnershipGrant.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* number
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-snowflake.RoleOwnershipGrant.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-snowflake.RoleOwnershipGrant.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-snowflake.RoleOwnershipGrant.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.RoleOwnershipGrant.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
+##### `currentGrantsInput`<sup>Optional</sup> <a name="currentGrantsInput" id="@cdktf/provider-snowflake.RoleOwnershipGrant.property.currentGrantsInput"></a>
+
+```typescript
+public readonly currentGrantsInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `onRoleNameInput`<sup>Optional</sup> <a name="onRoleNameInput" id="@cdktf/provider-snowflake.RoleOwnershipGrant.property.onRoleNameInput"></a>
+
+```typescript
+public readonly onRoleNameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `toRoleNameInput`<sup>Optional</sup> <a name="toRoleNameInput" id="@cdktf/provider-snowflake.RoleOwnershipGrant.property.toRoleNameInput"></a>
+
+```typescript
+public readonly toRoleNameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `currentGrants`<sup>Required</sup> <a name="currentGrants" id="@cdktf/provider-snowflake.RoleOwnershipGrant.property.currentGrants"></a>
+
+```typescript
+public readonly currentGrants: string;
+```
+
+- *Type:* string
+
+---
+
+##### `onRoleName`<sup>Required</sup> <a name="onRoleName" id="@cdktf/provider-snowflake.RoleOwnershipGrant.property.onRoleName"></a>
+
+```typescript
+public readonly onRoleName: string;
+```
+
+- *Type:* string
+
+---
+
+##### `toRoleName`<sup>Required</sup> <a name="toRoleName" id="@cdktf/provider-snowflake.RoleOwnershipGrant.property.toRoleName"></a>
+
+```typescript
+public readonly toRoleName: string;
+```
+
+- *Type:* string
+
+---
+
+#### Constants <a name="Constants" id="Constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-snowflake.RoleOwnershipGrant.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -33616,6 +34473,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrant.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrant.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrant.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrant.resetEnableMultipleGrants">resetEnableMultipleGrants</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrant.resetPrivilege">resetPrivilege</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrant.resetRoles">resetRoles</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrant.resetWithGrantOption">resetWithGrantOption</a></code> | *No description.* |
@@ -33806,6 +34664,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetEnableMultipleGrants` <a name="resetEnableMultipleGrants" id="@cdktf/provider-snowflake.RowAccessPolicyGrant.resetEnableMultipleGrants"></a>
+
+```typescript
+public resetEnableMultipleGrants(): void
+```
+
 ##### `resetPrivilege` <a name="resetPrivilege" id="@cdktf/provider-snowflake.RowAccessPolicyGrant.resetPrivilege"></a>
 
 ```typescript
@@ -33867,12 +34731,14 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrant.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrant.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrant.property.databaseNameInput">databaseNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrant.property.enableMultipleGrantsInput">enableMultipleGrantsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrant.property.privilegeInput">privilegeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrant.property.rolesInput">rolesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrant.property.rowAccessPolicyNameInput">rowAccessPolicyNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrant.property.schemaNameInput">schemaNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrant.property.withGrantOptionInput">withGrantOptionInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrant.property.databaseName">databaseName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrant.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrant.property.privilege">privilege</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrant.property.roles">roles</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrant.property.rowAccessPolicyName">rowAccessPolicyName</a></code> | <code>string</code> | *No description.* |
@@ -34013,6 +34879,16 @@ public readonly databaseNameInput: string;
 
 ---
 
+##### `enableMultipleGrantsInput`<sup>Optional</sup> <a name="enableMultipleGrantsInput" id="@cdktf/provider-snowflake.RowAccessPolicyGrant.property.enableMultipleGrantsInput"></a>
+
+```typescript
+public readonly enableMultipleGrantsInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `privilegeInput`<sup>Optional</sup> <a name="privilegeInput" id="@cdktf/provider-snowflake.RowAccessPolicyGrant.property.privilegeInput"></a>
 
 ```typescript
@@ -34070,6 +34946,16 @@ public readonly databaseName: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `enableMultipleGrants`<sup>Required</sup> <a name="enableMultipleGrants" id="@cdktf/provider-snowflake.RowAccessPolicyGrant.property.enableMultipleGrants"></a>
+
+```typescript
+public readonly enableMultipleGrants: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -35710,6 +36596,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.SchemaGrant.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SchemaGrant.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SchemaGrant.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.SchemaGrant.resetEnableMultipleGrants">resetEnableMultipleGrants</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SchemaGrant.resetOnFuture">resetOnFuture</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SchemaGrant.resetPrivilege">resetPrivilege</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SchemaGrant.resetRoles">resetRoles</a></code> | *No description.* |
@@ -35903,6 +36790,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetEnableMultipleGrants` <a name="resetEnableMultipleGrants" id="@cdktf/provider-snowflake.SchemaGrant.resetEnableMultipleGrants"></a>
+
+```typescript
+public resetEnableMultipleGrants(): void
+```
+
 ##### `resetOnFuture` <a name="resetOnFuture" id="@cdktf/provider-snowflake.SchemaGrant.resetOnFuture"></a>
 
 ```typescript
@@ -35982,6 +36875,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.SchemaGrant.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SchemaGrant.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SchemaGrant.property.databaseNameInput">databaseNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.SchemaGrant.property.enableMultipleGrantsInput">enableMultipleGrantsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SchemaGrant.property.onFutureInput">onFutureInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SchemaGrant.property.privilegeInput">privilegeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SchemaGrant.property.rolesInput">rolesInput</a></code> | <code>string[]</code> | *No description.* |
@@ -35989,6 +36883,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.SchemaGrant.property.sharesInput">sharesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SchemaGrant.property.withGrantOptionInput">withGrantOptionInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SchemaGrant.property.databaseName">databaseName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.SchemaGrant.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SchemaGrant.property.onFuture">onFuture</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SchemaGrant.property.privilege">privilege</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SchemaGrant.property.roles">roles</a></code> | <code>string[]</code> | *No description.* |
@@ -36130,6 +37025,16 @@ public readonly databaseNameInput: string;
 
 ---
 
+##### `enableMultipleGrantsInput`<sup>Optional</sup> <a name="enableMultipleGrantsInput" id="@cdktf/provider-snowflake.SchemaGrant.property.enableMultipleGrantsInput"></a>
+
+```typescript
+public readonly enableMultipleGrantsInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `onFutureInput`<sup>Optional</sup> <a name="onFutureInput" id="@cdktf/provider-snowflake.SchemaGrant.property.onFutureInput"></a>
 
 ```typescript
@@ -36197,6 +37102,16 @@ public readonly databaseName: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `enableMultipleGrants`<sup>Required</sup> <a name="enableMultipleGrants" id="@cdktf/provider-snowflake.SchemaGrant.property.enableMultipleGrants"></a>
+
+```typescript
+public readonly enableMultipleGrants: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -37466,6 +38381,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.SequenceGrant.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SequenceGrant.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SequenceGrant.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.SequenceGrant.resetEnableMultipleGrants">resetEnableMultipleGrants</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SequenceGrant.resetOnFuture">resetOnFuture</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SequenceGrant.resetPrivilege">resetPrivilege</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SequenceGrant.resetRoles">resetRoles</a></code> | *No description.* |
@@ -37658,6 +38574,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetEnableMultipleGrants` <a name="resetEnableMultipleGrants" id="@cdktf/provider-snowflake.SequenceGrant.resetEnableMultipleGrants"></a>
+
+```typescript
+public resetEnableMultipleGrants(): void
+```
+
 ##### `resetOnFuture` <a name="resetOnFuture" id="@cdktf/provider-snowflake.SequenceGrant.resetOnFuture"></a>
 
 ```typescript
@@ -37731,6 +38653,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.SequenceGrant.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SequenceGrant.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SequenceGrant.property.databaseNameInput">databaseNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.SequenceGrant.property.enableMultipleGrantsInput">enableMultipleGrantsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SequenceGrant.property.onFutureInput">onFutureInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SequenceGrant.property.privilegeInput">privilegeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SequenceGrant.property.rolesInput">rolesInput</a></code> | <code>string[]</code> | *No description.* |
@@ -37738,6 +38661,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.SequenceGrant.property.sequenceNameInput">sequenceNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SequenceGrant.property.withGrantOptionInput">withGrantOptionInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SequenceGrant.property.databaseName">databaseName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.SequenceGrant.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SequenceGrant.property.onFuture">onFuture</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SequenceGrant.property.privilege">privilege</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SequenceGrant.property.roles">roles</a></code> | <code>string[]</code> | *No description.* |
@@ -37879,6 +38803,16 @@ public readonly databaseNameInput: string;
 
 ---
 
+##### `enableMultipleGrantsInput`<sup>Optional</sup> <a name="enableMultipleGrantsInput" id="@cdktf/provider-snowflake.SequenceGrant.property.enableMultipleGrantsInput"></a>
+
+```typescript
+public readonly enableMultipleGrantsInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `onFutureInput`<sup>Optional</sup> <a name="onFutureInput" id="@cdktf/provider-snowflake.SequenceGrant.property.onFutureInput"></a>
 
 ```typescript
@@ -37946,6 +38880,16 @@ public readonly databaseName: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `enableMultipleGrants`<sup>Required</sup> <a name="enableMultipleGrants" id="@cdktf/provider-snowflake.SequenceGrant.property.enableMultipleGrants"></a>
+
+```typescript
+public readonly enableMultipleGrants: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -40140,6 +41084,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.StageGrant.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StageGrant.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StageGrant.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.StageGrant.resetEnableMultipleGrants">resetEnableMultipleGrants</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StageGrant.resetOnFuture">resetOnFuture</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StageGrant.resetPrivilege">resetPrivilege</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StageGrant.resetRoles">resetRoles</a></code> | *No description.* |
@@ -40332,6 +41277,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetEnableMultipleGrants` <a name="resetEnableMultipleGrants" id="@cdktf/provider-snowflake.StageGrant.resetEnableMultipleGrants"></a>
+
+```typescript
+public resetEnableMultipleGrants(): void
+```
+
 ##### `resetOnFuture` <a name="resetOnFuture" id="@cdktf/provider-snowflake.StageGrant.resetOnFuture"></a>
 
 ```typescript
@@ -40405,6 +41356,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.StageGrant.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StageGrant.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StageGrant.property.databaseNameInput">databaseNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.StageGrant.property.enableMultipleGrantsInput">enableMultipleGrantsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StageGrant.property.onFutureInput">onFutureInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StageGrant.property.privilegeInput">privilegeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StageGrant.property.rolesInput">rolesInput</a></code> | <code>string[]</code> | *No description.* |
@@ -40412,6 +41364,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.StageGrant.property.stageNameInput">stageNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StageGrant.property.withGrantOptionInput">withGrantOptionInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StageGrant.property.databaseName">databaseName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.StageGrant.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StageGrant.property.onFuture">onFuture</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StageGrant.property.privilege">privilege</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StageGrant.property.roles">roles</a></code> | <code>string[]</code> | *No description.* |
@@ -40553,6 +41506,16 @@ public readonly databaseNameInput: string;
 
 ---
 
+##### `enableMultipleGrantsInput`<sup>Optional</sup> <a name="enableMultipleGrantsInput" id="@cdktf/provider-snowflake.StageGrant.property.enableMultipleGrantsInput"></a>
+
+```typescript
+public readonly enableMultipleGrantsInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `onFutureInput`<sup>Optional</sup> <a name="onFutureInput" id="@cdktf/provider-snowflake.StageGrant.property.onFutureInput"></a>
 
 ```typescript
@@ -40620,6 +41583,16 @@ public readonly databaseName: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `enableMultipleGrants`<sup>Required</sup> <a name="enableMultipleGrants" id="@cdktf/provider-snowflake.StageGrant.property.enableMultipleGrants"></a>
+
+```typescript
+public readonly enableMultipleGrants: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -42194,6 +43167,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.StreamGrant.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StreamGrant.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StreamGrant.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.StreamGrant.resetEnableMultipleGrants">resetEnableMultipleGrants</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StreamGrant.resetOnFuture">resetOnFuture</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StreamGrant.resetPrivilege">resetPrivilege</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StreamGrant.resetRoles">resetRoles</a></code> | *No description.* |
@@ -42386,6 +43360,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetEnableMultipleGrants` <a name="resetEnableMultipleGrants" id="@cdktf/provider-snowflake.StreamGrant.resetEnableMultipleGrants"></a>
+
+```typescript
+public resetEnableMultipleGrants(): void
+```
+
 ##### `resetOnFuture` <a name="resetOnFuture" id="@cdktf/provider-snowflake.StreamGrant.resetOnFuture"></a>
 
 ```typescript
@@ -42459,6 +43439,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.StreamGrant.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StreamGrant.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StreamGrant.property.databaseNameInput">databaseNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.StreamGrant.property.enableMultipleGrantsInput">enableMultipleGrantsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StreamGrant.property.onFutureInput">onFutureInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StreamGrant.property.privilegeInput">privilegeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StreamGrant.property.rolesInput">rolesInput</a></code> | <code>string[]</code> | *No description.* |
@@ -42466,6 +43447,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.StreamGrant.property.streamNameInput">streamNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StreamGrant.property.withGrantOptionInput">withGrantOptionInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StreamGrant.property.databaseName">databaseName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.StreamGrant.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StreamGrant.property.onFuture">onFuture</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StreamGrant.property.privilege">privilege</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StreamGrant.property.roles">roles</a></code> | <code>string[]</code> | *No description.* |
@@ -42607,6 +43589,16 @@ public readonly databaseNameInput: string;
 
 ---
 
+##### `enableMultipleGrantsInput`<sup>Optional</sup> <a name="enableMultipleGrantsInput" id="@cdktf/provider-snowflake.StreamGrant.property.enableMultipleGrantsInput"></a>
+
+```typescript
+public readonly enableMultipleGrantsInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `onFutureInput`<sup>Optional</sup> <a name="onFutureInput" id="@cdktf/provider-snowflake.StreamGrant.property.onFutureInput"></a>
 
 ```typescript
@@ -42674,6 +43666,16 @@ public readonly databaseName: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `enableMultipleGrants`<sup>Required</sup> <a name="enableMultipleGrants" id="@cdktf/provider-snowflake.StreamGrant.property.enableMultipleGrants"></a>
+
+```typescript
+public readonly enableMultipleGrants: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -43541,6 +44543,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.TableGrant.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TableGrant.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TableGrant.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TableGrant.resetEnableMultipleGrants">resetEnableMultipleGrants</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TableGrant.resetOnFuture">resetOnFuture</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TableGrant.resetPrivilege">resetPrivilege</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TableGrant.resetRoles">resetRoles</a></code> | *No description.* |
@@ -43735,6 +44738,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetEnableMultipleGrants` <a name="resetEnableMultipleGrants" id="@cdktf/provider-snowflake.TableGrant.resetEnableMultipleGrants"></a>
+
+```typescript
+public resetEnableMultipleGrants(): void
+```
+
 ##### `resetOnFuture` <a name="resetOnFuture" id="@cdktf/provider-snowflake.TableGrant.resetOnFuture"></a>
 
 ```typescript
@@ -43820,6 +44829,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.TableGrant.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TableGrant.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TableGrant.property.databaseNameInput">databaseNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TableGrant.property.enableMultipleGrantsInput">enableMultipleGrantsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TableGrant.property.onFutureInput">onFutureInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TableGrant.property.privilegeInput">privilegeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TableGrant.property.rolesInput">rolesInput</a></code> | <code>string[]</code> | *No description.* |
@@ -43828,6 +44838,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.TableGrant.property.tableNameInput">tableNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TableGrant.property.withGrantOptionInput">withGrantOptionInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TableGrant.property.databaseName">databaseName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TableGrant.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TableGrant.property.onFuture">onFuture</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TableGrant.property.privilege">privilege</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TableGrant.property.roles">roles</a></code> | <code>string[]</code> | *No description.* |
@@ -43970,6 +44981,16 @@ public readonly databaseNameInput: string;
 
 ---
 
+##### `enableMultipleGrantsInput`<sup>Optional</sup> <a name="enableMultipleGrantsInput" id="@cdktf/provider-snowflake.TableGrant.property.enableMultipleGrantsInput"></a>
+
+```typescript
+public readonly enableMultipleGrantsInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `onFutureInput`<sup>Optional</sup> <a name="onFutureInput" id="@cdktf/provider-snowflake.TableGrant.property.onFutureInput"></a>
 
 ```typescript
@@ -44047,6 +45068,16 @@ public readonly databaseName: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `enableMultipleGrants`<sup>Required</sup> <a name="enableMultipleGrants" id="@cdktf/provider-snowflake.TableGrant.property.enableMultipleGrants"></a>
+
+```typescript
+public readonly enableMultipleGrants: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -45547,6 +46578,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.TaskGrant.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TaskGrant.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TaskGrant.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TaskGrant.resetEnableMultipleGrants">resetEnableMultipleGrants</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TaskGrant.resetOnFuture">resetOnFuture</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TaskGrant.resetPrivilege">resetPrivilege</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TaskGrant.resetRoles">resetRoles</a></code> | *No description.* |
@@ -45739,6 +46771,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetEnableMultipleGrants` <a name="resetEnableMultipleGrants" id="@cdktf/provider-snowflake.TaskGrant.resetEnableMultipleGrants"></a>
+
+```typescript
+public resetEnableMultipleGrants(): void
+```
+
 ##### `resetOnFuture` <a name="resetOnFuture" id="@cdktf/provider-snowflake.TaskGrant.resetOnFuture"></a>
 
 ```typescript
@@ -45812,6 +46850,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.TaskGrant.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TaskGrant.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TaskGrant.property.databaseNameInput">databaseNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TaskGrant.property.enableMultipleGrantsInput">enableMultipleGrantsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TaskGrant.property.onFutureInput">onFutureInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TaskGrant.property.privilegeInput">privilegeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TaskGrant.property.rolesInput">rolesInput</a></code> | <code>string[]</code> | *No description.* |
@@ -45819,6 +46858,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.TaskGrant.property.taskNameInput">taskNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TaskGrant.property.withGrantOptionInput">withGrantOptionInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TaskGrant.property.databaseName">databaseName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TaskGrant.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TaskGrant.property.onFuture">onFuture</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TaskGrant.property.privilege">privilege</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TaskGrant.property.roles">roles</a></code> | <code>string[]</code> | *No description.* |
@@ -45960,6 +47000,16 @@ public readonly databaseNameInput: string;
 
 ---
 
+##### `enableMultipleGrantsInput`<sup>Optional</sup> <a name="enableMultipleGrantsInput" id="@cdktf/provider-snowflake.TaskGrant.property.enableMultipleGrantsInput"></a>
+
+```typescript
+public readonly enableMultipleGrantsInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `onFutureInput`<sup>Optional</sup> <a name="onFutureInput" id="@cdktf/provider-snowflake.TaskGrant.property.onFutureInput"></a>
 
 ```typescript
@@ -46027,6 +47077,16 @@ public readonly databaseName: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `enableMultipleGrants`<sup>Required</sup> <a name="enableMultipleGrants" id="@cdktf/provider-snowflake.TaskGrant.property.enableMultipleGrants"></a>
+
+```typescript
+public readonly enableMultipleGrants: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -48232,6 +49292,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.ViewGrant.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ViewGrant.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ViewGrant.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ViewGrant.resetEnableMultipleGrants">resetEnableMultipleGrants</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ViewGrant.resetOnFuture">resetOnFuture</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ViewGrant.resetPrivilege">resetPrivilege</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ViewGrant.resetRoles">resetRoles</a></code> | *No description.* |
@@ -48426,6 +49487,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetEnableMultipleGrants` <a name="resetEnableMultipleGrants" id="@cdktf/provider-snowflake.ViewGrant.resetEnableMultipleGrants"></a>
+
+```typescript
+public resetEnableMultipleGrants(): void
+```
+
 ##### `resetOnFuture` <a name="resetOnFuture" id="@cdktf/provider-snowflake.ViewGrant.resetOnFuture"></a>
 
 ```typescript
@@ -48511,6 +49578,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.ViewGrant.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ViewGrant.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ViewGrant.property.databaseNameInput">databaseNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ViewGrant.property.enableMultipleGrantsInput">enableMultipleGrantsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ViewGrant.property.onFutureInput">onFutureInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ViewGrant.property.privilegeInput">privilegeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ViewGrant.property.rolesInput">rolesInput</a></code> | <code>string[]</code> | *No description.* |
@@ -48519,6 +49587,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.ViewGrant.property.viewNameInput">viewNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ViewGrant.property.withGrantOptionInput">withGrantOptionInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ViewGrant.property.databaseName">databaseName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ViewGrant.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ViewGrant.property.onFuture">onFuture</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ViewGrant.property.privilege">privilege</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ViewGrant.property.roles">roles</a></code> | <code>string[]</code> | *No description.* |
@@ -48661,6 +49730,16 @@ public readonly databaseNameInput: string;
 
 ---
 
+##### `enableMultipleGrantsInput`<sup>Optional</sup> <a name="enableMultipleGrantsInput" id="@cdktf/provider-snowflake.ViewGrant.property.enableMultipleGrantsInput"></a>
+
+```typescript
+public readonly enableMultipleGrantsInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `onFutureInput`<sup>Optional</sup> <a name="onFutureInput" id="@cdktf/provider-snowflake.ViewGrant.property.onFutureInput"></a>
 
 ```typescript
@@ -48738,6 +49817,16 @@ public readonly databaseName: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `enableMultipleGrants`<sup>Required</sup> <a name="enableMultipleGrants" id="@cdktf/provider-snowflake.ViewGrant.property.enableMultipleGrants"></a>
+
+```typescript
+public readonly enableMultipleGrants: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -49757,6 +50846,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.WarehouseGrant.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.WarehouseGrant.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.WarehouseGrant.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.WarehouseGrant.resetEnableMultipleGrants">resetEnableMultipleGrants</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.WarehouseGrant.resetPrivilege">resetPrivilege</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.WarehouseGrant.resetRoles">resetRoles</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.WarehouseGrant.resetWithGrantOption">resetWithGrantOption</a></code> | *No description.* |
@@ -49947,6 +51037,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetEnableMultipleGrants` <a name="resetEnableMultipleGrants" id="@cdktf/provider-snowflake.WarehouseGrant.resetEnableMultipleGrants"></a>
+
+```typescript
+public resetEnableMultipleGrants(): void
+```
+
 ##### `resetPrivilege` <a name="resetPrivilege" id="@cdktf/provider-snowflake.WarehouseGrant.resetPrivilege"></a>
 
 ```typescript
@@ -50007,10 +51103,12 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.WarehouseGrant.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.WarehouseGrant.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.WarehouseGrant.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.WarehouseGrant.property.enableMultipleGrantsInput">enableMultipleGrantsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.WarehouseGrant.property.privilegeInput">privilegeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.WarehouseGrant.property.rolesInput">rolesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.WarehouseGrant.property.warehouseNameInput">warehouseNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.WarehouseGrant.property.withGrantOptionInput">withGrantOptionInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.WarehouseGrant.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.WarehouseGrant.property.privilege">privilege</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.WarehouseGrant.property.roles">roles</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.WarehouseGrant.property.warehouseName">warehouseName</a></code> | <code>string</code> | *No description.* |
@@ -50140,6 +51238,16 @@ public readonly id: string;
 
 ---
 
+##### `enableMultipleGrantsInput`<sup>Optional</sup> <a name="enableMultipleGrantsInput" id="@cdktf/provider-snowflake.WarehouseGrant.property.enableMultipleGrantsInput"></a>
+
+```typescript
+public readonly enableMultipleGrantsInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `privilegeInput`<sup>Optional</sup> <a name="privilegeInput" id="@cdktf/provider-snowflake.WarehouseGrant.property.privilegeInput"></a>
 
 ```typescript
@@ -50174,6 +51282,16 @@ public readonly warehouseNameInput: string;
 
 ```typescript
 public readonly withGrantOptionInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `enableMultipleGrants`<sup>Required</sup> <a name="enableMultipleGrants" id="@cdktf/provider-snowflake.WarehouseGrant.property.enableMultipleGrants"></a>
+
+```typescript
+public readonly enableMultipleGrants: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktf.IResolvable
@@ -50258,6 +51376,7 @@ const accountGrantConfig: AccountGrantConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.AccountGrantConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.AccountGrantConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.AccountGrantConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.AccountGrantConfig.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
 | <code><a href="#@cdktf/provider-snowflake.AccountGrantConfig.property.privilege">privilege</a></code> | <code>string</code> | The privilege to grant on the account. |
 | <code><a href="#@cdktf/provider-snowflake.AccountGrantConfig.property.roles">roles</a></code> | <code>string[]</code> | Grants privilege to these roles. |
 | <code><a href="#@cdktf/provider-snowflake.AccountGrantConfig.property.withGrantOption">withGrantOption</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, allows the recipient role to grant the privileges to other roles. |
@@ -50301,6 +51420,20 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `enableMultipleGrants`<sup>Optional</sup> <a name="enableMultipleGrants" id="@cdktf/provider-snowflake.AccountGrantConfig.property.enableMultipleGrants"></a>
+
+```typescript
+public readonly enableMultipleGrants: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+When this is set to true, multiple grants of the same type can be created.
+
+This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/account_grant#enable_multiple_grants AccountGrant#enable_multiple_grants}
 
 ---
 
@@ -50706,6 +51839,7 @@ const databaseGrantConfig: DatabaseGrantConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.DatabaseGrantConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseGrantConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseGrantConfig.property.databaseName">databaseName</a></code> | <code>string</code> | The name of the database on which to grant privileges. |
+| <code><a href="#@cdktf/provider-snowflake.DatabaseGrantConfig.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseGrantConfig.property.privilege">privilege</a></code> | <code>string</code> | The privilege to grant on the database. |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseGrantConfig.property.roles">roles</a></code> | <code>string[]</code> | Grants privilege to these roles. |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseGrantConfig.property.shares">shares</a></code> | <code>string[]</code> | Grants privilege to these shares. |
@@ -50764,6 +51898,20 @@ public readonly databaseName: string;
 The name of the database on which to grant privileges.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/database_grant#database_name DatabaseGrant#database_name}
+
+---
+
+##### `enableMultipleGrants`<sup>Optional</sup> <a name="enableMultipleGrants" id="@cdktf/provider-snowflake.DatabaseGrantConfig.property.enableMultipleGrants"></a>
+
+```typescript
+public readonly enableMultipleGrants: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+When this is set to true, multiple grants of the same type can be created.
+
+This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/database_grant#enable_multiple_grants DatabaseGrant#enable_multiple_grants}
 
 ---
 
@@ -54015,6 +55163,7 @@ const externalTableGrantConfig: ExternalTableGrantConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.ExternalTableGrantConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTableGrantConfig.property.databaseName">databaseName</a></code> | <code>string</code> | The name of the database containing the current or future external tables on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTableGrantConfig.property.schemaName">schemaName</a></code> | <code>string</code> | The name of the schema containing the current or future external tables on which to grant privileges. |
+| <code><a href="#@cdktf/provider-snowflake.ExternalTableGrantConfig.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTableGrantConfig.property.externalTableName">externalTableName</a></code> | <code>string</code> | The name of the external table on which to grant privileges immediately (only valid if on_future is false). |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTableGrantConfig.property.onFuture">onFuture</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true and a schema_name is provided, apply this grant on all future external tables in the given schema. |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTableGrantConfig.property.privilege">privilege</a></code> | <code>string</code> | The privilege to grant on the current or future external table. |
@@ -54089,6 +55238,20 @@ public readonly schemaName: string;
 The name of the schema containing the current or future external tables on which to grant privileges.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_table_grant#schema_name ExternalTableGrant#schema_name}
+
+---
+
+##### `enableMultipleGrants`<sup>Optional</sup> <a name="enableMultipleGrants" id="@cdktf/provider-snowflake.ExternalTableGrantConfig.property.enableMultipleGrants"></a>
+
+```typescript
+public readonly enableMultipleGrants: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+When this is set to true, multiple grants of the same type can be created.
+
+This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_table_grant#enable_multiple_grants ExternalTableGrant#enable_multiple_grants}
 
 ---
 
@@ -54874,6 +56037,7 @@ const fileFormatGrantConfig: FileFormatGrantConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.FileFormatGrantConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FileFormatGrantConfig.property.databaseName">databaseName</a></code> | <code>string</code> | The name of the database containing the current or future file formats on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.FileFormatGrantConfig.property.schemaName">schemaName</a></code> | <code>string</code> | The name of the schema containing the current or future file formats on which to grant privileges. |
+| <code><a href="#@cdktf/provider-snowflake.FileFormatGrantConfig.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
 | <code><a href="#@cdktf/provider-snowflake.FileFormatGrantConfig.property.fileFormatName">fileFormatName</a></code> | <code>string</code> | The name of the file format on which to grant privileges immediately (only valid if on_future is false). |
 | <code><a href="#@cdktf/provider-snowflake.FileFormatGrantConfig.property.onFuture">onFuture</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true and a schema_name is provided, apply this grant on all future file formats in the given schema. |
 | <code><a href="#@cdktf/provider-snowflake.FileFormatGrantConfig.property.privilege">privilege</a></code> | <code>string</code> | The privilege to grant on the current or future file format. |
@@ -54947,6 +56111,20 @@ public readonly schemaName: string;
 The name of the schema containing the current or future file formats on which to grant privileges.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/file_format_grant#schema_name FileFormatGrant#schema_name}
+
+---
+
+##### `enableMultipleGrants`<sup>Optional</sup> <a name="enableMultipleGrants" id="@cdktf/provider-snowflake.FileFormatGrantConfig.property.enableMultipleGrants"></a>
+
+```typescript
+public readonly enableMultipleGrants: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+When this is set to true, multiple grants of the same type can be created.
+
+This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/file_format_grant#enable_multiple_grants FileFormatGrant#enable_multiple_grants}
 
 ---
 
@@ -55391,6 +56569,7 @@ const functionGrantConfig: FunctionGrantConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.FunctionGrantConfig.property.databaseName">databaseName</a></code> | <code>string</code> | The name of the database containing the current or future functions on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.FunctionGrantConfig.property.schemaName">schemaName</a></code> | <code>string</code> | The name of the schema containing the current or future functions on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.FunctionGrantConfig.property.arguments">arguments</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.FunctionGrantArguments">FunctionGrantArguments</a>[]</code> | arguments block. |
+| <code><a href="#@cdktf/provider-snowflake.FunctionGrantConfig.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
 | <code><a href="#@cdktf/provider-snowflake.FunctionGrantConfig.property.functionName">functionName</a></code> | <code>string</code> | The name of the function on which to grant privileges immediately (only valid if on_future is false). |
 | <code><a href="#@cdktf/provider-snowflake.FunctionGrantConfig.property.onFuture">onFuture</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true and a schema_name is provided, apply this grant on all future functions in the given schema. |
 | <code><a href="#@cdktf/provider-snowflake.FunctionGrantConfig.property.privilege">privilege</a></code> | <code>string</code> | The privilege to grant on the current or future function. Must be one of `USAGE` or `OWNERSHIP`. |
@@ -55480,6 +56659,20 @@ public readonly arguments: IResolvable | FunctionGrantArguments[];
 arguments block.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function_grant#arguments FunctionGrant#arguments}
+
+---
+
+##### `enableMultipleGrants`<sup>Optional</sup> <a name="enableMultipleGrants" id="@cdktf/provider-snowflake.FunctionGrantConfig.property.enableMultipleGrants"></a>
+
+```typescript
+public readonly enableMultipleGrants: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+When this is set to true, multiple grants of the same type can be created.
+
+This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function_grant#enable_multiple_grants FunctionGrant#enable_multiple_grants}
 
 ---
 
@@ -55600,6 +56793,7 @@ const integrationGrantConfig: IntegrationGrantConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.IntegrationGrantConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.IntegrationGrantConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.IntegrationGrantConfig.property.integrationName">integrationName</a></code> | <code>string</code> | Identifier for the integration; must be unique for your account. |
+| <code><a href="#@cdktf/provider-snowflake.IntegrationGrantConfig.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
 | <code><a href="#@cdktf/provider-snowflake.IntegrationGrantConfig.property.privilege">privilege</a></code> | <code>string</code> | The privilege to grant on the integration. |
 | <code><a href="#@cdktf/provider-snowflake.IntegrationGrantConfig.property.roles">roles</a></code> | <code>string[]</code> | Grants privilege to these roles. |
 | <code><a href="#@cdktf/provider-snowflake.IntegrationGrantConfig.property.withGrantOption">withGrantOption</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, allows the recipient role to grant the privileges to other roles. |
@@ -55657,6 +56851,20 @@ public readonly integrationName: string;
 Identifier for the integration; must be unique for your account.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/integration_grant#integration_name IntegrationGrant#integration_name}
+
+---
+
+##### `enableMultipleGrants`<sup>Optional</sup> <a name="enableMultipleGrants" id="@cdktf/provider-snowflake.IntegrationGrantConfig.property.enableMultipleGrants"></a>
+
+```typescript
+public readonly enableMultipleGrants: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+When this is set to true, multiple grants of the same type can be created.
+
+This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/integration_grant#enable_multiple_grants IntegrationGrant#enable_multiple_grants}
 
 ---
 
@@ -56025,6 +57233,7 @@ const maskingPolicyGrantConfig: MaskingPolicyGrantConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrantConfig.property.databaseName">databaseName</a></code> | <code>string</code> | The name of the database containing the masking policy on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrantConfig.property.maskingPolicyName">maskingPolicyName</a></code> | <code>string</code> | The name of the masking policy on which to grant privileges immediately. |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrantConfig.property.schemaName">schemaName</a></code> | <code>string</code> | The name of the schema containing the masking policy on which to grant privileges. |
+| <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrantConfig.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrantConfig.property.privilege">privilege</a></code> | <code>string</code> | The privilege to grant on the masking policy. |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrantConfig.property.roles">roles</a></code> | <code>string[]</code> | Grants privilege to these roles. |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrantConfig.property.withGrantOption">withGrantOption</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, allows the recipient role to grant the privileges to other roles. |
@@ -56110,6 +57319,20 @@ public readonly schemaName: string;
 The name of the schema containing the masking policy on which to grant privileges.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/masking_policy_grant#schema_name MaskingPolicyGrant#schema_name}
+
+---
+
+##### `enableMultipleGrants`<sup>Optional</sup> <a name="enableMultipleGrants" id="@cdktf/provider-snowflake.MaskingPolicyGrantConfig.property.enableMultipleGrants"></a>
+
+```typescript
+public readonly enableMultipleGrants: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+When this is set to true, multiple grants of the same type can be created.
+
+This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/masking_policy_grant#enable_multiple_grants MaskingPolicyGrant#enable_multiple_grants}
 
 ---
 
@@ -56370,6 +57593,7 @@ const materializedViewGrantConfig: MaterializedViewGrantConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrantConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrantConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrantConfig.property.databaseName">databaseName</a></code> | <code>string</code> | The name of the database containing the current or future materialized views on which to grant privileges. |
+| <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrantConfig.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrantConfig.property.materializedViewName">materializedViewName</a></code> | <code>string</code> | The name of the materialized view on which to grant privileges immediately (only valid if on_future is false). |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrantConfig.property.onFuture">onFuture</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true and a schema_name is provided, apply this grant on all future materialized views in the given schema. |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrantConfig.property.privilege">privilege</a></code> | <code>string</code> | The privilege to grant on the current or future materialized view view. |
@@ -56431,6 +57655,20 @@ public readonly databaseName: string;
 The name of the database containing the current or future materialized views on which to grant privileges.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/materialized_view_grant#database_name MaterializedViewGrant#database_name}
+
+---
+
+##### `enableMultipleGrants`<sup>Optional</sup> <a name="enableMultipleGrants" id="@cdktf/provider-snowflake.MaterializedViewGrantConfig.property.enableMultipleGrants"></a>
+
+```typescript
+public readonly enableMultipleGrants: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+When this is set to true, multiple grants of the same type can be created.
+
+This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/materialized_view_grant#enable_multiple_grants MaterializedViewGrant#enable_multiple_grants}
 
 ---
 
@@ -57485,6 +58723,7 @@ const pipeGrantConfig: PipeGrantConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.PipeGrantConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.PipeGrantConfig.property.databaseName">databaseName</a></code> | <code>string</code> | The name of the database containing the current or future pipes on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.PipeGrantConfig.property.schemaName">schemaName</a></code> | <code>string</code> | The name of the schema containing the current or future pipes on which to grant privileges. |
+| <code><a href="#@cdktf/provider-snowflake.PipeGrantConfig.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
 | <code><a href="#@cdktf/provider-snowflake.PipeGrantConfig.property.onFuture">onFuture</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true and a schema_name is provided, apply this grant on all future pipes in the given schema. |
 | <code><a href="#@cdktf/provider-snowflake.PipeGrantConfig.property.pipeName">pipeName</a></code> | <code>string</code> | The name of the pipe on which to grant privileges immediately (only valid if on_future is false). |
 | <code><a href="#@cdktf/provider-snowflake.PipeGrantConfig.property.privilege">privilege</a></code> | <code>string</code> | The privilege to grant on the current or future pipe. |
@@ -57558,6 +58797,20 @@ public readonly schemaName: string;
 The name of the schema containing the current or future pipes on which to grant privileges.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/pipe_grant#schema_name PipeGrant#schema_name}
+
+---
+
+##### `enableMultipleGrants`<sup>Optional</sup> <a name="enableMultipleGrants" id="@cdktf/provider-snowflake.PipeGrantConfig.property.enableMultipleGrants"></a>
+
+```typescript
+public readonly enableMultipleGrants: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+When this is set to true, multiple grants of the same type can be created.
+
+This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/pipe_grant#enable_multiple_grants PipeGrant#enable_multiple_grants}
 
 ---
 
@@ -57957,6 +59210,7 @@ const procedureGrantConfig: ProcedureGrantConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.ProcedureGrantConfig.property.databaseName">databaseName</a></code> | <code>string</code> | The name of the database containing the current or future procedures on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.ProcedureGrantConfig.property.schemaName">schemaName</a></code> | <code>string</code> | The name of the schema containing the current or future procedures on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.ProcedureGrantConfig.property.arguments">arguments</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.ProcedureGrantArguments">ProcedureGrantArguments</a>[]</code> | arguments block. |
+| <code><a href="#@cdktf/provider-snowflake.ProcedureGrantConfig.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
 | <code><a href="#@cdktf/provider-snowflake.ProcedureGrantConfig.property.onFuture">onFuture</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true and a schema_name is provided, apply this grant on all future procedures in the given schema. |
 | <code><a href="#@cdktf/provider-snowflake.ProcedureGrantConfig.property.privilege">privilege</a></code> | <code>string</code> | The privilege to grant on the current or future procedure. |
 | <code><a href="#@cdktf/provider-snowflake.ProcedureGrantConfig.property.procedureName">procedureName</a></code> | <code>string</code> | The name of the procedure on which to grant privileges immediately (only valid if on_future is false). |
@@ -58046,6 +59300,20 @@ public readonly arguments: IResolvable | ProcedureGrantArguments[];
 arguments block.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure_grant#arguments ProcedureGrant#arguments}
+
+---
+
+##### `enableMultipleGrants`<sup>Optional</sup> <a name="enableMultipleGrants" id="@cdktf/provider-snowflake.ProcedureGrantConfig.property.enableMultipleGrants"></a>
+
+```typescript
+public readonly enableMultipleGrants: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+When this is set to true, multiple grants of the same type can be created.
+
+This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure_grant#enable_multiple_grants ProcedureGrant#enable_multiple_grants}
 
 ---
 
@@ -58377,6 +59645,7 @@ const resourceMonitorGrantConfig: ResourceMonitorGrantConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrantConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrantConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrantConfig.property.monitorName">monitorName</a></code> | <code>string</code> | Identifier for the resource monitor; must be unique for your account. |
+| <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrantConfig.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrantConfig.property.privilege">privilege</a></code> | <code>string</code> | The privilege to grant on the resource monitor. |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrantConfig.property.roles">roles</a></code> | <code>string[]</code> | Grants privilege to these roles. |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrantConfig.property.withGrantOption">withGrantOption</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, allows the recipient role to grant the privileges to other roles. |
@@ -58434,6 +59703,20 @@ public readonly monitorName: string;
 Identifier for the resource monitor; must be unique for your account.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/resource_monitor_grant#monitor_name ResourceMonitorGrant#monitor_name}
+
+---
+
+##### `enableMultipleGrants`<sup>Optional</sup> <a name="enableMultipleGrants" id="@cdktf/provider-snowflake.ResourceMonitorGrantConfig.property.enableMultipleGrants"></a>
+
+```typescript
+public readonly enableMultipleGrants: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+When this is set to true, multiple grants of the same type can be created.
+
+This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/resource_monitor_grant#enable_multiple_grants ResourceMonitorGrant#enable_multiple_grants}
 
 ---
 
@@ -58600,6 +59883,7 @@ const roleGrantsConfig: RoleGrantsConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.RoleGrantsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleGrantsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleGrantsConfig.property.roleName">roleName</a></code> | <code>string</code> | The name of the role we are granting. |
+| <code><a href="#@cdktf/provider-snowflake.RoleGrantsConfig.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
 | <code><a href="#@cdktf/provider-snowflake.RoleGrantsConfig.property.roles">roles</a></code> | <code>string[]</code> | Grants role to this specified role. |
 | <code><a href="#@cdktf/provider-snowflake.RoleGrantsConfig.property.users">users</a></code> | <code>string[]</code> | Grants role to this specified user. |
 
@@ -58659,6 +59943,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 ---
 
+##### `enableMultipleGrants`<sup>Optional</sup> <a name="enableMultipleGrants" id="@cdktf/provider-snowflake.RoleGrantsConfig.property.enableMultipleGrants"></a>
+
+```typescript
+public readonly enableMultipleGrants: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+When this is set to true, multiple grants of the same type can be created.
+
+This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/role_grants#enable_multiple_grants RoleGrants#enable_multiple_grants}
+
+---
+
 ##### `roles`<sup>Optional</sup> <a name="roles" id="@cdktf/provider-snowflake.RoleGrantsConfig.property.roles"></a>
 
 ```typescript
@@ -58684,6 +59982,112 @@ public readonly users: string[];
 Grants role to this specified user.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/role_grants#users RoleGrants#users}
+
+---
+
+### RoleOwnershipGrantConfig <a name="RoleOwnershipGrantConfig" id="@cdktf/provider-snowflake.RoleOwnershipGrantConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.RoleOwnershipGrantConfig.Initializer"></a>
+
+```typescript
+import { RoleOwnershipGrantConfig } from '@cdktf/provider-snowflake'
+
+const roleOwnershipGrantConfig: RoleOwnershipGrantConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrantConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrantConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrantConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrantConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrantConfig.property.onRoleName">onRoleName</a></code> | <code>string</code> | The name of the role ownership is granted on. |
+| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrantConfig.property.toRoleName">toRoleName</a></code> | <code>string</code> | The name of the role to grant ownership. |
+| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrantConfig.property.currentGrants">currentGrants</a></code> | <code>string</code> | Specifies whether to remove or transfer all existing outbound privileges on the object when ownership is transferred to a new role. |
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.RoleOwnershipGrantConfig.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* number
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-snowflake.RoleOwnershipGrantConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* cdktf.ITerraformDependable[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-snowflake.RoleOwnershipGrantConfig.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-snowflake.RoleOwnershipGrantConfig.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
+##### `onRoleName`<sup>Required</sup> <a name="onRoleName" id="@cdktf/provider-snowflake.RoleOwnershipGrantConfig.property.onRoleName"></a>
+
+```typescript
+public readonly onRoleName: string;
+```
+
+- *Type:* string
+
+The name of the role ownership is granted on.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/role_ownership_grant#on_role_name RoleOwnershipGrant#on_role_name}
+
+---
+
+##### `toRoleName`<sup>Required</sup> <a name="toRoleName" id="@cdktf/provider-snowflake.RoleOwnershipGrantConfig.property.toRoleName"></a>
+
+```typescript
+public readonly toRoleName: string;
+```
+
+- *Type:* string
+
+The name of the role to grant ownership.
+
+Please ensure that the role that terraform is using is granted access.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/role_ownership_grant#to_role_name RoleOwnershipGrant#to_role_name}
+
+---
+
+##### `currentGrants`<sup>Optional</sup> <a name="currentGrants" id="@cdktf/provider-snowflake.RoleOwnershipGrantConfig.property.currentGrants"></a>
+
+```typescript
+public readonly currentGrants: string;
+```
+
+- *Type:* string
+
+Specifies whether to remove or transfer all existing outbound privileges on the object when ownership is transferred to a new role.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/role_ownership_grant#current_grants RoleOwnershipGrant#current_grants}
 
 ---
 
@@ -58936,6 +60340,7 @@ const rowAccessPolicyGrantConfig: RowAccessPolicyGrantConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrantConfig.property.databaseName">databaseName</a></code> | <code>string</code> | The name of the database containing the row access policy on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrantConfig.property.rowAccessPolicyName">rowAccessPolicyName</a></code> | <code>string</code> | The name of the row access policy on which to grant privileges immediately. |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrantConfig.property.schemaName">schemaName</a></code> | <code>string</code> | The name of the schema containing the row access policy on which to grant privileges. |
+| <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrantConfig.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrantConfig.property.privilege">privilege</a></code> | <code>string</code> | The privilege to grant on the row access policy. |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrantConfig.property.roles">roles</a></code> | <code>string[]</code> | Grants privilege to these roles. |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrantConfig.property.withGrantOption">withGrantOption</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, allows the recipient role to grant the privileges to other roles. |
@@ -59021,6 +60426,20 @@ public readonly schemaName: string;
 The name of the schema containing the row access policy on which to grant privileges.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/row_access_policy_grant#schema_name RowAccessPolicyGrant#schema_name}
+
+---
+
+##### `enableMultipleGrants`<sup>Optional</sup> <a name="enableMultipleGrants" id="@cdktf/provider-snowflake.RowAccessPolicyGrantConfig.property.enableMultipleGrants"></a>
+
+```typescript
+public readonly enableMultipleGrants: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+When this is set to true, multiple grants of the same type can be created.
+
+This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/row_access_policy_grant#enable_multiple_grants RowAccessPolicyGrant#enable_multiple_grants}
 
 ---
 
@@ -59537,6 +60956,7 @@ const schemaGrantConfig: SchemaGrantConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.SchemaGrantConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SchemaGrantConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SchemaGrantConfig.property.databaseName">databaseName</a></code> | <code>string</code> | The name of the database containing the schema on which to grant privileges. |
+| <code><a href="#@cdktf/provider-snowflake.SchemaGrantConfig.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
 | <code><a href="#@cdktf/provider-snowflake.SchemaGrantConfig.property.onFuture">onFuture</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, apply this grant on all future schemas in the given database. |
 | <code><a href="#@cdktf/provider-snowflake.SchemaGrantConfig.property.privilege">privilege</a></code> | <code>string</code> | The privilege to grant on the current or future schema. |
 | <code><a href="#@cdktf/provider-snowflake.SchemaGrantConfig.property.roles">roles</a></code> | <code>string[]</code> | Grants privilege to these roles. |
@@ -59597,6 +61017,20 @@ public readonly databaseName: string;
 The name of the database containing the schema on which to grant privileges.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema_grant#database_name SchemaGrant#database_name}
+
+---
+
+##### `enableMultipleGrants`<sup>Optional</sup> <a name="enableMultipleGrants" id="@cdktf/provider-snowflake.SchemaGrantConfig.property.enableMultipleGrants"></a>
+
+```typescript
+public readonly enableMultipleGrants: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+When this is set to true, multiple grants of the same type can be created.
+
+This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema_grant#enable_multiple_grants SchemaGrant#enable_multiple_grants}
 
 ---
 
@@ -60038,6 +61472,7 @@ const sequenceGrantConfig: SequenceGrantConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.SequenceGrantConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SequenceGrantConfig.property.databaseName">databaseName</a></code> | <code>string</code> | The name of the database containing the current or future sequences on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.SequenceGrantConfig.property.schemaName">schemaName</a></code> | <code>string</code> | The name of the schema containing the current or future sequences on which to grant privileges. |
+| <code><a href="#@cdktf/provider-snowflake.SequenceGrantConfig.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
 | <code><a href="#@cdktf/provider-snowflake.SequenceGrantConfig.property.onFuture">onFuture</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true and a schema_name is provided, apply this grant on all future sequences in the given schema. |
 | <code><a href="#@cdktf/provider-snowflake.SequenceGrantConfig.property.privilege">privilege</a></code> | <code>string</code> | The privilege to grant on the current or future sequence. |
 | <code><a href="#@cdktf/provider-snowflake.SequenceGrantConfig.property.roles">roles</a></code> | <code>string[]</code> | Grants privilege to these roles. |
@@ -60111,6 +61546,20 @@ public readonly schemaName: string;
 The name of the schema containing the current or future sequences on which to grant privileges.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/sequence_grant#schema_name SequenceGrant#schema_name}
+
+---
+
+##### `enableMultipleGrants`<sup>Optional</sup> <a name="enableMultipleGrants" id="@cdktf/provider-snowflake.SequenceGrantConfig.property.enableMultipleGrants"></a>
+
+```typescript
+public readonly enableMultipleGrants: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+When this is set to true, multiple grants of the same type can be created.
+
+This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/sequence_grant#enable_multiple_grants SequenceGrant#enable_multiple_grants}
 
 ---
 
@@ -60806,6 +62255,7 @@ const stageGrantConfig: StageGrantConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.StageGrantConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StageGrantConfig.property.databaseName">databaseName</a></code> | <code>string</code> | The name of the database containing the current stage on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.StageGrantConfig.property.schemaName">schemaName</a></code> | <code>string</code> | The name of the schema containing the current stage on which to grant privileges. |
+| <code><a href="#@cdktf/provider-snowflake.StageGrantConfig.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
 | <code><a href="#@cdktf/provider-snowflake.StageGrantConfig.property.onFuture">onFuture</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true and a schema_name is provided, apply this grant on all future stages in the given schema. |
 | <code><a href="#@cdktf/provider-snowflake.StageGrantConfig.property.privilege">privilege</a></code> | <code>string</code> | The privilege to grant on the stage. |
 | <code><a href="#@cdktf/provider-snowflake.StageGrantConfig.property.roles">roles</a></code> | <code>string[]</code> | Grants privilege to these roles. |
@@ -60879,6 +62329,20 @@ public readonly schemaName: string;
 The name of the schema containing the current stage on which to grant privileges.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stage_grant#schema_name StageGrant#schema_name}
+
+---
+
+##### `enableMultipleGrants`<sup>Optional</sup> <a name="enableMultipleGrants" id="@cdktf/provider-snowflake.StageGrantConfig.property.enableMultipleGrants"></a>
+
+```typescript
+public readonly enableMultipleGrants: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+When this is set to true, multiple grants of the same type can be created.
+
+This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stage_grant#enable_multiple_grants StageGrant#enable_multiple_grants}
 
 ---
 
@@ -61427,6 +62891,7 @@ const streamGrantConfig: StreamGrantConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.StreamGrantConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StreamGrantConfig.property.databaseName">databaseName</a></code> | <code>string</code> | The name of the database containing the current or future streams on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.StreamGrantConfig.property.schemaName">schemaName</a></code> | <code>string</code> | The name of the schema containing the current or future streams on which to grant privileges. |
+| <code><a href="#@cdktf/provider-snowflake.StreamGrantConfig.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
 | <code><a href="#@cdktf/provider-snowflake.StreamGrantConfig.property.onFuture">onFuture</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true and a schema_name is provided, apply this grant on all future streams in the given schema. |
 | <code><a href="#@cdktf/provider-snowflake.StreamGrantConfig.property.privilege">privilege</a></code> | <code>string</code> | The privilege to grant on the current or future stream. |
 | <code><a href="#@cdktf/provider-snowflake.StreamGrantConfig.property.roles">roles</a></code> | <code>string[]</code> | Grants privilege to these roles. |
@@ -61500,6 +62965,20 @@ public readonly schemaName: string;
 The name of the schema containing the current or future streams on which to grant privileges.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stream_grant#schema_name StreamGrant#schema_name}
+
+---
+
+##### `enableMultipleGrants`<sup>Optional</sup> <a name="enableMultipleGrants" id="@cdktf/provider-snowflake.StreamGrantConfig.property.enableMultipleGrants"></a>
+
+```typescript
+public readonly enableMultipleGrants: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+When this is set to true, multiple grants of the same type can be created.
+
+This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stream_grant#enable_multiple_grants StreamGrant#enable_multiple_grants}
 
 ---
 
@@ -62019,6 +63498,7 @@ const tableGrantConfig: TableGrantConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.TableGrantConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TableGrantConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TableGrantConfig.property.databaseName">databaseName</a></code> | <code>string</code> | The name of the database containing the current or future tables on which to grant privileges. |
+| <code><a href="#@cdktf/provider-snowflake.TableGrantConfig.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
 | <code><a href="#@cdktf/provider-snowflake.TableGrantConfig.property.onFuture">onFuture</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true and a schema_name is provided, apply this grant on all future tables in the given schema. |
 | <code><a href="#@cdktf/provider-snowflake.TableGrantConfig.property.privilege">privilege</a></code> | <code>string</code> | The privilege to grant on the current or future table. |
 | <code><a href="#@cdktf/provider-snowflake.TableGrantConfig.property.roles">roles</a></code> | <code>string[]</code> | Grants privilege to these roles. |
@@ -62080,6 +63560,20 @@ public readonly databaseName: string;
 The name of the database containing the current or future tables on which to grant privileges.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table_grant#database_name TableGrant#database_name}
+
+---
+
+##### `enableMultipleGrants`<sup>Optional</sup> <a name="enableMultipleGrants" id="@cdktf/provider-snowflake.TableGrantConfig.property.enableMultipleGrants"></a>
+
+```typescript
+public readonly enableMultipleGrants: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+When this is set to true, multiple grants of the same type can be created.
+
+This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table_grant#enable_multiple_grants TableGrant#enable_multiple_grants}
 
 ---
 
@@ -62717,6 +64211,7 @@ const taskGrantConfig: TaskGrantConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.TaskGrantConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TaskGrantConfig.property.databaseName">databaseName</a></code> | <code>string</code> | The name of the database containing the current or future tasks on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.TaskGrantConfig.property.schemaName">schemaName</a></code> | <code>string</code> | The name of the schema containing the current or future tasks on which to grant privileges. |
+| <code><a href="#@cdktf/provider-snowflake.TaskGrantConfig.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
 | <code><a href="#@cdktf/provider-snowflake.TaskGrantConfig.property.onFuture">onFuture</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true and a schema_name is provided, apply this grant on all future tasks in the given schema. |
 | <code><a href="#@cdktf/provider-snowflake.TaskGrantConfig.property.privilege">privilege</a></code> | <code>string</code> | The privilege to grant on the current or future task. |
 | <code><a href="#@cdktf/provider-snowflake.TaskGrantConfig.property.roles">roles</a></code> | <code>string[]</code> | Grants privilege to these roles. |
@@ -62790,6 +64285,20 @@ public readonly schemaName: string;
 The name of the schema containing the current or future tasks on which to grant privileges.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task_grant#schema_name TaskGrant#schema_name}
+
+---
+
+##### `enableMultipleGrants`<sup>Optional</sup> <a name="enableMultipleGrants" id="@cdktf/provider-snowflake.TaskGrantConfig.property.enableMultipleGrants"></a>
+
+```typescript
+public readonly enableMultipleGrants: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+When this is set to true, multiple grants of the same type can be created.
+
+This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task_grant#enable_multiple_grants TaskGrant#enable_multiple_grants}
 
 ---
 
@@ -63543,6 +65052,7 @@ const viewGrantConfig: ViewGrantConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.ViewGrantConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ViewGrantConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ViewGrantConfig.property.databaseName">databaseName</a></code> | <code>string</code> | The name of the database containing the current or future views on which to grant privileges. |
+| <code><a href="#@cdktf/provider-snowflake.ViewGrantConfig.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
 | <code><a href="#@cdktf/provider-snowflake.ViewGrantConfig.property.onFuture">onFuture</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true and a schema_name is provided, apply this grant on all future views in the given schema. |
 | <code><a href="#@cdktf/provider-snowflake.ViewGrantConfig.property.privilege">privilege</a></code> | <code>string</code> | The privilege to grant on the current or future view. |
 | <code><a href="#@cdktf/provider-snowflake.ViewGrantConfig.property.roles">roles</a></code> | <code>string[]</code> | Grants privilege to these roles. |
@@ -63604,6 +65114,20 @@ public readonly databaseName: string;
 The name of the database containing the current or future views on which to grant privileges.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view_grant#database_name ViewGrant#database_name}
+
+---
+
+##### `enableMultipleGrants`<sup>Optional</sup> <a name="enableMultipleGrants" id="@cdktf/provider-snowflake.ViewGrantConfig.property.enableMultipleGrants"></a>
+
+```typescript
+public readonly enableMultipleGrants: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+When this is set to true, multiple grants of the same type can be created.
+
+This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view_grant#enable_multiple_grants ViewGrant#enable_multiple_grants}
 
 ---
 
@@ -64085,6 +65609,7 @@ const warehouseGrantConfig: WarehouseGrantConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.WarehouseGrantConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.WarehouseGrantConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.WarehouseGrantConfig.property.warehouseName">warehouseName</a></code> | <code>string</code> | The name of the warehouse on which to grant privileges. |
+| <code><a href="#@cdktf/provider-snowflake.WarehouseGrantConfig.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
 | <code><a href="#@cdktf/provider-snowflake.WarehouseGrantConfig.property.privilege">privilege</a></code> | <code>string</code> | The privilege to grant on the warehouse. |
 | <code><a href="#@cdktf/provider-snowflake.WarehouseGrantConfig.property.roles">roles</a></code> | <code>string[]</code> | Grants privilege to these roles. |
 | <code><a href="#@cdktf/provider-snowflake.WarehouseGrantConfig.property.withGrantOption">withGrantOption</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, allows the recipient role to grant the privileges to other roles. |
@@ -64142,6 +65667,20 @@ public readonly warehouseName: string;
 The name of the warehouse on which to grant privileges.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/warehouse_grant#warehouse_name WarehouseGrant#warehouse_name}
+
+---
+
+##### `enableMultipleGrants`<sup>Optional</sup> <a name="enableMultipleGrants" id="@cdktf/provider-snowflake.WarehouseGrantConfig.property.enableMultipleGrants"></a>
+
+```typescript
+public readonly enableMultipleGrants: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+When this is set to true, multiple grants of the same type can be created.
+
+This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/warehouse_grant#enable_multiple_grants WarehouseGrant#enable_multiple_grants}
 
 ---
 

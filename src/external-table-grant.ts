@@ -14,6 +14,12 @@ export interface ExternalTableGrantConfig extends cdktf.TerraformMetaArguments {
   */
   readonly databaseName: string;
   /**
+  * When this is set to true, multiple grants of the same type can be created. This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_table_grant#enable_multiple_grants ExternalTableGrant#enable_multiple_grants}
+  */
+  readonly enableMultipleGrants?: boolean | cdktf.IResolvable;
+  /**
   * The name of the external table on which to grant privileges immediately (only valid if on_future is false).
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_table_grant#external_table_name ExternalTableGrant#external_table_name}
@@ -90,6 +96,7 @@ export class ExternalTableGrant extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._databaseName = config.databaseName;
+    this._enableMultipleGrants = config.enableMultipleGrants;
     this._externalTableName = config.externalTableName;
     this._onFuture = config.onFuture;
     this._privilege = config.privilege;
@@ -114,6 +121,22 @@ export class ExternalTableGrant extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get databaseNameInput() {
     return this._databaseName;
+  }
+
+  // enable_multiple_grants - computed: false, optional: true, required: false
+  private _enableMultipleGrants?: boolean | cdktf.IResolvable; 
+  public get enableMultipleGrants() {
+    return this.getBooleanAttribute('enable_multiple_grants');
+  }
+  public set enableMultipleGrants(value: boolean | cdktf.IResolvable) {
+    this._enableMultipleGrants = value;
+  }
+  public resetEnableMultipleGrants() {
+    this._enableMultipleGrants = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableMultipleGrantsInput() {
+    return this._enableMultipleGrants;
   }
 
   // external_table_name - computed: false, optional: true, required: false
@@ -237,6 +260,7 @@ export class ExternalTableGrant extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       database_name: cdktf.stringToTerraform(this._databaseName),
+      enable_multiple_grants: cdktf.booleanToTerraform(this._enableMultipleGrants),
       external_table_name: cdktf.stringToTerraform(this._externalTableName),
       on_future: cdktf.booleanToTerraform(this._onFuture),
       privilege: cdktf.stringToTerraform(this._privilege),

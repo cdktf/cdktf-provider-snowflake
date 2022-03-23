@@ -8,6 +8,12 @@ import * as cdktf from 'cdktf';
 
 export interface RoleGrantsConfig extends cdktf.TerraformMetaArguments {
   /**
+  * When this is set to true, multiple grants of the same type can be created. This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/role_grants#enable_multiple_grants RoleGrants#enable_multiple_grants}
+  */
+  readonly enableMultipleGrants?: boolean | cdktf.IResolvable;
+  /**
   * The name of the role we are granting.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/role_grants#role_name RoleGrants#role_name}
@@ -59,6 +65,7 @@ export class RoleGrants extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._enableMultipleGrants = config.enableMultipleGrants;
     this._roleName = config.roleName;
     this._roles = config.roles;
     this._users = config.users;
@@ -67,6 +74,22 @@ export class RoleGrants extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // enable_multiple_grants - computed: false, optional: true, required: false
+  private _enableMultipleGrants?: boolean | cdktf.IResolvable; 
+  public get enableMultipleGrants() {
+    return this.getBooleanAttribute('enable_multiple_grants');
+  }
+  public set enableMultipleGrants(value: boolean | cdktf.IResolvable) {
+    this._enableMultipleGrants = value;
+  }
+  public resetEnableMultipleGrants() {
+    this._enableMultipleGrants = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableMultipleGrantsInput() {
+    return this._enableMultipleGrants;
+  }
 
   // id - computed: true, optional: true, required: false
   public get id() {
@@ -124,6 +147,7 @@ export class RoleGrants extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      enable_multiple_grants: cdktf.booleanToTerraform(this._enableMultipleGrants),
       role_name: cdktf.stringToTerraform(this._roleName),
       roles: cdktf.listMapper(cdktf.stringToTerraform)(this._roles),
       users: cdktf.listMapper(cdktf.stringToTerraform)(this._users),
