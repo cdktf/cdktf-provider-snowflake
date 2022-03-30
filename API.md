@@ -289,7 +289,7 @@ public resetWithGrantOption(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.AccountGrant.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.AccountGrant.isConstruct"></a>
 
 ```typescript
 import { AccountGrant } from '@cdktf/provider-snowflake'
@@ -298,6 +298,20 @@ AccountGrant.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.AccountGrant.isConstruct.parameter.x"></a>
 
@@ -848,7 +862,7 @@ public resetEnabled(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.ApiIntegration.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.ApiIntegration.isConstruct"></a>
 
 ```typescript
 import { ApiIntegration } from '@cdktf/provider-snowflake'
@@ -857,6 +871,20 @@ ApiIntegration.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.ApiIntegration.isConstruct.parameter.x"></a>
 
@@ -1557,7 +1585,7 @@ public resetTag(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.Database.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.Database.isConstruct"></a>
 
 ```typescript
 import { Database } from '@cdktf/provider-snowflake'
@@ -1566,6 +1594,20 @@ Database.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.Database.isConstruct.parameter.x"></a>
 
@@ -2182,7 +2224,7 @@ public resetWithGrantOption(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.DatabaseGrant.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.DatabaseGrant.isConstruct"></a>
 
 ```typescript
 import { DatabaseGrant } from '@cdktf/provider-snowflake'
@@ -2191,6 +2233,20 @@ DatabaseGrant.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.DatabaseGrant.isConstruct.parameter.x"></a>
 
@@ -2750,7 +2806,7 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeCurrentAccount.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeCurrentAccount.isConstruct"></a>
 
 ```typescript
 import { DataSnowflakeCurrentAccount } from '@cdktf/provider-snowflake'
@@ -2759,6 +2815,20 @@ DataSnowflakeCurrentAccount.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.DataSnowflakeCurrentAccount.isConstruct.parameter.x"></a>
 
@@ -3219,7 +3289,7 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.isConstruct"></a>
 
 ```typescript
 import { DataSnowflakeDatabase } from '@cdktf/provider-snowflake'
@@ -3228,6 +3298,20 @@ DataSnowflakeDatabase.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.DataSnowflakeDatabase.isConstruct.parameter.x"></a>
 
@@ -3778,7 +3862,7 @@ public databases(index: string): DataSnowflakeDatabasesDatabases
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.isConstruct"></a>
 
 ```typescript
 import { DataSnowflakeDatabases } from '@cdktf/provider-snowflake'
@@ -3787,6 +3871,20 @@ DataSnowflakeDatabases.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.isConstruct.parameter.x"></a>
 
@@ -4227,7 +4325,7 @@ public externalFunctions(index: string): DataSnowflakeExternalFunctionsExternalF
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctions.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctions.isConstruct"></a>
 
 ```typescript
 import { DataSnowflakeExternalFunctions } from '@cdktf/provider-snowflake'
@@ -4236,6 +4334,20 @@ DataSnowflakeExternalFunctions.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctions.isConstruct.parameter.x"></a>
 
@@ -4720,7 +4832,7 @@ public externalTables(index: string): DataSnowflakeExternalTablesExternalTables
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeExternalTables.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeExternalTables.isConstruct"></a>
 
 ```typescript
 import { DataSnowflakeExternalTables } from '@cdktf/provider-snowflake'
@@ -4729,6 +4841,20 @@ DataSnowflakeExternalTables.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.DataSnowflakeExternalTables.isConstruct.parameter.x"></a>
 
@@ -5213,7 +5339,7 @@ public fileFormats(index: string): DataSnowflakeFileFormatsFileFormats
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeFileFormats.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeFileFormats.isConstruct"></a>
 
 ```typescript
 import { DataSnowflakeFileFormats } from '@cdktf/provider-snowflake'
@@ -5222,6 +5348,20 @@ DataSnowflakeFileFormats.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.DataSnowflakeFileFormats.isConstruct.parameter.x"></a>
 
@@ -5706,7 +5846,7 @@ public functions(index: string): DataSnowflakeFunctionsFunctions
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeFunctions.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeFunctions.isConstruct"></a>
 
 ```typescript
 import { DataSnowflakeFunctions } from '@cdktf/provider-snowflake'
@@ -5715,6 +5855,20 @@ DataSnowflakeFunctions.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.DataSnowflakeFunctions.isConstruct.parameter.x"></a>
 
@@ -6199,7 +6353,7 @@ public maskingPolicies(index: string): DataSnowflakeMaskingPoliciesMaskingPolici
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPolicies.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPolicies.isConstruct"></a>
 
 ```typescript
 import { DataSnowflakeMaskingPolicies } from '@cdktf/provider-snowflake'
@@ -6208,6 +6362,20 @@ DataSnowflakeMaskingPolicies.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPolicies.isConstruct.parameter.x"></a>
 
@@ -6692,7 +6860,7 @@ public materializedViews(index: string): DataSnowflakeMaterializedViewsMateriali
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViews.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViews.isConstruct"></a>
 
 ```typescript
 import { DataSnowflakeMaterializedViews } from '@cdktf/provider-snowflake'
@@ -6701,6 +6869,20 @@ DataSnowflakeMaterializedViews.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViews.isConstruct.parameter.x"></a>
 
@@ -7185,7 +7367,7 @@ public pipes(index: string): DataSnowflakePipesPipes
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakePipes.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakePipes.isConstruct"></a>
 
 ```typescript
 import { DataSnowflakePipes } from '@cdktf/provider-snowflake'
@@ -7194,6 +7376,20 @@ DataSnowflakePipes.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.DataSnowflakePipes.isConstruct.parameter.x"></a>
 
@@ -7678,7 +7874,7 @@ public procedures(index: string): DataSnowflakeProceduresProcedures
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeProcedures.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeProcedures.isConstruct"></a>
 
 ```typescript
 import { DataSnowflakeProcedures } from '@cdktf/provider-snowflake'
@@ -7687,6 +7883,20 @@ DataSnowflakeProcedures.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.DataSnowflakeProcedures.isConstruct.parameter.x"></a>
 
@@ -8171,7 +8381,7 @@ public resourceMonitors(index: string): DataSnowflakeResourceMonitorsResourceMon
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitors.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitors.isConstruct"></a>
 
 ```typescript
 import { DataSnowflakeResourceMonitors } from '@cdktf/provider-snowflake'
@@ -8180,6 +8390,20 @@ DataSnowflakeResourceMonitors.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitors.isConstruct.parameter.x"></a>
 
@@ -8620,7 +8844,7 @@ public rowAccessPolicies(index: string): DataSnowflakeRowAccessPoliciesRowAccess
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPolicies.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPolicies.isConstruct"></a>
 
 ```typescript
 import { DataSnowflakeRowAccessPolicies } from '@cdktf/provider-snowflake'
@@ -8629,6 +8853,20 @@ DataSnowflakeRowAccessPolicies.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPolicies.isConstruct.parameter.x"></a>
 
@@ -9113,7 +9351,7 @@ public schemas(index: string): DataSnowflakeSchemasSchemas
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeSchemas.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeSchemas.isConstruct"></a>
 
 ```typescript
 import { DataSnowflakeSchemas } from '@cdktf/provider-snowflake'
@@ -9122,6 +9360,20 @@ DataSnowflakeSchemas.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.DataSnowflakeSchemas.isConstruct.parameter.x"></a>
 
@@ -9584,7 +9836,7 @@ public sequences(index: string): DataSnowflakeSequencesSequences
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeSequences.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeSequences.isConstruct"></a>
 
 ```typescript
 import { DataSnowflakeSequences } from '@cdktf/provider-snowflake'
@@ -9593,6 +9845,20 @@ DataSnowflakeSequences.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.DataSnowflakeSequences.isConstruct.parameter.x"></a>
 
@@ -10077,7 +10343,7 @@ public stages(index: string): DataSnowflakeStagesStages
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeStages.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeStages.isConstruct"></a>
 
 ```typescript
 import { DataSnowflakeStages } from '@cdktf/provider-snowflake'
@@ -10086,6 +10352,20 @@ DataSnowflakeStages.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.DataSnowflakeStages.isConstruct.parameter.x"></a>
 
@@ -10570,7 +10850,7 @@ public storageIntegrations(index: string): DataSnowflakeStorageIntegrationsStora
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrations.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrations.isConstruct"></a>
 
 ```typescript
 import { DataSnowflakeStorageIntegrations } from '@cdktf/provider-snowflake'
@@ -10579,6 +10859,20 @@ DataSnowflakeStorageIntegrations.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrations.isConstruct.parameter.x"></a>
 
@@ -11019,7 +11313,7 @@ public streams(index: string): DataSnowflakeStreamsStreams
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeStreams.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeStreams.isConstruct"></a>
 
 ```typescript
 import { DataSnowflakeStreams } from '@cdktf/provider-snowflake'
@@ -11028,6 +11322,20 @@ DataSnowflakeStreams.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.DataSnowflakeStreams.isConstruct.parameter.x"></a>
 
@@ -11499,7 +11807,7 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeSystemGenerateScimAccessToken.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeSystemGenerateScimAccessToken.isConstruct"></a>
 
 ```typescript
 import { DataSnowflakeSystemGenerateScimAccessToken } from '@cdktf/provider-snowflake'
@@ -11508,6 +11816,20 @@ DataSnowflakeSystemGenerateScimAccessToken.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.DataSnowflakeSystemGenerateScimAccessToken.isConstruct.parameter.x"></a>
 
@@ -11968,7 +12290,7 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetAwsSnsIamPolicy.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetAwsSnsIamPolicy.isConstruct"></a>
 
 ```typescript
 import { DataSnowflakeSystemGetAwsSnsIamPolicy } from '@cdktf/provider-snowflake'
@@ -11977,6 +12299,20 @@ DataSnowflakeSystemGetAwsSnsIamPolicy.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetAwsSnsIamPolicy.isConstruct.parameter.x"></a>
 
@@ -12437,7 +12773,7 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetPrivatelinkConfig.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetPrivatelinkConfig.isConstruct"></a>
 
 ```typescript
 import { DataSnowflakeSystemGetPrivatelinkConfig } from '@cdktf/provider-snowflake'
@@ -12446,6 +12782,20 @@ DataSnowflakeSystemGetPrivatelinkConfig.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetPrivatelinkConfig.isConstruct.parameter.x"></a>
 
@@ -12928,7 +13278,7 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetSnowflakePlatformInfo.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetSnowflakePlatformInfo.isConstruct"></a>
 
 ```typescript
 import { DataSnowflakeSystemGetSnowflakePlatformInfo } from '@cdktf/provider-snowflake'
@@ -12937,6 +13287,20 @@ DataSnowflakeSystemGetSnowflakePlatformInfo.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetSnowflakePlatformInfo.isConstruct.parameter.x"></a>
 
@@ -13399,7 +13763,7 @@ public tables(index: string): DataSnowflakeTablesTables
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeTables.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeTables.isConstruct"></a>
 
 ```typescript
 import { DataSnowflakeTables } from '@cdktf/provider-snowflake'
@@ -13408,6 +13772,20 @@ DataSnowflakeTables.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.DataSnowflakeTables.isConstruct.parameter.x"></a>
 
@@ -13892,7 +14270,7 @@ public tasks(index: string): DataSnowflakeTasksTasks
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeTasks.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeTasks.isConstruct"></a>
 
 ```typescript
 import { DataSnowflakeTasks } from '@cdktf/provider-snowflake'
@@ -13901,6 +14279,20 @@ DataSnowflakeTasks.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.DataSnowflakeTasks.isConstruct.parameter.x"></a>
 
@@ -14385,7 +14777,7 @@ public views(index: string): DataSnowflakeViewsViews
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeViews.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeViews.isConstruct"></a>
 
 ```typescript
 import { DataSnowflakeViews } from '@cdktf/provider-snowflake'
@@ -14394,6 +14786,20 @@ DataSnowflakeViews.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.DataSnowflakeViews.isConstruct.parameter.x"></a>
 
@@ -14878,7 +15284,7 @@ public warehouses(index: string): DataSnowflakeWarehousesWarehouses
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeWarehouses.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.DataSnowflakeWarehouses.isConstruct"></a>
 
 ```typescript
 import { DataSnowflakeWarehouses } from '@cdktf/provider-snowflake'
@@ -14887,6 +15293,20 @@ DataSnowflakeWarehouses.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.DataSnowflakeWarehouses.isConstruct.parameter.x"></a>
 
@@ -15370,7 +15790,7 @@ public resetReturnNullAllowed(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.ExternalFunction.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.ExternalFunction.isConstruct"></a>
 
 ```typescript
 import { ExternalFunction } from '@cdktf/provider-snowflake'
@@ -15379,6 +15799,20 @@ ExternalFunction.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.ExternalFunction.isConstruct.parameter.x"></a>
 
@@ -16210,7 +16644,7 @@ public resetScopeDelimiter(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.ExternalOauthIntegration.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.ExternalOauthIntegration.isConstruct"></a>
 
 ```typescript
 import { ExternalOauthIntegration } from '@cdktf/provider-snowflake'
@@ -16219,6 +16653,20 @@ ExternalOauthIntegration.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.ExternalOauthIntegration.isConstruct.parameter.x"></a>
 
@@ -17043,7 +17491,7 @@ public resetTag(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.ExternalTable.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.ExternalTable.isConstruct"></a>
 
 ```typescript
 import { ExternalTable } from '@cdktf/provider-snowflake'
@@ -17052,6 +17500,20 @@ ExternalTable.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.ExternalTable.isConstruct.parameter.x"></a>
 
@@ -17847,7 +18309,7 @@ public resetWithGrantOption(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.ExternalTableGrant.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.ExternalTableGrant.isConstruct"></a>
 
 ```typescript
 import { ExternalTableGrant } from '@cdktf/provider-snowflake'
@@ -17856,6 +18318,20 @@ ExternalTableGrant.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.ExternalTableGrant.isConstruct.parameter.x"></a>
 
@@ -18705,7 +19181,7 @@ public resetValidateUtf8(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.FileFormat.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.FileFormat.isConstruct"></a>
 
 ```typescript
 import { FileFormat } from '@cdktf/provider-snowflake'
@@ -18714,6 +19190,20 @@ FileFormat.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.FileFormat.isConstruct.parameter.x"></a>
 
@@ -19975,7 +20465,7 @@ public resetWithGrantOption(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.FileFormatGrant.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.FileFormatGrant.isConstruct"></a>
 
 ```typescript
 import { FileFormatGrant } from '@cdktf/provider-snowflake'
@@ -19984,6 +20474,20 @@ FileFormatGrant.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.FileFormatGrant.isConstruct.parameter.x"></a>
 
@@ -20643,7 +21147,7 @@ public resetTargetPath(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.Function.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.Function.isConstruct"></a>
 
 ```typescript
 import { Function } from '@cdktf/provider-snowflake'
@@ -20652,6 +21156,20 @@ Function.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.Function.isConstruct.parameter.x"></a>
 
@@ -21428,7 +21946,7 @@ public resetWithGrantOption(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.FunctionGrant.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.FunctionGrant.isConstruct"></a>
 
 ```typescript
 import { FunctionGrant } from '@cdktf/provider-snowflake'
@@ -21437,6 +21955,20 @@ FunctionGrant.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.FunctionGrant.isConstruct.parameter.x"></a>
 
@@ -22134,7 +22666,7 @@ public resetWithGrantOption(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.IntegrationGrant.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.IntegrationGrant.isConstruct"></a>
 
 ```typescript
 import { IntegrationGrant } from '@cdktf/provider-snowflake'
@@ -22143,6 +22675,20 @@ IntegrationGrant.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.IntegrationGrant.isConstruct.parameter.x"></a>
 
@@ -22694,7 +23240,7 @@ public resetType(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.ManagedAccount.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.ManagedAccount.isConstruct"></a>
 
 ```typescript
 import { ManagedAccount } from '@cdktf/provider-snowflake'
@@ -22703,6 +23249,20 @@ ManagedAccount.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.ManagedAccount.isConstruct.parameter.x"></a>
 
@@ -23302,7 +23862,7 @@ public resetComment(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.MaskingPolicy.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.MaskingPolicy.isConstruct"></a>
 
 ```typescript
 import { MaskingPolicy } from '@cdktf/provider-snowflake'
@@ -23311,6 +23871,20 @@ MaskingPolicy.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.MaskingPolicy.isConstruct.parameter.x"></a>
 
@@ -23920,7 +24494,7 @@ public resetWithGrantOption(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.MaskingPolicyGrant.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.MaskingPolicyGrant.isConstruct"></a>
 
 ```typescript
 import { MaskingPolicyGrant } from '@cdktf/provider-snowflake'
@@ -23929,6 +24503,20 @@ MaskingPolicyGrant.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.MaskingPolicyGrant.isConstruct.parameter.x"></a>
 
@@ -24538,7 +25126,7 @@ public resetTag(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.MaterializedView.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.MaterializedView.isConstruct"></a>
 
 ```typescript
 import { MaterializedView } from '@cdktf/provider-snowflake'
@@ -24547,6 +25135,20 @@ MaterializedView.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.MaterializedView.isConstruct.parameter.x"></a>
 
@@ -25228,7 +25830,7 @@ public resetWithGrantOption(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.MaterializedViewGrant.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.MaterializedViewGrant.isConstruct"></a>
 
 ```typescript
 import { MaterializedViewGrant } from '@cdktf/provider-snowflake'
@@ -25237,6 +25839,20 @@ MaterializedViewGrant.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.MaterializedViewGrant.isConstruct.parameter.x"></a>
 
@@ -25876,7 +26492,7 @@ public resetComment(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.NetworkPolicy.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.NetworkPolicy.isConstruct"></a>
 
 ```typescript
 import { NetworkPolicy } from '@cdktf/provider-snowflake'
@@ -25885,6 +26501,20 @@ NetworkPolicy.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.NetworkPolicy.isConstruct.parameter.x"></a>
 
@@ -26414,7 +27044,7 @@ public resetUsers(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.NetworkPolicyAttachment.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.NetworkPolicyAttachment.isConstruct"></a>
 
 ```typescript
 import { NetworkPolicyAttachment } from '@cdktf/provider-snowflake'
@@ -26423,6 +27053,20 @@ NetworkPolicyAttachment.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.NetworkPolicyAttachment.isConstruct.parameter.x"></a>
 
@@ -27000,7 +27644,7 @@ public resetType(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.NotificationIntegration.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.NotificationIntegration.isConstruct"></a>
 
 ```typescript
 import { NotificationIntegration } from '@cdktf/provider-snowflake'
@@ -27009,6 +27653,20 @@ NotificationIntegration.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.NotificationIntegration.isConstruct.parameter.x"></a>
 
@@ -27830,7 +28488,7 @@ public resetOauthUseSecondaryRoles(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.OauthIntegration.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.OauthIntegration.isConstruct"></a>
 
 ```typescript
 import { OauthIntegration } from '@cdktf/provider-snowflake'
@@ -27839,6 +28497,20 @@ OauthIntegration.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.OauthIntegration.isConstruct.parameter.x"></a>
 
@@ -28488,7 +29160,7 @@ public resetIntegration(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.Pipe.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.Pipe.isConstruct"></a>
 
 ```typescript
 import { Pipe } from '@cdktf/provider-snowflake'
@@ -28497,6 +29169,20 @@ Pipe.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.Pipe.isConstruct.parameter.x"></a>
 
@@ -29186,7 +29872,7 @@ public resetWithGrantOption(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.PipeGrant.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.PipeGrant.isConstruct"></a>
 
 ```typescript
 import { PipeGrant } from '@cdktf/provider-snowflake'
@@ -29195,6 +29881,20 @@ PipeGrant.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.PipeGrant.isConstruct.parameter.x"></a>
 
@@ -29833,7 +30533,7 @@ public resetReturnBehavior(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.Procedure.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.Procedure.isConstruct"></a>
 
 ```typescript
 import { Procedure } from '@cdktf/provider-snowflake'
@@ -29842,6 +30542,20 @@ Procedure.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.Procedure.isConstruct.parameter.x"></a>
 
@@ -30552,7 +31266,7 @@ public resetWithGrantOption(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.ProcedureGrant.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.ProcedureGrant.isConstruct"></a>
 
 ```typescript
 import { ProcedureGrant } from '@cdktf/provider-snowflake'
@@ -30561,6 +31275,20 @@ ProcedureGrant.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.ProcedureGrant.isConstruct.parameter.x"></a>
 
@@ -31293,7 +32021,7 @@ public resetWarehouses(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.ResourceMonitor.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.ResourceMonitor.isConstruct"></a>
 
 ```typescript
 import { ResourceMonitor } from '@cdktf/provider-snowflake'
@@ -31302,6 +32030,20 @@ ResourceMonitor.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.ResourceMonitor.isConstruct.parameter.x"></a>
 
@@ -31977,7 +32719,7 @@ public resetWithGrantOption(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.ResourceMonitorGrant.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.ResourceMonitorGrant.isConstruct"></a>
 
 ```typescript
 import { ResourceMonitorGrant } from '@cdktf/provider-snowflake'
@@ -31986,6 +32728,20 @@ ResourceMonitorGrant.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.ResourceMonitorGrant.isConstruct.parameter.x"></a>
 
@@ -32537,7 +33293,7 @@ public resetTag(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.Role.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.Role.isConstruct"></a>
 
 ```typescript
 import { Role } from '@cdktf/provider-snowflake'
@@ -32546,6 +33302,20 @@ Role.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.Role.isConstruct.parameter.x"></a>
 
@@ -33060,7 +33830,7 @@ public resetUsers(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.RoleGrants.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.RoleGrants.isConstruct"></a>
 
 ```typescript
 import { RoleGrants } from '@cdktf/provider-snowflake'
@@ -33069,6 +33839,20 @@ RoleGrants.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.RoleGrants.isConstruct.parameter.x"></a>
 
@@ -33591,7 +34375,7 @@ public resetCurrentGrants(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.RoleOwnershipGrant.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.RoleOwnershipGrant.isConstruct"></a>
 
 ```typescript
 import { RoleOwnershipGrant } from '@cdktf/provider-snowflake'
@@ -33600,6 +34384,20 @@ RoleOwnershipGrant.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.RoleOwnershipGrant.isConstruct.parameter.x"></a>
 
@@ -34100,7 +34898,7 @@ public resetComment(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.RowAccessPolicy.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.RowAccessPolicy.isConstruct"></a>
 
 ```typescript
 import { RowAccessPolicy } from '@cdktf/provider-snowflake'
@@ -34109,6 +34907,20 @@ RowAccessPolicy.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.RowAccessPolicy.isConstruct.parameter.x"></a>
 
@@ -34696,7 +35508,7 @@ public resetWithGrantOption(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.RowAccessPolicyGrant.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.RowAccessPolicyGrant.isConstruct"></a>
 
 ```typescript
 import { RowAccessPolicyGrant } from '@cdktf/provider-snowflake'
@@ -34705,6 +35517,20 @@ RowAccessPolicyGrant.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.RowAccessPolicyGrant.isConstruct.parameter.x"></a>
 
@@ -35356,7 +36182,7 @@ public resetSaml2SpInitiatedLoginPageLabel(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.SamlIntegration.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.SamlIntegration.isConstruct"></a>
 
 ```typescript
 import { SamlIntegration } from '@cdktf/provider-snowflake'
@@ -35365,6 +36191,20 @@ SamlIntegration.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.SamlIntegration.isConstruct.parameter.x"></a>
 
@@ -36201,7 +37041,7 @@ public resetTag(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.Schema.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.Schema.isConstruct"></a>
 
 ```typescript
 import { Schema } from '@cdktf/provider-snowflake'
@@ -36210,6 +37050,20 @@ Schema.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.Schema.isConstruct.parameter.x"></a>
 
@@ -36840,7 +37694,7 @@ public resetWithGrantOption(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.SchemaGrant.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.SchemaGrant.isConstruct"></a>
 
 ```typescript
 import { SchemaGrant } from '@cdktf/provider-snowflake'
@@ -36849,6 +37703,20 @@ SchemaGrant.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.SchemaGrant.isConstruct.parameter.x"></a>
 
@@ -37459,7 +38327,7 @@ public resetNetworkPolicy(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.ScimIntegration.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.ScimIntegration.isConstruct"></a>
 
 ```typescript
 import { ScimIntegration } from '@cdktf/provider-snowflake'
@@ -37468,6 +38336,20 @@ ScimIntegration.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.ScimIntegration.isConstruct.parameter.x"></a>
 
@@ -38008,7 +38890,7 @@ public resetIncrement(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.Sequence.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.Sequence.isConstruct"></a>
 
 ```typescript
 import { Sequence } from '@cdktf/provider-snowflake'
@@ -38017,6 +38899,20 @@ Sequence.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.Sequence.isConstruct.parameter.x"></a>
 
@@ -38618,7 +39514,7 @@ public resetWithGrantOption(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.SequenceGrant.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.SequenceGrant.isConstruct"></a>
 
 ```typescript
 import { SequenceGrant } from '@cdktf/provider-snowflake'
@@ -38627,6 +39523,20 @@ SequenceGrant.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.SequenceGrant.isConstruct.parameter.x"></a>
 
@@ -39244,7 +40154,7 @@ public resetComment(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.Share.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.Share.isConstruct"></a>
 
 ```typescript
 import { Share } from '@cdktf/provider-snowflake'
@@ -39253,6 +40163,20 @@ Share.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.Share.isConstruct.parameter.x"></a>
 
@@ -39714,7 +40638,7 @@ public resetRole(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.SnowflakeProvider.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.SnowflakeProvider.isConstruct"></a>
 
 ```typescript
 import { SnowflakeProvider } from '@cdktf/provider-snowflake'
@@ -39723,6 +40647,20 @@ SnowflakeProvider.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.SnowflakeProvider.isConstruct.parameter.x"></a>
 
@@ -40535,7 +41473,7 @@ public resetUrl(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.Stage.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.Stage.isConstruct"></a>
 
 ```typescript
 import { Stage } from '@cdktf/provider-snowflake'
@@ -40544,6 +41482,20 @@ Stage.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.Stage.isConstruct.parameter.x"></a>
 
@@ -41321,7 +42273,7 @@ public resetWithGrantOption(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.StageGrant.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.StageGrant.isConstruct"></a>
 
 ```typescript
 import { StageGrant } from '@cdktf/provider-snowflake'
@@ -41330,6 +42282,20 @@ StageGrant.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.StageGrant.isConstruct.parameter.x"></a>
 
@@ -41982,7 +42948,7 @@ public resetType(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.StorageIntegration.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.StorageIntegration.isConstruct"></a>
 
 ```typescript
 import { StorageIntegration } from '@cdktf/provider-snowflake'
@@ -41991,6 +42957,20 @@ StorageIntegration.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.StorageIntegration.isConstruct.parameter.x"></a>
 
@@ -42739,7 +43719,7 @@ public resetShowInitialRows(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.Stream.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.Stream.isConstruct"></a>
 
 ```typescript
 import { Stream } from '@cdktf/provider-snowflake'
@@ -42748,6 +43728,20 @@ Stream.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.Stream.isConstruct.parameter.x"></a>
 
@@ -43404,7 +44398,7 @@ public resetWithGrantOption(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.StreamGrant.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.StreamGrant.isConstruct"></a>
 
 ```typescript
 import { StreamGrant } from '@cdktf/provider-snowflake'
@@ -43413,6 +44407,20 @@ StreamGrant.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.StreamGrant.isConstruct.parameter.x"></a>
 
@@ -44071,7 +45079,7 @@ public resetTag(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.Table.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.Table.isConstruct"></a>
 
 ```typescript
 import { Table } from '@cdktf/provider-snowflake'
@@ -44080,6 +45088,20 @@ Table.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.Table.isConstruct.parameter.x"></a>
 
@@ -44794,7 +45816,7 @@ public resetWithGrantOption(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.TableGrant.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.TableGrant.isConstruct"></a>
 
 ```typescript
 import { TableGrant } from '@cdktf/provider-snowflake'
@@ -44803,6 +45825,20 @@ TableGrant.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.TableGrant.isConstruct.parameter.x"></a>
 
@@ -45435,7 +46471,7 @@ public resetComment(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.Tag.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.Tag.isConstruct"></a>
 
 ```typescript
 import { Tag } from '@cdktf/provider-snowflake'
@@ -45444,6 +46480,20 @@ Tag.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.Tag.isConstruct.parameter.x"></a>
 
@@ -46029,7 +47079,7 @@ public resetWhen(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.Task.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.Task.isConstruct"></a>
 
 ```typescript
 import { Task } from '@cdktf/provider-snowflake'
@@ -46038,6 +47088,20 @@ Task.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.Task.isConstruct.parameter.x"></a>
 
@@ -46815,7 +47879,7 @@ public resetWithGrantOption(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.TaskGrant.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.TaskGrant.isConstruct"></a>
 
 ```typescript
 import { TaskGrant } from '@cdktf/provider-snowflake'
@@ -46824,6 +47888,20 @@ TaskGrant.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.TaskGrant.isConstruct.parameter.x"></a>
 
@@ -47532,7 +48610,7 @@ public resetTag(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.User.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.User.isConstruct"></a>
 
 ```typescript
 import { User } from '@cdktf/provider-snowflake'
@@ -47541,6 +48619,20 @@ User.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.User.isConstruct.parameter.x"></a>
 
@@ -48345,7 +49437,7 @@ public resetRsaPublicKey2(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.UserPublicKeys.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.UserPublicKeys.isConstruct"></a>
 
 ```typescript
 import { UserPublicKeys } from '@cdktf/provider-snowflake'
@@ -48354,6 +49446,20 @@ UserPublicKeys.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.UserPublicKeys.isConstruct.parameter.x"></a>
 
@@ -48875,7 +49981,7 @@ public resetTag(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.View.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.View.isConstruct"></a>
 
 ```typescript
 import { View } from '@cdktf/provider-snowflake'
@@ -48884,6 +49990,20 @@ View.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.View.isConstruct.parameter.x"></a>
 
@@ -49543,7 +50663,7 @@ public resetWithGrantOption(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.ViewGrant.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.ViewGrant.isConstruct"></a>
 
 ```typescript
 import { ViewGrant } from '@cdktf/provider-snowflake'
@@ -49552,6 +50672,20 @@ ViewGrant.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.ViewGrant.isConstruct.parameter.x"></a>
 
@@ -50275,7 +51409,7 @@ public resetWarehouseSize(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.Warehouse.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.Warehouse.isConstruct"></a>
 
 ```typescript
 import { Warehouse } from '@cdktf/provider-snowflake'
@@ -50284,6 +51418,20 @@ Warehouse.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.Warehouse.isConstruct.parameter.x"></a>
 
@@ -51069,7 +52217,7 @@ public resetWithGrantOption(): void
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@cdktf/provider-snowflake.WarehouseGrant.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.WarehouseGrant.isConstruct"></a>
 
 ```typescript
 import { WarehouseGrant } from '@cdktf/provider-snowflake'
@@ -51078,6 +52226,20 @@ WarehouseGrant.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.WarehouseGrant.isConstruct.parameter.x"></a>
 
@@ -51433,7 +52595,9 @@ public readonly enableMultipleGrants: boolean | IResolvable;
 
 When this is set to true, multiple grants of the same type can be created.
 
-This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/account_grant#enable_multiple_grants AccountGrant#enable_multiple_grants}
+This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/account_grant#enable_multiple_grants AccountGrant#enable_multiple_grants}
 
 ---
 
@@ -51586,7 +52750,9 @@ public readonly name: string;
 
 Specifies the name of the API integration.
 
-This name follows the rules for Object Identifiers. The name should be unique among api integrations in your account.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/api_integration#name ApiIntegration#name}
+This name follows the rules for Object Identifiers. The name should be unique among api integrations in your account.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/api_integration#name ApiIntegration#name}
 
 ---
 
@@ -51656,7 +52822,9 @@ public readonly enabled: boolean | IResolvable;
 
 Specifies whether this API integration is enabled or disabled.
 
-If the API integration is disabled, any external function that relies on it will not work.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/api_integration#enabled ApiIntegration#enabled}
+If the API integration is disabled, any external function that relies on it will not work.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/api_integration#enabled ApiIntegration#enabled}
 
 ---
 
@@ -51911,7 +53079,9 @@ public readonly enableMultipleGrants: boolean | IResolvable;
 
 When this is set to true, multiple grants of the same type can be created.
 
-This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/database_grant#enable_multiple_grants DatabaseGrant#enable_multiple_grants}
+This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/database_grant#enable_multiple_grants DatabaseGrant#enable_multiple_grants}
 
 ---
 
@@ -54305,7 +55475,9 @@ public readonly name: string;
 
 Specifies the identifier for the external function.
 
-The identifier can contain the schema name and database name, as well as the function name. The function's signature (name and argument data types) must be unique within the schema.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_function#name ExternalFunction#name}
+The identifier can contain the schema name and database name, as well as the function name. The function's signature (name and argument data types) must be unique within the schema.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_function#name ExternalFunction#name}
 
 ---
 
@@ -54638,7 +55810,9 @@ public readonly name: string;
 
 Specifies the name of the External Oath integration.
 
-This name follows the rules for Object Identifiers. The name should be unique among security integrations in your account.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_oauth_integration#name ExternalOauthIntegration#name}
+This name follows the rules for Object Identifiers. The name should be unique among security integrations in your account.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_oauth_integration#name ExternalOauthIntegration#name}
 
 ---
 
@@ -54736,7 +55910,9 @@ public readonly blockedRoles: string[];
 
 Specifies the list of roles that a client cannot set as the primary role.
 
-Do not include ACCOUNTADMIN, ORGADMIN or SECURITYADMIN as they are already implicitly enforced and will cause in-place updates.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_oauth_integration#blocked_roles ExternalOauthIntegration#blocked_roles}
+Do not include ACCOUNTADMIN, ORGADMIN or SECURITYADMIN as they are already implicitly enforced and will cause in-place updates.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_oauth_integration#blocked_roles ExternalOauthIntegration#blocked_roles}
 
 ---
 
@@ -54764,7 +55940,9 @@ public readonly jwsKeysUrls: string[];
 
 Specifies the endpoint or a list of endpoints from which to download public keys or certificates to validate an External OAuth access token.
 
-The maximum number of URLs that can be specified in the list is 3.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_oauth_integration#jws_keys_urls ExternalOauthIntegration#jws_keys_urls}
+The maximum number of URLs that can be specified in the list is 3.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_oauth_integration#jws_keys_urls ExternalOauthIntegration#jws_keys_urls}
 
 ---
 
@@ -54792,7 +55970,9 @@ public readonly rsaPublicKey2: string;
 
 Specifies a second RSA public key, without the -----BEGIN PUBLIC KEY----- and -----END PUBLIC KEY----- headers.
 
-Used for key rotation.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_oauth_integration#rsa_public_key_2 ExternalOauthIntegration#rsa_public_key_2}
+Used for key rotation.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_oauth_integration#rsa_public_key_2 ExternalOauthIntegration#rsa_public_key_2}
 
 ---
 
@@ -55013,7 +56193,9 @@ public readonly name: string;
 
 Specifies the identifier for the external table;
 
-must be unique for the database and schema in which the externalTable is created.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_table#name ExternalTable#name}
+must be unique for the database and schema in which the externalTable is created.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_table#name ExternalTable#name}
 
 ---
 
@@ -55251,7 +56433,9 @@ public readonly enableMultipleGrants: boolean | IResolvable;
 
 When this is set to true, multiple grants of the same type can be created.
 
-This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_table_grant#enable_multiple_grants ExternalTableGrant#enable_multiple_grants}
+This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_table_grant#enable_multiple_grants ExternalTableGrant#enable_multiple_grants}
 
 ---
 
@@ -55279,7 +56463,9 @@ public readonly onFuture: boolean | IResolvable;
 
 When this is set to true and a schema_name is provided, apply this grant on all future external tables in the given schema.
 
-When this is true and no schema_name is provided apply this grant on all future external tables in the given database. The external_table_name and shares fields must be unset in order to use on_future.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_table_grant#on_future ExternalTableGrant#on_future}
+When this is true and no schema_name is provided apply this grant on all future external tables in the given database. The external_table_name and shares fields must be unset in order to use on_future.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_table_grant#on_future ExternalTableGrant#on_future}
 
 ---
 
@@ -55551,7 +56737,9 @@ public readonly name: string;
 
 Specifies the identifier for the file format;
 
-must be unique for the database and schema in which the file format is created.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/file_format#name FileFormat#name}
+must be unique for the database and schema in which the file format is created.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/file_format#name FileFormat#name}
 
 ---
 
@@ -56124,7 +57312,9 @@ public readonly enableMultipleGrants: boolean | IResolvable;
 
 When this is set to true, multiple grants of the same type can be created.
 
-This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/file_format_grant#enable_multiple_grants FileFormatGrant#enable_multiple_grants}
+This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/file_format_grant#enable_multiple_grants FileFormatGrant#enable_multiple_grants}
 
 ---
 
@@ -56152,7 +57342,9 @@ public readonly onFuture: boolean | IResolvable;
 
 When this is set to true and a schema_name is provided, apply this grant on all future file formats in the given schema.
 
-When this is true and no schema_name is provided apply this grant on all future file formats in the given database. The file_format_name field must be unset in order to use on_future.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/file_format_grant#on_future FileFormatGrant#on_future}
+When this is true and no schema_name is provided apply this grant on all future file formats in the given database. The file_format_name field must be unset in order to use on_future.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/file_format_grant#on_future FileFormatGrant#on_future}
 
 ---
 
@@ -56343,7 +57535,9 @@ public readonly name: string;
 
 Specifies the identifier for the function;
 
-does not have to be unique for the schema in which the function is created. Don't use the | character.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#name Function#name}
+does not have to be unique for the schema in which the function is created. Don't use the | character.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#name Function#name}
 
 ---
 
@@ -56672,7 +57866,9 @@ public readonly enableMultipleGrants: boolean | IResolvable;
 
 When this is set to true, multiple grants of the same type can be created.
 
-This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function_grant#enable_multiple_grants FunctionGrant#enable_multiple_grants}
+This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function_grant#enable_multiple_grants FunctionGrant#enable_multiple_grants}
 
 ---
 
@@ -56700,7 +57896,9 @@ public readonly onFuture: boolean | IResolvable;
 
 When this is set to true and a schema_name is provided, apply this grant on all future functions in the given schema.
 
-When this is true and no schema_name is provided apply this grant on all future functions in the given database. The function_name, arguments, return_type, and shares fields must be unset in order to use on_future.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function_grant#on_future FunctionGrant#on_future}
+When this is true and no schema_name is provided apply this grant on all future functions in the given database. The function_name, arguments, return_type, and shares fields must be unset in order to use on_future.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function_grant#on_future FunctionGrant#on_future}
 
 ---
 
@@ -56864,7 +58062,9 @@ public readonly enableMultipleGrants: boolean | IResolvable;
 
 When this is set to true, multiple grants of the same type can be created.
 
-This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/integration_grant#enable_multiple_grants IntegrationGrant#enable_multiple_grants}
+This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/integration_grant#enable_multiple_grants IntegrationGrant#enable_multiple_grants}
 
 ---
 
@@ -56986,7 +58186,9 @@ public readonly adminName: string;
 
 Identifier, as well as login name, for the initial user in the managed account.
 
-This user serves as the account administrator for the account.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/managed_account#admin_name ManagedAccount#admin_name}
+This user serves as the account administrator for the account.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/managed_account#admin_name ManagedAccount#admin_name}
 
 ---
 
@@ -57152,7 +58354,9 @@ public readonly name: string;
 
 Specifies the identifier for the masking policy;
 
-must be unique for the database and schema in which the masking policy is created.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/masking_policy#name MaskingPolicy#name}
+must be unique for the database and schema in which the masking policy is created.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/masking_policy#name MaskingPolicy#name}
 
 ---
 
@@ -57332,7 +58536,9 @@ public readonly enableMultipleGrants: boolean | IResolvable;
 
 When this is set to true, multiple grants of the same type can be created.
 
-This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/masking_policy_grant#enable_multiple_grants MaskingPolicyGrant#enable_multiple_grants}
+This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/masking_policy_grant#enable_multiple_grants MaskingPolicyGrant#enable_multiple_grants}
 
 ---
 
@@ -57668,7 +58874,9 @@ public readonly enableMultipleGrants: boolean | IResolvable;
 
 When this is set to true, multiple grants of the same type can be created.
 
-This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/materialized_view_grant#enable_multiple_grants MaterializedViewGrant#enable_multiple_grants}
+This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/materialized_view_grant#enable_multiple_grants MaterializedViewGrant#enable_multiple_grants}
 
 ---
 
@@ -57696,7 +58904,9 @@ public readonly onFuture: boolean | IResolvable;
 
 When this is set to true and a schema_name is provided, apply this grant on all future materialized views in the given schema.
 
-When this is true and no schema_name is provided apply this grant on all future materialized views in the given database. The materialized_view_name and shares fields must be unset in order to use on_future.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/materialized_view_grant#on_future MaterializedViewGrant#on_future}
+When this is true and no schema_name is provided apply this grant on all future materialized views in the given database. The materialized_view_name and shares fields must be unset in order to use on_future.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/materialized_view_grant#on_future MaterializedViewGrant#on_future}
 
 ---
 
@@ -57921,7 +59131,9 @@ public readonly networkPolicyName: string;
 
 Specifies the identifier for the network policy;
 
-must be unique for the account in which the network policy is created.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/network_policy_attachment#network_policy_name NetworkPolicyAttachment#network_policy_name}
+must be unique for the account in which the network policy is created.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/network_policy_attachment#network_policy_name NetworkPolicyAttachment#network_policy_name}
 
 ---
 
@@ -58042,7 +59254,9 @@ public readonly name: string;
 
 Specifies the identifier for the network policy;
 
-must be unique for the account in which the network policy is created.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/network_policy#name NetworkPolicy#name}
+must be unique for the account in which the network policy is created.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/network_policy#name NetworkPolicy#name}
 
 ---
 
@@ -58405,7 +59619,9 @@ public readonly name: string;
 
 Specifies the name of the OAuth integration.
 
-This name follows the rules for Object Identifiers. The name should be unique among security integrations in your account.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/oauth_integration#name OauthIntegration#name}
+This name follows the rules for Object Identifiers. The name should be unique among security integrations in your account.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/oauth_integration#name OauthIntegration#name}
 
 ---
 
@@ -58433,7 +59649,9 @@ public readonly blockedRolesList: string[];
 
 List of roles that a user cannot explicitly consent to using after authenticating.
 
-Do not include ACCOUNTADMIN, ORGADMIN or SECURITYADMIN as they are already implicitly enforced and will cause in-place updates.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/oauth_integration#blocked_roles_list OauthIntegration#blocked_roles_list}
+Do not include ACCOUNTADMIN, ORGADMIN or SECURITYADMIN as they are already implicitly enforced and will cause in-place updates.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/oauth_integration#blocked_roles_list OauthIntegration#blocked_roles_list}
 
 ---
 
@@ -58615,7 +59833,9 @@ public readonly name: string;
 
 Specifies the identifier for the pipe;
 
-must be unique for the database and schema in which the pipe is created.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/pipe#name Pipe#name}
+must be unique for the database and schema in which the pipe is created.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/pipe#name Pipe#name}
 
 ---
 
@@ -58810,7 +60030,9 @@ public readonly enableMultipleGrants: boolean | IResolvable;
 
 When this is set to true, multiple grants of the same type can be created.
 
-This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/pipe_grant#enable_multiple_grants PipeGrant#enable_multiple_grants}
+This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/pipe_grant#enable_multiple_grants PipeGrant#enable_multiple_grants}
 
 ---
 
@@ -58824,7 +60046,9 @@ public readonly onFuture: boolean | IResolvable;
 
 When this is set to true and a schema_name is provided, apply this grant on all future pipes in the given schema.
 
-When this is true and no schema_name is provided apply this grant on all future pipes in the given database. The pipe_name field must be unset in order to use on_future.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/pipe_grant#on_future PipeGrant#on_future}
+When this is true and no schema_name is provided apply this grant on all future pipes in the given database. The pipe_name field must be unset in order to use on_future.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/pipe_grant#on_future PipeGrant#on_future}
 
 ---
 
@@ -59026,7 +60250,9 @@ public readonly name: string;
 
 Specifies the identifier for the procedure;
 
-does not have to be unique for the schema in which the procedure is created. Don't use the | character.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#name Procedure#name}
+does not have to be unique for the schema in which the procedure is created. Don't use the | character.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#name Procedure#name}
 
 ---
 
@@ -59313,7 +60539,9 @@ public readonly enableMultipleGrants: boolean | IResolvable;
 
 When this is set to true, multiple grants of the same type can be created.
 
-This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure_grant#enable_multiple_grants ProcedureGrant#enable_multiple_grants}
+This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure_grant#enable_multiple_grants ProcedureGrant#enable_multiple_grants}
 
 ---
 
@@ -59327,7 +60555,9 @@ public readonly onFuture: boolean | IResolvable;
 
 When this is set to true and a schema_name is provided, apply this grant on all future procedures in the given schema.
 
-When this is true and no schema_name is provided apply this grant on all future procedures in the given database. The procedure_name and shares fields must be unset in order to use on_future.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure_grant#on_future ProcedureGrant#on_future}
+When this is true and no schema_name is provided apply this grant on all future procedures in the given database. The procedure_name and shares fields must be unset in order to use on_future.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure_grant#on_future ProcedureGrant#on_future}
 
 ---
 
@@ -59538,7 +60768,9 @@ public readonly frequency: string;
 
 The frequency interval at which the credit usage resets to 0.
 
-If you set a frequency for a resource monitor, you must also set START_TIMESTAMP.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/resource_monitor#frequency ResourceMonitor#frequency}
+If you set a frequency for a resource monitor, you must also set START_TIMESTAMP.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/resource_monitor#frequency ResourceMonitor#frequency}
 
 ---
 
@@ -59716,7 +60948,9 @@ public readonly enableMultipleGrants: boolean | IResolvable;
 
 When this is set to true, multiple grants of the same type can be created.
 
-This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/resource_monitor_grant#enable_multiple_grants ResourceMonitorGrant#enable_multiple_grants}
+This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/resource_monitor_grant#enable_multiple_grants ResourceMonitorGrant#enable_multiple_grants}
 
 ---
 
@@ -59953,7 +61187,9 @@ public readonly enableMultipleGrants: boolean | IResolvable;
 
 When this is set to true, multiple grants of the same type can be created.
 
-This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/role_grants#enable_multiple_grants RoleGrants#enable_multiple_grants}
+This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/role_grants#enable_multiple_grants RoleGrants#enable_multiple_grants}
 
 ---
 
@@ -60073,7 +61309,9 @@ public readonly toRoleName: string;
 
 The name of the role to grant ownership.
 
-Please ensure that the role that terraform is using is granted access.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/role_ownership_grant#to_role_name RoleOwnershipGrant#to_role_name}
+Please ensure that the role that terraform is using is granted access.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/role_ownership_grant#to_role_name RoleOwnershipGrant#to_role_name}
 
 ---
 
@@ -60259,7 +61497,9 @@ public readonly name: string;
 
 Specifies the identifier for the row access policy;
 
-must be unique for the database and schema in which the row access policy is created.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/row_access_policy#name RowAccessPolicy#name}
+must be unique for the database and schema in which the row access policy is created.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/row_access_policy#name RowAccessPolicy#name}
 
 ---
 
@@ -60301,7 +61541,9 @@ public readonly signature: {[ key: string ]: string};
 
 Specifies signature (arguments) for the row access policy (uppercase and sorted to avoid recreation of resource).
 
-A signature specifies a set of attributes that must be considered to determine whether the row is accessible. The attribute values come from the database object (e.g. table or view) to be protected by the row access policy.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/row_access_policy#signature RowAccessPolicy#signature}
+A signature specifies a set of attributes that must be considered to determine whether the row is accessible. The attribute values come from the database object (e.g. table or view) to be protected by the row access policy.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/row_access_policy#signature RowAccessPolicy#signature}
 
 ---
 
@@ -60439,7 +61681,9 @@ public readonly enableMultipleGrants: boolean | IResolvable;
 
 When this is set to true, multiple grants of the same type can be created.
 
-This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/row_access_policy_grant#enable_multiple_grants RowAccessPolicyGrant#enable_multiple_grants}
+This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/row_access_policy_grant#enable_multiple_grants RowAccessPolicyGrant#enable_multiple_grants}
 
 ---
 
@@ -60571,7 +61815,9 @@ public readonly name: string;
 
 Specifies the name of the SAML2 integration.
 
-This name follows the rules for Object Identifiers. The name should be unique among security integrations in your account.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/saml_integration#name SamlIntegration#name}
+This name follows the rules for Object Identifiers. The name should be unique among security integrations in your account.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/saml_integration#name SamlIntegration#name}
 
 ---
 
@@ -60655,7 +61901,9 @@ public readonly saml2EnableSpInitiated: boolean | IResolvable;
 
 The Boolean indicating if the Log In With button will be shown on the login page.
 
-TRUE: displays the Log in WIth button on the login page.  FALSE: does not display the Log in With button on the login page.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/saml_integration#saml2_enable_sp_initiated SamlIntegration#saml2_enable_sp_initiated}
+TRUE: displays the Log in WIth button on the login page.  FALSE: does not display the Log in With button on the login page.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/saml_integration#saml2_enable_sp_initiated SamlIntegration#saml2_enable_sp_initiated}
 
 ---
 
@@ -60669,7 +61917,9 @@ public readonly saml2ForceAuthn: boolean | IResolvable;
 
 The Boolean indicating whether users, during the initial authentication flow, are forced to authenticate again to access Snowflake.
 
-When set to TRUE, Snowflake sets the ForceAuthn SAML parameter to TRUE in the outgoing request from Snowflake to the identity provider. TRUE: forces users to authenticate again to access Snowflake, even if a valid session with the identity provider exists. FALSE: does not force users to authenticate again to access Snowflake.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/saml_integration#saml2_force_authn SamlIntegration#saml2_force_authn}
+When set to TRUE, Snowflake sets the ForceAuthn SAML parameter to TRUE in the outgoing request from Snowflake to the identity provider. TRUE: forces users to authenticate again to access Snowflake, even if a valid session with the identity provider exists. FALSE: does not force users to authenticate again to access Snowflake.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/saml_integration#saml2_force_authn SamlIntegration#saml2_force_authn}
 
 ---
 
@@ -60683,7 +61933,9 @@ public readonly saml2PostLogoutRedirectUrl: string;
 
 The endpoint to which Snowflake redirects users after clicking the Log Out button in the classic Snowflake web interface.
 
-Snowflake terminates the Snowflake session upon redirecting to the specified endpoint.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/saml_integration#saml2_post_logout_redirect_url SamlIntegration#saml2_post_logout_redirect_url}
+Snowflake terminates the Snowflake session upon redirecting to the specified endpoint.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/saml_integration#saml2_post_logout_redirect_url SamlIntegration#saml2_post_logout_redirect_url}
 
 ---
 
@@ -60711,7 +61963,9 @@ public readonly saml2SignRequest: boolean | IResolvable;
 
 The Boolean indicating whether SAML requests are signed.
 
-TRUE: allows SAML requests to be signed. FALSE: does not allow SAML requests to be signed.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/saml_integration#saml2_sign_request SamlIntegration#saml2_sign_request}
+TRUE: allows SAML requests to be signed. FALSE: does not allow SAML requests to be signed.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/saml_integration#saml2_sign_request SamlIntegration#saml2_sign_request}
 
 ---
 
@@ -60725,7 +61979,9 @@ public readonly saml2SnowflakeAcsUrl: string;
 
 The string containing the Snowflake Assertion Consumer Service URL to which the IdP will send its SAML authentication response back to Snowflake.
 
-This property will be set in the SAML authentication request generated by Snowflake when initiating a SAML SSO operation with the IdP. If an incorrect value is specified, Snowflake returns an error message indicating the acceptable values to use. Default: https://<account_locator>.<region>.snowflakecomputing.com/fed/login  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/saml_integration#saml2_snowflake_acs_url SamlIntegration#saml2_snowflake_acs_url}
+This property will be set in the SAML authentication request generated by Snowflake when initiating a SAML SSO operation with the IdP. If an incorrect value is specified, Snowflake returns an error message indicating the acceptable values to use. Default: https://<account_locator>.<region>.snowflakecomputing.com/fed/login
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/saml_integration#saml2_snowflake_acs_url SamlIntegration#saml2_snowflake_acs_url}
 
 ---
 
@@ -60739,7 +61995,9 @@ public readonly saml2SnowflakeIssuerUrl: string;
 
 The string containing the EntityID / Issuer for the Snowflake service provider.
 
-If an incorrect value is specified, Snowflake returns an error message indicating the acceptable values to use.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/saml_integration#saml2_snowflake_issuer_url SamlIntegration#saml2_snowflake_issuer_url}
+If an incorrect value is specified, Snowflake returns an error message indicating the acceptable values to use.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/saml_integration#saml2_snowflake_issuer_url SamlIntegration#saml2_snowflake_issuer_url}
 
 ---
 
@@ -60753,7 +62011,9 @@ public readonly saml2SnowflakeX509Cert: string;
 
 The Base64 encoded self-signed certificate generated by Snowflake for use with Encrypting SAML Assertions and Signed SAML Requests.
 
-You must have at least one of these features (encrypted SAML assertions or signed SAML responses) enabled in your Snowflake account to access the certificate value.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/saml_integration#saml2_snowflake_x509_cert SamlIntegration#saml2_snowflake_x509_cert}
+You must have at least one of these features (encrypted SAML assertions or signed SAML responses) enabled in your Snowflake account to access the certificate value.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/saml_integration#saml2_snowflake_x509_cert SamlIntegration#saml2_snowflake_x509_cert}
 
 ---
 
@@ -60919,7 +62179,9 @@ public readonly isTransient: boolean | IResolvable;
 
 Specifies a schema as transient.
 
-Transient schemas do not have a Fail-safe period so they do not incur additional storage costs once they leave Time Travel; however, this means they are also not protected by Fail-safe in the event of a data loss.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema#is_transient Schema#is_transient}
+Transient schemas do not have a Fail-safe period so they do not incur additional storage costs once they leave Time Travel; however, this means they are also not protected by Fail-safe in the event of a data loss.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema#is_transient Schema#is_transient}
 
 ---
 
@@ -61030,7 +62292,9 @@ public readonly enableMultipleGrants: boolean | IResolvable;
 
 When this is set to true, multiple grants of the same type can be created.
 
-This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema_grant#enable_multiple_grants SchemaGrant#enable_multiple_grants}
+This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema_grant#enable_multiple_grants SchemaGrant#enable_multiple_grants}
 
 ---
 
@@ -61044,7 +62308,9 @@ public readonly onFuture: boolean | IResolvable;
 
 When this is set to true, apply this grant on all future schemas in the given database.
 
-The schema_name and shares fields must be unset in order to use on_future.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema_grant#on_future SchemaGrant#on_future}
+The schema_name and shares fields must be unset in order to use on_future.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema_grant#on_future SchemaGrant#on_future}
 
 ---
 
@@ -61058,7 +62324,9 @@ public readonly privilege: string;
 
 The privilege to grant on the current or future schema.
 
-Note that if "OWNERSHIP" is specified, ensure that the role that terraform is using is granted access.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema_grant#privilege SchemaGrant#privilege}
+Note that if "OWNERSHIP" is specified, ensure that the role that terraform is using is granted access.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema_grant#privilege SchemaGrant#privilege}
 
 ---
 
@@ -61270,7 +62538,9 @@ public readonly name: string;
 
 Specifies the name of the SCIM integration.
 
-This name follows the rules for Object Identifiers. The name should be unique among security integrations in your account.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/scim_integration#name ScimIntegration#name}
+This name follows the rules for Object Identifiers. The name should be unique among security integrations in your account.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/scim_integration#name ScimIntegration#name}
 
 ---
 
@@ -61312,7 +62582,9 @@ public readonly networkPolicy: string;
 
 Specifies an existing network policy active for your account.
 
-The network policy restricts the list of user IP addresses when exchanging an authorization code for an access or refresh token and when using a refresh token to obtain a new access token. If this parameter is not set, the network policy for the account (if any) is used instead.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/scim_integration#network_policy ScimIntegration#network_policy}
+The network policy restricts the list of user IP addresses when exchanging an authorization code for an access or refresh token and when using a refresh token to obtain a new access token. If this parameter is not set, the network policy for the account (if any) is used instead.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/scim_integration#network_policy ScimIntegration#network_policy}
 
 ---
 
@@ -61559,7 +62831,9 @@ public readonly enableMultipleGrants: boolean | IResolvable;
 
 When this is set to true, multiple grants of the same type can be created.
 
-This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/sequence_grant#enable_multiple_grants SequenceGrant#enable_multiple_grants}
+This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/sequence_grant#enable_multiple_grants SequenceGrant#enable_multiple_grants}
 
 ---
 
@@ -61573,7 +62847,9 @@ public readonly onFuture: boolean | IResolvable;
 
 When this is set to true and a schema_name is provided, apply this grant on all future sequences in the given schema.
 
-When this is true and no schema_name is provided apply this grant on all future sequences in the given database. The sequence_name field must be unset in order to use on_future.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/sequence_grant#on_future SequenceGrant#on_future}
+When this is true and no schema_name is provided apply this grant on all future sequences in the given database. The sequence_name field must be unset in order to use on_future.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/sequence_grant#on_future SequenceGrant#on_future}
 
 ---
 
@@ -62067,7 +63343,9 @@ public readonly name: string;
 
 Specifies the identifier for the stage;
 
-must be unique for the database and schema in which the stage is created.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stage#name Stage#name}
+must be unique for the database and schema in which the stage is created.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stage#name Stage#name}
 
 ---
 
@@ -62342,7 +63620,9 @@ public readonly enableMultipleGrants: boolean | IResolvable;
 
 When this is set to true, multiple grants of the same type can be created.
 
-This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stage_grant#enable_multiple_grants StageGrant#enable_multiple_grants}
+This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stage_grant#enable_multiple_grants StageGrant#enable_multiple_grants}
 
 ---
 
@@ -62356,7 +63636,9 @@ public readonly onFuture: boolean | IResolvable;
 
 When this is set to true and a schema_name is provided, apply this grant on all future stages in the given schema.
 
-When this is true and no schema_name is provided apply this grant on all future stages in the given database. The stage_name field must be unset in order to use on_future.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stage_grant#on_future StageGrant#on_future}
+When this is true and no schema_name is provided apply this grant on all future stages in the given database. The stage_name field must be unset in order to use on_future.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stage_grant#on_future StageGrant#on_future}
 
 ---
 
@@ -62783,7 +64065,9 @@ public readonly name: string;
 
 Specifies the identifier for the stream;
 
-must be unique for the database and schema in which the stream is created.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stream#name Stream#name}
+must be unique for the database and schema in which the stream is created.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stream#name Stream#name}
 
 ---
 
@@ -62978,7 +64262,9 @@ public readonly enableMultipleGrants: boolean | IResolvable;
 
 When this is set to true, multiple grants of the same type can be created.
 
-This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stream_grant#enable_multiple_grants StreamGrant#enable_multiple_grants}
+This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stream_grant#enable_multiple_grants StreamGrant#enable_multiple_grants}
 
 ---
 
@@ -62992,7 +64278,9 @@ public readonly onFuture: boolean | IResolvable;
 
 When this is set to true and a schema_name is provided, apply this grant on all future streams in the given schema.
 
-When this is true and no schema_name is provided apply this grant on all future streams in the given database. The stream_name field must be unset in order to use on_future.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stream_grant#on_future StreamGrant#on_future}
+When this is true and no schema_name is provided apply this grant on all future streams in the given database. The stream_name field must be unset in order to use on_future.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stream_grant#on_future StreamGrant#on_future}
 
 ---
 
@@ -63155,7 +64443,9 @@ public readonly nullable: boolean | IResolvable;
 
 Whether this column can contain null values.
 
-**Note**: Depending on your Snowflake version, the default value will not suffice if this column is used in a primary key constraint.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table#nullable Table#nullable}
+**Note**: Depending on your Snowflake version, the default value will not suffice if this column is used in a primary key constraint.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table#nullable Table#nullable}
 
 ---
 
@@ -63377,7 +64667,9 @@ public readonly name: string;
 
 Specifies the identifier for the table;
 
-must be unique for the database and schema in which the table is created.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table#name Table#name}
+must be unique for the database and schema in which the table is created.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table#name Table#name}
 
 ---
 
@@ -63447,7 +64739,9 @@ public readonly dataRetentionDays: number;
 
 Specifies the retention period for the table so that Time Travel actions (SELECT, CLONE, UNDROP) can be performed on historical data in the table.
 
-Default value is 1, if you wish to inherit the parent schema setting then pass in the schema attribute to this argument.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table#data_retention_days Table#data_retention_days}
+Default value is 1, if you wish to inherit the parent schema setting then pass in the schema attribute to this argument.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table#data_retention_days Table#data_retention_days}
 
 ---
 
@@ -63573,7 +64867,9 @@ public readonly enableMultipleGrants: boolean | IResolvable;
 
 When this is set to true, multiple grants of the same type can be created.
 
-This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table_grant#enable_multiple_grants TableGrant#enable_multiple_grants}
+This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table_grant#enable_multiple_grants TableGrant#enable_multiple_grants}
 
 ---
 
@@ -63587,7 +64883,9 @@ public readonly onFuture: boolean | IResolvable;
 
 When this is set to true and a schema_name is provided, apply this grant on all future tables in the given schema.
 
-When this is true and no schema_name is provided apply this grant on all future tables in the given database. The table_name and shares fields must be unset in order to use on_future.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table_grant#on_future TableGrant#on_future}
+When this is true and no schema_name is provided apply this grant on all future tables in the given database. The table_name and shares fields must be unset in order to use on_future.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table_grant#on_future TableGrant#on_future}
 
 ---
 
@@ -64019,7 +65317,9 @@ public readonly name: string;
 
 Specifies the identifier for the task;
 
-must be unique for the database and schema in which the task is created.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task#name Task#name}
+must be unique for the database and schema in which the task is created.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task#name Task#name}
 
 ---
 
@@ -64061,7 +65361,9 @@ public readonly after: string;
 
 Specifies the predecessor task in the same database and schema of the current task.
 
-When a run of the predecessor task finishes successfully, it triggers this task (after a brief lag). (Conflict with schedule)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task#after Task#after}
+When a run of the predecessor task finishes successfully, it triggers this task (after a brief lag). (Conflict with schedule)
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task#after Task#after}
 
 ---
 
@@ -64145,7 +65447,9 @@ public readonly userTaskManagedInitialWarehouseSize: string;
 
 Specifies the size of the compute resources to provision for the first run of the task, before a task history is available for Snowflake to determine an ideal size.
 
-Once a task has successfully completed a few runs, Snowflake ignores this parameter setting. (Conflicts with warehouse)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task#user_task_managed_initial_warehouse_size Task#user_task_managed_initial_warehouse_size}
+Once a task has successfully completed a few runs, Snowflake ignores this parameter setting. (Conflicts with warehouse)
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task#user_task_managed_initial_warehouse_size Task#user_task_managed_initial_warehouse_size}
 
 ---
 
@@ -64173,7 +65477,9 @@ public readonly warehouse: string;
 
 The warehouse the task will use.
 
-Omit this parameter to use Snowflake-managed compute resources for runs of this task. (Conflicts with user_task_managed_initial_warehouse_size)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task#warehouse Task#warehouse}
+Omit this parameter to use Snowflake-managed compute resources for runs of this task. (Conflicts with user_task_managed_initial_warehouse_size)
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task#warehouse Task#warehouse}
 
 ---
 
@@ -64298,7 +65604,9 @@ public readonly enableMultipleGrants: boolean | IResolvable;
 
 When this is set to true, multiple grants of the same type can be created.
 
-This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task_grant#enable_multiple_grants TaskGrant#enable_multiple_grants}
+This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task_grant#enable_multiple_grants TaskGrant#enable_multiple_grants}
 
 ---
 
@@ -64312,7 +65620,9 @@ public readonly onFuture: boolean | IResolvable;
 
 When this is set to true and a schema_name is provided, apply this grant on all future tasks in the given schema.
 
-When this is true and no schema_name is provided apply this grant on all future tasks in the given database. The task_name field must be unset in order to use on_future.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task_grant#on_future TaskGrant#on_future}
+When this is true and no schema_name is provided apply this grant on all future tasks in the given database. The task_name field must be unset in order to use on_future.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task_grant#on_future TaskGrant#on_future}
 
 ---
 
@@ -64651,7 +65961,9 @@ public readonly rsaPublicKey2: string;
 
 Specifies the user’s second RSA public key;
 
-used to rotate the public and private keys for key-pair authentication based on an expiration schedule set by your organization. Must be on 1 line without header and trailer.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/user#rsa_public_key_2 User#rsa_public_key_2}
+used to rotate the public and private keys for key-pair authentication based on an expiration schedule set by your organization. Must be on 1 line without header and trailer.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/user#rsa_public_key_2 User#rsa_public_key_2}
 
 ---
 
@@ -64771,7 +66083,9 @@ public readonly rsaPublicKey2: string;
 
 Specifies the user’s second RSA public key;
 
-used to rotate the public and Public keys for key-pair authentication based on an expiration schedule set by your organization. Must be on 1 line without header and trailer.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/user_public_keys#rsa_public_key_2 UserPublicKeys#rsa_public_key_2}
+used to rotate the public and Public keys for key-pair authentication based on an expiration schedule set by your organization. Must be on 1 line without header and trailer.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/user_public_keys#rsa_public_key_2 UserPublicKeys#rsa_public_key_2}
 
 ---
 
@@ -64945,7 +66259,9 @@ public readonly name: string;
 
 Specifies the identifier for the view;
 
-must be unique for the schema in which the view is created. Don't use the | character.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view#name View#name}
+must be unique for the schema in which the view is created. Don't use the | character.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view#name View#name}
 
 ---
 
@@ -65127,7 +66443,9 @@ public readonly enableMultipleGrants: boolean | IResolvable;
 
 When this is set to true, multiple grants of the same type can be created.
 
-This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view_grant#enable_multiple_grants ViewGrant#enable_multiple_grants}
+This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view_grant#enable_multiple_grants ViewGrant#enable_multiple_grants}
 
 ---
 
@@ -65141,7 +66459,9 @@ public readonly onFuture: boolean | IResolvable;
 
 When this is set to true and a schema_name is provided, apply this grant on all future views in the given schema.
 
-When this is true and no schema_name is provided apply this grant on all future views in the given database. The view_name and shares fields must be unset in order to use on_future.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view_grant#on_future ViewGrant#on_future}
+When this is true and no schema_name is provided apply this grant on all future views in the given database. The view_name and shares fields must be unset in order to use on_future.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view_grant#on_future ViewGrant#on_future}
 
 ---
 
@@ -65586,7 +66906,9 @@ public readonly warehouseSize: string;
 
 Specifies the size of the virtual warehouse.
 
-Larger warehouse sizes 5X-Large and 6X-Large are currently in preview and only available on Amazon Web Services (AWS).  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/warehouse#warehouse_size Warehouse#warehouse_size}
+Larger warehouse sizes 5X-Large and 6X-Large are currently in preview and only available on Amazon Web Services (AWS).
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/warehouse#warehouse_size Warehouse#warehouse_size}
 
 ---
 
@@ -65680,7 +67002,9 @@ public readonly enableMultipleGrants: boolean | IResolvable;
 
 When this is set to true, multiple grants of the same type can be created.
 
-This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/warehouse_grant#enable_multiple_grants WarehouseGrant#enable_multiple_grants}
+This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/warehouse_grant#enable_multiple_grants WarehouseGrant#enable_multiple_grants}
 
 ---
 
