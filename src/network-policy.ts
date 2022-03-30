@@ -41,7 +41,7 @@ export class NetworkPolicy extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "snowflake_network_policy";
+  public static readonly tfResourceType = "snowflake_network_policy";
 
   // ===========
   // INITIALIZER
@@ -58,7 +58,9 @@ export class NetworkPolicy extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'snowflake_network_policy',
       terraformGeneratorMetadata: {
-        providerName: 'snowflake'
+        providerName: 'snowflake',
+        providerVersion: '0.29.0',
+        providerVersionConstraint: ' ~> 0.25'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -174,7 +174,7 @@ export class ExternalTable extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "snowflake_external_table";
+  public static readonly tfResourceType = "snowflake_external_table";
 
   // ===========
   // INITIALIZER
@@ -191,7 +191,9 @@ export class ExternalTable extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'snowflake_external_table',
       terraformGeneratorMetadata: {
-        providerName: 'snowflake'
+        providerName: 'snowflake',
+        providerVersion: '0.29.0',
+        providerVersionConstraint: ' ~> 0.25'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

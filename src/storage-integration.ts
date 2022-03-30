@@ -63,7 +63,7 @@ export class StorageIntegration extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "snowflake_storage_integration";
+  public static readonly tfResourceType = "snowflake_storage_integration";
 
   // ===========
   // INITIALIZER
@@ -80,7 +80,9 @@ export class StorageIntegration extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'snowflake_storage_integration',
       terraformGeneratorMetadata: {
-        providerName: 'snowflake'
+        providerName: 'snowflake',
+        providerVersion: '0.29.0',
+        providerVersionConstraint: ' ~> 0.25'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

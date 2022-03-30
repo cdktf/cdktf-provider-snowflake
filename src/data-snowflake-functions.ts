@@ -20,7 +20,45 @@ export interface DataSnowflakeFunctionsConfig extends cdktf.TerraformMetaArgumen
   */
   readonly schema: string;
 }
-export class DataSnowflakeFunctionsFunctions extends cdktf.ComplexComputedList {
+export interface DataSnowflakeFunctionsFunctions {
+}
+
+export function dataSnowflakeFunctionsFunctionsToTerraform(struct?: DataSnowflakeFunctionsFunctions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataSnowflakeFunctionsFunctionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataSnowflakeFunctionsFunctions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataSnowflakeFunctionsFunctions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // argument_types - computed: true, optional: false, required: false
   public get argumentTypes() {
@@ -53,6 +91,25 @@ export class DataSnowflakeFunctionsFunctions extends cdktf.ComplexComputedList {
   }
 }
 
+export class DataSnowflakeFunctionsFunctionsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataSnowflakeFunctionsFunctionsOutputReference {
+    return new DataSnowflakeFunctionsFunctionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/snowflake/d/functions snowflake_functions}
 */
@@ -61,7 +118,7 @@ export class DataSnowflakeFunctions extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "snowflake_functions";
+  public static readonly tfResourceType = "snowflake_functions";
 
   // ===========
   // INITIALIZER
@@ -78,7 +135,9 @@ export class DataSnowflakeFunctions extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'snowflake_functions',
       terraformGeneratorMetadata: {
-        providerName: 'snowflake'
+        providerName: 'snowflake',
+        providerVersion: '0.29.0',
+        providerVersionConstraint: ' ~> 0.25'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -107,8 +166,9 @@ export class DataSnowflakeFunctions extends cdktf.TerraformDataSource {
   }
 
   // functions - computed: true, optional: false, required: false
-  public functions(index: string) {
-    return new DataSnowflakeFunctionsFunctions(this, 'functions', index, false);
+  private _functions = new DataSnowflakeFunctionsFunctionsList(this, "functions", false);
+  public get functions() {
+    return this._functions;
   }
 
   // id - computed: true, optional: true, required: false

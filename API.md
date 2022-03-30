@@ -3654,7 +3654,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabases.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabases.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabases.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabases.databases">databases</a></code> | *No description.* |
 
 ---
 
@@ -3842,18 +3841,6 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
-##### `databases` <a name="databases" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.databases"></a>
-
-```typescript
-public databases(index: string): DataSnowflakeDatabasesDatabases
-```
-
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.databases.parameter.index"></a>
-
-- *Type:* string
-
----
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -3909,6 +3896,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabases.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabases.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabases.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabases.property.databases">databases</a></code> | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesList">DataSnowflakeDatabasesDatabasesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabases.property.id">id</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -4025,6 +4013,16 @@ public readonly provider: TerraformProvider;
 
 ---
 
+##### `databases`<sup>Required</sup> <a name="databases" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.property.databases"></a>
+
+```typescript
+public readonly databases: DataSnowflakeDatabasesDatabasesList;
+```
+
+- *Type:* <a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesList">DataSnowflakeDatabasesDatabasesList</a>
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.DataSnowflakeDatabases.property.id"></a>
 
 ```typescript
@@ -4117,7 +4115,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctions.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctions.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctions.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctions.externalFunctions">externalFunctions</a></code> | *No description.* |
 
 ---
 
@@ -4305,18 +4302,6 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
-##### `externalFunctions` <a name="externalFunctions" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctions.externalFunctions"></a>
-
-```typescript
-public externalFunctions(index: string): DataSnowflakeExternalFunctionsExternalFunctions
-```
-
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctions.externalFunctions.parameter.index"></a>
-
-- *Type:* string
-
----
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -4372,6 +4357,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctions.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctions.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctions.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctions.property.externalFunctions">externalFunctions</a></code> | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsList">DataSnowflakeExternalFunctionsExternalFunctionsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctions.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctions.property.databaseInput">databaseInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctions.property.schemaInput">schemaInput</a></code> | <code>string</code> | *No description.* |
@@ -4489,6 +4475,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `externalFunctions`<sup>Required</sup> <a name="externalFunctions" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctions.property.externalFunctions"></a>
+
+```typescript
+public readonly externalFunctions: DataSnowflakeExternalFunctionsExternalFunctionsList;
+```
+
+- *Type:* <a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsList">DataSnowflakeExternalFunctionsExternalFunctionsList</a>
 
 ---
 
@@ -4624,7 +4620,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTables.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTables.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTables.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTables.externalTables">externalTables</a></code> | *No description.* |
 
 ---
 
@@ -4812,18 +4807,6 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
-##### `externalTables` <a name="externalTables" id="@cdktf/provider-snowflake.DataSnowflakeExternalTables.externalTables"></a>
-
-```typescript
-public externalTables(index: string): DataSnowflakeExternalTablesExternalTables
-```
-
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeExternalTables.externalTables.parameter.index"></a>
-
-- *Type:* string
-
----
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -4879,6 +4862,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTables.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTables.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTables.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTables.property.externalTables">externalTables</a></code> | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesList">DataSnowflakeExternalTablesExternalTablesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTables.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTables.property.databaseInput">databaseInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTables.property.schemaInput">schemaInput</a></code> | <code>string</code> | *No description.* |
@@ -4996,6 +4980,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `externalTables`<sup>Required</sup> <a name="externalTables" id="@cdktf/provider-snowflake.DataSnowflakeExternalTables.property.externalTables"></a>
+
+```typescript
+public readonly externalTables: DataSnowflakeExternalTablesExternalTablesList;
+```
+
+- *Type:* <a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesList">DataSnowflakeExternalTablesExternalTablesList</a>
 
 ---
 
@@ -5131,7 +5125,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormats.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormats.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormats.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormats.fileFormats">fileFormats</a></code> | *No description.* |
 
 ---
 
@@ -5319,18 +5312,6 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
-##### `fileFormats` <a name="fileFormats" id="@cdktf/provider-snowflake.DataSnowflakeFileFormats.fileFormats"></a>
-
-```typescript
-public fileFormats(index: string): DataSnowflakeFileFormatsFileFormats
-```
-
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeFileFormats.fileFormats.parameter.index"></a>
-
-- *Type:* string
-
----
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -5386,6 +5367,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormats.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormats.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormats.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormats.property.fileFormats">fileFormats</a></code> | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsList">DataSnowflakeFileFormatsFileFormatsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormats.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormats.property.databaseInput">databaseInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormats.property.schemaInput">schemaInput</a></code> | <code>string</code> | *No description.* |
@@ -5503,6 +5485,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `fileFormats`<sup>Required</sup> <a name="fileFormats" id="@cdktf/provider-snowflake.DataSnowflakeFileFormats.property.fileFormats"></a>
+
+```typescript
+public readonly fileFormats: DataSnowflakeFileFormatsFileFormatsList;
+```
+
+- *Type:* <a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsList">DataSnowflakeFileFormatsFileFormatsList</a>
 
 ---
 
@@ -5638,7 +5630,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctions.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctions.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctions.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctions.functions">functions</a></code> | *No description.* |
 
 ---
 
@@ -5826,18 +5817,6 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
-##### `functions` <a name="functions" id="@cdktf/provider-snowflake.DataSnowflakeFunctions.functions"></a>
-
-```typescript
-public functions(index: string): DataSnowflakeFunctionsFunctions
-```
-
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeFunctions.functions.parameter.index"></a>
-
-- *Type:* string
-
----
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -5893,6 +5872,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctions.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctions.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctions.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctions.property.functions">functions</a></code> | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsList">DataSnowflakeFunctionsFunctionsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctions.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctions.property.databaseInput">databaseInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctions.property.schemaInput">schemaInput</a></code> | <code>string</code> | *No description.* |
@@ -6010,6 +5990,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `functions`<sup>Required</sup> <a name="functions" id="@cdktf/provider-snowflake.DataSnowflakeFunctions.property.functions"></a>
+
+```typescript
+public readonly functions: DataSnowflakeFunctionsFunctionsList;
+```
+
+- *Type:* <a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsList">DataSnowflakeFunctionsFunctionsList</a>
 
 ---
 
@@ -6145,7 +6135,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPolicies.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPolicies.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPolicies.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPolicies.maskingPolicies">maskingPolicies</a></code> | *No description.* |
 
 ---
 
@@ -6333,18 +6322,6 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
-##### `maskingPolicies` <a name="maskingPolicies" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPolicies.maskingPolicies"></a>
-
-```typescript
-public maskingPolicies(index: string): DataSnowflakeMaskingPoliciesMaskingPolicies
-```
-
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPolicies.maskingPolicies.parameter.index"></a>
-
-- *Type:* string
-
----
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -6401,6 +6378,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPolicies.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPolicies.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPolicies.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPolicies.property.maskingPolicies">maskingPolicies</a></code> | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesList">DataSnowflakeMaskingPoliciesMaskingPoliciesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPolicies.property.databaseInput">databaseInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPolicies.property.schemaInput">schemaInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPolicies.property.database">database</a></code> | <code>string</code> | *No description.* |
@@ -6530,6 +6508,16 @@ public readonly id: string;
 
 ---
 
+##### `maskingPolicies`<sup>Required</sup> <a name="maskingPolicies" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPolicies.property.maskingPolicies"></a>
+
+```typescript
+public readonly maskingPolicies: DataSnowflakeMaskingPoliciesMaskingPoliciesList;
+```
+
+- *Type:* <a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesList">DataSnowflakeMaskingPoliciesMaskingPoliciesList</a>
+
+---
+
 ##### `databaseInput`<sup>Optional</sup> <a name="databaseInput" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPolicies.property.databaseInput"></a>
 
 ```typescript
@@ -6652,7 +6640,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViews.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViews.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViews.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViews.materializedViews">materializedViews</a></code> | *No description.* |
 
 ---
 
@@ -6840,18 +6827,6 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
-##### `materializedViews` <a name="materializedViews" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViews.materializedViews"></a>
-
-```typescript
-public materializedViews(index: string): DataSnowflakeMaterializedViewsMaterializedViews
-```
-
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViews.materializedViews.parameter.index"></a>
-
-- *Type:* string
-
----
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -6908,6 +6883,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViews.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViews.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViews.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViews.property.materializedViews">materializedViews</a></code> | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsList">DataSnowflakeMaterializedViewsMaterializedViewsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViews.property.databaseInput">databaseInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViews.property.schemaInput">schemaInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViews.property.database">database</a></code> | <code>string</code> | *No description.* |
@@ -7037,6 +7013,16 @@ public readonly id: string;
 
 ---
 
+##### `materializedViews`<sup>Required</sup> <a name="materializedViews" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViews.property.materializedViews"></a>
+
+```typescript
+public readonly materializedViews: DataSnowflakeMaterializedViewsMaterializedViewsList;
+```
+
+- *Type:* <a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsList">DataSnowflakeMaterializedViewsMaterializedViewsList</a>
+
+---
+
 ##### `databaseInput`<sup>Optional</sup> <a name="databaseInput" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViews.property.databaseInput"></a>
 
 ```typescript
@@ -7159,7 +7145,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipes.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipes.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipes.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipes.pipes">pipes</a></code> | *No description.* |
 
 ---
 
@@ -7347,18 +7332,6 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
-##### `pipes` <a name="pipes" id="@cdktf/provider-snowflake.DataSnowflakePipes.pipes"></a>
-
-```typescript
-public pipes(index: string): DataSnowflakePipesPipes
-```
-
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakePipes.pipes.parameter.index"></a>
-
-- *Type:* string
-
----
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -7415,6 +7388,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipes.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipes.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipes.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipes.property.pipes">pipes</a></code> | <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesPipesList">DataSnowflakePipesPipesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipes.property.databaseInput">databaseInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipes.property.schemaInput">schemaInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipes.property.database">database</a></code> | <code>string</code> | *No description.* |
@@ -7544,6 +7518,16 @@ public readonly id: string;
 
 ---
 
+##### `pipes`<sup>Required</sup> <a name="pipes" id="@cdktf/provider-snowflake.DataSnowflakePipes.property.pipes"></a>
+
+```typescript
+public readonly pipes: DataSnowflakePipesPipesList;
+```
+
+- *Type:* <a href="#@cdktf/provider-snowflake.DataSnowflakePipesPipesList">DataSnowflakePipesPipesList</a>
+
+---
+
 ##### `databaseInput`<sup>Optional</sup> <a name="databaseInput" id="@cdktf/provider-snowflake.DataSnowflakePipes.property.databaseInput"></a>
 
 ```typescript
@@ -7666,7 +7650,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProcedures.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProcedures.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProcedures.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProcedures.procedures">procedures</a></code> | *No description.* |
 
 ---
 
@@ -7854,18 +7837,6 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
-##### `procedures` <a name="procedures" id="@cdktf/provider-snowflake.DataSnowflakeProcedures.procedures"></a>
-
-```typescript
-public procedures(index: string): DataSnowflakeProceduresProcedures
-```
-
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeProcedures.procedures.parameter.index"></a>
-
-- *Type:* string
-
----
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -7922,6 +7893,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProcedures.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProcedures.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProcedures.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProcedures.property.procedures">procedures</a></code> | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresList">DataSnowflakeProceduresProceduresList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProcedures.property.databaseInput">databaseInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProcedures.property.schemaInput">schemaInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProcedures.property.database">database</a></code> | <code>string</code> | *No description.* |
@@ -8051,6 +8023,16 @@ public readonly id: string;
 
 ---
 
+##### `procedures`<sup>Required</sup> <a name="procedures" id="@cdktf/provider-snowflake.DataSnowflakeProcedures.property.procedures"></a>
+
+```typescript
+public readonly procedures: DataSnowflakeProceduresProceduresList;
+```
+
+- *Type:* <a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresList">DataSnowflakeProceduresProceduresList</a>
+
+---
+
 ##### `databaseInput`<sup>Optional</sup> <a name="databaseInput" id="@cdktf/provider-snowflake.DataSnowflakeProcedures.property.databaseInput"></a>
 
 ```typescript
@@ -8173,7 +8155,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitors.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitors.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitors.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitors.resourceMonitors">resourceMonitors</a></code> | *No description.* |
 
 ---
 
@@ -8361,18 +8342,6 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
-##### `resourceMonitors` <a name="resourceMonitors" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitors.resourceMonitors"></a>
-
-```typescript
-public resourceMonitors(index: string): DataSnowflakeResourceMonitorsResourceMonitors
-```
-
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitors.resourceMonitors.parameter.index"></a>
-
-- *Type:* string
-
----
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -8429,6 +8398,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitors.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitors.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitors.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitors.property.resourceMonitors">resourceMonitors</a></code> | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsList">DataSnowflakeResourceMonitorsResourceMonitorsList</a></code> | *No description.* |
 
 ---
 
@@ -8554,6 +8524,16 @@ public readonly id: string;
 
 ---
 
+##### `resourceMonitors`<sup>Required</sup> <a name="resourceMonitors" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitors.property.resourceMonitors"></a>
+
+```typescript
+public readonly resourceMonitors: DataSnowflakeResourceMonitorsResourceMonitorsList;
+```
+
+- *Type:* <a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsList">DataSnowflakeResourceMonitorsResourceMonitorsList</a>
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -8636,7 +8616,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPolicies.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPolicies.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPolicies.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPolicies.rowAccessPolicies">rowAccessPolicies</a></code> | *No description.* |
 
 ---
 
@@ -8824,18 +8803,6 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
-##### `rowAccessPolicies` <a name="rowAccessPolicies" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPolicies.rowAccessPolicies"></a>
-
-```typescript
-public rowAccessPolicies(index: string): DataSnowflakeRowAccessPoliciesRowAccessPolicies
-```
-
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPolicies.rowAccessPolicies.parameter.index"></a>
-
-- *Type:* string
-
----
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -8892,6 +8859,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPolicies.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPolicies.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPolicies.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPolicies.property.rowAccessPolicies">rowAccessPolicies</a></code> | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesList">DataSnowflakeRowAccessPoliciesRowAccessPoliciesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPolicies.property.databaseInput">databaseInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPolicies.property.schemaInput">schemaInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPolicies.property.database">database</a></code> | <code>string</code> | *No description.* |
@@ -9021,6 +8989,16 @@ public readonly id: string;
 
 ---
 
+##### `rowAccessPolicies`<sup>Required</sup> <a name="rowAccessPolicies" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPolicies.property.rowAccessPolicies"></a>
+
+```typescript
+public readonly rowAccessPolicies: DataSnowflakeRowAccessPoliciesRowAccessPoliciesList;
+```
+
+- *Type:* <a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesList">DataSnowflakeRowAccessPoliciesRowAccessPoliciesList</a>
+
+---
+
 ##### `databaseInput`<sup>Optional</sup> <a name="databaseInput" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPolicies.property.databaseInput"></a>
 
 ```typescript
@@ -9143,7 +9121,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemas.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemas.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemas.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemas.schemas">schemas</a></code> | *No description.* |
 
 ---
 
@@ -9331,18 +9308,6 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
-##### `schemas` <a name="schemas" id="@cdktf/provider-snowflake.DataSnowflakeSchemas.schemas"></a>
-
-```typescript
-public schemas(index: string): DataSnowflakeSchemasSchemas
-```
-
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeSchemas.schemas.parameter.index"></a>
-
-- *Type:* string
-
----
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -9399,6 +9364,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemas.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemas.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemas.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemas.property.schemas">schemas</a></code> | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasList">DataSnowflakeSchemasSchemasList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemas.property.databaseInput">databaseInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemas.property.database">database</a></code> | <code>string</code> | *No description.* |
 
@@ -9526,6 +9492,16 @@ public readonly id: string;
 
 ---
 
+##### `schemas`<sup>Required</sup> <a name="schemas" id="@cdktf/provider-snowflake.DataSnowflakeSchemas.property.schemas"></a>
+
+```typescript
+public readonly schemas: DataSnowflakeSchemasSchemasList;
+```
+
+- *Type:* <a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasList">DataSnowflakeSchemasSchemasList</a>
+
+---
+
 ##### `databaseInput`<sup>Optional</sup> <a name="databaseInput" id="@cdktf/provider-snowflake.DataSnowflakeSchemas.property.databaseInput"></a>
 
 ```typescript
@@ -9628,7 +9604,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequences.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequences.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequences.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequences.sequences">sequences</a></code> | *No description.* |
 
 ---
 
@@ -9816,18 +9791,6 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
-##### `sequences` <a name="sequences" id="@cdktf/provider-snowflake.DataSnowflakeSequences.sequences"></a>
-
-```typescript
-public sequences(index: string): DataSnowflakeSequencesSequences
-```
-
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeSequences.sequences.parameter.index"></a>
-
-- *Type:* string
-
----
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -9884,6 +9847,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequences.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequences.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequences.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequences.property.sequences">sequences</a></code> | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesList">DataSnowflakeSequencesSequencesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequences.property.databaseInput">databaseInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequences.property.schemaInput">schemaInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequences.property.database">database</a></code> | <code>string</code> | *No description.* |
@@ -10013,6 +9977,16 @@ public readonly id: string;
 
 ---
 
+##### `sequences`<sup>Required</sup> <a name="sequences" id="@cdktf/provider-snowflake.DataSnowflakeSequences.property.sequences"></a>
+
+```typescript
+public readonly sequences: DataSnowflakeSequencesSequencesList;
+```
+
+- *Type:* <a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesList">DataSnowflakeSequencesSequencesList</a>
+
+---
+
 ##### `databaseInput`<sup>Optional</sup> <a name="databaseInput" id="@cdktf/provider-snowflake.DataSnowflakeSequences.property.databaseInput"></a>
 
 ```typescript
@@ -10135,7 +10109,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStages.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStages.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStages.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStages.stages">stages</a></code> | *No description.* |
 
 ---
 
@@ -10323,18 +10296,6 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
-##### `stages` <a name="stages" id="@cdktf/provider-snowflake.DataSnowflakeStages.stages"></a>
-
-```typescript
-public stages(index: string): DataSnowflakeStagesStages
-```
-
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeStages.stages.parameter.index"></a>
-
-- *Type:* string
-
----
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -10391,6 +10352,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStages.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStages.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStages.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStages.property.stages">stages</a></code> | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesStagesList">DataSnowflakeStagesStagesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStages.property.databaseInput">databaseInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStages.property.schemaInput">schemaInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStages.property.database">database</a></code> | <code>string</code> | *No description.* |
@@ -10520,6 +10482,16 @@ public readonly id: string;
 
 ---
 
+##### `stages`<sup>Required</sup> <a name="stages" id="@cdktf/provider-snowflake.DataSnowflakeStages.property.stages"></a>
+
+```typescript
+public readonly stages: DataSnowflakeStagesStagesList;
+```
+
+- *Type:* <a href="#@cdktf/provider-snowflake.DataSnowflakeStagesStagesList">DataSnowflakeStagesStagesList</a>
+
+---
+
 ##### `databaseInput`<sup>Optional</sup> <a name="databaseInput" id="@cdktf/provider-snowflake.DataSnowflakeStages.property.databaseInput"></a>
 
 ```typescript
@@ -10642,7 +10614,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrations.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrations.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrations.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrations.storageIntegrations">storageIntegrations</a></code> | *No description.* |
 
 ---
 
@@ -10830,18 +10801,6 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
-##### `storageIntegrations` <a name="storageIntegrations" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrations.storageIntegrations"></a>
-
-```typescript
-public storageIntegrations(index: string): DataSnowflakeStorageIntegrationsStorageIntegrations
-```
-
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrations.storageIntegrations.parameter.index"></a>
-
-- *Type:* string
-
----
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -10898,6 +10857,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrations.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrations.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrations.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrations.property.storageIntegrations">storageIntegrations</a></code> | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsList">DataSnowflakeStorageIntegrationsStorageIntegrationsList</a></code> | *No description.* |
 
 ---
 
@@ -11023,6 +10983,16 @@ public readonly id: string;
 
 ---
 
+##### `storageIntegrations`<sup>Required</sup> <a name="storageIntegrations" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrations.property.storageIntegrations"></a>
+
+```typescript
+public readonly storageIntegrations: DataSnowflakeStorageIntegrationsStorageIntegrationsList;
+```
+
+- *Type:* <a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsList">DataSnowflakeStorageIntegrationsStorageIntegrationsList</a>
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -11105,7 +11075,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreams.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreams.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreams.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreams.streams">streams</a></code> | *No description.* |
 
 ---
 
@@ -11293,18 +11262,6 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
-##### `streams` <a name="streams" id="@cdktf/provider-snowflake.DataSnowflakeStreams.streams"></a>
-
-```typescript
-public streams(index: string): DataSnowflakeStreamsStreams
-```
-
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeStreams.streams.parameter.index"></a>
-
-- *Type:* string
-
----
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -11361,6 +11318,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreams.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreams.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreams.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreams.property.streams">streams</a></code> | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsList">DataSnowflakeStreamsStreamsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreams.property.databaseInput">databaseInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreams.property.schemaInput">schemaInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreams.property.database">database</a></code> | <code>string</code> | *No description.* |
@@ -11487,6 +11445,16 @@ public readonly id: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `streams`<sup>Required</sup> <a name="streams" id="@cdktf/provider-snowflake.DataSnowflakeStreams.property.streams"></a>
+
+```typescript
+public readonly streams: DataSnowflakeStreamsStreamsList;
+```
+
+- *Type:* <a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsList">DataSnowflakeStreamsStreamsList</a>
 
 ---
 
@@ -13555,7 +13523,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTables.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTables.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTables.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTables.tables">tables</a></code> | *No description.* |
 
 ---
 
@@ -13743,18 +13710,6 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
-##### `tables` <a name="tables" id="@cdktf/provider-snowflake.DataSnowflakeTables.tables"></a>
-
-```typescript
-public tables(index: string): DataSnowflakeTablesTables
-```
-
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeTables.tables.parameter.index"></a>
-
-- *Type:* string
-
----
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -13811,6 +13766,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTables.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTables.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTables.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTables.property.tables">tables</a></code> | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesTablesList">DataSnowflakeTablesTablesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTables.property.databaseInput">databaseInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTables.property.schemaInput">schemaInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTables.property.database">database</a></code> | <code>string</code> | *No description.* |
@@ -13940,6 +13896,16 @@ public readonly id: string;
 
 ---
 
+##### `tables`<sup>Required</sup> <a name="tables" id="@cdktf/provider-snowflake.DataSnowflakeTables.property.tables"></a>
+
+```typescript
+public readonly tables: DataSnowflakeTablesTablesList;
+```
+
+- *Type:* <a href="#@cdktf/provider-snowflake.DataSnowflakeTablesTablesList">DataSnowflakeTablesTablesList</a>
+
+---
+
 ##### `databaseInput`<sup>Optional</sup> <a name="databaseInput" id="@cdktf/provider-snowflake.DataSnowflakeTables.property.databaseInput"></a>
 
 ```typescript
@@ -14062,7 +14028,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasks.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasks.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasks.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasks.tasks">tasks</a></code> | *No description.* |
 
 ---
 
@@ -14250,18 +14215,6 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
-##### `tasks` <a name="tasks" id="@cdktf/provider-snowflake.DataSnowflakeTasks.tasks"></a>
-
-```typescript
-public tasks(index: string): DataSnowflakeTasksTasks
-```
-
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeTasks.tasks.parameter.index"></a>
-
-- *Type:* string
-
----
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -14318,6 +14271,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasks.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasks.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasks.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasks.property.tasks">tasks</a></code> | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksTasksList">DataSnowflakeTasksTasksList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasks.property.databaseInput">databaseInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasks.property.schemaInput">schemaInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasks.property.database">database</a></code> | <code>string</code> | *No description.* |
@@ -14447,6 +14401,16 @@ public readonly id: string;
 
 ---
 
+##### `tasks`<sup>Required</sup> <a name="tasks" id="@cdktf/provider-snowflake.DataSnowflakeTasks.property.tasks"></a>
+
+```typescript
+public readonly tasks: DataSnowflakeTasksTasksList;
+```
+
+- *Type:* <a href="#@cdktf/provider-snowflake.DataSnowflakeTasksTasksList">DataSnowflakeTasksTasksList</a>
+
+---
+
 ##### `databaseInput`<sup>Optional</sup> <a name="databaseInput" id="@cdktf/provider-snowflake.DataSnowflakeTasks.property.databaseInput"></a>
 
 ```typescript
@@ -14569,7 +14533,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViews.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViews.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViews.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViews.views">views</a></code> | *No description.* |
 
 ---
 
@@ -14757,18 +14720,6 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
-##### `views` <a name="views" id="@cdktf/provider-snowflake.DataSnowflakeViews.views"></a>
-
-```typescript
-public views(index: string): DataSnowflakeViewsViews
-```
-
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeViews.views.parameter.index"></a>
-
-- *Type:* string
-
----
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -14825,6 +14776,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViews.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViews.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViews.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViews.property.views">views</a></code> | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsViewsList">DataSnowflakeViewsViewsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViews.property.databaseInput">databaseInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViews.property.schemaInput">schemaInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViews.property.database">database</a></code> | <code>string</code> | *No description.* |
@@ -14954,6 +14906,16 @@ public readonly id: string;
 
 ---
 
+##### `views`<sup>Required</sup> <a name="views" id="@cdktf/provider-snowflake.DataSnowflakeViews.property.views"></a>
+
+```typescript
+public readonly views: DataSnowflakeViewsViewsList;
+```
+
+- *Type:* <a href="#@cdktf/provider-snowflake.DataSnowflakeViewsViewsList">DataSnowflakeViewsViewsList</a>
+
+---
+
 ##### `databaseInput`<sup>Optional</sup> <a name="databaseInput" id="@cdktf/provider-snowflake.DataSnowflakeViews.property.databaseInput"></a>
 
 ```typescript
@@ -15076,7 +15038,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehouses.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehouses.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehouses.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehouses.warehouses">warehouses</a></code> | *No description.* |
 
 ---
 
@@ -15264,18 +15225,6 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
-##### `warehouses` <a name="warehouses" id="@cdktf/provider-snowflake.DataSnowflakeWarehouses.warehouses"></a>
-
-```typescript
-public warehouses(index: string): DataSnowflakeWarehousesWarehouses
-```
-
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeWarehouses.warehouses.parameter.index"></a>
-
-- *Type:* string
-
----
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -15332,6 +15281,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehouses.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehouses.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehouses.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehouses.property.warehouses">warehouses</a></code> | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesList">DataSnowflakeWarehousesWarehousesList</a></code> | *No description.* |
 
 ---
 
@@ -15454,6 +15404,16 @@ public readonly id: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `warehouses`<sup>Required</sup> <a name="warehouses" id="@cdktf/provider-snowflake.DataSnowflakeWarehouses.property.warehouses"></a>
+
+```typescript
+public readonly warehouses: DataSnowflakeWarehousesWarehousesList;
+```
+
+- *Type:* <a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesList">DataSnowflakeWarehousesWarehousesList</a>
 
 ---
 
@@ -53416,6 +53376,17 @@ public readonly provider: TerraformProvider;
 
 ---
 
+### DataSnowflakeDatabasesDatabases <a name="DataSnowflakeDatabasesDatabases" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.Initializer"></a>
+
+```typescript
+import { DataSnowflakeDatabasesDatabases } from '@cdktf/provider-snowflake'
+
+const dataSnowflakeDatabasesDatabases: DataSnowflakeDatabasesDatabases = { ... }
+```
+
+
 ### DataSnowflakeExternalFunctionsConfig <a name="DataSnowflakeExternalFunctionsConfig" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsConfig"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsConfig.Initializer"></a>
@@ -53506,6 +53477,17 @@ The schema from which to return the external functions from.
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/external_functions#schema DataSnowflakeExternalFunctions#schema}
 
 ---
+
+### DataSnowflakeExternalFunctionsExternalFunctions <a name="DataSnowflakeExternalFunctionsExternalFunctions" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.Initializer"></a>
+
+```typescript
+import { DataSnowflakeExternalFunctionsExternalFunctions } from '@cdktf/provider-snowflake'
+
+const dataSnowflakeExternalFunctionsExternalFunctions: DataSnowflakeExternalFunctionsExternalFunctions = { ... }
+```
+
 
 ### DataSnowflakeExternalTablesConfig <a name="DataSnowflakeExternalTablesConfig" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesConfig"></a>
 
@@ -53598,6 +53580,17 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 ---
 
+### DataSnowflakeExternalTablesExternalTables <a name="DataSnowflakeExternalTablesExternalTables" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.Initializer"></a>
+
+```typescript
+import { DataSnowflakeExternalTablesExternalTables } from '@cdktf/provider-snowflake'
+
+const dataSnowflakeExternalTablesExternalTables: DataSnowflakeExternalTablesExternalTables = { ... }
+```
+
+
 ### DataSnowflakeFileFormatsConfig <a name="DataSnowflakeFileFormatsConfig" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsConfig"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsConfig.Initializer"></a>
@@ -53688,6 +53681,17 @@ The schema from which to return the file formats from.
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/file_formats#schema DataSnowflakeFileFormats#schema}
 
 ---
+
+### DataSnowflakeFileFormatsFileFormats <a name="DataSnowflakeFileFormatsFileFormats" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.Initializer"></a>
+
+```typescript
+import { DataSnowflakeFileFormatsFileFormats } from '@cdktf/provider-snowflake'
+
+const dataSnowflakeFileFormatsFileFormats: DataSnowflakeFileFormatsFileFormats = { ... }
+```
+
 
 ### DataSnowflakeFunctionsConfig <a name="DataSnowflakeFunctionsConfig" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsConfig"></a>
 
@@ -53780,6 +53784,17 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 ---
 
+### DataSnowflakeFunctionsFunctions <a name="DataSnowflakeFunctionsFunctions" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.Initializer"></a>
+
+```typescript
+import { DataSnowflakeFunctionsFunctions } from '@cdktf/provider-snowflake'
+
+const dataSnowflakeFunctionsFunctions: DataSnowflakeFunctionsFunctions = { ... }
+```
+
+
 ### DataSnowflakeMaskingPoliciesConfig <a name="DataSnowflakeMaskingPoliciesConfig" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesConfig"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesConfig.Initializer"></a>
@@ -53870,6 +53885,17 @@ The schema from which to return the maskingPolicies from.
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/masking_policies#schema DataSnowflakeMaskingPolicies#schema}
 
 ---
+
+### DataSnowflakeMaskingPoliciesMaskingPolicies <a name="DataSnowflakeMaskingPoliciesMaskingPolicies" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.Initializer"></a>
+
+```typescript
+import { DataSnowflakeMaskingPoliciesMaskingPolicies } from '@cdktf/provider-snowflake'
+
+const dataSnowflakeMaskingPoliciesMaskingPolicies: DataSnowflakeMaskingPoliciesMaskingPolicies = { ... }
+```
+
 
 ### DataSnowflakeMaterializedViewsConfig <a name="DataSnowflakeMaterializedViewsConfig" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsConfig"></a>
 
@@ -53962,6 +53988,17 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 ---
 
+### DataSnowflakeMaterializedViewsMaterializedViews <a name="DataSnowflakeMaterializedViewsMaterializedViews" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.Initializer"></a>
+
+```typescript
+import { DataSnowflakeMaterializedViewsMaterializedViews } from '@cdktf/provider-snowflake'
+
+const dataSnowflakeMaterializedViewsMaterializedViews: DataSnowflakeMaterializedViewsMaterializedViews = { ... }
+```
+
+
 ### DataSnowflakePipesConfig <a name="DataSnowflakePipesConfig" id="@cdktf/provider-snowflake.DataSnowflakePipesConfig"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.DataSnowflakePipesConfig.Initializer"></a>
@@ -54052,6 +54089,17 @@ The schema from which to return the pipes from.
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/pipes#schema DataSnowflakePipes#schema}
 
 ---
+
+### DataSnowflakePipesPipes <a name="DataSnowflakePipesPipes" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes.Initializer"></a>
+
+```typescript
+import { DataSnowflakePipesPipes } from '@cdktf/provider-snowflake'
+
+const dataSnowflakePipesPipes: DataSnowflakePipesPipes = { ... }
+```
+
 
 ### DataSnowflakeProceduresConfig <a name="DataSnowflakeProceduresConfig" id="@cdktf/provider-snowflake.DataSnowflakeProceduresConfig"></a>
 
@@ -54144,6 +54192,17 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 ---
 
+### DataSnowflakeProceduresProcedures <a name="DataSnowflakeProceduresProcedures" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.Initializer"></a>
+
+```typescript
+import { DataSnowflakeProceduresProcedures } from '@cdktf/provider-snowflake'
+
+const dataSnowflakeProceduresProcedures: DataSnowflakeProceduresProcedures = { ... }
+```
+
+
 ### DataSnowflakeResourceMonitorsConfig <a name="DataSnowflakeResourceMonitorsConfig" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsConfig"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsConfig.Initializer"></a>
@@ -54204,6 +54263,17 @@ public readonly provider: TerraformProvider;
 - *Type:* cdktf.TerraformProvider
 
 ---
+
+### DataSnowflakeResourceMonitorsResourceMonitors <a name="DataSnowflakeResourceMonitorsResourceMonitors" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.Initializer"></a>
+
+```typescript
+import { DataSnowflakeResourceMonitorsResourceMonitors } from '@cdktf/provider-snowflake'
+
+const dataSnowflakeResourceMonitorsResourceMonitors: DataSnowflakeResourceMonitorsResourceMonitors = { ... }
+```
+
 
 ### DataSnowflakeRowAccessPoliciesConfig <a name="DataSnowflakeRowAccessPoliciesConfig" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesConfig"></a>
 
@@ -54296,6 +54366,17 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 ---
 
+### DataSnowflakeRowAccessPoliciesRowAccessPolicies <a name="DataSnowflakeRowAccessPoliciesRowAccessPolicies" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.Initializer"></a>
+
+```typescript
+import { DataSnowflakeRowAccessPoliciesRowAccessPolicies } from '@cdktf/provider-snowflake'
+
+const dataSnowflakeRowAccessPoliciesRowAccessPolicies: DataSnowflakeRowAccessPoliciesRowAccessPolicies = { ... }
+```
+
+
 ### DataSnowflakeSchemasConfig <a name="DataSnowflakeSchemasConfig" id="@cdktf/provider-snowflake.DataSnowflakeSchemasConfig"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.DataSnowflakeSchemasConfig.Initializer"></a>
@@ -54371,6 +54452,17 @@ The database from which to return the schemas from.
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/schemas#database DataSnowflakeSchemas#database}
 
 ---
+
+### DataSnowflakeSchemasSchemas <a name="DataSnowflakeSchemasSchemas" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.Initializer"></a>
+
+```typescript
+import { DataSnowflakeSchemasSchemas } from '@cdktf/provider-snowflake'
+
+const dataSnowflakeSchemasSchemas: DataSnowflakeSchemasSchemas = { ... }
+```
+
 
 ### DataSnowflakeSequencesConfig <a name="DataSnowflakeSequencesConfig" id="@cdktf/provider-snowflake.DataSnowflakeSequencesConfig"></a>
 
@@ -54463,6 +54555,17 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 ---
 
+### DataSnowflakeSequencesSequences <a name="DataSnowflakeSequencesSequences" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.Initializer"></a>
+
+```typescript
+import { DataSnowflakeSequencesSequences } from '@cdktf/provider-snowflake'
+
+const dataSnowflakeSequencesSequences: DataSnowflakeSequencesSequences = { ... }
+```
+
+
 ### DataSnowflakeStagesConfig <a name="DataSnowflakeStagesConfig" id="@cdktf/provider-snowflake.DataSnowflakeStagesConfig"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.DataSnowflakeStagesConfig.Initializer"></a>
@@ -54554,6 +54657,17 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 ---
 
+### DataSnowflakeStagesStages <a name="DataSnowflakeStagesStages" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages.Initializer"></a>
+
+```typescript
+import { DataSnowflakeStagesStages } from '@cdktf/provider-snowflake'
+
+const dataSnowflakeStagesStages: DataSnowflakeStagesStages = { ... }
+```
+
+
 ### DataSnowflakeStorageIntegrationsConfig <a name="DataSnowflakeStorageIntegrationsConfig" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsConfig"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsConfig.Initializer"></a>
@@ -54614,6 +54728,17 @@ public readonly provider: TerraformProvider;
 - *Type:* cdktf.TerraformProvider
 
 ---
+
+### DataSnowflakeStorageIntegrationsStorageIntegrations <a name="DataSnowflakeStorageIntegrationsStorageIntegrations" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.Initializer"></a>
+
+```typescript
+import { DataSnowflakeStorageIntegrationsStorageIntegrations } from '@cdktf/provider-snowflake'
+
+const dataSnowflakeStorageIntegrationsStorageIntegrations: DataSnowflakeStorageIntegrationsStorageIntegrations = { ... }
+```
+
 
 ### DataSnowflakeStreamsConfig <a name="DataSnowflakeStreamsConfig" id="@cdktf/provider-snowflake.DataSnowflakeStreamsConfig"></a>
 
@@ -54705,6 +54830,17 @@ The schema from which to return the streams from.
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/streams#schema DataSnowflakeStreams#schema}
 
 ---
+
+### DataSnowflakeStreamsStreams <a name="DataSnowflakeStreamsStreams" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.Initializer"></a>
+
+```typescript
+import { DataSnowflakeStreamsStreams } from '@cdktf/provider-snowflake'
+
+const dataSnowflakeStreamsStreams: DataSnowflakeStreamsStreams = { ... }
+```
+
 
 ### DataSnowflakeSystemGenerateScimAccessTokenConfig <a name="DataSnowflakeSystemGenerateScimAccessTokenConfig" id="@cdktf/provider-snowflake.DataSnowflakeSystemGenerateScimAccessTokenConfig"></a>
 
@@ -55071,6 +55207,17 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 ---
 
+### DataSnowflakeTablesTables <a name="DataSnowflakeTablesTables" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables.Initializer"></a>
+
+```typescript
+import { DataSnowflakeTablesTables } from '@cdktf/provider-snowflake'
+
+const dataSnowflakeTablesTables: DataSnowflakeTablesTables = { ... }
+```
+
+
 ### DataSnowflakeTasksConfig <a name="DataSnowflakeTasksConfig" id="@cdktf/provider-snowflake.DataSnowflakeTasksConfig"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.DataSnowflakeTasksConfig.Initializer"></a>
@@ -55161,6 +55308,17 @@ The schema from which to return the tasks from.
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/tasks#schema DataSnowflakeTasks#schema}
 
 ---
+
+### DataSnowflakeTasksTasks <a name="DataSnowflakeTasksTasks" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks.Initializer"></a>
+
+```typescript
+import { DataSnowflakeTasksTasks } from '@cdktf/provider-snowflake'
+
+const dataSnowflakeTasksTasks: DataSnowflakeTasksTasks = { ... }
+```
+
 
 ### DataSnowflakeViewsConfig <a name="DataSnowflakeViewsConfig" id="@cdktf/provider-snowflake.DataSnowflakeViewsConfig"></a>
 
@@ -55253,6 +55411,17 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 ---
 
+### DataSnowflakeViewsViews <a name="DataSnowflakeViewsViews" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews.Initializer"></a>
+
+```typescript
+import { DataSnowflakeViewsViews } from '@cdktf/provider-snowflake'
+
+const dataSnowflakeViewsViews: DataSnowflakeViewsViews = { ... }
+```
+
+
 ### DataSnowflakeWarehousesConfig <a name="DataSnowflakeWarehousesConfig" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesConfig"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesConfig.Initializer"></a>
@@ -55313,6 +55482,17 @@ public readonly provider: TerraformProvider;
 - *Type:* cdktf.TerraformProvider
 
 ---
+
+### DataSnowflakeWarehousesWarehouses <a name="DataSnowflakeWarehousesWarehouses" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.Initializer"></a>
+
+```typescript
+import { DataSnowflakeWarehousesWarehouses } from '@cdktf/provider-snowflake'
+
+const dataSnowflakeWarehousesWarehouses: DataSnowflakeWarehousesWarehouses = { ... }
+```
+
 
 ### ExternalFunctionArg <a name="ExternalFunctionArg" id="@cdktf/provider-snowflake.ExternalFunctionArg"></a>
 
@@ -67129,46 +67309,45 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### DataSnowflakeDatabasesDatabases <a name="DataSnowflakeDatabasesDatabases" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases"></a>
+### DataSnowflakeDatabasesDatabasesList <a name="DataSnowflakeDatabasesDatabasesList" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesList.Initializer"></a>
 
 ```typescript
-import { DataSnowflakeDatabasesDatabases } from '@cdktf/provider-snowflake'
+import { DataSnowflakeDatabasesDatabasesList } from '@cdktf/provider-snowflake'
 
-new DataSnowflakeDatabasesDatabases(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new DataSnowflakeDatabasesDatabasesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.Initializer.parameter.complexComputedListIndex">complexComputedListIndex</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="complexComputedListIndex" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.Initializer.parameter.complexComputedListIndex"></a>
-
-- *Type:* string
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="wrapsSet" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -67176,134 +67355,227 @@ new DataSnowflakeDatabasesDatabases(terraformResource: IInterpolatingParent, ter
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getAnyMapAttribute"></a>
+##### `get` <a name="get" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesList.get"></a>
+
+```typescript
+public get(index: number): DataSnowflakeDatabasesDatabasesOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### DataSnowflakeDatabasesDatabasesOutputReference <a name="DataSnowflakeDatabasesDatabasesOutputReference" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.Initializer"></a>
+
+```typescript
+import { DataSnowflakeDatabasesDatabasesOutputReference } from '@cdktf/provider-snowflake'
+
+new DataSnowflakeDatabasesDatabasesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+
+---
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
@@ -67314,19 +67586,20 @@ public interpolationForAttribute(property: string): IResolvable
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.property.comment">comment</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.property.createdOn">createdOn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.property.isCurrent">isCurrent</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.property.isDefault">isDefault</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.property.options">options</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.property.origin">origin</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.property.owner">owner</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.property.retentionTime">retentionTime</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.property.comment">comment</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.property.createdOn">createdOn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.property.isCurrent">isCurrent</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.property.isDefault">isDefault</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.property.options">options</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.property.origin">origin</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.property.owner">owner</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.property.retentionTime">retentionTime</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases">DataSnowflakeDatabasesDatabases</a></code> | *No description.* |
 
 ---
 
-##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.property.comment"></a>
+##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.property.comment"></a>
 
 ```typescript
 public readonly comment: string;
@@ -67336,7 +67609,7 @@ public readonly comment: string;
 
 ---
 
-##### `createdOn`<sup>Required</sup> <a name="createdOn" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.property.createdOn"></a>
+##### `createdOn`<sup>Required</sup> <a name="createdOn" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.property.createdOn"></a>
 
 ```typescript
 public readonly createdOn: string;
@@ -67346,7 +67619,7 @@ public readonly createdOn: string;
 
 ---
 
-##### `isCurrent`<sup>Required</sup> <a name="isCurrent" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.property.isCurrent"></a>
+##### `isCurrent`<sup>Required</sup> <a name="isCurrent" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.property.isCurrent"></a>
 
 ```typescript
 public readonly isCurrent: IResolvable;
@@ -67356,7 +67629,7 @@ public readonly isCurrent: IResolvable;
 
 ---
 
-##### `isDefault`<sup>Required</sup> <a name="isDefault" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.property.isDefault"></a>
+##### `isDefault`<sup>Required</sup> <a name="isDefault" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.property.isDefault"></a>
 
 ```typescript
 public readonly isDefault: IResolvable;
@@ -67366,7 +67639,7 @@ public readonly isDefault: IResolvable;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -67376,7 +67649,7 @@ public readonly name: string;
 
 ---
 
-##### `options`<sup>Required</sup> <a name="options" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.property.options"></a>
+##### `options`<sup>Required</sup> <a name="options" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.property.options"></a>
 
 ```typescript
 public readonly options: string;
@@ -67386,7 +67659,7 @@ public readonly options: string;
 
 ---
 
-##### `origin`<sup>Required</sup> <a name="origin" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.property.origin"></a>
+##### `origin`<sup>Required</sup> <a name="origin" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.property.origin"></a>
 
 ```typescript
 public readonly origin: string;
@@ -67396,7 +67669,7 @@ public readonly origin: string;
 
 ---
 
-##### `owner`<sup>Required</sup> <a name="owner" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.property.owner"></a>
+##### `owner`<sup>Required</sup> <a name="owner" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.property.owner"></a>
 
 ```typescript
 public readonly owner: string;
@@ -67406,7 +67679,7 @@ public readonly owner: string;
 
 ---
 
-##### `retentionTime`<sup>Required</sup> <a name="retentionTime" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases.property.retentionTime"></a>
+##### `retentionTime`<sup>Required</sup> <a name="retentionTime" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.property.retentionTime"></a>
 
 ```typescript
 public readonly retentionTime: number;
@@ -67416,47 +67689,56 @@ public readonly retentionTime: number;
 
 ---
 
-
-### DataSnowflakeExternalFunctionsExternalFunctions <a name="DataSnowflakeExternalFunctionsExternalFunctions" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabasesOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataSnowflakeExternalFunctionsExternalFunctions } from '@cdktf/provider-snowflake'
+public readonly internalValue: DataSnowflakeDatabasesDatabases;
+```
 
-new DataSnowflakeExternalFunctionsExternalFunctions(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+- *Type:* <a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesDatabases">DataSnowflakeDatabasesDatabases</a>
+
+---
+
+
+### DataSnowflakeExternalFunctionsExternalFunctionsList <a name="DataSnowflakeExternalFunctionsExternalFunctionsList" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsList.Initializer"></a>
+
+```typescript
+import { DataSnowflakeExternalFunctionsExternalFunctionsList } from '@cdktf/provider-snowflake'
+
+new DataSnowflakeExternalFunctionsExternalFunctionsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.Initializer.parameter.complexComputedListIndex">complexComputedListIndex</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="complexComputedListIndex" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.Initializer.parameter.complexComputedListIndex"></a>
-
-- *Type:* string
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="wrapsSet" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -67464,134 +67746,227 @@ new DataSnowflakeExternalFunctionsExternalFunctions(terraformResource: IInterpol
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.getAnyMapAttribute"></a>
+##### `get` <a name="get" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsList.get"></a>
+
+```typescript
+public get(index: number): DataSnowflakeExternalFunctionsExternalFunctionsOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### DataSnowflakeExternalFunctionsExternalFunctionsOutputReference <a name="DataSnowflakeExternalFunctionsExternalFunctionsOutputReference" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.Initializer"></a>
+
+```typescript
+import { DataSnowflakeExternalFunctionsExternalFunctionsOutputReference } from '@cdktf/provider-snowflake'
+
+new DataSnowflakeExternalFunctionsExternalFunctionsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+
+---
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
@@ -67602,15 +67977,16 @@ public interpolationForAttribute(property: string): IResolvable
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.property.comment">comment</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.property.database">database</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.property.language">language</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.property.schema">schema</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.property.comment">comment</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.property.database">database</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.property.language">language</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.property.schema">schema</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions">DataSnowflakeExternalFunctionsExternalFunctions</a></code> | *No description.* |
 
 ---
 
-##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.property.comment"></a>
+##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.property.comment"></a>
 
 ```typescript
 public readonly comment: string;
@@ -67620,7 +67996,7 @@ public readonly comment: string;
 
 ---
 
-##### `database`<sup>Required</sup> <a name="database" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.property.database"></a>
+##### `database`<sup>Required</sup> <a name="database" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.property.database"></a>
 
 ```typescript
 public readonly database: string;
@@ -67630,7 +68006,7 @@ public readonly database: string;
 
 ---
 
-##### `language`<sup>Required</sup> <a name="language" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.property.language"></a>
+##### `language`<sup>Required</sup> <a name="language" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.property.language"></a>
 
 ```typescript
 public readonly language: string;
@@ -67640,7 +68016,7 @@ public readonly language: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -67650,7 +68026,7 @@ public readonly name: string;
 
 ---
 
-##### `schema`<sup>Required</sup> <a name="schema" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions.property.schema"></a>
+##### `schema`<sup>Required</sup> <a name="schema" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.property.schema"></a>
 
 ```typescript
 public readonly schema: string;
@@ -67660,47 +68036,56 @@ public readonly schema: string;
 
 ---
 
-
-### DataSnowflakeExternalTablesExternalTables <a name="DataSnowflakeExternalTablesExternalTables" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctionsOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataSnowflakeExternalTablesExternalTables } from '@cdktf/provider-snowflake'
+public readonly internalValue: DataSnowflakeExternalFunctionsExternalFunctions;
+```
 
-new DataSnowflakeExternalTablesExternalTables(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+- *Type:* <a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsExternalFunctions">DataSnowflakeExternalFunctionsExternalFunctions</a>
+
+---
+
+
+### DataSnowflakeExternalTablesExternalTablesList <a name="DataSnowflakeExternalTablesExternalTablesList" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesList.Initializer"></a>
+
+```typescript
+import { DataSnowflakeExternalTablesExternalTablesList } from '@cdktf/provider-snowflake'
+
+new DataSnowflakeExternalTablesExternalTablesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.Initializer.parameter.complexComputedListIndex">complexComputedListIndex</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="complexComputedListIndex" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.Initializer.parameter.complexComputedListIndex"></a>
-
-- *Type:* string
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="wrapsSet" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -67708,134 +68093,227 @@ new DataSnowflakeExternalTablesExternalTables(terraformResource: IInterpolatingP
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.getAnyMapAttribute"></a>
+##### `get` <a name="get" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesList.get"></a>
+
+```typescript
+public get(index: number): DataSnowflakeExternalTablesExternalTablesOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### DataSnowflakeExternalTablesExternalTablesOutputReference <a name="DataSnowflakeExternalTablesExternalTablesOutputReference" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesOutputReference.Initializer"></a>
+
+```typescript
+import { DataSnowflakeExternalTablesExternalTablesOutputReference } from '@cdktf/provider-snowflake'
+
+new DataSnowflakeExternalTablesExternalTablesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+
+---
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
@@ -67846,14 +68324,15 @@ public interpolationForAttribute(property: string): IResolvable
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.property.comment">comment</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.property.database">database</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.property.schema">schema</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesOutputReference.property.comment">comment</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesOutputReference.property.database">database</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesOutputReference.property.schema">schema</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables">DataSnowflakeExternalTablesExternalTables</a></code> | *No description.* |
 
 ---
 
-##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.property.comment"></a>
+##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesOutputReference.property.comment"></a>
 
 ```typescript
 public readonly comment: string;
@@ -67863,7 +68342,7 @@ public readonly comment: string;
 
 ---
 
-##### `database`<sup>Required</sup> <a name="database" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.property.database"></a>
+##### `database`<sup>Required</sup> <a name="database" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesOutputReference.property.database"></a>
 
 ```typescript
 public readonly database: string;
@@ -67873,7 +68352,7 @@ public readonly database: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesOutputReference.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -67883,7 +68362,7 @@ public readonly name: string;
 
 ---
 
-##### `schema`<sup>Required</sup> <a name="schema" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables.property.schema"></a>
+##### `schema`<sup>Required</sup> <a name="schema" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesOutputReference.property.schema"></a>
 
 ```typescript
 public readonly schema: string;
@@ -67893,47 +68372,56 @@ public readonly schema: string;
 
 ---
 
-
-### DataSnowflakeFileFormatsFileFormats <a name="DataSnowflakeFileFormatsFileFormats" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTablesOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataSnowflakeFileFormatsFileFormats } from '@cdktf/provider-snowflake'
+public readonly internalValue: DataSnowflakeExternalTablesExternalTables;
+```
 
-new DataSnowflakeFileFormatsFileFormats(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+- *Type:* <a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesExternalTables">DataSnowflakeExternalTablesExternalTables</a>
+
+---
+
+
+### DataSnowflakeFileFormatsFileFormatsList <a name="DataSnowflakeFileFormatsFileFormatsList" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsList.Initializer"></a>
+
+```typescript
+import { DataSnowflakeFileFormatsFileFormatsList } from '@cdktf/provider-snowflake'
+
+new DataSnowflakeFileFormatsFileFormatsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.Initializer.parameter.complexComputedListIndex">complexComputedListIndex</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="complexComputedListIndex" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.Initializer.parameter.complexComputedListIndex"></a>
-
-- *Type:* string
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="wrapsSet" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -67941,134 +68429,227 @@ new DataSnowflakeFileFormatsFileFormats(terraformResource: IInterpolatingParent,
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.getAnyMapAttribute"></a>
+##### `get` <a name="get" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsList.get"></a>
+
+```typescript
+public get(index: number): DataSnowflakeFileFormatsFileFormatsOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### DataSnowflakeFileFormatsFileFormatsOutputReference <a name="DataSnowflakeFileFormatsFileFormatsOutputReference" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference.Initializer"></a>
+
+```typescript
+import { DataSnowflakeFileFormatsFileFormatsOutputReference } from '@cdktf/provider-snowflake'
+
+new DataSnowflakeFileFormatsFileFormatsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+
+---
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
@@ -68079,15 +68660,16 @@ public interpolationForAttribute(property: string): IResolvable
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.property.comment">comment</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.property.database">database</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.property.formatType">formatType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.property.schema">schema</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference.property.comment">comment</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference.property.database">database</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference.property.formatType">formatType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference.property.schema">schema</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats">DataSnowflakeFileFormatsFileFormats</a></code> | *No description.* |
 
 ---
 
-##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.property.comment"></a>
+##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference.property.comment"></a>
 
 ```typescript
 public readonly comment: string;
@@ -68097,7 +68679,7 @@ public readonly comment: string;
 
 ---
 
-##### `database`<sup>Required</sup> <a name="database" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.property.database"></a>
+##### `database`<sup>Required</sup> <a name="database" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference.property.database"></a>
 
 ```typescript
 public readonly database: string;
@@ -68107,7 +68689,7 @@ public readonly database: string;
 
 ---
 
-##### `formatType`<sup>Required</sup> <a name="formatType" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.property.formatType"></a>
+##### `formatType`<sup>Required</sup> <a name="formatType" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference.property.formatType"></a>
 
 ```typescript
 public readonly formatType: string;
@@ -68117,7 +68699,7 @@ public readonly formatType: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -68127,7 +68709,7 @@ public readonly name: string;
 
 ---
 
-##### `schema`<sup>Required</sup> <a name="schema" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats.property.schema"></a>
+##### `schema`<sup>Required</sup> <a name="schema" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference.property.schema"></a>
 
 ```typescript
 public readonly schema: string;
@@ -68137,47 +68719,56 @@ public readonly schema: string;
 
 ---
 
-
-### DataSnowflakeFunctionsFunctions <a name="DataSnowflakeFunctionsFunctions" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormatsOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataSnowflakeFunctionsFunctions } from '@cdktf/provider-snowflake'
+public readonly internalValue: DataSnowflakeFileFormatsFileFormats;
+```
 
-new DataSnowflakeFunctionsFunctions(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+- *Type:* <a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsFileFormats">DataSnowflakeFileFormatsFileFormats</a>
+
+---
+
+
+### DataSnowflakeFunctionsFunctionsList <a name="DataSnowflakeFunctionsFunctionsList" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsList.Initializer"></a>
+
+```typescript
+import { DataSnowflakeFunctionsFunctionsList } from '@cdktf/provider-snowflake'
+
+new DataSnowflakeFunctionsFunctionsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.Initializer.parameter.complexComputedListIndex">complexComputedListIndex</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="complexComputedListIndex" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.Initializer.parameter.complexComputedListIndex"></a>
-
-- *Type:* string
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="wrapsSet" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -68185,134 +68776,227 @@ new DataSnowflakeFunctionsFunctions(terraformResource: IInterpolatingParent, ter
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.getAnyMapAttribute"></a>
+##### `get` <a name="get" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsList.get"></a>
+
+```typescript
+public get(index: number): DataSnowflakeFunctionsFunctionsOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### DataSnowflakeFunctionsFunctionsOutputReference <a name="DataSnowflakeFunctionsFunctionsOutputReference" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.Initializer"></a>
+
+```typescript
+import { DataSnowflakeFunctionsFunctionsOutputReference } from '@cdktf/provider-snowflake'
+
+new DataSnowflakeFunctionsFunctionsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+
+---
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
@@ -68323,16 +69007,17 @@ public interpolationForAttribute(property: string): IResolvable
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.property.argumentTypes">argumentTypes</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.property.comment">comment</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.property.database">database</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.property.returnType">returnType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.property.schema">schema</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.property.argumentTypes">argumentTypes</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.property.comment">comment</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.property.database">database</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.property.returnType">returnType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.property.schema">schema</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions">DataSnowflakeFunctionsFunctions</a></code> | *No description.* |
 
 ---
 
-##### `argumentTypes`<sup>Required</sup> <a name="argumentTypes" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.property.argumentTypes"></a>
+##### `argumentTypes`<sup>Required</sup> <a name="argumentTypes" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.property.argumentTypes"></a>
 
 ```typescript
 public readonly argumentTypes: string[];
@@ -68342,7 +69027,7 @@ public readonly argumentTypes: string[];
 
 ---
 
-##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.property.comment"></a>
+##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.property.comment"></a>
 
 ```typescript
 public readonly comment: string;
@@ -68352,7 +69037,7 @@ public readonly comment: string;
 
 ---
 
-##### `database`<sup>Required</sup> <a name="database" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.property.database"></a>
+##### `database`<sup>Required</sup> <a name="database" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.property.database"></a>
 
 ```typescript
 public readonly database: string;
@@ -68362,7 +69047,7 @@ public readonly database: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -68372,7 +69057,7 @@ public readonly name: string;
 
 ---
 
-##### `returnType`<sup>Required</sup> <a name="returnType" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.property.returnType"></a>
+##### `returnType`<sup>Required</sup> <a name="returnType" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.property.returnType"></a>
 
 ```typescript
 public readonly returnType: string;
@@ -68382,7 +69067,7 @@ public readonly returnType: string;
 
 ---
 
-##### `schema`<sup>Required</sup> <a name="schema" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions.property.schema"></a>
+##### `schema`<sup>Required</sup> <a name="schema" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.property.schema"></a>
 
 ```typescript
 public readonly schema: string;
@@ -68392,47 +69077,56 @@ public readonly schema: string;
 
 ---
 
-
-### DataSnowflakeMaskingPoliciesMaskingPolicies <a name="DataSnowflakeMaskingPoliciesMaskingPolicies" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctionsOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataSnowflakeMaskingPoliciesMaskingPolicies } from '@cdktf/provider-snowflake'
+public readonly internalValue: DataSnowflakeFunctionsFunctions;
+```
 
-new DataSnowflakeMaskingPoliciesMaskingPolicies(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+- *Type:* <a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsFunctions">DataSnowflakeFunctionsFunctions</a>
+
+---
+
+
+### DataSnowflakeMaskingPoliciesMaskingPoliciesList <a name="DataSnowflakeMaskingPoliciesMaskingPoliciesList" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesList.Initializer"></a>
+
+```typescript
+import { DataSnowflakeMaskingPoliciesMaskingPoliciesList } from '@cdktf/provider-snowflake'
+
+new DataSnowflakeMaskingPoliciesMaskingPoliciesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.Initializer.parameter.complexComputedListIndex">complexComputedListIndex</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="complexComputedListIndex" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.Initializer.parameter.complexComputedListIndex"></a>
-
-- *Type:* string
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="wrapsSet" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -68440,134 +69134,227 @@ new DataSnowflakeMaskingPoliciesMaskingPolicies(terraformResource: IInterpolatin
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.getAnyMapAttribute"></a>
+##### `get` <a name="get" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesList.get"></a>
+
+```typescript
+public get(index: number): DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference <a name="DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.Initializer"></a>
+
+```typescript
+import { DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference } from '@cdktf/provider-snowflake'
+
+new DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+
+---
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
@@ -68578,15 +69365,16 @@ public interpolationForAttribute(property: string): IResolvable
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.property.comment">comment</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.property.database">database</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.property.kind">kind</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.property.schema">schema</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.property.comment">comment</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.property.database">database</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.property.kind">kind</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.property.schema">schema</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies">DataSnowflakeMaskingPoliciesMaskingPolicies</a></code> | *No description.* |
 
 ---
 
-##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.property.comment"></a>
+##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.property.comment"></a>
 
 ```typescript
 public readonly comment: string;
@@ -68596,7 +69384,7 @@ public readonly comment: string;
 
 ---
 
-##### `database`<sup>Required</sup> <a name="database" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.property.database"></a>
+##### `database`<sup>Required</sup> <a name="database" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.property.database"></a>
 
 ```typescript
 public readonly database: string;
@@ -68606,7 +69394,7 @@ public readonly database: string;
 
 ---
 
-##### `kind`<sup>Required</sup> <a name="kind" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.property.kind"></a>
+##### `kind`<sup>Required</sup> <a name="kind" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.property.kind"></a>
 
 ```typescript
 public readonly kind: string;
@@ -68616,7 +69404,7 @@ public readonly kind: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -68626,7 +69414,7 @@ public readonly name: string;
 
 ---
 
-##### `schema`<sup>Required</sup> <a name="schema" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies.property.schema"></a>
+##### `schema`<sup>Required</sup> <a name="schema" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.property.schema"></a>
 
 ```typescript
 public readonly schema: string;
@@ -68636,47 +69424,56 @@ public readonly schema: string;
 
 ---
 
-
-### DataSnowflakeMaterializedViewsMaterializedViews <a name="DataSnowflakeMaterializedViewsMaterializedViews" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataSnowflakeMaterializedViewsMaterializedViews } from '@cdktf/provider-snowflake'
+public readonly internalValue: DataSnowflakeMaskingPoliciesMaskingPolicies;
+```
 
-new DataSnowflakeMaterializedViewsMaterializedViews(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+- *Type:* <a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesMaskingPolicies">DataSnowflakeMaskingPoliciesMaskingPolicies</a>
+
+---
+
+
+### DataSnowflakeMaterializedViewsMaterializedViewsList <a name="DataSnowflakeMaterializedViewsMaterializedViewsList" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsList.Initializer"></a>
+
+```typescript
+import { DataSnowflakeMaterializedViewsMaterializedViewsList } from '@cdktf/provider-snowflake'
+
+new DataSnowflakeMaterializedViewsMaterializedViewsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.Initializer.parameter.complexComputedListIndex">complexComputedListIndex</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="complexComputedListIndex" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.Initializer.parameter.complexComputedListIndex"></a>
-
-- *Type:* string
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="wrapsSet" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -68684,134 +69481,227 @@ new DataSnowflakeMaterializedViewsMaterializedViews(terraformResource: IInterpol
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.getAnyMapAttribute"></a>
+##### `get` <a name="get" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsList.get"></a>
+
+```typescript
+public get(index: number): DataSnowflakeMaterializedViewsMaterializedViewsOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### DataSnowflakeMaterializedViewsMaterializedViewsOutputReference <a name="DataSnowflakeMaterializedViewsMaterializedViewsOutputReference" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsOutputReference.Initializer"></a>
+
+```typescript
+import { DataSnowflakeMaterializedViewsMaterializedViewsOutputReference } from '@cdktf/provider-snowflake'
+
+new DataSnowflakeMaterializedViewsMaterializedViewsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+
+---
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
@@ -68822,14 +69712,15 @@ public interpolationForAttribute(property: string): IResolvable
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.property.comment">comment</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.property.database">database</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.property.schema">schema</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsOutputReference.property.comment">comment</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsOutputReference.property.database">database</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsOutputReference.property.schema">schema</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews">DataSnowflakeMaterializedViewsMaterializedViews</a></code> | *No description.* |
 
 ---
 
-##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.property.comment"></a>
+##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsOutputReference.property.comment"></a>
 
 ```typescript
 public readonly comment: string;
@@ -68839,7 +69730,7 @@ public readonly comment: string;
 
 ---
 
-##### `database`<sup>Required</sup> <a name="database" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.property.database"></a>
+##### `database`<sup>Required</sup> <a name="database" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsOutputReference.property.database"></a>
 
 ```typescript
 public readonly database: string;
@@ -68849,7 +69740,7 @@ public readonly database: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsOutputReference.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -68859,7 +69750,7 @@ public readonly name: string;
 
 ---
 
-##### `schema`<sup>Required</sup> <a name="schema" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews.property.schema"></a>
+##### `schema`<sup>Required</sup> <a name="schema" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsOutputReference.property.schema"></a>
 
 ```typescript
 public readonly schema: string;
@@ -68869,47 +69760,56 @@ public readonly schema: string;
 
 ---
 
-
-### DataSnowflakePipesPipes <a name="DataSnowflakePipesPipes" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViewsOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataSnowflakePipesPipes } from '@cdktf/provider-snowflake'
+public readonly internalValue: DataSnowflakeMaterializedViewsMaterializedViews;
+```
 
-new DataSnowflakePipesPipes(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+- *Type:* <a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsMaterializedViews">DataSnowflakeMaterializedViewsMaterializedViews</a>
+
+---
+
+
+### DataSnowflakePipesPipesList <a name="DataSnowflakePipesPipesList" id="@cdktf/provider-snowflake.DataSnowflakePipesPipesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakePipesPipesList.Initializer"></a>
+
+```typescript
+import { DataSnowflakePipesPipesList } from '@cdktf/provider-snowflake'
+
+new DataSnowflakePipesPipesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesPipes.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesPipes.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesPipes.Initializer.parameter.complexComputedListIndex">complexComputedListIndex</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesPipes.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesPipesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesPipesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesPipesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakePipesPipesList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipesList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="complexComputedListIndex" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes.Initializer.parameter.complexComputedListIndex"></a>
-
-- *Type:* string
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="wrapsSet" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-snowflake.DataSnowflakePipesPipesList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -68917,134 +69817,227 @@ new DataSnowflakePipesPipes(terraformResource: IInterpolatingParent, terraformAt
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesPipes.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesPipes.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesPipes.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesPipes.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesPipes.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesPipes.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesPipes.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesPipes.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesPipes.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesPipes.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesPipesList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes.getAnyMapAttribute"></a>
+##### `get` <a name="get" id="@cdktf/provider-snowflake.DataSnowflakePipesPipesList.get"></a>
+
+```typescript
+public get(index: number): DataSnowflakePipesPipesOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakePipesPipesList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesPipesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.DataSnowflakePipesPipesList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### DataSnowflakePipesPipesOutputReference <a name="DataSnowflakePipesPipesOutputReference" id="@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference.Initializer"></a>
+
+```typescript
+import { DataSnowflakePipesPipesOutputReference } from '@cdktf/provider-snowflake'
+
+new DataSnowflakePipesPipesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+
+---
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
@@ -69055,15 +70048,16 @@ public interpolationForAttribute(property: string): IResolvable
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesPipes.property.comment">comment</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesPipes.property.database">database</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesPipes.property.integration">integration</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesPipes.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesPipes.property.schema">schema</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference.property.comment">comment</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference.property.database">database</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference.property.integration">integration</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference.property.schema">schema</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesPipes">DataSnowflakePipesPipes</a></code> | *No description.* |
 
 ---
 
-##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes.property.comment"></a>
+##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference.property.comment"></a>
 
 ```typescript
 public readonly comment: string;
@@ -69073,7 +70067,7 @@ public readonly comment: string;
 
 ---
 
-##### `database`<sup>Required</sup> <a name="database" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes.property.database"></a>
+##### `database`<sup>Required</sup> <a name="database" id="@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference.property.database"></a>
 
 ```typescript
 public readonly database: string;
@@ -69083,7 +70077,7 @@ public readonly database: string;
 
 ---
 
-##### `integration`<sup>Required</sup> <a name="integration" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes.property.integration"></a>
+##### `integration`<sup>Required</sup> <a name="integration" id="@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference.property.integration"></a>
 
 ```typescript
 public readonly integration: string;
@@ -69093,7 +70087,7 @@ public readonly integration: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -69103,7 +70097,7 @@ public readonly name: string;
 
 ---
 
-##### `schema`<sup>Required</sup> <a name="schema" id="@cdktf/provider-snowflake.DataSnowflakePipesPipes.property.schema"></a>
+##### `schema`<sup>Required</sup> <a name="schema" id="@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference.property.schema"></a>
 
 ```typescript
 public readonly schema: string;
@@ -69113,47 +70107,56 @@ public readonly schema: string;
 
 ---
 
-
-### DataSnowflakeProceduresProcedures <a name="DataSnowflakeProceduresProcedures" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-snowflake.DataSnowflakePipesPipesOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataSnowflakeProceduresProcedures } from '@cdktf/provider-snowflake'
+public readonly internalValue: DataSnowflakePipesPipes;
+```
 
-new DataSnowflakeProceduresProcedures(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+- *Type:* <a href="#@cdktf/provider-snowflake.DataSnowflakePipesPipes">DataSnowflakePipesPipes</a>
+
+---
+
+
+### DataSnowflakeProceduresProceduresList <a name="DataSnowflakeProceduresProceduresList" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresList.Initializer"></a>
+
+```typescript
+import { DataSnowflakeProceduresProceduresList } from '@cdktf/provider-snowflake'
+
+new DataSnowflakeProceduresProceduresList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.Initializer.parameter.complexComputedListIndex">complexComputedListIndex</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="complexComputedListIndex" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.Initializer.parameter.complexComputedListIndex"></a>
-
-- *Type:* string
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="wrapsSet" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -69161,134 +70164,227 @@ new DataSnowflakeProceduresProcedures(terraformResource: IInterpolatingParent, t
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.getAnyMapAttribute"></a>
+##### `get` <a name="get" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresList.get"></a>
+
+```typescript
+public get(index: number): DataSnowflakeProceduresProceduresOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### DataSnowflakeProceduresProceduresOutputReference <a name="DataSnowflakeProceduresProceduresOutputReference" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.Initializer"></a>
+
+```typescript
+import { DataSnowflakeProceduresProceduresOutputReference } from '@cdktf/provider-snowflake'
+
+new DataSnowflakeProceduresProceduresOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+
+---
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
@@ -69299,16 +70395,17 @@ public interpolationForAttribute(property: string): IResolvable
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.property.argumentTypes">argumentTypes</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.property.comment">comment</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.property.database">database</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.property.returnType">returnType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.property.schema">schema</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.property.argumentTypes">argumentTypes</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.property.comment">comment</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.property.database">database</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.property.returnType">returnType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.property.schema">schema</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures">DataSnowflakeProceduresProcedures</a></code> | *No description.* |
 
 ---
 
-##### `argumentTypes`<sup>Required</sup> <a name="argumentTypes" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.property.argumentTypes"></a>
+##### `argumentTypes`<sup>Required</sup> <a name="argumentTypes" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.property.argumentTypes"></a>
 
 ```typescript
 public readonly argumentTypes: string[];
@@ -69318,7 +70415,7 @@ public readonly argumentTypes: string[];
 
 ---
 
-##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.property.comment"></a>
+##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.property.comment"></a>
 
 ```typescript
 public readonly comment: string;
@@ -69328,7 +70425,7 @@ public readonly comment: string;
 
 ---
 
-##### `database`<sup>Required</sup> <a name="database" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.property.database"></a>
+##### `database`<sup>Required</sup> <a name="database" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.property.database"></a>
 
 ```typescript
 public readonly database: string;
@@ -69338,7 +70435,7 @@ public readonly database: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -69348,7 +70445,7 @@ public readonly name: string;
 
 ---
 
-##### `returnType`<sup>Required</sup> <a name="returnType" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.property.returnType"></a>
+##### `returnType`<sup>Required</sup> <a name="returnType" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.property.returnType"></a>
 
 ```typescript
 public readonly returnType: string;
@@ -69358,7 +70455,7 @@ public readonly returnType: string;
 
 ---
 
-##### `schema`<sup>Required</sup> <a name="schema" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures.property.schema"></a>
+##### `schema`<sup>Required</sup> <a name="schema" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.property.schema"></a>
 
 ```typescript
 public readonly schema: string;
@@ -69368,47 +70465,56 @@ public readonly schema: string;
 
 ---
 
-
-### DataSnowflakeResourceMonitorsResourceMonitors <a name="DataSnowflakeResourceMonitorsResourceMonitors" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-snowflake.DataSnowflakeProceduresProceduresOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataSnowflakeResourceMonitorsResourceMonitors } from '@cdktf/provider-snowflake'
+public readonly internalValue: DataSnowflakeProceduresProcedures;
+```
 
-new DataSnowflakeResourceMonitorsResourceMonitors(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+- *Type:* <a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresProcedures">DataSnowflakeProceduresProcedures</a>
+
+---
+
+
+### DataSnowflakeResourceMonitorsResourceMonitorsList <a name="DataSnowflakeResourceMonitorsResourceMonitorsList" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsList.Initializer"></a>
+
+```typescript
+import { DataSnowflakeResourceMonitorsResourceMonitorsList } from '@cdktf/provider-snowflake'
+
+new DataSnowflakeResourceMonitorsResourceMonitorsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.Initializer.parameter.complexComputedListIndex">complexComputedListIndex</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="complexComputedListIndex" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.Initializer.parameter.complexComputedListIndex"></a>
-
-- *Type:* string
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="wrapsSet" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -69416,134 +70522,227 @@ new DataSnowflakeResourceMonitorsResourceMonitors(terraformResource: IInterpolat
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.getAnyMapAttribute"></a>
+##### `get` <a name="get" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsList.get"></a>
+
+```typescript
+public get(index: number): DataSnowflakeResourceMonitorsResourceMonitorsOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### DataSnowflakeResourceMonitorsResourceMonitorsOutputReference <a name="DataSnowflakeResourceMonitorsResourceMonitorsOutputReference" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsOutputReference.Initializer"></a>
+
+```typescript
+import { DataSnowflakeResourceMonitorsResourceMonitorsOutputReference } from '@cdktf/provider-snowflake'
+
+new DataSnowflakeResourceMonitorsResourceMonitorsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+
+---
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
@@ -69554,14 +70753,15 @@ public interpolationForAttribute(property: string): IResolvable
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.property.comment">comment</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.property.creditQuota">creditQuota</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.property.frequency">frequency</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsOutputReference.property.comment">comment</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsOutputReference.property.creditQuota">creditQuota</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsOutputReference.property.frequency">frequency</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors">DataSnowflakeResourceMonitorsResourceMonitors</a></code> | *No description.* |
 
 ---
 
-##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.property.comment"></a>
+##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsOutputReference.property.comment"></a>
 
 ```typescript
 public readonly comment: string;
@@ -69571,7 +70771,7 @@ public readonly comment: string;
 
 ---
 
-##### `creditQuota`<sup>Required</sup> <a name="creditQuota" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.property.creditQuota"></a>
+##### `creditQuota`<sup>Required</sup> <a name="creditQuota" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsOutputReference.property.creditQuota"></a>
 
 ```typescript
 public readonly creditQuota: string;
@@ -69581,7 +70781,7 @@ public readonly creditQuota: string;
 
 ---
 
-##### `frequency`<sup>Required</sup> <a name="frequency" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.property.frequency"></a>
+##### `frequency`<sup>Required</sup> <a name="frequency" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsOutputReference.property.frequency"></a>
 
 ```typescript
 public readonly frequency: string;
@@ -69591,7 +70791,7 @@ public readonly frequency: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsOutputReference.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -69601,47 +70801,56 @@ public readonly name: string;
 
 ---
 
-
-### DataSnowflakeRowAccessPoliciesRowAccessPolicies <a name="DataSnowflakeRowAccessPoliciesRowAccessPolicies" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitorsOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataSnowflakeRowAccessPoliciesRowAccessPolicies } from '@cdktf/provider-snowflake'
+public readonly internalValue: DataSnowflakeResourceMonitorsResourceMonitors;
+```
 
-new DataSnowflakeRowAccessPoliciesRowAccessPolicies(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+- *Type:* <a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsResourceMonitors">DataSnowflakeResourceMonitorsResourceMonitors</a>
+
+---
+
+
+### DataSnowflakeRowAccessPoliciesRowAccessPoliciesList <a name="DataSnowflakeRowAccessPoliciesRowAccessPoliciesList" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesList.Initializer"></a>
+
+```typescript
+import { DataSnowflakeRowAccessPoliciesRowAccessPoliciesList } from '@cdktf/provider-snowflake'
+
+new DataSnowflakeRowAccessPoliciesRowAccessPoliciesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.Initializer.parameter.complexComputedListIndex">complexComputedListIndex</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="complexComputedListIndex" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.Initializer.parameter.complexComputedListIndex"></a>
-
-- *Type:* string
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="wrapsSet" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -69649,134 +70858,227 @@ new DataSnowflakeRowAccessPoliciesRowAccessPolicies(terraformResource: IInterpol
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.getAnyMapAttribute"></a>
+##### `get` <a name="get" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesList.get"></a>
+
+```typescript
+public get(index: number): DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference <a name="DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference.Initializer"></a>
+
+```typescript
+import { DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference } from '@cdktf/provider-snowflake'
+
+new DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+
+---
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
@@ -69787,14 +71089,15 @@ public interpolationForAttribute(property: string): IResolvable
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.property.comment">comment</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.property.database">database</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.property.schema">schema</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference.property.comment">comment</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference.property.database">database</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference.property.schema">schema</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies">DataSnowflakeRowAccessPoliciesRowAccessPolicies</a></code> | *No description.* |
 
 ---
 
-##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.property.comment"></a>
+##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference.property.comment"></a>
 
 ```typescript
 public readonly comment: string;
@@ -69804,7 +71107,7 @@ public readonly comment: string;
 
 ---
 
-##### `database`<sup>Required</sup> <a name="database" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.property.database"></a>
+##### `database`<sup>Required</sup> <a name="database" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference.property.database"></a>
 
 ```typescript
 public readonly database: string;
@@ -69814,7 +71117,7 @@ public readonly database: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -69824,7 +71127,7 @@ public readonly name: string;
 
 ---
 
-##### `schema`<sup>Required</sup> <a name="schema" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies.property.schema"></a>
+##### `schema`<sup>Required</sup> <a name="schema" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference.property.schema"></a>
 
 ```typescript
 public readonly schema: string;
@@ -69834,47 +71137,56 @@ public readonly schema: string;
 
 ---
 
-
-### DataSnowflakeSchemasSchemas <a name="DataSnowflakeSchemasSchemas" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataSnowflakeSchemasSchemas } from '@cdktf/provider-snowflake'
+public readonly internalValue: DataSnowflakeRowAccessPoliciesRowAccessPolicies;
+```
 
-new DataSnowflakeSchemasSchemas(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+- *Type:* <a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesRowAccessPolicies">DataSnowflakeRowAccessPoliciesRowAccessPolicies</a>
+
+---
+
+
+### DataSnowflakeSchemasSchemasList <a name="DataSnowflakeSchemasSchemasList" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasList.Initializer"></a>
+
+```typescript
+import { DataSnowflakeSchemasSchemasList } from '@cdktf/provider-snowflake'
+
+new DataSnowflakeSchemasSchemasList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.Initializer.parameter.complexComputedListIndex">complexComputedListIndex</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="complexComputedListIndex" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.Initializer.parameter.complexComputedListIndex"></a>
-
-- *Type:* string
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="wrapsSet" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -69882,134 +71194,227 @@ new DataSnowflakeSchemasSchemas(terraformResource: IInterpolatingParent, terrafo
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.getAnyMapAttribute"></a>
+##### `get` <a name="get" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasList.get"></a>
+
+```typescript
+public get(index: number): DataSnowflakeSchemasSchemasOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### DataSnowflakeSchemasSchemasOutputReference <a name="DataSnowflakeSchemasSchemasOutputReference" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasOutputReference.Initializer"></a>
+
+```typescript
+import { DataSnowflakeSchemasSchemasOutputReference } from '@cdktf/provider-snowflake'
+
+new DataSnowflakeSchemasSchemasOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+
+---
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
@@ -70020,13 +71425,14 @@ public interpolationForAttribute(property: string): IResolvable
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.property.comment">comment</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.property.database">database</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasOutputReference.property.comment">comment</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasOutputReference.property.database">database</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas">DataSnowflakeSchemasSchemas</a></code> | *No description.* |
 
 ---
 
-##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.property.comment"></a>
+##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasOutputReference.property.comment"></a>
 
 ```typescript
 public readonly comment: string;
@@ -70036,7 +71442,7 @@ public readonly comment: string;
 
 ---
 
-##### `database`<sup>Required</sup> <a name="database" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.property.database"></a>
+##### `database`<sup>Required</sup> <a name="database" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasOutputReference.property.database"></a>
 
 ```typescript
 public readonly database: string;
@@ -70046,7 +71452,7 @@ public readonly database: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasOutputReference.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -70056,47 +71462,56 @@ public readonly name: string;
 
 ---
 
-
-### DataSnowflakeSequencesSequences <a name="DataSnowflakeSequencesSequences" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-snowflake.DataSnowflakeSchemasSchemasOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataSnowflakeSequencesSequences } from '@cdktf/provider-snowflake'
+public readonly internalValue: DataSnowflakeSchemasSchemas;
+```
 
-new DataSnowflakeSequencesSequences(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+- *Type:* <a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasSchemas">DataSnowflakeSchemasSchemas</a>
+
+---
+
+
+### DataSnowflakeSequencesSequencesList <a name="DataSnowflakeSequencesSequencesList" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesList.Initializer"></a>
+
+```typescript
+import { DataSnowflakeSequencesSequencesList } from '@cdktf/provider-snowflake'
+
+new DataSnowflakeSequencesSequencesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.Initializer.parameter.complexComputedListIndex">complexComputedListIndex</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="complexComputedListIndex" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.Initializer.parameter.complexComputedListIndex"></a>
-
-- *Type:* string
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="wrapsSet" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -70104,134 +71519,227 @@ new DataSnowflakeSequencesSequences(terraformResource: IInterpolatingParent, ter
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.getAnyMapAttribute"></a>
+##### `get` <a name="get" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesList.get"></a>
+
+```typescript
+public get(index: number): DataSnowflakeSequencesSequencesOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### DataSnowflakeSequencesSequencesOutputReference <a name="DataSnowflakeSequencesSequencesOutputReference" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesOutputReference.Initializer"></a>
+
+```typescript
+import { DataSnowflakeSequencesSequencesOutputReference } from '@cdktf/provider-snowflake'
+
+new DataSnowflakeSequencesSequencesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+
+---
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
@@ -70242,14 +71750,15 @@ public interpolationForAttribute(property: string): IResolvable
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.property.comment">comment</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.property.database">database</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.property.schema">schema</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesOutputReference.property.comment">comment</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesOutputReference.property.database">database</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesOutputReference.property.schema">schema</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesSequences">DataSnowflakeSequencesSequences</a></code> | *No description.* |
 
 ---
 
-##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.property.comment"></a>
+##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesOutputReference.property.comment"></a>
 
 ```typescript
 public readonly comment: string;
@@ -70259,7 +71768,7 @@ public readonly comment: string;
 
 ---
 
-##### `database`<sup>Required</sup> <a name="database" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.property.database"></a>
+##### `database`<sup>Required</sup> <a name="database" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesOutputReference.property.database"></a>
 
 ```typescript
 public readonly database: string;
@@ -70269,7 +71778,7 @@ public readonly database: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesOutputReference.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -70279,7 +71788,7 @@ public readonly name: string;
 
 ---
 
-##### `schema`<sup>Required</sup> <a name="schema" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequences.property.schema"></a>
+##### `schema`<sup>Required</sup> <a name="schema" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesOutputReference.property.schema"></a>
 
 ```typescript
 public readonly schema: string;
@@ -70289,47 +71798,56 @@ public readonly schema: string;
 
 ---
 
-
-### DataSnowflakeStagesStages <a name="DataSnowflakeStagesStages" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-snowflake.DataSnowflakeSequencesSequencesOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataSnowflakeStagesStages } from '@cdktf/provider-snowflake'
+public readonly internalValue: DataSnowflakeSequencesSequences;
+```
 
-new DataSnowflakeStagesStages(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+- *Type:* <a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesSequences">DataSnowflakeSequencesSequences</a>
+
+---
+
+
+### DataSnowflakeStagesStagesList <a name="DataSnowflakeStagesStagesList" id="@cdktf/provider-snowflake.DataSnowflakeStagesStagesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeStagesStagesList.Initializer"></a>
+
+```typescript
+import { DataSnowflakeStagesStagesList } from '@cdktf/provider-snowflake'
+
+new DataSnowflakeStagesStagesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesStages.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesStages.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesStages.Initializer.parameter.complexComputedListIndex">complexComputedListIndex</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesStages.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesStagesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesStagesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesStagesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeStagesStagesList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStagesList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="complexComputedListIndex" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages.Initializer.parameter.complexComputedListIndex"></a>
-
-- *Type:* string
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="wrapsSet" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-snowflake.DataSnowflakeStagesStagesList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -70337,134 +71855,227 @@ new DataSnowflakeStagesStages(terraformResource: IInterpolatingParent, terraform
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesStages.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesStages.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesStages.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesStages.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesStages.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesStages.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesStages.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesStages.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesStages.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesStages.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesStagesList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages.getAnyMapAttribute"></a>
+##### `get` <a name="get" id="@cdktf/provider-snowflake.DataSnowflakeStagesStagesList.get"></a>
+
+```typescript
+public get(index: number): DataSnowflakeStagesStagesOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeStagesStagesList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesStagesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.DataSnowflakeStagesStagesList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### DataSnowflakeStagesStagesOutputReference <a name="DataSnowflakeStagesStagesOutputReference" id="@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference.Initializer"></a>
+
+```typescript
+import { DataSnowflakeStagesStagesOutputReference } from '@cdktf/provider-snowflake'
+
+new DataSnowflakeStagesStagesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+
+---
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
@@ -70475,15 +72086,16 @@ public interpolationForAttribute(property: string): IResolvable
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesStages.property.comment">comment</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesStages.property.database">database</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesStages.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesStages.property.schema">schema</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesStages.property.storageIntegration">storageIntegration</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference.property.comment">comment</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference.property.database">database</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference.property.schema">schema</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference.property.storageIntegration">storageIntegration</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesStages">DataSnowflakeStagesStages</a></code> | *No description.* |
 
 ---
 
-##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages.property.comment"></a>
+##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference.property.comment"></a>
 
 ```typescript
 public readonly comment: string;
@@ -70493,7 +72105,7 @@ public readonly comment: string;
 
 ---
 
-##### `database`<sup>Required</sup> <a name="database" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages.property.database"></a>
+##### `database`<sup>Required</sup> <a name="database" id="@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference.property.database"></a>
 
 ```typescript
 public readonly database: string;
@@ -70503,7 +72115,7 @@ public readonly database: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -70513,7 +72125,7 @@ public readonly name: string;
 
 ---
 
-##### `schema`<sup>Required</sup> <a name="schema" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages.property.schema"></a>
+##### `schema`<sup>Required</sup> <a name="schema" id="@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference.property.schema"></a>
 
 ```typescript
 public readonly schema: string;
@@ -70523,7 +72135,7 @@ public readonly schema: string;
 
 ---
 
-##### `storageIntegration`<sup>Required</sup> <a name="storageIntegration" id="@cdktf/provider-snowflake.DataSnowflakeStagesStages.property.storageIntegration"></a>
+##### `storageIntegration`<sup>Required</sup> <a name="storageIntegration" id="@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference.property.storageIntegration"></a>
 
 ```typescript
 public readonly storageIntegration: string;
@@ -70533,47 +72145,56 @@ public readonly storageIntegration: string;
 
 ---
 
-
-### DataSnowflakeStorageIntegrationsStorageIntegrations <a name="DataSnowflakeStorageIntegrationsStorageIntegrations" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-snowflake.DataSnowflakeStagesStagesOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataSnowflakeStorageIntegrationsStorageIntegrations } from '@cdktf/provider-snowflake'
+public readonly internalValue: DataSnowflakeStagesStages;
+```
 
-new DataSnowflakeStorageIntegrationsStorageIntegrations(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+- *Type:* <a href="#@cdktf/provider-snowflake.DataSnowflakeStagesStages">DataSnowflakeStagesStages</a>
+
+---
+
+
+### DataSnowflakeStorageIntegrationsStorageIntegrationsList <a name="DataSnowflakeStorageIntegrationsStorageIntegrationsList" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsList.Initializer"></a>
+
+```typescript
+import { DataSnowflakeStorageIntegrationsStorageIntegrationsList } from '@cdktf/provider-snowflake'
+
+new DataSnowflakeStorageIntegrationsStorageIntegrationsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.Initializer.parameter.complexComputedListIndex">complexComputedListIndex</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="complexComputedListIndex" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.Initializer.parameter.complexComputedListIndex"></a>
-
-- *Type:* string
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="wrapsSet" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -70581,134 +72202,227 @@ new DataSnowflakeStorageIntegrationsStorageIntegrations(terraformResource: IInte
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.getAnyMapAttribute"></a>
+##### `get` <a name="get" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsList.get"></a>
+
+```typescript
+public get(index: number): DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference <a name="DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference.Initializer"></a>
+
+```typescript
+import { DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference } from '@cdktf/provider-snowflake'
+
+new DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+
+---
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
@@ -70719,14 +72433,15 @@ public interpolationForAttribute(property: string): IResolvable
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.property.comment">comment</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.property.type">type</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference.property.comment">comment</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations">DataSnowflakeStorageIntegrationsStorageIntegrations</a></code> | *No description.* |
 
 ---
 
-##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.property.comment"></a>
+##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference.property.comment"></a>
 
 ```typescript
 public readonly comment: string;
@@ -70736,7 +72451,7 @@ public readonly comment: string;
 
 ---
 
-##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.property.enabled"></a>
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference.property.enabled"></a>
 
 ```typescript
 public readonly enabled: IResolvable;
@@ -70746,7 +72461,7 @@ public readonly enabled: IResolvable;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -70756,7 +72471,7 @@ public readonly name: string;
 
 ---
 
-##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations.property.type"></a>
+##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference.property.type"></a>
 
 ```typescript
 public readonly type: string;
@@ -70766,47 +72481,56 @@ public readonly type: string;
 
 ---
 
-
-### DataSnowflakeStreamsStreams <a name="DataSnowflakeStreamsStreams" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataSnowflakeStreamsStreams } from '@cdktf/provider-snowflake'
+public readonly internalValue: DataSnowflakeStorageIntegrationsStorageIntegrations;
+```
 
-new DataSnowflakeStreamsStreams(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+- *Type:* <a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsStorageIntegrations">DataSnowflakeStorageIntegrationsStorageIntegrations</a>
+
+---
+
+
+### DataSnowflakeStreamsStreamsList <a name="DataSnowflakeStreamsStreamsList" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsList.Initializer"></a>
+
+```typescript
+import { DataSnowflakeStreamsStreamsList } from '@cdktf/provider-snowflake'
+
+new DataSnowflakeStreamsStreamsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.Initializer.parameter.complexComputedListIndex">complexComputedListIndex</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="complexComputedListIndex" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.Initializer.parameter.complexComputedListIndex"></a>
-
-- *Type:* string
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="wrapsSet" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -70814,134 +72538,227 @@ new DataSnowflakeStreamsStreams(terraformResource: IInterpolatingParent, terrafo
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.getAnyMapAttribute"></a>
+##### `get` <a name="get" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsList.get"></a>
+
+```typescript
+public get(index: number): DataSnowflakeStreamsStreamsOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### DataSnowflakeStreamsStreamsOutputReference <a name="DataSnowflakeStreamsStreamsOutputReference" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference.Initializer"></a>
+
+```typescript
+import { DataSnowflakeStreamsStreamsOutputReference } from '@cdktf/provider-snowflake'
+
+new DataSnowflakeStreamsStreamsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+
+---
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
@@ -70952,15 +72769,16 @@ public interpolationForAttribute(property: string): IResolvable
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.property.comment">comment</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.property.database">database</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.property.schema">schema</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.property.table">table</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference.property.comment">comment</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference.property.database">database</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference.property.schema">schema</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference.property.table">table</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsStreams">DataSnowflakeStreamsStreams</a></code> | *No description.* |
 
 ---
 
-##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.property.comment"></a>
+##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference.property.comment"></a>
 
 ```typescript
 public readonly comment: string;
@@ -70970,7 +72788,7 @@ public readonly comment: string;
 
 ---
 
-##### `database`<sup>Required</sup> <a name="database" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.property.database"></a>
+##### `database`<sup>Required</sup> <a name="database" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference.property.database"></a>
 
 ```typescript
 public readonly database: string;
@@ -70980,7 +72798,7 @@ public readonly database: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -70990,7 +72808,7 @@ public readonly name: string;
 
 ---
 
-##### `schema`<sup>Required</sup> <a name="schema" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.property.schema"></a>
+##### `schema`<sup>Required</sup> <a name="schema" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference.property.schema"></a>
 
 ```typescript
 public readonly schema: string;
@@ -71000,7 +72818,7 @@ public readonly schema: string;
 
 ---
 
-##### `table`<sup>Required</sup> <a name="table" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreams.property.table"></a>
+##### `table`<sup>Required</sup> <a name="table" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference.property.table"></a>
 
 ```typescript
 public readonly table: string;
@@ -71010,47 +72828,56 @@ public readonly table: string;
 
 ---
 
-
-### DataSnowflakeTablesTables <a name="DataSnowflakeTablesTables" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-snowflake.DataSnowflakeStreamsStreamsOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataSnowflakeTablesTables } from '@cdktf/provider-snowflake'
+public readonly internalValue: DataSnowflakeStreamsStreams;
+```
 
-new DataSnowflakeTablesTables(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+- *Type:* <a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsStreams">DataSnowflakeStreamsStreams</a>
+
+---
+
+
+### DataSnowflakeTablesTablesList <a name="DataSnowflakeTablesTablesList" id="@cdktf/provider-snowflake.DataSnowflakeTablesTablesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeTablesTablesList.Initializer"></a>
+
+```typescript
+import { DataSnowflakeTablesTablesList } from '@cdktf/provider-snowflake'
+
+new DataSnowflakeTablesTablesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesTables.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesTables.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesTables.Initializer.parameter.complexComputedListIndex">complexComputedListIndex</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesTables.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesTablesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesTablesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesTablesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeTablesTablesList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTablesList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="complexComputedListIndex" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables.Initializer.parameter.complexComputedListIndex"></a>
-
-- *Type:* string
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="wrapsSet" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-snowflake.DataSnowflakeTablesTablesList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -71058,134 +72885,227 @@ new DataSnowflakeTablesTables(terraformResource: IInterpolatingParent, terraform
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesTables.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesTables.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesTables.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesTables.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesTables.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesTables.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesTables.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesTables.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesTables.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesTables.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesTablesList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables.getAnyMapAttribute"></a>
+##### `get` <a name="get" id="@cdktf/provider-snowflake.DataSnowflakeTablesTablesList.get"></a>
+
+```typescript
+public get(index: number): DataSnowflakeTablesTablesOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeTablesTablesList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesTablesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.DataSnowflakeTablesTablesList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### DataSnowflakeTablesTablesOutputReference <a name="DataSnowflakeTablesTablesOutputReference" id="@cdktf/provider-snowflake.DataSnowflakeTablesTablesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeTablesTablesOutputReference.Initializer"></a>
+
+```typescript
+import { DataSnowflakeTablesTablesOutputReference } from '@cdktf/provider-snowflake'
+
+new DataSnowflakeTablesTablesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesTablesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesTablesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesTablesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesTablesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeTablesTablesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTablesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-snowflake.DataSnowflakeTablesTablesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-snowflake.DataSnowflakeTablesTablesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesTablesOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesTablesOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesTablesOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesTablesOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesTablesOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesTablesOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesTablesOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesTablesOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesTablesOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesTablesOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+
+---
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTablesOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTablesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTablesOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTablesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTablesOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTablesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTablesOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTablesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTablesOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTablesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTablesOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTablesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTablesOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTablesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTablesOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTablesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTablesOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTablesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTablesTablesOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeTablesTablesOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
@@ -71196,14 +73116,15 @@ public interpolationForAttribute(property: string): IResolvable
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesTables.property.comment">comment</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesTables.property.database">database</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesTables.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesTables.property.schema">schema</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesTablesOutputReference.property.comment">comment</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesTablesOutputReference.property.database">database</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesTablesOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesTablesOutputReference.property.schema">schema</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesTablesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesTables">DataSnowflakeTablesTables</a></code> | *No description.* |
 
 ---
 
-##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables.property.comment"></a>
+##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.DataSnowflakeTablesTablesOutputReference.property.comment"></a>
 
 ```typescript
 public readonly comment: string;
@@ -71213,7 +73134,7 @@ public readonly comment: string;
 
 ---
 
-##### `database`<sup>Required</sup> <a name="database" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables.property.database"></a>
+##### `database`<sup>Required</sup> <a name="database" id="@cdktf/provider-snowflake.DataSnowflakeTablesTablesOutputReference.property.database"></a>
 
 ```typescript
 public readonly database: string;
@@ -71223,7 +73144,7 @@ public readonly database: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.DataSnowflakeTablesTablesOutputReference.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -71233,7 +73154,7 @@ public readonly name: string;
 
 ---
 
-##### `schema`<sup>Required</sup> <a name="schema" id="@cdktf/provider-snowflake.DataSnowflakeTablesTables.property.schema"></a>
+##### `schema`<sup>Required</sup> <a name="schema" id="@cdktf/provider-snowflake.DataSnowflakeTablesTablesOutputReference.property.schema"></a>
 
 ```typescript
 public readonly schema: string;
@@ -71243,47 +73164,56 @@ public readonly schema: string;
 
 ---
 
-
-### DataSnowflakeTasksTasks <a name="DataSnowflakeTasksTasks" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-snowflake.DataSnowflakeTablesTablesOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataSnowflakeTasksTasks } from '@cdktf/provider-snowflake'
+public readonly internalValue: DataSnowflakeTablesTables;
+```
 
-new DataSnowflakeTasksTasks(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+- *Type:* <a href="#@cdktf/provider-snowflake.DataSnowflakeTablesTables">DataSnowflakeTablesTables</a>
+
+---
+
+
+### DataSnowflakeTasksTasksList <a name="DataSnowflakeTasksTasksList" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasksList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasksList.Initializer"></a>
+
+```typescript
+import { DataSnowflakeTasksTasksList } from '@cdktf/provider-snowflake'
+
+new DataSnowflakeTasksTasksList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksTasks.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksTasks.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksTasks.Initializer.parameter.complexComputedListIndex">complexComputedListIndex</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksTasks.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksTasksList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksTasksList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksTasksList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasksList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasksList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="complexComputedListIndex" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks.Initializer.parameter.complexComputedListIndex"></a>
-
-- *Type:* string
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="wrapsSet" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasksList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -71291,134 +73221,227 @@ new DataSnowflakeTasksTasks(terraformResource: IInterpolatingParent, terraformAt
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksTasks.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksTasks.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksTasks.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksTasks.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksTasks.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksTasks.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksTasks.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksTasks.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksTasks.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksTasks.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksTasksList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks.getAnyMapAttribute"></a>
+##### `get` <a name="get" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasksList.get"></a>
+
+```typescript
+public get(index: number): DataSnowflakeTasksTasksOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasksList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksTasksList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasksList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### DataSnowflakeTasksTasksOutputReference <a name="DataSnowflakeTasksTasksOutputReference" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference.Initializer"></a>
+
+```typescript
+import { DataSnowflakeTasksTasksOutputReference } from '@cdktf/provider-snowflake'
+
+new DataSnowflakeTasksTasksOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+
+---
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
@@ -71429,15 +73452,16 @@ public interpolationForAttribute(property: string): IResolvable
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksTasks.property.comment">comment</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksTasks.property.database">database</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksTasks.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksTasks.property.schema">schema</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksTasks.property.warehouse">warehouse</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference.property.comment">comment</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference.property.database">database</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference.property.schema">schema</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference.property.warehouse">warehouse</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksTasks">DataSnowflakeTasksTasks</a></code> | *No description.* |
 
 ---
 
-##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks.property.comment"></a>
+##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference.property.comment"></a>
 
 ```typescript
 public readonly comment: string;
@@ -71447,7 +73471,7 @@ public readonly comment: string;
 
 ---
 
-##### `database`<sup>Required</sup> <a name="database" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks.property.database"></a>
+##### `database`<sup>Required</sup> <a name="database" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference.property.database"></a>
 
 ```typescript
 public readonly database: string;
@@ -71457,7 +73481,7 @@ public readonly database: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -71467,7 +73491,7 @@ public readonly name: string;
 
 ---
 
-##### `schema`<sup>Required</sup> <a name="schema" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks.property.schema"></a>
+##### `schema`<sup>Required</sup> <a name="schema" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference.property.schema"></a>
 
 ```typescript
 public readonly schema: string;
@@ -71477,7 +73501,7 @@ public readonly schema: string;
 
 ---
 
-##### `warehouse`<sup>Required</sup> <a name="warehouse" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasks.property.warehouse"></a>
+##### `warehouse`<sup>Required</sup> <a name="warehouse" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference.property.warehouse"></a>
 
 ```typescript
 public readonly warehouse: string;
@@ -71487,47 +73511,56 @@ public readonly warehouse: string;
 
 ---
 
-
-### DataSnowflakeViewsViews <a name="DataSnowflakeViewsViews" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-snowflake.DataSnowflakeTasksTasksOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataSnowflakeViewsViews } from '@cdktf/provider-snowflake'
+public readonly internalValue: DataSnowflakeTasksTasks;
+```
 
-new DataSnowflakeViewsViews(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+- *Type:* <a href="#@cdktf/provider-snowflake.DataSnowflakeTasksTasks">DataSnowflakeTasksTasks</a>
+
+---
+
+
+### DataSnowflakeViewsViewsList <a name="DataSnowflakeViewsViewsList" id="@cdktf/provider-snowflake.DataSnowflakeViewsViewsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeViewsViewsList.Initializer"></a>
+
+```typescript
+import { DataSnowflakeViewsViewsList } from '@cdktf/provider-snowflake'
+
+new DataSnowflakeViewsViewsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsViews.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsViews.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsViews.Initializer.parameter.complexComputedListIndex">complexComputedListIndex</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsViews.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsViewsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsViewsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsViewsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeViewsViewsList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViewsList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="complexComputedListIndex" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews.Initializer.parameter.complexComputedListIndex"></a>
-
-- *Type:* string
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="wrapsSet" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-snowflake.DataSnowflakeViewsViewsList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -71535,134 +73568,227 @@ new DataSnowflakeViewsViews(terraformResource: IInterpolatingParent, terraformAt
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsViews.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsViews.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsViews.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsViews.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsViews.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsViews.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsViews.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsViews.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsViews.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsViews.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsViewsList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews.getAnyMapAttribute"></a>
+##### `get` <a name="get" id="@cdktf/provider-snowflake.DataSnowflakeViewsViewsList.get"></a>
+
+```typescript
+public get(index: number): DataSnowflakeViewsViewsOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeViewsViewsList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsViewsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.DataSnowflakeViewsViewsList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### DataSnowflakeViewsViewsOutputReference <a name="DataSnowflakeViewsViewsOutputReference" id="@cdktf/provider-snowflake.DataSnowflakeViewsViewsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeViewsViewsOutputReference.Initializer"></a>
+
+```typescript
+import { DataSnowflakeViewsViewsOutputReference } from '@cdktf/provider-snowflake'
+
+new DataSnowflakeViewsViewsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsViewsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsViewsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsViewsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsViewsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeViewsViewsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViewsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-snowflake.DataSnowflakeViewsViewsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-snowflake.DataSnowflakeViewsViewsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsViewsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsViewsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsViewsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsViewsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsViewsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsViewsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsViewsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsViewsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsViewsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsViewsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+
+---
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViewsOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViewsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViewsOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViewsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViewsOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViewsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViewsOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViewsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViewsOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViewsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViewsOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViewsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViewsOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViewsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViewsOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViewsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViewsOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViewsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeViewsViewsOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeViewsViewsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
@@ -71673,14 +73799,15 @@ public interpolationForAttribute(property: string): IResolvable
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsViews.property.comment">comment</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsViews.property.database">database</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsViews.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsViews.property.schema">schema</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsViewsOutputReference.property.comment">comment</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsViewsOutputReference.property.database">database</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsViewsOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsViewsOutputReference.property.schema">schema</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsViewsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsViews">DataSnowflakeViewsViews</a></code> | *No description.* |
 
 ---
 
-##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews.property.comment"></a>
+##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.DataSnowflakeViewsViewsOutputReference.property.comment"></a>
 
 ```typescript
 public readonly comment: string;
@@ -71690,7 +73817,7 @@ public readonly comment: string;
 
 ---
 
-##### `database`<sup>Required</sup> <a name="database" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews.property.database"></a>
+##### `database`<sup>Required</sup> <a name="database" id="@cdktf/provider-snowflake.DataSnowflakeViewsViewsOutputReference.property.database"></a>
 
 ```typescript
 public readonly database: string;
@@ -71700,7 +73827,7 @@ public readonly database: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.DataSnowflakeViewsViewsOutputReference.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -71710,7 +73837,7 @@ public readonly name: string;
 
 ---
 
-##### `schema`<sup>Required</sup> <a name="schema" id="@cdktf/provider-snowflake.DataSnowflakeViewsViews.property.schema"></a>
+##### `schema`<sup>Required</sup> <a name="schema" id="@cdktf/provider-snowflake.DataSnowflakeViewsViewsOutputReference.property.schema"></a>
 
 ```typescript
 public readonly schema: string;
@@ -71720,47 +73847,56 @@ public readonly schema: string;
 
 ---
 
-
-### DataSnowflakeWarehousesWarehouses <a name="DataSnowflakeWarehousesWarehouses" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-snowflake.DataSnowflakeViewsViewsOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataSnowflakeWarehousesWarehouses } from '@cdktf/provider-snowflake'
+public readonly internalValue: DataSnowflakeViewsViews;
+```
 
-new DataSnowflakeWarehousesWarehouses(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+- *Type:* <a href="#@cdktf/provider-snowflake.DataSnowflakeViewsViews">DataSnowflakeViewsViews</a>
+
+---
+
+
+### DataSnowflakeWarehousesWarehousesList <a name="DataSnowflakeWarehousesWarehousesList" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesList.Initializer"></a>
+
+```typescript
+import { DataSnowflakeWarehousesWarehousesList } from '@cdktf/provider-snowflake'
+
+new DataSnowflakeWarehousesWarehousesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.Initializer.parameter.complexComputedListIndex">complexComputedListIndex</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="complexComputedListIndex" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.Initializer.parameter.complexComputedListIndex"></a>
-
-- *Type:* string
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="wrapsSet" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -71768,134 +73904,227 @@ new DataSnowflakeWarehousesWarehouses(terraformResource: IInterpolatingParent, t
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.getAnyMapAttribute"></a>
+##### `get` <a name="get" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesList.get"></a>
+
+```typescript
+public get(index: number): DataSnowflakeWarehousesWarehousesOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### DataSnowflakeWarehousesWarehousesOutputReference <a name="DataSnowflakeWarehousesWarehousesOutputReference" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.Initializer"></a>
+
+```typescript
+import { DataSnowflakeWarehousesWarehousesOutputReference } from '@cdktf/provider-snowflake'
+
+new DataSnowflakeWarehousesWarehousesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+
+---
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
@@ -71906,16 +74135,17 @@ public interpolationForAttribute(property: string): IResolvable
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.property.comment">comment</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.property.scalingPolicy">scalingPolicy</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.property.size">size</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.property.state">state</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.property.type">type</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.property.comment">comment</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.property.scalingPolicy">scalingPolicy</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.property.size">size</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.property.state">state</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses">DataSnowflakeWarehousesWarehouses</a></code> | *No description.* |
 
 ---
 
-##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.property.comment"></a>
+##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.property.comment"></a>
 
 ```typescript
 public readonly comment: string;
@@ -71925,7 +74155,7 @@ public readonly comment: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -71935,7 +74165,7 @@ public readonly name: string;
 
 ---
 
-##### `scalingPolicy`<sup>Required</sup> <a name="scalingPolicy" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.property.scalingPolicy"></a>
+##### `scalingPolicy`<sup>Required</sup> <a name="scalingPolicy" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.property.scalingPolicy"></a>
 
 ```typescript
 public readonly scalingPolicy: string;
@@ -71945,7 +74175,7 @@ public readonly scalingPolicy: string;
 
 ---
 
-##### `size`<sup>Required</sup> <a name="size" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.property.size"></a>
+##### `size`<sup>Required</sup> <a name="size" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.property.size"></a>
 
 ```typescript
 public readonly size: string;
@@ -71955,7 +74185,7 @@ public readonly size: string;
 
 ---
 
-##### `state`<sup>Required</sup> <a name="state" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.property.state"></a>
+##### `state`<sup>Required</sup> <a name="state" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.property.state"></a>
 
 ```typescript
 public readonly state: string;
@@ -71965,13 +74195,23 @@ public readonly state: string;
 
 ---
 
-##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses.property.type"></a>
+##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.property.type"></a>
 
 ```typescript
 public readonly type: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehousesOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataSnowflakeWarehousesWarehouses;
+```
+
+- *Type:* <a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesWarehouses">DataSnowflakeWarehousesWarehouses</a>
 
 ---
 
@@ -71983,14 +74223,13 @@ public readonly type: string;
 ```typescript
 import { TableColumnDefaultOutputReference } from '@cdktf/provider-snowflake'
 
-new TableColumnDefaultOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new TableColumnDefaultOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-snowflake.TableColumnDefaultOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktf/provider-snowflake.TableColumnDefaultOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-snowflake.TableColumnDefaultOutputReference.Initializer.parameter.isSingleItem">isSingleItem</a></code> | <code>boolean</code> | True if this is a block, false if it's a list. |
 
 ---
 
@@ -72007,14 +74246,6 @@ The parent resource.
 - *Type:* string
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="isSingleItem" id="@cdktf/provider-snowflake.TableColumnDefaultOutputReference.Initializer.parameter.isSingleItem"></a>
-
-- *Type:* boolean
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -72269,14 +74500,13 @@ public readonly internalValue: TableColumnDefault;
 ```typescript
 import { TableColumnIdentityOutputReference } from '@cdktf/provider-snowflake'
 
-new TableColumnIdentityOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new TableColumnIdentityOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-snowflake.TableColumnIdentityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktf/provider-snowflake.TableColumnIdentityOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-snowflake.TableColumnIdentityOutputReference.Initializer.parameter.isSingleItem">isSingleItem</a></code> | <code>boolean</code> | True if this is a block, false if it's a list. |
 
 ---
 
@@ -72293,14 +74523,6 @@ The parent resource.
 - *Type:* string
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="isSingleItem" id="@cdktf/provider-snowflake.TableColumnIdentityOutputReference.Initializer.parameter.isSingleItem"></a>
-
-- *Type:* boolean
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -72526,14 +74748,13 @@ public readonly internalValue: TableColumnIdentity;
 ```typescript
 import { TablePrimaryKeyOutputReference } from '@cdktf/provider-snowflake'
 
-new TablePrimaryKeyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new TablePrimaryKeyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-snowflake.TablePrimaryKeyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktf/provider-snowflake.TablePrimaryKeyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-snowflake.TablePrimaryKeyOutputReference.Initializer.parameter.isSingleItem">isSingleItem</a></code> | <code>boolean</code> | True if this is a block, false if it's a list. |
 
 ---
 
@@ -72550,14 +74771,6 @@ The parent resource.
 - *Type:* string
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="isSingleItem" id="@cdktf/provider-snowflake.TablePrimaryKeyOutputReference.Initializer.parameter.isSingleItem"></a>
-
-- *Type:* boolean
-
-True if this is a block, false if it's a list.
 
 ---
 

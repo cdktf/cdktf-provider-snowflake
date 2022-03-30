@@ -20,7 +20,45 @@ export interface DataSnowflakeMaterializedViewsConfig extends cdktf.TerraformMet
   */
   readonly schema: string;
 }
-export class DataSnowflakeMaterializedViewsMaterializedViews extends cdktf.ComplexComputedList {
+export interface DataSnowflakeMaterializedViewsMaterializedViews {
+}
+
+export function dataSnowflakeMaterializedViewsMaterializedViewsToTerraform(struct?: DataSnowflakeMaterializedViewsMaterializedViews): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataSnowflakeMaterializedViewsMaterializedViewsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataSnowflakeMaterializedViewsMaterializedViews | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataSnowflakeMaterializedViewsMaterializedViews | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // comment - computed: true, optional: false, required: false
   public get comment() {
@@ -43,6 +81,25 @@ export class DataSnowflakeMaterializedViewsMaterializedViews extends cdktf.Compl
   }
 }
 
+export class DataSnowflakeMaterializedViewsMaterializedViewsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataSnowflakeMaterializedViewsMaterializedViewsOutputReference {
+    return new DataSnowflakeMaterializedViewsMaterializedViewsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/snowflake/d/materialized_views snowflake_materialized_views}
 */
@@ -51,7 +108,7 @@ export class DataSnowflakeMaterializedViews extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "snowflake_materialized_views";
+  public static readonly tfResourceType = "snowflake_materialized_views";
 
   // ===========
   // INITIALIZER
@@ -68,7 +125,9 @@ export class DataSnowflakeMaterializedViews extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'snowflake_materialized_views',
       terraformGeneratorMetadata: {
-        providerName: 'snowflake'
+        providerName: 'snowflake',
+        providerVersion: '0.29.0',
+        providerVersionConstraint: ' ~> 0.25'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -102,8 +161,9 @@ export class DataSnowflakeMaterializedViews extends cdktf.TerraformDataSource {
   }
 
   // materialized_views - computed: true, optional: false, required: false
-  public materializedViews(index: string) {
-    return new DataSnowflakeMaterializedViewsMaterializedViews(this, 'materialized_views', index, false);
+  private _materializedViews = new DataSnowflakeMaterializedViewsMaterializedViewsList(this, "materialized_views", false);
+  public get materializedViews() {
+    return this._materializedViews;
   }
 
   // schema - computed: false, optional: false, required: true

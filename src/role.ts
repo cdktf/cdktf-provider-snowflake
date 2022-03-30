@@ -71,7 +71,7 @@ export class Role extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "snowflake_role";
+  public static readonly tfResourceType = "snowflake_role";
 
   // ===========
   // INITIALIZER
@@ -88,7 +88,9 @@ export class Role extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'snowflake_role',
       terraformGeneratorMetadata: {
-        providerName: 'snowflake'
+        providerName: 'snowflake',
+        providerVersion: '0.29.0',
+        providerVersionConstraint: ' ~> 0.25'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

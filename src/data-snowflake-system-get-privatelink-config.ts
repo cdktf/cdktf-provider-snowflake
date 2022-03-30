@@ -17,7 +17,7 @@ export class DataSnowflakeSystemGetPrivatelinkConfig extends cdktf.TerraformData
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "snowflake_system_get_privatelink_config";
+  public static readonly tfResourceType = "snowflake_system_get_privatelink_config";
 
   // ===========
   // INITIALIZER
@@ -34,7 +34,9 @@ export class DataSnowflakeSystemGetPrivatelinkConfig extends cdktf.TerraformData
     super(scope, id, {
       terraformResourceType: 'snowflake_system_get_privatelink_config',
       terraformGeneratorMetadata: {
-        providerName: 'snowflake'
+        providerName: 'snowflake',
+        providerVersion: '0.29.0',
+        providerVersionConstraint: ' ~> 0.25'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

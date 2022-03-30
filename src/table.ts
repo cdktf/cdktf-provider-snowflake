@@ -107,10 +107,9 @@ export class TableColumnDefaultOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): TableColumnDefault | undefined {
@@ -226,10 +225,9 @@ export class TableColumnIdentityOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): TableColumnIdentity | undefined {
@@ -377,10 +375,9 @@ export class TablePrimaryKeyOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): TablePrimaryKey | undefined {
@@ -488,7 +485,7 @@ export class Table extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "snowflake_table";
+  public static readonly tfResourceType = "snowflake_table";
 
   // ===========
   // INITIALIZER
@@ -505,7 +502,9 @@ export class Table extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'snowflake_table',
       terraformGeneratorMetadata: {
-        providerName: 'snowflake'
+        providerName: 'snowflake',
+        providerVersion: '0.29.0',
+        providerVersionConstraint: ' ~> 0.25'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -656,7 +655,7 @@ export class Table extends cdktf.TerraformResource {
   }
 
   // primary_key - computed: false, optional: true, required: false
-  private _primaryKey = new TablePrimaryKeyOutputReference(this, "primary_key", true);
+  private _primaryKey = new TablePrimaryKeyOutputReference(this, "primary_key");
   public get primaryKey() {
     return this._primaryKey;
   }

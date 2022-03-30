@@ -65,7 +65,7 @@ export class ApiIntegration extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "snowflake_api_integration";
+  public static readonly tfResourceType = "snowflake_api_integration";
 
   // ===========
   // INITIALIZER
@@ -82,7 +82,9 @@ export class ApiIntegration extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'snowflake_api_integration',
       terraformGeneratorMetadata: {
-        providerName: 'snowflake'
+        providerName: 'snowflake',
+        providerVersion: '0.29.0',
+        providerVersionConstraint: ' ~> 0.25'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

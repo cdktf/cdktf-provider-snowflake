@@ -85,7 +85,7 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "snowflake";
+  public static readonly tfResourceType = "snowflake";
 
   // ===========
   // INITIALIZER
@@ -103,6 +103,7 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'snowflake',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
+        providerVersion: '0.29.0',
         providerVersionConstraint: ' ~> 0.25'
       },
       terraformProviderSource: 'chanzuckerberg/snowflake'

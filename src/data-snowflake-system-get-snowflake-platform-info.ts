@@ -17,7 +17,7 @@ export class DataSnowflakeSystemGetSnowflakePlatformInfo extends cdktf.Terraform
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "snowflake_system_get_snowflake_platform_info";
+  public static readonly tfResourceType = "snowflake_system_get_snowflake_platform_info";
 
   // ===========
   // INITIALIZER
@@ -34,7 +34,9 @@ export class DataSnowflakeSystemGetSnowflakePlatformInfo extends cdktf.Terraform
     super(scope, id, {
       terraformResourceType: 'snowflake_system_get_snowflake_platform_info',
       terraformGeneratorMetadata: {
-        providerName: 'snowflake'
+        providerName: 'snowflake',
+        providerVersion: '0.29.0',
+        providerVersionConstraint: ' ~> 0.25'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

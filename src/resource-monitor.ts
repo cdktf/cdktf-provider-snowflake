@@ -77,7 +77,7 @@ export class ResourceMonitor extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "snowflake_resource_monitor";
+  public static readonly tfResourceType = "snowflake_resource_monitor";
 
   // ===========
   // INITIALIZER
@@ -94,7 +94,9 @@ export class ResourceMonitor extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'snowflake_resource_monitor',
       terraformGeneratorMetadata: {
-        providerName: 'snowflake'
+        providerName: 'snowflake',
+        providerVersion: '0.29.0',
+        providerVersionConstraint: ' ~> 0.25'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

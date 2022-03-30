@@ -23,7 +23,7 @@ export class DataSnowflakeSystemGenerateScimAccessToken extends cdktf.TerraformD
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "snowflake_system_generate_scim_access_token";
+  public static readonly tfResourceType = "snowflake_system_generate_scim_access_token";
 
   // ===========
   // INITIALIZER
@@ -40,7 +40,9 @@ export class DataSnowflakeSystemGenerateScimAccessToken extends cdktf.TerraformD
     super(scope, id, {
       terraformResourceType: 'snowflake_system_generate_scim_access_token',
       terraformGeneratorMetadata: {
-        providerName: 'snowflake'
+        providerName: 'snowflake',
+        providerVersion: '0.29.0',
+        providerVersionConstraint: ' ~> 0.25'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

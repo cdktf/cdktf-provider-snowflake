@@ -111,7 +111,7 @@ export class MaterializedView extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "snowflake_materialized_view";
+  public static readonly tfResourceType = "snowflake_materialized_view";
 
   // ===========
   // INITIALIZER
@@ -128,7 +128,9 @@ export class MaterializedView extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'snowflake_materialized_view',
       terraformGeneratorMetadata: {
-        providerName: 'snowflake'
+        providerName: 'snowflake',
+        providerVersion: '0.29.0',
+        providerVersionConstraint: ' ~> 0.25'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

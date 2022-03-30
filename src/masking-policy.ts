@@ -59,7 +59,7 @@ export class MaskingPolicy extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "snowflake_masking_policy";
+  public static readonly tfResourceType = "snowflake_masking_policy";
 
   // ===========
   // INITIALIZER
@@ -76,7 +76,9 @@ export class MaskingPolicy extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'snowflake_masking_policy',
       terraformGeneratorMetadata: {
-        providerName: 'snowflake'
+        providerName: 'snowflake',
+        providerVersion: '0.29.0',
+        providerVersionConstraint: ' ~> 0.25'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
