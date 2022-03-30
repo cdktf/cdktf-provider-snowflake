@@ -14,7 +14,45 @@ export interface DataSnowflakeSchemasConfig extends cdktf.TerraformMetaArguments
   */
   readonly database: string;
 }
-export class DataSnowflakeSchemasSchemas extends cdktf.ComplexComputedList {
+export interface DataSnowflakeSchemasSchemas {
+}
+
+export function dataSnowflakeSchemasSchemasToTerraform(struct?: DataSnowflakeSchemasSchemas): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataSnowflakeSchemasSchemasOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataSnowflakeSchemasSchemas | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataSnowflakeSchemasSchemas | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // comment - computed: true, optional: false, required: false
   public get comment() {
@@ -32,6 +70,25 @@ export class DataSnowflakeSchemasSchemas extends cdktf.ComplexComputedList {
   }
 }
 
+export class DataSnowflakeSchemasSchemasList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataSnowflakeSchemasSchemasOutputReference {
+    return new DataSnowflakeSchemasSchemasOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/snowflake/d/schemas snowflake_schemas}
 */
@@ -40,7 +97,7 @@ export class DataSnowflakeSchemas extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "snowflake_schemas";
+  public static readonly tfResourceType = "snowflake_schemas";
 
   // ===========
   // INITIALIZER
@@ -57,7 +114,9 @@ export class DataSnowflakeSchemas extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'snowflake_schemas',
       terraformGeneratorMetadata: {
-        providerName: 'snowflake'
+        providerName: 'snowflake',
+        providerVersion: '0.29.0',
+        providerVersionConstraint: ' ~> 0.25'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -90,8 +149,9 @@ export class DataSnowflakeSchemas extends cdktf.TerraformDataSource {
   }
 
   // schemas - computed: true, optional: false, required: false
-  public schemas(index: string) {
-    return new DataSnowflakeSchemasSchemas(this, 'schemas', index, false);
+  private _schemas = new DataSnowflakeSchemasSchemasList(this, "schemas", false);
+  public get schemas() {
+    return this._schemas;
   }
 
   // =========

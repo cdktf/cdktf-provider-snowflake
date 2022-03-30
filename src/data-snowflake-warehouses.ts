@@ -8,7 +8,45 @@ import * as cdktf from 'cdktf';
 
 export interface DataSnowflakeWarehousesConfig extends cdktf.TerraformMetaArguments {
 }
-export class DataSnowflakeWarehousesWarehouses extends cdktf.ComplexComputedList {
+export interface DataSnowflakeWarehousesWarehouses {
+}
+
+export function dataSnowflakeWarehousesWarehousesToTerraform(struct?: DataSnowflakeWarehousesWarehouses): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataSnowflakeWarehousesWarehousesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataSnowflakeWarehousesWarehouses | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataSnowflakeWarehousesWarehouses | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // comment - computed: true, optional: false, required: false
   public get comment() {
@@ -41,6 +79,25 @@ export class DataSnowflakeWarehousesWarehouses extends cdktf.ComplexComputedList
   }
 }
 
+export class DataSnowflakeWarehousesWarehousesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataSnowflakeWarehousesWarehousesOutputReference {
+    return new DataSnowflakeWarehousesWarehousesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/snowflake/d/warehouses snowflake_warehouses}
 */
@@ -49,7 +106,7 @@ export class DataSnowflakeWarehouses extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "snowflake_warehouses";
+  public static readonly tfResourceType = "snowflake_warehouses";
 
   // ===========
   // INITIALIZER
@@ -66,7 +123,9 @@ export class DataSnowflakeWarehouses extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'snowflake_warehouses',
       terraformGeneratorMetadata: {
-        providerName: 'snowflake'
+        providerName: 'snowflake',
+        providerVersion: '0.29.0',
+        providerVersionConstraint: ' ~> 0.25'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -85,8 +144,9 @@ export class DataSnowflakeWarehouses extends cdktf.TerraformDataSource {
   }
 
   // warehouses - computed: true, optional: false, required: false
-  public warehouses(index: string) {
-    return new DataSnowflakeWarehousesWarehouses(this, 'warehouses', index, false);
+  private _warehouses = new DataSnowflakeWarehousesWarehousesList(this, "warehouses", false);
+  public get warehouses() {
+    return this._warehouses;
   }
 
   // =========

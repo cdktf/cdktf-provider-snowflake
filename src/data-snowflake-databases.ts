@@ -8,7 +8,45 @@ import * as cdktf from 'cdktf';
 
 export interface DataSnowflakeDatabasesConfig extends cdktf.TerraformMetaArguments {
 }
-export class DataSnowflakeDatabasesDatabases extends cdktf.ComplexComputedList {
+export interface DataSnowflakeDatabasesDatabases {
+}
+
+export function dataSnowflakeDatabasesDatabasesToTerraform(struct?: DataSnowflakeDatabasesDatabases): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataSnowflakeDatabasesDatabasesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataSnowflakeDatabasesDatabases | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataSnowflakeDatabasesDatabases | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // comment - computed: true, optional: false, required: false
   public get comment() {
@@ -56,6 +94,25 @@ export class DataSnowflakeDatabasesDatabases extends cdktf.ComplexComputedList {
   }
 }
 
+export class DataSnowflakeDatabasesDatabasesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataSnowflakeDatabasesDatabasesOutputReference {
+    return new DataSnowflakeDatabasesDatabasesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/snowflake/d/databases snowflake_databases}
 */
@@ -64,7 +121,7 @@ export class DataSnowflakeDatabases extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "snowflake_databases";
+  public static readonly tfResourceType = "snowflake_databases";
 
   // ===========
   // INITIALIZER
@@ -81,7 +138,9 @@ export class DataSnowflakeDatabases extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'snowflake_databases',
       terraformGeneratorMetadata: {
-        providerName: 'snowflake'
+        providerName: 'snowflake',
+        providerVersion: '0.29.0',
+        providerVersionConstraint: ' ~> 0.25'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -95,8 +154,9 @@ export class DataSnowflakeDatabases extends cdktf.TerraformDataSource {
   // ==========
 
   // databases - computed: true, optional: false, required: false
-  public databases(index: string) {
-    return new DataSnowflakeDatabasesDatabases(this, 'databases', index, false);
+  private _databases = new DataSnowflakeDatabasesDatabasesList(this, "databases", false);
+  public get databases() {
+    return this._databases;
   }
 
   // id - computed: true, optional: true, required: false

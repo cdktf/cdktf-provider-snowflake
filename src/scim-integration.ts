@@ -41,7 +41,7 @@ export class ScimIntegration extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "snowflake_scim_integration";
+  public static readonly tfResourceType = "snowflake_scim_integration";
 
   // ===========
   // INITIALIZER
@@ -58,7 +58,9 @@ export class ScimIntegration extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'snowflake_scim_integration',
       terraformGeneratorMetadata: {
-        providerName: 'snowflake'
+        providerName: 'snowflake',
+        providerVersion: '0.29.0',
+        providerVersionConstraint: ' ~> 0.25'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

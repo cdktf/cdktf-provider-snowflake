@@ -20,7 +20,45 @@ export interface DataSnowflakeProceduresConfig extends cdktf.TerraformMetaArgume
   */
   readonly schema: string;
 }
-export class DataSnowflakeProceduresProcedures extends cdktf.ComplexComputedList {
+export interface DataSnowflakeProceduresProcedures {
+}
+
+export function dataSnowflakeProceduresProceduresToTerraform(struct?: DataSnowflakeProceduresProcedures): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataSnowflakeProceduresProceduresOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataSnowflakeProceduresProcedures | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataSnowflakeProceduresProcedures | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // argument_types - computed: true, optional: false, required: false
   public get argumentTypes() {
@@ -53,6 +91,25 @@ export class DataSnowflakeProceduresProcedures extends cdktf.ComplexComputedList
   }
 }
 
+export class DataSnowflakeProceduresProceduresList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataSnowflakeProceduresProceduresOutputReference {
+    return new DataSnowflakeProceduresProceduresOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/snowflake/d/procedures snowflake_procedures}
 */
@@ -61,7 +118,7 @@ export class DataSnowflakeProcedures extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "snowflake_procedures";
+  public static readonly tfResourceType = "snowflake_procedures";
 
   // ===========
   // INITIALIZER
@@ -78,7 +135,9 @@ export class DataSnowflakeProcedures extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'snowflake_procedures',
       terraformGeneratorMetadata: {
-        providerName: 'snowflake'
+        providerName: 'snowflake',
+        providerVersion: '0.29.0',
+        providerVersionConstraint: ' ~> 0.25'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -112,8 +171,9 @@ export class DataSnowflakeProcedures extends cdktf.TerraformDataSource {
   }
 
   // procedures - computed: true, optional: false, required: false
-  public procedures(index: string) {
-    return new DataSnowflakeProceduresProcedures(this, 'procedures', index, false);
+  private _procedures = new DataSnowflakeProceduresProceduresList(this, "procedures", false);
+  public get procedures() {
+    return this._procedures;
   }
 
   // schema - computed: false, optional: false, required: true

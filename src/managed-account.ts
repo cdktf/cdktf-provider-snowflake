@@ -47,7 +47,7 @@ export class ManagedAccount extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "snowflake_managed_account";
+  public static readonly tfResourceType = "snowflake_managed_account";
 
   // ===========
   // INITIALIZER
@@ -64,7 +64,9 @@ export class ManagedAccount extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'snowflake_managed_account',
       terraformGeneratorMetadata: {
-        providerName: 'snowflake'
+        providerName: 'snowflake',
+        providerVersion: '0.29.0',
+        providerVersionConstraint: ' ~> 0.25'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

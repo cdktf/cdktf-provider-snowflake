@@ -65,7 +65,7 @@ export class StreamGrant extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "snowflake_stream_grant";
+  public static readonly tfResourceType = "snowflake_stream_grant";
 
   // ===========
   // INITIALIZER
@@ -82,7 +82,9 @@ export class StreamGrant extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'snowflake_stream_grant',
       terraformGeneratorMetadata: {
-        providerName: 'snowflake'
+        providerName: 'snowflake',
+        providerVersion: '0.29.0',
+        providerVersionConstraint: ' ~> 0.25'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

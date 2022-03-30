@@ -17,7 +17,7 @@ export class DataSnowflakeCurrentAccount extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "snowflake_current_account";
+  public static readonly tfResourceType = "snowflake_current_account";
 
   // ===========
   // INITIALIZER
@@ -34,7 +34,9 @@ export class DataSnowflakeCurrentAccount extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'snowflake_current_account',
       terraformGeneratorMetadata: {
-        providerName: 'snowflake'
+        providerName: 'snowflake',
+        providerVersion: '0.29.0',
+        providerVersionConstraint: ' ~> 0.25'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

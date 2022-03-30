@@ -47,7 +47,7 @@ export class Sequence extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "snowflake_sequence";
+  public static readonly tfResourceType = "snowflake_sequence";
 
   // ===========
   // INITIALIZER
@@ -64,7 +64,9 @@ export class Sequence extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'snowflake_sequence',
       terraformGeneratorMetadata: {
-        providerName: 'snowflake'
+        providerName: 'snowflake',
+        providerVersion: '0.29.0',
+        providerVersionConstraint: ' ~> 0.25'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -20,7 +20,45 @@ export interface DataSnowflakeFileFormatsConfig extends cdktf.TerraformMetaArgum
   */
   readonly schema: string;
 }
-export class DataSnowflakeFileFormatsFileFormats extends cdktf.ComplexComputedList {
+export interface DataSnowflakeFileFormatsFileFormats {
+}
+
+export function dataSnowflakeFileFormatsFileFormatsToTerraform(struct?: DataSnowflakeFileFormatsFileFormats): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataSnowflakeFileFormatsFileFormatsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataSnowflakeFileFormatsFileFormats | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataSnowflakeFileFormatsFileFormats | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // comment - computed: true, optional: false, required: false
   public get comment() {
@@ -48,6 +86,25 @@ export class DataSnowflakeFileFormatsFileFormats extends cdktf.ComplexComputedLi
   }
 }
 
+export class DataSnowflakeFileFormatsFileFormatsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataSnowflakeFileFormatsFileFormatsOutputReference {
+    return new DataSnowflakeFileFormatsFileFormatsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/snowflake/d/file_formats snowflake_file_formats}
 */
@@ -56,7 +113,7 @@ export class DataSnowflakeFileFormats extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "snowflake_file_formats";
+  public static readonly tfResourceType = "snowflake_file_formats";
 
   // ===========
   // INITIALIZER
@@ -73,7 +130,9 @@ export class DataSnowflakeFileFormats extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'snowflake_file_formats',
       terraformGeneratorMetadata: {
-        providerName: 'snowflake'
+        providerName: 'snowflake',
+        providerVersion: '0.29.0',
+        providerVersionConstraint: ' ~> 0.25'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -102,8 +161,9 @@ export class DataSnowflakeFileFormats extends cdktf.TerraformDataSource {
   }
 
   // file_formats - computed: true, optional: false, required: false
-  public fileFormats(index: string) {
-    return new DataSnowflakeFileFormatsFileFormats(this, 'file_formats', index, false);
+  private _fileFormats = new DataSnowflakeFileFormatsFileFormatsList(this, "file_formats", false);
+  public get fileFormats() {
+    return this._fileFormats;
   }
 
   // id - computed: true, optional: true, required: false
