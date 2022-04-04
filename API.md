@@ -40427,6 +40427,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.resetAlias">resetAlias</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.resetBrowserAuth">resetBrowserAuth</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.resetHost">resetHost</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.resetOauthAccessToken">resetOauthAccessToken</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.resetOauthClientId">resetOauthClientId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.resetOauthClientSecret">resetOauthClientSecret</a></code> | *No description.* |
@@ -40516,6 +40517,12 @@ public resetAlias(): void
 
 ```typescript
 public resetBrowserAuth(): void
+```
+
+##### `resetHost` <a name="resetHost" id="@cdktf/provider-snowflake.SnowflakeProvider.resetHost"></a>
+
+```typescript
+public resetHost(): void
 ```
 
 ##### `resetOauthAccessToken` <a name="resetOauthAccessToken" id="@cdktf/provider-snowflake.SnowflakeProvider.resetOauthAccessToken"></a>
@@ -40646,6 +40653,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.property.accountInput">accountInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.property.aliasInput">aliasInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.property.browserAuthInput">browserAuthInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.property.hostInput">hostInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.property.oauthAccessTokenInput">oauthAccessTokenInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.property.oauthClientIdInput">oauthClientIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.property.oauthClientSecretInput">oauthClientSecretInput</a></code> | <code>string</code> | *No description.* |
@@ -40661,6 +40669,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.property.usernameInput">usernameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.property.account">account</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.property.browserAuth">browserAuth</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.property.host">host</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.property.oauthAccessToken">oauthAccessToken</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.property.oauthClientId">oauthClientId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.property.oauthClientSecret">oauthClientSecret</a></code> | <code>string</code> | *No description.* |
@@ -40796,6 +40805,16 @@ public readonly browserAuthInput: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `hostInput`<sup>Optional</sup> <a name="hostInput" id="@cdktf/provider-snowflake.SnowflakeProvider.property.hostInput"></a>
+
+```typescript
+public readonly hostInput: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -40946,6 +40965,16 @@ public readonly browserAuth: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `host`<sup>Optional</sup> <a name="host" id="@cdktf/provider-snowflake.SnowflakeProvider.property.host"></a>
+
+```typescript
+public readonly host: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -63213,6 +63242,7 @@ const snowflakeProviderConfig: SnowflakeProviderConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProviderConfig.property.username">username</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#username SnowflakeProvider#username}. |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProviderConfig.property.alias">alias</a></code> | <code>string</code> | Alias name. |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProviderConfig.property.browserAuth">browserAuth</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#browser_auth SnowflakeProvider#browser_auth}. |
+| <code><a href="#@cdktf/provider-snowflake.SnowflakeProviderConfig.property.host">host</a></code> | <code>string</code> | Supports passing in a custom host value to the snowflake go driver for use with privatelink. |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProviderConfig.property.oauthAccessToken">oauthAccessToken</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#oauth_access_token SnowflakeProvider#oauth_access_token}. |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProviderConfig.property.oauthClientId">oauthClientId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#oauth_client_id SnowflakeProvider#oauth_client_id}. |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProviderConfig.property.oauthClientSecret">oauthClientSecret</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#oauth_client_secret SnowflakeProvider#oauth_client_secret}. |
@@ -63275,6 +63305,20 @@ public readonly browserAuth: boolean | IResolvable;
 - *Type:* boolean | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#browser_auth SnowflakeProvider#browser_auth}.
+
+---
+
+##### `host`<sup>Optional</sup> <a name="host" id="@cdktf/provider-snowflake.SnowflakeProviderConfig.property.host"></a>
+
+```typescript
+public readonly host: string;
+```
+
+- *Type:* string
+
+Supports passing in a custom host value to the snowflake go driver for use with privatelink.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#host SnowflakeProvider#host}
 
 ---
 

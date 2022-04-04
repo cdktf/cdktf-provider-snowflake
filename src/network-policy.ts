@@ -59,7 +59,7 @@ export class NetworkPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_network_policy',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.29.0',
+        providerVersion: '0.30.0',
         providerVersionConstraint: ' ~> 0.25'
       },
       provider: config.provider,

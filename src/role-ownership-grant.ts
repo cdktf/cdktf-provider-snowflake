@@ -53,7 +53,7 @@ export class RoleOwnershipGrant extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_role_ownership_grant',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.29.0',
+        providerVersion: '0.30.0',
         providerVersionConstraint: ' ~> 0.25'
       },
       provider: config.provider,

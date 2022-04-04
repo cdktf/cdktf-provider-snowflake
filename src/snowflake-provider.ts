@@ -16,6 +16,12 @@ export interface SnowflakeProviderConfig {
   */
   readonly browserAuth?: boolean | cdktf.IResolvable;
   /**
+  * Supports passing in a custom host value to the snowflake go driver for use with privatelink
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#host SnowflakeProvider#host}
+  */
+  readonly host?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#oauth_access_token SnowflakeProvider#oauth_access_token}
   */
   readonly oauthAccessToken?: string;
@@ -103,13 +109,14 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'snowflake',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.29.0',
+        providerVersion: '0.30.0',
         providerVersionConstraint: ' ~> 0.25'
       },
       terraformProviderSource: 'chanzuckerberg/snowflake'
     });
     this._account = config.account;
     this._browserAuth = config.browserAuth;
+    this._host = config.host;
     this._oauthAccessToken = config.oauthAccessToken;
     this._oauthClientId = config.oauthClientId;
     this._oauthClientSecret = config.oauthClientSecret;
@@ -157,6 +164,22 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
   // Temporarily expose input value. Use with caution.
   public get browserAuthInput() {
     return this._browserAuth;
+  }
+
+  // host - computed: false, optional: true, required: false
+  private _host?: string; 
+  public get host() {
+    return this._host;
+  }
+  public set host(value: string | undefined) {
+    this._host = value;
+  }
+  public resetHost() {
+    this._host = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hostInput() {
+    return this._host;
   }
 
   // oauth_access_token - computed: false, optional: true, required: false
@@ -388,6 +411,7 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
     return {
       account: cdktf.stringToTerraform(this._account),
       browser_auth: cdktf.booleanToTerraform(this._browserAuth),
+      host: cdktf.stringToTerraform(this._host),
       oauth_access_token: cdktf.stringToTerraform(this._oauthAccessToken),
       oauth_client_id: cdktf.stringToTerraform(this._oauthClientId),
       oauth_client_secret: cdktf.stringToTerraform(this._oauthClientSecret),
