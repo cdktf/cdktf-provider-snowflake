@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/snowflake/r/role_ownership_grant
+// https://www.terraform.io/docs/providers/snowflake/r/user_ownership_grant
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -6,51 +6,51 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface RoleOwnershipGrantConfig extends cdktf.TerraformMetaArguments {
+export interface UserOwnershipGrantConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies whether to remove or transfer all existing outbound privileges on the object when ownership is transferred to a new role.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/role_ownership_grant#current_grants RoleOwnershipGrant#current_grants}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/user_ownership_grant#current_grants UserOwnershipGrant#current_grants}
   */
   readonly currentGrants?: string;
   /**
-  * The name of the role ownership is granted on.
+  * The name of the user ownership is granted on.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/role_ownership_grant#on_role_name RoleOwnershipGrant#on_role_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/user_ownership_grant#on_user_name UserOwnershipGrant#on_user_name}
   */
-  readonly onRoleName: string;
+  readonly onUserName: string;
   /**
   * The name of the role to grant ownership. Please ensure that the role that terraform is using is granted access.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/role_ownership_grant#to_role_name RoleOwnershipGrant#to_role_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/user_ownership_grant#to_role_name UserOwnershipGrant#to_role_name}
   */
   readonly toRoleName: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/role_ownership_grant snowflake_role_ownership_grant}
+* Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/user_ownership_grant snowflake_user_ownership_grant}
 */
-export class RoleOwnershipGrant extends cdktf.TerraformResource {
+export class UserOwnershipGrant extends cdktf.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = "snowflake_role_ownership_grant";
+  public static readonly tfResourceType = "snowflake_user_ownership_grant";
 
   // ===========
   // INITIALIZER
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/snowflake/r/role_ownership_grant snowflake_role_ownership_grant} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/snowflake/r/user_ownership_grant snowflake_user_ownership_grant} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options RoleOwnershipGrantConfig
+  * @param options UserOwnershipGrantConfig
   */
-  public constructor(scope: Construct, id: string, config: RoleOwnershipGrantConfig) {
+  public constructor(scope: Construct, id: string, config: UserOwnershipGrantConfig) {
     super(scope, id, {
-      terraformResourceType: 'snowflake_role_ownership_grant',
+      terraformResourceType: 'snowflake_user_ownership_grant',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
         providerVersion: '0.31.0',
@@ -62,7 +62,7 @@ export class RoleOwnershipGrant extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._currentGrants = config.currentGrants;
-    this._onRoleName = config.onRoleName;
+    this._onUserName = config.onUserName;
     this._toRoleName = config.toRoleName;
   }
 
@@ -91,17 +91,17 @@ export class RoleOwnershipGrant extends cdktf.TerraformResource {
     return this.getStringAttribute('id');
   }
 
-  // on_role_name - computed: false, optional: false, required: true
-  private _onRoleName?: string; 
-  public get onRoleName() {
-    return this.getStringAttribute('on_role_name');
+  // on_user_name - computed: false, optional: false, required: true
+  private _onUserName?: string; 
+  public get onUserName() {
+    return this.getStringAttribute('on_user_name');
   }
-  public set onRoleName(value: string) {
-    this._onRoleName = value;
+  public set onUserName(value: string) {
+    this._onUserName = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get onRoleNameInput() {
-    return this._onRoleName;
+  public get onUserNameInput() {
+    return this._onUserName;
   }
 
   // to_role_name - computed: false, optional: false, required: true
@@ -124,7 +124,7 @@ export class RoleOwnershipGrant extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       current_grants: cdktf.stringToTerraform(this._currentGrants),
-      on_role_name: cdktf.stringToTerraform(this._onRoleName),
+      on_user_name: cdktf.stringToTerraform(this._onUserName),
       to_role_name: cdktf.stringToTerraform(this._toRoleName),
     };
   }

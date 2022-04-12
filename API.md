@@ -49153,6 +49153,529 @@ public readonly tfResourceType: string;
 
 ---
 
+### UserOwnershipGrant <a name="UserOwnershipGrant" id="@cdktf/provider-snowflake.UserOwnershipGrant"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/user_ownership_grant snowflake_user_ownership_grant}.
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.UserOwnershipGrant.Initializer"></a>
+
+```typescript
+import { UserOwnershipGrant } from '@cdktf/provider-snowflake'
+
+new UserOwnershipGrant(scope: Construct, id: string, config: UserOwnershipGrantConfig)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrantConfig">UserOwnershipGrantConfig</a></code> | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-snowflake.UserOwnershipGrant.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.UserOwnershipGrant.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-snowflake.UserOwnershipGrant.Initializer.parameter.config"></a>
+
+- *Type:* <a href="#@cdktf/provider-snowflake.UserOwnershipGrantConfig">UserOwnershipGrantConfig</a>
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.resetCurrentGrants">resetCurrentGrants</a></code> | *No description.* |
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-snowflake.UserOwnershipGrant.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Returns a string representation of this construct.
+
+##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.UserOwnershipGrant.addOverride"></a>
+
+```typescript
+public addOverride(path: string, value: any): void
+```
+
+###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.UserOwnershipGrant.addOverride.parameter.path"></a>
+
+- *Type:* string
+
+---
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-snowflake.UserOwnershipGrant.addOverride.parameter.value"></a>
+
+- *Type:* any
+
+---
+
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.UserOwnershipGrant.overrideLogicalId"></a>
+
+```typescript
+public overrideLogicalId(newLogicalId: string): void
+```
+
+Overrides the auto-generated logical ID with a specific ID.
+
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-snowflake.UserOwnershipGrant.overrideLogicalId.parameter.newLogicalId"></a>
+
+- *Type:* string
+
+The new logical ID to use for this stack element.
+
+---
+
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.UserOwnershipGrant.resetOverrideLogicalId"></a>
+
+```typescript
+public resetOverrideLogicalId(): void
+```
+
+Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.UserOwnershipGrant.toMetadata"></a>
+
+```typescript
+public toMetadata(): any
+```
+
+##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.UserOwnershipGrant.toTerraform"></a>
+
+```typescript
+public toTerraform(): any
+```
+
+Adds this resource to the terraform JSON output.
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.UserOwnershipGrant.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.UserOwnershipGrant.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.UserOwnershipGrant.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.UserOwnershipGrant.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.UserOwnershipGrant.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.UserOwnershipGrant.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.UserOwnershipGrant.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.UserOwnershipGrant.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.UserOwnershipGrant.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.UserOwnershipGrant.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.UserOwnershipGrant.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.UserOwnershipGrant.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.UserOwnershipGrant.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.UserOwnershipGrant.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.UserOwnershipGrant.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.UserOwnershipGrant.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.UserOwnershipGrant.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.UserOwnershipGrant.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.UserOwnershipGrant.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.UserOwnershipGrant.interpolationForAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `resetCurrentGrants` <a name="resetCurrentGrants" id="@cdktf/provider-snowflake.UserOwnershipGrant.resetCurrentGrants"></a>
+
+```typescript
+public resetCurrentGrants(): void
+```
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+
+---
+
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.UserOwnershipGrant.isConstruct"></a>
+
+```typescript
+import { UserOwnershipGrant } from '@cdktf/provider-snowflake'
+
+UserOwnershipGrant.isConstruct(x: any)
+```
+
+Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.UserOwnershipGrant.isConstruct.parameter.x"></a>
+
+- *Type:* any
+
+Any object.
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.property.currentGrantsInput">currentGrantsInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.property.onUserNameInput">onUserNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.property.toRoleNameInput">toRoleNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.property.currentGrants">currentGrants</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.property.onUserName">onUserName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.property.toRoleName">toRoleName</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-snowflake.UserOwnershipGrant.property.node"></a>
+
+```typescript
+public readonly node: Node;
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-snowflake.UserOwnershipGrant.property.cdktfStack"></a>
+
+```typescript
+public readonly cdktfStack: TerraformStack;
+```
+
+- *Type:* cdktf.TerraformStack
+
+---
+
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-snowflake.UserOwnershipGrant.property.friendlyUniqueId"></a>
+
+```typescript
+public readonly friendlyUniqueId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.UserOwnershipGrant.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-snowflake.UserOwnershipGrant.property.terraformMetaArguments"></a>
+
+```typescript
+public readonly terraformMetaArguments: {[ key: string ]: any};
+```
+
+- *Type:* {[ key: string ]: any}
+
+---
+
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-snowflake.UserOwnershipGrant.property.terraformResourceType"></a>
+
+```typescript
+public readonly terraformResourceType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-snowflake.UserOwnershipGrant.property.terraformGeneratorMetadata"></a>
+
+```typescript
+public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
+```
+
+- *Type:* cdktf.TerraformProviderGeneratorMetadata
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.UserOwnershipGrant.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* number
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-snowflake.UserOwnershipGrant.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-snowflake.UserOwnershipGrant.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-snowflake.UserOwnershipGrant.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.UserOwnershipGrant.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
+##### `currentGrantsInput`<sup>Optional</sup> <a name="currentGrantsInput" id="@cdktf/provider-snowflake.UserOwnershipGrant.property.currentGrantsInput"></a>
+
+```typescript
+public readonly currentGrantsInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `onUserNameInput`<sup>Optional</sup> <a name="onUserNameInput" id="@cdktf/provider-snowflake.UserOwnershipGrant.property.onUserNameInput"></a>
+
+```typescript
+public readonly onUserNameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `toRoleNameInput`<sup>Optional</sup> <a name="toRoleNameInput" id="@cdktf/provider-snowflake.UserOwnershipGrant.property.toRoleNameInput"></a>
+
+```typescript
+public readonly toRoleNameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `currentGrants`<sup>Required</sup> <a name="currentGrants" id="@cdktf/provider-snowflake.UserOwnershipGrant.property.currentGrants"></a>
+
+```typescript
+public readonly currentGrants: string;
+```
+
+- *Type:* string
+
+---
+
+##### `onUserName`<sup>Required</sup> <a name="onUserName" id="@cdktf/provider-snowflake.UserOwnershipGrant.property.onUserName"></a>
+
+```typescript
+public readonly onUserName: string;
+```
+
+- *Type:* string
+
+---
+
+##### `toRoleName`<sup>Required</sup> <a name="toRoleName" id="@cdktf/provider-snowflake.UserOwnershipGrant.property.toRoleName"></a>
+
+```typescript
+public readonly toRoleName: string;
+```
+
+- *Type:* string
+
+---
+
+#### Constants <a name="Constants" id="Constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-snowflake.UserOwnershipGrant.property.tfResourceType"></a>
+
+```typescript
+public readonly tfResourceType: string;
+```
+
+- *Type:* string
+
+---
+
 ### UserPublicKeys <a name="UserPublicKeys" id="@cdktf/provider-snowflake.UserPublicKeys"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/user_public_keys snowflake_user_public_keys}.
@@ -63238,23 +63761,23 @@ const snowflakeProviderConfig: SnowflakeProviderConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.SnowflakeProviderConfig.property.account">account</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#account SnowflakeProvider#account}. |
-| <code><a href="#@cdktf/provider-snowflake.SnowflakeProviderConfig.property.username">username</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#username SnowflakeProvider#username}. |
+| <code><a href="#@cdktf/provider-snowflake.SnowflakeProviderConfig.property.account">account</a></code> | <code>string</code> | The name of the Snowflake account. Can also come from the `SNOWFLAKE_ACCOUNT` environment variable. |
+| <code><a href="#@cdktf/provider-snowflake.SnowflakeProviderConfig.property.username">username</a></code> | <code>string</code> | Username for username+password authentication. Can come from the `SNOWFLAKE_USER` environment variable. |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProviderConfig.property.alias">alias</a></code> | <code>string</code> | Alias name. |
-| <code><a href="#@cdktf/provider-snowflake.SnowflakeProviderConfig.property.browserAuth">browserAuth</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#browser_auth SnowflakeProvider#browser_auth}. |
+| <code><a href="#@cdktf/provider-snowflake.SnowflakeProviderConfig.property.browserAuth">browserAuth</a></code> | <code>boolean \| cdktf.IResolvable</code> | Required when `oauth_refresh_token` is used. Can be sourced from `SNOWFLAKE_USE_BROWSER_AUTH` environment variable. |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProviderConfig.property.host">host</a></code> | <code>string</code> | Supports passing in a custom host value to the snowflake go driver for use with privatelink. |
-| <code><a href="#@cdktf/provider-snowflake.SnowflakeProviderConfig.property.oauthAccessToken">oauthAccessToken</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#oauth_access_token SnowflakeProvider#oauth_access_token}. |
-| <code><a href="#@cdktf/provider-snowflake.SnowflakeProviderConfig.property.oauthClientId">oauthClientId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#oauth_client_id SnowflakeProvider#oauth_client_id}. |
-| <code><a href="#@cdktf/provider-snowflake.SnowflakeProviderConfig.property.oauthClientSecret">oauthClientSecret</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#oauth_client_secret SnowflakeProvider#oauth_client_secret}. |
-| <code><a href="#@cdktf/provider-snowflake.SnowflakeProviderConfig.property.oauthEndpoint">oauthEndpoint</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#oauth_endpoint SnowflakeProvider#oauth_endpoint}. |
-| <code><a href="#@cdktf/provider-snowflake.SnowflakeProviderConfig.property.oauthRedirectUrl">oauthRedirectUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#oauth_redirect_url SnowflakeProvider#oauth_redirect_url}. |
-| <code><a href="#@cdktf/provider-snowflake.SnowflakeProviderConfig.property.oauthRefreshToken">oauthRefreshToken</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#oauth_refresh_token SnowflakeProvider#oauth_refresh_token}. |
-| <code><a href="#@cdktf/provider-snowflake.SnowflakeProviderConfig.property.password">password</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#password SnowflakeProvider#password}. |
-| <code><a href="#@cdktf/provider-snowflake.SnowflakeProviderConfig.property.privateKey">privateKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#private_key SnowflakeProvider#private_key}. |
+| <code><a href="#@cdktf/provider-snowflake.SnowflakeProviderConfig.property.oauthAccessToken">oauthAccessToken</a></code> | <code>string</code> | Token for use with OAuth. |
+| <code><a href="#@cdktf/provider-snowflake.SnowflakeProviderConfig.property.oauthClientId">oauthClientId</a></code> | <code>string</code> | Required when `oauth_refresh_token` is used. Can be sourced from `SNOWFLAKE_OAUTH_CLIENT_ID` environment variable. |
+| <code><a href="#@cdktf/provider-snowflake.SnowflakeProviderConfig.property.oauthClientSecret">oauthClientSecret</a></code> | <code>string</code> | Required when `oauth_refresh_token` is used. Can be sourced from `SNOWFLAKE_OAUTH_CLIENT_SECRET` environment variable. |
+| <code><a href="#@cdktf/provider-snowflake.SnowflakeProviderConfig.property.oauthEndpoint">oauthEndpoint</a></code> | <code>string</code> | Required when `oauth_refresh_token` is used. Can be sourced from `SNOWFLAKE_OAUTH_ENDPOINT` environment variable. |
+| <code><a href="#@cdktf/provider-snowflake.SnowflakeProviderConfig.property.oauthRedirectUrl">oauthRedirectUrl</a></code> | <code>string</code> | Required when `oauth_refresh_token` is used. Can be sourced from `SNOWFLAKE_OAUTH_REDIRECT_URL` environment variable. |
+| <code><a href="#@cdktf/provider-snowflake.SnowflakeProviderConfig.property.oauthRefreshToken">oauthRefreshToken</a></code> | <code>string</code> | Token for use with OAuth. |
+| <code><a href="#@cdktf/provider-snowflake.SnowflakeProviderConfig.property.password">password</a></code> | <code>string</code> | Password for username+password auth. Cannot be used with `browser_auth` or `private_key_path`. Can be source from `SNOWFLAKE_PASSWORD` environment variable. |
+| <code><a href="#@cdktf/provider-snowflake.SnowflakeProviderConfig.property.privateKey">privateKey</a></code> | <code>string</code> | Private Key for username+private-key auth. Cannot be used with `browser_auth` or `password`. Can be source from `SNOWFLAKE_PRIVATE_KEY` environment variable. |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProviderConfig.property.privateKeyPassphrase">privateKeyPassphrase</a></code> | <code>string</code> | Supports the encryption ciphers aes-128-cbc, aes-128-gcm, aes-192-cbc, aes-192-gcm, aes-256-cbc, aes-256-gcm, and des-ede3-cbc. |
-| <code><a href="#@cdktf/provider-snowflake.SnowflakeProviderConfig.property.privateKeyPath">privateKeyPath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#private_key_path SnowflakeProvider#private_key_path}. |
-| <code><a href="#@cdktf/provider-snowflake.SnowflakeProviderConfig.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#region SnowflakeProvider#region}. |
-| <code><a href="#@cdktf/provider-snowflake.SnowflakeProviderConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#role SnowflakeProvider#role}. |
+| <code><a href="#@cdktf/provider-snowflake.SnowflakeProviderConfig.property.privateKeyPath">privateKeyPath</a></code> | <code>string</code> | Path to a private key for using keypair authentication. |
+| <code><a href="#@cdktf/provider-snowflake.SnowflakeProviderConfig.property.region">region</a></code> | <code>string</code> | [Snowflake region](https://docs.snowflake.com/en/user-guide/intro-regions.html) to use. Can be source from the `SNOWFLAKE_REGION` environment variable. |
+| <code><a href="#@cdktf/provider-snowflake.SnowflakeProviderConfig.property.role">role</a></code> | <code>string</code> | Snowflake role to use for operations. |
 
 ---
 
@@ -63266,7 +63789,9 @@ public readonly account: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#account SnowflakeProvider#account}.
+The name of the Snowflake account. Can also come from the `SNOWFLAKE_ACCOUNT` environment variable.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#account SnowflakeProvider#account}
 
 ---
 
@@ -63278,7 +63803,9 @@ public readonly username: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#username SnowflakeProvider#username}.
+Username for username+password authentication. Can come from the `SNOWFLAKE_USER` environment variable.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#username SnowflakeProvider#username}
 
 ---
 
@@ -63304,7 +63831,9 @@ public readonly browserAuth: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#browser_auth SnowflakeProvider#browser_auth}.
+Required when `oauth_refresh_token` is used. Can be sourced from `SNOWFLAKE_USE_BROWSER_AUTH` environment variable.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#browser_auth SnowflakeProvider#browser_auth}
 
 ---
 
@@ -63330,7 +63859,11 @@ public readonly oauthAccessToken: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#oauth_access_token SnowflakeProvider#oauth_access_token}.
+Token for use with OAuth.
+
+Generating the token is left to other tools. Cannot be used with `browser_auth`, `private_key_path`, `oauth_refresh_token` or `password`. Can be sourced from `SNOWFLAKE_OAUTH_ACCESS_TOKEN` environment variable.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#oauth_access_token SnowflakeProvider#oauth_access_token}
 
 ---
 
@@ -63342,7 +63875,9 @@ public readonly oauthClientId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#oauth_client_id SnowflakeProvider#oauth_client_id}.
+Required when `oauth_refresh_token` is used. Can be sourced from `SNOWFLAKE_OAUTH_CLIENT_ID` environment variable.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#oauth_client_id SnowflakeProvider#oauth_client_id}
 
 ---
 
@@ -63354,7 +63889,9 @@ public readonly oauthClientSecret: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#oauth_client_secret SnowflakeProvider#oauth_client_secret}.
+Required when `oauth_refresh_token` is used. Can be sourced from `SNOWFLAKE_OAUTH_CLIENT_SECRET` environment variable.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#oauth_client_secret SnowflakeProvider#oauth_client_secret}
 
 ---
 
@@ -63366,7 +63903,9 @@ public readonly oauthEndpoint: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#oauth_endpoint SnowflakeProvider#oauth_endpoint}.
+Required when `oauth_refresh_token` is used. Can be sourced from `SNOWFLAKE_OAUTH_ENDPOINT` environment variable.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#oauth_endpoint SnowflakeProvider#oauth_endpoint}
 
 ---
 
@@ -63378,7 +63917,9 @@ public readonly oauthRedirectUrl: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#oauth_redirect_url SnowflakeProvider#oauth_redirect_url}.
+Required when `oauth_refresh_token` is used. Can be sourced from `SNOWFLAKE_OAUTH_REDIRECT_URL` environment variable.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#oauth_redirect_url SnowflakeProvider#oauth_redirect_url}
 
 ---
 
@@ -63390,7 +63931,11 @@ public readonly oauthRefreshToken: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#oauth_refresh_token SnowflakeProvider#oauth_refresh_token}.
+Token for use with OAuth.
+
+Setup and generation of the token is left to other tools. Should be used in conjunction with `oauth_client_id`, `oauth_client_secret`, `oauth_endpoint`, `oauth_redirect_url`. Cannot be used with `browser_auth`, `private_key_path`, `oauth_access_token` or `password`. Can be sourced from `SNOWFLAKE_OAUTH_REFRESH_TOKEN` environment variable.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#oauth_refresh_token SnowflakeProvider#oauth_refresh_token}
 
 ---
 
@@ -63402,7 +63947,9 @@ public readonly password: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#password SnowflakeProvider#password}.
+Password for username+password auth. Cannot be used with `browser_auth` or `private_key_path`. Can be source from `SNOWFLAKE_PASSWORD` environment variable.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#password SnowflakeProvider#password}
 
 ---
 
@@ -63414,7 +63961,9 @@ public readonly privateKey: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#private_key SnowflakeProvider#private_key}.
+Private Key for username+private-key auth. Cannot be used with `browser_auth` or `password`. Can be source from `SNOWFLAKE_PRIVATE_KEY` environment variable.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#private_key SnowflakeProvider#private_key}
 
 ---
 
@@ -63440,7 +63989,11 @@ public readonly privateKeyPath: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#private_key_path SnowflakeProvider#private_key_path}.
+Path to a private key for using keypair authentication.
+
+Cannot be used with `browser_auth`, `oauth_access_token` or `password`. Can be source from `SNOWFLAKE_PRIVATE_KEY_PATH` environment variable.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#private_key_path SnowflakeProvider#private_key_path}
 
 ---
 
@@ -63452,7 +64005,9 @@ public readonly region: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#region SnowflakeProvider#region}.
+[Snowflake region](https://docs.snowflake.com/en/user-guide/intro-regions.html) to use. Can be source from the `SNOWFLAKE_REGION` environment variable.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#region SnowflakeProvider#region}
 
 ---
 
@@ -63464,7 +64019,11 @@ public readonly role: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#role SnowflakeProvider#role}.
+Snowflake role to use for operations.
+
+If left unset, default role for user will be used. Can come from the `SNOWFLAKE_ROLE` environment variable.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#role SnowflakeProvider#role}
 
 ---
 
@@ -66202,6 +66761,114 @@ public readonly tag: IResolvable | UserTag[];
 tag block.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/user#tag User#tag}
+
+---
+
+### UserOwnershipGrantConfig <a name="UserOwnershipGrantConfig" id="@cdktf/provider-snowflake.UserOwnershipGrantConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.UserOwnershipGrantConfig.Initializer"></a>
+
+```typescript
+import { UserOwnershipGrantConfig } from '@cdktf/provider-snowflake'
+
+const userOwnershipGrantConfig: UserOwnershipGrantConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrantConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrantConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrantConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrantConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrantConfig.property.onUserName">onUserName</a></code> | <code>string</code> | The name of the user ownership is granted on. |
+| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrantConfig.property.toRoleName">toRoleName</a></code> | <code>string</code> | The name of the role to grant ownership. |
+| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrantConfig.property.currentGrants">currentGrants</a></code> | <code>string</code> | Specifies whether to remove or transfer all existing outbound privileges on the object when ownership is transferred to a new role. |
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.UserOwnershipGrantConfig.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* number
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-snowflake.UserOwnershipGrantConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* cdktf.ITerraformDependable[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-snowflake.UserOwnershipGrantConfig.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-snowflake.UserOwnershipGrantConfig.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
+##### `onUserName`<sup>Required</sup> <a name="onUserName" id="@cdktf/provider-snowflake.UserOwnershipGrantConfig.property.onUserName"></a>
+
+```typescript
+public readonly onUserName: string;
+```
+
+- *Type:* string
+
+The name of the user ownership is granted on.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/user_ownership_grant#on_user_name UserOwnershipGrant#on_user_name}
+
+---
+
+##### `toRoleName`<sup>Required</sup> <a name="toRoleName" id="@cdktf/provider-snowflake.UserOwnershipGrantConfig.property.toRoleName"></a>
+
+```typescript
+public readonly toRoleName: string;
+```
+
+- *Type:* string
+
+The name of the role to grant ownership.
+
+Please ensure that the role that terraform is using is granted access.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/user_ownership_grant#to_role_name UserOwnershipGrant#to_role_name}
+
+---
+
+##### `currentGrants`<sup>Optional</sup> <a name="currentGrants" id="@cdktf/provider-snowflake.UserOwnershipGrantConfig.property.currentGrants"></a>
+
+```typescript
+public readonly currentGrants: string;
+```
+
+- *Type:* string
+
+Specifies whether to remove or transfer all existing outbound privileges on the object when ownership is transferred to a new role.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/user_ownership_grant#current_grants UserOwnershipGrant#current_grants}
 
 ---
 

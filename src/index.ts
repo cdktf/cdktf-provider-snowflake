@@ -50,6 +50,7 @@ export * from './tag';
 export * from './task';
 export * from './task-grant';
 export * from './user';
+export * from './user-ownership-grant';
 export * from './user-public-keys';
 export * from './view';
 export * from './view-grant';
