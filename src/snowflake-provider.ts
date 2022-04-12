@@ -8,48 +8,68 @@ import * as cdktf from 'cdktf';
 
 export interface SnowflakeProviderConfig {
   /**
+  * The name of the Snowflake account. Can also come from the `SNOWFLAKE_ACCOUNT` environment variable.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#account SnowflakeProvider#account}
   */
   readonly account: string;
   /**
+  * Required when `oauth_refresh_token` is used. Can be sourced from `SNOWFLAKE_USE_BROWSER_AUTH` environment variable.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#browser_auth SnowflakeProvider#browser_auth}
   */
   readonly browserAuth?: boolean | cdktf.IResolvable;
   /**
-  * Supports passing in a custom host value to the snowflake go driver for use with privatelink
+  * Supports passing in a custom host value to the snowflake go driver for use with privatelink.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#host SnowflakeProvider#host}
   */
   readonly host?: string;
   /**
+  * Token for use with OAuth. Generating the token is left to other tools. Cannot be used with `browser_auth`, `private_key_path`, `oauth_refresh_token` or `password`. Can be sourced from `SNOWFLAKE_OAUTH_ACCESS_TOKEN` environment variable.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#oauth_access_token SnowflakeProvider#oauth_access_token}
   */
   readonly oauthAccessToken?: string;
   /**
+  * Required when `oauth_refresh_token` is used. Can be sourced from `SNOWFLAKE_OAUTH_CLIENT_ID` environment variable.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#oauth_client_id SnowflakeProvider#oauth_client_id}
   */
   readonly oauthClientId?: string;
   /**
+  * Required when `oauth_refresh_token` is used. Can be sourced from `SNOWFLAKE_OAUTH_CLIENT_SECRET` environment variable.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#oauth_client_secret SnowflakeProvider#oauth_client_secret}
   */
   readonly oauthClientSecret?: string;
   /**
+  * Required when `oauth_refresh_token` is used. Can be sourced from `SNOWFLAKE_OAUTH_ENDPOINT` environment variable.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#oauth_endpoint SnowflakeProvider#oauth_endpoint}
   */
   readonly oauthEndpoint?: string;
   /**
+  * Required when `oauth_refresh_token` is used. Can be sourced from `SNOWFLAKE_OAUTH_REDIRECT_URL` environment variable.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#oauth_redirect_url SnowflakeProvider#oauth_redirect_url}
   */
   readonly oauthRedirectUrl?: string;
   /**
+  * Token for use with OAuth. Setup and generation of the token is left to other tools. Should be used in conjunction with `oauth_client_id`, `oauth_client_secret`, `oauth_endpoint`, `oauth_redirect_url`. Cannot be used with `browser_auth`, `private_key_path`, `oauth_access_token` or `password`. Can be sourced from `SNOWFLAKE_OAUTH_REFRESH_TOKEN` environment variable.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#oauth_refresh_token SnowflakeProvider#oauth_refresh_token}
   */
   readonly oauthRefreshToken?: string;
   /**
+  * Password for username+password auth. Cannot be used with `browser_auth` or `private_key_path`. Can be source from `SNOWFLAKE_PASSWORD` environment variable.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#password SnowflakeProvider#password}
   */
   readonly password?: string;
   /**
+  * Private Key for username+private-key auth. Cannot be used with `browser_auth` or `password`. Can be source from `SNOWFLAKE_PRIVATE_KEY` environment variable.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#private_key SnowflakeProvider#private_key}
   */
   readonly privateKey?: string;
@@ -60,18 +80,26 @@ export interface SnowflakeProviderConfig {
   */
   readonly privateKeyPassphrase?: string;
   /**
+  * Path to a private key for using keypair authentication. Cannot be used with `browser_auth`, `oauth_access_token` or `password`. Can be source from `SNOWFLAKE_PRIVATE_KEY_PATH` environment variable.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#private_key_path SnowflakeProvider#private_key_path}
   */
   readonly privateKeyPath?: string;
   /**
+  * [Snowflake region](https://docs.snowflake.com/en/user-guide/intro-regions.html) to use. Can be source from the `SNOWFLAKE_REGION` environment variable.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#region SnowflakeProvider#region}
   */
   readonly region?: string;
   /**
+  * Snowflake role to use for operations. If left unset, default role for user will be used. Can come from the `SNOWFLAKE_ROLE` environment variable.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#role SnowflakeProvider#role}
   */
   readonly role?: string;
   /**
+  * Username for username+password authentication. Can come from the `SNOWFLAKE_USER` environment variable.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#username SnowflakeProvider#username}
   */
   readonly username: string;
@@ -109,7 +137,7 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'snowflake',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.30.0',
+        providerVersion: '0.31.0',
         providerVersionConstraint: ' ~> 0.25'
       },
       terraformProviderSource: 'chanzuckerberg/snowflake'
