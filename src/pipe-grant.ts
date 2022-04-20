@@ -83,7 +83,7 @@ export class PipeGrant extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_pipe_grant',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.31.0',
+        providerVersion: '0.32.0',
         providerVersionConstraint: ' ~> 0.25'
       },
       provider: config.provider,
