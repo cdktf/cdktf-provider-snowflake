@@ -68,6 +68,7 @@ export * from './data-snowflake-materialized-views';
 export * from './data-snowflake-pipes';
 export * from './data-snowflake-procedures';
 export * from './data-snowflake-resource-monitors';
+export * from './data-snowflake-role';
 export * from './data-snowflake-row-access-policies';
 export * from './data-snowflake-schemas';
 export * from './data-snowflake-sequences';

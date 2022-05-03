@@ -131,7 +131,7 @@ export class DataSnowflakeExternalFunctions extends cdktf.TerraformDataSource {
       terraformResourceType: 'snowflake_external_functions',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.32.0',
+        providerVersion: '0.33.0',
         providerVersionConstraint: ' ~> 0.25'
       },
       provider: config.provider,

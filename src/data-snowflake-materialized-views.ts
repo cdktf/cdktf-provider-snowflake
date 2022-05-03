@@ -126,7 +126,7 @@ export class DataSnowflakeMaterializedViews extends cdktf.TerraformDataSource {
       terraformResourceType: 'snowflake_materialized_views',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.32.0',
+        providerVersion: '0.33.0',
         providerVersionConstraint: ' ~> 0.25'
       },
       provider: config.provider,

@@ -131,7 +131,7 @@ export class DataSnowflakeStages extends cdktf.TerraformDataSource {
       terraformResourceType: 'snowflake_stages',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.32.0',
+        providerVersion: '0.33.0',
         providerVersionConstraint: ' ~> 0.25'
       },
       provider: config.provider,
