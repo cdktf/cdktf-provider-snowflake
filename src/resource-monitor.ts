@@ -95,7 +95,7 @@ export class ResourceMonitor extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_resource_monitor',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.32.0',
+        providerVersion: '0.33.0',
         providerVersionConstraint: ' ~> 0.25'
       },
       provider: config.provider,

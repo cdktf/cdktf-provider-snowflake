@@ -77,7 +77,7 @@ export class MaskingPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_masking_policy',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.32.0',
+        providerVersion: '0.33.0',
         providerVersionConstraint: ' ~> 0.25'
       },
       provider: config.provider,
