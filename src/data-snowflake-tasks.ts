@@ -131,7 +131,7 @@ export class DataSnowflakeTasks extends cdktf.TerraformDataSource {
       terraformResourceType: 'snowflake_tasks',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.33.0',
+        providerVersion: '0.33.1',
         providerVersionConstraint: ' ~> 0.25'
       },
       provider: config.provider,
