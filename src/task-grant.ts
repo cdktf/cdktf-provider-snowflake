@@ -83,7 +83,7 @@ export class TaskGrant extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_task_grant',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.33.0',
+        providerVersion: '0.33.1',
         providerVersionConstraint: ' ~> 0.25'
       },
       provider: config.provider,
