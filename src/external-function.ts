@@ -38,6 +38,13 @@ export interface ExternalFunctionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly database: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_function#id ExternalFunction#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * This specifies the maximum number of rows in each batch sent to the proxy service.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_function#max_batch_rows ExternalFunction#max_batch_rows}
@@ -124,6 +131,102 @@ export function externalFunctionArgToTerraform(struct?: ExternalFunctionArg | cd
   }
 }
 
+export class ExternalFunctionArgOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ExternalFunctionArg | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ExternalFunctionArg | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._type = value.type;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class ExternalFunctionArgList extends cdktf.ComplexList {
+  public internalValue? : ExternalFunctionArg[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ExternalFunctionArgOutputReference {
+    return new ExternalFunctionArgOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ExternalFunctionHeader {
   /**
   * Header name
@@ -150,6 +253,102 @@ export function externalFunctionHeaderToTerraform(struct?: ExternalFunctionHeade
   }
 }
 
+export class ExternalFunctionHeaderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ExternalFunctionHeader | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ExternalFunctionHeader | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._value = value.value;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class ExternalFunctionHeaderList extends cdktf.ComplexList {
+  public internalValue? : ExternalFunctionHeader[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ExternalFunctionHeaderOutputReference {
+    return new ExternalFunctionHeaderOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/external_function snowflake_external_function}
@@ -190,6 +389,7 @@ export class ExternalFunction extends cdktf.TerraformResource {
     this._compression = config.compression;
     this._contextHeaders = config.contextHeaders;
     this._database = config.database;
+    this._id = config.id;
     this._maxBatchRows = config.maxBatchRows;
     this._name = config.name;
     this._nullInputBehavior = config.nullInputBehavior;
@@ -198,8 +398,8 @@ export class ExternalFunction extends cdktf.TerraformResource {
     this._returnType = config.returnType;
     this._schema = config.schema;
     this._urlOfProxyAndResource = config.urlOfProxyAndResource;
-    this._arg = config.arg;
-    this._header = config.header;
+    this._arg.internalValue = config.arg;
+    this._header.internalValue = config.header;
   }
 
   // ==========
@@ -286,8 +486,19 @@ export class ExternalFunction extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // max_batch_rows - computed: false, optional: true, required: false
@@ -404,37 +615,35 @@ export class ExternalFunction extends cdktf.TerraformResource {
   }
 
   // arg - computed: false, optional: true, required: false
-  private _arg?: ExternalFunctionArg[] | cdktf.IResolvable; 
+  private _arg = new ExternalFunctionArgList(this, "arg", false);
   public get arg() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('arg');
+    return this._arg;
   }
-  public set arg(value: ExternalFunctionArg[] | cdktf.IResolvable) {
-    this._arg = value;
+  public putArg(value: ExternalFunctionArg[] | cdktf.IResolvable) {
+    this._arg.internalValue = value;
   }
   public resetArg() {
-    this._arg = undefined;
+    this._arg.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get argInput() {
-    return this._arg;
+    return this._arg.internalValue;
   }
 
   // header - computed: false, optional: true, required: false
-  private _header?: ExternalFunctionHeader[] | cdktf.IResolvable; 
+  private _header = new ExternalFunctionHeaderList(this, "header", true);
   public get header() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('header')));
+    return this._header;
   }
-  public set header(value: ExternalFunctionHeader[] | cdktf.IResolvable) {
-    this._header = value;
+  public putHeader(value: ExternalFunctionHeader[] | cdktf.IResolvable) {
+    this._header.internalValue = value;
   }
   public resetHeader() {
-    this._header = undefined;
+    this._header.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get headerInput() {
-    return this._header;
+    return this._header.internalValue;
   }
 
   // =========
@@ -448,6 +657,7 @@ export class ExternalFunction extends cdktf.TerraformResource {
       compression: cdktf.stringToTerraform(this._compression),
       context_headers: cdktf.listMapper(cdktf.stringToTerraform)(this._contextHeaders),
       database: cdktf.stringToTerraform(this._database),
+      id: cdktf.stringToTerraform(this._id),
       max_batch_rows: cdktf.numberToTerraform(this._maxBatchRows),
       name: cdktf.stringToTerraform(this._name),
       null_input_behavior: cdktf.stringToTerraform(this._nullInputBehavior),
@@ -456,8 +666,8 @@ export class ExternalFunction extends cdktf.TerraformResource {
       return_type: cdktf.stringToTerraform(this._returnType),
       schema: cdktf.stringToTerraform(this._schema),
       url_of_proxy_and_resource: cdktf.stringToTerraform(this._urlOfProxyAndResource),
-      arg: cdktf.listMapper(externalFunctionArgToTerraform)(this._arg),
-      header: cdktf.listMapper(externalFunctionHeaderToTerraform)(this._header),
+      arg: cdktf.listMapper(externalFunctionArgToTerraform)(this._arg.internalValue),
+      header: cdktf.listMapper(externalFunctionHeaderToTerraform)(this._header.internalValue),
     };
   }
 }

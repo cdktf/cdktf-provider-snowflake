@@ -26,6 +26,13 @@ export interface ResourceMonitorConfig extends cdktf.TerraformMetaArguments {
   */
   readonly frequency?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/resource_monitor#id ResourceMonitor#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Identifier for the resource monitor; must be unique for your account.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/resource_monitor#name ResourceMonitor#name}
@@ -106,6 +113,7 @@ export class ResourceMonitor extends cdktf.TerraformResource {
     this._creditQuota = config.creditQuota;
     this._endTimestamp = config.endTimestamp;
     this._frequency = config.frequency;
+    this._id = config.id;
     this._name = config.name;
     this._notifyTriggers = config.notifyTriggers;
     this._setForAccount = config.setForAccount;
@@ -168,8 +176,19 @@ export class ResourceMonitor extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -290,6 +309,7 @@ export class ResourceMonitor extends cdktf.TerraformResource {
       credit_quota: cdktf.numberToTerraform(this._creditQuota),
       end_timestamp: cdktf.stringToTerraform(this._endTimestamp),
       frequency: cdktf.stringToTerraform(this._frequency),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       notify_triggers: cdktf.listMapper(cdktf.numberToTerraform)(this._notifyTriggers),
       set_for_account: cdktf.booleanToTerraform(this._setForAccount),

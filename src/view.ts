@@ -20,6 +20,13 @@ export interface ViewConfig extends cdktf.TerraformMetaArguments {
   */
   readonly database: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view#id View#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Specifies that the view is secure.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view#is_secure View#is_secure}
@@ -96,6 +103,146 @@ export function viewTagToTerraform(struct?: ViewTag | cdktf.IResolvable): any {
   }
 }
 
+export class ViewTagOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ViewTag | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._database !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.database = this._database;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._schema !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.schema = this._schema;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ViewTag | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._database = undefined;
+      this._name = undefined;
+      this._schema = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._database = value.database;
+      this._name = value.name;
+      this._schema = value.schema;
+      this._value = value.value;
+    }
+  }
+
+  // database - computed: false, optional: true, required: false
+  private _database?: string; 
+  public get database() {
+    return this.getStringAttribute('database');
+  }
+  public set database(value: string) {
+    this._database = value;
+  }
+  public resetDatabase() {
+    this._database = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get databaseInput() {
+    return this._database;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // schema - computed: false, optional: true, required: false
+  private _schema?: string; 
+  public get schema() {
+    return this.getStringAttribute('schema');
+  }
+  public set schema(value: string) {
+    this._schema = value;
+  }
+  public resetSchema() {
+    this._schema = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get schemaInput() {
+    return this._schema;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class ViewTagList extends cdktf.ComplexList {
+  public internalValue? : ViewTag[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ViewTagOutputReference {
+    return new ViewTagOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/view snowflake_view}
@@ -133,12 +280,13 @@ export class View extends cdktf.TerraformResource {
     });
     this._comment = config.comment;
     this._database = config.database;
+    this._id = config.id;
     this._isSecure = config.isSecure;
     this._name = config.name;
     this._orReplace = config.orReplace;
     this._schema = config.schema;
     this._statement = config.statement;
-    this._tag = config.tag;
+    this._tag.internalValue = config.tag;
   }
 
   // ==========
@@ -175,8 +323,19 @@ export class View extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // is_secure - computed: false, optional: true, required: false
@@ -251,20 +410,19 @@ export class View extends cdktf.TerraformResource {
   }
 
   // tag - computed: false, optional: true, required: false
-  private _tag?: ViewTag[] | cdktf.IResolvable; 
+  private _tag = new ViewTagList(this, "tag", false);
   public get tag() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tag');
+    return this._tag;
   }
-  public set tag(value: ViewTag[] | cdktf.IResolvable) {
-    this._tag = value;
+  public putTag(value: ViewTag[] | cdktf.IResolvable) {
+    this._tag.internalValue = value;
   }
   public resetTag() {
-    this._tag = undefined;
+    this._tag.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get tagInput() {
-    return this._tag;
+    return this._tag.internalValue;
   }
 
   // =========
@@ -275,12 +433,13 @@ export class View extends cdktf.TerraformResource {
     return {
       comment: cdktf.stringToTerraform(this._comment),
       database: cdktf.stringToTerraform(this._database),
+      id: cdktf.stringToTerraform(this._id),
       is_secure: cdktf.booleanToTerraform(this._isSecure),
       name: cdktf.stringToTerraform(this._name),
       or_replace: cdktf.booleanToTerraform(this._orReplace),
       schema: cdktf.stringToTerraform(this._schema),
       statement: cdktf.stringToTerraform(this._statement),
-      tag: cdktf.listMapper(viewTagToTerraform)(this._tag),
+      tag: cdktf.listMapper(viewTagToTerraform)(this._tag.internalValue),
     };
   }
 }
