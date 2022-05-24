@@ -122,6 +122,13 @@ export interface FileFormatConfig extends cdktf.TerraformMetaArguments {
   */
   readonly formatType: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/file_format#id FileFormat#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Boolean that specifies whether UTF-8 encoding errors produce error conditions.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/file_format#ignore_utf8_errors FileFormat#ignore_utf8_errors}
@@ -278,6 +285,7 @@ export class FileFormat extends cdktf.TerraformResource {
     this._fieldOptionallyEnclosedBy = config.fieldOptionallyEnclosedBy;
     this._fileExtension = config.fileExtension;
     this._formatType = config.formatType;
+    this._id = config.id;
     this._ignoreUtf8Errors = config.ignoreUtf8Errors;
     this._name = config.name;
     this._nullIf = config.nullIf;
@@ -600,8 +608,19 @@ export class FileFormat extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // ignore_utf8_errors - computed: false, optional: true, required: false
@@ -895,6 +914,7 @@ export class FileFormat extends cdktf.TerraformResource {
       field_optionally_enclosed_by: cdktf.stringToTerraform(this._fieldOptionallyEnclosedBy),
       file_extension: cdktf.stringToTerraform(this._fileExtension),
       format_type: cdktf.stringToTerraform(this._formatType),
+      id: cdktf.stringToTerraform(this._id),
       ignore_utf8_errors: cdktf.booleanToTerraform(this._ignoreUtf8Errors),
       name: cdktf.stringToTerraform(this._name),
       null_if: cdktf.listMapper(cdktf.stringToTerraform)(this._nullIf),

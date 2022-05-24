@@ -20,6 +20,13 @@ export interface MaterializedViewGrantConfig extends cdktf.TerraformMetaArgument
   */
   readonly enableMultipleGrants?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/materialized_view_grant#id MaterializedViewGrant#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The name of the materialized view on which to grant privileges immediately (only valid if on_future is false).
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/materialized_view_grant#materialized_view_name MaterializedViewGrant#materialized_view_name}
@@ -99,6 +106,7 @@ export class MaterializedViewGrant extends cdktf.TerraformResource {
     });
     this._databaseName = config.databaseName;
     this._enableMultipleGrants = config.enableMultipleGrants;
+    this._id = config.id;
     this._materializedViewName = config.materializedViewName;
     this._onFuture = config.onFuture;
     this._privilege = config.privilege;
@@ -142,8 +150,19 @@ export class MaterializedViewGrant extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // materialized_view_name - computed: false, optional: true, required: false
@@ -266,6 +285,7 @@ export class MaterializedViewGrant extends cdktf.TerraformResource {
     return {
       database_name: cdktf.stringToTerraform(this._databaseName),
       enable_multiple_grants: cdktf.booleanToTerraform(this._enableMultipleGrants),
+      id: cdktf.stringToTerraform(this._id),
       materialized_view_name: cdktf.stringToTerraform(this._materializedViewName),
       on_future: cdktf.booleanToTerraform(this._onFuture),
       privilege: cdktf.stringToTerraform(this._privilege),

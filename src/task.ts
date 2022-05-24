@@ -38,6 +38,13 @@ export interface TaskConfig extends cdktf.TerraformMetaArguments {
   */
   readonly errorIntegration?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task#id Task#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Specifies the identifier for the task; must be unique for the database and schema in which the task is created.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task#name Task#name}
@@ -132,6 +139,7 @@ export class Task extends cdktf.TerraformResource {
     this._database = config.database;
     this._enabled = config.enabled;
     this._errorIntegration = config.errorIntegration;
+    this._id = config.id;
     this._name = config.name;
     this._schedule = config.schedule;
     this._schema = config.schema;
@@ -225,8 +233,19 @@ export class Task extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -375,6 +394,7 @@ export class Task extends cdktf.TerraformResource {
       database: cdktf.stringToTerraform(this._database),
       enabled: cdktf.booleanToTerraform(this._enabled),
       error_integration: cdktf.stringToTerraform(this._errorIntegration),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       schedule: cdktf.stringToTerraform(this._schedule),
       schema: cdktf.stringToTerraform(this._schema),

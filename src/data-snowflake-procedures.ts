@@ -14,6 +14,13 @@ export interface DataSnowflakeProceduresConfig extends cdktf.TerraformMetaArgume
   */
   readonly database: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/procedures#id DataSnowflakeProcedures#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The schema from which to return the procedures from.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/procedures#schema DataSnowflakeProcedures#schema}
@@ -145,6 +152,7 @@ export class DataSnowflakeProcedures extends cdktf.TerraformDataSource {
       lifecycle: config.lifecycle
     });
     this._database = config.database;
+    this._id = config.id;
     this._schema = config.schema;
   }
 
@@ -166,8 +174,19 @@ export class DataSnowflakeProcedures extends cdktf.TerraformDataSource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // procedures - computed: true, optional: false, required: false
@@ -196,6 +215,7 @@ export class DataSnowflakeProcedures extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       database: cdktf.stringToTerraform(this._database),
+      id: cdktf.stringToTerraform(this._id),
       schema: cdktf.stringToTerraform(this._schema),
     };
   }

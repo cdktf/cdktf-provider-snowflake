@@ -20,6 +20,13 @@ export interface PipeGrantConfig extends cdktf.TerraformMetaArguments {
   */
   readonly enableMultipleGrants?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/pipe_grant#id PipeGrant#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * When this is set to true and a schema_name is provided, apply this grant on all future pipes in the given schema. When this is true and no schema_name is provided apply this grant on all future pipes in the given database. The pipe_name field must be unset in order to use on_future.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/pipe_grant#on_future PipeGrant#on_future}
@@ -93,6 +100,7 @@ export class PipeGrant extends cdktf.TerraformResource {
     });
     this._databaseName = config.databaseName;
     this._enableMultipleGrants = config.enableMultipleGrants;
+    this._id = config.id;
     this._onFuture = config.onFuture;
     this._pipeName = config.pipeName;
     this._privilege = config.privilege;
@@ -135,8 +143,19 @@ export class PipeGrant extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // on_future - computed: false, optional: true, required: false
@@ -240,6 +259,7 @@ export class PipeGrant extends cdktf.TerraformResource {
     return {
       database_name: cdktf.stringToTerraform(this._databaseName),
       enable_multiple_grants: cdktf.booleanToTerraform(this._enableMultipleGrants),
+      id: cdktf.stringToTerraform(this._id),
       on_future: cdktf.booleanToTerraform(this._onFuture),
       pipe_name: cdktf.stringToTerraform(this._pipeName),
       privilege: cdktf.stringToTerraform(this._privilege),

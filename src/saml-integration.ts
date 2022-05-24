@@ -14,6 +14,13 @@ export interface SamlIntegrationConfig extends cdktf.TerraformMetaArguments {
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/saml_integration#id SamlIntegration#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Specifies the name of the SAML2 integration. This name follows the rules for Object Identifiers. The name should be unique among security integrations in your account.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/saml_integration#name SamlIntegration#name}
@@ -134,6 +141,7 @@ export class SamlIntegration extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._enabled = config.enabled;
+    this._id = config.id;
     this._name = config.name;
     this._saml2EnableSpInitiated = config.saml2EnableSpInitiated;
     this._saml2ForceAuthn = config.saml2ForceAuthn;
@@ -176,8 +184,19 @@ export class SamlIntegration extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -411,6 +430,7 @@ export class SamlIntegration extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       enabled: cdktf.booleanToTerraform(this._enabled),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       saml2_enable_sp_initiated: cdktf.booleanToTerraform(this._saml2EnableSpInitiated),
       saml2_force_authn: cdktf.booleanToTerraform(this._saml2ForceAuthn),
