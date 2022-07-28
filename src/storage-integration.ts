@@ -88,13 +88,16 @@ export class StorageIntegration extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_storage_integration',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.33.1',
-        providerVersionConstraint: ' ~> 0.25'
+        providerVersion: '0.40.0',
+        providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._azureTenantId = config.azureTenantId;
     this._comment = config.comment;
@@ -321,10 +324,10 @@ export class StorageIntegration extends cdktf.TerraformResource {
       enabled: cdktf.booleanToTerraform(this._enabled),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
-      storage_allowed_locations: cdktf.listMapper(cdktf.stringToTerraform)(this._storageAllowedLocations),
+      storage_allowed_locations: cdktf.listMapper(cdktf.stringToTerraform, false)(this._storageAllowedLocations),
       storage_aws_object_acl: cdktf.stringToTerraform(this._storageAwsObjectAcl),
       storage_aws_role_arn: cdktf.stringToTerraform(this._storageAwsRoleArn),
-      storage_blocked_locations: cdktf.listMapper(cdktf.stringToTerraform)(this._storageBlockedLocations),
+      storage_blocked_locations: cdktf.listMapper(cdktf.stringToTerraform, false)(this._storageBlockedLocations),
       storage_provider: cdktf.stringToTerraform(this._storageProvider),
       type: cdktf.stringToTerraform(this._type),
     };

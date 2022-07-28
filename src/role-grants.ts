@@ -66,13 +66,16 @@ export class RoleGrants extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_role_grants',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.33.1',
-        providerVersionConstraint: ' ~> 0.25'
+        providerVersion: '0.40.0',
+        providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._enableMultipleGrants = config.enableMultipleGrants;
     this._id = config.id;
@@ -171,8 +174,8 @@ export class RoleGrants extends cdktf.TerraformResource {
       enable_multiple_grants: cdktf.booleanToTerraform(this._enableMultipleGrants),
       id: cdktf.stringToTerraform(this._id),
       role_name: cdktf.stringToTerraform(this._roleName),
-      roles: cdktf.listMapper(cdktf.stringToTerraform)(this._roles),
-      users: cdktf.listMapper(cdktf.stringToTerraform)(this._users),
+      roles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._roles),
+      users: cdktf.listMapper(cdktf.stringToTerraform, false)(this._users),
     };
   }
 }

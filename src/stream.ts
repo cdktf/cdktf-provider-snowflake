@@ -51,6 +51,12 @@ export interface StreamConfig extends cdktf.TerraformMetaArguments {
   */
   readonly onTable?: string;
   /**
+  * Name of the view the stream will monitor.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stream#on_view Stream#on_view}
+  */
+  readonly onView?: string;
+  /**
   * The schema in which to create the stream.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stream#schema Stream#schema}
@@ -90,13 +96,16 @@ export class Stream extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_stream',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.33.1',
-        providerVersionConstraint: ' ~> 0.25'
+        providerVersion: '0.40.0',
+        providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._appendOnly = config.appendOnly;
     this._comment = config.comment;
@@ -105,6 +114,7 @@ export class Stream extends cdktf.TerraformResource {
     this._insertOnly = config.insertOnly;
     this._name = config.name;
     this._onTable = config.onTable;
+    this._onView = config.onView;
     this._schema = config.schema;
     this._showInitialRows = config.showInitialRows;
   }
@@ -219,6 +229,22 @@ export class Stream extends cdktf.TerraformResource {
     return this._onTable;
   }
 
+  // on_view - computed: false, optional: true, required: false
+  private _onView?: string; 
+  public get onView() {
+    return this.getStringAttribute('on_view');
+  }
+  public set onView(value: string) {
+    this._onView = value;
+  }
+  public resetOnView() {
+    this._onView = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get onViewInput() {
+    return this._onView;
+  }
+
   // owner - computed: true, optional: false, required: false
   public get owner() {
     return this.getStringAttribute('owner');
@@ -266,6 +292,7 @@ export class Stream extends cdktf.TerraformResource {
       insert_only: cdktf.booleanToTerraform(this._insertOnly),
       name: cdktf.stringToTerraform(this._name),
       on_table: cdktf.stringToTerraform(this._onTable),
+      on_view: cdktf.stringToTerraform(this._onView),
       schema: cdktf.stringToTerraform(this._schema),
       show_initial_rows: cdktf.booleanToTerraform(this._showInitialRows),
     };

@@ -48,13 +48,16 @@ export class DataSnowflakeSystemGetAwsSnsIamPolicy extends cdktf.TerraformDataSo
       terraformResourceType: 'snowflake_system_get_aws_sns_iam_policy',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.33.1',
-        providerVersionConstraint: ' ~> 0.25'
+        providerVersion: '0.40.0',
+        providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._awsSnsTopicArn = config.awsSnsTopicArn;
     this._id = config.id;

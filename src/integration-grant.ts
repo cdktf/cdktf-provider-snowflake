@@ -72,13 +72,16 @@ export class IntegrationGrant extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_integration_grant',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.33.1',
-        providerVersionConstraint: ' ~> 0.25'
+        providerVersion: '0.40.0',
+        providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._enableMultipleGrants = config.enableMultipleGrants;
     this._id = config.id;
@@ -195,7 +198,7 @@ export class IntegrationGrant extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       integration_name: cdktf.stringToTerraform(this._integrationName),
       privilege: cdktf.stringToTerraform(this._privilege),
-      roles: cdktf.listMapper(cdktf.stringToTerraform)(this._roles),
+      roles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._roles),
       with_grant_option: cdktf.booleanToTerraform(this._withGrantOption),
     };
   }

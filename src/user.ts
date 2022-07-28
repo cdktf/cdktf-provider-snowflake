@@ -24,6 +24,12 @@ export interface UserConfig extends cdktf.TerraformMetaArguments {
   */
   readonly defaultRole?: string;
   /**
+  * Specifies the set of secondary roles that are active for the user’s session upon login.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/user#default_secondary_roles User#default_secondary_roles}
+  */
+  readonly defaultSecondaryRoles?: string[];
+  /**
   * Specifies the virtual warehouse that is active by default for the user’s session upon login.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/user#default_warehouse User#default_warehouse}
@@ -314,17 +320,21 @@ export class User extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_user',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.33.1',
-        providerVersionConstraint: ' ~> 0.25'
+        providerVersion: '0.40.0',
+        providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._comment = config.comment;
     this._defaultNamespace = config.defaultNamespace;
     this._defaultRole = config.defaultRole;
+    this._defaultSecondaryRoles = config.defaultSecondaryRoles;
     this._defaultWarehouse = config.defaultWarehouse;
     this._disabled = config.disabled;
     this._displayName = config.displayName;
@@ -391,6 +401,22 @@ export class User extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get defaultRoleInput() {
     return this._defaultRole;
+  }
+
+  // default_secondary_roles - computed: false, optional: true, required: false
+  private _defaultSecondaryRoles?: string[]; 
+  public get defaultSecondaryRoles() {
+    return cdktf.Fn.tolist(this.getListAttribute('default_secondary_roles'));
+  }
+  public set defaultSecondaryRoles(value: string[]) {
+    this._defaultSecondaryRoles = value;
+  }
+  public resetDefaultSecondaryRoles() {
+    this._defaultSecondaryRoles = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultSecondaryRolesInput() {
+    return this._defaultSecondaryRoles;
   }
 
   // default_warehouse - computed: false, optional: true, required: false
@@ -628,6 +654,7 @@ export class User extends cdktf.TerraformResource {
       comment: cdktf.stringToTerraform(this._comment),
       default_namespace: cdktf.stringToTerraform(this._defaultNamespace),
       default_role: cdktf.stringToTerraform(this._defaultRole),
+      default_secondary_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._defaultSecondaryRoles),
       default_warehouse: cdktf.stringToTerraform(this._defaultWarehouse),
       disabled: cdktf.booleanToTerraform(this._disabled),
       display_name: cdktf.stringToTerraform(this._displayName),
@@ -641,7 +668,7 @@ export class User extends cdktf.TerraformResource {
       password: cdktf.stringToTerraform(this._password),
       rsa_public_key: cdktf.stringToTerraform(this._rsaPublicKey),
       rsa_public_key_2: cdktf.stringToTerraform(this._rsaPublicKey2),
-      tag: cdktf.listMapper(userTagToTerraform)(this._tag.internalValue),
+      tag: cdktf.listMapper(userTagToTerraform, true)(this._tag.internalValue),
     };
   }
 }

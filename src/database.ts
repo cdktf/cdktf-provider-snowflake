@@ -22,7 +22,7 @@ export interface DatabaseConfig extends cdktf.TerraformMetaArguments {
   */
   readonly fromDatabase?: string;
   /**
-  * Specify a fully-qualified path to a database to create a replica from.
+  * Specify a fully-qualified path to a database to create a replica from. A fully qualified path follows the format of "<organization_name>"."<account_name>"."<db_name>". An example would be: "myorg1"."account1"."db1"
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/database#from_replica Database#from_replica}
   */
@@ -45,11 +45,106 @@ export interface DatabaseConfig extends cdktf.TerraformMetaArguments {
   */
   readonly name: string;
   /**
+  * replication_configuration block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/database#replication_configuration Database#replication_configuration}
+  */
+  readonly replicationConfiguration?: DatabaseReplicationConfiguration;
+  /**
   * tag block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/database#tag Database#tag}
   */
   readonly tag?: DatabaseTag[] | cdktf.IResolvable;
+}
+export interface DatabaseReplicationConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/database#accounts Database#accounts}
+  */
+  readonly accounts: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/database#ignore_edition_check Database#ignore_edition_check}
+  */
+  readonly ignoreEditionCheck?: boolean | cdktf.IResolvable;
+}
+
+export function databaseReplicationConfigurationToTerraform(struct?: DatabaseReplicationConfigurationOutputReference | DatabaseReplicationConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    accounts: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.accounts),
+    ignore_edition_check: cdktf.booleanToTerraform(struct!.ignoreEditionCheck),
+  }
+}
+
+export class DatabaseReplicationConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DatabaseReplicationConfiguration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._accounts !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.accounts = this._accounts;
+    }
+    if (this._ignoreEditionCheck !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ignoreEditionCheck = this._ignoreEditionCheck;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DatabaseReplicationConfiguration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._accounts = undefined;
+      this._ignoreEditionCheck = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._accounts = value.accounts;
+      this._ignoreEditionCheck = value.ignoreEditionCheck;
+    }
+  }
+
+  // accounts - computed: false, optional: false, required: true
+  private _accounts?: string[]; 
+  public get accounts() {
+    return this.getListAttribute('accounts');
+  }
+  public set accounts(value: string[]) {
+    this._accounts = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accountsInput() {
+    return this._accounts;
+  }
+
+  // ignore_edition_check - computed: false, optional: true, required: false
+  private _ignoreEditionCheck?: boolean | cdktf.IResolvable; 
+  public get ignoreEditionCheck() {
+    return this.getBooleanAttribute('ignore_edition_check');
+  }
+  public set ignoreEditionCheck(value: boolean | cdktf.IResolvable) {
+    this._ignoreEditionCheck = value;
+  }
+  public resetIgnoreEditionCheck() {
+    this._ignoreEditionCheck = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ignoreEditionCheckInput() {
+    return this._ignoreEditionCheck;
+  }
 }
 export interface DatabaseTag {
   /**
@@ -258,13 +353,16 @@ export class Database extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_database',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.33.1',
-        providerVersionConstraint: ' ~> 0.25'
+        providerVersion: '0.40.0',
+        providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._comment = config.comment;
     this._dataRetentionTimeInDays = config.dataRetentionTimeInDays;
@@ -273,6 +371,7 @@ export class Database extends cdktf.TerraformResource {
     this._fromShare = config.fromShare;
     this._id = config.id;
     this._name = config.name;
+    this._replicationConfiguration.internalValue = config.replicationConfiguration;
     this._tag.internalValue = config.tag;
   }
 
@@ -389,6 +488,22 @@ export class Database extends cdktf.TerraformResource {
     return this._name;
   }
 
+  // replication_configuration - computed: false, optional: true, required: false
+  private _replicationConfiguration = new DatabaseReplicationConfigurationOutputReference(this, "replication_configuration");
+  public get replicationConfiguration() {
+    return this._replicationConfiguration;
+  }
+  public putReplicationConfiguration(value: DatabaseReplicationConfiguration) {
+    this._replicationConfiguration.internalValue = value;
+  }
+  public resetReplicationConfiguration() {
+    this._replicationConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get replicationConfigurationInput() {
+    return this._replicationConfiguration.internalValue;
+  }
+
   // tag - computed: false, optional: true, required: false
   private _tag = new DatabaseTagList(this, "tag", false);
   public get tag() {
@@ -418,7 +533,8 @@ export class Database extends cdktf.TerraformResource {
       from_share: cdktf.hashMapper(cdktf.stringToTerraform)(this._fromShare),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
-      tag: cdktf.listMapper(databaseTagToTerraform)(this._tag.internalValue),
+      replication_configuration: databaseReplicationConfigurationToTerraform(this._replicationConfiguration.internalValue),
+      tag: cdktf.listMapper(databaseTagToTerraform, true)(this._tag.internalValue),
     };
   }
 }

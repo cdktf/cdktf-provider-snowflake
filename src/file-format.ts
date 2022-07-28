@@ -258,13 +258,16 @@ export class FileFormat extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_file_format',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.33.1',
-        providerVersionConstraint: ' ~> 0.25'
+        providerVersion: '0.40.0',
+        providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._allowDuplicate = config.allowDuplicate;
     this._binaryAsText = config.binaryAsText;
@@ -917,7 +920,7 @@ export class FileFormat extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       ignore_utf8_errors: cdktf.booleanToTerraform(this._ignoreUtf8Errors),
       name: cdktf.stringToTerraform(this._name),
-      null_if: cdktf.listMapper(cdktf.stringToTerraform)(this._nullIf),
+      null_if: cdktf.listMapper(cdktf.stringToTerraform, false)(this._nullIf),
       preserve_space: cdktf.booleanToTerraform(this._preserveSpace),
       record_delimiter: cdktf.stringToTerraform(this._recordDelimiter),
       replace_invalid_characters: cdktf.booleanToTerraform(this._replaceInvalidCharacters),

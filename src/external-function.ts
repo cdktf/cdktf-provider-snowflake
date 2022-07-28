@@ -376,13 +376,16 @@ export class ExternalFunction extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_external_function',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.33.1',
-        providerVersionConstraint: ' ~> 0.25'
+        providerVersion: '0.40.0',
+        providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._apiIntegration = config.apiIntegration;
     this._comment = config.comment;
@@ -655,7 +658,7 @@ export class ExternalFunction extends cdktf.TerraformResource {
       api_integration: cdktf.stringToTerraform(this._apiIntegration),
       comment: cdktf.stringToTerraform(this._comment),
       compression: cdktf.stringToTerraform(this._compression),
-      context_headers: cdktf.listMapper(cdktf.stringToTerraform)(this._contextHeaders),
+      context_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._contextHeaders),
       database: cdktf.stringToTerraform(this._database),
       id: cdktf.stringToTerraform(this._id),
       max_batch_rows: cdktf.numberToTerraform(this._maxBatchRows),
@@ -666,8 +669,8 @@ export class ExternalFunction extends cdktf.TerraformResource {
       return_type: cdktf.stringToTerraform(this._returnType),
       schema: cdktf.stringToTerraform(this._schema),
       url_of_proxy_and_resource: cdktf.stringToTerraform(this._urlOfProxyAndResource),
-      arg: cdktf.listMapper(externalFunctionArgToTerraform)(this._arg.internalValue),
-      header: cdktf.listMapper(externalFunctionHeaderToTerraform)(this._header.internalValue),
+      arg: cdktf.listMapper(externalFunctionArgToTerraform, true)(this._arg.internalValue),
+      header: cdktf.listMapper(externalFunctionHeaderToTerraform, true)(this._header.internalValue),
     };
   }
 }

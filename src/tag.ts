@@ -8,6 +8,12 @@ import * as cdktf from 'cdktf';
 
 export interface TagConfig extends cdktf.TerraformMetaArguments {
   /**
+  * List of allowed values for the tag.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/tag#allowed_values Tag#allowed_values}
+  */
+  readonly allowedValues?: string[];
+  /**
   * Specifies a comment for the tag.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/tag#comment Tag#comment}
@@ -66,14 +72,18 @@ export class Tag extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_tag',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.33.1',
-        providerVersionConstraint: ' ~> 0.25'
+        providerVersion: '0.40.0',
+        providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
+    this._allowedValues = config.allowedValues;
     this._comment = config.comment;
     this._database = config.database;
     this._id = config.id;
@@ -84,6 +94,22 @@ export class Tag extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // allowed_values - computed: false, optional: true, required: false
+  private _allowedValues?: string[]; 
+  public get allowedValues() {
+    return this.getListAttribute('allowed_values');
+  }
+  public set allowedValues(value: string[]) {
+    this._allowedValues = value;
+  }
+  public resetAllowedValues() {
+    this._allowedValues = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedValuesInput() {
+    return this._allowedValues;
+  }
 
   // comment - computed: false, optional: true, required: false
   private _comment?: string; 
@@ -162,6 +188,7 @@ export class Tag extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      allowed_values: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedValues),
       comment: cdktf.stringToTerraform(this._comment),
       database: cdktf.stringToTerraform(this._database),
       id: cdktf.stringToTerraform(this._id),

@@ -90,13 +90,16 @@ export class ApiIntegration extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_api_integration',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.33.1',
-        providerVersionConstraint: ' ~> 0.25'
+        providerVersion: '0.40.0',
+        providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._apiAllowedPrefixes = config.apiAllowedPrefixes;
     this._apiAwsRoleArn = config.apiAwsRoleArn;
@@ -279,9 +282,9 @@ export class ApiIntegration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_allowed_prefixes: cdktf.listMapper(cdktf.stringToTerraform)(this._apiAllowedPrefixes),
+      api_allowed_prefixes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._apiAllowedPrefixes),
       api_aws_role_arn: cdktf.stringToTerraform(this._apiAwsRoleArn),
-      api_blocked_prefixes: cdktf.listMapper(cdktf.stringToTerraform)(this._apiBlockedPrefixes),
+      api_blocked_prefixes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._apiBlockedPrefixes),
       api_provider: cdktf.stringToTerraform(this._apiProvider),
       azure_ad_application_id: cdktf.stringToTerraform(this._azureAdApplicationId),
       azure_tenant_id: cdktf.stringToTerraform(this._azureTenantId),

@@ -454,13 +454,16 @@ export class ExternalTable extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_external_table',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.33.1',
-        providerVersionConstraint: ' ~> 0.25'
+        providerVersion: '0.40.0',
+        providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._autoRefresh = config.autoRefresh;
     this._awsSnsTopic = config.awsSnsTopic;
@@ -725,12 +728,12 @@ export class ExternalTable extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       location: cdktf.stringToTerraform(this._location),
       name: cdktf.stringToTerraform(this._name),
-      partition_by: cdktf.listMapper(cdktf.stringToTerraform)(this._partitionBy),
+      partition_by: cdktf.listMapper(cdktf.stringToTerraform, false)(this._partitionBy),
       pattern: cdktf.stringToTerraform(this._pattern),
       refresh_on_create: cdktf.booleanToTerraform(this._refreshOnCreate),
       schema: cdktf.stringToTerraform(this._schema),
-      column: cdktf.listMapper(externalTableColumnToTerraform)(this._column.internalValue),
-      tag: cdktf.listMapper(externalTableTagToTerraform)(this._tag.internalValue),
+      column: cdktf.listMapper(externalTableColumnToTerraform, true)(this._column.internalValue),
+      tag: cdktf.listMapper(externalTableTagToTerraform, true)(this._tag.internalValue),
     };
   }
 }

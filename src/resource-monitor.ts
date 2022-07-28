@@ -102,13 +102,16 @@ export class ResourceMonitor extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_resource_monitor',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.33.1',
-        providerVersionConstraint: ' ~> 0.25'
+        providerVersion: '0.40.0',
+        providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._creditQuota = config.creditQuota;
     this._endTimestamp = config.endTimestamp;
@@ -311,12 +314,12 @@ export class ResourceMonitor extends cdktf.TerraformResource {
       frequency: cdktf.stringToTerraform(this._frequency),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
-      notify_triggers: cdktf.listMapper(cdktf.numberToTerraform)(this._notifyTriggers),
+      notify_triggers: cdktf.listMapper(cdktf.numberToTerraform, false)(this._notifyTriggers),
       set_for_account: cdktf.booleanToTerraform(this._setForAccount),
       start_timestamp: cdktf.stringToTerraform(this._startTimestamp),
-      suspend_immediate_triggers: cdktf.listMapper(cdktf.numberToTerraform)(this._suspendImmediateTriggers),
-      suspend_triggers: cdktf.listMapper(cdktf.numberToTerraform)(this._suspendTriggers),
-      warehouses: cdktf.listMapper(cdktf.stringToTerraform)(this._warehouses),
+      suspend_immediate_triggers: cdktf.listMapper(cdktf.numberToTerraform, false)(this._suspendImmediateTriggers),
+      suspend_triggers: cdktf.listMapper(cdktf.numberToTerraform, false)(this._suspendTriggers),
+      warehouses: cdktf.listMapper(cdktf.stringToTerraform, false)(this._warehouses),
     };
   }
 }

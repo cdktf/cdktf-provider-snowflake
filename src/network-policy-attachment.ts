@@ -60,13 +60,16 @@ export class NetworkPolicyAttachment extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_network_policy_attachment',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.33.1',
-        providerVersionConstraint: ' ~> 0.25'
+        providerVersion: '0.40.0',
+        providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._networkPolicyName = config.networkPolicyName;
@@ -148,7 +151,7 @@ export class NetworkPolicyAttachment extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       network_policy_name: cdktf.stringToTerraform(this._networkPolicyName),
       set_for_account: cdktf.booleanToTerraform(this._setForAccount),
-      users: cdktf.listMapper(cdktf.stringToTerraform)(this._users),
+      users: cdktf.listMapper(cdktf.stringToTerraform, false)(this._users),
     };
   }
 }
