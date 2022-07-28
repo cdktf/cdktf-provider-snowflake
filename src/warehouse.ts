@@ -310,13 +310,16 @@ export class Warehouse extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_warehouse',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.33.1',
-        providerVersionConstraint: ' ~> 0.25'
+        providerVersion: '0.40.0',
+        providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._autoResume = config.autoResume;
     this._autoSuspend = config.autoSuspend;
@@ -614,7 +617,7 @@ export class Warehouse extends cdktf.TerraformResource {
       statement_timeout_in_seconds: cdktf.numberToTerraform(this._statementTimeoutInSeconds),
       wait_for_provisioning: cdktf.booleanToTerraform(this._waitForProvisioning),
       warehouse_size: cdktf.stringToTerraform(this._warehouseSize),
-      tag: cdktf.listMapper(warehouseTagToTerraform)(this._tag.internalValue),
+      tag: cdktf.listMapper(warehouseTagToTerraform, true)(this._tag.internalValue),
     };
   }
 }

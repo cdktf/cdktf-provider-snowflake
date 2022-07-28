@@ -81,6 +81,7 @@ export * from './data-snowflake-system-get-privatelink-config';
 export * from './data-snowflake-system-get-snowflake-platform-info';
 export * from './data-snowflake-tables';
 export * from './data-snowflake-tasks';
+export * from './data-snowflake-users';
 export * from './data-snowflake-views';
 export * from './data-snowflake-warehouses';
 export * from './snowflake-provider';

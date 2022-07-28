@@ -264,13 +264,16 @@ export class Schema extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_schema',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.33.1',
-        providerVersionConstraint: ' ~> 0.25'
+        providerVersion: '0.40.0',
+        providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._comment = config.comment;
     this._dataRetentionDays = config.dataRetentionDays;
@@ -421,7 +424,7 @@ export class Schema extends cdktf.TerraformResource {
       is_managed: cdktf.booleanToTerraform(this._isManaged),
       is_transient: cdktf.booleanToTerraform(this._isTransient),
       name: cdktf.stringToTerraform(this._name),
-      tag: cdktf.listMapper(schemaTagToTerraform)(this._tag.internalValue),
+      tag: cdktf.listMapper(schemaTagToTerraform, true)(this._tag.internalValue),
     };
   }
 }

@@ -33,6 +33,12 @@ export interface ProcedureConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Specifies the language of the stored procedure code.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#language Procedure#language}
+  */
+  readonly language?: string;
+  /**
   * Specifies the identifier for the procedure; does not have to be unique for the schema in which the procedure is created. Don't use the | character.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#name Procedure#name}
@@ -224,18 +230,22 @@ export class Procedure extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_procedure',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.33.1',
-        providerVersionConstraint: ' ~> 0.25'
+        providerVersion: '0.40.0',
+        providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._comment = config.comment;
     this._database = config.database;
     this._executeAs = config.executeAs;
     this._id = config.id;
+    this._language = config.language;
     this._name = config.name;
     this._nullInputBehavior = config.nullInputBehavior;
     this._returnBehavior = config.returnBehavior;
@@ -308,6 +318,22 @@ export class Procedure extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // language - computed: false, optional: true, required: false
+  private _language?: string; 
+  public get language() {
+    return this.getStringAttribute('language');
+  }
+  public set language(value: string) {
+    this._language = value;
+  }
+  public resetLanguage() {
+    this._language = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get languageInput() {
+    return this._language;
   }
 
   // name - computed: false, optional: false, required: true
@@ -420,13 +446,14 @@ export class Procedure extends cdktf.TerraformResource {
       database: cdktf.stringToTerraform(this._database),
       execute_as: cdktf.stringToTerraform(this._executeAs),
       id: cdktf.stringToTerraform(this._id),
+      language: cdktf.stringToTerraform(this._language),
       name: cdktf.stringToTerraform(this._name),
       null_input_behavior: cdktf.stringToTerraform(this._nullInputBehavior),
       return_behavior: cdktf.stringToTerraform(this._returnBehavior),
       return_type: cdktf.stringToTerraform(this._returnType),
       schema: cdktf.stringToTerraform(this._schema),
       statement: cdktf.stringToTerraform(this._statement),
-      arguments: cdktf.listMapper(procedureArgumentsToTerraform)(this._arguments.internalValue),
+      arguments: cdktf.listMapper(procedureArgumentsToTerraform, true)(this._arguments.internalValue),
     };
   }
 }

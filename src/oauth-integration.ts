@@ -90,13 +90,16 @@ export class OauthIntegration extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_oauth_integration',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.33.1',
-        providerVersionConstraint: ' ~> 0.25'
+        providerVersion: '0.40.0',
+        providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._blockedRolesList = config.blockedRolesList;
     this._comment = config.comment;
@@ -262,7 +265,7 @@ export class OauthIntegration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      blocked_roles_list: cdktf.listMapper(cdktf.stringToTerraform)(this._blockedRolesList),
+      blocked_roles_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._blockedRolesList),
       comment: cdktf.stringToTerraform(this._comment),
       enabled: cdktf.booleanToTerraform(this._enabled),
       id: cdktf.stringToTerraform(this._id),

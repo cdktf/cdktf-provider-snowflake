@@ -96,13 +96,16 @@ export class Pipe extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_pipe',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.33.1',
-        providerVersionConstraint: ' ~> 0.25'
+        providerVersion: '0.40.0',
+        providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._autoIngest = config.autoIngest;
     this._awsSnsTopicArn = config.awsSnsTopicArn;

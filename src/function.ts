@@ -20,7 +20,7 @@ export interface FunctionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly database: string;
   /**
-  * the handler method for Java function.
+  * The handler method for Java / Python function.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#handler Function#handler}
   */
@@ -33,7 +33,7 @@ export interface FunctionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
-  * jar files to import for Java function.
+  * Imports for Java / Python functions. For Java this a list of jar files, for Python this is a list of Python files.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#imports Function#imports}
   */
@@ -57,6 +57,12 @@ export interface FunctionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly nullInputBehavior?: string;
   /**
+  * List of package imports to use for Java / Python functions. For Java, package imports should be of the form: package_name:version_number, where package_name is snowflake_domain:package. For Python use it should be: ('numpy','pandas','xgboost==1.5.0').
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#packages Function#packages}
+  */
+  readonly packages?: string[];
+  /**
   * Specifies the behavior of the function when returning results
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#return_behavior Function#return_behavior}
@@ -69,19 +75,25 @@ export interface FunctionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly returnType: string;
   /**
+  * Required for Python functions. Specifies Python runtime version.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#runtime_version Function#runtime_version}
+  */
+  readonly runtimeVersion?: string;
+  /**
   * The schema in which to create the function. Don't use the | character.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#schema Function#schema}
   */
   readonly schema: string;
   /**
-  * Specifies the javascript / java / sql code used to create the function.
+  * Specifies the javascript / java / sql / python code used to create the function.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#statement Function#statement}
   */
   readonly statement: string;
   /**
-  * the target path for compiled jar file for Java function.
+  * The target path for the Java / Python functions. For Java, it is the path of compiled jar files and for the Python it is the path of the Python files.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#target_path Function#target_path}
   */
@@ -242,13 +254,16 @@ export class Function extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_function',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.33.1',
-        providerVersionConstraint: ' ~> 0.25'
+        providerVersion: '0.40.0',
+        providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._comment = config.comment;
     this._database = config.database;
@@ -258,8 +273,10 @@ export class Function extends cdktf.TerraformResource {
     this._language = config.language;
     this._name = config.name;
     this._nullInputBehavior = config.nullInputBehavior;
+    this._packages = config.packages;
     this._returnBehavior = config.returnBehavior;
     this._returnType = config.returnType;
+    this._runtimeVersion = config.runtimeVersion;
     this._schema = config.schema;
     this._statement = config.statement;
     this._targetPath = config.targetPath;
@@ -392,6 +409,22 @@ export class Function extends cdktf.TerraformResource {
     return this._nullInputBehavior;
   }
 
+  // packages - computed: false, optional: true, required: false
+  private _packages?: string[]; 
+  public get packages() {
+    return this.getListAttribute('packages');
+  }
+  public set packages(value: string[]) {
+    this._packages = value;
+  }
+  public resetPackages() {
+    this._packages = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get packagesInput() {
+    return this._packages;
+  }
+
   // return_behavior - computed: false, optional: true, required: false
   private _returnBehavior?: string; 
   public get returnBehavior() {
@@ -419,6 +452,22 @@ export class Function extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get returnTypeInput() {
     return this._returnType;
+  }
+
+  // runtime_version - computed: false, optional: true, required: false
+  private _runtimeVersion?: string; 
+  public get runtimeVersion() {
+    return this.getStringAttribute('runtime_version');
+  }
+  public set runtimeVersion(value: string) {
+    this._runtimeVersion = value;
+  }
+  public resetRuntimeVersion() {
+    this._runtimeVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get runtimeVersionInput() {
+    return this._runtimeVersion;
   }
 
   // schema - computed: false, optional: false, required: true
@@ -489,16 +538,18 @@ export class Function extends cdktf.TerraformResource {
       database: cdktf.stringToTerraform(this._database),
       handler: cdktf.stringToTerraform(this._handler),
       id: cdktf.stringToTerraform(this._id),
-      imports: cdktf.listMapper(cdktf.stringToTerraform)(this._imports),
+      imports: cdktf.listMapper(cdktf.stringToTerraform, false)(this._imports),
       language: cdktf.stringToTerraform(this._language),
       name: cdktf.stringToTerraform(this._name),
       null_input_behavior: cdktf.stringToTerraform(this._nullInputBehavior),
+      packages: cdktf.listMapper(cdktf.stringToTerraform, false)(this._packages),
       return_behavior: cdktf.stringToTerraform(this._returnBehavior),
       return_type: cdktf.stringToTerraform(this._returnType),
+      runtime_version: cdktf.stringToTerraform(this._runtimeVersion),
       schema: cdktf.stringToTerraform(this._schema),
       statement: cdktf.stringToTerraform(this._statement),
       target_path: cdktf.stringToTerraform(this._targetPath),
-      arguments: cdktf.listMapper(functionArgumentsToTerraform)(this._arguments.internalValue),
+      arguments: cdktf.listMapper(functionArgumentsToTerraform, true)(this._arguments.internalValue),
     };
   }
 }

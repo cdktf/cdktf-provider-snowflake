@@ -132,13 +132,16 @@ export class ExternalOauthIntegration extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_external_oauth_integration',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.33.1',
-        providerVersionConstraint: ' ~> 0.25'
+        providerVersion: '0.40.0',
+        providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._allowedRoles = config.allowedRoles;
     this._anyRoleMode = config.anyRoleMode;
@@ -411,21 +414,21 @@ export class ExternalOauthIntegration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allowed_roles: cdktf.listMapper(cdktf.stringToTerraform)(this._allowedRoles),
+      allowed_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedRoles),
       any_role_mode: cdktf.stringToTerraform(this._anyRoleMode),
-      audience_urls: cdktf.listMapper(cdktf.stringToTerraform)(this._audienceUrls),
-      blocked_roles: cdktf.listMapper(cdktf.stringToTerraform)(this._blockedRoles),
+      audience_urls: cdktf.listMapper(cdktf.stringToTerraform, false)(this._audienceUrls),
+      blocked_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._blockedRoles),
       comment: cdktf.stringToTerraform(this._comment),
       enabled: cdktf.booleanToTerraform(this._enabled),
       id: cdktf.stringToTerraform(this._id),
       issuer: cdktf.stringToTerraform(this._issuer),
-      jws_keys_urls: cdktf.listMapper(cdktf.stringToTerraform)(this._jwsKeysUrls),
+      jws_keys_urls: cdktf.listMapper(cdktf.stringToTerraform, false)(this._jwsKeysUrls),
       name: cdktf.stringToTerraform(this._name),
       rsa_public_key: cdktf.stringToTerraform(this._rsaPublicKey),
       rsa_public_key_2: cdktf.stringToTerraform(this._rsaPublicKey2),
       scope_delimiter: cdktf.stringToTerraform(this._scopeDelimiter),
       snowflake_user_mapping_attribute: cdktf.stringToTerraform(this._snowflakeUserMappingAttribute),
-      token_user_mapping_claims: cdktf.listMapper(cdktf.stringToTerraform)(this._tokenUserMappingClaims),
+      token_user_mapping_claims: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tokenUserMappingClaims),
       type: cdktf.stringToTerraform(this._type),
     };
   }

@@ -236,13 +236,16 @@ export class Role extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_role',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.33.1',
-        providerVersionConstraint: ' ~> 0.25'
+        providerVersion: '0.40.0',
+        providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._comment = config.comment;
     this._id = config.id;
@@ -324,7 +327,7 @@ export class Role extends cdktf.TerraformResource {
       comment: cdktf.stringToTerraform(this._comment),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
-      tag: cdktf.listMapper(roleTagToTerraform)(this._tag.internalValue),
+      tag: cdktf.listMapper(roleTagToTerraform, true)(this._tag.internalValue),
     };
   }
 }

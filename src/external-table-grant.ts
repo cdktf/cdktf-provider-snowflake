@@ -55,7 +55,7 @@ export interface ExternalTableGrantConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_table_grant#schema_name ExternalTableGrant#schema_name}
   */
-  readonly schemaName: string;
+  readonly schemaName?: string;
   /**
   * Grants privilege to these shares (only valid if on_future is false).
   * 
@@ -96,13 +96,16 @@ export class ExternalTableGrant extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_external_table_grant',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.33.1',
-        providerVersionConstraint: ' ~> 0.25'
+        providerVersion: '0.40.0',
+        providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._databaseName = config.databaseName;
     this._enableMultipleGrants = config.enableMultipleGrants;
@@ -229,13 +232,16 @@ export class ExternalTableGrant extends cdktf.TerraformResource {
     return this._roles;
   }
 
-  // schema_name - computed: false, optional: false, required: true
+  // schema_name - computed: false, optional: true, required: false
   private _schemaName?: string; 
   public get schemaName() {
     return this.getStringAttribute('schema_name');
   }
   public set schemaName(value: string) {
     this._schemaName = value;
+  }
+  public resetSchemaName() {
+    this._schemaName = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get schemaNameInput() {
@@ -286,9 +292,9 @@ export class ExternalTableGrant extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       on_future: cdktf.booleanToTerraform(this._onFuture),
       privilege: cdktf.stringToTerraform(this._privilege),
-      roles: cdktf.listMapper(cdktf.stringToTerraform)(this._roles),
+      roles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._roles),
       schema_name: cdktf.stringToTerraform(this._schemaName),
-      shares: cdktf.listMapper(cdktf.stringToTerraform)(this._shares),
+      shares: cdktf.listMapper(cdktf.stringToTerraform, false)(this._shares),
       with_grant_option: cdktf.booleanToTerraform(this._withGrantOption),
     };
   }

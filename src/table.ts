@@ -555,7 +555,7 @@ export function tablePrimaryKeyToTerraform(struct?: TablePrimaryKeyOutputReferen
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    keys: cdktf.listMapper(cdktf.stringToTerraform)(struct!.keys),
+    keys: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.keys),
     name: cdktf.stringToTerraform(struct!.name),
   }
 }
@@ -834,13 +834,16 @@ export class Table extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_table',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.33.1',
-        providerVersionConstraint: ' ~> 0.25'
+        providerVersion: '0.40.0',
+        providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._changeTracking = config.changeTracking;
     this._clusterBy = config.clusterBy;
@@ -1035,16 +1038,16 @@ export class Table extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       change_tracking: cdktf.booleanToTerraform(this._changeTracking),
-      cluster_by: cdktf.listMapper(cdktf.stringToTerraform)(this._clusterBy),
+      cluster_by: cdktf.listMapper(cdktf.stringToTerraform, false)(this._clusterBy),
       comment: cdktf.stringToTerraform(this._comment),
       data_retention_days: cdktf.numberToTerraform(this._dataRetentionDays),
       database: cdktf.stringToTerraform(this._database),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       schema: cdktf.stringToTerraform(this._schema),
-      column: cdktf.listMapper(tableColumnToTerraform)(this._column.internalValue),
+      column: cdktf.listMapper(tableColumnToTerraform, true)(this._column.internalValue),
       primary_key: tablePrimaryKeyToTerraform(this._primaryKey.internalValue),
-      tag: cdktf.listMapper(tableTagToTerraform)(this._tag.internalValue),
+      tag: cdktf.listMapper(tableTagToTerraform, true)(this._tag.internalValue),
     };
   }
 }

@@ -104,6 +104,12 @@ export interface SnowflakeProviderConfig {
   */
   readonly username: string;
   /**
+  * Sets the default warehouse. Optional. Can be sourced from SNOWFLAKE_WAREHOUSE enviornment variable.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#warehouse SnowflakeProvider#warehouse}
+  */
+  readonly warehouse?: string;
+  /**
   * Alias name
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#alias SnowflakeProvider#alias}
@@ -137,10 +143,10 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'snowflake',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.33.1',
-        providerVersionConstraint: ' ~> 0.25'
+        providerVersion: '0.40.0',
+        providerVersionConstraint: ' ~> 0.40'
       },
-      terraformProviderSource: 'chanzuckerberg/snowflake'
+      terraformProviderSource: 'Snowflake-Labs/snowflake'
     });
     this._account = config.account;
     this._browserAuth = config.browserAuth;
@@ -158,6 +164,7 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
     this._region = config.region;
     this._role = config.role;
     this._username = config.username;
+    this._warehouse = config.warehouse;
     this._alias = config.alias;
   }
 
@@ -415,6 +422,22 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
     return this._username;
   }
 
+  // warehouse - computed: false, optional: true, required: false
+  private _warehouse?: string; 
+  public get warehouse() {
+    return this._warehouse;
+  }
+  public set warehouse(value: string | undefined) {
+    this._warehouse = value;
+  }
+  public resetWarehouse() {
+    this._warehouse = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get warehouseInput() {
+    return this._warehouse;
+  }
+
   // alias - computed: false, optional: true, required: false
   private _alias?: string; 
   public get alias() {
@@ -453,6 +476,7 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
       region: cdktf.stringToTerraform(this._region),
       role: cdktf.stringToTerraform(this._role),
       username: cdktf.stringToTerraform(this._username),
+      warehouse: cdktf.stringToTerraform(this._warehouse),
       alias: cdktf.stringToTerraform(this._alias),
     };
   }

@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface ShareConfig extends cdktf.TerraformMetaArguments {
   /**
-  * A list of accounts to be added to the share.
+  * A list of accounts to be added to the share. Values should not be the account locator, but in the form of 'organization_name.account_name
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/share#accounts Share#accounts}
   */
@@ -60,13 +60,16 @@ export class Share extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_share',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.33.1',
-        providerVersionConstraint: ' ~> 0.25'
+        providerVersion: '0.40.0',
+        providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accounts = config.accounts;
     this._comment = config.comment;
@@ -145,7 +148,7 @@ export class Share extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      accounts: cdktf.listMapper(cdktf.stringToTerraform)(this._accounts),
+      accounts: cdktf.listMapper(cdktf.stringToTerraform, false)(this._accounts),
       comment: cdktf.stringToTerraform(this._comment),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),

@@ -78,13 +78,16 @@ export class DatabaseGrant extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_database_grant',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.33.1',
-        providerVersionConstraint: ' ~> 0.25'
+        providerVersion: '0.40.0',
+        providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._databaseName = config.databaseName;
     this._enableMultipleGrants = config.enableMultipleGrants;
@@ -218,8 +221,8 @@ export class DatabaseGrant extends cdktf.TerraformResource {
       enable_multiple_grants: cdktf.booleanToTerraform(this._enableMultipleGrants),
       id: cdktf.stringToTerraform(this._id),
       privilege: cdktf.stringToTerraform(this._privilege),
-      roles: cdktf.listMapper(cdktf.stringToTerraform)(this._roles),
-      shares: cdktf.listMapper(cdktf.stringToTerraform)(this._shares),
+      roles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._roles),
+      shares: cdktf.listMapper(cdktf.stringToTerraform, false)(this._shares),
       with_grant_option: cdktf.booleanToTerraform(this._withGrantOption),
     };
   }

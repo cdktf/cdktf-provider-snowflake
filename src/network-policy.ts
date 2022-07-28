@@ -66,13 +66,16 @@ export class NetworkPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_network_policy',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.33.1',
-        providerVersionConstraint: ' ~> 0.25'
+        providerVersion: '0.40.0',
+        providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._allowedIpList = config.allowedIpList;
     this._blockedIpList = config.blockedIpList;
@@ -165,8 +168,8 @@ export class NetworkPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allowed_ip_list: cdktf.listMapper(cdktf.stringToTerraform)(this._allowedIpList),
-      blocked_ip_list: cdktf.listMapper(cdktf.stringToTerraform)(this._blockedIpList),
+      allowed_ip_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedIpList),
+      blocked_ip_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._blockedIpList),
       comment: cdktf.stringToTerraform(this._comment),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),

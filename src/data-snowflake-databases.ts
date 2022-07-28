@@ -15,6 +15,75 @@ export interface DataSnowflakeDatabasesConfig extends cdktf.TerraformMetaArgumen
   */
   readonly id?: string;
 }
+export interface DataSnowflakeDatabasesDatabasesReplicationConfiguration {
+}
+
+export function dataSnowflakeDatabasesDatabasesReplicationConfigurationToTerraform(struct?: DataSnowflakeDatabasesDatabasesReplicationConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataSnowflakeDatabasesDatabasesReplicationConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataSnowflakeDatabasesDatabasesReplicationConfiguration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataSnowflakeDatabasesDatabasesReplicationConfiguration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // accounts - computed: true, optional: false, required: false
+  public get accounts() {
+    return this.getListAttribute('accounts');
+  }
+
+  // ignore_edition_check - computed: true, optional: false, required: false
+  public get ignoreEditionCheck() {
+    return this.getBooleanAttribute('ignore_edition_check');
+  }
+}
+
+export class DataSnowflakeDatabasesDatabasesReplicationConfigurationList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataSnowflakeDatabasesDatabasesReplicationConfigurationOutputReference {
+    return new DataSnowflakeDatabasesDatabasesReplicationConfigurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataSnowflakeDatabasesDatabases {
 }
 
@@ -95,6 +164,12 @@ export class DataSnowflakeDatabasesDatabasesOutputReference extends cdktf.Comple
     return this.getStringAttribute('owner');
   }
 
+  // replication_configuration - computed: true, optional: false, required: false
+  private _replicationConfiguration = new DataSnowflakeDatabasesDatabasesReplicationConfigurationList(this, "replication_configuration", false);
+  public get replicationConfiguration() {
+    return this._replicationConfiguration;
+  }
+
   // retention_time - computed: true, optional: false, required: false
   public get retentionTime() {
     return this.getNumberAttribute('retention_time');
@@ -146,13 +221,16 @@ export class DataSnowflakeDatabases extends cdktf.TerraformDataSource {
       terraformResourceType: 'snowflake_databases',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.33.1',
-        providerVersionConstraint: ' ~> 0.25'
+        providerVersion: '0.40.0',
+        providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
   }
