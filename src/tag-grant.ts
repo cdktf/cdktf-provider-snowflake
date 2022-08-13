@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/snowflake/r/database_grant
+// https://www.terraform.io/docs/providers/snowflake/r/tag_grant
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -6,76 +6,82 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DatabaseGrantConfig extends cdktf.TerraformMetaArguments {
+export interface TagGrantConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The name of the database on which to grant privileges.
+  * The name of the database containing the tag on which to grant privileges.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/database_grant#database_name DatabaseGrant#database_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/tag_grant#database_name TagGrant#database_name}
   */
   readonly databaseName: string;
   /**
   * When this is set to true, multiple grants of the same type can be created. This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/database_grant#enable_multiple_grants DatabaseGrant#enable_multiple_grants}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/tag_grant#enable_multiple_grants TagGrant#enable_multiple_grants}
   */
   readonly enableMultipleGrants?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/database_grant#id DatabaseGrant#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/tag_grant#id TagGrant#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * The privilege to grant on the database.
+  * The privilege to grant on the tag.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/database_grant#privilege DatabaseGrant#privilege}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/tag_grant#privilege TagGrant#privilege}
   */
   readonly privilege?: string;
   /**
   * Grants privilege to these roles.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/database_grant#roles DatabaseGrant#roles}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/tag_grant#roles TagGrant#roles}
   */
   readonly roles?: string[];
   /**
-  * Grants privilege to these shares.
+  * The name of the schema containing the tag on which to grant privileges.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/database_grant#shares DatabaseGrant#shares}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/tag_grant#schema_name TagGrant#schema_name}
   */
-  readonly shares?: string[];
+  readonly schemaName: string;
+  /**
+  * The name of the tag on which to grant privileges.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/tag_grant#tag_name TagGrant#tag_name}
+  */
+  readonly tagName: string;
   /**
   * When this is set to true, allows the recipient role to grant the privileges to other roles.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/database_grant#with_grant_option DatabaseGrant#with_grant_option}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/tag_grant#with_grant_option TagGrant#with_grant_option}
   */
   readonly withGrantOption?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/database_grant snowflake_database_grant}
+* Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/tag_grant snowflake_tag_grant}
 */
-export class DatabaseGrant extends cdktf.TerraformResource {
+export class TagGrant extends cdktf.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = "snowflake_database_grant";
+  public static readonly tfResourceType = "snowflake_tag_grant";
 
   // ===========
   // INITIALIZER
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/snowflake/r/database_grant snowflake_database_grant} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/snowflake/r/tag_grant snowflake_tag_grant} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DatabaseGrantConfig
+  * @param options TagGrantConfig
   */
-  public constructor(scope: Construct, id: string, config: DatabaseGrantConfig) {
+  public constructor(scope: Construct, id: string, config: TagGrantConfig) {
     super(scope, id, {
-      terraformResourceType: 'snowflake_database_grant',
+      terraformResourceType: 'snowflake_tag_grant',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
         providerVersion: '0.41.0',
@@ -94,7 +100,8 @@ export class DatabaseGrant extends cdktf.TerraformResource {
     this._id = config.id;
     this._privilege = config.privilege;
     this._roles = config.roles;
-    this._shares = config.shares;
+    this._schemaName = config.schemaName;
+    this._tagName = config.tagName;
     this._withGrantOption = config.withGrantOption;
   }
 
@@ -179,20 +186,30 @@ export class DatabaseGrant extends cdktf.TerraformResource {
     return this._roles;
   }
 
-  // shares - computed: false, optional: true, required: false
-  private _shares?: string[]; 
-  public get shares() {
-    return cdktf.Fn.tolist(this.getListAttribute('shares'));
+  // schema_name - computed: false, optional: false, required: true
+  private _schemaName?: string; 
+  public get schemaName() {
+    return this.getStringAttribute('schema_name');
   }
-  public set shares(value: string[]) {
-    this._shares = value;
-  }
-  public resetShares() {
-    this._shares = undefined;
+  public set schemaName(value: string) {
+    this._schemaName = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get sharesInput() {
-    return this._shares;
+  public get schemaNameInput() {
+    return this._schemaName;
+  }
+
+  // tag_name - computed: false, optional: false, required: true
+  private _tagName?: string; 
+  public get tagName() {
+    return this.getStringAttribute('tag_name');
+  }
+  public set tagName(value: string) {
+    this._tagName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagNameInput() {
+    return this._tagName;
   }
 
   // with_grant_option - computed: false, optional: true, required: false
@@ -222,7 +239,8 @@ export class DatabaseGrant extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       privilege: cdktf.stringToTerraform(this._privilege),
       roles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._roles),
-      shares: cdktf.listMapper(cdktf.stringToTerraform, false)(this._shares),
+      schema_name: cdktf.stringToTerraform(this._schemaName),
+      tag_name: cdktf.stringToTerraform(this._tagName),
       with_grant_option: cdktf.booleanToTerraform(this._withGrantOption),
     };
   }

@@ -143,7 +143,7 @@ export class DataSnowflakeProcedures extends cdktf.TerraformDataSource {
       terraformResourceType: 'snowflake_procedures',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.40.0',
+        providerVersion: '0.41.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
