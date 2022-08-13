@@ -224,12 +224,6 @@ export interface FileFormatConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/file_format#trim_space FileFormat#trim_space}
   */
   readonly trimSpace?: boolean | cdktf.IResolvable;
-  /**
-  * Boolean that specifies whether to validate UTF-8 character encoding in string column data.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/file_format#validate_utf8 FileFormat#validate_utf8}
-  */
-  readonly validateUtf8?: boolean | cdktf.IResolvable;
 }
 
 /**
@@ -258,7 +252,7 @@ export class FileFormat extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_file_format',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.40.0',
+        providerVersion: '0.41.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
@@ -305,7 +299,6 @@ export class FileFormat extends cdktf.TerraformResource {
     this._timeFormat = config.timeFormat;
     this._timestampFormat = config.timestampFormat;
     this._trimSpace = config.trimSpace;
-    this._validateUtf8 = config.validateUtf8;
   }
 
   // ==========
@@ -876,22 +869,6 @@ export class FileFormat extends cdktf.TerraformResource {
     return this._trimSpace;
   }
 
-  // validate_utf8 - computed: false, optional: true, required: false
-  private _validateUtf8?: boolean | cdktf.IResolvable; 
-  public get validateUtf8() {
-    return this.getBooleanAttribute('validate_utf8');
-  }
-  public set validateUtf8(value: boolean | cdktf.IResolvable) {
-    this._validateUtf8 = value;
-  }
-  public resetValidateUtf8() {
-    this._validateUtf8 = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get validateUtf8Input() {
-    return this._validateUtf8;
-  }
-
   // =========
   // SYNTHESIS
   // =========
@@ -934,7 +911,6 @@ export class FileFormat extends cdktf.TerraformResource {
       time_format: cdktf.stringToTerraform(this._timeFormat),
       timestamp_format: cdktf.stringToTerraform(this._timestampFormat),
       trim_space: cdktf.booleanToTerraform(this._trimSpace),
-      validate_utf8: cdktf.booleanToTerraform(this._validateUtf8),
     };
   }
 }
