@@ -132,7 +132,7 @@ export class SamlIntegration extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_saml_integration',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.41.0',
+        providerVersion: '0.42.1',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,

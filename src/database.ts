@@ -41,6 +41,12 @@ export interface DatabaseConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Specifies a database as transient. Transient databases do not have a Fail-safe period so they do not incur additional storage costs once they leave Time Travel; however, this means they are also not protected by Fail-safe in the event of a data loss.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/database#is_transient Database#is_transient}
+  */
+  readonly isTransient?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/database#name Database#name}
   */
   readonly name: string;
@@ -353,7 +359,7 @@ export class Database extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_database',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.41.0',
+        providerVersion: '0.42.1',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
@@ -370,6 +376,7 @@ export class Database extends cdktf.TerraformResource {
     this._fromReplica = config.fromReplica;
     this._fromShare = config.fromShare;
     this._id = config.id;
+    this._isTransient = config.isTransient;
     this._name = config.name;
     this._replicationConfiguration.internalValue = config.replicationConfiguration;
     this._tag.internalValue = config.tag;
@@ -475,6 +482,22 @@ export class Database extends cdktf.TerraformResource {
     return this._id;
   }
 
+  // is_transient - computed: false, optional: true, required: false
+  private _isTransient?: boolean | cdktf.IResolvable; 
+  public get isTransient() {
+    return this.getBooleanAttribute('is_transient');
+  }
+  public set isTransient(value: boolean | cdktf.IResolvable) {
+    this._isTransient = value;
+  }
+  public resetIsTransient() {
+    this._isTransient = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get isTransientInput() {
+    return this._isTransient;
+  }
+
   // name - computed: false, optional: false, required: true
   private _name?: string; 
   public get name() {
@@ -532,6 +555,7 @@ export class Database extends cdktf.TerraformResource {
       from_replica: cdktf.stringToTerraform(this._fromReplica),
       from_share: cdktf.hashMapper(cdktf.stringToTerraform)(this._fromShare),
       id: cdktf.stringToTerraform(this._id),
+      is_transient: cdktf.booleanToTerraform(this._isTransient),
       name: cdktf.stringToTerraform(this._name),
       replication_configuration: databaseReplicationConfigurationToTerraform(this._replicationConfiguration.internalValue),
       tag: cdktf.listMapper(databaseTagToTerraform, true)(this._tag.internalValue),
