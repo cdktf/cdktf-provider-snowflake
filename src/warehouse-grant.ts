@@ -72,7 +72,7 @@ export class WarehouseGrant extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_warehouse_grant',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.41.0',
+        providerVersion: '0.42.1',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,

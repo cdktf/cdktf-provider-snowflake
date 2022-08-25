@@ -1458,6 +1458,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.Database.resetFromReplica">resetFromReplica</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Database.resetFromShare">resetFromShare</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Database.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.Database.resetIsTransient">resetIsTransient</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Database.resetReplicationConfiguration">resetReplicationConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Database.resetTag">resetTag</a></code> | *No description.* |
 
@@ -1707,6 +1708,12 @@ public resetFromShare(): void
 public resetId(): void
 ```
 
+##### `resetIsTransient` <a name="resetIsTransient" id="@cdktf/provider-snowflake.Database.resetIsTransient"></a>
+
+```typescript
+public resetIsTransient(): void
+```
+
 ##### `resetReplicationConfiguration` <a name="resetReplicationConfiguration" id="@cdktf/provider-snowflake.Database.resetReplicationConfiguration"></a>
 
 ```typescript
@@ -1785,6 +1792,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.Database.property.fromReplicaInput">fromReplicaInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Database.property.fromShareInput">fromShareInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Database.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.Database.property.isTransientInput">isTransientInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Database.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Database.property.replicationConfigurationInput">replicationConfigurationInput</a></code> | <code><a href="#@cdktf/provider-snowflake.DatabaseReplicationConfiguration">DatabaseReplicationConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Database.property.tagInput">tagInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.DatabaseTag">DatabaseTag</a>[]</code> | *No description.* |
@@ -1794,6 +1802,7 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.Database.property.fromReplica">fromReplica</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Database.property.fromShare">fromShare</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Database.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.Database.property.isTransient">isTransient</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Database.property.name">name</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -2020,6 +2029,16 @@ public readonly idInput: string;
 
 ---
 
+##### `isTransientInput`<sup>Optional</sup> <a name="isTransientInput" id="@cdktf/provider-snowflake.Database.property.isTransientInput"></a>
+
+```typescript
+public readonly isTransientInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-snowflake.Database.property.nameInput"></a>
 
 ```typescript
@@ -2107,6 +2126,16 @@ public readonly id: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `isTransient`<sup>Required</sup> <a name="isTransient" id="@cdktf/provider-snowflake.Database.property.isTransient"></a>
+
+```typescript
+public readonly isTransient: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -51354,6 +51383,666 @@ public readonly tfResourceType: string;
 
 ---
 
+### TagAssociation <a name="TagAssociation" id="@cdktf/provider-snowflake.TagAssociation"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/tag_association snowflake_tag_association}.
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.TagAssociation.Initializer"></a>
+
+```typescript
+import { TagAssociation } from '@cdktf/provider-snowflake'
+
+new TagAssociation(scope: Construct, id: string, config: TagAssociationConfig)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-snowflake.TagAssociationConfig">TagAssociationConfig</a></code> | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-snowflake.TagAssociation.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.TagAssociation.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-snowflake.TagAssociation.Initializer.parameter.config"></a>
+
+- *Type:* <a href="#@cdktf/provider-snowflake.TagAssociationConfig">TagAssociationConfig</a>
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.resetSkipValidation">resetSkipValidation</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.resetTimeouts">resetTimeouts</a></code> | *No description.* |
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-snowflake.TagAssociation.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Returns a string representation of this construct.
+
+##### `addOverride` <a name="addOverride" id="@cdktf/provider-snowflake.TagAssociation.addOverride"></a>
+
+```typescript
+public addOverride(path: string, value: any): void
+```
+
+###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-snowflake.TagAssociation.addOverride.parameter.path"></a>
+
+- *Type:* string
+
+---
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-snowflake.TagAssociation.addOverride.parameter.value"></a>
+
+- *Type:* any
+
+---
+
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-snowflake.TagAssociation.overrideLogicalId"></a>
+
+```typescript
+public overrideLogicalId(newLogicalId: string): void
+```
+
+Overrides the auto-generated logical ID with a specific ID.
+
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-snowflake.TagAssociation.overrideLogicalId.parameter.newLogicalId"></a>
+
+- *Type:* string
+
+The new logical ID to use for this stack element.
+
+---
+
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-snowflake.TagAssociation.resetOverrideLogicalId"></a>
+
+```typescript
+public resetOverrideLogicalId(): void
+```
+
+Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-snowflake.TagAssociation.toMetadata"></a>
+
+```typescript
+public toMetadata(): any
+```
+
+##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-snowflake.TagAssociation.toTerraform"></a>
+
+```typescript
+public toTerraform(): any
+```
+
+Adds this resource to the terraform JSON output.
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.TagAssociation.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TagAssociation.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.TagAssociation.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TagAssociation.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.TagAssociation.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TagAssociation.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.TagAssociation.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TagAssociation.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.TagAssociation.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TagAssociation.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.TagAssociation.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TagAssociation.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.TagAssociation.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TagAssociation.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.TagAssociation.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TagAssociation.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.TagAssociation.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TagAssociation.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.TagAssociation.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TagAssociation.interpolationForAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `putTimeouts` <a name="putTimeouts" id="@cdktf/provider-snowflake.TagAssociation.putTimeouts"></a>
+
+```typescript
+public putTimeouts(value: TagAssociationTimeouts): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-snowflake.TagAssociation.putTimeouts.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-snowflake.TagAssociationTimeouts">TagAssociationTimeouts</a>
+
+---
+
+##### `resetId` <a name="resetId" id="@cdktf/provider-snowflake.TagAssociation.resetId"></a>
+
+```typescript
+public resetId(): void
+```
+
+##### `resetSkipValidation` <a name="resetSkipValidation" id="@cdktf/provider-snowflake.TagAssociation.resetSkipValidation"></a>
+
+```typescript
+public resetSkipValidation(): void
+```
+
+##### `resetTimeouts` <a name="resetTimeouts" id="@cdktf/provider-snowflake.TagAssociation.resetTimeouts"></a>
+
+```typescript
+public resetTimeouts(): void
+```
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+
+---
+
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-snowflake.TagAssociation.isConstruct"></a>
+
+```typescript
+import { TagAssociation } from '@cdktf/provider-snowflake'
+
+TagAssociation.isConstruct(x: any)
+```
+
+Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.TagAssociation.isConstruct.parameter.x"></a>
+
+- *Type:* any
+
+Any object.
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference">TagAssociationTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.property.objectNameInput">objectNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.property.objectTypeInput">objectTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.property.skipValidationInput">skipValidationInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.property.tagIdInput">tagIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.property.tagValueInput">tagValueInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.TagAssociationTimeouts">TagAssociationTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.property.objectName">objectName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.property.objectType">objectType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.property.skipValidation">skipValidation</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.property.tagId">tagId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.property.tagValue">tagValue</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-snowflake.TagAssociation.property.node"></a>
+
+```typescript
+public readonly node: Node;
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-snowflake.TagAssociation.property.cdktfStack"></a>
+
+```typescript
+public readonly cdktfStack: TerraformStack;
+```
+
+- *Type:* cdktf.TerraformStack
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.TagAssociation.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-snowflake.TagAssociation.property.friendlyUniqueId"></a>
+
+```typescript
+public readonly friendlyUniqueId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-snowflake.TagAssociation.property.terraformMetaArguments"></a>
+
+```typescript
+public readonly terraformMetaArguments: {[ key: string ]: any};
+```
+
+- *Type:* {[ key: string ]: any}
+
+---
+
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-snowflake.TagAssociation.property.terraformResourceType"></a>
+
+```typescript
+public readonly terraformResourceType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-snowflake.TagAssociation.property.terraformGeneratorMetadata"></a>
+
+```typescript
+public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
+```
+
+- *Type:* cdktf.TerraformProviderGeneratorMetadata
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.TagAssociation.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.TagAssociation.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* number
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-snowflake.TagAssociation.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-snowflake.TagAssociation.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-snowflake.TagAssociation.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-snowflake.TagAssociation.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.TagAssociation.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+
+---
+
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-snowflake.TagAssociation.property.timeouts"></a>
+
+```typescript
+public readonly timeouts: TagAssociationTimeoutsOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference">TagAssociationTimeoutsOutputReference</a>
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-snowflake.TagAssociation.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `objectNameInput`<sup>Optional</sup> <a name="objectNameInput" id="@cdktf/provider-snowflake.TagAssociation.property.objectNameInput"></a>
+
+```typescript
+public readonly objectNameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `objectTypeInput`<sup>Optional</sup> <a name="objectTypeInput" id="@cdktf/provider-snowflake.TagAssociation.property.objectTypeInput"></a>
+
+```typescript
+public readonly objectTypeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `skipValidationInput`<sup>Optional</sup> <a name="skipValidationInput" id="@cdktf/provider-snowflake.TagAssociation.property.skipValidationInput"></a>
+
+```typescript
+public readonly skipValidationInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `tagIdInput`<sup>Optional</sup> <a name="tagIdInput" id="@cdktf/provider-snowflake.TagAssociation.property.tagIdInput"></a>
+
+```typescript
+public readonly tagIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tagValueInput`<sup>Optional</sup> <a name="tagValueInput" id="@cdktf/provider-snowflake.TagAssociation.property.tagValueInput"></a>
+
+```typescript
+public readonly tagValueInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-snowflake.TagAssociation.property.timeoutsInput"></a>
+
+```typescript
+public readonly timeoutsInput: IResolvable | TagAssociationTimeouts;
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-snowflake.TagAssociationTimeouts">TagAssociationTimeouts</a>
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.TagAssociation.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
+##### `objectName`<sup>Required</sup> <a name="objectName" id="@cdktf/provider-snowflake.TagAssociation.property.objectName"></a>
+
+```typescript
+public readonly objectName: string;
+```
+
+- *Type:* string
+
+---
+
+##### `objectType`<sup>Required</sup> <a name="objectType" id="@cdktf/provider-snowflake.TagAssociation.property.objectType"></a>
+
+```typescript
+public readonly objectType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `skipValidation`<sup>Required</sup> <a name="skipValidation" id="@cdktf/provider-snowflake.TagAssociation.property.skipValidation"></a>
+
+```typescript
+public readonly skipValidation: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `tagId`<sup>Required</sup> <a name="tagId" id="@cdktf/provider-snowflake.TagAssociation.property.tagId"></a>
+
+```typescript
+public readonly tagId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tagValue`<sup>Required</sup> <a name="tagValue" id="@cdktf/provider-snowflake.TagAssociation.property.tagValue"></a>
+
+```typescript
+public readonly tagValue: string;
+```
+
+- *Type:* string
+
+---
+
+#### Constants <a name="Constants" id="Constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-snowflake.TagAssociation.property.tfResourceType"></a>
+
+```typescript
+public readonly tfResourceType: string;
+```
+
+- *Type:* string
+
+---
+
 ### TagGrant <a name="TagGrant" id="@cdktf/provider-snowflake.TagGrant"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/tag_grant snowflake_tag_grant}.
@@ -59291,6 +59980,7 @@ const databaseConfig: DatabaseConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.DatabaseConfig.property.fromReplica">fromReplica</a></code> | <code>string</code> | Specify a fully-qualified path to a database to create a replica from. |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseConfig.property.fromShare">fromShare</a></code> | <code>{[ key: string ]: string}</code> | Specify a provider and a share in this map to create a database from a share. |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/database#id Database#id}. |
+| <code><a href="#@cdktf/provider-snowflake.DatabaseConfig.property.isTransient">isTransient</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies a database as transient. |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseConfig.property.replicationConfiguration">replicationConfiguration</a></code> | <code><a href="#@cdktf/provider-snowflake.DatabaseReplicationConfiguration">DatabaseReplicationConfiguration</a></code> | replication_configuration block. |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseConfig.property.tag">tag</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.DatabaseTag">DatabaseTag</a>[]</code> | tag block. |
 
@@ -59458,6 +60148,22 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `isTransient`<sup>Optional</sup> <a name="isTransient" id="@cdktf/provider-snowflake.DatabaseConfig.property.isTransient"></a>
+
+```typescript
+public readonly isTransient: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Specifies a database as transient.
+
+Transient databases do not have a Fail-safe period so they do not incur additional storage costs once they leave Time Travel; however, this means they are also not protected by Fail-safe in the event of a data loss.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/database#is_transient Database#is_transient}
 
 ---
 
@@ -75679,6 +76385,238 @@ public readonly schema: string;
 Name of the schema that the tag was created in.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table#schema Table#schema}
+
+---
+
+### TagAssociationConfig <a name="TagAssociationConfig" id="@cdktf/provider-snowflake.TagAssociationConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.TagAssociationConfig.Initializer"></a>
+
+```typescript
+import { TagAssociationConfig } from '@cdktf/provider-snowflake'
+
+const tagAssociationConfig: TagAssociationConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociationConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociationConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociationConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociationConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociationConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociationConfig.property.objectName">objectName</a></code> | <code>string</code> | Specifies the object identifier for the tag association. |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociationConfig.property.objectType">objectType</a></code> | <code>string</code> | Specifies the type of object to add a tag to. ex: 'ACCOUNT', 'COLUMN', 'DATABASE', etc. For more information: https://docs.snowflake.com/en/user-guide/object-tagging.html#supported-objects. |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociationConfig.property.tagId">tagId</a></code> | <code>string</code> | Specifies the identifier for the tag. Note: format must follow: "databaseName"."schemaName"."tagName" or "databaseName.schemaName.tagName" or "databaseName\|schemaName.tagName" (snowflake_tag.tag.id). |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociationConfig.property.tagValue">tagValue</a></code> | <code>string</code> | Specifies the value of the tag, (e.g. 'finance' or 'engineering'). |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/tag_association#id TagAssociation#id}. |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociationConfig.property.skipValidation">skipValidation</a></code> | <code>boolean \| cdktf.IResolvable</code> | If true, skips validation of the tag association. |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociationConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.TagAssociationTimeouts">TagAssociationTimeouts</a></code> | timeouts block. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.TagAssociationConfig.property.connection"></a>
+
+```typescript
+public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.TagAssociationConfig.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* number
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-snowflake.TagAssociationConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* cdktf.ITerraformDependable[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-snowflake.TagAssociationConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-snowflake.TagAssociationConfig.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-snowflake.TagAssociationConfig.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.TagAssociationConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+
+---
+
+##### `objectName`<sup>Required</sup> <a name="objectName" id="@cdktf/provider-snowflake.TagAssociationConfig.property.objectName"></a>
+
+```typescript
+public readonly objectName: string;
+```
+
+- *Type:* string
+
+Specifies the object identifier for the tag association.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/tag_association#object_name TagAssociation#object_name}
+
+---
+
+##### `objectType`<sup>Required</sup> <a name="objectType" id="@cdktf/provider-snowflake.TagAssociationConfig.property.objectType"></a>
+
+```typescript
+public readonly objectType: string;
+```
+
+- *Type:* string
+
+Specifies the type of object to add a tag to. ex: 'ACCOUNT', 'COLUMN', 'DATABASE', etc. For more information: https://docs.snowflake.com/en/user-guide/object-tagging.html#supported-objects.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/tag_association#object_type TagAssociation#object_type}
+
+---
+
+##### `tagId`<sup>Required</sup> <a name="tagId" id="@cdktf/provider-snowflake.TagAssociationConfig.property.tagId"></a>
+
+```typescript
+public readonly tagId: string;
+```
+
+- *Type:* string
+
+Specifies the identifier for the tag. Note: format must follow: "databaseName"."schemaName"."tagName" or "databaseName.schemaName.tagName" or "databaseName|schemaName.tagName" (snowflake_tag.tag.id).
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/tag_association#tag_id TagAssociation#tag_id}
+
+---
+
+##### `tagValue`<sup>Required</sup> <a name="tagValue" id="@cdktf/provider-snowflake.TagAssociationConfig.property.tagValue"></a>
+
+```typescript
+public readonly tagValue: string;
+```
+
+- *Type:* string
+
+Specifies the value of the tag, (e.g. 'finance' or 'engineering').
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/tag_association#tag_value TagAssociation#tag_value}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-snowflake.TagAssociationConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/tag_association#id TagAssociation#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `skipValidation`<sup>Optional</sup> <a name="skipValidation" id="@cdktf/provider-snowflake.TagAssociationConfig.property.skipValidation"></a>
+
+```typescript
+public readonly skipValidation: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+If true, skips validation of the tag association.
+
+It can take up to an hour for the SNOWFLAKE.TAG_REFERENCES table to update, and also requires ACCOUNT_ADMIN role to read from. https://docs.snowflake.com/en/sql-reference/account-usage/tag_references.html
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/tag_association#skip_validation TagAssociation#skip_validation}
+
+---
+
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-snowflake.TagAssociationConfig.property.timeouts"></a>
+
+```typescript
+public readonly timeouts: TagAssociationTimeouts;
+```
+
+- *Type:* <a href="#@cdktf/provider-snowflake.TagAssociationTimeouts">TagAssociationTimeouts</a>
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/tag_association#timeouts TagAssociation#timeouts}
+
+---
+
+### TagAssociationTimeouts <a name="TagAssociationTimeouts" id="@cdktf/provider-snowflake.TagAssociationTimeouts"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.TagAssociationTimeouts.Initializer"></a>
+
+```typescript
+import { TagAssociationTimeouts } from '@cdktf/provider-snowflake'
+
+const tagAssociationTimeouts: TagAssociationTimeouts = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociationTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/tag_association#create TagAssociation#create}. |
+
+---
+
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-snowflake.TagAssociationTimeouts.property.create"></a>
+
+```typescript
+public readonly create: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/tag_association#create TagAssociation#create}.
 
 ---
 
@@ -97199,6 +98137,284 @@ public readonly internalValue: IResolvable | TableTag;
 ```
 
 - *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-snowflake.TableTag">TableTag</a>
+
+---
+
+
+### TagAssociationTimeoutsOutputReference <a name="TagAssociationTimeoutsOutputReference" id="@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.Initializer"></a>
+
+```typescript
+import { TagAssociationTimeoutsOutputReference } from '@cdktf/provider-snowflake'
+
+new TagAssociationTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.resetCreate">resetCreate</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetCreate` <a name="resetCreate" id="@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.resetCreate"></a>
+
+```typescript
+public resetCreate(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.property.createInput">createInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.TagAssociationTimeouts">TagAssociationTimeouts</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `createInput`<sup>Optional</sup> <a name="createInput" id="@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.property.createInput"></a>
+
+```typescript
+public readonly createInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.property.create"></a>
+
+```typescript
+public readonly create: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | TagAssociationTimeouts;
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-snowflake.TagAssociationTimeouts">TagAssociationTimeouts</a>
 
 ---
 

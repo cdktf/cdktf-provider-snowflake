@@ -47,6 +47,7 @@ export * from './stream-grant';
 export * from './table';
 export * from './table-grant';
 export * from './tag';
+export * from './tag-association';
 export * from './tag-grant';
 export * from './task';
 export * from './task-grant';
