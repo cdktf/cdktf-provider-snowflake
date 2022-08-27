@@ -339,13 +339,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.AccountGrant.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.AccountGrant.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.AccountGrant.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.AccountGrant.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.AccountGrant.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.AccountGrant.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.AccountGrant.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.AccountGrant.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.AccountGrant.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.AccountGrant.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.AccountGrant.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.AccountGrant.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.AccountGrant.property.enableMultipleGrantsInput">enableMultipleGrantsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.AccountGrant.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.AccountGrant.property.privilegeInput">privilegeInput</a></code> | <code>string</code> | *No description.* |
@@ -434,10 +434,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.AccountGrant.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -494,10 +494,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.AccountGrant.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -963,13 +963,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.ApiIntegration.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ApiIntegration.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ApiIntegration.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.ApiIntegration.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ApiIntegration.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ApiIntegration.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ApiIntegration.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ApiIntegration.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ApiIntegration.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ApiIntegration.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.ApiIntegration.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ApiIntegration.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ApiIntegration.property.apiAwsExternalId">apiAwsExternalId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ApiIntegration.property.apiAwsIamUserArn">apiAwsIamUserArn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ApiIntegration.property.azureConsentUrl">azureConsentUrl</a></code> | <code>string</code> | *No description.* |
@@ -1071,10 +1071,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.ApiIntegration.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -1131,10 +1131,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.ApiIntegration.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1777,13 +1777,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.Database.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Database.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Database.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.Database.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.Database.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Database.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Database.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Database.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Database.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Database.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.Database.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.Database.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Database.property.replicationConfiguration">replicationConfiguration</a></code> | <code><a href="#@cdktf/provider-snowflake.DatabaseReplicationConfigurationOutputReference">DatabaseReplicationConfigurationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Database.property.tag">tag</a></code> | <code><a href="#@cdktf/provider-snowflake.DatabaseTagList">DatabaseTagList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Database.property.commentInput">commentInput</a></code> | <code>string</code> | *No description.* |
@@ -1882,10 +1882,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.Database.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -1942,10 +1942,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.Database.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -2511,13 +2511,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.DatabaseGrant.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseGrant.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseGrant.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DatabaseGrant.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DatabaseGrant.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseGrant.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseGrant.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseGrant.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseGrant.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseGrant.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DatabaseGrant.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DatabaseGrant.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseGrant.property.databaseNameInput">databaseNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseGrant.property.enableMultipleGrantsInput">enableMultipleGrantsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseGrant.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -2610,10 +2610,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.DatabaseGrant.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -2670,10 +2670,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.DatabaseGrant.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -17892,13 +17892,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.ExternalFunction.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalFunction.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalFunction.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.ExternalFunction.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalFunction.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalFunction.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalFunction.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalFunction.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalFunction.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalFunction.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.ExternalFunction.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalFunction.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalFunction.property.arg">arg</a></code> | <code><a href="#@cdktf/provider-snowflake.ExternalFunctionArgList">ExternalFunctionArgList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalFunction.property.createdOn">createdOn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalFunction.property.header">header</a></code> | <code><a href="#@cdktf/provider-snowflake.ExternalFunctionHeaderList">ExternalFunctionHeaderList</a></code> | *No description.* |
@@ -18010,10 +18010,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.ExternalFunction.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -18070,10 +18070,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.ExternalFunction.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -18797,13 +18797,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.createdOn">createdOn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.allowedRolesInput">allowedRolesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegration.property.anyRoleModeInput">anyRoleModeInput</a></code> | <code>string</code> | *No description.* |
@@ -18915,10 +18915,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.ExternalOauthIntegration.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -18975,10 +18975,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.ExternalOauthIntegration.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -19721,13 +19721,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.ExternalTable.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTable.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTable.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.ExternalTable.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalTable.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTable.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTable.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTable.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTable.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTable.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.ExternalTable.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalTable.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTable.property.column">column</a></code> | <code><a href="#@cdktf/provider-snowflake.ExternalTableColumnList">ExternalTableColumnList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTable.property.owner">owner</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTable.property.tag">tag</a></code> | <code><a href="#@cdktf/provider-snowflake.ExternalTableTagList">ExternalTableTagList</a></code> | *No description.* |
@@ -19837,10 +19837,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.ExternalTable.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -19897,10 +19897,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.ExternalTable.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -20597,13 +20597,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.ExternalTableGrant.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTableGrant.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTableGrant.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.ExternalTableGrant.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalTableGrant.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTableGrant.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTableGrant.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTableGrant.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTableGrant.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTableGrant.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.ExternalTableGrant.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalTableGrant.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTableGrant.property.databaseNameInput">databaseNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTableGrant.property.enableMultipleGrantsInput">enableMultipleGrantsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTableGrant.property.externalTableNameInput">externalTableNameInput</a></code> | <code>string</code> | *No description.* |
@@ -20702,10 +20702,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.ExternalTableGrant.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -20762,10 +20762,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.ExternalTableGrant.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -21513,13 +21513,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.FileFormat.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FileFormat.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FileFormat.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.FileFormat.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.FileFormat.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FileFormat.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FileFormat.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FileFormat.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FileFormat.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FileFormat.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.FileFormat.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.FileFormat.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FileFormat.property.allowDuplicateInput">allowDuplicateInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FileFormat.property.binaryAsTextInput">binaryAsTextInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FileFormat.property.binaryFormatInput">binaryFormatInput</a></code> | <code>string</code> | *No description.* |
@@ -21670,10 +21670,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.FileFormat.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -21730,10 +21730,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.FileFormat.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -22826,13 +22826,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.FileFormatGrant.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FileFormatGrant.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FileFormatGrant.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.FileFormatGrant.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.FileFormatGrant.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FileFormatGrant.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FileFormatGrant.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FileFormatGrant.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FileFormatGrant.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FileFormatGrant.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.FileFormatGrant.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.FileFormatGrant.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FileFormatGrant.property.databaseNameInput">databaseNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FileFormatGrant.property.enableMultipleGrantsInput">enableMultipleGrantsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FileFormatGrant.property.fileFormatNameInput">fileFormatNameInput</a></code> | <code>string</code> | *No description.* |
@@ -22929,10 +22929,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.FileFormatGrant.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -22989,10 +22989,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.FileFormatGrant.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -23586,13 +23586,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.Function.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Function.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Function.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.Function.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.Function.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Function.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Function.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Function.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Function.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Function.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.Function.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.Function.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Function.property.arguments">arguments</a></code> | <code><a href="#@cdktf/provider-snowflake.FunctionArgumentsList">FunctionArgumentsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Function.property.argumentsInput">argumentsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.FunctionArguments">FunctionArguments</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Function.property.commentInput">commentInput</a></code> | <code>string</code> | *No description.* |
@@ -23703,10 +23703,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.Function.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -23763,10 +23763,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.Function.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -24493,13 +24493,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.FunctionGrant.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FunctionGrant.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FunctionGrant.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.FunctionGrant.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.FunctionGrant.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FunctionGrant.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FunctionGrant.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FunctionGrant.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FunctionGrant.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FunctionGrant.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.FunctionGrant.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.FunctionGrant.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FunctionGrant.property.arguments">arguments</a></code> | <code><a href="#@cdktf/provider-snowflake.FunctionGrantArgumentsList">FunctionGrantArgumentsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FunctionGrant.property.argumentsInput">argumentsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.FunctionGrantArguments">FunctionGrantArguments</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FunctionGrant.property.databaseNameInput">databaseNameInput</a></code> | <code>string</code> | *No description.* |
@@ -24602,10 +24602,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.FunctionGrant.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -24662,10 +24662,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.FunctionGrant.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -25264,13 +25264,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.IntegrationGrant.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.IntegrationGrant.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.IntegrationGrant.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.IntegrationGrant.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.IntegrationGrant.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.IntegrationGrant.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.IntegrationGrant.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.IntegrationGrant.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.IntegrationGrant.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.IntegrationGrant.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.IntegrationGrant.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.IntegrationGrant.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.IntegrationGrant.property.enableMultipleGrantsInput">enableMultipleGrantsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.IntegrationGrant.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.IntegrationGrant.property.integrationNameInput">integrationNameInput</a></code> | <code>string</code> | *No description.* |
@@ -25361,10 +25361,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.IntegrationGrant.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -25421,10 +25421,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.IntegrationGrant.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -25889,13 +25889,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.ManagedAccount.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ManagedAccount.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ManagedAccount.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.ManagedAccount.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ManagedAccount.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ManagedAccount.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ManagedAccount.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ManagedAccount.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ManagedAccount.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ManagedAccount.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.ManagedAccount.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ManagedAccount.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ManagedAccount.property.cloud">cloud</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ManagedAccount.property.createdOn">createdOn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ManagedAccount.property.locator">locator</a></code> | <code>string</code> | *No description.* |
@@ -25991,10 +25991,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.ManagedAccount.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -26051,10 +26051,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.ManagedAccount.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -26562,13 +26562,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicy.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicy.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicy.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.MaskingPolicy.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.MaskingPolicy.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicy.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicy.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicy.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicy.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicy.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.MaskingPolicy.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.MaskingPolicy.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicy.property.commentInput">commentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicy.property.databaseInput">databaseInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicy.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -26663,10 +26663,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.MaskingPolicy.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -26723,10 +26723,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.MaskingPolicy.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -27245,13 +27245,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrant.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrant.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrant.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrant.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrant.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrant.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrant.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrant.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrant.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrant.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrant.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrant.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrant.property.databaseNameInput">databaseNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrant.property.enableMultipleGrantsInput">enableMultipleGrantsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrant.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -27346,10 +27346,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.MaskingPolicyGrant.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -27406,10 +27406,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.MaskingPolicyGrant.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -27941,13 +27941,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.MaterializedView.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedView.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedView.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.MaterializedView.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.MaterializedView.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedView.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedView.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedView.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedView.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedView.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.MaterializedView.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.MaterializedView.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedView.property.tag">tag</a></code> | <code><a href="#@cdktf/provider-snowflake.MaterializedViewTagList">MaterializedViewTagList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedView.property.commentInput">commentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedView.property.databaseInput">databaseInput</a></code> | <code>string</code> | *No description.* |
@@ -28046,10 +28046,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.MaterializedView.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -28106,10 +28106,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.MaterializedView.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -28696,13 +28696,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrant.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrant.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrant.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrant.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrant.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrant.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrant.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrant.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrant.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrant.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrant.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrant.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrant.property.databaseNameInput">databaseNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrant.property.enableMultipleGrantsInput">enableMultipleGrantsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrant.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -28801,10 +28801,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.MaterializedViewGrant.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -28861,10 +28861,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.MaterializedViewGrant.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -29409,13 +29409,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.NetworkPolicy.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NetworkPolicy.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NetworkPolicy.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.NetworkPolicy.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.NetworkPolicy.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NetworkPolicy.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NetworkPolicy.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NetworkPolicy.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NetworkPolicy.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NetworkPolicy.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.NetworkPolicy.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.NetworkPolicy.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NetworkPolicy.property.allowedIpListInput">allowedIpListInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NetworkPolicy.property.blockedIpListInput">blockedIpListInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NetworkPolicy.property.commentInput">commentInput</a></code> | <code>string</code> | *No description.* |
@@ -29504,10 +29504,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.NetworkPolicy.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -29564,10 +29564,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.NetworkPolicy.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -30012,13 +30012,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.NetworkPolicyAttachment.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NetworkPolicyAttachment.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NetworkPolicyAttachment.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.NetworkPolicyAttachment.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.NetworkPolicyAttachment.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NetworkPolicyAttachment.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NetworkPolicyAttachment.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NetworkPolicyAttachment.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NetworkPolicyAttachment.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NetworkPolicyAttachment.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.NetworkPolicyAttachment.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.NetworkPolicyAttachment.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NetworkPolicyAttachment.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NetworkPolicyAttachment.property.networkPolicyNameInput">networkPolicyNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NetworkPolicyAttachment.property.setForAccountInput">setForAccountInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
@@ -30105,10 +30105,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.NetworkPolicyAttachment.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -30165,10 +30165,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.NetworkPolicyAttachment.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -30663,13 +30663,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.NotificationIntegration.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NotificationIntegration.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NotificationIntegration.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.NotificationIntegration.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.NotificationIntegration.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NotificationIntegration.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NotificationIntegration.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NotificationIntegration.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NotificationIntegration.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NotificationIntegration.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.NotificationIntegration.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.NotificationIntegration.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NotificationIntegration.property.awsSnsExternalId">awsSnsExternalId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NotificationIntegration.property.awsSnsIamUserArn">awsSnsIamUserArn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NotificationIntegration.property.awsSqsExternalId">awsSqsExternalId</a></code> | <code>string</code> | *No description.* |
@@ -30782,10 +30782,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.NotificationIntegration.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -30842,10 +30842,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.NotificationIntegration.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -31558,13 +31558,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.OauthIntegration.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.OauthIntegration.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.OauthIntegration.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.OauthIntegration.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.OauthIntegration.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.OauthIntegration.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.OauthIntegration.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.OauthIntegration.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.OauthIntegration.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.OauthIntegration.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.OauthIntegration.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.OauthIntegration.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.OauthIntegration.property.createdOn">createdOn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.OauthIntegration.property.blockedRolesListInput">blockedRolesListInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.OauthIntegration.property.commentInput">commentInput</a></code> | <code>string</code> | *No description.* |
@@ -31662,10 +31662,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.OauthIntegration.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -31722,10 +31722,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.OauthIntegration.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -32281,13 +32281,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.Pipe.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Pipe.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Pipe.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.Pipe.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.Pipe.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Pipe.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Pipe.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Pipe.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Pipe.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Pipe.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.Pipe.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.Pipe.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Pipe.property.notificationChannel">notificationChannel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Pipe.property.owner">owner</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Pipe.property.autoIngestInput">autoIngestInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
@@ -32388,10 +32388,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.Pipe.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -32448,10 +32448,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.Pipe.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -33044,13 +33044,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.PipeGrant.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.PipeGrant.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.PipeGrant.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.PipeGrant.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.PipeGrant.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.PipeGrant.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.PipeGrant.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.PipeGrant.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.PipeGrant.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.PipeGrant.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.PipeGrant.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.PipeGrant.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.PipeGrant.property.databaseNameInput">databaseNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.PipeGrant.property.enableMultipleGrantsInput">enableMultipleGrantsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.PipeGrant.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -33147,10 +33147,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.PipeGrant.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -33207,10 +33207,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.PipeGrant.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -33776,13 +33776,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.Procedure.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Procedure.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Procedure.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.Procedure.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.Procedure.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Procedure.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Procedure.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Procedure.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Procedure.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Procedure.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.Procedure.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.Procedure.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Procedure.property.arguments">arguments</a></code> | <code><a href="#@cdktf/provider-snowflake.ProcedureArgumentsList">ProcedureArgumentsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Procedure.property.argumentsInput">argumentsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.ProcedureArguments">ProcedureArguments</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Procedure.property.commentInput">commentInput</a></code> | <code>string</code> | *No description.* |
@@ -33885,10 +33885,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.Procedure.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -33945,10 +33945,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.Procedure.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -34595,13 +34595,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.ProcedureGrant.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ProcedureGrant.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ProcedureGrant.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.ProcedureGrant.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ProcedureGrant.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ProcedureGrant.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ProcedureGrant.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ProcedureGrant.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ProcedureGrant.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ProcedureGrant.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.ProcedureGrant.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ProcedureGrant.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ProcedureGrant.property.arguments">arguments</a></code> | <code><a href="#@cdktf/provider-snowflake.ProcedureGrantArgumentsList">ProcedureGrantArgumentsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ProcedureGrant.property.argumentsInput">argumentsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.ProcedureGrantArguments">ProcedureGrantArguments</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ProcedureGrant.property.databaseNameInput">databaseNameInput</a></code> | <code>string</code> | *No description.* |
@@ -34704,10 +34704,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.ProcedureGrant.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -34764,10 +34764,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.ProcedureGrant.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -35401,13 +35401,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitor.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitor.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitor.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.ResourceMonitor.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ResourceMonitor.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitor.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitor.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitor.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitor.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitor.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.ResourceMonitor.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ResourceMonitor.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitor.property.creditQuotaInput">creditQuotaInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitor.property.endTimestampInput">endTimestampInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitor.property.frequencyInput">frequencyInput</a></code> | <code>string</code> | *No description.* |
@@ -35508,10 +35508,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.ResourceMonitor.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -35568,10 +35568,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.ResourceMonitor.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -36150,13 +36150,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrant.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrant.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrant.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrant.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrant.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrant.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrant.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrant.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrant.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrant.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrant.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrant.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrant.property.enableMultipleGrantsInput">enableMultipleGrantsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrant.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrant.property.monitorNameInput">monitorNameInput</a></code> | <code>string</code> | *No description.* |
@@ -36247,10 +36247,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.ResourceMonitorGrant.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -36307,10 +36307,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.ResourceMonitorGrant.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -36788,13 +36788,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.Role.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Role.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Role.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.Role.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.Role.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Role.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Role.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Role.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Role.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Role.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.Role.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.Role.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Role.property.tag">tag</a></code> | <code><a href="#@cdktf/provider-snowflake.RoleTagList">RoleTagList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Role.property.commentInput">commentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Role.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -36881,10 +36881,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.Role.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -36941,10 +36941,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.Role.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -37376,13 +37376,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.RoleGrants.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleGrants.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleGrants.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.RoleGrants.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RoleGrants.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleGrants.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleGrants.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleGrants.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleGrants.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleGrants.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.RoleGrants.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RoleGrants.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleGrants.property.enableMultipleGrantsInput">enableMultipleGrantsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleGrants.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleGrants.property.roleNameInput">roleNameInput</a></code> | <code>string</code> | *No description.* |
@@ -37471,10 +37471,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.RoleGrants.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -37531,10 +37531,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.RoleGrants.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -37972,13 +37972,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.property.currentGrantsInput">currentGrantsInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrant.property.onRoleNameInput">onRoleNameInput</a></code> | <code>string</code> | *No description.* |
@@ -38065,10 +38065,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.RoleOwnershipGrant.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -38125,10 +38125,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.RoleOwnershipGrant.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -38546,13 +38546,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicy.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicy.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicy.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.RowAccessPolicy.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RowAccessPolicy.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicy.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicy.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicy.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicy.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicy.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.RowAccessPolicy.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RowAccessPolicy.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicy.property.commentInput">commentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicy.property.databaseInput">databaseInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicy.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -38645,10 +38645,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.RowAccessPolicy.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -38705,10 +38705,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.RowAccessPolicy.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -39207,13 +39207,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrant.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrant.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrant.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrant.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrant.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrant.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrant.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrant.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrant.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrant.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrant.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrant.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrant.property.databaseNameInput">databaseNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrant.property.enableMultipleGrantsInput">enableMultipleGrantsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrant.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -39308,10 +39308,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.RowAccessPolicyGrant.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -39368,10 +39368,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.RowAccessPolicyGrant.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -39932,13 +39932,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.SamlIntegration.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SamlIntegration.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SamlIntegration.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.SamlIntegration.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.SamlIntegration.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SamlIntegration.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SamlIntegration.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SamlIntegration.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SamlIntegration.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SamlIntegration.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.SamlIntegration.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.SamlIntegration.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SamlIntegration.property.createdOn">createdOn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SamlIntegration.property.saml2DigestMethodsUsed">saml2DigestMethodsUsed</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SamlIntegration.property.saml2SignatureMethodsUsed">saml2SignatureMethodsUsed</a></code> | <code>string</code> | *No description.* |
@@ -40053,10 +40053,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.SamlIntegration.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -40113,10 +40113,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.SamlIntegration.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -40855,13 +40855,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.Schema.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Schema.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Schema.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.Schema.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.Schema.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Schema.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Schema.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Schema.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Schema.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Schema.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.Schema.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.Schema.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Schema.property.tag">tag</a></code> | <code><a href="#@cdktf/provider-snowflake.SchemaTagList">SchemaTagList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Schema.property.commentInput">commentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Schema.property.databaseInput">databaseInput</a></code> | <code>string</code> | *No description.* |
@@ -40956,10 +40956,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.Schema.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -41016,10 +41016,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.Schema.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -41559,13 +41559,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.SchemaGrant.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SchemaGrant.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SchemaGrant.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.SchemaGrant.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.SchemaGrant.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SchemaGrant.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SchemaGrant.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SchemaGrant.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SchemaGrant.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SchemaGrant.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.SchemaGrant.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.SchemaGrant.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SchemaGrant.property.databaseNameInput">databaseNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SchemaGrant.property.enableMultipleGrantsInput">enableMultipleGrantsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SchemaGrant.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -41662,10 +41662,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.SchemaGrant.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -41722,10 +41722,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.SchemaGrant.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -42243,13 +42243,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.ScimIntegration.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ScimIntegration.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ScimIntegration.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.ScimIntegration.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ScimIntegration.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ScimIntegration.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ScimIntegration.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ScimIntegration.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ScimIntegration.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ScimIntegration.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.ScimIntegration.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ScimIntegration.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ScimIntegration.property.createdOn">createdOn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ScimIntegration.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ScimIntegration.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
@@ -42339,10 +42339,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.ScimIntegration.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -42399,10 +42399,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.ScimIntegration.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -42857,13 +42857,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.Sequence.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Sequence.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Sequence.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.Sequence.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.Sequence.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Sequence.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Sequence.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Sequence.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Sequence.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Sequence.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.Sequence.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.Sequence.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Sequence.property.fullyQualifiedName">fullyQualifiedName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Sequence.property.nextValue">nextValue</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Sequence.property.commentInput">commentInput</a></code> | <code>string</code> | *No description.* |
@@ -42956,10 +42956,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.Sequence.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -43016,10 +43016,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.Sequence.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -43532,13 +43532,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.SequenceGrant.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SequenceGrant.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SequenceGrant.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.SequenceGrant.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.SequenceGrant.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SequenceGrant.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SequenceGrant.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SequenceGrant.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SequenceGrant.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SequenceGrant.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.SequenceGrant.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.SequenceGrant.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SequenceGrant.property.databaseNameInput">databaseNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SequenceGrant.property.enableMultipleGrantsInput">enableMultipleGrantsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SequenceGrant.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -43635,10 +43635,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.SequenceGrant.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -43695,10 +43695,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.SequenceGrant.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -44223,13 +44223,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.Share.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Share.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Share.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.Share.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.Share.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Share.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Share.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Share.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Share.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Share.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.Share.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.Share.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Share.property.accountsInput">accountsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Share.property.commentInput">commentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Share.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -44316,10 +44316,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.Share.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -44376,10 +44376,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.Share.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -45664,13 +45664,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.Stage.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Stage.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Stage.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.Stage.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.Stage.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Stage.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Stage.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Stage.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Stage.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Stage.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.Stage.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.Stage.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Stage.property.tag">tag</a></code> | <code><a href="#@cdktf/provider-snowflake.StageTagList">StageTagList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Stage.property.awsExternalIdInput">awsExternalIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Stage.property.commentInput">commentInput</a></code> | <code>string</code> | *No description.* |
@@ -45779,10 +45779,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.Stage.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -45839,10 +45839,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.Stage.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -46515,13 +46515,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.StageGrant.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StageGrant.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StageGrant.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.StageGrant.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.StageGrant.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StageGrant.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StageGrant.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StageGrant.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StageGrant.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StageGrant.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.StageGrant.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.StageGrant.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StageGrant.property.databaseNameInput">databaseNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StageGrant.property.enableMultipleGrantsInput">enableMultipleGrantsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StageGrant.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -46618,10 +46618,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.StageGrant.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -46678,10 +46678,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.StageGrant.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -47241,13 +47241,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.StorageIntegration.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StorageIntegration.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StorageIntegration.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.StorageIntegration.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.StorageIntegration.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StorageIntegration.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StorageIntegration.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StorageIntegration.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StorageIntegration.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StorageIntegration.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.StorageIntegration.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.StorageIntegration.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StorageIntegration.property.azureConsentUrl">azureConsentUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StorageIntegration.property.azureMultiTenantAppName">azureMultiTenantAppName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StorageIntegration.property.createdOn">createdOn</a></code> | <code>string</code> | *No description.* |
@@ -47354,10 +47354,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.StorageIntegration.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -47414,10 +47414,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.StorageIntegration.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -48070,13 +48070,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.Stream.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Stream.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Stream.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.Stream.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.Stream.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Stream.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Stream.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Stream.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Stream.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Stream.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.Stream.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.Stream.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Stream.property.owner">owner</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Stream.property.appendOnlyInput">appendOnlyInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Stream.property.commentInput">commentInput</a></code> | <code>string</code> | *No description.* |
@@ -48176,10 +48176,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.Stream.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -48236,10 +48236,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.Stream.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -48822,13 +48822,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.StreamGrant.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StreamGrant.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StreamGrant.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.StreamGrant.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.StreamGrant.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StreamGrant.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StreamGrant.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StreamGrant.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StreamGrant.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StreamGrant.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.StreamGrant.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.StreamGrant.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StreamGrant.property.databaseNameInput">databaseNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StreamGrant.property.enableMultipleGrantsInput">enableMultipleGrantsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StreamGrant.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -48925,10 +48925,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.StreamGrant.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -48985,10 +48985,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.StreamGrant.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -49580,13 +49580,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.Table.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Table.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Table.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.Table.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.Table.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Table.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Table.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Table.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Table.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Table.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.Table.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.Table.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Table.property.column">column</a></code> | <code><a href="#@cdktf/provider-snowflake.TableColumnList">TableColumnList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Table.property.owner">owner</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Table.property.primaryKey">primaryKey</a></code> | <code><a href="#@cdktf/provider-snowflake.TablePrimaryKeyOutputReference">TablePrimaryKeyOutputReference</a></code> | *No description.* |
@@ -49688,10 +49688,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.Table.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -49748,10 +49748,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.Table.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -50368,13 +50368,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.TableGrant.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TableGrant.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TableGrant.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.TableGrant.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TableGrant.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TableGrant.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TableGrant.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TableGrant.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TableGrant.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TableGrant.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.TableGrant.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TableGrant.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TableGrant.property.databaseNameInput">databaseNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TableGrant.property.enableMultipleGrantsInput">enableMultipleGrantsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TableGrant.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -50473,10 +50473,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.TableGrant.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -50533,10 +50533,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.TableGrant.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -51081,13 +51081,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.Tag.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Tag.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Tag.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.Tag.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.Tag.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Tag.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Tag.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Tag.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Tag.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Tag.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.Tag.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.Tag.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Tag.property.allowedValuesInput">allowedValuesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Tag.property.commentInput">commentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Tag.property.databaseInput">databaseInput</a></code> | <code>string</code> | *No description.* |
@@ -51178,10 +51178,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.Tag.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -51238,10 +51238,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.Tag.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -51719,13 +51719,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.TagAssociation.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TagAssociation.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TagAssociation.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.TagAssociation.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TagAssociation.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TagAssociation.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TagAssociation.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TagAssociation.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TagAssociation.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.TagAssociation.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociation.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TagAssociation.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.TagAssociationTimeoutsOutputReference">TagAssociationTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TagAssociation.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TagAssociation.property.objectNameInput">objectNameInput</a></code> | <code>string</code> | *No description.* |
@@ -51818,10 +51818,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.TagAssociation.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -51878,10 +51878,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.TagAssociation.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -52380,13 +52380,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.TagGrant.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TagGrant.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TagGrant.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.TagGrant.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagGrant.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TagGrant.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TagGrant.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TagGrant.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TagGrant.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TagGrant.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.TagGrant.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagGrant.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TagGrant.property.databaseNameInput">databaseNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TagGrant.property.enableMultipleGrantsInput">enableMultipleGrantsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TagGrant.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -52481,10 +52481,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.TagGrant.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -52541,10 +52541,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.TagGrant.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -53105,13 +53105,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.Task.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Task.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Task.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.Task.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.Task.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Task.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Task.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Task.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Task.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Task.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.Task.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.Task.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Task.property.afterInput">afterInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Task.property.commentInput">commentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Task.property.databaseInput">databaseInput</a></code> | <code>string</code> | *No description.* |
@@ -53220,10 +53220,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.Task.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -53280,10 +53280,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.Task.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -53956,13 +53956,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.TaskGrant.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TaskGrant.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TaskGrant.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.TaskGrant.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TaskGrant.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TaskGrant.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TaskGrant.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TaskGrant.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TaskGrant.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TaskGrant.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.TaskGrant.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TaskGrant.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TaskGrant.property.databaseNameInput">databaseNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TaskGrant.property.enableMultipleGrantsInput">enableMultipleGrantsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TaskGrant.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -54059,10 +54059,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.TaskGrant.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -54119,10 +54119,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.TaskGrant.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -54758,13 +54758,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.User.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.User.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.User.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.User.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.User.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.User.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.User.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.User.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.User.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.User.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.User.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.User.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.User.property.hasRsaPublicKey">hasRsaPublicKey</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.User.property.tag">tag</a></code> | <code><a href="#@cdktf/provider-snowflake.UserTagList">UserTagList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.User.property.commentInput">commentInput</a></code> | <code>string</code> | *No description.* |
@@ -54880,10 +54880,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.User.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -54940,10 +54940,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.User.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -55651,13 +55651,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.property.currentGrantsInput">currentGrantsInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrant.property.onUserNameInput">onUserNameInput</a></code> | <code>string</code> | *No description.* |
@@ -55744,10 +55744,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.UserOwnershipGrant.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -55804,10 +55804,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.UserOwnershipGrant.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -56232,13 +56232,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.UserPublicKeys.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.UserPublicKeys.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.UserPublicKeys.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.UserPublicKeys.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.UserPublicKeys.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.UserPublicKeys.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.UserPublicKeys.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.UserPublicKeys.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.UserPublicKeys.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.UserPublicKeys.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.UserPublicKeys.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.UserPublicKeys.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.UserPublicKeys.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.UserPublicKeys.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.UserPublicKeys.property.rsaPublicKey2Input">rsaPublicKey2Input</a></code> | <code>string</code> | *No description.* |
@@ -56325,10 +56325,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.UserPublicKeys.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -56385,10 +56385,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.UserPublicKeys.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -56840,13 +56840,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.View.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.View.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.View.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.View.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.View.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.View.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.View.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.View.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.View.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.View.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.View.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.View.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.View.property.tag">tag</a></code> | <code><a href="#@cdktf/provider-snowflake.ViewTagList">ViewTagList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.View.property.commentInput">commentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.View.property.databaseInput">databaseInput</a></code> | <code>string</code> | *No description.* |
@@ -56943,10 +56943,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.View.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -57003,10 +57003,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.View.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -57573,13 +57573,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.ViewGrant.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ViewGrant.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ViewGrant.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.ViewGrant.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ViewGrant.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ViewGrant.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ViewGrant.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ViewGrant.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ViewGrant.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ViewGrant.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.ViewGrant.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ViewGrant.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ViewGrant.property.databaseNameInput">databaseNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ViewGrant.property.enableMultipleGrantsInput">enableMultipleGrantsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ViewGrant.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -57678,10 +57678,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.ViewGrant.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -57738,10 +57738,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.ViewGrant.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -58383,13 +58383,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.Warehouse.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Warehouse.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Warehouse.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.Warehouse.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.Warehouse.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Warehouse.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Warehouse.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Warehouse.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Warehouse.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Warehouse.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.Warehouse.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.Warehouse.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Warehouse.property.tag">tag</a></code> | <code><a href="#@cdktf/provider-snowflake.WarehouseTagList">WarehouseTagList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Warehouse.property.autoResumeInput">autoResumeInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.Warehouse.property.autoSuspendInput">autoSuspendInput</a></code> | <code>number</code> | *No description.* |
@@ -58500,10 +58500,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.Warehouse.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -58560,10 +58560,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.Warehouse.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -59242,13 +59242,13 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.WarehouseGrant.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.WarehouseGrant.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.WarehouseGrant.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.WarehouseGrant.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.WarehouseGrant.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.WarehouseGrant.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.WarehouseGrant.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.WarehouseGrant.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.WarehouseGrant.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.WarehouseGrant.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.WarehouseGrant.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.WarehouseGrant.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.WarehouseGrant.property.enableMultipleGrantsInput">enableMultipleGrantsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.WarehouseGrant.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.WarehouseGrant.property.privilegeInput">privilegeInput</a></code> | <code>string</code> | *No description.* |
@@ -59339,10 +59339,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.WarehouseGrant.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -59399,10 +59399,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.WarehouseGrant.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -59560,13 +59560,13 @@ const accountGrantConfig: AccountGrantConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.AccountGrantConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.AccountGrantConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.AccountGrantConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.AccountGrantConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.AccountGrantConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.AccountGrantConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.AccountGrantConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.AccountGrantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.AccountGrantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.AccountGrantConfig.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
 | <code><a href="#@cdktf/provider-snowflake.AccountGrantConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/account_grant#id AccountGrant#id}. |
 | <code><a href="#@cdktf/provider-snowflake.AccountGrantConfig.property.privilege">privilege</a></code> | <code>string</code> | The privilege to grant on the account. |
@@ -59578,10 +59578,10 @@ const accountGrantConfig: AccountGrantConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.AccountGrantConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -59638,10 +59638,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.AccountGrantConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -59732,13 +59732,13 @@ const apiIntegrationConfig: ApiIntegrationConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.ApiIntegrationConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ApiIntegrationConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ApiIntegrationConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ApiIntegrationConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ApiIntegrationConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ApiIntegrationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ApiIntegrationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.ApiIntegrationConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ApiIntegrationConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ApiIntegrationConfig.property.apiAllowedPrefixes">apiAllowedPrefixes</a></code> | <code>string[]</code> | Explicitly limits external functions that use the integration to reference one or more HTTPS proxy service endpoints and resources within those proxies. |
 | <code><a href="#@cdktf/provider-snowflake.ApiIntegrationConfig.property.apiProvider">apiProvider</a></code> | <code>string</code> | Specifies the HTTPS proxy service type. |
 | <code><a href="#@cdktf/provider-snowflake.ApiIntegrationConfig.property.name">name</a></code> | <code>string</code> | Specifies the name of the API integration. |
@@ -59754,10 +59754,10 @@ const apiIntegrationConfig: ApiIntegrationConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.ApiIntegrationConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -59814,10 +59814,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.ApiIntegrationConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -59966,13 +59966,13 @@ const databaseConfig: DatabaseConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DatabaseConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DatabaseConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DatabaseConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DatabaseConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/database#name Database#name}. |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseConfig.property.comment">comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/database#comment Database#comment}. |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseConfig.property.dataRetentionTimeInDays">dataRetentionTimeInDays</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/database#data_retention_time_in_days Database#data_retention_time_in_days}. |
@@ -59989,10 +59989,10 @@ const databaseConfig: DatabaseConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.DatabaseConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -60049,10 +60049,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.DatabaseConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -60209,13 +60209,13 @@ const databaseGrantConfig: DatabaseGrantConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DatabaseGrantConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DatabaseGrantConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseGrantConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseGrantConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseGrantConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseGrantConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseGrantConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DatabaseGrantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DatabaseGrantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseGrantConfig.property.databaseName">databaseName</a></code> | <code>string</code> | The name of the database on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseGrantConfig.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
 | <code><a href="#@cdktf/provider-snowflake.DatabaseGrantConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/database_grant#id DatabaseGrant#id}. |
@@ -60229,10 +60229,10 @@ const databaseGrantConfig: DatabaseGrantConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.DatabaseGrantConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -60289,10 +60289,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.DatabaseGrantConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -60531,13 +60531,13 @@ const dataSnowflakeCurrentAccountConfig: DataSnowflakeCurrentAccountConfig = { .
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeCurrentAccountConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeCurrentAccountConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeCurrentAccountConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeCurrentAccountConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeCurrentAccountConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeCurrentAccountConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeCurrentAccountConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeCurrentAccountConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeCurrentAccountConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeCurrentAccountConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/current_account#id DataSnowflakeCurrentAccount#id}. |
 
 ---
@@ -60545,10 +60545,10 @@ const dataSnowflakeCurrentAccountConfig: DataSnowflakeCurrentAccountConfig = { .
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.DataSnowflakeCurrentAccountConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -60605,10 +60605,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.DataSnowflakeCurrentAccountConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -60641,13 +60641,13 @@ const dataSnowflakeDatabaseConfig: DataSnowflakeDatabaseConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabaseConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabaseConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabaseConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabaseConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabaseConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabaseConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabaseConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabaseConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabaseConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabaseConfig.property.name">name</a></code> | <code>string</code> | The database from which to return its metadata. |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabaseConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/database#id DataSnowflakeDatabase#id}. |
 
@@ -60656,10 +60656,10 @@ const dataSnowflakeDatabaseConfig: DataSnowflakeDatabaseConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.DataSnowflakeDatabaseConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -60716,10 +60716,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.DataSnowflakeDatabaseConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -60766,13 +60766,13 @@ const dataSnowflakeDatabasesConfig: DataSnowflakeDatabasesConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeDatabasesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/databases#id DataSnowflakeDatabases#id}. |
 
 ---
@@ -60780,10 +60780,10 @@ const dataSnowflakeDatabasesConfig: DataSnowflakeDatabasesConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -60840,10 +60840,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.DataSnowflakeDatabasesConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -60898,13 +60898,13 @@ const dataSnowflakeExternalFunctionsConfig: DataSnowflakeExternalFunctionsConfig
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsConfig.property.database">database</a></code> | <code>string</code> | The database from which to return the schemas from. |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsConfig.property.schema">schema</a></code> | <code>string</code> | The schema from which to return the external functions from. |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/external_functions#id DataSnowflakeExternalFunctions#id}. |
@@ -60914,10 +60914,10 @@ const dataSnowflakeExternalFunctionsConfig: DataSnowflakeExternalFunctionsConfig
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -60974,10 +60974,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.DataSnowflakeExternalFunctionsConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -61049,13 +61049,13 @@ const dataSnowflakeExternalTablesConfig: DataSnowflakeExternalTablesConfig = { .
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesConfig.property.database">database</a></code> | <code>string</code> | The database from which to return the schemas from. |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesConfig.property.schema">schema</a></code> | <code>string</code> | The schema from which to return the external tables from. |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeExternalTablesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/external_tables#id DataSnowflakeExternalTables#id}. |
@@ -61065,10 +61065,10 @@ const dataSnowflakeExternalTablesConfig: DataSnowflakeExternalTablesConfig = { .
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -61125,10 +61125,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.DataSnowflakeExternalTablesConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -61200,13 +61200,13 @@ const dataSnowflakeFileFormatsConfig: DataSnowflakeFileFormatsConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsConfig.property.database">database</a></code> | <code>string</code> | The database from which to return the schemas from. |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsConfig.property.schema">schema</a></code> | <code>string</code> | The schema from which to return the file formats from. |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFileFormatsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/file_formats#id DataSnowflakeFileFormats#id}. |
@@ -61216,10 +61216,10 @@ const dataSnowflakeFileFormatsConfig: DataSnowflakeFileFormatsConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -61276,10 +61276,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.DataSnowflakeFileFormatsConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -61351,13 +61351,13 @@ const dataSnowflakeFunctionsConfig: DataSnowflakeFunctionsConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsConfig.property.database">database</a></code> | <code>string</code> | The database from which to return the schemas from. |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsConfig.property.schema">schema</a></code> | <code>string</code> | The schema from which to return the functions from. |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeFunctionsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/functions#id DataSnowflakeFunctions#id}. |
@@ -61367,10 +61367,10 @@ const dataSnowflakeFunctionsConfig: DataSnowflakeFunctionsConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -61427,10 +61427,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.DataSnowflakeFunctionsConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -61502,13 +61502,13 @@ const dataSnowflakeMaskingPoliciesConfig: DataSnowflakeMaskingPoliciesConfig = {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesConfig.property.database">database</a></code> | <code>string</code> | The database from which to return the schemas from. |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesConfig.property.schema">schema</a></code> | <code>string</code> | The schema from which to return the maskingPolicies from. |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/masking_policies#id DataSnowflakeMaskingPolicies#id}. |
@@ -61518,10 +61518,10 @@ const dataSnowflakeMaskingPoliciesConfig: DataSnowflakeMaskingPoliciesConfig = {
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -61578,10 +61578,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.DataSnowflakeMaskingPoliciesConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -61653,13 +61653,13 @@ const dataSnowflakeMaterializedViewsConfig: DataSnowflakeMaterializedViewsConfig
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsConfig.property.database">database</a></code> | <code>string</code> | The database from which to return the schemas from. |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsConfig.property.schema">schema</a></code> | <code>string</code> | The schema from which to return the views from. |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/materialized_views#id DataSnowflakeMaterializedViews#id}. |
@@ -61669,10 +61669,10 @@ const dataSnowflakeMaterializedViewsConfig: DataSnowflakeMaterializedViewsConfig
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -61729,10 +61729,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.DataSnowflakeMaterializedViewsConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -61804,13 +61804,13 @@ const dataSnowflakePipesConfig: DataSnowflakePipesConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesConfig.property.database">database</a></code> | <code>string</code> | The database from which to return the schemas from. |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesConfig.property.schema">schema</a></code> | <code>string</code> | The schema from which to return the pipes from. |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakePipesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/pipes#id DataSnowflakePipes#id}. |
@@ -61820,10 +61820,10 @@ const dataSnowflakePipesConfig: DataSnowflakePipesConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.DataSnowflakePipesConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -61880,10 +61880,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.DataSnowflakePipesConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -61955,13 +61955,13 @@ const dataSnowflakeProceduresConfig: DataSnowflakeProceduresConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresConfig.property.database">database</a></code> | <code>string</code> | The database from which to return the schemas from. |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresConfig.property.schema">schema</a></code> | <code>string</code> | The schema from which to return the procedures from. |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeProceduresConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/procedures#id DataSnowflakeProcedures#id}. |
@@ -61971,10 +61971,10 @@ const dataSnowflakeProceduresConfig: DataSnowflakeProceduresConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.DataSnowflakeProceduresConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -62031,10 +62031,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.DataSnowflakeProceduresConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -62106,13 +62106,13 @@ const dataSnowflakeResourceMonitorsConfig: DataSnowflakeResourceMonitorsConfig =
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/resource_monitors#id DataSnowflakeResourceMonitors#id}. |
 
 ---
@@ -62120,10 +62120,10 @@ const dataSnowflakeResourceMonitorsConfig: DataSnowflakeResourceMonitorsConfig =
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -62180,10 +62180,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.DataSnowflakeResourceMonitorsConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -62227,13 +62227,13 @@ const dataSnowflakeRoleConfig: DataSnowflakeRoleConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRoleConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRoleConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRoleConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRoleConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRoleConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRoleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRoleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRoleConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRoleConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRoleConfig.property.name">name</a></code> | <code>string</code> | The role for which to return metadata. |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRoleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/role#id DataSnowflakeRole#id}. |
 
@@ -62242,10 +62242,10 @@ const dataSnowflakeRoleConfig: DataSnowflakeRoleConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.DataSnowflakeRoleConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -62302,10 +62302,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.DataSnowflakeRoleConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -62352,13 +62352,13 @@ const dataSnowflakeRowAccessPoliciesConfig: DataSnowflakeRowAccessPoliciesConfig
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesConfig.property.database">database</a></code> | <code>string</code> | The database from which to return the schemas from. |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesConfig.property.schema">schema</a></code> | <code>string</code> | The schema from which to return the row access policyfrom. |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/row_access_policies#id DataSnowflakeRowAccessPolicies#id}. |
@@ -62368,10 +62368,10 @@ const dataSnowflakeRowAccessPoliciesConfig: DataSnowflakeRowAccessPoliciesConfig
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -62428,10 +62428,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.DataSnowflakeRowAccessPoliciesConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -62503,13 +62503,13 @@ const dataSnowflakeSchemasConfig: DataSnowflakeSchemasConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasConfig.property.database">database</a></code> | <code>string</code> | The database from which to return the schemas from. |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSchemasConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/schemas#id DataSnowflakeSchemas#id}. |
 
@@ -62518,10 +62518,10 @@ const dataSnowflakeSchemasConfig: DataSnowflakeSchemasConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.DataSnowflakeSchemasConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -62578,10 +62578,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.DataSnowflakeSchemasConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -62639,13 +62639,13 @@ const dataSnowflakeSequencesConfig: DataSnowflakeSequencesConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesConfig.property.database">database</a></code> | <code>string</code> | The database from which to return the schemas from. |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesConfig.property.schema">schema</a></code> | <code>string</code> | The schema from which to return the sequences from. |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSequencesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/sequences#id DataSnowflakeSequences#id}. |
@@ -62655,10 +62655,10 @@ const dataSnowflakeSequencesConfig: DataSnowflakeSequencesConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.DataSnowflakeSequencesConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -62715,10 +62715,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.DataSnowflakeSequencesConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -62790,13 +62790,13 @@ const dataSnowflakeStagesConfig: DataSnowflakeStagesConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesConfig.property.database">database</a></code> | <code>string</code> | The database from which to return the schemas from. |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesConfig.property.schema">schema</a></code> | <code>string</code> | The schema from which to return the stages from. |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStagesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/stages#id DataSnowflakeStages#id}. |
@@ -62806,10 +62806,10 @@ const dataSnowflakeStagesConfig: DataSnowflakeStagesConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.DataSnowflakeStagesConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -62866,10 +62866,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.DataSnowflakeStagesConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -62941,13 +62941,13 @@ const dataSnowflakeStorageIntegrationsConfig: DataSnowflakeStorageIntegrationsCo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/storage_integrations#id DataSnowflakeStorageIntegrations#id}. |
 
 ---
@@ -62955,10 +62955,10 @@ const dataSnowflakeStorageIntegrationsConfig: DataSnowflakeStorageIntegrationsCo
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -63015,10 +63015,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.DataSnowflakeStorageIntegrationsConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -63062,13 +63062,13 @@ const dataSnowflakeStreamsConfig: DataSnowflakeStreamsConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsConfig.property.database">database</a></code> | <code>string</code> | The database from which to return the streams from. |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsConfig.property.schema">schema</a></code> | <code>string</code> | The schema from which to return the streams from. |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeStreamsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/streams#id DataSnowflakeStreams#id}. |
@@ -63078,10 +63078,10 @@ const dataSnowflakeStreamsConfig: DataSnowflakeStreamsConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.DataSnowflakeStreamsConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -63138,10 +63138,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.DataSnowflakeStreamsConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -63213,13 +63213,13 @@ const dataSnowflakeSystemGenerateScimAccessTokenConfig: DataSnowflakeSystemGener
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSystemGenerateScimAccessTokenConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSystemGenerateScimAccessTokenConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSystemGenerateScimAccessTokenConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSystemGenerateScimAccessTokenConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSystemGenerateScimAccessTokenConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSystemGenerateScimAccessTokenConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSystemGenerateScimAccessTokenConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSystemGenerateScimAccessTokenConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSystemGenerateScimAccessTokenConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSystemGenerateScimAccessTokenConfig.property.integrationName">integrationName</a></code> | <code>string</code> | SCIM Integration Name. |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSystemGenerateScimAccessTokenConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/system_generate_scim_access_token#id DataSnowflakeSystemGenerateScimAccessToken#id}. |
 
@@ -63228,10 +63228,10 @@ const dataSnowflakeSystemGenerateScimAccessTokenConfig: DataSnowflakeSystemGener
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.DataSnowflakeSystemGenerateScimAccessTokenConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -63288,10 +63288,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.DataSnowflakeSystemGenerateScimAccessTokenConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -63338,13 +63338,13 @@ const dataSnowflakeSystemGetAwsSnsIamPolicyConfig: DataSnowflakeSystemGetAwsSnsI
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSystemGetAwsSnsIamPolicyConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSystemGetAwsSnsIamPolicyConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSystemGetAwsSnsIamPolicyConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSystemGetAwsSnsIamPolicyConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSystemGetAwsSnsIamPolicyConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSystemGetAwsSnsIamPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSystemGetAwsSnsIamPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSystemGetAwsSnsIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSystemGetAwsSnsIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSystemGetAwsSnsIamPolicyConfig.property.awsSnsTopicArn">awsSnsTopicArn</a></code> | <code>string</code> | Amazon Resource Name (ARN) of the SNS topic for your S3 bucket. |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSystemGetAwsSnsIamPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/system_get_aws_sns_iam_policy#id DataSnowflakeSystemGetAwsSnsIamPolicy#id}. |
 
@@ -63353,10 +63353,10 @@ const dataSnowflakeSystemGetAwsSnsIamPolicyConfig: DataSnowflakeSystemGetAwsSnsI
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetAwsSnsIamPolicyConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -63413,10 +63413,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetAwsSnsIamPolicyConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -63463,13 +63463,13 @@ const dataSnowflakeSystemGetPrivatelinkConfigConfig: DataSnowflakeSystemGetPriva
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSystemGetPrivatelinkConfigConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSystemGetPrivatelinkConfigConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSystemGetPrivatelinkConfigConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSystemGetPrivatelinkConfigConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSystemGetPrivatelinkConfigConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSystemGetPrivatelinkConfigConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSystemGetPrivatelinkConfigConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSystemGetPrivatelinkConfigConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSystemGetPrivatelinkConfigConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSystemGetPrivatelinkConfigConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/system_get_privatelink_config#id DataSnowflakeSystemGetPrivatelinkConfig#id}. |
 
 ---
@@ -63477,10 +63477,10 @@ const dataSnowflakeSystemGetPrivatelinkConfigConfig: DataSnowflakeSystemGetPriva
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetPrivatelinkConfigConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -63537,10 +63537,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetPrivatelinkConfigConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -63573,13 +63573,13 @@ const dataSnowflakeSystemGetSnowflakePlatformInfoConfig: DataSnowflakeSystemGetS
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSystemGetSnowflakePlatformInfoConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSystemGetSnowflakePlatformInfoConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSystemGetSnowflakePlatformInfoConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSystemGetSnowflakePlatformInfoConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSystemGetSnowflakePlatformInfoConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSystemGetSnowflakePlatformInfoConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSystemGetSnowflakePlatformInfoConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSystemGetSnowflakePlatformInfoConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSystemGetSnowflakePlatformInfoConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeSystemGetSnowflakePlatformInfoConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/system_get_snowflake_platform_info#id DataSnowflakeSystemGetSnowflakePlatformInfo#id}. |
 
 ---
@@ -63587,10 +63587,10 @@ const dataSnowflakeSystemGetSnowflakePlatformInfoConfig: DataSnowflakeSystemGetS
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetSnowflakePlatformInfoConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -63647,10 +63647,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.DataSnowflakeSystemGetSnowflakePlatformInfoConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -63683,13 +63683,13 @@ const dataSnowflakeTablesConfig: DataSnowflakeTablesConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesConfig.property.database">database</a></code> | <code>string</code> | The database from which to return the schemas from. |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesConfig.property.schema">schema</a></code> | <code>string</code> | The schema from which to return the tables from. |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTablesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/tables#id DataSnowflakeTables#id}. |
@@ -63699,10 +63699,10 @@ const dataSnowflakeTablesConfig: DataSnowflakeTablesConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.DataSnowflakeTablesConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -63759,10 +63759,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.DataSnowflakeTablesConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -63834,13 +63834,13 @@ const dataSnowflakeTasksConfig: DataSnowflakeTasksConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksConfig.property.database">database</a></code> | <code>string</code> | The database from which to return the schemas from. |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksConfig.property.schema">schema</a></code> | <code>string</code> | The schema from which to return the tasks from. |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeTasksConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/tasks#id DataSnowflakeTasks#id}. |
@@ -63850,10 +63850,10 @@ const dataSnowflakeTasksConfig: DataSnowflakeTasksConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.DataSnowflakeTasksConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -63910,10 +63910,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.DataSnowflakeTasksConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -63985,13 +63985,13 @@ const dataSnowflakeUsersConfig: DataSnowflakeUsersConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeUsersConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeUsersConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeUsersConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeUsersConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeUsersConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeUsersConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeUsersConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeUsersConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeUsersConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeUsersConfig.property.pattern">pattern</a></code> | <code>string</code> | Users pattern for which to return metadata. Please refer to LIKE keyword from snowflake documentation : https://docs.snowflake.com/en/sql-reference/sql/show-users.html#parameters. |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeUsersConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/users#id DataSnowflakeUsers#id}. |
 
@@ -64000,10 +64000,10 @@ const dataSnowflakeUsersConfig: DataSnowflakeUsersConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.DataSnowflakeUsersConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -64060,10 +64060,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.DataSnowflakeUsersConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -64121,13 +64121,13 @@ const dataSnowflakeViewsConfig: DataSnowflakeViewsConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsConfig.property.database">database</a></code> | <code>string</code> | The database from which to return the schemas from. |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsConfig.property.schema">schema</a></code> | <code>string</code> | The schema from which to return the views from. |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeViewsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/views#id DataSnowflakeViews#id}. |
@@ -64137,10 +64137,10 @@ const dataSnowflakeViewsConfig: DataSnowflakeViewsConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.DataSnowflakeViewsConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -64197,10 +64197,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.DataSnowflakeViewsConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -64272,13 +64272,13 @@ const dataSnowflakeWarehousesConfig: DataSnowflakeWarehousesConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.DataSnowflakeWarehousesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/warehouses#id DataSnowflakeWarehouses#id}. |
 
 ---
@@ -64286,10 +64286,10 @@ const dataSnowflakeWarehousesConfig: DataSnowflakeWarehousesConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -64346,10 +64346,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.DataSnowflakeWarehousesConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -64440,13 +64440,13 @@ const externalFunctionConfig: ExternalFunctionConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.ExternalFunctionConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalFunctionConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalFunctionConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalFunctionConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalFunctionConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalFunctionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalFunctionConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.ExternalFunctionConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalFunctionConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalFunctionConfig.property.apiIntegration">apiIntegration</a></code> | <code>string</code> | The name of the API integration object that should be used to authenticate the call to the proxy service. |
 | <code><a href="#@cdktf/provider-snowflake.ExternalFunctionConfig.property.database">database</a></code> | <code>string</code> | The database in which to create the external function. |
 | <code><a href="#@cdktf/provider-snowflake.ExternalFunctionConfig.property.name">name</a></code> | <code>string</code> | Specifies the identifier for the external function. |
@@ -64469,10 +64469,10 @@ const externalFunctionConfig: ExternalFunctionConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.ExternalFunctionConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -64529,10 +64529,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.ExternalFunctionConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -64824,13 +64824,13 @@ const externalOauthIntegrationConfig: ExternalOauthIntegrationConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies whether to initiate operation of the integration or suspend it. |
 | <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.issuer">issuer</a></code> | <code>string</code> | Specifies the URL to define the OAuth 2.0 authorization server. |
 | <code><a href="#@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.name">name</a></code> | <code>string</code> | Specifies the name of the External Oath integration. |
@@ -64853,10 +64853,10 @@ const externalOauthIntegrationConfig: ExternalOauthIntegrationConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -64913,10 +64913,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.ExternalOauthIntegrationConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -65229,13 +65229,13 @@ const externalTableConfig: ExternalTableConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.ExternalTableConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalTableConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTableConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTableConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTableConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTableConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTableConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.ExternalTableConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalTableConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTableConfig.property.column">column</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.ExternalTableColumn">ExternalTableColumn</a>[]</code> | column block. |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTableConfig.property.database">database</a></code> | <code>string</code> | The database in which to create the external table. |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTableConfig.property.fileFormat">fileFormat</a></code> | <code>string</code> | Specifies the file format for the external table. |
@@ -65257,10 +65257,10 @@ const externalTableConfig: ExternalTableConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.ExternalTableConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -65317,10 +65317,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.ExternalTableConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -65551,13 +65551,13 @@ const externalTableGrantConfig: ExternalTableGrantConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.ExternalTableGrantConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalTableGrantConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTableGrantConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTableGrantConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTableGrantConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTableGrantConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTableGrantConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.ExternalTableGrantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ExternalTableGrantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTableGrantConfig.property.databaseName">databaseName</a></code> | <code>string</code> | The name of the database containing the current or future external tables on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTableGrantConfig.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
 | <code><a href="#@cdktf/provider-snowflake.ExternalTableGrantConfig.property.externalTableName">externalTableName</a></code> | <code>string</code> | The name of the external table on which to grant privileges immediately (only valid if on_future is false). |
@@ -65574,10 +65574,10 @@ const externalTableGrantConfig: ExternalTableGrantConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.ExternalTableGrantConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -65634,10 +65634,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.ExternalTableGrantConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -65877,13 +65877,13 @@ const fileFormatConfig: FileFormatConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.FileFormatConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.FileFormatConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FileFormatConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FileFormatConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FileFormatConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FileFormatConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FileFormatConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.FileFormatConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.FileFormatConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FileFormatConfig.property.database">database</a></code> | <code>string</code> | The database in which to create the file format. |
 | <code><a href="#@cdktf/provider-snowflake.FileFormatConfig.property.formatType">formatType</a></code> | <code>string</code> | Specifies the format of the input files (for data loading) or output files (for data unloading). |
 | <code><a href="#@cdktf/provider-snowflake.FileFormatConfig.property.name">name</a></code> | <code>string</code> | Specifies the identifier for the file format; |
@@ -65926,10 +65926,10 @@ const fileFormatConfig: FileFormatConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.FileFormatConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -65986,10 +65986,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.FileFormatConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -66514,13 +66514,13 @@ const fileFormatGrantConfig: FileFormatGrantConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.FileFormatGrantConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.FileFormatGrantConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FileFormatGrantConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FileFormatGrantConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FileFormatGrantConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FileFormatGrantConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FileFormatGrantConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.FileFormatGrantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.FileFormatGrantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FileFormatGrantConfig.property.databaseName">databaseName</a></code> | <code>string</code> | The name of the database containing the current or future file formats on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.FileFormatGrantConfig.property.schemaName">schemaName</a></code> | <code>string</code> | The name of the schema containing the current or future file formats on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.FileFormatGrantConfig.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
@@ -66536,10 +66536,10 @@ const fileFormatGrantConfig: FileFormatGrantConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.FileFormatGrantConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -66596,10 +66596,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.FileFormatGrantConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -66795,13 +66795,13 @@ const functionConfig: FunctionConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.FunctionConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.FunctionConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FunctionConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FunctionConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FunctionConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FunctionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FunctionConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.FunctionConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.FunctionConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FunctionConfig.property.database">database</a></code> | <code>string</code> | The database in which to create the function. Don't use the \| character. |
 | <code><a href="#@cdktf/provider-snowflake.FunctionConfig.property.name">name</a></code> | <code>string</code> | Specifies the identifier for the function; |
 | <code><a href="#@cdktf/provider-snowflake.FunctionConfig.property.returnType">returnType</a></code> | <code>string</code> | The return type of the function. |
@@ -66824,10 +66824,10 @@ const functionConfig: FunctionConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.FunctionConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -66884,10 +66884,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.FunctionConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -67185,13 +67185,13 @@ const functionGrantConfig: FunctionGrantConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.FunctionGrantConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.FunctionGrantConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FunctionGrantConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FunctionGrantConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FunctionGrantConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FunctionGrantConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FunctionGrantConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.FunctionGrantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.FunctionGrantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.FunctionGrantConfig.property.databaseName">databaseName</a></code> | <code>string</code> | The name of the database containing the current or future functions on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.FunctionGrantConfig.property.schemaName">schemaName</a></code> | <code>string</code> | The name of the schema containing the current or future functions on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.FunctionGrantConfig.property.arguments">arguments</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.FunctionGrantArguments">FunctionGrantArguments</a>[]</code> | arguments block. |
@@ -67210,10 +67210,10 @@ const functionGrantConfig: FunctionGrantConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.FunctionGrantConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -67270,10 +67270,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.FunctionGrantConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -67464,13 +67464,13 @@ const integrationGrantConfig: IntegrationGrantConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.IntegrationGrantConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.IntegrationGrantConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.IntegrationGrantConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.IntegrationGrantConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.IntegrationGrantConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.IntegrationGrantConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.IntegrationGrantConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.IntegrationGrantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.IntegrationGrantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.IntegrationGrantConfig.property.integrationName">integrationName</a></code> | <code>string</code> | Identifier for the integration; must be unique for your account. |
 | <code><a href="#@cdktf/provider-snowflake.IntegrationGrantConfig.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
 | <code><a href="#@cdktf/provider-snowflake.IntegrationGrantConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/integration_grant#id IntegrationGrant#id}. |
@@ -67483,10 +67483,10 @@ const integrationGrantConfig: IntegrationGrantConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.IntegrationGrantConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -67543,10 +67543,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.IntegrationGrantConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -67651,13 +67651,13 @@ const managedAccountConfig: ManagedAccountConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.ManagedAccountConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ManagedAccountConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ManagedAccountConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ManagedAccountConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ManagedAccountConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ManagedAccountConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ManagedAccountConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.ManagedAccountConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ManagedAccountConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ManagedAccountConfig.property.adminName">adminName</a></code> | <code>string</code> | Identifier, as well as login name, for the initial user in the managed account. |
 | <code><a href="#@cdktf/provider-snowflake.ManagedAccountConfig.property.adminPassword">adminPassword</a></code> | <code>string</code> | Password for the initial user in the managed account. |
 | <code><a href="#@cdktf/provider-snowflake.ManagedAccountConfig.property.name">name</a></code> | <code>string</code> | Identifier for the managed account; must be unique for your account. |
@@ -67670,10 +67670,10 @@ const managedAccountConfig: ManagedAccountConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.ManagedAccountConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -67730,10 +67730,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.ManagedAccountConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -67838,13 +67838,13 @@ const maskingPolicyConfig: MaskingPolicyConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.MaskingPolicyConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.MaskingPolicyConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicyConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicyConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicyConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.MaskingPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.MaskingPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicyConfig.property.database">database</a></code> | <code>string</code> | The database in which to create the masking policy. |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicyConfig.property.maskingExpression">maskingExpression</a></code> | <code>string</code> | Specifies the SQL expression that transforms the data. |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicyConfig.property.name">name</a></code> | <code>string</code> | Specifies the identifier for the masking policy; |
@@ -67859,10 +67859,10 @@ const maskingPolicyConfig: MaskingPolicyConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.MaskingPolicyConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -67919,10 +67919,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.MaskingPolicyConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -68055,13 +68055,13 @@ const maskingPolicyGrantConfig: MaskingPolicyGrantConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrantConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrantConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrantConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrantConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrantConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrantConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrantConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrantConfig.property.databaseName">databaseName</a></code> | <code>string</code> | The name of the database containing the masking policy on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrantConfig.property.maskingPolicyName">maskingPolicyName</a></code> | <code>string</code> | The name of the masking policy on which to grant privileges immediately. |
 | <code><a href="#@cdktf/provider-snowflake.MaskingPolicyGrantConfig.property.schemaName">schemaName</a></code> | <code>string</code> | The name of the schema containing the masking policy on which to grant privileges. |
@@ -68076,10 +68076,10 @@ const maskingPolicyGrantConfig: MaskingPolicyGrantConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.MaskingPolicyGrantConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -68136,10 +68136,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.MaskingPolicyGrantConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -68272,13 +68272,13 @@ const materializedViewConfig: MaterializedViewConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.MaterializedViewConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.MaterializedViewConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedViewConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedViewConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedViewConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedViewConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedViewConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.MaterializedViewConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.MaterializedViewConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedViewConfig.property.database">database</a></code> | <code>string</code> | The database in which to create the view. Don't use the \| character. |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedViewConfig.property.name">name</a></code> | <code>string</code> | Specifies the identifier for the view; must be unique for the schema in which the view is created. |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedViewConfig.property.schema">schema</a></code> | <code>string</code> | The schema in which to create the view. Don't use the \| character. |
@@ -68295,10 +68295,10 @@ const materializedViewConfig: MaterializedViewConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.MaterializedViewConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -68355,10 +68355,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.MaterializedViewConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -68517,13 +68517,13 @@ const materializedViewGrantConfig: MaterializedViewGrantConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrantConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrantConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrantConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrantConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrantConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrantConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrantConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrantConfig.property.databaseName">databaseName</a></code> | <code>string</code> | The name of the database containing the current or future materialized views on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrantConfig.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
 | <code><a href="#@cdktf/provider-snowflake.MaterializedViewGrantConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/materialized_view_grant#id MaterializedViewGrant#id}. |
@@ -68540,10 +68540,10 @@ const materializedViewGrantConfig: MaterializedViewGrantConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.MaterializedViewGrantConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -68600,10 +68600,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.MaterializedViewGrantConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -68843,13 +68843,13 @@ const networkPolicyAttachmentConfig: NetworkPolicyAttachmentConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.NetworkPolicyAttachmentConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.NetworkPolicyAttachmentConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NetworkPolicyAttachmentConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NetworkPolicyAttachmentConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NetworkPolicyAttachmentConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NetworkPolicyAttachmentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NetworkPolicyAttachmentConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.NetworkPolicyAttachmentConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.NetworkPolicyAttachmentConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NetworkPolicyAttachmentConfig.property.networkPolicyName">networkPolicyName</a></code> | <code>string</code> | Specifies the identifier for the network policy; |
 | <code><a href="#@cdktf/provider-snowflake.NetworkPolicyAttachmentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/network_policy_attachment#id NetworkPolicyAttachment#id}. |
 | <code><a href="#@cdktf/provider-snowflake.NetworkPolicyAttachmentConfig.property.setForAccount">setForAccount</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies whether the network policy should be applied globally to your Snowflake account<br><br>**Note:** The Snowflake user running `terraform apply` must be on an IP address allowed by the network policy to set that policy globally on the Snowflake account.<br><br>Additionally, a Snowflake account can only have one network policy set globally at any given time. This resource does not enforce one-policy-per-account, it is the user's responsibility to enforce this. If multiple network policy resources have `set_for_account: true`, the final policy set on the account will be non-deterministic. |
@@ -68860,10 +68860,10 @@ const networkPolicyAttachmentConfig: NetworkPolicyAttachmentConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.NetworkPolicyAttachmentConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -68920,10 +68920,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.NetworkPolicyAttachmentConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -69000,13 +69000,13 @@ const networkPolicyConfig: NetworkPolicyConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.NetworkPolicyConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.NetworkPolicyConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NetworkPolicyConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NetworkPolicyConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NetworkPolicyConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NetworkPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NetworkPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.NetworkPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.NetworkPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NetworkPolicyConfig.property.allowedIpList">allowedIpList</a></code> | <code>string[]</code> | Specifies one or more IPv4 addresses (CIDR notation) that are allowed access to your Snowflake account. |
 | <code><a href="#@cdktf/provider-snowflake.NetworkPolicyConfig.property.name">name</a></code> | <code>string</code> | Specifies the identifier for the network policy; |
 | <code><a href="#@cdktf/provider-snowflake.NetworkPolicyConfig.property.blockedIpList">blockedIpList</a></code> | <code>string[]</code> | Specifies one or more IPv4 addresses (CIDR notation) that are denied access to your Snowflake account<br><br>**Do not** add `0.0.0.0/0` to `blocked_ip_list`. |
@@ -69018,10 +69018,10 @@ const networkPolicyConfig: NetworkPolicyConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.NetworkPolicyConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -69078,10 +69078,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.NetworkPolicyConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -69172,13 +69172,13 @@ const notificationIntegrationConfig: NotificationIntegrationConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.NotificationIntegrationConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.NotificationIntegrationConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NotificationIntegrationConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NotificationIntegrationConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NotificationIntegrationConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NotificationIntegrationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NotificationIntegrationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.NotificationIntegrationConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.NotificationIntegrationConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.NotificationIntegrationConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/notification_integration#name NotificationIntegration#name}. |
 | <code><a href="#@cdktf/provider-snowflake.NotificationIntegrationConfig.property.awsSnsRoleArn">awsSnsRoleArn</a></code> | <code>string</code> | AWS IAM role ARN for notification integration to assume. |
 | <code><a href="#@cdktf/provider-snowflake.NotificationIntegrationConfig.property.awsSnsTopicArn">awsSnsTopicArn</a></code> | <code>string</code> | AWS SNS Topic ARN for notification integration to connect to. |
@@ -69199,10 +69199,10 @@ const notificationIntegrationConfig: NotificationIntegrationConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.NotificationIntegrationConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -69259,10 +69259,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.NotificationIntegrationConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -69473,13 +69473,13 @@ const oauthIntegrationConfig: OauthIntegrationConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.OauthIntegrationConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.OauthIntegrationConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.OauthIntegrationConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.OauthIntegrationConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.OauthIntegrationConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.OauthIntegrationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.OauthIntegrationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.OauthIntegrationConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.OauthIntegrationConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.OauthIntegrationConfig.property.name">name</a></code> | <code>string</code> | Specifies the name of the OAuth integration. |
 | <code><a href="#@cdktf/provider-snowflake.OauthIntegrationConfig.property.oauthClient">oauthClient</a></code> | <code>string</code> | Specifies the OAuth client type. |
 | <code><a href="#@cdktf/provider-snowflake.OauthIntegrationConfig.property.blockedRolesList">blockedRolesList</a></code> | <code>string[]</code> | List of roles that a user cannot explicitly consent to using after authenticating. |
@@ -69495,10 +69495,10 @@ const oauthIntegrationConfig: OauthIntegrationConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.OauthIntegrationConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -69555,10 +69555,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.OauthIntegrationConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -69707,13 +69707,13 @@ const pipeConfig: PipeConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.PipeConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.PipeConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.PipeConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.PipeConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.PipeConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.PipeConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.PipeConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.PipeConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.PipeConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.PipeConfig.property.copyStatement">copyStatement</a></code> | <code>string</code> | Specifies the copy statement for the pipe. |
 | <code><a href="#@cdktf/provider-snowflake.PipeConfig.property.database">database</a></code> | <code>string</code> | The database in which to create the pipe. |
 | <code><a href="#@cdktf/provider-snowflake.PipeConfig.property.name">name</a></code> | <code>string</code> | Specifies the identifier for the pipe; |
@@ -69730,10 +69730,10 @@ const pipeConfig: PipeConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.PipeConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -69790,10 +69790,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.PipeConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -69954,13 +69954,13 @@ const pipeGrantConfig: PipeGrantConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.PipeGrantConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.PipeGrantConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.PipeGrantConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.PipeGrantConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.PipeGrantConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.PipeGrantConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.PipeGrantConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.PipeGrantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.PipeGrantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.PipeGrantConfig.property.databaseName">databaseName</a></code> | <code>string</code> | The name of the database containing the current or future pipes on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.PipeGrantConfig.property.schemaName">schemaName</a></code> | <code>string</code> | The name of the schema containing the current or future pipes on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.PipeGrantConfig.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
@@ -69976,10 +69976,10 @@ const pipeGrantConfig: PipeGrantConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.PipeGrantConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -70036,10 +70036,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.PipeGrantConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -70235,13 +70235,13 @@ const procedureConfig: ProcedureConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.ProcedureConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ProcedureConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ProcedureConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ProcedureConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ProcedureConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ProcedureConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ProcedureConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.ProcedureConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ProcedureConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ProcedureConfig.property.database">database</a></code> | <code>string</code> | The database in which to create the procedure. Don't use the \| character. |
 | <code><a href="#@cdktf/provider-snowflake.ProcedureConfig.property.name">name</a></code> | <code>string</code> | Specifies the identifier for the procedure; |
 | <code><a href="#@cdktf/provider-snowflake.ProcedureConfig.property.returnType">returnType</a></code> | <code>string</code> | The return type of the procedure. |
@@ -70260,10 +70260,10 @@ const procedureConfig: ProcedureConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.ProcedureConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -70320,10 +70320,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.ProcedureConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -70559,13 +70559,13 @@ const procedureGrantConfig: ProcedureGrantConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.ProcedureGrantConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ProcedureGrantConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ProcedureGrantConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ProcedureGrantConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ProcedureGrantConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ProcedureGrantConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ProcedureGrantConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.ProcedureGrantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ProcedureGrantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ProcedureGrantConfig.property.databaseName">databaseName</a></code> | <code>string</code> | The name of the database containing the current or future procedures on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.ProcedureGrantConfig.property.schemaName">schemaName</a></code> | <code>string</code> | The name of the schema containing the current or future procedures on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.ProcedureGrantConfig.property.arguments">arguments</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.ProcedureGrantArguments">ProcedureGrantArguments</a>[]</code> | arguments block. |
@@ -70584,10 +70584,10 @@ const procedureGrantConfig: ProcedureGrantConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.ProcedureGrantConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -70644,10 +70644,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.ProcedureGrantConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -70838,13 +70838,13 @@ const resourceMonitorConfig: ResourceMonitorConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.ResourceMonitorConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ResourceMonitorConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitorConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitorConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitorConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitorConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitorConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.ResourceMonitorConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ResourceMonitorConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitorConfig.property.name">name</a></code> | <code>string</code> | Identifier for the resource monitor; must be unique for your account. |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitorConfig.property.creditQuota">creditQuota</a></code> | <code>number</code> | The number of credits allocated monthly to the resource monitor. |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitorConfig.property.endTimestamp">endTimestamp</a></code> | <code>string</code> | The date and time when the resource monitor suspends the assigned warehouses. |
@@ -70862,10 +70862,10 @@ const resourceMonitorConfig: ResourceMonitorConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.ResourceMonitorConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -70922,10 +70922,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.ResourceMonitorConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -71100,13 +71100,13 @@ const resourceMonitorGrantConfig: ResourceMonitorGrantConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrantConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrantConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrantConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrantConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrantConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrantConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrantConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrantConfig.property.monitorName">monitorName</a></code> | <code>string</code> | Identifier for the resource monitor; must be unique for your account. |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrantConfig.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
 | <code><a href="#@cdktf/provider-snowflake.ResourceMonitorGrantConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/resource_monitor_grant#id ResourceMonitorGrant#id}. |
@@ -71119,10 +71119,10 @@ const resourceMonitorGrantConfig: ResourceMonitorGrantConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.ResourceMonitorGrantConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -71179,10 +71179,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.ResourceMonitorGrantConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -71287,13 +71287,13 @@ const roleConfig: RoleConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.RoleConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RoleConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.RoleConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RoleConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/role#name Role#name}. |
 | <code><a href="#@cdktf/provider-snowflake.RoleConfig.property.comment">comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/role#comment Role#comment}. |
 | <code><a href="#@cdktf/provider-snowflake.RoleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/role#id Role#id}. |
@@ -71304,10 +71304,10 @@ const roleConfig: RoleConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.RoleConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -71364,10 +71364,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.RoleConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -71438,13 +71438,13 @@ const roleGrantsConfig: RoleGrantsConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.RoleGrantsConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RoleGrantsConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleGrantsConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleGrantsConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleGrantsConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleGrantsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleGrantsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.RoleGrantsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RoleGrantsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleGrantsConfig.property.roleName">roleName</a></code> | <code>string</code> | The name of the role we are granting. |
 | <code><a href="#@cdktf/provider-snowflake.RoleGrantsConfig.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
 | <code><a href="#@cdktf/provider-snowflake.RoleGrantsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/role_grants#id RoleGrants#id}. |
@@ -71456,10 +71456,10 @@ const roleGrantsConfig: RoleGrantsConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.RoleGrantsConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -71516,10 +71516,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.RoleGrantsConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -71610,13 +71610,13 @@ const roleOwnershipGrantConfig: RoleOwnershipGrantConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrantConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrantConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrantConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrantConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrantConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrantConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrantConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrantConfig.property.onRoleName">onRoleName</a></code> | <code>string</code> | The name of the role ownership is granted on. |
 | <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrantConfig.property.toRoleName">toRoleName</a></code> | <code>string</code> | The name of the role to grant ownership. |
 | <code><a href="#@cdktf/provider-snowflake.RoleOwnershipGrantConfig.property.currentGrants">currentGrants</a></code> | <code>string</code> | Specifies whether to remove or transfer all existing outbound privileges on the object when ownership is transferred to a new role. |
@@ -71627,10 +71627,10 @@ const roleOwnershipGrantConfig: RoleOwnershipGrantConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.RoleOwnershipGrantConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -71687,10 +71687,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.RoleOwnershipGrantConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -71844,13 +71844,13 @@ const rowAccessPolicyConfig: RowAccessPolicyConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyConfig.property.database">database</a></code> | <code>string</code> | The database in which to create the row access policy. |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyConfig.property.name">name</a></code> | <code>string</code> | Specifies the identifier for the row access policy; |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyConfig.property.rowAccessExpression">rowAccessExpression</a></code> | <code>string</code> | Specifies the SQL expression. The expression can be any boolean-valued SQL expression. |
@@ -71864,10 +71864,10 @@ const rowAccessPolicyConfig: RowAccessPolicyConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.RowAccessPolicyConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -71924,10 +71924,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.RowAccessPolicyConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -72048,13 +72048,13 @@ const rowAccessPolicyGrantConfig: RowAccessPolicyGrantConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrantConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrantConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrantConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrantConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrantConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrantConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrantConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrantConfig.property.databaseName">databaseName</a></code> | <code>string</code> | The name of the database containing the row access policy on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrantConfig.property.rowAccessPolicyName">rowAccessPolicyName</a></code> | <code>string</code> | The name of the row access policy on which to grant privileges immediately. |
 | <code><a href="#@cdktf/provider-snowflake.RowAccessPolicyGrantConfig.property.schemaName">schemaName</a></code> | <code>string</code> | The name of the schema containing the row access policy on which to grant privileges. |
@@ -72069,10 +72069,10 @@ const rowAccessPolicyGrantConfig: RowAccessPolicyGrantConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.RowAccessPolicyGrantConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -72129,10 +72129,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.RowAccessPolicyGrantConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -72265,13 +72265,13 @@ const samlIntegrationConfig: SamlIntegrationConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.SamlIntegrationConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.SamlIntegrationConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SamlIntegrationConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SamlIntegrationConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SamlIntegrationConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SamlIntegrationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SamlIntegrationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.SamlIntegrationConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.SamlIntegrationConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SamlIntegrationConfig.property.name">name</a></code> | <code>string</code> | Specifies the name of the SAML2 integration. |
 | <code><a href="#@cdktf/provider-snowflake.SamlIntegrationConfig.property.saml2Issuer">saml2Issuer</a></code> | <code>string</code> | The string containing the IdP EntityID / Issuer. |
 | <code><a href="#@cdktf/provider-snowflake.SamlIntegrationConfig.property.saml2Provider">saml2Provider</a></code> | <code>string</code> | The string describing the IdP. One of the following: OKTA, ADFS, Custom. |
@@ -72294,10 +72294,10 @@ const samlIntegrationConfig: SamlIntegrationConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.SamlIntegrationConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -72354,10 +72354,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.SamlIntegrationConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -72616,13 +72616,13 @@ const schemaConfig: SchemaConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.SchemaConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.SchemaConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SchemaConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SchemaConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SchemaConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SchemaConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SchemaConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.SchemaConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.SchemaConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SchemaConfig.property.database">database</a></code> | <code>string</code> | The database in which to create the schema. |
 | <code><a href="#@cdktf/provider-snowflake.SchemaConfig.property.name">name</a></code> | <code>string</code> | Specifies the identifier for the schema; must be unique for the database in which the schema is created. |
 | <code><a href="#@cdktf/provider-snowflake.SchemaConfig.property.comment">comment</a></code> | <code>string</code> | Specifies a comment for the schema. |
@@ -72637,10 +72637,10 @@ const schemaConfig: SchemaConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.SchemaConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -72697,10 +72697,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.SchemaConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -72833,13 +72833,13 @@ const schemaGrantConfig: SchemaGrantConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.SchemaGrantConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.SchemaGrantConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SchemaGrantConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SchemaGrantConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SchemaGrantConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SchemaGrantConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SchemaGrantConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.SchemaGrantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.SchemaGrantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SchemaGrantConfig.property.databaseName">databaseName</a></code> | <code>string</code> | The name of the database containing the schema on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.SchemaGrantConfig.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
 | <code><a href="#@cdktf/provider-snowflake.SchemaGrantConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema_grant#id SchemaGrant#id}. |
@@ -72855,10 +72855,10 @@ const schemaGrantConfig: SchemaGrantConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.SchemaGrantConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -72915,10 +72915,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.SchemaGrantConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -73146,13 +73146,13 @@ const scimIntegrationConfig: ScimIntegrationConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.ScimIntegrationConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ScimIntegrationConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ScimIntegrationConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ScimIntegrationConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ScimIntegrationConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ScimIntegrationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ScimIntegrationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.ScimIntegrationConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ScimIntegrationConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ScimIntegrationConfig.property.name">name</a></code> | <code>string</code> | Specifies the name of the SCIM integration. |
 | <code><a href="#@cdktf/provider-snowflake.ScimIntegrationConfig.property.provisionerRole">provisionerRole</a></code> | <code>string</code> | Specify the SCIM role in Snowflake that owns any users and roles that are imported from the identity provider into Snowflake using SCIM. |
 | <code><a href="#@cdktf/provider-snowflake.ScimIntegrationConfig.property.scimClient">scimClient</a></code> | <code>string</code> | Specifies the client type for the scim integration. |
@@ -73164,10 +73164,10 @@ const scimIntegrationConfig: ScimIntegrationConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.ScimIntegrationConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -73224,10 +73224,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.ScimIntegrationConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -73320,13 +73320,13 @@ const sequenceConfig: SequenceConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.SequenceConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.SequenceConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SequenceConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SequenceConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SequenceConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SequenceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SequenceConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.SequenceConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.SequenceConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SequenceConfig.property.database">database</a></code> | <code>string</code> | The database in which to create the sequence. Don't use the \| character. |
 | <code><a href="#@cdktf/provider-snowflake.SequenceConfig.property.name">name</a></code> | <code>string</code> | Specifies the name for the sequence. |
 | <code><a href="#@cdktf/provider-snowflake.SequenceConfig.property.schema">schema</a></code> | <code>string</code> | The schema in which to create the sequence. Don't use the \| character. |
@@ -73339,10 +73339,10 @@ const sequenceConfig: SequenceConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.SequenceConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -73399,10 +73399,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.SequenceConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -73505,13 +73505,13 @@ const sequenceGrantConfig: SequenceGrantConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.SequenceGrantConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.SequenceGrantConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SequenceGrantConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SequenceGrantConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SequenceGrantConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SequenceGrantConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SequenceGrantConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.SequenceGrantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.SequenceGrantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SequenceGrantConfig.property.databaseName">databaseName</a></code> | <code>string</code> | The name of the database containing the current or future sequences on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.SequenceGrantConfig.property.schemaName">schemaName</a></code> | <code>string</code> | The name of the schema containing the current or future sequences on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.SequenceGrantConfig.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
@@ -73527,10 +73527,10 @@ const sequenceGrantConfig: SequenceGrantConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.SequenceGrantConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -73587,10 +73587,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.SequenceGrantConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -73739,13 +73739,13 @@ const shareConfig: ShareConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.ShareConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ShareConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ShareConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ShareConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ShareConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ShareConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ShareConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.ShareConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ShareConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ShareConfig.property.name">name</a></code> | <code>string</code> | Specifies the identifier for the share; must be unique for the account in which the share is created. |
 | <code><a href="#@cdktf/provider-snowflake.ShareConfig.property.accounts">accounts</a></code> | <code>string[]</code> | A list of accounts to be added to the share. |
 | <code><a href="#@cdktf/provider-snowflake.ShareConfig.property.comment">comment</a></code> | <code>string</code> | Specifies a comment for the managed account. |
@@ -73756,10 +73756,10 @@ const shareConfig: ShareConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.ShareConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -73816,10 +73816,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.ShareConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -74191,13 +74191,13 @@ const stageConfig: StageConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.StageConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.StageConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StageConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StageConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StageConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StageConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StageConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.StageConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.StageConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StageConfig.property.database">database</a></code> | <code>string</code> | The database in which to create the stage. |
 | <code><a href="#@cdktf/provider-snowflake.StageConfig.property.name">name</a></code> | <code>string</code> | Specifies the identifier for the stage; |
 | <code><a href="#@cdktf/provider-snowflake.StageConfig.property.schema">schema</a></code> | <code>string</code> | The schema in which to create the stage. |
@@ -74219,10 +74219,10 @@ const stageConfig: StageConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.StageConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -74279,10 +74279,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.StageConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -74509,13 +74509,13 @@ const stageGrantConfig: StageGrantConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.StageGrantConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.StageGrantConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StageGrantConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StageGrantConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StageGrantConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StageGrantConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StageGrantConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.StageGrantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.StageGrantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StageGrantConfig.property.databaseName">databaseName</a></code> | <code>string</code> | The name of the database containing the current stage on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.StageGrantConfig.property.schemaName">schemaName</a></code> | <code>string</code> | The name of the schema containing the current stage on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.StageGrantConfig.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
@@ -74531,10 +74531,10 @@ const stageGrantConfig: StageGrantConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.StageGrantConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -74591,10 +74591,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.StageGrantConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -74820,13 +74820,13 @@ const storageIntegrationConfig: StorageIntegrationConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.StorageIntegrationConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.StorageIntegrationConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StorageIntegrationConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StorageIntegrationConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StorageIntegrationConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StorageIntegrationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StorageIntegrationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.StorageIntegrationConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.StorageIntegrationConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StorageIntegrationConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/storage_integration#name StorageIntegration#name}. |
 | <code><a href="#@cdktf/provider-snowflake.StorageIntegrationConfig.property.storageAllowedLocations">storageAllowedLocations</a></code> | <code>string[]</code> | Explicitly limits external stages that use the integration to reference one or more storage locations. |
 | <code><a href="#@cdktf/provider-snowflake.StorageIntegrationConfig.property.storageProvider">storageProvider</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/storage_integration#storage_provider StorageIntegration#storage_provider}. |
@@ -74844,10 +74844,10 @@ const storageIntegrationConfig: StorageIntegrationConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.StorageIntegrationConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -74904,10 +74904,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.StorageIntegrationConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -75066,13 +75066,13 @@ const streamConfig: StreamConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.StreamConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.StreamConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StreamConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StreamConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StreamConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StreamConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StreamConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.StreamConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.StreamConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StreamConfig.property.database">database</a></code> | <code>string</code> | The database in which to create the stream. |
 | <code><a href="#@cdktf/provider-snowflake.StreamConfig.property.name">name</a></code> | <code>string</code> | Specifies the identifier for the stream; |
 | <code><a href="#@cdktf/provider-snowflake.StreamConfig.property.schema">schema</a></code> | <code>string</code> | The schema in which to create the stream. |
@@ -75089,10 +75089,10 @@ const streamConfig: StreamConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.StreamConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -75149,10 +75149,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.StreamConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -75313,13 +75313,13 @@ const streamGrantConfig: StreamGrantConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.StreamGrantConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.StreamGrantConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StreamGrantConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StreamGrantConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StreamGrantConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StreamGrantConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StreamGrantConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.StreamGrantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.StreamGrantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.StreamGrantConfig.property.databaseName">databaseName</a></code> | <code>string</code> | The name of the database containing the current or future streams on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.StreamGrantConfig.property.schemaName">schemaName</a></code> | <code>string</code> | The name of the schema containing the current or future streams on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.StreamGrantConfig.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
@@ -75335,10 +75335,10 @@ const streamGrantConfig: StreamGrantConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.StreamGrantConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -75395,10 +75395,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.StreamGrantConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -75765,13 +75765,13 @@ const tableConfig: TableConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.TableConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TableConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TableConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TableConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TableConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TableConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TableConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.TableConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TableConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TableConfig.property.column">column</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.TableColumn">TableColumn</a>[]</code> | column block. |
 | <code><a href="#@cdktf/provider-snowflake.TableConfig.property.database">database</a></code> | <code>string</code> | The database in which to create the table. |
 | <code><a href="#@cdktf/provider-snowflake.TableConfig.property.name">name</a></code> | <code>string</code> | Specifies the identifier for the table; |
@@ -75789,10 +75789,10 @@ const tableConfig: TableConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.TableConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -75849,10 +75849,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.TableConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -76029,13 +76029,13 @@ const tableGrantConfig: TableGrantConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.TableGrantConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TableGrantConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TableGrantConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TableGrantConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TableGrantConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TableGrantConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TableGrantConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.TableGrantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TableGrantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TableGrantConfig.property.databaseName">databaseName</a></code> | <code>string</code> | The name of the database containing the current or future tables on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.TableGrantConfig.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
 | <code><a href="#@cdktf/provider-snowflake.TableGrantConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table_grant#id TableGrant#id}. |
@@ -76052,10 +76052,10 @@ const tableGrantConfig: TableGrantConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.TableGrantConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -76112,10 +76112,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.TableGrantConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -76402,13 +76402,13 @@ const tagAssociationConfig: TagAssociationConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.TagAssociationConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociationConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TagAssociationConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TagAssociationConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TagAssociationConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TagAssociationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TagAssociationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.TagAssociationConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagAssociationConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TagAssociationConfig.property.objectName">objectName</a></code> | <code>string</code> | Specifies the object identifier for the tag association. |
 | <code><a href="#@cdktf/provider-snowflake.TagAssociationConfig.property.objectType">objectType</a></code> | <code>string</code> | Specifies the type of object to add a tag to. ex: 'ACCOUNT', 'COLUMN', 'DATABASE', etc. For more information: https://docs.snowflake.com/en/user-guide/object-tagging.html#supported-objects. |
 | <code><a href="#@cdktf/provider-snowflake.TagAssociationConfig.property.tagId">tagId</a></code> | <code>string</code> | Specifies the identifier for the tag. Note: format must follow: "databaseName"."schemaName"."tagName" or "databaseName.schemaName.tagName" or "databaseName\|schemaName.tagName" (snowflake_tag.tag.id). |
@@ -76422,10 +76422,10 @@ const tagAssociationConfig: TagAssociationConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.TagAssociationConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -76482,10 +76482,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.TagAssociationConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -76634,13 +76634,13 @@ const tagConfig: TagConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.TagConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TagConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TagConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TagConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TagConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TagConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.TagConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TagConfig.property.database">database</a></code> | <code>string</code> | The database in which to create the tag. |
 | <code><a href="#@cdktf/provider-snowflake.TagConfig.property.name">name</a></code> | <code>string</code> | Specifies the identifier for the tag; must be unique for the database in which the tag is created. |
 | <code><a href="#@cdktf/provider-snowflake.TagConfig.property.schema">schema</a></code> | <code>string</code> | The schema in which to create the tag. |
@@ -76653,10 +76653,10 @@ const tagConfig: TagConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.TagConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -76713,10 +76713,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.TagConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -76819,13 +76819,13 @@ const tagGrantConfig: TagGrantConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.TagGrantConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagGrantConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TagGrantConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TagGrantConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TagGrantConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TagGrantConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TagGrantConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.TagGrantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TagGrantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TagGrantConfig.property.databaseName">databaseName</a></code> | <code>string</code> | The name of the database containing the tag on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.TagGrantConfig.property.schemaName">schemaName</a></code> | <code>string</code> | The name of the schema containing the tag on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.TagGrantConfig.property.tagName">tagName</a></code> | <code>string</code> | The name of the tag on which to grant privileges. |
@@ -76840,10 +76840,10 @@ const tagGrantConfig: TagGrantConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.TagGrantConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -76900,10 +76900,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.TagGrantConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -77036,13 +77036,13 @@ const taskConfig: TaskConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.TaskConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TaskConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TaskConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TaskConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TaskConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TaskConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TaskConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.TaskConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TaskConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TaskConfig.property.database">database</a></code> | <code>string</code> | The database in which to create the task. |
 | <code><a href="#@cdktf/provider-snowflake.TaskConfig.property.name">name</a></code> | <code>string</code> | Specifies the identifier for the task; |
 | <code><a href="#@cdktf/provider-snowflake.TaskConfig.property.schema">schema</a></code> | <code>string</code> | The schema in which to create the task. |
@@ -77064,10 +77064,10 @@ const taskConfig: TaskConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.TaskConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -77124,10 +77124,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.TaskConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -77364,13 +77364,13 @@ const taskGrantConfig: TaskGrantConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.TaskGrantConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TaskGrantConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TaskGrantConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TaskGrantConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TaskGrantConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TaskGrantConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TaskGrantConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.TaskGrantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.TaskGrantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.TaskGrantConfig.property.databaseName">databaseName</a></code> | <code>string</code> | The name of the database containing the current or future tasks on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.TaskGrantConfig.property.schemaName">schemaName</a></code> | <code>string</code> | The name of the schema containing the current or future tasks on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.TaskGrantConfig.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
@@ -77386,10 +77386,10 @@ const taskGrantConfig: TaskGrantConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.TaskGrantConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -77446,10 +77446,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.TaskGrantConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -77598,13 +77598,13 @@ const userConfig: UserConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.UserConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.UserConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.UserConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.UserConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.UserConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.UserConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.UserConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.UserConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.UserConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.UserConfig.property.name">name</a></code> | <code>string</code> | Name of the user. Note that if you do not supply login_name this will be used as login_name. [doc](https://docs.snowflake.net/manuals/sql-reference/sql/create-user.html#required-parameters). |
 | <code><a href="#@cdktf/provider-snowflake.UserConfig.property.comment">comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/user#comment User#comment}. |
 | <code><a href="#@cdktf/provider-snowflake.UserConfig.property.defaultNamespace">defaultNamespace</a></code> | <code>string</code> | Specifies the namespace (database only or database and schema) that is active by default for the user’s session upon login. |
@@ -77629,10 +77629,10 @@ const userConfig: UserConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.UserConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -77689,10 +77689,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.UserConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -77961,13 +77961,13 @@ const userOwnershipGrantConfig: UserOwnershipGrantConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrantConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrantConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrantConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrantConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrantConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrantConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrantConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrantConfig.property.onUserName">onUserName</a></code> | <code>string</code> | The name of the user ownership is granted on. |
 | <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrantConfig.property.toRoleName">toRoleName</a></code> | <code>string</code> | The name of the role to grant ownership. |
 | <code><a href="#@cdktf/provider-snowflake.UserOwnershipGrantConfig.property.currentGrants">currentGrants</a></code> | <code>string</code> | Specifies whether to remove or transfer all existing outbound privileges on the object when ownership is transferred to a new role. |
@@ -77978,10 +77978,10 @@ const userOwnershipGrantConfig: UserOwnershipGrantConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.UserOwnershipGrantConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -78038,10 +78038,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.UserOwnershipGrantConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -78118,13 +78118,13 @@ const userPublicKeysConfig: UserPublicKeysConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.UserPublicKeysConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.UserPublicKeysConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.UserPublicKeysConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.UserPublicKeysConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.UserPublicKeysConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.UserPublicKeysConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.UserPublicKeysConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.UserPublicKeysConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.UserPublicKeysConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.UserPublicKeysConfig.property.name">name</a></code> | <code>string</code> | Name of the user. |
 | <code><a href="#@cdktf/provider-snowflake.UserPublicKeysConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/user_public_keys#id UserPublicKeys#id}. |
 | <code><a href="#@cdktf/provider-snowflake.UserPublicKeysConfig.property.rsaPublicKey">rsaPublicKey</a></code> | <code>string</code> | Specifies the user’s RSA public key; used for key-pair authentication. Must be on 1 line without header and trailer. |
@@ -78135,10 +78135,10 @@ const userPublicKeysConfig: UserPublicKeysConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.UserPublicKeysConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -78195,10 +78195,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.UserPublicKeysConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -78352,13 +78352,13 @@ const viewConfig: ViewConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.ViewConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ViewConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ViewConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ViewConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ViewConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ViewConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ViewConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.ViewConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ViewConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ViewConfig.property.database">database</a></code> | <code>string</code> | The database in which to create the view. Don't use the \| character. |
 | <code><a href="#@cdktf/provider-snowflake.ViewConfig.property.name">name</a></code> | <code>string</code> | Specifies the identifier for the view; |
 | <code><a href="#@cdktf/provider-snowflake.ViewConfig.property.schema">schema</a></code> | <code>string</code> | The schema in which to create the view. Don't use the \| character. |
@@ -78374,10 +78374,10 @@ const viewConfig: ViewConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.ViewConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -78434,10 +78434,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.ViewConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -78584,13 +78584,13 @@ const viewGrantConfig: ViewGrantConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.ViewGrantConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ViewGrantConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ViewGrantConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ViewGrantConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ViewGrantConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ViewGrantConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ViewGrantConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.ViewGrantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.ViewGrantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.ViewGrantConfig.property.databaseName">databaseName</a></code> | <code>string</code> | The name of the database containing the current or future views on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.ViewGrantConfig.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
 | <code><a href="#@cdktf/provider-snowflake.ViewGrantConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view_grant#id ViewGrant#id}. |
@@ -78607,10 +78607,10 @@ const viewGrantConfig: ViewGrantConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.ViewGrantConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -78667,10 +78667,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.ViewGrantConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -78910,13 +78910,13 @@ const warehouseConfig: WarehouseConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.WarehouseConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.WarehouseConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.WarehouseConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.WarehouseConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.WarehouseConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.WarehouseConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.WarehouseConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.WarehouseConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.WarehouseConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.WarehouseConfig.property.name">name</a></code> | <code>string</code> | Identifier for the virtual warehouse; must be unique for your account. |
 | <code><a href="#@cdktf/provider-snowflake.WarehouseConfig.property.autoResume">autoResume</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies whether to automatically resume a warehouse when a SQL statement (e.g. query) is submitted to it. |
 | <code><a href="#@cdktf/provider-snowflake.WarehouseConfig.property.autoSuspend">autoSuspend</a></code> | <code>number</code> | Specifies the number of seconds of inactivity after which a warehouse is automatically suspended. |
@@ -78939,10 +78939,10 @@ const warehouseConfig: WarehouseConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.WarehouseConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -78999,10 +78999,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.WarehouseConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -79245,13 +79245,13 @@ const warehouseGrantConfig: WarehouseGrantConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.WarehouseGrantConfig.property.connection">connection</a></code> | <code>cdktf.ISSHProvisionerConnection \| cdktf.IWinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.WarehouseGrantConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.WarehouseGrantConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.WarehouseGrantConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.WarehouseGrantConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.WarehouseGrantConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.WarehouseGrantConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.WarehouseGrantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.IFileProvisioner \| cdktf.ILocalExecProvisioner \| cdktf.IRemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.WarehouseGrantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.WarehouseGrantConfig.property.warehouseName">warehouseName</a></code> | <code>string</code> | The name of the warehouse on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.WarehouseGrantConfig.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
 | <code><a href="#@cdktf/provider-snowflake.WarehouseGrantConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/warehouse_grant#id WarehouseGrant#id}. |
@@ -79264,10 +79264,10 @@ const warehouseGrantConfig: WarehouseGrantConfig = { ... }
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.WarehouseGrantConfig.property.connection"></a>
 
 ```typescript
-public readonly connection: ISSHProvisionerConnection | IWinrmProvisionerConnection;
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.ISSHProvisionerConnection | cdktf.IWinrmProvisionerConnection
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
@@ -79324,10 +79324,10 @@ public readonly provider: TerraformProvider;
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.WarehouseGrantConfig.property.provisioners"></a>
 
 ```typescript
-public readonly provisioners: IFileProvisioner | ILocalExecProvisioner | IRemoteExecProvisioner[];
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
 ```
 
-- *Type:* cdktf.IFileProvisioner | cdktf.ILocalExecProvisioner | cdktf.IRemoteExecProvisioner[]
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
 
 ---
 
