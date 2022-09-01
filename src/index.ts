@@ -49,6 +49,7 @@ export * from './table-grant';
 export * from './tag';
 export * from './tag-association';
 export * from './tag-grant';
+export * from './tag-masking-policy-association';
 export * from './task';
 export * from './task-grant';
 export * from './user';
