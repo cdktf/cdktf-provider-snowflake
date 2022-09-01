@@ -104,7 +104,7 @@ export interface SnowflakeProviderConfig {
   */
   readonly username: string;
   /**
-  * Sets the default warehouse. Optional. Can be sourced from SNOWFLAKE_WAREHOUSE enviornment variable.
+  * Sets the default warehouse. Optional. Can be sourced from SNOWFLAKE_WAREHOUSE environment variable.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#warehouse SnowflakeProvider#warehouse}
   */
@@ -143,7 +143,7 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'snowflake',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.42.1',
+        providerVersion: '0.43.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       terraformProviderSource: 'Snowflake-Labs/snowflake'
