@@ -54,7 +54,7 @@ This project is explicitly not tracking the Terraform snowflake Provider version
 These are the upstream dependencies:
 
 - [Terraform CDK](https://cdk.tf)
-- [Terraform snowflake Provider](https://github.com/terraform-providers/terraform-provider-snowflake)
+- [Terraform snowflake Provider](https://github.com/Snowflake-Labs/terraform-provider-snowflake)
 - [Terraform Engine](https://terraform.io)
 
 If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.
