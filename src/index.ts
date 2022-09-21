@@ -53,6 +53,7 @@ export * from './tag-masking-policy-association';
 export * from './task';
 export * from './task-grant';
 export * from './user';
+export * from './user-grant';
 export * from './user-ownership-grant';
 export * from './user-public-keys';
 export * from './view';
