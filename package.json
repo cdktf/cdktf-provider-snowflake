@@ -110,7 +110,7 @@
   "cdktf": {
     "provider": {
       "name": "registry.terraform.io/snowflake-labs/snowflake",
-      "version": "0.44.0"
+      "version": "0.45.0"
     }
   },
   "resolutions": {

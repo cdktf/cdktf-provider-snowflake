@@ -68,6 +68,12 @@ export interface SnowflakeProviderConfig {
   */
   readonly password?: string;
   /**
+  * Support custom port values to snowflake go driver for use with privatelink. Can be sourced from `SNOWFLAKE_PORT` environment variable.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#port SnowflakeProvider#port}
+  */
+  readonly port?: number;
+  /**
   * Private Key for username+private-key auth. Cannot be used with `browser_auth` or `password`. Can be source from `SNOWFLAKE_PRIVATE_KEY` environment variable.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#private_key SnowflakeProvider#private_key}
@@ -85,6 +91,12 @@ export interface SnowflakeProviderConfig {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#private_key_path SnowflakeProvider#private_key_path}
   */
   readonly privateKeyPath?: string;
+  /**
+  * Support custom protocols to snowflake go driver. Can be sourced from `SNOWFLAKE_PROTOCOL` environment variable.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#protocol SnowflakeProvider#protocol}
+  */
+  readonly protocol?: string;
   /**
   * [Snowflake region](https://docs.snowflake.com/en/user-guide/intro-regions.html) to use. Can be source from the `SNOWFLAKE_REGION` environment variable.
   * 
@@ -143,7 +155,7 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'snowflake',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.44.0',
+        providerVersion: '0.45.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       terraformProviderSource: 'Snowflake-Labs/snowflake'
@@ -158,9 +170,11 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
     this._oauthRedirectUrl = config.oauthRedirectUrl;
     this._oauthRefreshToken = config.oauthRefreshToken;
     this._password = config.password;
+    this._port = config.port;
     this._privateKey = config.privateKey;
     this._privateKeyPassphrase = config.privateKeyPassphrase;
     this._privateKeyPath = config.privateKeyPath;
+    this._protocol = config.protocol;
     this._region = config.region;
     this._role = config.role;
     this._username = config.username;
@@ -329,6 +343,22 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
     return this._password;
   }
 
+  // port - computed: false, optional: true, required: false
+  private _port?: number; 
+  public get port() {
+    return this._port;
+  }
+  public set port(value: number | undefined) {
+    this._port = value;
+  }
+  public resetPort() {
+    this._port = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portInput() {
+    return this._port;
+  }
+
   // private_key - computed: false, optional: true, required: false
   private _privateKey?: string; 
   public get privateKey() {
@@ -375,6 +405,22 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
   // Temporarily expose input value. Use with caution.
   public get privateKeyPathInput() {
     return this._privateKeyPath;
+  }
+
+  // protocol - computed: false, optional: true, required: false
+  private _protocol?: string; 
+  public get protocol() {
+    return this._protocol;
+  }
+  public set protocol(value: string | undefined) {
+    this._protocol = value;
+  }
+  public resetProtocol() {
+    this._protocol = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get protocolInput() {
+    return this._protocol;
   }
 
   // region - computed: false, optional: true, required: false
@@ -470,9 +516,11 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
       oauth_redirect_url: cdktf.stringToTerraform(this._oauthRedirectUrl),
       oauth_refresh_token: cdktf.stringToTerraform(this._oauthRefreshToken),
       password: cdktf.stringToTerraform(this._password),
+      port: cdktf.numberToTerraform(this._port),
       private_key: cdktf.stringToTerraform(this._privateKey),
       private_key_passphrase: cdktf.stringToTerraform(this._privateKeyPassphrase),
       private_key_path: cdktf.stringToTerraform(this._privateKeyPath),
+      protocol: cdktf.stringToTerraform(this._protocol),
       region: cdktf.stringToTerraform(this._region),
       role: cdktf.stringToTerraform(this._role),
       username: cdktf.stringToTerraform(this._username),
