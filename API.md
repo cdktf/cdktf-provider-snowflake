@@ -44545,9 +44545,11 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.resetOauthRedirectUrl">resetOauthRedirectUrl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.resetOauthRefreshToken">resetOauthRefreshToken</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.resetPassword">resetPassword</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.resetPort">resetPort</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.resetPrivateKey">resetPrivateKey</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.resetPrivateKeyPassphrase">resetPrivateKeyPassphrase</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.resetPrivateKeyPath">resetPrivateKeyPath</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.resetProtocol">resetProtocol</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.resetRegion">resetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.resetRole">resetRole</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.resetWarehouse">resetWarehouse</a></code> | *No description.* |
@@ -44678,6 +44680,12 @@ public resetOauthRefreshToken(): void
 public resetPassword(): void
 ```
 
+##### `resetPort` <a name="resetPort" id="@cdktf/provider-snowflake.SnowflakeProvider.resetPort"></a>
+
+```typescript
+public resetPort(): void
+```
+
 ##### `resetPrivateKey` <a name="resetPrivateKey" id="@cdktf/provider-snowflake.SnowflakeProvider.resetPrivateKey"></a>
 
 ```typescript
@@ -44694,6 +44702,12 @@ public resetPrivateKeyPassphrase(): void
 
 ```typescript
 public resetPrivateKeyPath(): void
+```
+
+##### `resetProtocol` <a name="resetProtocol" id="@cdktf/provider-snowflake.SnowflakeProvider.resetProtocol"></a>
+
+```typescript
+public resetProtocol(): void
 ```
 
 ##### `resetRegion` <a name="resetRegion" id="@cdktf/provider-snowflake.SnowflakeProvider.resetRegion"></a>
@@ -44778,9 +44792,11 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.property.oauthRedirectUrlInput">oauthRedirectUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.property.oauthRefreshTokenInput">oauthRefreshTokenInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.property.passwordInput">passwordInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.property.portInput">portInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.property.privateKeyInput">privateKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.property.privateKeyPassphraseInput">privateKeyPassphraseInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.property.privateKeyPathInput">privateKeyPathInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.property.protocolInput">protocolInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.property.roleInput">roleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.property.usernameInput">usernameInput</a></code> | <code>string</code> | *No description.* |
@@ -44795,9 +44811,11 @@ Any object.
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.property.oauthRedirectUrl">oauthRedirectUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.property.oauthRefreshToken">oauthRefreshToken</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.property.password">password</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.property.port">port</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.property.privateKey">privateKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.property.privateKeyPassphrase">privateKeyPassphrase</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.property.privateKeyPath">privateKeyPath</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.property.protocol">protocol</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.property.region">region</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.property.role">role</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProvider.property.username">username</a></code> | <code>string</code> | *No description.* |
@@ -45007,6 +45025,16 @@ public readonly passwordInput: string;
 
 ---
 
+##### `portInput`<sup>Optional</sup> <a name="portInput" id="@cdktf/provider-snowflake.SnowflakeProvider.property.portInput"></a>
+
+```typescript
+public readonly portInput: number;
+```
+
+- *Type:* number
+
+---
+
 ##### `privateKeyInput`<sup>Optional</sup> <a name="privateKeyInput" id="@cdktf/provider-snowflake.SnowflakeProvider.property.privateKeyInput"></a>
 
 ```typescript
@@ -45031,6 +45059,16 @@ public readonly privateKeyPassphraseInput: string;
 
 ```typescript
 public readonly privateKeyPathInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `protocolInput`<sup>Optional</sup> <a name="protocolInput" id="@cdktf/provider-snowflake.SnowflakeProvider.property.protocolInput"></a>
+
+```typescript
+public readonly protocolInput: string;
 ```
 
 - *Type:* string
@@ -45177,6 +45215,16 @@ public readonly password: string;
 
 ---
 
+##### `port`<sup>Optional</sup> <a name="port" id="@cdktf/provider-snowflake.SnowflakeProvider.property.port"></a>
+
+```typescript
+public readonly port: number;
+```
+
+- *Type:* number
+
+---
+
 ##### `privateKey`<sup>Optional</sup> <a name="privateKey" id="@cdktf/provider-snowflake.SnowflakeProvider.property.privateKey"></a>
 
 ```typescript
@@ -45201,6 +45249,16 @@ public readonly privateKeyPassphrase: string;
 
 ```typescript
 public readonly privateKeyPath: string;
+```
+
+- *Type:* string
+
+---
+
+##### `protocol`<sup>Optional</sup> <a name="protocol" id="@cdktf/provider-snowflake.SnowflakeProvider.property.protocol"></a>
+
+```typescript
+public readonly protocol: string;
 ```
 
 - *Type:* string
@@ -75085,9 +75143,11 @@ const snowflakeProviderConfig: SnowflakeProviderConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProviderConfig.property.oauthRedirectUrl">oauthRedirectUrl</a></code> | <code>string</code> | Required when `oauth_refresh_token` is used. Can be sourced from `SNOWFLAKE_OAUTH_REDIRECT_URL` environment variable. |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProviderConfig.property.oauthRefreshToken">oauthRefreshToken</a></code> | <code>string</code> | Token for use with OAuth. |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProviderConfig.property.password">password</a></code> | <code>string</code> | Password for username+password auth. Cannot be used with `browser_auth` or `private_key_path`. Can be source from `SNOWFLAKE_PASSWORD` environment variable. |
+| <code><a href="#@cdktf/provider-snowflake.SnowflakeProviderConfig.property.port">port</a></code> | <code>number</code> | Support custom port values to snowflake go driver for use with privatelink. Can be sourced from `SNOWFLAKE_PORT` environment variable. |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProviderConfig.property.privateKey">privateKey</a></code> | <code>string</code> | Private Key for username+private-key auth. Cannot be used with `browser_auth` or `password`. Can be source from `SNOWFLAKE_PRIVATE_KEY` environment variable. |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProviderConfig.property.privateKeyPassphrase">privateKeyPassphrase</a></code> | <code>string</code> | Supports the encryption ciphers aes-128-cbc, aes-128-gcm, aes-192-cbc, aes-192-gcm, aes-256-cbc, aes-256-gcm, and des-ede3-cbc. |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProviderConfig.property.privateKeyPath">privateKeyPath</a></code> | <code>string</code> | Path to a private key for using keypair authentication. |
+| <code><a href="#@cdktf/provider-snowflake.SnowflakeProviderConfig.property.protocol">protocol</a></code> | <code>string</code> | Support custom protocols to snowflake go driver. Can be sourced from `SNOWFLAKE_PROTOCOL` environment variable. |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProviderConfig.property.region">region</a></code> | <code>string</code> | [Snowflake region](https://docs.snowflake.com/en/user-guide/intro-regions.html) to use. Can be source from the `SNOWFLAKE_REGION` environment variable. |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProviderConfig.property.role">role</a></code> | <code>string</code> | Snowflake role to use for operations. |
 | <code><a href="#@cdktf/provider-snowflake.SnowflakeProviderConfig.property.warehouse">warehouse</a></code> | <code>string</code> | Sets the default warehouse. Optional. Can be sourced from SNOWFLAKE_WAREHOUSE environment variable. |
@@ -75266,6 +75326,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 ---
 
+##### `port`<sup>Optional</sup> <a name="port" id="@cdktf/provider-snowflake.SnowflakeProviderConfig.property.port"></a>
+
+```typescript
+public readonly port: number;
+```
+
+- *Type:* number
+
+Support custom port values to snowflake go driver for use with privatelink. Can be sourced from `SNOWFLAKE_PORT` environment variable.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#port SnowflakeProvider#port}
+
+---
+
 ##### `privateKey`<sup>Optional</sup> <a name="privateKey" id="@cdktf/provider-snowflake.SnowflakeProviderConfig.property.privateKey"></a>
 
 ```typescript
@@ -75307,6 +75381,20 @@ Path to a private key for using keypair authentication.
 Cannot be used with `browser_auth`, `oauth_access_token` or `password`. Can be source from `SNOWFLAKE_PRIVATE_KEY_PATH` environment variable.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#private_key_path SnowflakeProvider#private_key_path}
+
+---
+
+##### `protocol`<sup>Optional</sup> <a name="protocol" id="@cdktf/provider-snowflake.SnowflakeProviderConfig.property.protocol"></a>
+
+```typescript
+public readonly protocol: string;
+```
+
+- *Type:* string
+
+Support custom protocols to snowflake go driver. Can be sourced from `SNOWFLAKE_PROTOCOL` environment variable.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake#protocol SnowflakeProvider#protocol}
 
 ---
 

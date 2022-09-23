@@ -72,7 +72,7 @@ export class ManagedAccount extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_managed_account',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.44.0',
+        providerVersion: '0.45.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
