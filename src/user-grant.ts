@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/snowflake/r/role_grants
+// https://www.terraform.io/docs/providers/snowflake/r/user_grant
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -6,64 +6,70 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface RoleGrantsConfig extends cdktf.TerraformMetaArguments {
+export interface UserGrantConfig extends cdktf.TerraformMetaArguments {
   /**
   * When this is set to true, multiple grants of the same type can be created. This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/role_grants#enable_multiple_grants RoleGrants#enable_multiple_grants}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/user_grant#enable_multiple_grants UserGrant#enable_multiple_grants}
   */
   readonly enableMultipleGrants?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/role_grants#id RoleGrants#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/user_grant#id UserGrant#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * The name of the role we are granting.
+  * The privilege to grant on the user.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/role_grants#role_name RoleGrants#role_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/user_grant#privilege UserGrant#privilege}
   */
-  readonly roleName: string;
+  readonly privilege: string;
   /**
-  * Grants role to this specified role.
+  * Grants privilege to these roles.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/role_grants#roles RoleGrants#roles}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/user_grant#roles UserGrant#roles}
   */
   readonly roles?: string[];
   /**
-  * Grants role to this specified user.
+  * The name of the user on which to grant privileges.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/role_grants#users RoleGrants#users}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/user_grant#user_name UserGrant#user_name}
   */
-  readonly users?: string[];
+  readonly userName: string;
+  /**
+  * When this is set to true, allows the recipient role to grant the privileges to other roles.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/user_grant#with_grant_option UserGrant#with_grant_option}
+  */
+  readonly withGrantOption?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/role_grants snowflake_role_grants}
+* Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/user_grant snowflake_user_grant}
 */
-export class RoleGrants extends cdktf.TerraformResource {
+export class UserGrant extends cdktf.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = "snowflake_role_grants";
+  public static readonly tfResourceType = "snowflake_user_grant";
 
   // ===========
   // INITIALIZER
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/snowflake/r/role_grants snowflake_role_grants} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/snowflake/r/user_grant snowflake_user_grant} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options RoleGrantsConfig
+  * @param options UserGrantConfig
   */
-  public constructor(scope: Construct, id: string, config: RoleGrantsConfig) {
+  public constructor(scope: Construct, id: string, config: UserGrantConfig) {
     super(scope, id, {
-      terraformResourceType: 'snowflake_role_grants',
+      terraformResourceType: 'snowflake_user_grant',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
         providerVersion: '0.45.0',
@@ -79,9 +85,10 @@ export class RoleGrants extends cdktf.TerraformResource {
     });
     this._enableMultipleGrants = config.enableMultipleGrants;
     this._id = config.id;
-    this._roleName = config.roleName;
+    this._privilege = config.privilege;
     this._roles = config.roles;
-    this._users = config.users;
+    this._userName = config.userName;
+    this._withGrantOption = config.withGrantOption;
   }
 
   // ==========
@@ -120,17 +127,17 @@ export class RoleGrants extends cdktf.TerraformResource {
     return this._id;
   }
 
-  // role_name - computed: false, optional: false, required: true
-  private _roleName?: string; 
-  public get roleName() {
-    return this.getStringAttribute('role_name');
+  // privilege - computed: false, optional: false, required: true
+  private _privilege?: string; 
+  public get privilege() {
+    return this.getStringAttribute('privilege');
   }
-  public set roleName(value: string) {
-    this._roleName = value;
+  public set privilege(value: string) {
+    this._privilege = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get roleNameInput() {
-    return this._roleName;
+  public get privilegeInput() {
+    return this._privilege;
   }
 
   // roles - computed: false, optional: true, required: false
@@ -149,20 +156,33 @@ export class RoleGrants extends cdktf.TerraformResource {
     return this._roles;
   }
 
-  // users - computed: false, optional: true, required: false
-  private _users?: string[]; 
-  public get users() {
-    return cdktf.Fn.tolist(this.getListAttribute('users'));
+  // user_name - computed: false, optional: false, required: true
+  private _userName?: string; 
+  public get userName() {
+    return this.getStringAttribute('user_name');
   }
-  public set users(value: string[]) {
-    this._users = value;
-  }
-  public resetUsers() {
-    this._users = undefined;
+  public set userName(value: string) {
+    this._userName = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get usersInput() {
-    return this._users;
+  public get userNameInput() {
+    return this._userName;
+  }
+
+  // with_grant_option - computed: false, optional: true, required: false
+  private _withGrantOption?: boolean | cdktf.IResolvable; 
+  public get withGrantOption() {
+    return this.getBooleanAttribute('with_grant_option');
+  }
+  public set withGrantOption(value: boolean | cdktf.IResolvable) {
+    this._withGrantOption = value;
+  }
+  public resetWithGrantOption() {
+    this._withGrantOption = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get withGrantOptionInput() {
+    return this._withGrantOption;
   }
 
   // =========
@@ -173,9 +193,10 @@ export class RoleGrants extends cdktf.TerraformResource {
     return {
       enable_multiple_grants: cdktf.booleanToTerraform(this._enableMultipleGrants),
       id: cdktf.stringToTerraform(this._id),
-      role_name: cdktf.stringToTerraform(this._roleName),
+      privilege: cdktf.stringToTerraform(this._privilege),
       roles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._roles),
-      users: cdktf.listMapper(cdktf.stringToTerraform, false)(this._users),
+      user_name: cdktf.stringToTerraform(this._userName),
+      with_grant_option: cdktf.booleanToTerraform(this._withGrantOption),
     };
   }
 }
