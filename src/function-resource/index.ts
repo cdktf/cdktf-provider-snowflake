@@ -6,27 +6,27 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface FunctionConfig extends cdktf.TerraformMetaArguments {
+export interface FunctionResourceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies a comment for the function.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#comment Function#comment}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#comment FunctionResource#comment}
   */
   readonly comment?: string;
   /**
   * The database in which to create the function. Don't use the | character.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#database Function#database}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#database FunctionResource#database}
   */
   readonly database: string;
   /**
   * The handler method for Java / Python function.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#handler Function#handler}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#handler FunctionResource#handler}
   */
   readonly handler?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#id Function#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#id FunctionResource#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -35,92 +35,92 @@ export interface FunctionConfig extends cdktf.TerraformMetaArguments {
   /**
   * Imports for Java / Python functions. For Java this a list of jar files, for Python this is a list of Python files.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#imports Function#imports}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#imports FunctionResource#imports}
   */
   readonly imports?: string[];
   /**
   * The language of the statement
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#language Function#language}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#language FunctionResource#language}
   */
   readonly language?: string;
   /**
   * Specifies the identifier for the function; does not have to be unique for the schema in which the function is created. Don't use the | character.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#name Function#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#name FunctionResource#name}
   */
   readonly name: string;
   /**
   * Specifies the behavior of the function when called with null inputs.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#null_input_behavior Function#null_input_behavior}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#null_input_behavior FunctionResource#null_input_behavior}
   */
   readonly nullInputBehavior?: string;
   /**
   * List of package imports to use for Java / Python functions. For Java, package imports should be of the form: package_name:version_number, where package_name is snowflake_domain:package. For Python use it should be: ('numpy','pandas','xgboost==1.5.0').
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#packages Function#packages}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#packages FunctionResource#packages}
   */
   readonly packages?: string[];
   /**
   * Specifies the behavior of the function when returning results
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#return_behavior Function#return_behavior}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#return_behavior FunctionResource#return_behavior}
   */
   readonly returnBehavior?: string;
   /**
   * The return type of the function
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#return_type Function#return_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#return_type FunctionResource#return_type}
   */
   readonly returnType: string;
   /**
   * Required for Python functions. Specifies Python runtime version.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#runtime_version Function#runtime_version}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#runtime_version FunctionResource#runtime_version}
   */
   readonly runtimeVersion?: string;
   /**
   * The schema in which to create the function. Don't use the | character.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#schema Function#schema}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#schema FunctionResource#schema}
   */
   readonly schema: string;
   /**
   * Specifies the javascript / java / sql / python code used to create the function.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#statement Function#statement}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#statement FunctionResource#statement}
   */
   readonly statement: string;
   /**
   * The target path for the Java / Python functions. For Java, it is the path of compiled jar files and for the Python it is the path of the Python files.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#target_path Function#target_path}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#target_path FunctionResource#target_path}
   */
   readonly targetPath?: string;
   /**
   * arguments block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#arguments Function#arguments}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#arguments FunctionResource#arguments}
   */
-  readonly arguments?: FunctionArguments[] | cdktf.IResolvable;
+  readonly arguments?: FunctionResourceArguments[] | cdktf.IResolvable;
 }
-export interface FunctionArguments {
+export interface FunctionResourceArguments {
   /**
   * The argument name
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#name Function#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#name FunctionResource#name}
   */
   readonly name: string;
   /**
   * The argument type
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#type Function#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#type FunctionResource#type}
   */
   readonly type: string;
 }
 
-export function functionArgumentsToTerraform(struct?: FunctionArguments | cdktf.IResolvable): any {
+export function functionResourceArgumentsToTerraform(struct?: FunctionResourceArguments | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -131,7 +131,7 @@ export function functionArgumentsToTerraform(struct?: FunctionArguments | cdktf.
   }
 }
 
-export class FunctionArgumentsOutputReference extends cdktf.ComplexObject {
+export class FunctionResourceArgumentsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -145,7 +145,7 @@ export class FunctionArgumentsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): FunctionArguments | cdktf.IResolvable | undefined {
+  public get internalValue(): FunctionResourceArguments | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -162,7 +162,7 @@ export class FunctionArgumentsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FunctionArguments | cdktf.IResolvable | undefined) {
+  public set internalValue(value: FunctionResourceArguments | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -208,8 +208,8 @@ export class FunctionArgumentsOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class FunctionArgumentsList extends cdktf.ComplexList {
-  public internalValue? : FunctionArguments[] | cdktf.IResolvable
+export class FunctionResourceArgumentsList extends cdktf.ComplexList {
+  public internalValue? : FunctionResourceArguments[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -223,15 +223,15 @@ export class FunctionArgumentsList extends cdktf.ComplexList {
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): FunctionArgumentsOutputReference {
-    return new FunctionArgumentsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): FunctionResourceArgumentsOutputReference {
+    return new FunctionResourceArgumentsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/function snowflake_function}
 */
-export class Function extends cdktf.TerraformResource {
+export class FunctionResource extends cdktf.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -247,9 +247,9 @@ export class Function extends cdktf.TerraformResource {
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options FunctionConfig
+  * @param options FunctionResourceConfig
   */
-  public constructor(scope: Construct, id: string, config: FunctionConfig) {
+  public constructor(scope: Construct, id: string, config: FunctionResourceConfig) {
     super(scope, id, {
       terraformResourceType: 'snowflake_function',
       terraformGeneratorMetadata: {
@@ -513,11 +513,11 @@ export class Function extends cdktf.TerraformResource {
   }
 
   // arguments - computed: false, optional: true, required: false
-  private _arguments = new FunctionArgumentsList(this, "arguments", false);
+  private _arguments = new FunctionResourceArgumentsList(this, "arguments", false);
   public get arguments() {
     return this._arguments;
   }
-  public putArguments(value: FunctionArguments[] | cdktf.IResolvable) {
+  public putArguments(value: FunctionResourceArguments[] | cdktf.IResolvable) {
     this._arguments.internalValue = value;
   }
   public resetArguments() {
@@ -549,7 +549,7 @@ export class Function extends cdktf.TerraformResource {
       schema: cdktf.stringToTerraform(this._schema),
       statement: cdktf.stringToTerraform(this._statement),
       target_path: cdktf.stringToTerraform(this._targetPath),
-      arguments: cdktf.listMapper(functionArgumentsToTerraform, true)(this._arguments.internalValue),
+      arguments: cdktf.listMapper(functionResourceArgumentsToTerraform, true)(this._arguments.internalValue),
     };
   }
 }
