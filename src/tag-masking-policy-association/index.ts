@@ -15,7 +15,7 @@ export interface TagMaskingPolicyAssociationConfig extends cdktf.TerraformMetaAr
   */
   readonly id?: string;
   /**
-  * The the resource id of the masking policy
+  * The resource id of the masking policy
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/tag_masking_policy_association#masking_policy_id TagMaskingPolicyAssociation#masking_policy_id}
   */
@@ -54,7 +54,7 @@ export class TagMaskingPolicyAssociation extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_tag_masking_policy_association',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.46.0',
+        providerVersion: '0.47.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
