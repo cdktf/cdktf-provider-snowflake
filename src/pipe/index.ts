@@ -96,7 +96,7 @@ export class Pipe extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_pipe',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.46.0',
+        providerVersion: '0.47.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
