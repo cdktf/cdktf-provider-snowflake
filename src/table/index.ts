@@ -304,6 +304,12 @@ export interface TableColumn {
   */
   readonly comment?: string;
   /**
+  * Masking policy to apply on column
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table#masking_policy Table#masking_policy}
+  */
+  readonly maskingPolicy?: string;
+  /**
   * Column name
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table#name Table#name}
@@ -342,6 +348,7 @@ export function tableColumnToTerraform(struct?: TableColumn | cdktf.IResolvable)
   }
   return {
     comment: cdktf.stringToTerraform(struct!.comment),
+    masking_policy: cdktf.stringToTerraform(struct!.maskingPolicy),
     name: cdktf.stringToTerraform(struct!.name),
     nullable: cdktf.booleanToTerraform(struct!.nullable),
     type: cdktf.stringToTerraform(struct!.type),
@@ -374,6 +381,10 @@ export class TableColumnOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.comment = this._comment;
     }
+    if (this._maskingPolicy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maskingPolicy = this._maskingPolicy;
+    }
     if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
@@ -402,6 +413,7 @@ export class TableColumnOutputReference extends cdktf.ComplexObject {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comment = undefined;
+      this._maskingPolicy = undefined;
       this._name = undefined;
       this._nullable = undefined;
       this._type = undefined;
@@ -416,6 +428,7 @@ export class TableColumnOutputReference extends cdktf.ComplexObject {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._comment = value.comment;
+      this._maskingPolicy = value.maskingPolicy;
       this._name = value.name;
       this._nullable = value.nullable;
       this._type = value.type;
@@ -438,6 +451,22 @@ export class TableColumnOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get commentInput() {
     return this._comment;
+  }
+
+  // masking_policy - computed: false, optional: true, required: false
+  private _maskingPolicy?: string; 
+  public get maskingPolicy() {
+    return this.getStringAttribute('masking_policy');
+  }
+  public set maskingPolicy(value: string) {
+    this._maskingPolicy = value;
+  }
+  public resetMaskingPolicy() {
+    this._maskingPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maskingPolicyInput() {
+    return this._maskingPolicy;
   }
 
   // name - computed: false, optional: false, required: true
@@ -834,7 +863,7 @@ export class Table extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_table',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.47.0',
+        providerVersion: '0.51.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,

@@ -27,6 +27,12 @@ export interface UserOwnershipGrantConfig extends cdktf.TerraformMetaArguments {
   */
   readonly onUserName: string;
   /**
+  * The name of the role to revert ownership to on destroy.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/user_ownership_grant#revert_ownership_to_role_name UserOwnershipGrant#revert_ownership_to_role_name}
+  */
+  readonly revertOwnershipToRoleName?: string;
+  /**
   * The name of the role to grant ownership. Please ensure that the role that terraform is using is granted access.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/user_ownership_grant#to_role_name UserOwnershipGrant#to_role_name}
@@ -60,7 +66,7 @@ export class UserOwnershipGrant extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_user_ownership_grant',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.47.0',
+        providerVersion: '0.51.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
@@ -74,6 +80,7 @@ export class UserOwnershipGrant extends cdktf.TerraformResource {
     this._currentGrants = config.currentGrants;
     this._id = config.id;
     this._onUserName = config.onUserName;
+    this._revertOwnershipToRoleName = config.revertOwnershipToRoleName;
     this._toRoleName = config.toRoleName;
   }
 
@@ -126,6 +133,22 @@ export class UserOwnershipGrant extends cdktf.TerraformResource {
     return this._onUserName;
   }
 
+  // revert_ownership_to_role_name - computed: false, optional: true, required: false
+  private _revertOwnershipToRoleName?: string; 
+  public get revertOwnershipToRoleName() {
+    return this.getStringAttribute('revert_ownership_to_role_name');
+  }
+  public set revertOwnershipToRoleName(value: string) {
+    this._revertOwnershipToRoleName = value;
+  }
+  public resetRevertOwnershipToRoleName() {
+    this._revertOwnershipToRoleName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get revertOwnershipToRoleNameInput() {
+    return this._revertOwnershipToRoleName;
+  }
+
   // to_role_name - computed: false, optional: false, required: true
   private _toRoleName?: string; 
   public get toRoleName() {
@@ -148,6 +171,7 @@ export class UserOwnershipGrant extends cdktf.TerraformResource {
       current_grants: cdktf.stringToTerraform(this._currentGrants),
       id: cdktf.stringToTerraform(this._id),
       on_user_name: cdktf.stringToTerraform(this._onUserName),
+      revert_ownership_to_role_name: cdktf.stringToTerraform(this._revertOwnershipToRoleName),
       to_role_name: cdktf.stringToTerraform(this._toRoleName),
     };
   }

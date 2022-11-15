@@ -51,6 +51,12 @@ export interface OauthIntegrationConfig extends cdktf.TerraformMetaArguments {
   */
   readonly oauthIssueRefreshTokens?: boolean | cdktf.IResolvable;
   /**
+  * Specifies the client URI. After a user is authenticated, the web browser is redirected to this URI.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/oauth_integration#oauth_redirect_uri OauthIntegration#oauth_redirect_uri}
+  */
+  readonly oauthRedirectUri?: string;
+  /**
   * Specifies how long refresh tokens should be valid (in seconds). OAUTH_ISSUE_REFRESH_TOKENS must be set to TRUE.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/oauth_integration#oauth_refresh_token_validity OauthIntegration#oauth_refresh_token_validity}
@@ -90,7 +96,7 @@ export class OauthIntegration extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_oauth_integration',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.47.0',
+        providerVersion: '0.51.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
@@ -108,6 +114,7 @@ export class OauthIntegration extends cdktf.TerraformResource {
     this._name = config.name;
     this._oauthClient = config.oauthClient;
     this._oauthIssueRefreshTokens = config.oauthIssueRefreshTokens;
+    this._oauthRedirectUri = config.oauthRedirectUri;
     this._oauthRefreshTokenValidity = config.oauthRefreshTokenValidity;
     this._oauthUseSecondaryRoles = config.oauthUseSecondaryRoles;
   }
@@ -227,6 +234,22 @@ export class OauthIntegration extends cdktf.TerraformResource {
     return this._oauthIssueRefreshTokens;
   }
 
+  // oauth_redirect_uri - computed: false, optional: true, required: false
+  private _oauthRedirectUri?: string; 
+  public get oauthRedirectUri() {
+    return this.getStringAttribute('oauth_redirect_uri');
+  }
+  public set oauthRedirectUri(value: string) {
+    this._oauthRedirectUri = value;
+  }
+  public resetOauthRedirectUri() {
+    this._oauthRedirectUri = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get oauthRedirectUriInput() {
+    return this._oauthRedirectUri;
+  }
+
   // oauth_refresh_token_validity - computed: false, optional: true, required: false
   private _oauthRefreshTokenValidity?: number; 
   public get oauthRefreshTokenValidity() {
@@ -272,6 +295,7 @@ export class OauthIntegration extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       oauth_client: cdktf.stringToTerraform(this._oauthClient),
       oauth_issue_refresh_tokens: cdktf.booleanToTerraform(this._oauthIssueRefreshTokens),
+      oauth_redirect_uri: cdktf.stringToTerraform(this._oauthRedirectUri),
       oauth_refresh_token_validity: cdktf.numberToTerraform(this._oauthRefreshTokenValidity),
       oauth_use_secondary_roles: cdktf.stringToTerraform(this._oauthUseSecondaryRoles),
     };

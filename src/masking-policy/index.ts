@@ -84,7 +84,7 @@ export class MaskingPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_masking_policy',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.47.0',
+        providerVersion: '0.51.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
@@ -178,6 +178,11 @@ export class MaskingPolicy extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
+  }
+
+  // qualified_name - computed: true, optional: false, required: false
+  public get qualifiedName() {
+    return this.getStringAttribute('qualified_name');
   }
 
   // return_data_type - computed: false, optional: false, required: true
