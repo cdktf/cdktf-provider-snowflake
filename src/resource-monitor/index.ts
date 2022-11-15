@@ -45,6 +45,12 @@ export interface ResourceMonitorConfig extends cdktf.TerraformMetaArguments {
   */
   readonly notifyTriggers?: number[];
   /**
+  * Specifies the list of users to receive email notifications on resource monitors.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/resource_monitor#notify_users ResourceMonitor#notify_users}
+  */
+  readonly notifyUsers?: string[];
+  /**
   * Specifies whether the resource monitor should be applied globally to your Snowflake account.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/resource_monitor#set_for_account ResourceMonitor#set_for_account}
@@ -102,7 +108,7 @@ export class ResourceMonitor extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_resource_monitor',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.47.0',
+        providerVersion: '0.51.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
@@ -119,6 +125,7 @@ export class ResourceMonitor extends cdktf.TerraformResource {
     this._id = config.id;
     this._name = config.name;
     this._notifyTriggers = config.notifyTriggers;
+    this._notifyUsers = config.notifyUsers;
     this._setForAccount = config.setForAccount;
     this._startTimestamp = config.startTimestamp;
     this._suspendImmediateTriggers = config.suspendImmediateTriggers;
@@ -223,6 +230,22 @@ export class ResourceMonitor extends cdktf.TerraformResource {
     return this._notifyTriggers;
   }
 
+  // notify_users - computed: false, optional: true, required: false
+  private _notifyUsers?: string[]; 
+  public get notifyUsers() {
+    return cdktf.Fn.tolist(this.getListAttribute('notify_users'));
+  }
+  public set notifyUsers(value: string[]) {
+    this._notifyUsers = value;
+  }
+  public resetNotifyUsers() {
+    this._notifyUsers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get notifyUsersInput() {
+    return this._notifyUsers;
+  }
+
   // set_for_account - computed: false, optional: true, required: false
   private _setForAccount?: boolean | cdktf.IResolvable; 
   public get setForAccount() {
@@ -315,6 +338,7 @@ export class ResourceMonitor extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       notify_triggers: cdktf.listMapper(cdktf.numberToTerraform, false)(this._notifyTriggers),
+      notify_users: cdktf.listMapper(cdktf.stringToTerraform, false)(this._notifyUsers),
       set_for_account: cdktf.booleanToTerraform(this._setForAccount),
       start_timestamp: cdktf.stringToTerraform(this._startTimestamp),
       suspend_immediate_triggers: cdktf.listMapper(cdktf.numberToTerraform, false)(this._suspendImmediateTriggers),

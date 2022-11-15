@@ -24,6 +24,12 @@ export interface WarehouseConfig extends cdktf.TerraformMetaArguments {
   */
   readonly comment?: string;
   /**
+  * Specifies whether to enable the query acceleration service for queries that rely on this warehouse for compute resources.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/warehouse#enable_query_acceleration Warehouse#enable_query_acceleration}
+  */
+  readonly enableQueryAcceleration?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/warehouse#id Warehouse#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -60,6 +66,12 @@ export interface WarehouseConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/warehouse#name Warehouse#name}
   */
   readonly name: string;
+  /**
+  * Specifies the maximum scale factor for leasing compute resources for query acceleration. The scale factor is used as a multiplier based on warehouse size.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/warehouse#query_acceleration_max_scale_factor Warehouse#query_acceleration_max_scale_factor}
+  */
+  readonly queryAccelerationMaxScaleFactor?: number;
   /**
   * Specifies the name of a resource monitor that is explicitly assigned to the warehouse.
   * 
@@ -310,7 +322,7 @@ export class Warehouse extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_warehouse',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.47.0',
+        providerVersion: '0.51.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
@@ -324,12 +336,14 @@ export class Warehouse extends cdktf.TerraformResource {
     this._autoResume = config.autoResume;
     this._autoSuspend = config.autoSuspend;
     this._comment = config.comment;
+    this._enableQueryAcceleration = config.enableQueryAcceleration;
     this._id = config.id;
     this._initiallySuspended = config.initiallySuspended;
     this._maxClusterCount = config.maxClusterCount;
     this._maxConcurrencyLevel = config.maxConcurrencyLevel;
     this._minClusterCount = config.minClusterCount;
     this._name = config.name;
+    this._queryAccelerationMaxScaleFactor = config.queryAccelerationMaxScaleFactor;
     this._resourceMonitor = config.resourceMonitor;
     this._scalingPolicy = config.scalingPolicy;
     this._statementQueuedTimeoutInSeconds = config.statementQueuedTimeoutInSeconds;
@@ -389,6 +403,22 @@ export class Warehouse extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get commentInput() {
     return this._comment;
+  }
+
+  // enable_query_acceleration - computed: false, optional: true, required: false
+  private _enableQueryAcceleration?: boolean | cdktf.IResolvable; 
+  public get enableQueryAcceleration() {
+    return this.getBooleanAttribute('enable_query_acceleration');
+  }
+  public set enableQueryAcceleration(value: boolean | cdktf.IResolvable) {
+    this._enableQueryAcceleration = value;
+  }
+  public resetEnableQueryAcceleration() {
+    this._enableQueryAcceleration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableQueryAccelerationInput() {
+    return this._enableQueryAcceleration;
   }
 
   // id - computed: true, optional: true, required: false
@@ -482,6 +512,22 @@ export class Warehouse extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
+  }
+
+  // query_acceleration_max_scale_factor - computed: false, optional: true, required: false
+  private _queryAccelerationMaxScaleFactor?: number; 
+  public get queryAccelerationMaxScaleFactor() {
+    return this.getNumberAttribute('query_acceleration_max_scale_factor');
+  }
+  public set queryAccelerationMaxScaleFactor(value: number) {
+    this._queryAccelerationMaxScaleFactor = value;
+  }
+  public resetQueryAccelerationMaxScaleFactor() {
+    this._queryAccelerationMaxScaleFactor = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get queryAccelerationMaxScaleFactorInput() {
+    return this._queryAccelerationMaxScaleFactor;
   }
 
   // resource_monitor - computed: true, optional: true, required: false
@@ -605,12 +651,14 @@ export class Warehouse extends cdktf.TerraformResource {
       auto_resume: cdktf.booleanToTerraform(this._autoResume),
       auto_suspend: cdktf.numberToTerraform(this._autoSuspend),
       comment: cdktf.stringToTerraform(this._comment),
+      enable_query_acceleration: cdktf.booleanToTerraform(this._enableQueryAcceleration),
       id: cdktf.stringToTerraform(this._id),
       initially_suspended: cdktf.booleanToTerraform(this._initiallySuspended),
       max_cluster_count: cdktf.numberToTerraform(this._maxClusterCount),
       max_concurrency_level: cdktf.numberToTerraform(this._maxConcurrencyLevel),
       min_cluster_count: cdktf.numberToTerraform(this._minClusterCount),
       name: cdktf.stringToTerraform(this._name),
+      query_acceleration_max_scale_factor: cdktf.numberToTerraform(this._queryAccelerationMaxScaleFactor),
       resource_monitor: cdktf.stringToTerraform(this._resourceMonitor),
       scaling_policy: cdktf.stringToTerraform(this._scalingPolicy),
       statement_queued_timeout_in_seconds: cdktf.numberToTerraform(this._statementQueuedTimeoutInSeconds),

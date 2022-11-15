@@ -8,11 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface TaskConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Specifies the predecessor task in the same database and schema of the current task. When a run of the predecessor task finishes successfully, it triggers this task (after a brief lag). (Conflict with schedule)
+  * Specifies one or more predecessor tasks for the current task. Use this option to create a DAG of tasks or add this task to an existing DAG. A DAG is a series of tasks that starts with a scheduled root task and is linked together by dependencies.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task#after Task#after}
   */
-  readonly after?: string;
+  readonly after?: string[];
+  /**
+  * By default, Snowflake ensures that only one instance of a particular DAG is allowed to run at a time, setting the parameter value to TRUE permits DAG runs to overlap.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task#allow_overlapping_execution Task#allow_overlapping_execution}
+  */
+  readonly allowOverlappingExecution?: boolean | cdktf.IResolvable;
   /**
   * Specifies a comment for the task.
   * 
@@ -126,7 +132,7 @@ export class Task extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_task',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.47.0',
+        providerVersion: '0.51.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
@@ -138,6 +144,7 @@ export class Task extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._after = config.after;
+    this._allowOverlappingExecution = config.allowOverlappingExecution;
     this._comment = config.comment;
     this._database = config.database;
     this._enabled = config.enabled;
@@ -159,11 +166,11 @@ export class Task extends cdktf.TerraformResource {
   // ==========
 
   // after - computed: false, optional: true, required: false
-  private _after?: string; 
+  private _after?: string[]; 
   public get after() {
-    return this.getStringAttribute('after');
+    return this.getListAttribute('after');
   }
-  public set after(value: string) {
+  public set after(value: string[]) {
     this._after = value;
   }
   public resetAfter() {
@@ -172,6 +179,22 @@ export class Task extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get afterInput() {
     return this._after;
+  }
+
+  // allow_overlapping_execution - computed: false, optional: true, required: false
+  private _allowOverlappingExecution?: boolean | cdktf.IResolvable; 
+  public get allowOverlappingExecution() {
+    return this.getBooleanAttribute('allow_overlapping_execution');
+  }
+  public set allowOverlappingExecution(value: boolean | cdktf.IResolvable) {
+    this._allowOverlappingExecution = value;
+  }
+  public resetAllowOverlappingExecution() {
+    this._allowOverlappingExecution = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowOverlappingExecutionInput() {
+    return this._allowOverlappingExecution;
   }
 
   // comment - computed: false, optional: true, required: false
@@ -392,7 +415,8 @@ export class Task extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      after: cdktf.stringToTerraform(this._after),
+      after: cdktf.listMapper(cdktf.stringToTerraform, false)(this._after),
+      allow_overlapping_execution: cdktf.booleanToTerraform(this._allowOverlappingExecution),
       comment: cdktf.stringToTerraform(this._comment),
       database: cdktf.stringToTerraform(this._database),
       enabled: cdktf.booleanToTerraform(this._enabled),
