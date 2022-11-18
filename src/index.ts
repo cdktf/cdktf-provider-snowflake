@@ -69,6 +69,7 @@ export * as dataSnowflakeExternalFunctions from './data-snowflake-external-funct
 export * as dataSnowflakeExternalTables from './data-snowflake-external-tables';
 export * as dataSnowflakeFileFormats from './data-snowflake-file-formats';
 export * as dataSnowflakeFunctions from './data-snowflake-functions';
+export * as dataSnowflakeGrants from './data-snowflake-grants';
 export * as dataSnowflakeMaskingPolicies from './data-snowflake-masking-policies';
 export * as dataSnowflakeMaterializedViews from './data-snowflake-materialized-views';
 export * as dataSnowflakePipes from './data-snowflake-pipes';
