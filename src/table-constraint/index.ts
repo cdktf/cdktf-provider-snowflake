@@ -69,7 +69,7 @@ export interface TableConstraintConfig extends cdktf.TerraformMetaArguments {
   */
   readonly tableId: string;
   /**
-  * Type of constraint
+  * Type of constraint, one of 'UNIQUE', 'PRIMARY KEY', 'FOREIGN KEY', or 'NOT NULL'
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table_constraint#type TableConstraint#type}
   */
@@ -358,7 +358,7 @@ export class TableConstraint extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_table_constraint',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.51.0',
+        providerVersion: '0.52.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
