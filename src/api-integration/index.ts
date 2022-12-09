@@ -26,6 +26,12 @@ export interface ApiIntegrationConfig extends cdktf.TerraformMetaArguments {
   */
   readonly apiBlockedPrefixes?: string[];
   /**
+  * The API key (also called a “subscription key”).
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/api_integration#api_key ApiIntegration#api_key}
+  */
+  readonly apiKey?: string;
+  /**
   * Specifies the HTTPS proxy service type.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/api_integration#api_provider ApiIntegration#api_provider}
@@ -90,7 +96,7 @@ export class ApiIntegration extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_api_integration',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.52.0',
+        providerVersion: '0.53.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
@@ -104,6 +110,7 @@ export class ApiIntegration extends cdktf.TerraformResource {
     this._apiAllowedPrefixes = config.apiAllowedPrefixes;
     this._apiAwsRoleArn = config.apiAwsRoleArn;
     this._apiBlockedPrefixes = config.apiBlockedPrefixes;
+    this._apiKey = config.apiKey;
     this._apiProvider = config.apiProvider;
     this._azureAdApplicationId = config.azureAdApplicationId;
     this._azureTenantId = config.azureTenantId;
@@ -169,6 +176,22 @@ export class ApiIntegration extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get apiBlockedPrefixesInput() {
     return this._apiBlockedPrefixes;
+  }
+
+  // api_key - computed: false, optional: true, required: false
+  private _apiKey?: string; 
+  public get apiKey() {
+    return this.getStringAttribute('api_key');
+  }
+  public set apiKey(value: string) {
+    this._apiKey = value;
+  }
+  public resetApiKey() {
+    this._apiKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get apiKeyInput() {
+    return this._apiKey;
   }
 
   // api_provider - computed: false, optional: false, required: true
@@ -285,6 +308,7 @@ export class ApiIntegration extends cdktf.TerraformResource {
       api_allowed_prefixes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._apiAllowedPrefixes),
       api_aws_role_arn: cdktf.stringToTerraform(this._apiAwsRoleArn),
       api_blocked_prefixes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._apiBlockedPrefixes),
+      api_key: cdktf.stringToTerraform(this._apiKey),
       api_provider: cdktf.stringToTerraform(this._apiProvider),
       azure_ad_application_id: cdktf.stringToTerraform(this._azureAdApplicationId),
       azure_tenant_id: cdktf.stringToTerraform(this._azureTenantId),

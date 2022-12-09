@@ -12,6 +12,8 @@ export interface DatabaseConfig extends cdktf.TerraformMetaArguments {
   */
   readonly comment?: string;
   /**
+  * Number of days for which Snowflake retains historical data for performing Time Travel actions (SELECT, CLONE, UNDROP) on the object. A value of 0 effectively disables Time Travel for the specified database, schema, or table. For more information, see Understanding & Using Time Travel.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/database#data_retention_time_in_days Database#data_retention_time_in_days}
   */
   readonly dataRetentionTimeInDays?: number;
@@ -359,7 +361,7 @@ export class Database extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_database',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.52.0',
+        providerVersion: '0.53.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
