@@ -109,6 +109,12 @@ export interface WarehouseConfig extends cdktf.TerraformMetaArguments {
   */
   readonly warehouseSize?: string;
   /**
+  * Specifies a STANDARD or SNOWPARK-OPTIMIZED warehouse
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/warehouse#warehouse_type Warehouse#warehouse_type}
+  */
+  readonly warehouseType?: string;
+  /**
   * tag block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/warehouse#tag Warehouse#tag}
@@ -322,7 +328,7 @@ export class Warehouse extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_warehouse',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.52.0',
+        providerVersion: '0.53.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
@@ -350,6 +356,7 @@ export class Warehouse extends cdktf.TerraformResource {
     this._statementTimeoutInSeconds = config.statementTimeoutInSeconds;
     this._waitForProvisioning = config.waitForProvisioning;
     this._warehouseSize = config.warehouseSize;
+    this._warehouseType = config.warehouseType;
     this._tag.internalValue = config.tag;
   }
 
@@ -626,6 +633,22 @@ export class Warehouse extends cdktf.TerraformResource {
     return this._warehouseSize;
   }
 
+  // warehouse_type - computed: false, optional: true, required: false
+  private _warehouseType?: string; 
+  public get warehouseType() {
+    return this.getStringAttribute('warehouse_type');
+  }
+  public set warehouseType(value: string) {
+    this._warehouseType = value;
+  }
+  public resetWarehouseType() {
+    this._warehouseType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get warehouseTypeInput() {
+    return this._warehouseType;
+  }
+
   // tag - computed: false, optional: true, required: false
   private _tag = new WarehouseTagList(this, "tag", false);
   public get tag() {
@@ -665,6 +688,7 @@ export class Warehouse extends cdktf.TerraformResource {
       statement_timeout_in_seconds: cdktf.numberToTerraform(this._statementTimeoutInSeconds),
       wait_for_provisioning: cdktf.booleanToTerraform(this._waitForProvisioning),
       warehouse_size: cdktf.stringToTerraform(this._warehouseSize),
+      warehouse_type: cdktf.stringToTerraform(this._warehouseType),
       tag: cdktf.listMapper(warehouseTagToTerraform, true)(this._tag.internalValue),
     };
   }
