@@ -122,7 +122,7 @@ export class DataSnowflakeRoles extends cdktf.TerraformDataSource {
       terraformResourceType: 'snowflake_roles',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.53.0',
+        providerVersion: '0.54.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
