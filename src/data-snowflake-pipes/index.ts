@@ -138,7 +138,7 @@ export class DataSnowflakePipes extends cdktf.TerraformDataSource {
       terraformResourceType: 'snowflake_pipes',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.54.0',
+        providerVersion: '0.55.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,

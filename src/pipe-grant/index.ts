@@ -55,7 +55,7 @@ export interface PipeGrantConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/pipe_grant#schema_name PipeGrant#schema_name}
   */
-  readonly schemaName: string;
+  readonly schemaName?: string;
   /**
   * When this is set to true, allows the recipient role to grant the privileges to other roles.
   * 
@@ -90,7 +90,7 @@ export class PipeGrant extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_pipe_grant',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.54.0',
+        providerVersion: '0.55.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
@@ -225,13 +225,16 @@ export class PipeGrant extends cdktf.TerraformResource {
     return this._roles;
   }
 
-  // schema_name - computed: false, optional: false, required: true
+  // schema_name - computed: false, optional: true, required: false
   private _schemaName?: string; 
   public get schemaName() {
     return this.getStringAttribute('schema_name');
   }
   public set schemaName(value: string) {
     this._schemaName = value;
+  }
+  public resetSchemaName() {
+    this._schemaName = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get schemaNameInput() {

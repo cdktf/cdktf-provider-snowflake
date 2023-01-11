@@ -84,7 +84,7 @@ export class MaskingPolicyGrant extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_masking_policy_grant',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.54.0',
+        providerVersion: '0.55.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
