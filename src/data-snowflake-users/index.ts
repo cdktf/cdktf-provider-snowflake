@@ -172,7 +172,7 @@ export class DataSnowflakeUsers extends cdktf.TerraformDataSource {
       terraformResourceType: 'snowflake_users',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.54.0',
+        providerVersion: '0.55.1',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
