@@ -49,13 +49,13 @@ export interface FileFormatGrantConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/file_format_grant#roles FileFormatGrant#roles}
   */
-  readonly roles?: string[];
+  readonly roles: string[];
   /**
   * The name of the schema containing the current or future file formats on which to grant privileges.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/file_format_grant#schema_name FileFormatGrant#schema_name}
   */
-  readonly schemaName: string;
+  readonly schemaName?: string;
   /**
   * When this is set to true, allows the recipient role to grant the privileges to other roles.
   * 
@@ -90,7 +90,7 @@ export class FileFormatGrant extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_file_format_grant',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.55.1',
+        providerVersion: '0.56.3',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
@@ -209,7 +209,7 @@ export class FileFormatGrant extends cdktf.TerraformResource {
     return this._privilege;
   }
 
-  // roles - computed: false, optional: true, required: false
+  // roles - computed: false, optional: false, required: true
   private _roles?: string[]; 
   public get roles() {
     return cdktf.Fn.tolist(this.getListAttribute('roles'));
@@ -217,21 +217,21 @@ export class FileFormatGrant extends cdktf.TerraformResource {
   public set roles(value: string[]) {
     this._roles = value;
   }
-  public resetRoles() {
-    this._roles = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get rolesInput() {
     return this._roles;
   }
 
-  // schema_name - computed: false, optional: false, required: true
+  // schema_name - computed: false, optional: true, required: false
   private _schemaName?: string; 
   public get schemaName() {
     return this.getStringAttribute('schema_name');
   }
   public set schemaName(value: string) {
     this._schemaName = value;
+  }
+  public resetSchemaName() {
+    this._schemaName = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get schemaNameInput() {

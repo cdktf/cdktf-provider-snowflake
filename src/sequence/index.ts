@@ -72,7 +72,7 @@ export class Sequence extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_sequence',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.55.1',
+        providerVersion: '0.56.3',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,

@@ -8,6 +8,12 @@ import * as cdktf from 'cdktf';
 
 export interface ProcedureGrantConfig extends cdktf.TerraformMetaArguments {
   /**
+  * List of the argument data types for the procedure (must be present if procedure has arguments and procedure_name is present)
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure_grant#argument_data_types ProcedureGrant#argument_data_types}
+  */
+  readonly argumentDataTypes?: string[];
+  /**
   * The name of the database containing the current or future procedures on which to grant privileges.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure_grant#database_name ProcedureGrant#database_name}
@@ -55,13 +61,13 @@ export interface ProcedureGrantConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure_grant#roles ProcedureGrant#roles}
   */
-  readonly roles?: string[];
+  readonly roles: string[];
   /**
   * The name of the schema containing the current or future procedures on which to grant privileges.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure_grant#schema_name ProcedureGrant#schema_name}
   */
-  readonly schemaName: string;
+  readonly schemaName?: string;
   /**
   * Grants privilege to these shares (only valid if on_future is false).
   * 
@@ -230,7 +236,7 @@ export class ProcedureGrant extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_procedure_grant',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.55.1',
+        providerVersion: '0.56.3',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
@@ -241,6 +247,7 @@ export class ProcedureGrant extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._argumentDataTypes = config.argumentDataTypes;
     this._databaseName = config.databaseName;
     this._enableMultipleGrants = config.enableMultipleGrants;
     this._id = config.id;
@@ -258,6 +265,22 @@ export class ProcedureGrant extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // argument_data_types - computed: false, optional: true, required: false
+  private _argumentDataTypes?: string[]; 
+  public get argumentDataTypes() {
+    return this.getListAttribute('argument_data_types');
+  }
+  public set argumentDataTypes(value: string[]) {
+    this._argumentDataTypes = value;
+  }
+  public resetArgumentDataTypes() {
+    this._argumentDataTypes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get argumentDataTypesInput() {
+    return this._argumentDataTypes;
+  }
 
   // database_name - computed: false, optional: false, required: true
   private _databaseName?: string; 
@@ -368,7 +391,7 @@ export class ProcedureGrant extends cdktf.TerraformResource {
     return this._returnType;
   }
 
-  // roles - computed: false, optional: true, required: false
+  // roles - computed: false, optional: false, required: true
   private _roles?: string[]; 
   public get roles() {
     return cdktf.Fn.tolist(this.getListAttribute('roles'));
@@ -376,21 +399,21 @@ export class ProcedureGrant extends cdktf.TerraformResource {
   public set roles(value: string[]) {
     this._roles = value;
   }
-  public resetRoles() {
-    this._roles = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get rolesInput() {
     return this._roles;
   }
 
-  // schema_name - computed: false, optional: false, required: true
+  // schema_name - computed: false, optional: true, required: false
   private _schemaName?: string; 
   public get schemaName() {
     return this.getStringAttribute('schema_name');
   }
   public set schemaName(value: string) {
     this._schemaName = value;
+  }
+  public resetSchemaName() {
+    this._schemaName = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get schemaNameInput() {
@@ -451,6 +474,7 @@ export class ProcedureGrant extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      argument_data_types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._argumentDataTypes),
       database_name: cdktf.stringToTerraform(this._databaseName),
       enable_multiple_grants: cdktf.booleanToTerraform(this._enableMultipleGrants),
       id: cdktf.stringToTerraform(this._id),

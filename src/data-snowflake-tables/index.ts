@@ -133,7 +133,7 @@ export class DataSnowflakeTables extends cdktf.TerraformDataSource {
       terraformResourceType: 'snowflake_tables',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.55.1',
+        providerVersion: '0.56.3',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,

@@ -49,7 +49,7 @@ export interface ExternalTableGrantConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_table_grant#roles ExternalTableGrant#roles}
   */
-  readonly roles?: string[];
+  readonly roles: string[];
   /**
   * The name of the schema containing the current or future external tables on which to grant privileges.
   * 
@@ -96,7 +96,7 @@ export class ExternalTableGrant extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_external_table_grant',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.55.1',
+        providerVersion: '0.56.3',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
@@ -216,16 +216,13 @@ export class ExternalTableGrant extends cdktf.TerraformResource {
     return this._privilege;
   }
 
-  // roles - computed: false, optional: true, required: false
+  // roles - computed: false, optional: false, required: true
   private _roles?: string[]; 
   public get roles() {
     return cdktf.Fn.tolist(this.getListAttribute('roles'));
   }
   public set roles(value: string[]) {
     this._roles = value;
-  }
-  public resetRoles() {
-    this._roles = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get rolesInput() {
