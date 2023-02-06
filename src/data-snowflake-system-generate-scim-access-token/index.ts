@@ -48,7 +48,7 @@ export class DataSnowflakeSystemGenerateScimAccessToken extends cdktf.TerraformD
       terraformResourceType: 'snowflake_system_generate_scim_access_token',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.55.1',
+        providerVersion: '0.56.3',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,

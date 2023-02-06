@@ -116,7 +116,7 @@ export class NotificationIntegration extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_notification_integration',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.55.1',
+        providerVersion: '0.56.3',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,

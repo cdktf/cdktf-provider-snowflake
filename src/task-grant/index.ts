@@ -43,13 +43,13 @@ export interface TaskGrantConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task_grant#roles TaskGrant#roles}
   */
-  readonly roles?: string[];
+  readonly roles: string[];
   /**
   * The name of the schema containing the current or future tasks on which to grant privileges.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task_grant#schema_name TaskGrant#schema_name}
   */
-  readonly schemaName: string;
+  readonly schemaName?: string;
   /**
   * The name of the task on which to grant privileges immediately (only valid if on_future is false).
   * 
@@ -90,7 +90,7 @@ export class TaskGrant extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_task_grant',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.55.1',
+        providerVersion: '0.56.3',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
@@ -193,7 +193,7 @@ export class TaskGrant extends cdktf.TerraformResource {
     return this._privilege;
   }
 
-  // roles - computed: false, optional: true, required: false
+  // roles - computed: false, optional: false, required: true
   private _roles?: string[]; 
   public get roles() {
     return cdktf.Fn.tolist(this.getListAttribute('roles'));
@@ -201,21 +201,21 @@ export class TaskGrant extends cdktf.TerraformResource {
   public set roles(value: string[]) {
     this._roles = value;
   }
-  public resetRoles() {
-    this._roles = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get rolesInput() {
     return this._roles;
   }
 
-  // schema_name - computed: false, optional: false, required: true
+  // schema_name - computed: false, optional: true, required: false
   private _schemaName?: string; 
   public get schemaName() {
     return this.getStringAttribute('schema_name');
   }
   public set schemaName(value: string) {
     this._schemaName = value;
+  }
+  public resetSchemaName() {
+    this._schemaName = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get schemaNameInput() {

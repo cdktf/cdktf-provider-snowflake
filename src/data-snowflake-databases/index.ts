@@ -221,7 +221,7 @@ export class DataSnowflakeDatabases extends cdktf.TerraformDataSource {
       terraformResourceType: 'snowflake_databases',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.55.1',
+        providerVersion: '0.56.3',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
