@@ -264,7 +264,7 @@ export class Schema extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_schema',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.56.3',
+        providerVersion: '0.56.4',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,

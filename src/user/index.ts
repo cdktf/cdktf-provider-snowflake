@@ -320,7 +320,7 @@ export class User extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_user',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.56.3',
+        providerVersion: '0.56.4',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
