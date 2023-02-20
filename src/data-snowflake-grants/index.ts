@@ -770,7 +770,7 @@ export class DataSnowflakeGrants extends cdktf.TerraformDataSource {
       terraformResourceType: 'snowflake_grants',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.56.3',
+        providerVersion: '0.56.4',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
