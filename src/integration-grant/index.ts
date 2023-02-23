@@ -72,7 +72,7 @@ export class IntegrationGrant extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_integration_grant',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.56.4',
+        providerVersion: '0.56.5',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,

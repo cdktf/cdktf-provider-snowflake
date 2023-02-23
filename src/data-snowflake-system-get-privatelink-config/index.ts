@@ -42,7 +42,7 @@ export class DataSnowflakeSystemGetPrivatelinkConfig extends cdktf.TerraformData
       terraformResourceType: 'snowflake_system_get_privatelink_config',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.56.4',
+        providerVersion: '0.56.5',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,

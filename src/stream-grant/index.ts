@@ -90,7 +90,7 @@ export class StreamGrant extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_stream_grant',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.56.4',
+        providerVersion: '0.56.5',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,

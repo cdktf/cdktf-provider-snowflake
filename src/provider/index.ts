@@ -155,7 +155,7 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'snowflake',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.56.4',
+        providerVersion: '0.56.5',
         providerVersionConstraint: ' ~> 0.40'
       },
       terraformProviderSource: 'Snowflake-Labs/snowflake'
