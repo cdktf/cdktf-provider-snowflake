@@ -78,7 +78,7 @@ export class RowAccessPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_row_access_policy',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.56.5',
+        providerVersion: '0.57.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,

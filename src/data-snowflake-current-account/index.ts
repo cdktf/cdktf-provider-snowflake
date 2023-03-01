@@ -42,7 +42,7 @@ export class DataSnowflakeCurrentAccount extends cdktf.TerraformDataSource {
       terraformResourceType: 'snowflake_current_account',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.56.5',
+        providerVersion: '0.57.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,

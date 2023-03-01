@@ -21,11 +21,11 @@ export interface ObjectParameterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly key: string;
   /**
-  * Type of object to which the parameter applies. Valid values are those in [object types](https://docs.snowflake.com/en/sql-reference/parameters.html#object-types).
+  * Type of object to which the parameter applies. Valid values are those in [object types](https://docs.snowflake.com/en/sql-reference/parameters.html#object-types). If no value is provided, then the resource will default to setting the object parameter at account level.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/object_parameter#object_type ObjectParameter#object_type}
   */
-  readonly objectType: string;
+  readonly objectType?: string;
   /**
   * Value of object parameter, as a string. Constraints are the same as those for the parameters in Snowflake documentation.
   * 
@@ -37,7 +37,7 @@ export interface ObjectParameterConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/object_parameter#object_identifier ObjectParameter#object_identifier}
   */
-  readonly objectIdentifier: ObjectParameterObjectIdentifier[] | cdktf.IResolvable;
+  readonly objectIdentifier?: ObjectParameterObjectIdentifier[] | cdktf.IResolvable;
 }
 export interface ObjectParameterObjectIdentifier {
   /**
@@ -220,7 +220,7 @@ export class ObjectParameter extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_object_parameter',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.56.5',
+        providerVersion: '0.57.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
@@ -271,13 +271,16 @@ export class ObjectParameter extends cdktf.TerraformResource {
     return this._key;
   }
 
-  // object_type - computed: false, optional: false, required: true
+  // object_type - computed: false, optional: true, required: false
   private _objectType?: string; 
   public get objectType() {
     return this.getStringAttribute('object_type');
   }
   public set objectType(value: string) {
     this._objectType = value;
+  }
+  public resetObjectType() {
+    this._objectType = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get objectTypeInput() {
@@ -297,13 +300,16 @@ export class ObjectParameter extends cdktf.TerraformResource {
     return this._value;
   }
 
-  // object_identifier - computed: false, optional: false, required: true
+  // object_identifier - computed: false, optional: true, required: false
   private _objectIdentifier = new ObjectParameterObjectIdentifierList(this, "object_identifier", false);
   public get objectIdentifier() {
     return this._objectIdentifier;
   }
   public putObjectIdentifier(value: ObjectParameterObjectIdentifier[] | cdktf.IResolvable) {
     this._objectIdentifier.internalValue = value;
+  }
+  public resetObjectIdentifier() {
+    this._objectIdentifier.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get objectIdentifierInput() {

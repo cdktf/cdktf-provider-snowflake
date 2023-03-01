@@ -90,7 +90,7 @@ export class FileFormatGrant extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_file_format_grant',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.56.5',
+        providerVersion: '0.57.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
