@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/row_acce
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.rowAccessPolicy.RowAccessPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/rowaccesspolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/rowaccesspolicy"
 
 rowaccesspolicy.NewRowAccessPolicy(scope Construct, id *string, config RowAccessPolicyConfig) RowAccessPolicy
 ```
@@ -280,7 +280,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.rowAccessPolicy.RowAccessPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/rowaccesspolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/rowaccesspolicy"
 
 rowaccesspolicy.RowAccessPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.rowAccessPolicy.RowAccessPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/rowaccesspolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/rowaccesspolicy"
 
 rowaccesspolicy.RowAccessPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ rowaccesspolicy.RowAccessPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.rowAccessPolicy.RowAccessPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/rowaccesspolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/rowaccesspolicy"
 
 rowaccesspolicy.RowAccessPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -679,7 +679,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.rowAccessPolicy.RowAccessPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/rowaccesspolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/rowaccesspolicy"
 
 &rowaccesspolicy.RowAccessPolicyConfig {
 	Connection: interface{},
