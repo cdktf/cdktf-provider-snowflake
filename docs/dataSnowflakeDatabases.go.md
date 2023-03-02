@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/snowflake/d/database
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakedatabases"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakedatabases"
 
 datasnowflakedatabases.NewDataSnowflakeDatabases(scope Construct, id *string, config DataSnowflakeDatabasesConfig) DataSnowflakeDatabases
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakedatabases"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakedatabases"
 
 datasnowflakedatabases.DataSnowflakeDatabases_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakedatabases"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakedatabases"
 
 datasnowflakedatabases.DataSnowflakeDatabases_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ datasnowflakedatabases.DataSnowflakeDatabases_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakedatabases"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakedatabases"
 
 datasnowflakedatabases.DataSnowflakeDatabases_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakedatabases"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakedatabases"
 
 &datasnowflakedatabases.DataSnowflakeDatabasesConfig {
 	Connection: interface{},
@@ -648,7 +648,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesDatabases.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakedatabases"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakedatabases"
 
 &datasnowflakedatabases.DataSnowflakeDatabasesDatabases {
 
@@ -661,7 +661,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakedata
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesDatabasesReplicationConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakedatabases"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakedatabases"
 
 &datasnowflakedatabases.DataSnowflakeDatabasesDatabasesReplicationConfiguration {
 
@@ -676,7 +676,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakedata
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesDatabasesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakedatabases"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakedatabases"
 
 datasnowflakedatabases.NewDataSnowflakeDatabasesDatabasesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeDatabasesDatabasesList
 ```
@@ -808,7 +808,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesDatabasesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakedatabases"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakedatabases"
 
 datasnowflakedatabases.NewDataSnowflakeDatabasesDatabasesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeDatabasesDatabasesOutputReference
 ```
@@ -1185,7 +1185,7 @@ func InternalValue() DataSnowflakeDatabasesDatabases
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesDatabasesReplicationConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakedatabases"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakedatabases"
 
 datasnowflakedatabases.NewDataSnowflakeDatabasesDatabasesReplicationConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeDatabasesDatabasesReplicationConfigurationList
 ```
@@ -1317,7 +1317,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesDatabasesReplicationConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakedatabases"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakedatabases"
 
 datasnowflakedatabases.NewDataSnowflakeDatabasesDatabasesReplicationConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeDatabasesDatabasesReplicationConfigurationOutputReference
 ```
