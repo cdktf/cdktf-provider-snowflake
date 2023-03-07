@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/snowflake/d/current_
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeCurrentRole.DataSnowflakeCurrentRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakecurrentrole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakecurrentrole"
 
 datasnowflakecurrentrole.NewDataSnowflakeCurrentRole(scope Construct, id *string, config DataSnowflakeCurrentRoleConfig) DataSnowflakeCurrentRole
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeCurrentRole.DataSnowflakeCurrentRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakecurrentrole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakecurrentrole"
 
 datasnowflakecurrentrole.DataSnowflakeCurrentRole_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeCurrentRole.DataSnowflakeCurrentRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakecurrentrole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakecurrentrole"
 
 datasnowflakecurrentrole.DataSnowflakeCurrentRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ datasnowflakecurrentrole.DataSnowflakeCurrentRole_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeCurrentRole.DataSnowflakeCurrentRole.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakecurrentrole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakecurrentrole"
 
 datasnowflakecurrentrole.DataSnowflakeCurrentRole_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeCurrentRole.DataSnowflakeCurrentRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakecurrentrole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakecurrentrole"
 
 &datasnowflakecurrentrole.DataSnowflakeCurrentRoleConfig {
 	Connection: interface{},
