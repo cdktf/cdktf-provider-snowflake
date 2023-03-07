@@ -121,7 +121,7 @@ export class DataSnowflakeStorageIntegrations extends cdktf.TerraformDataSource 
       terraformResourceType: 'snowflake_storage_integrations',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.57.0',
+        providerVersion: '0.58.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,

@@ -24,7 +24,7 @@ export interface UserConfig extends cdktf.TerraformMetaArguments {
   */
   readonly defaultRole?: string;
   /**
-  * Specifies the set of secondary roles that are active for the user’s session upon login.
+  * Specifies the set of secondary roles that are active for the user’s session upon login. Currently only ["ALL"] value is supported - more information can be found in [doc](https://docs.snowflake.com/en/sql-reference/sql/create-user#optional-object-properties-objectproperties)
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/user#default_secondary_roles User#default_secondary_roles}
   */
@@ -320,7 +320,7 @@ export class User extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_user',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.57.0',
+        providerVersion: '0.58.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
