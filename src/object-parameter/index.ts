@@ -220,7 +220,7 @@ export class ObjectParameter extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_object_parameter',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.57.0',
+        providerVersion: '0.58.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,

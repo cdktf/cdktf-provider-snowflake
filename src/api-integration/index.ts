@@ -50,11 +50,21 @@ export interface ApiIntegrationConfig extends cdktf.TerraformMetaArguments {
   */
   readonly azureTenantId?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/api_integration#comment ApiIntegration#comment}
+  */
+  readonly comment?: string;
+  /**
   * Specifies whether this API integration is enabled or disabled. If the API integration is disabled, any external function that relies on it will not work.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/api_integration#enabled ApiIntegration#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
+  /**
+  * The audience claim when generating the JWT (JSON Web Token) to authenticate to the Google API Gateway.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/api_integration#google_audience ApiIntegration#google_audience}
+  */
+  readonly googleAudience?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/api_integration#id ApiIntegration#id}
   *
@@ -96,7 +106,7 @@ export class ApiIntegration extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_api_integration',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.57.0',
+        providerVersion: '0.58.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
@@ -114,7 +124,9 @@ export class ApiIntegration extends cdktf.TerraformResource {
     this._apiProvider = config.apiProvider;
     this._azureAdApplicationId = config.azureAdApplicationId;
     this._azureTenantId = config.azureTenantId;
+    this._comment = config.comment;
     this._enabled = config.enabled;
+    this._googleAudience = config.googleAudience;
     this._id = config.id;
     this._name = config.name;
   }
@@ -249,6 +261,22 @@ export class ApiIntegration extends cdktf.TerraformResource {
     return this._azureTenantId;
   }
 
+  // comment - computed: false, optional: true, required: false
+  private _comment?: string; 
+  public get comment() {
+    return this.getStringAttribute('comment');
+  }
+  public set comment(value: string) {
+    this._comment = value;
+  }
+  public resetComment() {
+    this._comment = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get commentInput() {
+    return this._comment;
+  }
+
   // created_on - computed: true, optional: false, required: false
   public get createdOn() {
     return this.getStringAttribute('created_on');
@@ -268,6 +296,22 @@ export class ApiIntegration extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get enabledInput() {
     return this._enabled;
+  }
+
+  // google_audience - computed: false, optional: true, required: false
+  private _googleAudience?: string; 
+  public get googleAudience() {
+    return this.getStringAttribute('google_audience');
+  }
+  public set googleAudience(value: string) {
+    this._googleAudience = value;
+  }
+  public resetGoogleAudience() {
+    this._googleAudience = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get googleAudienceInput() {
+    return this._googleAudience;
   }
 
   // id - computed: true, optional: true, required: false
@@ -312,7 +356,9 @@ export class ApiIntegration extends cdktf.TerraformResource {
       api_provider: cdktf.stringToTerraform(this._apiProvider),
       azure_ad_application_id: cdktf.stringToTerraform(this._azureAdApplicationId),
       azure_tenant_id: cdktf.stringToTerraform(this._azureTenantId),
+      comment: cdktf.stringToTerraform(this._comment),
       enabled: cdktf.booleanToTerraform(this._enabled),
+      google_audience: cdktf.stringToTerraform(this._googleAudience),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
     };

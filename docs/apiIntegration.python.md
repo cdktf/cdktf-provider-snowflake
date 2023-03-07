@@ -29,7 +29,9 @@ apiIntegration.ApiIntegration(
   api_key: str = None,
   azure_ad_application_id: str = None,
   azure_tenant_id: str = None,
+  comment: str = None,
   enabled: typing.Union[bool, IResolvable] = None,
+  google_audience: str = None,
   id: str = None
 )
 ```
@@ -53,7 +55,9 @@ apiIntegration.ApiIntegration(
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.Initializer.parameter.apiKey">api_key</a></code> | <code>str</code> | The API key (also called a “subscription key”). |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.Initializer.parameter.azureAdApplicationId">azure_ad_application_id</a></code> | <code>str</code> | The 'Application (client) id' of the Azure AD app for your remote service. |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.Initializer.parameter.azureTenantId">azure_tenant_id</a></code> | <code>str</code> | Specifies the ID for your Office 365 tenant that all Azure API Management instances belong to. |
+| <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.Initializer.parameter.comment">comment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/api_integration#comment ApiIntegration#comment}. |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.Initializer.parameter.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether this API integration is enabled or disabled. |
+| <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.Initializer.parameter.googleAudience">google_audience</a></code> | <code>str</code> | The audience claim when generating the JWT (JSON Web Token) to authenticate to the Google API Gateway. |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/api_integration#id ApiIntegration#id}. |
 
 ---
@@ -200,6 +204,14 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 ---
 
+##### `comment`<sup>Optional</sup> <a name="comment" id="@cdktf/provider-snowflake.apiIntegration.ApiIntegration.Initializer.parameter.comment"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/api_integration#comment ApiIntegration#comment}.
+
+---
+
 ##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktf/provider-snowflake.apiIntegration.ApiIntegration.Initializer.parameter.enabled"></a>
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
@@ -209,6 +221,16 @@ Specifies whether this API integration is enabled or disabled.
 If the API integration is disabled, any external function that relies on it will not work.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/api_integration#enabled ApiIntegration#enabled}
+
+---
+
+##### `google_audience`<sup>Optional</sup> <a name="google_audience" id="@cdktf/provider-snowflake.apiIntegration.ApiIntegration.Initializer.parameter.googleAudience"></a>
+
+- *Type:* str
+
+The audience claim when generating the JWT (JSON Web Token) to authenticate to the Google API Gateway.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/api_integration#google_audience ApiIntegration#google_audience}
 
 ---
 
@@ -248,7 +270,9 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.resetApiKey">reset_api_key</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.resetAzureAdApplicationId">reset_azure_ad_application_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.resetAzureTenantId">reset_azure_tenant_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.resetComment">reset_comment</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.resetEnabled">reset_enabled</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.resetGoogleAudience">reset_google_audience</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.resetId">reset_id</a></code> | *No description.* |
 
 ---
@@ -492,10 +516,22 @@ def reset_azure_ad_application_id() -> None
 def reset_azure_tenant_id() -> None
 ```
 
+##### `reset_comment` <a name="reset_comment" id="@cdktf/provider-snowflake.apiIntegration.ApiIntegration.resetComment"></a>
+
+```python
+def reset_comment() -> None
+```
+
 ##### `reset_enabled` <a name="reset_enabled" id="@cdktf/provider-snowflake.apiIntegration.ApiIntegration.resetEnabled"></a>
 
 ```python
 def reset_enabled() -> None
+```
+
+##### `reset_google_audience` <a name="reset_google_audience" id="@cdktf/provider-snowflake.apiIntegration.ApiIntegration.resetGoogleAudience"></a>
+
+```python
+def reset_google_audience() -> None
 ```
 
 ##### `reset_id` <a name="reset_id" id="@cdktf/provider-snowflake.apiIntegration.ApiIntegration.resetId"></a>
@@ -610,7 +646,9 @@ apiIntegration.ApiIntegration.is_terraform_resource(
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.property.apiProviderInput">api_provider_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.property.azureAdApplicationIdInput">azure_ad_application_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.property.azureTenantIdInput">azure_tenant_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.property.commentInput">comment_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.property.enabledInput">enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.property.googleAudienceInput">google_audience_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.property.apiAllowedPrefixes">api_allowed_prefixes</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -620,7 +658,9 @@ apiIntegration.ApiIntegration.is_terraform_resource(
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.property.apiProvider">api_provider</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.property.azureAdApplicationId">azure_ad_application_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.property.azureTenantId">azure_tenant_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.property.comment">comment</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.property.googleAudience">google_audience</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.property.name">name</a></code> | <code>str</code> | *No description.* |
 
@@ -888,6 +928,16 @@ azure_tenant_id_input: str
 
 ---
 
+##### `comment_input`<sup>Optional</sup> <a name="comment_input" id="@cdktf/provider-snowflake.apiIntegration.ApiIntegration.property.commentInput"></a>
+
+```python
+comment_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `enabled_input`<sup>Optional</sup> <a name="enabled_input" id="@cdktf/provider-snowflake.apiIntegration.ApiIntegration.property.enabledInput"></a>
 
 ```python
@@ -895,6 +945,16 @@ enabled_input: typing.Union[bool, IResolvable]
 ```
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `google_audience_input`<sup>Optional</sup> <a name="google_audience_input" id="@cdktf/provider-snowflake.apiIntegration.ApiIntegration.property.googleAudienceInput"></a>
+
+```python
+google_audience_input: str
+```
+
+- *Type:* str
 
 ---
 
@@ -988,6 +1048,16 @@ azure_tenant_id: str
 
 ---
 
+##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.apiIntegration.ApiIntegration.property.comment"></a>
+
+```python
+comment: str
+```
+
+- *Type:* str
+
+---
+
 ##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-snowflake.apiIntegration.ApiIntegration.property.enabled"></a>
 
 ```python
@@ -995,6 +1065,16 @@ enabled: typing.Union[bool, IResolvable]
 ```
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `google_audience`<sup>Required</sup> <a name="google_audience" id="@cdktf/provider-snowflake.apiIntegration.ApiIntegration.property.googleAudience"></a>
+
+```python
+google_audience: str
+```
+
+- *Type:* str
 
 ---
 
@@ -1061,7 +1141,9 @@ apiIntegration.ApiIntegrationConfig(
   api_key: str = None,
   azure_ad_application_id: str = None,
   azure_tenant_id: str = None,
+  comment: str = None,
   enabled: typing.Union[bool, IResolvable] = None,
+  google_audience: str = None,
   id: str = None
 )
 ```
@@ -1085,7 +1167,9 @@ apiIntegration.ApiIntegrationConfig(
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegrationConfig.property.apiKey">api_key</a></code> | <code>str</code> | The API key (also called a “subscription key”). |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegrationConfig.property.azureAdApplicationId">azure_ad_application_id</a></code> | <code>str</code> | The 'Application (client) id' of the Azure AD app for your remote service. |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegrationConfig.property.azureTenantId">azure_tenant_id</a></code> | <code>str</code> | Specifies the ID for your Office 365 tenant that all Azure API Management instances belong to. |
+| <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegrationConfig.property.comment">comment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/api_integration#comment ApiIntegration#comment}. |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegrationConfig.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether this API integration is enabled or disabled. |
+| <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegrationConfig.property.googleAudience">google_audience</a></code> | <code>str</code> | The audience claim when generating the JWT (JSON Web Token) to authenticate to the Google API Gateway. |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegrationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/api_integration#id ApiIntegration#id}. |
 
 ---
@@ -1274,6 +1358,18 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 ---
 
+##### `comment`<sup>Optional</sup> <a name="comment" id="@cdktf/provider-snowflake.apiIntegration.ApiIntegrationConfig.property.comment"></a>
+
+```python
+comment: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/api_integration#comment ApiIntegration#comment}.
+
+---
+
 ##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktf/provider-snowflake.apiIntegration.ApiIntegrationConfig.property.enabled"></a>
 
 ```python
@@ -1287,6 +1383,20 @@ Specifies whether this API integration is enabled or disabled.
 If the API integration is disabled, any external function that relies on it will not work.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/api_integration#enabled ApiIntegration#enabled}
+
+---
+
+##### `google_audience`<sup>Optional</sup> <a name="google_audience" id="@cdktf/provider-snowflake.apiIntegration.ApiIntegrationConfig.property.googleAudience"></a>
+
+```python
+google_audience: str
+```
+
+- *Type:* str
+
+The audience claim when generating the JWT (JSON Web Token) to authenticate to the Google API Gateway.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/api_integration#google_audience ApiIntegration#google_audience}
 
 ---
 
