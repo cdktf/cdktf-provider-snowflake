@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.view.View.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.putTag">putTag</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.resetComment">resetComment</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.view.View.resetCopyGrants">resetCopyGrants</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.resetIsSecure">resetIsSecure</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.resetOrReplace">resetOrReplace</a></code> | *No description.* |
@@ -277,6 +278,12 @@ public putTag(value: IResolvable | ViewTag[]): void
 public resetComment(): void
 ```
 
+##### `resetCopyGrants` <a name="resetCopyGrants" id="@cdktf/provider-snowflake.view.View.resetCopyGrants"></a>
+
+```typescript
+public resetCopyGrants(): void
+```
+
 ##### `resetId` <a name="resetId" id="@cdktf/provider-snowflake.view.View.resetId"></a>
 
 ```typescript
@@ -391,6 +398,7 @@ view.View.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.tag">tag</a></code> | <code><a href="#@cdktf/provider-snowflake.view.ViewTagList">ViewTagList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.commentInput">commentInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.view.View.property.copyGrantsInput">copyGrantsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.databaseInput">databaseInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.isSecureInput">isSecureInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
@@ -400,6 +408,7 @@ view.View.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.statementInput">statementInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.tagInput">tagInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.view.ViewTag">ViewTag</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.comment">comment</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.view.View.property.copyGrants">copyGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.database">database</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.isSecure">isSecure</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
@@ -572,6 +581,16 @@ public readonly commentInput: string;
 
 ---
 
+##### `copyGrantsInput`<sup>Optional</sup> <a name="copyGrantsInput" id="@cdktf/provider-snowflake.view.View.property.copyGrantsInput"></a>
+
+```typescript
+public readonly copyGrantsInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `databaseInput`<sup>Optional</sup> <a name="databaseInput" id="@cdktf/provider-snowflake.view.View.property.databaseInput"></a>
 
 ```typescript
@@ -659,6 +678,16 @@ public readonly comment: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `copyGrants`<sup>Required</sup> <a name="copyGrants" id="@cdktf/provider-snowflake.view.View.property.copyGrants"></a>
+
+```typescript
+public readonly copyGrants: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -778,6 +807,7 @@ const viewConfig: view.ViewConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.schema">schema</a></code> | <code>string</code> | The schema in which to create the view. Don't use the \| character. |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.statement">statement</a></code> | <code>string</code> | Specifies the query used to create the view. |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.comment">comment</a></code> | <code>string</code> | Specifies a comment for the view. |
+| <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.copyGrants">copyGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | Retains the access permissions from the original view when a new view is created using the OR REPLACE clause. |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view#id View#id}. |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.isSecure">isSecure</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies that the view is secure. |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.orReplace">orReplace</a></code> | <code>boolean \| cdktf.IResolvable</code> | Overwrites the View if it exists. |
@@ -924,6 +954,20 @@ public readonly comment: string;
 Specifies a comment for the view.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view#comment View#comment}
+
+---
+
+##### `copyGrants`<sup>Optional</sup> <a name="copyGrants" id="@cdktf/provider-snowflake.view.ViewConfig.property.copyGrants"></a>
+
+```typescript
+public readonly copyGrants: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Retains the access permissions from the original view when a new view is created using the OR REPLACE clause.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view#copy_grants View#copy_grants}
 
 ---
 

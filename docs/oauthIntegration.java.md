@@ -29,6 +29,7 @@ OauthIntegration.Builder.create(Construct scope, java.lang.String id)
 //  .enabled(java.lang.Boolean)
 //  .enabled(IResolvable)
 //  .id(java.lang.String)
+//  .oauthClientType(java.lang.String)
 //  .oauthIssueRefreshTokens(java.lang.Boolean)
 //  .oauthIssueRefreshTokens(IResolvable)
 //  .oauthRedirectUri(java.lang.String)
@@ -54,6 +55,7 @@ OauthIntegration.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.Initializer.parameter.comment">comment</a></code> | <code>java.lang.String</code> | Specifies a comment for the OAuth integration. |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.Initializer.parameter.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Specifies whether this OAuth integration is enabled or disabled. |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/oauth_integration#id OauthIntegration#id}. |
+| <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.Initializer.parameter.oauthClientType">oauthClientType</a></code> | <code>java.lang.String</code> | Specifies the type of client being registered. Snowflake supports both confidential and public clients. |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.Initializer.parameter.oauthIssueRefreshTokens">oauthIssueRefreshTokens</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Specifies whether to allow the client to exchange a refresh token for an access token when the current access token has expired. |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.Initializer.parameter.oauthRedirectUri">oauthRedirectUri</a></code> | <code>java.lang.String</code> | Specifies the client URI. After a user is authenticated, the web browser is redirected to this URI. |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.Initializer.parameter.oauthRefreshTokenValidity">oauthRefreshTokenValidity</a></code> | <code>java.lang.Number</code> | Specifies how long refresh tokens should be valid (in seconds). OAUTH_ISSUE_REFRESH_TOKENS must be set to TRUE. |
@@ -186,6 +188,16 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
+##### `oauthClientType`<sup>Optional</sup> <a name="oauthClientType" id="@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.Initializer.parameter.oauthClientType"></a>
+
+- *Type:* java.lang.String
+
+Specifies the type of client being registered. Snowflake supports both confidential and public clients.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/oauth_integration#oauth_client_type OauthIntegration#oauth_client_type}
+
+---
+
 ##### `oauthIssueRefreshTokens`<sup>Optional</sup> <a name="oauthIssueRefreshTokens" id="@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.Initializer.parameter.oauthIssueRefreshTokens"></a>
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
@@ -250,6 +262,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.resetComment">resetComment</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.resetEnabled">resetEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.resetOauthClientType">resetOauthClientType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.resetOauthIssueRefreshTokens">resetOauthIssueRefreshTokens</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.resetOauthRedirectUri">resetOauthRedirectUri</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.resetOauthRefreshTokenValidity">resetOauthRefreshTokenValidity</a></code> | *No description.* |
@@ -465,6 +478,12 @@ public void resetEnabled()
 public void resetId()
 ```
 
+##### `resetOauthClientType` <a name="resetOauthClientType" id="@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.resetOauthClientType"></a>
+
+```java
+public void resetOauthClientType()
+```
+
 ##### `resetOauthIssueRefreshTokens` <a name="resetOauthIssueRefreshTokens" id="@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.resetOauthIssueRefreshTokens"></a>
 
 ```java
@@ -584,6 +603,7 @@ OauthIntegration.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.oauthClientInput">oauthClientInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.oauthClientTypeInput">oauthClientTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.oauthIssueRefreshTokensInput">oauthIssueRefreshTokensInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.oauthRedirectUriInput">oauthRedirectUriInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.oauthRefreshTokenValidityInput">oauthRefreshTokenValidityInput</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -594,6 +614,7 @@ OauthIntegration.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.oauthClient">oauthClient</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.oauthClientType">oauthClientType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.oauthIssueRefreshTokens">oauthIssueRefreshTokens</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.oauthRedirectUri">oauthRedirectUri</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.oauthRefreshTokenValidity">oauthRefreshTokenValidity</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -813,6 +834,16 @@ public java.lang.String getOauthClientInput();
 
 ---
 
+##### `oauthClientTypeInput`<sup>Optional</sup> <a name="oauthClientTypeInput" id="@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.oauthClientTypeInput"></a>
+
+```java
+public java.lang.String getOauthClientTypeInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `oauthIssueRefreshTokensInput`<sup>Optional</sup> <a name="oauthIssueRefreshTokensInput" id="@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.oauthIssueRefreshTokensInput"></a>
 
 ```java
@@ -913,6 +944,16 @@ public java.lang.String getOauthClient();
 
 ---
 
+##### `oauthClientType`<sup>Required</sup> <a name="oauthClientType" id="@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.oauthClientType"></a>
+
+```java
+public java.lang.String getOauthClientType();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `oauthIssueRefreshTokens`<sup>Required</sup> <a name="oauthIssueRefreshTokens" id="@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.oauthIssueRefreshTokens"></a>
 
 ```java
@@ -998,6 +1039,7 @@ OauthIntegrationConfig.builder()
 //  .enabled(java.lang.Boolean)
 //  .enabled(IResolvable)
 //  .id(java.lang.String)
+//  .oauthClientType(java.lang.String)
 //  .oauthIssueRefreshTokens(java.lang.Boolean)
 //  .oauthIssueRefreshTokens(IResolvable)
 //  .oauthRedirectUri(java.lang.String)
@@ -1023,6 +1065,7 @@ OauthIntegrationConfig.builder()
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegrationConfig.property.comment">comment</a></code> | <code>java.lang.String</code> | Specifies a comment for the OAuth integration. |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegrationConfig.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Specifies whether this OAuth integration is enabled or disabled. |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegrationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/oauth_integration#id OauthIntegration#id}. |
+| <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegrationConfig.property.oauthClientType">oauthClientType</a></code> | <code>java.lang.String</code> | Specifies the type of client being registered. Snowflake supports both confidential and public clients. |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegrationConfig.property.oauthIssueRefreshTokens">oauthIssueRefreshTokens</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Specifies whether to allow the client to exchange a refresh token for an access token when the current access token has expired. |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegrationConfig.property.oauthRedirectUri">oauthRedirectUri</a></code> | <code>java.lang.String</code> | Specifies the client URI. After a user is authenticated, the web browser is redirected to this URI. |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegrationConfig.property.oauthRefreshTokenValidity">oauthRefreshTokenValidity</a></code> | <code>java.lang.Number</code> | Specifies how long refresh tokens should be valid (in seconds). OAUTH_ISSUE_REFRESH_TOKENS must be set to TRUE. |
@@ -1186,6 +1229,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `oauthClientType`<sup>Optional</sup> <a name="oauthClientType" id="@cdktf/provider-snowflake.oauthIntegration.OauthIntegrationConfig.property.oauthClientType"></a>
+
+```java
+public java.lang.String getOauthClientType();
+```
+
+- *Type:* java.lang.String
+
+Specifies the type of client being registered. Snowflake supports both confidential and public clients.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/oauth_integration#oauth_client_type OauthIntegration#oauth_client_type}
 
 ---
 

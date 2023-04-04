@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/view sno
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.view.View.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
 
 view.NewView(scope Construct, id *string, config ViewConfig) View
 ```
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.view.View.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.putTag">PutTag</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.resetComment">ResetComment</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.view.View.resetCopyGrants">ResetCopyGrants</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.resetIsSecure">ResetIsSecure</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.resetOrReplace">ResetOrReplace</a></code> | *No description.* |
@@ -277,6 +278,12 @@ func PutTag(value interface{})
 func ResetComment()
 ```
 
+##### `ResetCopyGrants` <a name="ResetCopyGrants" id="@cdktf/provider-snowflake.view.View.resetCopyGrants"></a>
+
+```go
+func ResetCopyGrants()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktf/provider-snowflake.view.View.resetId"></a>
 
 ```go
@@ -314,7 +321,7 @@ func ResetTag()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.view.View.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
 
 view.View_IsConstruct(x interface{}) *bool
 ```
@@ -346,7 +353,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.view.View.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
 
 view.View_IsTerraformElement(x interface{}) *bool
 ```
@@ -360,7 +367,7 @@ view.View_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.view.View.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
 
 view.View_IsTerraformResource(x interface{}) *bool
 ```
@@ -391,6 +398,7 @@ view.View_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.tag">Tag</a></code> | <code><a href="#@cdktf/provider-snowflake.view.ViewTagList">ViewTagList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.commentInput">CommentInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.view.View.property.copyGrantsInput">CopyGrantsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.databaseInput">DatabaseInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.isSecureInput">IsSecureInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -400,6 +408,7 @@ view.View_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.statementInput">StatementInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.tagInput">TagInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.comment">Comment</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.view.View.property.copyGrants">CopyGrants</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.database">Database</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.isSecure">IsSecure</a></code> | <code>interface{}</code> | *No description.* |
@@ -572,6 +581,16 @@ func CommentInput() *string
 
 ---
 
+##### `CopyGrantsInput`<sup>Optional</sup> <a name="CopyGrantsInput" id="@cdktf/provider-snowflake.view.View.property.copyGrantsInput"></a>
+
+```go
+func CopyGrantsInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `DatabaseInput`<sup>Optional</sup> <a name="DatabaseInput" id="@cdktf/provider-snowflake.view.View.property.databaseInput"></a>
 
 ```go
@@ -659,6 +678,16 @@ func Comment() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `CopyGrants`<sup>Required</sup> <a name="CopyGrants" id="@cdktf/provider-snowflake.view.View.property.copyGrants"></a>
+
+```go
+func CopyGrants() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -757,7 +786,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.view.ViewConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
 
 &view.ViewConfig {
 	Connection: interface{},
@@ -772,6 +801,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/view"
 	Schema: *string,
 	Statement: *string,
 	Comment: *string,
+	CopyGrants: interface{},
 	Id: *string,
 	IsSecure: interface{},
 	OrReplace: interface{},
@@ -795,6 +825,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/view"
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.schema">Schema</a></code> | <code>*string</code> | The schema in which to create the view. Don't use the \| character. |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.statement">Statement</a></code> | <code>*string</code> | Specifies the query used to create the view. |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.comment">Comment</a></code> | <code>*string</code> | Specifies a comment for the view. |
+| <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.copyGrants">CopyGrants</a></code> | <code>interface{}</code> | Retains the access permissions from the original view when a new view is created using the OR REPLACE clause. |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view#id View#id}. |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.isSecure">IsSecure</a></code> | <code>interface{}</code> | Specifies that the view is secure. |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.orReplace">OrReplace</a></code> | <code>interface{}</code> | Overwrites the View if it exists. |
@@ -944,6 +975,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 ---
 
+##### `CopyGrants`<sup>Optional</sup> <a name="CopyGrants" id="@cdktf/provider-snowflake.view.ViewConfig.property.copyGrants"></a>
+
+```go
+CopyGrants interface{}
+```
+
+- *Type:* interface{}
+
+Retains the access permissions from the original view when a new view is created using the OR REPLACE clause.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view#copy_grants View#copy_grants}
+
+---
+
 ##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-snowflake.view.ViewConfig.property.id"></a>
 
 ```go
@@ -1006,7 +1051,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.view.ViewTag.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
 
 &view.ViewTag {
 	Name: *string,
@@ -1090,7 +1135,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.view.ViewTagList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
 
 view.NewViewTagList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ViewTagList
 ```
@@ -1233,7 +1278,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.view.ViewTagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
 
 view.NewViewTagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ViewTagOutputReference
 ```

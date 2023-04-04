@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/object_p
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.objectParameter.ObjectParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/objectparameter"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/objectparameter"
 
 objectparameter.NewObjectParameter(scope Construct, id *string, config ObjectParameterConfig) ObjectParameter
 ```
@@ -70,6 +70,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.resetObjectIdentifier">ResetObjectIdentifier</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.resetObjectType">ResetObjectType</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.resetOnAccount">ResetOnAccount</a></code> | *No description.* |
 
 ---
 
@@ -287,6 +288,12 @@ func ResetObjectIdentifier()
 func ResetObjectType()
 ```
 
+##### `ResetOnAccount` <a name="ResetOnAccount" id="@cdktf/provider-snowflake.objectParameter.ObjectParameter.resetOnAccount"></a>
+
+```go
+func ResetOnAccount()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -300,7 +307,7 @@ func ResetObjectType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.objectParameter.ObjectParameter.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/objectparameter"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/objectparameter"
 
 objectparameter.ObjectParameter_IsConstruct(x interface{}) *bool
 ```
@@ -332,7 +339,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.objectParameter.ObjectParameter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/objectparameter"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/objectparameter"
 
 objectparameter.ObjectParameter_IsTerraformElement(x interface{}) *bool
 ```
@@ -346,7 +353,7 @@ objectparameter.ObjectParameter_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.objectParameter.ObjectParameter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/objectparameter"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/objectparameter"
 
 objectparameter.ObjectParameter_IsTerraformResource(x interface{}) *bool
 ```
@@ -380,10 +387,12 @@ objectparameter.ObjectParameter_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.keyInput">KeyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.objectIdentifierInput">ObjectIdentifierInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.objectTypeInput">ObjectTypeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.onAccountInput">OnAccountInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.valueInput">ValueInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.key">Key</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.objectType">ObjectType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.onAccount">OnAccount</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.value">Value</a></code> | <code>*string</code> | *No description.* |
 
 ---
@@ -580,6 +589,16 @@ func ObjectTypeInput() *string
 
 ---
 
+##### `OnAccountInput`<sup>Optional</sup> <a name="OnAccountInput" id="@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.onAccountInput"></a>
+
+```go
+func OnAccountInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `ValueInput`<sup>Optional</sup> <a name="ValueInput" id="@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.valueInput"></a>
 
 ```go
@@ -620,6 +639,16 @@ func ObjectType() *string
 
 ---
 
+##### `OnAccount`<sup>Required</sup> <a name="OnAccount" id="@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.onAccount"></a>
+
+```go
+func OnAccount() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.value"></a>
 
 ```go
@@ -655,7 +684,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.objectParameter.ObjectParameterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/objectparameter"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/objectparameter"
 
 &objectparameter.ObjectParameterConfig {
 	Connection: interface{},
@@ -670,6 +699,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/objectparamete
 	Id: *string,
 	ObjectIdentifier: interface{},
 	ObjectType: *string,
+	OnAccount: interface{},
 }
 ```
 
@@ -689,6 +719,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/objectparamete
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/object_parameter#id ObjectParameter#id}. |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameterConfig.property.objectIdentifier">ObjectIdentifier</a></code> | <code>interface{}</code> | object_identifier block. |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameterConfig.property.objectType">ObjectType</a></code> | <code>*string</code> | Type of object to which the parameter applies. |
+| <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameterConfig.property.onAccount">OnAccount</a></code> | <code>interface{}</code> | If true, the object parameter will be set on the account level. |
 
 ---
 
@@ -835,12 +866,26 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 ---
 
+##### `OnAccount`<sup>Optional</sup> <a name="OnAccount" id="@cdktf/provider-snowflake.objectParameter.ObjectParameterConfig.property.onAccount"></a>
+
+```go
+OnAccount interface{}
+```
+
+- *Type:* interface{}
+
+If true, the object parameter will be set on the account level.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/object_parameter#on_account ObjectParameter#on_account}
+
+---
+
 ### ObjectParameterObjectIdentifier <a name="ObjectParameterObjectIdentifier" id="@cdktf/provider-snowflake.objectParameter.ObjectParameterObjectIdentifier"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.objectParameter.ObjectParameterObjectIdentifier.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/objectparameter"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/objectparameter"
 
 &objectparameter.ObjectParameterObjectIdentifier {
 	Name: *string,
@@ -908,7 +953,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.objectParameter.ObjectParameterObjectIdentifierList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/objectparameter"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/objectparameter"
 
 objectparameter.NewObjectParameterObjectIdentifierList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObjectParameterObjectIdentifierList
 ```
@@ -1051,7 +1096,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.objectParameter.ObjectParameterObjectIdentifierOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/objectparameter"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/objectparameter"
 
 objectparameter.NewObjectParameterObjectIdentifierOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObjectParameterObjectIdentifierOutputReference
 ```

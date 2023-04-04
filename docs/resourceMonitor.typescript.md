@@ -74,7 +74,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.resetNotifyUsers">resetNotifyUsers</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.resetSetForAccount">resetSetForAccount</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.resetStartTimestamp">resetStartTimestamp</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.resetSuspendImmediateTrigger">resetSuspendImmediateTrigger</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.resetSuspendImmediateTriggers">resetSuspendImmediateTriggers</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.resetSuspendTrigger">resetSuspendTrigger</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.resetSuspendTriggers">resetSuspendTriggers</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.resetWarehouses">resetWarehouses</a></code> | *No description.* |
 
@@ -312,10 +314,22 @@ public resetSetForAccount(): void
 public resetStartTimestamp(): void
 ```
 
+##### `resetSuspendImmediateTrigger` <a name="resetSuspendImmediateTrigger" id="@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.resetSuspendImmediateTrigger"></a>
+
+```typescript
+public resetSuspendImmediateTrigger(): void
+```
+
 ##### `resetSuspendImmediateTriggers` <a name="resetSuspendImmediateTriggers" id="@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.resetSuspendImmediateTriggers"></a>
 
 ```typescript
 public resetSuspendImmediateTriggers(): void
+```
+
+##### `resetSuspendTrigger` <a name="resetSuspendTrigger" id="@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.resetSuspendTrigger"></a>
+
+```typescript
+public resetSuspendTrigger(): void
 ```
 
 ##### `resetSuspendTriggers` <a name="resetSuspendTriggers" id="@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.resetSuspendTriggers"></a>
@@ -427,7 +441,9 @@ resourceMonitor.ResourceMonitor.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.notifyUsersInput">notifyUsersInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.setForAccountInput">setForAccountInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.startTimestampInput">startTimestampInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.suspendImmediateTriggerInput">suspendImmediateTriggerInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.suspendImmediateTriggersInput">suspendImmediateTriggersInput</a></code> | <code>number[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.suspendTriggerInput">suspendTriggerInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.suspendTriggersInput">suspendTriggersInput</a></code> | <code>number[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.warehousesInput">warehousesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.creditQuota">creditQuota</a></code> | <code>number</code> | *No description.* |
@@ -439,7 +455,9 @@ resourceMonitor.ResourceMonitor.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.notifyUsers">notifyUsers</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.setForAccount">setForAccount</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.startTimestamp">startTimestamp</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.suspendImmediateTrigger">suspendImmediateTrigger</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.suspendImmediateTriggers">suspendImmediateTriggers</a></code> | <code>number[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.suspendTrigger">suspendTrigger</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.suspendTriggers">suspendTriggers</a></code> | <code>number[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.warehouses">warehouses</a></code> | <code>string[]</code> | *No description.* |
 
@@ -677,6 +695,16 @@ public readonly startTimestampInput: string;
 
 ---
 
+##### `suspendImmediateTriggerInput`<sup>Optional</sup> <a name="suspendImmediateTriggerInput" id="@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.suspendImmediateTriggerInput"></a>
+
+```typescript
+public readonly suspendImmediateTriggerInput: number;
+```
+
+- *Type:* number
+
+---
+
 ##### `suspendImmediateTriggersInput`<sup>Optional</sup> <a name="suspendImmediateTriggersInput" id="@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.suspendImmediateTriggersInput"></a>
 
 ```typescript
@@ -684,6 +712,16 @@ public readonly suspendImmediateTriggersInput: number[];
 ```
 
 - *Type:* number[]
+
+---
+
+##### `suspendTriggerInput`<sup>Optional</sup> <a name="suspendTriggerInput" id="@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.suspendTriggerInput"></a>
+
+```typescript
+public readonly suspendTriggerInput: number;
+```
+
+- *Type:* number
 
 ---
 
@@ -797,6 +835,16 @@ public readonly startTimestamp: string;
 
 ---
 
+##### `suspendImmediateTrigger`<sup>Required</sup> <a name="suspendImmediateTrigger" id="@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.suspendImmediateTrigger"></a>
+
+```typescript
+public readonly suspendImmediateTrigger: number;
+```
+
+- *Type:* number
+
+---
+
 ##### `suspendImmediateTriggers`<sup>Required</sup> <a name="suspendImmediateTriggers" id="@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.suspendImmediateTriggers"></a>
 
 ```typescript
@@ -804,6 +852,16 @@ public readonly suspendImmediateTriggers: number[];
 ```
 
 - *Type:* number[]
+
+---
+
+##### `suspendTrigger`<sup>Required</sup> <a name="suspendTrigger" id="@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.suspendTrigger"></a>
+
+```typescript
+public readonly suspendTrigger: number;
+```
+
+- *Type:* number
 
 ---
 
@@ -875,9 +933,11 @@ const resourceMonitorConfig: resourceMonitor.ResourceMonitorConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/resource_monitor#id ResourceMonitor#id}. |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.notifyTriggers">notifyTriggers</a></code> | <code>number[]</code> | A list of percentage thresholds at which to send an alert to subscribed users. |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.notifyUsers">notifyUsers</a></code> | <code>string[]</code> | Specifies the list of users to receive email notifications on resource monitors. |
-| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.setForAccount">setForAccount</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies whether the resource monitor should be applied globally to your Snowflake account. |
+| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.setForAccount">setForAccount</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies whether the resource monitor should be applied globally to your Snowflake account (defaults to false). |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.startTimestamp">startTimestamp</a></code> | <code>string</code> | The date and time when the resource monitor starts monitoring credit usage for the assigned warehouses. |
-| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.suspendImmediateTriggers">suspendImmediateTriggers</a></code> | <code>number[]</code> | A list of percentage thresholds at which to immediately suspend all warehouses. |
+| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.suspendImmediateTrigger">suspendImmediateTrigger</a></code> | <code>number</code> | The number that represents the percentage threshold at which to immediately suspend all warehouses. |
+| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.suspendImmediateTriggers">suspendImmediateTriggers</a></code> | <code>number[]</code> | A list of percentage thresholds at which to suspend all warehouses. |
+| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.suspendTrigger">suspendTrigger</a></code> | <code>number</code> | The number that represents the percentage threshold at which to suspend all warehouses. |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.suspendTriggers">suspendTriggers</a></code> | <code>number[]</code> | A list of percentage thresholds at which to suspend all warehouses. |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.warehouses">warehouses</a></code> | <code>string[]</code> | A list of warehouses to apply the resource monitor to. |
 
@@ -1062,7 +1122,7 @@ public readonly setForAccount: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Specifies whether the resource monitor should be applied globally to your Snowflake account.
+Specifies whether the resource monitor should be applied globally to your Snowflake account (defaults to false).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/resource_monitor#set_for_account ResourceMonitor#set_for_account}
 
@@ -1082,6 +1142,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 ---
 
+##### `suspendImmediateTrigger`<sup>Optional</sup> <a name="suspendImmediateTrigger" id="@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.suspendImmediateTrigger"></a>
+
+```typescript
+public readonly suspendImmediateTrigger: number;
+```
+
+- *Type:* number
+
+The number that represents the percentage threshold at which to immediately suspend all warehouses.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/resource_monitor#suspend_immediate_trigger ResourceMonitor#suspend_immediate_trigger}
+
+---
+
 ##### `suspendImmediateTriggers`<sup>Optional</sup> <a name="suspendImmediateTriggers" id="@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.suspendImmediateTriggers"></a>
 
 ```typescript
@@ -1090,9 +1164,23 @@ public readonly suspendImmediateTriggers: number[];
 
 - *Type:* number[]
 
-A list of percentage thresholds at which to immediately suspend all warehouses.
+A list of percentage thresholds at which to suspend all warehouses.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/resource_monitor#suspend_immediate_triggers ResourceMonitor#suspend_immediate_triggers}
+
+---
+
+##### `suspendTrigger`<sup>Optional</sup> <a name="suspendTrigger" id="@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.suspendTrigger"></a>
+
+```typescript
+public readonly suspendTrigger: number;
+```
+
+- *Type:* number
+
+The number that represents the percentage threshold at which to suspend all warehouses.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/resource_monitor#suspend_trigger ResourceMonitor#suspend_trigger}
 
 ---
 

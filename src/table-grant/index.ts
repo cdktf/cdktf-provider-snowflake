@@ -27,6 +27,12 @@ export interface TableGrantConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * When this is set to true and a schema_name is provided, apply this grant on all all tables in the given schema. When this is true and no schema_name is provided apply this grant on all all tables in the given database. The table_name and shares fields must be unset in order to use on_all.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table_grant#on_all TableGrant#on_all}
+  */
+  readonly onAll?: boolean | cdktf.IResolvable;
+  /**
   * When this is set to true and a schema_name is provided, apply this grant on all future tables in the given schema. When this is true and no schema_name is provided apply this grant on all future tables in the given database. The table_name and shares fields must be unset in order to use on_future.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table_grant#on_future TableGrant#on_future}
@@ -51,13 +57,13 @@ export interface TableGrantConfig extends cdktf.TerraformMetaArguments {
   */
   readonly schemaName?: string;
   /**
-  * Grants privilege to these shares (only valid if on_future is unset).
+  * Grants privilege to these shares (only valid if on_future or on_all is unset).
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table_grant#shares TableGrant#shares}
   */
   readonly shares?: string[];
   /**
-  * The name of the table on which to grant privileges immediately (only valid if on_future is unset).
+  * The name of the table on which to grant privileges immediately (only valid if on_future or on_all is unset).
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table_grant#table_name TableGrant#table_name}
   */
@@ -96,7 +102,7 @@ export class TableGrant extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_table_grant',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.58.0',
+        providerVersion: '0.61.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
@@ -110,6 +116,7 @@ export class TableGrant extends cdktf.TerraformResource {
     this._databaseName = config.databaseName;
     this._enableMultipleGrants = config.enableMultipleGrants;
     this._id = config.id;
+    this._onAll = config.onAll;
     this._onFuture = config.onFuture;
     this._privilege = config.privilege;
     this._roles = config.roles;
@@ -166,6 +173,22 @@ export class TableGrant extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // on_all - computed: false, optional: true, required: false
+  private _onAll?: boolean | cdktf.IResolvable; 
+  public get onAll() {
+    return this.getBooleanAttribute('on_all');
+  }
+  public set onAll(value: boolean | cdktf.IResolvable) {
+    this._onAll = value;
+  }
+  public resetOnAll() {
+    this._onAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get onAllInput() {
+    return this._onAll;
   }
 
   // on_future - computed: false, optional: true, required: false
@@ -289,6 +312,7 @@ export class TableGrant extends cdktf.TerraformResource {
       database_name: cdktf.stringToTerraform(this._databaseName),
       enable_multiple_grants: cdktf.booleanToTerraform(this._enableMultipleGrants),
       id: cdktf.stringToTerraform(this._id),
+      on_all: cdktf.booleanToTerraform(this._onAll),
       on_future: cdktf.booleanToTerraform(this._onFuture),
       privilege: cdktf.stringToTerraform(this._privilege),
       roles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._roles),

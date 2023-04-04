@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/snowflake/d/current_
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakecurrentaccount"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakecurrentaccount"
 
 datasnowflakecurrentaccount.NewDataSnowflakeCurrentAccount(scope Construct, id *string, config DataSnowflakeCurrentAccountConfig) DataSnowflakeCurrentAccount
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakecurrentaccount"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakecurrentaccount"
 
 datasnowflakecurrentaccount.DataSnowflakeCurrentAccount_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakecurrentaccount"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakecurrentaccount"
 
 datasnowflakecurrentaccount.DataSnowflakeCurrentAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ datasnowflakecurrentaccount.DataSnowflakeCurrentAccount_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakecurrentaccount"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakecurrentaccount"
 
 datasnowflakecurrentaccount.DataSnowflakeCurrentAccount_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -551,7 +551,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakecurrentaccount"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakecurrentaccount"
 
 &datasnowflakecurrentaccount.DataSnowflakeCurrentAccountConfig {
 	Connection: interface{},

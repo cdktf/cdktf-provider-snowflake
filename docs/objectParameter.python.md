@@ -25,7 +25,8 @@ objectParameter.ObjectParameter(
   value: str,
   id: str = None,
   object_identifier: typing.Union[IResolvable, typing.List[ObjectParameterObjectIdentifier]] = None,
-  object_type: str = None
+  object_type: str = None,
+  on_account: typing.Union[bool, IResolvable] = None
 )
 ```
 
@@ -45,6 +46,7 @@ objectParameter.ObjectParameter(
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/object_parameter#id ObjectParameter#id}. |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.Initializer.parameter.objectIdentifier">object_identifier</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameterObjectIdentifier">ObjectParameterObjectIdentifier</a>]]</code> | object_identifier block. |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.Initializer.parameter.objectType">object_type</a></code> | <code>str</code> | Type of object to which the parameter applies. |
+| <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.Initializer.parameter.onAccount">on_account</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, the object parameter will be set on the account level. |
 
 ---
 
@@ -161,6 +163,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 ---
 
+##### `on_account`<sup>Optional</sup> <a name="on_account" id="@cdktf/provider-snowflake.objectParameter.ObjectParameter.Initializer.parameter.onAccount"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+If true, the object parameter will be set on the account level.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/object_parameter#on_account ObjectParameter#on_account}
+
+---
+
 #### Methods <a name="Methods" id="Methods"></a>
 
 | **Name** | **Description** |
@@ -185,6 +197,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.resetObjectIdentifier">reset_object_identifier</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.resetObjectType">reset_object_type</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.resetOnAccount">reset_on_account</a></code> | *No description.* |
 
 ---
 
@@ -429,6 +442,12 @@ def reset_object_identifier() -> None
 def reset_object_type() -> None
 ```
 
+##### `reset_on_account` <a name="reset_on_account" id="@cdktf/provider-snowflake.objectParameter.ObjectParameter.resetOnAccount"></a>
+
+```python
+def reset_on_account() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -528,10 +547,12 @@ objectParameter.ObjectParameter.is_terraform_resource(
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.objectIdentifierInput">object_identifier_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameterObjectIdentifier">ObjectParameterObjectIdentifier</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.objectTypeInput">object_type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.onAccountInput">on_account_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.objectType">object_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.onAccount">on_account</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.value">value</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -728,6 +749,16 @@ object_type_input: str
 
 ---
 
+##### `on_account_input`<sup>Optional</sup> <a name="on_account_input" id="@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.onAccountInput"></a>
+
+```python
+on_account_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `value_input`<sup>Optional</sup> <a name="value_input" id="@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.valueInput"></a>
 
 ```python
@@ -765,6 +796,16 @@ object_type: str
 ```
 
 - *Type:* str
+
+---
+
+##### `on_account`<sup>Required</sup> <a name="on_account" id="@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.onAccount"></a>
+
+```python
+on_account: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
 
 ---
 
@@ -817,7 +858,8 @@ objectParameter.ObjectParameterConfig(
   value: str,
   id: str = None,
   object_identifier: typing.Union[IResolvable, typing.List[ObjectParameterObjectIdentifier]] = None,
-  object_type: str = None
+  object_type: str = None,
+  on_account: typing.Union[bool, IResolvable] = None
 )
 ```
 
@@ -837,6 +879,7 @@ objectParameter.ObjectParameterConfig(
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameterConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/object_parameter#id ObjectParameter#id}. |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameterConfig.property.objectIdentifier">object_identifier</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameterObjectIdentifier">ObjectParameterObjectIdentifier</a>]]</code> | object_identifier block. |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameterConfig.property.objectType">object_type</a></code> | <code>str</code> | Type of object to which the parameter applies. |
+| <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameterConfig.property.onAccount">on_account</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, the object parameter will be set on the account level. |
 
 ---
 
@@ -980,6 +1023,20 @@ Type of object to which the parameter applies.
 Valid values are those in [object types](https://docs.snowflake.com/en/sql-reference/parameters.html#object-types). If no value is provided, then the resource will default to setting the object parameter at account level.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/object_parameter#object_type ObjectParameter#object_type}
+
+---
+
+##### `on_account`<sup>Optional</sup> <a name="on_account" id="@cdktf/provider-snowflake.objectParameter.ObjectParameterConfig.property.onAccount"></a>
+
+```python
+on_account: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+If true, the object parameter will be set on the account level.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/object_parameter#on_account ObjectParameter#on_account}
 
 ---
 

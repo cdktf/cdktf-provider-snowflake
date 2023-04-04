@@ -23,7 +23,9 @@ sessionParameter.SessionParameter(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   key: str,
   value: str,
-  id: str = None
+  id: str = None,
+  on_account: typing.Union[bool, IResolvable] = None,
+  user: str = None
 )
 ```
 
@@ -41,6 +43,8 @@ sessionParameter.SessionParameter(
 | <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.Initializer.parameter.key">key</a></code> | <code>str</code> | Name of session parameter. Valid values are those in [session parameters](https://docs.snowflake.com/en/sql-reference/parameters.html#session-parameters). |
 | <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.Initializer.parameter.value">value</a></code> | <code>str</code> | Value of session parameter, as a string. Constraints are the same as those for the parameters in Snowflake documentation. |
 | <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/session_parameter#id SessionParameter#id}. |
+| <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.Initializer.parameter.onAccount">on_account</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, the session parameter will be set on the account level. |
+| <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.Initializer.parameter.user">user</a></code> | <code>str</code> | The user to set the session parameter for. Required if on_account is false. |
 
 ---
 
@@ -135,6 +139,26 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
+##### `on_account`<sup>Optional</sup> <a name="on_account" id="@cdktf/provider-snowflake.sessionParameter.SessionParameter.Initializer.parameter.onAccount"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+If true, the session parameter will be set on the account level.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/session_parameter#on_account SessionParameter#on_account}
+
+---
+
+##### `user`<sup>Optional</sup> <a name="user" id="@cdktf/provider-snowflake.sessionParameter.SessionParameter.Initializer.parameter.user"></a>
+
+- *Type:* str
+
+The user to set the session parameter for. Required if on_account is false.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/session_parameter#user SessionParameter#user}
+
+---
+
 #### Methods <a name="Methods" id="Methods"></a>
 
 | **Name** | **Description** |
@@ -156,6 +180,8 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.resetOnAccount">reset_on_account</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.resetUser">reset_user</a></code> | *No description.* |
 
 ---
 
@@ -374,6 +400,18 @@ def interpolation_for_attribute(
 def reset_id() -> None
 ```
 
+##### `reset_on_account` <a name="reset_on_account" id="@cdktf/provider-snowflake.sessionParameter.SessionParameter.resetOnAccount"></a>
+
+```python
+def reset_on_account() -> None
+```
+
+##### `reset_user` <a name="reset_user" id="@cdktf/provider-snowflake.sessionParameter.SessionParameter.resetUser"></a>
+
+```python
+def reset_user() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -470,9 +508,13 @@ sessionParameter.SessionParameter.is_terraform_resource(
 | <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.property.onAccountInput">on_account_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.property.userInput">user_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.property.onAccount">on_account</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.property.user">user</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.property.value">value</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -639,6 +681,26 @@ key_input: str
 
 ---
 
+##### `on_account_input`<sup>Optional</sup> <a name="on_account_input" id="@cdktf/provider-snowflake.sessionParameter.SessionParameter.property.onAccountInput"></a>
+
+```python
+on_account_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `user_input`<sup>Optional</sup> <a name="user_input" id="@cdktf/provider-snowflake.sessionParameter.SessionParameter.property.userInput"></a>
+
+```python
+user_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `value_input`<sup>Optional</sup> <a name="value_input" id="@cdktf/provider-snowflake.sessionParameter.SessionParameter.property.valueInput"></a>
 
 ```python
@@ -663,6 +725,26 @@ id: str
 
 ```python
 key: str
+```
+
+- *Type:* str
+
+---
+
+##### `on_account`<sup>Required</sup> <a name="on_account" id="@cdktf/provider-snowflake.sessionParameter.SessionParameter.property.onAccount"></a>
+
+```python
+on_account: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `user`<sup>Required</sup> <a name="user" id="@cdktf/provider-snowflake.sessionParameter.SessionParameter.property.user"></a>
+
+```python
+user: str
 ```
 
 - *Type:* str
@@ -716,7 +798,9 @@ sessionParameter.SessionParameterConfig(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   key: str,
   value: str,
-  id: str = None
+  id: str = None,
+  on_account: typing.Union[bool, IResolvable] = None,
+  user: str = None
 )
 ```
 
@@ -734,6 +818,8 @@ sessionParameter.SessionParameterConfig(
 | <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameterConfig.property.key">key</a></code> | <code>str</code> | Name of session parameter. Valid values are those in [session parameters](https://docs.snowflake.com/en/sql-reference/parameters.html#session-parameters). |
 | <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameterConfig.property.value">value</a></code> | <code>str</code> | Value of session parameter, as a string. Constraints are the same as those for the parameters in Snowflake documentation. |
 | <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameterConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/session_parameter#id SessionParameter#id}. |
+| <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameterConfig.property.onAccount">on_account</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, the session parameter will be set on the account level. |
+| <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameterConfig.property.user">user</a></code> | <code>str</code> | The user to set the session parameter for. Required if on_account is false. |
 
 ---
 
@@ -847,6 +933,34 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `on_account`<sup>Optional</sup> <a name="on_account" id="@cdktf/provider-snowflake.sessionParameter.SessionParameterConfig.property.onAccount"></a>
+
+```python
+on_account: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+If true, the session parameter will be set on the account level.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/session_parameter#on_account SessionParameter#on_account}
+
+---
+
+##### `user`<sup>Optional</sup> <a name="user" id="@cdktf/provider-snowflake.sessionParameter.SessionParameterConfig.property.user"></a>
+
+```python
+user: str
+```
+
+- *Type:* str
+
+The user to set the session parameter for. Required if on_account is false.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/session_parameter#user SessionParameter#user}
 
 ---
 

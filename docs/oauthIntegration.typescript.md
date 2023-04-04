@@ -70,6 +70,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.resetComment">resetComment</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.resetEnabled">resetEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.resetOauthClientType">resetOauthClientType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.resetOauthIssueRefreshTokens">resetOauthIssueRefreshTokens</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.resetOauthRedirectUri">resetOauthRedirectUri</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.resetOauthRefreshTokenValidity">resetOauthRefreshTokenValidity</a></code> | *No description.* |
@@ -285,6 +286,12 @@ public resetEnabled(): void
 public resetId(): void
 ```
 
+##### `resetOauthClientType` <a name="resetOauthClientType" id="@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.resetOauthClientType"></a>
+
+```typescript
+public resetOauthClientType(): void
+```
+
 ##### `resetOauthIssueRefreshTokens` <a name="resetOauthIssueRefreshTokens" id="@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.resetOauthIssueRefreshTokens"></a>
 
 ```typescript
@@ -404,6 +411,7 @@ oauthIntegration.OauthIntegration.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.oauthClientInput">oauthClientInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.oauthClientTypeInput">oauthClientTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.oauthIssueRefreshTokensInput">oauthIssueRefreshTokensInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.oauthRedirectUriInput">oauthRedirectUriInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.oauthRefreshTokenValidityInput">oauthRefreshTokenValidityInput</a></code> | <code>number</code> | *No description.* |
@@ -414,6 +422,7 @@ oauthIntegration.OauthIntegration.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.oauthClient">oauthClient</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.oauthClientType">oauthClientType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.oauthIssueRefreshTokens">oauthIssueRefreshTokens</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.oauthRedirectUri">oauthRedirectUri</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.oauthRefreshTokenValidity">oauthRefreshTokenValidity</a></code> | <code>number</code> | *No description.* |
@@ -633,6 +642,16 @@ public readonly oauthClientInput: string;
 
 ---
 
+##### `oauthClientTypeInput`<sup>Optional</sup> <a name="oauthClientTypeInput" id="@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.oauthClientTypeInput"></a>
+
+```typescript
+public readonly oauthClientTypeInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `oauthIssueRefreshTokensInput`<sup>Optional</sup> <a name="oauthIssueRefreshTokensInput" id="@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.oauthIssueRefreshTokensInput"></a>
 
 ```typescript
@@ -733,6 +752,16 @@ public readonly oauthClient: string;
 
 ---
 
+##### `oauthClientType`<sup>Required</sup> <a name="oauthClientType" id="@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.oauthClientType"></a>
+
+```typescript
+public readonly oauthClientType: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `oauthIssueRefreshTokens`<sup>Required</sup> <a name="oauthIssueRefreshTokens" id="@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.oauthIssueRefreshTokens"></a>
 
 ```typescript
@@ -820,6 +849,7 @@ const oauthIntegrationConfig: oauthIntegration.OauthIntegrationConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegrationConfig.property.comment">comment</a></code> | <code>string</code> | Specifies a comment for the OAuth integration. |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegrationConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies whether this OAuth integration is enabled or disabled. |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegrationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/oauth_integration#id OauthIntegration#id}. |
+| <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegrationConfig.property.oauthClientType">oauthClientType</a></code> | <code>string</code> | Specifies the type of client being registered. Snowflake supports both confidential and public clients. |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegrationConfig.property.oauthIssueRefreshTokens">oauthIssueRefreshTokens</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies whether to allow the client to exchange a refresh token for an access token when the current access token has expired. |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegrationConfig.property.oauthRedirectUri">oauthRedirectUri</a></code> | <code>string</code> | Specifies the client URI. After a user is authenticated, the web browser is redirected to this URI. |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegrationConfig.property.oauthRefreshTokenValidity">oauthRefreshTokenValidity</a></code> | <code>number</code> | Specifies how long refresh tokens should be valid (in seconds). OAUTH_ISSUE_REFRESH_TOKENS must be set to TRUE. |
@@ -983,6 +1013,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `oauthClientType`<sup>Optional</sup> <a name="oauthClientType" id="@cdktf/provider-snowflake.oauthIntegration.OauthIntegrationConfig.property.oauthClientType"></a>
+
+```typescript
+public readonly oauthClientType: string;
+```
+
+- *Type:* string
+
+Specifies the type of client being registered. Snowflake supports both confidential and public clients.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/oauth_integration#oauth_client_type OauthIntegration#oauth_client_type}
 
 ---
 

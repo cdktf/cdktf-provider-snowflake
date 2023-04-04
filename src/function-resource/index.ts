@@ -39,6 +39,12 @@ export interface FunctionResourceConfig extends cdktf.TerraformMetaArguments {
   */
   readonly imports?: string[];
   /**
+  * Specifies that the function is secure.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#is_secure FunctionResource#is_secure}
+  */
+  readonly isSecure?: boolean | cdktf.IResolvable;
+  /**
   * The language of the statement
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#language FunctionResource#language}
@@ -254,7 +260,7 @@ export class FunctionResource extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_function',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.58.0',
+        providerVersion: '0.61.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
@@ -270,6 +276,7 @@ export class FunctionResource extends cdktf.TerraformResource {
     this._handler = config.handler;
     this._id = config.id;
     this._imports = config.imports;
+    this._isSecure = config.isSecure;
     this._language = config.language;
     this._name = config.name;
     this._nullInputBehavior = config.nullInputBehavior;
@@ -362,6 +369,22 @@ export class FunctionResource extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get importsInput() {
     return this._imports;
+  }
+
+  // is_secure - computed: false, optional: true, required: false
+  private _isSecure?: boolean | cdktf.IResolvable; 
+  public get isSecure() {
+    return this.getBooleanAttribute('is_secure');
+  }
+  public set isSecure(value: boolean | cdktf.IResolvable) {
+    this._isSecure = value;
+  }
+  public resetIsSecure() {
+    this._isSecure = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get isSecureInput() {
+    return this._isSecure;
   }
 
   // language - computed: false, optional: true, required: false
@@ -539,6 +562,7 @@ export class FunctionResource extends cdktf.TerraformResource {
       handler: cdktf.stringToTerraform(this._handler),
       id: cdktf.stringToTerraform(this._id),
       imports: cdktf.listMapper(cdktf.stringToTerraform, false)(this._imports),
+      is_secure: cdktf.booleanToTerraform(this._isSecure),
       language: cdktf.stringToTerraform(this._language),
       name: cdktf.stringToTerraform(this._name),
       null_input_behavior: cdktf.stringToTerraform(this._nullInputBehavior),

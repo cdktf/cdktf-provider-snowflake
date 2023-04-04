@@ -38,6 +38,12 @@ export interface DataSnowflakeParametersConfig extends cdktf.TerraformMetaArgume
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/parameters#pattern DataSnowflakeParameters#pattern}
   */
   readonly pattern?: string;
+  /**
+  * If parameter_type is set to "SESSION" then user is the name of the user to display session parameters for.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/parameters#user DataSnowflakeParameters#user}
+  */
+  readonly user?: string;
 }
 export interface DataSnowflakeParametersParameters {
 }
@@ -155,7 +161,7 @@ export class DataSnowflakeParameters extends cdktf.TerraformDataSource {
       terraformResourceType: 'snowflake_parameters',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.58.0',
+        providerVersion: '0.61.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
@@ -171,6 +177,7 @@ export class DataSnowflakeParameters extends cdktf.TerraformDataSource {
     this._objectType = config.objectType;
     this._parameterType = config.parameterType;
     this._pattern = config.pattern;
+    this._user = config.user;
   }
 
   // ==========
@@ -263,6 +270,22 @@ export class DataSnowflakeParameters extends cdktf.TerraformDataSource {
     return this._pattern;
   }
 
+  // user - computed: false, optional: true, required: false
+  private _user?: string; 
+  public get user() {
+    return this.getStringAttribute('user');
+  }
+  public set user(value: string) {
+    this._user = value;
+  }
+  public resetUser() {
+    this._user = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userInput() {
+    return this._user;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -274,6 +297,7 @@ export class DataSnowflakeParameters extends cdktf.TerraformDataSource {
       object_type: cdktf.stringToTerraform(this._objectType),
       parameter_type: cdktf.stringToTerraform(this._parameterType),
       pattern: cdktf.stringToTerraform(this._pattern),
+      user: cdktf.stringToTerraform(this._user),
     };
   }
 }

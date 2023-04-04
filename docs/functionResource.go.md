@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/function
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.functionResource.FunctionResource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/functionresource"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functionresource"
 
 functionresource.NewFunctionResource(scope Construct, id *string, config FunctionResourceConfig) FunctionResource
 ```
@@ -72,6 +72,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.resetHandler">ResetHandler</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.resetImports">ResetImports</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.resetIsSecure">ResetIsSecure</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.resetLanguage">ResetLanguage</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.resetNullInputBehavior">ResetNullInputBehavior</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.resetPackages">ResetPackages</a></code> | *No description.* |
@@ -307,6 +308,12 @@ func ResetId()
 func ResetImports()
 ```
 
+##### `ResetIsSecure` <a name="ResetIsSecure" id="@cdktf/provider-snowflake.functionResource.FunctionResource.resetIsSecure"></a>
+
+```go
+func ResetIsSecure()
+```
+
 ##### `ResetLanguage` <a name="ResetLanguage" id="@cdktf/provider-snowflake.functionResource.FunctionResource.resetLanguage"></a>
 
 ```go
@@ -356,7 +363,7 @@ func ResetTargetPath()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.functionResource.FunctionResource.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/functionresource"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functionresource"
 
 functionresource.FunctionResource_IsConstruct(x interface{}) *bool
 ```
@@ -388,7 +395,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.functionResource.FunctionResource.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/functionresource"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functionresource"
 
 functionresource.FunctionResource_IsTerraformElement(x interface{}) *bool
 ```
@@ -402,7 +409,7 @@ functionresource.FunctionResource_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.functionResource.FunctionResource.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/functionresource"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functionresource"
 
 functionresource.FunctionResource_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,6 +445,7 @@ functionresource.FunctionResource_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.property.handlerInput">HandlerInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.property.importsInput">ImportsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.property.isSecureInput">IsSecureInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.property.languageInput">LanguageInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.property.nullInputBehaviorInput">NullInputBehaviorInput</a></code> | <code>*string</code> | *No description.* |
@@ -453,6 +461,7 @@ functionresource.FunctionResource_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.property.handler">Handler</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.property.imports">Imports</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.property.isSecure">IsSecure</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.property.language">Language</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.property.nullInputBehavior">NullInputBehavior</a></code> | <code>*string</code> | *No description.* |
@@ -678,6 +687,16 @@ func ImportsInput() *[]*string
 
 ---
 
+##### `IsSecureInput`<sup>Optional</sup> <a name="IsSecureInput" id="@cdktf/provider-snowflake.functionResource.FunctionResource.property.isSecureInput"></a>
+
+```go
+func IsSecureInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `LanguageInput`<sup>Optional</sup> <a name="LanguageInput" id="@cdktf/provider-snowflake.functionResource.FunctionResource.property.languageInput"></a>
 
 ```go
@@ -828,6 +847,16 @@ func Imports() *[]*string
 
 ---
 
+##### `IsSecure`<sup>Required</sup> <a name="IsSecure" id="@cdktf/provider-snowflake.functionResource.FunctionResource.property.isSecure"></a>
+
+```go
+func IsSecure() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `Language`<sup>Required</sup> <a name="Language" id="@cdktf/provider-snowflake.functionResource.FunctionResource.property.language"></a>
 
 ```go
@@ -953,7 +982,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.functionResource.FunctionResourceArguments.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/functionresource"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functionresource"
 
 &functionresource.FunctionResourceArguments {
 	Name: *string,
@@ -1003,7 +1032,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.functionResource.FunctionResourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/functionresource"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functionresource"
 
 &functionresource.FunctionResourceConfig {
 	Connection: interface{},
@@ -1023,6 +1052,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/functionresour
 	Handler: *string,
 	Id: *string,
 	Imports: *[]*string,
+	IsSecure: interface{},
 	Language: *string,
 	NullInputBehavior: *string,
 	Packages: *[]*string,
@@ -1053,6 +1083,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/functionresour
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResourceConfig.property.handler">Handler</a></code> | <code>*string</code> | The handler method for Java / Python function. |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResourceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#id FunctionResource#id}. |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResourceConfig.property.imports">Imports</a></code> | <code>*[]*string</code> | Imports for Java / Python functions. |
+| <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResourceConfig.property.isSecure">IsSecure</a></code> | <code>interface{}</code> | Specifies that the function is secure. |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResourceConfig.property.language">Language</a></code> | <code>*string</code> | The language of the statement. |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResourceConfig.property.nullInputBehavior">NullInputBehavior</a></code> | <code>*string</code> | Specifies the behavior of the function when called with null inputs. |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResourceConfig.property.packages">Packages</a></code> | <code>*[]*string</code> | List of package imports to use for Java / Python functions. |
@@ -1277,6 +1308,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 ---
 
+##### `IsSecure`<sup>Optional</sup> <a name="IsSecure" id="@cdktf/provider-snowflake.functionResource.FunctionResourceConfig.property.isSecure"></a>
+
+```go
+IsSecure interface{}
+```
+
+- *Type:* interface{}
+
+Specifies that the function is secure.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#is_secure FunctionResource#is_secure}
+
+---
+
 ##### `Language`<sup>Optional</sup> <a name="Language" id="@cdktf/provider-snowflake.functionResource.FunctionResourceConfig.property.language"></a>
 
 ```go
@@ -1372,7 +1417,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.functionResource.FunctionResourceArgumentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/functionresource"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functionresource"
 
 functionresource.NewFunctionResourceArgumentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FunctionResourceArgumentsList
 ```
@@ -1515,7 +1560,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.functionResource.FunctionResourceArgumentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/functionresource"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functionresource"
 
 functionresource.NewFunctionResourceArgumentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FunctionResourceArgumentsOutputReference
 ```

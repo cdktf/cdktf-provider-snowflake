@@ -71,6 +71,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.resetObjectType">resetObjectType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.resetParameterType">resetParameterType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.resetPattern">resetPattern</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.resetUser">resetUser</a></code> | *No description.* |
 
 ---
 
@@ -288,6 +289,12 @@ public resetParameterType(): void
 public resetPattern(): void
 ```
 
+##### `resetUser` <a name="resetUser" id="@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.resetUser"></a>
+
+```typescript
+public resetUser(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -380,11 +387,13 @@ dataSnowflakeParameters.DataSnowflakeParameters.isTerraformDataSource(x: any)
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.objectTypeInput">objectTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.parameterTypeInput">parameterTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.patternInput">patternInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.userInput">userInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.objectName">objectName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.objectType">objectType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.parameterType">parameterType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.pattern">pattern</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.user">user</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -570,6 +579,16 @@ public readonly patternInput: string;
 
 ---
 
+##### `userInput`<sup>Optional</sup> <a name="userInput" id="@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.userInput"></a>
+
+```typescript
+public readonly userInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.id"></a>
 
 ```typescript
@@ -614,6 +633,16 @@ public readonly parameterType: string;
 
 ```typescript
 public readonly pattern: string;
+```
+
+- *Type:* string
+
+---
+
+##### `user`<sup>Required</sup> <a name="user" id="@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.user"></a>
+
+```typescript
+public readonly user: string;
 ```
 
 - *Type:* string
@@ -666,6 +695,7 @@ const dataSnowflakeParametersConfig: dataSnowflakeParameters.DataSnowflakeParame
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParametersConfig.property.objectType">objectType</a></code> | <code>string</code> | If parameter_type is set to "OBJECT" then object_type is the type of object to display object parameters for. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParametersConfig.property.parameterType">parameterType</a></code> | <code>string</code> | The type of parameter to filter by. Valid values are: "ACCOUNT", "SESSION", "OBJECT". |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParametersConfig.property.pattern">pattern</a></code> | <code>string</code> | Allows limiting the list of parameters by name using LIKE clause. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParametersConfig.property.user">user</a></code> | <code>string</code> | If parameter_type is set to "SESSION" then user is the name of the user to display session parameters for. |
 
 ---
 
@@ -811,6 +841,20 @@ Allows limiting the list of parameters by name using LIKE clause.
 Refer to [Limiting the List of Parameters by Name](https://docs.snowflake.com/en/sql-reference/parameters.html#limiting-the-list-of-parameters-by-name)
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/parameters#pattern DataSnowflakeParameters#pattern}
+
+---
+
+##### `user`<sup>Optional</sup> <a name="user" id="@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParametersConfig.property.user"></a>
+
+```typescript
+public readonly user: string;
+```
+
+- *Type:* string
+
+If parameter_type is set to "SESSION" then user is the name of the user to display session parameters for.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/parameters#user DataSnowflakeParameters#user}
 
 ---
 

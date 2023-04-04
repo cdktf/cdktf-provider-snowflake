@@ -32,7 +32,9 @@ ResourceMonitor.Builder.create(Construct scope, java.lang.String id)
 //  .setForAccount(java.lang.Boolean)
 //  .setForAccount(IResolvable)
 //  .startTimestamp(java.lang.String)
+//  .suspendImmediateTrigger(java.lang.Number)
 //  .suspendImmediateTriggers(java.util.List<java.lang.Number>)
+//  .suspendTrigger(java.lang.Number)
 //  .suspendTriggers(java.util.List<java.lang.Number>)
 //  .warehouses(java.util.List<java.lang.String>)
     .build();
@@ -56,9 +58,11 @@ ResourceMonitor.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/resource_monitor#id ResourceMonitor#id}. |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.Initializer.parameter.notifyTriggers">notifyTriggers</a></code> | <code>java.util.List<java.lang.Number></code> | A list of percentage thresholds at which to send an alert to subscribed users. |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.Initializer.parameter.notifyUsers">notifyUsers</a></code> | <code>java.util.List<java.lang.String></code> | Specifies the list of users to receive email notifications on resource monitors. |
-| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.Initializer.parameter.setForAccount">setForAccount</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Specifies whether the resource monitor should be applied globally to your Snowflake account. |
+| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.Initializer.parameter.setForAccount">setForAccount</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Specifies whether the resource monitor should be applied globally to your Snowflake account (defaults to false). |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.Initializer.parameter.startTimestamp">startTimestamp</a></code> | <code>java.lang.String</code> | The date and time when the resource monitor starts monitoring credit usage for the assigned warehouses. |
-| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.Initializer.parameter.suspendImmediateTriggers">suspendImmediateTriggers</a></code> | <code>java.util.List<java.lang.Number></code> | A list of percentage thresholds at which to immediately suspend all warehouses. |
+| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.Initializer.parameter.suspendImmediateTrigger">suspendImmediateTrigger</a></code> | <code>java.lang.Number</code> | The number that represents the percentage threshold at which to immediately suspend all warehouses. |
+| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.Initializer.parameter.suspendImmediateTriggers">suspendImmediateTriggers</a></code> | <code>java.util.List<java.lang.Number></code> | A list of percentage thresholds at which to suspend all warehouses. |
+| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.Initializer.parameter.suspendTrigger">suspendTrigger</a></code> | <code>java.lang.Number</code> | The number that represents the percentage threshold at which to suspend all warehouses. |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.Initializer.parameter.suspendTriggers">suspendTriggers</a></code> | <code>java.util.List<java.lang.Number></code> | A list of percentage thresholds at which to suspend all warehouses. |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.Initializer.parameter.warehouses">warehouses</a></code> | <code>java.util.List<java.lang.String></code> | A list of warehouses to apply the resource monitor to. |
 
@@ -201,7 +205,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Specifies whether the resource monitor should be applied globally to your Snowflake account.
+Specifies whether the resource monitor should be applied globally to your Snowflake account (defaults to false).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/resource_monitor#set_for_account ResourceMonitor#set_for_account}
 
@@ -217,13 +221,33 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 ---
 
+##### `suspendImmediateTrigger`<sup>Optional</sup> <a name="suspendImmediateTrigger" id="@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.Initializer.parameter.suspendImmediateTrigger"></a>
+
+- *Type:* java.lang.Number
+
+The number that represents the percentage threshold at which to immediately suspend all warehouses.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/resource_monitor#suspend_immediate_trigger ResourceMonitor#suspend_immediate_trigger}
+
+---
+
 ##### `suspendImmediateTriggers`<sup>Optional</sup> <a name="suspendImmediateTriggers" id="@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.Initializer.parameter.suspendImmediateTriggers"></a>
 
 - *Type:* java.util.List<java.lang.Number>
 
-A list of percentage thresholds at which to immediately suspend all warehouses.
+A list of percentage thresholds at which to suspend all warehouses.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/resource_monitor#suspend_immediate_triggers ResourceMonitor#suspend_immediate_triggers}
+
+---
+
+##### `suspendTrigger`<sup>Optional</sup> <a name="suspendTrigger" id="@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.Initializer.parameter.suspendTrigger"></a>
+
+- *Type:* java.lang.Number
+
+The number that represents the percentage threshold at which to suspend all warehouses.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/resource_monitor#suspend_trigger ResourceMonitor#suspend_trigger}
 
 ---
 
@@ -275,7 +299,9 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.resetNotifyUsers">resetNotifyUsers</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.resetSetForAccount">resetSetForAccount</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.resetStartTimestamp">resetStartTimestamp</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.resetSuspendImmediateTrigger">resetSuspendImmediateTrigger</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.resetSuspendImmediateTriggers">resetSuspendImmediateTriggers</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.resetSuspendTrigger">resetSuspendTrigger</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.resetSuspendTriggers">resetSuspendTriggers</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.resetWarehouses">resetWarehouses</a></code> | *No description.* |
 
@@ -513,10 +539,22 @@ public void resetSetForAccount()
 public void resetStartTimestamp()
 ```
 
+##### `resetSuspendImmediateTrigger` <a name="resetSuspendImmediateTrigger" id="@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.resetSuspendImmediateTrigger"></a>
+
+```java
+public void resetSuspendImmediateTrigger()
+```
+
 ##### `resetSuspendImmediateTriggers` <a name="resetSuspendImmediateTriggers" id="@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.resetSuspendImmediateTriggers"></a>
 
 ```java
 public void resetSuspendImmediateTriggers()
+```
+
+##### `resetSuspendTrigger` <a name="resetSuspendTrigger" id="@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.resetSuspendTrigger"></a>
+
+```java
+public void resetSuspendTrigger()
 ```
 
 ##### `resetSuspendTriggers` <a name="resetSuspendTriggers" id="@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.resetSuspendTriggers"></a>
@@ -628,7 +666,9 @@ ResourceMonitor.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.notifyUsersInput">notifyUsersInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.setForAccountInput">setForAccountInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.startTimestampInput">startTimestampInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.suspendImmediateTriggerInput">suspendImmediateTriggerInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.suspendImmediateTriggersInput">suspendImmediateTriggersInput</a></code> | <code>java.util.List<java.lang.Number></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.suspendTriggerInput">suspendTriggerInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.suspendTriggersInput">suspendTriggersInput</a></code> | <code>java.util.List<java.lang.Number></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.warehousesInput">warehousesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.creditQuota">creditQuota</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -640,7 +680,9 @@ ResourceMonitor.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.notifyUsers">notifyUsers</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.setForAccount">setForAccount</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.startTimestamp">startTimestamp</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.suspendImmediateTrigger">suspendImmediateTrigger</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.suspendImmediateTriggers">suspendImmediateTriggers</a></code> | <code>java.util.List<java.lang.Number></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.suspendTrigger">suspendTrigger</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.suspendTriggers">suspendTriggers</a></code> | <code>java.util.List<java.lang.Number></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.warehouses">warehouses</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 
@@ -878,6 +920,16 @@ public java.lang.String getStartTimestampInput();
 
 ---
 
+##### `suspendImmediateTriggerInput`<sup>Optional</sup> <a name="suspendImmediateTriggerInput" id="@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.suspendImmediateTriggerInput"></a>
+
+```java
+public java.lang.Number getSuspendImmediateTriggerInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
 ##### `suspendImmediateTriggersInput`<sup>Optional</sup> <a name="suspendImmediateTriggersInput" id="@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.suspendImmediateTriggersInput"></a>
 
 ```java
@@ -885,6 +937,16 @@ public java.util.List<java.lang.Number> getSuspendImmediateTriggersInput();
 ```
 
 - *Type:* java.util.List<java.lang.Number>
+
+---
+
+##### `suspendTriggerInput`<sup>Optional</sup> <a name="suspendTriggerInput" id="@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.suspendTriggerInput"></a>
+
+```java
+public java.lang.Number getSuspendTriggerInput();
+```
+
+- *Type:* java.lang.Number
 
 ---
 
@@ -998,6 +1060,16 @@ public java.lang.String getStartTimestamp();
 
 ---
 
+##### `suspendImmediateTrigger`<sup>Required</sup> <a name="suspendImmediateTrigger" id="@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.suspendImmediateTrigger"></a>
+
+```java
+public java.lang.Number getSuspendImmediateTrigger();
+```
+
+- *Type:* java.lang.Number
+
+---
+
 ##### `suspendImmediateTriggers`<sup>Required</sup> <a name="suspendImmediateTriggers" id="@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.suspendImmediateTriggers"></a>
 
 ```java
@@ -1005,6 +1077,16 @@ public java.util.List<java.lang.Number> getSuspendImmediateTriggers();
 ```
 
 - *Type:* java.util.List<java.lang.Number>
+
+---
+
+##### `suspendTrigger`<sup>Required</sup> <a name="suspendTrigger" id="@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.suspendTrigger"></a>
+
+```java
+public java.lang.Number getSuspendTrigger();
+```
+
+- *Type:* java.lang.Number
 
 ---
 
@@ -1076,7 +1158,9 @@ ResourceMonitorConfig.builder()
 //  .setForAccount(java.lang.Boolean)
 //  .setForAccount(IResolvable)
 //  .startTimestamp(java.lang.String)
+//  .suspendImmediateTrigger(java.lang.Number)
 //  .suspendImmediateTriggers(java.util.List<java.lang.Number>)
+//  .suspendTrigger(java.lang.Number)
 //  .suspendTriggers(java.util.List<java.lang.Number>)
 //  .warehouses(java.util.List<java.lang.String>)
     .build();
@@ -1100,9 +1184,11 @@ ResourceMonitorConfig.builder()
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/resource_monitor#id ResourceMonitor#id}. |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.notifyTriggers">notifyTriggers</a></code> | <code>java.util.List<java.lang.Number></code> | A list of percentage thresholds at which to send an alert to subscribed users. |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.notifyUsers">notifyUsers</a></code> | <code>java.util.List<java.lang.String></code> | Specifies the list of users to receive email notifications on resource monitors. |
-| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.setForAccount">setForAccount</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Specifies whether the resource monitor should be applied globally to your Snowflake account. |
+| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.setForAccount">setForAccount</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Specifies whether the resource monitor should be applied globally to your Snowflake account (defaults to false). |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.startTimestamp">startTimestamp</a></code> | <code>java.lang.String</code> | The date and time when the resource monitor starts monitoring credit usage for the assigned warehouses. |
-| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.suspendImmediateTriggers">suspendImmediateTriggers</a></code> | <code>java.util.List<java.lang.Number></code> | A list of percentage thresholds at which to immediately suspend all warehouses. |
+| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.suspendImmediateTrigger">suspendImmediateTrigger</a></code> | <code>java.lang.Number</code> | The number that represents the percentage threshold at which to immediately suspend all warehouses. |
+| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.suspendImmediateTriggers">suspendImmediateTriggers</a></code> | <code>java.util.List<java.lang.Number></code> | A list of percentage thresholds at which to suspend all warehouses. |
+| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.suspendTrigger">suspendTrigger</a></code> | <code>java.lang.Number</code> | The number that represents the percentage threshold at which to suspend all warehouses. |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.suspendTriggers">suspendTriggers</a></code> | <code>java.util.List<java.lang.Number></code> | A list of percentage thresholds at which to suspend all warehouses. |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.warehouses">warehouses</a></code> | <code>java.util.List<java.lang.String></code> | A list of warehouses to apply the resource monitor to. |
 
@@ -1287,7 +1373,7 @@ public java.lang.Object getSetForAccount();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Specifies whether the resource monitor should be applied globally to your Snowflake account.
+Specifies whether the resource monitor should be applied globally to your Snowflake account (defaults to false).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/resource_monitor#set_for_account ResourceMonitor#set_for_account}
 
@@ -1307,6 +1393,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 ---
 
+##### `suspendImmediateTrigger`<sup>Optional</sup> <a name="suspendImmediateTrigger" id="@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.suspendImmediateTrigger"></a>
+
+```java
+public java.lang.Number getSuspendImmediateTrigger();
+```
+
+- *Type:* java.lang.Number
+
+The number that represents the percentage threshold at which to immediately suspend all warehouses.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/resource_monitor#suspend_immediate_trigger ResourceMonitor#suspend_immediate_trigger}
+
+---
+
 ##### `suspendImmediateTriggers`<sup>Optional</sup> <a name="suspendImmediateTriggers" id="@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.suspendImmediateTriggers"></a>
 
 ```java
@@ -1315,9 +1415,23 @@ public java.util.List<java.lang.Number> getSuspendImmediateTriggers();
 
 - *Type:* java.util.List<java.lang.Number>
 
-A list of percentage thresholds at which to immediately suspend all warehouses.
+A list of percentage thresholds at which to suspend all warehouses.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/resource_monitor#suspend_immediate_triggers ResourceMonitor#suspend_immediate_triggers}
+
+---
+
+##### `suspendTrigger`<sup>Optional</sup> <a name="suspendTrigger" id="@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.suspendTrigger"></a>
+
+```java
+public java.lang.Number getSuspendTrigger();
+```
+
+- *Type:* java.lang.Number
+
+The number that represents the percentage threshold at which to suspend all warehouses.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/resource_monitor#suspend_trigger ResourceMonitor#suspend_trigger}
 
 ---
 

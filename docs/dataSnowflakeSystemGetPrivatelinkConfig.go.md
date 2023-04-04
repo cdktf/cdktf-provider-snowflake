@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/snowflake/d/system_g
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakesystemgetprivatelinkconfig"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakesystemgetprivatelinkconfig"
 
 datasnowflakesystemgetprivatelinkconfig.NewDataSnowflakeSystemGetPrivatelinkConfig(scope Construct, id *string, config DataSnowflakeSystemGetPrivatelinkConfigConfig) DataSnowflakeSystemGetPrivatelinkConfig
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakesystemgetprivatelinkconfig"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakesystemgetprivatelinkconfig"
 
 datasnowflakesystemgetprivatelinkconfig.DataSnowflakeSystemGetPrivatelinkConfig_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakesystemgetprivatelinkconfig"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakesystemgetprivatelinkconfig"
 
 datasnowflakesystemgetprivatelinkconfig.DataSnowflakeSystemGetPrivatelinkConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ datasnowflakesystemgetprivatelinkconfig.DataSnowflakeSystemGetPrivatelinkConfig_
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakesystemgetprivatelinkconfig"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakesystemgetprivatelinkconfig"
 
 datasnowflakesystemgetprivatelinkconfig.DataSnowflakeSystemGetPrivatelinkConfig_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,11 @@ datasnowflakesystemgetprivatelinkconfig.DataSnowflakeSystemGetPrivatelinkConfig_
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.accountUrl">AccountUrl</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.awsVpceId">AwsVpceId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.azurePlsId">AzurePlsId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.internalStage">InternalStage</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.ocspUrl">OcspUrl</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.regionlessAccountUrl">RegionlessAccountUrl</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.regionlessSnowsightUrl">RegionlessSnowsightUrl</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.snowsightUrl">SnowsightUrl</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 
@@ -518,10 +522,50 @@ func AzurePlsId() *string
 
 ---
 
+##### `InternalStage`<sup>Required</sup> <a name="InternalStage" id="@cdktf/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.internalStage"></a>
+
+```go
+func InternalStage() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `OcspUrl`<sup>Required</sup> <a name="OcspUrl" id="@cdktf/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.ocspUrl"></a>
 
 ```go
 func OcspUrl() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RegionlessAccountUrl`<sup>Required</sup> <a name="RegionlessAccountUrl" id="@cdktf/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.regionlessAccountUrl"></a>
+
+```go
+func RegionlessAccountUrl() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RegionlessSnowsightUrl`<sup>Required</sup> <a name="RegionlessSnowsightUrl" id="@cdktf/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.regionlessSnowsightUrl"></a>
+
+```go
+func RegionlessSnowsightUrl() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `SnowsightUrl`<sup>Required</sup> <a name="SnowsightUrl" id="@cdktf/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.snowsightUrl"></a>
+
+```go
+func SnowsightUrl() *string
 ```
 
 - *Type:* *string
@@ -573,7 +617,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakesystemgetprivatelinkconfig"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakesystemgetprivatelinkconfig"
 
 &datasnowflakesystemgetprivatelinkconfig.DataSnowflakeSystemGetPrivatelinkConfigConfig {
 	Connection: interface{},

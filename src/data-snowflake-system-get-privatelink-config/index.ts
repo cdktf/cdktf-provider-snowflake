@@ -42,7 +42,7 @@ export class DataSnowflakeSystemGetPrivatelinkConfig extends cdktf.TerraformData
       terraformResourceType: 'snowflake_system_get_privatelink_config',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.58.0',
+        providerVersion: '0.61.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
@@ -96,9 +96,29 @@ export class DataSnowflakeSystemGetPrivatelinkConfig extends cdktf.TerraformData
     return this._id;
   }
 
+  // internal_stage - computed: true, optional: false, required: false
+  public get internalStage() {
+    return this.getStringAttribute('internal_stage');
+  }
+
   // ocsp_url - computed: true, optional: false, required: false
   public get ocspUrl() {
     return this.getStringAttribute('ocsp_url');
+  }
+
+  // regionless_account_url - computed: true, optional: false, required: false
+  public get regionlessAccountUrl() {
+    return this.getStringAttribute('regionless_account_url');
+  }
+
+  // regionless_snowsight_url - computed: true, optional: false, required: false
+  public get regionlessSnowsightUrl() {
+    return this.getStringAttribute('regionless_snowsight_url');
+  }
+
+  // snowsight_url - computed: true, optional: false, required: false
+  public get snowsightUrl() {
+    return this.getStringAttribute('snowsight_url');
   }
 
   // =========

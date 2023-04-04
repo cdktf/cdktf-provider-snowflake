@@ -404,6 +404,7 @@ Account.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-snowflake.account.Account.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.account.Account.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.account.Account.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.account.Account.property.isOrgAdmin">IsOrgAdmin</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.account.Account.property.adminNameInput">AdminNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.account.Account.property.adminPasswordInput">AdminPasswordInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.account.Account.property.adminRsaPublicKeyInput">AdminRsaPublicKeyInput</a></code> | <code>string</code> | *No description.* |
@@ -572,6 +573,16 @@ public object[] Provisioners { get; }
 ```
 
 - *Type:* object[]
+
+---
+
+##### `IsOrgAdmin`<sup>Required</sup> <a name="IsOrgAdmin" id="@cdktf/provider-snowflake.account.Account.property.isOrgAdmin"></a>
+
+```csharp
+public IResolvable IsOrgAdmin { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.IResolvable
 
 ---
 

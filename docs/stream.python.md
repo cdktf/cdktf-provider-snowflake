@@ -28,6 +28,7 @@ stream.Stream(
   comment: str = None,
   id: str = None,
   insert_only: typing.Union[bool, IResolvable] = None,
+  on_stage: str = None,
   on_table: str = None,
   on_view: str = None,
   show_initial_rows: typing.Union[bool, IResolvable] = None
@@ -52,6 +53,7 @@ stream.Stream(
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.Initializer.parameter.comment">comment</a></code> | <code>str</code> | Specifies a comment for the stream. |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stream#id Stream#id}. |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.Initializer.parameter.insertOnly">insert_only</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Create an insert only stream type. |
+| <code><a href="#@cdktf/provider-snowflake.stream.Stream.Initializer.parameter.onStage">on_stage</a></code> | <code>str</code> | Name of the stage the stream will monitor. |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.Initializer.parameter.onTable">on_table</a></code> | <code>str</code> | Name of the table the stream will monitor. |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.Initializer.parameter.onView">on_view</a></code> | <code>str</code> | Name of the view the stream will monitor. |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.Initializer.parameter.showInitialRows">show_initial_rows</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether to return all existing rows in the source table as row inserts the first time the stream is consumed. |
@@ -191,6 +193,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 ---
 
+##### `on_stage`<sup>Optional</sup> <a name="on_stage" id="@cdktf/provider-snowflake.stream.Stream.Initializer.parameter.onStage"></a>
+
+- *Type:* str
+
+Name of the stage the stream will monitor.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stream#on_stage Stream#on_stage}
+
+---
+
 ##### `on_table`<sup>Optional</sup> <a name="on_table" id="@cdktf/provider-snowflake.stream.Stream.Initializer.parameter.onTable"></a>
 
 - *Type:* str
@@ -245,6 +257,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.resetComment">reset_comment</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.resetInsertOnly">reset_insert_only</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.stream.Stream.resetOnStage">reset_on_stage</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.resetOnTable">reset_on_table</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.resetOnView">reset_on_view</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.resetShowInitialRows">reset_show_initial_rows</a></code> | *No description.* |
@@ -484,6 +497,12 @@ def reset_id() -> None
 def reset_insert_only() -> None
 ```
 
+##### `reset_on_stage` <a name="reset_on_stage" id="@cdktf/provider-snowflake.stream.Stream.resetOnStage"></a>
+
+```python
+def reset_on_stage() -> None
+```
+
 ##### `reset_on_table` <a name="reset_on_table" id="@cdktf/provider-snowflake.stream.Stream.resetOnTable"></a>
 
 ```python
@@ -603,6 +622,7 @@ stream.Stream.is_terraform_resource(
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.insertOnlyInput">insert_only_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.onStageInput">on_stage_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.onTableInput">on_table_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.onViewInput">on_view_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.schemaInput">schema_input</a></code> | <code>str</code> | *No description.* |
@@ -613,6 +633,7 @@ stream.Stream.is_terraform_resource(
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.insertOnly">insert_only</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.onStage">on_stage</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.onTable">on_table</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.onView">on_view</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.schema">schema</a></code> | <code>str</code> | *No description.* |
@@ -832,6 +853,16 @@ name_input: str
 
 ---
 
+##### `on_stage_input`<sup>Optional</sup> <a name="on_stage_input" id="@cdktf/provider-snowflake.stream.Stream.property.onStageInput"></a>
+
+```python
+on_stage_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `on_table_input`<sup>Optional</sup> <a name="on_table_input" id="@cdktf/provider-snowflake.stream.Stream.property.onTableInput"></a>
 
 ```python
@@ -932,6 +963,16 @@ name: str
 
 ---
 
+##### `on_stage`<sup>Required</sup> <a name="on_stage" id="@cdktf/provider-snowflake.stream.Stream.property.onStage"></a>
+
+```python
+on_stage: str
+```
+
+- *Type:* str
+
+---
+
 ##### `on_table`<sup>Required</sup> <a name="on_table" id="@cdktf/provider-snowflake.stream.Stream.property.onTable"></a>
 
 ```python
@@ -1014,6 +1055,7 @@ stream.StreamConfig(
   comment: str = None,
   id: str = None,
   insert_only: typing.Union[bool, IResolvable] = None,
+  on_stage: str = None,
   on_table: str = None,
   on_view: str = None,
   show_initial_rows: typing.Union[bool, IResolvable] = None
@@ -1038,6 +1080,7 @@ stream.StreamConfig(
 | <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.comment">comment</a></code> | <code>str</code> | Specifies a comment for the stream. |
 | <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stream#id Stream#id}. |
 | <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.insertOnly">insert_only</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Create an insert only stream type. |
+| <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.onStage">on_stage</a></code> | <code>str</code> | Name of the stage the stream will monitor. |
 | <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.onTable">on_table</a></code> | <code>str</code> | Name of the table the stream will monitor. |
 | <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.onView">on_view</a></code> | <code>str</code> | Name of the view the stream will monitor. |
 | <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.showInitialRows">show_initial_rows</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether to return all existing rows in the source table as row inserts the first time the stream is consumed. |
@@ -1212,6 +1255,20 @@ insert_only: typing.Union[bool, IResolvable]
 Create an insert only stream type.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stream#insert_only Stream#insert_only}
+
+---
+
+##### `on_stage`<sup>Optional</sup> <a name="on_stage" id="@cdktf/provider-snowflake.stream.StreamConfig.property.onStage"></a>
+
+```python
+on_stage: str
+```
+
+- *Type:* str
+
+Name of the stage the stream will monitor.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stream#on_stage Stream#on_stage}
 
 ---
 

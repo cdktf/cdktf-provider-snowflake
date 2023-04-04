@@ -70,6 +70,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.resetObjectIdentifier">resetObjectIdentifier</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.resetObjectType">resetObjectType</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.resetOnAccount">resetOnAccount</a></code> | *No description.* |
 
 ---
 
@@ -287,6 +288,12 @@ public resetObjectIdentifier(): void
 public resetObjectType(): void
 ```
 
+##### `resetOnAccount` <a name="resetOnAccount" id="@cdktf/provider-snowflake.objectParameter.ObjectParameter.resetOnAccount"></a>
+
+```typescript
+public resetOnAccount(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -380,10 +387,12 @@ objectParameter.ObjectParameter.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.keyInput">keyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.objectIdentifierInput">objectIdentifierInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameterObjectIdentifier">ObjectParameterObjectIdentifier</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.objectTypeInput">objectTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.onAccountInput">onAccountInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.key">key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.objectType">objectType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.onAccount">onAccount</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.value">value</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -580,6 +589,16 @@ public readonly objectTypeInput: string;
 
 ---
 
+##### `onAccountInput`<sup>Optional</sup> <a name="onAccountInput" id="@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.onAccountInput"></a>
+
+```typescript
+public readonly onAccountInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `valueInput`<sup>Optional</sup> <a name="valueInput" id="@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.valueInput"></a>
 
 ```typescript
@@ -617,6 +636,16 @@ public readonly objectType: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `onAccount`<sup>Required</sup> <a name="onAccount" id="@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.onAccount"></a>
+
+```typescript
+public readonly onAccount: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -676,6 +705,7 @@ const objectParameterConfig: objectParameter.ObjectParameterConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameterConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/object_parameter#id ObjectParameter#id}. |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameterConfig.property.objectIdentifier">objectIdentifier</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameterObjectIdentifier">ObjectParameterObjectIdentifier</a>[]</code> | object_identifier block. |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameterConfig.property.objectType">objectType</a></code> | <code>string</code> | Type of object to which the parameter applies. |
+| <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameterConfig.property.onAccount">onAccount</a></code> | <code>boolean \| cdktf.IResolvable</code> | If true, the object parameter will be set on the account level. |
 
 ---
 
@@ -819,6 +849,20 @@ Type of object to which the parameter applies.
 Valid values are those in [object types](https://docs.snowflake.com/en/sql-reference/parameters.html#object-types). If no value is provided, then the resource will default to setting the object parameter at account level.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/object_parameter#object_type ObjectParameter#object_type}
+
+---
+
+##### `onAccount`<sup>Optional</sup> <a name="onAccount" id="@cdktf/provider-snowflake.objectParameter.ObjectParameterConfig.property.onAccount"></a>
+
+```typescript
+public readonly onAccount: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+If true, the object parameter will be set on the account level.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/object_parameter#on_account ObjectParameter#on_account}
 
 ---
 

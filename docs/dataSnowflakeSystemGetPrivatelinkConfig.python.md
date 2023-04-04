@@ -446,7 +446,11 @@ dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.accountUrl">account_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.awsVpceId">aws_vpce_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.azurePlsId">azure_pls_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.internalStage">internal_stage</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.ocspUrl">ocsp_url</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.regionlessAccountUrl">regionless_account_url</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.regionlessSnowsightUrl">regionless_snowsight_url</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.snowsightUrl">snowsight_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.id">id</a></code> | <code>str</code> | *No description.* |
 
@@ -614,10 +618,50 @@ azure_pls_id: str
 
 ---
 
+##### `internal_stage`<sup>Required</sup> <a name="internal_stage" id="@cdktf/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.internalStage"></a>
+
+```python
+internal_stage: str
+```
+
+- *Type:* str
+
+---
+
 ##### `ocsp_url`<sup>Required</sup> <a name="ocsp_url" id="@cdktf/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.ocspUrl"></a>
 
 ```python
 ocsp_url: str
+```
+
+- *Type:* str
+
+---
+
+##### `regionless_account_url`<sup>Required</sup> <a name="regionless_account_url" id="@cdktf/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.regionlessAccountUrl"></a>
+
+```python
+regionless_account_url: str
+```
+
+- *Type:* str
+
+---
+
+##### `regionless_snowsight_url`<sup>Required</sup> <a name="regionless_snowsight_url" id="@cdktf/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.regionlessSnowsightUrl"></a>
+
+```python
+regionless_snowsight_url: str
+```
+
+- *Type:* str
+
+---
+
+##### `snowsight_url`<sup>Required</sup> <a name="snowsight_url" id="@cdktf/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.property.snowsightUrl"></a>
+
+```python
+snowsight_url: str
 ```
 
 - *Type:* str

@@ -45,6 +45,12 @@ export interface OauthIntegrationConfig extends cdktf.TerraformMetaArguments {
   */
   readonly oauthClient: string;
   /**
+  * Specifies the type of client being registered. Snowflake supports both confidential and public clients.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/oauth_integration#oauth_client_type OauthIntegration#oauth_client_type}
+  */
+  readonly oauthClientType?: string;
+  /**
   * Specifies whether to allow the client to exchange a refresh token for an access token when the current access token has expired.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/oauth_integration#oauth_issue_refresh_tokens OauthIntegration#oauth_issue_refresh_tokens}
@@ -96,7 +102,7 @@ export class OauthIntegration extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_oauth_integration',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.58.0',
+        providerVersion: '0.61.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
@@ -113,6 +119,7 @@ export class OauthIntegration extends cdktf.TerraformResource {
     this._id = config.id;
     this._name = config.name;
     this._oauthClient = config.oauthClient;
+    this._oauthClientType = config.oauthClientType;
     this._oauthIssueRefreshTokens = config.oauthIssueRefreshTokens;
     this._oauthRedirectUri = config.oauthRedirectUri;
     this._oauthRefreshTokenValidity = config.oauthRefreshTokenValidity;
@@ -218,6 +225,22 @@ export class OauthIntegration extends cdktf.TerraformResource {
     return this._oauthClient;
   }
 
+  // oauth_client_type - computed: false, optional: true, required: false
+  private _oauthClientType?: string; 
+  public get oauthClientType() {
+    return this.getStringAttribute('oauth_client_type');
+  }
+  public set oauthClientType(value: string) {
+    this._oauthClientType = value;
+  }
+  public resetOauthClientType() {
+    this._oauthClientType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get oauthClientTypeInput() {
+    return this._oauthClientType;
+  }
+
   // oauth_issue_refresh_tokens - computed: false, optional: true, required: false
   private _oauthIssueRefreshTokens?: boolean | cdktf.IResolvable; 
   public get oauthIssueRefreshTokens() {
@@ -294,6 +317,7 @@ export class OauthIntegration extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       oauth_client: cdktf.stringToTerraform(this._oauthClient),
+      oauth_client_type: cdktf.stringToTerraform(this._oauthClientType),
       oauth_issue_refresh_tokens: cdktf.booleanToTerraform(this._oauthIssueRefreshTokens),
       oauth_redirect_uri: cdktf.stringToTerraform(this._oauthRedirectUri),
       oauth_refresh_token_validity: cdktf.numberToTerraform(this._oauthRefreshTokenValidity),

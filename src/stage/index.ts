@@ -302,7 +302,7 @@ export class Stage extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_stage',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.58.0',
+        providerVersion: '0.61.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,

@@ -27,6 +27,7 @@ DataSnowflakeParameters.Builder.create(Construct scope, java.lang.String id)
 //  .objectType(java.lang.String)
 //  .parameterType(java.lang.String)
 //  .pattern(java.lang.String)
+//  .user(java.lang.String)
     .build();
 ```
 
@@ -46,6 +47,7 @@ DataSnowflakeParameters.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.Initializer.parameter.objectType">objectType</a></code> | <code>java.lang.String</code> | If parameter_type is set to "OBJECT" then object_type is the type of object to display object parameters for. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.Initializer.parameter.parameterType">parameterType</a></code> | <code>java.lang.String</code> | The type of parameter to filter by. Valid values are: "ACCOUNT", "SESSION", "OBJECT". |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.Initializer.parameter.pattern">pattern</a></code> | <code>java.lang.String</code> | Allows limiting the list of parameters by name using LIKE clause. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.Initializer.parameter.user">user</a></code> | <code>java.lang.String</code> | If parameter_type is set to "SESSION" then user is the name of the user to display session parameters for. |
 
 ---
 
@@ -164,6 +166,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 ---
 
+##### `user`<sup>Optional</sup> <a name="user" id="@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.Initializer.parameter.user"></a>
+
+- *Type:* java.lang.String
+
+If parameter_type is set to "SESSION" then user is the name of the user to display session parameters for.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/parameters#user DataSnowflakeParameters#user}
+
+---
+
 #### Methods <a name="Methods" id="Methods"></a>
 
 | **Name** | **Description** |
@@ -189,6 +201,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.resetObjectType">resetObjectType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.resetParameterType">resetParameterType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.resetPattern">resetPattern</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.resetUser">resetUser</a></code> | *No description.* |
 
 ---
 
@@ -406,6 +419,12 @@ public void resetParameterType()
 public void resetPattern()
 ```
 
+##### `resetUser` <a name="resetUser" id="@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.resetUser"></a>
+
+```java
+public void resetUser()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -498,11 +517,13 @@ DataSnowflakeParameters.isTerraformDataSource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.objectTypeInput">objectTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.parameterTypeInput">parameterTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.patternInput">patternInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.userInput">userInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.objectName">objectName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.objectType">objectType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.parameterType">parameterType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.pattern">pattern</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.user">user</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
 
@@ -688,6 +709,16 @@ public java.lang.String getPatternInput();
 
 ---
 
+##### `userInput`<sup>Optional</sup> <a name="userInput" id="@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.userInput"></a>
+
+```java
+public java.lang.String getUserInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.id"></a>
 
 ```java
@@ -738,6 +769,16 @@ public java.lang.String getPattern();
 
 ---
 
+##### `user`<sup>Required</sup> <a name="user" id="@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.user"></a>
+
+```java
+public java.lang.String getUser();
+```
+
+- *Type:* java.lang.String
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -781,6 +822,7 @@ DataSnowflakeParametersConfig.builder()
 //  .objectType(java.lang.String)
 //  .parameterType(java.lang.String)
 //  .pattern(java.lang.String)
+//  .user(java.lang.String)
     .build();
 ```
 
@@ -800,6 +842,7 @@ DataSnowflakeParametersConfig.builder()
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParametersConfig.property.objectType">objectType</a></code> | <code>java.lang.String</code> | If parameter_type is set to "OBJECT" then object_type is the type of object to display object parameters for. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParametersConfig.property.parameterType">parameterType</a></code> | <code>java.lang.String</code> | The type of parameter to filter by. Valid values are: "ACCOUNT", "SESSION", "OBJECT". |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParametersConfig.property.pattern">pattern</a></code> | <code>java.lang.String</code> | Allows limiting the list of parameters by name using LIKE clause. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParametersConfig.property.user">user</a></code> | <code>java.lang.String</code> | If parameter_type is set to "SESSION" then user is the name of the user to display session parameters for. |
 
 ---
 
@@ -945,6 +988,20 @@ Allows limiting the list of parameters by name using LIKE clause.
 Refer to [Limiting the List of Parameters by Name](https://docs.snowflake.com/en/sql-reference/parameters.html#limiting-the-list-of-parameters-by-name)
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/parameters#pattern DataSnowflakeParameters#pattern}
+
+---
+
+##### `user`<sup>Optional</sup> <a name="user" id="@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParametersConfig.property.user"></a>
+
+```java
+public java.lang.String getUser();
+```
+
+- *Type:* java.lang.String
+
+If parameter_type is set to "SESSION" then user is the name of the user to display session parameters for.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/parameters#user DataSnowflakeParameters#user}
 
 ---
 

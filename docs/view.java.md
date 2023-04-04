@@ -27,6 +27,8 @@ View.Builder.create(Construct scope, java.lang.String id)
     .schema(java.lang.String)
     .statement(java.lang.String)
 //  .comment(java.lang.String)
+//  .copyGrants(java.lang.Boolean)
+//  .copyGrants(IResolvable)
 //  .id(java.lang.String)
 //  .isSecure(java.lang.Boolean)
 //  .isSecure(IResolvable)
@@ -53,6 +55,7 @@ View.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-snowflake.view.View.Initializer.parameter.schema">schema</a></code> | <code>java.lang.String</code> | The schema in which to create the view. Don't use the \| character. |
 | <code><a href="#@cdktf/provider-snowflake.view.View.Initializer.parameter.statement">statement</a></code> | <code>java.lang.String</code> | Specifies the query used to create the view. |
 | <code><a href="#@cdktf/provider-snowflake.view.View.Initializer.parameter.comment">comment</a></code> | <code>java.lang.String</code> | Specifies a comment for the view. |
+| <code><a href="#@cdktf/provider-snowflake.view.View.Initializer.parameter.copyGrants">copyGrants</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Retains the access permissions from the original view when a new view is created using the OR REPLACE clause. |
 | <code><a href="#@cdktf/provider-snowflake.view.View.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view#id View#id}. |
 | <code><a href="#@cdktf/provider-snowflake.view.View.Initializer.parameter.isSecure">isSecure</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Specifies that the view is secure. |
 | <code><a href="#@cdktf/provider-snowflake.view.View.Initializer.parameter.orReplace">orReplace</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Overwrites the View if it exists. |
@@ -172,6 +175,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 ---
 
+##### `copyGrants`<sup>Optional</sup> <a name="copyGrants" id="@cdktf/provider-snowflake.view.View.Initializer.parameter.copyGrants"></a>
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Retains the access permissions from the original view when a new view is created using the OR REPLACE clause.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view#copy_grants View#copy_grants}
+
+---
+
 ##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-snowflake.view.View.Initializer.parameter.id"></a>
 
 - *Type:* java.lang.String
@@ -235,6 +248,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 | <code><a href="#@cdktf/provider-snowflake.view.View.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.putTag">putTag</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.resetComment">resetComment</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.view.View.resetCopyGrants">resetCopyGrants</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.resetIsSecure">resetIsSecure</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.resetOrReplace">resetOrReplace</a></code> | *No description.* |
@@ -444,6 +458,12 @@ public void putTag(IResolvable OR java.util.List<ViewTag> value)
 public void resetComment()
 ```
 
+##### `resetCopyGrants` <a name="resetCopyGrants" id="@cdktf/provider-snowflake.view.View.resetCopyGrants"></a>
+
+```java
+public void resetCopyGrants()
+```
+
 ##### `resetId` <a name="resetId" id="@cdktf/provider-snowflake.view.View.resetId"></a>
 
 ```java
@@ -558,6 +578,7 @@ View.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.tag">tag</a></code> | <code><a href="#@cdktf/provider-snowflake.view.ViewTagList">ViewTagList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.commentInput">commentInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.view.View.property.copyGrantsInput">copyGrantsInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.databaseInput">databaseInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.isSecureInput">isSecureInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
@@ -567,6 +588,7 @@ View.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.statementInput">statementInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.tagInput">tagInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-snowflake.view.ViewTag">ViewTag</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.comment">comment</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.view.View.property.copyGrants">copyGrants</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.database">database</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.isSecure">isSecure</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
@@ -739,6 +761,16 @@ public java.lang.String getCommentInput();
 
 ---
 
+##### `copyGrantsInput`<sup>Optional</sup> <a name="copyGrantsInput" id="@cdktf/provider-snowflake.view.View.property.copyGrantsInput"></a>
+
+```java
+public java.lang.Object getCopyGrantsInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
 ##### `databaseInput`<sup>Optional</sup> <a name="databaseInput" id="@cdktf/provider-snowflake.view.View.property.databaseInput"></a>
 
 ```java
@@ -826,6 +858,16 @@ public java.lang.String getComment();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `copyGrants`<sup>Required</sup> <a name="copyGrants" id="@cdktf/provider-snowflake.view.View.property.copyGrants"></a>
+
+```java
+public java.lang.Object getCopyGrants();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -942,6 +984,8 @@ ViewConfig.builder()
     .schema(java.lang.String)
     .statement(java.lang.String)
 //  .comment(java.lang.String)
+//  .copyGrants(java.lang.Boolean)
+//  .copyGrants(IResolvable)
 //  .id(java.lang.String)
 //  .isSecure(java.lang.Boolean)
 //  .isSecure(IResolvable)
@@ -968,6 +1012,7 @@ ViewConfig.builder()
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.schema">schema</a></code> | <code>java.lang.String</code> | The schema in which to create the view. Don't use the \| character. |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.statement">statement</a></code> | <code>java.lang.String</code> | Specifies the query used to create the view. |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.comment">comment</a></code> | <code>java.lang.String</code> | Specifies a comment for the view. |
+| <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.copyGrants">copyGrants</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Retains the access permissions from the original view when a new view is created using the OR REPLACE clause. |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view#id View#id}. |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.isSecure">isSecure</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Specifies that the view is secure. |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.orReplace">orReplace</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Overwrites the View if it exists. |
@@ -1114,6 +1159,20 @@ public java.lang.String getComment();
 Specifies a comment for the view.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view#comment View#comment}
+
+---
+
+##### `copyGrants`<sup>Optional</sup> <a name="copyGrants" id="@cdktf/provider-snowflake.view.ViewConfig.property.copyGrants"></a>
+
+```java
+public java.lang.Object getCopyGrants();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Retains the access permissions from the original view when a new view is created using the OR REPLACE clause.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view#copy_grants View#copy_grants}
 
 ---
 

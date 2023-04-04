@@ -26,6 +26,8 @@ TableGrant.Builder.create(Construct scope, java.lang.String id)
 //  .enableMultipleGrants(java.lang.Boolean)
 //  .enableMultipleGrants(IResolvable)
 //  .id(java.lang.String)
+//  .onAll(java.lang.Boolean)
+//  .onAll(IResolvable)
 //  .onFuture(java.lang.Boolean)
 //  .onFuture(IResolvable)
 //  .privilege(java.lang.String)
@@ -52,12 +54,13 @@ TableGrant.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.Initializer.parameter.databaseName">databaseName</a></code> | <code>java.lang.String</code> | The name of the database containing the current or future tables on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.Initializer.parameter.enableMultipleGrants">enableMultipleGrants</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table_grant#id TableGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.Initializer.parameter.onAll">onAll</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When this is set to true and a schema_name is provided, apply this grant on all all tables in the given schema. |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.Initializer.parameter.onFuture">onFuture</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When this is set to true and a schema_name is provided, apply this grant on all future tables in the given schema. |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.Initializer.parameter.privilege">privilege</a></code> | <code>java.lang.String</code> | The privilege to grant on the current or future table. |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.Initializer.parameter.roles">roles</a></code> | <code>java.util.List<java.lang.String></code> | Grants privilege to these roles. |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.Initializer.parameter.schemaName">schemaName</a></code> | <code>java.lang.String</code> | The name of the schema containing the current or future tables on which to grant privileges. |
-| <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.Initializer.parameter.shares">shares</a></code> | <code>java.util.List<java.lang.String></code> | Grants privilege to these shares (only valid if on_future is unset). |
-| <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.Initializer.parameter.tableName">tableName</a></code> | <code>java.lang.String</code> | The name of the table on which to grant privileges immediately (only valid if on_future is unset). |
+| <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.Initializer.parameter.shares">shares</a></code> | <code>java.util.List<java.lang.String></code> | Grants privilege to these shares (only valid if on_future or on_all is unset). |
+| <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.Initializer.parameter.tableName">tableName</a></code> | <code>java.lang.String</code> | The name of the table on which to grant privileges immediately (only valid if on_future or on_all is unset). |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.Initializer.parameter.withGrantOption">withGrantOption</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When this is set to true, allows the recipient role to grant the privileges to other roles. |
 
 ---
@@ -155,6 +158,18 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
+##### `onAll`<sup>Optional</sup> <a name="onAll" id="@cdktf/provider-snowflake.tableGrant.TableGrant.Initializer.parameter.onAll"></a>
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+When this is set to true and a schema_name is provided, apply this grant on all all tables in the given schema.
+
+When this is true and no schema_name is provided apply this grant on all all tables in the given database. The table_name and shares fields must be unset in order to use on_all.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table_grant#on_all TableGrant#on_all}
+
+---
+
 ##### `onFuture`<sup>Optional</sup> <a name="onFuture" id="@cdktf/provider-snowflake.tableGrant.TableGrant.Initializer.parameter.onFuture"></a>
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
@@ -201,7 +216,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 - *Type:* java.util.List<java.lang.String>
 
-Grants privilege to these shares (only valid if on_future is unset).
+Grants privilege to these shares (only valid if on_future or on_all is unset).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table_grant#shares TableGrant#shares}
 
@@ -211,7 +226,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 - *Type:* java.lang.String
 
-The name of the table on which to grant privileges immediately (only valid if on_future is unset).
+The name of the table on which to grant privileges immediately (only valid if on_future or on_all is unset).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table_grant#table_name TableGrant#table_name}
 
@@ -249,6 +264,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.resetEnableMultipleGrants">resetEnableMultipleGrants</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.resetOnAll">resetOnAll</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.resetOnFuture">resetOnFuture</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.resetPrivilege">resetPrivilege</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.resetRoles">resetRoles</a></code> | *No description.* |
@@ -455,6 +471,12 @@ public void resetEnableMultipleGrants()
 public void resetId()
 ```
 
+##### `resetOnAll` <a name="resetOnAll" id="@cdktf/provider-snowflake.tableGrant.TableGrant.resetOnAll"></a>
+
+```java
+public void resetOnAll()
+```
+
 ##### `resetOnFuture` <a name="resetOnFuture" id="@cdktf/provider-snowflake.tableGrant.TableGrant.resetOnFuture"></a>
 
 ```java
@@ -588,6 +610,7 @@ TableGrant.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.property.databaseNameInput">databaseNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.property.enableMultipleGrantsInput">enableMultipleGrantsInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.property.onAllInput">onAllInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.property.onFutureInput">onFutureInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.property.privilegeInput">privilegeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.property.rolesInput">rolesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
@@ -598,6 +621,7 @@ TableGrant.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.property.databaseName">databaseName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.property.onAll">onAll</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.property.onFuture">onFuture</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.property.privilege">privilege</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.property.roles">roles</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
@@ -780,6 +804,16 @@ public java.lang.String getIdInput();
 
 ---
 
+##### `onAllInput`<sup>Optional</sup> <a name="onAllInput" id="@cdktf/provider-snowflake.tableGrant.TableGrant.property.onAllInput"></a>
+
+```java
+public java.lang.Object getOnAllInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
 ##### `onFutureInput`<sup>Optional</sup> <a name="onFutureInput" id="@cdktf/provider-snowflake.tableGrant.TableGrant.property.onFutureInput"></a>
 
 ```java
@@ -877,6 +911,16 @@ public java.lang.String getId();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `onAll`<sup>Required</sup> <a name="onAll" id="@cdktf/provider-snowflake.tableGrant.TableGrant.property.onAll"></a>
+
+```java
+public java.lang.Object getOnAll();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -992,6 +1036,8 @@ TableGrantConfig.builder()
 //  .enableMultipleGrants(java.lang.Boolean)
 //  .enableMultipleGrants(IResolvable)
 //  .id(java.lang.String)
+//  .onAll(java.lang.Boolean)
+//  .onAll(IResolvable)
 //  .onFuture(java.lang.Boolean)
 //  .onFuture(IResolvable)
 //  .privilege(java.lang.String)
@@ -1018,12 +1064,13 @@ TableGrantConfig.builder()
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.databaseName">databaseName</a></code> | <code>java.lang.String</code> | The name of the database containing the current or future tables on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table_grant#id TableGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.onAll">onAll</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When this is set to true and a schema_name is provided, apply this grant on all all tables in the given schema. |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.onFuture">onFuture</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When this is set to true and a schema_name is provided, apply this grant on all future tables in the given schema. |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.privilege">privilege</a></code> | <code>java.lang.String</code> | The privilege to grant on the current or future table. |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.roles">roles</a></code> | <code>java.util.List<java.lang.String></code> | Grants privilege to these roles. |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.schemaName">schemaName</a></code> | <code>java.lang.String</code> | The name of the schema containing the current or future tables on which to grant privileges. |
-| <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.shares">shares</a></code> | <code>java.util.List<java.lang.String></code> | Grants privilege to these shares (only valid if on_future is unset). |
-| <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.tableName">tableName</a></code> | <code>java.lang.String</code> | The name of the table on which to grant privileges immediately (only valid if on_future is unset). |
+| <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.shares">shares</a></code> | <code>java.util.List<java.lang.String></code> | Grants privilege to these shares (only valid if on_future or on_all is unset). |
+| <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.tableName">tableName</a></code> | <code>java.lang.String</code> | The name of the table on which to grant privileges immediately (only valid if on_future or on_all is unset). |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.withGrantOption">withGrantOption</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When this is set to true, allows the recipient role to grant the privileges to other roles. |
 
 ---
@@ -1143,6 +1190,22 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
+##### `onAll`<sup>Optional</sup> <a name="onAll" id="@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.onAll"></a>
+
+```java
+public java.lang.Object getOnAll();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+When this is set to true and a schema_name is provided, apply this grant on all all tables in the given schema.
+
+When this is true and no schema_name is provided apply this grant on all all tables in the given database. The table_name and shares fields must be unset in order to use on_all.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table_grant#on_all TableGrant#on_all}
+
+---
+
 ##### `onFuture`<sup>Optional</sup> <a name="onFuture" id="@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.onFuture"></a>
 
 ```java
@@ -1209,7 +1272,7 @@ public java.util.List<java.lang.String> getShares();
 
 - *Type:* java.util.List<java.lang.String>
 
-Grants privilege to these shares (only valid if on_future is unset).
+Grants privilege to these shares (only valid if on_future or on_all is unset).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table_grant#shares TableGrant#shares}
 
@@ -1223,7 +1286,7 @@ public java.lang.String getTableName();
 
 - *Type:* java.lang.String
 
-The name of the table on which to grant privileges immediately (only valid if on_future is unset).
+The name of the table on which to grant privileges immediately (only valid if on_future or on_all is unset).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table_grant#table_name TableGrant#table_name}
 

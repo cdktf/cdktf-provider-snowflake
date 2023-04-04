@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/snowflake/d/paramete
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakeparameters"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeparameters"
 
 datasnowflakeparameters.NewDataSnowflakeParameters(scope Construct, id *string, config DataSnowflakeParametersConfig) DataSnowflakeParameters
 ```
@@ -71,6 +71,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.resetObjectType">ResetObjectType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.resetParameterType">ResetParameterType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.resetPattern">ResetPattern</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.resetUser">ResetUser</a></code> | *No description.* |
 
 ---
 
@@ -288,6 +289,12 @@ func ResetParameterType()
 func ResetPattern()
 ```
 
+##### `ResetUser` <a name="ResetUser" id="@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.resetUser"></a>
+
+```go
+func ResetUser()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -301,7 +308,7 @@ func ResetPattern()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakeparameters"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeparameters"
 
 datasnowflakeparameters.DataSnowflakeParameters_IsConstruct(x interface{}) *bool
 ```
@@ -333,7 +340,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakeparameters"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeparameters"
 
 datasnowflakeparameters.DataSnowflakeParameters_IsTerraformElement(x interface{}) *bool
 ```
@@ -347,7 +354,7 @@ datasnowflakeparameters.DataSnowflakeParameters_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakeparameters"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeparameters"
 
 datasnowflakeparameters.DataSnowflakeParameters_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -380,11 +387,13 @@ datasnowflakeparameters.DataSnowflakeParameters_IsTerraformDataSource(x interfac
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.objectTypeInput">ObjectTypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.parameterTypeInput">ParameterTypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.patternInput">PatternInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.userInput">UserInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.objectName">ObjectName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.objectType">ObjectType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.parameterType">ParameterType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.pattern">Pattern</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.user">User</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -570,6 +579,16 @@ func PatternInput() *string
 
 ---
 
+##### `UserInput`<sup>Optional</sup> <a name="UserInput" id="@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.userInput"></a>
+
+```go
+func UserInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.id"></a>
 
 ```go
@@ -620,6 +639,16 @@ func Pattern() *string
 
 ---
 
+##### `User`<sup>Required</sup> <a name="User" id="@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.user"></a>
+
+```go
+func User() *string
+```
+
+- *Type:* *string
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -645,7 +674,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParametersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakeparameters"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeparameters"
 
 &datasnowflakeparameters.DataSnowflakeParametersConfig {
 	Connection: interface{},
@@ -660,6 +689,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakep
 	ObjectType: *string,
 	ParameterType: *string,
 	Pattern: *string,
+	User: *string,
 }
 ```
 
@@ -679,6 +709,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakep
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParametersConfig.property.objectType">ObjectType</a></code> | <code>*string</code> | If parameter_type is set to "OBJECT" then object_type is the type of object to display object parameters for. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParametersConfig.property.parameterType">ParameterType</a></code> | <code>*string</code> | The type of parameter to filter by. Valid values are: "ACCOUNT", "SESSION", "OBJECT". |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParametersConfig.property.pattern">Pattern</a></code> | <code>*string</code> | Allows limiting the list of parameters by name using LIKE clause. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParametersConfig.property.user">User</a></code> | <code>*string</code> | If parameter_type is set to "SESSION" then user is the name of the user to display session parameters for. |
 
 ---
 
@@ -827,12 +858,26 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 ---
 
+##### `User`<sup>Optional</sup> <a name="User" id="@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParametersConfig.property.user"></a>
+
+```go
+User *string
+```
+
+- *Type:* *string
+
+If parameter_type is set to "SESSION" then user is the name of the user to display session parameters for.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/parameters#user DataSnowflakeParameters#user}
+
+---
+
 ### DataSnowflakeParametersParameters <a name="DataSnowflakeParametersParameters" id="@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParametersParameters"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParametersParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakeparameters"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeparameters"
 
 &datasnowflakeparameters.DataSnowflakeParametersParameters {
 
@@ -847,7 +892,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakep
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParametersParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakeparameters"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeparameters"
 
 datasnowflakeparameters.NewDataSnowflakeParametersParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeParametersParametersList
 ```
@@ -979,7 +1024,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParametersParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakeparameters"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeparameters"
 
 datasnowflakeparameters.NewDataSnowflakeParametersParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeParametersParametersOutputReference
 ```

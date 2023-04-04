@@ -57,7 +57,7 @@
     "jsii-pacmak": "^1.79.0",
     "node-fetch": "cjs",
     "npm-check-updates": "^16",
-    "projen": "^0.69.15",
+    "projen": "^0.70.10",
     "standard-version": "^9",
     "typescript": "^4.9.5"
   },
@@ -150,7 +150,7 @@
   "cdktf": {
     "provider": {
       "name": "registry.terraform.io/snowflake-labs/snowflake",
-      "version": "0.58.0"
+      "version": "0.61.0"
     }
   },
   "resolutions": {

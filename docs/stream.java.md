@@ -31,6 +31,7 @@ Stream.Builder.create(Construct scope, java.lang.String id)
 //  .id(java.lang.String)
 //  .insertOnly(java.lang.Boolean)
 //  .insertOnly(IResolvable)
+//  .onStage(java.lang.String)
 //  .onTable(java.lang.String)
 //  .onView(java.lang.String)
 //  .showInitialRows(java.lang.Boolean)
@@ -56,6 +57,7 @@ Stream.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.Initializer.parameter.comment">comment</a></code> | <code>java.lang.String</code> | Specifies a comment for the stream. |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stream#id Stream#id}. |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.Initializer.parameter.insertOnly">insertOnly</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Create an insert only stream type. |
+| <code><a href="#@cdktf/provider-snowflake.stream.Stream.Initializer.parameter.onStage">onStage</a></code> | <code>java.lang.String</code> | Name of the stage the stream will monitor. |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.Initializer.parameter.onTable">onTable</a></code> | <code>java.lang.String</code> | Name of the table the stream will monitor. |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.Initializer.parameter.onView">onView</a></code> | <code>java.lang.String</code> | Name of the view the stream will monitor. |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.Initializer.parameter.showInitialRows">showInitialRows</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Specifies whether to return all existing rows in the source table as row inserts the first time the stream is consumed. |
@@ -195,6 +197,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 ---
 
+##### `onStage`<sup>Optional</sup> <a name="onStage" id="@cdktf/provider-snowflake.stream.Stream.Initializer.parameter.onStage"></a>
+
+- *Type:* java.lang.String
+
+Name of the stage the stream will monitor.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stream#on_stage Stream#on_stage}
+
+---
+
 ##### `onTable`<sup>Optional</sup> <a name="onTable" id="@cdktf/provider-snowflake.stream.Stream.Initializer.parameter.onTable"></a>
 
 - *Type:* java.lang.String
@@ -249,6 +261,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.resetComment">resetComment</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.resetInsertOnly">resetInsertOnly</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.stream.Stream.resetOnStage">resetOnStage</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.resetOnTable">resetOnTable</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.resetOnView">resetOnView</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.resetShowInitialRows">resetShowInitialRows</a></code> | *No description.* |
@@ -463,6 +476,12 @@ public void resetId()
 public void resetInsertOnly()
 ```
 
+##### `resetOnStage` <a name="resetOnStage" id="@cdktf/provider-snowflake.stream.Stream.resetOnStage"></a>
+
+```java
+public void resetOnStage()
+```
+
 ##### `resetOnTable` <a name="resetOnTable" id="@cdktf/provider-snowflake.stream.Stream.resetOnTable"></a>
 
 ```java
@@ -576,6 +595,7 @@ Stream.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.insertOnlyInput">insertOnlyInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.onStageInput">onStageInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.onTableInput">onTableInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.onViewInput">onViewInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.schemaInput">schemaInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -586,6 +606,7 @@ Stream.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.insertOnly">insertOnly</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.onStage">onStage</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.onTable">onTable</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.onView">onView</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.schema">schema</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -805,6 +826,16 @@ public java.lang.String getNameInput();
 
 ---
 
+##### `onStageInput`<sup>Optional</sup> <a name="onStageInput" id="@cdktf/provider-snowflake.stream.Stream.property.onStageInput"></a>
+
+```java
+public java.lang.String getOnStageInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `onTableInput`<sup>Optional</sup> <a name="onTableInput" id="@cdktf/provider-snowflake.stream.Stream.property.onTableInput"></a>
 
 ```java
@@ -905,6 +936,16 @@ public java.lang.String getName();
 
 ---
 
+##### `onStage`<sup>Required</sup> <a name="onStage" id="@cdktf/provider-snowflake.stream.Stream.property.onStage"></a>
+
+```java
+public java.lang.String getOnStage();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `onTable`<sup>Required</sup> <a name="onTable" id="@cdktf/provider-snowflake.stream.Stream.property.onTable"></a>
 
 ```java
@@ -992,6 +1033,7 @@ StreamConfig.builder()
 //  .id(java.lang.String)
 //  .insertOnly(java.lang.Boolean)
 //  .insertOnly(IResolvable)
+//  .onStage(java.lang.String)
 //  .onTable(java.lang.String)
 //  .onView(java.lang.String)
 //  .showInitialRows(java.lang.Boolean)
@@ -1017,6 +1059,7 @@ StreamConfig.builder()
 | <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.comment">comment</a></code> | <code>java.lang.String</code> | Specifies a comment for the stream. |
 | <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stream#id Stream#id}. |
 | <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.insertOnly">insertOnly</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Create an insert only stream type. |
+| <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.onStage">onStage</a></code> | <code>java.lang.String</code> | Name of the stage the stream will monitor. |
 | <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.onTable">onTable</a></code> | <code>java.lang.String</code> | Name of the table the stream will monitor. |
 | <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.onView">onView</a></code> | <code>java.lang.String</code> | Name of the view the stream will monitor. |
 | <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.showInitialRows">showInitialRows</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Specifies whether to return all existing rows in the source table as row inserts the first time the stream is consumed. |
@@ -1191,6 +1234,20 @@ public java.lang.Object getInsertOnly();
 Create an insert only stream type.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stream#insert_only Stream#insert_only}
+
+---
+
+##### `onStage`<sup>Optional</sup> <a name="onStage" id="@cdktf/provider-snowflake.stream.StreamConfig.property.onStage"></a>
+
+```java
+public java.lang.String getOnStage();
+```
+
+- *Type:* java.lang.String
+
+Name of the stage the stream will monitor.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stream#on_stage Stream#on_stage}
 
 ---
 

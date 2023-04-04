@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/account 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.account.Account.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/account"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/account"
 
 account.NewAccount(scope Construct, id *string, config AccountConfig) Account
 ```
@@ -329,7 +329,7 @@ func ResetRegionGroup()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.account.Account.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/account"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/account"
 
 account.Account_IsConstruct(x interface{}) *bool
 ```
@@ -361,7 +361,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.account.Account.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/account"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/account"
 
 account.Account_IsTerraformElement(x interface{}) *bool
 ```
@@ -375,7 +375,7 @@ account.Account_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.account.Account.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/account"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/account"
 
 account.Account_IsTerraformResource(x interface{}) *bool
 ```
@@ -404,6 +404,7 @@ account.Account_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-snowflake.account.Account.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.account.Account.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.account.Account.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.account.Account.property.isOrgAdmin">IsOrgAdmin</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.account.Account.property.adminNameInput">AdminNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.account.Account.property.adminPasswordInput">AdminPasswordInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.account.Account.property.adminRsaPublicKeyInput">AdminRsaPublicKeyInput</a></code> | <code>*string</code> | *No description.* |
@@ -572,6 +573,16 @@ func Provisioners() *[]interface{}
 ```
 
 - *Type:* *[]interface{}
+
+---
+
+##### `IsOrgAdmin`<sup>Required</sup> <a name="IsOrgAdmin" id="@cdktf/provider-snowflake.account.Account.property.isOrgAdmin"></a>
+
+```go
+func IsOrgAdmin() IResolvable
+```
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable
 
 ---
 
@@ -860,7 +871,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.account.AccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/account"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/account"
 
 &account.AccountConfig {
 	Connection: interface{},

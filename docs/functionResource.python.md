@@ -31,6 +31,7 @@ functionResource.FunctionResource(
   handler: str = None,
   id: str = None,
   imports: typing.List[str] = None,
+  is_secure: typing.Union[bool, IResolvable] = None,
   language: str = None,
   null_input_behavior: str = None,
   packages: typing.List[str] = None,
@@ -61,6 +62,7 @@ functionResource.FunctionResource(
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.Initializer.parameter.handler">handler</a></code> | <code>str</code> | The handler method for Java / Python function. |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#id FunctionResource#id}. |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.Initializer.parameter.imports">imports</a></code> | <code>typing.List[str]</code> | Imports for Java / Python functions. |
+| <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.Initializer.parameter.isSecure">is_secure</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies that the function is secure. |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.Initializer.parameter.language">language</a></code> | <code>str</code> | The language of the statement. |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.Initializer.parameter.nullInputBehavior">null_input_behavior</a></code> | <code>str</code> | Specifies the behavior of the function when called with null inputs. |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.Initializer.parameter.packages">packages</a></code> | <code>typing.List[str]</code> | List of package imports to use for Java / Python functions. |
@@ -235,6 +237,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 ---
 
+##### `is_secure`<sup>Optional</sup> <a name="is_secure" id="@cdktf/provider-snowflake.functionResource.FunctionResource.Initializer.parameter.isSecure"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Specifies that the function is secure.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#is_secure FunctionResource#is_secure}
+
+---
+
 ##### `language`<sup>Optional</sup> <a name="language" id="@cdktf/provider-snowflake.functionResource.FunctionResource.Initializer.parameter.language"></a>
 
 - *Type:* str
@@ -325,6 +337,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.resetHandler">reset_handler</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.resetImports">reset_imports</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.resetIsSecure">reset_is_secure</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.resetLanguage">reset_language</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.resetNullInputBehavior">reset_null_input_behavior</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.resetPackages">reset_packages</a></code> | *No description.* |
@@ -587,6 +600,12 @@ def reset_id() -> None
 def reset_imports() -> None
 ```
 
+##### `reset_is_secure` <a name="reset_is_secure" id="@cdktf/provider-snowflake.functionResource.FunctionResource.resetIsSecure"></a>
+
+```python
+def reset_is_secure() -> None
+```
+
 ##### `reset_language` <a name="reset_language" id="@cdktf/provider-snowflake.functionResource.FunctionResource.resetLanguage"></a>
 
 ```python
@@ -724,6 +743,7 @@ functionResource.FunctionResource.is_terraform_resource(
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.property.handlerInput">handler_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.property.importsInput">imports_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.property.isSecureInput">is_secure_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.property.languageInput">language_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.property.nullInputBehaviorInput">null_input_behavior_input</a></code> | <code>str</code> | *No description.* |
@@ -739,6 +759,7 @@ functionResource.FunctionResource.is_terraform_resource(
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.property.handler">handler</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.property.imports">imports</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.property.isSecure">is_secure</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.property.language">language</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.property.nullInputBehavior">null_input_behavior</a></code> | <code>str</code> | *No description.* |
@@ -964,6 +985,16 @@ imports_input: typing.List[str]
 
 ---
 
+##### `is_secure_input`<sup>Optional</sup> <a name="is_secure_input" id="@cdktf/provider-snowflake.functionResource.FunctionResource.property.isSecureInput"></a>
+
+```python
+is_secure_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `language_input`<sup>Optional</sup> <a name="language_input" id="@cdktf/provider-snowflake.functionResource.FunctionResource.property.languageInput"></a>
 
 ```python
@@ -1111,6 +1142,16 @@ imports: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
+
+---
+
+##### `is_secure`<sup>Required</sup> <a name="is_secure" id="@cdktf/provider-snowflake.functionResource.FunctionResource.property.isSecure"></a>
+
+```python
+is_secure: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
 
 ---
 
@@ -1309,6 +1350,7 @@ functionResource.FunctionResourceConfig(
   handler: str = None,
   id: str = None,
   imports: typing.List[str] = None,
+  is_secure: typing.Union[bool, IResolvable] = None,
   language: str = None,
   null_input_behavior: str = None,
   packages: typing.List[str] = None,
@@ -1339,6 +1381,7 @@ functionResource.FunctionResourceConfig(
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResourceConfig.property.handler">handler</a></code> | <code>str</code> | The handler method for Java / Python function. |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResourceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#id FunctionResource#id}. |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResourceConfig.property.imports">imports</a></code> | <code>typing.List[str]</code> | Imports for Java / Python functions. |
+| <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResourceConfig.property.isSecure">is_secure</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies that the function is secure. |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResourceConfig.property.language">language</a></code> | <code>str</code> | The language of the statement. |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResourceConfig.property.nullInputBehavior">null_input_behavior</a></code> | <code>str</code> | Specifies the behavior of the function when called with null inputs. |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResourceConfig.property.packages">packages</a></code> | <code>typing.List[str]</code> | List of package imports to use for Java / Python functions. |
@@ -1560,6 +1603,20 @@ Imports for Java / Python functions.
 For Java this a list of jar files, for Python this is a list of Python files.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#imports FunctionResource#imports}
+
+---
+
+##### `is_secure`<sup>Optional</sup> <a name="is_secure" id="@cdktf/provider-snowflake.functionResource.FunctionResourceConfig.property.isSecure"></a>
+
+```python
+is_secure: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Specifies that the function is secure.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#is_secure FunctionResource#is_secure}
 
 ---
 

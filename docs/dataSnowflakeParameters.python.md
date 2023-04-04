@@ -25,7 +25,8 @@ dataSnowflakeParameters.DataSnowflakeParameters(
   object_name: str = None,
   object_type: str = None,
   parameter_type: str = None,
-  pattern: str = None
+  pattern: str = None,
+  user: str = None
 )
 ```
 
@@ -45,6 +46,7 @@ dataSnowflakeParameters.DataSnowflakeParameters(
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.Initializer.parameter.objectType">object_type</a></code> | <code>str</code> | If parameter_type is set to "OBJECT" then object_type is the type of object to display object parameters for. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.Initializer.parameter.parameterType">parameter_type</a></code> | <code>str</code> | The type of parameter to filter by. Valid values are: "ACCOUNT", "SESSION", "OBJECT". |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.Initializer.parameter.pattern">pattern</a></code> | <code>str</code> | Allows limiting the list of parameters by name using LIKE clause. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.Initializer.parameter.user">user</a></code> | <code>str</code> | If parameter_type is set to "SESSION" then user is the name of the user to display session parameters for. |
 
 ---
 
@@ -163,6 +165,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 ---
 
+##### `user`<sup>Optional</sup> <a name="user" id="@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.Initializer.parameter.user"></a>
+
+- *Type:* str
+
+If parameter_type is set to "SESSION" then user is the name of the user to display session parameters for.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/parameters#user DataSnowflakeParameters#user}
+
+---
+
 #### Methods <a name="Methods" id="Methods"></a>
 
 | **Name** | **Description** |
@@ -188,6 +200,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.resetObjectType">reset_object_type</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.resetParameterType">reset_parameter_type</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.resetPattern">reset_pattern</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.resetUser">reset_user</a></code> | *No description.* |
 
 ---
 
@@ -430,6 +443,12 @@ def reset_parameter_type() -> None
 def reset_pattern() -> None
 ```
 
+##### `reset_user` <a name="reset_user" id="@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.resetUser"></a>
+
+```python
+def reset_user() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -528,11 +547,13 @@ dataSnowflakeParameters.DataSnowflakeParameters.is_terraform_data_source(
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.objectTypeInput">object_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.parameterTypeInput">parameter_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.patternInput">pattern_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.userInput">user_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.objectName">object_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.objectType">object_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.parameterType">parameter_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.pattern">pattern</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.user">user</a></code> | <code>str</code> | *No description.* |
 
 ---
 
@@ -718,6 +739,16 @@ pattern_input: str
 
 ---
 
+##### `user_input`<sup>Optional</sup> <a name="user_input" id="@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.userInput"></a>
+
+```python
+user_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.id"></a>
 
 ```python
@@ -768,6 +799,16 @@ pattern: str
 
 ---
 
+##### `user`<sup>Required</sup> <a name="user" id="@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParameters.property.user"></a>
+
+```python
+user: str
+```
+
+- *Type:* str
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -807,7 +848,8 @@ dataSnowflakeParameters.DataSnowflakeParametersConfig(
   object_name: str = None,
   object_type: str = None,
   parameter_type: str = None,
-  pattern: str = None
+  pattern: str = None,
+  user: str = None
 )
 ```
 
@@ -827,6 +869,7 @@ dataSnowflakeParameters.DataSnowflakeParametersConfig(
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParametersConfig.property.objectType">object_type</a></code> | <code>str</code> | If parameter_type is set to "OBJECT" then object_type is the type of object to display object parameters for. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParametersConfig.property.parameterType">parameter_type</a></code> | <code>str</code> | The type of parameter to filter by. Valid values are: "ACCOUNT", "SESSION", "OBJECT". |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParametersConfig.property.pattern">pattern</a></code> | <code>str</code> | Allows limiting the list of parameters by name using LIKE clause. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParametersConfig.property.user">user</a></code> | <code>str</code> | If parameter_type is set to "SESSION" then user is the name of the user to display session parameters for. |
 
 ---
 
@@ -972,6 +1015,20 @@ Allows limiting the list of parameters by name using LIKE clause.
 Refer to [Limiting the List of Parameters by Name](https://docs.snowflake.com/en/sql-reference/parameters.html#limiting-the-list-of-parameters-by-name)
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/parameters#pattern DataSnowflakeParameters#pattern}
+
+---
+
+##### `user`<sup>Optional</sup> <a name="user" id="@cdktf/provider-snowflake.dataSnowflakeParameters.DataSnowflakeParametersConfig.property.user"></a>
+
+```python
+user: str
+```
+
+- *Type:* str
+
+If parameter_type is set to "SESSION" then user is the name of the user to display session parameters for.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/parameters#user DataSnowflakeParameters#user}
 
 ---
 

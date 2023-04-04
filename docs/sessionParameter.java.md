@@ -25,6 +25,9 @@ SessionParameter.Builder.create(Construct scope, java.lang.String id)
     .key(java.lang.String)
     .value(java.lang.String)
 //  .id(java.lang.String)
+//  .onAccount(java.lang.Boolean)
+//  .onAccount(IResolvable)
+//  .user(java.lang.String)
     .build();
 ```
 
@@ -42,6 +45,8 @@ SessionParameter.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.Initializer.parameter.key">key</a></code> | <code>java.lang.String</code> | Name of session parameter. Valid values are those in [session parameters](https://docs.snowflake.com/en/sql-reference/parameters.html#session-parameters). |
 | <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.Initializer.parameter.value">value</a></code> | <code>java.lang.String</code> | Value of session parameter, as a string. Constraints are the same as those for the parameters in Snowflake documentation. |
 | <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/session_parameter#id SessionParameter#id}. |
+| <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.Initializer.parameter.onAccount">onAccount</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If true, the session parameter will be set on the account level. |
+| <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.Initializer.parameter.user">user</a></code> | <code>java.lang.String</code> | The user to set the session parameter for. Required if on_account is false. |
 
 ---
 
@@ -136,6 +141,26 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
+##### `onAccount`<sup>Optional</sup> <a name="onAccount" id="@cdktf/provider-snowflake.sessionParameter.SessionParameter.Initializer.parameter.onAccount"></a>
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+If true, the session parameter will be set on the account level.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/session_parameter#on_account SessionParameter#on_account}
+
+---
+
+##### `user`<sup>Optional</sup> <a name="user" id="@cdktf/provider-snowflake.sessionParameter.SessionParameter.Initializer.parameter.user"></a>
+
+- *Type:* java.lang.String
+
+The user to set the session parameter for. Required if on_account is false.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/session_parameter#user SessionParameter#user}
+
+---
+
 #### Methods <a name="Methods" id="Methods"></a>
 
 | **Name** | **Description** |
@@ -157,6 +182,8 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.resetOnAccount">resetOnAccount</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.resetUser">resetUser</a></code> | *No description.* |
 
 ---
 
@@ -350,6 +377,18 @@ public IResolvable interpolationForAttribute(java.lang.String terraformAttribute
 public void resetId()
 ```
 
+##### `resetOnAccount` <a name="resetOnAccount" id="@cdktf/provider-snowflake.sessionParameter.SessionParameter.resetOnAccount"></a>
+
+```java
+public void resetOnAccount()
+```
+
+##### `resetUser` <a name="resetUser" id="@cdktf/provider-snowflake.sessionParameter.SessionParameter.resetUser"></a>
+
+```java
+public void resetUser()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -440,9 +479,13 @@ SessionParameter.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.property.keyInput">keyInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.property.onAccountInput">onAccountInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.property.userInput">userInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.property.key">key</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.property.onAccount">onAccount</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.property.user">user</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
@@ -609,6 +652,26 @@ public java.lang.String getKeyInput();
 
 ---
 
+##### `onAccountInput`<sup>Optional</sup> <a name="onAccountInput" id="@cdktf/provider-snowflake.sessionParameter.SessionParameter.property.onAccountInput"></a>
+
+```java
+public java.lang.Object getOnAccountInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `userInput`<sup>Optional</sup> <a name="userInput" id="@cdktf/provider-snowflake.sessionParameter.SessionParameter.property.userInput"></a>
+
+```java
+public java.lang.String getUserInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `valueInput`<sup>Optional</sup> <a name="valueInput" id="@cdktf/provider-snowflake.sessionParameter.SessionParameter.property.valueInput"></a>
 
 ```java
@@ -633,6 +696,26 @@ public java.lang.String getId();
 
 ```java
 public java.lang.String getKey();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `onAccount`<sup>Required</sup> <a name="onAccount" id="@cdktf/provider-snowflake.sessionParameter.SessionParameter.property.onAccount"></a>
+
+```java
+public java.lang.Object getOnAccount();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `user`<sup>Required</sup> <a name="user" id="@cdktf/provider-snowflake.sessionParameter.SessionParameter.property.user"></a>
+
+```java
+public java.lang.String getUser();
 ```
 
 - *Type:* java.lang.String
@@ -690,6 +773,9 @@ SessionParameterConfig.builder()
     .key(java.lang.String)
     .value(java.lang.String)
 //  .id(java.lang.String)
+//  .onAccount(java.lang.Boolean)
+//  .onAccount(IResolvable)
+//  .user(java.lang.String)
     .build();
 ```
 
@@ -707,6 +793,8 @@ SessionParameterConfig.builder()
 | <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameterConfig.property.key">key</a></code> | <code>java.lang.String</code> | Name of session parameter. Valid values are those in [session parameters](https://docs.snowflake.com/en/sql-reference/parameters.html#session-parameters). |
 | <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameterConfig.property.value">value</a></code> | <code>java.lang.String</code> | Value of session parameter, as a string. Constraints are the same as those for the parameters in Snowflake documentation. |
 | <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameterConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/session_parameter#id SessionParameter#id}. |
+| <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameterConfig.property.onAccount">onAccount</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If true, the session parameter will be set on the account level. |
+| <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameterConfig.property.user">user</a></code> | <code>java.lang.String</code> | The user to set the session parameter for. Required if on_account is false. |
 
 ---
 
@@ -820,6 +908,34 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `onAccount`<sup>Optional</sup> <a name="onAccount" id="@cdktf/provider-snowflake.sessionParameter.SessionParameterConfig.property.onAccount"></a>
+
+```java
+public java.lang.Object getOnAccount();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+If true, the session parameter will be set on the account level.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/session_parameter#on_account SessionParameter#on_account}
+
+---
+
+##### `user`<sup>Optional</sup> <a name="user" id="@cdktf/provider-snowflake.sessionParameter.SessionParameterConfig.property.user"></a>
+
+```java
+public java.lang.String getUser();
+```
+
+- *Type:* java.lang.String
+
+The user to set the session parameter for. Required if on_account is false.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/session_parameter#user SessionParameter#user}
 
 ---
 

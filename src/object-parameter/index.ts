@@ -27,6 +27,12 @@ export interface ObjectParameterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly objectType?: string;
   /**
+  * If true, the object parameter will be set on the account level.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/object_parameter#on_account ObjectParameter#on_account}
+  */
+  readonly onAccount?: boolean | cdktf.IResolvable;
+  /**
   * Value of object parameter, as a string. Constraints are the same as those for the parameters in Snowflake documentation.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/object_parameter#value ObjectParameter#value}
@@ -220,7 +226,7 @@ export class ObjectParameter extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_object_parameter',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.58.0',
+        providerVersion: '0.61.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
@@ -234,6 +240,7 @@ export class ObjectParameter extends cdktf.TerraformResource {
     this._id = config.id;
     this._key = config.key;
     this._objectType = config.objectType;
+    this._onAccount = config.onAccount;
     this._value = config.value;
     this._objectIdentifier.internalValue = config.objectIdentifier;
   }
@@ -287,6 +294,22 @@ export class ObjectParameter extends cdktf.TerraformResource {
     return this._objectType;
   }
 
+  // on_account - computed: false, optional: true, required: false
+  private _onAccount?: boolean | cdktf.IResolvable; 
+  public get onAccount() {
+    return this.getBooleanAttribute('on_account');
+  }
+  public set onAccount(value: boolean | cdktf.IResolvable) {
+    this._onAccount = value;
+  }
+  public resetOnAccount() {
+    this._onAccount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get onAccountInput() {
+    return this._onAccount;
+  }
+
   // value - computed: false, optional: false, required: true
   private _value?: string; 
   public get value() {
@@ -325,6 +348,7 @@ export class ObjectParameter extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       key: cdktf.stringToTerraform(this._key),
       object_type: cdktf.stringToTerraform(this._objectType),
+      on_account: cdktf.booleanToTerraform(this._onAccount),
       value: cdktf.stringToTerraform(this._value),
       object_identifier: cdktf.listMapper(objectParameterObjectIdentifierToTerraform, true)(this._objectIdentifier.internalValue),
     };
