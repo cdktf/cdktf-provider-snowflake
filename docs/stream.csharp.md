@@ -70,6 +70,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.resetComment">ResetComment</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.resetInsertOnly">ResetInsertOnly</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.stream.Stream.resetOnStage">ResetOnStage</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.resetOnTable">ResetOnTable</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.resetOnView">ResetOnView</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.resetShowInitialRows">ResetShowInitialRows</a></code> | *No description.* |
@@ -284,6 +285,12 @@ private void ResetId()
 private void ResetInsertOnly()
 ```
 
+##### `ResetOnStage` <a name="ResetOnStage" id="@cdktf/provider-snowflake.stream.Stream.resetOnStage"></a>
+
+```csharp
+private void ResetOnStage()
+```
+
 ##### `ResetOnTable` <a name="ResetOnTable" id="@cdktf/provider-snowflake.stream.Stream.resetOnTable"></a>
 
 ```csharp
@@ -397,6 +404,7 @@ Stream.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.insertOnlyInput">InsertOnlyInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.onStageInput">OnStageInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.onTableInput">OnTableInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.onViewInput">OnViewInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.schemaInput">SchemaInput</a></code> | <code>string</code> | *No description.* |
@@ -407,6 +415,7 @@ Stream.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.insertOnly">InsertOnly</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.name">Name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.onStage">OnStage</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.onTable">OnTable</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.onView">OnView</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.schema">Schema</a></code> | <code>string</code> | *No description.* |
@@ -626,6 +635,16 @@ public string NameInput { get; }
 
 ---
 
+##### `OnStageInput`<sup>Optional</sup> <a name="OnStageInput" id="@cdktf/provider-snowflake.stream.Stream.property.onStageInput"></a>
+
+```csharp
+public string OnStageInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `OnTableInput`<sup>Optional</sup> <a name="OnTableInput" id="@cdktf/provider-snowflake.stream.Stream.property.onTableInput"></a>
 
 ```csharp
@@ -726,6 +745,16 @@ public string Name { get; }
 
 ---
 
+##### `OnStage`<sup>Required</sup> <a name="OnStage" id="@cdktf/provider-snowflake.stream.Stream.property.onStage"></a>
+
+```csharp
+public string OnStage { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `OnTable`<sup>Required</sup> <a name="OnTable" id="@cdktf/provider-snowflake.stream.Stream.property.onTable"></a>
 
 ```csharp
@@ -808,6 +837,7 @@ new StreamConfig {
     string Comment = null,
     string Id = null,
     object InsertOnly = null,
+    string OnStage = null,
     string OnTable = null,
     string OnView = null,
     object ShowInitialRows = null
@@ -832,6 +862,7 @@ new StreamConfig {
 | <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.comment">Comment</a></code> | <code>string</code> | Specifies a comment for the stream. |
 | <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stream#id Stream#id}. |
 | <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.insertOnly">InsertOnly</a></code> | <code>object</code> | Create an insert only stream type. |
+| <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.onStage">OnStage</a></code> | <code>string</code> | Name of the stage the stream will monitor. |
 | <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.onTable">OnTable</a></code> | <code>string</code> | Name of the table the stream will monitor. |
 | <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.onView">OnView</a></code> | <code>string</code> | Name of the view the stream will monitor. |
 | <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.showInitialRows">ShowInitialRows</a></code> | <code>object</code> | Specifies whether to return all existing rows in the source table as row inserts the first time the stream is consumed. |
@@ -1006,6 +1037,20 @@ public object InsertOnly { get; set; }
 Create an insert only stream type.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stream#insert_only Stream#insert_only}
+
+---
+
+##### `OnStage`<sup>Optional</sup> <a name="OnStage" id="@cdktf/provider-snowflake.stream.StreamConfig.property.onStage"></a>
+
+```csharp
+public string OnStage { get; set; }
+```
+
+- *Type:* string
+
+Name of the stage the stream will monitor.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stream#on_stage Stream#on_stage}
 
 ---
 

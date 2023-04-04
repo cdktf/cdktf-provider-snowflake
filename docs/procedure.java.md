@@ -31,10 +31,14 @@ Procedure.Builder.create(Construct scope, java.lang.String id)
 //  .arguments(java.util.List<ProcedureArguments>)
 //  .comment(java.lang.String)
 //  .executeAs(java.lang.String)
+//  .handler(java.lang.String)
 //  .id(java.lang.String)
+//  .imports(java.util.List<java.lang.String>)
 //  .language(java.lang.String)
 //  .nullInputBehavior(java.lang.String)
+//  .packages(java.util.List<java.lang.String>)
 //  .returnBehavior(java.lang.String)
+//  .runtimeVersion(java.lang.String)
     .build();
 ```
 
@@ -53,14 +57,18 @@ Procedure.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Specifies the identifier for the procedure; |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.Initializer.parameter.returnType">returnType</a></code> | <code>java.lang.String</code> | The return type of the procedure. |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.Initializer.parameter.schema">schema</a></code> | <code>java.lang.String</code> | The schema in which to create the procedure. Don't use the \| character. |
-| <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.Initializer.parameter.statement">statement</a></code> | <code>java.lang.String</code> | Specifies the javascript code used to create the procedure. |
+| <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.Initializer.parameter.statement">statement</a></code> | <code>java.lang.String</code> | Specifies the code used to create the procedure. |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.Initializer.parameter.arguments">arguments</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-snowflake.procedure.ProcedureArguments">ProcedureArguments</a>></code> | arguments block. |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.Initializer.parameter.comment">comment</a></code> | <code>java.lang.String</code> | Specifies a comment for the procedure. |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.Initializer.parameter.executeAs">executeAs</a></code> | <code>java.lang.String</code> | Sets execute context - see caller's rights and owner's rights. |
+| <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.Initializer.parameter.handler">handler</a></code> | <code>java.lang.String</code> | The handler method for Java / Python procedures. |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#id Procedure#id}. |
+| <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.Initializer.parameter.imports">imports</a></code> | <code>java.util.List<java.lang.String></code> | Imports for Java / Python procedures. |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.Initializer.parameter.language">language</a></code> | <code>java.lang.String</code> | Specifies the language of the stored procedure code. |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.Initializer.parameter.nullInputBehavior">nullInputBehavior</a></code> | <code>java.lang.String</code> | Specifies the behavior of the procedure when called with null inputs. |
+| <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.Initializer.parameter.packages">packages</a></code> | <code>java.util.List<java.lang.String></code> | List of package imports to use for Java / Python procedures. |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.Initializer.parameter.returnBehavior">returnBehavior</a></code> | <code>java.lang.String</code> | Specifies the behavior of the function when returning results. |
+| <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.Initializer.parameter.runtimeVersion">runtimeVersion</a></code> | <code>java.lang.String</code> | Required for Python procedures. Specifies Python runtime version. |
 
 ---
 
@@ -170,7 +178,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 - *Type:* java.lang.String
 
-Specifies the javascript code used to create the procedure.
+Specifies the code used to create the procedure.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#statement Procedure#statement}
 
@@ -206,6 +214,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 ---
 
+##### `handler`<sup>Optional</sup> <a name="handler" id="@cdktf/provider-snowflake.procedure.Procedure.Initializer.parameter.handler"></a>
+
+- *Type:* java.lang.String
+
+The handler method for Java / Python procedures.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#handler Procedure#handler}
+
+---
+
 ##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-snowflake.procedure.Procedure.Initializer.parameter.id"></a>
 
 - *Type:* java.lang.String
@@ -214,6 +232,18 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `imports`<sup>Optional</sup> <a name="imports" id="@cdktf/provider-snowflake.procedure.Procedure.Initializer.parameter.imports"></a>
+
+- *Type:* java.util.List<java.lang.String>
+
+Imports for Java / Python procedures.
+
+For Java this a list of jar files, for Python this is a list of Python files.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#imports Procedure#imports}
 
 ---
 
@@ -237,6 +267,18 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 ---
 
+##### `packages`<sup>Optional</sup> <a name="packages" id="@cdktf/provider-snowflake.procedure.Procedure.Initializer.parameter.packages"></a>
+
+- *Type:* java.util.List<java.lang.String>
+
+List of package imports to use for Java / Python procedures.
+
+For Java, package imports should be of the form: package_name:version_number, where package_name is snowflake_domain:package. For Python use it should be: ('numpy','pandas','xgboost==1.5.0').
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#packages Procedure#packages}
+
+---
+
 ##### `returnBehavior`<sup>Optional</sup> <a name="returnBehavior" id="@cdktf/provider-snowflake.procedure.Procedure.Initializer.parameter.returnBehavior"></a>
 
 - *Type:* java.lang.String
@@ -244,6 +286,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 Specifies the behavior of the function when returning results.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#return_behavior Procedure#return_behavior}
+
+---
+
+##### `runtimeVersion`<sup>Optional</sup> <a name="runtimeVersion" id="@cdktf/provider-snowflake.procedure.Procedure.Initializer.parameter.runtimeVersion"></a>
+
+- *Type:* java.lang.String
+
+Required for Python procedures. Specifies Python runtime version.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#runtime_version Procedure#runtime_version}
 
 ---
 
@@ -271,10 +323,14 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.resetArguments">resetArguments</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.resetComment">resetComment</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.resetExecuteAs">resetExecuteAs</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.resetHandler">resetHandler</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.resetImports">resetImports</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.resetLanguage">resetLanguage</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.resetNullInputBehavior">resetNullInputBehavior</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.resetPackages">resetPackages</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.resetReturnBehavior">resetReturnBehavior</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.resetRuntimeVersion">resetRuntimeVersion</a></code> | *No description.* |
 
 ---
 
@@ -492,10 +548,22 @@ public void resetComment()
 public void resetExecuteAs()
 ```
 
+##### `resetHandler` <a name="resetHandler" id="@cdktf/provider-snowflake.procedure.Procedure.resetHandler"></a>
+
+```java
+public void resetHandler()
+```
+
 ##### `resetId` <a name="resetId" id="@cdktf/provider-snowflake.procedure.Procedure.resetId"></a>
 
 ```java
 public void resetId()
+```
+
+##### `resetImports` <a name="resetImports" id="@cdktf/provider-snowflake.procedure.Procedure.resetImports"></a>
+
+```java
+public void resetImports()
 ```
 
 ##### `resetLanguage` <a name="resetLanguage" id="@cdktf/provider-snowflake.procedure.Procedure.resetLanguage"></a>
@@ -510,10 +578,22 @@ public void resetLanguage()
 public void resetNullInputBehavior()
 ```
 
+##### `resetPackages` <a name="resetPackages" id="@cdktf/provider-snowflake.procedure.Procedure.resetPackages"></a>
+
+```java
+public void resetPackages()
+```
+
 ##### `resetReturnBehavior` <a name="resetReturnBehavior" id="@cdktf/provider-snowflake.procedure.Procedure.resetReturnBehavior"></a>
 
 ```java
 public void resetReturnBehavior()
+```
+
+##### `resetRuntimeVersion` <a name="resetRuntimeVersion" id="@cdktf/provider-snowflake.procedure.Procedure.resetRuntimeVersion"></a>
+
+```java
+public void resetRuntimeVersion()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -609,23 +689,31 @@ Procedure.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.commentInput">commentInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.databaseInput">databaseInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.executeAsInput">executeAsInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.handlerInput">handlerInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.importsInput">importsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.languageInput">languageInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.nullInputBehaviorInput">nullInputBehaviorInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.packagesInput">packagesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.returnBehaviorInput">returnBehaviorInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.returnTypeInput">returnTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.runtimeVersionInput">runtimeVersionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.schemaInput">schemaInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.statementInput">statementInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.comment">comment</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.database">database</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.executeAs">executeAs</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.handler">handler</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.imports">imports</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.language">language</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.nullInputBehavior">nullInputBehavior</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.packages">packages</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.returnBehavior">returnBehavior</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.returnType">returnType</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.runtimeVersion">runtimeVersion</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.schema">schema</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.statement">statement</a></code> | <code>java.lang.String</code> | *No description.* |
 
@@ -823,6 +911,16 @@ public java.lang.String getExecuteAsInput();
 
 ---
 
+##### `handlerInput`<sup>Optional</sup> <a name="handlerInput" id="@cdktf/provider-snowflake.procedure.Procedure.property.handlerInput"></a>
+
+```java
+public java.lang.String getHandlerInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-snowflake.procedure.Procedure.property.idInput"></a>
 
 ```java
@@ -830,6 +928,16 @@ public java.lang.String getIdInput();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `importsInput`<sup>Optional</sup> <a name="importsInput" id="@cdktf/provider-snowflake.procedure.Procedure.property.importsInput"></a>
+
+```java
+public java.util.List<java.lang.String> getImportsInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
 
 ---
 
@@ -863,6 +971,16 @@ public java.lang.String getNullInputBehaviorInput();
 
 ---
 
+##### `packagesInput`<sup>Optional</sup> <a name="packagesInput" id="@cdktf/provider-snowflake.procedure.Procedure.property.packagesInput"></a>
+
+```java
+public java.util.List<java.lang.String> getPackagesInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
 ##### `returnBehaviorInput`<sup>Optional</sup> <a name="returnBehaviorInput" id="@cdktf/provider-snowflake.procedure.Procedure.property.returnBehaviorInput"></a>
 
 ```java
@@ -877,6 +995,16 @@ public java.lang.String getReturnBehaviorInput();
 
 ```java
 public java.lang.String getReturnTypeInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `runtimeVersionInput`<sup>Optional</sup> <a name="runtimeVersionInput" id="@cdktf/provider-snowflake.procedure.Procedure.property.runtimeVersionInput"></a>
+
+```java
+public java.lang.String getRuntimeVersionInput();
 ```
 
 - *Type:* java.lang.String
@@ -933,6 +1061,16 @@ public java.lang.String getExecuteAs();
 
 ---
 
+##### `handler`<sup>Required</sup> <a name="handler" id="@cdktf/provider-snowflake.procedure.Procedure.property.handler"></a>
+
+```java
+public java.lang.String getHandler();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.procedure.Procedure.property.id"></a>
 
 ```java
@@ -940,6 +1078,16 @@ public java.lang.String getId();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `imports`<sup>Required</sup> <a name="imports" id="@cdktf/provider-snowflake.procedure.Procedure.property.imports"></a>
+
+```java
+public java.util.List<java.lang.String> getImports();
+```
+
+- *Type:* java.util.List<java.lang.String>
 
 ---
 
@@ -973,6 +1121,16 @@ public java.lang.String getNullInputBehavior();
 
 ---
 
+##### `packages`<sup>Required</sup> <a name="packages" id="@cdktf/provider-snowflake.procedure.Procedure.property.packages"></a>
+
+```java
+public java.util.List<java.lang.String> getPackages();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
 ##### `returnBehavior`<sup>Required</sup> <a name="returnBehavior" id="@cdktf/provider-snowflake.procedure.Procedure.property.returnBehavior"></a>
 
 ```java
@@ -987,6 +1145,16 @@ public java.lang.String getReturnBehavior();
 
 ```java
 public java.lang.String getReturnType();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `runtimeVersion`<sup>Required</sup> <a name="runtimeVersion" id="@cdktf/provider-snowflake.procedure.Procedure.property.runtimeVersion"></a>
+
+```java
+public java.lang.String getRuntimeVersion();
 ```
 
 - *Type:* java.lang.String
@@ -1110,10 +1278,14 @@ ProcedureConfig.builder()
 //  .arguments(java.util.List<ProcedureArguments>)
 //  .comment(java.lang.String)
 //  .executeAs(java.lang.String)
+//  .handler(java.lang.String)
 //  .id(java.lang.String)
+//  .imports(java.util.List<java.lang.String>)
 //  .language(java.lang.String)
 //  .nullInputBehavior(java.lang.String)
+//  .packages(java.util.List<java.lang.String>)
 //  .returnBehavior(java.lang.String)
+//  .runtimeVersion(java.lang.String)
     .build();
 ```
 
@@ -1132,14 +1304,18 @@ ProcedureConfig.builder()
 | <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.name">name</a></code> | <code>java.lang.String</code> | Specifies the identifier for the procedure; |
 | <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.returnType">returnType</a></code> | <code>java.lang.String</code> | The return type of the procedure. |
 | <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.schema">schema</a></code> | <code>java.lang.String</code> | The schema in which to create the procedure. Don't use the \| character. |
-| <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.statement">statement</a></code> | <code>java.lang.String</code> | Specifies the javascript code used to create the procedure. |
+| <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.statement">statement</a></code> | <code>java.lang.String</code> | Specifies the code used to create the procedure. |
 | <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.arguments">arguments</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-snowflake.procedure.ProcedureArguments">ProcedureArguments</a>></code> | arguments block. |
 | <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.comment">comment</a></code> | <code>java.lang.String</code> | Specifies a comment for the procedure. |
 | <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.executeAs">executeAs</a></code> | <code>java.lang.String</code> | Sets execute context - see caller's rights and owner's rights. |
+| <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.handler">handler</a></code> | <code>java.lang.String</code> | The handler method for Java / Python procedures. |
 | <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#id Procedure#id}. |
+| <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.imports">imports</a></code> | <code>java.util.List<java.lang.String></code> | Imports for Java / Python procedures. |
 | <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.language">language</a></code> | <code>java.lang.String</code> | Specifies the language of the stored procedure code. |
 | <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.nullInputBehavior">nullInputBehavior</a></code> | <code>java.lang.String</code> | Specifies the behavior of the procedure when called with null inputs. |
+| <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.packages">packages</a></code> | <code>java.util.List<java.lang.String></code> | List of package imports to use for Java / Python procedures. |
 | <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.returnBehavior">returnBehavior</a></code> | <code>java.lang.String</code> | Specifies the behavior of the function when returning results. |
+| <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.runtimeVersion">runtimeVersion</a></code> | <code>java.lang.String</code> | Required for Python procedures. Specifies Python runtime version. |
 
 ---
 
@@ -1279,7 +1455,7 @@ public java.lang.String getStatement();
 
 - *Type:* java.lang.String
 
-Specifies the javascript code used to create the procedure.
+Specifies the code used to create the procedure.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#statement Procedure#statement}
 
@@ -1327,6 +1503,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 ---
 
+##### `handler`<sup>Optional</sup> <a name="handler" id="@cdktf/provider-snowflake.procedure.ProcedureConfig.property.handler"></a>
+
+```java
+public java.lang.String getHandler();
+```
+
+- *Type:* java.lang.String
+
+The handler method for Java / Python procedures.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#handler Procedure#handler}
+
+---
+
 ##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-snowflake.procedure.ProcedureConfig.property.id"></a>
 
 ```java
@@ -1339,6 +1529,22 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `imports`<sup>Optional</sup> <a name="imports" id="@cdktf/provider-snowflake.procedure.ProcedureConfig.property.imports"></a>
+
+```java
+public java.util.List<java.lang.String> getImports();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+Imports for Java / Python procedures.
+
+For Java this a list of jar files, for Python this is a list of Python files.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#imports Procedure#imports}
 
 ---
 
@@ -1370,6 +1576,22 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 ---
 
+##### `packages`<sup>Optional</sup> <a name="packages" id="@cdktf/provider-snowflake.procedure.ProcedureConfig.property.packages"></a>
+
+```java
+public java.util.List<java.lang.String> getPackages();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+List of package imports to use for Java / Python procedures.
+
+For Java, package imports should be of the form: package_name:version_number, where package_name is snowflake_domain:package. For Python use it should be: ('numpy','pandas','xgboost==1.5.0').
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#packages Procedure#packages}
+
+---
+
 ##### `returnBehavior`<sup>Optional</sup> <a name="returnBehavior" id="@cdktf/provider-snowflake.procedure.ProcedureConfig.property.returnBehavior"></a>
 
 ```java
@@ -1381,6 +1603,20 @@ public java.lang.String getReturnBehavior();
 Specifies the behavior of the function when returning results.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#return_behavior Procedure#return_behavior}
+
+---
+
+##### `runtimeVersion`<sup>Optional</sup> <a name="runtimeVersion" id="@cdktf/provider-snowflake.procedure.ProcedureConfig.property.runtimeVersion"></a>
+
+```java
+public java.lang.String getRuntimeVersion();
+```
+
+- *Type:* java.lang.String
+
+Required for Python procedures. Specifies Python runtime version.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#runtime_version Procedure#runtime_version}
 
 ---
 

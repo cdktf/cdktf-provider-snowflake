@@ -21,6 +21,18 @@ export interface SessionParameterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly key: string;
   /**
+  * If true, the session parameter will be set on the account level.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/session_parameter#on_account SessionParameter#on_account}
+  */
+  readonly onAccount?: boolean | cdktf.IResolvable;
+  /**
+  * The user to set the session parameter for. Required if on_account is false
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/session_parameter#user SessionParameter#user}
+  */
+  readonly user?: string;
+  /**
   * Value of session parameter, as a string. Constraints are the same as those for the parameters in Snowflake documentation.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/session_parameter#value SessionParameter#value}
@@ -54,7 +66,7 @@ export class SessionParameter extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_session_parameter',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.58.0',
+        providerVersion: '0.61.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
@@ -67,6 +79,8 @@ export class SessionParameter extends cdktf.TerraformResource {
     });
     this._id = config.id;
     this._key = config.key;
+    this._onAccount = config.onAccount;
+    this._user = config.user;
     this._value = config.value;
   }
 
@@ -103,6 +117,38 @@ export class SessionParameter extends cdktf.TerraformResource {
     return this._key;
   }
 
+  // on_account - computed: false, optional: true, required: false
+  private _onAccount?: boolean | cdktf.IResolvable; 
+  public get onAccount() {
+    return this.getBooleanAttribute('on_account');
+  }
+  public set onAccount(value: boolean | cdktf.IResolvable) {
+    this._onAccount = value;
+  }
+  public resetOnAccount() {
+    this._onAccount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get onAccountInput() {
+    return this._onAccount;
+  }
+
+  // user - computed: false, optional: true, required: false
+  private _user?: string; 
+  public get user() {
+    return this.getStringAttribute('user');
+  }
+  public set user(value: string) {
+    this._user = value;
+  }
+  public resetUser() {
+    this._user = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userInput() {
+    return this._user;
+  }
+
   // value - computed: false, optional: false, required: true
   private _value?: string; 
   public get value() {
@@ -124,6 +170,8 @@ export class SessionParameter extends cdktf.TerraformResource {
     return {
       id: cdktf.stringToTerraform(this._id),
       key: cdktf.stringToTerraform(this._key),
+      on_account: cdktf.booleanToTerraform(this._onAccount),
+      user: cdktf.stringToTerraform(this._user),
       value: cdktf.stringToTerraform(this._value),
     };
   }

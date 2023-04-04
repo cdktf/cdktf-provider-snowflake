@@ -51,7 +51,7 @@ export interface ResourceMonitorConfig extends cdktf.TerraformMetaArguments {
   */
   readonly notifyUsers?: string[];
   /**
-  * Specifies whether the resource monitor should be applied globally to your Snowflake account.
+  * Specifies whether the resource monitor should be applied globally to your Snowflake account (defaults to false).
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/resource_monitor#set_for_account ResourceMonitor#set_for_account}
   */
@@ -63,11 +63,23 @@ export interface ResourceMonitorConfig extends cdktf.TerraformMetaArguments {
   */
   readonly startTimestamp?: string;
   /**
-  * A list of percentage thresholds at which to immediately suspend all warehouses.
+  * The number that represents the percentage threshold at which to immediately suspend all warehouses.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/resource_monitor#suspend_immediate_trigger ResourceMonitor#suspend_immediate_trigger}
+  */
+  readonly suspendImmediateTrigger?: number;
+  /**
+  * A list of percentage thresholds at which to suspend all warehouses.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/resource_monitor#suspend_immediate_triggers ResourceMonitor#suspend_immediate_triggers}
   */
   readonly suspendImmediateTriggers?: number[];
+  /**
+  * The number that represents the percentage threshold at which to suspend all warehouses.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/resource_monitor#suspend_trigger ResourceMonitor#suspend_trigger}
+  */
+  readonly suspendTrigger?: number;
   /**
   * A list of percentage thresholds at which to suspend all warehouses.
   * 
@@ -108,7 +120,7 @@ export class ResourceMonitor extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_resource_monitor',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.58.0',
+        providerVersion: '0.61.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
@@ -128,7 +140,9 @@ export class ResourceMonitor extends cdktf.TerraformResource {
     this._notifyUsers = config.notifyUsers;
     this._setForAccount = config.setForAccount;
     this._startTimestamp = config.startTimestamp;
+    this._suspendImmediateTrigger = config.suspendImmediateTrigger;
     this._suspendImmediateTriggers = config.suspendImmediateTriggers;
+    this._suspendTrigger = config.suspendTrigger;
     this._suspendTriggers = config.suspendTriggers;
     this._warehouses = config.warehouses;
   }
@@ -278,6 +292,22 @@ export class ResourceMonitor extends cdktf.TerraformResource {
     return this._startTimestamp;
   }
 
+  // suspend_immediate_trigger - computed: false, optional: true, required: false
+  private _suspendImmediateTrigger?: number; 
+  public get suspendImmediateTrigger() {
+    return this.getNumberAttribute('suspend_immediate_trigger');
+  }
+  public set suspendImmediateTrigger(value: number) {
+    this._suspendImmediateTrigger = value;
+  }
+  public resetSuspendImmediateTrigger() {
+    this._suspendImmediateTrigger = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get suspendImmediateTriggerInput() {
+    return this._suspendImmediateTrigger;
+  }
+
   // suspend_immediate_triggers - computed: false, optional: true, required: false
   private _suspendImmediateTriggers?: number[]; 
   public get suspendImmediateTriggers() {
@@ -292,6 +322,22 @@ export class ResourceMonitor extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get suspendImmediateTriggersInput() {
     return this._suspendImmediateTriggers;
+  }
+
+  // suspend_trigger - computed: false, optional: true, required: false
+  private _suspendTrigger?: number; 
+  public get suspendTrigger() {
+    return this.getNumberAttribute('suspend_trigger');
+  }
+  public set suspendTrigger(value: number) {
+    this._suspendTrigger = value;
+  }
+  public resetSuspendTrigger() {
+    this._suspendTrigger = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get suspendTriggerInput() {
+    return this._suspendTrigger;
   }
 
   // suspend_triggers - computed: false, optional: true, required: false
@@ -341,7 +387,9 @@ export class ResourceMonitor extends cdktf.TerraformResource {
       notify_users: cdktf.listMapper(cdktf.stringToTerraform, false)(this._notifyUsers),
       set_for_account: cdktf.booleanToTerraform(this._setForAccount),
       start_timestamp: cdktf.stringToTerraform(this._startTimestamp),
+      suspend_immediate_trigger: cdktf.numberToTerraform(this._suspendImmediateTrigger),
       suspend_immediate_triggers: cdktf.listMapper(cdktf.numberToTerraform, false)(this._suspendImmediateTriggers),
+      suspend_trigger: cdktf.numberToTerraform(this._suspendTrigger),
       suspend_triggers: cdktf.listMapper(cdktf.numberToTerraform, false)(this._suspendTriggers),
       warehouses: cdktf.listMapper(cdktf.stringToTerraform, false)(this._warehouses),
     };

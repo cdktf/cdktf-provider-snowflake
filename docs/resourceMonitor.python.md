@@ -30,7 +30,9 @@ resourceMonitor.ResourceMonitor(
   notify_users: typing.List[str] = None,
   set_for_account: typing.Union[bool, IResolvable] = None,
   start_timestamp: str = None,
+  suspend_immediate_trigger: typing.Union[int, float] = None,
   suspend_immediate_triggers: typing.List[typing.Union[int, float]] = None,
+  suspend_trigger: typing.Union[int, float] = None,
   suspend_triggers: typing.List[typing.Union[int, float]] = None,
   warehouses: typing.List[str] = None
 )
@@ -54,9 +56,11 @@ resourceMonitor.ResourceMonitor(
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/resource_monitor#id ResourceMonitor#id}. |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.Initializer.parameter.notifyTriggers">notify_triggers</a></code> | <code>typing.List[typing.Union[int, float]]</code> | A list of percentage thresholds at which to send an alert to subscribed users. |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.Initializer.parameter.notifyUsers">notify_users</a></code> | <code>typing.List[str]</code> | Specifies the list of users to receive email notifications on resource monitors. |
-| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.Initializer.parameter.setForAccount">set_for_account</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether the resource monitor should be applied globally to your Snowflake account. |
+| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.Initializer.parameter.setForAccount">set_for_account</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether the resource monitor should be applied globally to your Snowflake account (defaults to false). |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.Initializer.parameter.startTimestamp">start_timestamp</a></code> | <code>str</code> | The date and time when the resource monitor starts monitoring credit usage for the assigned warehouses. |
-| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.Initializer.parameter.suspendImmediateTriggers">suspend_immediate_triggers</a></code> | <code>typing.List[typing.Union[int, float]]</code> | A list of percentage thresholds at which to immediately suspend all warehouses. |
+| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.Initializer.parameter.suspendImmediateTrigger">suspend_immediate_trigger</a></code> | <code>typing.Union[int, float]</code> | The number that represents the percentage threshold at which to immediately suspend all warehouses. |
+| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.Initializer.parameter.suspendImmediateTriggers">suspend_immediate_triggers</a></code> | <code>typing.List[typing.Union[int, float]]</code> | A list of percentage thresholds at which to suspend all warehouses. |
+| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.Initializer.parameter.suspendTrigger">suspend_trigger</a></code> | <code>typing.Union[int, float]</code> | The number that represents the percentage threshold at which to suspend all warehouses. |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.Initializer.parameter.suspendTriggers">suspend_triggers</a></code> | <code>typing.List[typing.Union[int, float]]</code> | A list of percentage thresholds at which to suspend all warehouses. |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.Initializer.parameter.warehouses">warehouses</a></code> | <code>typing.List[str]</code> | A list of warehouses to apply the resource monitor to. |
 
@@ -199,7 +203,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Specifies whether the resource monitor should be applied globally to your Snowflake account.
+Specifies whether the resource monitor should be applied globally to your Snowflake account (defaults to false).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/resource_monitor#set_for_account ResourceMonitor#set_for_account}
 
@@ -215,13 +219,33 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 ---
 
+##### `suspend_immediate_trigger`<sup>Optional</sup> <a name="suspend_immediate_trigger" id="@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.Initializer.parameter.suspendImmediateTrigger"></a>
+
+- *Type:* typing.Union[int, float]
+
+The number that represents the percentage threshold at which to immediately suspend all warehouses.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/resource_monitor#suspend_immediate_trigger ResourceMonitor#suspend_immediate_trigger}
+
+---
+
 ##### `suspend_immediate_triggers`<sup>Optional</sup> <a name="suspend_immediate_triggers" id="@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.Initializer.parameter.suspendImmediateTriggers"></a>
 
 - *Type:* typing.List[typing.Union[int, float]]
 
-A list of percentage thresholds at which to immediately suspend all warehouses.
+A list of percentage thresholds at which to suspend all warehouses.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/resource_monitor#suspend_immediate_triggers ResourceMonitor#suspend_immediate_triggers}
+
+---
+
+##### `suspend_trigger`<sup>Optional</sup> <a name="suspend_trigger" id="@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.Initializer.parameter.suspendTrigger"></a>
+
+- *Type:* typing.Union[int, float]
+
+The number that represents the percentage threshold at which to suspend all warehouses.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/resource_monitor#suspend_trigger ResourceMonitor#suspend_trigger}
 
 ---
 
@@ -273,7 +297,9 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.resetNotifyUsers">reset_notify_users</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.resetSetForAccount">reset_set_for_account</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.resetStartTimestamp">reset_start_timestamp</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.resetSuspendImmediateTrigger">reset_suspend_immediate_trigger</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.resetSuspendImmediateTriggers">reset_suspend_immediate_triggers</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.resetSuspendTrigger">reset_suspend_trigger</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.resetSuspendTriggers">reset_suspend_triggers</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.resetWarehouses">reset_warehouses</a></code> | *No description.* |
 
@@ -536,10 +562,22 @@ def reset_set_for_account() -> None
 def reset_start_timestamp() -> None
 ```
 
+##### `reset_suspend_immediate_trigger` <a name="reset_suspend_immediate_trigger" id="@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.resetSuspendImmediateTrigger"></a>
+
+```python
+def reset_suspend_immediate_trigger() -> None
+```
+
 ##### `reset_suspend_immediate_triggers` <a name="reset_suspend_immediate_triggers" id="@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.resetSuspendImmediateTriggers"></a>
 
 ```python
 def reset_suspend_immediate_triggers() -> None
+```
+
+##### `reset_suspend_trigger` <a name="reset_suspend_trigger" id="@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.resetSuspendTrigger"></a>
+
+```python
+def reset_suspend_trigger() -> None
 ```
 
 ##### `reset_suspend_triggers` <a name="reset_suspend_triggers" id="@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.resetSuspendTriggers"></a>
@@ -657,7 +695,9 @@ resourceMonitor.ResourceMonitor.is_terraform_resource(
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.notifyUsersInput">notify_users_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.setForAccountInput">set_for_account_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.startTimestampInput">start_timestamp_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.suspendImmediateTriggerInput">suspend_immediate_trigger_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.suspendImmediateTriggersInput">suspend_immediate_triggers_input</a></code> | <code>typing.List[typing.Union[int, float]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.suspendTriggerInput">suspend_trigger_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.suspendTriggersInput">suspend_triggers_input</a></code> | <code>typing.List[typing.Union[int, float]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.warehousesInput">warehouses_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.creditQuota">credit_quota</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -669,7 +709,9 @@ resourceMonitor.ResourceMonitor.is_terraform_resource(
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.notifyUsers">notify_users</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.setForAccount">set_for_account</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.startTimestamp">start_timestamp</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.suspendImmediateTrigger">suspend_immediate_trigger</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.suspendImmediateTriggers">suspend_immediate_triggers</a></code> | <code>typing.List[typing.Union[int, float]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.suspendTrigger">suspend_trigger</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.suspendTriggers">suspend_triggers</a></code> | <code>typing.List[typing.Union[int, float]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.warehouses">warehouses</a></code> | <code>typing.List[str]</code> | *No description.* |
 
@@ -907,6 +949,16 @@ start_timestamp_input: str
 
 ---
 
+##### `suspend_immediate_trigger_input`<sup>Optional</sup> <a name="suspend_immediate_trigger_input" id="@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.suspendImmediateTriggerInput"></a>
+
+```python
+suspend_immediate_trigger_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `suspend_immediate_triggers_input`<sup>Optional</sup> <a name="suspend_immediate_triggers_input" id="@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.suspendImmediateTriggersInput"></a>
 
 ```python
@@ -914,6 +966,16 @@ suspend_immediate_triggers_input: typing.List[typing.Union[int, float]]
 ```
 
 - *Type:* typing.List[typing.Union[int, float]]
+
+---
+
+##### `suspend_trigger_input`<sup>Optional</sup> <a name="suspend_trigger_input" id="@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.suspendTriggerInput"></a>
+
+```python
+suspend_trigger_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
 
 ---
 
@@ -1027,6 +1089,16 @@ start_timestamp: str
 
 ---
 
+##### `suspend_immediate_trigger`<sup>Required</sup> <a name="suspend_immediate_trigger" id="@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.suspendImmediateTrigger"></a>
+
+```python
+suspend_immediate_trigger: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `suspend_immediate_triggers`<sup>Required</sup> <a name="suspend_immediate_triggers" id="@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.suspendImmediateTriggers"></a>
 
 ```python
@@ -1034,6 +1106,16 @@ suspend_immediate_triggers: typing.List[typing.Union[int, float]]
 ```
 
 - *Type:* typing.List[typing.Union[int, float]]
+
+---
+
+##### `suspend_trigger`<sup>Required</sup> <a name="suspend_trigger" id="@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.property.suspendTrigger"></a>
+
+```python
+suspend_trigger: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
 
 ---
 
@@ -1101,7 +1183,9 @@ resourceMonitor.ResourceMonitorConfig(
   notify_users: typing.List[str] = None,
   set_for_account: typing.Union[bool, IResolvable] = None,
   start_timestamp: str = None,
+  suspend_immediate_trigger: typing.Union[int, float] = None,
   suspend_immediate_triggers: typing.List[typing.Union[int, float]] = None,
+  suspend_trigger: typing.Union[int, float] = None,
   suspend_triggers: typing.List[typing.Union[int, float]] = None,
   warehouses: typing.List[str] = None
 )
@@ -1125,9 +1209,11 @@ resourceMonitor.ResourceMonitorConfig(
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/resource_monitor#id ResourceMonitor#id}. |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.notifyTriggers">notify_triggers</a></code> | <code>typing.List[typing.Union[int, float]]</code> | A list of percentage thresholds at which to send an alert to subscribed users. |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.notifyUsers">notify_users</a></code> | <code>typing.List[str]</code> | Specifies the list of users to receive email notifications on resource monitors. |
-| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.setForAccount">set_for_account</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether the resource monitor should be applied globally to your Snowflake account. |
+| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.setForAccount">set_for_account</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether the resource monitor should be applied globally to your Snowflake account (defaults to false). |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.startTimestamp">start_timestamp</a></code> | <code>str</code> | The date and time when the resource monitor starts monitoring credit usage for the assigned warehouses. |
-| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.suspendImmediateTriggers">suspend_immediate_triggers</a></code> | <code>typing.List[typing.Union[int, float]]</code> | A list of percentage thresholds at which to immediately suspend all warehouses. |
+| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.suspendImmediateTrigger">suspend_immediate_trigger</a></code> | <code>typing.Union[int, float]</code> | The number that represents the percentage threshold at which to immediately suspend all warehouses. |
+| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.suspendImmediateTriggers">suspend_immediate_triggers</a></code> | <code>typing.List[typing.Union[int, float]]</code> | A list of percentage thresholds at which to suspend all warehouses. |
+| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.suspendTrigger">suspend_trigger</a></code> | <code>typing.Union[int, float]</code> | The number that represents the percentage threshold at which to suspend all warehouses. |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.suspendTriggers">suspend_triggers</a></code> | <code>typing.List[typing.Union[int, float]]</code> | A list of percentage thresholds at which to suspend all warehouses. |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.warehouses">warehouses</a></code> | <code>typing.List[str]</code> | A list of warehouses to apply the resource monitor to. |
 
@@ -1312,7 +1398,7 @@ set_for_account: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Specifies whether the resource monitor should be applied globally to your Snowflake account.
+Specifies whether the resource monitor should be applied globally to your Snowflake account (defaults to false).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/resource_monitor#set_for_account ResourceMonitor#set_for_account}
 
@@ -1332,6 +1418,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 ---
 
+##### `suspend_immediate_trigger`<sup>Optional</sup> <a name="suspend_immediate_trigger" id="@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.suspendImmediateTrigger"></a>
+
+```python
+suspend_immediate_trigger: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+The number that represents the percentage threshold at which to immediately suspend all warehouses.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/resource_monitor#suspend_immediate_trigger ResourceMonitor#suspend_immediate_trigger}
+
+---
+
 ##### `suspend_immediate_triggers`<sup>Optional</sup> <a name="suspend_immediate_triggers" id="@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.suspendImmediateTriggers"></a>
 
 ```python
@@ -1340,9 +1440,23 @@ suspend_immediate_triggers: typing.List[typing.Union[int, float]]
 
 - *Type:* typing.List[typing.Union[int, float]]
 
-A list of percentage thresholds at which to immediately suspend all warehouses.
+A list of percentage thresholds at which to suspend all warehouses.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/resource_monitor#suspend_immediate_triggers ResourceMonitor#suspend_immediate_triggers}
+
+---
+
+##### `suspend_trigger`<sup>Optional</sup> <a name="suspend_trigger" id="@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.suspendTrigger"></a>
+
+```python
+suspend_trigger: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+The number that represents the percentage threshold at which to suspend all warehouses.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/resource_monitor#suspend_trigger ResourceMonitor#suspend_trigger}
 
 ---
 

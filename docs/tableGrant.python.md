@@ -24,6 +24,7 @@ tableGrant.TableGrant(
   database_name: str,
   enable_multiple_grants: typing.Union[bool, IResolvable] = None,
   id: str = None,
+  on_all: typing.Union[bool, IResolvable] = None,
   on_future: typing.Union[bool, IResolvable] = None,
   privilege: str = None,
   roles: typing.List[str] = None,
@@ -48,12 +49,13 @@ tableGrant.TableGrant(
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.Initializer.parameter.databaseName">database_name</a></code> | <code>str</code> | The name of the database containing the current or future tables on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.Initializer.parameter.enableMultipleGrants">enable_multiple_grants</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When this is set to true, multiple grants of the same type can be created. |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table_grant#id TableGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.Initializer.parameter.onAll">on_all</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When this is set to true and a schema_name is provided, apply this grant on all all tables in the given schema. |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.Initializer.parameter.onFuture">on_future</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When this is set to true and a schema_name is provided, apply this grant on all future tables in the given schema. |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.Initializer.parameter.privilege">privilege</a></code> | <code>str</code> | The privilege to grant on the current or future table. |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.Initializer.parameter.roles">roles</a></code> | <code>typing.List[str]</code> | Grants privilege to these roles. |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.Initializer.parameter.schemaName">schema_name</a></code> | <code>str</code> | The name of the schema containing the current or future tables on which to grant privileges. |
-| <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.Initializer.parameter.shares">shares</a></code> | <code>typing.List[str]</code> | Grants privilege to these shares (only valid if on_future is unset). |
-| <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.Initializer.parameter.tableName">table_name</a></code> | <code>str</code> | The name of the table on which to grant privileges immediately (only valid if on_future is unset). |
+| <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.Initializer.parameter.shares">shares</a></code> | <code>typing.List[str]</code> | Grants privilege to these shares (only valid if on_future or on_all is unset). |
+| <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.Initializer.parameter.tableName">table_name</a></code> | <code>str</code> | The name of the table on which to grant privileges immediately (only valid if on_future or on_all is unset). |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.Initializer.parameter.withGrantOption">with_grant_option</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When this is set to true, allows the recipient role to grant the privileges to other roles. |
 
 ---
@@ -151,6 +153,18 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
+##### `on_all`<sup>Optional</sup> <a name="on_all" id="@cdktf/provider-snowflake.tableGrant.TableGrant.Initializer.parameter.onAll"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+When this is set to true and a schema_name is provided, apply this grant on all all tables in the given schema.
+
+When this is true and no schema_name is provided apply this grant on all all tables in the given database. The table_name and shares fields must be unset in order to use on_all.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table_grant#on_all TableGrant#on_all}
+
+---
+
 ##### `on_future`<sup>Optional</sup> <a name="on_future" id="@cdktf/provider-snowflake.tableGrant.TableGrant.Initializer.parameter.onFuture"></a>
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
@@ -197,7 +211,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 - *Type:* typing.List[str]
 
-Grants privilege to these shares (only valid if on_future is unset).
+Grants privilege to these shares (only valid if on_future or on_all is unset).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table_grant#shares TableGrant#shares}
 
@@ -207,7 +221,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 - *Type:* str
 
-The name of the table on which to grant privileges immediately (only valid if on_future is unset).
+The name of the table on which to grant privileges immediately (only valid if on_future or on_all is unset).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table_grant#table_name TableGrant#table_name}
 
@@ -245,6 +259,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.resetEnableMultipleGrants">reset_enable_multiple_grants</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.resetOnAll">reset_on_all</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.resetOnFuture">reset_on_future</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.resetPrivilege">reset_privilege</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.resetRoles">reset_roles</a></code> | *No description.* |
@@ -476,6 +491,12 @@ def reset_enable_multiple_grants() -> None
 def reset_id() -> None
 ```
 
+##### `reset_on_all` <a name="reset_on_all" id="@cdktf/provider-snowflake.tableGrant.TableGrant.resetOnAll"></a>
+
+```python
+def reset_on_all() -> None
+```
+
 ##### `reset_on_future` <a name="reset_on_future" id="@cdktf/provider-snowflake.tableGrant.TableGrant.resetOnFuture"></a>
 
 ```python
@@ -615,6 +636,7 @@ tableGrant.TableGrant.is_terraform_resource(
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.property.databaseNameInput">database_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.property.enableMultipleGrantsInput">enable_multiple_grants_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.property.onAllInput">on_all_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.property.onFutureInput">on_future_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.property.privilegeInput">privilege_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.property.rolesInput">roles_input</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -625,6 +647,7 @@ tableGrant.TableGrant.is_terraform_resource(
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.property.databaseName">database_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.property.enableMultipleGrants">enable_multiple_grants</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.property.onAll">on_all</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.property.onFuture">on_future</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.property.privilege">privilege</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.property.roles">roles</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -807,6 +830,16 @@ id_input: str
 
 ---
 
+##### `on_all_input`<sup>Optional</sup> <a name="on_all_input" id="@cdktf/provider-snowflake.tableGrant.TableGrant.property.onAllInput"></a>
+
+```python
+on_all_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `on_future_input`<sup>Optional</sup> <a name="on_future_input" id="@cdktf/provider-snowflake.tableGrant.TableGrant.property.onFutureInput"></a>
 
 ```python
@@ -904,6 +937,16 @@ id: str
 ```
 
 - *Type:* str
+
+---
+
+##### `on_all`<sup>Required</sup> <a name="on_all" id="@cdktf/provider-snowflake.tableGrant.TableGrant.property.onAll"></a>
+
+```python
+on_all: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
 
 ---
 
@@ -1015,6 +1058,7 @@ tableGrant.TableGrantConfig(
   database_name: str,
   enable_multiple_grants: typing.Union[bool, IResolvable] = None,
   id: str = None,
+  on_all: typing.Union[bool, IResolvable] = None,
   on_future: typing.Union[bool, IResolvable] = None,
   privilege: str = None,
   roles: typing.List[str] = None,
@@ -1039,12 +1083,13 @@ tableGrant.TableGrantConfig(
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.databaseName">database_name</a></code> | <code>str</code> | The name of the database containing the current or future tables on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.enableMultipleGrants">enable_multiple_grants</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When this is set to true, multiple grants of the same type can be created. |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table_grant#id TableGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.onAll">on_all</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When this is set to true and a schema_name is provided, apply this grant on all all tables in the given schema. |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.onFuture">on_future</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When this is set to true and a schema_name is provided, apply this grant on all future tables in the given schema. |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.privilege">privilege</a></code> | <code>str</code> | The privilege to grant on the current or future table. |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.roles">roles</a></code> | <code>typing.List[str]</code> | Grants privilege to these roles. |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.schemaName">schema_name</a></code> | <code>str</code> | The name of the schema containing the current or future tables on which to grant privileges. |
-| <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.shares">shares</a></code> | <code>typing.List[str]</code> | Grants privilege to these shares (only valid if on_future is unset). |
-| <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.tableName">table_name</a></code> | <code>str</code> | The name of the table on which to grant privileges immediately (only valid if on_future is unset). |
+| <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.shares">shares</a></code> | <code>typing.List[str]</code> | Grants privilege to these shares (only valid if on_future or on_all is unset). |
+| <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.tableName">table_name</a></code> | <code>str</code> | The name of the table on which to grant privileges immediately (only valid if on_future or on_all is unset). |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.withGrantOption">with_grant_option</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When this is set to true, allows the recipient role to grant the privileges to other roles. |
 
 ---
@@ -1164,6 +1209,22 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
+##### `on_all`<sup>Optional</sup> <a name="on_all" id="@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.onAll"></a>
+
+```python
+on_all: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+When this is set to true and a schema_name is provided, apply this grant on all all tables in the given schema.
+
+When this is true and no schema_name is provided apply this grant on all all tables in the given database. The table_name and shares fields must be unset in order to use on_all.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table_grant#on_all TableGrant#on_all}
+
+---
+
 ##### `on_future`<sup>Optional</sup> <a name="on_future" id="@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.onFuture"></a>
 
 ```python
@@ -1230,7 +1291,7 @@ shares: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Grants privilege to these shares (only valid if on_future is unset).
+Grants privilege to these shares (only valid if on_future or on_all is unset).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table_grant#shares TableGrant#shares}
 
@@ -1244,7 +1305,7 @@ table_name: str
 
 - *Type:* str
 
-The name of the table on which to grant privileges immediately (only valid if on_future is unset).
+The name of the table on which to grant privileges immediately (only valid if on_future or on_all is unset).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table_grant#table_name TableGrant#table_name}
 

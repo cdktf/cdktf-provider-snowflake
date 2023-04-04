@@ -26,6 +26,7 @@ view.View(
   schema: str,
   statement: str,
   comment: str = None,
+  copy_grants: typing.Union[bool, IResolvable] = None,
   id: str = None,
   is_secure: typing.Union[bool, IResolvable] = None,
   or_replace: typing.Union[bool, IResolvable] = None,
@@ -49,6 +50,7 @@ view.View(
 | <code><a href="#@cdktf/provider-snowflake.view.View.Initializer.parameter.schema">schema</a></code> | <code>str</code> | The schema in which to create the view. Don't use the \| character. |
 | <code><a href="#@cdktf/provider-snowflake.view.View.Initializer.parameter.statement">statement</a></code> | <code>str</code> | Specifies the query used to create the view. |
 | <code><a href="#@cdktf/provider-snowflake.view.View.Initializer.parameter.comment">comment</a></code> | <code>str</code> | Specifies a comment for the view. |
+| <code><a href="#@cdktf/provider-snowflake.view.View.Initializer.parameter.copyGrants">copy_grants</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Retains the access permissions from the original view when a new view is created using the OR REPLACE clause. |
 | <code><a href="#@cdktf/provider-snowflake.view.View.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view#id View#id}. |
 | <code><a href="#@cdktf/provider-snowflake.view.View.Initializer.parameter.isSecure">is_secure</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies that the view is secure. |
 | <code><a href="#@cdktf/provider-snowflake.view.View.Initializer.parameter.orReplace">or_replace</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Overwrites the View if it exists. |
@@ -168,6 +170,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 ---
 
+##### `copy_grants`<sup>Optional</sup> <a name="copy_grants" id="@cdktf/provider-snowflake.view.View.Initializer.parameter.copyGrants"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Retains the access permissions from the original view when a new view is created using the OR REPLACE clause.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view#copy_grants View#copy_grants}
+
+---
+
 ##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-snowflake.view.View.Initializer.parameter.id"></a>
 
 - *Type:* str
@@ -231,6 +243,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 | <code><a href="#@cdktf/provider-snowflake.view.View.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.putTag">put_tag</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.resetComment">reset_comment</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.view.View.resetCopyGrants">reset_copy_grants</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.resetIsSecure">reset_is_secure</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.resetOrReplace">reset_or_replace</a></code> | *No description.* |
@@ -467,6 +480,12 @@ def put_tag(
 def reset_comment() -> None
 ```
 
+##### `reset_copy_grants` <a name="reset_copy_grants" id="@cdktf/provider-snowflake.view.View.resetCopyGrants"></a>
+
+```python
+def reset_copy_grants() -> None
+```
+
 ##### `reset_id` <a name="reset_id" id="@cdktf/provider-snowflake.view.View.resetId"></a>
 
 ```python
@@ -587,6 +606,7 @@ view.View.is_terraform_resource(
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.tag">tag</a></code> | <code><a href="#@cdktf/provider-snowflake.view.ViewTagList">ViewTagList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.commentInput">comment_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.view.View.property.copyGrantsInput">copy_grants_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.databaseInput">database_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.isSecureInput">is_secure_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
@@ -596,6 +616,7 @@ view.View.is_terraform_resource(
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.statementInput">statement_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.tagInput">tag_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-snowflake.view.ViewTag">ViewTag</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.comment">comment</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.view.View.property.copyGrants">copy_grants</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.database">database</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.isSecure">is_secure</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
@@ -768,6 +789,16 @@ comment_input: str
 
 ---
 
+##### `copy_grants_input`<sup>Optional</sup> <a name="copy_grants_input" id="@cdktf/provider-snowflake.view.View.property.copyGrantsInput"></a>
+
+```python
+copy_grants_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `database_input`<sup>Optional</sup> <a name="database_input" id="@cdktf/provider-snowflake.view.View.property.databaseInput"></a>
 
 ```python
@@ -855,6 +886,16 @@ comment: str
 ```
 
 - *Type:* str
+
+---
+
+##### `copy_grants`<sup>Required</sup> <a name="copy_grants" id="@cdktf/provider-snowflake.view.View.property.copyGrants"></a>
+
+```python
+copy_grants: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
 
 ---
 
@@ -968,6 +1009,7 @@ view.ViewConfig(
   schema: str,
   statement: str,
   comment: str = None,
+  copy_grants: typing.Union[bool, IResolvable] = None,
   id: str = None,
   is_secure: typing.Union[bool, IResolvable] = None,
   or_replace: typing.Union[bool, IResolvable] = None,
@@ -991,6 +1033,7 @@ view.ViewConfig(
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.schema">schema</a></code> | <code>str</code> | The schema in which to create the view. Don't use the \| character. |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.statement">statement</a></code> | <code>str</code> | Specifies the query used to create the view. |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.comment">comment</a></code> | <code>str</code> | Specifies a comment for the view. |
+| <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.copyGrants">copy_grants</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Retains the access permissions from the original view when a new view is created using the OR REPLACE clause. |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view#id View#id}. |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.isSecure">is_secure</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies that the view is secure. |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.orReplace">or_replace</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Overwrites the View if it exists. |
@@ -1137,6 +1180,20 @@ comment: str
 Specifies a comment for the view.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view#comment View#comment}
+
+---
+
+##### `copy_grants`<sup>Optional</sup> <a name="copy_grants" id="@cdktf/provider-snowflake.view.ViewConfig.property.copyGrants"></a>
+
+```python
+copy_grants: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Retains the access permissions from the original view when a new view is created using the OR REPLACE clause.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view#copy_grants View#copy_grants}
 
 ---
 

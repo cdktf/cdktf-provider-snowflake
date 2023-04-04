@@ -70,10 +70,14 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.resetArguments">ResetArguments</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.resetComment">ResetComment</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.resetExecuteAs">ResetExecuteAs</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.resetHandler">ResetHandler</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.resetImports">ResetImports</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.resetLanguage">ResetLanguage</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.resetNullInputBehavior">ResetNullInputBehavior</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.resetPackages">ResetPackages</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.resetReturnBehavior">ResetReturnBehavior</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.resetRuntimeVersion">ResetRuntimeVersion</a></code> | *No description.* |
 
 ---
 
@@ -291,10 +295,22 @@ private void ResetComment()
 private void ResetExecuteAs()
 ```
 
+##### `ResetHandler` <a name="ResetHandler" id="@cdktf/provider-snowflake.procedure.Procedure.resetHandler"></a>
+
+```csharp
+private void ResetHandler()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktf/provider-snowflake.procedure.Procedure.resetId"></a>
 
 ```csharp
 private void ResetId()
+```
+
+##### `ResetImports` <a name="ResetImports" id="@cdktf/provider-snowflake.procedure.Procedure.resetImports"></a>
+
+```csharp
+private void ResetImports()
 ```
 
 ##### `ResetLanguage` <a name="ResetLanguage" id="@cdktf/provider-snowflake.procedure.Procedure.resetLanguage"></a>
@@ -309,10 +325,22 @@ private void ResetLanguage()
 private void ResetNullInputBehavior()
 ```
 
+##### `ResetPackages` <a name="ResetPackages" id="@cdktf/provider-snowflake.procedure.Procedure.resetPackages"></a>
+
+```csharp
+private void ResetPackages()
+```
+
 ##### `ResetReturnBehavior` <a name="ResetReturnBehavior" id="@cdktf/provider-snowflake.procedure.Procedure.resetReturnBehavior"></a>
 
 ```csharp
 private void ResetReturnBehavior()
+```
+
+##### `ResetRuntimeVersion` <a name="ResetRuntimeVersion" id="@cdktf/provider-snowflake.procedure.Procedure.resetRuntimeVersion"></a>
+
+```csharp
+private void ResetRuntimeVersion()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -408,23 +436,31 @@ Procedure.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.commentInput">CommentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.databaseInput">DatabaseInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.executeAsInput">ExecuteAsInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.handlerInput">HandlerInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.importsInput">ImportsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.languageInput">LanguageInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.nullInputBehaviorInput">NullInputBehaviorInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.packagesInput">PackagesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.returnBehaviorInput">ReturnBehaviorInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.returnTypeInput">ReturnTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.runtimeVersionInput">RuntimeVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.schemaInput">SchemaInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.statementInput">StatementInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.comment">Comment</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.database">Database</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.executeAs">ExecuteAs</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.handler">Handler</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.id">Id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.imports">Imports</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.language">Language</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.nullInputBehavior">NullInputBehavior</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.packages">Packages</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.returnBehavior">ReturnBehavior</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.returnType">ReturnType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.runtimeVersion">RuntimeVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.schema">Schema</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.statement">Statement</a></code> | <code>string</code> | *No description.* |
 
@@ -622,6 +658,16 @@ public string ExecuteAsInput { get; }
 
 ---
 
+##### `HandlerInput`<sup>Optional</sup> <a name="HandlerInput" id="@cdktf/provider-snowflake.procedure.Procedure.property.handlerInput"></a>
+
+```csharp
+public string HandlerInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-snowflake.procedure.Procedure.property.idInput"></a>
 
 ```csharp
@@ -629,6 +675,16 @@ public string IdInput { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `ImportsInput`<sup>Optional</sup> <a name="ImportsInput" id="@cdktf/provider-snowflake.procedure.Procedure.property.importsInput"></a>
+
+```csharp
+public string[] ImportsInput { get; }
+```
+
+- *Type:* string[]
 
 ---
 
@@ -662,6 +718,16 @@ public string NullInputBehaviorInput { get; }
 
 ---
 
+##### `PackagesInput`<sup>Optional</sup> <a name="PackagesInput" id="@cdktf/provider-snowflake.procedure.Procedure.property.packagesInput"></a>
+
+```csharp
+public string[] PackagesInput { get; }
+```
+
+- *Type:* string[]
+
+---
+
 ##### `ReturnBehaviorInput`<sup>Optional</sup> <a name="ReturnBehaviorInput" id="@cdktf/provider-snowflake.procedure.Procedure.property.returnBehaviorInput"></a>
 
 ```csharp
@@ -676,6 +742,16 @@ public string ReturnBehaviorInput { get; }
 
 ```csharp
 public string ReturnTypeInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `RuntimeVersionInput`<sup>Optional</sup> <a name="RuntimeVersionInput" id="@cdktf/provider-snowflake.procedure.Procedure.property.runtimeVersionInput"></a>
+
+```csharp
+public string RuntimeVersionInput { get; }
 ```
 
 - *Type:* string
@@ -732,6 +808,16 @@ public string ExecuteAs { get; }
 
 ---
 
+##### `Handler`<sup>Required</sup> <a name="Handler" id="@cdktf/provider-snowflake.procedure.Procedure.property.handler"></a>
+
+```csharp
+public string Handler { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-snowflake.procedure.Procedure.property.id"></a>
 
 ```csharp
@@ -739,6 +825,16 @@ public string Id { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `Imports`<sup>Required</sup> <a name="Imports" id="@cdktf/provider-snowflake.procedure.Procedure.property.imports"></a>
+
+```csharp
+public string[] Imports { get; }
+```
+
+- *Type:* string[]
 
 ---
 
@@ -772,6 +868,16 @@ public string NullInputBehavior { get; }
 
 ---
 
+##### `Packages`<sup>Required</sup> <a name="Packages" id="@cdktf/provider-snowflake.procedure.Procedure.property.packages"></a>
+
+```csharp
+public string[] Packages { get; }
+```
+
+- *Type:* string[]
+
+---
+
 ##### `ReturnBehavior`<sup>Required</sup> <a name="ReturnBehavior" id="@cdktf/provider-snowflake.procedure.Procedure.property.returnBehavior"></a>
 
 ```csharp
@@ -786,6 +892,16 @@ public string ReturnBehavior { get; }
 
 ```csharp
 public string ReturnType { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `RuntimeVersion`<sup>Required</sup> <a name="RuntimeVersion" id="@cdktf/provider-snowflake.procedure.Procedure.property.runtimeVersion"></a>
+
+```csharp
+public string RuntimeVersion { get; }
 ```
 
 - *Type:* string
@@ -905,10 +1021,14 @@ new ProcedureConfig {
     object Arguments = null,
     string Comment = null,
     string ExecuteAs = null,
+    string Handler = null,
     string Id = null,
+    string[] Imports = null,
     string Language = null,
     string NullInputBehavior = null,
-    string ReturnBehavior = null
+    string[] Packages = null,
+    string ReturnBehavior = null,
+    string RuntimeVersion = null
 };
 ```
 
@@ -927,14 +1047,18 @@ new ProcedureConfig {
 | <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.name">Name</a></code> | <code>string</code> | Specifies the identifier for the procedure; |
 | <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.returnType">ReturnType</a></code> | <code>string</code> | The return type of the procedure. |
 | <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.schema">Schema</a></code> | <code>string</code> | The schema in which to create the procedure. Don't use the \| character. |
-| <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.statement">Statement</a></code> | <code>string</code> | Specifies the javascript code used to create the procedure. |
+| <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.statement">Statement</a></code> | <code>string</code> | Specifies the code used to create the procedure. |
 | <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.arguments">Arguments</a></code> | <code>object</code> | arguments block. |
 | <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.comment">Comment</a></code> | <code>string</code> | Specifies a comment for the procedure. |
 | <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.executeAs">ExecuteAs</a></code> | <code>string</code> | Sets execute context - see caller's rights and owner's rights. |
+| <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.handler">Handler</a></code> | <code>string</code> | The handler method for Java / Python procedures. |
 | <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#id Procedure#id}. |
+| <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.imports">Imports</a></code> | <code>string[]</code> | Imports for Java / Python procedures. |
 | <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.language">Language</a></code> | <code>string</code> | Specifies the language of the stored procedure code. |
 | <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.nullInputBehavior">NullInputBehavior</a></code> | <code>string</code> | Specifies the behavior of the procedure when called with null inputs. |
+| <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.packages">Packages</a></code> | <code>string[]</code> | List of package imports to use for Java / Python procedures. |
 | <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.returnBehavior">ReturnBehavior</a></code> | <code>string</code> | Specifies the behavior of the function when returning results. |
+| <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.runtimeVersion">RuntimeVersion</a></code> | <code>string</code> | Required for Python procedures. Specifies Python runtime version. |
 
 ---
 
@@ -1074,7 +1198,7 @@ public string Statement { get; set; }
 
 - *Type:* string
 
-Specifies the javascript code used to create the procedure.
+Specifies the code used to create the procedure.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#statement Procedure#statement}
 
@@ -1122,6 +1246,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 ---
 
+##### `Handler`<sup>Optional</sup> <a name="Handler" id="@cdktf/provider-snowflake.procedure.ProcedureConfig.property.handler"></a>
+
+```csharp
+public string Handler { get; set; }
+```
+
+- *Type:* string
+
+The handler method for Java / Python procedures.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#handler Procedure#handler}
+
+---
+
 ##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-snowflake.procedure.ProcedureConfig.property.id"></a>
 
 ```csharp
@@ -1134,6 +1272,22 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Imports`<sup>Optional</sup> <a name="Imports" id="@cdktf/provider-snowflake.procedure.ProcedureConfig.property.imports"></a>
+
+```csharp
+public string[] Imports { get; set; }
+```
+
+- *Type:* string[]
+
+Imports for Java / Python procedures.
+
+For Java this a list of jar files, for Python this is a list of Python files.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#imports Procedure#imports}
 
 ---
 
@@ -1165,6 +1319,22 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 ---
 
+##### `Packages`<sup>Optional</sup> <a name="Packages" id="@cdktf/provider-snowflake.procedure.ProcedureConfig.property.packages"></a>
+
+```csharp
+public string[] Packages { get; set; }
+```
+
+- *Type:* string[]
+
+List of package imports to use for Java / Python procedures.
+
+For Java, package imports should be of the form: package_name:version_number, where package_name is snowflake_domain:package. For Python use it should be: ('numpy','pandas','xgboost==1.5.0').
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#packages Procedure#packages}
+
+---
+
 ##### `ReturnBehavior`<sup>Optional</sup> <a name="ReturnBehavior" id="@cdktf/provider-snowflake.procedure.ProcedureConfig.property.returnBehavior"></a>
 
 ```csharp
@@ -1176,6 +1346,20 @@ public string ReturnBehavior { get; set; }
 Specifies the behavior of the function when returning results.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#return_behavior Procedure#return_behavior}
+
+---
+
+##### `RuntimeVersion`<sup>Optional</sup> <a name="RuntimeVersion" id="@cdktf/provider-snowflake.procedure.ProcedureConfig.property.runtimeVersion"></a>
+
+```csharp
+public string RuntimeVersion { get; set; }
+```
+
+- *Type:* string
+
+Required for Python procedures. Specifies Python runtime version.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#runtime_version Procedure#runtime_version}
 
 ---
 

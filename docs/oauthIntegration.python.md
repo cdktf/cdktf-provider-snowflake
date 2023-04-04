@@ -27,6 +27,7 @@ oauthIntegration.OauthIntegration(
   comment: str = None,
   enabled: typing.Union[bool, IResolvable] = None,
   id: str = None,
+  oauth_client_type: str = None,
   oauth_issue_refresh_tokens: typing.Union[bool, IResolvable] = None,
   oauth_redirect_uri: str = None,
   oauth_refresh_token_validity: typing.Union[int, float] = None,
@@ -51,6 +52,7 @@ oauthIntegration.OauthIntegration(
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.Initializer.parameter.comment">comment</a></code> | <code>str</code> | Specifies a comment for the OAuth integration. |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.Initializer.parameter.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether this OAuth integration is enabled or disabled. |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/oauth_integration#id OauthIntegration#id}. |
+| <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.Initializer.parameter.oauthClientType">oauth_client_type</a></code> | <code>str</code> | Specifies the type of client being registered. Snowflake supports both confidential and public clients. |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.Initializer.parameter.oauthIssueRefreshTokens">oauth_issue_refresh_tokens</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether to allow the client to exchange a refresh token for an access token when the current access token has expired. |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.Initializer.parameter.oauthRedirectUri">oauth_redirect_uri</a></code> | <code>str</code> | Specifies the client URI. After a user is authenticated, the web browser is redirected to this URI. |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.Initializer.parameter.oauthRefreshTokenValidity">oauth_refresh_token_validity</a></code> | <code>typing.Union[int, float]</code> | Specifies how long refresh tokens should be valid (in seconds). OAUTH_ISSUE_REFRESH_TOKENS must be set to TRUE. |
@@ -183,6 +185,16 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
+##### `oauth_client_type`<sup>Optional</sup> <a name="oauth_client_type" id="@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.Initializer.parameter.oauthClientType"></a>
+
+- *Type:* str
+
+Specifies the type of client being registered. Snowflake supports both confidential and public clients.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/oauth_integration#oauth_client_type OauthIntegration#oauth_client_type}
+
+---
+
 ##### `oauth_issue_refresh_tokens`<sup>Optional</sup> <a name="oauth_issue_refresh_tokens" id="@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.Initializer.parameter.oauthIssueRefreshTokens"></a>
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
@@ -247,6 +259,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.resetComment">reset_comment</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.resetEnabled">reset_enabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.resetOauthClientType">reset_oauth_client_type</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.resetOauthIssueRefreshTokens">reset_oauth_issue_refresh_tokens</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.resetOauthRedirectUri">reset_oauth_redirect_uri</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.resetOauthRefreshTokenValidity">reset_oauth_refresh_token_validity</a></code> | *No description.* |
@@ -487,6 +500,12 @@ def reset_enabled() -> None
 def reset_id() -> None
 ```
 
+##### `reset_oauth_client_type` <a name="reset_oauth_client_type" id="@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.resetOauthClientType"></a>
+
+```python
+def reset_oauth_client_type() -> None
+```
+
 ##### `reset_oauth_issue_refresh_tokens` <a name="reset_oauth_issue_refresh_tokens" id="@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.resetOauthIssueRefreshTokens"></a>
 
 ```python
@@ -612,6 +631,7 @@ oauthIntegration.OauthIntegration.is_terraform_resource(
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.oauthClientInput">oauth_client_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.oauthClientTypeInput">oauth_client_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.oauthIssueRefreshTokensInput">oauth_issue_refresh_tokens_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.oauthRedirectUriInput">oauth_redirect_uri_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.oauthRefreshTokenValidityInput">oauth_refresh_token_validity_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -622,6 +642,7 @@ oauthIntegration.OauthIntegration.is_terraform_resource(
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.oauthClient">oauth_client</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.oauthClientType">oauth_client_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.oauthIssueRefreshTokens">oauth_issue_refresh_tokens</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.oauthRedirectUri">oauth_redirect_uri</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.oauthRefreshTokenValidity">oauth_refresh_token_validity</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -841,6 +862,16 @@ oauth_client_input: str
 
 ---
 
+##### `oauth_client_type_input`<sup>Optional</sup> <a name="oauth_client_type_input" id="@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.oauthClientTypeInput"></a>
+
+```python
+oauth_client_type_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `oauth_issue_refresh_tokens_input`<sup>Optional</sup> <a name="oauth_issue_refresh_tokens_input" id="@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.oauthIssueRefreshTokensInput"></a>
 
 ```python
@@ -941,6 +972,16 @@ oauth_client: str
 
 ---
 
+##### `oauth_client_type`<sup>Required</sup> <a name="oauth_client_type" id="@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.oauthClientType"></a>
+
+```python
+oauth_client_type: str
+```
+
+- *Type:* str
+
+---
+
 ##### `oauth_issue_refresh_tokens`<sup>Required</sup> <a name="oauth_issue_refresh_tokens" id="@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.oauthIssueRefreshTokens"></a>
 
 ```python
@@ -1022,6 +1063,7 @@ oauthIntegration.OauthIntegrationConfig(
   comment: str = None,
   enabled: typing.Union[bool, IResolvable] = None,
   id: str = None,
+  oauth_client_type: str = None,
   oauth_issue_refresh_tokens: typing.Union[bool, IResolvable] = None,
   oauth_redirect_uri: str = None,
   oauth_refresh_token_validity: typing.Union[int, float] = None,
@@ -1046,6 +1088,7 @@ oauthIntegration.OauthIntegrationConfig(
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegrationConfig.property.comment">comment</a></code> | <code>str</code> | Specifies a comment for the OAuth integration. |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegrationConfig.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether this OAuth integration is enabled or disabled. |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegrationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/oauth_integration#id OauthIntegration#id}. |
+| <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegrationConfig.property.oauthClientType">oauth_client_type</a></code> | <code>str</code> | Specifies the type of client being registered. Snowflake supports both confidential and public clients. |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegrationConfig.property.oauthIssueRefreshTokens">oauth_issue_refresh_tokens</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether to allow the client to exchange a refresh token for an access token when the current access token has expired. |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegrationConfig.property.oauthRedirectUri">oauth_redirect_uri</a></code> | <code>str</code> | Specifies the client URI. After a user is authenticated, the web browser is redirected to this URI. |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegrationConfig.property.oauthRefreshTokenValidity">oauth_refresh_token_validity</a></code> | <code>typing.Union[int, float]</code> | Specifies how long refresh tokens should be valid (in seconds). OAUTH_ISSUE_REFRESH_TOKENS must be set to TRUE. |
@@ -1209,6 +1252,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `oauth_client_type`<sup>Optional</sup> <a name="oauth_client_type" id="@cdktf/provider-snowflake.oauthIntegration.OauthIntegrationConfig.property.oauthClientType"></a>
+
+```python
+oauth_client_type: str
+```
+
+- *Type:* str
+
+Specifies the type of client being registered. Snowflake supports both confidential and public clients.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/oauth_integration#oauth_client_type OauthIntegration#oauth_client_type}
 
 ---
 

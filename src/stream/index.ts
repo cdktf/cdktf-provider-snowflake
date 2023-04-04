@@ -45,6 +45,12 @@ export interface StreamConfig extends cdktf.TerraformMetaArguments {
   */
   readonly name: string;
   /**
+  * Name of the stage the stream will monitor.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stream#on_stage Stream#on_stage}
+  */
+  readonly onStage?: string;
+  /**
   * Name of the table the stream will monitor.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stream#on_table Stream#on_table}
@@ -96,7 +102,7 @@ export class Stream extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_stream',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.58.0',
+        providerVersion: '0.61.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
@@ -113,6 +119,7 @@ export class Stream extends cdktf.TerraformResource {
     this._id = config.id;
     this._insertOnly = config.insertOnly;
     this._name = config.name;
+    this._onStage = config.onStage;
     this._onTable = config.onTable;
     this._onView = config.onView;
     this._schema = config.schema;
@@ -213,6 +220,22 @@ export class Stream extends cdktf.TerraformResource {
     return this._name;
   }
 
+  // on_stage - computed: false, optional: true, required: false
+  private _onStage?: string; 
+  public get onStage() {
+    return this.getStringAttribute('on_stage');
+  }
+  public set onStage(value: string) {
+    this._onStage = value;
+  }
+  public resetOnStage() {
+    this._onStage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get onStageInput() {
+    return this._onStage;
+  }
+
   // on_table - computed: false, optional: true, required: false
   private _onTable?: string; 
   public get onTable() {
@@ -291,6 +314,7 @@ export class Stream extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       insert_only: cdktf.booleanToTerraform(this._insertOnly),
       name: cdktf.stringToTerraform(this._name),
+      on_stage: cdktf.stringToTerraform(this._onStage),
       on_table: cdktf.stringToTerraform(this._onTable),
       on_view: cdktf.stringToTerraform(this._onView),
       schema: cdktf.stringToTerraform(this._schema),

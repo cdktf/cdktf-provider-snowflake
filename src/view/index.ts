@@ -14,6 +14,12 @@ export interface ViewConfig extends cdktf.TerraformMetaArguments {
   */
   readonly comment?: string;
   /**
+  * Retains the access permissions from the original view when a new view is created using the OR REPLACE clause.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view#copy_grants View#copy_grants}
+  */
+  readonly copyGrants?: boolean | cdktf.IResolvable;
+  /**
   * The database in which to create the view. Don't use the | character.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view#database View#database}
@@ -270,7 +276,7 @@ export class View extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_view',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.58.0',
+        providerVersion: '0.61.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
@@ -282,6 +288,7 @@ export class View extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._comment = config.comment;
+    this._copyGrants = config.copyGrants;
     this._database = config.database;
     this._id = config.id;
     this._isSecure = config.isSecure;
@@ -310,6 +317,22 @@ export class View extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get commentInput() {
     return this._comment;
+  }
+
+  // copy_grants - computed: false, optional: true, required: false
+  private _copyGrants?: boolean | cdktf.IResolvable; 
+  public get copyGrants() {
+    return this.getBooleanAttribute('copy_grants');
+  }
+  public set copyGrants(value: boolean | cdktf.IResolvable) {
+    this._copyGrants = value;
+  }
+  public resetCopyGrants() {
+    this._copyGrants = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get copyGrantsInput() {
+    return this._copyGrants;
   }
 
   // database - computed: false, optional: false, required: true
@@ -435,6 +458,7 @@ export class View extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       comment: cdktf.stringToTerraform(this._comment),
+      copy_grants: cdktf.booleanToTerraform(this._copyGrants),
       database: cdktf.stringToTerraform(this._database),
       id: cdktf.stringToTerraform(this._id),
       is_secure: cdktf.booleanToTerraform(this._isSecure),

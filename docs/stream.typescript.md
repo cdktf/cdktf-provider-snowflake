@@ -70,6 +70,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.resetComment">resetComment</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.resetInsertOnly">resetInsertOnly</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.stream.Stream.resetOnStage">resetOnStage</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.resetOnTable">resetOnTable</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.resetOnView">resetOnView</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.resetShowInitialRows">resetShowInitialRows</a></code> | *No description.* |
@@ -284,6 +285,12 @@ public resetId(): void
 public resetInsertOnly(): void
 ```
 
+##### `resetOnStage` <a name="resetOnStage" id="@cdktf/provider-snowflake.stream.Stream.resetOnStage"></a>
+
+```typescript
+public resetOnStage(): void
+```
+
 ##### `resetOnTable` <a name="resetOnTable" id="@cdktf/provider-snowflake.stream.Stream.resetOnTable"></a>
 
 ```typescript
@@ -397,6 +404,7 @@ stream.Stream.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.insertOnlyInput">insertOnlyInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.onStageInput">onStageInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.onTableInput">onTableInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.onViewInput">onViewInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.schemaInput">schemaInput</a></code> | <code>string</code> | *No description.* |
@@ -407,6 +415,7 @@ stream.Stream.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.insertOnly">insertOnly</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.onStage">onStage</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.onTable">onTable</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.onView">onView</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.schema">schema</a></code> | <code>string</code> | *No description.* |
@@ -626,6 +635,16 @@ public readonly nameInput: string;
 
 ---
 
+##### `onStageInput`<sup>Optional</sup> <a name="onStageInput" id="@cdktf/provider-snowflake.stream.Stream.property.onStageInput"></a>
+
+```typescript
+public readonly onStageInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `onTableInput`<sup>Optional</sup> <a name="onTableInput" id="@cdktf/provider-snowflake.stream.Stream.property.onTableInput"></a>
 
 ```typescript
@@ -726,6 +745,16 @@ public readonly name: string;
 
 ---
 
+##### `onStage`<sup>Required</sup> <a name="onStage" id="@cdktf/provider-snowflake.stream.Stream.property.onStage"></a>
+
+```typescript
+public readonly onStage: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `onTable`<sup>Required</sup> <a name="onTable" id="@cdktf/provider-snowflake.stream.Stream.property.onTable"></a>
 
 ```typescript
@@ -814,6 +843,7 @@ const streamConfig: stream.StreamConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.comment">comment</a></code> | <code>string</code> | Specifies a comment for the stream. |
 | <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stream#id Stream#id}. |
 | <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.insertOnly">insertOnly</a></code> | <code>boolean \| cdktf.IResolvable</code> | Create an insert only stream type. |
+| <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.onStage">onStage</a></code> | <code>string</code> | Name of the stage the stream will monitor. |
 | <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.onTable">onTable</a></code> | <code>string</code> | Name of the table the stream will monitor. |
 | <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.onView">onView</a></code> | <code>string</code> | Name of the view the stream will monitor. |
 | <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.showInitialRows">showInitialRows</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies whether to return all existing rows in the source table as row inserts the first time the stream is consumed. |
@@ -988,6 +1018,20 @@ public readonly insertOnly: boolean | IResolvable;
 Create an insert only stream type.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stream#insert_only Stream#insert_only}
+
+---
+
+##### `onStage`<sup>Optional</sup> <a name="onStage" id="@cdktf/provider-snowflake.stream.StreamConfig.property.onStage"></a>
+
+```typescript
+public readonly onStage: string;
+```
+
+- *Type:* string
+
+Name of the stage the stream will monitor.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stream#on_stage Stream#on_stage}
 
 ---
 

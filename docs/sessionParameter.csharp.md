@@ -67,6 +67,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.resetOnAccount">ResetOnAccount</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.resetUser">ResetUser</a></code> | *No description.* |
 
 ---
 
@@ -260,6 +262,18 @@ private IResolvable InterpolationForAttribute(string TerraformAttribute)
 private void ResetId()
 ```
 
+##### `ResetOnAccount` <a name="ResetOnAccount" id="@cdktf/provider-snowflake.sessionParameter.SessionParameter.resetOnAccount"></a>
+
+```csharp
+private void ResetOnAccount()
+```
+
+##### `ResetUser` <a name="ResetUser" id="@cdktf/provider-snowflake.sessionParameter.SessionParameter.resetUser"></a>
+
+```csharp
+private void ResetUser()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -350,9 +364,13 @@ SessionParameter.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.property.keyInput">KeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.property.onAccountInput">OnAccountInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.property.userInput">UserInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.property.key">Key</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.property.onAccount">OnAccount</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.property.user">User</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameter.property.value">Value</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -519,6 +537,26 @@ public string KeyInput { get; }
 
 ---
 
+##### `OnAccountInput`<sup>Optional</sup> <a name="OnAccountInput" id="@cdktf/provider-snowflake.sessionParameter.SessionParameter.property.onAccountInput"></a>
+
+```csharp
+public object OnAccountInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `UserInput`<sup>Optional</sup> <a name="UserInput" id="@cdktf/provider-snowflake.sessionParameter.SessionParameter.property.userInput"></a>
+
+```csharp
+public string UserInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `ValueInput`<sup>Optional</sup> <a name="ValueInput" id="@cdktf/provider-snowflake.sessionParameter.SessionParameter.property.valueInput"></a>
 
 ```csharp
@@ -543,6 +581,26 @@ public string Id { get; }
 
 ```csharp
 public string Key { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `OnAccount`<sup>Required</sup> <a name="OnAccount" id="@cdktf/provider-snowflake.sessionParameter.SessionParameter.property.onAccount"></a>
+
+```csharp
+public object OnAccount { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `User`<sup>Required</sup> <a name="User" id="@cdktf/provider-snowflake.sessionParameter.SessionParameter.property.user"></a>
+
+```csharp
+public string User { get; }
 ```
 
 - *Type:* string
@@ -596,7 +654,9 @@ new SessionParameterConfig {
     object[] Provisioners = null,
     string Key,
     string Value,
-    string Id = null
+    string Id = null,
+    object OnAccount = null,
+    string User = null
 };
 ```
 
@@ -614,6 +674,8 @@ new SessionParameterConfig {
 | <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameterConfig.property.key">Key</a></code> | <code>string</code> | Name of session parameter. Valid values are those in [session parameters](https://docs.snowflake.com/en/sql-reference/parameters.html#session-parameters). |
 | <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameterConfig.property.value">Value</a></code> | <code>string</code> | Value of session parameter, as a string. Constraints are the same as those for the parameters in Snowflake documentation. |
 | <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameterConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/session_parameter#id SessionParameter#id}. |
+| <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameterConfig.property.onAccount">OnAccount</a></code> | <code>object</code> | If true, the session parameter will be set on the account level. |
+| <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameterConfig.property.user">User</a></code> | <code>string</code> | The user to set the session parameter for. Required if on_account is false. |
 
 ---
 
@@ -727,6 +789,34 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `OnAccount`<sup>Optional</sup> <a name="OnAccount" id="@cdktf/provider-snowflake.sessionParameter.SessionParameterConfig.property.onAccount"></a>
+
+```csharp
+public object OnAccount { get; set; }
+```
+
+- *Type:* object
+
+If true, the session parameter will be set on the account level.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/session_parameter#on_account SessionParameter#on_account}
+
+---
+
+##### `User`<sup>Optional</sup> <a name="User" id="@cdktf/provider-snowflake.sessionParameter.SessionParameterConfig.property.user"></a>
+
+```csharp
+public string User { get; set; }
+```
+
+- *Type:* string
+
+The user to set the session parameter for. Required if on_account is false.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/session_parameter#user SessionParameter#user}
 
 ---
 

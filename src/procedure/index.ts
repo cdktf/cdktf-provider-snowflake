@@ -26,12 +26,24 @@ export interface ProcedureConfig extends cdktf.TerraformMetaArguments {
   */
   readonly executeAs?: string;
   /**
+  * The handler method for Java / Python procedures.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#handler Procedure#handler}
+  */
+  readonly handler?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#id Procedure#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
+  /**
+  * Imports for Java / Python procedures. For Java this a list of jar files, for Python this is a list of Python files.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#imports Procedure#imports}
+  */
+  readonly imports?: string[];
   /**
   * Specifies the language of the stored procedure code.
   * 
@@ -51,6 +63,12 @@ export interface ProcedureConfig extends cdktf.TerraformMetaArguments {
   */
   readonly nullInputBehavior?: string;
   /**
+  * List of package imports to use for Java / Python procedures. For Java, package imports should be of the form: package_name:version_number, where package_name is snowflake_domain:package. For Python use it should be: ('numpy','pandas','xgboost==1.5.0').
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#packages Procedure#packages}
+  */
+  readonly packages?: string[];
+  /**
   * Specifies the behavior of the function when returning results
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#return_behavior Procedure#return_behavior}
@@ -63,13 +81,19 @@ export interface ProcedureConfig extends cdktf.TerraformMetaArguments {
   */
   readonly returnType: string;
   /**
+  * Required for Python procedures. Specifies Python runtime version.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#runtime_version Procedure#runtime_version}
+  */
+  readonly runtimeVersion?: string;
+  /**
   * The schema in which to create the procedure. Don't use the | character.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#schema Procedure#schema}
   */
   readonly schema: string;
   /**
-  * Specifies the javascript code used to create the procedure.
+  * Specifies the code used to create the procedure.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#statement Procedure#statement}
   */
@@ -230,7 +254,7 @@ export class Procedure extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_procedure',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.58.0',
+        providerVersion: '0.61.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
@@ -244,12 +268,16 @@ export class Procedure extends cdktf.TerraformResource {
     this._comment = config.comment;
     this._database = config.database;
     this._executeAs = config.executeAs;
+    this._handler = config.handler;
     this._id = config.id;
+    this._imports = config.imports;
     this._language = config.language;
     this._name = config.name;
     this._nullInputBehavior = config.nullInputBehavior;
+    this._packages = config.packages;
     this._returnBehavior = config.returnBehavior;
     this._returnType = config.returnType;
+    this._runtimeVersion = config.runtimeVersion;
     this._schema = config.schema;
     this._statement = config.statement;
     this._arguments.internalValue = config.arguments;
@@ -304,6 +332,22 @@ export class Procedure extends cdktf.TerraformResource {
     return this._executeAs;
   }
 
+  // handler - computed: false, optional: true, required: false
+  private _handler?: string; 
+  public get handler() {
+    return this.getStringAttribute('handler');
+  }
+  public set handler(value: string) {
+    this._handler = value;
+  }
+  public resetHandler() {
+    this._handler = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get handlerInput() {
+    return this._handler;
+  }
+
   // id - computed: true, optional: true, required: false
   private _id?: string; 
   public get id() {
@@ -318,6 +362,22 @@ export class Procedure extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // imports - computed: false, optional: true, required: false
+  private _imports?: string[]; 
+  public get imports() {
+    return this.getListAttribute('imports');
+  }
+  public set imports(value: string[]) {
+    this._imports = value;
+  }
+  public resetImports() {
+    this._imports = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get importsInput() {
+    return this._imports;
   }
 
   // language - computed: false, optional: true, required: false
@@ -365,6 +425,22 @@ export class Procedure extends cdktf.TerraformResource {
     return this._nullInputBehavior;
   }
 
+  // packages - computed: false, optional: true, required: false
+  private _packages?: string[]; 
+  public get packages() {
+    return this.getListAttribute('packages');
+  }
+  public set packages(value: string[]) {
+    this._packages = value;
+  }
+  public resetPackages() {
+    this._packages = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get packagesInput() {
+    return this._packages;
+  }
+
   // return_behavior - computed: false, optional: true, required: false
   private _returnBehavior?: string; 
   public get returnBehavior() {
@@ -392,6 +468,22 @@ export class Procedure extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get returnTypeInput() {
     return this._returnType;
+  }
+
+  // runtime_version - computed: false, optional: true, required: false
+  private _runtimeVersion?: string; 
+  public get runtimeVersion() {
+    return this.getStringAttribute('runtime_version');
+  }
+  public set runtimeVersion(value: string) {
+    this._runtimeVersion = value;
+  }
+  public resetRuntimeVersion() {
+    this._runtimeVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get runtimeVersionInput() {
+    return this._runtimeVersion;
   }
 
   // schema - computed: false, optional: false, required: true
@@ -445,12 +537,16 @@ export class Procedure extends cdktf.TerraformResource {
       comment: cdktf.stringToTerraform(this._comment),
       database: cdktf.stringToTerraform(this._database),
       execute_as: cdktf.stringToTerraform(this._executeAs),
+      handler: cdktf.stringToTerraform(this._handler),
       id: cdktf.stringToTerraform(this._id),
+      imports: cdktf.listMapper(cdktf.stringToTerraform, false)(this._imports),
       language: cdktf.stringToTerraform(this._language),
       name: cdktf.stringToTerraform(this._name),
       null_input_behavior: cdktf.stringToTerraform(this._nullInputBehavior),
+      packages: cdktf.listMapper(cdktf.stringToTerraform, false)(this._packages),
       return_behavior: cdktf.stringToTerraform(this._returnBehavior),
       return_type: cdktf.stringToTerraform(this._returnType),
+      runtime_version: cdktf.stringToTerraform(this._runtimeVersion),
       schema: cdktf.stringToTerraform(this._schema),
       statement: cdktf.stringToTerraform(this._statement),
       arguments: cdktf.listMapper(procedureArgumentsToTerraform, true)(this._arguments.internalValue),

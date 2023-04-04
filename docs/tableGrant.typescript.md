@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.resetEnableMultipleGrants">resetEnableMultipleGrants</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.resetOnAll">resetOnAll</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.resetOnFuture">resetOnFuture</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.resetPrivilege">resetPrivilege</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.resetRoles">resetRoles</a></code> | *No description.* |
@@ -274,6 +275,12 @@ public resetEnableMultipleGrants(): void
 public resetId(): void
 ```
 
+##### `resetOnAll` <a name="resetOnAll" id="@cdktf/provider-snowflake.tableGrant.TableGrant.resetOnAll"></a>
+
+```typescript
+public resetOnAll(): void
+```
+
 ##### `resetOnFuture` <a name="resetOnFuture" id="@cdktf/provider-snowflake.tableGrant.TableGrant.resetOnFuture"></a>
 
 ```typescript
@@ -407,6 +414,7 @@ tableGrant.TableGrant.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.property.databaseNameInput">databaseNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.property.enableMultipleGrantsInput">enableMultipleGrantsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.property.onAllInput">onAllInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.property.onFutureInput">onFutureInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.property.privilegeInput">privilegeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.property.rolesInput">rolesInput</a></code> | <code>string[]</code> | *No description.* |
@@ -417,6 +425,7 @@ tableGrant.TableGrant.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.property.databaseName">databaseName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.property.onAll">onAll</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.property.onFuture">onFuture</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.property.privilege">privilege</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.property.roles">roles</a></code> | <code>string[]</code> | *No description.* |
@@ -599,6 +608,16 @@ public readonly idInput: string;
 
 ---
 
+##### `onAllInput`<sup>Optional</sup> <a name="onAllInput" id="@cdktf/provider-snowflake.tableGrant.TableGrant.property.onAllInput"></a>
+
+```typescript
+public readonly onAllInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `onFutureInput`<sup>Optional</sup> <a name="onFutureInput" id="@cdktf/provider-snowflake.tableGrant.TableGrant.property.onFutureInput"></a>
 
 ```typescript
@@ -696,6 +715,16 @@ public readonly id: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `onAll`<sup>Required</sup> <a name="onAll" id="@cdktf/provider-snowflake.tableGrant.TableGrant.property.onAll"></a>
+
+```typescript
+public readonly onAll: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -813,12 +842,13 @@ const tableGrantConfig: tableGrant.TableGrantConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.databaseName">databaseName</a></code> | <code>string</code> | The name of the database containing the current or future tables on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table_grant#id TableGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.onAll">onAll</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true and a schema_name is provided, apply this grant on all all tables in the given schema. |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.onFuture">onFuture</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true and a schema_name is provided, apply this grant on all future tables in the given schema. |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.privilege">privilege</a></code> | <code>string</code> | The privilege to grant on the current or future table. |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.roles">roles</a></code> | <code>string[]</code> | Grants privilege to these roles. |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.schemaName">schemaName</a></code> | <code>string</code> | The name of the schema containing the current or future tables on which to grant privileges. |
-| <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.shares">shares</a></code> | <code>string[]</code> | Grants privilege to these shares (only valid if on_future is unset). |
-| <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.tableName">tableName</a></code> | <code>string</code> | The name of the table on which to grant privileges immediately (only valid if on_future is unset). |
+| <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.shares">shares</a></code> | <code>string[]</code> | Grants privilege to these shares (only valid if on_future or on_all is unset). |
+| <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.tableName">tableName</a></code> | <code>string</code> | The name of the table on which to grant privileges immediately (only valid if on_future or on_all is unset). |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.withGrantOption">withGrantOption</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, allows the recipient role to grant the privileges to other roles. |
 
 ---
@@ -938,6 +968,22 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
+##### `onAll`<sup>Optional</sup> <a name="onAll" id="@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.onAll"></a>
+
+```typescript
+public readonly onAll: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+When this is set to true and a schema_name is provided, apply this grant on all all tables in the given schema.
+
+When this is true and no schema_name is provided apply this grant on all all tables in the given database. The table_name and shares fields must be unset in order to use on_all.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table_grant#on_all TableGrant#on_all}
+
+---
+
 ##### `onFuture`<sup>Optional</sup> <a name="onFuture" id="@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.onFuture"></a>
 
 ```typescript
@@ -1004,7 +1050,7 @@ public readonly shares: string[];
 
 - *Type:* string[]
 
-Grants privilege to these shares (only valid if on_future is unset).
+Grants privilege to these shares (only valid if on_future or on_all is unset).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table_grant#shares TableGrant#shares}
 
@@ -1018,7 +1064,7 @@ public readonly tableName: string;
 
 - *Type:* string
 
-The name of the table on which to grant privileges immediately (only valid if on_future is unset).
+The name of the table on which to grant privileges immediately (only valid if on_future or on_all is unset).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table_grant#table_name TableGrant#table_name}
 

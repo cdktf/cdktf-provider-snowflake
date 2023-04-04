@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.view.View.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.putTag">PutTag</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.resetComment">ResetComment</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.view.View.resetCopyGrants">ResetCopyGrants</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.resetIsSecure">ResetIsSecure</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.resetOrReplace">ResetOrReplace</a></code> | *No description.* |
@@ -277,6 +278,12 @@ private void PutTag(object Value)
 private void ResetComment()
 ```
 
+##### `ResetCopyGrants` <a name="ResetCopyGrants" id="@cdktf/provider-snowflake.view.View.resetCopyGrants"></a>
+
+```csharp
+private void ResetCopyGrants()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktf/provider-snowflake.view.View.resetId"></a>
 
 ```csharp
@@ -391,6 +398,7 @@ View.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.tag">Tag</a></code> | <code><a href="#@cdktf/provider-snowflake.view.ViewTagList">ViewTagList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.commentInput">CommentInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.view.View.property.copyGrantsInput">CopyGrantsInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.databaseInput">DatabaseInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.isSecureInput">IsSecureInput</a></code> | <code>object</code> | *No description.* |
@@ -400,6 +408,7 @@ View.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.statementInput">StatementInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.tagInput">TagInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.comment">Comment</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.view.View.property.copyGrants">CopyGrants</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.database">Database</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.isSecure">IsSecure</a></code> | <code>object</code> | *No description.* |
@@ -572,6 +581,16 @@ public string CommentInput { get; }
 
 ---
 
+##### `CopyGrantsInput`<sup>Optional</sup> <a name="CopyGrantsInput" id="@cdktf/provider-snowflake.view.View.property.copyGrantsInput"></a>
+
+```csharp
+public object CopyGrantsInput { get; }
+```
+
+- *Type:* object
+
+---
+
 ##### `DatabaseInput`<sup>Optional</sup> <a name="DatabaseInput" id="@cdktf/provider-snowflake.view.View.property.databaseInput"></a>
 
 ```csharp
@@ -659,6 +678,16 @@ public string Comment { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `CopyGrants`<sup>Required</sup> <a name="CopyGrants" id="@cdktf/provider-snowflake.view.View.property.copyGrants"></a>
+
+```csharp
+public object CopyGrants { get; }
+```
+
+- *Type:* object
 
 ---
 
@@ -772,6 +801,7 @@ new ViewConfig {
     string Schema,
     string Statement,
     string Comment = null,
+    object CopyGrants = null,
     string Id = null,
     object IsSecure = null,
     object OrReplace = null,
@@ -795,6 +825,7 @@ new ViewConfig {
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.schema">Schema</a></code> | <code>string</code> | The schema in which to create the view. Don't use the \| character. |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.statement">Statement</a></code> | <code>string</code> | Specifies the query used to create the view. |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.comment">Comment</a></code> | <code>string</code> | Specifies a comment for the view. |
+| <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.copyGrants">CopyGrants</a></code> | <code>object</code> | Retains the access permissions from the original view when a new view is created using the OR REPLACE clause. |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view#id View#id}. |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.isSecure">IsSecure</a></code> | <code>object</code> | Specifies that the view is secure. |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.orReplace">OrReplace</a></code> | <code>object</code> | Overwrites the View if it exists. |
@@ -941,6 +972,20 @@ public string Comment { get; set; }
 Specifies a comment for the view.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view#comment View#comment}
+
+---
+
+##### `CopyGrants`<sup>Optional</sup> <a name="CopyGrants" id="@cdktf/provider-snowflake.view.ViewConfig.property.copyGrants"></a>
+
+```csharp
+public object CopyGrants { get; set; }
+```
+
+- *Type:* object
+
+Retains the access permissions from the original view when a new view is created using the OR REPLACE clause.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view#copy_grants View#copy_grants}
 
 ---
 

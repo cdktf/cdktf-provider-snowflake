@@ -72,6 +72,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.resetHandler">resetHandler</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.resetImports">resetImports</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.resetIsSecure">resetIsSecure</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.resetLanguage">resetLanguage</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.resetNullInputBehavior">resetNullInputBehavior</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.resetPackages">resetPackages</a></code> | *No description.* |
@@ -307,6 +308,12 @@ public resetId(): void
 public resetImports(): void
 ```
 
+##### `resetIsSecure` <a name="resetIsSecure" id="@cdktf/provider-snowflake.functionResource.FunctionResource.resetIsSecure"></a>
+
+```typescript
+public resetIsSecure(): void
+```
+
 ##### `resetLanguage` <a name="resetLanguage" id="@cdktf/provider-snowflake.functionResource.FunctionResource.resetLanguage"></a>
 
 ```typescript
@@ -438,6 +445,7 @@ functionResource.FunctionResource.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.property.handlerInput">handlerInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.property.importsInput">importsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.property.isSecureInput">isSecureInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.property.languageInput">languageInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.property.nullInputBehaviorInput">nullInputBehaviorInput</a></code> | <code>string</code> | *No description.* |
@@ -453,6 +461,7 @@ functionResource.FunctionResource.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.property.handler">handler</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.property.imports">imports</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.property.isSecure">isSecure</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.property.language">language</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResource.property.nullInputBehavior">nullInputBehavior</a></code> | <code>string</code> | *No description.* |
@@ -678,6 +687,16 @@ public readonly importsInput: string[];
 
 ---
 
+##### `isSecureInput`<sup>Optional</sup> <a name="isSecureInput" id="@cdktf/provider-snowflake.functionResource.FunctionResource.property.isSecureInput"></a>
+
+```typescript
+public readonly isSecureInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `languageInput`<sup>Optional</sup> <a name="languageInput" id="@cdktf/provider-snowflake.functionResource.FunctionResource.property.languageInput"></a>
 
 ```typescript
@@ -825,6 +844,16 @@ public readonly imports: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `isSecure`<sup>Required</sup> <a name="isSecure" id="@cdktf/provider-snowflake.functionResource.FunctionResource.property.isSecure"></a>
+
+```typescript
+public readonly isSecure: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -1026,6 +1055,7 @@ const functionResourceConfig: functionResource.FunctionResourceConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResourceConfig.property.handler">handler</a></code> | <code>string</code> | The handler method for Java / Python function. |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResourceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#id FunctionResource#id}. |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResourceConfig.property.imports">imports</a></code> | <code>string[]</code> | Imports for Java / Python functions. |
+| <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResourceConfig.property.isSecure">isSecure</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies that the function is secure. |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResourceConfig.property.language">language</a></code> | <code>string</code> | The language of the statement. |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResourceConfig.property.nullInputBehavior">nullInputBehavior</a></code> | <code>string</code> | Specifies the behavior of the function when called with null inputs. |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResourceConfig.property.packages">packages</a></code> | <code>string[]</code> | List of package imports to use for Java / Python functions. |
@@ -1247,6 +1277,20 @@ Imports for Java / Python functions.
 For Java this a list of jar files, for Python this is a list of Python files.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#imports FunctionResource#imports}
+
+---
+
+##### `isSecure`<sup>Optional</sup> <a name="isSecure" id="@cdktf/provider-snowflake.functionResource.FunctionResourceConfig.property.isSecure"></a>
+
+```typescript
+public readonly isSecure: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Specifies that the function is secure.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/function#is_secure FunctionResource#is_secure}
 
 ---
 
