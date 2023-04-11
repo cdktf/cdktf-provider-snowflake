@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/masking_
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.maskingPolicyGrant.MaskingPolicyGrant.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/maskingpolicygrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/maskingpolicygrant"
 
 maskingpolicygrant.NewMaskingPolicyGrant(scope Construct, id *string, config MaskingPolicyGrantConfig) MaskingPolicyGrant
 ```
@@ -301,7 +301,7 @@ func ResetWithGrantOption()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.maskingPolicyGrant.MaskingPolicyGrant.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/maskingpolicygrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/maskingpolicygrant"
 
 maskingpolicygrant.MaskingPolicyGrant_IsConstruct(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.maskingPolicyGrant.MaskingPolicyGrant.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/maskingpolicygrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/maskingpolicygrant"
 
 maskingpolicygrant.MaskingPolicyGrant_IsTerraformElement(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ maskingpolicygrant.MaskingPolicyGrant_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.maskingPolicyGrant.MaskingPolicyGrant.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/maskingpolicygrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/maskingpolicygrant"
 
 maskingpolicygrant.MaskingPolicyGrant_IsTerraformResource(x interface{}) *bool
 ```
@@ -722,7 +722,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.maskingPolicyGrant.MaskingPolicyGrantConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/maskingpolicygrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/maskingpolicygrant"
 
 &maskingpolicygrant.MaskingPolicyGrantConfig {
 	Connection: interface{},
