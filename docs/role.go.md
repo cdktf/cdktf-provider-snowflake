@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/role sno
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.role.Role.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/role"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/role"
 
 role.NewRole(scope Construct, id *string, config RoleConfig) Role
 ```
@@ -300,7 +300,7 @@ func ResetTag()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.role.Role.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/role"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/role"
 
 role.Role_IsConstruct(x interface{}) *bool
 ```
@@ -332,7 +332,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.role.Role.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/role"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/role"
 
 role.Role_IsTerraformElement(x interface{}) *bool
 ```
@@ -346,7 +346,7 @@ role.Role_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.role.Role.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/role"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/role"
 
 role.Role_IsTerraformResource(x interface{}) *bool
 ```
@@ -633,7 +633,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.role.RoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/role"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/role"
 
 &role.RoleConfig {
 	Connection: interface{},
@@ -796,7 +796,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.role.RoleTag.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/role"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/role"
 
 &role.RoleTag {
 	Name: *string,
@@ -880,7 +880,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.role.RoleTagList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/role"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/role"
 
 role.NewRoleTagList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RoleTagList
 ```
@@ -1023,7 +1023,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.role.RoleTagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/role"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/role"
 
 role.NewRoleTagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RoleTagOutputReference
 ```

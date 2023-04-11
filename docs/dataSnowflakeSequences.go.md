@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/snowflake/d/sequence
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSequences.DataSnowflakeSequences.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakesequences"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakesequences"
 
 datasnowflakesequences.NewDataSnowflakeSequences(scope Construct, id *string, config DataSnowflakeSequencesConfig) DataSnowflakeSequences
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeSequences.DataSnowflakeSequences.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakesequences"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakesequences"
 
 datasnowflakesequences.DataSnowflakeSequences_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeSequences.DataSnowflakeSequences.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakesequences"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakesequences"
 
 datasnowflakesequences.DataSnowflakeSequences_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ datasnowflakesequences.DataSnowflakeSequences_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeSequences.DataSnowflakeSequences.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakesequences"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakesequences"
 
 datasnowflakesequences.DataSnowflakeSequences_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -573,7 +573,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSequences.DataSnowflakeSequencesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakesequences"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakesequences"
 
 &datasnowflakesequences.DataSnowflakeSequencesConfig {
 	Connection: interface{},
@@ -724,7 +724,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSequences.DataSnowflakeSequencesSequences.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakesequences"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakesequences"
 
 &datasnowflakesequences.DataSnowflakeSequencesSequences {
 
@@ -739,7 +739,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakes
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSequences.DataSnowflakeSequencesSequencesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakesequences"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakesequences"
 
 datasnowflakesequences.NewDataSnowflakeSequencesSequencesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSequencesSequencesList
 ```
@@ -871,7 +871,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSequences.DataSnowflakeSequencesSequencesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakesequences"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakesequences"
 
 datasnowflakesequences.NewDataSnowflakeSequencesSequencesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSequencesSequencesOutputReference
 ```

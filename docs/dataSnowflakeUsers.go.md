@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/snowflake/d/users sn
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakeusers"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakeusers"
 
 datasnowflakeusers.NewDataSnowflakeUsers(scope Construct, id *string, config DataSnowflakeUsersConfig) DataSnowflakeUsers
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsers.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakeusers"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakeusers"
 
 datasnowflakeusers.DataSnowflakeUsers_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsers.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakeusers"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakeusers"
 
 datasnowflakeusers.DataSnowflakeUsers_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ datasnowflakeusers.DataSnowflakeUsers_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsers.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakeusers"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakeusers"
 
 datasnowflakeusers.DataSnowflakeUsers_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -551,7 +551,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakeusers"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakeusers"
 
 &datasnowflakeusers.DataSnowflakeUsersConfig {
 	Connection: interface{},
@@ -686,7 +686,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakeusers"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakeusers"
 
 &datasnowflakeusers.DataSnowflakeUsersUsers {
 
@@ -701,7 +701,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakeu
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakeusers"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakeusers"
 
 datasnowflakeusers.NewDataSnowflakeUsersUsersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeUsersUsersList
 ```
@@ -833,7 +833,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeUsers.DataSnowflakeUsersUsersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakeusers"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakeusers"
 
 datasnowflakeusers.NewDataSnowflakeUsersUsersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeUsersUsersOutputReference
 ```

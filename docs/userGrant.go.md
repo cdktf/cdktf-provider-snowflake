@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/user_gra
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.userGrant.UserGrant.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/usergrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/usergrant"
 
 usergrant.NewUserGrant(scope Construct, id *string, config UserGrantConfig) UserGrant
 ```
@@ -294,7 +294,7 @@ func ResetWithGrantOption()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.userGrant.UserGrant.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/usergrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/usergrant"
 
 usergrant.UserGrant_IsConstruct(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.userGrant.UserGrant.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/usergrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/usergrant"
 
 usergrant.UserGrant_IsTerraformElement(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ usergrant.UserGrant_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.userGrant.UserGrant.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/usergrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/usergrant"
 
 usergrant.UserGrant_IsTerraformResource(x interface{}) *bool
 ```
@@ -671,7 +671,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.userGrant.UserGrantConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/usergrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/usergrant"
 
 &usergrant.UserGrantConfig {
 	Connection: interface{},

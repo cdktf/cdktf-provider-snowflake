@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/snowflake/d/system_g
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSystemGetSnowflakePlatformInfo.DataSnowflakeSystemGetSnowflakePlatformInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakesystemgetsnowflakeplatforminfo"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakesystemgetsnowflakeplatforminfo"
 
 datasnowflakesystemgetsnowflakeplatforminfo.NewDataSnowflakeSystemGetSnowflakePlatformInfo(scope Construct, id *string, config DataSnowflakeSystemGetSnowflakePlatformInfoConfig) DataSnowflakeSystemGetSnowflakePlatformInfo
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeSystemGetSnowflakePlatformInfo.DataSnowflakeSystemGetSnowflakePlatformInfo.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakesystemgetsnowflakeplatforminfo"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakesystemgetsnowflakeplatforminfo"
 
 datasnowflakesystemgetsnowflakeplatforminfo.DataSnowflakeSystemGetSnowflakePlatformInfo_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeSystemGetSnowflakePlatformInfo.DataSnowflakeSystemGetSnowflakePlatformInfo.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakesystemgetsnowflakeplatforminfo"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakesystemgetsnowflakeplatforminfo"
 
 datasnowflakesystemgetsnowflakeplatforminfo.DataSnowflakeSystemGetSnowflakePlatformInfo_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ datasnowflakesystemgetsnowflakeplatforminfo.DataSnowflakeSystemGetSnowflakePlatf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeSystemGetSnowflakePlatformInfo.DataSnowflakeSystemGetSnowflakePlatformInfo.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakesystemgetsnowflakeplatforminfo"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakesystemgetsnowflakeplatforminfo"
 
 datasnowflakesystemgetsnowflakeplatforminfo.DataSnowflakeSystemGetSnowflakePlatformInfo_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -540,7 +540,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSystemGetSnowflakePlatformInfo.DataSnowflakeSystemGetSnowflakePlatformInfoConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v5/datasnowflakesystemgetsnowflakeplatforminfo"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakesystemgetsnowflakeplatforminfo"
 
 &datasnowflakesystemgetsnowflakeplatforminfo.DataSnowflakeSystemGetSnowflakePlatformInfoConfig {
 	Connection: interface{},
