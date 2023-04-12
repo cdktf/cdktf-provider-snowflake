@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/tag_mask
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tagmaskingpolicyassociation"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/tagmaskingpolicyassociation"
 
 tagmaskingpolicyassociation.NewTagMaskingPolicyAssociation(scope Construct, id *string, config TagMaskingPolicyAssociationConfig) TagMaskingPolicyAssociation
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tagmaskingpolicyassociation"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/tagmaskingpolicyassociation"
 
 tagmaskingpolicyassociation.TagMaskingPolicyAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tagmaskingpolicyassociation"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/tagmaskingpolicyassociation"
 
 tagmaskingpolicyassociation.TagMaskingPolicyAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ tagmaskingpolicyassociation.TagMaskingPolicyAssociation_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tagmaskingpolicyassociation"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/tagmaskingpolicyassociation"
 
 tagmaskingpolicyassociation.TagMaskingPolicyAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -584,7 +584,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tagmaskingpolicyassociation"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/tagmaskingpolicyassociation"
 
 &tagmaskingpolicyassociation.TagMaskingPolicyAssociationConfig {
 	Connection: interface{},

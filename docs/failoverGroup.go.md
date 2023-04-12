@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/failover
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.failoverGroup.FailoverGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/failovergroup"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/failovergroup"
 
 failovergroup.NewFailoverGroup(scope Construct, id *string, config FailoverGroupConfig) FailoverGroup
 ```
@@ -355,7 +355,7 @@ func ResetReplicationSchedule()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.failoverGroup.FailoverGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/failovergroup"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/failovergroup"
 
 failovergroup.FailoverGroup_IsConstruct(x interface{}) *bool
 ```
@@ -387,7 +387,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.failoverGroup.FailoverGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/failovergroup"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/failovergroup"
 
 failovergroup.FailoverGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -401,7 +401,7 @@ failovergroup.FailoverGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.failoverGroup.FailoverGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/failovergroup"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/failovergroup"
 
 failovergroup.FailoverGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -820,7 +820,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.failoverGroup.FailoverGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/failovergroup"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/failovergroup"
 
 &failovergroup.FailoverGroupConfig {
 	Connection: interface{},
@@ -835,11 +835,11 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/failovergroup"
 	AllowedDatabases: *[]*string,
 	AllowedIntegrationTypes: *[]*string,
 	AllowedShares: *[]*string,
-	FromReplica: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.failoverGroup.FailoverGroupFromReplica,
+	FromReplica: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6.failoverGroup.FailoverGroupFromReplica,
 	Id: *string,
 	IgnoreEditionCheck: interface{},
 	ObjectTypes: *[]*string,
-	ReplicationSchedule: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.failoverGroup.FailoverGroupReplicationSchedule,
+	ReplicationSchedule: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6.failoverGroup.FailoverGroupReplicationSchedule,
 }
 ```
 
@@ -1095,7 +1095,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.failoverGroup.FailoverGroupFromReplica.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/failovergroup"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/failovergroup"
 
 &failovergroup.FailoverGroupFromReplica {
 	Name: *string,
@@ -1161,10 +1161,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.failoverGroup.FailoverGroupReplicationSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/failovergroup"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/failovergroup"
 
 &failovergroup.FailoverGroupReplicationSchedule {
-	Cron: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.failoverGroup.FailoverGroupReplicationScheduleCron,
+	Cron: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6.failoverGroup.FailoverGroupReplicationScheduleCron,
 	Interval: *f64,
 }
 ```
@@ -1213,7 +1213,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.failoverGroup.FailoverGroupReplicationScheduleCron.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/failovergroup"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/failovergroup"
 
 &failovergroup.FailoverGroupReplicationScheduleCron {
 	Expression: *string,
@@ -1267,7 +1267,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.failoverGroup.FailoverGroupFromReplicaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/failovergroup"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/failovergroup"
 
 failovergroup.NewFailoverGroupFromReplicaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FailoverGroupFromReplicaOutputReference
 ```
@@ -1582,7 +1582,7 @@ func InternalValue() FailoverGroupFromReplica
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.failoverGroup.FailoverGroupReplicationScheduleCronOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/failovergroup"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/failovergroup"
 
 failovergroup.NewFailoverGroupReplicationScheduleCronOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FailoverGroupReplicationScheduleCronOutputReference
 ```
@@ -1875,7 +1875,7 @@ func InternalValue() FailoverGroupReplicationScheduleCron
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.failoverGroup.FailoverGroupReplicationScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/failovergroup"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/failovergroup"
 
 failovergroup.NewFailoverGroupReplicationScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FailoverGroupReplicationScheduleOutputReference
 ```
