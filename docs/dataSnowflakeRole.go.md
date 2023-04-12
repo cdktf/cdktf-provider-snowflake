@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/snowflake/d/role sno
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeRole.DataSnowflakeRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakerole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakerole"
 
 datasnowflakerole.NewDataSnowflakeRole(scope Construct, id *string, config DataSnowflakeRoleConfig) DataSnowflakeRole
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeRole.DataSnowflakeRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakerole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakerole"
 
 datasnowflakerole.DataSnowflakeRole_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeRole.DataSnowflakeRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakerole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakerole"
 
 datasnowflakerole.DataSnowflakeRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ datasnowflakerole.DataSnowflakeRole_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeRole.DataSnowflakeRole.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakerole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakerole"
 
 datasnowflakerole.DataSnowflakeRole_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -551,7 +551,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeRole.DataSnowflakeRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakerole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakerole"
 
 &datasnowflakerole.DataSnowflakeRoleConfig {
 	Connection: interface{},

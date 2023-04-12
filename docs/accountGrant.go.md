@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/account_
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.accountGrant.AccountGrant.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/accountgrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/accountgrant"
 
 accountgrant.NewAccountGrant(scope Construct, id *string, config AccountGrantConfig) AccountGrant
 ```
@@ -301,7 +301,7 @@ func ResetWithGrantOption()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.accountGrant.AccountGrant.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/accountgrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/accountgrant"
 
 accountgrant.AccountGrant_IsConstruct(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.accountGrant.AccountGrant.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/accountgrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/accountgrant"
 
 accountgrant.AccountGrant_IsTerraformElement(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ accountgrant.AccountGrant_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.accountGrant.AccountGrant.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/accountgrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/accountgrant"
 
 accountgrant.AccountGrant_IsTerraformResource(x interface{}) *bool
 ```
@@ -656,7 +656,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.accountGrant.AccountGrantConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/accountgrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/accountgrant"
 
 &accountgrant.AccountGrantConfig {
 	Connection: interface{},

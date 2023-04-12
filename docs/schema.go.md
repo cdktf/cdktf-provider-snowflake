@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/schema s
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schema.Schema.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 schema.NewSchema(scope Construct, id *string, config SchemaConfig) Schema
 ```
@@ -321,7 +321,7 @@ func ResetTag()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.schema.Schema.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 schema.Schema_IsConstruct(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.schema.Schema.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 schema.Schema_IsTerraformElement(x interface{}) *bool
 ```
@@ -367,7 +367,7 @@ schema.Schema_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.schema.Schema.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 schema.Schema_IsTerraformResource(x interface{}) *bool
 ```
@@ -742,7 +742,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.schema.SchemaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 &schema.SchemaConfig {
 	Connection: interface{},
@@ -975,7 +975,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.schema.SchemaTag.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 &schema.SchemaTag {
 	Name: *string,
@@ -1059,7 +1059,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schema.SchemaTagList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 schema.NewSchemaTagList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SchemaTagList
 ```
@@ -1202,7 +1202,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schema.SchemaTagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 schema.NewSchemaTagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SchemaTagOutputReference
 ```

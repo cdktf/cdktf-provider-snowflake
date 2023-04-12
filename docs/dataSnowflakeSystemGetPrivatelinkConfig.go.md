@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/snowflake/d/system_g
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakesystemgetprivatelinkconfig"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakesystemgetprivatelinkconfig"
 
 datasnowflakesystemgetprivatelinkconfig.NewDataSnowflakeSystemGetPrivatelinkConfig(scope Construct, id *string, config DataSnowflakeSystemGetPrivatelinkConfigConfig) DataSnowflakeSystemGetPrivatelinkConfig
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakesystemgetprivatelinkconfig"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakesystemgetprivatelinkconfig"
 
 datasnowflakesystemgetprivatelinkconfig.DataSnowflakeSystemGetPrivatelinkConfig_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakesystemgetprivatelinkconfig"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakesystemgetprivatelinkconfig"
 
 datasnowflakesystemgetprivatelinkconfig.DataSnowflakeSystemGetPrivatelinkConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ datasnowflakesystemgetprivatelinkconfig.DataSnowflakeSystemGetPrivatelinkConfig_
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakesystemgetprivatelinkconfig"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakesystemgetprivatelinkconfig"
 
 datasnowflakesystemgetprivatelinkconfig.DataSnowflakeSystemGetPrivatelinkConfig_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -617,7 +617,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakesystemgetprivatelinkconfig"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakesystemgetprivatelinkconfig"
 
 &datasnowflakesystemgetprivatelinkconfig.DataSnowflakeSystemGetPrivatelinkConfigConfig {
 	Connection: interface{},
