@@ -1,6 +1,6 @@
 # `snowflake_schema`
 
-Refer to the Terraform Registory for docs: [`snowflake_schema`](https://www.terraform.io/docs/providers/snowflake/r/schema).
+Refer to the Terraform Registory for docs: [`snowflake_schema`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema).
 
 # `schema` Submodule <a name="`schema` Submodule" id="@cdktf/provider-snowflake.schema"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`snowflake_schema`](https://www.terr
 
 ### Schema <a name="Schema" id="@cdktf/provider-snowflake.schema.Schema"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/schema snowflake_schema}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema snowflake_schema}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schema.Schema.Initializer"></a>
 
@@ -19,7 +19,7 @@ schema.Schema(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -41,7 +41,7 @@ schema.Schema(
 | <code><a href="#@cdktf/provider-snowflake.schema.Schema.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-snowflake.schema.Schema.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-snowflake.schema.Schema.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.schema.Schema.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.schema.Schema.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schema.Schema.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schema.Schema.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schema.Schema.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -51,7 +51,7 @@ schema.Schema(
 | <code><a href="#@cdktf/provider-snowflake.schema.Schema.Initializer.parameter.name">name</a></code> | <code>str</code> | Specifies the identifier for the schema; must be unique for the database in which the schema is created. |
 | <code><a href="#@cdktf/provider-snowflake.schema.Schema.Initializer.parameter.comment">comment</a></code> | <code>str</code> | Specifies a comment for the schema. |
 | <code><a href="#@cdktf/provider-snowflake.schema.Schema.Initializer.parameter.dataRetentionDays">data_retention_days</a></code> | <code>typing.Union[int, float]</code> | Specifies the number of days for which Time Travel actions (CLONE and UNDROP) can be performed on the schema, as well as specifying the default Time Travel retention time for all tables created in the schema. |
-| <code><a href="#@cdktf/provider-snowflake.schema.Schema.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema#id Schema#id}. |
+| <code><a href="#@cdktf/provider-snowflake.schema.Schema.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema#id Schema#id}. |
 | <code><a href="#@cdktf/provider-snowflake.schema.Schema.Initializer.parameter.isManaged">is_managed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies a managed schema. Managed access schemas centralize privilege management with the schema owner. |
 | <code><a href="#@cdktf/provider-snowflake.schema.Schema.Initializer.parameter.isTransient">is_transient</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies a schema as transient. |
 | <code><a href="#@cdktf/provider-snowflake.schema.Schema.Initializer.parameter.tag">tag</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-snowflake.schema.SchemaTag">SchemaTag</a>]]</code> | tag block. |
@@ -84,7 +84,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.schema.Schema.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -124,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 The database in which to create the schema.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema#database Schema#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema#database Schema#database}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Specifies the identifier for the schema; must be unique for the database in which the schema is created.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema#name Schema#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema#name Schema#name}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Specifies a comment for the schema.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema#comment Schema#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema#comment Schema#comment}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Specifies the number of days for which Time Travel actions (CLONE and UNDROP) can be performed on the schema, as well as specifying the default Time Travel retention time for all tables created in the schema.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema#data_retention_days Schema#data_retention_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema#data_retention_days Schema#data_retention_days}
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema#id Schema#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema#id Schema#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -175,7 +175,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Specifies a managed schema. Managed access schemas centralize privilege management with the schema owner.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema#is_managed Schema#is_managed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema#is_managed Schema#is_managed}
 
 ---
 
@@ -187,7 +187,7 @@ Specifies a schema as transient.
 
 Transient schemas do not have a Fail-safe period so they do not incur additional storage costs once they leave Time Travel; however, this means they are also not protected by Fail-safe in the event of a data loss.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema#is_transient Schema#is_transient}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema#is_transient Schema#is_transient}
 
 ---
 
@@ -197,7 +197,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 tag block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema#tag Schema#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema#tag Schema#tag}
 
 ---
 
@@ -578,7 +578,7 @@ schema.Schema.is_terraform_resource(
 | <code><a href="#@cdktf/provider-snowflake.schema.Schema.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schema.Schema.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schema.Schema.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.schema.Schema.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.schema.Schema.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schema.Schema.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schema.Schema.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schema.Schema.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -688,10 +688,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.schema.Schema.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -934,7 +934,7 @@ from cdktf_cdktf_provider_snowflake import schema
 
 schema.SchemaConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -956,7 +956,7 @@ schema.SchemaConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-snowflake.schema.SchemaConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.schema.SchemaConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.schema.SchemaConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schema.SchemaConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schema.SchemaConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schema.SchemaConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -966,7 +966,7 @@ schema.SchemaConfig(
 | <code><a href="#@cdktf/provider-snowflake.schema.SchemaConfig.property.name">name</a></code> | <code>str</code> | Specifies the identifier for the schema; must be unique for the database in which the schema is created. |
 | <code><a href="#@cdktf/provider-snowflake.schema.SchemaConfig.property.comment">comment</a></code> | <code>str</code> | Specifies a comment for the schema. |
 | <code><a href="#@cdktf/provider-snowflake.schema.SchemaConfig.property.dataRetentionDays">data_retention_days</a></code> | <code>typing.Union[int, float]</code> | Specifies the number of days for which Time Travel actions (CLONE and UNDROP) can be performed on the schema, as well as specifying the default Time Travel retention time for all tables created in the schema. |
-| <code><a href="#@cdktf/provider-snowflake.schema.SchemaConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema#id Schema#id}. |
+| <code><a href="#@cdktf/provider-snowflake.schema.SchemaConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema#id Schema#id}. |
 | <code><a href="#@cdktf/provider-snowflake.schema.SchemaConfig.property.isManaged">is_managed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies a managed schema. Managed access schemas centralize privilege management with the schema owner. |
 | <code><a href="#@cdktf/provider-snowflake.schema.SchemaConfig.property.isTransient">is_transient</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies a schema as transient. |
 | <code><a href="#@cdktf/provider-snowflake.schema.SchemaConfig.property.tag">tag</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-snowflake.schema.SchemaTag">SchemaTag</a>]]</code> | tag block. |
@@ -986,10 +986,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.schema.SchemaConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1053,7 +1053,7 @@ database: str
 
 The database in which to create the schema.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema#database Schema#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema#database Schema#database}
 
 ---
 
@@ -1067,7 +1067,7 @@ name: str
 
 Specifies the identifier for the schema; must be unique for the database in which the schema is created.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema#name Schema#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema#name Schema#name}
 
 ---
 
@@ -1081,7 +1081,7 @@ comment: str
 
 Specifies a comment for the schema.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema#comment Schema#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema#comment Schema#comment}
 
 ---
 
@@ -1095,7 +1095,7 @@ data_retention_days: typing.Union[int, float]
 
 Specifies the number of days for which Time Travel actions (CLONE and UNDROP) can be performed on the schema, as well as specifying the default Time Travel retention time for all tables created in the schema.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema#data_retention_days Schema#data_retention_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema#data_retention_days Schema#data_retention_days}
 
 ---
 
@@ -1107,7 +1107,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema#id Schema#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema#id Schema#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1124,7 +1124,7 @@ is_managed: typing.Union[bool, IResolvable]
 
 Specifies a managed schema. Managed access schemas centralize privilege management with the schema owner.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema#is_managed Schema#is_managed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema#is_managed Schema#is_managed}
 
 ---
 
@@ -1140,7 +1140,7 @@ Specifies a schema as transient.
 
 Transient schemas do not have a Fail-safe period so they do not incur additional storage costs once they leave Time Travel; however, this means they are also not protected by Fail-safe in the event of a data loss.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema#is_transient Schema#is_transient}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema#is_transient Schema#is_transient}
 
 ---
 
@@ -1154,7 +1154,7 @@ tag: typing.Union[IResolvable, typing.List[SchemaTag]]
 
 tag block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema#tag Schema#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema#tag Schema#tag}
 
 ---
 
@@ -1194,7 +1194,7 @@ name: str
 
 Tag name, e.g. department.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema#name Schema#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema#name Schema#name}
 
 ---
 
@@ -1208,7 +1208,7 @@ value: str
 
 Tag value, e.g. marketing_info.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema#value Schema#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema#value Schema#value}
 
 ---
 
@@ -1222,7 +1222,7 @@ database: str
 
 Name of the database that the tag was created in.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema#database Schema#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema#database Schema#database}
 
 ---
 
@@ -1236,7 +1236,7 @@ schema: str
 
 Name of the schema that the tag was created in.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema#schema Schema#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema#schema Schema#schema}
 
 ---
 

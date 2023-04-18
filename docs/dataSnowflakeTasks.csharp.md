@@ -1,6 +1,6 @@
 # `data_snowflake_tasks`
 
-Refer to the Terraform Registory for docs: [`data_snowflake_tasks`](https://www.terraform.io/docs/providers/snowflake/d/tasks).
+Refer to the Terraform Registory for docs: [`data_snowflake_tasks`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/tasks).
 
 # `dataSnowflakeTasks` Submodule <a name="`dataSnowflakeTasks` Submodule" id="@cdktf/provider-snowflake.dataSnowflakeTasks"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_snowflake_tasks`](https://www.
 
 ### DataSnowflakeTasks <a name="DataSnowflakeTasks" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasks"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/snowflake/d/tasks snowflake_tasks}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/tasks snowflake_tasks}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasks.Initializer"></a>
 
@@ -345,7 +345,7 @@ DataSnowflakeTasks.IsTerraformDataSource(object X);
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasks.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasks.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasks.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasks.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasks.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasks.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasks.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasks.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -435,10 +435,10 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasks.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -581,7 +581,7 @@ using HashiCorp.Cdktf.Providers.Snowflake;
 
 new DataSnowflakeTasksConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -598,7 +598,7 @@ new DataSnowflakeTasksConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -606,7 +606,7 @@ new DataSnowflakeTasksConfig {
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksConfig.property.database">Database</a></code> | <code>string</code> | The database from which to return the schemas from. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksConfig.property.schema">Schema</a></code> | <code>string</code> | The schema from which to return the tasks from. |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/tasks#id DataSnowflakeTasks#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/tasks#id DataSnowflakeTasks#id}. |
 
 ---
 
@@ -623,10 +623,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -690,7 +690,7 @@ public string Database { get; set; }
 
 The database from which to return the schemas from.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/tasks#database DataSnowflakeTasks#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/tasks#database DataSnowflakeTasks#database}
 
 ---
 
@@ -704,7 +704,7 @@ public string Schema { get; set; }
 
 The schema from which to return the tasks from.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/tasks#schema DataSnowflakeTasks#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/tasks#schema DataSnowflakeTasks#schema}
 
 ---
 
@@ -716,7 +716,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/tasks#id DataSnowflakeTasks#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/tasks#id DataSnowflakeTasks#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

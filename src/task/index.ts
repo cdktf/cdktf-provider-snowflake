@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/snowflake/r/task
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/task
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,41 +10,41 @@ export interface TaskConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies one or more predecessor tasks for the current task. Use this option to create a DAG of tasks or add this task to an existing DAG. A DAG is a series of tasks that starts with a scheduled root task and is linked together by dependencies.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task#after Task#after}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/task#after Task#after}
   */
   readonly after?: string[];
   /**
   * By default, Snowflake ensures that only one instance of a particular DAG is allowed to run at a time, setting the parameter value to TRUE permits DAG runs to overlap.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task#allow_overlapping_execution Task#allow_overlapping_execution}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/task#allow_overlapping_execution Task#allow_overlapping_execution}
   */
   readonly allowOverlappingExecution?: boolean | cdktf.IResolvable;
   /**
   * Specifies a comment for the task.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task#comment Task#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/task#comment Task#comment}
   */
   readonly comment?: string;
   /**
   * The database in which to create the task.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task#database Task#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/task#database Task#database}
   */
   readonly database: string;
   /**
   * Specifies if the task should be started (enabled) after creation or should remain suspended (default).
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task#enabled Task#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/task#enabled Task#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Specifies the name of the notification integration used for error notifications.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task#error_integration Task#error_integration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/task#error_integration Task#error_integration}
   */
   readonly errorIntegration?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task#id Task#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/task#id Task#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -53,61 +53,61 @@ export interface TaskConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies the identifier for the task; must be unique for the database and schema in which the task is created.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task#name Task#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/task#name Task#name}
   */
   readonly name: string;
   /**
   * The schedule for periodically running the task. This can be a cron or interval in minutes. (Conflict with after)
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task#schedule Task#schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/task#schedule Task#schedule}
   */
   readonly schedule?: string;
   /**
   * The schema in which to create the task.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task#schema Task#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/task#schema Task#schema}
   */
   readonly schema: string;
   /**
   * Specifies session parameters to set for the session when the task runs. A task supports all session parameters.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task#session_parameters Task#session_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/task#session_parameters Task#session_parameters}
   */
   readonly sessionParameters?: { [key: string]: string };
   /**
   * Any single SQL statement, or a call to a stored procedure, executed when the task runs.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task#sql_statement Task#sql_statement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/task#sql_statement Task#sql_statement}
   */
   readonly sqlStatement: string;
   /**
   * Specifies the size of the compute resources to provision for the first run of the task, before a task history is available for Snowflake to determine an ideal size. Once a task has successfully completed a few runs, Snowflake ignores this parameter setting. (Conflicts with warehouse)
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task#user_task_managed_initial_warehouse_size Task#user_task_managed_initial_warehouse_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/task#user_task_managed_initial_warehouse_size Task#user_task_managed_initial_warehouse_size}
   */
   readonly userTaskManagedInitialWarehouseSize?: string;
   /**
   * Specifies the time limit on a single run of the task before it times out (in milliseconds).
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task#user_task_timeout_ms Task#user_task_timeout_ms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/task#user_task_timeout_ms Task#user_task_timeout_ms}
   */
   readonly userTaskTimeoutMs?: number;
   /**
   * The warehouse the task will use. Omit this parameter to use Snowflake-managed compute resources for runs of this task. (Conflicts with user_task_managed_initial_warehouse_size)
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task#warehouse Task#warehouse}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/task#warehouse Task#warehouse}
   */
   readonly warehouse?: string;
   /**
   * Specifies a Boolean SQL expression; multiple conditions joined with AND/OR are supported.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task#when Task#when}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/task#when Task#when}
   */
   readonly when?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/task snowflake_task}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/task snowflake_task}
 */
 export class Task extends cdktf.TerraformResource {
 
@@ -121,7 +121,7 @@ export class Task extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/snowflake/r/task snowflake_task} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/task snowflake_task} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

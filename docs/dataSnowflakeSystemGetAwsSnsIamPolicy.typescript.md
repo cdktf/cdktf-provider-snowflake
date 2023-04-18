@@ -1,6 +1,6 @@
 # `data_snowflake_system_get_aws_sns_iam_policy`
 
-Refer to the Terraform Registory for docs: [`data_snowflake_system_get_aws_sns_iam_policy`](https://www.terraform.io/docs/providers/snowflake/d/system_get_aws_sns_iam_policy).
+Refer to the Terraform Registory for docs: [`data_snowflake_system_get_aws_sns_iam_policy`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/system_get_aws_sns_iam_policy).
 
 # `dataSnowflakeSystemGetAwsSnsIamPolicy` Submodule <a name="`dataSnowflakeSystemGetAwsSnsIamPolicy` Submodule" id="@cdktf/provider-snowflake.dataSnowflakeSystemGetAwsSnsIamPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_snowflake_system_get_aws_sns_i
 
 ### DataSnowflakeSystemGetAwsSnsIamPolicy <a name="DataSnowflakeSystemGetAwsSnsIamPolicy" id="@cdktf/provider-snowflake.dataSnowflakeSystemGetAwsSnsIamPolicy.DataSnowflakeSystemGetAwsSnsIamPolicy"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/snowflake/d/system_get_aws_sns_iam_policy snowflake_system_get_aws_sns_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/system_get_aws_sns_iam_policy snowflake_system_get_aws_sns_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSystemGetAwsSnsIamPolicy.DataSnowflakeSystemGetAwsSnsIamPolicy.Initializer"></a>
 
@@ -345,7 +345,7 @@ dataSnowflakeSystemGetAwsSnsIamPolicy.DataSnowflakeSystemGetAwsSnsIamPolicy.isTe
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSystemGetAwsSnsIamPolicy.DataSnowflakeSystemGetAwsSnsIamPolicy.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSystemGetAwsSnsIamPolicy.DataSnowflakeSystemGetAwsSnsIamPolicy.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSystemGetAwsSnsIamPolicy.DataSnowflakeSystemGetAwsSnsIamPolicy.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSystemGetAwsSnsIamPolicy.DataSnowflakeSystemGetAwsSnsIamPolicy.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSystemGetAwsSnsIamPolicy.DataSnowflakeSystemGetAwsSnsIamPolicy.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSystemGetAwsSnsIamPolicy.DataSnowflakeSystemGetAwsSnsIamPolicy.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSystemGetAwsSnsIamPolicy.DataSnowflakeSystemGetAwsSnsIamPolicy.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSystemGetAwsSnsIamPolicy.DataSnowflakeSystemGetAwsSnsIamPolicy.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -433,10 +433,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.dataSnowflakeSystemGetAwsSnsIamPolicy.DataSnowflakeSystemGetAwsSnsIamPolicy.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -565,14 +565,14 @@ const dataSnowflakeSystemGetAwsSnsIamPolicyConfig: dataSnowflakeSystemGetAwsSnsI
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSystemGetAwsSnsIamPolicy.DataSnowflakeSystemGetAwsSnsIamPolicyConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSystemGetAwsSnsIamPolicy.DataSnowflakeSystemGetAwsSnsIamPolicyConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSystemGetAwsSnsIamPolicy.DataSnowflakeSystemGetAwsSnsIamPolicyConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSystemGetAwsSnsIamPolicy.DataSnowflakeSystemGetAwsSnsIamPolicyConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSystemGetAwsSnsIamPolicy.DataSnowflakeSystemGetAwsSnsIamPolicyConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSystemGetAwsSnsIamPolicy.DataSnowflakeSystemGetAwsSnsIamPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSystemGetAwsSnsIamPolicy.DataSnowflakeSystemGetAwsSnsIamPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSystemGetAwsSnsIamPolicy.DataSnowflakeSystemGetAwsSnsIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSystemGetAwsSnsIamPolicy.DataSnowflakeSystemGetAwsSnsIamPolicyConfig.property.awsSnsTopicArn">awsSnsTopicArn</a></code> | <code>string</code> | Amazon Resource Name (ARN) of the SNS topic for your S3 bucket. |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSystemGetAwsSnsIamPolicy.DataSnowflakeSystemGetAwsSnsIamPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/system_get_aws_sns_iam_policy#id DataSnowflakeSystemGetAwsSnsIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSystemGetAwsSnsIamPolicy.DataSnowflakeSystemGetAwsSnsIamPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/system_get_aws_sns_iam_policy#id DataSnowflakeSystemGetAwsSnsIamPolicy#id}. |
 
 ---
 
@@ -589,10 +589,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.dataSnowflakeSystemGetAwsSnsIamPolicy.DataSnowflakeSystemGetAwsSnsIamPolicyConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -656,7 +656,7 @@ public readonly awsSnsTopicArn: string;
 
 Amazon Resource Name (ARN) of the SNS topic for your S3 bucket.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/system_get_aws_sns_iam_policy#aws_sns_topic_arn DataSnowflakeSystemGetAwsSnsIamPolicy#aws_sns_topic_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/system_get_aws_sns_iam_policy#aws_sns_topic_arn DataSnowflakeSystemGetAwsSnsIamPolicy#aws_sns_topic_arn}
 
 ---
 
@@ -668,7 +668,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/system_get_aws_sns_iam_policy#id DataSnowflakeSystemGetAwsSnsIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/system_get_aws_sns_iam_policy#id DataSnowflakeSystemGetAwsSnsIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

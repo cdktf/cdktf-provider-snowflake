@@ -1,6 +1,6 @@
 # `snowflake_external_table`
 
-Refer to the Terraform Registory for docs: [`snowflake_external_table`](https://www.terraform.io/docs/providers/snowflake/r/external_table).
+Refer to the Terraform Registory for docs: [`snowflake_external_table`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/external_table).
 
 # `externalTable` Submodule <a name="`externalTable` Submodule" id="@cdktf/provider-snowflake.externalTable"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`snowflake_external_table`](https://
 
 ### ExternalTable <a name="ExternalTable" id="@cdktf/provider-snowflake.externalTable.ExternalTable"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/external_table snowflake_external_table}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/external_table snowflake_external_table}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.externalTable.ExternalTable.Initializer"></a>
 
@@ -19,6 +19,7 @@ ExternalTable.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -54,7 +55,7 @@ ExternalTable.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -70,7 +71,7 @@ ExternalTable.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.Initializer.parameter.awsSnsTopic">awsSnsTopic</a></code> | <code>java.lang.String</code> | Specifies the aws sns topic for the external table. |
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.Initializer.parameter.comment">comment</a></code> | <code>java.lang.String</code> | Specifies a comment for the external table. |
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.Initializer.parameter.copyGrants">copyGrants</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Specifies to retain the access permissions from the original table when an external table is recreated using the CREATE OR REPLACE TABLE variant. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_table#id ExternalTable#id}. |
+| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/external_table#id ExternalTable#id}. |
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.Initializer.parameter.partitionBy">partitionBy</a></code> | <code>java.util.List<java.lang.String></code> | Specifies any partition columns to evaluate for the external table. |
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.Initializer.parameter.pattern">pattern</a></code> | <code>java.lang.String</code> | Specifies the file names and/or paths on the external stage to match. |
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.Initializer.parameter.refreshOnCreate">refreshOnCreate</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Specifies weather to refresh when an external table is created. |
@@ -104,7 +105,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.externalTable.ExternalTable.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -144,7 +145,7 @@ Must be unique amongst siblings in the same scope
 
 column block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_table#column ExternalTable#column}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/external_table#column ExternalTable#column}
 
 ---
 
@@ -154,7 +155,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 The database in which to create the external table.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_table#database ExternalTable#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/external_table#database ExternalTable#database}
 
 ---
 
@@ -164,7 +165,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Specifies the file format for the external table.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_table#file_format ExternalTable#file_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/external_table#file_format ExternalTable#file_format}
 
 ---
 
@@ -174,7 +175,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Specifies a location for the external table.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_table#location ExternalTable#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/external_table#location ExternalTable#location}
 
 ---
 
@@ -186,7 +187,7 @@ Specifies the identifier for the external table;
 
 must be unique for the database and schema in which the externalTable is created.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_table#name ExternalTable#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/external_table#name ExternalTable#name}
 
 ---
 
@@ -196,7 +197,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 The schema in which to create the external table.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_table#schema ExternalTable#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/external_table#schema ExternalTable#schema}
 
 ---
 
@@ -206,7 +207,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Specifies whether to automatically refresh the external table metadata once, immediately after the external table is created.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_table#auto_refresh ExternalTable#auto_refresh}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/external_table#auto_refresh ExternalTable#auto_refresh}
 
 ---
 
@@ -216,7 +217,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Specifies the aws sns topic for the external table.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_table#aws_sns_topic ExternalTable#aws_sns_topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/external_table#aws_sns_topic ExternalTable#aws_sns_topic}
 
 ---
 
@@ -226,7 +227,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Specifies a comment for the external table.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_table#comment ExternalTable#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/external_table#comment ExternalTable#comment}
 
 ---
 
@@ -236,7 +237,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Specifies to retain the access permissions from the original table when an external table is recreated using the CREATE OR REPLACE TABLE variant.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_table#copy_grants ExternalTable#copy_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/external_table#copy_grants ExternalTable#copy_grants}
 
 ---
 
@@ -244,7 +245,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_table#id ExternalTable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/external_table#id ExternalTable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -257,7 +258,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Specifies any partition columns to evaluate for the external table.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_table#partition_by ExternalTable#partition_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/external_table#partition_by ExternalTable#partition_by}
 
 ---
 
@@ -267,7 +268,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Specifies the file names and/or paths on the external stage to match.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_table#pattern ExternalTable#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/external_table#pattern ExternalTable#pattern}
 
 ---
 
@@ -277,7 +278,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Specifies weather to refresh when an external table is created.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_table#refresh_on_create ExternalTable#refresh_on_create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/external_table#refresh_on_create ExternalTable#refresh_on_create}
 
 ---
 
@@ -287,7 +288,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 tag block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_table#tag ExternalTable#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/external_table#tag ExternalTable#tag}
 
 ---
 
@@ -669,7 +670,7 @@ ExternalTable.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -794,10 +795,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1215,7 +1216,7 @@ public java.lang.String getAs();
 
 String that specifies the expression for the column. When queried, the column returns results derived from this expression.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_table#as ExternalTable#as}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/external_table#as ExternalTable#as}
 
 ---
 
@@ -1229,7 +1230,7 @@ public java.lang.String getName();
 
 Column name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_table#name ExternalTable#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/external_table#name ExternalTable#name}
 
 ---
 
@@ -1243,7 +1244,7 @@ public java.lang.String getType();
 
 Column type, e.g. VARIANT.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_table#type ExternalTable#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/external_table#type ExternalTable#type}
 
 ---
 
@@ -1258,6 +1259,7 @@ ExternalTableConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -1293,7 +1295,7 @@ ExternalTableConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1309,7 +1311,7 @@ ExternalTableConfig.builder()
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.awsSnsTopic">awsSnsTopic</a></code> | <code>java.lang.String</code> | Specifies the aws sns topic for the external table. |
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.comment">comment</a></code> | <code>java.lang.String</code> | Specifies a comment for the external table. |
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.copyGrants">copyGrants</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Specifies to retain the access permissions from the original table when an external table is recreated using the CREATE OR REPLACE TABLE variant. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_table#id ExternalTable#id}. |
+| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/external_table#id ExternalTable#id}. |
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.partitionBy">partitionBy</a></code> | <code>java.util.List<java.lang.String></code> | Specifies any partition columns to evaluate for the external table. |
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.pattern">pattern</a></code> | <code>java.lang.String</code> | Specifies the file names and/or paths on the external stage to match. |
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.refreshOnCreate">refreshOnCreate</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Specifies weather to refresh when an external table is created. |
@@ -1330,10 +1332,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1397,7 +1399,7 @@ public java.lang.Object getColumn();
 
 column block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_table#column ExternalTable#column}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/external_table#column ExternalTable#column}
 
 ---
 
@@ -1411,7 +1413,7 @@ public java.lang.String getDatabase();
 
 The database in which to create the external table.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_table#database ExternalTable#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/external_table#database ExternalTable#database}
 
 ---
 
@@ -1425,7 +1427,7 @@ public java.lang.String getFileFormat();
 
 Specifies the file format for the external table.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_table#file_format ExternalTable#file_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/external_table#file_format ExternalTable#file_format}
 
 ---
 
@@ -1439,7 +1441,7 @@ public java.lang.String getLocation();
 
 Specifies a location for the external table.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_table#location ExternalTable#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/external_table#location ExternalTable#location}
 
 ---
 
@@ -1455,7 +1457,7 @@ Specifies the identifier for the external table;
 
 must be unique for the database and schema in which the externalTable is created.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_table#name ExternalTable#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/external_table#name ExternalTable#name}
 
 ---
 
@@ -1469,7 +1471,7 @@ public java.lang.String getSchema();
 
 The schema in which to create the external table.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_table#schema ExternalTable#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/external_table#schema ExternalTable#schema}
 
 ---
 
@@ -1483,7 +1485,7 @@ public java.lang.Object getAutoRefresh();
 
 Specifies whether to automatically refresh the external table metadata once, immediately after the external table is created.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_table#auto_refresh ExternalTable#auto_refresh}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/external_table#auto_refresh ExternalTable#auto_refresh}
 
 ---
 
@@ -1497,7 +1499,7 @@ public java.lang.String getAwsSnsTopic();
 
 Specifies the aws sns topic for the external table.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_table#aws_sns_topic ExternalTable#aws_sns_topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/external_table#aws_sns_topic ExternalTable#aws_sns_topic}
 
 ---
 
@@ -1511,7 +1513,7 @@ public java.lang.String getComment();
 
 Specifies a comment for the external table.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_table#comment ExternalTable#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/external_table#comment ExternalTable#comment}
 
 ---
 
@@ -1525,7 +1527,7 @@ public java.lang.Object getCopyGrants();
 
 Specifies to retain the access permissions from the original table when an external table is recreated using the CREATE OR REPLACE TABLE variant.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_table#copy_grants ExternalTable#copy_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/external_table#copy_grants ExternalTable#copy_grants}
 
 ---
 
@@ -1537,7 +1539,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_table#id ExternalTable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/external_table#id ExternalTable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1554,7 +1556,7 @@ public java.util.List<java.lang.String> getPartitionBy();
 
 Specifies any partition columns to evaluate for the external table.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_table#partition_by ExternalTable#partition_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/external_table#partition_by ExternalTable#partition_by}
 
 ---
 
@@ -1568,7 +1570,7 @@ public java.lang.String getPattern();
 
 Specifies the file names and/or paths on the external stage to match.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_table#pattern ExternalTable#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/external_table#pattern ExternalTable#pattern}
 
 ---
 
@@ -1582,7 +1584,7 @@ public java.lang.Object getRefreshOnCreate();
 
 Specifies weather to refresh when an external table is created.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_table#refresh_on_create ExternalTable#refresh_on_create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/external_table#refresh_on_create ExternalTable#refresh_on_create}
 
 ---
 
@@ -1596,7 +1598,7 @@ public java.lang.Object getTag();
 
 tag block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_table#tag ExternalTable#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/external_table#tag ExternalTable#tag}
 
 ---
 
@@ -1636,7 +1638,7 @@ public java.lang.String getName();
 
 Tag name, e.g. department.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_table#name ExternalTable#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/external_table#name ExternalTable#name}
 
 ---
 
@@ -1650,7 +1652,7 @@ public java.lang.String getValue();
 
 Tag value, e.g. marketing_info.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_table#value ExternalTable#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/external_table#value ExternalTable#value}
 
 ---
 
@@ -1664,7 +1666,7 @@ public java.lang.String getDatabase();
 
 Name of the database that the tag was created in.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_table#database ExternalTable#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/external_table#database ExternalTable#database}
 
 ---
 
@@ -1678,7 +1680,7 @@ public java.lang.String getSchema();
 
 Name of the schema that the tag was created in.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/external_table#schema ExternalTable#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/external_table#schema ExternalTable#schema}
 
 ---
 

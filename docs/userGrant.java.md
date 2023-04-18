@@ -1,6 +1,6 @@
 # `snowflake_user_grant`
 
-Refer to the Terraform Registory for docs: [`snowflake_user_grant`](https://www.terraform.io/docs/providers/snowflake/r/user_grant).
+Refer to the Terraform Registory for docs: [`snowflake_user_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/user_grant).
 
 # `userGrant` Submodule <a name="`userGrant` Submodule" id="@cdktf/provider-snowflake.userGrant"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`snowflake_user_grant`](https://www.
 
 ### UserGrant <a name="UserGrant" id="@cdktf/provider-snowflake.userGrant.UserGrant"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/user_grant snowflake_user_grant}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/user_grant snowflake_user_grant}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.userGrant.UserGrant.Initializer"></a>
 
@@ -19,6 +19,7 @@ UserGrant.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -42,7 +43,7 @@ UserGrant.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrant.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrant.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrant.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrant.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrant.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrant.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrant.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrant.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -51,7 +52,7 @@ UserGrant.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrant.Initializer.parameter.privilege">privilege</a></code> | <code>java.lang.String</code> | The privilege to grant on the user. |
 | <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrant.Initializer.parameter.userName">userName</a></code> | <code>java.lang.String</code> | The name of the user on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrant.Initializer.parameter.enableMultipleGrants">enableMultipleGrants</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
-| <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrant.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/user_grant#id UserGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrant.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/user_grant#id UserGrant#id}. |
 | <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrant.Initializer.parameter.roles">roles</a></code> | <code>java.util.List<java.lang.String></code> | Grants privilege to these roles. |
 | <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrant.Initializer.parameter.withGrantOption">withGrantOption</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When this is set to true, allows the recipient role to grant the privileges to other roles. |
 
@@ -83,7 +84,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.userGrant.UserGrant.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -123,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 The privilege to grant on the user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/user_grant#privilege UserGrant#privilege}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/user_grant#privilege UserGrant#privilege}
 
 ---
 
@@ -133,7 +134,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 The name of the user on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/user_grant#user_name UserGrant#user_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/user_grant#user_name UserGrant#user_name}
 
 ---
 
@@ -145,7 +146,7 @@ When this is set to true, multiple grants of the same type can be created.
 
 This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/user_grant#enable_multiple_grants UserGrant#enable_multiple_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/user_grant#enable_multiple_grants UserGrant#enable_multiple_grants}
 
 ---
 
@@ -153,7 +154,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/user_grant#id UserGrant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/user_grant#id UserGrant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -166,7 +167,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Grants privilege to these roles.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/user_grant#roles UserGrant#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/user_grant#roles UserGrant#roles}
 
 ---
 
@@ -176,7 +177,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 When this is set to true, allows the recipient role to grant the privileges to other roles.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/user_grant#with_grant_option UserGrant#with_grant_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/user_grant#with_grant_option UserGrant#with_grant_option}
 
 ---
 
@@ -497,7 +498,7 @@ UserGrant.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrant.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrant.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrant.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrant.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrant.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrant.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrant.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrant.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -603,10 +604,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.userGrant.UserGrant.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -811,6 +812,7 @@ UserGrantConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -834,7 +836,7 @@ UserGrantConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrantConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrantConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrantConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrantConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrantConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrantConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -843,7 +845,7 @@ UserGrantConfig.builder()
 | <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrantConfig.property.privilege">privilege</a></code> | <code>java.lang.String</code> | The privilege to grant on the user. |
 | <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrantConfig.property.userName">userName</a></code> | <code>java.lang.String</code> | The name of the user on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrantConfig.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
-| <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrantConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/user_grant#id UserGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrantConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/user_grant#id UserGrant#id}. |
 | <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrantConfig.property.roles">roles</a></code> | <code>java.util.List<java.lang.String></code> | Grants privilege to these roles. |
 | <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrantConfig.property.withGrantOption">withGrantOption</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When this is set to true, allows the recipient role to grant the privileges to other roles. |
 
@@ -862,10 +864,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.userGrant.UserGrantConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -929,7 +931,7 @@ public java.lang.String getPrivilege();
 
 The privilege to grant on the user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/user_grant#privilege UserGrant#privilege}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/user_grant#privilege UserGrant#privilege}
 
 ---
 
@@ -943,7 +945,7 @@ public java.lang.String getUserName();
 
 The name of the user on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/user_grant#user_name UserGrant#user_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/user_grant#user_name UserGrant#user_name}
 
 ---
 
@@ -959,7 +961,7 @@ When this is set to true, multiple grants of the same type can be created.
 
 This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/user_grant#enable_multiple_grants UserGrant#enable_multiple_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/user_grant#enable_multiple_grants UserGrant#enable_multiple_grants}
 
 ---
 
@@ -971,7 +973,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/user_grant#id UserGrant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/user_grant#id UserGrant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -988,7 +990,7 @@ public java.util.List<java.lang.String> getRoles();
 
 Grants privilege to these roles.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/user_grant#roles UserGrant#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/user_grant#roles UserGrant#roles}
 
 ---
 
@@ -1002,7 +1004,7 @@ public java.lang.Object getWithGrantOption();
 
 When this is set to true, allows the recipient role to grant the privileges to other roles.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/user_grant#with_grant_option UserGrant#with_grant_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/user_grant#with_grant_option UserGrant#with_grant_option}
 
 ---
 

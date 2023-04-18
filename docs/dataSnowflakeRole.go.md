@@ -1,6 +1,6 @@
 # `data_snowflake_role`
 
-Refer to the Terraform Registory for docs: [`data_snowflake_role`](https://www.terraform.io/docs/providers/snowflake/d/role).
+Refer to the Terraform Registory for docs: [`data_snowflake_role`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/role).
 
 # `dataSnowflakeRole` Submodule <a name="`dataSnowflakeRole` Submodule" id="@cdktf/provider-snowflake.dataSnowflakeRole"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_snowflake_role`](https://www.t
 
 ### DataSnowflakeRole <a name="DataSnowflakeRole" id="@cdktf/provider-snowflake.dataSnowflakeRole.DataSnowflakeRole"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/snowflake/d/role snowflake_role}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/role snowflake_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeRole.DataSnowflakeRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakerole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakerole"
 
 datasnowflakerole.NewDataSnowflakeRole(scope Construct, id *string, config DataSnowflakeRoleConfig) DataSnowflakeRole
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeRole.DataSnowflakeRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakerole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakerole"
 
 datasnowflakerole.DataSnowflakeRole_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeRole.DataSnowflakeRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakerole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakerole"
 
 datasnowflakerole.DataSnowflakeRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ datasnowflakerole.DataSnowflakeRole_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeRole.DataSnowflakeRole.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakerole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakerole"
 
 datasnowflakerole.DataSnowflakeRole_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ datasnowflakerole.DataSnowflakeRole_IsTerraformDataSource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRole.DataSnowflakeRole.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRole.DataSnowflakeRole.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRole.DataSnowflakeRole.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRole.DataSnowflakeRole.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRole.DataSnowflakeRole.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRole.DataSnowflakeRole.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRole.DataSnowflakeRole.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRole.DataSnowflakeRole.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -433,10 +433,10 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-snowflake.dataSnowflakeRole.DataSnowflakeRole.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -555,11 +555,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeRole.DataSnowflakeRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakerole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakerole"
 
 &datasnowflakerole.DataSnowflakeRoleConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -575,14 +575,14 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflaker
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRole.DataSnowflakeRoleConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRole.DataSnowflakeRoleConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRole.DataSnowflakeRoleConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRole.DataSnowflakeRoleConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRole.DataSnowflakeRoleConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRole.DataSnowflakeRoleConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRole.DataSnowflakeRoleConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRole.DataSnowflakeRoleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRole.DataSnowflakeRoleConfig.property.name">Name</a></code> | <code>*string</code> | The role for which to return metadata. |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRole.DataSnowflakeRoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/role#id DataSnowflakeRole#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRole.DataSnowflakeRoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/role#id DataSnowflakeRole#id}. |
 
 ---
 
@@ -599,10 +599,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-snowflake.dataSnowflakeRole.DataSnowflakeRoleConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -666,7 +666,7 @@ Name *string
 
 The role for which to return metadata.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/role#name DataSnowflakeRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/role#name DataSnowflakeRole#name}
 
 ---
 
@@ -678,7 +678,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/role#id DataSnowflakeRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/role#id DataSnowflakeRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

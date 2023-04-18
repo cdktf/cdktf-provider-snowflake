@@ -1,6 +1,6 @@
 # `snowflake_schema_grant`
 
-Refer to the Terraform Registory for docs: [`snowflake_schema_grant`](https://www.terraform.io/docs/providers/snowflake/r/schema_grant).
+Refer to the Terraform Registory for docs: [`snowflake_schema_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema_grant).
 
 # `schemaGrant` Submodule <a name="`schemaGrant` Submodule" id="@cdktf/provider-snowflake.schemaGrant"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`snowflake_schema_grant`](https://ww
 
 ### SchemaGrant <a name="SchemaGrant" id="@cdktf/provider-snowflake.schemaGrant.SchemaGrant"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/schema_grant snowflake_schema_grant}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema_grant snowflake_schema_grant}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schemaGrant.SchemaGrant.Initializer"></a>
 
@@ -395,7 +395,7 @@ schemaGrant.SchemaGrant.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -507,10 +507,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.schemaGrant.SchemaGrant.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -779,7 +779,7 @@ const schemaGrantConfig: schemaGrant.SchemaGrantConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrantConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrantConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrantConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrantConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrantConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrantConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -787,7 +787,7 @@ const schemaGrantConfig: schemaGrant.SchemaGrantConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrantConfig.property.databaseName">databaseName</a></code> | <code>string</code> | The name of the database containing the schema on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrantConfig.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
-| <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrantConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema_grant#id SchemaGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrantConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema_grant#id SchemaGrant#id}. |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrantConfig.property.onFuture">onFuture</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, apply this grant on all future schemas in the given database. |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrantConfig.property.privilege">privilege</a></code> | <code>string</code> | The privilege to grant on the current or future schema. |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrantConfig.property.roles">roles</a></code> | <code>string[]</code> | Grants privilege to these roles. |
@@ -810,10 +810,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.schemaGrant.SchemaGrantConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -877,7 +877,7 @@ public readonly databaseName: string;
 
 The name of the database containing the schema on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema_grant#database_name SchemaGrant#database_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema_grant#database_name SchemaGrant#database_name}
 
 ---
 
@@ -893,7 +893,7 @@ When this is set to true, multiple grants of the same type can be created.
 
 This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema_grant#enable_multiple_grants SchemaGrant#enable_multiple_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema_grant#enable_multiple_grants SchemaGrant#enable_multiple_grants}
 
 ---
 
@@ -905,7 +905,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema_grant#id SchemaGrant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema_grant#id SchemaGrant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -924,7 +924,7 @@ When this is set to true, apply this grant on all future schemas in the given da
 
 The schema_name and shares fields must be unset in order to use on_future.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema_grant#on_future SchemaGrant#on_future}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema_grant#on_future SchemaGrant#on_future}
 
 ---
 
@@ -940,7 +940,7 @@ The privilege to grant on the current or future schema.
 
 Note that if "OWNERSHIP" is specified, ensure that the role that terraform is using is granted access.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema_grant#privilege SchemaGrant#privilege}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema_grant#privilege SchemaGrant#privilege}
 
 ---
 
@@ -954,7 +954,7 @@ public readonly roles: string[];
 
 Grants privilege to these roles.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema_grant#roles SchemaGrant#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema_grant#roles SchemaGrant#roles}
 
 ---
 
@@ -968,7 +968,7 @@ public readonly schemaName: string;
 
 The name of the schema on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema_grant#schema_name SchemaGrant#schema_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema_grant#schema_name SchemaGrant#schema_name}
 
 ---
 
@@ -982,7 +982,7 @@ public readonly shares: string[];
 
 Grants privilege to these shares (only valid if on_future is unset).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema_grant#shares SchemaGrant#shares}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema_grant#shares SchemaGrant#shares}
 
 ---
 
@@ -996,7 +996,7 @@ public readonly withGrantOption: boolean | IResolvable;
 
 When this is set to true, allows the recipient role to grant the privileges to other roles.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema_grant#with_grant_option SchemaGrant#with_grant_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema_grant#with_grant_option SchemaGrant#with_grant_option}
 
 ---
 

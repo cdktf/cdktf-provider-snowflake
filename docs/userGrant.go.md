@@ -1,6 +1,6 @@
 # `snowflake_user_grant`
 
-Refer to the Terraform Registory for docs: [`snowflake_user_grant`](https://www.terraform.io/docs/providers/snowflake/r/user_grant).
+Refer to the Terraform Registory for docs: [`snowflake_user_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/user_grant).
 
 # `userGrant` Submodule <a name="`userGrant` Submodule" id="@cdktf/provider-snowflake.userGrant"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`snowflake_user_grant`](https://www.
 
 ### UserGrant <a name="UserGrant" id="@cdktf/provider-snowflake.userGrant.UserGrant"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/user_grant snowflake_user_grant}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/user_grant snowflake_user_grant}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.userGrant.UserGrant.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/usergrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/usergrant"
 
 usergrant.NewUserGrant(scope Construct, id *string, config UserGrantConfig) UserGrant
 ```
@@ -298,7 +298,7 @@ func ResetWithGrantOption()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.userGrant.UserGrant.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/usergrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/usergrant"
 
 usergrant.UserGrant_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.userGrant.UserGrant.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/usergrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/usergrant"
 
 usergrant.UserGrant_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ usergrant.UserGrant_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.userGrant.UserGrant.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/usergrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/usergrant"
 
 usergrant.UserGrant_IsTerraformResource(x interface{}) *bool
 ```
@@ -367,7 +367,7 @@ usergrant.UserGrant_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrant.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrant.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrant.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrant.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrant.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrant.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrant.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrant.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -473,10 +473,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-snowflake.userGrant.UserGrant.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -675,11 +675,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.userGrant.UserGrantConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/usergrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/usergrant"
 
 &usergrant.UserGrantConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -699,7 +699,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/usergrant"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrantConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrantConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrantConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrantConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrantConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrantConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -708,7 +708,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/usergrant"
 | <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrantConfig.property.privilege">Privilege</a></code> | <code>*string</code> | The privilege to grant on the user. |
 | <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrantConfig.property.userName">UserName</a></code> | <code>*string</code> | The name of the user on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrantConfig.property.enableMultipleGrants">EnableMultipleGrants</a></code> | <code>interface{}</code> | When this is set to true, multiple grants of the same type can be created. |
-| <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrantConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/user_grant#id UserGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrantConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/user_grant#id UserGrant#id}. |
 | <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrantConfig.property.roles">Roles</a></code> | <code>*[]*string</code> | Grants privilege to these roles. |
 | <code><a href="#@cdktf/provider-snowflake.userGrant.UserGrantConfig.property.withGrantOption">WithGrantOption</a></code> | <code>interface{}</code> | When this is set to true, allows the recipient role to grant the privileges to other roles. |
 
@@ -727,10 +727,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-snowflake.userGrant.UserGrantConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -794,7 +794,7 @@ Privilege *string
 
 The privilege to grant on the user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/user_grant#privilege UserGrant#privilege}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/user_grant#privilege UserGrant#privilege}
 
 ---
 
@@ -808,7 +808,7 @@ UserName *string
 
 The name of the user on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/user_grant#user_name UserGrant#user_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/user_grant#user_name UserGrant#user_name}
 
 ---
 
@@ -824,7 +824,7 @@ When this is set to true, multiple grants of the same type can be created.
 
 This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/user_grant#enable_multiple_grants UserGrant#enable_multiple_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/user_grant#enable_multiple_grants UserGrant#enable_multiple_grants}
 
 ---
 
@@ -836,7 +836,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/user_grant#id UserGrant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/user_grant#id UserGrant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -853,7 +853,7 @@ Roles *[]*string
 
 Grants privilege to these roles.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/user_grant#roles UserGrant#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/user_grant#roles UserGrant#roles}
 
 ---
 
@@ -867,7 +867,7 @@ WithGrantOption interface{}
 
 When this is set to true, allows the recipient role to grant the privileges to other roles.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/user_grant#with_grant_option UserGrant#with_grant_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/user_grant#with_grant_option UserGrant#with_grant_option}
 
 ---
 

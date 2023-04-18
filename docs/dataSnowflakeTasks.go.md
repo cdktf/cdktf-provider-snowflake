@@ -1,6 +1,6 @@
 # `data_snowflake_tasks`
 
-Refer to the Terraform Registory for docs: [`data_snowflake_tasks`](https://www.terraform.io/docs/providers/snowflake/d/tasks).
+Refer to the Terraform Registory for docs: [`data_snowflake_tasks`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/tasks).
 
 # `dataSnowflakeTasks` Submodule <a name="`dataSnowflakeTasks` Submodule" id="@cdktf/provider-snowflake.dataSnowflakeTasks"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_snowflake_tasks`](https://www.
 
 ### DataSnowflakeTasks <a name="DataSnowflakeTasks" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasks"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/snowflake/d/tasks snowflake_tasks}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/tasks snowflake_tasks}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasks(scope Construct, id *string, config DataSnowflakeTasksConfig) DataSnowflakeTasks
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasks.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.DataSnowflakeTasks_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasks.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.DataSnowflakeTasks_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ datasnowflaketasks.DataSnowflakeTasks_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasks.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.DataSnowflakeTasks_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ datasnowflaketasks.DataSnowflakeTasks_IsTerraformDataSource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasks.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasks.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasks.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasks.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasks.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasks.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasks.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasks.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -435,10 +435,10 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasks.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -577,11 +577,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -598,7 +598,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflaket
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -606,7 +606,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflaket
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksConfig.property.database">Database</a></code> | <code>*string</code> | The database from which to return the schemas from. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksConfig.property.schema">Schema</a></code> | <code>*string</code> | The schema from which to return the tasks from. |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/tasks#id DataSnowflakeTasks#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/tasks#id DataSnowflakeTasks#id}. |
 
 ---
 
@@ -623,10 +623,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -690,7 +690,7 @@ Database *string
 
 The database from which to return the schemas from.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/tasks#database DataSnowflakeTasks#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/tasks#database DataSnowflakeTasks#database}
 
 ---
 
@@ -704,7 +704,7 @@ Schema *string
 
 The schema from which to return the tasks from.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/tasks#schema DataSnowflakeTasks#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/tasks#schema DataSnowflakeTasks#schema}
 
 ---
 
@@ -716,7 +716,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/tasks#id DataSnowflakeTasks#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/tasks#id DataSnowflakeTasks#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -728,7 +728,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasks {
 
@@ -743,7 +743,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflaket
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksList
 ```
@@ -875,7 +875,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksOutputReference
 ```

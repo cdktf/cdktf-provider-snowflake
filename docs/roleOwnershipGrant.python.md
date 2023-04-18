@@ -1,6 +1,6 @@
 # `snowflake_role_ownership_grant`
 
-Refer to the Terraform Registory for docs: [`snowflake_role_ownership_grant`](https://www.terraform.io/docs/providers/snowflake/r/role_ownership_grant).
+Refer to the Terraform Registory for docs: [`snowflake_role_ownership_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/role_ownership_grant).
 
 # `roleOwnershipGrant` Submodule <a name="`roleOwnershipGrant` Submodule" id="@cdktf/provider-snowflake.roleOwnershipGrant"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`snowflake_role_ownership_grant`](ht
 
 ### RoleOwnershipGrant <a name="RoleOwnershipGrant" id="@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrant"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/role_ownership_grant snowflake_role_ownership_grant}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/role_ownership_grant snowflake_role_ownership_grant}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrant.Initializer"></a>
 
@@ -19,7 +19,7 @@ roleOwnershipGrant.RoleOwnershipGrant(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -38,7 +38,7 @@ roleOwnershipGrant.RoleOwnershipGrant(
 | <code><a href="#@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrant.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrant.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrant.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrant.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrant.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrant.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrant.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrant.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -47,7 +47,7 @@ roleOwnershipGrant.RoleOwnershipGrant(
 | <code><a href="#@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrant.Initializer.parameter.onRoleName">on_role_name</a></code> | <code>str</code> | The name of the role ownership is granted on. |
 | <code><a href="#@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrant.Initializer.parameter.toRoleName">to_role_name</a></code> | <code>str</code> | The name of the role to grant ownership. |
 | <code><a href="#@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrant.Initializer.parameter.currentGrants">current_grants</a></code> | <code>str</code> | Specifies whether to remove or transfer all existing outbound privileges on the object when ownership is transferred to a new role. |
-| <code><a href="#@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrant.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/role_ownership_grant#id RoleOwnershipGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrant.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/role_ownership_grant#id RoleOwnershipGrant#id}. |
 | <code><a href="#@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrant.Initializer.parameter.revertOwnershipToRoleName">revert_ownership_to_role_name</a></code> | <code>str</code> | The name of the role to revert ownership to on destroy. |
 
 ---
@@ -78,7 +78,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrant.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the role ownership is granted on.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/role_ownership_grant#on_role_name RoleOwnershipGrant#on_role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/role_ownership_grant#on_role_name RoleOwnershipGrant#on_role_name}
 
 ---
 
@@ -130,7 +130,7 @@ The name of the role to grant ownership.
 
 Please ensure that the role that terraform is using is granted access.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/role_ownership_grant#to_role_name RoleOwnershipGrant#to_role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/role_ownership_grant#to_role_name RoleOwnershipGrant#to_role_name}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Specifies whether to remove or transfer all existing outbound privileges on the object when ownership is transferred to a new role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/role_ownership_grant#current_grants RoleOwnershipGrant#current_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/role_ownership_grant#current_grants RoleOwnershipGrant#current_grants}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/role_ownership_grant#id RoleOwnershipGrant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/role_ownership_grant#id RoleOwnershipGrant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -161,7 +161,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The name of the role to revert ownership to on destroy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/role_ownership_grant#revert_ownership_to_role_name RoleOwnershipGrant#revert_ownership_to_role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/role_ownership_grant#revert_ownership_to_role_name RoleOwnershipGrant#revert_ownership_to_role_name}
 
 ---
 
@@ -506,7 +506,7 @@ roleOwnershipGrant.RoleOwnershipGrant.is_terraform_resource(
 | <code><a href="#@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrant.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrant.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrant.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrant.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrant.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrant.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrant.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrant.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -610,10 +610,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrant.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -796,7 +796,7 @@ from cdktf_cdktf_provider_snowflake import role_ownership_grant
 
 roleOwnershipGrant.RoleOwnershipGrantConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -815,7 +815,7 @@ roleOwnershipGrant.RoleOwnershipGrantConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrantConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrantConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrantConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrantConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrantConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrantConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -824,7 +824,7 @@ roleOwnershipGrant.RoleOwnershipGrantConfig(
 | <code><a href="#@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrantConfig.property.onRoleName">on_role_name</a></code> | <code>str</code> | The name of the role ownership is granted on. |
 | <code><a href="#@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrantConfig.property.toRoleName">to_role_name</a></code> | <code>str</code> | The name of the role to grant ownership. |
 | <code><a href="#@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrantConfig.property.currentGrants">current_grants</a></code> | <code>str</code> | Specifies whether to remove or transfer all existing outbound privileges on the object when ownership is transferred to a new role. |
-| <code><a href="#@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrantConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/role_ownership_grant#id RoleOwnershipGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrantConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/role_ownership_grant#id RoleOwnershipGrant#id}. |
 | <code><a href="#@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrantConfig.property.revertOwnershipToRoleName">revert_ownership_to_role_name</a></code> | <code>str</code> | The name of the role to revert ownership to on destroy. |
 
 ---
@@ -842,10 +842,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrantConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -909,7 +909,7 @@ on_role_name: str
 
 The name of the role ownership is granted on.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/role_ownership_grant#on_role_name RoleOwnershipGrant#on_role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/role_ownership_grant#on_role_name RoleOwnershipGrant#on_role_name}
 
 ---
 
@@ -925,7 +925,7 @@ The name of the role to grant ownership.
 
 Please ensure that the role that terraform is using is granted access.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/role_ownership_grant#to_role_name RoleOwnershipGrant#to_role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/role_ownership_grant#to_role_name RoleOwnershipGrant#to_role_name}
 
 ---
 
@@ -939,7 +939,7 @@ current_grants: str
 
 Specifies whether to remove or transfer all existing outbound privileges on the object when ownership is transferred to a new role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/role_ownership_grant#current_grants RoleOwnershipGrant#current_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/role_ownership_grant#current_grants RoleOwnershipGrant#current_grants}
 
 ---
 
@@ -951,7 +951,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/role_ownership_grant#id RoleOwnershipGrant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/role_ownership_grant#id RoleOwnershipGrant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -968,7 +968,7 @@ revert_ownership_to_role_name: str
 
 The name of the role to revert ownership to on destroy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/role_ownership_grant#revert_ownership_to_role_name RoleOwnershipGrant#revert_ownership_to_role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/role_ownership_grant#revert_ownership_to_role_name RoleOwnershipGrant#revert_ownership_to_role_name}
 
 ---
 

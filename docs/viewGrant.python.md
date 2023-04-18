@@ -1,6 +1,6 @@
 # `snowflake_view_grant`
 
-Refer to the Terraform Registory for docs: [`snowflake_view_grant`](https://www.terraform.io/docs/providers/snowflake/r/view_grant).
+Refer to the Terraform Registory for docs: [`snowflake_view_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/view_grant).
 
 # `viewGrant` Submodule <a name="`viewGrant` Submodule" id="@cdktf/provider-snowflake.viewGrant"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`snowflake_view_grant`](https://www.
 
 ### ViewGrant <a name="ViewGrant" id="@cdktf/provider-snowflake.viewGrant.ViewGrant"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/view_grant snowflake_view_grant}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/view_grant snowflake_view_grant}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.viewGrant.ViewGrant.Initializer"></a>
 
@@ -19,7 +19,7 @@ viewGrant.ViewGrant(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -43,7 +43,7 @@ viewGrant.ViewGrant(
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrant.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrant.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrant.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrant.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrant.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrant.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrant.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrant.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -51,7 +51,7 @@ viewGrant.ViewGrant(
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrant.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrant.Initializer.parameter.databaseName">database_name</a></code> | <code>str</code> | The name of the database containing the current or future views on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrant.Initializer.parameter.enableMultipleGrants">enable_multiple_grants</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When this is set to true, multiple grants of the same type can be created. |
-| <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrant.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view_grant#id ViewGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrant.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/view_grant#id ViewGrant#id}. |
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrant.Initializer.parameter.onFuture">on_future</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When this is set to true and a schema_name is provided, apply this grant on all future views in the given schema. |
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrant.Initializer.parameter.privilege">privilege</a></code> | <code>str</code> | The privilege to grant on the current or future view. |
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrant.Initializer.parameter.roles">roles</a></code> | <code>typing.List[str]</code> | Grants privilege to these roles. |
@@ -88,7 +88,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.viewGrant.ViewGrant.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -128,7 +128,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the database containing the current or future views on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view_grant#database_name ViewGrant#database_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/view_grant#database_name ViewGrant#database_name}
 
 ---
 
@@ -140,7 +140,7 @@ When this is set to true, multiple grants of the same type can be created.
 
 This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view_grant#enable_multiple_grants ViewGrant#enable_multiple_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/view_grant#enable_multiple_grants ViewGrant#enable_multiple_grants}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view_grant#id ViewGrant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/view_grant#id ViewGrant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -163,7 +163,7 @@ When this is set to true and a schema_name is provided, apply this grant on all 
 
 When this is true and no schema_name is provided apply this grant on all future views in the given database. The view_name and shares fields must be unset in order to use on_future.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view_grant#on_future ViewGrant#on_future}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/view_grant#on_future ViewGrant#on_future}
 
 ---
 
@@ -173,7 +173,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 The privilege to grant on the current or future view.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view_grant#privilege ViewGrant#privilege}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/view_grant#privilege ViewGrant#privilege}
 
 ---
 
@@ -183,7 +183,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Grants privilege to these roles.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view_grant#roles ViewGrant#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/view_grant#roles ViewGrant#roles}
 
 ---
 
@@ -193,7 +193,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 The name of the schema containing the current or future views on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view_grant#schema_name ViewGrant#schema_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/view_grant#schema_name ViewGrant#schema_name}
 
 ---
 
@@ -203,7 +203,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Grants privilege to these shares (only valid if on_future is unset).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view_grant#shares ViewGrant#shares}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/view_grant#shares ViewGrant#shares}
 
 ---
 
@@ -213,7 +213,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 The name of the view on which to grant privileges immediately (only valid if on_future is unset).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view_grant#view_name ViewGrant#view_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/view_grant#view_name ViewGrant#view_name}
 
 ---
 
@@ -223,7 +223,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 When this is set to true, allows the recipient role to grant the privileges to other roles.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view_grant#with_grant_option ViewGrant#with_grant_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/view_grant#with_grant_option ViewGrant#with_grant_option}
 
 ---
 
@@ -610,7 +610,7 @@ viewGrant.ViewGrant.is_terraform_resource(
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrant.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrant.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrant.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrant.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrant.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrant.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrant.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrant.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -724,10 +724,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.viewGrant.ViewGrant.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1010,7 +1010,7 @@ from cdktf_cdktf_provider_snowflake import view_grant
 
 viewGrant.ViewGrantConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -1034,7 +1034,7 @@ viewGrant.ViewGrantConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrantConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrantConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrantConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrantConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrantConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrantConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1042,7 +1042,7 @@ viewGrant.ViewGrantConfig(
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrantConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrantConfig.property.databaseName">database_name</a></code> | <code>str</code> | The name of the database containing the current or future views on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrantConfig.property.enableMultipleGrants">enable_multiple_grants</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When this is set to true, multiple grants of the same type can be created. |
-| <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrantConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view_grant#id ViewGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrantConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/view_grant#id ViewGrant#id}. |
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrantConfig.property.onFuture">on_future</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When this is set to true and a schema_name is provided, apply this grant on all future views in the given schema. |
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrantConfig.property.privilege">privilege</a></code> | <code>str</code> | The privilege to grant on the current or future view. |
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrantConfig.property.roles">roles</a></code> | <code>typing.List[str]</code> | Grants privilege to these roles. |
@@ -1066,10 +1066,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.viewGrant.ViewGrantConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1133,7 +1133,7 @@ database_name: str
 
 The name of the database containing the current or future views on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view_grant#database_name ViewGrant#database_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/view_grant#database_name ViewGrant#database_name}
 
 ---
 
@@ -1149,7 +1149,7 @@ When this is set to true, multiple grants of the same type can be created.
 
 This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view_grant#enable_multiple_grants ViewGrant#enable_multiple_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/view_grant#enable_multiple_grants ViewGrant#enable_multiple_grants}
 
 ---
 
@@ -1161,7 +1161,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view_grant#id ViewGrant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/view_grant#id ViewGrant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1180,7 +1180,7 @@ When this is set to true and a schema_name is provided, apply this grant on all 
 
 When this is true and no schema_name is provided apply this grant on all future views in the given database. The view_name and shares fields must be unset in order to use on_future.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view_grant#on_future ViewGrant#on_future}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/view_grant#on_future ViewGrant#on_future}
 
 ---
 
@@ -1194,7 +1194,7 @@ privilege: str
 
 The privilege to grant on the current or future view.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view_grant#privilege ViewGrant#privilege}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/view_grant#privilege ViewGrant#privilege}
 
 ---
 
@@ -1208,7 +1208,7 @@ roles: typing.List[str]
 
 Grants privilege to these roles.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view_grant#roles ViewGrant#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/view_grant#roles ViewGrant#roles}
 
 ---
 
@@ -1222,7 +1222,7 @@ schema_name: str
 
 The name of the schema containing the current or future views on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view_grant#schema_name ViewGrant#schema_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/view_grant#schema_name ViewGrant#schema_name}
 
 ---
 
@@ -1236,7 +1236,7 @@ shares: typing.List[str]
 
 Grants privilege to these shares (only valid if on_future is unset).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view_grant#shares ViewGrant#shares}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/view_grant#shares ViewGrant#shares}
 
 ---
 
@@ -1250,7 +1250,7 @@ view_name: str
 
 The name of the view on which to grant privileges immediately (only valid if on_future is unset).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view_grant#view_name ViewGrant#view_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/view_grant#view_name ViewGrant#view_name}
 
 ---
 
@@ -1264,7 +1264,7 @@ with_grant_option: typing.Union[bool, IResolvable]
 
 When this is set to true, allows the recipient role to grant the privileges to other roles.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/view_grant#with_grant_option ViewGrant#with_grant_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/view_grant#with_grant_option ViewGrant#with_grant_option}
 
 ---
 

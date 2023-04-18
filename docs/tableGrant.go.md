@@ -1,6 +1,6 @@
 # `snowflake_table_grant`
 
-Refer to the Terraform Registory for docs: [`snowflake_table_grant`](https://www.terraform.io/docs/providers/snowflake/r/table_grant).
+Refer to the Terraform Registory for docs: [`snowflake_table_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/table_grant).
 
 # `tableGrant` Submodule <a name="`tableGrant` Submodule" id="@cdktf/provider-snowflake.tableGrant"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`snowflake_table_grant`](https://www
 
 ### TableGrant <a name="TableGrant" id="@cdktf/provider-snowflake.tableGrant.TableGrant"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/table_grant snowflake_table_grant}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/table_grant snowflake_table_grant}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.tableGrant.TableGrant.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/tablegrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tablegrant"
 
 tablegrant.NewTableGrant(scope Construct, id *string, config TableGrantConfig) TableGrant
 ```
@@ -340,7 +340,7 @@ func ResetWithGrantOption()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.tableGrant.TableGrant.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/tablegrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tablegrant"
 
 tablegrant.TableGrant_IsConstruct(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.tableGrant.TableGrant.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/tablegrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tablegrant"
 
 tablegrant.TableGrant_IsTerraformElement(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ tablegrant.TableGrant_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.tableGrant.TableGrant.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/tablegrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tablegrant"
 
 tablegrant.TableGrant_IsTerraformResource(x interface{}) *bool
 ```
@@ -409,7 +409,7 @@ tablegrant.TableGrant_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrant.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -525,10 +525,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-snowflake.tableGrant.TableGrant.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -827,11 +827,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.tableGrant.TableGrantConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/tablegrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tablegrant"
 
 &tablegrant.TableGrantConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -856,7 +856,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/tablegrant"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -864,7 +864,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/tablegrant"
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.databaseName">DatabaseName</a></code> | <code>*string</code> | The name of the database containing the current or future tables on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.enableMultipleGrants">EnableMultipleGrants</a></code> | <code>interface{}</code> | When this is set to true, multiple grants of the same type can be created. |
-| <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table_grant#id TableGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/table_grant#id TableGrant#id}. |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.onAll">OnAll</a></code> | <code>interface{}</code> | When this is set to true and a schema_name is provided, apply this grant on all all tables in the given schema. |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.onFuture">OnFuture</a></code> | <code>interface{}</code> | When this is set to true and a schema_name is provided, apply this grant on all future tables in the given schema. |
 | <code><a href="#@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.privilege">Privilege</a></code> | <code>*string</code> | The privilege to grant on the current or future table. |
@@ -889,10 +889,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-snowflake.tableGrant.TableGrantConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -956,7 +956,7 @@ DatabaseName *string
 
 The name of the database containing the current or future tables on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table_grant#database_name TableGrant#database_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/table_grant#database_name TableGrant#database_name}
 
 ---
 
@@ -972,7 +972,7 @@ When this is set to true, multiple grants of the same type can be created.
 
 This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table_grant#enable_multiple_grants TableGrant#enable_multiple_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/table_grant#enable_multiple_grants TableGrant#enable_multiple_grants}
 
 ---
 
@@ -984,7 +984,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table_grant#id TableGrant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/table_grant#id TableGrant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1003,7 +1003,7 @@ When this is set to true and a schema_name is provided, apply this grant on all 
 
 When this is true and no schema_name is provided apply this grant on all all tables in the given database. The table_name and shares fields must be unset in order to use on_all.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table_grant#on_all TableGrant#on_all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/table_grant#on_all TableGrant#on_all}
 
 ---
 
@@ -1019,7 +1019,7 @@ When this is set to true and a schema_name is provided, apply this grant on all 
 
 When this is true and no schema_name is provided apply this grant on all future tables in the given database. The table_name and shares fields must be unset in order to use on_future.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table_grant#on_future TableGrant#on_future}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/table_grant#on_future TableGrant#on_future}
 
 ---
 
@@ -1033,7 +1033,7 @@ Privilege *string
 
 The privilege to grant on the current or future table.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table_grant#privilege TableGrant#privilege}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/table_grant#privilege TableGrant#privilege}
 
 ---
 
@@ -1047,7 +1047,7 @@ Roles *[]*string
 
 Grants privilege to these roles.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table_grant#roles TableGrant#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/table_grant#roles TableGrant#roles}
 
 ---
 
@@ -1061,7 +1061,7 @@ SchemaName *string
 
 The name of the schema containing the current or future tables on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table_grant#schema_name TableGrant#schema_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/table_grant#schema_name TableGrant#schema_name}
 
 ---
 
@@ -1075,7 +1075,7 @@ Shares *[]*string
 
 Grants privilege to these shares (only valid if on_future or on_all is unset).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table_grant#shares TableGrant#shares}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/table_grant#shares TableGrant#shares}
 
 ---
 
@@ -1089,7 +1089,7 @@ TableName *string
 
 The name of the table on which to grant privileges immediately (only valid if on_future or on_all is unset).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table_grant#table_name TableGrant#table_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/table_grant#table_name TableGrant#table_name}
 
 ---
 
@@ -1103,7 +1103,7 @@ WithGrantOption interface{}
 
 When this is set to true, allows the recipient role to grant the privileges to other roles.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/table_grant#with_grant_option TableGrant#with_grant_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/table_grant#with_grant_option TableGrant#with_grant_option}
 
 ---
 

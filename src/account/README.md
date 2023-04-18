@@ -1,3 +1,3 @@
 # `snowflake_account`
 
-Refer to the Terraform Registory for docs: [`snowflake_account`](https://www.terraform.io/docs/providers/snowflake/r/account).
+Refer to the Terraform Registory for docs: [`snowflake_account`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/account).

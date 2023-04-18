@@ -1,6 +1,6 @@
 # `snowflake_task`
 
-Refer to the Terraform Registory for docs: [`snowflake_task`](https://www.terraform.io/docs/providers/snowflake/r/task).
+Refer to the Terraform Registory for docs: [`snowflake_task`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/task).
 
 # `task` Submodule <a name="`task` Submodule" id="@cdktf/provider-snowflake.task"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`snowflake_task`](https://www.terraf
 
 ### Task <a name="Task" id="@cdktf/provider-snowflake.task.Task"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/task snowflake_task}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/task snowflake_task}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.task.Task.Initializer"></a>
 
@@ -423,7 +423,7 @@ task.Task.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -549,10 +549,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.task.Task.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -961,7 +961,7 @@ const taskConfig: task.TaskConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -976,7 +976,7 @@ const taskConfig: task.TaskConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.comment">comment</a></code> | <code>string</code> | Specifies a comment for the task. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies if the task should be started (enabled) after creation or should remain suspended (default). |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.errorIntegration">errorIntegration</a></code> | <code>string</code> | Specifies the name of the notification integration used for error notifications. |
-| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task#id Task#id}. |
+| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/task#id Task#id}. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.schedule">schedule</a></code> | <code>string</code> | The schedule for periodically running the task. This can be a cron or interval in minutes. (Conflict with after). |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.sessionParameters">sessionParameters</a></code> | <code>{[ key: string ]: string}</code> | Specifies session parameters to set for the session when the task runs. A task supports all session parameters. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.userTaskManagedInitialWarehouseSize">userTaskManagedInitialWarehouseSize</a></code> | <code>string</code> | Specifies the size of the compute resources to provision for the first run of the task, before a task history is available for Snowflake to determine an ideal size. |
@@ -999,10 +999,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.task.TaskConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -1066,7 +1066,7 @@ public readonly database: string;
 
 The database in which to create the task.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task#database Task#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/task#database Task#database}
 
 ---
 
@@ -1082,7 +1082,7 @@ Specifies the identifier for the task;
 
 must be unique for the database and schema in which the task is created.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task#name Task#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/task#name Task#name}
 
 ---
 
@@ -1096,7 +1096,7 @@ public readonly schema: string;
 
 The schema in which to create the task.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task#schema Task#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/task#schema Task#schema}
 
 ---
 
@@ -1110,7 +1110,7 @@ public readonly sqlStatement: string;
 
 Any single SQL statement, or a call to a stored procedure, executed when the task runs.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task#sql_statement Task#sql_statement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/task#sql_statement Task#sql_statement}
 
 ---
 
@@ -1126,7 +1126,7 @@ Specifies one or more predecessor tasks for the current task.
 
 Use this option to create a DAG of tasks or add this task to an existing DAG. A DAG is a series of tasks that starts with a scheduled root task and is linked together by dependencies.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task#after Task#after}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/task#after Task#after}
 
 ---
 
@@ -1140,7 +1140,7 @@ public readonly allowOverlappingExecution: boolean | IResolvable;
 
 By default, Snowflake ensures that only one instance of a particular DAG is allowed to run at a time, setting the parameter value to TRUE permits DAG runs to overlap.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task#allow_overlapping_execution Task#allow_overlapping_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/task#allow_overlapping_execution Task#allow_overlapping_execution}
 
 ---
 
@@ -1154,7 +1154,7 @@ public readonly comment: string;
 
 Specifies a comment for the task.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task#comment Task#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/task#comment Task#comment}
 
 ---
 
@@ -1168,7 +1168,7 @@ public readonly enabled: boolean | IResolvable;
 
 Specifies if the task should be started (enabled) after creation or should remain suspended (default).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task#enabled Task#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/task#enabled Task#enabled}
 
 ---
 
@@ -1182,7 +1182,7 @@ public readonly errorIntegration: string;
 
 Specifies the name of the notification integration used for error notifications.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task#error_integration Task#error_integration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/task#error_integration Task#error_integration}
 
 ---
 
@@ -1194,7 +1194,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task#id Task#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/task#id Task#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1211,7 +1211,7 @@ public readonly schedule: string;
 
 The schedule for periodically running the task. This can be a cron or interval in minutes. (Conflict with after).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task#schedule Task#schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/task#schedule Task#schedule}
 
 ---
 
@@ -1225,7 +1225,7 @@ public readonly sessionParameters: {[ key: string ]: string};
 
 Specifies session parameters to set for the session when the task runs. A task supports all session parameters.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task#session_parameters Task#session_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/task#session_parameters Task#session_parameters}
 
 ---
 
@@ -1241,7 +1241,7 @@ Specifies the size of the compute resources to provision for the first run of th
 
 Once a task has successfully completed a few runs, Snowflake ignores this parameter setting. (Conflicts with warehouse)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task#user_task_managed_initial_warehouse_size Task#user_task_managed_initial_warehouse_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/task#user_task_managed_initial_warehouse_size Task#user_task_managed_initial_warehouse_size}
 
 ---
 
@@ -1255,7 +1255,7 @@ public readonly userTaskTimeoutMs: number;
 
 Specifies the time limit on a single run of the task before it times out (in milliseconds).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task#user_task_timeout_ms Task#user_task_timeout_ms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/task#user_task_timeout_ms Task#user_task_timeout_ms}
 
 ---
 
@@ -1271,7 +1271,7 @@ The warehouse the task will use.
 
 Omit this parameter to use Snowflake-managed compute resources for runs of this task. (Conflicts with user_task_managed_initial_warehouse_size)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task#warehouse Task#warehouse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/task#warehouse Task#warehouse}
 
 ---
 
@@ -1285,7 +1285,7 @@ public readonly when: string;
 
 Specifies a Boolean SQL expression; multiple conditions joined with AND/OR are supported.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/task#when Task#when}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/task#when Task#when}
 
 ---
 

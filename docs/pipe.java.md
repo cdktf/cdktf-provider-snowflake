@@ -1,6 +1,6 @@
 # `snowflake_pipe`
 
-Refer to the Terraform Registory for docs: [`snowflake_pipe`](https://www.terraform.io/docs/providers/snowflake/r/pipe).
+Refer to the Terraform Registory for docs: [`snowflake_pipe`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/pipe).
 
 # `pipe` Submodule <a name="`pipe` Submodule" id="@cdktf/provider-snowflake.pipe"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`snowflake_pipe`](https://www.terraf
 
 ### Pipe <a name="Pipe" id="@cdktf/provider-snowflake.pipe.Pipe"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/pipe snowflake_pipe}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/pipe snowflake_pipe}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.pipe.Pipe.Initializer"></a>
 
@@ -19,6 +19,7 @@ Pipe.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -45,7 +46,7 @@ Pipe.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-snowflake.pipe.Pipe.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-snowflake.pipe.Pipe.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-snowflake.pipe.Pipe.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.pipe.Pipe.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.pipe.Pipe.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.pipe.Pipe.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.pipe.Pipe.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.pipe.Pipe.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -59,7 +60,7 @@ Pipe.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-snowflake.pipe.Pipe.Initializer.parameter.awsSnsTopicArn">awsSnsTopicArn</a></code> | <code>java.lang.String</code> | Specifies the Amazon Resource Name (ARN) for the SNS topic for your S3 bucket. |
 | <code><a href="#@cdktf/provider-snowflake.pipe.Pipe.Initializer.parameter.comment">comment</a></code> | <code>java.lang.String</code> | Specifies a comment for the pipe. |
 | <code><a href="#@cdktf/provider-snowflake.pipe.Pipe.Initializer.parameter.errorIntegration">errorIntegration</a></code> | <code>java.lang.String</code> | Specifies the name of the notification integration used for error notifications. |
-| <code><a href="#@cdktf/provider-snowflake.pipe.Pipe.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/pipe#id Pipe#id}. |
+| <code><a href="#@cdktf/provider-snowflake.pipe.Pipe.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/pipe#id Pipe#id}. |
 | <code><a href="#@cdktf/provider-snowflake.pipe.Pipe.Initializer.parameter.integration">integration</a></code> | <code>java.lang.String</code> | Specifies an integration for the pipe. |
 
 ---
@@ -90,7 +91,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.pipe.Pipe.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -130,7 +131,7 @@ Must be unique amongst siblings in the same scope
 
 Specifies the copy statement for the pipe.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/pipe#copy_statement Pipe#copy_statement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/pipe#copy_statement Pipe#copy_statement}
 
 ---
 
@@ -140,7 +141,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 The database in which to create the pipe.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/pipe#database Pipe#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/pipe#database Pipe#database}
 
 ---
 
@@ -152,7 +153,7 @@ Specifies the identifier for the pipe;
 
 must be unique for the database and schema in which the pipe is created.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/pipe#name Pipe#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/pipe#name Pipe#name}
 
 ---
 
@@ -162,7 +163,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 The schema in which to create the pipe.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/pipe#schema Pipe#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/pipe#schema Pipe#schema}
 
 ---
 
@@ -172,7 +173,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Specifies a auto_ingest param for the pipe.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/pipe#auto_ingest Pipe#auto_ingest}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/pipe#auto_ingest Pipe#auto_ingest}
 
 ---
 
@@ -182,7 +183,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Specifies the Amazon Resource Name (ARN) for the SNS topic for your S3 bucket.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/pipe#aws_sns_topic_arn Pipe#aws_sns_topic_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/pipe#aws_sns_topic_arn Pipe#aws_sns_topic_arn}
 
 ---
 
@@ -192,7 +193,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Specifies a comment for the pipe.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/pipe#comment Pipe#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/pipe#comment Pipe#comment}
 
 ---
 
@@ -202,7 +203,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Specifies the name of the notification integration used for error notifications.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/pipe#error_integration Pipe#error_integration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/pipe#error_integration Pipe#error_integration}
 
 ---
 
@@ -210,7 +211,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/pipe#id Pipe#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/pipe#id Pipe#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -223,7 +224,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Specifies an integration for the pipe.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/pipe#integration Pipe#integration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/pipe#integration Pipe#integration}
 
 ---
 
@@ -558,7 +559,7 @@ Pipe.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-snowflake.pipe.Pipe.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.pipe.Pipe.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.pipe.Pipe.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.pipe.Pipe.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.pipe.Pipe.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.pipe.Pipe.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.pipe.Pipe.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.pipe.Pipe.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -674,10 +675,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.pipe.Pipe.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -982,6 +983,7 @@ PipeConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -1008,7 +1010,7 @@ PipeConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-snowflake.pipe.PipeConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.pipe.PipeConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.pipe.PipeConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.pipe.PipeConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.pipe.PipeConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.pipe.PipeConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1022,7 +1024,7 @@ PipeConfig.builder()
 | <code><a href="#@cdktf/provider-snowflake.pipe.PipeConfig.property.awsSnsTopicArn">awsSnsTopicArn</a></code> | <code>java.lang.String</code> | Specifies the Amazon Resource Name (ARN) for the SNS topic for your S3 bucket. |
 | <code><a href="#@cdktf/provider-snowflake.pipe.PipeConfig.property.comment">comment</a></code> | <code>java.lang.String</code> | Specifies a comment for the pipe. |
 | <code><a href="#@cdktf/provider-snowflake.pipe.PipeConfig.property.errorIntegration">errorIntegration</a></code> | <code>java.lang.String</code> | Specifies the name of the notification integration used for error notifications. |
-| <code><a href="#@cdktf/provider-snowflake.pipe.PipeConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/pipe#id Pipe#id}. |
+| <code><a href="#@cdktf/provider-snowflake.pipe.PipeConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/pipe#id Pipe#id}. |
 | <code><a href="#@cdktf/provider-snowflake.pipe.PipeConfig.property.integration">integration</a></code> | <code>java.lang.String</code> | Specifies an integration for the pipe. |
 
 ---
@@ -1040,10 +1042,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.pipe.PipeConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1107,7 +1109,7 @@ public java.lang.String getCopyStatement();
 
 Specifies the copy statement for the pipe.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/pipe#copy_statement Pipe#copy_statement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/pipe#copy_statement Pipe#copy_statement}
 
 ---
 
@@ -1121,7 +1123,7 @@ public java.lang.String getDatabase();
 
 The database in which to create the pipe.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/pipe#database Pipe#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/pipe#database Pipe#database}
 
 ---
 
@@ -1137,7 +1139,7 @@ Specifies the identifier for the pipe;
 
 must be unique for the database and schema in which the pipe is created.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/pipe#name Pipe#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/pipe#name Pipe#name}
 
 ---
 
@@ -1151,7 +1153,7 @@ public java.lang.String getSchema();
 
 The schema in which to create the pipe.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/pipe#schema Pipe#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/pipe#schema Pipe#schema}
 
 ---
 
@@ -1165,7 +1167,7 @@ public java.lang.Object getAutoIngest();
 
 Specifies a auto_ingest param for the pipe.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/pipe#auto_ingest Pipe#auto_ingest}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/pipe#auto_ingest Pipe#auto_ingest}
 
 ---
 
@@ -1179,7 +1181,7 @@ public java.lang.String getAwsSnsTopicArn();
 
 Specifies the Amazon Resource Name (ARN) for the SNS topic for your S3 bucket.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/pipe#aws_sns_topic_arn Pipe#aws_sns_topic_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/pipe#aws_sns_topic_arn Pipe#aws_sns_topic_arn}
 
 ---
 
@@ -1193,7 +1195,7 @@ public java.lang.String getComment();
 
 Specifies a comment for the pipe.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/pipe#comment Pipe#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/pipe#comment Pipe#comment}
 
 ---
 
@@ -1207,7 +1209,7 @@ public java.lang.String getErrorIntegration();
 
 Specifies the name of the notification integration used for error notifications.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/pipe#error_integration Pipe#error_integration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/pipe#error_integration Pipe#error_integration}
 
 ---
 
@@ -1219,7 +1221,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/pipe#id Pipe#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/pipe#id Pipe#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1236,7 +1238,7 @@ public java.lang.String getIntegration();
 
 Specifies an integration for the pipe.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/pipe#integration Pipe#integration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/pipe#integration Pipe#integration}
 
 ---
 

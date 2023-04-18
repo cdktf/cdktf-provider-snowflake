@@ -1,3 +1,3 @@
 # `snowflake_saml_integration`
 
-Refer to the Terraform Registory for docs: [`snowflake_saml_integration`](https://www.terraform.io/docs/providers/snowflake/r/saml_integration).
+Refer to the Terraform Registory for docs: [`snowflake_saml_integration`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/saml_integration).

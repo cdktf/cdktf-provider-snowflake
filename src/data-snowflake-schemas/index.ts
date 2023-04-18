@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/snowflake/d/schemas
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/schemas
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface DataSnowflakeSchemasConfig extends cdktf.TerraformMetaArguments
   /**
   * The database from which to return the schemas from.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/schemas#database DataSnowflakeSchemas#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/schemas#database DataSnowflakeSchemas#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/schemas#id DataSnowflakeSchemas#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/schemas#id DataSnowflakeSchemas#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -97,7 +97,7 @@ export class DataSnowflakeSchemasSchemasList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/snowflake/d/schemas snowflake_schemas}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/schemas snowflake_schemas}
 */
 export class DataSnowflakeSchemas extends cdktf.TerraformDataSource {
 
@@ -111,7 +111,7 @@ export class DataSnowflakeSchemas extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/snowflake/d/schemas snowflake_schemas} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/schemas snowflake_schemas} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

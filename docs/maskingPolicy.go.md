@@ -1,6 +1,6 @@
 # `snowflake_masking_policy`
 
-Refer to the Terraform Registory for docs: [`snowflake_masking_policy`](https://www.terraform.io/docs/providers/snowflake/r/masking_policy).
+Refer to the Terraform Registory for docs: [`snowflake_masking_policy`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/masking_policy).
 
 # `maskingPolicy` Submodule <a name="`maskingPolicy` Submodule" id="@cdktf/provider-snowflake.maskingPolicy"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`snowflake_masking_policy`](https://
 
 ### MaskingPolicy <a name="MaskingPolicy" id="@cdktf/provider-snowflake.maskingPolicy.MaskingPolicy"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/masking_policy snowflake_masking_policy}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/masking_policy snowflake_masking_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.maskingPolicy.MaskingPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/maskingpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/maskingpolicy"
 
 maskingpolicy.NewMaskingPolicy(scope Construct, id *string, config MaskingPolicyConfig) MaskingPolicy
 ```
@@ -284,7 +284,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.maskingPolicy.MaskingPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/maskingpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/maskingpolicy"
 
 maskingpolicy.MaskingPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.maskingPolicy.MaskingPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/maskingpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/maskingpolicy"
 
 maskingpolicy.MaskingPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ maskingpolicy.MaskingPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.maskingPolicy.MaskingPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/maskingpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/maskingpolicy"
 
 maskingpolicy.MaskingPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ maskingpolicy.MaskingPolicy_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-snowflake.maskingPolicy.MaskingPolicy.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.maskingPolicy.MaskingPolicy.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.maskingPolicy.MaskingPolicy.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.maskingPolicy.MaskingPolicy.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.maskingPolicy.MaskingPolicy.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.maskingPolicy.MaskingPolicy.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.maskingPolicy.MaskingPolicy.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.maskingPolicy.MaskingPolicy.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -464,10 +464,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-snowflake.maskingPolicy.MaskingPolicy.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -716,11 +716,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.maskingPolicy.MaskingPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/maskingpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/maskingpolicy"
 
 &maskingpolicy.MaskingPolicyConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -742,7 +742,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/maskingpolicy"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-snowflake.maskingPolicy.MaskingPolicyConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.maskingPolicy.MaskingPolicyConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.maskingPolicy.MaskingPolicyConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.maskingPolicy.MaskingPolicyConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.maskingPolicy.MaskingPolicyConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.maskingPolicy.MaskingPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -755,7 +755,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/maskingpolicy"
 | <code><a href="#@cdktf/provider-snowflake.maskingPolicy.MaskingPolicyConfig.property.schema">Schema</a></code> | <code>*string</code> | The schema in which to create the masking policy. |
 | <code><a href="#@cdktf/provider-snowflake.maskingPolicy.MaskingPolicyConfig.property.valueDataType">ValueDataType</a></code> | <code>*string</code> | Specifies the data type to mask. |
 | <code><a href="#@cdktf/provider-snowflake.maskingPolicy.MaskingPolicyConfig.property.comment">Comment</a></code> | <code>*string</code> | Specifies a comment for the masking policy. |
-| <code><a href="#@cdktf/provider-snowflake.maskingPolicy.MaskingPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/masking_policy#id MaskingPolicy#id}. |
+| <code><a href="#@cdktf/provider-snowflake.maskingPolicy.MaskingPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/masking_policy#id MaskingPolicy#id}. |
 
 ---
 
@@ -772,10 +772,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-snowflake.maskingPolicy.MaskingPolicyConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -839,7 +839,7 @@ Database *string
 
 The database in which to create the masking policy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/masking_policy#database MaskingPolicy#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/masking_policy#database MaskingPolicy#database}
 
 ---
 
@@ -853,7 +853,7 @@ MaskingExpression *string
 
 Specifies the SQL expression that transforms the data.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/masking_policy#masking_expression MaskingPolicy#masking_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/masking_policy#masking_expression MaskingPolicy#masking_expression}
 
 ---
 
@@ -869,7 +869,7 @@ Specifies the identifier for the masking policy;
 
 must be unique for the database and schema in which the masking policy is created.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/masking_policy#name MaskingPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/masking_policy#name MaskingPolicy#name}
 
 ---
 
@@ -883,7 +883,7 @@ ReturnDataType *string
 
 Specifies the data type to return.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/masking_policy#return_data_type MaskingPolicy#return_data_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/masking_policy#return_data_type MaskingPolicy#return_data_type}
 
 ---
 
@@ -897,7 +897,7 @@ Schema *string
 
 The schema in which to create the masking policy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/masking_policy#schema MaskingPolicy#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/masking_policy#schema MaskingPolicy#schema}
 
 ---
 
@@ -911,7 +911,7 @@ ValueDataType *string
 
 Specifies the data type to mask.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/masking_policy#value_data_type MaskingPolicy#value_data_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/masking_policy#value_data_type MaskingPolicy#value_data_type}
 
 ---
 
@@ -925,7 +925,7 @@ Comment *string
 
 Specifies a comment for the masking policy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/masking_policy#comment MaskingPolicy#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/masking_policy#comment MaskingPolicy#comment}
 
 ---
 
@@ -937,7 +937,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/masking_policy#id MaskingPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/masking_policy#id MaskingPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

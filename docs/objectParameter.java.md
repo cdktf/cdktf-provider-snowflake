@@ -1,6 +1,6 @@
 # `snowflake_object_parameter`
 
-Refer to the Terraform Registory for docs: [`snowflake_object_parameter`](https://www.terraform.io/docs/providers/snowflake/r/object_parameter).
+Refer to the Terraform Registory for docs: [`snowflake_object_parameter`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/object_parameter).
 
 # `objectParameter` Submodule <a name="`objectParameter` Submodule" id="@cdktf/provider-snowflake.objectParameter"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`snowflake_object_parameter`](https:
 
 ### ObjectParameter <a name="ObjectParameter" id="@cdktf/provider-snowflake.objectParameter.ObjectParameter"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/object_parameter snowflake_object_parameter}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/object_parameter snowflake_object_parameter}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.objectParameter.ObjectParameter.Initializer"></a>
 
@@ -19,6 +19,7 @@ ObjectParameter.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -42,7 +43,7 @@ ObjectParameter.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -50,7 +51,7 @@ ObjectParameter.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.Initializer.parameter.key">key</a></code> | <code>java.lang.String</code> | Name of object parameter. Valid values are those in [object parameters](https://docs.snowflake.com/en/sql-reference/parameters.html#object-parameters). |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.Initializer.parameter.value">value</a></code> | <code>java.lang.String</code> | Value of object parameter, as a string. Constraints are the same as those for the parameters in Snowflake documentation. |
-| <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/object_parameter#id ObjectParameter#id}. |
+| <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/object_parameter#id ObjectParameter#id}. |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.Initializer.parameter.objectIdentifier">objectIdentifier</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameterObjectIdentifier">ObjectParameterObjectIdentifier</a>></code> | object_identifier block. |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.Initializer.parameter.objectType">objectType</a></code> | <code>java.lang.String</code> | Type of object to which the parameter applies. |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.Initializer.parameter.onAccount">onAccount</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If true, the object parameter will be set on the account level. |
@@ -83,7 +84,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.objectParameter.ObjectParameter.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -123,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 Name of object parameter. Valid values are those in [object parameters](https://docs.snowflake.com/en/sql-reference/parameters.html#object-parameters).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/object_parameter#key ObjectParameter#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/object_parameter#key ObjectParameter#key}
 
 ---
 
@@ -133,7 +134,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Value of object parameter, as a string. Constraints are the same as those for the parameters in Snowflake documentation.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/object_parameter#value ObjectParameter#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/object_parameter#value ObjectParameter#value}
 
 ---
 
@@ -141,7 +142,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/object_parameter#id ObjectParameter#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/object_parameter#id ObjectParameter#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -154,7 +155,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 object_identifier block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/object_parameter#object_identifier ObjectParameter#object_identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/object_parameter#object_identifier ObjectParameter#object_identifier}
 
 ---
 
@@ -166,7 +167,7 @@ Type of object to which the parameter applies.
 
 Valid values are those in [object types](https://docs.snowflake.com/en/sql-reference/parameters.html#object-types). If no value is provided, then the resource will default to setting the object parameter at account level.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/object_parameter#object_type ObjectParameter#object_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/object_parameter#object_type ObjectParameter#object_type}
 
 ---
 
@@ -176,7 +177,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 If true, the object parameter will be set on the account level.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/object_parameter#on_account ObjectParameter#on_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/object_parameter#on_account ObjectParameter#on_account}
 
 ---
 
@@ -510,7 +511,7 @@ ObjectParameter.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -616,10 +617,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -824,6 +825,7 @@ ObjectParameterConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -847,7 +849,7 @@ ObjectParameterConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameterConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameterConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameterConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameterConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameterConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameterConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -855,7 +857,7 @@ ObjectParameterConfig.builder()
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameterConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameterConfig.property.key">key</a></code> | <code>java.lang.String</code> | Name of object parameter. Valid values are those in [object parameters](https://docs.snowflake.com/en/sql-reference/parameters.html#object-parameters). |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameterConfig.property.value">value</a></code> | <code>java.lang.String</code> | Value of object parameter, as a string. Constraints are the same as those for the parameters in Snowflake documentation. |
-| <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameterConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/object_parameter#id ObjectParameter#id}. |
+| <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameterConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/object_parameter#id ObjectParameter#id}. |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameterConfig.property.objectIdentifier">objectIdentifier</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameterObjectIdentifier">ObjectParameterObjectIdentifier</a>></code> | object_identifier block. |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameterConfig.property.objectType">objectType</a></code> | <code>java.lang.String</code> | Type of object to which the parameter applies. |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameterConfig.property.onAccount">onAccount</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If true, the object parameter will be set on the account level. |
@@ -875,10 +877,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.objectParameter.ObjectParameterConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -942,7 +944,7 @@ public java.lang.String getKey();
 
 Name of object parameter. Valid values are those in [object parameters](https://docs.snowflake.com/en/sql-reference/parameters.html#object-parameters).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/object_parameter#key ObjectParameter#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/object_parameter#key ObjectParameter#key}
 
 ---
 
@@ -956,7 +958,7 @@ public java.lang.String getValue();
 
 Value of object parameter, as a string. Constraints are the same as those for the parameters in Snowflake documentation.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/object_parameter#value ObjectParameter#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/object_parameter#value ObjectParameter#value}
 
 ---
 
@@ -968,7 +970,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/object_parameter#id ObjectParameter#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/object_parameter#id ObjectParameter#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -985,7 +987,7 @@ public java.lang.Object getObjectIdentifier();
 
 object_identifier block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/object_parameter#object_identifier ObjectParameter#object_identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/object_parameter#object_identifier ObjectParameter#object_identifier}
 
 ---
 
@@ -1001,7 +1003,7 @@ Type of object to which the parameter applies.
 
 Valid values are those in [object types](https://docs.snowflake.com/en/sql-reference/parameters.html#object-types). If no value is provided, then the resource will default to setting the object parameter at account level.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/object_parameter#object_type ObjectParameter#object_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/object_parameter#object_type ObjectParameter#object_type}
 
 ---
 
@@ -1015,7 +1017,7 @@ public java.lang.Object getOnAccount();
 
 If true, the object parameter will be set on the account level.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/object_parameter#on_account ObjectParameter#on_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/object_parameter#on_account ObjectParameter#on_account}
 
 ---
 
@@ -1053,7 +1055,7 @@ public java.lang.String getName();
 
 Name of the object to set the parameter for.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/object_parameter#name ObjectParameter#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/object_parameter#name ObjectParameter#name}
 
 ---
 
@@ -1067,7 +1069,7 @@ public java.lang.String getDatabase();
 
 Name of the database that the object was created in.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/object_parameter#database ObjectParameter#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/object_parameter#database ObjectParameter#database}
 
 ---
 
@@ -1081,7 +1083,7 @@ public java.lang.String getSchema();
 
 Name of the schema that the object was created in.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/object_parameter#schema ObjectParameter#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/object_parameter#schema ObjectParameter#schema}
 
 ---
 

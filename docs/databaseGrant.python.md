@@ -1,6 +1,6 @@
 # `snowflake_database_grant`
 
-Refer to the Terraform Registory for docs: [`snowflake_database_grant`](https://www.terraform.io/docs/providers/snowflake/r/database_grant).
+Refer to the Terraform Registory for docs: [`snowflake_database_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/database_grant).
 
 # `databaseGrant` Submodule <a name="`databaseGrant` Submodule" id="@cdktf/provider-snowflake.databaseGrant"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`snowflake_database_grant`](https://
 
 ### DatabaseGrant <a name="DatabaseGrant" id="@cdktf/provider-snowflake.databaseGrant.DatabaseGrant"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/database_grant snowflake_database_grant}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/database_grant snowflake_database_grant}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.Initializer"></a>
 
@@ -19,7 +19,7 @@ databaseGrant.DatabaseGrant(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -40,7 +40,7 @@ databaseGrant.DatabaseGrant(
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -48,7 +48,7 @@ databaseGrant.DatabaseGrant(
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.Initializer.parameter.databaseName">database_name</a></code> | <code>str</code> | The name of the database on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.Initializer.parameter.enableMultipleGrants">enable_multiple_grants</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When this is set to true, multiple grants of the same type can be created. |
-| <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/database_grant#id DatabaseGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/database_grant#id DatabaseGrant#id}. |
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.Initializer.parameter.privilege">privilege</a></code> | <code>str</code> | The privilege to grant on the database. |
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.Initializer.parameter.roles">roles</a></code> | <code>typing.List[str]</code> | Grants privilege to these roles. |
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.Initializer.parameter.shares">shares</a></code> | <code>typing.List[str]</code> | Grants privilege to these shares. |
@@ -82,7 +82,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the database on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/database_grant#database_name DatabaseGrant#database_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/database_grant#database_name DatabaseGrant#database_name}
 
 ---
 
@@ -134,7 +134,7 @@ When this is set to true, multiple grants of the same type can be created.
 
 This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/database_grant#enable_multiple_grants DatabaseGrant#enable_multiple_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/database_grant#enable_multiple_grants DatabaseGrant#enable_multiple_grants}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/database_grant#id DatabaseGrant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/database_grant#id DatabaseGrant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -155,7 +155,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The privilege to grant on the database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/database_grant#privilege DatabaseGrant#privilege}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/database_grant#privilege DatabaseGrant#privilege}
 
 ---
 
@@ -165,7 +165,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Grants privilege to these roles.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/database_grant#roles DatabaseGrant#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/database_grant#roles DatabaseGrant#roles}
 
 ---
 
@@ -175,7 +175,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Grants privilege to these shares.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/database_grant#shares DatabaseGrant#shares}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/database_grant#shares DatabaseGrant#shares}
 
 ---
 
@@ -185,7 +185,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 When this is set to true, allows the recipient role to grant the privileges to other roles.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/database_grant#with_grant_option DatabaseGrant#with_grant_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/database_grant#with_grant_option DatabaseGrant#with_grant_option}
 
 ---
 
@@ -551,7 +551,7 @@ databaseGrant.DatabaseGrant.is_terraform_resource(
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -659,10 +659,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -885,7 +885,7 @@ from cdktf_cdktf_provider_snowflake import database_grant
 
 databaseGrant.DatabaseGrantConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -906,7 +906,7 @@ databaseGrant.DatabaseGrantConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrantConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrantConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrantConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrantConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrantConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrantConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -914,7 +914,7 @@ databaseGrant.DatabaseGrantConfig(
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrantConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrantConfig.property.databaseName">database_name</a></code> | <code>str</code> | The name of the database on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrantConfig.property.enableMultipleGrants">enable_multiple_grants</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When this is set to true, multiple grants of the same type can be created. |
-| <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrantConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/database_grant#id DatabaseGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrantConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/database_grant#id DatabaseGrant#id}. |
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrantConfig.property.privilege">privilege</a></code> | <code>str</code> | The privilege to grant on the database. |
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrantConfig.property.roles">roles</a></code> | <code>typing.List[str]</code> | Grants privilege to these roles. |
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrantConfig.property.shares">shares</a></code> | <code>typing.List[str]</code> | Grants privilege to these shares. |
@@ -935,10 +935,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.databaseGrant.DatabaseGrantConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1002,7 +1002,7 @@ database_name: str
 
 The name of the database on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/database_grant#database_name DatabaseGrant#database_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/database_grant#database_name DatabaseGrant#database_name}
 
 ---
 
@@ -1018,7 +1018,7 @@ When this is set to true, multiple grants of the same type can be created.
 
 This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/database_grant#enable_multiple_grants DatabaseGrant#enable_multiple_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/database_grant#enable_multiple_grants DatabaseGrant#enable_multiple_grants}
 
 ---
 
@@ -1030,7 +1030,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/database_grant#id DatabaseGrant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/database_grant#id DatabaseGrant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1047,7 +1047,7 @@ privilege: str
 
 The privilege to grant on the database.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/database_grant#privilege DatabaseGrant#privilege}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/database_grant#privilege DatabaseGrant#privilege}
 
 ---
 
@@ -1061,7 +1061,7 @@ roles: typing.List[str]
 
 Grants privilege to these roles.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/database_grant#roles DatabaseGrant#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/database_grant#roles DatabaseGrant#roles}
 
 ---
 
@@ -1075,7 +1075,7 @@ shares: typing.List[str]
 
 Grants privilege to these shares.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/database_grant#shares DatabaseGrant#shares}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/database_grant#shares DatabaseGrant#shares}
 
 ---
 
@@ -1089,7 +1089,7 @@ with_grant_option: typing.Union[bool, IResolvable]
 
 When this is set to true, allows the recipient role to grant the privileges to other roles.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/database_grant#with_grant_option DatabaseGrant#with_grant_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/database_grant#with_grant_option DatabaseGrant#with_grant_option}
 
 ---
 

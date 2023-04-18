@@ -1,6 +1,6 @@
 # `snowflake_api_integration`
 
-Refer to the Terraform Registory for docs: [`snowflake_api_integration`](https://www.terraform.io/docs/providers/snowflake/r/api_integration).
+Refer to the Terraform Registory for docs: [`snowflake_api_integration`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/api_integration).
 
 # `apiIntegration` Submodule <a name="`apiIntegration` Submodule" id="@cdktf/provider-snowflake.apiIntegration"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`snowflake_api_integration`](https:/
 
 ### ApiIntegration <a name="ApiIntegration" id="@cdktf/provider-snowflake.apiIntegration.ApiIntegration"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/api_integration snowflake_api_integration}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/api_integration snowflake_api_integration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiIntegration.ApiIntegration.Initializer"></a>
 
@@ -19,7 +19,7 @@ apiIntegration.ApiIntegration(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -45,7 +45,7 @@ apiIntegration.ApiIntegration(
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -59,10 +59,10 @@ apiIntegration.ApiIntegration(
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.Initializer.parameter.apiKey">api_key</a></code> | <code>str</code> | The API key (also called a “subscription key”). |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.Initializer.parameter.azureAdApplicationId">azure_ad_application_id</a></code> | <code>str</code> | The 'Application (client) id' of the Azure AD app for your remote service. |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.Initializer.parameter.azureTenantId">azure_tenant_id</a></code> | <code>str</code> | Specifies the ID for your Office 365 tenant that all Azure API Management instances belong to. |
-| <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.Initializer.parameter.comment">comment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/api_integration#comment ApiIntegration#comment}. |
+| <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.Initializer.parameter.comment">comment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/api_integration#comment ApiIntegration#comment}. |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.Initializer.parameter.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether this API integration is enabled or disabled. |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.Initializer.parameter.googleAudience">google_audience</a></code> | <code>str</code> | The audience claim when generating the JWT (JSON Web Token) to authenticate to the Google API Gateway. |
-| <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/api_integration#id ApiIntegration#id}. |
+| <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/api_integration#id ApiIntegration#id}. |
 
 ---
 
@@ -92,7 +92,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.apiIntegration.ApiIntegration.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -132,7 +132,7 @@ Must be unique amongst siblings in the same scope
 
 Explicitly limits external functions that use the integration to reference one or more HTTPS proxy service endpoints and resources within those proxies.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/api_integration#api_allowed_prefixes ApiIntegration#api_allowed_prefixes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/api_integration#api_allowed_prefixes ApiIntegration#api_allowed_prefixes}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Specifies the HTTPS proxy service type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/api_integration#api_provider ApiIntegration#api_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/api_integration#api_provider ApiIntegration#api_provider}
 
 ---
 
@@ -154,7 +154,7 @@ Specifies the name of the API integration.
 
 This name follows the rules for Object Identifiers. The name should be unique among api integrations in your account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/api_integration#name ApiIntegration#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/api_integration#name ApiIntegration#name}
 
 ---
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 ARN of a cloud platform role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/api_integration#api_aws_role_arn ApiIntegration#api_aws_role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/api_integration#api_aws_role_arn ApiIntegration#api_aws_role_arn}
 
 ---
 
@@ -174,7 +174,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Lists the endpoints and resources in the HTTPS proxy service that are not allowed to be called from Snowflake.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/api_integration#api_blocked_prefixes ApiIntegration#api_blocked_prefixes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/api_integration#api_blocked_prefixes ApiIntegration#api_blocked_prefixes}
 
 ---
 
@@ -184,7 +184,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 The API key (also called a “subscription key”).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/api_integration#api_key ApiIntegration#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/api_integration#api_key ApiIntegration#api_key}
 
 ---
 
@@ -194,7 +194,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 The 'Application (client) id' of the Azure AD app for your remote service.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/api_integration#azure_ad_application_id ApiIntegration#azure_ad_application_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/api_integration#azure_ad_application_id ApiIntegration#azure_ad_application_id}
 
 ---
 
@@ -204,7 +204,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Specifies the ID for your Office 365 tenant that all Azure API Management instances belong to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/api_integration#azure_tenant_id ApiIntegration#azure_tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/api_integration#azure_tenant_id ApiIntegration#azure_tenant_id}
 
 ---
 
@@ -212,7 +212,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/api_integration#comment ApiIntegration#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/api_integration#comment ApiIntegration#comment}.
 
 ---
 
@@ -224,7 +224,7 @@ Specifies whether this API integration is enabled or disabled.
 
 If the API integration is disabled, any external function that relies on it will not work.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/api_integration#enabled ApiIntegration#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/api_integration#enabled ApiIntegration#enabled}
 
 ---
 
@@ -234,7 +234,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 The audience claim when generating the JWT (JSON Web Token) to authenticate to the Google API Gateway.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/api_integration#google_audience ApiIntegration#google_audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/api_integration#google_audience ApiIntegration#google_audience}
 
 ---
 
@@ -242,7 +242,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/api_integration#id ApiIntegration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/api_integration#id ApiIntegration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -632,7 +632,7 @@ apiIntegration.ApiIntegration.is_terraform_resource(
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -755,10 +755,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.apiIntegration.ApiIntegration.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1131,7 +1131,7 @@ from cdktf_cdktf_provider_snowflake import api_integration
 
 apiIntegration.ApiIntegrationConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -1157,7 +1157,7 @@ apiIntegration.ApiIntegrationConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegrationConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegrationConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegrationConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegrationConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegrationConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegrationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1171,10 +1171,10 @@ apiIntegration.ApiIntegrationConfig(
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegrationConfig.property.apiKey">api_key</a></code> | <code>str</code> | The API key (also called a “subscription key”). |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegrationConfig.property.azureAdApplicationId">azure_ad_application_id</a></code> | <code>str</code> | The 'Application (client) id' of the Azure AD app for your remote service. |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegrationConfig.property.azureTenantId">azure_tenant_id</a></code> | <code>str</code> | Specifies the ID for your Office 365 tenant that all Azure API Management instances belong to. |
-| <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegrationConfig.property.comment">comment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/api_integration#comment ApiIntegration#comment}. |
+| <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegrationConfig.property.comment">comment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/api_integration#comment ApiIntegration#comment}. |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegrationConfig.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether this API integration is enabled or disabled. |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegrationConfig.property.googleAudience">google_audience</a></code> | <code>str</code> | The audience claim when generating the JWT (JSON Web Token) to authenticate to the Google API Gateway. |
-| <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegrationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/api_integration#id ApiIntegration#id}. |
+| <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegrationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/api_integration#id ApiIntegration#id}. |
 
 ---
 
@@ -1191,10 +1191,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.apiIntegration.ApiIntegrationConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1258,7 +1258,7 @@ api_allowed_prefixes: typing.List[str]
 
 Explicitly limits external functions that use the integration to reference one or more HTTPS proxy service endpoints and resources within those proxies.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/api_integration#api_allowed_prefixes ApiIntegration#api_allowed_prefixes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/api_integration#api_allowed_prefixes ApiIntegration#api_allowed_prefixes}
 
 ---
 
@@ -1272,7 +1272,7 @@ api_provider: str
 
 Specifies the HTTPS proxy service type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/api_integration#api_provider ApiIntegration#api_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/api_integration#api_provider ApiIntegration#api_provider}
 
 ---
 
@@ -1288,7 +1288,7 @@ Specifies the name of the API integration.
 
 This name follows the rules for Object Identifiers. The name should be unique among api integrations in your account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/api_integration#name ApiIntegration#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/api_integration#name ApiIntegration#name}
 
 ---
 
@@ -1302,7 +1302,7 @@ api_aws_role_arn: str
 
 ARN of a cloud platform role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/api_integration#api_aws_role_arn ApiIntegration#api_aws_role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/api_integration#api_aws_role_arn ApiIntegration#api_aws_role_arn}
 
 ---
 
@@ -1316,7 +1316,7 @@ api_blocked_prefixes: typing.List[str]
 
 Lists the endpoints and resources in the HTTPS proxy service that are not allowed to be called from Snowflake.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/api_integration#api_blocked_prefixes ApiIntegration#api_blocked_prefixes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/api_integration#api_blocked_prefixes ApiIntegration#api_blocked_prefixes}
 
 ---
 
@@ -1330,7 +1330,7 @@ api_key: str
 
 The API key (also called a “subscription key”).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/api_integration#api_key ApiIntegration#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/api_integration#api_key ApiIntegration#api_key}
 
 ---
 
@@ -1344,7 +1344,7 @@ azure_ad_application_id: str
 
 The 'Application (client) id' of the Azure AD app for your remote service.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/api_integration#azure_ad_application_id ApiIntegration#azure_ad_application_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/api_integration#azure_ad_application_id ApiIntegration#azure_ad_application_id}
 
 ---
 
@@ -1358,7 +1358,7 @@ azure_tenant_id: str
 
 Specifies the ID for your Office 365 tenant that all Azure API Management instances belong to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/api_integration#azure_tenant_id ApiIntegration#azure_tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/api_integration#azure_tenant_id ApiIntegration#azure_tenant_id}
 
 ---
 
@@ -1370,7 +1370,7 @@ comment: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/api_integration#comment ApiIntegration#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/api_integration#comment ApiIntegration#comment}.
 
 ---
 
@@ -1386,7 +1386,7 @@ Specifies whether this API integration is enabled or disabled.
 
 If the API integration is disabled, any external function that relies on it will not work.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/api_integration#enabled ApiIntegration#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/api_integration#enabled ApiIntegration#enabled}
 
 ---
 
@@ -1400,7 +1400,7 @@ google_audience: str
 
 The audience claim when generating the JWT (JSON Web Token) to authenticate to the Google API Gateway.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/api_integration#google_audience ApiIntegration#google_audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/api_integration#google_audience ApiIntegration#google_audience}
 
 ---
 
@@ -1412,7 +1412,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/api_integration#id ApiIntegration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/api_integration#id ApiIntegration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

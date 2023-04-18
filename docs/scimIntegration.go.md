@@ -1,6 +1,6 @@
 # `snowflake_scim_integration`
 
-Refer to the Terraform Registory for docs: [`snowflake_scim_integration`](https://www.terraform.io/docs/providers/snowflake/r/scim_integration).
+Refer to the Terraform Registory for docs: [`snowflake_scim_integration`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/scim_integration).
 
 # `scimIntegration` Submodule <a name="`scimIntegration` Submodule" id="@cdktf/provider-snowflake.scimIntegration"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`snowflake_scim_integration`](https:
 
 ### ScimIntegration <a name="ScimIntegration" id="@cdktf/provider-snowflake.scimIntegration.ScimIntegration"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/scim_integration snowflake_scim_integration}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/scim_integration snowflake_scim_integration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.scimIntegration.ScimIntegration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/scimintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/scimintegration"
 
 scimintegration.NewScimIntegration(scope Construct, id *string, config ScimIntegrationConfig) ScimIntegration
 ```
@@ -284,7 +284,7 @@ func ResetNetworkPolicy()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.scimIntegration.ScimIntegration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/scimintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/scimintegration"
 
 scimintegration.ScimIntegration_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.scimIntegration.ScimIntegration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/scimintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/scimintegration"
 
 scimintegration.ScimIntegration_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ scimintegration.ScimIntegration_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.scimIntegration.ScimIntegration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/scimintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/scimintegration"
 
 scimintegration.ScimIntegration_IsTerraformResource(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ scimintegration.ScimIntegration_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-snowflake.scimIntegration.ScimIntegration.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.scimIntegration.ScimIntegration.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.scimIntegration.ScimIntegration.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.scimIntegration.ScimIntegration.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.scimIntegration.ScimIntegration.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.scimIntegration.ScimIntegration.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.scimIntegration.ScimIntegration.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.scimIntegration.ScimIntegration.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -458,10 +458,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-snowflake.scimIntegration.ScimIntegration.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -650,11 +650,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.scimIntegration.ScimIntegrationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/scimintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/scimintegration"
 
 &scimintegration.ScimIntegrationConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -673,7 +673,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/scimintegratio
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-snowflake.scimIntegration.ScimIntegrationConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.scimIntegration.ScimIntegrationConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.scimIntegration.ScimIntegrationConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.scimIntegration.ScimIntegrationConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.scimIntegration.ScimIntegrationConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.scimIntegration.ScimIntegrationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -682,7 +682,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/scimintegratio
 | <code><a href="#@cdktf/provider-snowflake.scimIntegration.ScimIntegrationConfig.property.name">Name</a></code> | <code>*string</code> | Specifies the name of the SCIM integration. |
 | <code><a href="#@cdktf/provider-snowflake.scimIntegration.ScimIntegrationConfig.property.provisionerRole">ProvisionerRole</a></code> | <code>*string</code> | Specify the SCIM role in Snowflake that owns any users and roles that are imported from the identity provider into Snowflake using SCIM. |
 | <code><a href="#@cdktf/provider-snowflake.scimIntegration.ScimIntegrationConfig.property.scimClient">ScimClient</a></code> | <code>*string</code> | Specifies the client type for the scim integration. |
-| <code><a href="#@cdktf/provider-snowflake.scimIntegration.ScimIntegrationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/scim_integration#id ScimIntegration#id}. |
+| <code><a href="#@cdktf/provider-snowflake.scimIntegration.ScimIntegrationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/scim_integration#id ScimIntegration#id}. |
 | <code><a href="#@cdktf/provider-snowflake.scimIntegration.ScimIntegrationConfig.property.networkPolicy">NetworkPolicy</a></code> | <code>*string</code> | Specifies an existing network policy active for your account. |
 
 ---
@@ -700,10 +700,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-snowflake.scimIntegration.ScimIntegrationConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -769,7 +769,7 @@ Specifies the name of the SCIM integration.
 
 This name follows the rules for Object Identifiers. The name should be unique among security integrations in your account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/scim_integration#name ScimIntegration#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/scim_integration#name ScimIntegration#name}
 
 ---
 
@@ -783,7 +783,7 @@ ProvisionerRole *string
 
 Specify the SCIM role in Snowflake that owns any users and roles that are imported from the identity provider into Snowflake using SCIM.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/scim_integration#provisioner_role ScimIntegration#provisioner_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/scim_integration#provisioner_role ScimIntegration#provisioner_role}
 
 ---
 
@@ -797,7 +797,7 @@ ScimClient *string
 
 Specifies the client type for the scim integration.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/scim_integration#scim_client ScimIntegration#scim_client}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/scim_integration#scim_client ScimIntegration#scim_client}
 
 ---
 
@@ -809,7 +809,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/scim_integration#id ScimIntegration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/scim_integration#id ScimIntegration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -828,7 +828,7 @@ Specifies an existing network policy active for your account.
 
 The network policy restricts the list of user IP addresses when exchanging an authorization code for an access or refresh token and when using a refresh token to obtain a new access token. If this parameter is not set, the network policy for the account (if any) is used instead.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/scim_integration#network_policy ScimIntegration#network_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/scim_integration#network_policy ScimIntegration#network_policy}
 
 ---
 

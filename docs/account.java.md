@@ -1,6 +1,6 @@
 # `snowflake_account`
 
-Refer to the Terraform Registory for docs: [`snowflake_account`](https://www.terraform.io/docs/providers/snowflake/r/account).
+Refer to the Terraform Registory for docs: [`snowflake_account`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/account).
 
 # `account` Submodule <a name="`account` Submodule" id="@cdktf/provider-snowflake.account"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`snowflake_account`](https://www.ter
 
 ### Account <a name="Account" id="@cdktf/provider-snowflake.account.Account"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/account snowflake_account}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/account snowflake_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.account.Account.Initializer"></a>
 
@@ -19,6 +19,7 @@ Account.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -48,7 +49,7 @@ Account.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-snowflake.account.Account.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-snowflake.account.Account.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-snowflake.account.Account.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.account.Account.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.account.Account.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.account.Account.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.account.Account.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.account.Account.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -62,7 +63,7 @@ Account.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-snowflake.account.Account.Initializer.parameter.adminRsaPublicKey">adminRsaPublicKey</a></code> | <code>java.lang.String</code> | Assigns a public key to the initial administrative user of the account in order to implement [key pair authentication](https://docs.snowflake.com/en/sql-reference/sql/create-account.html#:~:text=key%20pair%20authentication) for the user. Optional if the `ADMIN_PASSWORD` parameter is specified. |
 | <code><a href="#@cdktf/provider-snowflake.account.Account.Initializer.parameter.comment">comment</a></code> | <code>java.lang.String</code> | Specifies a comment for the account. |
 | <code><a href="#@cdktf/provider-snowflake.account.Account.Initializer.parameter.firstName">firstName</a></code> | <code>java.lang.String</code> | First name of the initial administrative user of the account. |
-| <code><a href="#@cdktf/provider-snowflake.account.Account.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/account#id Account#id}. |
+| <code><a href="#@cdktf/provider-snowflake.account.Account.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/account#id Account#id}. |
 | <code><a href="#@cdktf/provider-snowflake.account.Account.Initializer.parameter.lastName">lastName</a></code> | <code>java.lang.String</code> | Last name of the initial administrative user of the account. |
 | <code><a href="#@cdktf/provider-snowflake.account.Account.Initializer.parameter.mustChangePassword">mustChangePassword</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Specifies whether the new user created to administer the account is forced to change their password upon first login into the account. |
 | <code><a href="#@cdktf/provider-snowflake.account.Account.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | ID of the Snowflake Region where the account is created. |
@@ -96,7 +97,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.account.Account.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -138,7 +139,7 @@ Login name of the initial administrative user of the account.
 
 A new user is created in the new account with this name and password and granted the ACCOUNTADMIN role in the account. A login name can be any string consisting of letters, numbers, and underscores. Login names are always case-insensitive.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/account#admin_name Account#admin_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/account#admin_name Account#admin_name}
 
 ---
 
@@ -148,7 +149,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 [Snowflake Edition](https://docs.snowflake.com/en/user-guide/intro-editions.html) of the account. Valid values are: STANDARD | ENTERPRISE | BUSINESS_CRITICAL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/account#edition Account#edition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/account#edition Account#edition}
 
 ---
 
@@ -160,7 +161,7 @@ Email address of the initial administrative user of the account.
 
 This email address is used to send any notifications about the account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/account#email Account#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/account#email Account#email}
 
 ---
 
@@ -170,7 +171,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Specifies the identifier (i.e. name) for the account; must be unique within an organization, regardless of which Snowflake Region the account is in. In addition, the identifier must start with an alphabetic character and cannot contain spaces or special characters except for underscores (_). Note that if the account name includes underscores, features that do not accept account names with underscores (e.g. Okta SSO or SCIM) can reference a version of the account name that substitutes hyphens (-) for the underscores.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/account#name Account#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/account#name Account#name}
 
 ---
 
@@ -182,7 +183,7 @@ Password for the initial administrative user of the account.
 
 Optional if the `ADMIN_RSA_PUBLIC_KEY` parameter is specified. For more information about passwords in Snowflake, see [Snowflake-provided Password Policy](https://docs.snowflake.com/en/sql-reference/sql/create-account.html#:~:text=Snowflake%2Dprovided%20Password%20Policy).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/account#admin_password Account#admin_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/account#admin_password Account#admin_password}
 
 ---
 
@@ -192,7 +193,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Assigns a public key to the initial administrative user of the account in order to implement [key pair authentication](https://docs.snowflake.com/en/sql-reference/sql/create-account.html#:~:text=key%20pair%20authentication) for the user. Optional if the `ADMIN_PASSWORD` parameter is specified.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/account#admin_rsa_public_key Account#admin_rsa_public_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/account#admin_rsa_public_key Account#admin_rsa_public_key}
 
 ---
 
@@ -202,7 +203,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Specifies a comment for the account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/account#comment Account#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/account#comment Account#comment}
 
 ---
 
@@ -212,7 +213,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 First name of the initial administrative user of the account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/account#first_name Account#first_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/account#first_name Account#first_name}
 
 ---
 
@@ -220,7 +221,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/account#id Account#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/account#id Account#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -233,7 +234,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Last name of the initial administrative user of the account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/account#last_name Account#last_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/account#last_name Account#last_name}
 
 ---
 
@@ -243,7 +244,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Specifies whether the new user created to administer the account is forced to change their password upon first login into the account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/account#must_change_password Account#must_change_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/account#must_change_password Account#must_change_password}
 
 ---
 
@@ -255,7 +256,7 @@ ID of the Snowflake Region where the account is created.
 
 If no value is provided, Snowflake creates the account in the same Snowflake Region as the current account (i.e. the account in which the CREATE ACCOUNT statement is executed.)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/account#region Account#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/account#region Account#region}
 
 ---
 
@@ -267,7 +268,7 @@ ID of the Snowflake Region where the account is created.
 
 If no value is provided, Snowflake creates the account in the same Snowflake Region as the current account (i.e. the account in which the CREATE ACCOUNT statement is executed.)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/account#region_group Account#region_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/account#region_group Account#region_group}
 
 ---
 
@@ -623,7 +624,7 @@ Account.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-snowflake.account.Account.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.account.Account.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.account.Account.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.account.Account.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.account.Account.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.account.Account.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.account.Account.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.account.Account.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -744,10 +745,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.account.Account.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1102,6 +1103,7 @@ AccountConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -1131,7 +1133,7 @@ AccountConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-snowflake.account.AccountConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.account.AccountConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.account.AccountConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.account.AccountConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.account.AccountConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.account.AccountConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1145,7 +1147,7 @@ AccountConfig.builder()
 | <code><a href="#@cdktf/provider-snowflake.account.AccountConfig.property.adminRsaPublicKey">adminRsaPublicKey</a></code> | <code>java.lang.String</code> | Assigns a public key to the initial administrative user of the account in order to implement [key pair authentication](https://docs.snowflake.com/en/sql-reference/sql/create-account.html#:~:text=key%20pair%20authentication) for the user. Optional if the `ADMIN_PASSWORD` parameter is specified. |
 | <code><a href="#@cdktf/provider-snowflake.account.AccountConfig.property.comment">comment</a></code> | <code>java.lang.String</code> | Specifies a comment for the account. |
 | <code><a href="#@cdktf/provider-snowflake.account.AccountConfig.property.firstName">firstName</a></code> | <code>java.lang.String</code> | First name of the initial administrative user of the account. |
-| <code><a href="#@cdktf/provider-snowflake.account.AccountConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/account#id Account#id}. |
+| <code><a href="#@cdktf/provider-snowflake.account.AccountConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/account#id Account#id}. |
 | <code><a href="#@cdktf/provider-snowflake.account.AccountConfig.property.lastName">lastName</a></code> | <code>java.lang.String</code> | Last name of the initial administrative user of the account. |
 | <code><a href="#@cdktf/provider-snowflake.account.AccountConfig.property.mustChangePassword">mustChangePassword</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Specifies whether the new user created to administer the account is forced to change their password upon first login into the account. |
 | <code><a href="#@cdktf/provider-snowflake.account.AccountConfig.property.region">region</a></code> | <code>java.lang.String</code> | ID of the Snowflake Region where the account is created. |
@@ -1166,10 +1168,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.account.AccountConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1235,7 +1237,7 @@ Login name of the initial administrative user of the account.
 
 A new user is created in the new account with this name and password and granted the ACCOUNTADMIN role in the account. A login name can be any string consisting of letters, numbers, and underscores. Login names are always case-insensitive.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/account#admin_name Account#admin_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/account#admin_name Account#admin_name}
 
 ---
 
@@ -1249,7 +1251,7 @@ public java.lang.String getEdition();
 
 [Snowflake Edition](https://docs.snowflake.com/en/user-guide/intro-editions.html) of the account. Valid values are: STANDARD | ENTERPRISE | BUSINESS_CRITICAL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/account#edition Account#edition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/account#edition Account#edition}
 
 ---
 
@@ -1265,7 +1267,7 @@ Email address of the initial administrative user of the account.
 
 This email address is used to send any notifications about the account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/account#email Account#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/account#email Account#email}
 
 ---
 
@@ -1279,7 +1281,7 @@ public java.lang.String getName();
 
 Specifies the identifier (i.e. name) for the account; must be unique within an organization, regardless of which Snowflake Region the account is in. In addition, the identifier must start with an alphabetic character and cannot contain spaces or special characters except for underscores (_). Note that if the account name includes underscores, features that do not accept account names with underscores (e.g. Okta SSO or SCIM) can reference a version of the account name that substitutes hyphens (-) for the underscores.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/account#name Account#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/account#name Account#name}
 
 ---
 
@@ -1295,7 +1297,7 @@ Password for the initial administrative user of the account.
 
 Optional if the `ADMIN_RSA_PUBLIC_KEY` parameter is specified. For more information about passwords in Snowflake, see [Snowflake-provided Password Policy](https://docs.snowflake.com/en/sql-reference/sql/create-account.html#:~:text=Snowflake%2Dprovided%20Password%20Policy).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/account#admin_password Account#admin_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/account#admin_password Account#admin_password}
 
 ---
 
@@ -1309,7 +1311,7 @@ public java.lang.String getAdminRsaPublicKey();
 
 Assigns a public key to the initial administrative user of the account in order to implement [key pair authentication](https://docs.snowflake.com/en/sql-reference/sql/create-account.html#:~:text=key%20pair%20authentication) for the user. Optional if the `ADMIN_PASSWORD` parameter is specified.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/account#admin_rsa_public_key Account#admin_rsa_public_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/account#admin_rsa_public_key Account#admin_rsa_public_key}
 
 ---
 
@@ -1323,7 +1325,7 @@ public java.lang.String getComment();
 
 Specifies a comment for the account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/account#comment Account#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/account#comment Account#comment}
 
 ---
 
@@ -1337,7 +1339,7 @@ public java.lang.String getFirstName();
 
 First name of the initial administrative user of the account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/account#first_name Account#first_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/account#first_name Account#first_name}
 
 ---
 
@@ -1349,7 +1351,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/account#id Account#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/account#id Account#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1366,7 +1368,7 @@ public java.lang.String getLastName();
 
 Last name of the initial administrative user of the account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/account#last_name Account#last_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/account#last_name Account#last_name}
 
 ---
 
@@ -1380,7 +1382,7 @@ public java.lang.Object getMustChangePassword();
 
 Specifies whether the new user created to administer the account is forced to change their password upon first login into the account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/account#must_change_password Account#must_change_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/account#must_change_password Account#must_change_password}
 
 ---
 
@@ -1396,7 +1398,7 @@ ID of the Snowflake Region where the account is created.
 
 If no value is provided, Snowflake creates the account in the same Snowflake Region as the current account (i.e. the account in which the CREATE ACCOUNT statement is executed.)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/account#region Account#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/account#region Account#region}
 
 ---
 
@@ -1412,7 +1414,7 @@ ID of the Snowflake Region where the account is created.
 
 If no value is provided, Snowflake creates the account in the same Snowflake Region as the current account (i.e. the account in which the CREATE ACCOUNT statement is executed.)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/account#region_group Account#region_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/account#region_group Account#region_group}
 
 ---
 

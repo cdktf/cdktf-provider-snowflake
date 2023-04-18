@@ -1,6 +1,6 @@
 # `snowflake_pipe_grant`
 
-Refer to the Terraform Registory for docs: [`snowflake_pipe_grant`](https://www.terraform.io/docs/providers/snowflake/r/pipe_grant).
+Refer to the Terraform Registory for docs: [`snowflake_pipe_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/pipe_grant).
 
 # `pipeGrant` Submodule <a name="`pipeGrant` Submodule" id="@cdktf/provider-snowflake.pipeGrant"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`snowflake_pipe_grant`](https://www.
 
 ### PipeGrant <a name="PipeGrant" id="@cdktf/provider-snowflake.pipeGrant.PipeGrant"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/pipe_grant snowflake_pipe_grant}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/pipe_grant snowflake_pipe_grant}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.pipeGrant.PipeGrant.Initializer"></a>
 
@@ -395,7 +395,7 @@ PipeGrant.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrant.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrant.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrant.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrant.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrant.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrant.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrant.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrant.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -507,10 +507,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-snowflake.pipeGrant.PipeGrant.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -773,7 +773,7 @@ using HashiCorp.Cdktf.Providers.Snowflake;
 
 new PipeGrantConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -796,7 +796,7 @@ new PipeGrantConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrantConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrantConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrantConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrantConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrantConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrantConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -804,7 +804,7 @@ new PipeGrantConfig {
 | <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrantConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrantConfig.property.databaseName">DatabaseName</a></code> | <code>string</code> | The name of the database containing the current or future pipes on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrantConfig.property.enableMultipleGrants">EnableMultipleGrants</a></code> | <code>object</code> | When this is set to true, multiple grants of the same type can be created. |
-| <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrantConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/pipe_grant#id PipeGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrantConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/pipe_grant#id PipeGrant#id}. |
 | <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrantConfig.property.onFuture">OnFuture</a></code> | <code>object</code> | When this is set to true and a schema_name is provided, apply this grant on all future pipes in the given schema. |
 | <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrantConfig.property.pipeName">PipeName</a></code> | <code>string</code> | The name of the pipe on which to grant privileges immediately (only valid if on_future is false). |
 | <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrantConfig.property.privilege">Privilege</a></code> | <code>string</code> | The privilege to grant on the current or future pipe. |
@@ -827,10 +827,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-snowflake.pipeGrant.PipeGrantConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -894,7 +894,7 @@ public string DatabaseName { get; set; }
 
 The name of the database containing the current or future pipes on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/pipe_grant#database_name PipeGrant#database_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/pipe_grant#database_name PipeGrant#database_name}
 
 ---
 
@@ -910,7 +910,7 @@ When this is set to true, multiple grants of the same type can be created.
 
 This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/pipe_grant#enable_multiple_grants PipeGrant#enable_multiple_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/pipe_grant#enable_multiple_grants PipeGrant#enable_multiple_grants}
 
 ---
 
@@ -922,7 +922,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/pipe_grant#id PipeGrant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/pipe_grant#id PipeGrant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -941,7 +941,7 @@ When this is set to true and a schema_name is provided, apply this grant on all 
 
 When this is true and no schema_name is provided apply this grant on all future pipes in the given database. The pipe_name field must be unset in order to use on_future.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/pipe_grant#on_future PipeGrant#on_future}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/pipe_grant#on_future PipeGrant#on_future}
 
 ---
 
@@ -955,7 +955,7 @@ public string PipeName { get; set; }
 
 The name of the pipe on which to grant privileges immediately (only valid if on_future is false).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/pipe_grant#pipe_name PipeGrant#pipe_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/pipe_grant#pipe_name PipeGrant#pipe_name}
 
 ---
 
@@ -969,7 +969,7 @@ public string Privilege { get; set; }
 
 The privilege to grant on the current or future pipe.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/pipe_grant#privilege PipeGrant#privilege}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/pipe_grant#privilege PipeGrant#privilege}
 
 ---
 
@@ -983,7 +983,7 @@ public string[] Roles { get; set; }
 
 Grants privilege to these roles.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/pipe_grant#roles PipeGrant#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/pipe_grant#roles PipeGrant#roles}
 
 ---
 
@@ -997,7 +997,7 @@ public string SchemaName { get; set; }
 
 The name of the schema containing the current or future pipes on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/pipe_grant#schema_name PipeGrant#schema_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/pipe_grant#schema_name PipeGrant#schema_name}
 
 ---
 
@@ -1011,7 +1011,7 @@ public object WithGrantOption { get; set; }
 
 When this is set to true, allows the recipient role to grant the privileges to other roles.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/pipe_grant#with_grant_option PipeGrant#with_grant_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/pipe_grant#with_grant_option PipeGrant#with_grant_option}
 
 ---
 

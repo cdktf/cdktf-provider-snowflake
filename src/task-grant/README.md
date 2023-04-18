@@ -1,3 +1,3 @@
 # `snowflake_task_grant`
 
-Refer to the Terraform Registory for docs: [`snowflake_task_grant`](https://www.terraform.io/docs/providers/snowflake/r/task_grant).
+Refer to the Terraform Registory for docs: [`snowflake_task_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/task_grant).

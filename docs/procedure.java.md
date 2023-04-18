@@ -1,6 +1,6 @@
 # `snowflake_procedure`
 
-Refer to the Terraform Registory for docs: [`snowflake_procedure`](https://www.terraform.io/docs/providers/snowflake/r/procedure).
+Refer to the Terraform Registory for docs: [`snowflake_procedure`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/procedure).
 
 # `procedure` Submodule <a name="`procedure` Submodule" id="@cdktf/provider-snowflake.procedure"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`snowflake_procedure`](https://www.t
 
 ### Procedure <a name="Procedure" id="@cdktf/provider-snowflake.procedure.Procedure"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/procedure snowflake_procedure}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/procedure snowflake_procedure}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.procedure.Procedure.Initializer"></a>
 
@@ -19,6 +19,7 @@ Procedure.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -51,7 +52,7 @@ Procedure.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -66,7 +67,7 @@ Procedure.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.Initializer.parameter.comment">comment</a></code> | <code>java.lang.String</code> | Specifies a comment for the procedure. |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.Initializer.parameter.executeAs">executeAs</a></code> | <code>java.lang.String</code> | Sets execute context - see caller's rights and owner's rights. |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.Initializer.parameter.handler">handler</a></code> | <code>java.lang.String</code> | The handler method for Java / Python procedures. |
-| <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#id Procedure#id}. |
+| <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/procedure#id Procedure#id}. |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.Initializer.parameter.imports">imports</a></code> | <code>java.util.List<java.lang.String></code> | Imports for Java / Python procedures. |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.Initializer.parameter.language">language</a></code> | <code>java.lang.String</code> | Specifies the language of the stored procedure code. |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.Initializer.parameter.nullInputBehavior">nullInputBehavior</a></code> | <code>java.lang.String</code> | Specifies the behavior of the procedure when called with null inputs. |
@@ -102,7 +103,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.procedure.Procedure.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -142,7 +143,7 @@ Must be unique amongst siblings in the same scope
 
 The database in which to create the procedure. Don't use the | character.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#database Procedure#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/procedure#database Procedure#database}
 
 ---
 
@@ -154,7 +155,7 @@ Specifies the identifier for the procedure;
 
 does not have to be unique for the schema in which the procedure is created. Don't use the | character.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#name Procedure#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/procedure#name Procedure#name}
 
 ---
 
@@ -164,7 +165,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 The return type of the procedure.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#return_type Procedure#return_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/procedure#return_type Procedure#return_type}
 
 ---
 
@@ -174,7 +175,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 The schema in which to create the procedure. Don't use the | character.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#schema Procedure#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/procedure#schema Procedure#schema}
 
 ---
 
@@ -184,7 +185,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Specifies the code used to create the procedure.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#statement Procedure#statement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/procedure#statement Procedure#statement}
 
 ---
 
@@ -194,7 +195,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 arguments block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#arguments Procedure#arguments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/procedure#arguments Procedure#arguments}
 
 ---
 
@@ -204,7 +205,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Specifies a comment for the procedure.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#comment Procedure#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/procedure#comment Procedure#comment}
 
 ---
 
@@ -214,7 +215,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Sets execute context - see caller's rights and owner's rights.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#execute_as Procedure#execute_as}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/procedure#execute_as Procedure#execute_as}
 
 ---
 
@@ -224,7 +225,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 The handler method for Java / Python procedures.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#handler Procedure#handler}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/procedure#handler Procedure#handler}
 
 ---
 
@@ -232,7 +233,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#id Procedure#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/procedure#id Procedure#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -247,7 +248,7 @@ Imports for Java / Python procedures.
 
 For Java this a list of jar files, for Python this is a list of Python files.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#imports Procedure#imports}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/procedure#imports Procedure#imports}
 
 ---
 
@@ -257,7 +258,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Specifies the language of the stored procedure code.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#language Procedure#language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/procedure#language Procedure#language}
 
 ---
 
@@ -267,7 +268,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Specifies the behavior of the procedure when called with null inputs.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#null_input_behavior Procedure#null_input_behavior}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/procedure#null_input_behavior Procedure#null_input_behavior}
 
 ---
 
@@ -279,7 +280,7 @@ List of package imports to use for Java / Python procedures.
 
 For Java, package imports should be of the form: package_name:version_number, where package_name is snowflake_domain:package. For Python use it should be: ('numpy','pandas','xgboost==1.5.0').
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#packages Procedure#packages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/procedure#packages Procedure#packages}
 
 ---
 
@@ -289,7 +290,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Specifies the behavior of the function when returning results.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#return_behavior Procedure#return_behavior}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/procedure#return_behavior Procedure#return_behavior}
 
 ---
 
@@ -299,7 +300,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Required for Python procedures. Specifies Python runtime version.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#runtime_version Procedure#runtime_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/procedure#runtime_version Procedure#runtime_version}
 
 ---
 
@@ -682,7 +683,7 @@ Procedure.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.Procedure.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -808,10 +809,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.procedure.Procedure.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1237,7 +1238,7 @@ public java.lang.String getName();
 
 The argument name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#name Procedure#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/procedure#name Procedure#name}
 
 ---
 
@@ -1251,7 +1252,7 @@ public java.lang.String getType();
 
 The argument type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#type Procedure#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/procedure#type Procedure#type}
 
 ---
 
@@ -1266,6 +1267,7 @@ ProcedureConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -1298,7 +1300,7 @@ ProcedureConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1313,7 +1315,7 @@ ProcedureConfig.builder()
 | <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.comment">comment</a></code> | <code>java.lang.String</code> | Specifies a comment for the procedure. |
 | <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.executeAs">executeAs</a></code> | <code>java.lang.String</code> | Sets execute context - see caller's rights and owner's rights. |
 | <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.handler">handler</a></code> | <code>java.lang.String</code> | The handler method for Java / Python procedures. |
-| <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#id Procedure#id}. |
+| <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/procedure#id Procedure#id}. |
 | <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.imports">imports</a></code> | <code>java.util.List<java.lang.String></code> | Imports for Java / Python procedures. |
 | <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.language">language</a></code> | <code>java.lang.String</code> | Specifies the language of the stored procedure code. |
 | <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.nullInputBehavior">nullInputBehavior</a></code> | <code>java.lang.String</code> | Specifies the behavior of the procedure when called with null inputs. |
@@ -1336,10 +1338,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.procedure.ProcedureConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1403,7 +1405,7 @@ public java.lang.String getDatabase();
 
 The database in which to create the procedure. Don't use the | character.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#database Procedure#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/procedure#database Procedure#database}
 
 ---
 
@@ -1419,7 +1421,7 @@ Specifies the identifier for the procedure;
 
 does not have to be unique for the schema in which the procedure is created. Don't use the | character.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#name Procedure#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/procedure#name Procedure#name}
 
 ---
 
@@ -1433,7 +1435,7 @@ public java.lang.String getReturnType();
 
 The return type of the procedure.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#return_type Procedure#return_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/procedure#return_type Procedure#return_type}
 
 ---
 
@@ -1447,7 +1449,7 @@ public java.lang.String getSchema();
 
 The schema in which to create the procedure. Don't use the | character.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#schema Procedure#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/procedure#schema Procedure#schema}
 
 ---
 
@@ -1461,7 +1463,7 @@ public java.lang.String getStatement();
 
 Specifies the code used to create the procedure.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#statement Procedure#statement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/procedure#statement Procedure#statement}
 
 ---
 
@@ -1475,7 +1477,7 @@ public java.lang.Object getArguments();
 
 arguments block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#arguments Procedure#arguments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/procedure#arguments Procedure#arguments}
 
 ---
 
@@ -1489,7 +1491,7 @@ public java.lang.String getComment();
 
 Specifies a comment for the procedure.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#comment Procedure#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/procedure#comment Procedure#comment}
 
 ---
 
@@ -1503,7 +1505,7 @@ public java.lang.String getExecuteAs();
 
 Sets execute context - see caller's rights and owner's rights.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#execute_as Procedure#execute_as}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/procedure#execute_as Procedure#execute_as}
 
 ---
 
@@ -1517,7 +1519,7 @@ public java.lang.String getHandler();
 
 The handler method for Java / Python procedures.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#handler Procedure#handler}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/procedure#handler Procedure#handler}
 
 ---
 
@@ -1529,7 +1531,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#id Procedure#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/procedure#id Procedure#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1548,7 +1550,7 @@ Imports for Java / Python procedures.
 
 For Java this a list of jar files, for Python this is a list of Python files.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#imports Procedure#imports}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/procedure#imports Procedure#imports}
 
 ---
 
@@ -1562,7 +1564,7 @@ public java.lang.String getLanguage();
 
 Specifies the language of the stored procedure code.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#language Procedure#language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/procedure#language Procedure#language}
 
 ---
 
@@ -1576,7 +1578,7 @@ public java.lang.String getNullInputBehavior();
 
 Specifies the behavior of the procedure when called with null inputs.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#null_input_behavior Procedure#null_input_behavior}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/procedure#null_input_behavior Procedure#null_input_behavior}
 
 ---
 
@@ -1592,7 +1594,7 @@ List of package imports to use for Java / Python procedures.
 
 For Java, package imports should be of the form: package_name:version_number, where package_name is snowflake_domain:package. For Python use it should be: ('numpy','pandas','xgboost==1.5.0').
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#packages Procedure#packages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/procedure#packages Procedure#packages}
 
 ---
 
@@ -1606,7 +1608,7 @@ public java.lang.String getReturnBehavior();
 
 Specifies the behavior of the function when returning results.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#return_behavior Procedure#return_behavior}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/procedure#return_behavior Procedure#return_behavior}
 
 ---
 
@@ -1620,7 +1622,7 @@ public java.lang.String getRuntimeVersion();
 
 Required for Python procedures. Specifies Python runtime version.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/procedure#runtime_version Procedure#runtime_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/procedure#runtime_version Procedure#runtime_version}
 
 ---
 

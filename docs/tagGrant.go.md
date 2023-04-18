@@ -1,6 +1,6 @@
 # `snowflake_tag_grant`
 
-Refer to the Terraform Registory for docs: [`snowflake_tag_grant`](https://www.terraform.io/docs/providers/snowflake/r/tag_grant).
+Refer to the Terraform Registory for docs: [`snowflake_tag_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/tag_grant).
 
 # `tagGrant` Submodule <a name="`tagGrant` Submodule" id="@cdktf/provider-snowflake.tagGrant"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`snowflake_tag_grant`](https://www.t
 
 ### TagGrant <a name="TagGrant" id="@cdktf/provider-snowflake.tagGrant.TagGrant"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/tag_grant snowflake_tag_grant}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/tag_grant snowflake_tag_grant}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.tagGrant.TagGrant.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/taggrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/taggrant"
 
 taggrant.NewTagGrant(scope Construct, id *string, config TagGrantConfig) TagGrant
 ```
@@ -305,7 +305,7 @@ func ResetWithGrantOption()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.tagGrant.TagGrant.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/taggrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/taggrant"
 
 taggrant.TagGrant_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.tagGrant.TagGrant.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/taggrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/taggrant"
 
 taggrant.TagGrant_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ taggrant.TagGrant_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.tagGrant.TagGrant.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/taggrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/taggrant"
 
 taggrant.TagGrant_IsTerraformResource(x interface{}) *bool
 ```
@@ -374,7 +374,7 @@ taggrant.TagGrant_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrant.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrant.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrant.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrant.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrant.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrant.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrant.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrant.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -484,10 +484,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-snowflake.tagGrant.TagGrant.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -726,11 +726,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.tagGrant.TagGrantConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/taggrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/taggrant"
 
 &taggrant.TagGrantConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -752,7 +752,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/taggrant"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrantConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrantConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrantConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrantConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrantConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrantConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -762,7 +762,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/taggrant"
 | <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrantConfig.property.schemaName">SchemaName</a></code> | <code>*string</code> | The name of the schema containing the tag on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrantConfig.property.tagName">TagName</a></code> | <code>*string</code> | The name of the tag on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrantConfig.property.enableMultipleGrants">EnableMultipleGrants</a></code> | <code>interface{}</code> | When this is set to true, multiple grants of the same type can be created. |
-| <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrantConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/tag_grant#id TagGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrantConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/tag_grant#id TagGrant#id}. |
 | <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrantConfig.property.privilege">Privilege</a></code> | <code>*string</code> | The privilege to grant on the tag. |
 | <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrantConfig.property.roles">Roles</a></code> | <code>*[]*string</code> | Grants privilege to these roles. |
 | <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrantConfig.property.withGrantOption">WithGrantOption</a></code> | <code>interface{}</code> | When this is set to true, allows the recipient role to grant the privileges to other roles. |
@@ -782,10 +782,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-snowflake.tagGrant.TagGrantConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -849,7 +849,7 @@ DatabaseName *string
 
 The name of the database containing the tag on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/tag_grant#database_name TagGrant#database_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/tag_grant#database_name TagGrant#database_name}
 
 ---
 
@@ -863,7 +863,7 @@ SchemaName *string
 
 The name of the schema containing the tag on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/tag_grant#schema_name TagGrant#schema_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/tag_grant#schema_name TagGrant#schema_name}
 
 ---
 
@@ -877,7 +877,7 @@ TagName *string
 
 The name of the tag on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/tag_grant#tag_name TagGrant#tag_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/tag_grant#tag_name TagGrant#tag_name}
 
 ---
 
@@ -893,7 +893,7 @@ When this is set to true, multiple grants of the same type can be created.
 
 This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/tag_grant#enable_multiple_grants TagGrant#enable_multiple_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/tag_grant#enable_multiple_grants TagGrant#enable_multiple_grants}
 
 ---
 
@@ -905,7 +905,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/tag_grant#id TagGrant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/tag_grant#id TagGrant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -922,7 +922,7 @@ Privilege *string
 
 The privilege to grant on the tag.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/tag_grant#privilege TagGrant#privilege}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/tag_grant#privilege TagGrant#privilege}
 
 ---
 
@@ -936,7 +936,7 @@ Roles *[]*string
 
 Grants privilege to these roles.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/tag_grant#roles TagGrant#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/tag_grant#roles TagGrant#roles}
 
 ---
 
@@ -950,7 +950,7 @@ WithGrantOption interface{}
 
 When this is set to true, allows the recipient role to grant the privileges to other roles.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/tag_grant#with_grant_option TagGrant#with_grant_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/tag_grant#with_grant_option TagGrant#with_grant_option}
 
 ---
 

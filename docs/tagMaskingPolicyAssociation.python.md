@@ -1,6 +1,6 @@
 # `snowflake_tag_masking_policy_association`
 
-Refer to the Terraform Registory for docs: [`snowflake_tag_masking_policy_association`](https://www.terraform.io/docs/providers/snowflake/r/tag_masking_policy_association).
+Refer to the Terraform Registory for docs: [`snowflake_tag_masking_policy_association`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/tag_masking_policy_association).
 
 # `tagMaskingPolicyAssociation` Submodule <a name="`tagMaskingPolicyAssociation` Submodule" id="@cdktf/provider-snowflake.tagMaskingPolicyAssociation"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`snowflake_tag_masking_policy_associ
 
 ### TagMaskingPolicyAssociation <a name="TagMaskingPolicyAssociation" id="@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociation"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/tag_masking_policy_association snowflake_tag_masking_policy_association}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/tag_masking_policy_association snowflake_tag_masking_policy_association}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociation.Initializer"></a>
 
@@ -19,7 +19,7 @@ tagMaskingPolicyAssociation.TagMaskingPolicyAssociation(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -36,7 +36,7 @@ tagMaskingPolicyAssociation.TagMaskingPolicyAssociation(
 | <code><a href="#@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociation.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociation.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociation.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociation.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociation.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociation.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociation.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociation.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -44,7 +44,7 @@ tagMaskingPolicyAssociation.TagMaskingPolicyAssociation(
 | <code><a href="#@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociation.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociation.Initializer.parameter.maskingPolicyId">masking_policy_id</a></code> | <code>str</code> | The resource id of the masking policy. |
 | <code><a href="#@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociation.Initializer.parameter.tagId">tag_id</a></code> | <code>str</code> | Specifies the identifier for the tag. Note: format must follow: "databaseName"."schemaName"."tagName" or "databaseName.schemaName.tagName" or "databaseName\|schemaName.tagName" (snowflake_tag.tag.id). |
-| <code><a href="#@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociation.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/tag_masking_policy_association#id TagMaskingPolicyAssociation#id}. |
+| <code><a href="#@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociation.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/tag_masking_policy_association#id TagMaskingPolicyAssociation#id}. |
 
 ---
 
@@ -74,7 +74,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociation.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The resource id of the masking policy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/tag_masking_policy_association#masking_policy_id TagMaskingPolicyAssociation#masking_policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/tag_masking_policy_association#masking_policy_id TagMaskingPolicyAssociation#masking_policy_id}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Specifies the identifier for the tag. Note: format must follow: "databaseName"."schemaName"."tagName" or "databaseName.schemaName.tagName" or "databaseName|schemaName.tagName" (snowflake_tag.tag.id).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/tag_masking_policy_association#tag_id TagMaskingPolicyAssociation#tag_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/tag_masking_policy_association#tag_id TagMaskingPolicyAssociation#tag_id}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/tag_masking_policy_association#id TagMaskingPolicyAssociation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/tag_masking_policy_association#id TagMaskingPolicyAssociation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -466,7 +466,7 @@ tagMaskingPolicyAssociation.TagMaskingPolicyAssociation.is_terraform_resource(
 | <code><a href="#@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociation.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociation.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociation.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociation.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociation.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociation.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociation.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociation.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -566,10 +566,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociation.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -712,7 +712,7 @@ from cdktf_cdktf_provider_snowflake import tag_masking_policy_association
 
 tagMaskingPolicyAssociation.TagMaskingPolicyAssociationConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -729,7 +729,7 @@ tagMaskingPolicyAssociation.TagMaskingPolicyAssociationConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociationConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociationConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociationConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociationConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociationConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -737,7 +737,7 @@ tagMaskingPolicyAssociation.TagMaskingPolicyAssociationConfig(
 | <code><a href="#@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociationConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociationConfig.property.maskingPolicyId">masking_policy_id</a></code> | <code>str</code> | The resource id of the masking policy. |
 | <code><a href="#@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociationConfig.property.tagId">tag_id</a></code> | <code>str</code> | Specifies the identifier for the tag. Note: format must follow: "databaseName"."schemaName"."tagName" or "databaseName.schemaName.tagName" or "databaseName\|schemaName.tagName" (snowflake_tag.tag.id). |
-| <code><a href="#@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/tag_masking_policy_association#id TagMaskingPolicyAssociation#id}. |
+| <code><a href="#@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/tag_masking_policy_association#id TagMaskingPolicyAssociation#id}. |
 
 ---
 
@@ -754,10 +754,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociationConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -821,7 +821,7 @@ masking_policy_id: str
 
 The resource id of the masking policy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/tag_masking_policy_association#masking_policy_id TagMaskingPolicyAssociation#masking_policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/tag_masking_policy_association#masking_policy_id TagMaskingPolicyAssociation#masking_policy_id}
 
 ---
 
@@ -835,7 +835,7 @@ tag_id: str
 
 Specifies the identifier for the tag. Note: format must follow: "databaseName"."schemaName"."tagName" or "databaseName.schemaName.tagName" or "databaseName|schemaName.tagName" (snowflake_tag.tag.id).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/tag_masking_policy_association#tag_id TagMaskingPolicyAssociation#tag_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/tag_masking_policy_association#tag_id TagMaskingPolicyAssociation#tag_id}
 
 ---
 
@@ -847,7 +847,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/tag_masking_policy_association#id TagMaskingPolicyAssociation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/tag_masking_policy_association#id TagMaskingPolicyAssociation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

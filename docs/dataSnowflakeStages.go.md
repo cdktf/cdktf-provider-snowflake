@@ -1,6 +1,6 @@
 # `data_snowflake_stages`
 
-Refer to the Terraform Registory for docs: [`data_snowflake_stages`](https://www.terraform.io/docs/providers/snowflake/d/stages).
+Refer to the Terraform Registory for docs: [`data_snowflake_stages`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/stages).
 
 # `dataSnowflakeStages` Submodule <a name="`dataSnowflakeStages` Submodule" id="@cdktf/provider-snowflake.dataSnowflakeStages"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_snowflake_stages`](https://www
 
 ### DataSnowflakeStages <a name="DataSnowflakeStages" id="@cdktf/provider-snowflake.dataSnowflakeStages.DataSnowflakeStages"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/snowflake/d/stages snowflake_stages}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/stages snowflake_stages}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeStages.DataSnowflakeStages.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakestages"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakestages"
 
 datasnowflakestages.NewDataSnowflakeStages(scope Construct, id *string, config DataSnowflakeStagesConfig) DataSnowflakeStages
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeStages.DataSnowflakeStages.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakestages"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakestages"
 
 datasnowflakestages.DataSnowflakeStages_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeStages.DataSnowflakeStages.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakestages"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakestages"
 
 datasnowflakestages.DataSnowflakeStages_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ datasnowflakestages.DataSnowflakeStages_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeStages.DataSnowflakeStages.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakestages"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakestages"
 
 datasnowflakestages.DataSnowflakeStages_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ datasnowflakestages.DataSnowflakeStages_IsTerraformDataSource(x interface{}) *bo
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStages.DataSnowflakeStages.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStages.DataSnowflakeStages.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStages.DataSnowflakeStages.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStages.DataSnowflakeStages.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStages.DataSnowflakeStages.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStages.DataSnowflakeStages.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStages.DataSnowflakeStages.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStages.DataSnowflakeStages.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -435,10 +435,10 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-snowflake.dataSnowflakeStages.DataSnowflakeStages.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -577,11 +577,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakestages"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakestages"
 
 &datasnowflakestages.DataSnowflakeStagesConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -598,7 +598,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakes
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -606,7 +606,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakes
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesConfig.property.database">Database</a></code> | <code>*string</code> | The database from which to return the schemas from. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesConfig.property.schema">Schema</a></code> | <code>*string</code> | The schema from which to return the stages from. |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/stages#id DataSnowflakeStages#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/stages#id DataSnowflakeStages#id}. |
 
 ---
 
@@ -623,10 +623,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -690,7 +690,7 @@ Database *string
 
 The database from which to return the schemas from.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/stages#database DataSnowflakeStages#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/stages#database DataSnowflakeStages#database}
 
 ---
 
@@ -704,7 +704,7 @@ Schema *string
 
 The schema from which to return the stages from.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/stages#schema DataSnowflakeStages#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/stages#schema DataSnowflakeStages#schema}
 
 ---
 
@@ -716,7 +716,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/stages#id DataSnowflakeStages#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/stages#id DataSnowflakeStages#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -728,7 +728,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesStages.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakestages"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakestages"
 
 &datasnowflakestages.DataSnowflakeStagesStages {
 
@@ -743,7 +743,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakes
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesStagesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakestages"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakestages"
 
 datasnowflakestages.NewDataSnowflakeStagesStagesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeStagesStagesList
 ```
@@ -875,7 +875,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesStagesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakestages"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakestages"
 
 datasnowflakestages.NewDataSnowflakeStagesStagesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeStagesStagesOutputReference
 ```

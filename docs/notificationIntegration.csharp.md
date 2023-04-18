@@ -1,6 +1,6 @@
 # `snowflake_notification_integration`
 
-Refer to the Terraform Registory for docs: [`snowflake_notification_integration`](https://www.terraform.io/docs/providers/snowflake/r/notification_integration).
+Refer to the Terraform Registory for docs: [`snowflake_notification_integration`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/notification_integration).
 
 # `notificationIntegration` Submodule <a name="`notificationIntegration` Submodule" id="@cdktf/provider-snowflake.notificationIntegration"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`snowflake_notification_integration`
 
 ### NotificationIntegration <a name="NotificationIntegration" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/notification_integration snowflake_notification_integration}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/notification_integration snowflake_notification_integration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.Initializer"></a>
 
@@ -430,7 +430,7 @@ NotificationIntegration.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -558,10 +558,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegration.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -984,7 +984,7 @@ using HashiCorp.Cdktf.Providers.Snowflake;
 
 new NotificationIntegrationConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -1012,13 +1012,13 @@ new NotificationIntegrationConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/notification_integration#name NotificationIntegration#name}. |
+| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/notification_integration#name NotificationIntegration#name}. |
 | <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.awsSnsRoleArn">AwsSnsRoleArn</a></code> | <code>string</code> | AWS IAM role ARN for notification integration to assume. |
 | <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.awsSnsTopicArn">AwsSnsTopicArn</a></code> | <code>string</code> | AWS SNS Topic ARN for notification integration to connect to. |
 | <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.awsSqsArn">AwsSqsArn</a></code> | <code>string</code> | AWS SQS queue ARN for notification integration to connect to. |
@@ -1027,9 +1027,9 @@ new NotificationIntegrationConfig {
 | <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.azureTenantId">AzureTenantId</a></code> | <code>string</code> | The ID of the Azure Active Directory tenant used for identity management. |
 | <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.comment">Comment</a></code> | <code>string</code> | A comment for the integration. |
 | <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.direction">Direction</a></code> | <code>string</code> | Direction of the cloud messaging with respect to Snowflake (required only for error notifications). |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.enabled">Enabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/notification_integration#enabled NotificationIntegration#enabled}. |
+| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.enabled">Enabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/notification_integration#enabled NotificationIntegration#enabled}. |
 | <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.gcpPubsubSubscriptionName">GcpPubsubSubscriptionName</a></code> | <code>string</code> | The subscription id that Snowflake will listen to when using the GCP_PUBSUB provider. |
-| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/notification_integration#id NotificationIntegration#id}. |
+| <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/notification_integration#id NotificationIntegration#id}. |
 | <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.notificationProvider">NotificationProvider</a></code> | <code>string</code> | The third-party cloud message queuing service (e.g. AZURE_STORAGE_QUEUE, AWS_SQS, AWS_SNS). |
 | <code><a href="#@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.type">Type</a></code> | <code>string</code> | A type of integration. |
 
@@ -1048,10 +1048,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-snowflake.notificationIntegration.NotificationIntegrationConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -1113,7 +1113,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/notification_integration#name NotificationIntegration#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/notification_integration#name NotificationIntegration#name}.
 
 ---
 
@@ -1127,7 +1127,7 @@ public string AwsSnsRoleArn { get; set; }
 
 AWS IAM role ARN for notification integration to assume.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/notification_integration#aws_sns_role_arn NotificationIntegration#aws_sns_role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/notification_integration#aws_sns_role_arn NotificationIntegration#aws_sns_role_arn}
 
 ---
 
@@ -1141,7 +1141,7 @@ public string AwsSnsTopicArn { get; set; }
 
 AWS SNS Topic ARN for notification integration to connect to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/notification_integration#aws_sns_topic_arn NotificationIntegration#aws_sns_topic_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/notification_integration#aws_sns_topic_arn NotificationIntegration#aws_sns_topic_arn}
 
 ---
 
@@ -1155,7 +1155,7 @@ public string AwsSqsArn { get; set; }
 
 AWS SQS queue ARN for notification integration to connect to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/notification_integration#aws_sqs_arn NotificationIntegration#aws_sqs_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/notification_integration#aws_sqs_arn NotificationIntegration#aws_sqs_arn}
 
 ---
 
@@ -1169,7 +1169,7 @@ public string AwsSqsRoleArn { get; set; }
 
 AWS IAM role ARN for notification integration to assume.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/notification_integration#aws_sqs_role_arn NotificationIntegration#aws_sqs_role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/notification_integration#aws_sqs_role_arn NotificationIntegration#aws_sqs_role_arn}
 
 ---
 
@@ -1183,7 +1183,7 @@ public string AzureStorageQueuePrimaryUri { get; set; }
 
 The queue ID for the Azure Queue Storage queue created for Event Grid notifications.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/notification_integration#azure_storage_queue_primary_uri NotificationIntegration#azure_storage_queue_primary_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/notification_integration#azure_storage_queue_primary_uri NotificationIntegration#azure_storage_queue_primary_uri}
 
 ---
 
@@ -1197,7 +1197,7 @@ public string AzureTenantId { get; set; }
 
 The ID of the Azure Active Directory tenant used for identity management.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/notification_integration#azure_tenant_id NotificationIntegration#azure_tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/notification_integration#azure_tenant_id NotificationIntegration#azure_tenant_id}
 
 ---
 
@@ -1211,7 +1211,7 @@ public string Comment { get; set; }
 
 A comment for the integration.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/notification_integration#comment NotificationIntegration#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/notification_integration#comment NotificationIntegration#comment}
 
 ---
 
@@ -1225,7 +1225,7 @@ public string Direction { get; set; }
 
 Direction of the cloud messaging with respect to Snowflake (required only for error notifications).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/notification_integration#direction NotificationIntegration#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/notification_integration#direction NotificationIntegration#direction}
 
 ---
 
@@ -1237,7 +1237,7 @@ public object Enabled { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/notification_integration#enabled NotificationIntegration#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/notification_integration#enabled NotificationIntegration#enabled}.
 
 ---
 
@@ -1251,7 +1251,7 @@ public string GcpPubsubSubscriptionName { get; set; }
 
 The subscription id that Snowflake will listen to when using the GCP_PUBSUB provider.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/notification_integration#gcp_pubsub_subscription_name NotificationIntegration#gcp_pubsub_subscription_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/notification_integration#gcp_pubsub_subscription_name NotificationIntegration#gcp_pubsub_subscription_name}
 
 ---
 
@@ -1263,7 +1263,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/notification_integration#id NotificationIntegration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/notification_integration#id NotificationIntegration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1280,7 +1280,7 @@ public string NotificationProvider { get; set; }
 
 The third-party cloud message queuing service (e.g. AZURE_STORAGE_QUEUE, AWS_SQS, AWS_SNS).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/notification_integration#notification_provider NotificationIntegration#notification_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/notification_integration#notification_provider NotificationIntegration#notification_provider}
 
 ---
 
@@ -1294,7 +1294,7 @@ public string Type { get; set; }
 
 A type of integration.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/notification_integration#type NotificationIntegration#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/notification_integration#type NotificationIntegration#type}
 
 ---
 

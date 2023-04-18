@@ -1,6 +1,6 @@
 # `snowflake_object_parameter`
 
-Refer to the Terraform Registory for docs: [`snowflake_object_parameter`](https://www.terraform.io/docs/providers/snowflake/r/object_parameter).
+Refer to the Terraform Registory for docs: [`snowflake_object_parameter`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/object_parameter).
 
 # `objectParameter` Submodule <a name="`objectParameter` Submodule" id="@cdktf/provider-snowflake.objectParameter"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`snowflake_object_parameter`](https:
 
 ### ObjectParameter <a name="ObjectParameter" id="@cdktf/provider-snowflake.objectParameter.ObjectParameter"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/object_parameter snowflake_object_parameter}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/object_parameter snowflake_object_parameter}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.objectParameter.ObjectParameter.Initializer"></a>
 
@@ -19,7 +19,7 @@ objectParameter.ObjectParameter(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -39,7 +39,7 @@ objectParameter.ObjectParameter(
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -47,7 +47,7 @@ objectParameter.ObjectParameter(
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.Initializer.parameter.key">key</a></code> | <code>str</code> | Name of object parameter. Valid values are those in [object parameters](https://docs.snowflake.com/en/sql-reference/parameters.html#object-parameters). |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.Initializer.parameter.value">value</a></code> | <code>str</code> | Value of object parameter, as a string. Constraints are the same as those for the parameters in Snowflake documentation. |
-| <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/object_parameter#id ObjectParameter#id}. |
+| <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/object_parameter#id ObjectParameter#id}. |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.Initializer.parameter.objectIdentifier">object_identifier</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameterObjectIdentifier">ObjectParameterObjectIdentifier</a>]]</code> | object_identifier block. |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.Initializer.parameter.objectType">object_type</a></code> | <code>str</code> | Type of object to which the parameter applies. |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.Initializer.parameter.onAccount">on_account</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, the object parameter will be set on the account level. |
@@ -80,7 +80,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.objectParameter.ObjectParameter.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 Name of object parameter. Valid values are those in [object parameters](https://docs.snowflake.com/en/sql-reference/parameters.html#object-parameters).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/object_parameter#key ObjectParameter#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/object_parameter#key ObjectParameter#key}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Value of object parameter, as a string. Constraints are the same as those for the parameters in Snowflake documentation.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/object_parameter#value ObjectParameter#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/object_parameter#value ObjectParameter#value}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/object_parameter#id ObjectParameter#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/object_parameter#id ObjectParameter#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -151,7 +151,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 object_identifier block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/object_parameter#object_identifier ObjectParameter#object_identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/object_parameter#object_identifier ObjectParameter#object_identifier}
 
 ---
 
@@ -163,7 +163,7 @@ Type of object to which the parameter applies.
 
 Valid values are those in [object types](https://docs.snowflake.com/en/sql-reference/parameters.html#object-types). If no value is provided, then the resource will default to setting the object parameter at account level.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/object_parameter#object_type ObjectParameter#object_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/object_parameter#object_type ObjectParameter#object_type}
 
 ---
 
@@ -173,7 +173,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 If true, the object parameter will be set on the account level.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/object_parameter#on_account ObjectParameter#on_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/object_parameter#on_account ObjectParameter#on_account}
 
 ---
 
@@ -540,7 +540,7 @@ objectParameter.ObjectParameter.is_terraform_resource(
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -646,10 +646,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.objectParameter.ObjectParameter.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -852,7 +852,7 @@ from cdktf_cdktf_provider_snowflake import object_parameter
 
 objectParameter.ObjectParameterConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -872,7 +872,7 @@ objectParameter.ObjectParameterConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameterConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameterConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameterConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameterConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameterConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameterConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -880,7 +880,7 @@ objectParameter.ObjectParameterConfig(
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameterConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameterConfig.property.key">key</a></code> | <code>str</code> | Name of object parameter. Valid values are those in [object parameters](https://docs.snowflake.com/en/sql-reference/parameters.html#object-parameters). |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameterConfig.property.value">value</a></code> | <code>str</code> | Value of object parameter, as a string. Constraints are the same as those for the parameters in Snowflake documentation. |
-| <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameterConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/object_parameter#id ObjectParameter#id}. |
+| <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameterConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/object_parameter#id ObjectParameter#id}. |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameterConfig.property.objectIdentifier">object_identifier</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameterObjectIdentifier">ObjectParameterObjectIdentifier</a>]]</code> | object_identifier block. |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameterConfig.property.objectType">object_type</a></code> | <code>str</code> | Type of object to which the parameter applies. |
 | <code><a href="#@cdktf/provider-snowflake.objectParameter.ObjectParameterConfig.property.onAccount">on_account</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, the object parameter will be set on the account level. |
@@ -900,10 +900,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.objectParameter.ObjectParameterConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -967,7 +967,7 @@ key: str
 
 Name of object parameter. Valid values are those in [object parameters](https://docs.snowflake.com/en/sql-reference/parameters.html#object-parameters).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/object_parameter#key ObjectParameter#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/object_parameter#key ObjectParameter#key}
 
 ---
 
@@ -981,7 +981,7 @@ value: str
 
 Value of object parameter, as a string. Constraints are the same as those for the parameters in Snowflake documentation.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/object_parameter#value ObjectParameter#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/object_parameter#value ObjectParameter#value}
 
 ---
 
@@ -993,7 +993,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/object_parameter#id ObjectParameter#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/object_parameter#id ObjectParameter#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1010,7 +1010,7 @@ object_identifier: typing.Union[IResolvable, typing.List[ObjectParameterObjectId
 
 object_identifier block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/object_parameter#object_identifier ObjectParameter#object_identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/object_parameter#object_identifier ObjectParameter#object_identifier}
 
 ---
 
@@ -1026,7 +1026,7 @@ Type of object to which the parameter applies.
 
 Valid values are those in [object types](https://docs.snowflake.com/en/sql-reference/parameters.html#object-types). If no value is provided, then the resource will default to setting the object parameter at account level.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/object_parameter#object_type ObjectParameter#object_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/object_parameter#object_type ObjectParameter#object_type}
 
 ---
 
@@ -1040,7 +1040,7 @@ on_account: typing.Union[bool, IResolvable]
 
 If true, the object parameter will be set on the account level.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/object_parameter#on_account ObjectParameter#on_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/object_parameter#on_account ObjectParameter#on_account}
 
 ---
 
@@ -1078,7 +1078,7 @@ name: str
 
 Name of the object to set the parameter for.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/object_parameter#name ObjectParameter#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/object_parameter#name ObjectParameter#name}
 
 ---
 
@@ -1092,7 +1092,7 @@ database: str
 
 Name of the database that the object was created in.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/object_parameter#database ObjectParameter#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/object_parameter#database ObjectParameter#database}
 
 ---
 
@@ -1106,7 +1106,7 @@ schema: str
 
 Name of the schema that the object was created in.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/object_parameter#schema ObjectParameter#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/object_parameter#schema ObjectParameter#schema}
 
 ---
 

@@ -1,6 +1,6 @@
 # `snowflake_tag`
 
-Refer to the Terraform Registory for docs: [`snowflake_tag`](https://www.terraform.io/docs/providers/snowflake/r/tag).
+Refer to the Terraform Registory for docs: [`snowflake_tag`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/tag).
 
 # `tag` Submodule <a name="`tag` Submodule" id="@cdktf/provider-snowflake.tag"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`snowflake_tag`](https://www.terrafo
 
 ### Tag <a name="Tag" id="@cdktf/provider-snowflake.tag.Tag"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/tag snowflake_tag}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/tag snowflake_tag}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.tag.Tag.Initializer"></a>
 
@@ -360,7 +360,7 @@ Tag.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-snowflake.tag.Tag.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tag.Tag.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tag.Tag.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.tag.Tag.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tag.Tag.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tag.Tag.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tag.Tag.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tag.Tag.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -466,10 +466,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-snowflake.tag.Tag.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -672,7 +672,7 @@ using HashiCorp.Cdktf.Providers.Snowflake;
 
 new TagConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -692,7 +692,7 @@ new TagConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-snowflake.tag.TagConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.tag.TagConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tag.TagConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tag.TagConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tag.TagConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tag.TagConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -703,7 +703,7 @@ new TagConfig {
 | <code><a href="#@cdktf/provider-snowflake.tag.TagConfig.property.schema">Schema</a></code> | <code>string</code> | The schema in which to create the tag. |
 | <code><a href="#@cdktf/provider-snowflake.tag.TagConfig.property.allowedValues">AllowedValues</a></code> | <code>string[]</code> | List of allowed values for the tag. |
 | <code><a href="#@cdktf/provider-snowflake.tag.TagConfig.property.comment">Comment</a></code> | <code>string</code> | Specifies a comment for the tag. |
-| <code><a href="#@cdktf/provider-snowflake.tag.TagConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/tag#id Tag#id}. |
+| <code><a href="#@cdktf/provider-snowflake.tag.TagConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/tag#id Tag#id}. |
 
 ---
 
@@ -720,10 +720,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-snowflake.tag.TagConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -787,7 +787,7 @@ public string Database { get; set; }
 
 The database in which to create the tag.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/tag#database Tag#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/tag#database Tag#database}
 
 ---
 
@@ -801,7 +801,7 @@ public string Name { get; set; }
 
 Specifies the identifier for the tag; must be unique for the database in which the tag is created.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/tag#name Tag#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/tag#name Tag#name}
 
 ---
 
@@ -815,7 +815,7 @@ public string Schema { get; set; }
 
 The schema in which to create the tag.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/tag#schema Tag#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/tag#schema Tag#schema}
 
 ---
 
@@ -829,7 +829,7 @@ public string[] AllowedValues { get; set; }
 
 List of allowed values for the tag.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/tag#allowed_values Tag#allowed_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/tag#allowed_values Tag#allowed_values}
 
 ---
 
@@ -843,7 +843,7 @@ public string Comment { get; set; }
 
 Specifies a comment for the tag.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/tag#comment Tag#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/tag#comment Tag#comment}
 
 ---
 
@@ -855,7 +855,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/tag#id Tag#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/tag#id Tag#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

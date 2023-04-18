@@ -1,3 +1,3 @@
 # `snowflake_pipe_grant`
 
-Refer to the Terraform Registory for docs: [`snowflake_pipe_grant`](https://www.terraform.io/docs/providers/snowflake/r/pipe_grant).
+Refer to the Terraform Registory for docs: [`snowflake_pipe_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/pipe_grant).

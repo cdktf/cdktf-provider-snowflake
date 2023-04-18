@@ -1,6 +1,6 @@
 # `snowflake_account_parameter`
 
-Refer to the Terraform Registory for docs: [`snowflake_account_parameter`](https://www.terraform.io/docs/providers/snowflake/r/account_parameter).
+Refer to the Terraform Registory for docs: [`snowflake_account_parameter`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/account_parameter).
 
 # `accountParameter` Submodule <a name="`accountParameter` Submodule" id="@cdktf/provider-snowflake.accountParameter"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`snowflake_account_parameter`](https
 
 ### AccountParameter <a name="AccountParameter" id="@cdktf/provider-snowflake.accountParameter.AccountParameter"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/account_parameter snowflake_account_parameter}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/account_parameter snowflake_account_parameter}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.accountParameter.AccountParameter.Initializer"></a>
 
@@ -346,7 +346,7 @@ AccountParameter.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-snowflake.accountParameter.AccountParameter.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.accountParameter.AccountParameter.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.accountParameter.AccountParameter.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountParameter.AccountParameter.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.accountParameter.AccountParameter.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.accountParameter.AccountParameter.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.accountParameter.AccountParameter.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.accountParameter.AccountParameter.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -446,10 +446,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-snowflake.accountParameter.AccountParameter.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -592,7 +592,7 @@ using HashiCorp.Cdktf.Providers.Snowflake;
 
 new AccountParameterConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -609,7 +609,7 @@ new AccountParameterConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-snowflake.accountParameter.AccountParameterConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.accountParameter.AccountParameterConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.accountParameter.AccountParameterConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.accountParameter.AccountParameterConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.accountParameter.AccountParameterConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.accountParameter.AccountParameterConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -617,7 +617,7 @@ new AccountParameterConfig {
 | <code><a href="#@cdktf/provider-snowflake.accountParameter.AccountParameterConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.accountParameter.AccountParameterConfig.property.key">Key</a></code> | <code>string</code> | Name of account parameter. Valid values are those in [account parameters](https://docs.snowflake.com/en/sql-reference/parameters.html#account-parameters). |
 | <code><a href="#@cdktf/provider-snowflake.accountParameter.AccountParameterConfig.property.value">Value</a></code> | <code>string</code> | Value of account parameter, as a string. Constraints are the same as those for the parameters in Snowflake documentation. |
-| <code><a href="#@cdktf/provider-snowflake.accountParameter.AccountParameterConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/account_parameter#id AccountParameter#id}. |
+| <code><a href="#@cdktf/provider-snowflake.accountParameter.AccountParameterConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/account_parameter#id AccountParameter#id}. |
 
 ---
 
@@ -634,10 +634,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-snowflake.accountParameter.AccountParameterConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -701,7 +701,7 @@ public string Key { get; set; }
 
 Name of account parameter. Valid values are those in [account parameters](https://docs.snowflake.com/en/sql-reference/parameters.html#account-parameters).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/account_parameter#key AccountParameter#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/account_parameter#key AccountParameter#key}
 
 ---
 
@@ -715,7 +715,7 @@ public string Value { get; set; }
 
 Value of account parameter, as a string. Constraints are the same as those for the parameters in Snowflake documentation.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/account_parameter#value AccountParameter#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/account_parameter#value AccountParameter#value}
 
 ---
 
@@ -727,7 +727,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/account_parameter#id AccountParameter#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/account_parameter#id AccountParameter#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

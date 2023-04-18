@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/snowflake/d/sequences
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/sequences
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface DataSnowflakeSequencesConfig extends cdktf.TerraformMetaArgumen
   /**
   * The database from which to return the schemas from.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/sequences#database DataSnowflakeSequences#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/sequences#database DataSnowflakeSequences#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/sequences#id DataSnowflakeSequences#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/sequences#id DataSnowflakeSequences#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,7 +23,7 @@ export interface DataSnowflakeSequencesConfig extends cdktf.TerraformMetaArgumen
   /**
   * The schema from which to return the sequences from.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/sequences#schema DataSnowflakeSequences#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/sequences#schema DataSnowflakeSequences#schema}
   */
   readonly schema: string;
 }
@@ -108,7 +108,7 @@ export class DataSnowflakeSequencesSequencesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/snowflake/d/sequences snowflake_sequences}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/sequences snowflake_sequences}
 */
 export class DataSnowflakeSequences extends cdktf.TerraformDataSource {
 
@@ -122,7 +122,7 @@ export class DataSnowflakeSequences extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/snowflake/d/sequences snowflake_sequences} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/sequences snowflake_sequences} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

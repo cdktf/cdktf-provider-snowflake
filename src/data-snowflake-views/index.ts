@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/snowflake/d/views
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/views
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface DataSnowflakeViewsConfig extends cdktf.TerraformMetaArguments {
   /**
   * The database from which to return the schemas from.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/views#database DataSnowflakeViews#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/views#database DataSnowflakeViews#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/views#id DataSnowflakeViews#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/views#id DataSnowflakeViews#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,7 +23,7 @@ export interface DataSnowflakeViewsConfig extends cdktf.TerraformMetaArguments {
   /**
   * The schema from which to return the views from.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/views#schema DataSnowflakeViews#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/views#schema DataSnowflakeViews#schema}
   */
   readonly schema: string;
 }
@@ -108,7 +108,7 @@ export class DataSnowflakeViewsViewsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/snowflake/d/views snowflake_views}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/views snowflake_views}
 */
 export class DataSnowflakeViews extends cdktf.TerraformDataSource {
 
@@ -122,7 +122,7 @@ export class DataSnowflakeViews extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/snowflake/d/views snowflake_views} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/views snowflake_views} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

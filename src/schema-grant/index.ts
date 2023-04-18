@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/snowflake/r/schema_grant
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema_grant
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,17 +10,17 @@ export interface SchemaGrantConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the database containing the schema on which to grant privileges.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema_grant#database_name SchemaGrant#database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema_grant#database_name SchemaGrant#database_name}
   */
   readonly databaseName: string;
   /**
   * When this is set to true, multiple grants of the same type can be created. This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema_grant#enable_multiple_grants SchemaGrant#enable_multiple_grants}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema_grant#enable_multiple_grants SchemaGrant#enable_multiple_grants}
   */
   readonly enableMultipleGrants?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema_grant#id SchemaGrant#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema_grant#id SchemaGrant#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -29,43 +29,43 @@ export interface SchemaGrantConfig extends cdktf.TerraformMetaArguments {
   /**
   * When this is set to true, apply this grant on all future schemas in the given database. The schema_name and shares fields must be unset in order to use on_future.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema_grant#on_future SchemaGrant#on_future}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema_grant#on_future SchemaGrant#on_future}
   */
   readonly onFuture?: boolean | cdktf.IResolvable;
   /**
   * The privilege to grant on the current or future schema. Note that if "OWNERSHIP" is specified, ensure that the role that terraform is using is granted access.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema_grant#privilege SchemaGrant#privilege}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema_grant#privilege SchemaGrant#privilege}
   */
   readonly privilege?: string;
   /**
   * Grants privilege to these roles.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema_grant#roles SchemaGrant#roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema_grant#roles SchemaGrant#roles}
   */
   readonly roles?: string[];
   /**
   * The name of the schema on which to grant privileges.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema_grant#schema_name SchemaGrant#schema_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema_grant#schema_name SchemaGrant#schema_name}
   */
   readonly schemaName?: string;
   /**
   * Grants privilege to these shares (only valid if on_future is unset).
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema_grant#shares SchemaGrant#shares}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema_grant#shares SchemaGrant#shares}
   */
   readonly shares?: string[];
   /**
   * When this is set to true, allows the recipient role to grant the privileges to other roles.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/schema_grant#with_grant_option SchemaGrant#with_grant_option}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema_grant#with_grant_option SchemaGrant#with_grant_option}
   */
   readonly withGrantOption?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/schema_grant snowflake_schema_grant}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema_grant snowflake_schema_grant}
 */
 export class SchemaGrant extends cdktf.TerraformResource {
 
@@ -79,7 +79,7 @@ export class SchemaGrant extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/snowflake/r/schema_grant snowflake_schema_grant} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema_grant snowflake_schema_grant} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

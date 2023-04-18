@@ -1,3 +1,3 @@
 # `snowflake_sequence_grant`
 
-Refer to the Terraform Registory for docs: [`snowflake_sequence_grant`](https://www.terraform.io/docs/providers/snowflake/r/sequence_grant).
+Refer to the Terraform Registory for docs: [`snowflake_sequence_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/sequence_grant).

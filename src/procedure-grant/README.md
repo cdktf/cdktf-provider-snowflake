@@ -1,3 +1,3 @@
 # `snowflake_procedure_grant`
 
-Refer to the Terraform Registory for docs: [`snowflake_procedure_grant`](https://www.terraform.io/docs/providers/snowflake/r/procedure_grant).
+Refer to the Terraform Registory for docs: [`snowflake_procedure_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/procedure_grant).

@@ -1,6 +1,6 @@
 # `snowflake_oauth_integration`
 
-Refer to the Terraform Registory for docs: [`snowflake_oauth_integration`](https://www.terraform.io/docs/providers/snowflake/r/oauth_integration).
+Refer to the Terraform Registory for docs: [`snowflake_oauth_integration`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/oauth_integration).
 
 # `oauthIntegration` Submodule <a name="`oauthIntegration` Submodule" id="@cdktf/provider-snowflake.oauthIntegration"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`snowflake_oauth_integration`](https
 
 ### OauthIntegration <a name="OauthIntegration" id="@cdktf/provider-snowflake.oauthIntegration.OauthIntegration"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/oauth_integration snowflake_oauth_integration}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/oauth_integration snowflake_oauth_integration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.Initializer"></a>
 
@@ -19,6 +19,7 @@ OauthIntegration.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -47,7 +48,7 @@ OauthIntegration.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -58,7 +59,7 @@ OauthIntegration.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.Initializer.parameter.blockedRolesList">blockedRolesList</a></code> | <code>java.util.List<java.lang.String></code> | List of roles that a user cannot explicitly consent to using after authenticating. |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.Initializer.parameter.comment">comment</a></code> | <code>java.lang.String</code> | Specifies a comment for the OAuth integration. |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.Initializer.parameter.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Specifies whether this OAuth integration is enabled or disabled. |
-| <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/oauth_integration#id OauthIntegration#id}. |
+| <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/oauth_integration#id OauthIntegration#id}. |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.Initializer.parameter.oauthClientType">oauthClientType</a></code> | <code>java.lang.String</code> | Specifies the type of client being registered. Snowflake supports both confidential and public clients. |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.Initializer.parameter.oauthIssueRefreshTokens">oauthIssueRefreshTokens</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Specifies whether to allow the client to exchange a refresh token for an access token when the current access token has expired. |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.Initializer.parameter.oauthRedirectUri">oauthRedirectUri</a></code> | <code>java.lang.String</code> | Specifies the client URI. After a user is authenticated, the web browser is redirected to this URI. |
@@ -93,7 +94,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -135,7 +136,7 @@ Specifies the name of the OAuth integration.
 
 This name follows the rules for Object Identifiers. The name should be unique among security integrations in your account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/oauth_integration#name OauthIntegration#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/oauth_integration#name OauthIntegration#name}
 
 ---
 
@@ -145,7 +146,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Specifies the OAuth client type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/oauth_integration#oauth_client OauthIntegration#oauth_client}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/oauth_integration#oauth_client OauthIntegration#oauth_client}
 
 ---
 
@@ -157,7 +158,7 @@ List of roles that a user cannot explicitly consent to using after authenticatin
 
 Do not include ACCOUNTADMIN, ORGADMIN or SECURITYADMIN as they are already implicitly enforced and will cause in-place updates.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/oauth_integration#blocked_roles_list OauthIntegration#blocked_roles_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/oauth_integration#blocked_roles_list OauthIntegration#blocked_roles_list}
 
 ---
 
@@ -167,7 +168,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Specifies a comment for the OAuth integration.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/oauth_integration#comment OauthIntegration#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/oauth_integration#comment OauthIntegration#comment}
 
 ---
 
@@ -177,7 +178,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Specifies whether this OAuth integration is enabled or disabled.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/oauth_integration#enabled OauthIntegration#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/oauth_integration#enabled OauthIntegration#enabled}
 
 ---
 
@@ -185,7 +186,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/oauth_integration#id OauthIntegration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/oauth_integration#id OauthIntegration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -198,7 +199,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Specifies the type of client being registered. Snowflake supports both confidential and public clients.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/oauth_integration#oauth_client_type OauthIntegration#oauth_client_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/oauth_integration#oauth_client_type OauthIntegration#oauth_client_type}
 
 ---
 
@@ -208,7 +209,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Specifies whether to allow the client to exchange a refresh token for an access token when the current access token has expired.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/oauth_integration#oauth_issue_refresh_tokens OauthIntegration#oauth_issue_refresh_tokens}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/oauth_integration#oauth_issue_refresh_tokens OauthIntegration#oauth_issue_refresh_tokens}
 
 ---
 
@@ -218,7 +219,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Specifies the client URI. After a user is authenticated, the web browser is redirected to this URI.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/oauth_integration#oauth_redirect_uri OauthIntegration#oauth_redirect_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/oauth_integration#oauth_redirect_uri OauthIntegration#oauth_redirect_uri}
 
 ---
 
@@ -228,7 +229,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Specifies how long refresh tokens should be valid (in seconds). OAUTH_ISSUE_REFRESH_TOKENS must be set to TRUE.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/oauth_integration#oauth_refresh_token_validity OauthIntegration#oauth_refresh_token_validity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/oauth_integration#oauth_refresh_token_validity OauthIntegration#oauth_refresh_token_validity}
 
 ---
 
@@ -238,7 +239,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowf
 
 Specifies whether default secondary roles set in the user properties are activated by default in the session being opened.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/oauth_integration#oauth_use_secondary_roles OauthIntegration#oauth_use_secondary_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/oauth_integration#oauth_use_secondary_roles OauthIntegration#oauth_use_secondary_roles}
 
 ---
 
@@ -594,7 +595,7 @@ OauthIntegration.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -711,10 +712,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1029,6 +1030,7 @@ OauthIntegrationConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -1057,7 +1059,7 @@ OauthIntegrationConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegrationConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegrationConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegrationConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegrationConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegrationConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegrationConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1068,7 +1070,7 @@ OauthIntegrationConfig.builder()
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegrationConfig.property.blockedRolesList">blockedRolesList</a></code> | <code>java.util.List<java.lang.String></code> | List of roles that a user cannot explicitly consent to using after authenticating. |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegrationConfig.property.comment">comment</a></code> | <code>java.lang.String</code> | Specifies a comment for the OAuth integration. |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegrationConfig.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Specifies whether this OAuth integration is enabled or disabled. |
-| <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegrationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/oauth_integration#id OauthIntegration#id}. |
+| <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegrationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/oauth_integration#id OauthIntegration#id}. |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegrationConfig.property.oauthClientType">oauthClientType</a></code> | <code>java.lang.String</code> | Specifies the type of client being registered. Snowflake supports both confidential and public clients. |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegrationConfig.property.oauthIssueRefreshTokens">oauthIssueRefreshTokens</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Specifies whether to allow the client to exchange a refresh token for an access token when the current access token has expired. |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegrationConfig.property.oauthRedirectUri">oauthRedirectUri</a></code> | <code>java.lang.String</code> | Specifies the client URI. After a user is authenticated, the web browser is redirected to this URI. |
@@ -1090,10 +1092,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.oauthIntegration.OauthIntegrationConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1159,7 +1161,7 @@ Specifies the name of the OAuth integration.
 
 This name follows the rules for Object Identifiers. The name should be unique among security integrations in your account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/oauth_integration#name OauthIntegration#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/oauth_integration#name OauthIntegration#name}
 
 ---
 
@@ -1173,7 +1175,7 @@ public java.lang.String getOauthClient();
 
 Specifies the OAuth client type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/oauth_integration#oauth_client OauthIntegration#oauth_client}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/oauth_integration#oauth_client OauthIntegration#oauth_client}
 
 ---
 
@@ -1189,7 +1191,7 @@ List of roles that a user cannot explicitly consent to using after authenticatin
 
 Do not include ACCOUNTADMIN, ORGADMIN or SECURITYADMIN as they are already implicitly enforced and will cause in-place updates.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/oauth_integration#blocked_roles_list OauthIntegration#blocked_roles_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/oauth_integration#blocked_roles_list OauthIntegration#blocked_roles_list}
 
 ---
 
@@ -1203,7 +1205,7 @@ public java.lang.String getComment();
 
 Specifies a comment for the OAuth integration.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/oauth_integration#comment OauthIntegration#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/oauth_integration#comment OauthIntegration#comment}
 
 ---
 
@@ -1217,7 +1219,7 @@ public java.lang.Object getEnabled();
 
 Specifies whether this OAuth integration is enabled or disabled.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/oauth_integration#enabled OauthIntegration#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/oauth_integration#enabled OauthIntegration#enabled}
 
 ---
 
@@ -1229,7 +1231,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/oauth_integration#id OauthIntegration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/oauth_integration#id OauthIntegration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1246,7 +1248,7 @@ public java.lang.String getOauthClientType();
 
 Specifies the type of client being registered. Snowflake supports both confidential and public clients.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/oauth_integration#oauth_client_type OauthIntegration#oauth_client_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/oauth_integration#oauth_client_type OauthIntegration#oauth_client_type}
 
 ---
 
@@ -1260,7 +1262,7 @@ public java.lang.Object getOauthIssueRefreshTokens();
 
 Specifies whether to allow the client to exchange a refresh token for an access token when the current access token has expired.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/oauth_integration#oauth_issue_refresh_tokens OauthIntegration#oauth_issue_refresh_tokens}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/oauth_integration#oauth_issue_refresh_tokens OauthIntegration#oauth_issue_refresh_tokens}
 
 ---
 
@@ -1274,7 +1276,7 @@ public java.lang.String getOauthRedirectUri();
 
 Specifies the client URI. After a user is authenticated, the web browser is redirected to this URI.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/oauth_integration#oauth_redirect_uri OauthIntegration#oauth_redirect_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/oauth_integration#oauth_redirect_uri OauthIntegration#oauth_redirect_uri}
 
 ---
 
@@ -1288,7 +1290,7 @@ public java.lang.Number getOauthRefreshTokenValidity();
 
 Specifies how long refresh tokens should be valid (in seconds). OAUTH_ISSUE_REFRESH_TOKENS must be set to TRUE.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/oauth_integration#oauth_refresh_token_validity OauthIntegration#oauth_refresh_token_validity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/oauth_integration#oauth_refresh_token_validity OauthIntegration#oauth_refresh_token_validity}
 
 ---
 
@@ -1302,7 +1304,7 @@ public java.lang.String getOauthUseSecondaryRoles();
 
 Specifies whether default secondary roles set in the user properties are activated by default in the session being opened.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/oauth_integration#oauth_use_secondary_roles OauthIntegration#oauth_use_secondary_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/oauth_integration#oauth_use_secondary_roles OauthIntegration#oauth_use_secondary_roles}
 
 ---
 
