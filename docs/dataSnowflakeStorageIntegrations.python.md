@@ -1,3 +1,7 @@
+# `data_snowflake_storage_integrations`
+
+Refer to the Terraform Registory for docs: [`data_snowflake_storage_integrations`](https://www.terraform.io/docs/providers/snowflake/d/storage_integrations).
+
 # `dataSnowflakeStorageIntegrations` Submodule <a name="`dataSnowflakeStorageIntegrations` Submodule" id="@cdktf/provider-snowflake.dataSnowflakeStorageIntegrations"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

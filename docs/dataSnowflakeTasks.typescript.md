@@ -1,3 +1,7 @@
+# `data_snowflake_tasks`
+
+Refer to the Terraform Registory for docs: [`data_snowflake_tasks`](https://www.terraform.io/docs/providers/snowflake/d/tasks).
+
 # `dataSnowflakeTasks` Submodule <a name="`dataSnowflakeTasks` Submodule" id="@cdktf/provider-snowflake.dataSnowflakeTasks"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `data_snowflake_system_get_privatelink_config`
+
+Refer to the Terraform Registory for docs: [`data_snowflake_system_get_privatelink_config`](https://www.terraform.io/docs/providers/snowflake/d/system_get_privatelink_config).
+
 # `dataSnowflakeSystemGetPrivatelinkConfig` Submodule <a name="`dataSnowflakeSystemGetPrivatelinkConfig` Submodule" id="@cdktf/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

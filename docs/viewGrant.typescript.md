@@ -1,3 +1,7 @@
+# `snowflake_view_grant`
+
+Refer to the Terraform Registory for docs: [`snowflake_view_grant`](https://www.terraform.io/docs/providers/snowflake/r/view_grant).
+
 # `viewGrant` Submodule <a name="`viewGrant` Submodule" id="@cdktf/provider-snowflake.viewGrant"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

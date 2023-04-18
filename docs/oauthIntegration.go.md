@@ -1,3 +1,7 @@
+# `snowflake_oauth_integration`
+
+Refer to the Terraform Registory for docs: [`snowflake_oauth_integration`](https://www.terraform.io/docs/providers/snowflake/r/oauth_integration).
+
 # `oauthIntegration` Submodule <a name="`oauthIntegration` Submodule" id="@cdktf/provider-snowflake.oauthIntegration"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

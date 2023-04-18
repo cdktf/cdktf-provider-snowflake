@@ -1,3 +1,7 @@
+# `data_snowflake_pipes`
+
+Refer to the Terraform Registory for docs: [`data_snowflake_pipes`](https://www.terraform.io/docs/providers/snowflake/d/pipes).
+
 # `dataSnowflakePipes` Submodule <a name="`dataSnowflakePipes` Submodule" id="@cdktf/provider-snowflake.dataSnowflakePipes"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

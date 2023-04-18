@@ -1,3 +1,7 @@
+# `snowflake_role`
+
+Refer to the Terraform Registory for docs: [`snowflake_role`](https://www.terraform.io/docs/providers/snowflake/r/role).
+
 # `role` Submodule <a name="`role` Submodule" id="@cdktf/provider-snowflake.role"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

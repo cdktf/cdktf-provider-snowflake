@@ -1,3 +1,7 @@
+# `snowflake_tag_association`
+
+Refer to the Terraform Registory for docs: [`snowflake_tag_association`](https://www.terraform.io/docs/providers/snowflake/r/tag_association).
+
 # `tagAssociation` Submodule <a name="`tagAssociation` Submodule" id="@cdktf/provider-snowflake.tagAssociation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

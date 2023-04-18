@@ -1,3 +1,7 @@
+# `provider`
+
+Refer to the Terraform Registory for docs: [`snowflake`](https://www.terraform.io/docs/providers/snowflake).
+
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-snowflake.provider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

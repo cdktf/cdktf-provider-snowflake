@@ -1,3 +1,7 @@
+# `data_snowflake_system_generate_scim_access_token`
+
+Refer to the Terraform Registory for docs: [`data_snowflake_system_generate_scim_access_token`](https://www.terraform.io/docs/providers/snowflake/d/system_generate_scim_access_token).
+
 # `dataSnowflakeSystemGenerateScimAccessToken` Submodule <a name="`dataSnowflakeSystemGenerateScimAccessToken` Submodule" id="@cdktf/provider-snowflake.dataSnowflakeSystemGenerateScimAccessToken"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

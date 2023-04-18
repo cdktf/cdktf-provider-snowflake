@@ -1,3 +1,7 @@
+# `snowflake_procedure`
+
+Refer to the Terraform Registory for docs: [`snowflake_procedure`](https://www.terraform.io/docs/providers/snowflake/r/procedure).
+
 # `procedure` Submodule <a name="`procedure` Submodule" id="@cdktf/provider-snowflake.procedure"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

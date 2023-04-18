@@ -1,3 +1,7 @@
+# `snowflake_stage`
+
+Refer to the Terraform Registory for docs: [`snowflake_stage`](https://www.terraform.io/docs/providers/snowflake/r/stage).
+
 # `stage` Submodule <a name="`stage` Submodule" id="@cdktf/provider-snowflake.stage"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
