@@ -1,3 +1,3 @@
 # `snowflake_tag`
 
-Refer to the Terraform Registory for docs: [`snowflake_tag`](https://www.terraform.io/docs/providers/snowflake/r/tag).
+Refer to the Terraform Registory for docs: [`snowflake_tag`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/tag).

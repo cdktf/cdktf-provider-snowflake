@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/snowflake/d/external_tables
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/external_tables
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface DataSnowflakeExternalTablesConfig extends cdktf.TerraformMetaAr
   /**
   * The database from which to return the schemas from.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/external_tables#database DataSnowflakeExternalTables#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/external_tables#database DataSnowflakeExternalTables#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/external_tables#id DataSnowflakeExternalTables#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/external_tables#id DataSnowflakeExternalTables#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,7 +23,7 @@ export interface DataSnowflakeExternalTablesConfig extends cdktf.TerraformMetaAr
   /**
   * The schema from which to return the external tables from.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/d/external_tables#schema DataSnowflakeExternalTables#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/external_tables#schema DataSnowflakeExternalTables#schema}
   */
   readonly schema: string;
 }
@@ -108,7 +108,7 @@ export class DataSnowflakeExternalTablesExternalTablesList extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/snowflake/d/external_tables snowflake_external_tables}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/external_tables snowflake_external_tables}
 */
 export class DataSnowflakeExternalTables extends cdktf.TerraformDataSource {
 
@@ -122,7 +122,7 @@ export class DataSnowflakeExternalTables extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/snowflake/d/external_tables snowflake_external_tables} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/external_tables snowflake_external_tables} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

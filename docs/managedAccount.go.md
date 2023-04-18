@@ -1,6 +1,6 @@
 # `snowflake_managed_account`
 
-Refer to the Terraform Registory for docs: [`snowflake_managed_account`](https://www.terraform.io/docs/providers/snowflake/r/managed_account).
+Refer to the Terraform Registory for docs: [`snowflake_managed_account`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/managed_account).
 
 # `managedAccount` Submodule <a name="`managedAccount` Submodule" id="@cdktf/provider-snowflake.managedAccount"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`snowflake_managed_account`](https:/
 
 ### ManagedAccount <a name="ManagedAccount" id="@cdktf/provider-snowflake.managedAccount.ManagedAccount"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/managed_account snowflake_managed_account}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/managed_account snowflake_managed_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.managedAccount.ManagedAccount.Initializer"></a>
 
@@ -360,7 +360,7 @@ managedaccount.ManagedAccount_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccount.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccount.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccount.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccount.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccount.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccount.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccount.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccount.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -471,10 +471,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-snowflake.managedAccount.ManagedAccount.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -727,7 +727,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/managedaccount
 
 &managedaccount.ManagedAccountConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -747,7 +747,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/managedaccount
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -757,7 +757,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/managedaccount
 | <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountConfig.property.adminPassword">AdminPassword</a></code> | <code>*string</code> | Password for the initial user in the managed account. |
 | <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountConfig.property.name">Name</a></code> | <code>*string</code> | Identifier for the managed account; must be unique for your account. |
 | <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountConfig.property.comment">Comment</a></code> | <code>*string</code> | Specifies a comment for the managed account. |
-| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/managed_account#id ManagedAccount#id}. |
+| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/managed_account#id ManagedAccount#id}. |
 | <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountConfig.property.type">Type</a></code> | <code>*string</code> | Specifies the type of managed account. |
 
 ---
@@ -775,10 +775,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -844,7 +844,7 @@ Identifier, as well as login name, for the initial user in the managed account.
 
 This user serves as the account administrator for the account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/managed_account#admin_name ManagedAccount#admin_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/managed_account#admin_name ManagedAccount#admin_name}
 
 ---
 
@@ -858,7 +858,7 @@ AdminPassword *string
 
 Password for the initial user in the managed account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/managed_account#admin_password ManagedAccount#admin_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/managed_account#admin_password ManagedAccount#admin_password}
 
 ---
 
@@ -872,7 +872,7 @@ Name *string
 
 Identifier for the managed account; must be unique for your account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/managed_account#name ManagedAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/managed_account#name ManagedAccount#name}
 
 ---
 
@@ -886,7 +886,7 @@ Comment *string
 
 Specifies a comment for the managed account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/managed_account#comment ManagedAccount#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/managed_account#comment ManagedAccount#comment}
 
 ---
 
@@ -898,7 +898,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/managed_account#id ManagedAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/managed_account#id ManagedAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -915,7 +915,7 @@ Type *string
 
 Specifies the type of managed account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/managed_account#type ManagedAccount#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/managed_account#type ManagedAccount#type}
 
 ---
 

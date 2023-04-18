@@ -1,6 +1,6 @@
 # `snowflake_stream`
 
-Refer to the Terraform Registory for docs: [`snowflake_stream`](https://www.terraform.io/docs/providers/snowflake/r/stream).
+Refer to the Terraform Registory for docs: [`snowflake_stream`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/stream).
 
 # `stream` Submodule <a name="`stream` Submodule" id="@cdktf/provider-snowflake.stream"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`snowflake_stream`](https://www.terr
 
 ### Stream <a name="Stream" id="@cdktf/provider-snowflake.stream.Stream"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/snowflake/r/stream snowflake_stream}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/stream snowflake_stream}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.stream.Stream.Initializer"></a>
 
@@ -395,7 +395,7 @@ Stream.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -512,10 +512,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-snowflake.stream.Stream.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -828,7 +828,7 @@ using HashiCorp.Cdktf.Providers.Snowflake;
 
 new StreamConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -853,7 +853,7 @@ new StreamConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -864,7 +864,7 @@ new StreamConfig {
 | <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.schema">Schema</a></code> | <code>string</code> | The schema in which to create the stream. |
 | <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.appendOnly">AppendOnly</a></code> | <code>object</code> | Type of the stream that will be created. |
 | <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.comment">Comment</a></code> | <code>string</code> | Specifies a comment for the stream. |
-| <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stream#id Stream#id}. |
+| <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/stream#id Stream#id}. |
 | <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.insertOnly">InsertOnly</a></code> | <code>object</code> | Create an insert only stream type. |
 | <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.onStage">OnStage</a></code> | <code>string</code> | Name of the stage the stream will monitor. |
 | <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.onTable">OnTable</a></code> | <code>string</code> | Name of the table the stream will monitor. |
@@ -886,10 +886,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-snowflake.stream.StreamConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -953,7 +953,7 @@ public string Database { get; set; }
 
 The database in which to create the stream.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stream#database Stream#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/stream#database Stream#database}
 
 ---
 
@@ -969,7 +969,7 @@ Specifies the identifier for the stream;
 
 must be unique for the database and schema in which the stream is created.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stream#name Stream#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/stream#name Stream#name}
 
 ---
 
@@ -983,7 +983,7 @@ public string Schema { get; set; }
 
 The schema in which to create the stream.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stream#schema Stream#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/stream#schema Stream#schema}
 
 ---
 
@@ -997,7 +997,7 @@ public object AppendOnly { get; set; }
 
 Type of the stream that will be created.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stream#append_only Stream#append_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/stream#append_only Stream#append_only}
 
 ---
 
@@ -1011,7 +1011,7 @@ public string Comment { get; set; }
 
 Specifies a comment for the stream.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stream#comment Stream#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/stream#comment Stream#comment}
 
 ---
 
@@ -1023,7 +1023,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stream#id Stream#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/stream#id Stream#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1040,7 +1040,7 @@ public object InsertOnly { get; set; }
 
 Create an insert only stream type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stream#insert_only Stream#insert_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/stream#insert_only Stream#insert_only}
 
 ---
 
@@ -1054,7 +1054,7 @@ public string OnStage { get; set; }
 
 Name of the stage the stream will monitor.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stream#on_stage Stream#on_stage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/stream#on_stage Stream#on_stage}
 
 ---
 
@@ -1068,7 +1068,7 @@ public string OnTable { get; set; }
 
 Name of the table the stream will monitor.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stream#on_table Stream#on_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/stream#on_table Stream#on_table}
 
 ---
 
@@ -1082,7 +1082,7 @@ public string OnView { get; set; }
 
 Name of the view the stream will monitor.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stream#on_view Stream#on_view}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/stream#on_view Stream#on_view}
 
 ---
 
@@ -1096,7 +1096,7 @@ public object ShowInitialRows { get; set; }
 
 Specifies whether to return all existing rows in the source table as row inserts the first time the stream is consumed.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/snowflake/r/stream#show_initial_rows Stream#show_initial_rows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/stream#show_initial_rows Stream#show_initial_rows}
 
 ---
 
