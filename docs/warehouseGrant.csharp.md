@@ -1,3 +1,7 @@
+# `snowflake_warehouse_grant`
+
+Refer to the Terraform Registory for docs: [`snowflake_warehouse_grant`](https://www.terraform.io/docs/providers/snowflake/r/warehouse_grant).
+
 # `warehouseGrant` Submodule <a name="`warehouseGrant` Submodule" id="@cdktf/provider-snowflake.warehouseGrant"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `snowflake_sequence`
+
+Refer to the Terraform Registory for docs: [`snowflake_sequence`](https://www.terraform.io/docs/providers/snowflake/r/sequence).
+
 # `sequence` Submodule <a name="`sequence` Submodule" id="@cdktf/provider-snowflake.sequence"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

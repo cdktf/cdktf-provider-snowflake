@@ -1,3 +1,7 @@
+# `data_snowflake_file_formats`
+
+Refer to the Terraform Registory for docs: [`data_snowflake_file_formats`](https://www.terraform.io/docs/providers/snowflake/d/file_formats).
+
 # `dataSnowflakeFileFormats` Submodule <a name="`dataSnowflakeFileFormats` Submodule" id="@cdktf/provider-snowflake.dataSnowflakeFileFormats"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

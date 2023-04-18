@@ -1,3 +1,7 @@
+# `data_snowflake_parameters`
+
+Refer to the Terraform Registory for docs: [`data_snowflake_parameters`](https://www.terraform.io/docs/providers/snowflake/d/parameters).
+
 # `dataSnowflakeParameters` Submodule <a name="`dataSnowflakeParameters` Submodule" id="@cdktf/provider-snowflake.dataSnowflakeParameters"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

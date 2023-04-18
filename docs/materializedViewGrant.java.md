@@ -1,3 +1,7 @@
+# `snowflake_materialized_view_grant`
+
+Refer to the Terraform Registory for docs: [`snowflake_materialized_view_grant`](https://www.terraform.io/docs/providers/snowflake/r/materialized_view_grant).
+
 # `materializedViewGrant` Submodule <a name="`materializedViewGrant` Submodule" id="@cdktf/provider-snowflake.materializedViewGrant"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

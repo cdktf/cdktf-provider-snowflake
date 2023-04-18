@@ -1,3 +1,7 @@
+# `snowflake_warehouse`
+
+Refer to the Terraform Registory for docs: [`snowflake_warehouse`](https://www.terraform.io/docs/providers/snowflake/r/warehouse).
+
 # `warehouse` Submodule <a name="`warehouse` Submodule" id="@cdktf/provider-snowflake.warehouse"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

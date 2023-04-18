@@ -1,3 +1,7 @@
+# `snowflake_external_oauth_integration`
+
+Refer to the Terraform Registory for docs: [`snowflake_external_oauth_integration`](https://www.terraform.io/docs/providers/snowflake/r/external_oauth_integration).
+
 # `externalOauthIntegration` Submodule <a name="`externalOauthIntegration` Submodule" id="@cdktf/provider-snowflake.externalOauthIntegration"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

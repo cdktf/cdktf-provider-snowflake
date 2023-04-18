@@ -1,3 +1,7 @@
+# `data_snowflake_masking_policies`
+
+Refer to the Terraform Registory for docs: [`data_snowflake_masking_policies`](https://www.terraform.io/docs/providers/snowflake/d/masking_policies).
+
 # `dataSnowflakeMaskingPolicies` Submodule <a name="`dataSnowflakeMaskingPolicies` Submodule" id="@cdktf/provider-snowflake.dataSnowflakeMaskingPolicies"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

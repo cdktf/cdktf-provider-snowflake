@@ -1,3 +1,7 @@
+# `snowflake_tag_masking_policy_association`
+
+Refer to the Terraform Registory for docs: [`snowflake_tag_masking_policy_association`](https://www.terraform.io/docs/providers/snowflake/r/tag_masking_policy_association).
+
 # `tagMaskingPolicyAssociation` Submodule <a name="`tagMaskingPolicyAssociation` Submodule" id="@cdktf/provider-snowflake.tagMaskingPolicyAssociation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

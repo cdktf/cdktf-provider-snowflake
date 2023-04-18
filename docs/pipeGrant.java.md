@@ -1,3 +1,7 @@
+# `snowflake_pipe_grant`
+
+Refer to the Terraform Registory for docs: [`snowflake_pipe_grant`](https://www.terraform.io/docs/providers/snowflake/r/pipe_grant).
+
 # `pipeGrant` Submodule <a name="`pipeGrant` Submodule" id="@cdktf/provider-snowflake.pipeGrant"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `snowflake_share`
+
+Refer to the Terraform Registory for docs: [`snowflake_share`](https://www.terraform.io/docs/providers/snowflake/r/share).
+
 # `share` Submodule <a name="`share` Submodule" id="@cdktf/provider-snowflake.share"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

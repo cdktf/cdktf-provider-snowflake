@@ -1,3 +1,7 @@
+# `snowflake_procedure_grant`
+
+Refer to the Terraform Registory for docs: [`snowflake_procedure_grant`](https://www.terraform.io/docs/providers/snowflake/r/procedure_grant).
+
 # `procedureGrant` Submodule <a name="`procedureGrant` Submodule" id="@cdktf/provider-snowflake.procedureGrant"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

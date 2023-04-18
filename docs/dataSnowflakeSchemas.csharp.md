@@ -1,3 +1,7 @@
+# `data_snowflake_schemas`
+
+Refer to the Terraform Registory for docs: [`data_snowflake_schemas`](https://www.terraform.io/docs/providers/snowflake/d/schemas).
+
 # `dataSnowflakeSchemas` Submodule <a name="`dataSnowflakeSchemas` Submodule" id="@cdktf/provider-snowflake.dataSnowflakeSchemas"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

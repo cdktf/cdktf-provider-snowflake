@@ -1,3 +1,7 @@
+# `snowflake_stream`
+
+Refer to the Terraform Registory for docs: [`snowflake_stream`](https://www.terraform.io/docs/providers/snowflake/r/stream).
+
 # `stream` Submodule <a name="`stream` Submodule" id="@cdktf/provider-snowflake.stream"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

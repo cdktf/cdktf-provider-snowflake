@@ -1,3 +1,7 @@
+# `data_snowflake_views`
+
+Refer to the Terraform Registory for docs: [`data_snowflake_views`](https://www.terraform.io/docs/providers/snowflake/d/views).
+
 # `dataSnowflakeViews` Submodule <a name="`dataSnowflakeViews` Submodule" id="@cdktf/provider-snowflake.dataSnowflakeViews"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

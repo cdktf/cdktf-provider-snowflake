@@ -1,3 +1,7 @@
+# `data_snowflake_grants`
+
+Refer to the Terraform Registory for docs: [`data_snowflake_grants`](https://www.terraform.io/docs/providers/snowflake/d/grants).
+
 # `dataSnowflakeGrants` Submodule <a name="`dataSnowflakeGrants` Submodule" id="@cdktf/provider-snowflake.dataSnowflakeGrants"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

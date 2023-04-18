@@ -1,3 +1,7 @@
+# `snowflake_stage_grant`
+
+Refer to the Terraform Registory for docs: [`snowflake_stage_grant`](https://www.terraform.io/docs/providers/snowflake/r/stage_grant).
+
 # `stageGrant` Submodule <a name="`stageGrant` Submodule" id="@cdktf/provider-snowflake.stageGrant"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
