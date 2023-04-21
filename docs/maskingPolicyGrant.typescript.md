@@ -1,6 +1,6 @@
 # `snowflake_masking_policy_grant`
 
-Refer to the Terraform Registory for docs: [`snowflake_masking_policy_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/masking_policy_grant).
+Refer to the Terraform Registory for docs: [`snowflake_masking_policy_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/masking_policy_grant).
 
 # `maskingPolicyGrant` Submodule <a name="`maskingPolicyGrant` Submodule" id="@cdktf/provider-snowflake.maskingPolicyGrant"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`snowflake_masking_policy_grant`](ht
 
 ### MaskingPolicyGrant <a name="MaskingPolicyGrant" id="@cdktf/provider-snowflake.maskingPolicyGrant.MaskingPolicyGrant"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/masking_policy_grant snowflake_masking_policy_grant}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/masking_policy_grant snowflake_masking_policy_grant}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.maskingPolicyGrant.MaskingPolicyGrant.Initializer"></a>
 
@@ -746,7 +746,7 @@ const maskingPolicyGrantConfig: maskingPolicyGrant.MaskingPolicyGrantConfig = { 
 | <code><a href="#@cdktf/provider-snowflake.maskingPolicyGrant.MaskingPolicyGrantConfig.property.maskingPolicyName">maskingPolicyName</a></code> | <code>string</code> | The name of the masking policy on which to grant privileges immediately. |
 | <code><a href="#@cdktf/provider-snowflake.maskingPolicyGrant.MaskingPolicyGrantConfig.property.schemaName">schemaName</a></code> | <code>string</code> | The name of the schema containing the masking policy on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.maskingPolicyGrant.MaskingPolicyGrantConfig.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
-| <code><a href="#@cdktf/provider-snowflake.maskingPolicyGrant.MaskingPolicyGrantConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/masking_policy_grant#id MaskingPolicyGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.maskingPolicyGrant.MaskingPolicyGrantConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/masking_policy_grant#id MaskingPolicyGrant#id}. |
 | <code><a href="#@cdktf/provider-snowflake.maskingPolicyGrant.MaskingPolicyGrantConfig.property.privilege">privilege</a></code> | <code>string</code> | The privilege to grant on the masking policy. |
 | <code><a href="#@cdktf/provider-snowflake.maskingPolicyGrant.MaskingPolicyGrantConfig.property.roles">roles</a></code> | <code>string[]</code> | Grants privilege to these roles. |
 | <code><a href="#@cdktf/provider-snowflake.maskingPolicyGrant.MaskingPolicyGrantConfig.property.withGrantOption">withGrantOption</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, allows the recipient role to grant the privileges to other roles. |
@@ -833,7 +833,7 @@ public readonly databaseName: string;
 
 The name of the database containing the masking policy on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/masking_policy_grant#database_name MaskingPolicyGrant#database_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/masking_policy_grant#database_name MaskingPolicyGrant#database_name}
 
 ---
 
@@ -847,7 +847,7 @@ public readonly maskingPolicyName: string;
 
 The name of the masking policy on which to grant privileges immediately.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/masking_policy_grant#masking_policy_name MaskingPolicyGrant#masking_policy_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/masking_policy_grant#masking_policy_name MaskingPolicyGrant#masking_policy_name}
 
 ---
 
@@ -861,7 +861,7 @@ public readonly schemaName: string;
 
 The name of the schema containing the masking policy on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/masking_policy_grant#schema_name MaskingPolicyGrant#schema_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/masking_policy_grant#schema_name MaskingPolicyGrant#schema_name}
 
 ---
 
@@ -877,7 +877,7 @@ When this is set to true, multiple grants of the same type can be created.
 
 This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/masking_policy_grant#enable_multiple_grants MaskingPolicyGrant#enable_multiple_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/masking_policy_grant#enable_multiple_grants MaskingPolicyGrant#enable_multiple_grants}
 
 ---
 
@@ -889,7 +889,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/masking_policy_grant#id MaskingPolicyGrant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/masking_policy_grant#id MaskingPolicyGrant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -906,7 +906,7 @@ public readonly privilege: string;
 
 The privilege to grant on the masking policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/masking_policy_grant#privilege MaskingPolicyGrant#privilege}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/masking_policy_grant#privilege MaskingPolicyGrant#privilege}
 
 ---
 
@@ -920,7 +920,7 @@ public readonly roles: string[];
 
 Grants privilege to these roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/masking_policy_grant#roles MaskingPolicyGrant#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/masking_policy_grant#roles MaskingPolicyGrant#roles}
 
 ---
 
@@ -934,7 +934,7 @@ public readonly withGrantOption: boolean | IResolvable;
 
 When this is set to true, allows the recipient role to grant the privileges to other roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/masking_policy_grant#with_grant_option MaskingPolicyGrant#with_grant_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/masking_policy_grant#with_grant_option MaskingPolicyGrant#with_grant_option}
 
 ---
 

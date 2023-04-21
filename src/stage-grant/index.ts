@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/stage_grant
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/stage_grant
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,62 +10,68 @@ export interface StageGrantConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the database containing the current stage on which to grant privileges.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/stage_grant#database_name StageGrant#database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/stage_grant#database_name StageGrant#database_name}
   */
   readonly databaseName: string;
   /**
   * When this is set to true, multiple grants of the same type can be created. This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/stage_grant#enable_multiple_grants StageGrant#enable_multiple_grants}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/stage_grant#enable_multiple_grants StageGrant#enable_multiple_grants}
   */
   readonly enableMultipleGrants?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/stage_grant#id StageGrant#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/stage_grant#id StageGrant#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * When this is set to true and a schema_name is provided, apply this grant on all future stages in the given schema. When this is true and no schema_name is provided apply this grant on all future stages in the given database. The stage_name field must be unset in order to use on_future.
+  * When this is set to true and a schema_name is provided, apply this grant on all stages in the given schema. When this is true and no schema_name is provided apply this grant on all stages in the given database. The stage_name field must be unset in order to use on_all. Cannot be used together with on_future. Importing the resource with the on_all=true option is not supported.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/stage_grant#on_future StageGrant#on_future}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/stage_grant#on_all StageGrant#on_all}
+  */
+  readonly onAll?: boolean | cdktf.IResolvable;
+  /**
+  * When this is set to true and a schema_name is provided, apply this grant on all future stages in the given schema. When this is true and no schema_name is provided apply this grant on all future stages in the given database. The stage_name field must be unset in order to use on_future. Cannot be used together with on_all.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/stage_grant#on_future StageGrant#on_future}
   */
   readonly onFuture?: boolean | cdktf.IResolvable;
   /**
   * The privilege to grant on the stage.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/stage_grant#privilege StageGrant#privilege}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/stage_grant#privilege StageGrant#privilege}
   */
   readonly privilege?: string;
   /**
   * Grants privilege to these roles.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/stage_grant#roles StageGrant#roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/stage_grant#roles StageGrant#roles}
   */
   readonly roles: string[];
   /**
   * The name of the schema containing the current stage on which to grant privileges.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/stage_grant#schema_name StageGrant#schema_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/stage_grant#schema_name StageGrant#schema_name}
   */
   readonly schemaName?: string;
   /**
-  * The name of the stage on which to grant privilege (only valid if on_future is false).
+  * The name of the stage on which to grant privilege (only valid if on_future and on_all are false).
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/stage_grant#stage_name StageGrant#stage_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/stage_grant#stage_name StageGrant#stage_name}
   */
   readonly stageName?: string;
   /**
   * When this is set to true, allows the recipient role to grant the privileges to other roles.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/stage_grant#with_grant_option StageGrant#with_grant_option}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/stage_grant#with_grant_option StageGrant#with_grant_option}
   */
   readonly withGrantOption?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/stage_grant snowflake_stage_grant}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/stage_grant snowflake_stage_grant}
 */
 export class StageGrant extends cdktf.TerraformResource {
 
@@ -79,7 +85,7 @@ export class StageGrant extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/stage_grant snowflake_stage_grant} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/stage_grant snowflake_stage_grant} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -90,7 +96,7 @@ export class StageGrant extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_stage_grant',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.61.0',
+        providerVersion: '0.62.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
@@ -104,6 +110,7 @@ export class StageGrant extends cdktf.TerraformResource {
     this._databaseName = config.databaseName;
     this._enableMultipleGrants = config.enableMultipleGrants;
     this._id = config.id;
+    this._onAll = config.onAll;
     this._onFuture = config.onFuture;
     this._privilege = config.privilege;
     this._roles = config.roles;
@@ -159,6 +166,22 @@ export class StageGrant extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // on_all - computed: false, optional: true, required: false
+  private _onAll?: boolean | cdktf.IResolvable; 
+  public get onAll() {
+    return this.getBooleanAttribute('on_all');
+  }
+  public set onAll(value: boolean | cdktf.IResolvable) {
+    this._onAll = value;
+  }
+  public resetOnAll() {
+    this._onAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get onAllInput() {
+    return this._onAll;
   }
 
   // on_future - computed: false, optional: true, required: false
@@ -263,6 +286,7 @@ export class StageGrant extends cdktf.TerraformResource {
       database_name: cdktf.stringToTerraform(this._databaseName),
       enable_multiple_grants: cdktf.booleanToTerraform(this._enableMultipleGrants),
       id: cdktf.stringToTerraform(this._id),
+      on_all: cdktf.booleanToTerraform(this._onAll),
       on_future: cdktf.booleanToTerraform(this._onFuture),
       privilege: cdktf.stringToTerraform(this._privilege),
       roles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._roles),
