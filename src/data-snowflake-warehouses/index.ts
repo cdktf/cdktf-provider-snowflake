@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/warehouses
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/data-sources/warehouses
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataSnowflakeWarehousesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/warehouses#id DataSnowflakeWarehouses#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/data-sources/warehouses#id DataSnowflakeWarehouses#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -106,7 +106,7 @@ export class DataSnowflakeWarehousesWarehousesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/warehouses snowflake_warehouses}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/data-sources/warehouses snowflake_warehouses}
 */
 export class DataSnowflakeWarehouses extends cdktf.TerraformDataSource {
 
@@ -120,7 +120,7 @@ export class DataSnowflakeWarehouses extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/data-sources/warehouses snowflake_warehouses} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/data-sources/warehouses snowflake_warehouses} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -131,7 +131,7 @@ export class DataSnowflakeWarehouses extends cdktf.TerraformDataSource {
       terraformResourceType: 'snowflake_warehouses',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.61.0',
+        providerVersion: '0.62.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,

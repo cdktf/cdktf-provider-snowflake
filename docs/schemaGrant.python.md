@@ -1,6 +1,6 @@
 # `snowflake_schema_grant`
 
-Refer to the Terraform Registory for docs: [`snowflake_schema_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema_grant).
+Refer to the Terraform Registory for docs: [`snowflake_schema_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/schema_grant).
 
 # `schemaGrant` Submodule <a name="`schemaGrant` Submodule" id="@cdktf/provider-snowflake.schemaGrant"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`snowflake_schema_grant`](https://re
 
 ### SchemaGrant <a name="SchemaGrant" id="@cdktf/provider-snowflake.schemaGrant.SchemaGrant"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema_grant snowflake_schema_grant}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/schema_grant snowflake_schema_grant}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schemaGrant.SchemaGrant.Initializer"></a>
 
@@ -28,6 +28,7 @@ schemaGrant.SchemaGrant(
   database_name: str,
   enable_multiple_grants: typing.Union[bool, IResolvable] = None,
   id: str = None,
+  on_all: typing.Union[bool, IResolvable] = None,
   on_future: typing.Union[bool, IResolvable] = None,
   privilege: str = None,
   roles: typing.List[str] = None,
@@ -50,12 +51,13 @@ schemaGrant.SchemaGrant(
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.Initializer.parameter.databaseName">database_name</a></code> | <code>str</code> | The name of the database containing the schema on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.Initializer.parameter.enableMultipleGrants">enable_multiple_grants</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When this is set to true, multiple grants of the same type can be created. |
-| <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema_grant#id SchemaGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/schema_grant#id SchemaGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.Initializer.parameter.onAll">on_all</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When this is set to true, apply this grant on all schemas in the given database. |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.Initializer.parameter.onFuture">on_future</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When this is set to true, apply this grant on all future schemas in the given database. |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.Initializer.parameter.privilege">privilege</a></code> | <code>str</code> | The privilege to grant on the current or future schema. |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.Initializer.parameter.roles">roles</a></code> | <code>typing.List[str]</code> | Grants privilege to these roles. |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.Initializer.parameter.schemaName">schema_name</a></code> | <code>str</code> | The name of the schema on which to grant privileges. |
-| <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.Initializer.parameter.shares">shares</a></code> | <code>typing.List[str]</code> | Grants privilege to these shares (only valid if on_future is unset). |
+| <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.Initializer.parameter.shares">shares</a></code> | <code>typing.List[str]</code> | Grants privilege to these shares (only valid if on_future and on_all are unset). |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.Initializer.parameter.withGrantOption">with_grant_option</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When this is set to true, allows the recipient role to grant the privileges to other roles. |
 
 ---
@@ -126,7 +128,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the database containing the schema on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema_grant#database_name SchemaGrant#database_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/schema_grant#database_name SchemaGrant#database_name}
 
 ---
 
@@ -138,7 +140,7 @@ When this is set to true, multiple grants of the same type can be created.
 
 This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema_grant#enable_multiple_grants SchemaGrant#enable_multiple_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/schema_grant#enable_multiple_grants SchemaGrant#enable_multiple_grants}
 
 ---
 
@@ -146,10 +148,22 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema_grant#id SchemaGrant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/schema_grant#id SchemaGrant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `on_all`<sup>Optional</sup> <a name="on_all" id="@cdktf/provider-snowflake.schemaGrant.SchemaGrant.Initializer.parameter.onAll"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+When this is set to true, apply this grant on all schemas in the given database.
+
+The schema_name and shares fields must be unset in order to use on_all. Cannot be used together with on_future. Importing the resource with the on_all=true option is not supported.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/schema_grant#on_all SchemaGrant#on_all}
 
 ---
 
@@ -159,9 +173,9 @@ If you experience problems setting this value it might not be settable. Please t
 
 When this is set to true, apply this grant on all future schemas in the given database.
 
-The schema_name and shares fields must be unset in order to use on_future.
+The schema_name and shares fields must be unset in order to use on_future. Cannot be used together with on_all.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema_grant#on_future SchemaGrant#on_future}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/schema_grant#on_future SchemaGrant#on_future}
 
 ---
 
@@ -173,7 +187,7 @@ The privilege to grant on the current or future schema.
 
 Note that if "OWNERSHIP" is specified, ensure that the role that terraform is using is granted access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema_grant#privilege SchemaGrant#privilege}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/schema_grant#privilege SchemaGrant#privilege}
 
 ---
 
@@ -183,7 +197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Grants privilege to these roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema_grant#roles SchemaGrant#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/schema_grant#roles SchemaGrant#roles}
 
 ---
 
@@ -193,7 +207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The name of the schema on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema_grant#schema_name SchemaGrant#schema_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/schema_grant#schema_name SchemaGrant#schema_name}
 
 ---
 
@@ -201,9 +215,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* typing.List[str]
 
-Grants privilege to these shares (only valid if on_future is unset).
+Grants privilege to these shares (only valid if on_future and on_all are unset).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema_grant#shares SchemaGrant#shares}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/schema_grant#shares SchemaGrant#shares}
 
 ---
 
@@ -213,7 +227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 When this is set to true, allows the recipient role to grant the privileges to other roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema_grant#with_grant_option SchemaGrant#with_grant_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/schema_grant#with_grant_option SchemaGrant#with_grant_option}
 
 ---
 
@@ -239,6 +253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.resetEnableMultipleGrants">reset_enable_multiple_grants</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.resetOnAll">reset_on_all</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.resetOnFuture">reset_on_future</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.resetPrivilege">reset_privilege</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.resetRoles">reset_roles</a></code> | *No description.* |
@@ -469,6 +484,12 @@ def reset_enable_multiple_grants() -> None
 def reset_id() -> None
 ```
 
+##### `reset_on_all` <a name="reset_on_all" id="@cdktf/provider-snowflake.schemaGrant.SchemaGrant.resetOnAll"></a>
+
+```python
+def reset_on_all() -> None
+```
+
 ##### `reset_on_future` <a name="reset_on_future" id="@cdktf/provider-snowflake.schemaGrant.SchemaGrant.resetOnFuture"></a>
 
 ```python
@@ -602,6 +623,7 @@ schemaGrant.SchemaGrant.is_terraform_resource(
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.property.databaseNameInput">database_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.property.enableMultipleGrantsInput">enable_multiple_grants_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.property.onAllInput">on_all_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.property.onFutureInput">on_future_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.property.privilegeInput">privilege_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.property.rolesInput">roles_input</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -611,6 +633,7 @@ schemaGrant.SchemaGrant.is_terraform_resource(
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.property.databaseName">database_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.property.enableMultipleGrants">enable_multiple_grants</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.property.onAll">on_all</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.property.onFuture">on_future</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.property.privilege">privilege</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.property.roles">roles</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -792,6 +815,16 @@ id_input: str
 
 ---
 
+##### `on_all_input`<sup>Optional</sup> <a name="on_all_input" id="@cdktf/provider-snowflake.schemaGrant.SchemaGrant.property.onAllInput"></a>
+
+```python
+on_all_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `on_future_input`<sup>Optional</sup> <a name="on_future_input" id="@cdktf/provider-snowflake.schemaGrant.SchemaGrant.property.onFutureInput"></a>
 
 ```python
@@ -879,6 +912,16 @@ id: str
 ```
 
 - *Type:* str
+
+---
+
+##### `on_all`<sup>Required</sup> <a name="on_all" id="@cdktf/provider-snowflake.schemaGrant.SchemaGrant.property.onAll"></a>
+
+```python
+on_all: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
 
 ---
 
@@ -980,6 +1023,7 @@ schemaGrant.SchemaGrantConfig(
   database_name: str,
   enable_multiple_grants: typing.Union[bool, IResolvable] = None,
   id: str = None,
+  on_all: typing.Union[bool, IResolvable] = None,
   on_future: typing.Union[bool, IResolvable] = None,
   privilege: str = None,
   roles: typing.List[str] = None,
@@ -1002,12 +1046,13 @@ schemaGrant.SchemaGrantConfig(
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrantConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrantConfig.property.databaseName">database_name</a></code> | <code>str</code> | The name of the database containing the schema on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrantConfig.property.enableMultipleGrants">enable_multiple_grants</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When this is set to true, multiple grants of the same type can be created. |
-| <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrantConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema_grant#id SchemaGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrantConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/schema_grant#id SchemaGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrantConfig.property.onAll">on_all</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When this is set to true, apply this grant on all schemas in the given database. |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrantConfig.property.onFuture">on_future</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When this is set to true, apply this grant on all future schemas in the given database. |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrantConfig.property.privilege">privilege</a></code> | <code>str</code> | The privilege to grant on the current or future schema. |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrantConfig.property.roles">roles</a></code> | <code>typing.List[str]</code> | Grants privilege to these roles. |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrantConfig.property.schemaName">schema_name</a></code> | <code>str</code> | The name of the schema on which to grant privileges. |
-| <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrantConfig.property.shares">shares</a></code> | <code>typing.List[str]</code> | Grants privilege to these shares (only valid if on_future is unset). |
+| <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrantConfig.property.shares">shares</a></code> | <code>typing.List[str]</code> | Grants privilege to these shares (only valid if on_future and on_all are unset). |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrantConfig.property.withGrantOption">with_grant_option</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When this is set to true, allows the recipient role to grant the privileges to other roles. |
 
 ---
@@ -1092,7 +1137,7 @@ database_name: str
 
 The name of the database containing the schema on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema_grant#database_name SchemaGrant#database_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/schema_grant#database_name SchemaGrant#database_name}
 
 ---
 
@@ -1108,7 +1153,7 @@ When this is set to true, multiple grants of the same type can be created.
 
 This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema_grant#enable_multiple_grants SchemaGrant#enable_multiple_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/schema_grant#enable_multiple_grants SchemaGrant#enable_multiple_grants}
 
 ---
 
@@ -1120,10 +1165,26 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema_grant#id SchemaGrant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/schema_grant#id SchemaGrant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `on_all`<sup>Optional</sup> <a name="on_all" id="@cdktf/provider-snowflake.schemaGrant.SchemaGrantConfig.property.onAll"></a>
+
+```python
+on_all: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+When this is set to true, apply this grant on all schemas in the given database.
+
+The schema_name and shares fields must be unset in order to use on_all. Cannot be used together with on_future. Importing the resource with the on_all=true option is not supported.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/schema_grant#on_all SchemaGrant#on_all}
 
 ---
 
@@ -1137,9 +1198,9 @@ on_future: typing.Union[bool, IResolvable]
 
 When this is set to true, apply this grant on all future schemas in the given database.
 
-The schema_name and shares fields must be unset in order to use on_future.
+The schema_name and shares fields must be unset in order to use on_future. Cannot be used together with on_all.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema_grant#on_future SchemaGrant#on_future}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/schema_grant#on_future SchemaGrant#on_future}
 
 ---
 
@@ -1155,7 +1216,7 @@ The privilege to grant on the current or future schema.
 
 Note that if "OWNERSHIP" is specified, ensure that the role that terraform is using is granted access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema_grant#privilege SchemaGrant#privilege}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/schema_grant#privilege SchemaGrant#privilege}
 
 ---
 
@@ -1169,7 +1230,7 @@ roles: typing.List[str]
 
 Grants privilege to these roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema_grant#roles SchemaGrant#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/schema_grant#roles SchemaGrant#roles}
 
 ---
 
@@ -1183,7 +1244,7 @@ schema_name: str
 
 The name of the schema on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema_grant#schema_name SchemaGrant#schema_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/schema_grant#schema_name SchemaGrant#schema_name}
 
 ---
 
@@ -1195,9 +1256,9 @@ shares: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Grants privilege to these shares (only valid if on_future is unset).
+Grants privilege to these shares (only valid if on_future and on_all are unset).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema_grant#shares SchemaGrant#shares}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/schema_grant#shares SchemaGrant#shares}
 
 ---
 
@@ -1211,7 +1272,7 @@ with_grant_option: typing.Union[bool, IResolvable]
 
 When this is set to true, allows the recipient role to grant the privileges to other roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/schema_grant#with_grant_option SchemaGrant#with_grant_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/schema_grant#with_grant_option SchemaGrant#with_grant_option}
 
 ---
 

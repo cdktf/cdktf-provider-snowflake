@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/materialized_view_grant
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/materialized_view_grant
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,68 +10,74 @@ export interface MaterializedViewGrantConfig extends cdktf.TerraformMetaArgument
   /**
   * The name of the database containing the current or future materialized views on which to grant privileges.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/materialized_view_grant#database_name MaterializedViewGrant#database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/materialized_view_grant#database_name MaterializedViewGrant#database_name}
   */
   readonly databaseName: string;
   /**
   * When this is set to true, multiple grants of the same type can be created. This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/materialized_view_grant#enable_multiple_grants MaterializedViewGrant#enable_multiple_grants}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/materialized_view_grant#enable_multiple_grants MaterializedViewGrant#enable_multiple_grants}
   */
   readonly enableMultipleGrants?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/materialized_view_grant#id MaterializedViewGrant#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/materialized_view_grant#id MaterializedViewGrant#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * The name of the materialized view on which to grant privileges immediately (only valid if on_future is false).
+  * The name of the materialized view on which to grant privileges immediately (only valid if on_future and on_all are false).
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/materialized_view_grant#materialized_view_name MaterializedViewGrant#materialized_view_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/materialized_view_grant#materialized_view_name MaterializedViewGrant#materialized_view_name}
   */
   readonly materializedViewName?: string;
   /**
-  * When this is set to true and a schema_name is provided, apply this grant on all future materialized views in the given schema. When this is true and no schema_name is provided apply this grant on all future materialized views in the given database. The materialized_view_name and shares fields must be unset in order to use on_future.
+  * When this is set to true and a schema_name is provided, apply this grant on all materialized views in the given schema. When this is true and no schema_name is provided apply this grant on all materialized views in the given database. The materialized_view_name and shares fields must be unset in order to use on_all. Cannot be used together with on_future. Importing the resource with the on_all=true option is not supported.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/materialized_view_grant#on_future MaterializedViewGrant#on_future}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/materialized_view_grant#on_all MaterializedViewGrant#on_all}
+  */
+  readonly onAll?: boolean | cdktf.IResolvable;
+  /**
+  * When this is set to true and a schema_name is provided, apply this grant on all future materialized views in the given schema. When this is true and no schema_name is provided apply this grant on all future materialized views in the given database. The materialized_view_name and shares fields must be unset in order to use on_future. Cannot be used together with on_all.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/materialized_view_grant#on_future MaterializedViewGrant#on_future}
   */
   readonly onFuture?: boolean | cdktf.IResolvable;
   /**
-  * The privilege to grant on the current or future materialized view view.
+  * The privilege to grant on the current or future materialized view.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/materialized_view_grant#privilege MaterializedViewGrant#privilege}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/materialized_view_grant#privilege MaterializedViewGrant#privilege}
   */
   readonly privilege?: string;
   /**
   * Grants privilege to these roles.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/materialized_view_grant#roles MaterializedViewGrant#roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/materialized_view_grant#roles MaterializedViewGrant#roles}
   */
   readonly roles?: string[];
   /**
   * The name of the schema containing the current or future materialized views on which to grant privileges.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/materialized_view_grant#schema_name MaterializedViewGrant#schema_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/materialized_view_grant#schema_name MaterializedViewGrant#schema_name}
   */
   readonly schemaName?: string;
   /**
-  * Grants privilege to these shares (only valid if on_future is false).
+  * Grants privilege to these shares (only valid if on_future and on_all are false).
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/materialized_view_grant#shares MaterializedViewGrant#shares}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/materialized_view_grant#shares MaterializedViewGrant#shares}
   */
   readonly shares?: string[];
   /**
   * When this is set to true, allows the recipient role to grant the privileges to other roles.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/materialized_view_grant#with_grant_option MaterializedViewGrant#with_grant_option}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/materialized_view_grant#with_grant_option MaterializedViewGrant#with_grant_option}
   */
   readonly withGrantOption?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/materialized_view_grant snowflake_materialized_view_grant}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/materialized_view_grant snowflake_materialized_view_grant}
 */
 export class MaterializedViewGrant extends cdktf.TerraformResource {
 
@@ -85,7 +91,7 @@ export class MaterializedViewGrant extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.61.0/docs/resources/materialized_view_grant snowflake_materialized_view_grant} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/resources/materialized_view_grant snowflake_materialized_view_grant} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -96,7 +102,7 @@ export class MaterializedViewGrant extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_materialized_view_grant',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.61.0',
+        providerVersion: '0.62.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
@@ -111,6 +117,7 @@ export class MaterializedViewGrant extends cdktf.TerraformResource {
     this._enableMultipleGrants = config.enableMultipleGrants;
     this._id = config.id;
     this._materializedViewName = config.materializedViewName;
+    this._onAll = config.onAll;
     this._onFuture = config.onFuture;
     this._privilege = config.privilege;
     this._roles = config.roles;
@@ -182,6 +189,22 @@ export class MaterializedViewGrant extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get materializedViewNameInput() {
     return this._materializedViewName;
+  }
+
+  // on_all - computed: false, optional: true, required: false
+  private _onAll?: boolean | cdktf.IResolvable; 
+  public get onAll() {
+    return this.getBooleanAttribute('on_all');
+  }
+  public set onAll(value: boolean | cdktf.IResolvable) {
+    this._onAll = value;
+  }
+  public resetOnAll() {
+    this._onAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get onAllInput() {
+    return this._onAll;
   }
 
   // on_future - computed: false, optional: true, required: false
@@ -290,6 +313,7 @@ export class MaterializedViewGrant extends cdktf.TerraformResource {
       enable_multiple_grants: cdktf.booleanToTerraform(this._enableMultipleGrants),
       id: cdktf.stringToTerraform(this._id),
       materialized_view_name: cdktf.stringToTerraform(this._materializedViewName),
+      on_all: cdktf.booleanToTerraform(this._onAll),
       on_future: cdktf.booleanToTerraform(this._onFuture),
       privilege: cdktf.stringToTerraform(this._privilege),
       roles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._roles),
