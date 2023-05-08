@@ -89,6 +89,7 @@ The following submodules are available:
 - [stream](./stream.csharp.md)
 - [streamGrant](./streamGrant.csharp.md)
 - [table](./table.csharp.md)
+- [tableColumnMaskingPolicyApplication](./tableColumnMaskingPolicyApplication.csharp.md)
 - [tableConstraint](./tableConstraint.csharp.md)
 - [tableGrant](./tableGrant.csharp.md)
 - [tag](./tag.csharp.md)

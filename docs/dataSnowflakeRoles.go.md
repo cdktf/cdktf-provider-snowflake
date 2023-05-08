@@ -1,6 +1,6 @@
 # `data_snowflake_roles`
 
-Refer to the Terraform Registory for docs: [`data_snowflake_roles`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/data-sources/roles).
+Refer to the Terraform Registory for docs: [`data_snowflake_roles`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/data-sources/roles).
 
 # `dataSnowflakeRoles` Submodule <a name="`dataSnowflakeRoles` Submodule" id="@cdktf/provider-snowflake.dataSnowflakeRoles"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_snowflake_roles`](https://regi
 
 ### DataSnowflakeRoles <a name="DataSnowflakeRoles" id="@cdktf/provider-snowflake.dataSnowflakeRoles.DataSnowflakeRoles"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/data-sources/roles snowflake_roles}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/data-sources/roles snowflake_roles}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeRoles.DataSnowflakeRoles.Initializer"></a>
 
@@ -588,7 +588,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflaker
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRoles.DataSnowflakeRolesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRoles.DataSnowflakeRolesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRoles.DataSnowflakeRolesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRoles.DataSnowflakeRolesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/data-sources/roles#id DataSnowflakeRoles#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRoles.DataSnowflakeRolesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/data-sources/roles#id DataSnowflakeRoles#id}. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRoles.DataSnowflakeRolesConfig.property.pattern">Pattern</a></code> | <code>*string</code> | Filters the command output by object name. |
 
 ---
@@ -671,7 +671,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/data-sources/roles#id DataSnowflakeRoles#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/data-sources/roles#id DataSnowflakeRoles#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -688,7 +688,7 @@ Pattern *string
 
 Filters the command output by object name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/data-sources/roles#pattern DataSnowflakeRoles#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/data-sources/roles#pattern DataSnowflakeRoles#pattern}
 
 ---
 

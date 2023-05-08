@@ -89,6 +89,7 @@ The following submodules are available:
 - [stream](./stream.python.md)
 - [streamGrant](./streamGrant.python.md)
 - [table](./table.python.md)
+- [tableColumnMaskingPolicyApplication](./tableColumnMaskingPolicyApplication.python.md)
 - [tableConstraint](./tableConstraint.python.md)
 - [tableGrant](./tableGrant.python.md)
 - [tag](./tag.python.md)

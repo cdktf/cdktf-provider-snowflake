@@ -89,6 +89,7 @@ The following submodules are available:
 - [stream](./stream.go.md)
 - [streamGrant](./streamGrant.go.md)
 - [table](./table.go.md)
+- [tableColumnMaskingPolicyApplication](./tableColumnMaskingPolicyApplication.go.md)
 - [tableConstraint](./tableConstraint.go.md)
 - [tableGrant](./tableGrant.go.md)
 - [tag](./tag.go.md)
