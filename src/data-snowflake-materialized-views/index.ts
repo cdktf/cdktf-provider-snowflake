@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/data-sources/materialized_views
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/data-sources/materialized_views
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface DataSnowflakeMaterializedViewsConfig extends cdktf.TerraformMet
   /**
   * The database from which to return the schemas from.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/data-sources/materialized_views#database DataSnowflakeMaterializedViews#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/data-sources/materialized_views#database DataSnowflakeMaterializedViews#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/data-sources/materialized_views#id DataSnowflakeMaterializedViews#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/data-sources/materialized_views#id DataSnowflakeMaterializedViews#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,7 +23,7 @@ export interface DataSnowflakeMaterializedViewsConfig extends cdktf.TerraformMet
   /**
   * The schema from which to return the views from.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/data-sources/materialized_views#schema DataSnowflakeMaterializedViews#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/data-sources/materialized_views#schema DataSnowflakeMaterializedViews#schema}
   */
   readonly schema: string;
 }
@@ -108,7 +108,7 @@ export class DataSnowflakeMaterializedViewsMaterializedViewsList extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/data-sources/materialized_views snowflake_materialized_views}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/data-sources/materialized_views snowflake_materialized_views}
 */
 export class DataSnowflakeMaterializedViews extends cdktf.TerraformDataSource {
 
@@ -122,7 +122,7 @@ export class DataSnowflakeMaterializedViews extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/data-sources/materialized_views snowflake_materialized_views} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/data-sources/materialized_views snowflake_materialized_views} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -133,7 +133,7 @@ export class DataSnowflakeMaterializedViews extends cdktf.TerraformDataSource {
       terraformResourceType: 'snowflake_materialized_views',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.62.0',
+        providerVersion: '0.63.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,

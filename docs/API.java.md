@@ -89,6 +89,7 @@ The following submodules are available:
 - [stream](./stream.java.md)
 - [streamGrant](./streamGrant.java.md)
 - [table](./table.java.md)
+- [tableColumnMaskingPolicyApplication](./tableColumnMaskingPolicyApplication.java.md)
 - [tableConstraint](./tableConstraint.java.md)
 - [tableGrant](./tableGrant.java.md)
 - [tag](./tag.java.md)

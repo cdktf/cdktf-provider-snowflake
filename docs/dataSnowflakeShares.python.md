@@ -1,6 +1,6 @@
 # `data_snowflake_shares`
 
-Refer to the Terraform Registory for docs: [`data_snowflake_shares`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/data-sources/shares).
+Refer to the Terraform Registory for docs: [`data_snowflake_shares`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/data-sources/shares).
 
 # `dataSnowflakeShares` Submodule <a name="`dataSnowflakeShares` Submodule" id="@cdktf/provider-snowflake.dataSnowflakeShares"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_snowflake_shares`](https://reg
 
 ### DataSnowflakeShares <a name="DataSnowflakeShares" id="@cdktf/provider-snowflake.dataSnowflakeShares.DataSnowflakeShares"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/data-sources/shares snowflake_shares}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/data-sources/shares snowflake_shares}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeShares.DataSnowflakeShares.Initializer"></a>
 
@@ -41,7 +41,7 @@ dataSnowflakeShares.DataSnowflakeShares(
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeShares.DataSnowflakeShares.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeShares.DataSnowflakeShares.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeShares.DataSnowflakeShares.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeShares.DataSnowflakeShares.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/data-sources/shares#id DataSnowflakeShares#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeShares.DataSnowflakeShares.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/data-sources/shares#id DataSnowflakeShares#id}. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeShares.DataSnowflakeShares.Initializer.parameter.pattern">pattern</a></code> | <code>str</code> | Filters the command output by object name. |
 
 ---
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/data-sources/shares#id DataSnowflakeShares#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/data-sources/shares#id DataSnowflakeShares#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -123,7 +123,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Filters the command output by object name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/data-sources/shares#pattern DataSnowflakeShares#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/data-sources/shares#pattern DataSnowflakeShares#pattern}
 
 ---
 
@@ -696,7 +696,7 @@ dataSnowflakeShares.DataSnowflakeSharesConfig(
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeShares.DataSnowflakeSharesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeShares.DataSnowflakeSharesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeShares.DataSnowflakeSharesConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeShares.DataSnowflakeSharesConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/data-sources/shares#id DataSnowflakeShares#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeShares.DataSnowflakeSharesConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/data-sources/shares#id DataSnowflakeShares#id}. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeShares.DataSnowflakeSharesConfig.property.pattern">pattern</a></code> | <code>str</code> | Filters the command output by object name. |
 
 ---
@@ -779,7 +779,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/data-sources/shares#id DataSnowflakeShares#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/data-sources/shares#id DataSnowflakeShares#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -796,7 +796,7 @@ pattern: str
 
 Filters the command output by object name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.62.0/docs/data-sources/shares#pattern DataSnowflakeShares#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/data-sources/shares#pattern DataSnowflakeShares#pattern}
 
 ---
 

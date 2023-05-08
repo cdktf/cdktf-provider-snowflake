@@ -89,6 +89,7 @@ The following submodules are available:
 - [stream](./stream.typescript.md)
 - [streamGrant](./streamGrant.typescript.md)
 - [table](./table.typescript.md)
+- [tableColumnMaskingPolicyApplication](./tableColumnMaskingPolicyApplication.typescript.md)
 - [tableConstraint](./tableConstraint.typescript.md)
 - [tableGrant](./tableGrant.typescript.md)
 - [tag](./tag.typescript.md)

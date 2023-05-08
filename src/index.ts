@@ -53,6 +53,7 @@ export * as storageIntegration from './storage-integration';
 export * as stream from './stream';
 export * as streamGrant from './stream-grant';
 export * as table from './table';
+export * as tableColumnMaskingPolicyApplication from './table-column-masking-policy-application';
 export * as tableConstraint from './table-constraint';
 export * as tableGrant from './table-grant';
 export * as tag from './tag';
