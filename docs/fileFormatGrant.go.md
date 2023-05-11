@@ -1,6 +1,6 @@
 # `snowflake_file_format_grant`
 
-Refer to the Terraform Registory for docs: [`snowflake_file_format_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/file_format_grant).
+Refer to the Terraform Registory for docs: [`snowflake_file_format_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/file_format_grant).
 
 # `fileFormatGrant` Submodule <a name="`fileFormatGrant` Submodule" id="@cdktf/provider-snowflake.fileFormatGrant"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`snowflake_file_format_grant`](https
 
 ### FileFormatGrant <a name="FileFormatGrant" id="@cdktf/provider-snowflake.fileFormatGrant.FileFormatGrant"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/file_format_grant snowflake_file_format_grant}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/file_format_grant snowflake_file_format_grant}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.fileFormatGrant.FileFormatGrant.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/fileformatgrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/fileformatgrant"
 
 fileformatgrant.NewFileFormatGrant(scope Construct, id *string, config FileFormatGrantConfig) FileFormatGrant
 ```
@@ -73,6 +73,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.fileFormatGrant.FileFormatGrant.resetEnableMultipleGrants">ResetEnableMultipleGrants</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormatGrant.FileFormatGrant.resetFileFormatName">ResetFileFormatName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormatGrant.FileFormatGrant.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormatGrant.FileFormatGrant.resetOnAll">ResetOnAll</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormatGrant.FileFormatGrant.resetOnFuture">ResetOnFuture</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormatGrant.FileFormatGrant.resetPrivilege">ResetPrivilege</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormatGrant.FileFormatGrant.resetSchemaName">ResetSchemaName</a></code> | *No description.* |
@@ -282,6 +283,12 @@ func ResetFileFormatName()
 func ResetId()
 ```
 
+##### `ResetOnAll` <a name="ResetOnAll" id="@cdktf/provider-snowflake.fileFormatGrant.FileFormatGrant.resetOnAll"></a>
+
+```go
+func ResetOnAll()
+```
+
 ##### `ResetOnFuture` <a name="ResetOnFuture" id="@cdktf/provider-snowflake.fileFormatGrant.FileFormatGrant.resetOnFuture"></a>
 
 ```go
@@ -319,7 +326,7 @@ func ResetWithGrantOption()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.fileFormatGrant.FileFormatGrant.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/fileformatgrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/fileformatgrant"
 
 fileformatgrant.FileFormatGrant_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +358,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.fileFormatGrant.FileFormatGrant.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/fileformatgrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/fileformatgrant"
 
 fileformatgrant.FileFormatGrant_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +372,7 @@ fileformatgrant.FileFormatGrant_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.fileFormatGrant.FileFormatGrant.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/fileformatgrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/fileformatgrant"
 
 fileformatgrant.FileFormatGrant_IsTerraformResource(x interface{}) *bool
 ```
@@ -398,6 +405,7 @@ fileformatgrant.FileFormatGrant_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-snowflake.fileFormatGrant.FileFormatGrant.property.enableMultipleGrantsInput">EnableMultipleGrantsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormatGrant.FileFormatGrant.property.fileFormatNameInput">FileFormatNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormatGrant.FileFormatGrant.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormatGrant.FileFormatGrant.property.onAllInput">OnAllInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormatGrant.FileFormatGrant.property.onFutureInput">OnFutureInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormatGrant.FileFormatGrant.property.privilegeInput">PrivilegeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormatGrant.FileFormatGrant.property.rolesInput">RolesInput</a></code> | <code>*[]*string</code> | *No description.* |
@@ -407,6 +415,7 @@ fileformatgrant.FileFormatGrant_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-snowflake.fileFormatGrant.FileFormatGrant.property.enableMultipleGrants">EnableMultipleGrants</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormatGrant.FileFormatGrant.property.fileFormatName">FileFormatName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormatGrant.FileFormatGrant.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormatGrant.FileFormatGrant.property.onAll">OnAll</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormatGrant.FileFormatGrant.property.onFuture">OnFuture</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormatGrant.FileFormatGrant.property.privilege">Privilege</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormatGrant.FileFormatGrant.property.roles">Roles</a></code> | <code>*[]*string</code> | *No description.* |
@@ -597,6 +606,16 @@ func IdInput() *string
 
 ---
 
+##### `OnAllInput`<sup>Optional</sup> <a name="OnAllInput" id="@cdktf/provider-snowflake.fileFormatGrant.FileFormatGrant.property.onAllInput"></a>
+
+```go
+func OnAllInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `OnFutureInput`<sup>Optional</sup> <a name="OnFutureInput" id="@cdktf/provider-snowflake.fileFormatGrant.FileFormatGrant.property.onFutureInput"></a>
 
 ```go
@@ -687,6 +706,16 @@ func Id() *string
 
 ---
 
+##### `OnAll`<sup>Required</sup> <a name="OnAll" id="@cdktf/provider-snowflake.fileFormatGrant.FileFormatGrant.property.onAll"></a>
+
+```go
+func OnAll() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `OnFuture`<sup>Required</sup> <a name="OnFuture" id="@cdktf/provider-snowflake.fileFormatGrant.FileFormatGrant.property.onFuture"></a>
 
 ```go
@@ -762,7 +791,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.fileFormatGrant.FileFormatGrantConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/fileformatgrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/fileformatgrant"
 
 &fileformatgrant.FileFormatGrantConfig {
 	Connection: interface{},
@@ -777,6 +806,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/fileformatgran
 	EnableMultipleGrants: interface{},
 	FileFormatName: *string,
 	Id: *string,
+	OnAll: interface{},
 	OnFuture: interface{},
 	Privilege: *string,
 	SchemaName: *string,
@@ -799,7 +829,8 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/fileformatgran
 | <code><a href="#@cdktf/provider-snowflake.fileFormatGrant.FileFormatGrantConfig.property.roles">Roles</a></code> | <code>*[]*string</code> | Grants privilege to these roles. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormatGrant.FileFormatGrantConfig.property.enableMultipleGrants">EnableMultipleGrants</a></code> | <code>interface{}</code> | When this is set to true, multiple grants of the same type can be created. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormatGrant.FileFormatGrantConfig.property.fileFormatName">FileFormatName</a></code> | <code>*string</code> | The name of the file format on which to grant privileges immediately (only valid if on_future is false). |
-| <code><a href="#@cdktf/provider-snowflake.fileFormatGrant.FileFormatGrantConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/file_format_grant#id FileFormatGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormatGrant.FileFormatGrantConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/file_format_grant#id FileFormatGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormatGrant.FileFormatGrantConfig.property.onAll">OnAll</a></code> | <code>interface{}</code> | When this is set to true and a schema_name is provided, apply this grant on all file formats in the given schema. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormatGrant.FileFormatGrantConfig.property.onFuture">OnFuture</a></code> | <code>interface{}</code> | When this is set to true and a schema_name is provided, apply this grant on all future file formats in the given schema. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormatGrant.FileFormatGrantConfig.property.privilege">Privilege</a></code> | <code>*string</code> | The privilege to grant on the current or future file format. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormatGrant.FileFormatGrantConfig.property.schemaName">SchemaName</a></code> | <code>*string</code> | The name of the schema containing the current or future file formats on which to grant privileges. |
@@ -887,7 +918,7 @@ DatabaseName *string
 
 The name of the database containing the current or future file formats on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/file_format_grant#database_name FileFormatGrant#database_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/file_format_grant#database_name FileFormatGrant#database_name}
 
 ---
 
@@ -901,7 +932,7 @@ Roles *[]*string
 
 Grants privilege to these roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/file_format_grant#roles FileFormatGrant#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/file_format_grant#roles FileFormatGrant#roles}
 
 ---
 
@@ -917,7 +948,7 @@ When this is set to true, multiple grants of the same type can be created.
 
 This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/file_format_grant#enable_multiple_grants FileFormatGrant#enable_multiple_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/file_format_grant#enable_multiple_grants FileFormatGrant#enable_multiple_grants}
 
 ---
 
@@ -931,7 +962,7 @@ FileFormatName *string
 
 The name of the file format on which to grant privileges immediately (only valid if on_future is false).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/file_format_grant#file_format_name FileFormatGrant#file_format_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/file_format_grant#file_format_name FileFormatGrant#file_format_name}
 
 ---
 
@@ -943,10 +974,26 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/file_format_grant#id FileFormatGrant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/file_format_grant#id FileFormatGrant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `OnAll`<sup>Optional</sup> <a name="OnAll" id="@cdktf/provider-snowflake.fileFormatGrant.FileFormatGrantConfig.property.onAll"></a>
+
+```go
+OnAll interface{}
+```
+
+- *Type:* interface{}
+
+When this is set to true and a schema_name is provided, apply this grant on all file formats in the given schema.
+
+When this is true and no schema_name is provided apply this grant on all file formats in the given database. The file_format_name field must be unset in order to use on_all. Cannot be used together with on_future.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/file_format_grant#on_all FileFormatGrant#on_all}
 
 ---
 
@@ -960,9 +1007,9 @@ OnFuture interface{}
 
 When this is set to true and a schema_name is provided, apply this grant on all future file formats in the given schema.
 
-When this is true and no schema_name is provided apply this grant on all future file formats in the given database. The file_format_name field must be unset in order to use on_future.
+When this is true and no schema_name is provided apply this grant on all future file formats in the given database. The file_format_name field must be unset in order to use on_future. Cannot be used together with on_all.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/file_format_grant#on_future FileFormatGrant#on_future}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/file_format_grant#on_future FileFormatGrant#on_future}
 
 ---
 
@@ -976,7 +1023,7 @@ Privilege *string
 
 The privilege to grant on the current or future file format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/file_format_grant#privilege FileFormatGrant#privilege}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/file_format_grant#privilege FileFormatGrant#privilege}
 
 ---
 
@@ -990,7 +1037,7 @@ SchemaName *string
 
 The name of the schema containing the current or future file formats on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/file_format_grant#schema_name FileFormatGrant#schema_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/file_format_grant#schema_name FileFormatGrant#schema_name}
 
 ---
 
@@ -1004,7 +1051,7 @@ WithGrantOption interface{}
 
 When this is set to true, allows the recipient role to grant the privileges to other roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/file_format_grant#with_grant_option FileFormatGrant#with_grant_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/file_format_grant#with_grant_option FileFormatGrant#with_grant_option}
 
 ---
 

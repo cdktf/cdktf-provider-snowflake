@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/data-sources/stages
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/data-sources/stages
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface DataSnowflakeStagesConfig extends cdktf.TerraformMetaArguments 
   /**
   * The database from which to return the schemas from.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/data-sources/stages#database DataSnowflakeStages#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/data-sources/stages#database DataSnowflakeStages#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/data-sources/stages#id DataSnowflakeStages#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/data-sources/stages#id DataSnowflakeStages#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,7 +23,7 @@ export interface DataSnowflakeStagesConfig extends cdktf.TerraformMetaArguments 
   /**
   * The schema from which to return the stages from.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/data-sources/stages#schema DataSnowflakeStages#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/data-sources/stages#schema DataSnowflakeStages#schema}
   */
   readonly schema: string;
 }
@@ -113,7 +113,7 @@ export class DataSnowflakeStagesStagesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/data-sources/stages snowflake_stages}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/data-sources/stages snowflake_stages}
 */
 export class DataSnowflakeStages extends cdktf.TerraformDataSource {
 
@@ -127,7 +127,7 @@ export class DataSnowflakeStages extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/data-sources/stages snowflake_stages} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/data-sources/stages snowflake_stages} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -138,7 +138,7 @@ export class DataSnowflakeStages extends cdktf.TerraformDataSource {
       terraformResourceType: 'snowflake_stages',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.63.0',
+        providerVersion: '0.64.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,

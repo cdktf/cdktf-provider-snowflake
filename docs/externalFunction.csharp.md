@@ -1,6 +1,6 @@
 # `snowflake_external_function`
 
-Refer to the Terraform Registory for docs: [`snowflake_external_function`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/external_function).
+Refer to the Terraform Registory for docs: [`snowflake_external_function`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/external_function).
 
 # `externalFunction` Submodule <a name="`externalFunction` Submodule" id="@cdktf/provider-snowflake.externalFunction"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`snowflake_external_function`](https
 
 ### ExternalFunction <a name="ExternalFunction" id="@cdktf/provider-snowflake.externalFunction.ExternalFunction"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/external_function snowflake_external_function}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/external_function snowflake_external_function}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.externalFunction.ExternalFunction.Initializer"></a>
 
@@ -80,6 +80,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.resetMaxBatchRows">ResetMaxBatchRows</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.resetNullInputBehavior">ResetNullInputBehavior</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.resetRequestTranslator">ResetRequestTranslator</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.resetResponseTranslator">ResetResponseTranslator</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.resetReturnNullAllowed">ResetReturnNullAllowed</a></code> | *No description.* |
 
 ---
@@ -340,6 +342,18 @@ private void ResetMaxBatchRows()
 private void ResetNullInputBehavior()
 ```
 
+##### `ResetRequestTranslator` <a name="ResetRequestTranslator" id="@cdktf/provider-snowflake.externalFunction.ExternalFunction.resetRequestTranslator"></a>
+
+```csharp
+private void ResetRequestTranslator()
+```
+
+##### `ResetResponseTranslator` <a name="ResetResponseTranslator" id="@cdktf/provider-snowflake.externalFunction.ExternalFunction.resetResponseTranslator"></a>
+
+```csharp
+private void ResetResponseTranslator()
+```
+
 ##### `ResetReturnNullAllowed` <a name="ResetReturnNullAllowed" id="@cdktf/provider-snowflake.externalFunction.ExternalFunction.resetReturnNullAllowed"></a>
 
 ```csharp
@@ -448,6 +462,8 @@ ExternalFunction.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.property.maxBatchRowsInput">MaxBatchRowsInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.property.nullInputBehaviorInput">NullInputBehaviorInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.property.requestTranslatorInput">RequestTranslatorInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.property.responseTranslatorInput">ResponseTranslatorInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.property.returnBehaviorInput">ReturnBehaviorInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.property.returnNullAllowedInput">ReturnNullAllowedInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.property.returnTypeInput">ReturnTypeInput</a></code> | <code>string</code> | *No description.* |
@@ -462,6 +478,8 @@ ExternalFunction.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.property.maxBatchRows">MaxBatchRows</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.property.nullInputBehavior">NullInputBehavior</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.property.requestTranslator">RequestTranslator</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.property.responseTranslator">ResponseTranslator</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.property.returnBehavior">ReturnBehavior</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.property.returnNullAllowed">ReturnNullAllowed</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.property.returnType">ReturnType</a></code> | <code>string</code> | *No description.* |
@@ -752,6 +770,26 @@ public string NullInputBehaviorInput { get; }
 
 ---
 
+##### `RequestTranslatorInput`<sup>Optional</sup> <a name="RequestTranslatorInput" id="@cdktf/provider-snowflake.externalFunction.ExternalFunction.property.requestTranslatorInput"></a>
+
+```csharp
+public string RequestTranslatorInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ResponseTranslatorInput`<sup>Optional</sup> <a name="ResponseTranslatorInput" id="@cdktf/provider-snowflake.externalFunction.ExternalFunction.property.responseTranslatorInput"></a>
+
+```csharp
+public string ResponseTranslatorInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `ReturnBehaviorInput`<sup>Optional</sup> <a name="ReturnBehaviorInput" id="@cdktf/provider-snowflake.externalFunction.ExternalFunction.property.returnBehaviorInput"></a>
 
 ```csharp
@@ -892,6 +930,26 @@ public string NullInputBehavior { get; }
 
 ---
 
+##### `RequestTranslator`<sup>Required</sup> <a name="RequestTranslator" id="@cdktf/provider-snowflake.externalFunction.ExternalFunction.property.requestTranslator"></a>
+
+```csharp
+public string RequestTranslator { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ResponseTranslator`<sup>Required</sup> <a name="ResponseTranslator" id="@cdktf/provider-snowflake.externalFunction.ExternalFunction.property.responseTranslator"></a>
+
+```csharp
+public string ResponseTranslator { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `ReturnBehavior`<sup>Required</sup> <a name="ReturnBehavior" id="@cdktf/provider-snowflake.externalFunction.ExternalFunction.property.returnBehavior"></a>
 
 ```csharp
@@ -994,7 +1052,7 @@ public string Name { get; set; }
 
 Argument name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/external_function#name ExternalFunction#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/external_function#name ExternalFunction#name}
 
 ---
 
@@ -1008,7 +1066,7 @@ public string Type { get; set; }
 
 Argument type, e.g. VARCHAR.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/external_function#type ExternalFunction#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/external_function#type ExternalFunction#type}
 
 ---
 
@@ -1042,6 +1100,8 @@ new ExternalFunctionConfig {
     string Id = null,
     double MaxBatchRows = null,
     string NullInputBehavior = null,
+    string RequestTranslator = null,
+    string ResponseTranslator = null,
     object ReturnNullAllowed = null
 };
 ```
@@ -1069,9 +1129,11 @@ new ExternalFunctionConfig {
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionConfig.property.compression">Compression</a></code> | <code>string</code> | If specified, the JSON payload is compressed when sent from Snowflake to the proxy service, and when sent back from the proxy service to Snowflake. |
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionConfig.property.contextHeaders">ContextHeaders</a></code> | <code>string[]</code> | Binds Snowflake context function results to HTTP headers. |
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionConfig.property.header">Header</a></code> | <code>object</code> | header block. |
-| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/external_function#id ExternalFunction#id}. |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/external_function#id ExternalFunction#id}. |
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionConfig.property.maxBatchRows">MaxBatchRows</a></code> | <code>double</code> | This specifies the maximum number of rows in each batch sent to the proxy service. |
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionConfig.property.nullInputBehavior">NullInputBehavior</a></code> | <code>string</code> | Specifies the behavior of the external function when called with null inputs. |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionConfig.property.requestTranslator">RequestTranslator</a></code> | <code>string</code> | This specifies the name of the request translator function. |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionConfig.property.responseTranslator">ResponseTranslator</a></code> | <code>string</code> | This specifies the name of the response translator function. |
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionConfig.property.returnNullAllowed">ReturnNullAllowed</a></code> | <code>object</code> | Indicates whether the function can return NULL values or must return only NON-NULL values. |
 
 ---
@@ -1156,7 +1218,7 @@ public string ApiIntegration { get; set; }
 
 The name of the API integration object that should be used to authenticate the call to the proxy service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/external_function#api_integration ExternalFunction#api_integration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/external_function#api_integration ExternalFunction#api_integration}
 
 ---
 
@@ -1170,7 +1232,7 @@ public string Database { get; set; }
 
 The database in which to create the external function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/external_function#database ExternalFunction#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/external_function#database ExternalFunction#database}
 
 ---
 
@@ -1186,7 +1248,7 @@ Specifies the identifier for the external function.
 
 The identifier can contain the schema name and database name, as well as the function name. The function's signature (name and argument data types) must be unique within the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/external_function#name ExternalFunction#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/external_function#name ExternalFunction#name}
 
 ---
 
@@ -1200,7 +1262,7 @@ public string ReturnBehavior { get; set; }
 
 Specifies the behavior of the function when returning results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/external_function#return_behavior ExternalFunction#return_behavior}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/external_function#return_behavior ExternalFunction#return_behavior}
 
 ---
 
@@ -1214,7 +1276,7 @@ public string ReturnType { get; set; }
 
 Specifies the data type returned by the external function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/external_function#return_type ExternalFunction#return_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/external_function#return_type ExternalFunction#return_type}
 
 ---
 
@@ -1228,7 +1290,7 @@ public string Schema { get; set; }
 
 The schema in which to create the external function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/external_function#schema ExternalFunction#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/external_function#schema ExternalFunction#schema}
 
 ---
 
@@ -1242,7 +1304,7 @@ public string UrlOfProxyAndResource { get; set; }
 
 This is the invocation URL of the proxy service and resource through which Snowflake calls the remote service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/external_function#url_of_proxy_and_resource ExternalFunction#url_of_proxy_and_resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/external_function#url_of_proxy_and_resource ExternalFunction#url_of_proxy_and_resource}
 
 ---
 
@@ -1256,7 +1318,7 @@ public object Arg { get; set; }
 
 arg block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/external_function#arg ExternalFunction#arg}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/external_function#arg ExternalFunction#arg}
 
 ---
 
@@ -1270,7 +1332,7 @@ public string Comment { get; set; }
 
 A description of the external function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/external_function#comment ExternalFunction#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/external_function#comment ExternalFunction#comment}
 
 ---
 
@@ -1284,7 +1346,7 @@ public string Compression { get; set; }
 
 If specified, the JSON payload is compressed when sent from Snowflake to the proxy service, and when sent back from the proxy service to Snowflake.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/external_function#compression ExternalFunction#compression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/external_function#compression ExternalFunction#compression}
 
 ---
 
@@ -1298,7 +1360,7 @@ public string[] ContextHeaders { get; set; }
 
 Binds Snowflake context function results to HTTP headers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/external_function#context_headers ExternalFunction#context_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/external_function#context_headers ExternalFunction#context_headers}
 
 ---
 
@@ -1312,7 +1374,7 @@ public object Header { get; set; }
 
 header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/external_function#header ExternalFunction#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/external_function#header ExternalFunction#header}
 
 ---
 
@@ -1324,7 +1386,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/external_function#id ExternalFunction#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/external_function#id ExternalFunction#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1341,7 +1403,7 @@ public double MaxBatchRows { get; set; }
 
 This specifies the maximum number of rows in each batch sent to the proxy service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/external_function#max_batch_rows ExternalFunction#max_batch_rows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/external_function#max_batch_rows ExternalFunction#max_batch_rows}
 
 ---
 
@@ -1355,7 +1417,35 @@ public string NullInputBehavior { get; set; }
 
 Specifies the behavior of the external function when called with null inputs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/external_function#null_input_behavior ExternalFunction#null_input_behavior}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/external_function#null_input_behavior ExternalFunction#null_input_behavior}
+
+---
+
+##### `RequestTranslator`<sup>Optional</sup> <a name="RequestTranslator" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionConfig.property.requestTranslator"></a>
+
+```csharp
+public string RequestTranslator { get; set; }
+```
+
+- *Type:* string
+
+This specifies the name of the request translator function.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/external_function#request_translator ExternalFunction#request_translator}
+
+---
+
+##### `ResponseTranslator`<sup>Optional</sup> <a name="ResponseTranslator" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionConfig.property.responseTranslator"></a>
+
+```csharp
+public string ResponseTranslator { get; set; }
+```
+
+- *Type:* string
+
+This specifies the name of the response translator function.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/external_function#response_translator ExternalFunction#response_translator}
 
 ---
 
@@ -1369,7 +1459,7 @@ public object ReturnNullAllowed { get; set; }
 
 Indicates whether the function can return NULL values or must return only NON-NULL values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/external_function#return_null_allowed ExternalFunction#return_null_allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/external_function#return_null_allowed ExternalFunction#return_null_allowed}
 
 ---
 
@@ -1405,7 +1495,7 @@ public string Name { get; set; }
 
 Header name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/external_function#name ExternalFunction#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/external_function#name ExternalFunction#name}
 
 ---
 
@@ -1419,7 +1509,7 @@ public string Value { get; set; }
 
 Header value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/external_function#value ExternalFunction#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/external_function#value ExternalFunction#value}
 
 ---
 
