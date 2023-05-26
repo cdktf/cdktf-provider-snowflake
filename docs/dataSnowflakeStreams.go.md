@@ -1,6 +1,6 @@
 # `data_snowflake_streams`
 
-Refer to the Terraform Registory for docs: [`data_snowflake_streams`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/data-sources/streams).
+Refer to the Terraform Registory for docs: [`data_snowflake_streams`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/data-sources/streams).
 
 # `dataSnowflakeStreams` Submodule <a name="`dataSnowflakeStreams` Submodule" id="@cdktf/provider-snowflake.dataSnowflakeStreams"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_snowflake_streams`](https://re
 
 ### DataSnowflakeStreams <a name="DataSnowflakeStreams" id="@cdktf/provider-snowflake.dataSnowflakeStreams.DataSnowflakeStreams"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/data-sources/streams snowflake_streams}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/data-sources/streams snowflake_streams}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeStreams.DataSnowflakeStreams.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakestreams"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakestreams"
 
 datasnowflakestreams.NewDataSnowflakeStreams(scope Construct, id *string, config DataSnowflakeStreamsConfig) DataSnowflakeStreams
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeStreams.DataSnowflakeStreams.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakestreams"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakestreams"
 
 datasnowflakestreams.DataSnowflakeStreams_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeStreams.DataSnowflakeStreams.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakestreams"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakestreams"
 
 datasnowflakestreams.DataSnowflakeStreams_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ datasnowflakestreams.DataSnowflakeStreams_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeStreams.DataSnowflakeStreams.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakestreams"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakestreams"
 
 datasnowflakestreams.DataSnowflakeStreams_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -577,7 +577,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeStreams.DataSnowflakeStreamsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakestreams"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakestreams"
 
 &datasnowflakestreams.DataSnowflakeStreamsConfig {
 	Connection: interface{},
@@ -606,7 +606,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakes
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStreams.DataSnowflakeStreamsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStreams.DataSnowflakeStreamsConfig.property.database">Database</a></code> | <code>*string</code> | The database from which to return the streams from. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStreams.DataSnowflakeStreamsConfig.property.schema">Schema</a></code> | <code>*string</code> | The schema from which to return the streams from. |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStreams.DataSnowflakeStreamsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/data-sources/streams#id DataSnowflakeStreams#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStreams.DataSnowflakeStreamsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/data-sources/streams#id DataSnowflakeStreams#id}. |
 
 ---
 
@@ -690,7 +690,7 @@ Database *string
 
 The database from which to return the streams from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/data-sources/streams#database DataSnowflakeStreams#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/data-sources/streams#database DataSnowflakeStreams#database}
 
 ---
 
@@ -704,7 +704,7 @@ Schema *string
 
 The schema from which to return the streams from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/data-sources/streams#schema DataSnowflakeStreams#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/data-sources/streams#schema DataSnowflakeStreams#schema}
 
 ---
 
@@ -716,7 +716,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/data-sources/streams#id DataSnowflakeStreams#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/data-sources/streams#id DataSnowflakeStreams#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -728,7 +728,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeStreams.DataSnowflakeStreamsStreams.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakestreams"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakestreams"
 
 &datasnowflakestreams.DataSnowflakeStreamsStreams {
 
@@ -743,7 +743,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakes
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeStreams.DataSnowflakeStreamsStreamsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakestreams"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakestreams"
 
 datasnowflakestreams.NewDataSnowflakeStreamsStreamsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeStreamsStreamsList
 ```
@@ -875,7 +875,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeStreams.DataSnowflakeStreamsStreamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakestreams"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakestreams"
 
 datasnowflakestreams.NewDataSnowflakeStreamsStreamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeStreamsStreamsOutputReference
 ```

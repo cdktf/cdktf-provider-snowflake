@@ -1,6 +1,6 @@
 # `snowflake_procedure_grant`
 
-Refer to the Terraform Registory for docs: [`snowflake_procedure_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/procedure_grant).
+Refer to the Terraform Registory for docs: [`snowflake_procedure_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/procedure_grant).
 
 # `procedureGrant` Submodule <a name="`procedureGrant` Submodule" id="@cdktf/provider-snowflake.procedureGrant"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`snowflake_procedure_grant`](https:/
 
 ### ProcedureGrant <a name="ProcedureGrant" id="@cdktf/provider-snowflake.procedureGrant.ProcedureGrant"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/procedure_grant snowflake_procedure_grant}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/procedure_grant snowflake_procedure_grant}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.procedureGrant.ProcedureGrant.Initializer"></a>
 
@@ -30,6 +30,7 @@ procedureGrant.ProcedureGrant(
   argument_data_types: typing.List[str] = None,
   enable_multiple_grants: typing.Union[bool, IResolvable] = None,
   id: str = None,
+  on_all: typing.Union[bool, IResolvable] = None,
   on_future: typing.Union[bool, IResolvable] = None,
   privilege: str = None,
   procedure_name: str = None,
@@ -54,7 +55,8 @@ procedureGrant.ProcedureGrant(
 | <code><a href="#@cdktf/provider-snowflake.procedureGrant.ProcedureGrant.Initializer.parameter.roles">roles</a></code> | <code>typing.List[str]</code> | Grants privilege to these roles. |
 | <code><a href="#@cdktf/provider-snowflake.procedureGrant.ProcedureGrant.Initializer.parameter.argumentDataTypes">argument_data_types</a></code> | <code>typing.List[str]</code> | List of the argument data types for the procedure (must be present if procedure has arguments and procedure_name is present). |
 | <code><a href="#@cdktf/provider-snowflake.procedureGrant.ProcedureGrant.Initializer.parameter.enableMultipleGrants">enable_multiple_grants</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When this is set to true, multiple grants of the same type can be created. |
-| <code><a href="#@cdktf/provider-snowflake.procedureGrant.ProcedureGrant.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/procedure_grant#id ProcedureGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.procedureGrant.ProcedureGrant.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/procedure_grant#id ProcedureGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.procedureGrant.ProcedureGrant.Initializer.parameter.onAll">on_all</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When this is set to true and a schema_name is provided, apply this grant on all procedures in the given schema. |
 | <code><a href="#@cdktf/provider-snowflake.procedureGrant.ProcedureGrant.Initializer.parameter.onFuture">on_future</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When this is set to true and a schema_name is provided, apply this grant on all future procedures in the given schema. |
 | <code><a href="#@cdktf/provider-snowflake.procedureGrant.ProcedureGrant.Initializer.parameter.privilege">privilege</a></code> | <code>str</code> | The privilege to grant on the current or future procedure. |
 | <code><a href="#@cdktf/provider-snowflake.procedureGrant.ProcedureGrant.Initializer.parameter.procedureName">procedure_name</a></code> | <code>str</code> | The name of the procedure on which to grant privileges immediately (only valid if on_future is false). |
@@ -130,7 +132,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the database containing the current or future procedures on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/procedure_grant#database_name ProcedureGrant#database_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/procedure_grant#database_name ProcedureGrant#database_name}
 
 ---
 
@@ -140,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Grants privilege to these roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/procedure_grant#roles ProcedureGrant#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/procedure_grant#roles ProcedureGrant#roles}
 
 ---
 
@@ -150,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 List of the argument data types for the procedure (must be present if procedure has arguments and procedure_name is present).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/procedure_grant#argument_data_types ProcedureGrant#argument_data_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/procedure_grant#argument_data_types ProcedureGrant#argument_data_types}
 
 ---
 
@@ -162,7 +164,7 @@ When this is set to true, multiple grants of the same type can be created.
 
 This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/procedure_grant#enable_multiple_grants ProcedureGrant#enable_multiple_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/procedure_grant#enable_multiple_grants ProcedureGrant#enable_multiple_grants}
 
 ---
 
@@ -170,10 +172,22 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/procedure_grant#id ProcedureGrant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/procedure_grant#id ProcedureGrant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `on_all`<sup>Optional</sup> <a name="on_all" id="@cdktf/provider-snowflake.procedureGrant.ProcedureGrant.Initializer.parameter.onAll"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+When this is set to true and a schema_name is provided, apply this grant on all procedures in the given schema.
+
+When this is true and no schema_name is provided apply this grant on all procedures in the given database. The procedure_name and shares fields must be unset in order to use on_all. Cannot be used together with on_future.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/procedure_grant#on_all ProcedureGrant#on_all}
 
 ---
 
@@ -183,9 +197,9 @@ If you experience problems setting this value it might not be settable. Please t
 
 When this is set to true and a schema_name is provided, apply this grant on all future procedures in the given schema.
 
-When this is true and no schema_name is provided apply this grant on all future procedures in the given database. The procedure_name and shares fields must be unset in order to use on_future.
+When this is true and no schema_name is provided apply this grant on all future procedures in the given database. The procedure_name and shares fields must be unset in order to use on_future. Cannot be used together with on_all.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/procedure_grant#on_future ProcedureGrant#on_future}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/procedure_grant#on_future ProcedureGrant#on_future}
 
 ---
 
@@ -195,7 +209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The privilege to grant on the current or future procedure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/procedure_grant#privilege ProcedureGrant#privilege}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/procedure_grant#privilege ProcedureGrant#privilege}
 
 ---
 
@@ -205,7 +219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The name of the procedure on which to grant privileges immediately (only valid if on_future is false).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/procedure_grant#procedure_name ProcedureGrant#procedure_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/procedure_grant#procedure_name ProcedureGrant#procedure_name}
 
 ---
 
@@ -215,7 +229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The name of the schema containing the current or future procedures on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/procedure_grant#schema_name ProcedureGrant#schema_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/procedure_grant#schema_name ProcedureGrant#schema_name}
 
 ---
 
@@ -225,7 +239,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Grants privilege to these shares (only valid if on_future is false).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/procedure_grant#shares ProcedureGrant#shares}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/procedure_grant#shares ProcedureGrant#shares}
 
 ---
 
@@ -235,7 +249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 When this is set to true, allows the recipient role to grant the privileges to other roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/procedure_grant#with_grant_option ProcedureGrant#with_grant_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/procedure_grant#with_grant_option ProcedureGrant#with_grant_option}
 
 ---
 
@@ -262,6 +276,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 | <code><a href="#@cdktf/provider-snowflake.procedureGrant.ProcedureGrant.resetArgumentDataTypes">reset_argument_data_types</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedureGrant.ProcedureGrant.resetEnableMultipleGrants">reset_enable_multiple_grants</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedureGrant.ProcedureGrant.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.procedureGrant.ProcedureGrant.resetOnAll">reset_on_all</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedureGrant.ProcedureGrant.resetOnFuture">reset_on_future</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedureGrant.ProcedureGrant.resetPrivilege">reset_privilege</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedureGrant.ProcedureGrant.resetProcedureName">reset_procedure_name</a></code> | *No description.* |
@@ -498,6 +513,12 @@ def reset_enable_multiple_grants() -> None
 def reset_id() -> None
 ```
 
+##### `reset_on_all` <a name="reset_on_all" id="@cdktf/provider-snowflake.procedureGrant.ProcedureGrant.resetOnAll"></a>
+
+```python
+def reset_on_all() -> None
+```
+
 ##### `reset_on_future` <a name="reset_on_future" id="@cdktf/provider-snowflake.procedureGrant.ProcedureGrant.resetOnFuture"></a>
 
 ```python
@@ -632,6 +653,7 @@ procedureGrant.ProcedureGrant.is_terraform_resource(
 | <code><a href="#@cdktf/provider-snowflake.procedureGrant.ProcedureGrant.property.databaseNameInput">database_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedureGrant.ProcedureGrant.property.enableMultipleGrantsInput">enable_multiple_grants_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedureGrant.ProcedureGrant.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.procedureGrant.ProcedureGrant.property.onAllInput">on_all_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedureGrant.ProcedureGrant.property.onFutureInput">on_future_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedureGrant.ProcedureGrant.property.privilegeInput">privilege_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedureGrant.ProcedureGrant.property.procedureNameInput">procedure_name_input</a></code> | <code>str</code> | *No description.* |
@@ -643,6 +665,7 @@ procedureGrant.ProcedureGrant.is_terraform_resource(
 | <code><a href="#@cdktf/provider-snowflake.procedureGrant.ProcedureGrant.property.databaseName">database_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedureGrant.ProcedureGrant.property.enableMultipleGrants">enable_multiple_grants</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedureGrant.ProcedureGrant.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.procedureGrant.ProcedureGrant.property.onAll">on_all</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedureGrant.ProcedureGrant.property.onFuture">on_future</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedureGrant.ProcedureGrant.property.privilege">privilege</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.procedureGrant.ProcedureGrant.property.procedureName">procedure_name</a></code> | <code>str</code> | *No description.* |
@@ -835,6 +858,16 @@ id_input: str
 
 ---
 
+##### `on_all_input`<sup>Optional</sup> <a name="on_all_input" id="@cdktf/provider-snowflake.procedureGrant.ProcedureGrant.property.onAllInput"></a>
+
+```python
+on_all_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `on_future_input`<sup>Optional</sup> <a name="on_future_input" id="@cdktf/provider-snowflake.procedureGrant.ProcedureGrant.property.onFutureInput"></a>
 
 ```python
@@ -942,6 +975,16 @@ id: str
 ```
 
 - *Type:* str
+
+---
+
+##### `on_all`<sup>Required</sup> <a name="on_all" id="@cdktf/provider-snowflake.procedureGrant.ProcedureGrant.property.onAll"></a>
+
+```python
+on_all: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
 
 ---
 
@@ -1055,6 +1098,7 @@ procedureGrant.ProcedureGrantConfig(
   argument_data_types: typing.List[str] = None,
   enable_multiple_grants: typing.Union[bool, IResolvable] = None,
   id: str = None,
+  on_all: typing.Union[bool, IResolvable] = None,
   on_future: typing.Union[bool, IResolvable] = None,
   privilege: str = None,
   procedure_name: str = None,
@@ -1079,7 +1123,8 @@ procedureGrant.ProcedureGrantConfig(
 | <code><a href="#@cdktf/provider-snowflake.procedureGrant.ProcedureGrantConfig.property.roles">roles</a></code> | <code>typing.List[str]</code> | Grants privilege to these roles. |
 | <code><a href="#@cdktf/provider-snowflake.procedureGrant.ProcedureGrantConfig.property.argumentDataTypes">argument_data_types</a></code> | <code>typing.List[str]</code> | List of the argument data types for the procedure (must be present if procedure has arguments and procedure_name is present). |
 | <code><a href="#@cdktf/provider-snowflake.procedureGrant.ProcedureGrantConfig.property.enableMultipleGrants">enable_multiple_grants</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When this is set to true, multiple grants of the same type can be created. |
-| <code><a href="#@cdktf/provider-snowflake.procedureGrant.ProcedureGrantConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/procedure_grant#id ProcedureGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.procedureGrant.ProcedureGrantConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/procedure_grant#id ProcedureGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.procedureGrant.ProcedureGrantConfig.property.onAll">on_all</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When this is set to true and a schema_name is provided, apply this grant on all procedures in the given schema. |
 | <code><a href="#@cdktf/provider-snowflake.procedureGrant.ProcedureGrantConfig.property.onFuture">on_future</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When this is set to true and a schema_name is provided, apply this grant on all future procedures in the given schema. |
 | <code><a href="#@cdktf/provider-snowflake.procedureGrant.ProcedureGrantConfig.property.privilege">privilege</a></code> | <code>str</code> | The privilege to grant on the current or future procedure. |
 | <code><a href="#@cdktf/provider-snowflake.procedureGrant.ProcedureGrantConfig.property.procedureName">procedure_name</a></code> | <code>str</code> | The name of the procedure on which to grant privileges immediately (only valid if on_future is false). |
@@ -1169,7 +1214,7 @@ database_name: str
 
 The name of the database containing the current or future procedures on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/procedure_grant#database_name ProcedureGrant#database_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/procedure_grant#database_name ProcedureGrant#database_name}
 
 ---
 
@@ -1183,7 +1228,7 @@ roles: typing.List[str]
 
 Grants privilege to these roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/procedure_grant#roles ProcedureGrant#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/procedure_grant#roles ProcedureGrant#roles}
 
 ---
 
@@ -1197,7 +1242,7 @@ argument_data_types: typing.List[str]
 
 List of the argument data types for the procedure (must be present if procedure has arguments and procedure_name is present).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/procedure_grant#argument_data_types ProcedureGrant#argument_data_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/procedure_grant#argument_data_types ProcedureGrant#argument_data_types}
 
 ---
 
@@ -1213,7 +1258,7 @@ When this is set to true, multiple grants of the same type can be created.
 
 This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/procedure_grant#enable_multiple_grants ProcedureGrant#enable_multiple_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/procedure_grant#enable_multiple_grants ProcedureGrant#enable_multiple_grants}
 
 ---
 
@@ -1225,10 +1270,26 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/procedure_grant#id ProcedureGrant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/procedure_grant#id ProcedureGrant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `on_all`<sup>Optional</sup> <a name="on_all" id="@cdktf/provider-snowflake.procedureGrant.ProcedureGrantConfig.property.onAll"></a>
+
+```python
+on_all: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+When this is set to true and a schema_name is provided, apply this grant on all procedures in the given schema.
+
+When this is true and no schema_name is provided apply this grant on all procedures in the given database. The procedure_name and shares fields must be unset in order to use on_all. Cannot be used together with on_future.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/procedure_grant#on_all ProcedureGrant#on_all}
 
 ---
 
@@ -1242,9 +1303,9 @@ on_future: typing.Union[bool, IResolvable]
 
 When this is set to true and a schema_name is provided, apply this grant on all future procedures in the given schema.
 
-When this is true and no schema_name is provided apply this grant on all future procedures in the given database. The procedure_name and shares fields must be unset in order to use on_future.
+When this is true and no schema_name is provided apply this grant on all future procedures in the given database. The procedure_name and shares fields must be unset in order to use on_future. Cannot be used together with on_all.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/procedure_grant#on_future ProcedureGrant#on_future}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/procedure_grant#on_future ProcedureGrant#on_future}
 
 ---
 
@@ -1258,7 +1319,7 @@ privilege: str
 
 The privilege to grant on the current or future procedure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/procedure_grant#privilege ProcedureGrant#privilege}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/procedure_grant#privilege ProcedureGrant#privilege}
 
 ---
 
@@ -1272,7 +1333,7 @@ procedure_name: str
 
 The name of the procedure on which to grant privileges immediately (only valid if on_future is false).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/procedure_grant#procedure_name ProcedureGrant#procedure_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/procedure_grant#procedure_name ProcedureGrant#procedure_name}
 
 ---
 
@@ -1286,7 +1347,7 @@ schema_name: str
 
 The name of the schema containing the current or future procedures on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/procedure_grant#schema_name ProcedureGrant#schema_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/procedure_grant#schema_name ProcedureGrant#schema_name}
 
 ---
 
@@ -1300,7 +1361,7 @@ shares: typing.List[str]
 
 Grants privilege to these shares (only valid if on_future is false).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/procedure_grant#shares ProcedureGrant#shares}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/procedure_grant#shares ProcedureGrant#shares}
 
 ---
 
@@ -1314,7 +1375,7 @@ with_grant_option: typing.Union[bool, IResolvable]
 
 When this is set to true, allows the recipient role to grant the privileges to other roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/procedure_grant#with_grant_option ProcedureGrant#with_grant_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.64.0/docs/resources/procedure_grant#with_grant_option ProcedureGrant#with_grant_option}
 
 ---
 
