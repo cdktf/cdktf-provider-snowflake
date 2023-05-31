@@ -1,6 +1,6 @@
 # `snowflake_pipe_grant`
 
-Refer to the Terraform Registory for docs: [`snowflake_pipe_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/pipe_grant).
+Refer to the Terraform Registory for docs: [`snowflake_pipe_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/pipe_grant).
 
 # `pipeGrant` Submodule <a name="`pipeGrant` Submodule" id="@cdktf/provider-snowflake.pipeGrant"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`snowflake_pipe_grant`](https://regi
 
 ### PipeGrant <a name="PipeGrant" id="@cdktf/provider-snowflake.pipeGrant.PipeGrant"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/pipe_grant snowflake_pipe_grant}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/pipe_grant snowflake_pipe_grant}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.pipeGrant.PipeGrant.Initializer"></a>
 
@@ -31,6 +31,7 @@ pipeGrant.PipeGrant(
   on_future: typing.Union[bool, IResolvable] = None,
   pipe_name: str = None,
   privilege: str = None,
+  revert_ownership_to_role_name: str = None,
   roles: typing.List[str] = None,
   schema_name: str = None,
   with_grant_option: typing.Union[bool, IResolvable] = None
@@ -50,10 +51,11 @@ pipeGrant.PipeGrant(
 | <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrant.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrant.Initializer.parameter.databaseName">database_name</a></code> | <code>str</code> | The name of the database containing the current or future pipes on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrant.Initializer.parameter.enableMultipleGrants">enable_multiple_grants</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When this is set to true, multiple grants of the same type can be created. |
-| <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrant.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/pipe_grant#id PipeGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrant.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/pipe_grant#id PipeGrant#id}. |
 | <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrant.Initializer.parameter.onFuture">on_future</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When this is set to true and a schema_name is provided, apply this grant on all future pipes in the given schema. |
 | <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrant.Initializer.parameter.pipeName">pipe_name</a></code> | <code>str</code> | The name of the pipe on which to grant privileges immediately (only valid if on_future is false). |
-| <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrant.Initializer.parameter.privilege">privilege</a></code> | <code>str</code> | The privilege to grant on the current or future pipe. |
+| <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrant.Initializer.parameter.privilege">privilege</a></code> | <code>str</code> | The privilege to grant on the current or future pipe. To grant all privileges, use the value `ALL PRIVILEGES`. |
+| <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrant.Initializer.parameter.revertOwnershipToRoleName">revert_ownership_to_role_name</a></code> | <code>str</code> | The name of the role to revert ownership to on destroy. |
 | <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrant.Initializer.parameter.roles">roles</a></code> | <code>typing.List[str]</code> | Grants privilege to these roles. |
 | <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrant.Initializer.parameter.schemaName">schema_name</a></code> | <code>str</code> | The name of the schema containing the current or future pipes on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrant.Initializer.parameter.withGrantOption">with_grant_option</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When this is set to true, allows the recipient role to grant the privileges to other roles. |
@@ -126,7 +128,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the database containing the current or future pipes on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/pipe_grant#database_name PipeGrant#database_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/pipe_grant#database_name PipeGrant#database_name}
 
 ---
 
@@ -138,7 +140,7 @@ When this is set to true, multiple grants of the same type can be created.
 
 This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/pipe_grant#enable_multiple_grants PipeGrant#enable_multiple_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/pipe_grant#enable_multiple_grants PipeGrant#enable_multiple_grants}
 
 ---
 
@@ -146,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/pipe_grant#id PipeGrant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/pipe_grant#id PipeGrant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -161,7 +163,7 @@ When this is set to true and a schema_name is provided, apply this grant on all 
 
 When this is true and no schema_name is provided apply this grant on all future pipes in the given database. The pipe_name field must be unset in order to use on_future.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/pipe_grant#on_future PipeGrant#on_future}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/pipe_grant#on_future PipeGrant#on_future}
 
 ---
 
@@ -171,7 +173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The name of the pipe on which to grant privileges immediately (only valid if on_future is false).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/pipe_grant#pipe_name PipeGrant#pipe_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/pipe_grant#pipe_name PipeGrant#pipe_name}
 
 ---
 
@@ -179,9 +181,21 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-The privilege to grant on the current or future pipe.
+The privilege to grant on the current or future pipe. To grant all privileges, use the value `ALL PRIVILEGES`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/pipe_grant#privilege PipeGrant#privilege}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/pipe_grant#privilege PipeGrant#privilege}
+
+---
+
+##### `revert_ownership_to_role_name`<sup>Optional</sup> <a name="revert_ownership_to_role_name" id="@cdktf/provider-snowflake.pipeGrant.PipeGrant.Initializer.parameter.revertOwnershipToRoleName"></a>
+
+- *Type:* str
+
+The name of the role to revert ownership to on destroy.
+
+Has no effect unless `privilege` is set to `OWNERSHIP`
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/pipe_grant#revert_ownership_to_role_name PipeGrant#revert_ownership_to_role_name}
 
 ---
 
@@ -191,7 +205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Grants privilege to these roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/pipe_grant#roles PipeGrant#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/pipe_grant#roles PipeGrant#roles}
 
 ---
 
@@ -201,7 +215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The name of the schema containing the current or future pipes on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/pipe_grant#schema_name PipeGrant#schema_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/pipe_grant#schema_name PipeGrant#schema_name}
 
 ---
 
@@ -211,7 +225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 When this is set to true, allows the recipient role to grant the privileges to other roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/pipe_grant#with_grant_option PipeGrant#with_grant_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/pipe_grant#with_grant_option PipeGrant#with_grant_option}
 
 ---
 
@@ -240,6 +254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 | <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrant.resetOnFuture">reset_on_future</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrant.resetPipeName">reset_pipe_name</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrant.resetPrivilege">reset_privilege</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrant.resetRevertOwnershipToRoleName">reset_revert_ownership_to_role_name</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrant.resetRoles">reset_roles</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrant.resetSchemaName">reset_schema_name</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrant.resetWithGrantOption">reset_with_grant_option</a></code> | *No description.* |
@@ -485,6 +500,12 @@ def reset_pipe_name() -> None
 def reset_privilege() -> None
 ```
 
+##### `reset_revert_ownership_to_role_name` <a name="reset_revert_ownership_to_role_name" id="@cdktf/provider-snowflake.pipeGrant.PipeGrant.resetRevertOwnershipToRoleName"></a>
+
+```python
+def reset_revert_ownership_to_role_name() -> None
+```
+
 ##### `reset_roles` <a name="reset_roles" id="@cdktf/provider-snowflake.pipeGrant.PipeGrant.resetRoles"></a>
 
 ```python
@@ -603,6 +624,7 @@ pipeGrant.PipeGrant.is_terraform_resource(
 | <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrant.property.onFutureInput">on_future_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrant.property.pipeNameInput">pipe_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrant.property.privilegeInput">privilege_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrant.property.revertOwnershipToRoleNameInput">revert_ownership_to_role_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrant.property.rolesInput">roles_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrant.property.schemaNameInput">schema_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrant.property.withGrantOptionInput">with_grant_option_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
@@ -612,6 +634,7 @@ pipeGrant.PipeGrant.is_terraform_resource(
 | <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrant.property.onFuture">on_future</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrant.property.pipeName">pipe_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrant.property.privilege">privilege</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrant.property.revertOwnershipToRoleName">revert_ownership_to_role_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrant.property.roles">roles</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrant.property.schemaName">schema_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrant.property.withGrantOption">with_grant_option</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
@@ -820,6 +843,16 @@ privilege_input: str
 
 ---
 
+##### `revert_ownership_to_role_name_input`<sup>Optional</sup> <a name="revert_ownership_to_role_name_input" id="@cdktf/provider-snowflake.pipeGrant.PipeGrant.property.revertOwnershipToRoleNameInput"></a>
+
+```python
+revert_ownership_to_role_name_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `roles_input`<sup>Optional</sup> <a name="roles_input" id="@cdktf/provider-snowflake.pipeGrant.PipeGrant.property.rolesInput"></a>
 
 ```python
@@ -910,6 +943,16 @@ privilege: str
 
 ---
 
+##### `revert_ownership_to_role_name`<sup>Required</sup> <a name="revert_ownership_to_role_name" id="@cdktf/provider-snowflake.pipeGrant.PipeGrant.property.revertOwnershipToRoleName"></a>
+
+```python
+revert_ownership_to_role_name: str
+```
+
+- *Type:* str
+
+---
+
 ##### `roles`<sup>Required</sup> <a name="roles" id="@cdktf/provider-snowflake.pipeGrant.PipeGrant.property.roles"></a>
 
 ```python
@@ -981,6 +1024,7 @@ pipeGrant.PipeGrantConfig(
   on_future: typing.Union[bool, IResolvable] = None,
   pipe_name: str = None,
   privilege: str = None,
+  revert_ownership_to_role_name: str = None,
   roles: typing.List[str] = None,
   schema_name: str = None,
   with_grant_option: typing.Union[bool, IResolvable] = None
@@ -1000,10 +1044,11 @@ pipeGrant.PipeGrantConfig(
 | <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrantConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrantConfig.property.databaseName">database_name</a></code> | <code>str</code> | The name of the database containing the current or future pipes on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrantConfig.property.enableMultipleGrants">enable_multiple_grants</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When this is set to true, multiple grants of the same type can be created. |
-| <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrantConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/pipe_grant#id PipeGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrantConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/pipe_grant#id PipeGrant#id}. |
 | <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrantConfig.property.onFuture">on_future</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When this is set to true and a schema_name is provided, apply this grant on all future pipes in the given schema. |
 | <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrantConfig.property.pipeName">pipe_name</a></code> | <code>str</code> | The name of the pipe on which to grant privileges immediately (only valid if on_future is false). |
-| <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrantConfig.property.privilege">privilege</a></code> | <code>str</code> | The privilege to grant on the current or future pipe. |
+| <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrantConfig.property.privilege">privilege</a></code> | <code>str</code> | The privilege to grant on the current or future pipe. To grant all privileges, use the value `ALL PRIVILEGES`. |
+| <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrantConfig.property.revertOwnershipToRoleName">revert_ownership_to_role_name</a></code> | <code>str</code> | The name of the role to revert ownership to on destroy. |
 | <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrantConfig.property.roles">roles</a></code> | <code>typing.List[str]</code> | Grants privilege to these roles. |
 | <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrantConfig.property.schemaName">schema_name</a></code> | <code>str</code> | The name of the schema containing the current or future pipes on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.pipeGrant.PipeGrantConfig.property.withGrantOption">with_grant_option</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When this is set to true, allows the recipient role to grant the privileges to other roles. |
@@ -1090,7 +1135,7 @@ database_name: str
 
 The name of the database containing the current or future pipes on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/pipe_grant#database_name PipeGrant#database_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/pipe_grant#database_name PipeGrant#database_name}
 
 ---
 
@@ -1106,7 +1151,7 @@ When this is set to true, multiple grants of the same type can be created.
 
 This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/pipe_grant#enable_multiple_grants PipeGrant#enable_multiple_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/pipe_grant#enable_multiple_grants PipeGrant#enable_multiple_grants}
 
 ---
 
@@ -1118,7 +1163,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/pipe_grant#id PipeGrant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/pipe_grant#id PipeGrant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1137,7 +1182,7 @@ When this is set to true and a schema_name is provided, apply this grant on all 
 
 When this is true and no schema_name is provided apply this grant on all future pipes in the given database. The pipe_name field must be unset in order to use on_future.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/pipe_grant#on_future PipeGrant#on_future}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/pipe_grant#on_future PipeGrant#on_future}
 
 ---
 
@@ -1151,7 +1196,7 @@ pipe_name: str
 
 The name of the pipe on which to grant privileges immediately (only valid if on_future is false).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/pipe_grant#pipe_name PipeGrant#pipe_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/pipe_grant#pipe_name PipeGrant#pipe_name}
 
 ---
 
@@ -1163,9 +1208,25 @@ privilege: str
 
 - *Type:* str
 
-The privilege to grant on the current or future pipe.
+The privilege to grant on the current or future pipe. To grant all privileges, use the value `ALL PRIVILEGES`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/pipe_grant#privilege PipeGrant#privilege}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/pipe_grant#privilege PipeGrant#privilege}
+
+---
+
+##### `revert_ownership_to_role_name`<sup>Optional</sup> <a name="revert_ownership_to_role_name" id="@cdktf/provider-snowflake.pipeGrant.PipeGrantConfig.property.revertOwnershipToRoleName"></a>
+
+```python
+revert_ownership_to_role_name: str
+```
+
+- *Type:* str
+
+The name of the role to revert ownership to on destroy.
+
+Has no effect unless `privilege` is set to `OWNERSHIP`
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/pipe_grant#revert_ownership_to_role_name PipeGrant#revert_ownership_to_role_name}
 
 ---
 
@@ -1179,7 +1240,7 @@ roles: typing.List[str]
 
 Grants privilege to these roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/pipe_grant#roles PipeGrant#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/pipe_grant#roles PipeGrant#roles}
 
 ---
 
@@ -1193,7 +1254,7 @@ schema_name: str
 
 The name of the schema containing the current or future pipes on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/pipe_grant#schema_name PipeGrant#schema_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/pipe_grant#schema_name PipeGrant#schema_name}
 
 ---
 
@@ -1207,7 +1268,7 @@ with_grant_option: typing.Union[bool, IResolvable]
 
 When this is set to true, allows the recipient role to grant the privileges to other roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/pipe_grant#with_grant_option PipeGrant#with_grant_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/pipe_grant#with_grant_option PipeGrant#with_grant_option}
 
 ---
 

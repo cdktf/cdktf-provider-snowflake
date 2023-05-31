@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/integration_grant
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/integration_grant
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface IntegrationGrantConfig extends cdktf.TerraformMetaArguments {
   /**
   * When this is set to true, multiple grants of the same type can be created. This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/integration_grant#enable_multiple_grants IntegrationGrant#enable_multiple_grants}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/integration_grant#enable_multiple_grants IntegrationGrant#enable_multiple_grants}
   */
   readonly enableMultipleGrants?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/integration_grant#id IntegrationGrant#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/integration_grant#id IntegrationGrant#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,31 +23,37 @@ export interface IntegrationGrantConfig extends cdktf.TerraformMetaArguments {
   /**
   * Identifier for the integration; must be unique for your account.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/integration_grant#integration_name IntegrationGrant#integration_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/integration_grant#integration_name IntegrationGrant#integration_name}
   */
   readonly integrationName: string;
   /**
-  * The privilege to grant on the integration.
+  * The privilege to grant on the integration. To grant all privileges, use the value `ALL PRIVILEGES`
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/integration_grant#privilege IntegrationGrant#privilege}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/integration_grant#privilege IntegrationGrant#privilege}
   */
   readonly privilege?: string;
   /**
+  * The name of the role to revert ownership to on destroy. Has no effect unless `privilege` is set to `OWNERSHIP`
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/integration_grant#revert_ownership_to_role_name IntegrationGrant#revert_ownership_to_role_name}
+  */
+  readonly revertOwnershipToRoleName?: string;
+  /**
   * Grants privilege to these roles.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/integration_grant#roles IntegrationGrant#roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/integration_grant#roles IntegrationGrant#roles}
   */
   readonly roles?: string[];
   /**
   * When this is set to true, allows the recipient role to grant the privileges to other roles.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/integration_grant#with_grant_option IntegrationGrant#with_grant_option}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/integration_grant#with_grant_option IntegrationGrant#with_grant_option}
   */
   readonly withGrantOption?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/integration_grant snowflake_integration_grant}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/integration_grant snowflake_integration_grant}
 */
 export class IntegrationGrant extends cdktf.TerraformResource {
 
@@ -61,7 +67,7 @@ export class IntegrationGrant extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/integration_grant snowflake_integration_grant} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/integration_grant snowflake_integration_grant} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +78,7 @@ export class IntegrationGrant extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_integration_grant',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.63.0',
+        providerVersion: '0.65.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
@@ -87,6 +93,7 @@ export class IntegrationGrant extends cdktf.TerraformResource {
     this._id = config.id;
     this._integrationName = config.integrationName;
     this._privilege = config.privilege;
+    this._revertOwnershipToRoleName = config.revertOwnershipToRoleName;
     this._roles = config.roles;
     this._withGrantOption = config.withGrantOption;
   }
@@ -156,6 +163,22 @@ export class IntegrationGrant extends cdktf.TerraformResource {
     return this._privilege;
   }
 
+  // revert_ownership_to_role_name - computed: false, optional: true, required: false
+  private _revertOwnershipToRoleName?: string; 
+  public get revertOwnershipToRoleName() {
+    return this.getStringAttribute('revert_ownership_to_role_name');
+  }
+  public set revertOwnershipToRoleName(value: string) {
+    this._revertOwnershipToRoleName = value;
+  }
+  public resetRevertOwnershipToRoleName() {
+    this._revertOwnershipToRoleName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get revertOwnershipToRoleNameInput() {
+    return this._revertOwnershipToRoleName;
+  }
+
   // roles - computed: false, optional: true, required: false
   private _roles?: string[]; 
   public get roles() {
@@ -198,6 +221,7 @@ export class IntegrationGrant extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       integration_name: cdktf.stringToTerraform(this._integrationName),
       privilege: cdktf.stringToTerraform(this._privilege),
+      revert_ownership_to_role_name: cdktf.stringToTerraform(this._revertOwnershipToRoleName),
       roles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._roles),
       with_grant_option: cdktf.booleanToTerraform(this._withGrantOption),
     };

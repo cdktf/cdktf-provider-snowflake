@@ -1,6 +1,6 @@
 # `snowflake_database_grant`
 
-Refer to the Terraform Registory for docs: [`snowflake_database_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/database_grant).
+Refer to the Terraform Registory for docs: [`snowflake_database_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/database_grant).
 
 # `databaseGrant` Submodule <a name="`databaseGrant` Submodule" id="@cdktf/provider-snowflake.databaseGrant"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`snowflake_database_grant`](https://
 
 ### DatabaseGrant <a name="DatabaseGrant" id="@cdktf/provider-snowflake.databaseGrant.DatabaseGrant"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/database_grant snowflake_database_grant}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/database_grant snowflake_database_grant}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.Initializer"></a>
 
@@ -29,6 +29,7 @@ databaseGrant.DatabaseGrant(
   enable_multiple_grants: typing.Union[bool, IResolvable] = None,
   id: str = None,
   privilege: str = None,
+  revert_ownership_to_role_name: str = None,
   roles: typing.List[str] = None,
   shares: typing.List[str] = None,
   with_grant_option: typing.Union[bool, IResolvable] = None
@@ -48,8 +49,9 @@ databaseGrant.DatabaseGrant(
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.Initializer.parameter.databaseName">database_name</a></code> | <code>str</code> | The name of the database on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.Initializer.parameter.enableMultipleGrants">enable_multiple_grants</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When this is set to true, multiple grants of the same type can be created. |
-| <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/database_grant#id DatabaseGrant#id}. |
-| <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.Initializer.parameter.privilege">privilege</a></code> | <code>str</code> | The privilege to grant on the database. |
+| <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/database_grant#id DatabaseGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.Initializer.parameter.privilege">privilege</a></code> | <code>str</code> | The privilege to grant on the database. To grant all privileges, use the value `ALL PRIVILEGES`. |
+| <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.Initializer.parameter.revertOwnershipToRoleName">revert_ownership_to_role_name</a></code> | <code>str</code> | The name of the role to revert ownership to on destroy. |
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.Initializer.parameter.roles">roles</a></code> | <code>typing.List[str]</code> | Grants privilege to these roles. |
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.Initializer.parameter.shares">shares</a></code> | <code>typing.List[str]</code> | Grants privilege to these shares. |
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.Initializer.parameter.withGrantOption">with_grant_option</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When this is set to true, allows the recipient role to grant the privileges to other roles. |
@@ -122,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the database on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/database_grant#database_name DatabaseGrant#database_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/database_grant#database_name DatabaseGrant#database_name}
 
 ---
 
@@ -134,7 +136,7 @@ When this is set to true, multiple grants of the same type can be created.
 
 This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/database_grant#enable_multiple_grants DatabaseGrant#enable_multiple_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/database_grant#enable_multiple_grants DatabaseGrant#enable_multiple_grants}
 
 ---
 
@@ -142,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/database_grant#id DatabaseGrant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/database_grant#id DatabaseGrant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -153,9 +155,21 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-The privilege to grant on the database.
+The privilege to grant on the database. To grant all privileges, use the value `ALL PRIVILEGES`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/database_grant#privilege DatabaseGrant#privilege}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/database_grant#privilege DatabaseGrant#privilege}
+
+---
+
+##### `revert_ownership_to_role_name`<sup>Optional</sup> <a name="revert_ownership_to_role_name" id="@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.Initializer.parameter.revertOwnershipToRoleName"></a>
+
+- *Type:* str
+
+The name of the role to revert ownership to on destroy.
+
+Has no effect unless `privilege` is set to `OWNERSHIP`
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/database_grant#revert_ownership_to_role_name DatabaseGrant#revert_ownership_to_role_name}
 
 ---
 
@@ -165,7 +179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Grants privilege to these roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/database_grant#roles DatabaseGrant#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/database_grant#roles DatabaseGrant#roles}
 
 ---
 
@@ -175,7 +189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Grants privilege to these shares.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/database_grant#shares DatabaseGrant#shares}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/database_grant#shares DatabaseGrant#shares}
 
 ---
 
@@ -185,7 +199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 When this is set to true, allows the recipient role to grant the privileges to other roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/database_grant#with_grant_option DatabaseGrant#with_grant_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/database_grant#with_grant_option DatabaseGrant#with_grant_option}
 
 ---
 
@@ -212,6 +226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.resetEnableMultipleGrants">reset_enable_multiple_grants</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.resetPrivilege">reset_privilege</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.resetRevertOwnershipToRoleName">reset_revert_ownership_to_role_name</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.resetRoles">reset_roles</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.resetShares">reset_shares</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.resetWithGrantOption">reset_with_grant_option</a></code> | *No description.* |
@@ -445,6 +460,12 @@ def reset_id() -> None
 def reset_privilege() -> None
 ```
 
+##### `reset_revert_ownership_to_role_name` <a name="reset_revert_ownership_to_role_name" id="@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.resetRevertOwnershipToRoleName"></a>
+
+```python
+def reset_revert_ownership_to_role_name() -> None
+```
+
 ##### `reset_roles` <a name="reset_roles" id="@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.resetRoles"></a>
 
 ```python
@@ -561,6 +582,7 @@ databaseGrant.DatabaseGrant.is_terraform_resource(
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.property.enableMultipleGrantsInput">enable_multiple_grants_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.property.privilegeInput">privilege_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.property.revertOwnershipToRoleNameInput">revert_ownership_to_role_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.property.rolesInput">roles_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.property.sharesInput">shares_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.property.withGrantOptionInput">with_grant_option_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
@@ -568,6 +590,7 @@ databaseGrant.DatabaseGrant.is_terraform_resource(
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.property.enableMultipleGrants">enable_multiple_grants</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.property.privilege">privilege</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.property.revertOwnershipToRoleName">revert_ownership_to_role_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.property.roles">roles</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.property.shares">shares</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.property.withGrantOption">with_grant_option</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
@@ -756,6 +779,16 @@ privilege_input: str
 
 ---
 
+##### `revert_ownership_to_role_name_input`<sup>Optional</sup> <a name="revert_ownership_to_role_name_input" id="@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.property.revertOwnershipToRoleNameInput"></a>
+
+```python
+revert_ownership_to_role_name_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `roles_input`<sup>Optional</sup> <a name="roles_input" id="@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.property.rolesInput"></a>
 
 ```python
@@ -820,6 +853,16 @@ id: str
 
 ```python
 privilege: str
+```
+
+- *Type:* str
+
+---
+
+##### `revert_ownership_to_role_name`<sup>Required</sup> <a name="revert_ownership_to_role_name" id="@cdktf/provider-snowflake.databaseGrant.DatabaseGrant.property.revertOwnershipToRoleName"></a>
+
+```python
+revert_ownership_to_role_name: str
 ```
 
 - *Type:* str
@@ -895,6 +938,7 @@ databaseGrant.DatabaseGrantConfig(
   enable_multiple_grants: typing.Union[bool, IResolvable] = None,
   id: str = None,
   privilege: str = None,
+  revert_ownership_to_role_name: str = None,
   roles: typing.List[str] = None,
   shares: typing.List[str] = None,
   with_grant_option: typing.Union[bool, IResolvable] = None
@@ -914,8 +958,9 @@ databaseGrant.DatabaseGrantConfig(
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrantConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrantConfig.property.databaseName">database_name</a></code> | <code>str</code> | The name of the database on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrantConfig.property.enableMultipleGrants">enable_multiple_grants</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When this is set to true, multiple grants of the same type can be created. |
-| <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrantConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/database_grant#id DatabaseGrant#id}. |
-| <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrantConfig.property.privilege">privilege</a></code> | <code>str</code> | The privilege to grant on the database. |
+| <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrantConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/database_grant#id DatabaseGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrantConfig.property.privilege">privilege</a></code> | <code>str</code> | The privilege to grant on the database. To grant all privileges, use the value `ALL PRIVILEGES`. |
+| <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrantConfig.property.revertOwnershipToRoleName">revert_ownership_to_role_name</a></code> | <code>str</code> | The name of the role to revert ownership to on destroy. |
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrantConfig.property.roles">roles</a></code> | <code>typing.List[str]</code> | Grants privilege to these roles. |
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrantConfig.property.shares">shares</a></code> | <code>typing.List[str]</code> | Grants privilege to these shares. |
 | <code><a href="#@cdktf/provider-snowflake.databaseGrant.DatabaseGrantConfig.property.withGrantOption">with_grant_option</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When this is set to true, allows the recipient role to grant the privileges to other roles. |
@@ -1002,7 +1047,7 @@ database_name: str
 
 The name of the database on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/database_grant#database_name DatabaseGrant#database_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/database_grant#database_name DatabaseGrant#database_name}
 
 ---
 
@@ -1018,7 +1063,7 @@ When this is set to true, multiple grants of the same type can be created.
 
 This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/database_grant#enable_multiple_grants DatabaseGrant#enable_multiple_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/database_grant#enable_multiple_grants DatabaseGrant#enable_multiple_grants}
 
 ---
 
@@ -1030,7 +1075,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/database_grant#id DatabaseGrant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/database_grant#id DatabaseGrant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1045,9 +1090,25 @@ privilege: str
 
 - *Type:* str
 
-The privilege to grant on the database.
+The privilege to grant on the database. To grant all privileges, use the value `ALL PRIVILEGES`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/database_grant#privilege DatabaseGrant#privilege}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/database_grant#privilege DatabaseGrant#privilege}
+
+---
+
+##### `revert_ownership_to_role_name`<sup>Optional</sup> <a name="revert_ownership_to_role_name" id="@cdktf/provider-snowflake.databaseGrant.DatabaseGrantConfig.property.revertOwnershipToRoleName"></a>
+
+```python
+revert_ownership_to_role_name: str
+```
+
+- *Type:* str
+
+The name of the role to revert ownership to on destroy.
+
+Has no effect unless `privilege` is set to `OWNERSHIP`
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/database_grant#revert_ownership_to_role_name DatabaseGrant#revert_ownership_to_role_name}
 
 ---
 
@@ -1061,7 +1122,7 @@ roles: typing.List[str]
 
 Grants privilege to these roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/database_grant#roles DatabaseGrant#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/database_grant#roles DatabaseGrant#roles}
 
 ---
 
@@ -1075,7 +1136,7 @@ shares: typing.List[str]
 
 Grants privilege to these shares.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/database_grant#shares DatabaseGrant#shares}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/database_grant#shares DatabaseGrant#shares}
 
 ---
 
@@ -1089,7 +1150,7 @@ with_grant_option: typing.Union[bool, IResolvable]
 
 When this is set to true, allows the recipient role to grant the privileges to other roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/database_grant#with_grant_option DatabaseGrant#with_grant_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/database_grant#with_grant_option DatabaseGrant#with_grant_option}
 
 ---
 

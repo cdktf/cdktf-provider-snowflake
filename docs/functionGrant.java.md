@@ -1,6 +1,6 @@
 # `snowflake_function_grant`
 
-Refer to the Terraform Registory for docs: [`snowflake_function_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/function_grant).
+Refer to the Terraform Registory for docs: [`snowflake_function_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/function_grant).
 
 # `functionGrant` Submodule <a name="`functionGrant` Submodule" id="@cdktf/provider-snowflake.functionGrant"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`snowflake_function_grant`](https://
 
 ### FunctionGrant <a name="FunctionGrant" id="@cdktf/provider-snowflake.functionGrant.FunctionGrant"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/function_grant snowflake_function_grant}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/function_grant snowflake_function_grant}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.functionGrant.FunctionGrant.Initializer"></a>
 
@@ -34,9 +34,12 @@ FunctionGrant.Builder.create(Construct scope, java.lang.String id)
 //  .enableMultipleGrants(IResolvable)
 //  .functionName(java.lang.String)
 //  .id(java.lang.String)
+//  .onAll(java.lang.Boolean)
+//  .onAll(IResolvable)
 //  .onFuture(java.lang.Boolean)
 //  .onFuture(IResolvable)
 //  .privilege(java.lang.String)
+//  .revertOwnershipToRoleName(java.lang.String)
 //  .schemaName(java.lang.String)
 //  .shares(java.util.List<java.lang.String>)
 //  .withGrantOption(java.lang.Boolean)
@@ -60,9 +63,11 @@ FunctionGrant.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrant.Initializer.parameter.argumentDataTypes">argumentDataTypes</a></code> | <code>java.util.List<java.lang.String></code> | List of the argument data types for the function (must be present if function has arguments and function_name is present). |
 | <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrant.Initializer.parameter.enableMultipleGrants">enableMultipleGrants</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
 | <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrant.Initializer.parameter.functionName">functionName</a></code> | <code>java.lang.String</code> | The name of the function on which to grant privileges immediately (only valid if on_future is false). |
-| <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrant.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/function_grant#id FunctionGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrant.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/function_grant#id FunctionGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrant.Initializer.parameter.onAll">onAll</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When this is set to true and a schema_name is provided, apply this grant on all functions in the given schema. |
 | <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrant.Initializer.parameter.onFuture">onFuture</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When this is set to true and a schema_name is provided, apply this grant on all future functions in the given schema. |
-| <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrant.Initializer.parameter.privilege">privilege</a></code> | <code>java.lang.String</code> | The privilege to grant on the current or future function. Must be one of `USAGE` or `OWNERSHIP`. |
+| <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrant.Initializer.parameter.privilege">privilege</a></code> | <code>java.lang.String</code> | The privilege to grant on the current or future function. |
+| <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrant.Initializer.parameter.revertOwnershipToRoleName">revertOwnershipToRoleName</a></code> | <code>java.lang.String</code> | The name of the role to revert ownership to on destroy. |
 | <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrant.Initializer.parameter.schemaName">schemaName</a></code> | <code>java.lang.String</code> | The name of the schema containing the current or future functions on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrant.Initializer.parameter.shares">shares</a></code> | <code>java.util.List<java.lang.String></code> | Grants privilege to these shares (only valid if on_future is false). |
 | <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrant.Initializer.parameter.withGrantOption">withGrantOption</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When this is set to true, allows the recipient role to grant the privileges to other roles. |
@@ -135,7 +140,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the database containing the current or future functions on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/function_grant#database_name FunctionGrant#database_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/function_grant#database_name FunctionGrant#database_name}
 
 ---
 
@@ -145,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Grants privilege to these roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/function_grant#roles FunctionGrant#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/function_grant#roles FunctionGrant#roles}
 
 ---
 
@@ -155,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 List of the argument data types for the function (must be present if function has arguments and function_name is present).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/function_grant#argument_data_types FunctionGrant#argument_data_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/function_grant#argument_data_types FunctionGrant#argument_data_types}
 
 ---
 
@@ -167,7 +172,7 @@ When this is set to true, multiple grants of the same type can be created.
 
 This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/function_grant#enable_multiple_grants FunctionGrant#enable_multiple_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/function_grant#enable_multiple_grants FunctionGrant#enable_multiple_grants}
 
 ---
 
@@ -177,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The name of the function on which to grant privileges immediately (only valid if on_future is false).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/function_grant#function_name FunctionGrant#function_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/function_grant#function_name FunctionGrant#function_name}
 
 ---
 
@@ -185,10 +190,22 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/function_grant#id FunctionGrant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/function_grant#id FunctionGrant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `onAll`<sup>Optional</sup> <a name="onAll" id="@cdktf/provider-snowflake.functionGrant.FunctionGrant.Initializer.parameter.onAll"></a>
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+When this is set to true and a schema_name is provided, apply this grant on all functions in the given schema.
+
+When this is true and no schema_name is provided apply this grant on all functions in the given database. The function_name, arguments, return_type, and shares fields must be unset in order to use on_all. Cannot be used together with on_future.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/function_grant#on_all FunctionGrant#on_all}
 
 ---
 
@@ -198,9 +215,9 @@ If you experience problems setting this value it might not be settable. Please t
 
 When this is set to true and a schema_name is provided, apply this grant on all future functions in the given schema.
 
-When this is true and no schema_name is provided apply this grant on all future functions in the given database. The function_name, arguments, return_type, and shares fields must be unset in order to use on_future.
+When this is true and no schema_name is provided apply this grant on all future functions in the given database. The function_name, arguments, return_type, and shares fields must be unset in order to use on_future. Cannot be used together with on_all.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/function_grant#on_future FunctionGrant#on_future}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/function_grant#on_future FunctionGrant#on_future}
 
 ---
 
@@ -208,9 +225,23 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.lang.String
 
-The privilege to grant on the current or future function. Must be one of `USAGE` or `OWNERSHIP`.
+The privilege to grant on the current or future function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/function_grant#privilege FunctionGrant#privilege}
+Must be one of `USAGE` or `OWNERSHIP`. To grant all privileges, use the value `ALL PRIVILEGES`
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/function_grant#privilege FunctionGrant#privilege}
+
+---
+
+##### `revertOwnershipToRoleName`<sup>Optional</sup> <a name="revertOwnershipToRoleName" id="@cdktf/provider-snowflake.functionGrant.FunctionGrant.Initializer.parameter.revertOwnershipToRoleName"></a>
+
+- *Type:* java.lang.String
+
+The name of the role to revert ownership to on destroy.
+
+Has no effect unless `privilege` is set to `OWNERSHIP`
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/function_grant#revert_ownership_to_role_name FunctionGrant#revert_ownership_to_role_name}
 
 ---
 
@@ -220,7 +251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The name of the schema containing the current or future functions on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/function_grant#schema_name FunctionGrant#schema_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/function_grant#schema_name FunctionGrant#schema_name}
 
 ---
 
@@ -230,7 +261,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Grants privilege to these shares (only valid if on_future is false).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/function_grant#shares FunctionGrant#shares}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/function_grant#shares FunctionGrant#shares}
 
 ---
 
@@ -240,7 +271,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 When this is set to true, allows the recipient role to grant the privileges to other roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/function_grant#with_grant_option FunctionGrant#with_grant_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/function_grant#with_grant_option FunctionGrant#with_grant_option}
 
 ---
 
@@ -268,8 +299,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 | <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrant.resetEnableMultipleGrants">resetEnableMultipleGrants</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrant.resetFunctionName">resetFunctionName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrant.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrant.resetOnAll">resetOnAll</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrant.resetOnFuture">resetOnFuture</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrant.resetPrivilege">resetPrivilege</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrant.resetRevertOwnershipToRoleName">resetRevertOwnershipToRoleName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrant.resetSchemaName">resetSchemaName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrant.resetShares">resetShares</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrant.resetWithGrantOption">resetWithGrantOption</a></code> | *No description.* |
@@ -484,6 +517,12 @@ public void resetFunctionName()
 public void resetId()
 ```
 
+##### `resetOnAll` <a name="resetOnAll" id="@cdktf/provider-snowflake.functionGrant.FunctionGrant.resetOnAll"></a>
+
+```java
+public void resetOnAll()
+```
+
 ##### `resetOnFuture` <a name="resetOnFuture" id="@cdktf/provider-snowflake.functionGrant.FunctionGrant.resetOnFuture"></a>
 
 ```java
@@ -494,6 +533,12 @@ public void resetOnFuture()
 
 ```java
 public void resetPrivilege()
+```
+
+##### `resetRevertOwnershipToRoleName` <a name="resetRevertOwnershipToRoleName" id="@cdktf/provider-snowflake.functionGrant.FunctionGrant.resetRevertOwnershipToRoleName"></a>
+
+```java
+public void resetRevertOwnershipToRoleName()
 ```
 
 ##### `resetSchemaName` <a name="resetSchemaName" id="@cdktf/provider-snowflake.functionGrant.FunctionGrant.resetSchemaName"></a>
@@ -607,8 +652,10 @@ FunctionGrant.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrant.property.enableMultipleGrantsInput">enableMultipleGrantsInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrant.property.functionNameInput">functionNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrant.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrant.property.onAllInput">onAllInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrant.property.onFutureInput">onFutureInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrant.property.privilegeInput">privilegeInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrant.property.revertOwnershipToRoleNameInput">revertOwnershipToRoleNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrant.property.rolesInput">rolesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrant.property.schemaNameInput">schemaNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrant.property.sharesInput">sharesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
@@ -618,8 +665,10 @@ FunctionGrant.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrant.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrant.property.functionName">functionName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrant.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrant.property.onAll">onAll</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrant.property.onFuture">onFuture</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrant.property.privilege">privilege</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrant.property.revertOwnershipToRoleName">revertOwnershipToRoleName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrant.property.roles">roles</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrant.property.schemaName">schemaName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrant.property.shares">shares</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
@@ -819,6 +868,16 @@ public java.lang.String getIdInput();
 
 ---
 
+##### `onAllInput`<sup>Optional</sup> <a name="onAllInput" id="@cdktf/provider-snowflake.functionGrant.FunctionGrant.property.onAllInput"></a>
+
+```java
+public java.lang.Object getOnAllInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
 ##### `onFutureInput`<sup>Optional</sup> <a name="onFutureInput" id="@cdktf/provider-snowflake.functionGrant.FunctionGrant.property.onFutureInput"></a>
 
 ```java
@@ -833,6 +892,16 @@ public java.lang.Object getOnFutureInput();
 
 ```java
 public java.lang.String getPrivilegeInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `revertOwnershipToRoleNameInput`<sup>Optional</sup> <a name="revertOwnershipToRoleNameInput" id="@cdktf/provider-snowflake.functionGrant.FunctionGrant.property.revertOwnershipToRoleNameInput"></a>
+
+```java
+public java.lang.String getRevertOwnershipToRoleNameInput();
 ```
 
 - *Type:* java.lang.String
@@ -929,6 +998,16 @@ public java.lang.String getId();
 
 ---
 
+##### `onAll`<sup>Required</sup> <a name="onAll" id="@cdktf/provider-snowflake.functionGrant.FunctionGrant.property.onAll"></a>
+
+```java
+public java.lang.Object getOnAll();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
 ##### `onFuture`<sup>Required</sup> <a name="onFuture" id="@cdktf/provider-snowflake.functionGrant.FunctionGrant.property.onFuture"></a>
 
 ```java
@@ -943,6 +1022,16 @@ public java.lang.Object getOnFuture();
 
 ```java
 public java.lang.String getPrivilege();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `revertOwnershipToRoleName`<sup>Required</sup> <a name="revertOwnershipToRoleName" id="@cdktf/provider-snowflake.functionGrant.FunctionGrant.property.revertOwnershipToRoleName"></a>
+
+```java
+public java.lang.String getRevertOwnershipToRoleName();
 ```
 
 - *Type:* java.lang.String
@@ -1035,9 +1124,12 @@ FunctionGrantConfig.builder()
 //  .enableMultipleGrants(IResolvable)
 //  .functionName(java.lang.String)
 //  .id(java.lang.String)
+//  .onAll(java.lang.Boolean)
+//  .onAll(IResolvable)
 //  .onFuture(java.lang.Boolean)
 //  .onFuture(IResolvable)
 //  .privilege(java.lang.String)
+//  .revertOwnershipToRoleName(java.lang.String)
 //  .schemaName(java.lang.String)
 //  .shares(java.util.List<java.lang.String>)
 //  .withGrantOption(java.lang.Boolean)
@@ -1061,9 +1153,11 @@ FunctionGrantConfig.builder()
 | <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrantConfig.property.argumentDataTypes">argumentDataTypes</a></code> | <code>java.util.List<java.lang.String></code> | List of the argument data types for the function (must be present if function has arguments and function_name is present). |
 | <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrantConfig.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
 | <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrantConfig.property.functionName">functionName</a></code> | <code>java.lang.String</code> | The name of the function on which to grant privileges immediately (only valid if on_future is false). |
-| <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrantConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/function_grant#id FunctionGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrantConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/function_grant#id FunctionGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrantConfig.property.onAll">onAll</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When this is set to true and a schema_name is provided, apply this grant on all functions in the given schema. |
 | <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrantConfig.property.onFuture">onFuture</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When this is set to true and a schema_name is provided, apply this grant on all future functions in the given schema. |
-| <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrantConfig.property.privilege">privilege</a></code> | <code>java.lang.String</code> | The privilege to grant on the current or future function. Must be one of `USAGE` or `OWNERSHIP`. |
+| <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrantConfig.property.privilege">privilege</a></code> | <code>java.lang.String</code> | The privilege to grant on the current or future function. |
+| <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrantConfig.property.revertOwnershipToRoleName">revertOwnershipToRoleName</a></code> | <code>java.lang.String</code> | The name of the role to revert ownership to on destroy. |
 | <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrantConfig.property.schemaName">schemaName</a></code> | <code>java.lang.String</code> | The name of the schema containing the current or future functions on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrantConfig.property.shares">shares</a></code> | <code>java.util.List<java.lang.String></code> | Grants privilege to these shares (only valid if on_future is false). |
 | <code><a href="#@cdktf/provider-snowflake.functionGrant.FunctionGrantConfig.property.withGrantOption">withGrantOption</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When this is set to true, allows the recipient role to grant the privileges to other roles. |
@@ -1150,7 +1244,7 @@ public java.lang.String getDatabaseName();
 
 The name of the database containing the current or future functions on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/function_grant#database_name FunctionGrant#database_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/function_grant#database_name FunctionGrant#database_name}
 
 ---
 
@@ -1164,7 +1258,7 @@ public java.util.List<java.lang.String> getRoles();
 
 Grants privilege to these roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/function_grant#roles FunctionGrant#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/function_grant#roles FunctionGrant#roles}
 
 ---
 
@@ -1178,7 +1272,7 @@ public java.util.List<java.lang.String> getArgumentDataTypes();
 
 List of the argument data types for the function (must be present if function has arguments and function_name is present).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/function_grant#argument_data_types FunctionGrant#argument_data_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/function_grant#argument_data_types FunctionGrant#argument_data_types}
 
 ---
 
@@ -1194,7 +1288,7 @@ When this is set to true, multiple grants of the same type can be created.
 
 This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/function_grant#enable_multiple_grants FunctionGrant#enable_multiple_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/function_grant#enable_multiple_grants FunctionGrant#enable_multiple_grants}
 
 ---
 
@@ -1208,7 +1302,7 @@ public java.lang.String getFunctionName();
 
 The name of the function on which to grant privileges immediately (only valid if on_future is false).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/function_grant#function_name FunctionGrant#function_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/function_grant#function_name FunctionGrant#function_name}
 
 ---
 
@@ -1220,10 +1314,26 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/function_grant#id FunctionGrant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/function_grant#id FunctionGrant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `onAll`<sup>Optional</sup> <a name="onAll" id="@cdktf/provider-snowflake.functionGrant.FunctionGrantConfig.property.onAll"></a>
+
+```java
+public java.lang.Object getOnAll();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+When this is set to true and a schema_name is provided, apply this grant on all functions in the given schema.
+
+When this is true and no schema_name is provided apply this grant on all functions in the given database. The function_name, arguments, return_type, and shares fields must be unset in order to use on_all. Cannot be used together with on_future.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/function_grant#on_all FunctionGrant#on_all}
 
 ---
 
@@ -1237,9 +1347,9 @@ public java.lang.Object getOnFuture();
 
 When this is set to true and a schema_name is provided, apply this grant on all future functions in the given schema.
 
-When this is true and no schema_name is provided apply this grant on all future functions in the given database. The function_name, arguments, return_type, and shares fields must be unset in order to use on_future.
+When this is true and no schema_name is provided apply this grant on all future functions in the given database. The function_name, arguments, return_type, and shares fields must be unset in order to use on_future. Cannot be used together with on_all.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/function_grant#on_future FunctionGrant#on_future}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/function_grant#on_future FunctionGrant#on_future}
 
 ---
 
@@ -1251,9 +1361,27 @@ public java.lang.String getPrivilege();
 
 - *Type:* java.lang.String
 
-The privilege to grant on the current or future function. Must be one of `USAGE` or `OWNERSHIP`.
+The privilege to grant on the current or future function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/function_grant#privilege FunctionGrant#privilege}
+Must be one of `USAGE` or `OWNERSHIP`. To grant all privileges, use the value `ALL PRIVILEGES`
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/function_grant#privilege FunctionGrant#privilege}
+
+---
+
+##### `revertOwnershipToRoleName`<sup>Optional</sup> <a name="revertOwnershipToRoleName" id="@cdktf/provider-snowflake.functionGrant.FunctionGrantConfig.property.revertOwnershipToRoleName"></a>
+
+```java
+public java.lang.String getRevertOwnershipToRoleName();
+```
+
+- *Type:* java.lang.String
+
+The name of the role to revert ownership to on destroy.
+
+Has no effect unless `privilege` is set to `OWNERSHIP`
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/function_grant#revert_ownership_to_role_name FunctionGrant#revert_ownership_to_role_name}
 
 ---
 
@@ -1267,7 +1395,7 @@ public java.lang.String getSchemaName();
 
 The name of the schema containing the current or future functions on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/function_grant#schema_name FunctionGrant#schema_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/function_grant#schema_name FunctionGrant#schema_name}
 
 ---
 
@@ -1281,7 +1409,7 @@ public java.util.List<java.lang.String> getShares();
 
 Grants privilege to these shares (only valid if on_future is false).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/function_grant#shares FunctionGrant#shares}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/function_grant#shares FunctionGrant#shares}
 
 ---
 
@@ -1295,7 +1423,7 @@ public java.lang.Object getWithGrantOption();
 
 When this is set to true, allows the recipient role to grant the privileges to other roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/function_grant#with_grant_option FunctionGrant#with_grant_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/function_grant#with_grant_option FunctionGrant#with_grant_option}
 
 ---
 

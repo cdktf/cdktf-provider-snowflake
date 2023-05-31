@@ -1,6 +1,6 @@
 # `snowflake_api_integration`
 
-Refer to the Terraform Registory for docs: [`snowflake_api_integration`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/api_integration).
+Refer to the Terraform Registory for docs: [`snowflake_api_integration`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/api_integration).
 
 # `apiIntegration` Submodule <a name="`apiIntegration` Submodule" id="@cdktf/provider-snowflake.apiIntegration"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`snowflake_api_integration`](https:/
 
 ### ApiIntegration <a name="ApiIntegration" id="@cdktf/provider-snowflake.apiIntegration.ApiIntegration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/api_integration snowflake_api_integration}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/api_integration snowflake_api_integration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiIntegration.ApiIntegration.Initializer"></a>
 
@@ -32,6 +32,7 @@ ApiIntegration.Builder.create(Construct scope, java.lang.String id)
     .name(java.lang.String)
 //  .apiAwsRoleArn(java.lang.String)
 //  .apiBlockedPrefixes(java.util.List<java.lang.String>)
+//  .apiGcpServiceAccount(java.lang.String)
 //  .apiKey(java.lang.String)
 //  .azureAdApplicationId(java.lang.String)
 //  .azureTenantId(java.lang.String)
@@ -59,13 +60,14 @@ ApiIntegration.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Specifies the name of the API integration. |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.Initializer.parameter.apiAwsRoleArn">apiAwsRoleArn</a></code> | <code>java.lang.String</code> | ARN of a cloud platform role. |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.Initializer.parameter.apiBlockedPrefixes">apiBlockedPrefixes</a></code> | <code>java.util.List<java.lang.String></code> | Lists the endpoints and resources in the HTTPS proxy service that are not allowed to be called from Snowflake. |
+| <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.Initializer.parameter.apiGcpServiceAccount">apiGcpServiceAccount</a></code> | <code>java.lang.String</code> | The service account used for communication with the Google API Gateway. |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.Initializer.parameter.apiKey">apiKey</a></code> | <code>java.lang.String</code> | The API key (also called a “subscription key”). |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.Initializer.parameter.azureAdApplicationId">azureAdApplicationId</a></code> | <code>java.lang.String</code> | The 'Application (client) id' of the Azure AD app for your remote service. |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.Initializer.parameter.azureTenantId">azureTenantId</a></code> | <code>java.lang.String</code> | Specifies the ID for your Office 365 tenant that all Azure API Management instances belong to. |
-| <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.Initializer.parameter.comment">comment</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/api_integration#comment ApiIntegration#comment}. |
+| <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.Initializer.parameter.comment">comment</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/api_integration#comment ApiIntegration#comment}. |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.Initializer.parameter.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Specifies whether this API integration is enabled or disabled. |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.Initializer.parameter.googleAudience">googleAudience</a></code> | <code>java.lang.String</code> | The audience claim when generating the JWT (JSON Web Token) to authenticate to the Google API Gateway. |
-| <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/api_integration#id ApiIntegration#id}. |
+| <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/api_integration#id ApiIntegration#id}. |
 
 ---
 
@@ -135,7 +137,7 @@ Must be unique amongst siblings in the same scope
 
 Explicitly limits external functions that use the integration to reference one or more HTTPS proxy service endpoints and resources within those proxies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/api_integration#api_allowed_prefixes ApiIntegration#api_allowed_prefixes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/api_integration#api_allowed_prefixes ApiIntegration#api_allowed_prefixes}
 
 ---
 
@@ -145,7 +147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the HTTPS proxy service type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/api_integration#api_provider ApiIntegration#api_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/api_integration#api_provider ApiIntegration#api_provider}
 
 ---
 
@@ -157,7 +159,7 @@ Specifies the name of the API integration.
 
 This name follows the rules for Object Identifiers. The name should be unique among api integrations in your account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/api_integration#name ApiIntegration#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/api_integration#name ApiIntegration#name}
 
 ---
 
@@ -167,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ARN of a cloud platform role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/api_integration#api_aws_role_arn ApiIntegration#api_aws_role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/api_integration#api_aws_role_arn ApiIntegration#api_aws_role_arn}
 
 ---
 
@@ -177,7 +179,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Lists the endpoints and resources in the HTTPS proxy service that are not allowed to be called from Snowflake.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/api_integration#api_blocked_prefixes ApiIntegration#api_blocked_prefixes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/api_integration#api_blocked_prefixes ApiIntegration#api_blocked_prefixes}
+
+---
+
+##### `apiGcpServiceAccount`<sup>Optional</sup> <a name="apiGcpServiceAccount" id="@cdktf/provider-snowflake.apiIntegration.ApiIntegration.Initializer.parameter.apiGcpServiceAccount"></a>
+
+- *Type:* java.lang.String
+
+The service account used for communication with the Google API Gateway.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/api_integration#api_gcp_service_account ApiIntegration#api_gcp_service_account}
 
 ---
 
@@ -187,7 +199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The API key (also called a “subscription key”).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/api_integration#api_key ApiIntegration#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/api_integration#api_key ApiIntegration#api_key}
 
 ---
 
@@ -197,7 +209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The 'Application (client) id' of the Azure AD app for your remote service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/api_integration#azure_ad_application_id ApiIntegration#azure_ad_application_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/api_integration#azure_ad_application_id ApiIntegration#azure_ad_application_id}
 
 ---
 
@@ -207,7 +219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the ID for your Office 365 tenant that all Azure API Management instances belong to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/api_integration#azure_tenant_id ApiIntegration#azure_tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/api_integration#azure_tenant_id ApiIntegration#azure_tenant_id}
 
 ---
 
@@ -215,7 +227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/api_integration#comment ApiIntegration#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/api_integration#comment ApiIntegration#comment}.
 
 ---
 
@@ -227,7 +239,7 @@ Specifies whether this API integration is enabled or disabled.
 
 If the API integration is disabled, any external function that relies on it will not work.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/api_integration#enabled ApiIntegration#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/api_integration#enabled ApiIntegration#enabled}
 
 ---
 
@@ -237,7 +249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The audience claim when generating the JWT (JSON Web Token) to authenticate to the Google API Gateway.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/api_integration#google_audience ApiIntegration#google_audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/api_integration#google_audience ApiIntegration#google_audience}
 
 ---
 
@@ -245,7 +257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/api_integration#id ApiIntegration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/api_integration#id ApiIntegration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -274,6 +286,7 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.resetApiAwsRoleArn">resetApiAwsRoleArn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.resetApiBlockedPrefixes">resetApiBlockedPrefixes</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.resetApiGcpServiceAccount">resetApiGcpServiceAccount</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.resetApiKey">resetApiKey</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.resetAzureAdApplicationId">resetAzureAdApplicationId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.resetAzureTenantId">resetAzureTenantId</a></code> | *No description.* |
@@ -480,6 +493,12 @@ public void resetApiAwsRoleArn()
 public void resetApiBlockedPrefixes()
 ```
 
+##### `resetApiGcpServiceAccount` <a name="resetApiGcpServiceAccount" id="@cdktf/provider-snowflake.apiIntegration.ApiIntegration.resetApiGcpServiceAccount"></a>
+
+```java
+public void resetApiGcpServiceAccount()
+```
+
 ##### `resetApiKey` <a name="resetApiKey" id="@cdktf/provider-snowflake.apiIntegration.ApiIntegration.resetApiKey"></a>
 
 ```java
@@ -618,6 +637,7 @@ ApiIntegration.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.property.apiAllowedPrefixesInput">apiAllowedPrefixesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.property.apiAwsRoleArnInput">apiAwsRoleArnInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.property.apiBlockedPrefixesInput">apiBlockedPrefixesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.property.apiGcpServiceAccountInput">apiGcpServiceAccountInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.property.apiKeyInput">apiKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.property.apiProviderInput">apiProviderInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.property.azureAdApplicationIdInput">azureAdApplicationIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -630,6 +650,7 @@ ApiIntegration.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.property.apiAllowedPrefixes">apiAllowedPrefixes</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.property.apiAwsRoleArn">apiAwsRoleArn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.property.apiBlockedPrefixes">apiBlockedPrefixes</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.property.apiGcpServiceAccount">apiGcpServiceAccount</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.property.apiKey">apiKey</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.property.apiProvider">apiProvider</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegration.property.azureAdApplicationId">azureAdApplicationId</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -864,6 +885,16 @@ public java.util.List<java.lang.String> getApiBlockedPrefixesInput();
 
 ---
 
+##### `apiGcpServiceAccountInput`<sup>Optional</sup> <a name="apiGcpServiceAccountInput" id="@cdktf/provider-snowflake.apiIntegration.ApiIntegration.property.apiGcpServiceAccountInput"></a>
+
+```java
+public java.lang.String getApiGcpServiceAccountInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `apiKeyInput`<sup>Optional</sup> <a name="apiKeyInput" id="@cdktf/provider-snowflake.apiIntegration.ApiIntegration.property.apiKeyInput"></a>
 
 ```java
@@ -981,6 +1012,16 @@ public java.util.List<java.lang.String> getApiBlockedPrefixes();
 ```
 
 - *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `apiGcpServiceAccount`<sup>Required</sup> <a name="apiGcpServiceAccount" id="@cdktf/provider-snowflake.apiIntegration.ApiIntegration.property.apiGcpServiceAccount"></a>
+
+```java
+public java.lang.String getApiGcpServiceAccount();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -1118,6 +1159,7 @@ ApiIntegrationConfig.builder()
     .name(java.lang.String)
 //  .apiAwsRoleArn(java.lang.String)
 //  .apiBlockedPrefixes(java.util.List<java.lang.String>)
+//  .apiGcpServiceAccount(java.lang.String)
 //  .apiKey(java.lang.String)
 //  .azureAdApplicationId(java.lang.String)
 //  .azureTenantId(java.lang.String)
@@ -1145,13 +1187,14 @@ ApiIntegrationConfig.builder()
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegrationConfig.property.name">name</a></code> | <code>java.lang.String</code> | Specifies the name of the API integration. |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegrationConfig.property.apiAwsRoleArn">apiAwsRoleArn</a></code> | <code>java.lang.String</code> | ARN of a cloud platform role. |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegrationConfig.property.apiBlockedPrefixes">apiBlockedPrefixes</a></code> | <code>java.util.List<java.lang.String></code> | Lists the endpoints and resources in the HTTPS proxy service that are not allowed to be called from Snowflake. |
+| <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegrationConfig.property.apiGcpServiceAccount">apiGcpServiceAccount</a></code> | <code>java.lang.String</code> | The service account used for communication with the Google API Gateway. |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegrationConfig.property.apiKey">apiKey</a></code> | <code>java.lang.String</code> | The API key (also called a “subscription key”). |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegrationConfig.property.azureAdApplicationId">azureAdApplicationId</a></code> | <code>java.lang.String</code> | The 'Application (client) id' of the Azure AD app for your remote service. |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegrationConfig.property.azureTenantId">azureTenantId</a></code> | <code>java.lang.String</code> | Specifies the ID for your Office 365 tenant that all Azure API Management instances belong to. |
-| <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegrationConfig.property.comment">comment</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/api_integration#comment ApiIntegration#comment}. |
+| <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegrationConfig.property.comment">comment</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/api_integration#comment ApiIntegration#comment}. |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegrationConfig.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Specifies whether this API integration is enabled or disabled. |
 | <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegrationConfig.property.googleAudience">googleAudience</a></code> | <code>java.lang.String</code> | The audience claim when generating the JWT (JSON Web Token) to authenticate to the Google API Gateway. |
-| <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegrationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/api_integration#id ApiIntegration#id}. |
+| <code><a href="#@cdktf/provider-snowflake.apiIntegration.ApiIntegrationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/api_integration#id ApiIntegration#id}. |
 
 ---
 
@@ -1235,7 +1278,7 @@ public java.util.List<java.lang.String> getApiAllowedPrefixes();
 
 Explicitly limits external functions that use the integration to reference one or more HTTPS proxy service endpoints and resources within those proxies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/api_integration#api_allowed_prefixes ApiIntegration#api_allowed_prefixes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/api_integration#api_allowed_prefixes ApiIntegration#api_allowed_prefixes}
 
 ---
 
@@ -1249,7 +1292,7 @@ public java.lang.String getApiProvider();
 
 Specifies the HTTPS proxy service type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/api_integration#api_provider ApiIntegration#api_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/api_integration#api_provider ApiIntegration#api_provider}
 
 ---
 
@@ -1265,7 +1308,7 @@ Specifies the name of the API integration.
 
 This name follows the rules for Object Identifiers. The name should be unique among api integrations in your account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/api_integration#name ApiIntegration#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/api_integration#name ApiIntegration#name}
 
 ---
 
@@ -1279,7 +1322,7 @@ public java.lang.String getApiAwsRoleArn();
 
 ARN of a cloud platform role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/api_integration#api_aws_role_arn ApiIntegration#api_aws_role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/api_integration#api_aws_role_arn ApiIntegration#api_aws_role_arn}
 
 ---
 
@@ -1293,7 +1336,21 @@ public java.util.List<java.lang.String> getApiBlockedPrefixes();
 
 Lists the endpoints and resources in the HTTPS proxy service that are not allowed to be called from Snowflake.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/api_integration#api_blocked_prefixes ApiIntegration#api_blocked_prefixes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/api_integration#api_blocked_prefixes ApiIntegration#api_blocked_prefixes}
+
+---
+
+##### `apiGcpServiceAccount`<sup>Optional</sup> <a name="apiGcpServiceAccount" id="@cdktf/provider-snowflake.apiIntegration.ApiIntegrationConfig.property.apiGcpServiceAccount"></a>
+
+```java
+public java.lang.String getApiGcpServiceAccount();
+```
+
+- *Type:* java.lang.String
+
+The service account used for communication with the Google API Gateway.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/api_integration#api_gcp_service_account ApiIntegration#api_gcp_service_account}
 
 ---
 
@@ -1307,7 +1364,7 @@ public java.lang.String getApiKey();
 
 The API key (also called a “subscription key”).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/api_integration#api_key ApiIntegration#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/api_integration#api_key ApiIntegration#api_key}
 
 ---
 
@@ -1321,7 +1378,7 @@ public java.lang.String getAzureAdApplicationId();
 
 The 'Application (client) id' of the Azure AD app for your remote service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/api_integration#azure_ad_application_id ApiIntegration#azure_ad_application_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/api_integration#azure_ad_application_id ApiIntegration#azure_ad_application_id}
 
 ---
 
@@ -1335,7 +1392,7 @@ public java.lang.String getAzureTenantId();
 
 Specifies the ID for your Office 365 tenant that all Azure API Management instances belong to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/api_integration#azure_tenant_id ApiIntegration#azure_tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/api_integration#azure_tenant_id ApiIntegration#azure_tenant_id}
 
 ---
 
@@ -1347,7 +1404,7 @@ public java.lang.String getComment();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/api_integration#comment ApiIntegration#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/api_integration#comment ApiIntegration#comment}.
 
 ---
 
@@ -1363,7 +1420,7 @@ Specifies whether this API integration is enabled or disabled.
 
 If the API integration is disabled, any external function that relies on it will not work.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/api_integration#enabled ApiIntegration#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/api_integration#enabled ApiIntegration#enabled}
 
 ---
 
@@ -1377,7 +1434,7 @@ public java.lang.String getGoogleAudience();
 
 The audience claim when generating the JWT (JSON Web Token) to authenticate to the Google API Gateway.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/api_integration#google_audience ApiIntegration#google_audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/api_integration#google_audience ApiIntegration#google_audience}
 
 ---
 
@@ -1389,7 +1446,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/api_integration#id ApiIntegration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/api_integration#id ApiIntegration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

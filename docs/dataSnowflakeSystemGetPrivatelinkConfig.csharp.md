@@ -1,6 +1,6 @@
 # `data_snowflake_system_get_privatelink_config`
 
-Refer to the Terraform Registory for docs: [`data_snowflake_system_get_privatelink_config`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/data-sources/system_get_privatelink_config).
+Refer to the Terraform Registory for docs: [`data_snowflake_system_get_privatelink_config`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/data-sources/system_get_privatelink_config).
 
 # `dataSnowflakeSystemGetPrivatelinkConfig` Submodule <a name="`dataSnowflakeSystemGetPrivatelinkConfig` Submodule" id="@cdktf/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_snowflake_system_get_privateli
 
 ### DataSnowflakeSystemGetPrivatelinkConfig <a name="DataSnowflakeSystemGetPrivatelinkConfig" id="@cdktf/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/data-sources/system_get_privatelink_config snowflake_system_get_privatelink_config}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/data-sources/system_get_privatelink_config snowflake_system_get_privatelink_config}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfig.Initializer"></a>
 
@@ -646,7 +646,7 @@ new DataSnowflakeSystemGetPrivatelinkConfigConfig {
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfigConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfigConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfigConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfigConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/data-sources/system_get_privatelink_config#id DataSnowflakeSystemGetPrivatelinkConfig#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSystemGetPrivatelinkConfig.DataSnowflakeSystemGetPrivatelinkConfigConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/data-sources/system_get_privatelink_config#id DataSnowflakeSystemGetPrivatelinkConfig#id}. |
 
 ---
 
@@ -728,7 +728,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/data-sources/system_get_privatelink_config#id DataSnowflakeSystemGetPrivatelinkConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/data-sources/system_get_privatelink_config#id DataSnowflakeSystemGetPrivatelinkConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

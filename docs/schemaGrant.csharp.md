@@ -1,6 +1,6 @@
 # `snowflake_schema_grant`
 
-Refer to the Terraform Registory for docs: [`snowflake_schema_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/schema_grant).
+Refer to the Terraform Registory for docs: [`snowflake_schema_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/schema_grant).
 
 # `schemaGrant` Submodule <a name="`schemaGrant` Submodule" id="@cdktf/provider-snowflake.schemaGrant"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`snowflake_schema_grant`](https://re
 
 ### SchemaGrant <a name="SchemaGrant" id="@cdktf/provider-snowflake.schemaGrant.SchemaGrant"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/schema_grant snowflake_schema_grant}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/schema_grant snowflake_schema_grant}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schemaGrant.SchemaGrant.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.resetOnAll">ResetOnAll</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.resetOnFuture">ResetOnFuture</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.resetPrivilege">ResetPrivilege</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.resetRevertOwnershipToRoleName">ResetRevertOwnershipToRoleName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.resetRoles">ResetRoles</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.resetSchemaName">ResetSchemaName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.resetShares">ResetShares</a></code> | *No description.* |
@@ -296,6 +297,12 @@ private void ResetOnFuture()
 private void ResetPrivilege()
 ```
 
+##### `ResetRevertOwnershipToRoleName` <a name="ResetRevertOwnershipToRoleName" id="@cdktf/provider-snowflake.schemaGrant.SchemaGrant.resetRevertOwnershipToRoleName"></a>
+
+```csharp
+private void ResetRevertOwnershipToRoleName()
+```
+
 ##### `ResetRoles` <a name="ResetRoles" id="@cdktf/provider-snowflake.schemaGrant.SchemaGrant.resetRoles"></a>
 
 ```csharp
@@ -414,6 +421,7 @@ SchemaGrant.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.property.onAllInput">OnAllInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.property.onFutureInput">OnFutureInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.property.privilegeInput">PrivilegeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.property.revertOwnershipToRoleNameInput">RevertOwnershipToRoleNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.property.rolesInput">RolesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.property.schemaNameInput">SchemaNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.property.sharesInput">SharesInput</a></code> | <code>string[]</code> | *No description.* |
@@ -424,6 +432,7 @@ SchemaGrant.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.property.onAll">OnAll</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.property.onFuture">OnFuture</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.property.privilege">Privilege</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.property.revertOwnershipToRoleName">RevertOwnershipToRoleName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.property.roles">Roles</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.property.schemaName">SchemaName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrant.property.shares">Shares</a></code> | <code>string[]</code> | *No description.* |
@@ -633,6 +642,16 @@ public string PrivilegeInput { get; }
 
 ---
 
+##### `RevertOwnershipToRoleNameInput`<sup>Optional</sup> <a name="RevertOwnershipToRoleNameInput" id="@cdktf/provider-snowflake.schemaGrant.SchemaGrant.property.revertOwnershipToRoleNameInput"></a>
+
+```csharp
+public string RevertOwnershipToRoleNameInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `RolesInput`<sup>Optional</sup> <a name="RolesInput" id="@cdktf/provider-snowflake.schemaGrant.SchemaGrant.property.rolesInput"></a>
 
 ```csharp
@@ -733,6 +752,16 @@ public string Privilege { get; }
 
 ---
 
+##### `RevertOwnershipToRoleName`<sup>Required</sup> <a name="RevertOwnershipToRoleName" id="@cdktf/provider-snowflake.schemaGrant.SchemaGrant.property.revertOwnershipToRoleName"></a>
+
+```csharp
+public string RevertOwnershipToRoleName { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `Roles`<sup>Required</sup> <a name="Roles" id="@cdktf/provider-snowflake.schemaGrant.SchemaGrant.property.roles"></a>
 
 ```csharp
@@ -814,6 +843,7 @@ new SchemaGrantConfig {
     object OnAll = null,
     object OnFuture = null,
     string Privilege = null,
+    string RevertOwnershipToRoleName = null,
     string[] Roles = null,
     string SchemaName = null,
     string[] Shares = null,
@@ -834,10 +864,11 @@ new SchemaGrantConfig {
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrantConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrantConfig.property.databaseName">DatabaseName</a></code> | <code>string</code> | The name of the database containing the schema on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrantConfig.property.enableMultipleGrants">EnableMultipleGrants</a></code> | <code>object</code> | When this is set to true, multiple grants of the same type can be created. |
-| <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrantConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/schema_grant#id SchemaGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrantConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/schema_grant#id SchemaGrant#id}. |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrantConfig.property.onAll">OnAll</a></code> | <code>object</code> | When this is set to true, apply this grant on all schemas in the given database. |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrantConfig.property.onFuture">OnFuture</a></code> | <code>object</code> | When this is set to true, apply this grant on all future schemas in the given database. |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrantConfig.property.privilege">Privilege</a></code> | <code>string</code> | The privilege to grant on the current or future schema. |
+| <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrantConfig.property.revertOwnershipToRoleName">RevertOwnershipToRoleName</a></code> | <code>string</code> | The name of the role to revert ownership to on destroy. |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrantConfig.property.roles">Roles</a></code> | <code>string[]</code> | Grants privilege to these roles. |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrantConfig.property.schemaName">SchemaName</a></code> | <code>string</code> | The name of the schema on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrantConfig.property.shares">Shares</a></code> | <code>string[]</code> | Grants privilege to these shares (only valid if on_future and on_all are unset). |
@@ -925,7 +956,7 @@ public string DatabaseName { get; set; }
 
 The name of the database containing the schema on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/schema_grant#database_name SchemaGrant#database_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/schema_grant#database_name SchemaGrant#database_name}
 
 ---
 
@@ -941,7 +972,7 @@ When this is set to true, multiple grants of the same type can be created.
 
 This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/schema_grant#enable_multiple_grants SchemaGrant#enable_multiple_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/schema_grant#enable_multiple_grants SchemaGrant#enable_multiple_grants}
 
 ---
 
@@ -953,7 +984,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/schema_grant#id SchemaGrant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/schema_grant#id SchemaGrant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -970,9 +1001,9 @@ public object OnAll { get; set; }
 
 When this is set to true, apply this grant on all schemas in the given database.
 
-The schema_name and shares fields must be unset in order to use on_all. Cannot be used together with on_future. Importing the resource with the on_all=true option is not supported.
+The schema_name and shares fields must be unset in order to use on_all. Cannot be used together with on_future.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/schema_grant#on_all SchemaGrant#on_all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/schema_grant#on_all SchemaGrant#on_all}
 
 ---
 
@@ -988,7 +1019,7 @@ When this is set to true, apply this grant on all future schemas in the given da
 
 The schema_name and shares fields must be unset in order to use on_future. Cannot be used together with on_all.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/schema_grant#on_future SchemaGrant#on_future}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/schema_grant#on_future SchemaGrant#on_future}
 
 ---
 
@@ -1002,9 +1033,25 @@ public string Privilege { get; set; }
 
 The privilege to grant on the current or future schema.
 
-Note that if "OWNERSHIP" is specified, ensure that the role that terraform is using is granted access.
+Note that if "OWNERSHIP" is specified, ensure that the role that terraform is using is granted access. To grant all privileges, use the value `ALL PRIVILEGES`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/schema_grant#privilege SchemaGrant#privilege}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/schema_grant#privilege SchemaGrant#privilege}
+
+---
+
+##### `RevertOwnershipToRoleName`<sup>Optional</sup> <a name="RevertOwnershipToRoleName" id="@cdktf/provider-snowflake.schemaGrant.SchemaGrantConfig.property.revertOwnershipToRoleName"></a>
+
+```csharp
+public string RevertOwnershipToRoleName { get; set; }
+```
+
+- *Type:* string
+
+The name of the role to revert ownership to on destroy.
+
+Has no effect unless `privilege` is set to `OWNERSHIP`
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/schema_grant#revert_ownership_to_role_name SchemaGrant#revert_ownership_to_role_name}
 
 ---
 
@@ -1018,7 +1065,7 @@ public string[] Roles { get; set; }
 
 Grants privilege to these roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/schema_grant#roles SchemaGrant#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/schema_grant#roles SchemaGrant#roles}
 
 ---
 
@@ -1032,7 +1079,7 @@ public string SchemaName { get; set; }
 
 The name of the schema on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/schema_grant#schema_name SchemaGrant#schema_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/schema_grant#schema_name SchemaGrant#schema_name}
 
 ---
 
@@ -1046,7 +1093,7 @@ public string[] Shares { get; set; }
 
 Grants privilege to these shares (only valid if on_future and on_all are unset).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/schema_grant#shares SchemaGrant#shares}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/schema_grant#shares SchemaGrant#shares}
 
 ---
 
@@ -1060,7 +1107,7 @@ public object WithGrantOption { get; set; }
 
 When this is set to true, allows the recipient role to grant the privileges to other roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/schema_grant#with_grant_option SchemaGrant#with_grant_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/schema_grant#with_grant_option SchemaGrant#with_grant_option}
 
 ---
 

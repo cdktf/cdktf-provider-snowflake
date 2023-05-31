@@ -1,6 +1,6 @@
 # `snowflake_sequence_grant`
 
-Refer to the Terraform Registory for docs: [`snowflake_sequence_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/sequence_grant).
+Refer to the Terraform Registory for docs: [`snowflake_sequence_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/sequence_grant).
 
 # `sequenceGrant` Submodule <a name="`sequenceGrant` Submodule" id="@cdktf/provider-snowflake.sequenceGrant"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`snowflake_sequence_grant`](https://
 
 ### SequenceGrant <a name="SequenceGrant" id="@cdktf/provider-snowflake.sequenceGrant.SequenceGrant"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/sequence_grant snowflake_sequence_grant}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/sequence_grant snowflake_sequence_grant}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.sequenceGrant.SequenceGrant.Initializer"></a>
 
@@ -72,8 +72,10 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.sequenceGrant.SequenceGrant.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sequenceGrant.SequenceGrant.resetEnableMultipleGrants">ResetEnableMultipleGrants</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sequenceGrant.SequenceGrant.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.sequenceGrant.SequenceGrant.resetOnAll">ResetOnAll</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sequenceGrant.SequenceGrant.resetOnFuture">ResetOnFuture</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sequenceGrant.SequenceGrant.resetPrivilege">ResetPrivilege</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.sequenceGrant.SequenceGrant.resetRevertOwnershipToRoleName">ResetRevertOwnershipToRoleName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sequenceGrant.SequenceGrant.resetSchemaName">ResetSchemaName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sequenceGrant.SequenceGrant.resetSequenceName">ResetSequenceName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sequenceGrant.SequenceGrant.resetWithGrantOption">ResetWithGrantOption</a></code> | *No description.* |
@@ -276,6 +278,12 @@ private void ResetEnableMultipleGrants()
 private void ResetId()
 ```
 
+##### `ResetOnAll` <a name="ResetOnAll" id="@cdktf/provider-snowflake.sequenceGrant.SequenceGrant.resetOnAll"></a>
+
+```csharp
+private void ResetOnAll()
+```
+
 ##### `ResetOnFuture` <a name="ResetOnFuture" id="@cdktf/provider-snowflake.sequenceGrant.SequenceGrant.resetOnFuture"></a>
 
 ```csharp
@@ -286,6 +294,12 @@ private void ResetOnFuture()
 
 ```csharp
 private void ResetPrivilege()
+```
+
+##### `ResetRevertOwnershipToRoleName` <a name="ResetRevertOwnershipToRoleName" id="@cdktf/provider-snowflake.sequenceGrant.SequenceGrant.resetRevertOwnershipToRoleName"></a>
+
+```csharp
+private void ResetRevertOwnershipToRoleName()
 ```
 
 ##### `ResetSchemaName` <a name="ResetSchemaName" id="@cdktf/provider-snowflake.sequenceGrant.SequenceGrant.resetSchemaName"></a>
@@ -397,8 +411,10 @@ SequenceGrant.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-snowflake.sequenceGrant.SequenceGrant.property.databaseNameInput">DatabaseNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sequenceGrant.SequenceGrant.property.enableMultipleGrantsInput">EnableMultipleGrantsInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sequenceGrant.SequenceGrant.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.sequenceGrant.SequenceGrant.property.onAllInput">OnAllInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sequenceGrant.SequenceGrant.property.onFutureInput">OnFutureInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sequenceGrant.SequenceGrant.property.privilegeInput">PrivilegeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.sequenceGrant.SequenceGrant.property.revertOwnershipToRoleNameInput">RevertOwnershipToRoleNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sequenceGrant.SequenceGrant.property.rolesInput">RolesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sequenceGrant.SequenceGrant.property.schemaNameInput">SchemaNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sequenceGrant.SequenceGrant.property.sequenceNameInput">SequenceNameInput</a></code> | <code>string</code> | *No description.* |
@@ -406,8 +422,10 @@ SequenceGrant.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-snowflake.sequenceGrant.SequenceGrant.property.databaseName">DatabaseName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sequenceGrant.SequenceGrant.property.enableMultipleGrants">EnableMultipleGrants</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sequenceGrant.SequenceGrant.property.id">Id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.sequenceGrant.SequenceGrant.property.onAll">OnAll</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sequenceGrant.SequenceGrant.property.onFuture">OnFuture</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sequenceGrant.SequenceGrant.property.privilege">Privilege</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.sequenceGrant.SequenceGrant.property.revertOwnershipToRoleName">RevertOwnershipToRoleName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sequenceGrant.SequenceGrant.property.roles">Roles</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sequenceGrant.SequenceGrant.property.schemaName">SchemaName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sequenceGrant.SequenceGrant.property.sequenceName">SequenceName</a></code> | <code>string</code> | *No description.* |
@@ -587,6 +605,16 @@ public string IdInput { get; }
 
 ---
 
+##### `OnAllInput`<sup>Optional</sup> <a name="OnAllInput" id="@cdktf/provider-snowflake.sequenceGrant.SequenceGrant.property.onAllInput"></a>
+
+```csharp
+public object OnAllInput { get; }
+```
+
+- *Type:* object
+
+---
+
 ##### `OnFutureInput`<sup>Optional</sup> <a name="OnFutureInput" id="@cdktf/provider-snowflake.sequenceGrant.SequenceGrant.property.onFutureInput"></a>
 
 ```csharp
@@ -601,6 +629,16 @@ public object OnFutureInput { get; }
 
 ```csharp
 public string PrivilegeInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `RevertOwnershipToRoleNameInput`<sup>Optional</sup> <a name="RevertOwnershipToRoleNameInput" id="@cdktf/provider-snowflake.sequenceGrant.SequenceGrant.property.revertOwnershipToRoleNameInput"></a>
+
+```csharp
+public string RevertOwnershipToRoleNameInput { get; }
 ```
 
 - *Type:* string
@@ -677,6 +715,16 @@ public string Id { get; }
 
 ---
 
+##### `OnAll`<sup>Required</sup> <a name="OnAll" id="@cdktf/provider-snowflake.sequenceGrant.SequenceGrant.property.onAll"></a>
+
+```csharp
+public object OnAll { get; }
+```
+
+- *Type:* object
+
+---
+
 ##### `OnFuture`<sup>Required</sup> <a name="OnFuture" id="@cdktf/provider-snowflake.sequenceGrant.SequenceGrant.property.onFuture"></a>
 
 ```csharp
@@ -691,6 +739,16 @@ public object OnFuture { get; }
 
 ```csharp
 public string Privilege { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `RevertOwnershipToRoleName`<sup>Required</sup> <a name="RevertOwnershipToRoleName" id="@cdktf/provider-snowflake.sequenceGrant.SequenceGrant.property.revertOwnershipToRoleName"></a>
+
+```csharp
+public string RevertOwnershipToRoleName { get; }
 ```
 
 - *Type:* string
@@ -776,8 +834,10 @@ new SequenceGrantConfig {
     string[] Roles,
     object EnableMultipleGrants = null,
     string Id = null,
+    object OnAll = null,
     object OnFuture = null,
     string Privilege = null,
+    string RevertOwnershipToRoleName = null,
     string SchemaName = null,
     string SequenceName = null,
     object WithGrantOption = null
@@ -798,9 +858,11 @@ new SequenceGrantConfig {
 | <code><a href="#@cdktf/provider-snowflake.sequenceGrant.SequenceGrantConfig.property.databaseName">DatabaseName</a></code> | <code>string</code> | The name of the database containing the current or future sequences on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.sequenceGrant.SequenceGrantConfig.property.roles">Roles</a></code> | <code>string[]</code> | Grants privilege to these roles. |
 | <code><a href="#@cdktf/provider-snowflake.sequenceGrant.SequenceGrantConfig.property.enableMultipleGrants">EnableMultipleGrants</a></code> | <code>object</code> | When this is set to true, multiple grants of the same type can be created. |
-| <code><a href="#@cdktf/provider-snowflake.sequenceGrant.SequenceGrantConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/sequence_grant#id SequenceGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.sequenceGrant.SequenceGrantConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/sequence_grant#id SequenceGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.sequenceGrant.SequenceGrantConfig.property.onAll">OnAll</a></code> | <code>object</code> | When this is set to true and a schema_name is provided, apply this grant on all sequences in the given schema. |
 | <code><a href="#@cdktf/provider-snowflake.sequenceGrant.SequenceGrantConfig.property.onFuture">OnFuture</a></code> | <code>object</code> | When this is set to true and a schema_name is provided, apply this grant on all future sequences in the given schema. |
-| <code><a href="#@cdktf/provider-snowflake.sequenceGrant.SequenceGrantConfig.property.privilege">Privilege</a></code> | <code>string</code> | The privilege to grant on the current or future sequence. |
+| <code><a href="#@cdktf/provider-snowflake.sequenceGrant.SequenceGrantConfig.property.privilege">Privilege</a></code> | <code>string</code> | The privilege to grant on the current or future sequence. To grant all privileges, use the value `ALL PRIVILEGES`. |
+| <code><a href="#@cdktf/provider-snowflake.sequenceGrant.SequenceGrantConfig.property.revertOwnershipToRoleName">RevertOwnershipToRoleName</a></code> | <code>string</code> | The name of the role to revert ownership to on destroy. |
 | <code><a href="#@cdktf/provider-snowflake.sequenceGrant.SequenceGrantConfig.property.schemaName">SchemaName</a></code> | <code>string</code> | The name of the schema containing the current or future sequences on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.sequenceGrant.SequenceGrantConfig.property.sequenceName">SequenceName</a></code> | <code>string</code> | The name of the sequence on which to grant privileges immediately (only valid if on_future is false). |
 | <code><a href="#@cdktf/provider-snowflake.sequenceGrant.SequenceGrantConfig.property.withGrantOption">WithGrantOption</a></code> | <code>object</code> | When this is set to true, allows the recipient role to grant the privileges to other roles. |
@@ -887,7 +949,7 @@ public string DatabaseName { get; set; }
 
 The name of the database containing the current or future sequences on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/sequence_grant#database_name SequenceGrant#database_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/sequence_grant#database_name SequenceGrant#database_name}
 
 ---
 
@@ -901,7 +963,7 @@ public string[] Roles { get; set; }
 
 Grants privilege to these roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/sequence_grant#roles SequenceGrant#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/sequence_grant#roles SequenceGrant#roles}
 
 ---
 
@@ -917,7 +979,7 @@ When this is set to true, multiple grants of the same type can be created.
 
 This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/sequence_grant#enable_multiple_grants SequenceGrant#enable_multiple_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/sequence_grant#enable_multiple_grants SequenceGrant#enable_multiple_grants}
 
 ---
 
@@ -929,10 +991,26 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/sequence_grant#id SequenceGrant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/sequence_grant#id SequenceGrant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `OnAll`<sup>Optional</sup> <a name="OnAll" id="@cdktf/provider-snowflake.sequenceGrant.SequenceGrantConfig.property.onAll"></a>
+
+```csharp
+public object OnAll { get; set; }
+```
+
+- *Type:* object
+
+When this is set to true and a schema_name is provided, apply this grant on all sequences in the given schema.
+
+When this is true and no schema_name is provided apply this grant on all sequences in the given database. The sequence_name field must be unset in order to use on_all. Cannot be used together with on_future.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/sequence_grant#on_all SequenceGrant#on_all}
 
 ---
 
@@ -946,9 +1024,9 @@ public object OnFuture { get; set; }
 
 When this is set to true and a schema_name is provided, apply this grant on all future sequences in the given schema.
 
-When this is true and no schema_name is provided apply this grant on all future sequences in the given database. The sequence_name field must be unset in order to use on_future.
+When this is true and no schema_name is provided apply this grant on all future sequences in the given database. The sequence_name field must be unset in order to use on_future. Cannot be used together with on_all.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/sequence_grant#on_future SequenceGrant#on_future}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/sequence_grant#on_future SequenceGrant#on_future}
 
 ---
 
@@ -960,9 +1038,25 @@ public string Privilege { get; set; }
 
 - *Type:* string
 
-The privilege to grant on the current or future sequence.
+The privilege to grant on the current or future sequence. To grant all privileges, use the value `ALL PRIVILEGES`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/sequence_grant#privilege SequenceGrant#privilege}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/sequence_grant#privilege SequenceGrant#privilege}
+
+---
+
+##### `RevertOwnershipToRoleName`<sup>Optional</sup> <a name="RevertOwnershipToRoleName" id="@cdktf/provider-snowflake.sequenceGrant.SequenceGrantConfig.property.revertOwnershipToRoleName"></a>
+
+```csharp
+public string RevertOwnershipToRoleName { get; set; }
+```
+
+- *Type:* string
+
+The name of the role to revert ownership to on destroy.
+
+Has no effect unless `privilege` is set to `OWNERSHIP`
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/sequence_grant#revert_ownership_to_role_name SequenceGrant#revert_ownership_to_role_name}
 
 ---
 
@@ -976,7 +1070,7 @@ public string SchemaName { get; set; }
 
 The name of the schema containing the current or future sequences on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/sequence_grant#schema_name SequenceGrant#schema_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/sequence_grant#schema_name SequenceGrant#schema_name}
 
 ---
 
@@ -990,7 +1084,7 @@ public string SequenceName { get; set; }
 
 The name of the sequence on which to grant privileges immediately (only valid if on_future is false).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/sequence_grant#sequence_name SequenceGrant#sequence_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/sequence_grant#sequence_name SequenceGrant#sequence_name}
 
 ---
 
@@ -1004,7 +1098,7 @@ public object WithGrantOption { get; set; }
 
 When this is set to true, allows the recipient role to grant the privileges to other roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/sequence_grant#with_grant_option SequenceGrant#with_grant_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/sequence_grant#with_grant_option SequenceGrant#with_grant_option}
 
 ---
 

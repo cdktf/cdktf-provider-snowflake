@@ -1,6 +1,6 @@
 # `snowflake_view_grant`
 
-Refer to the Terraform Registory for docs: [`snowflake_view_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/view_grant).
+Refer to the Terraform Registory for docs: [`snowflake_view_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/view_grant).
 
 # `viewGrant` Submodule <a name="`viewGrant` Submodule" id="@cdktf/provider-snowflake.viewGrant"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`snowflake_view_grant`](https://regi
 
 ### ViewGrant <a name="ViewGrant" id="@cdktf/provider-snowflake.viewGrant.ViewGrant"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/view_grant snowflake_view_grant}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/view_grant snowflake_view_grant}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.viewGrant.ViewGrant.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/viewgrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/viewgrant"
 
 viewgrant.NewViewGrant(scope Construct, id *string, config ViewGrantConfig) ViewGrant
 ```
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrant.resetOnAll">ResetOnAll</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrant.resetOnFuture">ResetOnFuture</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrant.resetPrivilege">ResetPrivilege</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrant.resetRevertOwnershipToRoleName">ResetRevertOwnershipToRoleName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrant.resetRoles">ResetRoles</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrant.resetSchemaName">ResetSchemaName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrant.resetShares">ResetShares</a></code> | *No description.* |
@@ -297,6 +298,12 @@ func ResetOnFuture()
 func ResetPrivilege()
 ```
 
+##### `ResetRevertOwnershipToRoleName` <a name="ResetRevertOwnershipToRoleName" id="@cdktf/provider-snowflake.viewGrant.ViewGrant.resetRevertOwnershipToRoleName"></a>
+
+```go
+func ResetRevertOwnershipToRoleName()
+```
+
 ##### `ResetRoles` <a name="ResetRoles" id="@cdktf/provider-snowflake.viewGrant.ViewGrant.resetRoles"></a>
 
 ```go
@@ -340,7 +347,7 @@ func ResetWithGrantOption()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.viewGrant.ViewGrant.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/viewgrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/viewgrant"
 
 viewgrant.ViewGrant_IsConstruct(x interface{}) *bool
 ```
@@ -372,7 +379,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.viewGrant.ViewGrant.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/viewgrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/viewgrant"
 
 viewgrant.ViewGrant_IsTerraformElement(x interface{}) *bool
 ```
@@ -386,7 +393,7 @@ viewgrant.ViewGrant_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.viewGrant.ViewGrant.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/viewgrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/viewgrant"
 
 viewgrant.ViewGrant_IsTerraformResource(x interface{}) *bool
 ```
@@ -421,6 +428,7 @@ viewgrant.ViewGrant_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrant.property.onAllInput">OnAllInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrant.property.onFutureInput">OnFutureInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrant.property.privilegeInput">PrivilegeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrant.property.revertOwnershipToRoleNameInput">RevertOwnershipToRoleNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrant.property.rolesInput">RolesInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrant.property.schemaNameInput">SchemaNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrant.property.sharesInput">SharesInput</a></code> | <code>*[]*string</code> | *No description.* |
@@ -432,6 +440,7 @@ viewgrant.ViewGrant_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrant.property.onAll">OnAll</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrant.property.onFuture">OnFuture</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrant.property.privilege">Privilege</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrant.property.revertOwnershipToRoleName">RevertOwnershipToRoleName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrant.property.roles">Roles</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrant.property.schemaName">SchemaName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrant.property.shares">Shares</a></code> | <code>*[]*string</code> | *No description.* |
@@ -642,6 +651,16 @@ func PrivilegeInput() *string
 
 ---
 
+##### `RevertOwnershipToRoleNameInput`<sup>Optional</sup> <a name="RevertOwnershipToRoleNameInput" id="@cdktf/provider-snowflake.viewGrant.ViewGrant.property.revertOwnershipToRoleNameInput"></a>
+
+```go
+func RevertOwnershipToRoleNameInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `RolesInput`<sup>Optional</sup> <a name="RolesInput" id="@cdktf/provider-snowflake.viewGrant.ViewGrant.property.rolesInput"></a>
 
 ```go
@@ -752,6 +771,16 @@ func Privilege() *string
 
 ---
 
+##### `RevertOwnershipToRoleName`<sup>Required</sup> <a name="RevertOwnershipToRoleName" id="@cdktf/provider-snowflake.viewGrant.ViewGrant.property.revertOwnershipToRoleName"></a>
+
+```go
+func RevertOwnershipToRoleName() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Roles`<sup>Required</sup> <a name="Roles" id="@cdktf/provider-snowflake.viewGrant.ViewGrant.property.roles"></a>
 
 ```go
@@ -827,7 +856,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.viewGrant.ViewGrantConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/viewgrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/viewgrant"
 
 &viewgrant.ViewGrantConfig {
 	Connection: interface{},
@@ -843,6 +872,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/viewgrant"
 	OnAll: interface{},
 	OnFuture: interface{},
 	Privilege: *string,
+	RevertOwnershipToRoleName: *string,
 	Roles: *[]*string,
 	SchemaName: *string,
 	Shares: *[]*string,
@@ -864,10 +894,11 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/viewgrant"
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrantConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrantConfig.property.databaseName">DatabaseName</a></code> | <code>*string</code> | The name of the database containing the current or future views on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrantConfig.property.enableMultipleGrants">EnableMultipleGrants</a></code> | <code>interface{}</code> | When this is set to true, multiple grants of the same type can be created. |
-| <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrantConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/view_grant#id ViewGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrantConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/view_grant#id ViewGrant#id}. |
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrantConfig.property.onAll">OnAll</a></code> | <code>interface{}</code> | When this is set to true and a schema_name is provided, apply this grant on all views in the given schema. |
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrantConfig.property.onFuture">OnFuture</a></code> | <code>interface{}</code> | When this is set to true and a schema_name is provided, apply this grant on all future views in the given schema. |
-| <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrantConfig.property.privilege">Privilege</a></code> | <code>*string</code> | The privilege to grant on the current or future view. |
+| <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrantConfig.property.privilege">Privilege</a></code> | <code>*string</code> | The privilege to grant on the current or future view. To grant all privileges, use the value `ALL PRIVILEGES`. |
+| <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrantConfig.property.revertOwnershipToRoleName">RevertOwnershipToRoleName</a></code> | <code>*string</code> | The name of the role to revert ownership to on destroy. |
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrantConfig.property.roles">Roles</a></code> | <code>*[]*string</code> | Grants privilege to these roles. |
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrantConfig.property.schemaName">SchemaName</a></code> | <code>*string</code> | The name of the schema containing the current or future views on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrantConfig.property.shares">Shares</a></code> | <code>*[]*string</code> | Grants privilege to these shares (only valid if on_future and on_all are unset). |
@@ -956,7 +987,7 @@ DatabaseName *string
 
 The name of the database containing the current or future views on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/view_grant#database_name ViewGrant#database_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/view_grant#database_name ViewGrant#database_name}
 
 ---
 
@@ -972,7 +1003,7 @@ When this is set to true, multiple grants of the same type can be created.
 
 This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/view_grant#enable_multiple_grants ViewGrant#enable_multiple_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/view_grant#enable_multiple_grants ViewGrant#enable_multiple_grants}
 
 ---
 
@@ -984,7 +1015,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/view_grant#id ViewGrant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/view_grant#id ViewGrant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1001,9 +1032,9 @@ OnAll interface{}
 
 When this is set to true and a schema_name is provided, apply this grant on all views in the given schema.
 
-When this is true and no schema_name is provided apply this grant on all views in the given database. The view_name and shares fields must be unset in order to use on_all. Cannot be used together with on_future. Importing the resource with the on_all=true option is not supported.
+When this is true and no schema_name is provided apply this grant on all views in the given database. The view_name and shares fields must be unset in order to use on_all. Cannot be used together with on_future.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/view_grant#on_all ViewGrant#on_all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/view_grant#on_all ViewGrant#on_all}
 
 ---
 
@@ -1019,7 +1050,7 @@ When this is set to true and a schema_name is provided, apply this grant on all 
 
 When this is true and no schema_name is provided apply this grant on all future views in the given database. The view_name and shares fields must be unset in order to use on_future. Cannot be used together with on_all.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/view_grant#on_future ViewGrant#on_future}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/view_grant#on_future ViewGrant#on_future}
 
 ---
 
@@ -1031,9 +1062,25 @@ Privilege *string
 
 - *Type:* *string
 
-The privilege to grant on the current or future view.
+The privilege to grant on the current or future view. To grant all privileges, use the value `ALL PRIVILEGES`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/view_grant#privilege ViewGrant#privilege}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/view_grant#privilege ViewGrant#privilege}
+
+---
+
+##### `RevertOwnershipToRoleName`<sup>Optional</sup> <a name="RevertOwnershipToRoleName" id="@cdktf/provider-snowflake.viewGrant.ViewGrantConfig.property.revertOwnershipToRoleName"></a>
+
+```go
+RevertOwnershipToRoleName *string
+```
+
+- *Type:* *string
+
+The name of the role to revert ownership to on destroy.
+
+Has no effect unless `privilege` is set to `OWNERSHIP`
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/view_grant#revert_ownership_to_role_name ViewGrant#revert_ownership_to_role_name}
 
 ---
 
@@ -1047,7 +1094,7 @@ Roles *[]*string
 
 Grants privilege to these roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/view_grant#roles ViewGrant#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/view_grant#roles ViewGrant#roles}
 
 ---
 
@@ -1061,7 +1108,7 @@ SchemaName *string
 
 The name of the schema containing the current or future views on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/view_grant#schema_name ViewGrant#schema_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/view_grant#schema_name ViewGrant#schema_name}
 
 ---
 
@@ -1075,7 +1122,7 @@ Shares *[]*string
 
 Grants privilege to these shares (only valid if on_future and on_all are unset).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/view_grant#shares ViewGrant#shares}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/view_grant#shares ViewGrant#shares}
 
 ---
 
@@ -1089,7 +1136,7 @@ ViewName *string
 
 The name of the view on which to grant privileges immediately (only valid if on_future and on_all are unset).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/view_grant#view_name ViewGrant#view_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/view_grant#view_name ViewGrant#view_name}
 
 ---
 
@@ -1103,7 +1150,7 @@ WithGrantOption interface{}
 
 When this is set to true, allows the recipient role to grant the privileges to other roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/view_grant#with_grant_option ViewGrant#with_grant_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/view_grant#with_grant_option ViewGrant#with_grant_option}
 
 ---
 
