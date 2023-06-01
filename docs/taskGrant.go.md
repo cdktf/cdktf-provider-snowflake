@@ -1,6 +1,6 @@
 # `snowflake_task_grant`
 
-Refer to the Terraform Registory for docs: [`snowflake_task_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/task_grant).
+Refer to the Terraform Registory for docs: [`snowflake_task_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/task_grant).
 
 # `taskGrant` Submodule <a name="`taskGrant` Submodule" id="@cdktf/provider-snowflake.taskGrant"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`snowflake_task_grant`](https://regi
 
 ### TaskGrant <a name="TaskGrant" id="@cdktf/provider-snowflake.taskGrant.TaskGrant"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/task_grant snowflake_task_grant}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/task_grant snowflake_task_grant}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.taskGrant.TaskGrant.Initializer"></a>
 
@@ -72,8 +72,10 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrant.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrant.resetEnableMultipleGrants">ResetEnableMultipleGrants</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrant.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrant.resetOnAll">ResetOnAll</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrant.resetOnFuture">ResetOnFuture</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrant.resetPrivilege">ResetPrivilege</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrant.resetRevertOwnershipToRoleName">ResetRevertOwnershipToRoleName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrant.resetSchemaName">ResetSchemaName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrant.resetTaskName">ResetTaskName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrant.resetWithGrantOption">ResetWithGrantOption</a></code> | *No description.* |
@@ -276,6 +278,12 @@ func ResetEnableMultipleGrants()
 func ResetId()
 ```
 
+##### `ResetOnAll` <a name="ResetOnAll" id="@cdktf/provider-snowflake.taskGrant.TaskGrant.resetOnAll"></a>
+
+```go
+func ResetOnAll()
+```
+
 ##### `ResetOnFuture` <a name="ResetOnFuture" id="@cdktf/provider-snowflake.taskGrant.TaskGrant.resetOnFuture"></a>
 
 ```go
@@ -286,6 +294,12 @@ func ResetOnFuture()
 
 ```go
 func ResetPrivilege()
+```
+
+##### `ResetRevertOwnershipToRoleName` <a name="ResetRevertOwnershipToRoleName" id="@cdktf/provider-snowflake.taskGrant.TaskGrant.resetRevertOwnershipToRoleName"></a>
+
+```go
+func ResetRevertOwnershipToRoleName()
 ```
 
 ##### `ResetSchemaName` <a name="ResetSchemaName" id="@cdktf/provider-snowflake.taskGrant.TaskGrant.resetSchemaName"></a>
@@ -397,8 +411,10 @@ taskgrant.TaskGrant_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrant.property.databaseNameInput">DatabaseNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrant.property.enableMultipleGrantsInput">EnableMultipleGrantsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrant.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrant.property.onAllInput">OnAllInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrant.property.onFutureInput">OnFutureInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrant.property.privilegeInput">PrivilegeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrant.property.revertOwnershipToRoleNameInput">RevertOwnershipToRoleNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrant.property.rolesInput">RolesInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrant.property.schemaNameInput">SchemaNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrant.property.taskNameInput">TaskNameInput</a></code> | <code>*string</code> | *No description.* |
@@ -406,8 +422,10 @@ taskgrant.TaskGrant_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrant.property.databaseName">DatabaseName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrant.property.enableMultipleGrants">EnableMultipleGrants</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrant.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrant.property.onAll">OnAll</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrant.property.onFuture">OnFuture</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrant.property.privilege">Privilege</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrant.property.revertOwnershipToRoleName">RevertOwnershipToRoleName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrant.property.roles">Roles</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrant.property.schemaName">SchemaName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrant.property.taskName">TaskName</a></code> | <code>*string</code> | *No description.* |
@@ -587,6 +605,16 @@ func IdInput() *string
 
 ---
 
+##### `OnAllInput`<sup>Optional</sup> <a name="OnAllInput" id="@cdktf/provider-snowflake.taskGrant.TaskGrant.property.onAllInput"></a>
+
+```go
+func OnAllInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `OnFutureInput`<sup>Optional</sup> <a name="OnFutureInput" id="@cdktf/provider-snowflake.taskGrant.TaskGrant.property.onFutureInput"></a>
 
 ```go
@@ -601,6 +629,16 @@ func OnFutureInput() interface{}
 
 ```go
 func PrivilegeInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RevertOwnershipToRoleNameInput`<sup>Optional</sup> <a name="RevertOwnershipToRoleNameInput" id="@cdktf/provider-snowflake.taskGrant.TaskGrant.property.revertOwnershipToRoleNameInput"></a>
+
+```go
+func RevertOwnershipToRoleNameInput() *string
 ```
 
 - *Type:* *string
@@ -677,6 +715,16 @@ func Id() *string
 
 ---
 
+##### `OnAll`<sup>Required</sup> <a name="OnAll" id="@cdktf/provider-snowflake.taskGrant.TaskGrant.property.onAll"></a>
+
+```go
+func OnAll() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `OnFuture`<sup>Required</sup> <a name="OnFuture" id="@cdktf/provider-snowflake.taskGrant.TaskGrant.property.onFuture"></a>
 
 ```go
@@ -691,6 +739,16 @@ func OnFuture() interface{}
 
 ```go
 func Privilege() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RevertOwnershipToRoleName`<sup>Required</sup> <a name="RevertOwnershipToRoleName" id="@cdktf/provider-snowflake.taskGrant.TaskGrant.property.revertOwnershipToRoleName"></a>
+
+```go
+func RevertOwnershipToRoleName() *string
 ```
 
 - *Type:* *string
@@ -776,8 +834,10 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/taskgrant"
 	Roles: *[]*string,
 	EnableMultipleGrants: interface{},
 	Id: *string,
+	OnAll: interface{},
 	OnFuture: interface{},
 	Privilege: *string,
+	RevertOwnershipToRoleName: *string,
 	SchemaName: *string,
 	TaskName: *string,
 	WithGrantOption: interface{},
@@ -798,9 +858,11 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/taskgrant"
 | <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrantConfig.property.databaseName">DatabaseName</a></code> | <code>*string</code> | The name of the database containing the current or future tasks on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrantConfig.property.roles">Roles</a></code> | <code>*[]*string</code> | Grants privilege to these roles. |
 | <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrantConfig.property.enableMultipleGrants">EnableMultipleGrants</a></code> | <code>interface{}</code> | When this is set to true, multiple grants of the same type can be created. |
-| <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrantConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/task_grant#id TaskGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrantConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/task_grant#id TaskGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrantConfig.property.onAll">OnAll</a></code> | <code>interface{}</code> | When this is set to true and a schema_name is provided, apply this grant on all tasks in the given schema. |
 | <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrantConfig.property.onFuture">OnFuture</a></code> | <code>interface{}</code> | When this is set to true and a schema_name is provided, apply this grant on all future tasks in the given schema. |
-| <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrantConfig.property.privilege">Privilege</a></code> | <code>*string</code> | The privilege to grant on the current or future task. |
+| <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrantConfig.property.privilege">Privilege</a></code> | <code>*string</code> | The privilege to grant on the current or future task. To grant all privileges, use the value `ALL PRIVILEGES`. |
+| <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrantConfig.property.revertOwnershipToRoleName">RevertOwnershipToRoleName</a></code> | <code>*string</code> | The name of the role to revert ownership to on destroy. |
 | <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrantConfig.property.schemaName">SchemaName</a></code> | <code>*string</code> | The name of the schema containing the current or future tasks on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrantConfig.property.taskName">TaskName</a></code> | <code>*string</code> | The name of the task on which to grant privileges immediately (only valid if on_future is false). |
 | <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrantConfig.property.withGrantOption">WithGrantOption</a></code> | <code>interface{}</code> | When this is set to true, allows the recipient role to grant the privileges to other roles. |
@@ -887,7 +949,7 @@ DatabaseName *string
 
 The name of the database containing the current or future tasks on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/task_grant#database_name TaskGrant#database_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/task_grant#database_name TaskGrant#database_name}
 
 ---
 
@@ -901,7 +963,7 @@ Roles *[]*string
 
 Grants privilege to these roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/task_grant#roles TaskGrant#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/task_grant#roles TaskGrant#roles}
 
 ---
 
@@ -917,7 +979,7 @@ When this is set to true, multiple grants of the same type can be created.
 
 This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/task_grant#enable_multiple_grants TaskGrant#enable_multiple_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/task_grant#enable_multiple_grants TaskGrant#enable_multiple_grants}
 
 ---
 
@@ -929,10 +991,26 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/task_grant#id TaskGrant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/task_grant#id TaskGrant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `OnAll`<sup>Optional</sup> <a name="OnAll" id="@cdktf/provider-snowflake.taskGrant.TaskGrantConfig.property.onAll"></a>
+
+```go
+OnAll interface{}
+```
+
+- *Type:* interface{}
+
+When this is set to true and a schema_name is provided, apply this grant on all tasks in the given schema.
+
+When this is true and no schema_name is provided apply this grant on all tasks in the given database. The task_name field must be unset in order to use on_all. Cannot be used together with on_future.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/task_grant#on_all TaskGrant#on_all}
 
 ---
 
@@ -946,9 +1024,9 @@ OnFuture interface{}
 
 When this is set to true and a schema_name is provided, apply this grant on all future tasks in the given schema.
 
-When this is true and no schema_name is provided apply this grant on all future tasks in the given database. The task_name field must be unset in order to use on_future.
+When this is true and no schema_name is provided apply this grant on all future tasks in the given database. The task_name field must be unset in order to use on_future. Cannot be used together with on_all.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/task_grant#on_future TaskGrant#on_future}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/task_grant#on_future TaskGrant#on_future}
 
 ---
 
@@ -960,9 +1038,25 @@ Privilege *string
 
 - *Type:* *string
 
-The privilege to grant on the current or future task.
+The privilege to grant on the current or future task. To grant all privileges, use the value `ALL PRIVILEGES`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/task_grant#privilege TaskGrant#privilege}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/task_grant#privilege TaskGrant#privilege}
+
+---
+
+##### `RevertOwnershipToRoleName`<sup>Optional</sup> <a name="RevertOwnershipToRoleName" id="@cdktf/provider-snowflake.taskGrant.TaskGrantConfig.property.revertOwnershipToRoleName"></a>
+
+```go
+RevertOwnershipToRoleName *string
+```
+
+- *Type:* *string
+
+The name of the role to revert ownership to on destroy.
+
+Has no effect unless `privilege` is set to `OWNERSHIP`
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/task_grant#revert_ownership_to_role_name TaskGrant#revert_ownership_to_role_name}
 
 ---
 
@@ -976,7 +1070,7 @@ SchemaName *string
 
 The name of the schema containing the current or future tasks on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/task_grant#schema_name TaskGrant#schema_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/task_grant#schema_name TaskGrant#schema_name}
 
 ---
 
@@ -990,7 +1084,7 @@ TaskName *string
 
 The name of the task on which to grant privileges immediately (only valid if on_future is false).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/task_grant#task_name TaskGrant#task_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/task_grant#task_name TaskGrant#task_name}
 
 ---
 
@@ -1004,7 +1098,7 @@ WithGrantOption interface{}
 
 When this is set to true, allows the recipient role to grant the privileges to other roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/task_grant#with_grant_option TaskGrant#with_grant_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/task_grant#with_grant_option TaskGrant#with_grant_option}
 
 ---
 

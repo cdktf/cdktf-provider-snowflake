@@ -1,4 +1,9 @@
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/data-sources/file_formats
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/data-sources/file_formats
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +15,11 @@ export interface DataSnowflakeFileFormatsConfig extends cdktf.TerraformMetaArgum
   /**
   * The database from which to return the schemas from.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/data-sources/file_formats#database DataSnowflakeFileFormats#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/data-sources/file_formats#database DataSnowflakeFileFormats#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/data-sources/file_formats#id DataSnowflakeFileFormats#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/data-sources/file_formats#id DataSnowflakeFileFormats#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,7 +28,7 @@ export interface DataSnowflakeFileFormatsConfig extends cdktf.TerraformMetaArgum
   /**
   * The schema from which to return the file formats from.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/data-sources/file_formats#schema DataSnowflakeFileFormats#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/data-sources/file_formats#schema DataSnowflakeFileFormats#schema}
   */
   readonly schema: string;
 }
@@ -113,7 +118,7 @@ export class DataSnowflakeFileFormatsFileFormatsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/data-sources/file_formats snowflake_file_formats}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/data-sources/file_formats snowflake_file_formats}
 */
 export class DataSnowflakeFileFormats extends cdktf.TerraformDataSource {
 
@@ -127,7 +132,7 @@ export class DataSnowflakeFileFormats extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/data-sources/file_formats snowflake_file_formats} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/data-sources/file_formats snowflake_file_formats} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -138,7 +143,7 @@ export class DataSnowflakeFileFormats extends cdktf.TerraformDataSource {
       terraformResourceType: 'snowflake_file_formats',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.63.0',
+        providerVersion: '0.65.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,

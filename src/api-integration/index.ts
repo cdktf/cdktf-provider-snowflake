@@ -1,4 +1,9 @@
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/api_integration
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/api_integration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,63 +15,69 @@ export interface ApiIntegrationConfig extends cdktf.TerraformMetaArguments {
   /**
   * Explicitly limits external functions that use the integration to reference one or more HTTPS proxy service endpoints and resources within those proxies.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/api_integration#api_allowed_prefixes ApiIntegration#api_allowed_prefixes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/api_integration#api_allowed_prefixes ApiIntegration#api_allowed_prefixes}
   */
   readonly apiAllowedPrefixes: string[];
   /**
   * ARN of a cloud platform role.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/api_integration#api_aws_role_arn ApiIntegration#api_aws_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/api_integration#api_aws_role_arn ApiIntegration#api_aws_role_arn}
   */
   readonly apiAwsRoleArn?: string;
   /**
   * Lists the endpoints and resources in the HTTPS proxy service that are not allowed to be called from Snowflake.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/api_integration#api_blocked_prefixes ApiIntegration#api_blocked_prefixes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/api_integration#api_blocked_prefixes ApiIntegration#api_blocked_prefixes}
   */
   readonly apiBlockedPrefixes?: string[];
   /**
+  * The service account used for communication with the Google API Gateway.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/api_integration#api_gcp_service_account ApiIntegration#api_gcp_service_account}
+  */
+  readonly apiGcpServiceAccount?: string;
+  /**
   * The API key (also called a “subscription key”).
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/api_integration#api_key ApiIntegration#api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/api_integration#api_key ApiIntegration#api_key}
   */
   readonly apiKey?: string;
   /**
   * Specifies the HTTPS proxy service type.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/api_integration#api_provider ApiIntegration#api_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/api_integration#api_provider ApiIntegration#api_provider}
   */
   readonly apiProvider: string;
   /**
   * The 'Application (client) id' of the Azure AD app for your remote service.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/api_integration#azure_ad_application_id ApiIntegration#azure_ad_application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/api_integration#azure_ad_application_id ApiIntegration#azure_ad_application_id}
   */
   readonly azureAdApplicationId?: string;
   /**
   * Specifies the ID for your Office 365 tenant that all Azure API Management instances belong to.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/api_integration#azure_tenant_id ApiIntegration#azure_tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/api_integration#azure_tenant_id ApiIntegration#azure_tenant_id}
   */
   readonly azureTenantId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/api_integration#comment ApiIntegration#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/api_integration#comment ApiIntegration#comment}
   */
   readonly comment?: string;
   /**
   * Specifies whether this API integration is enabled or disabled. If the API integration is disabled, any external function that relies on it will not work.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/api_integration#enabled ApiIntegration#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/api_integration#enabled ApiIntegration#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * The audience claim when generating the JWT (JSON Web Token) to authenticate to the Google API Gateway.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/api_integration#google_audience ApiIntegration#google_audience}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/api_integration#google_audience ApiIntegration#google_audience}
   */
   readonly googleAudience?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/api_integration#id ApiIntegration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/api_integration#id ApiIntegration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -75,13 +86,13 @@ export interface ApiIntegrationConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies the name of the API integration. This name follows the rules for Object Identifiers. The name should be unique among api integrations in your account.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/api_integration#name ApiIntegration#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/api_integration#name ApiIntegration#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/api_integration snowflake_api_integration}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/api_integration snowflake_api_integration}
 */
 export class ApiIntegration extends cdktf.TerraformResource {
 
@@ -95,7 +106,7 @@ export class ApiIntegration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/api_integration snowflake_api_integration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/api_integration snowflake_api_integration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -106,7 +117,7 @@ export class ApiIntegration extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_api_integration',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.63.0',
+        providerVersion: '0.65.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
@@ -120,6 +131,7 @@ export class ApiIntegration extends cdktf.TerraformResource {
     this._apiAllowedPrefixes = config.apiAllowedPrefixes;
     this._apiAwsRoleArn = config.apiAwsRoleArn;
     this._apiBlockedPrefixes = config.apiBlockedPrefixes;
+    this._apiGcpServiceAccount = config.apiGcpServiceAccount;
     this._apiKey = config.apiKey;
     this._apiProvider = config.apiProvider;
     this._azureAdApplicationId = config.azureAdApplicationId;
@@ -188,6 +200,22 @@ export class ApiIntegration extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get apiBlockedPrefixesInput() {
     return this._apiBlockedPrefixes;
+  }
+
+  // api_gcp_service_account - computed: true, optional: true, required: false
+  private _apiGcpServiceAccount?: string; 
+  public get apiGcpServiceAccount() {
+    return this.getStringAttribute('api_gcp_service_account');
+  }
+  public set apiGcpServiceAccount(value: string) {
+    this._apiGcpServiceAccount = value;
+  }
+  public resetApiGcpServiceAccount() {
+    this._apiGcpServiceAccount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get apiGcpServiceAccountInput() {
+    return this._apiGcpServiceAccount;
   }
 
   // api_key - computed: false, optional: true, required: false
@@ -352,6 +380,7 @@ export class ApiIntegration extends cdktf.TerraformResource {
       api_allowed_prefixes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._apiAllowedPrefixes),
       api_aws_role_arn: cdktf.stringToTerraform(this._apiAwsRoleArn),
       api_blocked_prefixes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._apiBlockedPrefixes),
+      api_gcp_service_account: cdktf.stringToTerraform(this._apiGcpServiceAccount),
       api_key: cdktf.stringToTerraform(this._apiKey),
       api_provider: cdktf.stringToTerraform(this._apiProvider),
       azure_ad_application_id: cdktf.stringToTerraform(this._azureAdApplicationId),

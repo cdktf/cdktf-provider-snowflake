@@ -1,4 +1,9 @@
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/procedure_grant
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/procedure_grant
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,74 +15,86 @@ export interface ProcedureGrantConfig extends cdktf.TerraformMetaArguments {
   /**
   * List of the argument data types for the procedure (must be present if procedure has arguments and procedure_name is present)
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/procedure_grant#argument_data_types ProcedureGrant#argument_data_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/procedure_grant#argument_data_types ProcedureGrant#argument_data_types}
   */
   readonly argumentDataTypes?: string[];
   /**
   * The name of the database containing the current or future procedures on which to grant privileges.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/procedure_grant#database_name ProcedureGrant#database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/procedure_grant#database_name ProcedureGrant#database_name}
   */
   readonly databaseName: string;
   /**
   * When this is set to true, multiple grants of the same type can be created. This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/procedure_grant#enable_multiple_grants ProcedureGrant#enable_multiple_grants}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/procedure_grant#enable_multiple_grants ProcedureGrant#enable_multiple_grants}
   */
   readonly enableMultipleGrants?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/procedure_grant#id ProcedureGrant#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/procedure_grant#id ProcedureGrant#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * When this is set to true and a schema_name is provided, apply this grant on all future procedures in the given schema. When this is true and no schema_name is provided apply this grant on all future procedures in the given database. The procedure_name and shares fields must be unset in order to use on_future.
+  * When this is set to true and a schema_name is provided, apply this grant on all procedures in the given schema. When this is true and no schema_name is provided apply this grant on all procedures in the given database. The procedure_name and shares fields must be unset in order to use on_all. Cannot be used together with on_future.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/procedure_grant#on_future ProcedureGrant#on_future}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/procedure_grant#on_all ProcedureGrant#on_all}
+  */
+  readonly onAll?: boolean | cdktf.IResolvable;
+  /**
+  * When this is set to true and a schema_name is provided, apply this grant on all future procedures in the given schema. When this is true and no schema_name is provided apply this grant on all future procedures in the given database. The procedure_name and shares fields must be unset in order to use on_future. Cannot be used together with on_all.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/procedure_grant#on_future ProcedureGrant#on_future}
   */
   readonly onFuture?: boolean | cdktf.IResolvable;
   /**
-  * The privilege to grant on the current or future procedure.
+  * The privilege to grant on the current or future procedure. To grant all privileges, use the value `ALL PRIVILEGES`
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/procedure_grant#privilege ProcedureGrant#privilege}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/procedure_grant#privilege ProcedureGrant#privilege}
   */
   readonly privilege?: string;
   /**
   * The name of the procedure on which to grant privileges immediately (only valid if on_future is false).
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/procedure_grant#procedure_name ProcedureGrant#procedure_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/procedure_grant#procedure_name ProcedureGrant#procedure_name}
   */
   readonly procedureName?: string;
   /**
+  * The name of the role to revert ownership to on destroy. Has no effect unless `privilege` is set to `OWNERSHIP`
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/procedure_grant#revert_ownership_to_role_name ProcedureGrant#revert_ownership_to_role_name}
+  */
+  readonly revertOwnershipToRoleName?: string;
+  /**
   * Grants privilege to these roles.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/procedure_grant#roles ProcedureGrant#roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/procedure_grant#roles ProcedureGrant#roles}
   */
   readonly roles: string[];
   /**
   * The name of the schema containing the current or future procedures on which to grant privileges.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/procedure_grant#schema_name ProcedureGrant#schema_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/procedure_grant#schema_name ProcedureGrant#schema_name}
   */
   readonly schemaName?: string;
   /**
   * Grants privilege to these shares (only valid if on_future is false).
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/procedure_grant#shares ProcedureGrant#shares}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/procedure_grant#shares ProcedureGrant#shares}
   */
   readonly shares?: string[];
   /**
   * When this is set to true, allows the recipient role to grant the privileges to other roles.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/procedure_grant#with_grant_option ProcedureGrant#with_grant_option}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/procedure_grant#with_grant_option ProcedureGrant#with_grant_option}
   */
   readonly withGrantOption?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/procedure_grant snowflake_procedure_grant}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/procedure_grant snowflake_procedure_grant}
 */
 export class ProcedureGrant extends cdktf.TerraformResource {
 
@@ -91,7 +108,7 @@ export class ProcedureGrant extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/procedure_grant snowflake_procedure_grant} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/procedure_grant snowflake_procedure_grant} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -102,7 +119,7 @@ export class ProcedureGrant extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_procedure_grant',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.63.0',
+        providerVersion: '0.65.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
@@ -117,9 +134,11 @@ export class ProcedureGrant extends cdktf.TerraformResource {
     this._databaseName = config.databaseName;
     this._enableMultipleGrants = config.enableMultipleGrants;
     this._id = config.id;
+    this._onAll = config.onAll;
     this._onFuture = config.onFuture;
     this._privilege = config.privilege;
     this._procedureName = config.procedureName;
+    this._revertOwnershipToRoleName = config.revertOwnershipToRoleName;
     this._roles = config.roles;
     this._schemaName = config.schemaName;
     this._shares = config.shares;
@@ -191,6 +210,22 @@ export class ProcedureGrant extends cdktf.TerraformResource {
     return this._id;
   }
 
+  // on_all - computed: false, optional: true, required: false
+  private _onAll?: boolean | cdktf.IResolvable; 
+  public get onAll() {
+    return this.getBooleanAttribute('on_all');
+  }
+  public set onAll(value: boolean | cdktf.IResolvable) {
+    this._onAll = value;
+  }
+  public resetOnAll() {
+    this._onAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get onAllInput() {
+    return this._onAll;
+  }
+
   // on_future - computed: false, optional: true, required: false
   private _onFuture?: boolean | cdktf.IResolvable; 
   public get onFuture() {
@@ -237,6 +272,22 @@ export class ProcedureGrant extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get procedureNameInput() {
     return this._procedureName;
+  }
+
+  // revert_ownership_to_role_name - computed: false, optional: true, required: false
+  private _revertOwnershipToRoleName?: string; 
+  public get revertOwnershipToRoleName() {
+    return this.getStringAttribute('revert_ownership_to_role_name');
+  }
+  public set revertOwnershipToRoleName(value: string) {
+    this._revertOwnershipToRoleName = value;
+  }
+  public resetRevertOwnershipToRoleName() {
+    this._revertOwnershipToRoleName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get revertOwnershipToRoleNameInput() {
+    return this._revertOwnershipToRoleName;
   }
 
   // roles - computed: false, optional: false, required: true
@@ -310,9 +361,11 @@ export class ProcedureGrant extends cdktf.TerraformResource {
       database_name: cdktf.stringToTerraform(this._databaseName),
       enable_multiple_grants: cdktf.booleanToTerraform(this._enableMultipleGrants),
       id: cdktf.stringToTerraform(this._id),
+      on_all: cdktf.booleanToTerraform(this._onAll),
       on_future: cdktf.booleanToTerraform(this._onFuture),
       privilege: cdktf.stringToTerraform(this._privilege),
       procedure_name: cdktf.stringToTerraform(this._procedureName),
+      revert_ownership_to_role_name: cdktf.stringToTerraform(this._revertOwnershipToRoleName),
       roles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._roles),
       schema_name: cdktf.stringToTerraform(this._schemaName),
       shares: cdktf.listMapper(cdktf.stringToTerraform, false)(this._shares),

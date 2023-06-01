@@ -1,4 +1,9 @@
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/database_grant
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/database_grant
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,50 +15,56 @@ export interface DatabaseGrantConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the database on which to grant privileges.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/database_grant#database_name DatabaseGrant#database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/database_grant#database_name DatabaseGrant#database_name}
   */
   readonly databaseName: string;
   /**
   * When this is set to true, multiple grants of the same type can be created. This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/database_grant#enable_multiple_grants DatabaseGrant#enable_multiple_grants}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/database_grant#enable_multiple_grants DatabaseGrant#enable_multiple_grants}
   */
   readonly enableMultipleGrants?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/database_grant#id DatabaseGrant#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/database_grant#id DatabaseGrant#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * The privilege to grant on the database.
+  * The privilege to grant on the database. To grant all privileges, use the value `ALL PRIVILEGES`.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/database_grant#privilege DatabaseGrant#privilege}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/database_grant#privilege DatabaseGrant#privilege}
   */
   readonly privilege?: string;
   /**
+  * The name of the role to revert ownership to on destroy. Has no effect unless `privilege` is set to `OWNERSHIP`
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/database_grant#revert_ownership_to_role_name DatabaseGrant#revert_ownership_to_role_name}
+  */
+  readonly revertOwnershipToRoleName?: string;
+  /**
   * Grants privilege to these roles.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/database_grant#roles DatabaseGrant#roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/database_grant#roles DatabaseGrant#roles}
   */
   readonly roles?: string[];
   /**
   * Grants privilege to these shares.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/database_grant#shares DatabaseGrant#shares}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/database_grant#shares DatabaseGrant#shares}
   */
   readonly shares?: string[];
   /**
   * When this is set to true, allows the recipient role to grant the privileges to other roles.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/database_grant#with_grant_option DatabaseGrant#with_grant_option}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/database_grant#with_grant_option DatabaseGrant#with_grant_option}
   */
   readonly withGrantOption?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/database_grant snowflake_database_grant}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/database_grant snowflake_database_grant}
 */
 export class DatabaseGrant extends cdktf.TerraformResource {
 
@@ -67,7 +78,7 @@ export class DatabaseGrant extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/database_grant snowflake_database_grant} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/database_grant snowflake_database_grant} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +89,7 @@ export class DatabaseGrant extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_database_grant',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.63.0',
+        providerVersion: '0.65.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
@@ -93,6 +104,7 @@ export class DatabaseGrant extends cdktf.TerraformResource {
     this._enableMultipleGrants = config.enableMultipleGrants;
     this._id = config.id;
     this._privilege = config.privilege;
+    this._revertOwnershipToRoleName = config.revertOwnershipToRoleName;
     this._roles = config.roles;
     this._shares = config.shares;
     this._withGrantOption = config.withGrantOption;
@@ -163,6 +175,22 @@ export class DatabaseGrant extends cdktf.TerraformResource {
     return this._privilege;
   }
 
+  // revert_ownership_to_role_name - computed: false, optional: true, required: false
+  private _revertOwnershipToRoleName?: string; 
+  public get revertOwnershipToRoleName() {
+    return this.getStringAttribute('revert_ownership_to_role_name');
+  }
+  public set revertOwnershipToRoleName(value: string) {
+    this._revertOwnershipToRoleName = value;
+  }
+  public resetRevertOwnershipToRoleName() {
+    this._revertOwnershipToRoleName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get revertOwnershipToRoleNameInput() {
+    return this._revertOwnershipToRoleName;
+  }
+
   // roles - computed: false, optional: true, required: false
   private _roles?: string[]; 
   public get roles() {
@@ -221,6 +249,7 @@ export class DatabaseGrant extends cdktf.TerraformResource {
       enable_multiple_grants: cdktf.booleanToTerraform(this._enableMultipleGrants),
       id: cdktf.stringToTerraform(this._id),
       privilege: cdktf.stringToTerraform(this._privilege),
+      revert_ownership_to_role_name: cdktf.stringToTerraform(this._revertOwnershipToRoleName),
       roles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._roles),
       shares: cdktf.listMapper(cdktf.stringToTerraform, false)(this._shares),
       with_grant_option: cdktf.booleanToTerraform(this._withGrantOption),
