@@ -1,6 +1,6 @@
 # `snowflake_stage_grant`
 
-Refer to the Terraform Registory for docs: [`snowflake_stage_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/stage_grant).
+Refer to the Terraform Registory for docs: [`snowflake_stage_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/stage_grant).
 
 # `stageGrant` Submodule <a name="`stageGrant` Submodule" id="@cdktf/provider-snowflake.stageGrant"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`snowflake_stage_grant`](https://reg
 
 ### StageGrant <a name="StageGrant" id="@cdktf/provider-snowflake.stageGrant.StageGrant"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/stage_grant snowflake_stage_grant}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/stage_grant snowflake_stage_grant}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.stageGrant.StageGrant.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.stageGrant.StageGrant.resetOnAll">resetOnAll</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stageGrant.StageGrant.resetOnFuture">resetOnFuture</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stageGrant.StageGrant.resetPrivilege">resetPrivilege</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.stageGrant.StageGrant.resetRevertOwnershipToRoleName">resetRevertOwnershipToRoleName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stageGrant.StageGrant.resetSchemaName">resetSchemaName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stageGrant.StageGrant.resetStageName">resetStageName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stageGrant.StageGrant.resetWithGrantOption">resetWithGrantOption</a></code> | *No description.* |
@@ -295,6 +296,12 @@ public resetOnFuture(): void
 public resetPrivilege(): void
 ```
 
+##### `resetRevertOwnershipToRoleName` <a name="resetRevertOwnershipToRoleName" id="@cdktf/provider-snowflake.stageGrant.StageGrant.resetRevertOwnershipToRoleName"></a>
+
+```typescript
+public resetRevertOwnershipToRoleName(): void
+```
+
 ##### `resetSchemaName` <a name="resetSchemaName" id="@cdktf/provider-snowflake.stageGrant.StageGrant.resetSchemaName"></a>
 
 ```typescript
@@ -407,6 +414,7 @@ stageGrant.StageGrant.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-snowflake.stageGrant.StageGrant.property.onAllInput">onAllInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stageGrant.StageGrant.property.onFutureInput">onFutureInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stageGrant.StageGrant.property.privilegeInput">privilegeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.stageGrant.StageGrant.property.revertOwnershipToRoleNameInput">revertOwnershipToRoleNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stageGrant.StageGrant.property.rolesInput">rolesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stageGrant.StageGrant.property.schemaNameInput">schemaNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stageGrant.StageGrant.property.stageNameInput">stageNameInput</a></code> | <code>string</code> | *No description.* |
@@ -417,6 +425,7 @@ stageGrant.StageGrant.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-snowflake.stageGrant.StageGrant.property.onAll">onAll</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stageGrant.StageGrant.property.onFuture">onFuture</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stageGrant.StageGrant.property.privilege">privilege</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.stageGrant.StageGrant.property.revertOwnershipToRoleName">revertOwnershipToRoleName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stageGrant.StageGrant.property.roles">roles</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stageGrant.StageGrant.property.schemaName">schemaName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.stageGrant.StageGrant.property.stageName">stageName</a></code> | <code>string</code> | *No description.* |
@@ -626,6 +635,16 @@ public readonly privilegeInput: string;
 
 ---
 
+##### `revertOwnershipToRoleNameInput`<sup>Optional</sup> <a name="revertOwnershipToRoleNameInput" id="@cdktf/provider-snowflake.stageGrant.StageGrant.property.revertOwnershipToRoleNameInput"></a>
+
+```typescript
+public readonly revertOwnershipToRoleNameInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `rolesInput`<sup>Optional</sup> <a name="rolesInput" id="@cdktf/provider-snowflake.stageGrant.StageGrant.property.rolesInput"></a>
 
 ```typescript
@@ -726,6 +745,16 @@ public readonly privilege: string;
 
 ---
 
+##### `revertOwnershipToRoleName`<sup>Required</sup> <a name="revertOwnershipToRoleName" id="@cdktf/provider-snowflake.stageGrant.StageGrant.property.revertOwnershipToRoleName"></a>
+
+```typescript
+public readonly revertOwnershipToRoleName: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `roles`<sup>Required</sup> <a name="roles" id="@cdktf/provider-snowflake.stageGrant.StageGrant.property.roles"></a>
 
 ```typescript
@@ -810,10 +839,11 @@ const stageGrantConfig: stageGrant.StageGrantConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.stageGrant.StageGrantConfig.property.databaseName">databaseName</a></code> | <code>string</code> | The name of the database containing the current stage on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.stageGrant.StageGrantConfig.property.roles">roles</a></code> | <code>string[]</code> | Grants privilege to these roles. |
 | <code><a href="#@cdktf/provider-snowflake.stageGrant.StageGrantConfig.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
-| <code><a href="#@cdktf/provider-snowflake.stageGrant.StageGrantConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/stage_grant#id StageGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.stageGrant.StageGrantConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/stage_grant#id StageGrant#id}. |
 | <code><a href="#@cdktf/provider-snowflake.stageGrant.StageGrantConfig.property.onAll">onAll</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true and a schema_name is provided, apply this grant on all stages in the given schema. |
 | <code><a href="#@cdktf/provider-snowflake.stageGrant.StageGrantConfig.property.onFuture">onFuture</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true and a schema_name is provided, apply this grant on all future stages in the given schema. |
-| <code><a href="#@cdktf/provider-snowflake.stageGrant.StageGrantConfig.property.privilege">privilege</a></code> | <code>string</code> | The privilege to grant on the stage. |
+| <code><a href="#@cdktf/provider-snowflake.stageGrant.StageGrantConfig.property.privilege">privilege</a></code> | <code>string</code> | The privilege to grant on the stage. To grant all privileges, use the value `ALL PRIVILEGES`. |
+| <code><a href="#@cdktf/provider-snowflake.stageGrant.StageGrantConfig.property.revertOwnershipToRoleName">revertOwnershipToRoleName</a></code> | <code>string</code> | The name of the role to revert ownership to on destroy. |
 | <code><a href="#@cdktf/provider-snowflake.stageGrant.StageGrantConfig.property.schemaName">schemaName</a></code> | <code>string</code> | The name of the schema containing the current stage on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.stageGrant.StageGrantConfig.property.stageName">stageName</a></code> | <code>string</code> | The name of the stage on which to grant privilege (only valid if on_future and on_all are false). |
 | <code><a href="#@cdktf/provider-snowflake.stageGrant.StageGrantConfig.property.withGrantOption">withGrantOption</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, allows the recipient role to grant the privileges to other roles. |
@@ -900,7 +930,7 @@ public readonly databaseName: string;
 
 The name of the database containing the current stage on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/stage_grant#database_name StageGrant#database_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/stage_grant#database_name StageGrant#database_name}
 
 ---
 
@@ -914,7 +944,7 @@ public readonly roles: string[];
 
 Grants privilege to these roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/stage_grant#roles StageGrant#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/stage_grant#roles StageGrant#roles}
 
 ---
 
@@ -930,7 +960,7 @@ When this is set to true, multiple grants of the same type can be created.
 
 This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/stage_grant#enable_multiple_grants StageGrant#enable_multiple_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/stage_grant#enable_multiple_grants StageGrant#enable_multiple_grants}
 
 ---
 
@@ -942,7 +972,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/stage_grant#id StageGrant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/stage_grant#id StageGrant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -959,9 +989,9 @@ public readonly onAll: boolean | IResolvable;
 
 When this is set to true and a schema_name is provided, apply this grant on all stages in the given schema.
 
-When this is true and no schema_name is provided apply this grant on all stages in the given database. The stage_name field must be unset in order to use on_all. Cannot be used together with on_future. Importing the resource with the on_all=true option is not supported.
+When this is true and no schema_name is provided apply this grant on all stages in the given database. The stage_name field must be unset in order to use on_all. Cannot be used together with on_future.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/stage_grant#on_all StageGrant#on_all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/stage_grant#on_all StageGrant#on_all}
 
 ---
 
@@ -977,7 +1007,7 @@ When this is set to true and a schema_name is provided, apply this grant on all 
 
 When this is true and no schema_name is provided apply this grant on all future stages in the given database. The stage_name field must be unset in order to use on_future. Cannot be used together with on_all.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/stage_grant#on_future StageGrant#on_future}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/stage_grant#on_future StageGrant#on_future}
 
 ---
 
@@ -989,9 +1019,25 @@ public readonly privilege: string;
 
 - *Type:* string
 
-The privilege to grant on the stage.
+The privilege to grant on the stage. To grant all privileges, use the value `ALL PRIVILEGES`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/stage_grant#privilege StageGrant#privilege}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/stage_grant#privilege StageGrant#privilege}
+
+---
+
+##### `revertOwnershipToRoleName`<sup>Optional</sup> <a name="revertOwnershipToRoleName" id="@cdktf/provider-snowflake.stageGrant.StageGrantConfig.property.revertOwnershipToRoleName"></a>
+
+```typescript
+public readonly revertOwnershipToRoleName: string;
+```
+
+- *Type:* string
+
+The name of the role to revert ownership to on destroy.
+
+Has no effect unless `privilege` is set to `OWNERSHIP`
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/stage_grant#revert_ownership_to_role_name StageGrant#revert_ownership_to_role_name}
 
 ---
 
@@ -1005,7 +1051,7 @@ public readonly schemaName: string;
 
 The name of the schema containing the current stage on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/stage_grant#schema_name StageGrant#schema_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/stage_grant#schema_name StageGrant#schema_name}
 
 ---
 
@@ -1019,7 +1065,7 @@ public readonly stageName: string;
 
 The name of the stage on which to grant privilege (only valid if on_future and on_all are false).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/stage_grant#stage_name StageGrant#stage_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/stage_grant#stage_name StageGrant#stage_name}
 
 ---
 
@@ -1033,7 +1079,7 @@ public readonly withGrantOption: boolean | IResolvable;
 
 When this is set to true, allows the recipient role to grant the privileges to other roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/stage_grant#with_grant_option StageGrant#with_grant_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/stage_grant#with_grant_option StageGrant#with_grant_option}
 
 ---
 

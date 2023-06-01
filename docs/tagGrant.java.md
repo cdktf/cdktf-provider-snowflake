@@ -1,6 +1,6 @@
 # `snowflake_tag_grant`
 
-Refer to the Terraform Registory for docs: [`snowflake_tag_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/tag_grant).
+Refer to the Terraform Registory for docs: [`snowflake_tag_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/tag_grant).
 
 # `tagGrant` Submodule <a name="`tagGrant` Submodule" id="@cdktf/provider-snowflake.tagGrant"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`snowflake_tag_grant`](https://regis
 
 ### TagGrant <a name="TagGrant" id="@cdktf/provider-snowflake.tagGrant.TagGrant"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/tag_grant snowflake_tag_grant}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/tag_grant snowflake_tag_grant}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.tagGrant.TagGrant.Initializer"></a>
 
@@ -34,6 +34,7 @@ TagGrant.Builder.create(Construct scope, java.lang.String id)
 //  .enableMultipleGrants(IResolvable)
 //  .id(java.lang.String)
 //  .privilege(java.lang.String)
+//  .revertOwnershipToRoleName(java.lang.String)
 //  .roles(java.util.List<java.lang.String>)
 //  .withGrantOption(java.lang.Boolean)
 //  .withGrantOption(IResolvable)
@@ -55,8 +56,9 @@ TagGrant.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrant.Initializer.parameter.schemaName">schemaName</a></code> | <code>java.lang.String</code> | The name of the schema containing the tag on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrant.Initializer.parameter.tagName">tagName</a></code> | <code>java.lang.String</code> | The name of the tag on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrant.Initializer.parameter.enableMultipleGrants">enableMultipleGrants</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
-| <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrant.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/tag_grant#id TagGrant#id}. |
-| <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrant.Initializer.parameter.privilege">privilege</a></code> | <code>java.lang.String</code> | The privilege to grant on the tag. |
+| <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrant.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/tag_grant#id TagGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrant.Initializer.parameter.privilege">privilege</a></code> | <code>java.lang.String</code> | The privilege to grant on the tag. To grant all privileges, use the value `ALL PRIVILEGES`. |
+| <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrant.Initializer.parameter.revertOwnershipToRoleName">revertOwnershipToRoleName</a></code> | <code>java.lang.String</code> | The name of the role to revert ownership to on destroy. |
 | <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrant.Initializer.parameter.roles">roles</a></code> | <code>java.util.List<java.lang.String></code> | Grants privilege to these roles. |
 | <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrant.Initializer.parameter.withGrantOption">withGrantOption</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When this is set to true, allows the recipient role to grant the privileges to other roles. |
 
@@ -128,7 +130,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the database containing the tag on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/tag_grant#database_name TagGrant#database_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/tag_grant#database_name TagGrant#database_name}
 
 ---
 
@@ -138,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The name of the schema containing the tag on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/tag_grant#schema_name TagGrant#schema_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/tag_grant#schema_name TagGrant#schema_name}
 
 ---
 
@@ -148,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The name of the tag on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/tag_grant#tag_name TagGrant#tag_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/tag_grant#tag_name TagGrant#tag_name}
 
 ---
 
@@ -160,7 +162,7 @@ When this is set to true, multiple grants of the same type can be created.
 
 This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/tag_grant#enable_multiple_grants TagGrant#enable_multiple_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/tag_grant#enable_multiple_grants TagGrant#enable_multiple_grants}
 
 ---
 
@@ -168,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/tag_grant#id TagGrant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/tag_grant#id TagGrant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -179,9 +181,21 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-The privilege to grant on the tag.
+The privilege to grant on the tag. To grant all privileges, use the value `ALL PRIVILEGES`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/tag_grant#privilege TagGrant#privilege}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/tag_grant#privilege TagGrant#privilege}
+
+---
+
+##### `revertOwnershipToRoleName`<sup>Optional</sup> <a name="revertOwnershipToRoleName" id="@cdktf/provider-snowflake.tagGrant.TagGrant.Initializer.parameter.revertOwnershipToRoleName"></a>
+
+- *Type:* java.lang.String
+
+The name of the role to revert ownership to on destroy.
+
+Has no effect unless `privilege` is set to `OWNERSHIP`
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/tag_grant#revert_ownership_to_role_name TagGrant#revert_ownership_to_role_name}
 
 ---
 
@@ -191,7 +205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Grants privilege to these roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/tag_grant#roles TagGrant#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/tag_grant#roles TagGrant#roles}
 
 ---
 
@@ -201,7 +215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 When this is set to true, allows the recipient role to grant the privileges to other roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/tag_grant#with_grant_option TagGrant#with_grant_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/tag_grant#with_grant_option TagGrant#with_grant_option}
 
 ---
 
@@ -228,6 +242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 | <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrant.resetEnableMultipleGrants">resetEnableMultipleGrants</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrant.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrant.resetPrivilege">resetPrivilege</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrant.resetRevertOwnershipToRoleName">resetRevertOwnershipToRoleName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrant.resetRoles">resetRoles</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrant.resetWithGrantOption">resetWithGrantOption</a></code> | *No description.* |
 
@@ -435,6 +450,12 @@ public void resetId()
 public void resetPrivilege()
 ```
 
+##### `resetRevertOwnershipToRoleName` <a name="resetRevertOwnershipToRoleName" id="@cdktf/provider-snowflake.tagGrant.TagGrant.resetRevertOwnershipToRoleName"></a>
+
+```java
+public void resetRevertOwnershipToRoleName()
+```
+
 ##### `resetRoles` <a name="resetRoles" id="@cdktf/provider-snowflake.tagGrant.TagGrant.resetRoles"></a>
 
 ```java
@@ -539,6 +560,7 @@ TagGrant.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrant.property.enableMultipleGrantsInput">enableMultipleGrantsInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrant.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrant.property.privilegeInput">privilegeInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrant.property.revertOwnershipToRoleNameInput">revertOwnershipToRoleNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrant.property.rolesInput">rolesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrant.property.schemaNameInput">schemaNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrant.property.tagNameInput">tagNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -547,6 +569,7 @@ TagGrant.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrant.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrant.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrant.property.privilege">privilege</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrant.property.revertOwnershipToRoleName">revertOwnershipToRoleName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrant.property.roles">roles</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrant.property.schemaName">schemaName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrant.property.tagName">tagName</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -736,6 +759,16 @@ public java.lang.String getPrivilegeInput();
 
 ---
 
+##### `revertOwnershipToRoleNameInput`<sup>Optional</sup> <a name="revertOwnershipToRoleNameInput" id="@cdktf/provider-snowflake.tagGrant.TagGrant.property.revertOwnershipToRoleNameInput"></a>
+
+```java
+public java.lang.String getRevertOwnershipToRoleNameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `rolesInput`<sup>Optional</sup> <a name="rolesInput" id="@cdktf/provider-snowflake.tagGrant.TagGrant.property.rolesInput"></a>
 
 ```java
@@ -810,6 +843,16 @@ public java.lang.String getId();
 
 ```java
 public java.lang.String getPrivilege();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `revertOwnershipToRoleName`<sup>Required</sup> <a name="revertOwnershipToRoleName" id="@cdktf/provider-snowflake.tagGrant.TagGrant.property.revertOwnershipToRoleName"></a>
+
+```java
+public java.lang.String getRevertOwnershipToRoleName();
 ```
 
 - *Type:* java.lang.String
@@ -902,6 +945,7 @@ TagGrantConfig.builder()
 //  .enableMultipleGrants(IResolvable)
 //  .id(java.lang.String)
 //  .privilege(java.lang.String)
+//  .revertOwnershipToRoleName(java.lang.String)
 //  .roles(java.util.List<java.lang.String>)
 //  .withGrantOption(java.lang.Boolean)
 //  .withGrantOption(IResolvable)
@@ -923,8 +967,9 @@ TagGrantConfig.builder()
 | <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrantConfig.property.schemaName">schemaName</a></code> | <code>java.lang.String</code> | The name of the schema containing the tag on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrantConfig.property.tagName">tagName</a></code> | <code>java.lang.String</code> | The name of the tag on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrantConfig.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
-| <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrantConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/tag_grant#id TagGrant#id}. |
-| <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrantConfig.property.privilege">privilege</a></code> | <code>java.lang.String</code> | The privilege to grant on the tag. |
+| <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrantConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/tag_grant#id TagGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrantConfig.property.privilege">privilege</a></code> | <code>java.lang.String</code> | The privilege to grant on the tag. To grant all privileges, use the value `ALL PRIVILEGES`. |
+| <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrantConfig.property.revertOwnershipToRoleName">revertOwnershipToRoleName</a></code> | <code>java.lang.String</code> | The name of the role to revert ownership to on destroy. |
 | <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrantConfig.property.roles">roles</a></code> | <code>java.util.List<java.lang.String></code> | Grants privilege to these roles. |
 | <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrantConfig.property.withGrantOption">withGrantOption</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When this is set to true, allows the recipient role to grant the privileges to other roles. |
 
@@ -1010,7 +1055,7 @@ public java.lang.String getDatabaseName();
 
 The name of the database containing the tag on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/tag_grant#database_name TagGrant#database_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/tag_grant#database_name TagGrant#database_name}
 
 ---
 
@@ -1024,7 +1069,7 @@ public java.lang.String getSchemaName();
 
 The name of the schema containing the tag on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/tag_grant#schema_name TagGrant#schema_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/tag_grant#schema_name TagGrant#schema_name}
 
 ---
 
@@ -1038,7 +1083,7 @@ public java.lang.String getTagName();
 
 The name of the tag on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/tag_grant#tag_name TagGrant#tag_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/tag_grant#tag_name TagGrant#tag_name}
 
 ---
 
@@ -1054,7 +1099,7 @@ When this is set to true, multiple grants of the same type can be created.
 
 This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/tag_grant#enable_multiple_grants TagGrant#enable_multiple_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/tag_grant#enable_multiple_grants TagGrant#enable_multiple_grants}
 
 ---
 
@@ -1066,7 +1111,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/tag_grant#id TagGrant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/tag_grant#id TagGrant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1081,9 +1126,25 @@ public java.lang.String getPrivilege();
 
 - *Type:* java.lang.String
 
-The privilege to grant on the tag.
+The privilege to grant on the tag. To grant all privileges, use the value `ALL PRIVILEGES`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/tag_grant#privilege TagGrant#privilege}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/tag_grant#privilege TagGrant#privilege}
+
+---
+
+##### `revertOwnershipToRoleName`<sup>Optional</sup> <a name="revertOwnershipToRoleName" id="@cdktf/provider-snowflake.tagGrant.TagGrantConfig.property.revertOwnershipToRoleName"></a>
+
+```java
+public java.lang.String getRevertOwnershipToRoleName();
+```
+
+- *Type:* java.lang.String
+
+The name of the role to revert ownership to on destroy.
+
+Has no effect unless `privilege` is set to `OWNERSHIP`
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/tag_grant#revert_ownership_to_role_name TagGrant#revert_ownership_to_role_name}
 
 ---
 
@@ -1097,7 +1158,7 @@ public java.util.List<java.lang.String> getRoles();
 
 Grants privilege to these roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/tag_grant#roles TagGrant#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/tag_grant#roles TagGrant#roles}
 
 ---
 
@@ -1111,7 +1172,7 @@ public java.lang.Object getWithGrantOption();
 
 When this is set to true, allows the recipient role to grant the privileges to other roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/tag_grant#with_grant_option TagGrant#with_grant_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/tag_grant#with_grant_option TagGrant#with_grant_option}
 
 ---
 

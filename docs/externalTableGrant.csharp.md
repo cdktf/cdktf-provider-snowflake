@@ -1,6 +1,6 @@
 # `snowflake_external_table_grant`
 
-Refer to the Terraform Registory for docs: [`snowflake_external_table_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/external_table_grant).
+Refer to the Terraform Registory for docs: [`snowflake_external_table_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/external_table_grant).
 
 # `externalTableGrant` Submodule <a name="`externalTableGrant` Submodule" id="@cdktf/provider-snowflake.externalTableGrant"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`snowflake_external_table_grant`](ht
 
 ### ExternalTableGrant <a name="ExternalTableGrant" id="@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrant"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/external_table_grant snowflake_external_table_grant}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/external_table_grant snowflake_external_table_grant}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrant.Initializer"></a>
 
@@ -73,8 +73,10 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrant.resetEnableMultipleGrants">ResetEnableMultipleGrants</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrant.resetExternalTableName">ResetExternalTableName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrant.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrant.resetOnAll">ResetOnAll</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrant.resetOnFuture">ResetOnFuture</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrant.resetPrivilege">ResetPrivilege</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrant.resetRevertOwnershipToRoleName">ResetRevertOwnershipToRoleName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrant.resetSchemaName">ResetSchemaName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrant.resetShares">ResetShares</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrant.resetWithGrantOption">ResetWithGrantOption</a></code> | *No description.* |
@@ -283,6 +285,12 @@ private void ResetExternalTableName()
 private void ResetId()
 ```
 
+##### `ResetOnAll` <a name="ResetOnAll" id="@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrant.resetOnAll"></a>
+
+```csharp
+private void ResetOnAll()
+```
+
 ##### `ResetOnFuture` <a name="ResetOnFuture" id="@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrant.resetOnFuture"></a>
 
 ```csharp
@@ -293,6 +301,12 @@ private void ResetOnFuture()
 
 ```csharp
 private void ResetPrivilege()
+```
+
+##### `ResetRevertOwnershipToRoleName` <a name="ResetRevertOwnershipToRoleName" id="@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrant.resetRevertOwnershipToRoleName"></a>
+
+```csharp
+private void ResetRevertOwnershipToRoleName()
 ```
 
 ##### `ResetSchemaName` <a name="ResetSchemaName" id="@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrant.resetSchemaName"></a>
@@ -405,8 +419,10 @@ ExternalTableGrant.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrant.property.enableMultipleGrantsInput">EnableMultipleGrantsInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrant.property.externalTableNameInput">ExternalTableNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrant.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrant.property.onAllInput">OnAllInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrant.property.onFutureInput">OnFutureInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrant.property.privilegeInput">PrivilegeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrant.property.revertOwnershipToRoleNameInput">RevertOwnershipToRoleNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrant.property.rolesInput">RolesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrant.property.schemaNameInput">SchemaNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrant.property.sharesInput">SharesInput</a></code> | <code>string[]</code> | *No description.* |
@@ -415,8 +431,10 @@ ExternalTableGrant.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrant.property.enableMultipleGrants">EnableMultipleGrants</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrant.property.externalTableName">ExternalTableName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrant.property.id">Id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrant.property.onAll">OnAll</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrant.property.onFuture">OnFuture</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrant.property.privilege">Privilege</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrant.property.revertOwnershipToRoleName">RevertOwnershipToRoleName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrant.property.roles">Roles</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrant.property.schemaName">SchemaName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrant.property.shares">Shares</a></code> | <code>string[]</code> | *No description.* |
@@ -606,6 +624,16 @@ public string IdInput { get; }
 
 ---
 
+##### `OnAllInput`<sup>Optional</sup> <a name="OnAllInput" id="@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrant.property.onAllInput"></a>
+
+```csharp
+public object OnAllInput { get; }
+```
+
+- *Type:* object
+
+---
+
 ##### `OnFutureInput`<sup>Optional</sup> <a name="OnFutureInput" id="@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrant.property.onFutureInput"></a>
 
 ```csharp
@@ -620,6 +648,16 @@ public object OnFutureInput { get; }
 
 ```csharp
 public string PrivilegeInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `RevertOwnershipToRoleNameInput`<sup>Optional</sup> <a name="RevertOwnershipToRoleNameInput" id="@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrant.property.revertOwnershipToRoleNameInput"></a>
+
+```csharp
+public string RevertOwnershipToRoleNameInput { get; }
 ```
 
 - *Type:* string
@@ -706,6 +744,16 @@ public string Id { get; }
 
 ---
 
+##### `OnAll`<sup>Required</sup> <a name="OnAll" id="@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrant.property.onAll"></a>
+
+```csharp
+public object OnAll { get; }
+```
+
+- *Type:* object
+
+---
+
 ##### `OnFuture`<sup>Required</sup> <a name="OnFuture" id="@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrant.property.onFuture"></a>
 
 ```csharp
@@ -720,6 +768,16 @@ public object OnFuture { get; }
 
 ```csharp
 public string Privilege { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `RevertOwnershipToRoleName`<sup>Required</sup> <a name="RevertOwnershipToRoleName" id="@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrant.property.revertOwnershipToRoleName"></a>
+
+```csharp
+public string RevertOwnershipToRoleName { get; }
 ```
 
 - *Type:* string
@@ -806,8 +864,10 @@ new ExternalTableGrantConfig {
     object EnableMultipleGrants = null,
     string ExternalTableName = null,
     string Id = null,
+    object OnAll = null,
     object OnFuture = null,
     string Privilege = null,
+    string RevertOwnershipToRoleName = null,
     string SchemaName = null,
     string[] Shares = null,
     object WithGrantOption = null
@@ -829,9 +889,11 @@ new ExternalTableGrantConfig {
 | <code><a href="#@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrantConfig.property.roles">Roles</a></code> | <code>string[]</code> | Grants privilege to these roles. |
 | <code><a href="#@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrantConfig.property.enableMultipleGrants">EnableMultipleGrants</a></code> | <code>object</code> | When this is set to true, multiple grants of the same type can be created. |
 | <code><a href="#@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrantConfig.property.externalTableName">ExternalTableName</a></code> | <code>string</code> | The name of the external table on which to grant privileges immediately (only valid if on_future is false). |
-| <code><a href="#@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrantConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/external_table_grant#id ExternalTableGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrantConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/external_table_grant#id ExternalTableGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrantConfig.property.onAll">OnAll</a></code> | <code>object</code> | When this is set to true and a schema_name is provided, apply this grant on all external tables in the given schema. |
 | <code><a href="#@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrantConfig.property.onFuture">OnFuture</a></code> | <code>object</code> | When this is set to true and a schema_name is provided, apply this grant on all future external tables in the given schema. |
 | <code><a href="#@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrantConfig.property.privilege">Privilege</a></code> | <code>string</code> | The privilege to grant on the current or future external table. |
+| <code><a href="#@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrantConfig.property.revertOwnershipToRoleName">RevertOwnershipToRoleName</a></code> | <code>string</code> | The name of the role to revert ownership to on destroy. |
 | <code><a href="#@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrantConfig.property.schemaName">SchemaName</a></code> | <code>string</code> | The name of the schema containing the current or future external tables on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrantConfig.property.shares">Shares</a></code> | <code>string[]</code> | Grants privilege to these shares (only valid if on_future is false). |
 | <code><a href="#@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrantConfig.property.withGrantOption">WithGrantOption</a></code> | <code>object</code> | When this is set to true, allows the recipient role to grant the privileges to other roles. |
@@ -918,7 +980,7 @@ public string DatabaseName { get; set; }
 
 The name of the database containing the current or future external tables on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/external_table_grant#database_name ExternalTableGrant#database_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/external_table_grant#database_name ExternalTableGrant#database_name}
 
 ---
 
@@ -932,7 +994,7 @@ public string[] Roles { get; set; }
 
 Grants privilege to these roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/external_table_grant#roles ExternalTableGrant#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/external_table_grant#roles ExternalTableGrant#roles}
 
 ---
 
@@ -948,7 +1010,7 @@ When this is set to true, multiple grants of the same type can be created.
 
 This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/external_table_grant#enable_multiple_grants ExternalTableGrant#enable_multiple_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/external_table_grant#enable_multiple_grants ExternalTableGrant#enable_multiple_grants}
 
 ---
 
@@ -962,7 +1024,7 @@ public string ExternalTableName { get; set; }
 
 The name of the external table on which to grant privileges immediately (only valid if on_future is false).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/external_table_grant#external_table_name ExternalTableGrant#external_table_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/external_table_grant#external_table_name ExternalTableGrant#external_table_name}
 
 ---
 
@@ -974,10 +1036,26 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/external_table_grant#id ExternalTableGrant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/external_table_grant#id ExternalTableGrant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `OnAll`<sup>Optional</sup> <a name="OnAll" id="@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrantConfig.property.onAll"></a>
+
+```csharp
+public object OnAll { get; set; }
+```
+
+- *Type:* object
+
+When this is set to true and a schema_name is provided, apply this grant on all external tables in the given schema.
+
+When this is true and no schema_name is provided apply this grant on all external tables in the given database. The external_table_name and shares fields must be unset in order to use on_all. Cannot be used together with on_future.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/external_table_grant#on_all ExternalTableGrant#on_all}
 
 ---
 
@@ -991,9 +1069,9 @@ public object OnFuture { get; set; }
 
 When this is set to true and a schema_name is provided, apply this grant on all future external tables in the given schema.
 
-When this is true and no schema_name is provided apply this grant on all future external tables in the given database. The external_table_name and shares fields must be unset in order to use on_future.
+When this is true and no schema_name is provided apply this grant on all future external tables in the given database. The external_table_name and shares fields must be unset in order to use on_future. Cannot be used together with on_all.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/external_table_grant#on_future ExternalTableGrant#on_future}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/external_table_grant#on_future ExternalTableGrant#on_future}
 
 ---
 
@@ -1007,7 +1085,25 @@ public string Privilege { get; set; }
 
 The privilege to grant on the current or future external table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/external_table_grant#privilege ExternalTableGrant#privilege}
+To grant all privileges, use the value `ALL PRIVILEGES`
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/external_table_grant#privilege ExternalTableGrant#privilege}
+
+---
+
+##### `RevertOwnershipToRoleName`<sup>Optional</sup> <a name="RevertOwnershipToRoleName" id="@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrantConfig.property.revertOwnershipToRoleName"></a>
+
+```csharp
+public string RevertOwnershipToRoleName { get; set; }
+```
+
+- *Type:* string
+
+The name of the role to revert ownership to on destroy.
+
+Has no effect unless `privilege` is set to `OWNERSHIP`
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/external_table_grant#revert_ownership_to_role_name ExternalTableGrant#revert_ownership_to_role_name}
 
 ---
 
@@ -1021,7 +1117,7 @@ public string SchemaName { get; set; }
 
 The name of the schema containing the current or future external tables on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/external_table_grant#schema_name ExternalTableGrant#schema_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/external_table_grant#schema_name ExternalTableGrant#schema_name}
 
 ---
 
@@ -1035,7 +1131,7 @@ public string[] Shares { get; set; }
 
 Grants privilege to these shares (only valid if on_future is false).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/external_table_grant#shares ExternalTableGrant#shares}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/external_table_grant#shares ExternalTableGrant#shares}
 
 ---
 
@@ -1049,7 +1145,7 @@ public object WithGrantOption { get; set; }
 
 When this is set to true, allows the recipient role to grant the privileges to other roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/external_table_grant#with_grant_option ExternalTableGrant#with_grant_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/external_table_grant#with_grant_option ExternalTableGrant#with_grant_option}
 
 ---
 

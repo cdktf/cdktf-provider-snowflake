@@ -1,6 +1,6 @@
 # `snowflake_stream_grant`
 
-Refer to the Terraform Registory for docs: [`snowflake_stream_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/stream_grant).
+Refer to the Terraform Registory for docs: [`snowflake_stream_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/stream_grant).
 
 # `streamGrant` Submodule <a name="`streamGrant` Submodule" id="@cdktf/provider-snowflake.streamGrant"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`snowflake_stream_grant`](https://re
 
 ### StreamGrant <a name="StreamGrant" id="@cdktf/provider-snowflake.streamGrant.StreamGrant"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/stream_grant snowflake_stream_grant}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/stream_grant snowflake_stream_grant}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.streamGrant.StreamGrant.Initializer"></a>
 
@@ -72,8 +72,10 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.streamGrant.StreamGrant.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.streamGrant.StreamGrant.resetEnableMultipleGrants">ResetEnableMultipleGrants</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.streamGrant.StreamGrant.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.streamGrant.StreamGrant.resetOnAll">ResetOnAll</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.streamGrant.StreamGrant.resetOnFuture">ResetOnFuture</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.streamGrant.StreamGrant.resetPrivilege">ResetPrivilege</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.streamGrant.StreamGrant.resetRevertOwnershipToRoleName">ResetRevertOwnershipToRoleName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.streamGrant.StreamGrant.resetSchemaName">ResetSchemaName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.streamGrant.StreamGrant.resetStreamName">ResetStreamName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.streamGrant.StreamGrant.resetWithGrantOption">ResetWithGrantOption</a></code> | *No description.* |
@@ -276,6 +278,12 @@ private void ResetEnableMultipleGrants()
 private void ResetId()
 ```
 
+##### `ResetOnAll` <a name="ResetOnAll" id="@cdktf/provider-snowflake.streamGrant.StreamGrant.resetOnAll"></a>
+
+```csharp
+private void ResetOnAll()
+```
+
 ##### `ResetOnFuture` <a name="ResetOnFuture" id="@cdktf/provider-snowflake.streamGrant.StreamGrant.resetOnFuture"></a>
 
 ```csharp
@@ -286,6 +294,12 @@ private void ResetOnFuture()
 
 ```csharp
 private void ResetPrivilege()
+```
+
+##### `ResetRevertOwnershipToRoleName` <a name="ResetRevertOwnershipToRoleName" id="@cdktf/provider-snowflake.streamGrant.StreamGrant.resetRevertOwnershipToRoleName"></a>
+
+```csharp
+private void ResetRevertOwnershipToRoleName()
 ```
 
 ##### `ResetSchemaName` <a name="ResetSchemaName" id="@cdktf/provider-snowflake.streamGrant.StreamGrant.resetSchemaName"></a>
@@ -397,8 +411,10 @@ StreamGrant.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-snowflake.streamGrant.StreamGrant.property.databaseNameInput">DatabaseNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.streamGrant.StreamGrant.property.enableMultipleGrantsInput">EnableMultipleGrantsInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.streamGrant.StreamGrant.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.streamGrant.StreamGrant.property.onAllInput">OnAllInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.streamGrant.StreamGrant.property.onFutureInput">OnFutureInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.streamGrant.StreamGrant.property.privilegeInput">PrivilegeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.streamGrant.StreamGrant.property.revertOwnershipToRoleNameInput">RevertOwnershipToRoleNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.streamGrant.StreamGrant.property.rolesInput">RolesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.streamGrant.StreamGrant.property.schemaNameInput">SchemaNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.streamGrant.StreamGrant.property.streamNameInput">StreamNameInput</a></code> | <code>string</code> | *No description.* |
@@ -406,8 +422,10 @@ StreamGrant.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-snowflake.streamGrant.StreamGrant.property.databaseName">DatabaseName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.streamGrant.StreamGrant.property.enableMultipleGrants">EnableMultipleGrants</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.streamGrant.StreamGrant.property.id">Id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.streamGrant.StreamGrant.property.onAll">OnAll</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.streamGrant.StreamGrant.property.onFuture">OnFuture</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.streamGrant.StreamGrant.property.privilege">Privilege</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.streamGrant.StreamGrant.property.revertOwnershipToRoleName">RevertOwnershipToRoleName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.streamGrant.StreamGrant.property.roles">Roles</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.streamGrant.StreamGrant.property.schemaName">SchemaName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.streamGrant.StreamGrant.property.streamName">StreamName</a></code> | <code>string</code> | *No description.* |
@@ -587,6 +605,16 @@ public string IdInput { get; }
 
 ---
 
+##### `OnAllInput`<sup>Optional</sup> <a name="OnAllInput" id="@cdktf/provider-snowflake.streamGrant.StreamGrant.property.onAllInput"></a>
+
+```csharp
+public object OnAllInput { get; }
+```
+
+- *Type:* object
+
+---
+
 ##### `OnFutureInput`<sup>Optional</sup> <a name="OnFutureInput" id="@cdktf/provider-snowflake.streamGrant.StreamGrant.property.onFutureInput"></a>
 
 ```csharp
@@ -601,6 +629,16 @@ public object OnFutureInput { get; }
 
 ```csharp
 public string PrivilegeInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `RevertOwnershipToRoleNameInput`<sup>Optional</sup> <a name="RevertOwnershipToRoleNameInput" id="@cdktf/provider-snowflake.streamGrant.StreamGrant.property.revertOwnershipToRoleNameInput"></a>
+
+```csharp
+public string RevertOwnershipToRoleNameInput { get; }
 ```
 
 - *Type:* string
@@ -677,6 +715,16 @@ public string Id { get; }
 
 ---
 
+##### `OnAll`<sup>Required</sup> <a name="OnAll" id="@cdktf/provider-snowflake.streamGrant.StreamGrant.property.onAll"></a>
+
+```csharp
+public object OnAll { get; }
+```
+
+- *Type:* object
+
+---
+
 ##### `OnFuture`<sup>Required</sup> <a name="OnFuture" id="@cdktf/provider-snowflake.streamGrant.StreamGrant.property.onFuture"></a>
 
 ```csharp
@@ -691,6 +739,16 @@ public object OnFuture { get; }
 
 ```csharp
 public string Privilege { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `RevertOwnershipToRoleName`<sup>Required</sup> <a name="RevertOwnershipToRoleName" id="@cdktf/provider-snowflake.streamGrant.StreamGrant.property.revertOwnershipToRoleName"></a>
+
+```csharp
+public string RevertOwnershipToRoleName { get; }
 ```
 
 - *Type:* string
@@ -776,8 +834,10 @@ new StreamGrantConfig {
     string[] Roles,
     object EnableMultipleGrants = null,
     string Id = null,
+    object OnAll = null,
     object OnFuture = null,
     string Privilege = null,
+    string RevertOwnershipToRoleName = null,
     string SchemaName = null,
     string StreamName = null,
     object WithGrantOption = null
@@ -798,9 +858,11 @@ new StreamGrantConfig {
 | <code><a href="#@cdktf/provider-snowflake.streamGrant.StreamGrantConfig.property.databaseName">DatabaseName</a></code> | <code>string</code> | The name of the database containing the current or future streams on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.streamGrant.StreamGrantConfig.property.roles">Roles</a></code> | <code>string[]</code> | Grants privilege to these roles. |
 | <code><a href="#@cdktf/provider-snowflake.streamGrant.StreamGrantConfig.property.enableMultipleGrants">EnableMultipleGrants</a></code> | <code>object</code> | When this is set to true, multiple grants of the same type can be created. |
-| <code><a href="#@cdktf/provider-snowflake.streamGrant.StreamGrantConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/stream_grant#id StreamGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.streamGrant.StreamGrantConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/stream_grant#id StreamGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.streamGrant.StreamGrantConfig.property.onAll">OnAll</a></code> | <code>object</code> | When this is set to true and a schema_name is provided, apply this grant on all streams in the given schema. |
 | <code><a href="#@cdktf/provider-snowflake.streamGrant.StreamGrantConfig.property.onFuture">OnFuture</a></code> | <code>object</code> | When this is set to true and a schema_name is provided, apply this grant on all future streams in the given schema. |
-| <code><a href="#@cdktf/provider-snowflake.streamGrant.StreamGrantConfig.property.privilege">Privilege</a></code> | <code>string</code> | The privilege to grant on the current or future stream. |
+| <code><a href="#@cdktf/provider-snowflake.streamGrant.StreamGrantConfig.property.privilege">Privilege</a></code> | <code>string</code> | The privilege to grant on the current or future stream. To grant all privileges, use the value `ALL PRIVILEGES`. |
+| <code><a href="#@cdktf/provider-snowflake.streamGrant.StreamGrantConfig.property.revertOwnershipToRoleName">RevertOwnershipToRoleName</a></code> | <code>string</code> | The name of the role to revert ownership to on destroy. |
 | <code><a href="#@cdktf/provider-snowflake.streamGrant.StreamGrantConfig.property.schemaName">SchemaName</a></code> | <code>string</code> | The name of the schema containing the current or future streams on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.streamGrant.StreamGrantConfig.property.streamName">StreamName</a></code> | <code>string</code> | The name of the stream on which to grant privileges immediately (only valid if on_future is false). |
 | <code><a href="#@cdktf/provider-snowflake.streamGrant.StreamGrantConfig.property.withGrantOption">WithGrantOption</a></code> | <code>object</code> | When this is set to true, allows the recipient role to grant the privileges to other roles. |
@@ -887,7 +949,7 @@ public string DatabaseName { get; set; }
 
 The name of the database containing the current or future streams on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/stream_grant#database_name StreamGrant#database_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/stream_grant#database_name StreamGrant#database_name}
 
 ---
 
@@ -901,7 +963,7 @@ public string[] Roles { get; set; }
 
 Grants privilege to these roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/stream_grant#roles StreamGrant#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/stream_grant#roles StreamGrant#roles}
 
 ---
 
@@ -917,7 +979,7 @@ When this is set to true, multiple grants of the same type can be created.
 
 This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/stream_grant#enable_multiple_grants StreamGrant#enable_multiple_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/stream_grant#enable_multiple_grants StreamGrant#enable_multiple_grants}
 
 ---
 
@@ -929,10 +991,26 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/stream_grant#id StreamGrant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/stream_grant#id StreamGrant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `OnAll`<sup>Optional</sup> <a name="OnAll" id="@cdktf/provider-snowflake.streamGrant.StreamGrantConfig.property.onAll"></a>
+
+```csharp
+public object OnAll { get; set; }
+```
+
+- *Type:* object
+
+When this is set to true and a schema_name is provided, apply this grant on all streams in the given schema.
+
+When this is true and no schema_name is provided apply this grant on all streams in the given database. The stream_name field must be unset in order to use on_all. Cannot be used together with on_future.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/stream_grant#on_all StreamGrant#on_all}
 
 ---
 
@@ -946,9 +1024,9 @@ public object OnFuture { get; set; }
 
 When this is set to true and a schema_name is provided, apply this grant on all future streams in the given schema.
 
-When this is true and no schema_name is provided apply this grant on all future streams in the given database. The stream_name field must be unset in order to use on_future.
+When this is true and no schema_name is provided apply this grant on all future streams in the given database. The stream_name field must be unset in order to use on_future. Cannot be used together with on_all.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/stream_grant#on_future StreamGrant#on_future}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/stream_grant#on_future StreamGrant#on_future}
 
 ---
 
@@ -960,9 +1038,25 @@ public string Privilege { get; set; }
 
 - *Type:* string
 
-The privilege to grant on the current or future stream.
+The privilege to grant on the current or future stream. To grant all privileges, use the value `ALL PRIVILEGES`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/stream_grant#privilege StreamGrant#privilege}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/stream_grant#privilege StreamGrant#privilege}
+
+---
+
+##### `RevertOwnershipToRoleName`<sup>Optional</sup> <a name="RevertOwnershipToRoleName" id="@cdktf/provider-snowflake.streamGrant.StreamGrantConfig.property.revertOwnershipToRoleName"></a>
+
+```csharp
+public string RevertOwnershipToRoleName { get; set; }
+```
+
+- *Type:* string
+
+The name of the role to revert ownership to on destroy.
+
+Has no effect unless `privilege` is set to `OWNERSHIP`
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/stream_grant#revert_ownership_to_role_name StreamGrant#revert_ownership_to_role_name}
 
 ---
 
@@ -976,7 +1070,7 @@ public string SchemaName { get; set; }
 
 The name of the schema containing the current or future streams on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/stream_grant#schema_name StreamGrant#schema_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/stream_grant#schema_name StreamGrant#schema_name}
 
 ---
 
@@ -990,7 +1084,7 @@ public string StreamName { get; set; }
 
 The name of the stream on which to grant privileges immediately (only valid if on_future is false).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/stream_grant#stream_name StreamGrant#stream_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/stream_grant#stream_name StreamGrant#stream_name}
 
 ---
 
@@ -1004,7 +1098,7 @@ public object WithGrantOption { get; set; }
 
 When this is set to true, allows the recipient role to grant the privileges to other roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/stream_grant#with_grant_option StreamGrant#with_grant_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/stream_grant#with_grant_option StreamGrant#with_grant_option}
 
 ---
 

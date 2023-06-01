@@ -1,6 +1,6 @@
 # `data_snowflake_role`
 
-Refer to the Terraform Registory for docs: [`data_snowflake_role`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/data-sources/role).
+Refer to the Terraform Registory for docs: [`data_snowflake_role`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/data-sources/role).
 
 # `dataSnowflakeRole` Submodule <a name="`dataSnowflakeRole` Submodule" id="@cdktf/provider-snowflake.dataSnowflakeRole"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_snowflake_role`](https://regis
 
 ### DataSnowflakeRole <a name="DataSnowflakeRole" id="@cdktf/provider-snowflake.dataSnowflakeRole.DataSnowflakeRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/data-sources/role snowflake_role}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/data-sources/role snowflake_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeRole.DataSnowflakeRole.Initializer"></a>
 
@@ -582,7 +582,7 @@ new DataSnowflakeRoleConfig {
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRole.DataSnowflakeRoleConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRole.DataSnowflakeRoleConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRole.DataSnowflakeRoleConfig.property.name">Name</a></code> | <code>string</code> | The role for which to return metadata. |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRole.DataSnowflakeRoleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/data-sources/role#id DataSnowflakeRole#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRole.DataSnowflakeRoleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/data-sources/role#id DataSnowflakeRole#id}. |
 
 ---
 
@@ -666,7 +666,7 @@ public string Name { get; set; }
 
 The role for which to return metadata.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/data-sources/role#name DataSnowflakeRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/data-sources/role#name DataSnowflakeRole#name}
 
 ---
 
@@ -678,7 +678,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/data-sources/role#id DataSnowflakeRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/data-sources/role#id DataSnowflakeRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

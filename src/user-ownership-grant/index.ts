@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/user_ownership_grant
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/user_ownership_grant
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface UserOwnershipGrantConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies whether to remove or transfer all existing outbound privileges on the object when ownership is transferred to a new role.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/user_ownership_grant#current_grants UserOwnershipGrant#current_grants}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/user_ownership_grant#current_grants UserOwnershipGrant#current_grants}
   */
   readonly currentGrants?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/user_ownership_grant#id UserOwnershipGrant#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/user_ownership_grant#id UserOwnershipGrant#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,25 +23,25 @@ export interface UserOwnershipGrantConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the user ownership is granted on.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/user_ownership_grant#on_user_name UserOwnershipGrant#on_user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/user_ownership_grant#on_user_name UserOwnershipGrant#on_user_name}
   */
   readonly onUserName: string;
   /**
   * The name of the role to revert ownership to on destroy.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/user_ownership_grant#revert_ownership_to_role_name UserOwnershipGrant#revert_ownership_to_role_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/user_ownership_grant#revert_ownership_to_role_name UserOwnershipGrant#revert_ownership_to_role_name}
   */
   readonly revertOwnershipToRoleName?: string;
   /**
   * The name of the role to grant ownership. Please ensure that the role that terraform is using is granted access.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/user_ownership_grant#to_role_name UserOwnershipGrant#to_role_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/user_ownership_grant#to_role_name UserOwnershipGrant#to_role_name}
   */
   readonly toRoleName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/user_ownership_grant snowflake_user_ownership_grant}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/user_ownership_grant snowflake_user_ownership_grant}
 */
 export class UserOwnershipGrant extends cdktf.TerraformResource {
 
@@ -55,7 +55,7 @@ export class UserOwnershipGrant extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.63.0/docs/resources/user_ownership_grant snowflake_user_ownership_grant} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/user_ownership_grant snowflake_user_ownership_grant} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class UserOwnershipGrant extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_user_ownership_grant',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.63.0',
+        providerVersion: '0.65.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
