@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeExternalTables.DataSnowflakeExternalTables.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakeexternaltables"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeexternaltables"
 
 datasnowflakeexternaltables.NewDataSnowflakeExternalTables(scope Construct, id *string, config DataSnowflakeExternalTablesConfig) DataSnowflakeExternalTables
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeExternalTables.DataSnowflakeExternalTables.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakeexternaltables"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeexternaltables"
 
 datasnowflakeexternaltables.DataSnowflakeExternalTables_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeExternalTables.DataSnowflakeExternalTables.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakeexternaltables"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeexternaltables"
 
 datasnowflakeexternaltables.DataSnowflakeExternalTables_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ datasnowflakeexternaltables.DataSnowflakeExternalTables_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeExternalTables.DataSnowflakeExternalTables.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakeexternaltables"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeexternaltables"
 
 datasnowflakeexternaltables.DataSnowflakeExternalTables_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -577,7 +577,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeExternalTables.DataSnowflakeExternalTablesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakeexternaltables"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeexternaltables"
 
 &datasnowflakeexternaltables.DataSnowflakeExternalTablesConfig {
 	Connection: interface{},
@@ -728,7 +728,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeExternalTables.DataSnowflakeExternalTablesExternalTables.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakeexternaltables"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeexternaltables"
 
 &datasnowflakeexternaltables.DataSnowflakeExternalTablesExternalTables {
 
@@ -743,7 +743,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakee
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeExternalTables.DataSnowflakeExternalTablesExternalTablesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakeexternaltables"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeexternaltables"
 
 datasnowflakeexternaltables.NewDataSnowflakeExternalTablesExternalTablesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeExternalTablesExternalTablesList
 ```
@@ -875,7 +875,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeExternalTables.DataSnowflakeExternalTablesExternalTablesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/datasnowflakeexternaltables"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeexternaltables"
 
 datasnowflakeexternaltables.NewDataSnowflakeExternalTablesExternalTablesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeExternalTablesExternalTablesOutputReference
 ```
