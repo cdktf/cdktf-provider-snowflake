@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/data-sources/databases
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/data-sources/databases
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,12 +8,36 @@ import * as cdktf from 'cdktf';
 
 export interface DataSnowflakeDatabasesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/data-sources/databases#id DataSnowflakeDatabases#id}
+  * Optionally includes dropped databases that have not yet been purged The output also includes an additional `dropped_on` column
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/data-sources/databases#history DataSnowflakeDatabases#history}
+  */
+  readonly history?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/data-sources/databases#id DataSnowflakeDatabases#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
+  /**
+  * Optionally filters the databases by a pattern
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/data-sources/databases#pattern DataSnowflakeDatabases#pattern}
+  */
+  readonly pattern?: string;
+  /**
+  * Optionally filters the databases by a pattern
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/data-sources/databases#starts_with DataSnowflakeDatabases#starts_with}
+  */
+  readonly startsWith?: string;
+  /**
+  * Optionally returns only the columns `created_on` and `name` in the results
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/data-sources/databases#terse DataSnowflakeDatabases#terse}
+  */
+  readonly terse?: boolean | cdktf.IResolvable;
 }
 export interface DataSnowflakeDatabasesDatabasesReplicationConfiguration {
 }
@@ -201,7 +220,7 @@ export class DataSnowflakeDatabasesDatabasesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/data-sources/databases snowflake_databases}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/data-sources/databases snowflake_databases}
 */
 export class DataSnowflakeDatabases extends cdktf.TerraformDataSource {
 
@@ -215,7 +234,7 @@ export class DataSnowflakeDatabases extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/data-sources/databases snowflake_databases} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/data-sources/databases snowflake_databases} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -226,7 +245,7 @@ export class DataSnowflakeDatabases extends cdktf.TerraformDataSource {
       terraformResourceType: 'snowflake_databases',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.65.0',
+        providerVersion: '0.66.1',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
@@ -237,7 +256,11 @@ export class DataSnowflakeDatabases extends cdktf.TerraformDataSource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._history = config.history;
     this._id = config.id;
+    this._pattern = config.pattern;
+    this._startsWith = config.startsWith;
+    this._terse = config.terse;
   }
 
   // ==========
@@ -248,6 +271,22 @@ export class DataSnowflakeDatabases extends cdktf.TerraformDataSource {
   private _databases = new DataSnowflakeDatabasesDatabasesList(this, "databases", false);
   public get databases() {
     return this._databases;
+  }
+
+  // history - computed: false, optional: true, required: false
+  private _history?: boolean | cdktf.IResolvable; 
+  public get history() {
+    return this.getBooleanAttribute('history');
+  }
+  public set history(value: boolean | cdktf.IResolvable) {
+    this._history = value;
+  }
+  public resetHistory() {
+    this._history = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get historyInput() {
+    return this._history;
   }
 
   // id - computed: true, optional: true, required: false
@@ -266,13 +305,65 @@ export class DataSnowflakeDatabases extends cdktf.TerraformDataSource {
     return this._id;
   }
 
+  // pattern - computed: false, optional: true, required: false
+  private _pattern?: string; 
+  public get pattern() {
+    return this.getStringAttribute('pattern');
+  }
+  public set pattern(value: string) {
+    this._pattern = value;
+  }
+  public resetPattern() {
+    this._pattern = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get patternInput() {
+    return this._pattern;
+  }
+
+  // starts_with - computed: false, optional: true, required: false
+  private _startsWith?: string; 
+  public get startsWith() {
+    return this.getStringAttribute('starts_with');
+  }
+  public set startsWith(value: string) {
+    this._startsWith = value;
+  }
+  public resetStartsWith() {
+    this._startsWith = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get startsWithInput() {
+    return this._startsWith;
+  }
+
+  // terse - computed: false, optional: true, required: false
+  private _terse?: boolean | cdktf.IResolvable; 
+  public get terse() {
+    return this.getBooleanAttribute('terse');
+  }
+  public set terse(value: boolean | cdktf.IResolvable) {
+    this._terse = value;
+  }
+  public resetTerse() {
+    this._terse = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get terseInput() {
+    return this._terse;
+  }
+
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      history: cdktf.booleanToTerraform(this._history),
       id: cdktf.stringToTerraform(this._id),
+      pattern: cdktf.stringToTerraform(this._pattern),
+      starts_with: cdktf.stringToTerraform(this._startsWith),
+      terse: cdktf.booleanToTerraform(this._terse),
     };
   }
 }

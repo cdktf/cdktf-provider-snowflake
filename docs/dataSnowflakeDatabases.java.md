@@ -1,6 +1,6 @@
 # `data_snowflake_databases`
 
-Refer to the Terraform Registory for docs: [`data_snowflake_databases`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/data-sources/databases).
+Refer to the Terraform Registory for docs: [`data_snowflake_databases`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/data-sources/databases).
 
 # `dataSnowflakeDatabases` Submodule <a name="`dataSnowflakeDatabases` Submodule" id="@cdktf/provider-snowflake.dataSnowflakeDatabases"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_snowflake_databases`](https://
 
 ### DataSnowflakeDatabases <a name="DataSnowflakeDatabases" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/data-sources/databases snowflake_databases}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/data-sources/databases snowflake_databases}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.Initializer"></a>
 
@@ -27,7 +27,13 @@ DataSnowflakeDatabases.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(java.util.List<FileProvisioner)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
+//  .history(java.lang.Boolean)
+//  .history(IResolvable)
 //  .id(java.lang.String)
+//  .pattern(java.lang.String)
+//  .startsWith(java.lang.String)
+//  .terse(java.lang.Boolean)
+//  .terse(IResolvable)
     .build();
 ```
 
@@ -42,7 +48,11 @@ DataSnowflakeDatabases.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/data-sources/databases#id DataSnowflakeDatabases#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.Initializer.parameter.history">history</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Optionally includes dropped databases that have not yet been purged The output also includes an additional `dropped_on` column. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/data-sources/databases#id DataSnowflakeDatabases#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.Initializer.parameter.pattern">pattern</a></code> | <code>java.lang.String</code> | Optionally filters the databases by a pattern. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.Initializer.parameter.startsWith">startsWith</a></code> | <code>java.lang.String</code> | Optionally filters the databases by a pattern. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.Initializer.parameter.terse">terse</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Optionally returns only the columns `created_on` and `name` in the results. |
 
 ---
 
@@ -106,14 +116,54 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+##### `history`<sup>Optional</sup> <a name="history" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.Initializer.parameter.history"></a>
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Optionally includes dropped databases that have not yet been purged The output also includes an additional `dropped_on` column.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/data-sources/databases#history DataSnowflakeDatabases#history}
+
+---
+
 ##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.Initializer.parameter.id"></a>
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/data-sources/databases#id DataSnowflakeDatabases#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/data-sources/databases#id DataSnowflakeDatabases#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `pattern`<sup>Optional</sup> <a name="pattern" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.Initializer.parameter.pattern"></a>
+
+- *Type:* java.lang.String
+
+Optionally filters the databases by a pattern.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/data-sources/databases#pattern DataSnowflakeDatabases#pattern}
+
+---
+
+##### `startsWith`<sup>Optional</sup> <a name="startsWith" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.Initializer.parameter.startsWith"></a>
+
+- *Type:* java.lang.String
+
+Optionally filters the databases by a pattern.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/data-sources/databases#starts_with DataSnowflakeDatabases#starts_with}
+
+---
+
+##### `terse`<sup>Optional</sup> <a name="terse" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.Initializer.parameter.terse"></a>
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Optionally returns only the columns `created_on` and `name` in the results.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/data-sources/databases#terse DataSnowflakeDatabases#terse}
 
 ---
 
@@ -137,7 +187,11 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.resetHistory">resetHistory</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.resetPattern">resetPattern</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.resetStartsWith">resetStartsWith</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.resetTerse">resetTerse</a></code> | *No description.* |
 
 ---
 
@@ -325,10 +379,34 @@ public IResolvable interpolationForAttribute(java.lang.String terraformAttribute
 
 ---
 
+##### `resetHistory` <a name="resetHistory" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.resetHistory"></a>
+
+```java
+public void resetHistory()
+```
+
 ##### `resetId` <a name="resetId" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.resetId"></a>
 
 ```java
 public void resetId()
+```
+
+##### `resetPattern` <a name="resetPattern" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.resetPattern"></a>
+
+```java
+public void resetPattern()
+```
+
+##### `resetStartsWith` <a name="resetStartsWith" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.resetStartsWith"></a>
+
+```java
+public void resetStartsWith()
+```
+
+##### `resetTerse` <a name="resetTerse" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.resetTerse"></a>
+
+```java
+public void resetTerse()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -418,8 +496,16 @@ DataSnowflakeDatabases.isTerraformDataSource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.property.databases">databases</a></code> | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesDatabasesList">DataSnowflakeDatabasesDatabasesList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.property.historyInput">historyInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.property.patternInput">patternInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.property.startsWithInput">startsWithInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.property.terseInput">terseInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.property.history">history</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.property.pattern">pattern</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.property.startsWith">startsWith</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.property.terse">terse</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -555,6 +641,16 @@ public DataSnowflakeDatabasesDatabasesList getDatabases();
 
 ---
 
+##### `historyInput`<sup>Optional</sup> <a name="historyInput" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.property.historyInput"></a>
+
+```java
+public java.lang.Object getHistoryInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.property.idInput"></a>
 
 ```java
@@ -565,6 +661,46 @@ public java.lang.String getIdInput();
 
 ---
 
+##### `patternInput`<sup>Optional</sup> <a name="patternInput" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.property.patternInput"></a>
+
+```java
+public java.lang.String getPatternInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `startsWithInput`<sup>Optional</sup> <a name="startsWithInput" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.property.startsWithInput"></a>
+
+```java
+public java.lang.String getStartsWithInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `terseInput`<sup>Optional</sup> <a name="terseInput" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.property.terseInput"></a>
+
+```java
+public java.lang.Object getTerseInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `history`<sup>Required</sup> <a name="history" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.property.history"></a>
+
+```java
+public java.lang.Object getHistory();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.property.id"></a>
 
 ```java
@@ -572,6 +708,36 @@ public java.lang.String getId();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `pattern`<sup>Required</sup> <a name="pattern" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.property.pattern"></a>
+
+```java
+public java.lang.String getPattern();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `startsWith`<sup>Required</sup> <a name="startsWith" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.property.startsWith"></a>
+
+```java
+public java.lang.String getStartsWith();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `terse`<sup>Required</sup> <a name="terse" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.property.terse"></a>
+
+```java
+public java.lang.Object getTerse();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -614,7 +780,13 @@ DataSnowflakeDatabasesConfig.builder()
 //  .provisioners(java.util.List<FileProvisioner)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
+//  .history(java.lang.Boolean)
+//  .history(IResolvable)
 //  .id(java.lang.String)
+//  .pattern(java.lang.String)
+//  .startsWith(java.lang.String)
+//  .terse(java.lang.Boolean)
+//  .terse(IResolvable)
     .build();
 ```
 
@@ -629,7 +801,11 @@ DataSnowflakeDatabasesConfig.builder()
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/data-sources/databases#id DataSnowflakeDatabases#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.property.history">history</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Optionally includes dropped databases that have not yet been purged The output also includes an additional `dropped_on` column. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/data-sources/databases#id DataSnowflakeDatabases#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.property.pattern">pattern</a></code> | <code>java.lang.String</code> | Optionally filters the databases by a pattern. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.property.startsWith">startsWith</a></code> | <code>java.lang.String</code> | Optionally filters the databases by a pattern. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.property.terse">terse</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Optionally returns only the columns `created_on` and `name` in the results. |
 
 ---
 
@@ -703,6 +879,20 @@ public java.lang.Object getProvisioners();
 
 ---
 
+##### `history`<sup>Optional</sup> <a name="history" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.property.history"></a>
+
+```java
+public java.lang.Object getHistory();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Optionally includes dropped databases that have not yet been purged The output also includes an additional `dropped_on` column.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/data-sources/databases#history DataSnowflakeDatabases#history}
+
+---
+
 ##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.property.id"></a>
 
 ```java
@@ -711,10 +901,52 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/data-sources/databases#id DataSnowflakeDatabases#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/data-sources/databases#id DataSnowflakeDatabases#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `pattern`<sup>Optional</sup> <a name="pattern" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.property.pattern"></a>
+
+```java
+public java.lang.String getPattern();
+```
+
+- *Type:* java.lang.String
+
+Optionally filters the databases by a pattern.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/data-sources/databases#pattern DataSnowflakeDatabases#pattern}
+
+---
+
+##### `startsWith`<sup>Optional</sup> <a name="startsWith" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.property.startsWith"></a>
+
+```java
+public java.lang.String getStartsWith();
+```
+
+- *Type:* java.lang.String
+
+Optionally filters the databases by a pattern.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/data-sources/databases#starts_with DataSnowflakeDatabases#starts_with}
+
+---
+
+##### `terse`<sup>Optional</sup> <a name="terse" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.property.terse"></a>
+
+```java
+public java.lang.Object getTerse();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Optionally returns only the columns `created_on` and `name` in the results.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/data-sources/databases#terse DataSnowflakeDatabases#terse}
 
 ---
 
