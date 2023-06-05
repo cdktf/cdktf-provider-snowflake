@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/database
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/database
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,35 +13,35 @@ import * as cdktf from 'cdktf';
 
 export interface DatabaseConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/database#comment Database#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/database#comment Database#comment}
   */
   readonly comment?: string;
   /**
   * Number of days for which Snowflake retains historical data for performing Time Travel actions (SELECT, CLONE, UNDROP) on the object. A value of 0 effectively disables Time Travel for the specified database, schema, or table. For more information, see Understanding & Using Time Travel.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/database#data_retention_time_in_days Database#data_retention_time_in_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/database#data_retention_time_in_days Database#data_retention_time_in_days}
   */
   readonly dataRetentionTimeInDays?: number;
   /**
   * Specify a database to create a clone from.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/database#from_database Database#from_database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/database#from_database Database#from_database}
   */
   readonly fromDatabase?: string;
   /**
   * Specify a fully-qualified path to a database to create a replica from. A fully qualified path follows the format of "<organization_name>"."<account_name>"."<db_name>". An example would be: "myorg1"."account1"."db1"
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/database#from_replica Database#from_replica}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/database#from_replica Database#from_replica}
   */
   readonly fromReplica?: string;
   /**
   * Specify a provider and a share in this map to create a database from a share.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/database#from_share Database#from_share}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/database#from_share Database#from_share}
   */
   readonly fromShare?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/database#id Database#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/database#id Database#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -50,33 +50,27 @@ export interface DatabaseConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies a database as transient. Transient databases do not have a Fail-safe period so they do not incur additional storage costs once they leave Time Travel; however, this means they are also not protected by Fail-safe in the event of a data loss.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/database#is_transient Database#is_transient}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/database#is_transient Database#is_transient}
   */
   readonly isTransient?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/database#name Database#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/database#name Database#name}
   */
   readonly name: string;
   /**
   * replication_configuration block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/database#replication_configuration Database#replication_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/database#replication_configuration Database#replication_configuration}
   */
   readonly replicationConfiguration?: DatabaseReplicationConfiguration;
-  /**
-  * tag block
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/database#tag Database#tag}
-  */
-  readonly tag?: DatabaseTag[] | cdktf.IResolvable;
 }
 export interface DatabaseReplicationConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/database#accounts Database#accounts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/database#accounts Database#accounts}
   */
   readonly accounts: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/database#ignore_edition_check Database#ignore_edition_check}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/database#ignore_edition_check Database#ignore_edition_check}
   */
   readonly ignoreEditionCheck?: boolean | cdktf.IResolvable;
 }
@@ -159,189 +153,9 @@ export class DatabaseReplicationConfigurationOutputReference extends cdktf.Compl
     return this._ignoreEditionCheck;
   }
 }
-export interface DatabaseTag {
-  /**
-  * Name of the database that the tag was created in.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/database#database Database#database}
-  */
-  readonly database?: string;
-  /**
-  * Tag name, e.g. department.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/database#name Database#name}
-  */
-  readonly name: string;
-  /**
-  * Name of the schema that the tag was created in.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/database#schema Database#schema}
-  */
-  readonly schema?: string;
-  /**
-  * Tag value, e.g. marketing_info.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/database#value Database#value}
-  */
-  readonly value: string;
-}
-
-export function databaseTagToTerraform(struct?: DatabaseTag | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    database: cdktf.stringToTerraform(struct!.database),
-    name: cdktf.stringToTerraform(struct!.name),
-    schema: cdktf.stringToTerraform(struct!.schema),
-    value: cdktf.stringToTerraform(struct!.value),
-  }
-}
-
-export class DatabaseTagOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): DatabaseTag | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._database !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.database = this._database;
-    }
-    if (this._name !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.name = this._name;
-    }
-    if (this._schema !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.schema = this._schema;
-    }
-    if (this._value !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.value = this._value;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: DatabaseTag | cdktf.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._database = undefined;
-      this._name = undefined;
-      this._schema = undefined;
-      this._value = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._database = value.database;
-      this._name = value.name;
-      this._schema = value.schema;
-      this._value = value.value;
-    }
-  }
-
-  // database - computed: false, optional: true, required: false
-  private _database?: string; 
-  public get database() {
-    return this.getStringAttribute('database');
-  }
-  public set database(value: string) {
-    this._database = value;
-  }
-  public resetDatabase() {
-    this._database = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get databaseInput() {
-    return this._database;
-  }
-
-  // name - computed: false, optional: false, required: true
-  private _name?: string; 
-  public get name() {
-    return this.getStringAttribute('name');
-  }
-  public set name(value: string) {
-    this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name;
-  }
-
-  // schema - computed: false, optional: true, required: false
-  private _schema?: string; 
-  public get schema() {
-    return this.getStringAttribute('schema');
-  }
-  public set schema(value: string) {
-    this._schema = value;
-  }
-  public resetSchema() {
-    this._schema = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get schemaInput() {
-    return this._schema;
-  }
-
-  // value - computed: false, optional: false, required: true
-  private _value?: string; 
-  public get value() {
-    return this.getStringAttribute('value');
-  }
-  public set value(value: string) {
-    this._value = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get valueInput() {
-    return this._value;
-  }
-}
-
-export class DatabaseTagList extends cdktf.ComplexList {
-  public internalValue? : DatabaseTag[] | cdktf.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): DatabaseTagOutputReference {
-    return new DatabaseTagOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/database snowflake_database}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/database snowflake_database}
 */
 export class Database extends cdktf.TerraformResource {
 
@@ -355,7 +169,7 @@ export class Database extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.65.0/docs/resources/database snowflake_database} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/database snowflake_database} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -366,7 +180,7 @@ export class Database extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_database',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.65.0',
+        providerVersion: '0.66.1',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
@@ -386,7 +200,6 @@ export class Database extends cdktf.TerraformResource {
     this._isTransient = config.isTransient;
     this._name = config.name;
     this._replicationConfiguration.internalValue = config.replicationConfiguration;
-    this._tag.internalValue = config.tag;
   }
 
   // ==========
@@ -534,22 +347,6 @@ export class Database extends cdktf.TerraformResource {
     return this._replicationConfiguration.internalValue;
   }
 
-  // tag - computed: false, optional: true, required: false
-  private _tag = new DatabaseTagList(this, "tag", false);
-  public get tag() {
-    return this._tag;
-  }
-  public putTag(value: DatabaseTag[] | cdktf.IResolvable) {
-    this._tag.internalValue = value;
-  }
-  public resetTag() {
-    this._tag.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagInput() {
-    return this._tag.internalValue;
-  }
-
   // =========
   // SYNTHESIS
   // =========
@@ -565,7 +362,6 @@ export class Database extends cdktf.TerraformResource {
       is_transient: cdktf.booleanToTerraform(this._isTransient),
       name: cdktf.stringToTerraform(this._name),
       replication_configuration: databaseReplicationConfigurationToTerraform(this._replicationConfiguration.internalValue),
-      tag: cdktf.listMapper(databaseTagToTerraform, true)(this._tag.internalValue),
     };
   }
 }
