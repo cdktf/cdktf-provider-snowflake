@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.user.User.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/user"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/user"
 
 user.NewUser(scope Construct, id *string, config UserConfig) User
 ```
@@ -402,7 +402,7 @@ func ResetTag()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.user.User.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/user"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/user"
 
 user.User_IsConstruct(x interface{}) *bool
 ```
@@ -434,7 +434,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.user.User.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/user"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/user"
 
 user.User_IsTerraformElement(x interface{}) *bool
 ```
@@ -448,7 +448,7 @@ user.User_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.user.User.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/user"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/user"
 
 user.User_IsTerraformResource(x interface{}) *bool
 ```
@@ -1054,7 +1054,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.user.UserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/user"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/user"
 
 &user.UserConfig {
 	Connection: interface{},
@@ -1445,7 +1445,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.user.UserTag.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/user"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/user"
 
 &user.UserTag {
 	Name: *string,
@@ -1529,7 +1529,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.user.UserTagList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/user"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/user"
 
 user.NewUserTagList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) UserTagList
 ```
@@ -1672,7 +1672,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.user.UserTagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/user"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/user"
 
 user.NewUserTagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) UserTagOutputReference
 ```
