@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.view.View.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
 
 view.NewView(scope Construct, id *string, config ViewConfig) View
 ```
@@ -325,7 +325,7 @@ func ResetTag()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.view.View.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
 
 view.View_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.view.View.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
 
 view.View_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ view.View_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.view.View.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
 
 view.View_IsTerraformResource(x interface{}) *bool
 ```
@@ -790,7 +790,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.view.ViewConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
 
 &view.ViewConfig {
 	Connection: interface{},
@@ -1055,7 +1055,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.view.ViewTag.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
 
 &view.ViewTag {
 	Name: *string,
@@ -1139,7 +1139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.view.ViewTagList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
 
 view.NewViewTagList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ViewTagList
 ```
@@ -1282,7 +1282,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.view.ViewTagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
 
 view.NewViewTagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ViewTagOutputReference
 ```
