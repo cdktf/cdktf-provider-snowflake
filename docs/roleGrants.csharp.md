@@ -1,6 +1,6 @@
 # `snowflake_role_grants`
 
-Refer to the Terraform Registory for docs: [`snowflake_role_grants`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/role_grants).
+Refer to the Terraform Registory for docs: [`snowflake_role_grants`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/role_grants).
 
 # `roleGrants` Submodule <a name="`roleGrants` Submodule" id="@cdktf/provider-snowflake.roleGrants"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`snowflake_role_grants`](https://reg
 
 ### RoleGrants <a name="RoleGrants" id="@cdktf/provider-snowflake.roleGrants.RoleGrants"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/role_grants snowflake_role_grants}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/role_grants snowflake_role_grants}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.roleGrants.RoleGrants.Initializer"></a>
 
@@ -684,7 +684,7 @@ new RoleGrantsConfig {
 | <code><a href="#@cdktf/provider-snowflake.roleGrants.RoleGrantsConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.roleGrants.RoleGrantsConfig.property.roleName">RoleName</a></code> | <code>string</code> | The name of the role we are granting. |
 | <code><a href="#@cdktf/provider-snowflake.roleGrants.RoleGrantsConfig.property.enableMultipleGrants">EnableMultipleGrants</a></code> | <code>object</code> | When this is set to false, multiple grants of the same type cannot be created. |
-| <code><a href="#@cdktf/provider-snowflake.roleGrants.RoleGrantsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/role_grants#id RoleGrants#id}. |
+| <code><a href="#@cdktf/provider-snowflake.roleGrants.RoleGrantsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/role_grants#id RoleGrants#id}. |
 | <code><a href="#@cdktf/provider-snowflake.roleGrants.RoleGrantsConfig.property.roles">Roles</a></code> | <code>string[]</code> | Grants role to this specified role. |
 | <code><a href="#@cdktf/provider-snowflake.roleGrants.RoleGrantsConfig.property.users">Users</a></code> | <code>string[]</code> | Grants role to this specified user. |
 
@@ -770,7 +770,7 @@ public string RoleName { get; set; }
 
 The name of the role we are granting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/role_grants#role_name RoleGrants#role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/role_grants#role_name RoleGrants#role_name}
 
 ---
 
@@ -786,7 +786,7 @@ When this is set to false, multiple grants of the same type cannot be created.
 
 This will cause Terraform to revoke grants applied to roles and objects outside Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/role_grants#enable_multiple_grants RoleGrants#enable_multiple_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/role_grants#enable_multiple_grants RoleGrants#enable_multiple_grants}
 
 ---
 
@@ -798,7 +798,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/role_grants#id RoleGrants#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/role_grants#id RoleGrants#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -815,7 +815,7 @@ public string[] Roles { get; set; }
 
 Grants role to this specified role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/role_grants#roles RoleGrants#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/role_grants#roles RoleGrants#roles}
 
 ---
 
@@ -829,7 +829,7 @@ public string[] Users { get; set; }
 
 Grants role to this specified user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/role_grants#users RoleGrants#users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/role_grants#users RoleGrants#users}
 
 ---
 

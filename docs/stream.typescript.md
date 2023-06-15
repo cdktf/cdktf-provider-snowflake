@@ -1,6 +1,6 @@
 # `snowflake_stream`
 
-Refer to the Terraform Registory for docs: [`snowflake_stream`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/stream).
+Refer to the Terraform Registory for docs: [`snowflake_stream`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/stream).
 
 # `stream` Submodule <a name="`stream` Submodule" id="@cdktf/provider-snowflake.stream"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`snowflake_stream`](https://registry
 
 ### Stream <a name="Stream" id="@cdktf/provider-snowflake.stream.Stream"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/stream snowflake_stream}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/stream snowflake_stream}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.stream.Stream.Initializer"></a>
 
@@ -845,7 +845,7 @@ const streamConfig: stream.StreamConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.schema">schema</a></code> | <code>string</code> | The schema in which to create the stream. |
 | <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.appendOnly">appendOnly</a></code> | <code>boolean \| cdktf.IResolvable</code> | Type of the stream that will be created. |
 | <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.comment">comment</a></code> | <code>string</code> | Specifies a comment for the stream. |
-| <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/stream#id Stream#id}. |
+| <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/stream#id Stream#id}. |
 | <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.insertOnly">insertOnly</a></code> | <code>boolean \| cdktf.IResolvable</code> | Create an insert only stream type. |
 | <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.onStage">onStage</a></code> | <code>string</code> | Name of the stage the stream will monitor. |
 | <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.onTable">onTable</a></code> | <code>string</code> | Name of the table the stream will monitor. |
@@ -934,7 +934,7 @@ public readonly database: string;
 
 The database in which to create the stream.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/stream#database Stream#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/stream#database Stream#database}
 
 ---
 
@@ -950,7 +950,7 @@ Specifies the identifier for the stream;
 
 must be unique for the database and schema in which the stream is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/stream#name Stream#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/stream#name Stream#name}
 
 ---
 
@@ -964,7 +964,7 @@ public readonly schema: string;
 
 The schema in which to create the stream.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/stream#schema Stream#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/stream#schema Stream#schema}
 
 ---
 
@@ -978,7 +978,7 @@ public readonly appendOnly: boolean | IResolvable;
 
 Type of the stream that will be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/stream#append_only Stream#append_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/stream#append_only Stream#append_only}
 
 ---
 
@@ -992,7 +992,7 @@ public readonly comment: string;
 
 Specifies a comment for the stream.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/stream#comment Stream#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/stream#comment Stream#comment}
 
 ---
 
@@ -1004,7 +1004,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/stream#id Stream#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/stream#id Stream#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1021,7 +1021,7 @@ public readonly insertOnly: boolean | IResolvable;
 
 Create an insert only stream type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/stream#insert_only Stream#insert_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/stream#insert_only Stream#insert_only}
 
 ---
 
@@ -1035,7 +1035,7 @@ public readonly onStage: string;
 
 Name of the stage the stream will monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/stream#on_stage Stream#on_stage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/stream#on_stage Stream#on_stage}
 
 ---
 
@@ -1049,7 +1049,7 @@ public readonly onTable: string;
 
 Name of the table the stream will monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/stream#on_table Stream#on_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/stream#on_table Stream#on_table}
 
 ---
 
@@ -1063,7 +1063,7 @@ public readonly onView: string;
 
 Name of the view the stream will monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/stream#on_view Stream#on_view}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/stream#on_view Stream#on_view}
 
 ---
 
@@ -1077,7 +1077,7 @@ public readonly showInitialRows: boolean | IResolvable;
 
 Specifies whether to return all existing rows in the source table as row inserts the first time the stream is consumed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/stream#show_initial_rows Stream#show_initial_rows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/stream#show_initial_rows Stream#show_initial_rows}
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/table_grant
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/table_grant
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface TableGrantConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the database containing the current or future tables on which to grant privileges.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/table_grant#database_name TableGrant#database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/table_grant#database_name TableGrant#database_name}
   */
   readonly databaseName: string;
   /**
   * When this is set to true, multiple grants of the same type can be created. This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/table_grant#enable_multiple_grants TableGrant#enable_multiple_grants}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/table_grant#enable_multiple_grants TableGrant#enable_multiple_grants}
   */
   readonly enableMultipleGrants?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/table_grant#id TableGrant#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/table_grant#id TableGrant#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,61 +34,61 @@ export interface TableGrantConfig extends cdktf.TerraformMetaArguments {
   /**
   * When this is set to true and a schema_name is provided, apply this grant on all tables in the given schema. When this is true and no schema_name is provided apply this grant on all tables in the given database. The table_name and shares fields must be unset in order to use on_all. Cannot be used together with on_future.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/table_grant#on_all TableGrant#on_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/table_grant#on_all TableGrant#on_all}
   */
   readonly onAll?: boolean | cdktf.IResolvable;
   /**
   * When this is set to true and a schema_name is provided, apply this grant on all future tables in the given schema. When this is true and no schema_name is provided apply this grant on all future tables in the given database. The table_name and shares fields must be unset in order to use on_future. Cannot be used together with on_all.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/table_grant#on_future TableGrant#on_future}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/table_grant#on_future TableGrant#on_future}
   */
   readonly onFuture?: boolean | cdktf.IResolvable;
   /**
   * The privilege to grant on the current or future table. To grant all privileges, use the value `ALL PRIVILEGES`.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/table_grant#privilege TableGrant#privilege}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/table_grant#privilege TableGrant#privilege}
   */
   readonly privilege?: string;
   /**
   * The name of the role to revert ownership to on destroy. Has no effect unless `privilege` is set to `OWNERSHIP`
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/table_grant#revert_ownership_to_role_name TableGrant#revert_ownership_to_role_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/table_grant#revert_ownership_to_role_name TableGrant#revert_ownership_to_role_name}
   */
   readonly revertOwnershipToRoleName?: string;
   /**
   * Grants privilege to these roles.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/table_grant#roles TableGrant#roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/table_grant#roles TableGrant#roles}
   */
   readonly roles?: string[];
   /**
   * The name of the schema containing the current or future tables on which to grant privileges.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/table_grant#schema_name TableGrant#schema_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/table_grant#schema_name TableGrant#schema_name}
   */
   readonly schemaName?: string;
   /**
   * Grants privilege to these shares (only valid if on_future or on_all are unset).
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/table_grant#shares TableGrant#shares}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/table_grant#shares TableGrant#shares}
   */
   readonly shares?: string[];
   /**
   * The name of the table on which to grant privileges immediately (only valid if on_future or on_all are unset).
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/table_grant#table_name TableGrant#table_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/table_grant#table_name TableGrant#table_name}
   */
   readonly tableName?: string;
   /**
   * When this is set to true, allows the recipient role to grant the privileges to other roles.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/table_grant#with_grant_option TableGrant#with_grant_option}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/table_grant#with_grant_option TableGrant#with_grant_option}
   */
   readonly withGrantOption?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/table_grant snowflake_table_grant}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/table_grant snowflake_table_grant}
 */
 export class TableGrant extends cdktf.TerraformResource {
 
@@ -102,7 +102,7 @@ export class TableGrant extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/table_grant snowflake_table_grant} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/table_grant snowflake_table_grant} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -113,7 +113,7 @@ export class TableGrant extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_table_grant',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.66.1',
+        providerVersion: '0.66.2',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,

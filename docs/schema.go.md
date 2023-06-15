@@ -1,6 +1,6 @@
 # `snowflake_schema`
 
-Refer to the Terraform Registory for docs: [`snowflake_schema`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/schema).
+Refer to the Terraform Registory for docs: [`snowflake_schema`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/schema).
 
 # `schema` Submodule <a name="`schema` Submodule" id="@cdktf/provider-snowflake.schema"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`snowflake_schema`](https://registry
 
 ### Schema <a name="Schema" id="@cdktf/provider-snowflake.schema.Schema"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/schema snowflake_schema}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/schema snowflake_schema}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schema.Schema.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v7/schema"
 
 schema.NewSchema(scope Construct, id *string, config SchemaConfig) Schema
 ```
@@ -325,7 +325,7 @@ func ResetTag()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.schema.Schema.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v7/schema"
 
 schema.Schema_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.schema.Schema.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v7/schema"
 
 schema.Schema_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ schema.Schema_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.schema.Schema.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v7/schema"
 
 schema.Schema_IsTerraformResource(x interface{}) *bool
 ```
@@ -746,7 +746,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.schema.SchemaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v7/schema"
 
 &schema.SchemaConfig {
 	Connection: interface{},
@@ -782,7 +782,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/schema"
 | <code><a href="#@cdktf/provider-snowflake.schema.SchemaConfig.property.name">Name</a></code> | <code>*string</code> | Specifies the identifier for the schema; must be unique for the database in which the schema is created. |
 | <code><a href="#@cdktf/provider-snowflake.schema.SchemaConfig.property.comment">Comment</a></code> | <code>*string</code> | Specifies a comment for the schema. |
 | <code><a href="#@cdktf/provider-snowflake.schema.SchemaConfig.property.dataRetentionDays">DataRetentionDays</a></code> | <code>*f64</code> | Specifies the number of days for which Time Travel actions (CLONE and UNDROP) can be performed on the schema, as well as specifying the default Time Travel retention time for all tables created in the schema. |
-| <code><a href="#@cdktf/provider-snowflake.schema.SchemaConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/schema#id Schema#id}. |
+| <code><a href="#@cdktf/provider-snowflake.schema.SchemaConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/schema#id Schema#id}. |
 | <code><a href="#@cdktf/provider-snowflake.schema.SchemaConfig.property.isManaged">IsManaged</a></code> | <code>interface{}</code> | Specifies a managed schema. Managed access schemas centralize privilege management with the schema owner. |
 | <code><a href="#@cdktf/provider-snowflake.schema.SchemaConfig.property.isTransient">IsTransient</a></code> | <code>interface{}</code> | Specifies a schema as transient. |
 | <code><a href="#@cdktf/provider-snowflake.schema.SchemaConfig.property.tag">Tag</a></code> | <code>interface{}</code> | tag block. |
@@ -869,7 +869,7 @@ Database *string
 
 The database in which to create the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/schema#database Schema#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/schema#database Schema#database}
 
 ---
 
@@ -883,7 +883,7 @@ Name *string
 
 Specifies the identifier for the schema; must be unique for the database in which the schema is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/schema#name Schema#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/schema#name Schema#name}
 
 ---
 
@@ -897,7 +897,7 @@ Comment *string
 
 Specifies a comment for the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/schema#comment Schema#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/schema#comment Schema#comment}
 
 ---
 
@@ -911,7 +911,7 @@ DataRetentionDays *f64
 
 Specifies the number of days for which Time Travel actions (CLONE and UNDROP) can be performed on the schema, as well as specifying the default Time Travel retention time for all tables created in the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/schema#data_retention_days Schema#data_retention_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/schema#data_retention_days Schema#data_retention_days}
 
 ---
 
@@ -923,7 +923,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/schema#id Schema#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/schema#id Schema#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -940,7 +940,7 @@ IsManaged interface{}
 
 Specifies a managed schema. Managed access schemas centralize privilege management with the schema owner.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/schema#is_managed Schema#is_managed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/schema#is_managed Schema#is_managed}
 
 ---
 
@@ -956,7 +956,7 @@ Specifies a schema as transient.
 
 Transient schemas do not have a Fail-safe period so they do not incur additional storage costs once they leave Time Travel; however, this means they are also not protected by Fail-safe in the event of a data loss.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/schema#is_transient Schema#is_transient}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/schema#is_transient Schema#is_transient}
 
 ---
 
@@ -970,7 +970,7 @@ Tag interface{}
 
 tag block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/schema#tag Schema#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/schema#tag Schema#tag}
 
 ---
 
@@ -979,7 +979,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.schema.SchemaTag.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v7/schema"
 
 &schema.SchemaTag {
 	Name: *string,
@@ -1010,7 +1010,7 @@ Name *string
 
 Tag name, e.g. department.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/schema#name Schema#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/schema#name Schema#name}
 
 ---
 
@@ -1024,7 +1024,7 @@ Value *string
 
 Tag value, e.g. marketing_info.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/schema#value Schema#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/schema#value Schema#value}
 
 ---
 
@@ -1038,7 +1038,7 @@ Database *string
 
 Name of the database that the tag was created in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/schema#database Schema#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/schema#database Schema#database}
 
 ---
 
@@ -1052,7 +1052,7 @@ Schema *string
 
 Name of the schema that the tag was created in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/schema#schema Schema#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/schema#schema Schema#schema}
 
 ---
 
@@ -1063,7 +1063,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schema.SchemaTagList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v7/schema"
 
 schema.NewSchemaTagList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SchemaTagList
 ```
@@ -1206,7 +1206,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schema.SchemaTagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v6/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v7/schema"
 
 schema.NewSchemaTagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SchemaTagOutputReference
 ```

@@ -1,6 +1,6 @@
 # `snowflake_task_grant`
 
-Refer to the Terraform Registory for docs: [`snowflake_task_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/task_grant).
+Refer to the Terraform Registory for docs: [`snowflake_task_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/task_grant).
 
 # `taskGrant` Submodule <a name="`taskGrant` Submodule" id="@cdktf/provider-snowflake.taskGrant"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`snowflake_task_grant`](https://regi
 
 ### TaskGrant <a name="TaskGrant" id="@cdktf/provider-snowflake.taskGrant.TaskGrant"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/task_grant snowflake_task_grant}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/task_grant snowflake_task_grant}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.taskGrant.TaskGrant.Initializer"></a>
 
@@ -59,7 +59,7 @@ TaskGrant.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrant.Initializer.parameter.databaseName">databaseName</a></code> | <code>java.lang.String</code> | The name of the database containing the current or future tasks on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrant.Initializer.parameter.roles">roles</a></code> | <code>java.util.List<java.lang.String></code> | Grants privilege to these roles. |
 | <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrant.Initializer.parameter.enableMultipleGrants">enableMultipleGrants</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
-| <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrant.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/task_grant#id TaskGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrant.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/task_grant#id TaskGrant#id}. |
 | <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrant.Initializer.parameter.onAll">onAll</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When this is set to true and a schema_name is provided, apply this grant on all tasks in the given schema. |
 | <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrant.Initializer.parameter.onFuture">onFuture</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When this is set to true and a schema_name is provided, apply this grant on all future tasks in the given schema. |
 | <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrant.Initializer.parameter.privilege">privilege</a></code> | <code>java.lang.String</code> | The privilege to grant on the current or future task. To grant all privileges, use the value `ALL PRIVILEGES`. |
@@ -136,7 +136,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the database containing the current or future tasks on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/task_grant#database_name TaskGrant#database_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/task_grant#database_name TaskGrant#database_name}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Grants privilege to these roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/task_grant#roles TaskGrant#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/task_grant#roles TaskGrant#roles}
 
 ---
 
@@ -158,7 +158,7 @@ When this is set to true, multiple grants of the same type can be created.
 
 This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/task_grant#enable_multiple_grants TaskGrant#enable_multiple_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/task_grant#enable_multiple_grants TaskGrant#enable_multiple_grants}
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/task_grant#id TaskGrant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/task_grant#id TaskGrant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -181,7 +181,7 @@ When this is set to true and a schema_name is provided, apply this grant on all 
 
 When this is true and no schema_name is provided apply this grant on all tasks in the given database. The task_name field must be unset in order to use on_all. Cannot be used together with on_future.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/task_grant#on_all TaskGrant#on_all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/task_grant#on_all TaskGrant#on_all}
 
 ---
 
@@ -193,7 +193,7 @@ When this is set to true and a schema_name is provided, apply this grant on all 
 
 When this is true and no schema_name is provided apply this grant on all future tasks in the given database. The task_name field must be unset in order to use on_future. Cannot be used together with on_all.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/task_grant#on_future TaskGrant#on_future}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/task_grant#on_future TaskGrant#on_future}
 
 ---
 
@@ -203,7 +203,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The privilege to grant on the current or future task. To grant all privileges, use the value `ALL PRIVILEGES`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/task_grant#privilege TaskGrant#privilege}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/task_grant#privilege TaskGrant#privilege}
 
 ---
 
@@ -215,7 +215,7 @@ The name of the role to revert ownership to on destroy.
 
 Has no effect unless `privilege` is set to `OWNERSHIP`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/task_grant#revert_ownership_to_role_name TaskGrant#revert_ownership_to_role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/task_grant#revert_ownership_to_role_name TaskGrant#revert_ownership_to_role_name}
 
 ---
 
@@ -225,7 +225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The name of the schema containing the current or future tasks on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/task_grant#schema_name TaskGrant#schema_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/task_grant#schema_name TaskGrant#schema_name}
 
 ---
 
@@ -235,7 +235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The name of the task on which to grant privileges immediately (only valid if on_future is false).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/task_grant#task_name TaskGrant#task_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/task_grant#task_name TaskGrant#task_name}
 
 ---
 
@@ -245,7 +245,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 When this is set to true, allows the recipient role to grant the privileges to other roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/task_grant#with_grant_option TaskGrant#with_grant_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/task_grant#with_grant_option TaskGrant#with_grant_option}
 
 ---
 
@@ -1065,7 +1065,7 @@ TaskGrantConfig.builder()
 | <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrantConfig.property.databaseName">databaseName</a></code> | <code>java.lang.String</code> | The name of the database containing the current or future tasks on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrantConfig.property.roles">roles</a></code> | <code>java.util.List<java.lang.String></code> | Grants privilege to these roles. |
 | <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrantConfig.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
-| <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrantConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/task_grant#id TaskGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrantConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/task_grant#id TaskGrant#id}. |
 | <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrantConfig.property.onAll">onAll</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When this is set to true and a schema_name is provided, apply this grant on all tasks in the given schema. |
 | <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrantConfig.property.onFuture">onFuture</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When this is set to true and a schema_name is provided, apply this grant on all future tasks in the given schema. |
 | <code><a href="#@cdktf/provider-snowflake.taskGrant.TaskGrantConfig.property.privilege">privilege</a></code> | <code>java.lang.String</code> | The privilege to grant on the current or future task. To grant all privileges, use the value `ALL PRIVILEGES`. |
@@ -1156,7 +1156,7 @@ public java.lang.String getDatabaseName();
 
 The name of the database containing the current or future tasks on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/task_grant#database_name TaskGrant#database_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/task_grant#database_name TaskGrant#database_name}
 
 ---
 
@@ -1170,7 +1170,7 @@ public java.util.List<java.lang.String> getRoles();
 
 Grants privilege to these roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/task_grant#roles TaskGrant#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/task_grant#roles TaskGrant#roles}
 
 ---
 
@@ -1186,7 +1186,7 @@ When this is set to true, multiple grants of the same type can be created.
 
 This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/task_grant#enable_multiple_grants TaskGrant#enable_multiple_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/task_grant#enable_multiple_grants TaskGrant#enable_multiple_grants}
 
 ---
 
@@ -1198,7 +1198,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/task_grant#id TaskGrant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/task_grant#id TaskGrant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1217,7 +1217,7 @@ When this is set to true and a schema_name is provided, apply this grant on all 
 
 When this is true and no schema_name is provided apply this grant on all tasks in the given database. The task_name field must be unset in order to use on_all. Cannot be used together with on_future.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/task_grant#on_all TaskGrant#on_all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/task_grant#on_all TaskGrant#on_all}
 
 ---
 
@@ -1233,7 +1233,7 @@ When this is set to true and a schema_name is provided, apply this grant on all 
 
 When this is true and no schema_name is provided apply this grant on all future tasks in the given database. The task_name field must be unset in order to use on_future. Cannot be used together with on_all.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/task_grant#on_future TaskGrant#on_future}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/task_grant#on_future TaskGrant#on_future}
 
 ---
 
@@ -1247,7 +1247,7 @@ public java.lang.String getPrivilege();
 
 The privilege to grant on the current or future task. To grant all privileges, use the value `ALL PRIVILEGES`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/task_grant#privilege TaskGrant#privilege}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/task_grant#privilege TaskGrant#privilege}
 
 ---
 
@@ -1263,7 +1263,7 @@ The name of the role to revert ownership to on destroy.
 
 Has no effect unless `privilege` is set to `OWNERSHIP`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/task_grant#revert_ownership_to_role_name TaskGrant#revert_ownership_to_role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/task_grant#revert_ownership_to_role_name TaskGrant#revert_ownership_to_role_name}
 
 ---
 
@@ -1277,7 +1277,7 @@ public java.lang.String getSchemaName();
 
 The name of the schema containing the current or future tasks on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/task_grant#schema_name TaskGrant#schema_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/task_grant#schema_name TaskGrant#schema_name}
 
 ---
 
@@ -1291,7 +1291,7 @@ public java.lang.String getTaskName();
 
 The name of the task on which to grant privileges immediately (only valid if on_future is false).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/task_grant#task_name TaskGrant#task_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/task_grant#task_name TaskGrant#task_name}
 
 ---
 
@@ -1305,7 +1305,7 @@ public java.lang.Object getWithGrantOption();
 
 When this is set to true, allows the recipient role to grant the privileges to other roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/task_grant#with_grant_option TaskGrant#with_grant_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/task_grant#with_grant_option TaskGrant#with_grant_option}
 
 ---
 
