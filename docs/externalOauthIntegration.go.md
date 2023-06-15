@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v7/externaloauthintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8/externaloauthintegration"
 
 externaloauthintegration.NewExternalOauthIntegration(scope Construct, id *string, config ExternalOauthIntegrationConfig) ExternalOauthIntegration
 ```
@@ -347,7 +347,7 @@ func ResetScopeMappingAttribute()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v7/externaloauthintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8/externaloauthintegration"
 
 externaloauthintegration.ExternalOauthIntegration_IsConstruct(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v7/externaloauthintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8/externaloauthintegration"
 
 externaloauthintegration.ExternalOauthIntegration_IsTerraformElement(x interface{}) *bool
 ```
@@ -393,7 +393,7 @@ externaloauthintegration.ExternalOauthIntegration_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v7/externaloauthintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8/externaloauthintegration"
 
 externaloauthintegration.ExternalOauthIntegration_IsTerraformResource(x interface{}) *bool
 ```
@@ -977,7 +977,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v7/externaloauthintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8/externaloauthintegration"
 
 &externaloauthintegration.ExternalOauthIntegrationConfig {
 	Connection: interface{},
