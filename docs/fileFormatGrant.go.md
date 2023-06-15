@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.fileFormatGrant.FileFormatGrant.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/fileformatgrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v7/fileformatgrant"
 
 fileformatgrant.NewFileFormatGrant(scope Construct, id *string, config FileFormatGrantConfig) FileFormatGrant
 ```
@@ -333,7 +333,7 @@ func ResetWithGrantOption()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.fileFormatGrant.FileFormatGrant.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/fileformatgrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v7/fileformatgrant"
 
 fileformatgrant.FileFormatGrant_IsConstruct(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.fileFormatGrant.FileFormatGrant.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/fileformatgrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v7/fileformatgrant"
 
 fileformatgrant.FileFormatGrant_IsTerraformElement(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ fileformatgrant.FileFormatGrant_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.fileFormatGrant.FileFormatGrant.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/fileformatgrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v7/fileformatgrant"
 
 fileformatgrant.FileFormatGrant_IsTerraformResource(x interface{}) *bool
 ```
@@ -820,7 +820,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.fileFormatGrant.FileFormatGrantConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/fileformatgrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v7/fileformatgrant"
 
 &fileformatgrant.FileFormatGrantConfig {
 	Connection: interface{},
