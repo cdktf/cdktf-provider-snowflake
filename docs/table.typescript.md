@@ -2574,7 +2574,7 @@ public resetNullable(): void
 | <code><a href="#@cdktf/provider-snowflake.table.TableColumnOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.TableColumnOutputReference.property.nullable">nullable</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.TableColumnOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.table.TableColumnOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-snowflake.table.TableColumn">TableColumn</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.table.TableColumnOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.table.TableColumn">TableColumn</a></code> | *No description.* |
 
 ---
 
@@ -2745,10 +2745,10 @@ public readonly type: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-snowflake.table.TableColumnOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: TableColumn | IResolvable;
+public readonly internalValue: IResolvable | TableColumn;
 ```
 
-- *Type:* <a href="#@cdktf/provider-snowflake.table.TableColumn">TableColumn</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-snowflake.table.TableColumn">TableColumn</a>
 
 ---
 
@@ -3446,7 +3446,7 @@ public resetSchema(): void
 | <code><a href="#@cdktf/provider-snowflake.table.TableTagOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.TableTagOutputReference.property.schema">schema</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.TableTagOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.table.TableTagOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-snowflake.table.TableTag">TableTag</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.table.TableTagOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.table.TableTag">TableTag</a></code> | *No description.* |
 
 ---
 
@@ -3557,10 +3557,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-snowflake.table.TableTagOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: TableTag | IResolvable;
+public readonly internalValue: IResolvable | TableTag;
 ```
 
-- *Type:* <a href="#@cdktf/provider-snowflake.table.TableTag">TableTag</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-snowflake.table.TableTag">TableTag</a>
 
 ---
 

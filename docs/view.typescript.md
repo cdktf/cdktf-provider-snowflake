@@ -1504,7 +1504,7 @@ public resetSchema(): void
 | <code><a href="#@cdktf/provider-snowflake.view.ViewTagOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewTagOutputReference.property.schema">schema</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewTagOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.view.ViewTagOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-snowflake.view.ViewTag">ViewTag</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.view.ViewTagOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.view.ViewTag">ViewTag</a></code> | *No description.* |
 
 ---
 
@@ -1615,10 +1615,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-snowflake.view.ViewTagOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: ViewTag | IResolvable;
+public readonly internalValue: IResolvable | ViewTag;
 ```
 
-- *Type:* <a href="#@cdktf/provider-snowflake.view.ViewTag">ViewTag</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-snowflake.view.ViewTag">ViewTag</a>
 
 ---
 

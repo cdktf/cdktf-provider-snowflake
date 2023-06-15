@@ -1430,7 +1430,7 @@ public resetSchema(): void
 | <code><a href="#@cdktf/provider-snowflake.schema.SchemaTagOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schema.SchemaTagOutputReference.property.schema">schema</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schema.SchemaTagOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.schema.SchemaTagOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-snowflake.schema.SchemaTag">SchemaTag</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.schema.SchemaTagOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.schema.SchemaTag">SchemaTag</a></code> | *No description.* |
 
 ---
 
@@ -1541,10 +1541,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-snowflake.schema.SchemaTagOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SchemaTag | IResolvable;
+public readonly internalValue: IResolvable | SchemaTag;
 ```
 
-- *Type:* <a href="#@cdktf/provider-snowflake.schema.SchemaTag">SchemaTag</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-snowflake.schema.SchemaTag">SchemaTag</a>
 
 ---
 

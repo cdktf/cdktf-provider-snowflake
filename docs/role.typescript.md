@@ -1255,7 +1255,7 @@ public resetSchema(): void
 | <code><a href="#@cdktf/provider-snowflake.role.RoleTagOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.role.RoleTagOutputReference.property.schema">schema</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.role.RoleTagOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.role.RoleTagOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-snowflake.role.RoleTag">RoleTag</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.role.RoleTagOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.role.RoleTag">RoleTag</a></code> | *No description.* |
 
 ---
 
@@ -1366,10 +1366,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-snowflake.role.RoleTagOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: RoleTag | IResolvable;
+public readonly internalValue: IResolvable | RoleTag;
 ```
 
-- *Type:* <a href="#@cdktf/provider-snowflake.role.RoleTag">RoleTag</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-snowflake.role.RoleTag">RoleTag</a>
 
 ---
 

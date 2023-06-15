@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeAccounts.DataSnowflakeAccounts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v7/datasnowflakeaccounts"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeaccounts"
 
 datasnowflakeaccounts.NewDataSnowflakeAccounts(scope Construct, id *string, config DataSnowflakeAccountsConfig) DataSnowflakeAccounts
 ```
@@ -284,7 +284,7 @@ func ResetPattern()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeAccounts.DataSnowflakeAccounts.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v7/datasnowflakeaccounts"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeaccounts"
 
 datasnowflakeaccounts.DataSnowflakeAccounts_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeAccounts.DataSnowflakeAccounts.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v7/datasnowflakeaccounts"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeaccounts"
 
 datasnowflakeaccounts.DataSnowflakeAccounts_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ datasnowflakeaccounts.DataSnowflakeAccounts_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeAccounts.DataSnowflakeAccounts.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v7/datasnowflakeaccounts"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeaccounts"
 
 datasnowflakeaccounts.DataSnowflakeAccounts_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeAccounts.DataSnowflakeAccountsAccounts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v7/datasnowflakeaccounts"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeaccounts"
 
 &datasnowflakeaccounts.DataSnowflakeAccountsAccounts {
 
@@ -575,7 +575,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v7/datasnowflakea
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeAccounts.DataSnowflakeAccountsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v7/datasnowflakeaccounts"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeaccounts"
 
 &datasnowflakeaccounts.DataSnowflakeAccountsConfig {
 	Connection: interface{},
@@ -712,7 +712,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeAccounts.DataSnowflakeAccountsAccountsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v7/datasnowflakeaccounts"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeaccounts"
 
 datasnowflakeaccounts.NewDataSnowflakeAccountsAccountsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeAccountsAccountsList
 ```
@@ -844,7 +844,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeAccounts.DataSnowflakeAccountsAccountsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v7/datasnowflakeaccounts"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeaccounts"
 
 datasnowflakeaccounts.NewDataSnowflakeAccountsAccountsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeAccountsAccountsOutputReference
 ```

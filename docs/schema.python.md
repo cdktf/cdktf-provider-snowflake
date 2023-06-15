@@ -1670,7 +1670,7 @@ def reset_schema() -> None
 | <code><a href="#@cdktf/provider-snowflake.schema.SchemaTagOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schema.SchemaTagOutputReference.property.schema">schema</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schema.SchemaTagOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.schema.SchemaTagOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-snowflake.schema.SchemaTag">SchemaTag</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.schema.SchemaTagOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-snowflake.schema.SchemaTag">SchemaTag</a>]</code> | *No description.* |
 
 ---
 
@@ -1781,10 +1781,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-snowflake.schema.SchemaTagOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SchemaTag, IResolvable]
+internal_value: typing.Union[IResolvable, SchemaTag]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-snowflake.schema.SchemaTag">SchemaTag</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-snowflake.schema.SchemaTag">SchemaTag</a>]
 
 ---
 
