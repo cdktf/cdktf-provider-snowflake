@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/resource_monitor_grant
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/resource_monitor_grant
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface ResourceMonitorGrantConfig extends cdktf.TerraformMetaArguments
   /**
   * When this is set to true, multiple grants of the same type can be created. This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/resource_monitor_grant#enable_multiple_grants ResourceMonitorGrant#enable_multiple_grants}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/resource_monitor_grant#enable_multiple_grants ResourceMonitorGrant#enable_multiple_grants}
   */
   readonly enableMultipleGrants?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/resource_monitor_grant#id ResourceMonitorGrant#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/resource_monitor_grant#id ResourceMonitorGrant#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,31 +23,31 @@ export interface ResourceMonitorGrantConfig extends cdktf.TerraformMetaArguments
   /**
   * Identifier for the resource monitor; must be unique for your account.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/resource_monitor_grant#monitor_name ResourceMonitorGrant#monitor_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/resource_monitor_grant#monitor_name ResourceMonitorGrant#monitor_name}
   */
   readonly monitorName: string;
   /**
   * The privilege to grant on the resource monitor. To grant all privileges, use the value `ALL PRIVILEGES`
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/resource_monitor_grant#privilege ResourceMonitorGrant#privilege}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/resource_monitor_grant#privilege ResourceMonitorGrant#privilege}
   */
   readonly privilege?: string;
   /**
   * Grants privilege to these roles.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/resource_monitor_grant#roles ResourceMonitorGrant#roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/resource_monitor_grant#roles ResourceMonitorGrant#roles}
   */
   readonly roles?: string[];
   /**
   * When this is set to true, allows the recipient role to grant the privileges to other roles.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/resource_monitor_grant#with_grant_option ResourceMonitorGrant#with_grant_option}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/resource_monitor_grant#with_grant_option ResourceMonitorGrant#with_grant_option}
   */
   readonly withGrantOption?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/resource_monitor_grant snowflake_resource_monitor_grant}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/resource_monitor_grant snowflake_resource_monitor_grant}
 */
 export class ResourceMonitorGrant extends cdktf.TerraformResource {
 
@@ -66,7 +61,7 @@ export class ResourceMonitorGrant extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.1/docs/resources/resource_monitor_grant snowflake_resource_monitor_grant} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/resource_monitor_grant snowflake_resource_monitor_grant} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +72,7 @@ export class ResourceMonitorGrant extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_resource_monitor_grant',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.66.1',
+        providerVersion: '0.66.2',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
