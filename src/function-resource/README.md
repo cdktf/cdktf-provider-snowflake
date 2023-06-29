@@ -1,3 +1,3 @@
 # `snowflake_function`
 
-Refer to the Terraform Registory for docs: [`snowflake_function`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/function).
+Refer to the Terraform Registory for docs: [`snowflake_function`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/function).

@@ -4,6 +4,7 @@ The following submodules are available:
 - [account](./account.java.md)
 - [accountGrant](./accountGrant.java.md)
 - [accountParameter](./accountParameter.java.md)
+- [accountPasswordPolicyAttachment](./accountPasswordPolicyAttachment.java.md)
 - [alert](./alert.java.md)
 - [apiIntegration](./apiIntegration.java.md)
 - [dataSnowflakeAccounts](./dataSnowflakeAccounts.java.md)

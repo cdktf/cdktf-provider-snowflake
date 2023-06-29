@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/procedure
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/procedure
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,29 +15,29 @@ export interface ProcedureConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies a comment for the procedure.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/procedure#comment Procedure#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/procedure#comment Procedure#comment}
   */
   readonly comment?: string;
   /**
   * The database in which to create the procedure. Don't use the | character.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/procedure#database Procedure#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/procedure#database Procedure#database}
   */
   readonly database: string;
   /**
   * Sets execute context - see caller's rights and owner's rights
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/procedure#execute_as Procedure#execute_as}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/procedure#execute_as Procedure#execute_as}
   */
   readonly executeAs?: string;
   /**
   * The handler method for Java / Python procedures.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/procedure#handler Procedure#handler}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/procedure#handler Procedure#handler}
   */
   readonly handler?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/procedure#id Procedure#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/procedure#id Procedure#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,67 +46,67 @@ export interface ProcedureConfig extends cdktf.TerraformMetaArguments {
   /**
   * Imports for Java / Python procedures. For Java this a list of jar files, for Python this is a list of Python files.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/procedure#imports Procedure#imports}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/procedure#imports Procedure#imports}
   */
   readonly imports?: string[];
   /**
   * Specifies the language of the stored procedure code.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/procedure#language Procedure#language}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/procedure#language Procedure#language}
   */
   readonly language?: string;
   /**
   * Specifies the identifier for the procedure; does not have to be unique for the schema in which the procedure is created. Don't use the | character.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/procedure#name Procedure#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/procedure#name Procedure#name}
   */
   readonly name: string;
   /**
   * Specifies the behavior of the procedure when called with null inputs.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/procedure#null_input_behavior Procedure#null_input_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/procedure#null_input_behavior Procedure#null_input_behavior}
   */
   readonly nullInputBehavior?: string;
   /**
   * List of package imports to use for Java / Python procedures. For Java, package imports should be of the form: package_name:version_number, where package_name is snowflake_domain:package. For Python use it should be: ('numpy','pandas','xgboost==1.5.0').
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/procedure#packages Procedure#packages}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/procedure#packages Procedure#packages}
   */
   readonly packages?: string[];
   /**
   * Specifies the behavior of the function when returning results
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/procedure#return_behavior Procedure#return_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/procedure#return_behavior Procedure#return_behavior}
   */
   readonly returnBehavior?: string;
   /**
   * The return type of the procedure
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/procedure#return_type Procedure#return_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/procedure#return_type Procedure#return_type}
   */
   readonly returnType: string;
   /**
   * Required for Python procedures. Specifies Python runtime version.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/procedure#runtime_version Procedure#runtime_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/procedure#runtime_version Procedure#runtime_version}
   */
   readonly runtimeVersion?: string;
   /**
   * The schema in which to create the procedure. Don't use the | character.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/procedure#schema Procedure#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/procedure#schema Procedure#schema}
   */
   readonly schema: string;
   /**
   * Specifies the code used to create the procedure.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/procedure#statement Procedure#statement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/procedure#statement Procedure#statement}
   */
   readonly statement: string;
   /**
   * arguments block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/procedure#arguments Procedure#arguments}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/procedure#arguments Procedure#arguments}
   */
   readonly arguments?: ProcedureArguments[] | cdktf.IResolvable;
 }
@@ -114,13 +114,13 @@ export interface ProcedureArguments {
   /**
   * The argument name
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/procedure#name Procedure#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/procedure#name Procedure#name}
   */
   readonly name: string;
   /**
   * The argument type
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/procedure#type Procedure#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/procedure#type Procedure#type}
   */
   readonly type: string;
 }
@@ -234,7 +234,7 @@ export class ProcedureArgumentsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/procedure snowflake_procedure}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/procedure snowflake_procedure}
 */
 export class Procedure extends cdktf.TerraformResource {
 
@@ -248,7 +248,7 @@ export class Procedure extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/procedure snowflake_procedure} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/procedure snowflake_procedure} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -259,7 +259,7 @@ export class Procedure extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_procedure',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.66.2',
+        providerVersion: '0.67.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,

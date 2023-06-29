@@ -7,6 +7,7 @@
 export * as account from './account';
 export * as accountGrant from './account-grant';
 export * as accountParameter from './account-parameter';
+export * as accountPasswordPolicyAttachment from './account-password-policy-attachment';
 export * as alert from './alert';
 export * as apiIntegration from './api-integration';
 export * as database from './database';

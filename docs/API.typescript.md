@@ -4,6 +4,7 @@ The following submodules are available:
 - [account](./account.typescript.md)
 - [accountGrant](./accountGrant.typescript.md)
 - [accountParameter](./accountParameter.typescript.md)
+- [accountPasswordPolicyAttachment](./accountPasswordPolicyAttachment.typescript.md)
 - [alert](./alert.typescript.md)
 - [apiIntegration](./apiIntegration.typescript.md)
 - [dataSnowflakeAccounts](./dataSnowflakeAccounts.typescript.md)

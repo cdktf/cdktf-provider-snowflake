@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/pipe
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/pipe
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,41 +15,41 @@ export interface PipeConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies a auto_ingest param for the pipe.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/pipe#auto_ingest Pipe#auto_ingest}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/pipe#auto_ingest Pipe#auto_ingest}
   */
   readonly autoIngest?: boolean | cdktf.IResolvable;
   /**
   * Specifies the Amazon Resource Name (ARN) for the SNS topic for your S3 bucket.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/pipe#aws_sns_topic_arn Pipe#aws_sns_topic_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/pipe#aws_sns_topic_arn Pipe#aws_sns_topic_arn}
   */
   readonly awsSnsTopicArn?: string;
   /**
   * Specifies a comment for the pipe.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/pipe#comment Pipe#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/pipe#comment Pipe#comment}
   */
   readonly comment?: string;
   /**
   * Specifies the copy statement for the pipe.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/pipe#copy_statement Pipe#copy_statement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/pipe#copy_statement Pipe#copy_statement}
   */
   readonly copyStatement: string;
   /**
   * The database in which to create the pipe.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/pipe#database Pipe#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/pipe#database Pipe#database}
   */
   readonly database: string;
   /**
   * Specifies the name of the notification integration used for error notifications.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/pipe#error_integration Pipe#error_integration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/pipe#error_integration Pipe#error_integration}
   */
   readonly errorIntegration?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/pipe#id Pipe#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/pipe#id Pipe#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -58,25 +58,25 @@ export interface PipeConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies an integration for the pipe.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/pipe#integration Pipe#integration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/pipe#integration Pipe#integration}
   */
   readonly integration?: string;
   /**
   * Specifies the identifier for the pipe; must be unique for the database and schema in which the pipe is created.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/pipe#name Pipe#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/pipe#name Pipe#name}
   */
   readonly name: string;
   /**
   * The schema in which to create the pipe.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/pipe#schema Pipe#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/pipe#schema Pipe#schema}
   */
   readonly schema: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/pipe snowflake_pipe}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/pipe snowflake_pipe}
 */
 export class Pipe extends cdktf.TerraformResource {
 
@@ -90,7 +90,7 @@ export class Pipe extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/pipe snowflake_pipe} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/pipe snowflake_pipe} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -101,7 +101,7 @@ export class Pipe extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_pipe',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.66.2',
+        providerVersion: '0.67.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,

@@ -4,6 +4,7 @@ The following submodules are available:
 - [account](./account.go.md)
 - [accountGrant](./accountGrant.go.md)
 - [accountParameter](./accountParameter.go.md)
+- [accountPasswordPolicyAttachment](./accountPasswordPolicyAttachment.go.md)
 - [alert](./alert.go.md)
 - [apiIntegration](./apiIntegration.go.md)
 - [dataSnowflakeAccounts](./dataSnowflakeAccounts.go.md)
