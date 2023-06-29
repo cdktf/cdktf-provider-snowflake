@@ -1,6 +1,6 @@
 # `data_snowflake_roles`
 
-Refer to the Terraform Registory for docs: [`data_snowflake_roles`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/data-sources/roles).
+Refer to the Terraform Registory for docs: [`data_snowflake_roles`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/roles).
 
 # `dataSnowflakeRoles` Submodule <a name="`dataSnowflakeRoles` Submodule" id="@cdktf/provider-snowflake.dataSnowflakeRoles"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_snowflake_roles`](https://regi
 
 ### DataSnowflakeRoles <a name="DataSnowflakeRoles" id="@cdktf/provider-snowflake.dataSnowflakeRoles.DataSnowflakeRoles"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/data-sources/roles snowflake_roles}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/roles snowflake_roles}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeRoles.DataSnowflakeRoles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8/datasnowflakeroles"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeroles"
 
 datasnowflakeroles.NewDataSnowflakeRoles(scope Construct, id *string, config DataSnowflakeRolesConfig) DataSnowflakeRoles
 ```
@@ -284,7 +284,7 @@ func ResetPattern()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeRoles.DataSnowflakeRoles.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8/datasnowflakeroles"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeroles"
 
 datasnowflakeroles.DataSnowflakeRoles_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeRoles.DataSnowflakeRoles.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8/datasnowflakeroles"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeroles"
 
 datasnowflakeroles.DataSnowflakeRoles_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ datasnowflakeroles.DataSnowflakeRoles_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeRoles.DataSnowflakeRoles.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8/datasnowflakeroles"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeroles"
 
 datasnowflakeroles.DataSnowflakeRoles_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeRoles.DataSnowflakeRolesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8/datasnowflakeroles"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeroles"
 
 &datasnowflakeroles.DataSnowflakeRolesConfig {
 	Connection: interface{},
@@ -588,7 +588,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8/datasnowflaker
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRoles.DataSnowflakeRolesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRoles.DataSnowflakeRolesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRoles.DataSnowflakeRolesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRoles.DataSnowflakeRolesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/data-sources/roles#id DataSnowflakeRoles#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRoles.DataSnowflakeRolesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/roles#id DataSnowflakeRoles#id}. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRoles.DataSnowflakeRolesConfig.property.pattern">Pattern</a></code> | <code>*string</code> | Filters the command output by object name. |
 
 ---
@@ -671,7 +671,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/data-sources/roles#id DataSnowflakeRoles#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/roles#id DataSnowflakeRoles#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -688,7 +688,7 @@ Pattern *string
 
 Filters the command output by object name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/data-sources/roles#pattern DataSnowflakeRoles#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/roles#pattern DataSnowflakeRoles#pattern}
 
 ---
 
@@ -697,7 +697,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeRoles.DataSnowflakeRolesRoles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8/datasnowflakeroles"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeroles"
 
 &datasnowflakeroles.DataSnowflakeRolesRoles {
 
@@ -712,7 +712,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8/datasnowflaker
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeRoles.DataSnowflakeRolesRolesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8/datasnowflakeroles"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeroles"
 
 datasnowflakeroles.NewDataSnowflakeRolesRolesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeRolesRolesList
 ```
@@ -844,7 +844,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeRoles.DataSnowflakeRolesRolesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8/datasnowflakeroles"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeroles"
 
 datasnowflakeroles.NewDataSnowflakeRolesRolesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeRolesRolesOutputReference
 ```

@@ -4,6 +4,7 @@ The following submodules are available:
 - [account](./account.python.md)
 - [accountGrant](./accountGrant.python.md)
 - [accountParameter](./accountParameter.python.md)
+- [accountPasswordPolicyAttachment](./accountPasswordPolicyAttachment.python.md)
 - [alert](./alert.python.md)
 - [apiIntegration](./apiIntegration.python.md)
 - [dataSnowflakeAccounts](./dataSnowflakeAccounts.python.md)

@@ -4,6 +4,7 @@ The following submodules are available:
 - [account](./account.csharp.md)
 - [accountGrant](./accountGrant.csharp.md)
 - [accountParameter](./accountParameter.csharp.md)
+- [accountPasswordPolicyAttachment](./accountPasswordPolicyAttachment.csharp.md)
 - [alert](./alert.csharp.md)
 - [apiIntegration](./apiIntegration.csharp.md)
 - [dataSnowflakeAccounts](./dataSnowflakeAccounts.csharp.md)

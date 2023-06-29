@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/table_column_masking_policy_application
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/table_column_masking_policy_application
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface TableColumnMaskingPolicyApplicationConfig extends cdktf.Terrafo
   /**
   * The column to apply the masking policy to.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/table_column_masking_policy_application#column TableColumnMaskingPolicyApplication#column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/table_column_masking_policy_application#column TableColumnMaskingPolicyApplication#column}
   */
   readonly column: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/table_column_masking_policy_application#id TableColumnMaskingPolicyApplication#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/table_column_masking_policy_application#id TableColumnMaskingPolicyApplication#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,19 +23,19 @@ export interface TableColumnMaskingPolicyApplicationConfig extends cdktf.Terrafo
   /**
   * Fully qualified name (`database.schema.policyname`) of the policy to apply.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/table_column_masking_policy_application#masking_policy TableColumnMaskingPolicyApplication#masking_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/table_column_masking_policy_application#masking_policy TableColumnMaskingPolicyApplication#masking_policy}
   */
   readonly maskingPolicy: string;
   /**
   * The fully qualified name (`database.schema.table`) of the table to apply the masking policy to.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/table_column_masking_policy_application#table TableColumnMaskingPolicyApplication#table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/table_column_masking_policy_application#table TableColumnMaskingPolicyApplication#table}
   */
   readonly table: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/table_column_masking_policy_application snowflake_table_column_masking_policy_application}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/table_column_masking_policy_application snowflake_table_column_masking_policy_application}
 */
 export class TableColumnMaskingPolicyApplication extends cdktf.TerraformResource {
 
@@ -54,7 +49,7 @@ export class TableColumnMaskingPolicyApplication extends cdktf.TerraformResource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.66.2/docs/resources/table_column_masking_policy_application snowflake_table_column_masking_policy_application} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/table_column_masking_policy_application snowflake_table_column_masking_policy_application} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +60,7 @@ export class TableColumnMaskingPolicyApplication extends cdktf.TerraformResource
       terraformResourceType: 'snowflake_table_column_masking_policy_application',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.66.2',
+        providerVersion: '0.67.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
