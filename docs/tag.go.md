@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.tag.Tag.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tag"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8/tag"
 
 tag.NewTag(scope Construct, id *string, config TagConfig) Tag
 ```
@@ -291,7 +291,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.tag.Tag.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tag"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8/tag"
 
 tag.Tag_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.tag.Tag.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tag"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8/tag"
 
 tag.Tag_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ tag.Tag_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.tag.Tag.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tag"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8/tag"
 
 tag.Tag_IsTerraformResource(x interface{}) *bool
 ```
@@ -668,7 +668,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.tag.TagConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tag"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8/tag"
 
 &tag.TagConfig {
 	Connection: interface{},
