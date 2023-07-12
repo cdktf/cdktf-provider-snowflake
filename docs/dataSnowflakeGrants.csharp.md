@@ -1,6 +1,6 @@
 # `data_snowflake_grants`
 
-Refer to the Terraform Registory for docs: [`data_snowflake_grants`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/grants).
+Refer to the Terraform Registory for docs: [`data_snowflake_grants`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/data-sources/grants).
 
 # `dataSnowflakeGrants` Submodule <a name="`dataSnowflakeGrants` Submodule" id="@cdktf/provider-snowflake.dataSnowflakeGrants"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_snowflake_grants`](https://reg
 
 ### DataSnowflakeGrants <a name="DataSnowflakeGrants" id="@cdktf/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrants"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/grants snowflake_grants}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/data-sources/grants snowflake_grants}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrants.Initializer"></a>
 
@@ -778,7 +778,7 @@ new DataSnowflakeGrantsConfig {
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsConfig.property.grantsOf">GrantsOf</a></code> | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsOf">DataSnowflakeGrantsGrantsOf</a></code> | grants_of block. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsConfig.property.grantsOn">GrantsOn</a></code> | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsOn">DataSnowflakeGrantsGrantsOn</a></code> | grants_on block. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsConfig.property.grantsTo">GrantsTo</a></code> | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsTo">DataSnowflakeGrantsGrantsTo</a></code> | grants_to block. |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/grants#id DataSnowflakeGrants#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/data-sources/grants#id DataSnowflakeGrants#id}. |
 
 ---
 
@@ -862,7 +862,7 @@ public DataSnowflakeGrantsFutureGrantsIn FutureGrantsIn { get; set; }
 
 future_grants_in block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/grants#future_grants_in DataSnowflakeGrants#future_grants_in}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/data-sources/grants#future_grants_in DataSnowflakeGrants#future_grants_in}
 
 ---
 
@@ -876,7 +876,7 @@ public DataSnowflakeGrantsFutureGrantsTo FutureGrantsTo { get; set; }
 
 future_grants_to block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/grants#future_grants_to DataSnowflakeGrants#future_grants_to}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/data-sources/grants#future_grants_to DataSnowflakeGrants#future_grants_to}
 
 ---
 
@@ -890,7 +890,7 @@ public DataSnowflakeGrantsGrantsOf GrantsOf { get; set; }
 
 grants_of block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/grants#grants_of DataSnowflakeGrants#grants_of}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/data-sources/grants#grants_of DataSnowflakeGrants#grants_of}
 
 ---
 
@@ -904,7 +904,7 @@ public DataSnowflakeGrantsGrantsOn GrantsOn { get; set; }
 
 grants_on block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/grants#grants_on DataSnowflakeGrants#grants_on}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/data-sources/grants#grants_on DataSnowflakeGrants#grants_on}
 
 ---
 
@@ -918,7 +918,7 @@ public DataSnowflakeGrantsGrantsTo GrantsTo { get; set; }
 
 grants_to block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/grants#grants_to DataSnowflakeGrants#grants_to}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/data-sources/grants#grants_to DataSnowflakeGrants#grants_to}
 
 ---
 
@@ -930,7 +930,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/grants#id DataSnowflakeGrants#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/data-sources/grants#id DataSnowflakeGrants#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -969,7 +969,7 @@ public string Database { get; set; }
 
 Lists all privileges on new (i.e. future) objects of a specified type in the database granted to a role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/grants#database DataSnowflakeGrants#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/data-sources/grants#database DataSnowflakeGrants#database}
 
 ---
 
@@ -983,7 +983,7 @@ public DataSnowflakeGrantsFutureGrantsInSchema Schema { get; set; }
 
 schema block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/grants#schema DataSnowflakeGrants#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/data-sources/grants#schema DataSnowflakeGrants#schema}
 
 ---
 
@@ -1019,7 +1019,7 @@ public string SchemaName { get; set; }
 
 The name of the schema to list all privileges of new (ie. future) objects granted to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/grants#schema_name DataSnowflakeGrants#schema_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/data-sources/grants#schema_name DataSnowflakeGrants#schema_name}
 
 ---
 
@@ -1033,7 +1033,7 @@ public string DatabaseName { get; set; }
 
 The database in which the scehma resides. Optional when querying a schema in the current database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/grants#database_name DataSnowflakeGrants#database_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/data-sources/grants#database_name DataSnowflakeGrants#database_name}
 
 ---
 
@@ -1067,7 +1067,7 @@ public string Role { get; set; }
 
 Lists all privileges on new (i.e. future) objects of a specified type in a database or schema granted to the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/grants#role DataSnowflakeGrants#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/data-sources/grants#role DataSnowflakeGrants#role}
 
 ---
 
@@ -1116,7 +1116,7 @@ public string Role { get; set; }
 
 Lists all users and roles to which the role has been granted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/grants#role DataSnowflakeGrants#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/data-sources/grants#role DataSnowflakeGrants#role}
 
 ---
 
@@ -1130,7 +1130,7 @@ public string Share { get; set; }
 
 Lists all the accounts for the share and indicates the accounts that are using the share.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/grants#share DataSnowflakeGrants#share}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/data-sources/grants#share DataSnowflakeGrants#share}
 
 ---
 
@@ -1170,7 +1170,7 @@ Object hierarchy to list privileges on.
 
 The only valid value is: ACCOUNT. Setting this attribute lists all the account-level (i.e. global) privileges that have been granted to roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/grants#account DataSnowflakeGrants#account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/data-sources/grants#account DataSnowflakeGrants#account}
 
 ---
 
@@ -1184,7 +1184,7 @@ public string ObjectName { get; set; }
 
 Name of object to list privileges on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/grants#object_name DataSnowflakeGrants#object_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/data-sources/grants#object_name DataSnowflakeGrants#object_name}
 
 ---
 
@@ -1198,7 +1198,7 @@ public string ObjectType { get; set; }
 
 Type of object to list privileges on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/grants#object_type DataSnowflakeGrants#object_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/data-sources/grants#object_type DataSnowflakeGrants#object_type}
 
 ---
 
@@ -1236,7 +1236,7 @@ public string Role { get; set; }
 
 Lists all privileges and roles granted to the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/grants#role DataSnowflakeGrants#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/data-sources/grants#role DataSnowflakeGrants#role}
 
 ---
 
@@ -1250,7 +1250,7 @@ public string Share { get; set; }
 
 Lists all the privileges granted to the share.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/grants#share DataSnowflakeGrants#share}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/data-sources/grants#share DataSnowflakeGrants#share}
 
 ---
 
@@ -1266,7 +1266,7 @@ Lists all the roles granted to the user.
 
 Note that the PUBLIC role, which is automatically available to every user, is not listed
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/grants#user DataSnowflakeGrants#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/data-sources/grants#user DataSnowflakeGrants#user}
 
 ---
 

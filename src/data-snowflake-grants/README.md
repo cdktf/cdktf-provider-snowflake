@@ -1,3 +1,3 @@
 # `data_snowflake_grants`
 
-Refer to the Terraform Registory for docs: [`data_snowflake_grants`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/grants).
+Refer to the Terraform Registory for docs: [`data_snowflake_grants`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/data-sources/grants).

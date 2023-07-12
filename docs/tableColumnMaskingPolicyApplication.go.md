@@ -1,6 +1,6 @@
 # `snowflake_table_column_masking_policy_application`
 
-Refer to the Terraform Registory for docs: [`snowflake_table_column_masking_policy_application`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/table_column_masking_policy_application).
+Refer to the Terraform Registory for docs: [`snowflake_table_column_masking_policy_application`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/resources/table_column_masking_policy_application).
 
 # `tableColumnMaskingPolicyApplication` Submodule <a name="`tableColumnMaskingPolicyApplication` Submodule" id="@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`snowflake_table_column_masking_poli
 
 ### TableColumnMaskingPolicyApplication <a name="TableColumnMaskingPolicyApplication" id="@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/table_column_masking_policy_application snowflake_table_column_masking_policy_application}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/resources/table_column_masking_policy_application snowflake_table_column_masking_policy_application}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8/tablecolumnmaskingpolicyapplication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tablecolumnmaskingpolicyapplication"
 
 tablecolumnmaskingpolicyapplication.NewTableColumnMaskingPolicyApplication(scope Construct, id *string, config TableColumnMaskingPolicyApplicationConfig) TableColumnMaskingPolicyApplication
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8/tablecolumnmaskingpolicyapplication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tablecolumnmaskingpolicyapplication"
 
 tablecolumnmaskingpolicyapplication.TableColumnMaskingPolicyApplication_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8/tablecolumnmaskingpolicyapplication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tablecolumnmaskingpolicyapplication"
 
 tablecolumnmaskingpolicyapplication.TableColumnMaskingPolicyApplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ tablecolumnmaskingpolicyapplication.TableColumnMaskingPolicyApplication_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplication.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8/tablecolumnmaskingpolicyapplication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tablecolumnmaskingpolicyapplication"
 
 tablecolumnmaskingpolicyapplication.TableColumnMaskingPolicyApplication_IsTerraformResource(x interface{}) *bool
 ```
@@ -610,7 +610,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8/tablecolumnmaskingpolicyapplication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tablecolumnmaskingpolicyapplication"
 
 &tablecolumnmaskingpolicyapplication.TableColumnMaskingPolicyApplicationConfig {
 	Connection: interface{},
@@ -641,7 +641,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8/tablecolumnmas
 | <code><a href="#@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplicationConfig.property.column">Column</a></code> | <code>*string</code> | The column to apply the masking policy to. |
 | <code><a href="#@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplicationConfig.property.maskingPolicy">MaskingPolicy</a></code> | <code>*string</code> | Fully qualified name (`database.schema.policyname`) of the policy to apply. |
 | <code><a href="#@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplicationConfig.property.table">Table</a></code> | <code>*string</code> | The fully qualified name (`database.schema.table`) of the table to apply the masking policy to. |
-| <code><a href="#@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplicationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/table_column_masking_policy_application#id TableColumnMaskingPolicyApplication#id}. |
+| <code><a href="#@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplicationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/resources/table_column_masking_policy_application#id TableColumnMaskingPolicyApplication#id}. |
 
 ---
 
@@ -725,7 +725,7 @@ Column *string
 
 The column to apply the masking policy to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/table_column_masking_policy_application#column TableColumnMaskingPolicyApplication#column}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/resources/table_column_masking_policy_application#column TableColumnMaskingPolicyApplication#column}
 
 ---
 
@@ -739,7 +739,7 @@ MaskingPolicy *string
 
 Fully qualified name (`database.schema.policyname`) of the policy to apply.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/table_column_masking_policy_application#masking_policy TableColumnMaskingPolicyApplication#masking_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/resources/table_column_masking_policy_application#masking_policy TableColumnMaskingPolicyApplication#masking_policy}
 
 ---
 
@@ -753,7 +753,7 @@ Table *string
 
 The fully qualified name (`database.schema.table`) of the table to apply the masking policy to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/table_column_masking_policy_application#table TableColumnMaskingPolicyApplication#table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/resources/table_column_masking_policy_application#table TableColumnMaskingPolicyApplication#table}
 
 ---
 
@@ -765,7 +765,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/table_column_masking_policy_application#id TableColumnMaskingPolicyApplication#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/resources/table_column_masking_policy_application#id TableColumnMaskingPolicyApplication#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

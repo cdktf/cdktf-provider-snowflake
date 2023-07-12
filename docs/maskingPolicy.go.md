@@ -1,6 +1,6 @@
 # `snowflake_masking_policy`
 
-Refer to the Terraform Registory for docs: [`snowflake_masking_policy`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/masking_policy).
+Refer to the Terraform Registory for docs: [`snowflake_masking_policy`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/resources/masking_policy).
 
 # `maskingPolicy` Submodule <a name="`maskingPolicy` Submodule" id="@cdktf/provider-snowflake.maskingPolicy"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`snowflake_masking_policy`](https://
 
 ### MaskingPolicy <a name="MaskingPolicy" id="@cdktf/provider-snowflake.maskingPolicy.MaskingPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/masking_policy snowflake_masking_policy}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/resources/masking_policy snowflake_masking_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.maskingPolicy.MaskingPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8/maskingpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/maskingpolicy"
 
 maskingpolicy.NewMaskingPolicy(scope Construct, id *string, config MaskingPolicyConfig) MaskingPolicy
 ```
@@ -318,7 +318,7 @@ func ResetOrReplace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.maskingPolicy.MaskingPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8/maskingpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/maskingpolicy"
 
 maskingpolicy.MaskingPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.maskingPolicy.MaskingPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8/maskingpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/maskingpolicy"
 
 maskingpolicy.MaskingPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ maskingpolicy.MaskingPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.maskingPolicy.MaskingPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8/maskingpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/maskingpolicy"
 
 maskingpolicy.MaskingPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -816,7 +816,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.maskingPolicy.MaskingPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8/maskingpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/maskingpolicy"
 
 &maskingpolicy.MaskingPolicyConfig {
 	Connection: interface{},
@@ -831,7 +831,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8/maskingpolicy"
 	Name: *string,
 	ReturnDataType: *string,
 	Schema: *string,
-	Signature: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8.maskingPolicy.MaskingPolicySignature,
+	Signature: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.maskingPolicy.MaskingPolicySignature,
 	Comment: *string,
 	ExemptOtherPolicies: interface{},
 	Id: *string,
@@ -859,7 +859,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8/maskingpolicy"
 | <code><a href="#@cdktf/provider-snowflake.maskingPolicy.MaskingPolicyConfig.property.signature">Signature</a></code> | <code><a href="#@cdktf/provider-snowflake.maskingPolicy.MaskingPolicySignature">MaskingPolicySignature</a></code> | signature block. |
 | <code><a href="#@cdktf/provider-snowflake.maskingPolicy.MaskingPolicyConfig.property.comment">Comment</a></code> | <code>*string</code> | Specifies a comment for the masking policy. |
 | <code><a href="#@cdktf/provider-snowflake.maskingPolicy.MaskingPolicyConfig.property.exemptOtherPolicies">ExemptOtherPolicies</a></code> | <code>interface{}</code> | Specifies whether the row access policy or conditional masking policy can reference a column that is already protected by a masking policy. |
-| <code><a href="#@cdktf/provider-snowflake.maskingPolicy.MaskingPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/masking_policy#id MaskingPolicy#id}. |
+| <code><a href="#@cdktf/provider-snowflake.maskingPolicy.MaskingPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/resources/masking_policy#id MaskingPolicy#id}. |
 | <code><a href="#@cdktf/provider-snowflake.maskingPolicy.MaskingPolicyConfig.property.ifNotExists">IfNotExists</a></code> | <code>interface{}</code> | Prevent overwriting a previous masking policy with the same name. |
 | <code><a href="#@cdktf/provider-snowflake.maskingPolicy.MaskingPolicyConfig.property.orReplace">OrReplace</a></code> | <code>interface{}</code> | Whether to override a previous masking policy with the same name. |
 
@@ -945,7 +945,7 @@ Database *string
 
 The database in which to create the masking policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/masking_policy#database MaskingPolicy#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/resources/masking_policy#database MaskingPolicy#database}
 
 ---
 
@@ -959,7 +959,7 @@ MaskingExpression *string
 
 Specifies the SQL expression that transforms the data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/masking_policy#masking_expression MaskingPolicy#masking_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/resources/masking_policy#masking_expression MaskingPolicy#masking_expression}
 
 ---
 
@@ -975,7 +975,7 @@ Specifies the identifier for the masking policy;
 
 must be unique for the database and schema in which the masking policy is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/masking_policy#name MaskingPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/resources/masking_policy#name MaskingPolicy#name}
 
 ---
 
@@ -989,7 +989,7 @@ ReturnDataType *string
 
 Specifies the data type to return.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/masking_policy#return_data_type MaskingPolicy#return_data_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/resources/masking_policy#return_data_type MaskingPolicy#return_data_type}
 
 ---
 
@@ -1003,7 +1003,7 @@ Schema *string
 
 The schema in which to create the masking policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/masking_policy#schema MaskingPolicy#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/resources/masking_policy#schema MaskingPolicy#schema}
 
 ---
 
@@ -1017,7 +1017,7 @@ Signature MaskingPolicySignature
 
 signature block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/masking_policy#signature MaskingPolicy#signature}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/resources/masking_policy#signature MaskingPolicy#signature}
 
 ---
 
@@ -1031,7 +1031,7 @@ Comment *string
 
 Specifies a comment for the masking policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/masking_policy#comment MaskingPolicy#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/resources/masking_policy#comment MaskingPolicy#comment}
 
 ---
 
@@ -1045,7 +1045,7 @@ ExemptOtherPolicies interface{}
 
 Specifies whether the row access policy or conditional masking policy can reference a column that is already protected by a masking policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/masking_policy#exempt_other_policies MaskingPolicy#exempt_other_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/resources/masking_policy#exempt_other_policies MaskingPolicy#exempt_other_policies}
 
 ---
 
@@ -1057,7 +1057,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/masking_policy#id MaskingPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/resources/masking_policy#id MaskingPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1074,7 +1074,7 @@ IfNotExists interface{}
 
 Prevent overwriting a previous masking policy with the same name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/masking_policy#if_not_exists MaskingPolicy#if_not_exists}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/resources/masking_policy#if_not_exists MaskingPolicy#if_not_exists}
 
 ---
 
@@ -1088,7 +1088,7 @@ OrReplace interface{}
 
 Whether to override a previous masking policy with the same name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/masking_policy#or_replace MaskingPolicy#or_replace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/resources/masking_policy#or_replace MaskingPolicy#or_replace}
 
 ---
 
@@ -1097,7 +1097,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.maskingPolicy.MaskingPolicySignature.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8/maskingpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/maskingpolicy"
 
 &maskingpolicy.MaskingPolicySignature {
 	Column: interface{},
@@ -1122,7 +1122,7 @@ Column interface{}
 
 column block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/masking_policy#column MaskingPolicy#column}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/resources/masking_policy#column MaskingPolicy#column}
 
 ---
 
@@ -1131,7 +1131,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.maskingPolicy.MaskingPolicySignatureColumn.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8/maskingpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/maskingpolicy"
 
 &maskingpolicy.MaskingPolicySignatureColumn {
 	Name: *string,
@@ -1158,7 +1158,7 @@ Name *string
 
 Specifies the column name to mask.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/masking_policy#name MaskingPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/resources/masking_policy#name MaskingPolicy#name}
 
 ---
 
@@ -1172,7 +1172,7 @@ Type *string
 
 Specifies the column type to mask.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/masking_policy#type MaskingPolicy#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/resources/masking_policy#type MaskingPolicy#type}
 
 ---
 
@@ -1183,7 +1183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.maskingPolicy.MaskingPolicySignatureColumnList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8/maskingpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/maskingpolicy"
 
 maskingpolicy.NewMaskingPolicySignatureColumnList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MaskingPolicySignatureColumnList
 ```
@@ -1326,7 +1326,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.maskingPolicy.MaskingPolicySignatureColumnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8/maskingpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/maskingpolicy"
 
 maskingpolicy.NewMaskingPolicySignatureColumnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MaskingPolicySignatureColumnOutputReference
 ```
@@ -1637,7 +1637,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.maskingPolicy.MaskingPolicySignatureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8/maskingpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/maskingpolicy"
 
 maskingpolicy.NewMaskingPolicySignatureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MaskingPolicySignatureOutputReference
 ```

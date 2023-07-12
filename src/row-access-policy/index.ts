@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/row_access_policy
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/resources/row_access_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface RowAccessPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies a comment for the row access policy.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/row_access_policy#comment RowAccessPolicy#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/resources/row_access_policy#comment RowAccessPolicy#comment}
   */
   readonly comment?: string;
   /**
   * The database in which to create the row access policy.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/row_access_policy#database RowAccessPolicy#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/resources/row_access_policy#database RowAccessPolicy#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/row_access_policy#id RowAccessPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/resources/row_access_policy#id RowAccessPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,31 +29,31 @@ export interface RowAccessPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies the identifier for the row access policy; must be unique for the database and schema in which the row access policy is created.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/row_access_policy#name RowAccessPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/resources/row_access_policy#name RowAccessPolicy#name}
   */
   readonly name: string;
   /**
   * Specifies the SQL expression. The expression can be any boolean-valued SQL expression.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/row_access_policy#row_access_expression RowAccessPolicy#row_access_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/resources/row_access_policy#row_access_expression RowAccessPolicy#row_access_expression}
   */
   readonly rowAccessExpression: string;
   /**
   * The schema in which to create the row access policy.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/row_access_policy#schema RowAccessPolicy#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/resources/row_access_policy#schema RowAccessPolicy#schema}
   */
   readonly schema: string;
   /**
   * Specifies signature (arguments) for the row access policy (uppercase and sorted to avoid recreation of resource). A signature specifies a set of attributes that must be considered to determine whether the row is accessible. The attribute values come from the database object (e.g. table or view) to be protected by the row access policy.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/row_access_policy#signature RowAccessPolicy#signature}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/resources/row_access_policy#signature RowAccessPolicy#signature}
   */
   readonly signature: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/row_access_policy snowflake_row_access_policy}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/resources/row_access_policy snowflake_row_access_policy}
 */
 export class RowAccessPolicy extends cdktf.TerraformResource {
 
@@ -72,7 +67,7 @@ export class RowAccessPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/row_access_policy snowflake_row_access_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/resources/row_access_policy snowflake_row_access_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +78,7 @@ export class RowAccessPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_row_access_policy',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.67.0',
+        providerVersion: '0.68.1',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,

@@ -1,3 +1,3 @@
 # `snowflake_role_ownership_grant`
 
-Refer to the Terraform Registory for docs: [`snowflake_role_ownership_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/role_ownership_grant).
+Refer to the Terraform Registory for docs: [`snowflake_role_ownership_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/resources/role_ownership_grant).

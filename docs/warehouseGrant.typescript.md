@@ -1,6 +1,6 @@
 # `snowflake_warehouse_grant`
 
-Refer to the Terraform Registory for docs: [`snowflake_warehouse_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/warehouse_grant).
+Refer to the Terraform Registory for docs: [`snowflake_warehouse_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/resources/warehouse_grant).
 
 # `warehouseGrant` Submodule <a name="`warehouseGrant` Submodule" id="@cdktf/provider-snowflake.warehouseGrant"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`snowflake_warehouse_grant`](https:/
 
 ### WarehouseGrant <a name="WarehouseGrant" id="@cdktf/provider-snowflake.warehouseGrant.WarehouseGrant"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/warehouse_grant snowflake_warehouse_grant}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/resources/warehouse_grant snowflake_warehouse_grant}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.warehouseGrant.WarehouseGrant.Initializer"></a>
 
@@ -729,7 +729,7 @@ const warehouseGrantConfig: warehouseGrant.WarehouseGrantConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.warehouseGrant.WarehouseGrantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouseGrant.WarehouseGrantConfig.property.warehouseName">warehouseName</a></code> | <code>string</code> | The name of the warehouse on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.warehouseGrant.WarehouseGrantConfig.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
-| <code><a href="#@cdktf/provider-snowflake.warehouseGrant.WarehouseGrantConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/warehouse_grant#id WarehouseGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.warehouseGrant.WarehouseGrantConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/resources/warehouse_grant#id WarehouseGrant#id}. |
 | <code><a href="#@cdktf/provider-snowflake.warehouseGrant.WarehouseGrantConfig.property.privilege">privilege</a></code> | <code>string</code> | The privilege to grant on the warehouse. To grant all privileges, use the value `ALL PRIVILEGES`. |
 | <code><a href="#@cdktf/provider-snowflake.warehouseGrant.WarehouseGrantConfig.property.revertOwnershipToRoleName">revertOwnershipToRoleName</a></code> | <code>string</code> | The name of the role to revert ownership to on destroy. |
 | <code><a href="#@cdktf/provider-snowflake.warehouseGrant.WarehouseGrantConfig.property.roles">roles</a></code> | <code>string[]</code> | Grants privilege to these roles. |
@@ -817,7 +817,7 @@ public readonly warehouseName: string;
 
 The name of the warehouse on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/warehouse_grant#warehouse_name WarehouseGrant#warehouse_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/resources/warehouse_grant#warehouse_name WarehouseGrant#warehouse_name}
 
 ---
 
@@ -833,7 +833,7 @@ When this is set to true, multiple grants of the same type can be created.
 
 This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/warehouse_grant#enable_multiple_grants WarehouseGrant#enable_multiple_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/resources/warehouse_grant#enable_multiple_grants WarehouseGrant#enable_multiple_grants}
 
 ---
 
@@ -845,7 +845,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/warehouse_grant#id WarehouseGrant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/resources/warehouse_grant#id WarehouseGrant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -862,7 +862,7 @@ public readonly privilege: string;
 
 The privilege to grant on the warehouse. To grant all privileges, use the value `ALL PRIVILEGES`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/warehouse_grant#privilege WarehouseGrant#privilege}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/resources/warehouse_grant#privilege WarehouseGrant#privilege}
 
 ---
 
@@ -878,7 +878,7 @@ The name of the role to revert ownership to on destroy.
 
 Has no effect unless `privilege` is set to `OWNERSHIP`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/warehouse_grant#revert_ownership_to_role_name WarehouseGrant#revert_ownership_to_role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/resources/warehouse_grant#revert_ownership_to_role_name WarehouseGrant#revert_ownership_to_role_name}
 
 ---
 
@@ -892,7 +892,7 @@ public readonly roles: string[];
 
 Grants privilege to these roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/warehouse_grant#roles WarehouseGrant#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/resources/warehouse_grant#roles WarehouseGrant#roles}
 
 ---
 
@@ -906,7 +906,7 @@ public readonly withGrantOption: boolean | IResolvable;
 
 When this is set to true, allows the recipient role to grant the privileges to other roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/warehouse_grant#with_grant_option WarehouseGrant#with_grant_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/resources/warehouse_grant#with_grant_option WarehouseGrant#with_grant_option}
 
 ---
 

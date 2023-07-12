@@ -1,3 +1,3 @@
 # `snowflake_external_table`
 
-Refer to the Terraform Registory for docs: [`snowflake_external_table`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/resources/external_table).
+Refer to the Terraform Registory for docs: [`snowflake_external_table`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.1/docs/resources/external_table).
