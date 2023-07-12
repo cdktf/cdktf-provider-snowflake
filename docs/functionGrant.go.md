@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.functionGrant.FunctionGrant.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functiongrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8/functiongrant"
 
 functiongrant.NewFunctionGrant(scope Construct, id *string, config FunctionGrantConfig) FunctionGrant
 ```
@@ -347,7 +347,7 @@ func ResetWithGrantOption()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.functionGrant.FunctionGrant.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functiongrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8/functiongrant"
 
 functiongrant.FunctionGrant_IsConstruct(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.functionGrant.FunctionGrant.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functiongrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8/functiongrant"
 
 functiongrant.FunctionGrant_IsTerraformElement(x interface{}) *bool
 ```
@@ -393,7 +393,7 @@ functiongrant.FunctionGrant_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.functionGrant.FunctionGrant.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functiongrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8/functiongrant"
 
 functiongrant.FunctionGrant_IsTerraformResource(x interface{}) *bool
 ```
@@ -878,7 +878,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.functionGrant.FunctionGrantConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functiongrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8/functiongrant"
 
 &functiongrant.FunctionGrantConfig {
 	Connection: interface{},
