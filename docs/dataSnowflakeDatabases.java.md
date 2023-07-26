@@ -1,6 +1,6 @@
 # `data_snowflake_databases`
 
-Refer to the Terraform Registory for docs: [`data_snowflake_databases`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/databases).
+Refer to the Terraform Registory for docs: [`data_snowflake_databases`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/databases).
 
 # `dataSnowflakeDatabases` Submodule <a name="`dataSnowflakeDatabases` Submodule" id="@cdktf/provider-snowflake.dataSnowflakeDatabases"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_snowflake_databases`](https://
 
 ### DataSnowflakeDatabases <a name="DataSnowflakeDatabases" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/databases snowflake_databases}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/databases snowflake_databases}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.Initializer"></a>
 
@@ -49,7 +49,7 @@ DataSnowflakeDatabases.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.Initializer.parameter.history">history</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Optionally includes dropped databases that have not yet been purged The output also includes an additional `dropped_on` column. |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/databases#id DataSnowflakeDatabases#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/databases#id DataSnowflakeDatabases#id}. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.Initializer.parameter.pattern">pattern</a></code> | <code>java.lang.String</code> | Optionally filters the databases by a pattern. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.Initializer.parameter.startsWith">startsWith</a></code> | <code>java.lang.String</code> | Optionally filters the databases by a pattern. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.Initializer.parameter.terse">terse</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Optionally returns only the columns `created_on` and `name` in the results. |
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 Optionally includes dropped databases that have not yet been purged The output also includes an additional `dropped_on` column.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/databases#history DataSnowflakeDatabases#history}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/databases#history DataSnowflakeDatabases#history}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/databases#id DataSnowflakeDatabases#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/databases#id DataSnowflakeDatabases#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -143,7 +143,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Optionally filters the databases by a pattern.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/databases#pattern DataSnowflakeDatabases#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/databases#pattern DataSnowflakeDatabases#pattern}
 
 ---
 
@@ -153,7 +153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Optionally filters the databases by a pattern.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/databases#starts_with DataSnowflakeDatabases#starts_with}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/databases#starts_with DataSnowflakeDatabases#starts_with}
 
 ---
 
@@ -163,7 +163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Optionally returns only the columns `created_on` and `name` in the results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/databases#terse DataSnowflakeDatabases#terse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/databases#terse DataSnowflakeDatabases#terse}
 
 ---
 
@@ -802,7 +802,7 @@ DataSnowflakeDatabasesConfig.builder()
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.property.history">history</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Optionally includes dropped databases that have not yet been purged The output also includes an additional `dropped_on` column. |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/databases#id DataSnowflakeDatabases#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/databases#id DataSnowflakeDatabases#id}. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.property.pattern">pattern</a></code> | <code>java.lang.String</code> | Optionally filters the databases by a pattern. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.property.startsWith">startsWith</a></code> | <code>java.lang.String</code> | Optionally filters the databases by a pattern. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.property.terse">terse</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Optionally returns only the columns `created_on` and `name` in the results. |
@@ -889,7 +889,7 @@ public java.lang.Object getHistory();
 
 Optionally includes dropped databases that have not yet been purged The output also includes an additional `dropped_on` column.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/databases#history DataSnowflakeDatabases#history}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/databases#history DataSnowflakeDatabases#history}
 
 ---
 
@@ -901,7 +901,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/databases#id DataSnowflakeDatabases#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/databases#id DataSnowflakeDatabases#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -918,7 +918,7 @@ public java.lang.String getPattern();
 
 Optionally filters the databases by a pattern.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/databases#pattern DataSnowflakeDatabases#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/databases#pattern DataSnowflakeDatabases#pattern}
 
 ---
 
@@ -932,7 +932,7 @@ public java.lang.String getStartsWith();
 
 Optionally filters the databases by a pattern.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/databases#starts_with DataSnowflakeDatabases#starts_with}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/databases#starts_with DataSnowflakeDatabases#starts_with}
 
 ---
 
@@ -946,7 +946,7 @@ public java.lang.Object getTerse();
 
 Optionally returns only the columns `created_on` and `name` in the results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/databases#terse DataSnowflakeDatabases#terse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/databases#terse DataSnowflakeDatabases#terse}
 
 ---
 

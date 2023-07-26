@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/streams
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/streams
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -14,12 +9,12 @@ import * as cdktf from 'cdktf';
 export interface DataSnowflakeStreamsConfig extends cdktf.TerraformMetaArguments {
   /**
   * The database from which to return the streams from.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/streams#database DataSnowflakeStreams#database}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/streams#database DataSnowflakeStreams#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/streams#id DataSnowflakeStreams#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/streams#id DataSnowflakeStreams#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -27,8 +22,8 @@ export interface DataSnowflakeStreamsConfig extends cdktf.TerraformMetaArguments
   readonly id?: string;
   /**
   * The schema from which to return the streams from.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/streams#schema DataSnowflakeStreams#schema}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/streams#schema DataSnowflakeStreams#schema}
   */
   readonly schema: string;
 }
@@ -118,7 +113,7 @@ export class DataSnowflakeStreamsStreamsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/streams snowflake_streams}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/streams snowflake_streams}
 */
 export class DataSnowflakeStreams extends cdktf.TerraformDataSource {
 
@@ -132,7 +127,7 @@ export class DataSnowflakeStreams extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/streams snowflake_streams} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/streams snowflake_streams} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -143,7 +138,7 @@ export class DataSnowflakeStreams extends cdktf.TerraformDataSource {
       terraformResourceType: 'snowflake_streams',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.67.0',
+        providerVersion: '0.68.2',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,

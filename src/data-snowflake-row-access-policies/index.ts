@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/row_access_policies
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/row_access_policies
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -14,12 +9,12 @@ import * as cdktf from 'cdktf';
 export interface DataSnowflakeRowAccessPoliciesConfig extends cdktf.TerraformMetaArguments {
   /**
   * The database from which to return the schemas from.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/row_access_policies#database DataSnowflakeRowAccessPolicies#database}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/row_access_policies#database DataSnowflakeRowAccessPolicies#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/row_access_policies#id DataSnowflakeRowAccessPolicies#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/row_access_policies#id DataSnowflakeRowAccessPolicies#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -27,8 +22,8 @@ export interface DataSnowflakeRowAccessPoliciesConfig extends cdktf.TerraformMet
   readonly id?: string;
   /**
   * The schema from which to return the row access policyfrom.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/row_access_policies#schema DataSnowflakeRowAccessPolicies#schema}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/row_access_policies#schema DataSnowflakeRowAccessPolicies#schema}
   */
   readonly schema: string;
 }
@@ -113,7 +108,7 @@ export class DataSnowflakeRowAccessPoliciesRowAccessPoliciesList extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/row_access_policies snowflake_row_access_policies}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/row_access_policies snowflake_row_access_policies}
 */
 export class DataSnowflakeRowAccessPolicies extends cdktf.TerraformDataSource {
 
@@ -127,7 +122,7 @@ export class DataSnowflakeRowAccessPolicies extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.67.0/docs/data-sources/row_access_policies snowflake_row_access_policies} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/row_access_policies snowflake_row_access_policies} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -138,7 +133,7 @@ export class DataSnowflakeRowAccessPolicies extends cdktf.TerraformDataSource {
       terraformResourceType: 'snowflake_row_access_policies',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.67.0',
+        providerVersion: '0.68.2',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,

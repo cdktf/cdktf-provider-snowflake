@@ -58,6 +58,7 @@ The following submodules are available:
 - [fileFormatGrant](./fileFormatGrant.typescript.md)
 - [functionGrant](./functionGrant.typescript.md)
 - [functionResource](./functionResource.typescript.md)
+- [grantPrivilegesToRole](./grantPrivilegesToRole.typescript.md)
 - [integrationGrant](./integrationGrant.typescript.md)
 - [managedAccount](./managedAccount.typescript.md)
 - [maskingPolicy](./maskingPolicy.typescript.md)

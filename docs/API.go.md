@@ -58,6 +58,7 @@ The following submodules are available:
 - [fileFormatGrant](./fileFormatGrant.go.md)
 - [functionGrant](./functionGrant.go.md)
 - [functionResource](./functionResource.go.md)
+- [grantPrivilegesToRole](./grantPrivilegesToRole.go.md)
 - [integrationGrant](./integrationGrant.go.md)
 - [managedAccount](./managedAccount.go.md)
 - [maskingPolicy](./maskingPolicy.go.md)
