@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.stage.Stage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8/stage"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/stage"
 
 stage.NewStage(scope Construct, id *string, config StageConfig) Stage
 ```
@@ -367,7 +367,7 @@ func ResetUrl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.stage.Stage.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8/stage"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/stage"
 
 stage.Stage_IsConstruct(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.stage.Stage.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8/stage"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/stage"
 
 stage.Stage_IsTerraformElement(x interface{}) *bool
 ```
@@ -413,7 +413,7 @@ stage.Stage_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.stage.Stage.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8/stage"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/stage"
 
 stage.Stage_IsTerraformResource(x interface{}) *bool
 ```
@@ -942,7 +942,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.stage.StageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8/stage"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/stage"
 
 &stage.StageConfig {
 	Connection: interface{},
@@ -1283,7 +1283,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.stage.StageTag.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8/stage"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/stage"
 
 &stage.StageTag {
 	Name: *string,
@@ -1367,7 +1367,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.stage.StageTagList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8/stage"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/stage"
 
 stage.NewStageTagList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StageTagList
 ```
@@ -1510,7 +1510,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.stage.StageTagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v8/stage"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/stage"
 
 stage.NewStageTagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StageTagOutputReference
 ```
