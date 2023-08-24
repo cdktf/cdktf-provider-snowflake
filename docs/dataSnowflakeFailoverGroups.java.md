@@ -1,6 +1,6 @@
 # `data_snowflake_failover_groups`
 
-Refer to the Terraform Registory for docs: [`data_snowflake_failover_groups`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/failover_groups).
+Refer to the Terraform Registory for docs: [`data_snowflake_failover_groups`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/data-sources/failover_groups).
 
 # `dataSnowflakeFailoverGroups` Submodule <a name="`dataSnowflakeFailoverGroups` Submodule" id="@cdktf/provider-snowflake.dataSnowflakeFailoverGroups"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_snowflake_failover_groups`](ht
 
 ### DataSnowflakeFailoverGroups <a name="DataSnowflakeFailoverGroups" id="@cdktf/provider-snowflake.dataSnowflakeFailoverGroups.DataSnowflakeFailoverGroups"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/failover_groups snowflake_failover_groups}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/data-sources/failover_groups snowflake_failover_groups}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeFailoverGroups.DataSnowflakeFailoverGroups.Initializer"></a>
 
@@ -43,7 +43,7 @@ DataSnowflakeFailoverGroups.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeFailoverGroups.DataSnowflakeFailoverGroups.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeFailoverGroups.DataSnowflakeFailoverGroups.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeFailoverGroups.DataSnowflakeFailoverGroups.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeFailoverGroups.DataSnowflakeFailoverGroups.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/failover_groups#id DataSnowflakeFailoverGroups#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeFailoverGroups.DataSnowflakeFailoverGroups.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/data-sources/failover_groups#id DataSnowflakeFailoverGroups#id}. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeFailoverGroups.DataSnowflakeFailoverGroups.Initializer.parameter.inAccount">inAccount</a></code> | <code>java.lang.String</code> | Specifies the identifier for the account. |
 
 ---
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/failover_groups#id DataSnowflakeFailoverGroups#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/data-sources/failover_groups#id DataSnowflakeFailoverGroups#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -125,7 +125,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Specifies the identifier for the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/failover_groups#in_account DataSnowflakeFailoverGroups#in_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/data-sources/failover_groups#in_account DataSnowflakeFailoverGroups#in_account}
 
 ---
 
@@ -671,7 +671,7 @@ DataSnowflakeFailoverGroupsConfig.builder()
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeFailoverGroups.DataSnowflakeFailoverGroupsConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeFailoverGroups.DataSnowflakeFailoverGroupsConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeFailoverGroups.DataSnowflakeFailoverGroupsConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeFailoverGroups.DataSnowflakeFailoverGroupsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/failover_groups#id DataSnowflakeFailoverGroups#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeFailoverGroups.DataSnowflakeFailoverGroupsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/data-sources/failover_groups#id DataSnowflakeFailoverGroups#id}. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeFailoverGroups.DataSnowflakeFailoverGroupsConfig.property.inAccount">inAccount</a></code> | <code>java.lang.String</code> | Specifies the identifier for the account. |
 
 ---
@@ -754,7 +754,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/failover_groups#id DataSnowflakeFailoverGroups#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/data-sources/failover_groups#id DataSnowflakeFailoverGroups#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -771,7 +771,7 @@ public java.lang.String getInAccount();
 
 Specifies the identifier for the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/failover_groups#in_account DataSnowflakeFailoverGroups#in_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/data-sources/failover_groups#in_account DataSnowflakeFailoverGroups#in_account}
 
 ---
 

@@ -1,6 +1,6 @@
 # `snowflake_session_parameter`
 
-Refer to the Terraform Registory for docs: [`snowflake_session_parameter`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/resources/session_parameter).
+Refer to the Terraform Registory for docs: [`snowflake_session_parameter`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/resources/session_parameter).
 
 # `sessionParameter` Submodule <a name="`sessionParameter` Submodule" id="@cdktf/provider-snowflake.sessionParameter"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`snowflake_session_parameter`](https
 
 ### SessionParameter <a name="SessionParameter" id="@cdktf/provider-snowflake.sessionParameter.SessionParameter"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/resources/session_parameter snowflake_session_parameter}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/resources/session_parameter snowflake_session_parameter}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.sessionParameter.SessionParameter.Initializer"></a>
 
@@ -677,7 +677,7 @@ new SessionParameterConfig {
 | <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameterConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameterConfig.property.key">Key</a></code> | <code>string</code> | Name of session parameter. Valid values are those in [session parameters](https://docs.snowflake.com/en/sql-reference/parameters.html#session-parameters). |
 | <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameterConfig.property.value">Value</a></code> | <code>string</code> | Value of session parameter, as a string. Constraints are the same as those for the parameters in Snowflake documentation. |
-| <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameterConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/resources/session_parameter#id SessionParameter#id}. |
+| <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameterConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/resources/session_parameter#id SessionParameter#id}. |
 | <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameterConfig.property.onAccount">OnAccount</a></code> | <code>object</code> | If true, the session parameter will be set on the account level. |
 | <code><a href="#@cdktf/provider-snowflake.sessionParameter.SessionParameterConfig.property.user">User</a></code> | <code>string</code> | The user to set the session parameter for. Required if on_account is false. |
 
@@ -763,7 +763,7 @@ public string Key { get; set; }
 
 Name of session parameter. Valid values are those in [session parameters](https://docs.snowflake.com/en/sql-reference/parameters.html#session-parameters).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/resources/session_parameter#key SessionParameter#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/resources/session_parameter#key SessionParameter#key}
 
 ---
 
@@ -777,7 +777,7 @@ public string Value { get; set; }
 
 Value of session parameter, as a string. Constraints are the same as those for the parameters in Snowflake documentation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/resources/session_parameter#value SessionParameter#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/resources/session_parameter#value SessionParameter#value}
 
 ---
 
@@ -789,7 +789,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/resources/session_parameter#id SessionParameter#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/resources/session_parameter#id SessionParameter#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -806,7 +806,7 @@ public object OnAccount { get; set; }
 
 If true, the session parameter will be set on the account level.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/resources/session_parameter#on_account SessionParameter#on_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/resources/session_parameter#on_account SessionParameter#on_account}
 
 ---
 
@@ -820,7 +820,7 @@ public string User { get; set; }
 
 The user to set the session parameter for. Required if on_account is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/resources/session_parameter#user SessionParameter#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/resources/session_parameter#user SessionParameter#user}
 
 ---
 

@@ -1,6 +1,6 @@
 # `snowflake_user`
 
-Refer to the Terraform Registory for docs: [`snowflake_user`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/resources/user).
+Refer to the Terraform Registory for docs: [`snowflake_user`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/resources/user).
 
 # `user` Submodule <a name="`user` Submodule" id="@cdktf/provider-snowflake.user"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`snowflake_user`](https://registry.t
 
 ### User <a name="User" id="@cdktf/provider-snowflake.user.User"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/resources/user snowflake_user}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/resources/user snowflake_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.user.User.Initializer"></a>
 
@@ -70,7 +70,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.user.User.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.user.User.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.user.User.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.user.User.putTag">putTag</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.user.User.resetComment">resetComment</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.user.User.resetDefaultNamespace">resetDefaultNamespace</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.user.User.resetDefaultRole">resetDefaultRole</a></code> | *No description.* |
@@ -87,7 +86,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.user.User.resetPassword">resetPassword</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.user.User.resetRsaPublicKey">resetRsaPublicKey</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.user.User.resetRsaPublicKey2">resetRsaPublicKey2</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.user.User.resetTag">resetTag</a></code> | *No description.* |
 
 ---
 
@@ -275,18 +273,6 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
-##### `putTag` <a name="putTag" id="@cdktf/provider-snowflake.user.User.putTag"></a>
-
-```typescript
-public putTag(value: IResolvable | UserTag[]): void
-```
-
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-snowflake.user.User.putTag.parameter.value"></a>
-
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-snowflake.user.UserTag">UserTag</a>[]
-
----
-
 ##### `resetComment` <a name="resetComment" id="@cdktf/provider-snowflake.user.User.resetComment"></a>
 
 ```typescript
@@ -383,12 +369,6 @@ public resetRsaPublicKey(): void
 public resetRsaPublicKey2(): void
 ```
 
-##### `resetTag` <a name="resetTag" id="@cdktf/provider-snowflake.user.User.resetTag"></a>
-
-```typescript
-public resetTag(): void
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -478,7 +458,6 @@ user.User.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-snowflake.user.User.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.user.User.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.user.User.property.hasRsaPublicKey">hasRsaPublicKey</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.user.User.property.tag">tag</a></code> | <code><a href="#@cdktf/provider-snowflake.user.UserTagList">UserTagList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.user.User.property.commentInput">commentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.user.User.property.defaultNamespaceInput">defaultNamespaceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.user.User.property.defaultRoleInput">defaultRoleInput</a></code> | <code>string</code> | *No description.* |
@@ -496,7 +475,6 @@ user.User.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-snowflake.user.User.property.passwordInput">passwordInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.user.User.property.rsaPublicKey2Input">rsaPublicKey2Input</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.user.User.property.rsaPublicKeyInput">rsaPublicKeyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.user.User.property.tagInput">tagInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.user.UserTag">UserTag</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.user.User.property.comment">comment</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.user.User.property.defaultNamespace">defaultNamespace</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.user.User.property.defaultRole">defaultRole</a></code> | <code>string</code> | *No description.* |
@@ -669,16 +647,6 @@ public readonly hasRsaPublicKey: IResolvable;
 
 ---
 
-##### `tag`<sup>Required</sup> <a name="tag" id="@cdktf/provider-snowflake.user.User.property.tag"></a>
-
-```typescript
-public readonly tag: UserTagList;
-```
-
-- *Type:* <a href="#@cdktf/provider-snowflake.user.UserTagList">UserTagList</a>
-
----
-
 ##### `commentInput`<sup>Optional</sup> <a name="commentInput" id="@cdktf/provider-snowflake.user.User.property.commentInput"></a>
 
 ```typescript
@@ -846,16 +814,6 @@ public readonly rsaPublicKeyInput: string;
 ```
 
 - *Type:* string
-
----
-
-##### `tagInput`<sup>Optional</sup> <a name="tagInput" id="@cdktf/provider-snowflake.user.User.property.tagInput"></a>
-
-```typescript
-public readonly tagInput: IResolvable | UserTag[];
-```
-
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-snowflake.user.UserTag">UserTag</a>[]
 
 ---
 
@@ -1071,23 +1029,22 @@ const userConfig: user.UserConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.user.UserConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.user.UserConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.user.UserConfig.property.name">name</a></code> | <code>string</code> | Name of the user. Note that if you do not supply login_name this will be used as login_name. [doc](https://docs.snowflake.net/manuals/sql-reference/sql/create-user.html#required-parameters). |
-| <code><a href="#@cdktf/provider-snowflake.user.UserConfig.property.comment">comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/resources/user#comment User#comment}. |
+| <code><a href="#@cdktf/provider-snowflake.user.UserConfig.property.comment">comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/resources/user#comment User#comment}. |
 | <code><a href="#@cdktf/provider-snowflake.user.UserConfig.property.defaultNamespace">defaultNamespace</a></code> | <code>string</code> | Specifies the namespace (database only or database and schema) that is active by default for the user’s session upon login. |
 | <code><a href="#@cdktf/provider-snowflake.user.UserConfig.property.defaultRole">defaultRole</a></code> | <code>string</code> | Specifies the role that is active by default for the user’s session upon login. |
 | <code><a href="#@cdktf/provider-snowflake.user.UserConfig.property.defaultSecondaryRoles">defaultSecondaryRoles</a></code> | <code>string[]</code> | Specifies the set of secondary roles that are active for the user’s session upon login. |
 | <code><a href="#@cdktf/provider-snowflake.user.UserConfig.property.defaultWarehouse">defaultWarehouse</a></code> | <code>string</code> | Specifies the virtual warehouse that is active by default for the user’s session upon login. |
-| <code><a href="#@cdktf/provider-snowflake.user.UserConfig.property.disabled">disabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/resources/user#disabled User#disabled}. |
+| <code><a href="#@cdktf/provider-snowflake.user.UserConfig.property.disabled">disabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/resources/user#disabled User#disabled}. |
 | <code><a href="#@cdktf/provider-snowflake.user.UserConfig.property.displayName">displayName</a></code> | <code>string</code> | Name displayed for the user in the Snowflake web interface. |
 | <code><a href="#@cdktf/provider-snowflake.user.UserConfig.property.email">email</a></code> | <code>string</code> | Email address for the user. |
 | <code><a href="#@cdktf/provider-snowflake.user.UserConfig.property.firstName">firstName</a></code> | <code>string</code> | First name of the user. |
-| <code><a href="#@cdktf/provider-snowflake.user.UserConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/resources/user#id User#id}. |
+| <code><a href="#@cdktf/provider-snowflake.user.UserConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/resources/user#id User#id}. |
 | <code><a href="#@cdktf/provider-snowflake.user.UserConfig.property.lastName">lastName</a></code> | <code>string</code> | Last name of the user. |
 | <code><a href="#@cdktf/provider-snowflake.user.UserConfig.property.loginName">loginName</a></code> | <code>string</code> | The name users use to log in. If not supplied, snowflake will use name instead. |
 | <code><a href="#@cdktf/provider-snowflake.user.UserConfig.property.mustChangePassword">mustChangePassword</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies whether the user is forced to change their password on next login (including their first/initial login) into the system. |
 | <code><a href="#@cdktf/provider-snowflake.user.UserConfig.property.password">password</a></code> | <code>string</code> | **WARNING:** this will put the password in the terraform state file. Use carefully. |
 | <code><a href="#@cdktf/provider-snowflake.user.UserConfig.property.rsaPublicKey">rsaPublicKey</a></code> | <code>string</code> | Specifies the user’s RSA public key; used for key-pair authentication. Must be on 1 line without header and trailer. |
 | <code><a href="#@cdktf/provider-snowflake.user.UserConfig.property.rsaPublicKey2">rsaPublicKey2</a></code> | <code>string</code> | Specifies the user’s second RSA public key; |
-| <code><a href="#@cdktf/provider-snowflake.user.UserConfig.property.tag">tag</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.user.UserTag">UserTag</a>[]</code> | tag block. |
 
 ---
 
@@ -1171,7 +1128,7 @@ public readonly name: string;
 
 Name of the user. Note that if you do not supply login_name this will be used as login_name. [doc](https://docs.snowflake.net/manuals/sql-reference/sql/create-user.html#required-parameters).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/resources/user#name User#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/resources/user#name User#name}
 
 ---
 
@@ -1183,7 +1140,7 @@ public readonly comment: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/resources/user#comment User#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/resources/user#comment User#comment}.
 
 ---
 
@@ -1197,7 +1154,7 @@ public readonly defaultNamespace: string;
 
 Specifies the namespace (database only or database and schema) that is active by default for the user’s session upon login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/resources/user#default_namespace User#default_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/resources/user#default_namespace User#default_namespace}
 
 ---
 
@@ -1211,7 +1168,7 @@ public readonly defaultRole: string;
 
 Specifies the role that is active by default for the user’s session upon login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/resources/user#default_role User#default_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/resources/user#default_role User#default_role}
 
 ---
 
@@ -1227,7 +1184,7 @@ Specifies the set of secondary roles that are active for the user’s session up
 
 Currently only ["ALL"] value is supported - more information can be found in [doc](https://docs.snowflake.com/en/sql-reference/sql/create-user#optional-object-properties-objectproperties)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/resources/user#default_secondary_roles User#default_secondary_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/resources/user#default_secondary_roles User#default_secondary_roles}
 
 ---
 
@@ -1241,7 +1198,7 @@ public readonly defaultWarehouse: string;
 
 Specifies the virtual warehouse that is active by default for the user’s session upon login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/resources/user#default_warehouse User#default_warehouse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/resources/user#default_warehouse User#default_warehouse}
 
 ---
 
@@ -1253,7 +1210,7 @@ public readonly disabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/resources/user#disabled User#disabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/resources/user#disabled User#disabled}.
 
 ---
 
@@ -1267,7 +1224,7 @@ public readonly displayName: string;
 
 Name displayed for the user in the Snowflake web interface.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/resources/user#display_name User#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/resources/user#display_name User#display_name}
 
 ---
 
@@ -1281,7 +1238,7 @@ public readonly email: string;
 
 Email address for the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/resources/user#email User#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/resources/user#email User#email}
 
 ---
 
@@ -1295,7 +1252,7 @@ public readonly firstName: string;
 
 First name of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/resources/user#first_name User#first_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/resources/user#first_name User#first_name}
 
 ---
 
@@ -1307,7 +1264,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/resources/user#id User#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/resources/user#id User#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1324,7 +1281,7 @@ public readonly lastName: string;
 
 Last name of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/resources/user#last_name User#last_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/resources/user#last_name User#last_name}
 
 ---
 
@@ -1338,7 +1295,7 @@ public readonly loginName: string;
 
 The name users use to log in. If not supplied, snowflake will use name instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/resources/user#login_name User#login_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/resources/user#login_name User#login_name}
 
 ---
 
@@ -1352,7 +1309,7 @@ public readonly mustChangePassword: boolean | IResolvable;
 
 Specifies whether the user is forced to change their password on next login (including their first/initial login) into the system.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/resources/user#must_change_password User#must_change_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/resources/user#must_change_password User#must_change_password}
 
 ---
 
@@ -1366,7 +1323,7 @@ public readonly password: string;
 
 **WARNING:** this will put the password in the terraform state file. Use carefully.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/resources/user#password User#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/resources/user#password User#password}
 
 ---
 
@@ -1380,7 +1337,7 @@ public readonly rsaPublicKey: string;
 
 Specifies the user’s RSA public key; used for key-pair authentication. Must be on 1 line without header and trailer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/resources/user#rsa_public_key User#rsa_public_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/resources/user#rsa_public_key User#rsa_public_key}
 
 ---
 
@@ -1396,611 +1353,7 @@ Specifies the user’s second RSA public key;
 
 used to rotate the public and private keys for key-pair authentication based on an expiration schedule set by your organization. Must be on 1 line without header and trailer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/resources/user#rsa_public_key_2 User#rsa_public_key_2}
-
----
-
-##### `tag`<sup>Optional</sup> <a name="tag" id="@cdktf/provider-snowflake.user.UserConfig.property.tag"></a>
-
-```typescript
-public readonly tag: IResolvable | UserTag[];
-```
-
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-snowflake.user.UserTag">UserTag</a>[]
-
-tag block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/resources/user#tag User#tag}
-
----
-
-### UserTag <a name="UserTag" id="@cdktf/provider-snowflake.user.UserTag"></a>
-
-#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.user.UserTag.Initializer"></a>
-
-```typescript
-import { user } from '@cdktf/provider-snowflake'
-
-const userTag: user.UserTag = { ... }
-```
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.user.UserTag.property.name">name</a></code> | <code>string</code> | Tag name, e.g. department. |
-| <code><a href="#@cdktf/provider-snowflake.user.UserTag.property.value">value</a></code> | <code>string</code> | Tag value, e.g. marketing_info. |
-| <code><a href="#@cdktf/provider-snowflake.user.UserTag.property.database">database</a></code> | <code>string</code> | Name of the database that the tag was created in. |
-| <code><a href="#@cdktf/provider-snowflake.user.UserTag.property.schema">schema</a></code> | <code>string</code> | Name of the schema that the tag was created in. |
-
----
-
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.user.UserTag.property.name"></a>
-
-```typescript
-public readonly name: string;
-```
-
-- *Type:* string
-
-Tag name, e.g. department.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/resources/user#name User#name}
-
----
-
-##### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-snowflake.user.UserTag.property.value"></a>
-
-```typescript
-public readonly value: string;
-```
-
-- *Type:* string
-
-Tag value, e.g. marketing_info.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/resources/user#value User#value}
-
----
-
-##### `database`<sup>Optional</sup> <a name="database" id="@cdktf/provider-snowflake.user.UserTag.property.database"></a>
-
-```typescript
-public readonly database: string;
-```
-
-- *Type:* string
-
-Name of the database that the tag was created in.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/resources/user#database User#database}
-
----
-
-##### `schema`<sup>Optional</sup> <a name="schema" id="@cdktf/provider-snowflake.user.UserTag.property.schema"></a>
-
-```typescript
-public readonly schema: string;
-```
-
-- *Type:* string
-
-Name of the schema that the tag was created in.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/resources/user#schema User#schema}
-
----
-
-## Classes <a name="Classes" id="Classes"></a>
-
-### UserTagList <a name="UserTagList" id="@cdktf/provider-snowflake.user.UserTagList"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.user.UserTagList.Initializer"></a>
-
-```typescript
-import { user } from '@cdktf/provider-snowflake'
-
-new user.UserTagList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.user.UserTagList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-snowflake.user.UserTagList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-snowflake.user.UserTagList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.user.UserTagList.Initializer.parameter.terraformResource"></a>
-
-- *Type:* cdktf.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.user.UserTagList.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-snowflake.user.UserTagList.Initializer.parameter.wrapsSet"></a>
-
-- *Type:* boolean
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.user.UserTagList.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.user.UserTagList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-snowflake.user.UserTagList.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-snowflake.user.UserTagList.get">get</a></code> | *No description.* |
-
----
-
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-snowflake.user.UserTagList.computeFqn"></a>
-
-```typescript
-public computeFqn(): string
-```
-
-##### `resolve` <a name="resolve" id="@cdktf/provider-snowflake.user.UserTagList.resolve"></a>
-
-```typescript
-public resolve(_context: IResolveContext): any
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-snowflake.user.UserTagList.resolve.parameter._context"></a>
-
-- *Type:* cdktf.IResolveContext
-
----
-
-##### `toString` <a name="toString" id="@cdktf/provider-snowflake.user.UserTagList.toString"></a>
-
-```typescript
-public toString(): string
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `get` <a name="get" id="@cdktf/provider-snowflake.user.UserTagList.get"></a>
-
-```typescript
-public get(index: number): UserTagOutputReference
-```
-
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.user.UserTagList.get.parameter.index"></a>
-
-- *Type:* number
-
-the index of the item to return.
-
----
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.user.UserTagList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-snowflake.user.UserTagList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.user.UserTagList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.user.UserTag">UserTag</a>[]</code> | *No description.* |
-
----
-
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-snowflake.user.UserTagList.property.creationStack"></a>
-
-```typescript
-public readonly creationStack: string[];
-```
-
-- *Type:* string[]
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.user.UserTagList.property.fqn"></a>
-
-```typescript
-public readonly fqn: string;
-```
-
-- *Type:* string
-
----
-
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-snowflake.user.UserTagList.property.internalValue"></a>
-
-```typescript
-public readonly internalValue: IResolvable | UserTag[];
-```
-
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-snowflake.user.UserTag">UserTag</a>[]
-
----
-
-
-### UserTagOutputReference <a name="UserTagOutputReference" id="@cdktf/provider-snowflake.user.UserTagOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.user.UserTagOutputReference.Initializer"></a>
-
-```typescript
-import { user } from '@cdktf/provider-snowflake'
-
-new user.UserTagOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.user.UserTagOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-snowflake.user.UserTagOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-snowflake.user.UserTagOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-snowflake.user.UserTagOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.user.UserTagOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* cdktf.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.user.UserTagOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-snowflake.user.UserTagOutputReference.Initializer.parameter.complexObjectIndex"></a>
-
-- *Type:* number
-
-the index of this item in the list.
-
----
-
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-snowflake.user.UserTagOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
-
-- *Type:* boolean
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.user.UserTagOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.user.UserTagOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.user.UserTagOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.user.UserTagOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.user.UserTagOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.user.UserTagOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.user.UserTagOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.user.UserTagOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.user.UserTagOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.user.UserTagOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.user.UserTagOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.user.UserTagOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-snowflake.user.UserTagOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-snowflake.user.UserTagOutputReference.resetDatabase">resetDatabase</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.user.UserTagOutputReference.resetSchema">resetSchema</a></code> | *No description.* |
-
----
-
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-snowflake.user.UserTagOutputReference.computeFqn"></a>
-
-```typescript
-public computeFqn(): string
-```
-
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.user.UserTagOutputReference.getAnyMapAttribute"></a>
-
-```typescript
-public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.user.UserTagOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.user.UserTagOutputReference.getBooleanAttribute"></a>
-
-```typescript
-public getBooleanAttribute(terraformAttribute: string): IResolvable
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.user.UserTagOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.user.UserTagOutputReference.getBooleanMapAttribute"></a>
-
-```typescript
-public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.user.UserTagOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.user.UserTagOutputReference.getListAttribute"></a>
-
-```typescript
-public getListAttribute(terraformAttribute: string): string[]
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.user.UserTagOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.user.UserTagOutputReference.getNumberAttribute"></a>
-
-```typescript
-public getNumberAttribute(terraformAttribute: string): number
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.user.UserTagOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.user.UserTagOutputReference.getNumberListAttribute"></a>
-
-```typescript
-public getNumberListAttribute(terraformAttribute: string): number[]
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.user.UserTagOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.user.UserTagOutputReference.getNumberMapAttribute"></a>
-
-```typescript
-public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.user.UserTagOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.user.UserTagOutputReference.getStringAttribute"></a>
-
-```typescript
-public getStringAttribute(terraformAttribute: string): string
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.user.UserTagOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.user.UserTagOutputReference.getStringMapAttribute"></a>
-
-```typescript
-public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.user.UserTagOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.user.UserTagOutputReference.interpolationForAttribute"></a>
-
-```typescript
-public interpolationForAttribute(property: string): IResolvable
-```
-
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.user.UserTagOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* string
-
----
-
-##### `resolve` <a name="resolve" id="@cdktf/provider-snowflake.user.UserTagOutputReference.resolve"></a>
-
-```typescript
-public resolve(_context: IResolveContext): any
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-snowflake.user.UserTagOutputReference.resolve.parameter._context"></a>
-
-- *Type:* cdktf.IResolveContext
-
----
-
-##### `toString` <a name="toString" id="@cdktf/provider-snowflake.user.UserTagOutputReference.toString"></a>
-
-```typescript
-public toString(): string
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `resetDatabase` <a name="resetDatabase" id="@cdktf/provider-snowflake.user.UserTagOutputReference.resetDatabase"></a>
-
-```typescript
-public resetDatabase(): void
-```
-
-##### `resetSchema` <a name="resetSchema" id="@cdktf/provider-snowflake.user.UserTagOutputReference.resetSchema"></a>
-
-```typescript
-public resetSchema(): void
-```
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.user.UserTagOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-snowflake.user.UserTagOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.user.UserTagOutputReference.property.databaseInput">databaseInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.user.UserTagOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.user.UserTagOutputReference.property.schemaInput">schemaInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.user.UserTagOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.user.UserTagOutputReference.property.database">database</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.user.UserTagOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.user.UserTagOutputReference.property.schema">schema</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.user.UserTagOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.user.UserTagOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.user.UserTag">UserTag</a></code> | *No description.* |
-
----
-
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-snowflake.user.UserTagOutputReference.property.creationStack"></a>
-
-```typescript
-public readonly creationStack: string[];
-```
-
-- *Type:* string[]
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.user.UserTagOutputReference.property.fqn"></a>
-
-```typescript
-public readonly fqn: string;
-```
-
-- *Type:* string
-
----
-
-##### `databaseInput`<sup>Optional</sup> <a name="databaseInput" id="@cdktf/provider-snowflake.user.UserTagOutputReference.property.databaseInput"></a>
-
-```typescript
-public readonly databaseInput: string;
-```
-
-- *Type:* string
-
----
-
-##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-snowflake.user.UserTagOutputReference.property.nameInput"></a>
-
-```typescript
-public readonly nameInput: string;
-```
-
-- *Type:* string
-
----
-
-##### `schemaInput`<sup>Optional</sup> <a name="schemaInput" id="@cdktf/provider-snowflake.user.UserTagOutputReference.property.schemaInput"></a>
-
-```typescript
-public readonly schemaInput: string;
-```
-
-- *Type:* string
-
----
-
-##### `valueInput`<sup>Optional</sup> <a name="valueInput" id="@cdktf/provider-snowflake.user.UserTagOutputReference.property.valueInput"></a>
-
-```typescript
-public readonly valueInput: string;
-```
-
-- *Type:* string
-
----
-
-##### `database`<sup>Required</sup> <a name="database" id="@cdktf/provider-snowflake.user.UserTagOutputReference.property.database"></a>
-
-```typescript
-public readonly database: string;
-```
-
-- *Type:* string
-
----
-
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.user.UserTagOutputReference.property.name"></a>
-
-```typescript
-public readonly name: string;
-```
-
-- *Type:* string
-
----
-
-##### `schema`<sup>Required</sup> <a name="schema" id="@cdktf/provider-snowflake.user.UserTagOutputReference.property.schema"></a>
-
-```typescript
-public readonly schema: string;
-```
-
-- *Type:* string
-
----
-
-##### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-snowflake.user.UserTagOutputReference.property.value"></a>
-
-```typescript
-public readonly value: string;
-```
-
-- *Type:* string
-
----
-
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-snowflake.user.UserTagOutputReference.property.internalValue"></a>
-
-```typescript
-public readonly internalValue: IResolvable | UserTag;
-```
-
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-snowflake.user.UserTag">UserTag</a>
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/resources/user#rsa_public_key_2 User#rsa_public_key_2}
 
 ---
 

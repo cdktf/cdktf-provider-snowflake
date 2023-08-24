@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/database_roles
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/data-sources/database_roles
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface DataSnowflakeDatabaseRolesConfig extends cdktf.TerraformMetaArg
   /**
   * The database from which to return the database roles from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/database_roles#database DataSnowflakeDatabaseRoles#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/data-sources/database_roles#database DataSnowflakeDatabaseRoles#database}
   */
-  readonly database?: string;
+  readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/database_roles#id DataSnowflakeDatabaseRoles#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/data-sources/database_roles#id DataSnowflakeDatabaseRoles#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -102,7 +97,7 @@ export class DataSnowflakeDatabaseRolesDatabaseRolesList extends cdktf.ComplexLi
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/database_roles snowflake_database_roles}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/data-sources/database_roles snowflake_database_roles}
 */
 export class DataSnowflakeDatabaseRoles extends cdktf.TerraformDataSource {
 
@@ -116,18 +111,18 @@ export class DataSnowflakeDatabaseRoles extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/database_roles snowflake_database_roles} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/data-sources/database_roles snowflake_database_roles} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataSnowflakeDatabaseRolesConfig = {}
+  * @param options DataSnowflakeDatabaseRolesConfig
   */
-  public constructor(scope: Construct, id: string, config: DataSnowflakeDatabaseRolesConfig = {}) {
+  public constructor(scope: Construct, id: string, config: DataSnowflakeDatabaseRolesConfig) {
     super(scope, id, {
       terraformResourceType: 'snowflake_database_roles',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.68.2',
+        providerVersion: '0.70.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
@@ -146,16 +141,13 @@ export class DataSnowflakeDatabaseRoles extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // database - computed: false, optional: true, required: false
+  // database - computed: false, optional: false, required: true
   private _database?: string; 
   public get database() {
     return this.getStringAttribute('database');
   }
   public set database(value: string) {
     this._database = value;
-  }
-  public resetDatabase() {
-    this._database = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get databaseInput() {

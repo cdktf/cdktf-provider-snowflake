@@ -1,6 +1,6 @@
 # `data_snowflake_database_roles`
 
-Refer to the Terraform Registory for docs: [`data_snowflake_database_roles`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/database_roles).
+Refer to the Terraform Registory for docs: [`data_snowflake_database_roles`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/data-sources/database_roles).
 
 # `dataSnowflakeDatabaseRoles` Submodule <a name="`dataSnowflakeDatabaseRoles` Submodule" id="@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_snowflake_database_roles`](htt
 
 ### DataSnowflakeDatabaseRoles <a name="DataSnowflakeDatabaseRoles" id="@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRoles"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/database_roles snowflake_database_roles}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/data-sources/database_roles snowflake_database_roles}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRoles.Initializer"></a>
 
@@ -25,7 +25,7 @@ dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRoles(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  database: str = None,
+  database: str,
   id: str = None
 )
 ```
@@ -42,7 +42,7 @@ dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRoles(
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRoles.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRoles.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRoles.Initializer.parameter.database">database</a></code> | <code>str</code> | The database from which to return the database roles from. |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRoles.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/database_roles#id DataSnowflakeDatabaseRoles#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRoles.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/data-sources/database_roles#id DataSnowflakeDatabaseRoles#id}. |
 
 ---
 
@@ -106,13 +106,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `database`<sup>Optional</sup> <a name="database" id="@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRoles.Initializer.parameter.database"></a>
+##### `database`<sup>Required</sup> <a name="database" id="@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRoles.Initializer.parameter.database"></a>
 
 - *Type:* str
 
 The database from which to return the database roles from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/database_roles#database DataSnowflakeDatabaseRoles#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/data-sources/database_roles#database DataSnowflakeDatabaseRoles#database}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/database_roles#id DataSnowflakeDatabaseRoles#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/data-sources/database_roles#id DataSnowflakeDatabaseRoles#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -147,7 +147,6 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRoles.getStringAttribute">get_string_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRoles.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRoles.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRoles.resetDatabase">reset_database</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRoles.resetId">reset_id</a></code> | *No description.* |
 
 ---
@@ -360,12 +359,6 @@ def interpolation_for_attribute(
 - *Type:* str
 
 ---
-
-##### `reset_database` <a name="reset_database" id="@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRoles.resetDatabase"></a>
-
-```python
-def reset_database() -> None
-```
 
 ##### `reset_id` <a name="reset_id" id="@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRoles.resetId"></a>
 
@@ -680,7 +673,7 @@ dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRolesConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  database: str = None,
+  database: str,
   id: str = None
 )
 ```
@@ -697,7 +690,7 @@ dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRolesConfig(
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRolesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRolesConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRolesConfig.property.database">database</a></code> | <code>str</code> | The database from which to return the database roles from. |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRolesConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/database_roles#id DataSnowflakeDatabaseRoles#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRolesConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/data-sources/database_roles#id DataSnowflakeDatabaseRoles#id}. |
 
 ---
 
@@ -771,7 +764,7 @@ provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, Re
 
 ---
 
-##### `database`<sup>Optional</sup> <a name="database" id="@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRolesConfig.property.database"></a>
+##### `database`<sup>Required</sup> <a name="database" id="@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRolesConfig.property.database"></a>
 
 ```python
 database: str
@@ -781,7 +774,7 @@ database: str
 
 The database from which to return the database roles from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/database_roles#database DataSnowflakeDatabaseRoles#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/data-sources/database_roles#database DataSnowflakeDatabaseRoles#database}
 
 ---
 
@@ -793,7 +786,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/database_roles#id DataSnowflakeDatabaseRoles#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/data-sources/database_roles#id DataSnowflakeDatabaseRoles#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -1,6 +1,6 @@
 # `data_snowflake_database_roles`
 
-Refer to the Terraform Registory for docs: [`data_snowflake_database_roles`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/database_roles).
+Refer to the Terraform Registory for docs: [`data_snowflake_database_roles`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/data-sources/database_roles).
 
 # `dataSnowflakeDatabaseRoles` Submodule <a name="`dataSnowflakeDatabaseRoles` Submodule" id="@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles"></a>
 
@@ -8,14 +8,14 @@ Refer to the Terraform Registory for docs: [`data_snowflake_database_roles`](htt
 
 ### DataSnowflakeDatabaseRoles <a name="DataSnowflakeDatabaseRoles" id="@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRoles"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/database_roles snowflake_database_roles}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/data-sources/database_roles snowflake_database_roles}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRoles.Initializer"></a>
 
 ```csharp
 using HashiCorp.Cdktf.Providers.Snowflake;
 
-new DataSnowflakeDatabaseRoles(Construct Scope, string Id, DataSnowflakeDatabaseRolesConfig Config = null);
+new DataSnowflakeDatabaseRoles(Construct Scope, string Id, DataSnowflakeDatabaseRolesConfig Config);
 ```
 
 | **Name** | **Type** | **Description** |
@@ -44,7 +44,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `Config`<sup>Optional</sup> <a name="Config" id="@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRoles.Initializer.parameter.config"></a>
+##### `Config`<sup>Required</sup> <a name="Config" id="@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRoles.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRolesConfig">DataSnowflakeDatabaseRolesConfig</a>
 
@@ -70,7 +70,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRoles.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRoles.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRoles.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRoles.resetDatabase">ResetDatabase</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRoles.resetId">ResetId</a></code> | *No description.* |
 
 ---
@@ -258,12 +257,6 @@ private IResolvable InterpolationForAttribute(string TerraformAttribute)
 - *Type:* string
 
 ---
-
-##### `ResetDatabase` <a name="ResetDatabase" id="@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRoles.resetDatabase"></a>
-
-```csharp
-private void ResetDatabase()
-```
 
 ##### `ResetId` <a name="ResetId" id="@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRoles.resetId"></a>
 
@@ -572,7 +565,7 @@ new DataSnowflakeDatabaseRolesConfig {
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
     object[] Provisioners = null,
-    string Database = null,
+    string Database,
     string Id = null
 };
 ```
@@ -589,7 +582,7 @@ new DataSnowflakeDatabaseRolesConfig {
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRolesConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRolesConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRolesConfig.property.database">Database</a></code> | <code>string</code> | The database from which to return the database roles from. |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRolesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/database_roles#id DataSnowflakeDatabaseRoles#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRolesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/data-sources/database_roles#id DataSnowflakeDatabaseRoles#id}. |
 
 ---
 
@@ -663,7 +656,7 @@ public object[] Provisioners { get; set; }
 
 ---
 
-##### `Database`<sup>Optional</sup> <a name="Database" id="@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRolesConfig.property.database"></a>
+##### `Database`<sup>Required</sup> <a name="Database" id="@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRolesConfig.property.database"></a>
 
 ```csharp
 public string Database { get; set; }
@@ -673,7 +666,7 @@ public string Database { get; set; }
 
 The database from which to return the database roles from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/database_roles#database DataSnowflakeDatabaseRoles#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/data-sources/database_roles#database DataSnowflakeDatabaseRoles#database}
 
 ---
 
@@ -685,7 +678,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.68.2/docs/data-sources/database_roles#id DataSnowflakeDatabaseRoles#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/data-sources/database_roles#id DataSnowflakeDatabaseRoles#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
