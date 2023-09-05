@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/resources/tag_association
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/tag_association
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface TagAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/resources/tag_association#id TagAssociation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/tag_association#id TagAssociation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,43 +22,43 @@ export interface TagAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies the object identifier for the tag association.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/resources/tag_association#object_name TagAssociation#object_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/tag_association#object_name TagAssociation#object_name}
   */
   readonly objectName?: string;
   /**
   * Specifies the type of object to add a tag to. ex: 'ACCOUNT', 'COLUMN', 'DATABASE', etc. For more information: https://docs.snowflake.com/en/user-guide/object-tagging.html#supported-objects
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/resources/tag_association#object_type TagAssociation#object_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/tag_association#object_type TagAssociation#object_type}
   */
   readonly objectType: string;
   /**
   * If true, skips validation of the tag association.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/resources/tag_association#skip_validation TagAssociation#skip_validation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/tag_association#skip_validation TagAssociation#skip_validation}
   */
   readonly skipValidation?: boolean | cdktf.IResolvable;
   /**
   * Specifies the identifier for the tag. Note: format must follow: "databaseName"."schemaName"."tagName" or "databaseName.schemaName.tagName" or "databaseName|schemaName.tagName" (snowflake_tag.tag.id)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/resources/tag_association#tag_id TagAssociation#tag_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/tag_association#tag_id TagAssociation#tag_id}
   */
   readonly tagId: string;
   /**
   * Specifies the value of the tag, (e.g. 'finance' or 'engineering')
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/resources/tag_association#tag_value TagAssociation#tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/tag_association#tag_value TagAssociation#tag_value}
   */
   readonly tagValue: string;
   /**
   * object_identifier block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/resources/tag_association#object_identifier TagAssociation#object_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/tag_association#object_identifier TagAssociation#object_identifier}
   */
   readonly objectIdentifier: TagAssociationObjectIdentifier[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/resources/tag_association#timeouts TagAssociation#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/tag_association#timeouts TagAssociation#timeouts}
   */
   readonly timeouts?: TagAssociationTimeouts;
 }
@@ -66,19 +66,19 @@ export interface TagAssociationObjectIdentifier {
   /**
   * Name of the database that the object was created in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/resources/tag_association#database TagAssociation#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/tag_association#database TagAssociation#database}
   */
   readonly database?: string;
   /**
   * Name of the object to associate the tag with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/resources/tag_association#name TagAssociation#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/tag_association#name TagAssociation#name}
   */
   readonly name: string;
   /**
   * Name of the schema that the object was created in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/resources/tag_association#schema TagAssociation#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/tag_association#schema TagAssociation#schema}
   */
   readonly schema?: string;
 }
@@ -218,7 +218,7 @@ export class TagAssociationObjectIdentifierList extends cdktf.ComplexList {
 }
 export interface TagAssociationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/resources/tag_association#create TagAssociation#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/tag_association#create TagAssociation#create}
   */
   readonly create?: string;
 }
@@ -293,7 +293,7 @@ export class TagAssociationTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/resources/tag_association snowflake_tag_association}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/tag_association snowflake_tag_association}
 */
 export class TagAssociation extends cdktf.TerraformResource {
 
@@ -307,7 +307,7 @@ export class TagAssociation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/resources/tag_association snowflake_tag_association} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/tag_association snowflake_tag_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -318,7 +318,7 @@ export class TagAssociation extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_tag_association',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.70.0',
+        providerVersion: '0.70.1',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,

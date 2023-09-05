@@ -1,3 +1,3 @@
 # `data_snowflake_current_account`
 
-Refer to the Terraform Registory for docs: [`data_snowflake_current_account`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/data-sources/current_account).
+Refer to the Terraform Registory for docs: [`data_snowflake_current_account`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/data-sources/current_account).

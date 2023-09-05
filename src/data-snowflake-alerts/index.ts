@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/data-sources/alerts
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/data-sources/alerts
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface DataSnowflakeAlertsConfig extends cdktf.TerraformMetaArguments 
   /**
   * The database from which to return the alerts from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/data-sources/alerts#database DataSnowflakeAlerts#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/data-sources/alerts#database DataSnowflakeAlerts#database}
   */
   readonly database?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/data-sources/alerts#id DataSnowflakeAlerts#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/data-sources/alerts#id DataSnowflakeAlerts#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,13 +28,13 @@ export interface DataSnowflakeAlertsConfig extends cdktf.TerraformMetaArguments 
   /**
   * Filters the command output by object name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/data-sources/alerts#pattern DataSnowflakeAlerts#pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/data-sources/alerts#pattern DataSnowflakeAlerts#pattern}
   */
   readonly pattern?: string;
   /**
   * The schema from which to return the alerts from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/data-sources/alerts#schema DataSnowflakeAlerts#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/data-sources/alerts#schema DataSnowflakeAlerts#schema}
   */
   readonly schema?: string;
 }
@@ -134,7 +134,7 @@ export class DataSnowflakeAlertsAlertsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/data-sources/alerts snowflake_alerts}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/data-sources/alerts snowflake_alerts}
 */
 export class DataSnowflakeAlerts extends cdktf.TerraformDataSource {
 
@@ -148,7 +148,7 @@ export class DataSnowflakeAlerts extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/data-sources/alerts snowflake_alerts} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/data-sources/alerts snowflake_alerts} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -159,7 +159,7 @@ export class DataSnowflakeAlerts extends cdktf.TerraformDataSource {
       terraformResourceType: 'snowflake_alerts',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.70.0',
+        providerVersion: '0.70.1',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
