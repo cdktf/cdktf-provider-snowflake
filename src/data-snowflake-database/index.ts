@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/data-sources/database
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/data-sources/database
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataSnowflakeDatabaseConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/data-sources/database#id DataSnowflakeDatabase#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/data-sources/database#id DataSnowflakeDatabase#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,13 +17,13 @@ export interface DataSnowflakeDatabaseConfig extends cdktf.TerraformMetaArgument
   /**
   * The database from which to return its metadata.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/data-sources/database#name DataSnowflakeDatabase#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/data-sources/database#name DataSnowflakeDatabase#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/data-sources/database snowflake_database}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/data-sources/database snowflake_database}
 */
 export class DataSnowflakeDatabase extends cdktf.TerraformDataSource {
 
@@ -42,7 +37,7 @@ export class DataSnowflakeDatabase extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/data-sources/database snowflake_database} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/data-sources/database snowflake_database} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -53,7 +48,7 @@ export class DataSnowflakeDatabase extends cdktf.TerraformDataSource {
       terraformResourceType: 'snowflake_database',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.70.0',
+        providerVersion: '0.70.1',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,

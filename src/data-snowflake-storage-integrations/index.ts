@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/data-sources/storage_integrations
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/data-sources/storage_integrations
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataSnowflakeStorageIntegrationsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/data-sources/storage_integrations#id DataSnowflakeStorageIntegrations#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/data-sources/storage_integrations#id DataSnowflakeStorageIntegrations#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -101,7 +96,7 @@ export class DataSnowflakeStorageIntegrationsStorageIntegrationsList extends cdk
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/data-sources/storage_integrations snowflake_storage_integrations}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/data-sources/storage_integrations snowflake_storage_integrations}
 */
 export class DataSnowflakeStorageIntegrations extends cdktf.TerraformDataSource {
 
@@ -115,7 +110,7 @@ export class DataSnowflakeStorageIntegrations extends cdktf.TerraformDataSource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.0/docs/data-sources/storage_integrations snowflake_storage_integrations} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/data-sources/storage_integrations snowflake_storage_integrations} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -126,7 +121,7 @@ export class DataSnowflakeStorageIntegrations extends cdktf.TerraformDataSource 
       terraformResourceType: 'snowflake_storage_integrations',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.70.0',
+        providerVersion: '0.70.1',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
