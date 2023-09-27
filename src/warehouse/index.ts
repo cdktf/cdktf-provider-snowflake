@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/warehouse
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/warehouse
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,27 +10,27 @@ export interface WarehouseConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies whether to automatically resume a warehouse when a SQL statement (e.g. query) is submitted to it.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/warehouse#auto_resume Warehouse#auto_resume}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/warehouse#auto_resume Warehouse#auto_resume}
   */
   readonly autoResume?: boolean | cdktf.IResolvable;
   /**
   * Specifies the number of seconds of inactivity after which a warehouse is automatically suspended.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/warehouse#auto_suspend Warehouse#auto_suspend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/warehouse#auto_suspend Warehouse#auto_suspend}
   */
   readonly autoSuspend?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/warehouse#comment Warehouse#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/warehouse#comment Warehouse#comment}
   */
   readonly comment?: string;
   /**
   * Specifies whether to enable the query acceleration service for queries that rely on this warehouse for compute resources.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/warehouse#enable_query_acceleration Warehouse#enable_query_acceleration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/warehouse#enable_query_acceleration Warehouse#enable_query_acceleration}
   */
   readonly enableQueryAcceleration?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/warehouse#id Warehouse#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/warehouse#id Warehouse#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -44,85 +39,85 @@ export interface WarehouseConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies whether the warehouse is created initially in the ‘Suspended’ state.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/warehouse#initially_suspended Warehouse#initially_suspended}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/warehouse#initially_suspended Warehouse#initially_suspended}
   */
   readonly initiallySuspended?: boolean | cdktf.IResolvable;
   /**
   * Specifies the maximum number of server clusters for the warehouse.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/warehouse#max_cluster_count Warehouse#max_cluster_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/warehouse#max_cluster_count Warehouse#max_cluster_count}
   */
   readonly maxClusterCount?: number;
   /**
   * Object parameter that specifies the concurrency level for SQL statements (i.e. queries and DML) executed by a warehouse.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/warehouse#max_concurrency_level Warehouse#max_concurrency_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/warehouse#max_concurrency_level Warehouse#max_concurrency_level}
   */
   readonly maxConcurrencyLevel?: number;
   /**
   * Specifies the minimum number of server clusters for the warehouse (only applies to multi-cluster warehouses).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/warehouse#min_cluster_count Warehouse#min_cluster_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/warehouse#min_cluster_count Warehouse#min_cluster_count}
   */
   readonly minClusterCount?: number;
   /**
   * Identifier for the virtual warehouse; must be unique for your account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/warehouse#name Warehouse#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/warehouse#name Warehouse#name}
   */
   readonly name: string;
   /**
   * Specifies the maximum scale factor for leasing compute resources for query acceleration. The scale factor is used as a multiplier based on warehouse size.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/warehouse#query_acceleration_max_scale_factor Warehouse#query_acceleration_max_scale_factor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/warehouse#query_acceleration_max_scale_factor Warehouse#query_acceleration_max_scale_factor}
   */
   readonly queryAccelerationMaxScaleFactor?: number;
   /**
   * Specifies the name of a resource monitor that is explicitly assigned to the warehouse.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/warehouse#resource_monitor Warehouse#resource_monitor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/warehouse#resource_monitor Warehouse#resource_monitor}
   */
   readonly resourceMonitor?: string;
   /**
   * Specifies the policy for automatically starting and shutting down clusters in a multi-cluster warehouse running in Auto-scale mode.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/warehouse#scaling_policy Warehouse#scaling_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/warehouse#scaling_policy Warehouse#scaling_policy}
   */
   readonly scalingPolicy?: string;
   /**
   * Object parameter that specifies the time, in seconds, a SQL statement (query, DDL, DML, etc.) can be queued on a warehouse before it is canceled by the system.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/warehouse#statement_queued_timeout_in_seconds Warehouse#statement_queued_timeout_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/warehouse#statement_queued_timeout_in_seconds Warehouse#statement_queued_timeout_in_seconds}
   */
   readonly statementQueuedTimeoutInSeconds?: number;
   /**
   * Specifies the time, in seconds, after which a running SQL statement (query, DDL, DML, etc.) is canceled by the system
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/warehouse#statement_timeout_in_seconds Warehouse#statement_timeout_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/warehouse#statement_timeout_in_seconds Warehouse#statement_timeout_in_seconds}
   */
   readonly statementTimeoutInSeconds?: number;
   /**
   * Specifies whether the warehouse, after being resized, waits for all the servers to provision before executing any queued or new queries.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/warehouse#wait_for_provisioning Warehouse#wait_for_provisioning}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/warehouse#wait_for_provisioning Warehouse#wait_for_provisioning}
   */
   readonly waitForProvisioning?: boolean | cdktf.IResolvable;
   /**
   * Specifies the size of the virtual warehouse. Larger warehouse sizes 5X-Large and 6X-Large are currently in preview and only available on Amazon Web Services (AWS).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/warehouse#warehouse_size Warehouse#warehouse_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/warehouse#warehouse_size Warehouse#warehouse_size}
   */
   readonly warehouseSize?: string;
   /**
   * Specifies a STANDARD or SNOWPARK-OPTIMIZED warehouse
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/warehouse#warehouse_type Warehouse#warehouse_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/warehouse#warehouse_type Warehouse#warehouse_type}
   */
   readonly warehouseType?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/warehouse snowflake_warehouse}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/warehouse snowflake_warehouse}
 */
 export class Warehouse extends cdktf.TerraformResource {
 
@@ -136,7 +131,7 @@ export class Warehouse extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/warehouse snowflake_warehouse} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/warehouse snowflake_warehouse} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -147,7 +142,7 @@ export class Warehouse extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_warehouse',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.70.1',
+        providerVersion: '0.71.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,

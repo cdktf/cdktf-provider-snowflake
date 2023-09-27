@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/role_grants
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/role_grants
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface RoleGrantsConfig extends cdktf.TerraformMetaArguments {
   /**
   * When this is set to true, multiple grants of the same type can be created. This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/role_grants#enable_multiple_grants RoleGrants#enable_multiple_grants}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/role_grants#enable_multiple_grants RoleGrants#enable_multiple_grants}
   */
   readonly enableMultipleGrants?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/role_grants#id RoleGrants#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/role_grants#id RoleGrants#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,25 +23,25 @@ export interface RoleGrantsConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the role we are granting.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/role_grants#role_name RoleGrants#role_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/role_grants#role_name RoleGrants#role_name}
   */
   readonly roleName: string;
   /**
   * Grants role to this specified role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/role_grants#roles RoleGrants#roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/role_grants#roles RoleGrants#roles}
   */
   readonly roles?: string[];
   /**
   * Grants role to this specified user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/role_grants#users RoleGrants#users}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/role_grants#users RoleGrants#users}
   */
   readonly users?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/role_grants snowflake_role_grants}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/role_grants snowflake_role_grants}
 */
 export class RoleGrants extends cdktf.TerraformResource {
 
@@ -60,7 +55,7 @@ export class RoleGrants extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/role_grants snowflake_role_grants} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/role_grants snowflake_role_grants} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +66,7 @@ export class RoleGrants extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_role_grants',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.70.1',
+        providerVersion: '0.71.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
