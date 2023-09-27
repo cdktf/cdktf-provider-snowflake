@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/materialized_view
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/materialized_view
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface MaterializedViewConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies a comment for the view.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/materialized_view#comment MaterializedView#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/materialized_view#comment MaterializedView#comment}
   */
   readonly comment?: string;
   /**
   * The database in which to create the view. Don't use the | character.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/materialized_view#database MaterializedView#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/materialized_view#database MaterializedView#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/materialized_view#id MaterializedView#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/materialized_view#id MaterializedView#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,43 +34,43 @@ export interface MaterializedViewConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies that the view is secure.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/materialized_view#is_secure MaterializedView#is_secure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/materialized_view#is_secure MaterializedView#is_secure}
   */
   readonly isSecure?: boolean | cdktf.IResolvable;
   /**
   * Specifies the identifier for the view; must be unique for the schema in which the view is created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/materialized_view#name MaterializedView#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/materialized_view#name MaterializedView#name}
   */
   readonly name: string;
   /**
   * Overwrites the View if it exists.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/materialized_view#or_replace MaterializedView#or_replace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/materialized_view#or_replace MaterializedView#or_replace}
   */
   readonly orReplace?: boolean | cdktf.IResolvable;
   /**
   * The schema in which to create the view. Don't use the | character.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/materialized_view#schema MaterializedView#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/materialized_view#schema MaterializedView#schema}
   */
   readonly schema: string;
   /**
   * Specifies the query used to create the view.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/materialized_view#statement MaterializedView#statement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/materialized_view#statement MaterializedView#statement}
   */
   readonly statement: string;
   /**
   * The warehouse name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/materialized_view#warehouse MaterializedView#warehouse}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/materialized_view#warehouse MaterializedView#warehouse}
   */
   readonly warehouse: string;
   /**
   * tag block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/materialized_view#tag MaterializedView#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/materialized_view#tag MaterializedView#tag}
   */
   readonly tag?: MaterializedViewTag[] | cdktf.IResolvable;
 }
@@ -78,25 +78,25 @@ export interface MaterializedViewTag {
   /**
   * Name of the database that the tag was created in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/materialized_view#database MaterializedView#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/materialized_view#database MaterializedView#database}
   */
   readonly database?: string;
   /**
   * Tag name, e.g. department.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/materialized_view#name MaterializedView#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/materialized_view#name MaterializedView#name}
   */
   readonly name: string;
   /**
   * Name of the schema that the tag was created in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/materialized_view#schema MaterializedView#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/materialized_view#schema MaterializedView#schema}
   */
   readonly schema?: string;
   /**
   * Tag value, e.g. marketing_info.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/materialized_view#value MaterializedView#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/materialized_view#value MaterializedView#value}
   */
   readonly value: string;
 }
@@ -256,7 +256,7 @@ export class MaterializedViewTagList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/materialized_view snowflake_materialized_view}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/materialized_view snowflake_materialized_view}
 */
 export class MaterializedView extends cdktf.TerraformResource {
 
@@ -270,7 +270,7 @@ export class MaterializedView extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.70.1/docs/resources/materialized_view snowflake_materialized_view} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/materialized_view snowflake_materialized_view} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -281,7 +281,7 @@ export class MaterializedView extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_materialized_view',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.70.1',
+        providerVersion: '0.71.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
