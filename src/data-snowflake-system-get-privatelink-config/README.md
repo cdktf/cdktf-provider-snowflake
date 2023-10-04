@@ -1,3 +1,3 @@
 # `data_snowflake_system_get_privatelink_config`
 
-Refer to the Terraform Registory for docs: [`data_snowflake_system_get_privatelink_config`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/data-sources/system_get_privatelink_config).
+Refer to the Terraform Registory for docs: [`data_snowflake_system_get_privatelink_config`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.72.0/docs/data-sources/system_get_privatelink_config).

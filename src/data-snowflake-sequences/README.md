@@ -1,3 +1,3 @@
 # `data_snowflake_sequences`
 
-Refer to the Terraform Registory for docs: [`data_snowflake_sequences`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/data-sources/sequences).
+Refer to the Terraform Registory for docs: [`data_snowflake_sequences`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.72.0/docs/data-sources/sequences).

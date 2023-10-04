@@ -1,3 +1,3 @@
 # `snowflake_oauth_integration`
 
-Refer to the Terraform Registory for docs: [`snowflake_oauth_integration`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/oauth_integration).
+Refer to the Terraform Registory for docs: [`snowflake_oauth_integration`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.72.0/docs/resources/oauth_integration).

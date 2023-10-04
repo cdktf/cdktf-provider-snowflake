@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/database_role
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.72.0/docs/resources/database_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface DatabaseRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies a comment for the database role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/database_role#comment DatabaseRole#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.72.0/docs/resources/database_role#comment DatabaseRole#comment}
   */
   readonly comment?: string;
   /**
   * The database in which to create the database role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/database_role#database DatabaseRole#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.72.0/docs/resources/database_role#database DatabaseRole#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/database_role#id DatabaseRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.72.0/docs/resources/database_role#id DatabaseRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,13 +29,13 @@ export interface DatabaseRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies the identifier for the database role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/database_role#name DatabaseRole#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.72.0/docs/resources/database_role#name DatabaseRole#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/database_role snowflake_database_role}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.72.0/docs/resources/database_role snowflake_database_role}
 */
 export class DatabaseRole extends cdktf.TerraformResource {
 
@@ -54,7 +49,7 @@ export class DatabaseRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/resources/database_role snowflake_database_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.72.0/docs/resources/database_role snowflake_database_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +60,7 @@ export class DatabaseRole extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_database_role',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.71.0',
+        providerVersion: '0.72.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,

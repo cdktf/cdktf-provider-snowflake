@@ -1,6 +1,6 @@
 # `data_snowflake_sequences`
 
-Refer to the Terraform Registory for docs: [`data_snowflake_sequences`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/data-sources/sequences).
+Refer to the Terraform Registory for docs: [`data_snowflake_sequences`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.72.0/docs/data-sources/sequences).
 
 # `dataSnowflakeSequences` Submodule <a name="`dataSnowflakeSequences` Submodule" id="@cdktf/provider-snowflake.dataSnowflakeSequences"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_snowflake_sequences`](https://
 
 ### DataSnowflakeSequences <a name="DataSnowflakeSequences" id="@cdktf/provider-snowflake.dataSnowflakeSequences.DataSnowflakeSequences"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/data-sources/sequences snowflake_sequences}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.72.0/docs/data-sources/sequences snowflake_sequences}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSequences.DataSnowflakeSequences.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/datasnowflakesequences"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakesequences"
 
 datasnowflakesequences.NewDataSnowflakeSequences(scope Construct, id *string, config DataSnowflakeSequencesConfig) DataSnowflakeSequences
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeSequences.DataSnowflakeSequences.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/datasnowflakesequences"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakesequences"
 
 datasnowflakesequences.DataSnowflakeSequences_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeSequences.DataSnowflakeSequences.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/datasnowflakesequences"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakesequences"
 
 datasnowflakesequences.DataSnowflakeSequences_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ datasnowflakesequences.DataSnowflakeSequences_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeSequences.DataSnowflakeSequences.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/datasnowflakesequences"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakesequences"
 
 datasnowflakesequences.DataSnowflakeSequences_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -577,7 +577,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSequences.DataSnowflakeSequencesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/datasnowflakesequences"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakesequences"
 
 &datasnowflakesequences.DataSnowflakeSequencesConfig {
 	Connection: interface{},
@@ -606,7 +606,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/datasnowflakes
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSequences.DataSnowflakeSequencesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSequences.DataSnowflakeSequencesConfig.property.database">Database</a></code> | <code>*string</code> | The database from which to return the schemas from. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSequences.DataSnowflakeSequencesConfig.property.schema">Schema</a></code> | <code>*string</code> | The schema from which to return the sequences from. |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSequences.DataSnowflakeSequencesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/data-sources/sequences#id DataSnowflakeSequences#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSequences.DataSnowflakeSequencesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.72.0/docs/data-sources/sequences#id DataSnowflakeSequences#id}. |
 
 ---
 
@@ -690,7 +690,7 @@ Database *string
 
 The database from which to return the schemas from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/data-sources/sequences#database DataSnowflakeSequences#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.72.0/docs/data-sources/sequences#database DataSnowflakeSequences#database}
 
 ---
 
@@ -704,7 +704,7 @@ Schema *string
 
 The schema from which to return the sequences from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/data-sources/sequences#schema DataSnowflakeSequences#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.72.0/docs/data-sources/sequences#schema DataSnowflakeSequences#schema}
 
 ---
 
@@ -716,7 +716,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.71.0/docs/data-sources/sequences#id DataSnowflakeSequences#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.72.0/docs/data-sources/sequences#id DataSnowflakeSequences#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -728,7 +728,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSequences.DataSnowflakeSequencesSequences.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/datasnowflakesequences"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakesequences"
 
 &datasnowflakesequences.DataSnowflakeSequencesSequences {
 
@@ -743,7 +743,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/datasnowflakes
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSequences.DataSnowflakeSequencesSequencesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/datasnowflakesequences"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakesequences"
 
 datasnowflakesequences.NewDataSnowflakeSequencesSequencesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSequencesSequencesList
 ```
@@ -875,7 +875,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSequences.DataSnowflakeSequencesSequencesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/datasnowflakesequences"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakesequences"
 
 datasnowflakesequences.NewDataSnowflakeSequencesSequencesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSequencesSequencesOutputReference
 ```
