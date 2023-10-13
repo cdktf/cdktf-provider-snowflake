@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.72.0/docs/data-sources/role
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/data-sources/role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataSnowflakeRoleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.72.0/docs/data-sources/role#id DataSnowflakeRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/data-sources/role#id DataSnowflakeRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,13 +17,13 @@ export interface DataSnowflakeRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The role for which to return metadata.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.72.0/docs/data-sources/role#name DataSnowflakeRole#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/data-sources/role#name DataSnowflakeRole#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.72.0/docs/data-sources/role snowflake_role}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/data-sources/role snowflake_role}
 */
 export class DataSnowflakeRole extends cdktf.TerraformDataSource {
 
@@ -42,7 +37,7 @@ export class DataSnowflakeRole extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.72.0/docs/data-sources/role snowflake_role} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/data-sources/role snowflake_role} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -53,7 +48,7 @@ export class DataSnowflakeRole extends cdktf.TerraformDataSource {
       terraformResourceType: 'snowflake_role',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.72.0',
+        providerVersion: '0.73.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,

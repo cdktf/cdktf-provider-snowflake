@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.72.0/docs/resources/email_notification_integration
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/resources/email_notification_integration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,34 +10,34 @@ export interface EmailNotificationIntegrationConfig extends cdktf.TerraformMetaA
   /**
   * List of email addresses that should receive notifications.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.72.0/docs/resources/email_notification_integration#allowed_recipients EmailNotificationIntegration#allowed_recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/resources/email_notification_integration#allowed_recipients EmailNotificationIntegration#allowed_recipients}
   */
   readonly allowedRecipients: string[];
   /**
   * A comment for the email integration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.72.0/docs/resources/email_notification_integration#comment EmailNotificationIntegration#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/resources/email_notification_integration#comment EmailNotificationIntegration#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.72.0/docs/resources/email_notification_integration#enabled EmailNotificationIntegration#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/resources/email_notification_integration#enabled EmailNotificationIntegration#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.72.0/docs/resources/email_notification_integration#id EmailNotificationIntegration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/resources/email_notification_integration#id EmailNotificationIntegration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.72.0/docs/resources/email_notification_integration#name EmailNotificationIntegration#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/resources/email_notification_integration#name EmailNotificationIntegration#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.72.0/docs/resources/email_notification_integration snowflake_email_notification_integration}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/resources/email_notification_integration snowflake_email_notification_integration}
 */
 export class EmailNotificationIntegration extends cdktf.TerraformResource {
 
@@ -56,7 +51,7 @@ export class EmailNotificationIntegration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.72.0/docs/resources/email_notification_integration snowflake_email_notification_integration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/resources/email_notification_integration snowflake_email_notification_integration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -67,7 +62,7 @@ export class EmailNotificationIntegration extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_email_notification_integration',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.72.0',
+        providerVersion: '0.73.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,

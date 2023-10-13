@@ -1,3 +1,3 @@
 # `snowflake_session_parameter`
 
-Refer to the Terraform Registory for docs: [`snowflake_session_parameter`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.72.0/docs/resources/session_parameter).
+Refer to the Terraform Registory for docs: [`snowflake_session_parameter`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/resources/session_parameter).

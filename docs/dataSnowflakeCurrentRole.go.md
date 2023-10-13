@@ -1,6 +1,6 @@
 # `data_snowflake_current_role`
 
-Refer to the Terraform Registory for docs: [`data_snowflake_current_role`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.72.0/docs/data-sources/current_role).
+Refer to the Terraform Registory for docs: [`data_snowflake_current_role`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/data-sources/current_role).
 
 # `dataSnowflakeCurrentRole` Submodule <a name="`dataSnowflakeCurrentRole` Submodule" id="@cdktf/provider-snowflake.dataSnowflakeCurrentRole"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_snowflake_current_role`](https
 
 ### DataSnowflakeCurrentRole <a name="DataSnowflakeCurrentRole" id="@cdktf/provider-snowflake.dataSnowflakeCurrentRole.DataSnowflakeCurrentRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.72.0/docs/data-sources/current_role snowflake_current_role}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/data-sources/current_role snowflake_current_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeCurrentRole.DataSnowflakeCurrentRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/datasnowflakecurrentrole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakecurrentrole"
 
 datasnowflakecurrentrole.NewDataSnowflakeCurrentRole(scope Construct, id *string, config DataSnowflakeCurrentRoleConfig) DataSnowflakeCurrentRole
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeCurrentRole.DataSnowflakeCurrentRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/datasnowflakecurrentrole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakecurrentrole"
 
 datasnowflakecurrentrole.DataSnowflakeCurrentRole_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeCurrentRole.DataSnowflakeCurrentRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/datasnowflakecurrentrole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakecurrentrole"
 
 datasnowflakecurrentrole.DataSnowflakeCurrentRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ datasnowflakecurrentrole.DataSnowflakeCurrentRole_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeCurrentRole.DataSnowflakeCurrentRole.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/datasnowflakecurrentrole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakecurrentrole"
 
 datasnowflakecurrentrole.DataSnowflakeCurrentRole_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -533,7 +533,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeCurrentRole.DataSnowflakeCurrentRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/datasnowflakecurrentrole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakecurrentrole"
 
 &datasnowflakecurrentrole.DataSnowflakeCurrentRoleConfig {
 	Connection: interface{},
@@ -558,7 +558,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/datasnowflakec
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentRole.DataSnowflakeCurrentRoleConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentRole.DataSnowflakeCurrentRoleConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentRole.DataSnowflakeCurrentRoleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentRole.DataSnowflakeCurrentRoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.72.0/docs/data-sources/current_role#id DataSnowflakeCurrentRole#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentRole.DataSnowflakeCurrentRoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/data-sources/current_role#id DataSnowflakeCurrentRole#id}. |
 
 ---
 
@@ -640,7 +640,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.72.0/docs/data-sources/current_role#id DataSnowflakeCurrentRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/data-sources/current_role#id DataSnowflakeCurrentRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
