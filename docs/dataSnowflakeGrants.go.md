@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrants.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/datasnowflakegrants"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakegrants"
 
 datasnowflakegrants.NewDataSnowflakeGrants(scope Construct, id *string, config DataSnowflakeGrantsConfig) DataSnowflakeGrants
 ```
@@ -377,7 +377,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrants.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/datasnowflakegrants"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakegrants"
 
 datasnowflakegrants.DataSnowflakeGrants_IsConstruct(x interface{}) *bool
 ```
@@ -409,7 +409,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrants.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/datasnowflakegrants"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakegrants"
 
 datasnowflakegrants.DataSnowflakeGrants_IsTerraformElement(x interface{}) *bool
 ```
@@ -423,7 +423,7 @@ datasnowflakegrants.DataSnowflakeGrants_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrants.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/datasnowflakegrants"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakegrants"
 
 datasnowflakegrants.DataSnowflakeGrants_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -743,7 +743,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/datasnowflakegrants"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakegrants"
 
 &datasnowflakegrants.DataSnowflakeGrantsConfig {
 	Connection: interface{},
@@ -753,11 +753,11 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/datasnowflakeg
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	FutureGrantsIn: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9.dataSnowflakeGrants.DataSnowflakeGrantsFutureGrantsIn,
-	FutureGrantsTo: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9.dataSnowflakeGrants.DataSnowflakeGrantsFutureGrantsTo,
-	GrantsOf: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9.dataSnowflakeGrants.DataSnowflakeGrantsGrantsOf,
-	GrantsOn: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9.dataSnowflakeGrants.DataSnowflakeGrantsGrantsOn,
-	GrantsTo: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9.dataSnowflakeGrants.DataSnowflakeGrantsGrantsTo,
+	FutureGrantsIn: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10.dataSnowflakeGrants.DataSnowflakeGrantsFutureGrantsIn,
+	FutureGrantsTo: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10.dataSnowflakeGrants.DataSnowflakeGrantsFutureGrantsTo,
+	GrantsOf: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10.dataSnowflakeGrants.DataSnowflakeGrantsGrantsOf,
+	GrantsOn: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10.dataSnowflakeGrants.DataSnowflakeGrantsGrantsOn,
+	GrantsTo: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10.dataSnowflakeGrants.DataSnowflakeGrantsGrantsTo,
 	Id: *string,
 }
 ```
@@ -942,11 +942,11 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsFutureGrantsIn.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/datasnowflakegrants"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakegrants"
 
 &datasnowflakegrants.DataSnowflakeGrantsFutureGrantsIn {
 	Database: *string,
-	Schema: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9.dataSnowflakeGrants.DataSnowflakeGrantsFutureGrantsInSchema,
+	Schema: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10.dataSnowflakeGrants.DataSnowflakeGrantsFutureGrantsInSchema,
 }
 ```
 
@@ -992,7 +992,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsFutureGrantsInSchema.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/datasnowflakegrants"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakegrants"
 
 &datasnowflakegrants.DataSnowflakeGrantsFutureGrantsInSchema {
 	SchemaName: *string,
@@ -1042,7 +1042,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsFutureGrantsTo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/datasnowflakegrants"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakegrants"
 
 &datasnowflakegrants.DataSnowflakeGrantsFutureGrantsTo {
 	Role: *string,
@@ -1076,7 +1076,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrants.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/datasnowflakegrants"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakegrants"
 
 &datasnowflakegrants.DataSnowflakeGrantsGrants {
 
@@ -1089,7 +1089,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/datasnowflakeg
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsOf.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/datasnowflakegrants"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakegrants"
 
 &datasnowflakegrants.DataSnowflakeGrantsGrantsOf {
 	Role: *string,
@@ -1139,7 +1139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsOn.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/datasnowflakegrants"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakegrants"
 
 &datasnowflakegrants.DataSnowflakeGrantsGrantsOn {
 	Account: interface{},
@@ -1207,7 +1207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsTo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/datasnowflakegrants"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakegrants"
 
 &datasnowflakegrants.DataSnowflakeGrantsGrantsTo {
 	Role: *string,
@@ -1277,7 +1277,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsFutureGrantsInOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/datasnowflakegrants"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakegrants"
 
 datasnowflakegrants.NewDataSnowflakeGrantsFutureGrantsInOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataSnowflakeGrantsFutureGrantsInOutputReference
 ```
@@ -1597,7 +1597,7 @@ func InternalValue() DataSnowflakeGrantsFutureGrantsIn
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsFutureGrantsInSchemaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/datasnowflakegrants"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakegrants"
 
 datasnowflakegrants.NewDataSnowflakeGrantsFutureGrantsInSchemaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataSnowflakeGrantsFutureGrantsInSchemaOutputReference
 ```
@@ -1897,7 +1897,7 @@ func InternalValue() DataSnowflakeGrantsFutureGrantsInSchema
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsFutureGrantsToOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/datasnowflakegrants"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakegrants"
 
 datasnowflakegrants.NewDataSnowflakeGrantsFutureGrantsToOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataSnowflakeGrantsFutureGrantsToOutputReference
 ```
@@ -2168,7 +2168,7 @@ func InternalValue() DataSnowflakeGrantsFutureGrantsTo
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/datasnowflakegrants"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakegrants"
 
 datasnowflakegrants.NewDataSnowflakeGrantsGrantsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeGrantsGrantsList
 ```
@@ -2300,7 +2300,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsOfOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/datasnowflakegrants"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakegrants"
 
 datasnowflakegrants.NewDataSnowflakeGrantsGrantsOfOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataSnowflakeGrantsGrantsOfOutputReference
 ```
@@ -2607,7 +2607,7 @@ func InternalValue() DataSnowflakeGrantsGrantsOf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsOnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/datasnowflakegrants"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakegrants"
 
 datasnowflakegrants.NewDataSnowflakeGrantsGrantsOnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataSnowflakeGrantsGrantsOnOutputReference
 ```
@@ -2943,7 +2943,7 @@ func InternalValue() DataSnowflakeGrantsGrantsOn
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/datasnowflakegrants"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakegrants"
 
 datasnowflakegrants.NewDataSnowflakeGrantsGrantsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeGrantsGrantsOutputReference
 ```
@@ -3298,7 +3298,7 @@ func InternalValue() DataSnowflakeGrantsGrants
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeGrants.DataSnowflakeGrantsGrantsToOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/datasnowflakegrants"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakegrants"
 
 datasnowflakegrants.NewDataSnowflakeGrantsGrantsToOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataSnowflakeGrantsGrantsToOutputReference
 ```

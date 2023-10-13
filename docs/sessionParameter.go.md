@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.sessionParameter.SessionParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/sessionparameter"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/sessionparameter"
 
 sessionparameter.NewSessionParameter(scope Construct, id *string, config SessionParameterConfig) SessionParameter
 ```
@@ -291,7 +291,7 @@ func ResetUser()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.sessionParameter.SessionParameter.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/sessionparameter"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/sessionparameter"
 
 sessionparameter.SessionParameter_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.sessionParameter.SessionParameter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/sessionparameter"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/sessionparameter"
 
 sessionparameter.SessionParameter_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ sessionparameter.SessionParameter_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.sessionParameter.SessionParameter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/sessionparameter"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/sessionparameter"
 
 sessionparameter.SessionParameter_IsTerraformResource(x interface{}) *bool
 ```
@@ -646,7 +646,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.sessionParameter.SessionParameterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/sessionparameter"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/sessionparameter"
 
 &sessionparameter.SessionParameterConfig {
 	Connection: interface{},

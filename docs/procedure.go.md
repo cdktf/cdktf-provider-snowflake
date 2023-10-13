@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.procedure.Procedure.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/procedure"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/procedure"
 
 procedure.NewProcedure(scope Construct, id *string, config ProcedureConfig) Procedure
 ```
@@ -360,7 +360,7 @@ func ResetRuntimeVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.procedure.Procedure.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/procedure"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/procedure"
 
 procedure.Procedure_IsConstruct(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.procedure.Procedure.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/procedure"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/procedure"
 
 procedure.Procedure_IsTerraformElement(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ procedure.Procedure_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.procedure.Procedure.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/procedure"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/procedure"
 
 procedure.Procedure_IsTerraformResource(x interface{}) *bool
 ```
@@ -957,7 +957,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.procedure.ProcedureArguments.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/procedure"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/procedure"
 
 &procedure.ProcedureArguments {
 	Name: *string,
@@ -1007,7 +1007,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.procedure.ProcedureConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/procedure"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/procedure"
 
 &procedure.ProcedureConfig {
 	Connection: interface{},
@@ -1374,7 +1374,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.procedure.ProcedureArgumentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/procedure"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/procedure"
 
 procedure.NewProcedureArgumentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProcedureArgumentsList
 ```
@@ -1517,7 +1517,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.procedure.ProcedureArgumentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/procedure"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/procedure"
 
 procedure.NewProcedureArgumentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProcedureArgumentsOutputReference
 ```

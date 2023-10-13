@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.task.Task.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/task"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/task"
 
 task.NewTask(scope Construct, id *string, config TaskConfig) Task
 ```
@@ -354,7 +354,7 @@ func ResetWhen()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.task.Task.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/task"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/task"
 
 task.Task_IsConstruct(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.task.Task.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/task"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/task"
 
 task.Task_IsTerraformElement(x interface{}) *bool
 ```
@@ -400,7 +400,7 @@ task.Task_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.task.Task.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/task"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/task"
 
 task.Task_IsTerraformResource(x interface{}) *bool
 ```
@@ -951,7 +951,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.task.TaskConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v9/task"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/task"
 
 &task.TaskConfig {
 	Connection: interface{},
