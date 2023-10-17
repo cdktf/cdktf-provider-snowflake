@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeRoles.DataSnowflakeRoles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakeroles"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeroles"
 
 datasnowflakeroles.NewDataSnowflakeRoles(scope Construct, id *string, config DataSnowflakeRolesConfig) DataSnowflakeRoles
 ```
@@ -278,13 +278,14 @@ func ResetPattern()
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRoles.DataSnowflakeRoles.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRoles.DataSnowflakeRoles.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRoles.DataSnowflakeRoles.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRoles.DataSnowflakeRoles.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataSnowflakeRoles resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeRoles.DataSnowflakeRoles.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakeroles"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeroles"
 
 datasnowflakeroles.DataSnowflakeRoles_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +317,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeRoles.DataSnowflakeRoles.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakeroles"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeroles"
 
 datasnowflakeroles.DataSnowflakeRoles_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +331,7 @@ datasnowflakeroles.DataSnowflakeRoles_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeRoles.DataSnowflakeRoles.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakeroles"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeroles"
 
 datasnowflakeroles.DataSnowflakeRoles_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,6 +339,50 @@ datasnowflakeroles.DataSnowflakeRoles_IsTerraformDataSource(x interface{}) *bool
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-snowflake.dataSnowflakeRoles.DataSnowflakeRoles.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.dataSnowflakeRoles.DataSnowflakeRoles.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeroles"
+
+datasnowflakeroles.DataSnowflakeRoles_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DataSnowflakeRoles resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-snowflake.dataSnowflakeRoles.DataSnowflakeRoles.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-snowflake.dataSnowflakeRoles.DataSnowflakeRoles.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DataSnowflakeRoles to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-snowflake.dataSnowflakeRoles.DataSnowflakeRoles.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DataSnowflakeRoles that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/data-sources/roles#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-snowflake.dataSnowflakeRoles.DataSnowflakeRoles.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataSnowflakeRoles to import is found.
 
 ---
 
@@ -562,7 +607,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeRoles.DataSnowflakeRolesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakeroles"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeroles"
 
 &datasnowflakeroles.DataSnowflakeRolesConfig {
 	Connection: interface{},
@@ -697,7 +742,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeRoles.DataSnowflakeRolesRoles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakeroles"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeroles"
 
 &datasnowflakeroles.DataSnowflakeRolesRoles {
 
@@ -712,7 +757,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflake
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeRoles.DataSnowflakeRolesRolesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakeroles"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeroles"
 
 datasnowflakeroles.NewDataSnowflakeRolesRolesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeRolesRolesList
 ```
@@ -844,7 +889,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeRoles.DataSnowflakeRolesRolesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakeroles"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeroles"
 
 datasnowflakeroles.NewDataSnowflakeRolesRolesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeRolesRolesOutputReference
 ```
