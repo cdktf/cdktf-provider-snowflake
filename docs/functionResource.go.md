@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.functionResource.FunctionResource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/functionresource"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functionresource"
 
 functionresource.NewFunctionResource(scope Construct, id *string, config FunctionResourceConfig) FunctionResource
 ```
@@ -429,7 +429,7 @@ func ResetTargetPath()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.functionResource.FunctionResource.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/functionresource"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functionresource"
 
 functionresource.FunctionResource_IsConstruct(x interface{}) *bool
 ```
@@ -461,7 +461,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.functionResource.FunctionResource.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/functionresource"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functionresource"
 
 functionresource.FunctionResource_IsTerraformElement(x interface{}) *bool
 ```
@@ -475,7 +475,7 @@ functionresource.FunctionResource_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.functionResource.FunctionResource.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/functionresource"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functionresource"
 
 functionresource.FunctionResource_IsTerraformResource(x interface{}) *bool
 ```
@@ -489,7 +489,7 @@ functionresource.FunctionResource_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.functionResource.FunctionResource.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/functionresource"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functionresource"
 
 functionresource.FunctionResource_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1092,7 +1092,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.functionResource.FunctionResourceArguments.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/functionresource"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functionresource"
 
 &functionresource.FunctionResourceArguments {
 	Name: *string,
@@ -1142,7 +1142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.functionResource.FunctionResourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/functionresource"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functionresource"
 
 &functionresource.FunctionResourceConfig {
 	Connection: interface{},
@@ -1527,7 +1527,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.functionResource.FunctionResourceArgumentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/functionresource"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functionresource"
 
 functionresource.NewFunctionResourceArgumentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FunctionResourceArgumentsList
 ```
@@ -1670,7 +1670,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.functionResource.FunctionResourceArgumentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/functionresource"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functionresource"
 
 functionresource.NewFunctionResourceArgumentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FunctionResourceArgumentsOutputReference
 ```
