@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeDatabase.DataSnowflakeDatabase.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakedatabase"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakedatabase"
 
 datasnowflakedatabase.NewDataSnowflakeDatabase(scope Construct, id *string, config DataSnowflakeDatabaseConfig) DataSnowflakeDatabase
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeDatabase.DataSnowflakeDatabase.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakedatabase"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakedatabase"
 
 datasnowflakedatabase.DataSnowflakeDatabase_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeDatabase.DataSnowflakeDatabase.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakedatabase"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakedatabase"
 
 datasnowflakedatabase.DataSnowflakeDatabase_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ datasnowflakedatabase.DataSnowflakeDatabase_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeDatabase.DataSnowflakeDatabase.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakedatabase"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakedatabase"
 
 datasnowflakedatabase.DataSnowflakeDatabase_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -632,7 +632,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeDatabase.DataSnowflakeDatabaseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakedatabase"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakedatabase"
 
 &datasnowflakedatabase.DataSnowflakeDatabaseConfig {
 	Connection: interface{},
