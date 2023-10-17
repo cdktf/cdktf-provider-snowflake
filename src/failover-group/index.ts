@@ -387,6 +387,20 @@ export class FailoverGroup extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "snowflake_failover_group";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a FailoverGroup resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the FailoverGroup to import
+  * @param importFromId The id of the existing FailoverGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/resources/failover_group#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the FailoverGroup to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_failover_group", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

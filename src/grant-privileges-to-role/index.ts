@@ -692,6 +692,20 @@ export class GrantPrivilegesToRole extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "snowflake_grant_privileges_to_role";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a GrantPrivilegesToRole resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the GrantPrivilegesToRole to import
+  * @param importFromId The id of the existing GrantPrivilegesToRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/resources/grant_privileges_to_role#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the GrantPrivilegesToRole to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_grant_privileges_to_role", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

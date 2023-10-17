@@ -121,6 +121,20 @@ export class Task extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "snowflake_task";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a Task resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the Task to import
+  * @param importFromId The id of the existing Task that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/resources/task#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the Task to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_task", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

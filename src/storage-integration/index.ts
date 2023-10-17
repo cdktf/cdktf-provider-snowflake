@@ -77,6 +77,20 @@ export class StorageIntegration extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "snowflake_storage_integration";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a StorageIntegration resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the StorageIntegration to import
+  * @param importFromId The id of the existing StorageIntegration that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/resources/storage_integration#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the StorageIntegration to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_storage_integration", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========
