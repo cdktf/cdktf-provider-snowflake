@@ -1,6 +1,6 @@
 # `data_snowflake_materialized_views`
 
-Refer to the Terraform Registory for docs: [`data_snowflake_materialized_views`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/data-sources/materialized_views).
+Refer to the Terraform Registory for docs: [`data_snowflake_materialized_views`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/data-sources/materialized_views).
 
 # `dataSnowflakeMaterializedViews` Submodule <a name="`dataSnowflakeMaterializedViews` Submodule" id="@cdktf/provider-snowflake.dataSnowflakeMaterializedViews"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_snowflake_materialized_views`]
 
 ### DataSnowflakeMaterializedViews <a name="DataSnowflakeMaterializedViews" id="@cdktf/provider-snowflake.dataSnowflakeMaterializedViews.DataSnowflakeMaterializedViews"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/data-sources/materialized_views snowflake_materialized_views}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/data-sources/materialized_views snowflake_materialized_views}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeMaterializedViews.DataSnowflakeMaterializedViews.Initializer"></a>
 
@@ -367,7 +367,7 @@ The construct id used in the generated config for the DataSnowflakeMaterializedV
 
 The id of the existing DataSnowflakeMaterializedViews that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/data-sources/materialized_views#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/data-sources/materialized_views#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -640,7 +640,7 @@ const dataSnowflakeMaterializedViewsConfig: dataSnowflakeMaterializedViews.DataS
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeMaterializedViews.DataSnowflakeMaterializedViewsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeMaterializedViews.DataSnowflakeMaterializedViewsConfig.property.database">database</a></code> | <code>string</code> | The database from which to return the schemas from. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeMaterializedViews.DataSnowflakeMaterializedViewsConfig.property.schema">schema</a></code> | <code>string</code> | The schema from which to return the views from. |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeMaterializedViews.DataSnowflakeMaterializedViewsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/data-sources/materialized_views#id DataSnowflakeMaterializedViews#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeMaterializedViews.DataSnowflakeMaterializedViewsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/data-sources/materialized_views#id DataSnowflakeMaterializedViews#id}. |
 
 ---
 
@@ -724,7 +724,7 @@ public readonly database: string;
 
 The database from which to return the schemas from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/data-sources/materialized_views#database DataSnowflakeMaterializedViews#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/data-sources/materialized_views#database DataSnowflakeMaterializedViews#database}
 
 ---
 
@@ -738,7 +738,7 @@ public readonly schema: string;
 
 The schema from which to return the views from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/data-sources/materialized_views#schema DataSnowflakeMaterializedViews#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/data-sources/materialized_views#schema DataSnowflakeMaterializedViews#schema}
 
 ---
 
@@ -750,7 +750,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/data-sources/materialized_views#id DataSnowflakeMaterializedViews#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/data-sources/materialized_views#id DataSnowflakeMaterializedViews#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

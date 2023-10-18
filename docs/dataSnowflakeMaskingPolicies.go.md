@@ -1,6 +1,6 @@
 # `data_snowflake_masking_policies`
 
-Refer to the Terraform Registory for docs: [`data_snowflake_masking_policies`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/data-sources/masking_policies).
+Refer to the Terraform Registory for docs: [`data_snowflake_masking_policies`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/data-sources/masking_policies).
 
 # `dataSnowflakeMaskingPolicies` Submodule <a name="`dataSnowflakeMaskingPolicies` Submodule" id="@cdktf/provider-snowflake.dataSnowflakeMaskingPolicies"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_snowflake_masking_policies`](h
 
 ### DataSnowflakeMaskingPolicies <a name="DataSnowflakeMaskingPolicies" id="@cdktf/provider-snowflake.dataSnowflakeMaskingPolicies.DataSnowflakeMaskingPolicies"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/data-sources/masking_policies snowflake_masking_policies}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/data-sources/masking_policies snowflake_masking_policies}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeMaskingPolicies.DataSnowflakeMaskingPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakemaskingpolicies"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakemaskingpolicies"
 
 datasnowflakemaskingpolicies.NewDataSnowflakeMaskingPolicies(scope Construct, id *string, config DataSnowflakeMaskingPoliciesConfig) DataSnowflakeMaskingPolicies
 ```
@@ -278,7 +278,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeMaskingPolicies.DataSnowflakeMaskingPolicies.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakemaskingpolicies"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakemaskingpolicies"
 
 datasnowflakemaskingpolicies.DataSnowflakeMaskingPolicies_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeMaskingPolicies.DataSnowflakeMaskingPolicies.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakemaskingpolicies"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakemaskingpolicies"
 
 datasnowflakemaskingpolicies.DataSnowflakeMaskingPolicies_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ datasnowflakemaskingpolicies.DataSnowflakeMaskingPolicies_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeMaskingPolicies.DataSnowflakeMaskingPolicies.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakemaskingpolicies"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakemaskingpolicies"
 
 datasnowflakemaskingpolicies.DataSnowflakeMaskingPolicies_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ datasnowflakemaskingpolicies.DataSnowflakeMaskingPolicies_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.dataSnowflakeMaskingPolicies.DataSnowflakeMaskingPolicies.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakemaskingpolicies"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakemaskingpolicies"
 
 datasnowflakemaskingpolicies.DataSnowflakeMaskingPolicies_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -367,7 +367,7 @@ The construct id used in the generated config for the DataSnowflakeMaskingPolici
 
 The id of the existing DataSnowflakeMaskingPolicies that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/data-sources/masking_policies#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/data-sources/masking_policies#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -622,7 +622,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeMaskingPolicies.DataSnowflakeMaskingPoliciesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakemaskingpolicies"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakemaskingpolicies"
 
 &datasnowflakemaskingpolicies.DataSnowflakeMaskingPoliciesConfig {
 	Connection: interface{},
@@ -651,7 +651,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflake
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeMaskingPolicies.DataSnowflakeMaskingPoliciesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeMaskingPolicies.DataSnowflakeMaskingPoliciesConfig.property.database">Database</a></code> | <code>*string</code> | The database from which to return the schemas from. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeMaskingPolicies.DataSnowflakeMaskingPoliciesConfig.property.schema">Schema</a></code> | <code>*string</code> | The schema from which to return the maskingPolicies from. |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeMaskingPolicies.DataSnowflakeMaskingPoliciesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/data-sources/masking_policies#id DataSnowflakeMaskingPolicies#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeMaskingPolicies.DataSnowflakeMaskingPoliciesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/data-sources/masking_policies#id DataSnowflakeMaskingPolicies#id}. |
 
 ---
 
@@ -735,7 +735,7 @@ Database *string
 
 The database from which to return the schemas from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/data-sources/masking_policies#database DataSnowflakeMaskingPolicies#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/data-sources/masking_policies#database DataSnowflakeMaskingPolicies#database}
 
 ---
 
@@ -749,7 +749,7 @@ Schema *string
 
 The schema from which to return the maskingPolicies from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/data-sources/masking_policies#schema DataSnowflakeMaskingPolicies#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/data-sources/masking_policies#schema DataSnowflakeMaskingPolicies#schema}
 
 ---
 
@@ -761,7 +761,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/data-sources/masking_policies#id DataSnowflakeMaskingPolicies#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/data-sources/masking_policies#id DataSnowflakeMaskingPolicies#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -773,7 +773,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeMaskingPolicies.DataSnowflakeMaskingPoliciesMaskingPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakemaskingpolicies"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakemaskingpolicies"
 
 &datasnowflakemaskingpolicies.DataSnowflakeMaskingPoliciesMaskingPolicies {
 
@@ -788,7 +788,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflake
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeMaskingPolicies.DataSnowflakeMaskingPoliciesMaskingPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakemaskingpolicies"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakemaskingpolicies"
 
 datasnowflakemaskingpolicies.NewDataSnowflakeMaskingPoliciesMaskingPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeMaskingPoliciesMaskingPoliciesList
 ```
@@ -920,7 +920,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeMaskingPolicies.DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakemaskingpolicies"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakemaskingpolicies"
 
 datasnowflakemaskingpolicies.NewDataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference
 ```
