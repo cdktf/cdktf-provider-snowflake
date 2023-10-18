@@ -13,6 +13,7 @@ Object.defineProperty(exports, 'apiIntegration', { get: function () { return req
 Object.defineProperty(exports, 'database', { get: function () { return require('./database'); } });
 Object.defineProperty(exports, 'databaseGrant', { get: function () { return require('./database-grant'); } });
 Object.defineProperty(exports, 'databaseRole', { get: function () { return require('./database-role'); } });
+Object.defineProperty(exports, 'dynamicTable', { get: function () { return require('./dynamic-table'); } });
 Object.defineProperty(exports, 'emailNotificationIntegration', { get: function () { return require('./email-notification-integration'); } });
 Object.defineProperty(exports, 'externalFunction', { get: function () { return require('./external-function'); } });
 Object.defineProperty(exports, 'externalOauthIntegration', { get: function () { return require('./external-oauth-integration'); } });
@@ -86,6 +87,7 @@ Object.defineProperty(exports, 'dataSnowflakeCurrentRole', { get: function () { 
 Object.defineProperty(exports, 'dataSnowflakeDatabase', { get: function () { return require('./data-snowflake-database'); } });
 Object.defineProperty(exports, 'dataSnowflakeDatabaseRoles', { get: function () { return require('./data-snowflake-database-roles'); } });
 Object.defineProperty(exports, 'dataSnowflakeDatabases', { get: function () { return require('./data-snowflake-databases'); } });
+Object.defineProperty(exports, 'dataSnowflakeDynamicTables', { get: function () { return require('./data-snowflake-dynamic-tables'); } });
 Object.defineProperty(exports, 'dataSnowflakeExternalFunctions', { get: function () { return require('./data-snowflake-external-functions'); } });
 Object.defineProperty(exports, 'dataSnowflakeExternalTables', { get: function () { return require('./data-snowflake-external-tables'); } });
 Object.defineProperty(exports, 'dataSnowflakeFailoverGroups', { get: function () { return require('./data-snowflake-failover-groups'); } });

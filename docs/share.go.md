@@ -1,6 +1,6 @@
 # `snowflake_share`
 
-Refer to the Terraform Registory for docs: [`snowflake_share`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/resources/share).
+Refer to the Terraform Registory for docs: [`snowflake_share`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/share).
 
 # `share` Submodule <a name="`share` Submodule" id="@cdktf/provider-snowflake.share"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`snowflake_share`](https://registry.
 
 ### Share <a name="Share" id="@cdktf/provider-snowflake.share.Share"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/resources/share snowflake_share}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/share snowflake_share}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.share.Share.Initializer"></a>
 
@@ -442,7 +442,7 @@ The construct id used in the generated config for the Share to import.
 
 The id of the existing Share that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/resources/share#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/share#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -761,7 +761,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/share"
 | <code><a href="#@cdktf/provider-snowflake.share.ShareConfig.property.name">Name</a></code> | <code>*string</code> | Specifies the identifier for the share; must be unique for the account in which the share is created. |
 | <code><a href="#@cdktf/provider-snowflake.share.ShareConfig.property.accounts">Accounts</a></code> | <code>*[]*string</code> | A list of accounts to be added to the share. |
 | <code><a href="#@cdktf/provider-snowflake.share.ShareConfig.property.comment">Comment</a></code> | <code>*string</code> | Specifies a comment for the managed account. |
-| <code><a href="#@cdktf/provider-snowflake.share.ShareConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/resources/share#id Share#id}. |
+| <code><a href="#@cdktf/provider-snowflake.share.ShareConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/share#id Share#id}. |
 
 ---
 
@@ -845,7 +845,7 @@ Name *string
 
 Specifies the identifier for the share; must be unique for the account in which the share is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/resources/share#name Share#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/share#name Share#name}
 
 ---
 
@@ -861,7 +861,7 @@ A list of accounts to be added to the share.
 
 Values should not be the account locator, but in the form of 'organization_name.account_name
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/resources/share#accounts Share#accounts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/share#accounts Share#accounts}
 
 ---
 
@@ -875,7 +875,7 @@ Comment *string
 
 Specifies a comment for the managed account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/resources/share#comment Share#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/share#comment Share#comment}
 
 ---
 
@@ -887,7 +887,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/resources/share#id Share#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/share#id Share#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

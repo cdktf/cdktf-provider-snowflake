@@ -1,0 +1,437 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/dynamic_table
+// generated from terraform resource schema
+
+import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
+
+// Configuration
+
+export interface DynamicTableConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Specifies a comment for the dynamic table.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/dynamic_table#comment DynamicTable#comment}
+  */
+  readonly comment?: string;
+  /**
+  * The database in which to create the dynamic table.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/dynamic_table#database DynamicTable#database}
+  */
+  readonly database: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/dynamic_table#id DynamicTable#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
+  * Specifies the identifier (i.e. name) for the dynamic table; must be unique for the schema in which the dynamic table is created.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/dynamic_table#name DynamicTable#name}
+  */
+  readonly name: string;
+  /**
+  * Specifies whether to replace the dynamic table if it already exists.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/dynamic_table#or_replace DynamicTable#or_replace}
+  */
+  readonly orReplace?: boolean | cdktf.IResolvable;
+  /**
+  * Specifies the query to use to populate the dynamic table.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/dynamic_table#query DynamicTable#query}
+  */
+  readonly query: string;
+  /**
+  * The schema in which to create the dynamic table.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/dynamic_table#schema DynamicTable#schema}
+  */
+  readonly schema: string;
+  /**
+  * The warehouse in which to create the dynamic table.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/dynamic_table#warehouse DynamicTable#warehouse}
+  */
+  readonly warehouse: string;
+  /**
+  * target_lag block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/dynamic_table#target_lag DynamicTable#target_lag}
+  */
+  readonly targetLag: DynamicTableTargetLag;
+}
+export interface DynamicTableTargetLag {
+  /**
+  * Specifies whether the target lag time is downstream.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/dynamic_table#downstream DynamicTable#downstream}
+  */
+  readonly downstream?: boolean | cdktf.IResolvable;
+  /**
+  * Specifies the maximum target lag time for the dynamic table.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/dynamic_table#maximum_duration DynamicTable#maximum_duration}
+  */
+  readonly maximumDuration?: string;
+}
+
+export function dynamicTableTargetLagToTerraform(struct?: DynamicTableTargetLagOutputReference | DynamicTableTargetLag): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    downstream: cdktf.booleanToTerraform(struct!.downstream),
+    maximum_duration: cdktf.stringToTerraform(struct!.maximumDuration),
+  }
+}
+
+export class DynamicTableTargetLagOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DynamicTableTargetLag | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._downstream !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.downstream = this._downstream;
+    }
+    if (this._maximumDuration !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maximumDuration = this._maximumDuration;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DynamicTableTargetLag | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._downstream = undefined;
+      this._maximumDuration = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._downstream = value.downstream;
+      this._maximumDuration = value.maximumDuration;
+    }
+  }
+
+  // downstream - computed: false, optional: true, required: false
+  private _downstream?: boolean | cdktf.IResolvable; 
+  public get downstream() {
+    return this.getBooleanAttribute('downstream');
+  }
+  public set downstream(value: boolean | cdktf.IResolvable) {
+    this._downstream = value;
+  }
+  public resetDownstream() {
+    this._downstream = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get downstreamInput() {
+    return this._downstream;
+  }
+
+  // maximum_duration - computed: false, optional: true, required: false
+  private _maximumDuration?: string; 
+  public get maximumDuration() {
+    return this.getStringAttribute('maximum_duration');
+  }
+  public set maximumDuration(value: string) {
+    this._maximumDuration = value;
+  }
+  public resetMaximumDuration() {
+    this._maximumDuration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maximumDurationInput() {
+    return this._maximumDuration;
+  }
+}
+
+/**
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/dynamic_table snowflake_dynamic_table}
+*/
+export class DynamicTable extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType = "snowflake_dynamic_table";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DynamicTable resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DynamicTable to import
+  * @param importFromId The id of the existing DynamicTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/dynamic_table#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DynamicTable to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "snowflake_dynamic_table", importId: importFromId, provider });
+      }
+
+  // ===========
+  // INITIALIZER
+  // ===========
+
+  /**
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/dynamic_table snowflake_dynamic_table} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DynamicTableConfig
+  */
+  public constructor(scope: Construct, id: string, config: DynamicTableConfig) {
+    super(scope, id, {
+      terraformResourceType: 'snowflake_dynamic_table',
+      terraformGeneratorMetadata: {
+        providerName: 'snowflake',
+        providerVersion: '0.74.0',
+        providerVersionConstraint: ' ~> 0.40'
+      },
+      provider: config.provider,
+      dependsOn: config.dependsOn,
+      count: config.count,
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
+    });
+    this._comment = config.comment;
+    this._database = config.database;
+    this._id = config.id;
+    this._name = config.name;
+    this._orReplace = config.orReplace;
+    this._query = config.query;
+    this._schema = config.schema;
+    this._warehouse = config.warehouse;
+    this._targetLag.internalValue = config.targetLag;
+  }
+
+  // ==========
+  // ATTRIBUTES
+  // ==========
+
+  // automatic_clustering - computed: true, optional: false, required: false
+  public get automaticClustering() {
+    return this.getBooleanAttribute('automatic_clustering');
+  }
+
+  // bytes - computed: true, optional: false, required: false
+  public get bytes() {
+    return this.getNumberAttribute('bytes');
+  }
+
+  // cluster_by - computed: true, optional: false, required: false
+  public get clusterBy() {
+    return this.getStringAttribute('cluster_by');
+  }
+
+  // comment - computed: false, optional: true, required: false
+  private _comment?: string; 
+  public get comment() {
+    return this.getStringAttribute('comment');
+  }
+  public set comment(value: string) {
+    this._comment = value;
+  }
+  public resetComment() {
+    this._comment = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get commentInput() {
+    return this._comment;
+  }
+
+  // data_timestamp - computed: true, optional: false, required: false
+  public get dataTimestamp() {
+    return this.getStringAttribute('data_timestamp');
+  }
+
+  // database - computed: false, optional: false, required: true
+  private _database?: string; 
+  public get database() {
+    return this.getStringAttribute('database');
+  }
+  public set database(value: string) {
+    this._database = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get databaseInput() {
+    return this._database;
+  }
+
+  // id - computed: true, optional: true, required: false
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // is_clone - computed: true, optional: false, required: false
+  public get isClone() {
+    return this.getBooleanAttribute('is_clone');
+  }
+
+  // is_replica - computed: true, optional: false, required: false
+  public get isReplica() {
+    return this.getBooleanAttribute('is_replica');
+  }
+
+  // last_suspended_on - computed: true, optional: false, required: false
+  public get lastSuspendedOn() {
+    return this.getStringAttribute('last_suspended_on');
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // or_replace - computed: false, optional: true, required: false
+  private _orReplace?: boolean | cdktf.IResolvable; 
+  public get orReplace() {
+    return this.getBooleanAttribute('or_replace');
+  }
+  public set orReplace(value: boolean | cdktf.IResolvable) {
+    this._orReplace = value;
+  }
+  public resetOrReplace() {
+    this._orReplace = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get orReplaceInput() {
+    return this._orReplace;
+  }
+
+  // owner - computed: true, optional: false, required: false
+  public get owner() {
+    return this.getStringAttribute('owner');
+  }
+
+  // query - computed: false, optional: false, required: true
+  private _query?: string; 
+  public get query() {
+    return this.getStringAttribute('query');
+  }
+  public set query(value: string) {
+    this._query = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get queryInput() {
+    return this._query;
+  }
+
+  // refresh_mode - computed: true, optional: false, required: false
+  public get refreshMode() {
+    return this.getStringAttribute('refresh_mode');
+  }
+
+  // refresh_mode_reason - computed: true, optional: false, required: false
+  public get refreshModeReason() {
+    return this.getStringAttribute('refresh_mode_reason');
+  }
+
+  // rows - computed: true, optional: false, required: false
+  public get rows() {
+    return this.getNumberAttribute('rows');
+  }
+
+  // scheduling_state - computed: true, optional: false, required: false
+  public get schedulingState() {
+    return this.getStringAttribute('scheduling_state');
+  }
+
+  // schema - computed: false, optional: false, required: true
+  private _schema?: string; 
+  public get schema() {
+    return this.getStringAttribute('schema');
+  }
+  public set schema(value: string) {
+    this._schema = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get schemaInput() {
+    return this._schema;
+  }
+
+  // warehouse - computed: false, optional: false, required: true
+  private _warehouse?: string; 
+  public get warehouse() {
+    return this.getStringAttribute('warehouse');
+  }
+  public set warehouse(value: string) {
+    this._warehouse = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get warehouseInput() {
+    return this._warehouse;
+  }
+
+  // target_lag - computed: false, optional: false, required: true
+  private _targetLag = new DynamicTableTargetLagOutputReference(this, "target_lag");
+  public get targetLag() {
+    return this._targetLag;
+  }
+  public putTargetLag(value: DynamicTableTargetLag) {
+    this._targetLag.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetLagInput() {
+    return this._targetLag.internalValue;
+  }
+
+  // =========
+  // SYNTHESIS
+  // =========
+
+  protected synthesizeAttributes(): { [name: string]: any } {
+    return {
+      comment: cdktf.stringToTerraform(this._comment),
+      database: cdktf.stringToTerraform(this._database),
+      id: cdktf.stringToTerraform(this._id),
+      name: cdktf.stringToTerraform(this._name),
+      or_replace: cdktf.booleanToTerraform(this._orReplace),
+      query: cdktf.stringToTerraform(this._query),
+      schema: cdktf.stringToTerraform(this._schema),
+      warehouse: cdktf.stringToTerraform(this._warehouse),
+      target_lag: dynamicTableTargetLagToTerraform(this._targetLag.internalValue),
+    };
+  }
+}

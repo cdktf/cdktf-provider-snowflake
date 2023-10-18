@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/resources/failover_group_grant
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/failover_group_grant
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface FailoverGroupGrantConfig extends cdktf.TerraformMetaArguments {
   /**
   * When this is set to true, multiple grants of the same type can be created. This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/resources/failover_group_grant#enable_multiple_grants FailoverGroupGrant#enable_multiple_grants}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/failover_group_grant#enable_multiple_grants FailoverGroupGrant#enable_multiple_grants}
   */
   readonly enableMultipleGrants?: boolean | cdktf.IResolvable;
   /**
   * The name of the failover group on which to grant privileges.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/resources/failover_group_grant#failover_group_name FailoverGroupGrant#failover_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/failover_group_grant#failover_group_name FailoverGroupGrant#failover_group_name}
   */
   readonly failoverGroupName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/resources/failover_group_grant#id FailoverGroupGrant#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/failover_group_grant#id FailoverGroupGrant#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,31 +34,31 @@ export interface FailoverGroupGrantConfig extends cdktf.TerraformMetaArguments {
   /**
   * The privilege to grant on the failover group. To grant all privileges, use the value `ALL PRIVILEGES`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/resources/failover_group_grant#privilege FailoverGroupGrant#privilege}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/failover_group_grant#privilege FailoverGroupGrant#privilege}
   */
   readonly privilege?: string;
   /**
   * The name of the role to revert ownership to on destroy. Has no effect unless `privilege` is set to `OWNERSHIP`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/resources/failover_group_grant#revert_ownership_to_role_name FailoverGroupGrant#revert_ownership_to_role_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/failover_group_grant#revert_ownership_to_role_name FailoverGroupGrant#revert_ownership_to_role_name}
   */
   readonly revertOwnershipToRoleName?: string;
   /**
   * Grants privilege to these roles.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/resources/failover_group_grant#roles FailoverGroupGrant#roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/failover_group_grant#roles FailoverGroupGrant#roles}
   */
   readonly roles: string[];
   /**
   * When this is set to true, allows the recipient role to grant the privileges to other roles.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/resources/failover_group_grant#with_grant_option FailoverGroupGrant#with_grant_option}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/failover_group_grant#with_grant_option FailoverGroupGrant#with_grant_option}
   */
   readonly withGrantOption?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/resources/failover_group_grant snowflake_failover_group_grant}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/failover_group_grant snowflake_failover_group_grant}
 */
 export class FailoverGroupGrant extends cdktf.TerraformResource {
 
@@ -74,7 +74,7 @@ export class FailoverGroupGrant extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a FailoverGroupGrant resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FailoverGroupGrant to import
-  * @param importFromId The id of the existing FailoverGroupGrant that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/resources/failover_group_grant#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing FailoverGroupGrant that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/failover_group_grant#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FailoverGroupGrant to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -86,7 +86,7 @@ export class FailoverGroupGrant extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/resources/failover_group_grant snowflake_failover_group_grant} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/failover_group_grant snowflake_failover_group_grant} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -97,7 +97,7 @@ export class FailoverGroupGrant extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_failover_group_grant',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.73.0',
+        providerVersion: '0.74.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,

@@ -1,6 +1,6 @@
 # `data_snowflake_pipes`
 
-Refer to the Terraform Registory for docs: [`data_snowflake_pipes`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/data-sources/pipes).
+Refer to the Terraform Registory for docs: [`data_snowflake_pipes`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/data-sources/pipes).
 
 # `dataSnowflakePipes` Submodule <a name="`dataSnowflakePipes` Submodule" id="@cdktf/provider-snowflake.dataSnowflakePipes"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_snowflake_pipes`](https://regi
 
 ### DataSnowflakePipes <a name="DataSnowflakePipes" id="@cdktf/provider-snowflake.dataSnowflakePipes.DataSnowflakePipes"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/data-sources/pipes snowflake_pipes}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/data-sources/pipes snowflake_pipes}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakePipes.DataSnowflakePipes.Initializer"></a>
 
@@ -367,7 +367,7 @@ The construct id used in the generated config for the DataSnowflakePipes to impo
 
 The id of the existing DataSnowflakePipes that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/data-sources/pipes#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/data-sources/pipes#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -640,7 +640,7 @@ const dataSnowflakePipesConfig: dataSnowflakePipes.DataSnowflakePipesConfig = { 
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakePipes.DataSnowflakePipesConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakePipes.DataSnowflakePipesConfig.property.database">database</a></code> | <code>string</code> | The database from which to return the schemas from. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakePipes.DataSnowflakePipesConfig.property.schema">schema</a></code> | <code>string</code> | The schema from which to return the pipes from. |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakePipes.DataSnowflakePipesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/data-sources/pipes#id DataSnowflakePipes#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakePipes.DataSnowflakePipesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/data-sources/pipes#id DataSnowflakePipes#id}. |
 
 ---
 
@@ -724,7 +724,7 @@ public readonly database: string;
 
 The database from which to return the schemas from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/data-sources/pipes#database DataSnowflakePipes#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/data-sources/pipes#database DataSnowflakePipes#database}
 
 ---
 
@@ -738,7 +738,7 @@ public readonly schema: string;
 
 The schema from which to return the pipes from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/data-sources/pipes#schema DataSnowflakePipes#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/data-sources/pipes#schema DataSnowflakePipes#schema}
 
 ---
 
@@ -750,7 +750,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/data-sources/pipes#id DataSnowflakePipes#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/data-sources/pipes#id DataSnowflakePipes#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

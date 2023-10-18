@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,165 +13,326 @@ import * as cdktf from 'cdktf';
 
 export interface SnowflakeProviderConfig {
   /**
-  * The name of the Snowflake account. Can also come from the `SNOWFLAKE_ACCOUNT` environment variable. Required unless using profile.
+  * Specifies your Snowflake account identifier assigned, by Snowflake. For information about account identifiers, see the [Snowflake documentation](https://docs.snowflake.com/en/user-guide/admin-account-identifier.html). Can also be sourced from the `SNOWFLAKE_ACCOUNT` environment variable. Required unless using `profile`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs#account SnowflakeProvider#account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs#account SnowflakeProvider#account}
   */
   readonly account?: string;
   /**
-  * Specifies the [authentication type](https://pkg.go.dev/github.com/snowflakedb/gosnowflake#AuthType) to use when connecting to Snowflake. Valid values include: Snowflake, OAuth, ExternalBrowser, Okta, JWT, TokenAccessor, UsernamePasswordMFA
+  * Specifies the [authentication type](https://pkg.go.dev/github.com/snowflakedb/gosnowflake#AuthType) to use when connecting to Snowflake. Valid values include: Snowflake, OAuth, ExternalBrowser, Okta, JWT, TokenAccessor, UsernamePasswordMFA. Can also be sourced from the `SNOWFLAKE_AUTHENTICATOR` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs#authenticator SnowflakeProvider#authenticator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs#authenticator SnowflakeProvider#authenticator}
   */
   readonly authenticator?: string;
   /**
-  * Required when `oauth_refresh_token` is used. Can be sourced from `SNOWFLAKE_USE_BROWSER_AUTH` environment variable.
+  * Required when `oauth_refresh_token` is used. Can also be sourced from `SNOWFLAKE_USE_BROWSER_AUTH` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs#browser_auth SnowflakeProvider#browser_auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs#browser_auth SnowflakeProvider#browser_auth}
   */
   readonly browserAuth?: boolean | cdktf.IResolvable;
   /**
-  * Supports passing in a custom host value to the snowflake go driver for use with privatelink.
+  * IP address for network checks. Can also be sourced from the `SNOWFLAKE_CLIENT_IP` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs#host SnowflakeProvider#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs#client_ip SnowflakeProvider#client_ip}
+  */
+  readonly clientIp?: string;
+  /**
+  * When true the MFA token is cached in the credential manager. True by default in Windows/OSX. False for Linux. Can also be sourced from the `SNOWFLAKE_CLIENT_REQUEST_MFA_TOKEN` environment variable.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs#client_request_mfa_token SnowflakeProvider#client_request_mfa_token}
+  */
+  readonly clientRequestMfaToken?: boolean | cdktf.IResolvable;
+  /**
+  * When true the ID token is cached in the credential manager. True by default in Windows/OSX. False for Linux. Can also be sourced from the `SNOWFLAKE_CLIENT_STORE_TEMPORARY_CREDENTIAL` environment variable.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs#client_store_temporary_credential SnowflakeProvider#client_store_temporary_credential}
+  */
+  readonly clientStoreTemporaryCredential?: boolean | cdktf.IResolvable;
+  /**
+  * The timeout in seconds for the client to complete the authentication. Default is 900 seconds. Can also be sourced from the `SNOWFLAKE_CLIENT_TIMEOUT` environment variable.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs#client_timeout SnowflakeProvider#client_timeout}
+  */
+  readonly clientTimeout?: number;
+  /**
+  * Should HTAP query context cache be disabled. Can also be sourced from the `SNOWFLAKE_DISABLE_QUERY_CONTEXT_CACHE` environment variable.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs#disable_query_context_cache SnowflakeProvider#disable_query_context_cache}
+  */
+  readonly disableQueryContextCache?: boolean | cdktf.IResolvable;
+  /**
+  * Indicates whether to disable telemetry. Can also be sourced from the `SNOWFLAKE_DISABLE_TELEMETRY` environment variable.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs#disable_telemetry SnowflakeProvider#disable_telemetry}
+  */
+  readonly disableTelemetry?: boolean | cdktf.IResolvable;
+  /**
+  * The timeout in seconds for the external browser to complete the authentication. Default is 120 seconds. Can also be sourced from the `SNOWFLAKE_EXTERNAL_BROWSER_TIMEOUT` environment variable.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs#external_browser_timeout SnowflakeProvider#external_browser_timeout}
+  */
+  readonly externalBrowserTimeout?: number;
+  /**
+  * Supports passing in a custom host value to the snowflake go driver for use with privatelink. Can also be sourced from the `SNOWFLAKE_HOST` environment variable. 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs#host SnowflakeProvider#host}
   */
   readonly host?: string;
   /**
-  * If true, bypass the Online Certificate Status Protocol (OCSP) certificate revocation check. IMPORTANT: Change the default value for testing or emergency situations only.
+  * If true, bypass the Online Certificate Status Protocol (OCSP) certificate revocation check. IMPORTANT: Change the default value for testing or emergency situations only. Can also be sourced from the `SNOWFLAKE_INSECURE_MODE` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs#insecure_mode SnowflakeProvider#insecure_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs#insecure_mode SnowflakeProvider#insecure_mode}
   */
   readonly insecureMode?: boolean | cdktf.IResolvable;
   /**
-  * Token for use with OAuth. Generating the token is left to other tools. Cannot be used with `browser_auth`, `private_key_path`, `oauth_refresh_token` or `password`. Can be sourced from `SNOWFLAKE_OAUTH_ACCESS_TOKEN` environment variable.
+  * The timeout in seconds for the JWT client to complete the authentication. Default is 10 seconds. Can also be sourced from the `SNOWFLAKE_JWT_CLIENT_TIMEOUT` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs#oauth_access_token SnowflakeProvider#oauth_access_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs#jwt_client_timeout SnowflakeProvider#jwt_client_timeout}
+  */
+  readonly jwtClientTimeout?: number;
+  /**
+  * JWT expire after timeout in seconds. Can also be sourced from the `SNOWFLAKE_JWT_EXPIRE_TIMEOUT` environment variable.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs#jwt_expire_timeout SnowflakeProvider#jwt_expire_timeout}
+  */
+  readonly jwtExpireTimeout?: number;
+  /**
+  * Enables the session to persist even after the connection is closed. Can also be sourced from the `SNOWFLAKE_KEEP_SESSION_ALIVE` environment variable.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs#keep_session_alive SnowflakeProvider#keep_session_alive}
+  */
+  readonly keepSessionAlive?: boolean | cdktf.IResolvable;
+  /**
+  * Login retry timeout EXCLUDING network roundtrip and read out http response. Can also be sourced from the `SNOWFLAKE_LOGIN_TIMEOUT` environment variable.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs#login_timeout SnowflakeProvider#login_timeout}
+  */
+  readonly loginTimeout?: number;
+  /**
+  * Token for use with OAuth. Generating the token is left to other tools. Cannot be used with `browser_auth`, `private_key_path`, `oauth_refresh_token` or `password`. Can also be sourced from `SNOWFLAKE_OAUTH_ACCESS_TOKEN` environment variable.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs#oauth_access_token SnowflakeProvider#oauth_access_token}
   */
   readonly oauthAccessToken?: string;
   /**
-  * Required when `oauth_refresh_token` is used. Can be sourced from `SNOWFLAKE_OAUTH_CLIENT_ID` environment variable.
+  * Required when `oauth_refresh_token` is used. Can also be sourced from `SNOWFLAKE_OAUTH_CLIENT_ID` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs#oauth_client_id SnowflakeProvider#oauth_client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs#oauth_client_id SnowflakeProvider#oauth_client_id}
   */
   readonly oauthClientId?: string;
   /**
-  * Required when `oauth_refresh_token` is used. Can be sourced from `SNOWFLAKE_OAUTH_CLIENT_SECRET` environment variable.
+  * Required when `oauth_refresh_token` is used. Can also be sourced from `SNOWFLAKE_OAUTH_CLIENT_SECRET` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs#oauth_client_secret SnowflakeProvider#oauth_client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs#oauth_client_secret SnowflakeProvider#oauth_client_secret}
   */
   readonly oauthClientSecret?: string;
   /**
-  * Required when `oauth_refresh_token` is used. Can be sourced from `SNOWFLAKE_OAUTH_ENDPOINT` environment variable.
+  * Required when `oauth_refresh_token` is used. Can also be sourced from `SNOWFLAKE_OAUTH_ENDPOINT` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs#oauth_endpoint SnowflakeProvider#oauth_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs#oauth_endpoint SnowflakeProvider#oauth_endpoint}
   */
   readonly oauthEndpoint?: string;
   /**
-  * Required when `oauth_refresh_token` is used. Can be sourced from `SNOWFLAKE_OAUTH_REDIRECT_URL` environment variable.
+  * Required when `oauth_refresh_token` is used. Can also be sourced from `SNOWFLAKE_OAUTH_REDIRECT_URL` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs#oauth_redirect_url SnowflakeProvider#oauth_redirect_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs#oauth_redirect_url SnowflakeProvider#oauth_redirect_url}
   */
   readonly oauthRedirectUrl?: string;
   /**
-  * Token for use with OAuth. Setup and generation of the token is left to other tools. Should be used in conjunction with `oauth_client_id`, `oauth_client_secret`, `oauth_endpoint`, `oauth_redirect_url`. Cannot be used with `browser_auth`, `private_key_path`, `oauth_access_token` or `password`. Can be sourced from `SNOWFLAKE_OAUTH_REFRESH_TOKEN` environment variable.
+  * Token for use with OAuth. Setup and generation of the token is left to other tools. Should be used in conjunction with `oauth_client_id`, `oauth_client_secret`, `oauth_endpoint`, `oauth_redirect_url`. Cannot be used with `browser_auth`, `private_key_path`, `oauth_access_token` or `password`. Can also be sourced from `SNOWFLAKE_OAUTH_REFRESH_TOKEN` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs#oauth_refresh_token SnowflakeProvider#oauth_refresh_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs#oauth_refresh_token SnowflakeProvider#oauth_refresh_token}
   */
   readonly oauthRefreshToken?: string;
   /**
-  * Specifies the passcode provided by Duo when using multi-factor authentication (MFA) for login.
+  * The URL of the Okta server. e.g. https://example.okta.com. Can also be sourced from the `SNOWFLAKE_OKTA_URL` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs#passcode SnowflakeProvider#passcode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs#okta_url SnowflakeProvider#okta_url}
+  */
+  readonly oktaUrl?: string;
+  /**
+  * True represents OCSP fail open mode. False represents OCSP fail closed mode. Fail open true by default. Can also be sourced from the `SNOWFLAKE_OCSP_FAIL_OPEN` environment variable.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs#oscp_fail_open SnowflakeProvider#oscp_fail_open}
+  */
+  readonly oscpFailOpen?: boolean | cdktf.IResolvable;
+  /**
+  * Sets other connection (i.e. session) parameters. [Parameters](https://docs.snowflake.com/en/sql-reference/parameters)
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs#params SnowflakeProvider#params}
+  */
+  readonly params?: { [key: string]: string };
+  /**
+  * Specifies the passcode provided by Duo when using multi-factor authentication (MFA) for login. Can also be sourced from the `SNOWFLAKE_PASSCODE` environment variable. 
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs#passcode SnowflakeProvider#passcode}
   */
   readonly passcode?: string;
   /**
-  * False by default. Set to true if the MFA passcode is embedded in the login password. Appends the MFA passcode to the end of the password.
+  * False by default. Set to true if the MFA passcode is embedded in the login password. Appends the MFA passcode to the end of the password. Can also be sourced from the `SNOWFLAKE_PASSCODE_IN_PASSWORD` environment variable. 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs#passcode_in_password SnowflakeProvider#passcode_in_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs#passcode_in_password SnowflakeProvider#passcode_in_password}
   */
   readonly passcodeInPassword?: boolean | cdktf.IResolvable;
   /**
-  * Password for username+password auth. Cannot be used with `browser_auth` or `private_key_path`. Can be sourced from `SNOWFLAKE_PASSWORD` environment variable.
+  * Password for username+password auth. Cannot be used with `browser_auth` or `private_key_path`. Can also be sourced from the `SNOWFLAKE_PASSWORD` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs#password SnowflakeProvider#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs#password SnowflakeProvider#password}
   */
   readonly password?: string;
   /**
-  * Support custom port values to snowflake go driver for use with privatelink. Can be sourced from `SNOWFLAKE_PORT` environment variable.
+  * Support custom port values to snowflake go driver for use with privatelink. Can also be sourced from the `SNOWFLAKE_PORT` environment variable. 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs#port SnowflakeProvider#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs#port SnowflakeProvider#port}
   */
   readonly port?: number;
   /**
-  * Private Key for username+private-key auth. Cannot be used with `browser_auth` or `password`. Can be sourced from `SNOWFLAKE_PRIVATE_KEY` environment variable.
+  * Private Key for username+private-key auth. Cannot be used with `browser_auth` or `password`. Can also be sourced from `SNOWFLAKE_PRIVATE_KEY` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs#private_key SnowflakeProvider#private_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs#private_key SnowflakeProvider#private_key}
   */
   readonly privateKey?: string;
   /**
-  * Supports the encryption ciphers aes-128-cbc, aes-128-gcm, aes-192-cbc, aes-192-gcm, aes-256-cbc, aes-256-gcm, and des-ede3-cbc
+  * Supports the encryption ciphers aes-128-cbc, aes-128-gcm, aes-192-cbc, aes-192-gcm, aes-256-cbc, aes-256-gcm, and des-ede3-cbc. Can also be sourced from `SNOWFLAKE_PRIVATE_KEY_PASSPHRASE` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs#private_key_passphrase SnowflakeProvider#private_key_passphrase}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs#private_key_passphrase SnowflakeProvider#private_key_passphrase}
   */
   readonly privateKeyPassphrase?: string;
   /**
-  * Path to a private key for using keypair authentication. Cannot be used with `browser_auth`, `oauth_access_token` or `password`. Can be sourced from `SNOWFLAKE_PRIVATE_KEY_PATH` environment variable.
+  * Path to a private key for using keypair authentication. Cannot be used with `browser_auth`, `oauth_access_token` or `password`. Can also be sourced from `SNOWFLAKE_PRIVATE_KEY_PATH` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs#private_key_path SnowflakeProvider#private_key_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs#private_key_path SnowflakeProvider#private_key_path}
   */
   readonly privateKeyPath?: string;
   /**
-  * Sets the profile to read from ~/.snowflake/config file.
+  * Sets the profile to read from ~/.snowflake/config file. Can also be sourced from the `SNOWFLAKE_PROFILE` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs#profile SnowflakeProvider#profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs#profile SnowflakeProvider#profile}
   */
   readonly profile?: string;
   /**
-  * Support custom protocols to snowflake go driver. Can be sourced from `SNOWFLAKE_PROTOCOL` environment variable.
+  * Either http or https, defaults to https. Can also be sourced from the `SNOWFLAKE_PROTOCOL` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs#protocol SnowflakeProvider#protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs#protocol SnowflakeProvider#protocol}
   */
   readonly protocol?: string;
   /**
-  * [Snowflake region](https://docs.snowflake.com/en/user-guide/intro-regions.html) to use.  Required if using the [legacy format for the `account` identifier](https://docs.snowflake.com/en/user-guide/admin-account-identifier.html#format-2-legacy-account-locator-in-a-region) in the form of `<cloud_region_id>.<cloud>`. Can be sourced from the `SNOWFLAKE_REGION` environment variable.
+  * Snowflake region, such as "eu-central-1", with this parameter. However, since this parameter is deprecated, it is best to specify the region as part of the account parameter. For details, see the description of the account parameter. [Snowflake region](https://docs.snowflake.com/en/user-guide/intro-regions.html) to use.  Required if using the [legacy format for the `account` identifier](https://docs.snowflake.com/en/user-guide/admin-account-identifier.html#format-2-legacy-account-locator-in-a-region) in the form of `<cloud_region_id>.<cloud>`. Can also be sourced from the `SNOWFLAKE_REGION` environment variable. 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs#region SnowflakeProvider#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs#region SnowflakeProvider#region}
   */
   readonly region?: string;
   /**
-  * Snowflake role to use for operations. If left unset, default role for user will be used. Can be sourced from the `SNOWFLAKE_ROLE` environment variable.
+  * request retry timeout EXCLUDING network roundtrip and read out http response. Can also be sourced from the `SNOWFLAKE_REQUEST_TIMEOUT` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs#role SnowflakeProvider#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs#request_timeout SnowflakeProvider#request_timeout}
+  */
+  readonly requestTimeout?: number;
+  /**
+  * Specifies the role to use by default for accessing Snowflake objects in the client session. Can also be sourced from the `SNOWFLAKE_ROLE` environment variable. .
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs#role SnowflakeProvider#role}
   */
   readonly role?: string;
   /**
   * Sets session parameters. [Parameters](https://docs.snowflake.com/en/sql-reference/parameters)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs#session_params SnowflakeProvider#session_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs#session_params SnowflakeProvider#session_params}
   */
   readonly sessionParams?: { [key: string]: string };
   /**
-  * Username for username+password authentication. Can come from the `SNOWFLAKE_USER` environment variable. Required unless using profile.
+  * Token to use for OAuth and other forms of token based auth. Can also be sourced from the `SNOWFLAKE_TOKEN` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs#username SnowflakeProvider#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs#token SnowflakeProvider#token}
+  */
+  readonly token?: string;
+  /**
+  * Username. Can also be sourced from the `SNOWFLAKE_USER` environment variable. Required unless using `profile`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs#user SnowflakeProvider#user}
+  */
+  readonly user?: string;
+  /**
+  * Username for username+password authentication. Can also be sourced from the `SNOWFLAKE_USER` environment variable. Required unless using `profile`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs#username SnowflakeProvider#username}
   */
   readonly username?: string;
   /**
-  * Sets the default warehouse. Optional. Can be sourced from SNOWFLAKE_WAREHOUSE environment variable.
+  * If true, disables the validation checks for Database, Schema, Warehouse and Role at the time a connection is established. Can also be sourced from the `SNOWFLAKE_VALIDATE_DEFAULT_PARAMETERS` environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs#warehouse SnowflakeProvider#warehouse}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs#validate_default_parameters SnowflakeProvider#validate_default_parameters}
+  */
+  readonly validateDefaultParameters?: boolean | cdktf.IResolvable;
+  /**
+  * Specifies the virtual warehouse to use by default for queries, loading, etc. in the client session. Can also be sourced from the `SNOWFLAKE_WAREHOUSE` environment variable.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs#warehouse SnowflakeProvider#warehouse}
   */
   readonly warehouse?: string;
   /**
   * Alias name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs#alias SnowflakeProvider#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs#alias SnowflakeProvider#alias}
   */
   readonly alias?: string;
+  /**
+  * token_accessor block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs#token_accessor SnowflakeProvider#token_accessor}
+  */
+  readonly tokenAccessor?: SnowflakeProviderTokenAccessor;
+}
+export interface SnowflakeProviderTokenAccessor {
+  /**
+  * The client ID for the OAuth provider when using a refresh token to renew access token. Can also be sourced from the `SNOWFLAKE_TOKEN_ACCESSOR_CLIENT_ID` environment variable.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs#client_id SnowflakeProvider#client_id}
+  */
+  readonly clientId: string;
+  /**
+  * The client secret for the OAuth provider when using a refresh token to renew access token. Can also be sourced from the `SNOWFLAKE_TOKEN_ACCESSOR_CLIENT_SECRET` environment variable.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs#client_secret SnowflakeProvider#client_secret}
+  */
+  readonly clientSecret: string;
+  /**
+  * The redirect URI for the OAuth provider when using a refresh token to renew access token. Can also be sourced from the `SNOWFLAKE_TOKEN_ACCESSOR_REDIRECT_URI` environment variable.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs#redirect_uri SnowflakeProvider#redirect_uri}
+  */
+  readonly redirectUri: string;
+  /**
+  * The refresh token for the OAuth provider when using a refresh token to renew access token. Can also be sourced from the `SNOWFLAKE_TOKEN_ACCESSOR_REFRESH_TOKEN` environment variable.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs#refresh_token SnowflakeProvider#refresh_token}
+  */
+  readonly refreshToken: string;
+  /**
+  * The token endpoint for the OAuth provider e.g. https://{yourDomain}/oauth/token when using a refresh token to renew access token. Can also be sourced from the `SNOWFLAKE_TOKEN_ACCESSOR_TOKEN_ENDPOINT` environment variable.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs#token_endpoint SnowflakeProvider#token_endpoint}
+  */
+  readonly tokenEndpoint: string;
 }
 
+export function snowflakeProviderTokenAccessorToTerraform(struct?: SnowflakeProviderTokenAccessor): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    client_id: cdktf.stringToTerraform(struct!.clientId),
+    client_secret: cdktf.stringToTerraform(struct!.clientSecret),
+    redirect_uri: cdktf.stringToTerraform(struct!.redirectUri),
+    refresh_token: cdktf.stringToTerraform(struct!.refreshToken),
+    token_endpoint: cdktf.stringToTerraform(struct!.tokenEndpoint),
+  }
+}
+
+
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs snowflake}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs snowflake}
 */
 export class SnowflakeProvider extends cdktf.TerraformProvider {
 
@@ -187,7 +348,7 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
   * Generates CDKTF code for importing a SnowflakeProvider resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SnowflakeProvider to import
-  * @param importFromId The id of the existing SnowflakeProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SnowflakeProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SnowflakeProvider to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -199,7 +360,7 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs snowflake} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs snowflake} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -210,7 +371,7 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'snowflake',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.73.0',
+        providerVersion: '0.74.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       terraformProviderSource: 'Snowflake-Labs/snowflake'
@@ -218,14 +379,28 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
     this._account = config.account;
     this._authenticator = config.authenticator;
     this._browserAuth = config.browserAuth;
+    this._clientIp = config.clientIp;
+    this._clientRequestMfaToken = config.clientRequestMfaToken;
+    this._clientStoreTemporaryCredential = config.clientStoreTemporaryCredential;
+    this._clientTimeout = config.clientTimeout;
+    this._disableQueryContextCache = config.disableQueryContextCache;
+    this._disableTelemetry = config.disableTelemetry;
+    this._externalBrowserTimeout = config.externalBrowserTimeout;
     this._host = config.host;
     this._insecureMode = config.insecureMode;
+    this._jwtClientTimeout = config.jwtClientTimeout;
+    this._jwtExpireTimeout = config.jwtExpireTimeout;
+    this._keepSessionAlive = config.keepSessionAlive;
+    this._loginTimeout = config.loginTimeout;
     this._oauthAccessToken = config.oauthAccessToken;
     this._oauthClientId = config.oauthClientId;
     this._oauthClientSecret = config.oauthClientSecret;
     this._oauthEndpoint = config.oauthEndpoint;
     this._oauthRedirectUrl = config.oauthRedirectUrl;
     this._oauthRefreshToken = config.oauthRefreshToken;
+    this._oktaUrl = config.oktaUrl;
+    this._oscpFailOpen = config.oscpFailOpen;
+    this._params = config.params;
     this._passcode = config.passcode;
     this._passcodeInPassword = config.passcodeInPassword;
     this._password = config.password;
@@ -236,11 +411,16 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
     this._profile = config.profile;
     this._protocol = config.protocol;
     this._region = config.region;
+    this._requestTimeout = config.requestTimeout;
     this._role = config.role;
     this._sessionParams = config.sessionParams;
+    this._token = config.token;
+    this._user = config.user;
     this._username = config.username;
+    this._validateDefaultParameters = config.validateDefaultParameters;
     this._warehouse = config.warehouse;
     this._alias = config.alias;
+    this._tokenAccessor = config.tokenAccessor;
   }
 
   // ==========
@@ -295,6 +475,118 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
     return this._browserAuth;
   }
 
+  // client_ip - computed: false, optional: true, required: false
+  private _clientIp?: string; 
+  public get clientIp() {
+    return this._clientIp;
+  }
+  public set clientIp(value: string | undefined) {
+    this._clientIp = value;
+  }
+  public resetClientIp() {
+    this._clientIp = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientIpInput() {
+    return this._clientIp;
+  }
+
+  // client_request_mfa_token - computed: false, optional: true, required: false
+  private _clientRequestMfaToken?: boolean | cdktf.IResolvable; 
+  public get clientRequestMfaToken() {
+    return this._clientRequestMfaToken;
+  }
+  public set clientRequestMfaToken(value: boolean | cdktf.IResolvable | undefined) {
+    this._clientRequestMfaToken = value;
+  }
+  public resetClientRequestMfaToken() {
+    this._clientRequestMfaToken = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientRequestMfaTokenInput() {
+    return this._clientRequestMfaToken;
+  }
+
+  // client_store_temporary_credential - computed: false, optional: true, required: false
+  private _clientStoreTemporaryCredential?: boolean | cdktf.IResolvable; 
+  public get clientStoreTemporaryCredential() {
+    return this._clientStoreTemporaryCredential;
+  }
+  public set clientStoreTemporaryCredential(value: boolean | cdktf.IResolvable | undefined) {
+    this._clientStoreTemporaryCredential = value;
+  }
+  public resetClientStoreTemporaryCredential() {
+    this._clientStoreTemporaryCredential = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientStoreTemporaryCredentialInput() {
+    return this._clientStoreTemporaryCredential;
+  }
+
+  // client_timeout - computed: false, optional: true, required: false
+  private _clientTimeout?: number; 
+  public get clientTimeout() {
+    return this._clientTimeout;
+  }
+  public set clientTimeout(value: number | undefined) {
+    this._clientTimeout = value;
+  }
+  public resetClientTimeout() {
+    this._clientTimeout = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientTimeoutInput() {
+    return this._clientTimeout;
+  }
+
+  // disable_query_context_cache - computed: false, optional: true, required: false
+  private _disableQueryContextCache?: boolean | cdktf.IResolvable; 
+  public get disableQueryContextCache() {
+    return this._disableQueryContextCache;
+  }
+  public set disableQueryContextCache(value: boolean | cdktf.IResolvable | undefined) {
+    this._disableQueryContextCache = value;
+  }
+  public resetDisableQueryContextCache() {
+    this._disableQueryContextCache = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get disableQueryContextCacheInput() {
+    return this._disableQueryContextCache;
+  }
+
+  // disable_telemetry - computed: false, optional: true, required: false
+  private _disableTelemetry?: boolean | cdktf.IResolvable; 
+  public get disableTelemetry() {
+    return this._disableTelemetry;
+  }
+  public set disableTelemetry(value: boolean | cdktf.IResolvable | undefined) {
+    this._disableTelemetry = value;
+  }
+  public resetDisableTelemetry() {
+    this._disableTelemetry = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get disableTelemetryInput() {
+    return this._disableTelemetry;
+  }
+
+  // external_browser_timeout - computed: false, optional: true, required: false
+  private _externalBrowserTimeout?: number; 
+  public get externalBrowserTimeout() {
+    return this._externalBrowserTimeout;
+  }
+  public set externalBrowserTimeout(value: number | undefined) {
+    this._externalBrowserTimeout = value;
+  }
+  public resetExternalBrowserTimeout() {
+    this._externalBrowserTimeout = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get externalBrowserTimeoutInput() {
+    return this._externalBrowserTimeout;
+  }
+
   // host - computed: false, optional: true, required: false
   private _host?: string; 
   public get host() {
@@ -325,6 +617,70 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
   // Temporarily expose input value. Use with caution.
   public get insecureModeInput() {
     return this._insecureMode;
+  }
+
+  // jwt_client_timeout - computed: false, optional: true, required: false
+  private _jwtClientTimeout?: number; 
+  public get jwtClientTimeout() {
+    return this._jwtClientTimeout;
+  }
+  public set jwtClientTimeout(value: number | undefined) {
+    this._jwtClientTimeout = value;
+  }
+  public resetJwtClientTimeout() {
+    this._jwtClientTimeout = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get jwtClientTimeoutInput() {
+    return this._jwtClientTimeout;
+  }
+
+  // jwt_expire_timeout - computed: false, optional: true, required: false
+  private _jwtExpireTimeout?: number; 
+  public get jwtExpireTimeout() {
+    return this._jwtExpireTimeout;
+  }
+  public set jwtExpireTimeout(value: number | undefined) {
+    this._jwtExpireTimeout = value;
+  }
+  public resetJwtExpireTimeout() {
+    this._jwtExpireTimeout = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get jwtExpireTimeoutInput() {
+    return this._jwtExpireTimeout;
+  }
+
+  // keep_session_alive - computed: false, optional: true, required: false
+  private _keepSessionAlive?: boolean | cdktf.IResolvable; 
+  public get keepSessionAlive() {
+    return this._keepSessionAlive;
+  }
+  public set keepSessionAlive(value: boolean | cdktf.IResolvable | undefined) {
+    this._keepSessionAlive = value;
+  }
+  public resetKeepSessionAlive() {
+    this._keepSessionAlive = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keepSessionAliveInput() {
+    return this._keepSessionAlive;
+  }
+
+  // login_timeout - computed: false, optional: true, required: false
+  private _loginTimeout?: number; 
+  public get loginTimeout() {
+    return this._loginTimeout;
+  }
+  public set loginTimeout(value: number | undefined) {
+    this._loginTimeout = value;
+  }
+  public resetLoginTimeout() {
+    this._loginTimeout = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get loginTimeoutInput() {
+    return this._loginTimeout;
   }
 
   // oauth_access_token - computed: false, optional: true, required: false
@@ -421,6 +777,54 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
   // Temporarily expose input value. Use with caution.
   public get oauthRefreshTokenInput() {
     return this._oauthRefreshToken;
+  }
+
+  // okta_url - computed: false, optional: true, required: false
+  private _oktaUrl?: string; 
+  public get oktaUrl() {
+    return this._oktaUrl;
+  }
+  public set oktaUrl(value: string | undefined) {
+    this._oktaUrl = value;
+  }
+  public resetOktaUrl() {
+    this._oktaUrl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get oktaUrlInput() {
+    return this._oktaUrl;
+  }
+
+  // oscp_fail_open - computed: false, optional: true, required: false
+  private _oscpFailOpen?: boolean | cdktf.IResolvable; 
+  public get oscpFailOpen() {
+    return this._oscpFailOpen;
+  }
+  public set oscpFailOpen(value: boolean | cdktf.IResolvable | undefined) {
+    this._oscpFailOpen = value;
+  }
+  public resetOscpFailOpen() {
+    this._oscpFailOpen = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get oscpFailOpenInput() {
+    return this._oscpFailOpen;
+  }
+
+  // params - computed: false, optional: true, required: false
+  private _params?: { [key: string]: string }; 
+  public get params() {
+    return this._params;
+  }
+  public set params(value: { [key: string]: string } | undefined) {
+    this._params = value;
+  }
+  public resetParams() {
+    this._params = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get paramsInput() {
+    return this._params;
   }
 
   // passcode - computed: false, optional: true, required: false
@@ -583,6 +987,22 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
     return this._region;
   }
 
+  // request_timeout - computed: false, optional: true, required: false
+  private _requestTimeout?: number; 
+  public get requestTimeout() {
+    return this._requestTimeout;
+  }
+  public set requestTimeout(value: number | undefined) {
+    this._requestTimeout = value;
+  }
+  public resetRequestTimeout() {
+    this._requestTimeout = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requestTimeoutInput() {
+    return this._requestTimeout;
+  }
+
   // role - computed: false, optional: true, required: false
   private _role?: string; 
   public get role() {
@@ -615,6 +1035,38 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
     return this._sessionParams;
   }
 
+  // token - computed: false, optional: true, required: false
+  private _token?: string; 
+  public get token() {
+    return this._token;
+  }
+  public set token(value: string | undefined) {
+    this._token = value;
+  }
+  public resetToken() {
+    this._token = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tokenInput() {
+    return this._token;
+  }
+
+  // user - computed: false, optional: true, required: false
+  private _user?: string; 
+  public get user() {
+    return this._user;
+  }
+  public set user(value: string | undefined) {
+    this._user = value;
+  }
+  public resetUser() {
+    this._user = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userInput() {
+    return this._user;
+  }
+
   // username - computed: false, optional: true, required: false
   private _username?: string; 
   public get username() {
@@ -629,6 +1081,22 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
   // Temporarily expose input value. Use with caution.
   public get usernameInput() {
     return this._username;
+  }
+
+  // validate_default_parameters - computed: false, optional: true, required: false
+  private _validateDefaultParameters?: boolean | cdktf.IResolvable; 
+  public get validateDefaultParameters() {
+    return this._validateDefaultParameters;
+  }
+  public set validateDefaultParameters(value: boolean | cdktf.IResolvable | undefined) {
+    this._validateDefaultParameters = value;
+  }
+  public resetValidateDefaultParameters() {
+    this._validateDefaultParameters = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get validateDefaultParametersInput() {
+    return this._validateDefaultParameters;
   }
 
   // warehouse - computed: false, optional: true, required: false
@@ -663,6 +1131,22 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
     return this._alias;
   }
 
+  // token_accessor - computed: false, optional: true, required: false
+  private _tokenAccessor?: SnowflakeProviderTokenAccessor; 
+  public get tokenAccessor() {
+    return this._tokenAccessor;
+  }
+  public set tokenAccessor(value: SnowflakeProviderTokenAccessor | undefined) {
+    this._tokenAccessor = value;
+  }
+  public resetTokenAccessor() {
+    this._tokenAccessor = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tokenAccessorInput() {
+    return this._tokenAccessor;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -672,14 +1156,28 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
       account: cdktf.stringToTerraform(this._account),
       authenticator: cdktf.stringToTerraform(this._authenticator),
       browser_auth: cdktf.booleanToTerraform(this._browserAuth),
+      client_ip: cdktf.stringToTerraform(this._clientIp),
+      client_request_mfa_token: cdktf.booleanToTerraform(this._clientRequestMfaToken),
+      client_store_temporary_credential: cdktf.booleanToTerraform(this._clientStoreTemporaryCredential),
+      client_timeout: cdktf.numberToTerraform(this._clientTimeout),
+      disable_query_context_cache: cdktf.booleanToTerraform(this._disableQueryContextCache),
+      disable_telemetry: cdktf.booleanToTerraform(this._disableTelemetry),
+      external_browser_timeout: cdktf.numberToTerraform(this._externalBrowserTimeout),
       host: cdktf.stringToTerraform(this._host),
       insecure_mode: cdktf.booleanToTerraform(this._insecureMode),
+      jwt_client_timeout: cdktf.numberToTerraform(this._jwtClientTimeout),
+      jwt_expire_timeout: cdktf.numberToTerraform(this._jwtExpireTimeout),
+      keep_session_alive: cdktf.booleanToTerraform(this._keepSessionAlive),
+      login_timeout: cdktf.numberToTerraform(this._loginTimeout),
       oauth_access_token: cdktf.stringToTerraform(this._oauthAccessToken),
       oauth_client_id: cdktf.stringToTerraform(this._oauthClientId),
       oauth_client_secret: cdktf.stringToTerraform(this._oauthClientSecret),
       oauth_endpoint: cdktf.stringToTerraform(this._oauthEndpoint),
       oauth_redirect_url: cdktf.stringToTerraform(this._oauthRedirectUrl),
       oauth_refresh_token: cdktf.stringToTerraform(this._oauthRefreshToken),
+      okta_url: cdktf.stringToTerraform(this._oktaUrl),
+      oscp_fail_open: cdktf.booleanToTerraform(this._oscpFailOpen),
+      params: cdktf.hashMapper(cdktf.stringToTerraform)(this._params),
       passcode: cdktf.stringToTerraform(this._passcode),
       passcode_in_password: cdktf.booleanToTerraform(this._passcodeInPassword),
       password: cdktf.stringToTerraform(this._password),
@@ -690,11 +1188,16 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
       profile: cdktf.stringToTerraform(this._profile),
       protocol: cdktf.stringToTerraform(this._protocol),
       region: cdktf.stringToTerraform(this._region),
+      request_timeout: cdktf.numberToTerraform(this._requestTimeout),
       role: cdktf.stringToTerraform(this._role),
       session_params: cdktf.hashMapper(cdktf.stringToTerraform)(this._sessionParams),
+      token: cdktf.stringToTerraform(this._token),
+      user: cdktf.stringToTerraform(this._user),
       username: cdktf.stringToTerraform(this._username),
+      validate_default_parameters: cdktf.booleanToTerraform(this._validateDefaultParameters),
       warehouse: cdktf.stringToTerraform(this._warehouse),
       alias: cdktf.stringToTerraform(this._alias),
+      token_accessor: snowflakeProviderTokenAccessorToTerraform(this._tokenAccessor),
     };
   }
 }

@@ -1,6 +1,6 @@
 # `snowflake_database_role`
 
-Refer to the Terraform Registory for docs: [`snowflake_database_role`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/resources/database_role).
+Refer to the Terraform Registory for docs: [`snowflake_database_role`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/database_role).
 
 # `databaseRole` Submodule <a name="`databaseRole` Submodule" id="@cdktf/provider-snowflake.databaseRole"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`snowflake_database_role`](https://r
 
 ### DatabaseRole <a name="DatabaseRole" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/resources/database_role snowflake_database_role}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/database_role snowflake_database_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.Initializer"></a>
 
@@ -435,7 +435,7 @@ The construct id used in the generated config for the DatabaseRole to import.
 
 The id of the existing DatabaseRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/resources/database_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/database_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -754,7 +754,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/databaserole"
 | <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleConfig.property.database">Database</a></code> | <code>*string</code> | The database in which to create the database role. |
 | <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleConfig.property.name">Name</a></code> | <code>*string</code> | Specifies the identifier for the database role. |
 | <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleConfig.property.comment">Comment</a></code> | <code>*string</code> | Specifies a comment for the database role. |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/resources/database_role#id DatabaseRole#id}. |
+| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/database_role#id DatabaseRole#id}. |
 
 ---
 
@@ -838,7 +838,7 @@ Database *string
 
 The database in which to create the database role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/resources/database_role#database DatabaseRole#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/database_role#database DatabaseRole#database}
 
 ---
 
@@ -852,7 +852,7 @@ Name *string
 
 Specifies the identifier for the database role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/resources/database_role#name DatabaseRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/database_role#name DatabaseRole#name}
 
 ---
 
@@ -866,7 +866,7 @@ Comment *string
 
 Specifies a comment for the database role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/resources/database_role#comment DatabaseRole#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/database_role#comment DatabaseRole#comment}
 
 ---
 
@@ -878,7 +878,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.73.0/docs/resources/database_role#id DatabaseRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/database_role#id DatabaseRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
