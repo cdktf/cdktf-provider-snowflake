@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.objectParameter.ObjectParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/objectparameter"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/objectparameter"
 
 objectparameter.NewObjectParameter(scope Construct, id *string, config ObjectParameterConfig) ObjectParameter
 ```
@@ -373,7 +373,7 @@ func ResetOnAccount()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.objectParameter.ObjectParameter.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/objectparameter"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/objectparameter"
 
 objectparameter.ObjectParameter_IsConstruct(x interface{}) *bool
 ```
@@ -405,7 +405,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.objectParameter.ObjectParameter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/objectparameter"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/objectparameter"
 
 objectparameter.ObjectParameter_IsTerraformElement(x interface{}) *bool
 ```
@@ -419,7 +419,7 @@ objectparameter.ObjectParameter_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.objectParameter.ObjectParameter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/objectparameter"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/objectparameter"
 
 objectparameter.ObjectParameter_IsTerraformResource(x interface{}) *bool
 ```
@@ -433,7 +433,7 @@ objectparameter.ObjectParameter_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.objectParameter.ObjectParameter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/objectparameter"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/objectparameter"
 
 objectparameter.ObjectParameter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -794,7 +794,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.objectParameter.ObjectParameterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/objectparameter"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/objectparameter"
 
 &objectparameter.ObjectParameterConfig {
 	Connection: interface{},
@@ -995,7 +995,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.objectParameter.ObjectParameterObjectIdentifier.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/objectparameter"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/objectparameter"
 
 &objectparameter.ObjectParameterObjectIdentifier {
 	Name: *string,
@@ -1063,7 +1063,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.objectParameter.ObjectParameterObjectIdentifierList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/objectparameter"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/objectparameter"
 
 objectparameter.NewObjectParameterObjectIdentifierList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObjectParameterObjectIdentifierList
 ```
@@ -1206,7 +1206,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.objectParameter.ObjectParameterObjectIdentifierOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/objectparameter"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/objectparameter"
 
 objectparameter.NewObjectParameterObjectIdentifierOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObjectParameterObjectIdentifierOutputReference
 ```
