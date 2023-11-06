@@ -1,6 +1,6 @@
 # `snowflake_stream`
 
-Refer to the Terraform Registory for docs: [`snowflake_stream`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/stream).
+Refer to the Terraform Registory for docs: [`snowflake_stream`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/stream).
 
 # `stream` Submodule <a name="`stream` Submodule" id="@cdktf/provider-snowflake.stream"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`snowflake_stream`](https://registry
 
 ### Stream <a name="Stream" id="@cdktf/provider-snowflake.stream.Stream"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/stream snowflake_stream}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/stream snowflake_stream}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.stream.Stream.Initializer"></a>
 
@@ -60,11 +60,11 @@ Stream.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.Initializer.parameter.schema">schema</a></code> | <code>java.lang.String</code> | The schema in which to create the stream. |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.Initializer.parameter.appendOnly">appendOnly</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Type of the stream that will be created. |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.Initializer.parameter.comment">comment</a></code> | <code>java.lang.String</code> | Specifies a comment for the stream. |
-| <code><a href="#@cdktf/provider-snowflake.stream.Stream.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/stream#id Stream#id}. |
+| <code><a href="#@cdktf/provider-snowflake.stream.Stream.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/stream#id Stream#id}. |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.Initializer.parameter.insertOnly">insertOnly</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Create an insert only stream type. |
-| <code><a href="#@cdktf/provider-snowflake.stream.Stream.Initializer.parameter.onStage">onStage</a></code> | <code>java.lang.String</code> | Name of the stage the stream will monitor. |
-| <code><a href="#@cdktf/provider-snowflake.stream.Stream.Initializer.parameter.onTable">onTable</a></code> | <code>java.lang.String</code> | Name of the table the stream will monitor. |
-| <code><a href="#@cdktf/provider-snowflake.stream.Stream.Initializer.parameter.onView">onView</a></code> | <code>java.lang.String</code> | Name of the view the stream will monitor. |
+| <code><a href="#@cdktf/provider-snowflake.stream.Stream.Initializer.parameter.onStage">onStage</a></code> | <code>java.lang.String</code> | Specifies an identifier for the stage the stream will monitor. |
+| <code><a href="#@cdktf/provider-snowflake.stream.Stream.Initializer.parameter.onTable">onTable</a></code> | <code>java.lang.String</code> | Specifies an identifier for the table the stream will monitor. |
+| <code><a href="#@cdktf/provider-snowflake.stream.Stream.Initializer.parameter.onView">onView</a></code> | <code>java.lang.String</code> | Specifies an identifier for the view the stream will monitor. |
 | <code><a href="#@cdktf/provider-snowflake.stream.Stream.Initializer.parameter.showInitialRows">showInitialRows</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Specifies whether to return all existing rows in the source table as row inserts the first time the stream is consumed. |
 
 ---
@@ -135,7 +135,7 @@ Must be unique amongst siblings in the same scope
 
 The database in which to create the stream.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/stream#database Stream#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/stream#database Stream#database}
 
 ---
 
@@ -147,7 +147,7 @@ Specifies the identifier for the stream;
 
 must be unique for the database and schema in which the stream is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/stream#name Stream#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/stream#name Stream#name}
 
 ---
 
@@ -157,7 +157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The schema in which to create the stream.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/stream#schema Stream#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/stream#schema Stream#schema}
 
 ---
 
@@ -167,7 +167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Type of the stream that will be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/stream#append_only Stream#append_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/stream#append_only Stream#append_only}
 
 ---
 
@@ -177,7 +177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies a comment for the stream.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/stream#comment Stream#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/stream#comment Stream#comment}
 
 ---
 
@@ -185,7 +185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/stream#id Stream#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/stream#id Stream#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -198,7 +198,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Create an insert only stream type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/stream#insert_only Stream#insert_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/stream#insert_only Stream#insert_only}
 
 ---
 
@@ -206,9 +206,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.lang.String
 
-Name of the stage the stream will monitor.
+Specifies an identifier for the stage the stream will monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/stream#on_stage Stream#on_stage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/stream#on_stage Stream#on_stage}
 
 ---
 
@@ -216,9 +216,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.lang.String
 
-Name of the table the stream will monitor.
+Specifies an identifier for the table the stream will monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/stream#on_table Stream#on_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/stream#on_table Stream#on_table}
 
 ---
 
@@ -226,9 +226,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.lang.String
 
-Name of the view the stream will monitor.
+Specifies an identifier for the view the stream will monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/stream#on_view Stream#on_view}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/stream#on_view Stream#on_view}
 
 ---
 
@@ -238,7 +238,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies whether to return all existing rows in the source table as row inserts the first time the stream is consumed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/stream#show_initial_rows Stream#show_initial_rows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/stream#show_initial_rows Stream#show_initial_rows}
 
 ---
 
@@ -671,7 +671,7 @@ The construct id used in the generated config for the Stream to import.
 
 The id of the existing Stream that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/stream#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/stream#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1171,11 +1171,11 @@ StreamConfig.builder()
 | <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.schema">schema</a></code> | <code>java.lang.String</code> | The schema in which to create the stream. |
 | <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.appendOnly">appendOnly</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Type of the stream that will be created. |
 | <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.comment">comment</a></code> | <code>java.lang.String</code> | Specifies a comment for the stream. |
-| <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/stream#id Stream#id}. |
+| <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/stream#id Stream#id}. |
 | <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.insertOnly">insertOnly</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Create an insert only stream type. |
-| <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.onStage">onStage</a></code> | <code>java.lang.String</code> | Name of the stage the stream will monitor. |
-| <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.onTable">onTable</a></code> | <code>java.lang.String</code> | Name of the table the stream will monitor. |
-| <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.onView">onView</a></code> | <code>java.lang.String</code> | Name of the view the stream will monitor. |
+| <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.onStage">onStage</a></code> | <code>java.lang.String</code> | Specifies an identifier for the stage the stream will monitor. |
+| <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.onTable">onTable</a></code> | <code>java.lang.String</code> | Specifies an identifier for the table the stream will monitor. |
+| <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.onView">onView</a></code> | <code>java.lang.String</code> | Specifies an identifier for the view the stream will monitor. |
 | <code><a href="#@cdktf/provider-snowflake.stream.StreamConfig.property.showInitialRows">showInitialRows</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Specifies whether to return all existing rows in the source table as row inserts the first time the stream is consumed. |
 
 ---
@@ -1260,7 +1260,7 @@ public java.lang.String getDatabase();
 
 The database in which to create the stream.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/stream#database Stream#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/stream#database Stream#database}
 
 ---
 
@@ -1276,7 +1276,7 @@ Specifies the identifier for the stream;
 
 must be unique for the database and schema in which the stream is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/stream#name Stream#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/stream#name Stream#name}
 
 ---
 
@@ -1290,7 +1290,7 @@ public java.lang.String getSchema();
 
 The schema in which to create the stream.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/stream#schema Stream#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/stream#schema Stream#schema}
 
 ---
 
@@ -1304,7 +1304,7 @@ public java.lang.Object getAppendOnly();
 
 Type of the stream that will be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/stream#append_only Stream#append_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/stream#append_only Stream#append_only}
 
 ---
 
@@ -1318,7 +1318,7 @@ public java.lang.String getComment();
 
 Specifies a comment for the stream.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/stream#comment Stream#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/stream#comment Stream#comment}
 
 ---
 
@@ -1330,7 +1330,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/stream#id Stream#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/stream#id Stream#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1347,7 +1347,7 @@ public java.lang.Object getInsertOnly();
 
 Create an insert only stream type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/stream#insert_only Stream#insert_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/stream#insert_only Stream#insert_only}
 
 ---
 
@@ -1359,9 +1359,9 @@ public java.lang.String getOnStage();
 
 - *Type:* java.lang.String
 
-Name of the stage the stream will monitor.
+Specifies an identifier for the stage the stream will monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/stream#on_stage Stream#on_stage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/stream#on_stage Stream#on_stage}
 
 ---
 
@@ -1373,9 +1373,9 @@ public java.lang.String getOnTable();
 
 - *Type:* java.lang.String
 
-Name of the table the stream will monitor.
+Specifies an identifier for the table the stream will monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/stream#on_table Stream#on_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/stream#on_table Stream#on_table}
 
 ---
 
@@ -1387,9 +1387,9 @@ public java.lang.String getOnView();
 
 - *Type:* java.lang.String
 
-Name of the view the stream will monitor.
+Specifies an identifier for the view the stream will monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/stream#on_view Stream#on_view}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/stream#on_view Stream#on_view}
 
 ---
 
@@ -1403,7 +1403,7 @@ public java.lang.Object getShowInitialRows();
 
 Specifies whether to return all existing rows in the source table as row inserts the first time the stream is consumed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/stream#show_initial_rows Stream#show_initial_rows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/stream#show_initial_rows Stream#show_initial_rows}
 
 ---
 

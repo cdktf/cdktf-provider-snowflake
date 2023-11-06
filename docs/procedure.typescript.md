@@ -1,6 +1,6 @@
 # `snowflake_procedure`
 
-Refer to the Terraform Registory for docs: [`snowflake_procedure`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/procedure).
+Refer to the Terraform Registory for docs: [`snowflake_procedure`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/procedure).
 
 # `procedure` Submodule <a name="`procedure` Submodule" id="@cdktf/provider-snowflake.procedure"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`snowflake_procedure`](https://regis
 
 ### Procedure <a name="Procedure" id="@cdktf/provider-snowflake.procedure.Procedure"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/procedure snowflake_procedure}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/procedure snowflake_procedure}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.procedure.Procedure.Initializer"></a>
 
@@ -511,7 +511,7 @@ The construct id used in the generated config for the Procedure to import.
 
 The id of the existing Procedure that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/procedure#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/procedure#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1087,7 +1087,7 @@ public readonly name: string;
 
 The argument name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/procedure#name Procedure#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/procedure#name Procedure#name}
 
 ---
 
@@ -1101,7 +1101,7 @@ public readonly type: string;
 
 The argument type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/procedure#type Procedure#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/procedure#type Procedure#type}
 
 ---
 
@@ -1135,7 +1135,7 @@ const procedureConfig: procedure.ProcedureConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.comment">comment</a></code> | <code>string</code> | Specifies a comment for the procedure. |
 | <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.executeAs">executeAs</a></code> | <code>string</code> | Sets execute context - see caller's rights and owner's rights. |
 | <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.handler">handler</a></code> | <code>string</code> | The handler method for Java / Python procedures. |
-| <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/procedure#id Procedure#id}. |
+| <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/procedure#id Procedure#id}. |
 | <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.imports">imports</a></code> | <code>string[]</code> | Imports for Java / Python procedures. |
 | <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.language">language</a></code> | <code>string</code> | Specifies the language of the stored procedure code. |
 | <code><a href="#@cdktf/provider-snowflake.procedure.ProcedureConfig.property.nullInputBehavior">nullInputBehavior</a></code> | <code>string</code> | Specifies the behavior of the procedure when called with null inputs. |
@@ -1225,7 +1225,7 @@ public readonly database: string;
 
 The database in which to create the procedure. Don't use the | character.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/procedure#database Procedure#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/procedure#database Procedure#database}
 
 ---
 
@@ -1241,7 +1241,7 @@ Specifies the identifier for the procedure;
 
 does not have to be unique for the schema in which the procedure is created. Don't use the | character.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/procedure#name Procedure#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/procedure#name Procedure#name}
 
 ---
 
@@ -1255,7 +1255,7 @@ public readonly returnType: string;
 
 The return type of the procedure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/procedure#return_type Procedure#return_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/procedure#return_type Procedure#return_type}
 
 ---
 
@@ -1269,7 +1269,7 @@ public readonly schema: string;
 
 The schema in which to create the procedure. Don't use the | character.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/procedure#schema Procedure#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/procedure#schema Procedure#schema}
 
 ---
 
@@ -1283,7 +1283,7 @@ public readonly statement: string;
 
 Specifies the code used to create the procedure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/procedure#statement Procedure#statement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/procedure#statement Procedure#statement}
 
 ---
 
@@ -1297,7 +1297,7 @@ public readonly arguments: IResolvable | ProcedureArguments[];
 
 arguments block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/procedure#arguments Procedure#arguments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/procedure#arguments Procedure#arguments}
 
 ---
 
@@ -1311,7 +1311,7 @@ public readonly comment: string;
 
 Specifies a comment for the procedure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/procedure#comment Procedure#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/procedure#comment Procedure#comment}
 
 ---
 
@@ -1325,7 +1325,7 @@ public readonly executeAs: string;
 
 Sets execute context - see caller's rights and owner's rights.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/procedure#execute_as Procedure#execute_as}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/procedure#execute_as Procedure#execute_as}
 
 ---
 
@@ -1339,7 +1339,7 @@ public readonly handler: string;
 
 The handler method for Java / Python procedures.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/procedure#handler Procedure#handler}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/procedure#handler Procedure#handler}
 
 ---
 
@@ -1351,7 +1351,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/procedure#id Procedure#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/procedure#id Procedure#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1370,7 +1370,7 @@ Imports for Java / Python procedures.
 
 For Java this a list of jar files, for Python this is a list of Python files.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/procedure#imports Procedure#imports}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/procedure#imports Procedure#imports}
 
 ---
 
@@ -1384,7 +1384,7 @@ public readonly language: string;
 
 Specifies the language of the stored procedure code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/procedure#language Procedure#language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/procedure#language Procedure#language}
 
 ---
 
@@ -1398,7 +1398,7 @@ public readonly nullInputBehavior: string;
 
 Specifies the behavior of the procedure when called with null inputs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/procedure#null_input_behavior Procedure#null_input_behavior}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/procedure#null_input_behavior Procedure#null_input_behavior}
 
 ---
 
@@ -1414,7 +1414,7 @@ List of package imports to use for Java / Python procedures.
 
 For Java, package imports should be of the form: package_name:version_number, where package_name is snowflake_domain:package. For Python use it should be: ('numpy','pandas','xgboost==1.5.0').
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/procedure#packages Procedure#packages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/procedure#packages Procedure#packages}
 
 ---
 
@@ -1428,7 +1428,7 @@ public readonly returnBehavior: string;
 
 Specifies the behavior of the function when returning results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/procedure#return_behavior Procedure#return_behavior}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/procedure#return_behavior Procedure#return_behavior}
 
 ---
 
@@ -1442,7 +1442,7 @@ public readonly runtimeVersion: string;
 
 Required for Python procedures. Specifies Python runtime version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/procedure#runtime_version Procedure#runtime_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/procedure#runtime_version Procedure#runtime_version}
 
 ---
 

@@ -3,7 +3,7 @@
 
 This repo builds and publishes the Terraform snowflake Provider bindings for [CDK for Terraform](https://cdk.tf).
 
-Is based directly on snowflake 0.74.0
+Is based directly on snowflake 0.75.0
 
 ## Available Packages
 
@@ -63,7 +63,7 @@ This project is explicitly not tracking the Terraform snowflake Provider version
 These are the upstream dependencies:
 
 - [Terraform CDK](https://cdk.tf)
-- [Terraform snowflake Provider](https://registry.terraform.io/providers/Snowflake-Labs/snowflake/0.74.0)
+- [Terraform snowflake Provider](https://registry.terraform.io/providers/Snowflake-Labs/snowflake/0.75.0)
     - This links to the minimum version being tracked, you can find the latest released version [in our releases](https://github.com/cdktf/cdktf-provider-snowflake/releases)
 - [Terraform Engine](https://terraform.io)
 

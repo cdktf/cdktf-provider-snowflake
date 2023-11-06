@@ -1,6 +1,6 @@
 # `data_snowflake_current_account`
 
-Refer to the Terraform Registory for docs: [`data_snowflake_current_account`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/data-sources/current_account).
+Refer to the Terraform Registory for docs: [`data_snowflake_current_account`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/data-sources/current_account).
 
 # `dataSnowflakeCurrentAccount` Submodule <a name="`dataSnowflakeCurrentAccount` Submodule" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_snowflake_current_account`](ht
 
 ### DataSnowflakeCurrentAccount <a name="DataSnowflakeCurrentAccount" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/data-sources/current_account snowflake_current_account}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/data-sources/current_account snowflake_current_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.Initializer"></a>
 
@@ -40,7 +40,7 @@ dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount(
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/data-sources/current_account#id DataSnowflakeCurrentAccount#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/data-sources/current_account#id DataSnowflakeCurrentAccount#id}. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/data-sources/current_account#id DataSnowflakeCurrentAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/data-sources/current_account#id DataSnowflakeCurrentAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -468,7 +468,7 @@ The construct id used in the generated config for the DataSnowflakeCurrentAccoun
 
 The id of the existing DataSnowflakeCurrentAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/data-sources/current_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/data-sources/current_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -726,7 +726,7 @@ dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig(
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/data-sources/current_account#id DataSnowflakeCurrentAccount#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/data-sources/current_account#id DataSnowflakeCurrentAccount#id}. |
 
 ---
 
@@ -808,7 +808,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/data-sources/current_account#id DataSnowflakeCurrentAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/data-sources/current_account#id DataSnowflakeCurrentAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
