@@ -1,6 +1,6 @@
 # `data_snowflake_storage_integrations`
 
-Refer to the Terraform Registory for docs: [`data_snowflake_storage_integrations`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/data-sources/storage_integrations).
+Refer to the Terraform Registory for docs: [`data_snowflake_storage_integrations`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/data-sources/storage_integrations).
 
 # `dataSnowflakeStorageIntegrations` Submodule <a name="`dataSnowflakeStorageIntegrations` Submodule" id="@cdktf/provider-snowflake.dataSnowflakeStorageIntegrations"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_snowflake_storage_integrations
 
 ### DataSnowflakeStorageIntegrations <a name="DataSnowflakeStorageIntegrations" id="@cdktf/provider-snowflake.dataSnowflakeStorageIntegrations.DataSnowflakeStorageIntegrations"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/data-sources/storage_integrations snowflake_storage_integrations}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/data-sources/storage_integrations snowflake_storage_integrations}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeStorageIntegrations.DataSnowflakeStorageIntegrations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakestorageintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakestorageintegrations"
 
 datasnowflakestorageintegrations.NewDataSnowflakeStorageIntegrations(scope Construct, id *string, config DataSnowflakeStorageIntegrationsConfig) DataSnowflakeStorageIntegrations
 ```
@@ -278,7 +278,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeStorageIntegrations.DataSnowflakeStorageIntegrations.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakestorageintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakestorageintegrations"
 
 datasnowflakestorageintegrations.DataSnowflakeStorageIntegrations_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeStorageIntegrations.DataSnowflakeStorageIntegrations.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakestorageintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakestorageintegrations"
 
 datasnowflakestorageintegrations.DataSnowflakeStorageIntegrations_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ datasnowflakestorageintegrations.DataSnowflakeStorageIntegrations_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeStorageIntegrations.DataSnowflakeStorageIntegrations.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakestorageintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakestorageintegrations"
 
 datasnowflakestorageintegrations.DataSnowflakeStorageIntegrations_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ datasnowflakestorageintegrations.DataSnowflakeStorageIntegrations_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.dataSnowflakeStorageIntegrations.DataSnowflakeStorageIntegrations.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakestorageintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakestorageintegrations"
 
 datasnowflakestorageintegrations.DataSnowflakeStorageIntegrations_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -367,7 +367,7 @@ The construct id used in the generated config for the DataSnowflakeStorageIntegr
 
 The id of the existing DataSnowflakeStorageIntegrations that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/data-sources/storage_integrations#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/data-sources/storage_integrations#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -578,7 +578,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeStorageIntegrations.DataSnowflakeStorageIntegrationsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakestorageintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakestorageintegrations"
 
 &datasnowflakestorageintegrations.DataSnowflakeStorageIntegrationsConfig {
 	Connection: interface{},
@@ -603,7 +603,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflake
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStorageIntegrations.DataSnowflakeStorageIntegrationsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStorageIntegrations.DataSnowflakeStorageIntegrationsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStorageIntegrations.DataSnowflakeStorageIntegrationsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStorageIntegrations.DataSnowflakeStorageIntegrationsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/data-sources/storage_integrations#id DataSnowflakeStorageIntegrations#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStorageIntegrations.DataSnowflakeStorageIntegrationsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/data-sources/storage_integrations#id DataSnowflakeStorageIntegrations#id}. |
 
 ---
 
@@ -685,7 +685,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/data-sources/storage_integrations#id DataSnowflakeStorageIntegrations#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/data-sources/storage_integrations#id DataSnowflakeStorageIntegrations#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -697,7 +697,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeStorageIntegrations.DataSnowflakeStorageIntegrationsStorageIntegrations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakestorageintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakestorageintegrations"
 
 &datasnowflakestorageintegrations.DataSnowflakeStorageIntegrationsStorageIntegrations {
 
@@ -712,7 +712,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflake
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeStorageIntegrations.DataSnowflakeStorageIntegrationsStorageIntegrationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakestorageintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakestorageintegrations"
 
 datasnowflakestorageintegrations.NewDataSnowflakeStorageIntegrationsStorageIntegrationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeStorageIntegrationsStorageIntegrationsList
 ```
@@ -844,7 +844,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeStorageIntegrations.DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakestorageintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakestorageintegrations"
 
 datasnowflakestorageintegrations.NewDataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference
 ```

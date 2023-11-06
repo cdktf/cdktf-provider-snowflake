@@ -1,6 +1,6 @@
 # `snowflake_function`
 
-Refer to the Terraform Registory for docs: [`snowflake_function`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/function).
+Refer to the Terraform Registory for docs: [`snowflake_function`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/function).
 
 # `functionResource` Submodule <a name="`functionResource` Submodule" id="@cdktf/provider-snowflake.functionResource"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`snowflake_function`](https://regist
 
 ### FunctionResource <a name="FunctionResource" id="@cdktf/provider-snowflake.functionResource.FunctionResource"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/function snowflake_function}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/function snowflake_function}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.functionResource.FunctionResource.Initializer"></a>
 
@@ -518,7 +518,7 @@ The construct id used in the generated config for the FunctionResource to import
 
 The id of the existing FunctionResource that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/function#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/function#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1116,7 +1116,7 @@ public readonly name: string;
 
 The argument name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/function#name FunctionResource#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/function#name FunctionResource#name}
 
 ---
 
@@ -1130,7 +1130,7 @@ public readonly type: string;
 
 The argument type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/function#type FunctionResource#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/function#type FunctionResource#type}
 
 ---
 
@@ -1163,7 +1163,7 @@ const functionResourceConfig: functionResource.FunctionResourceConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResourceConfig.property.arguments">arguments</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.functionResource.FunctionResourceArguments">FunctionResourceArguments</a>[]</code> | arguments block. |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResourceConfig.property.comment">comment</a></code> | <code>string</code> | Specifies a comment for the function. |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResourceConfig.property.handler">handler</a></code> | <code>string</code> | The handler method for Java / Python function. |
-| <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResourceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/function#id FunctionResource#id}. |
+| <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResourceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/function#id FunctionResource#id}. |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResourceConfig.property.imports">imports</a></code> | <code>string[]</code> | Imports for Java / Python functions. |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResourceConfig.property.isSecure">isSecure</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies that the function is secure. |
 | <code><a href="#@cdktf/provider-snowflake.functionResource.FunctionResourceConfig.property.language">language</a></code> | <code>string</code> | The language of the statement. |
@@ -1255,7 +1255,7 @@ public readonly database: string;
 
 The database in which to create the function. Don't use the | character.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/function#database FunctionResource#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/function#database FunctionResource#database}
 
 ---
 
@@ -1271,7 +1271,7 @@ Specifies the identifier for the function;
 
 does not have to be unique for the schema in which the function is created. Don't use the | character.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/function#name FunctionResource#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/function#name FunctionResource#name}
 
 ---
 
@@ -1285,7 +1285,7 @@ public readonly returnType: string;
 
 The return type of the function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/function#return_type FunctionResource#return_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/function#return_type FunctionResource#return_type}
 
 ---
 
@@ -1299,7 +1299,7 @@ public readonly schema: string;
 
 The schema in which to create the function. Don't use the | character.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/function#schema FunctionResource#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/function#schema FunctionResource#schema}
 
 ---
 
@@ -1313,7 +1313,7 @@ public readonly statement: string;
 
 Specifies the javascript / java / sql / python code used to create the function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/function#statement FunctionResource#statement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/function#statement FunctionResource#statement}
 
 ---
 
@@ -1327,7 +1327,7 @@ public readonly arguments: IResolvable | FunctionResourceArguments[];
 
 arguments block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/function#arguments FunctionResource#arguments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/function#arguments FunctionResource#arguments}
 
 ---
 
@@ -1341,7 +1341,7 @@ public readonly comment: string;
 
 Specifies a comment for the function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/function#comment FunctionResource#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/function#comment FunctionResource#comment}
 
 ---
 
@@ -1355,7 +1355,7 @@ public readonly handler: string;
 
 The handler method for Java / Python function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/function#handler FunctionResource#handler}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/function#handler FunctionResource#handler}
 
 ---
 
@@ -1367,7 +1367,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/function#id FunctionResource#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/function#id FunctionResource#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1386,7 +1386,7 @@ Imports for Java / Python functions.
 
 For Java this a list of jar files, for Python this is a list of Python files.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/function#imports FunctionResource#imports}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/function#imports FunctionResource#imports}
 
 ---
 
@@ -1400,7 +1400,7 @@ public readonly isSecure: boolean | IResolvable;
 
 Specifies that the function is secure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/function#is_secure FunctionResource#is_secure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/function#is_secure FunctionResource#is_secure}
 
 ---
 
@@ -1414,7 +1414,7 @@ public readonly language: string;
 
 The language of the statement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/function#language FunctionResource#language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/function#language FunctionResource#language}
 
 ---
 
@@ -1428,7 +1428,7 @@ public readonly nullInputBehavior: string;
 
 Specifies the behavior of the function when called with null inputs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/function#null_input_behavior FunctionResource#null_input_behavior}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/function#null_input_behavior FunctionResource#null_input_behavior}
 
 ---
 
@@ -1444,7 +1444,7 @@ List of package imports to use for Java / Python functions.
 
 For Java, package imports should be of the form: package_name:version_number, where package_name is snowflake_domain:package. For Python use it should be: ('numpy','pandas','xgboost==1.5.0').
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/function#packages FunctionResource#packages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/function#packages FunctionResource#packages}
 
 ---
 
@@ -1458,7 +1458,7 @@ public readonly returnBehavior: string;
 
 Specifies the behavior of the function when returning results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/function#return_behavior FunctionResource#return_behavior}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/function#return_behavior FunctionResource#return_behavior}
 
 ---
 
@@ -1472,7 +1472,7 @@ public readonly runtimeVersion: string;
 
 Required for Python functions. Specifies Python runtime version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/function#runtime_version FunctionResource#runtime_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/function#runtime_version FunctionResource#runtime_version}
 
 ---
 
@@ -1488,7 +1488,7 @@ The target path for the Java / Python functions.
 
 For Java, it is the path of compiled jar files and for the Python it is the path of the Python files.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/function#target_path FunctionResource#target_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/function#target_path FunctionResource#target_path}
 
 ---
 

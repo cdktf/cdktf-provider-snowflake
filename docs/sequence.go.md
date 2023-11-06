@@ -1,6 +1,6 @@
 # `snowflake_sequence`
 
-Refer to the Terraform Registory for docs: [`snowflake_sequence`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/sequence).
+Refer to the Terraform Registory for docs: [`snowflake_sequence`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/sequence).
 
 # `sequence` Submodule <a name="`sequence` Submodule" id="@cdktf/provider-snowflake.sequence"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`snowflake_sequence`](https://regist
 
 ### Sequence <a name="Sequence" id="@cdktf/provider-snowflake.sequence.Sequence"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/sequence snowflake_sequence}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/sequence snowflake_sequence}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.sequence.Sequence.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/sequence"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/sequence"
 
 sequence.NewSequence(scope Construct, id *string, config SequenceConfig) Sequence
 ```
@@ -353,7 +353,7 @@ func ResetIncrement()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.sequence.Sequence.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/sequence"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/sequence"
 
 sequence.Sequence_IsConstruct(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.sequence.Sequence.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/sequence"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/sequence"
 
 sequence.Sequence_IsTerraformElement(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ sequence.Sequence_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.sequence.Sequence.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/sequence"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/sequence"
 
 sequence.Sequence_IsTerraformResource(x interface{}) *bool
 ```
@@ -413,7 +413,7 @@ sequence.Sequence_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.sequence.Sequence.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/sequence"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/sequence"
 
 sequence.Sequence_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -442,7 +442,7 @@ The construct id used in the generated config for the Sequence to import.
 
 The id of the existing Sequence that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/sequence#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/sequence#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -796,7 +796,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.sequence.SequenceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/sequence"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/sequence"
 
 &sequence.SequenceConfig {
 	Connection: interface{},
@@ -830,7 +830,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/sequence"
 | <code><a href="#@cdktf/provider-snowflake.sequence.SequenceConfig.property.name">Name</a></code> | <code>*string</code> | Specifies the name for the sequence. |
 | <code><a href="#@cdktf/provider-snowflake.sequence.SequenceConfig.property.schema">Schema</a></code> | <code>*string</code> | The schema in which to create the sequence. Don't use the \| character. |
 | <code><a href="#@cdktf/provider-snowflake.sequence.SequenceConfig.property.comment">Comment</a></code> | <code>*string</code> | Specifies a comment for the sequence. |
-| <code><a href="#@cdktf/provider-snowflake.sequence.SequenceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/sequence#id Sequence#id}. |
+| <code><a href="#@cdktf/provider-snowflake.sequence.SequenceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/sequence#id Sequence#id}. |
 | <code><a href="#@cdktf/provider-snowflake.sequence.SequenceConfig.property.increment">Increment</a></code> | <code>*f64</code> | The amount the sequence will increase by each time it is used. |
 
 ---
@@ -915,7 +915,7 @@ Database *string
 
 The database in which to create the sequence. Don't use the | character.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/sequence#database Sequence#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/sequence#database Sequence#database}
 
 ---
 
@@ -929,7 +929,7 @@ Name *string
 
 Specifies the name for the sequence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/sequence#name Sequence#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/sequence#name Sequence#name}
 
 ---
 
@@ -943,7 +943,7 @@ Schema *string
 
 The schema in which to create the sequence. Don't use the | character.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/sequence#schema Sequence#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/sequence#schema Sequence#schema}
 
 ---
 
@@ -957,7 +957,7 @@ Comment *string
 
 Specifies a comment for the sequence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/sequence#comment Sequence#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/sequence#comment Sequence#comment}
 
 ---
 
@@ -969,7 +969,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/sequence#id Sequence#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/sequence#id Sequence#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -986,7 +986,7 @@ Increment *f64
 
 The amount the sequence will increase by each time it is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/resources/sequence#increment Sequence#increment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/sequence#increment Sequence#increment}
 
 ---
 

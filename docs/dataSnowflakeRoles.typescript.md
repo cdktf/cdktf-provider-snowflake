@@ -1,6 +1,6 @@
 # `data_snowflake_roles`
 
-Refer to the Terraform Registory for docs: [`data_snowflake_roles`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/data-sources/roles).
+Refer to the Terraform Registory for docs: [`data_snowflake_roles`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/data-sources/roles).
 
 # `dataSnowflakeRoles` Submodule <a name="`dataSnowflakeRoles` Submodule" id="@cdktf/provider-snowflake.dataSnowflakeRoles"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_snowflake_roles`](https://regi
 
 ### DataSnowflakeRoles <a name="DataSnowflakeRoles" id="@cdktf/provider-snowflake.dataSnowflakeRoles.DataSnowflakeRoles"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/data-sources/roles snowflake_roles}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/data-sources/roles snowflake_roles}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeRoles.DataSnowflakeRoles.Initializer"></a>
 
@@ -374,7 +374,7 @@ The construct id used in the generated config for the DataSnowflakeRoles to impo
 
 The id of the existing DataSnowflakeRoles that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/data-sources/roles#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/data-sources/roles#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -623,7 +623,7 @@ const dataSnowflakeRolesConfig: dataSnowflakeRoles.DataSnowflakeRolesConfig = { 
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRoles.DataSnowflakeRolesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRoles.DataSnowflakeRolesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRoles.DataSnowflakeRolesConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRoles.DataSnowflakeRolesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/data-sources/roles#id DataSnowflakeRoles#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRoles.DataSnowflakeRolesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/data-sources/roles#id DataSnowflakeRoles#id}. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRoles.DataSnowflakeRolesConfig.property.pattern">pattern</a></code> | <code>string</code> | Filters the command output by object name. |
 
 ---
@@ -706,7 +706,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/data-sources/roles#id DataSnowflakeRoles#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/data-sources/roles#id DataSnowflakeRoles#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -723,7 +723,7 @@ public readonly pattern: string;
 
 Filters the command output by object name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.74.0/docs/data-sources/roles#pattern DataSnowflakeRoles#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/data-sources/roles#pattern DataSnowflakeRoles#pattern}
 
 ---
 
