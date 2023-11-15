@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.userPublicKeys.UserPublicKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/userpublickeys"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/userpublickeys"
 
 userpublickeys.NewUserPublicKeys(scope Construct, id *string, config UserPublicKeysConfig) UserPublicKeys
 ```
@@ -353,7 +353,7 @@ func ResetRsaPublicKey2()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.userPublicKeys.UserPublicKeys.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/userpublickeys"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/userpublickeys"
 
 userpublickeys.UserPublicKeys_IsConstruct(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.userPublicKeys.UserPublicKeys.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/userpublickeys"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/userpublickeys"
 
 userpublickeys.UserPublicKeys_IsTerraformElement(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ userpublickeys.UserPublicKeys_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.userPublicKeys.UserPublicKeys.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/userpublickeys"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/userpublickeys"
 
 userpublickeys.UserPublicKeys_IsTerraformResource(x interface{}) *bool
 ```
@@ -413,7 +413,7 @@ userpublickeys.UserPublicKeys_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.userPublicKeys.UserPublicKeys.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/userpublickeys"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/userpublickeys"
 
 userpublickeys.UserPublicKeys_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -730,7 +730,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.userPublicKeys.UserPublicKeysConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/userpublickeys"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/userpublickeys"
 
 &userpublickeys.UserPublicKeysConfig {
 	Connection: interface{},
