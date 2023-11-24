@@ -1,6 +1,6 @@
 # `snowflake_task`
 
-Refer to the Terraform Registory for docs: [`snowflake_task`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/task).
+Refer to the Terraform Registory for docs: [`snowflake_task`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/resources/task).
 
 # `task` Submodule <a name="`task` Submodule" id="@cdktf/provider-snowflake.task"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`snowflake_task`](https://registry.t
 
 ### Task <a name="Task" id="@cdktf/provider-snowflake.task.Task"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/task snowflake_task}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/resources/task snowflake_task}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.task.Task.Initializer"></a>
 
@@ -81,6 +81,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.task.Task.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.resetSchedule">ResetSchedule</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.resetSessionParameters">ResetSessionParameters</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.resetSuspendTaskAfterNumFailures">ResetSuspendTaskAfterNumFailures</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.resetUserTaskManagedInitialWarehouseSize">ResetUserTaskManagedInitialWarehouseSize</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.resetUserTaskTimeoutMs">ResetUserTaskTimeoutMs</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.resetWarehouse">ResetWarehouse</a></code> | *No description.* |
@@ -378,6 +379,12 @@ private void ResetSchedule()
 private void ResetSessionParameters()
 ```
 
+##### `ResetSuspendTaskAfterNumFailures` <a name="ResetSuspendTaskAfterNumFailures" id="@cdktf/provider-snowflake.task.Task.resetSuspendTaskAfterNumFailures"></a>
+
+```csharp
+private void ResetSuspendTaskAfterNumFailures()
+```
+
 ##### `ResetUserTaskManagedInitialWarehouseSize` <a name="ResetUserTaskManagedInitialWarehouseSize" id="@cdktf/provider-snowflake.task.Task.resetUserTaskManagedInitialWarehouseSize"></a>
 
 ```csharp
@@ -505,7 +512,7 @@ The construct id used in the generated config for the Task to import.
 
 The id of the existing Task that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/task#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/resources/task#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -547,6 +554,7 @@ Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.schemaInput">SchemaInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.sessionParametersInput">SessionParametersInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.sqlStatementInput">SqlStatementInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.suspendTaskAfterNumFailuresInput">SuspendTaskAfterNumFailuresInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.userTaskManagedInitialWarehouseSizeInput">UserTaskManagedInitialWarehouseSizeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.userTaskTimeoutMsInput">UserTaskTimeoutMsInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.warehouseInput">WarehouseInput</a></code> | <code>string</code> | *No description.* |
@@ -563,6 +571,7 @@ Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.schema">Schema</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.sessionParameters">SessionParameters</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.sqlStatement">SqlStatement</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.suspendTaskAfterNumFailures">SuspendTaskAfterNumFailures</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.userTaskManagedInitialWarehouseSize">UserTaskManagedInitialWarehouseSize</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.userTaskTimeoutMs">UserTaskTimeoutMs</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.warehouse">Warehouse</a></code> | <code>string</code> | *No description.* |
@@ -832,6 +841,16 @@ public string SqlStatementInput { get; }
 
 ---
 
+##### `SuspendTaskAfterNumFailuresInput`<sup>Optional</sup> <a name="SuspendTaskAfterNumFailuresInput" id="@cdktf/provider-snowflake.task.Task.property.suspendTaskAfterNumFailuresInput"></a>
+
+```csharp
+public double SuspendTaskAfterNumFailuresInput { get; }
+```
+
+- *Type:* double
+
+---
+
 ##### `UserTaskManagedInitialWarehouseSizeInput`<sup>Optional</sup> <a name="UserTaskManagedInitialWarehouseSizeInput" id="@cdktf/provider-snowflake.task.Task.property.userTaskManagedInitialWarehouseSizeInput"></a>
 
 ```csharp
@@ -992,6 +1011,16 @@ public string SqlStatement { get; }
 
 ---
 
+##### `SuspendTaskAfterNumFailures`<sup>Required</sup> <a name="SuspendTaskAfterNumFailures" id="@cdktf/provider-snowflake.task.Task.property.suspendTaskAfterNumFailures"></a>
+
+```csharp
+public double SuspendTaskAfterNumFailures { get; }
+```
+
+- *Type:* double
+
+---
+
 ##### `UserTaskManagedInitialWarehouseSize`<sup>Required</sup> <a name="UserTaskManagedInitialWarehouseSize" id="@cdktf/provider-snowflake.task.Task.property.userTaskManagedInitialWarehouseSize"></a>
 
 ```csharp
@@ -1079,6 +1108,7 @@ new TaskConfig {
     string Id = null,
     string Schedule = null,
     System.Collections.Generic.IDictionary<string, string> SessionParameters = null,
+    double SuspendTaskAfterNumFailures = null,
     string UserTaskManagedInitialWarehouseSize = null,
     double UserTaskTimeoutMs = null,
     string Warehouse = null,
@@ -1106,9 +1136,10 @@ new TaskConfig {
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.comment">Comment</a></code> | <code>string</code> | Specifies a comment for the task. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.enabled">Enabled</a></code> | <code>object</code> | Specifies if the task should be started (enabled) after creation or should remain suspended (default). |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.errorIntegration">ErrorIntegration</a></code> | <code>string</code> | Specifies the name of the notification integration used for error notifications. |
-| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/task#id Task#id}. |
+| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/resources/task#id Task#id}. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.schedule">Schedule</a></code> | <code>string</code> | The schedule for periodically running the task. This can be a cron or interval in minutes. (Conflict with after). |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.sessionParameters">SessionParameters</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Specifies session parameters to set for the session when the task runs. A task supports all session parameters. |
+| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.suspendTaskAfterNumFailures">SuspendTaskAfterNumFailures</a></code> | <code>double</code> | Specifies the number of consecutive failed task runs after which the current task is suspended automatically. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.userTaskManagedInitialWarehouseSize">UserTaskManagedInitialWarehouseSize</a></code> | <code>string</code> | Specifies the size of the compute resources to provision for the first run of the task, before a task history is available for Snowflake to determine an ideal size. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.userTaskTimeoutMs">UserTaskTimeoutMs</a></code> | <code>double</code> | Specifies the time limit on a single run of the task before it times out (in milliseconds). |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.warehouse">Warehouse</a></code> | <code>string</code> | The warehouse the task will use. |
@@ -1196,7 +1227,7 @@ public string Database { get; set; }
 
 The database in which to create the task.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/task#database Task#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/resources/task#database Task#database}
 
 ---
 
@@ -1212,7 +1243,7 @@ Specifies the identifier for the task;
 
 must be unique for the database and schema in which the task is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/task#name Task#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/resources/task#name Task#name}
 
 ---
 
@@ -1226,7 +1257,7 @@ public string Schema { get; set; }
 
 The schema in which to create the task.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/task#schema Task#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/resources/task#schema Task#schema}
 
 ---
 
@@ -1240,7 +1271,7 @@ public string SqlStatement { get; set; }
 
 Any single SQL statement, or a call to a stored procedure, executed when the task runs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/task#sql_statement Task#sql_statement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/resources/task#sql_statement Task#sql_statement}
 
 ---
 
@@ -1256,7 +1287,7 @@ Specifies one or more predecessor tasks for the current task.
 
 Use this option to create a DAG of tasks or add this task to an existing DAG. A DAG is a series of tasks that starts with a scheduled root task and is linked together by dependencies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/task#after Task#after}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/resources/task#after Task#after}
 
 ---
 
@@ -1270,7 +1301,7 @@ public object AllowOverlappingExecution { get; set; }
 
 By default, Snowflake ensures that only one instance of a particular DAG is allowed to run at a time, setting the parameter value to TRUE permits DAG runs to overlap.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/task#allow_overlapping_execution Task#allow_overlapping_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/resources/task#allow_overlapping_execution Task#allow_overlapping_execution}
 
 ---
 
@@ -1284,7 +1315,7 @@ public string Comment { get; set; }
 
 Specifies a comment for the task.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/task#comment Task#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/resources/task#comment Task#comment}
 
 ---
 
@@ -1298,7 +1329,7 @@ public object Enabled { get; set; }
 
 Specifies if the task should be started (enabled) after creation or should remain suspended (default).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/task#enabled Task#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/resources/task#enabled Task#enabled}
 
 ---
 
@@ -1312,7 +1343,7 @@ public string ErrorIntegration { get; set; }
 
 Specifies the name of the notification integration used for error notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/task#error_integration Task#error_integration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/resources/task#error_integration Task#error_integration}
 
 ---
 
@@ -1324,7 +1355,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/task#id Task#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/resources/task#id Task#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1341,7 +1372,7 @@ public string Schedule { get; set; }
 
 The schedule for periodically running the task. This can be a cron or interval in minutes. (Conflict with after).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/task#schedule Task#schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/resources/task#schedule Task#schedule}
 
 ---
 
@@ -1355,7 +1386,23 @@ public System.Collections.Generic.IDictionary<string, string> SessionParameters 
 
 Specifies session parameters to set for the session when the task runs. A task supports all session parameters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/task#session_parameters Task#session_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/resources/task#session_parameters Task#session_parameters}
+
+---
+
+##### `SuspendTaskAfterNumFailures`<sup>Optional</sup> <a name="SuspendTaskAfterNumFailures" id="@cdktf/provider-snowflake.task.TaskConfig.property.suspendTaskAfterNumFailures"></a>
+
+```csharp
+public double SuspendTaskAfterNumFailures { get; set; }
+```
+
+- *Type:* double
+
+Specifies the number of consecutive failed task runs after which the current task is suspended automatically.
+
+The default is 0 (no automatic suspension).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/resources/task#suspend_task_after_num_failures Task#suspend_task_after_num_failures}
 
 ---
 
@@ -1371,7 +1418,7 @@ Specifies the size of the compute resources to provision for the first run of th
 
 Once a task has successfully completed a few runs, Snowflake ignores this parameter setting. (Conflicts with warehouse)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/task#user_task_managed_initial_warehouse_size Task#user_task_managed_initial_warehouse_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/resources/task#user_task_managed_initial_warehouse_size Task#user_task_managed_initial_warehouse_size}
 
 ---
 
@@ -1385,7 +1432,7 @@ public double UserTaskTimeoutMs { get; set; }
 
 Specifies the time limit on a single run of the task before it times out (in milliseconds).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/task#user_task_timeout_ms Task#user_task_timeout_ms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/resources/task#user_task_timeout_ms Task#user_task_timeout_ms}
 
 ---
 
@@ -1401,7 +1448,7 @@ The warehouse the task will use.
 
 Omit this parameter to use Snowflake-managed compute resources for runs of this task. (Conflicts with user_task_managed_initial_warehouse_size)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/task#warehouse Task#warehouse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/resources/task#warehouse Task#warehouse}
 
 ---
 
@@ -1415,7 +1462,7 @@ public string When { get; set; }
 
 Specifies a Boolean SQL expression; multiple conditions joined with AND/OR are supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.75.0/docs/resources/task#when Task#when}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/resources/task#when Task#when}
 
 ---
 
