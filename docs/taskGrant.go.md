@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.taskGrant.TaskGrant.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/taskgrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/taskgrant"
 
 taskgrant.NewTaskGrant(scope Construct, id *string, config TaskGrantConfig) TaskGrant
 ```
@@ -395,7 +395,7 @@ func ResetWithGrantOption()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.taskGrant.TaskGrant.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/taskgrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/taskgrant"
 
 taskgrant.TaskGrant_IsConstruct(x interface{}) *bool
 ```
@@ -427,7 +427,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.taskGrant.TaskGrant.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/taskgrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/taskgrant"
 
 taskgrant.TaskGrant_IsTerraformElement(x interface{}) *bool
 ```
@@ -441,7 +441,7 @@ taskgrant.TaskGrant_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.taskGrant.TaskGrant.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/taskgrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/taskgrant"
 
 taskgrant.TaskGrant_IsTerraformResource(x interface{}) *bool
 ```
@@ -455,7 +455,7 @@ taskgrant.TaskGrant_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.taskGrant.TaskGrant.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/taskgrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/taskgrant"
 
 taskgrant.TaskGrant_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -926,7 +926,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.taskGrant.TaskGrantConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/taskgrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/taskgrant"
 
 &taskgrant.TaskGrantConfig {
 	Connection: interface{},
