@@ -1,7 +1,3 @@
-# `snowflake_password_policy`
-
-Refer to the Terraform Registory for docs: [`snowflake_password_policy`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/resources/password_policy).
-
 # `passwordPolicy` Submodule <a name="`passwordPolicy` Submodule" id="@cdktf/provider-snowflake.passwordPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

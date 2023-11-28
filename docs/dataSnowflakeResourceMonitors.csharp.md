@@ -1,7 +1,3 @@
-# `data_snowflake_resource_monitors`
-
-Refer to the Terraform Registory for docs: [`data_snowflake_resource_monitors`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/data-sources/resource_monitors).
-
 # `dataSnowflakeResourceMonitors` Submodule <a name="`dataSnowflakeResourceMonitors` Submodule" id="@cdktf/provider-snowflake.dataSnowflakeResourceMonitors"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

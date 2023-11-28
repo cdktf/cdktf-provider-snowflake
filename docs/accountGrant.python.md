@@ -1,7 +1,3 @@
-# `snowflake_account_grant`
-
-Refer to the Terraform Registory for docs: [`snowflake_account_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/resources/account_grant).
-
 # `accountGrant` Submodule <a name="`accountGrant` Submodule" id="@cdktf/provider-snowflake.accountGrant"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

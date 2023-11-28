@@ -1,7 +1,3 @@
-# `snowflake_masking_policy_grant`
-
-Refer to the Terraform Registory for docs: [`snowflake_masking_policy_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/resources/masking_policy_grant).
-
 # `maskingPolicyGrant` Submodule <a name="`maskingPolicyGrant` Submodule" id="@cdktf/provider-snowflake.maskingPolicyGrant"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `snowflake_failover_group_grant`
-
-Refer to the Terraform Registory for docs: [`snowflake_failover_group_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/resources/failover_group_grant).
-
 # `failoverGroupGrant` Submodule <a name="`failoverGroupGrant` Submodule" id="@cdktf/provider-snowflake.failoverGroupGrant"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

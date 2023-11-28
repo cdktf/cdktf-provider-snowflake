@@ -1,7 +1,3 @@
-# `snowflake_materialized_view`
-
-Refer to the Terraform Registory for docs: [`snowflake_materialized_view`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/resources/materialized_view).
-
 # `materializedView` Submodule <a name="`materializedView` Submodule" id="@cdktf/provider-snowflake.materializedView"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

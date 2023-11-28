@@ -1,7 +1,3 @@
-# `snowflake_api_integration`
-
-Refer to the Terraform Registory for docs: [`snowflake_api_integration`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/resources/api_integration).
-
 # `apiIntegration` Submodule <a name="`apiIntegration` Submodule" id="@cdktf/provider-snowflake.apiIntegration"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

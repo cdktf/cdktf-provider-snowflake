@@ -1,7 +1,3 @@
-# `snowflake_dynamic_table`
-
-Refer to the Terraform Registory for docs: [`snowflake_dynamic_table`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/resources/dynamic_table).
-
 # `dynamicTable` Submodule <a name="`dynamicTable` Submodule" id="@cdktf/provider-snowflake.dynamicTable"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

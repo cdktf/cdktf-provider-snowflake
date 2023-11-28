@@ -1,7 +1,3 @@
-# `snowflake_network_policy_attachment`
-
-Refer to the Terraform Registory for docs: [`snowflake_network_policy_attachment`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/resources/network_policy_attachment).
-
 # `networkPolicyAttachment` Submodule <a name="`networkPolicyAttachment` Submodule" id="@cdktf/provider-snowflake.networkPolicyAttachment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

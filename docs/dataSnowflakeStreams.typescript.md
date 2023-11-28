@@ -1,7 +1,3 @@
-# `data_snowflake_streams`
-
-Refer to the Terraform Registory for docs: [`data_snowflake_streams`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/data-sources/streams).
-
 # `dataSnowflakeStreams` Submodule <a name="`dataSnowflakeStreams` Submodule" id="@cdktf/provider-snowflake.dataSnowflakeStreams"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

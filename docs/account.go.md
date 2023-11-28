@@ -1,7 +1,3 @@
-# `snowflake_account`
-
-Refer to the Terraform Registory for docs: [`snowflake_account`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/resources/account).
-
 # `account` Submodule <a name="`account` Submodule" id="@cdktf/provider-snowflake.account"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

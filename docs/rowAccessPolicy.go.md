@@ -1,7 +1,3 @@
-# `snowflake_row_access_policy`
-
-Refer to the Terraform Registory for docs: [`snowflake_row_access_policy`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/resources/row_access_policy).
-
 # `rowAccessPolicy` Submodule <a name="`rowAccessPolicy` Submodule" id="@cdktf/provider-snowflake.rowAccessPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

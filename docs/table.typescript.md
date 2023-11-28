@@ -1,7 +1,3 @@
-# `snowflake_table`
-
-Refer to the Terraform Registory for docs: [`snowflake_table`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/resources/table).
-
 # `table` Submodule <a name="`table` Submodule" id="@cdktf/provider-snowflake.table"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
