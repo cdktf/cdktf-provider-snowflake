@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrant.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/externaltablegrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/externaltablegrant"
 
 externaltablegrant.NewExternalTableGrant(scope Construct, id *string, config ExternalTableGrantConfig) ExternalTableGrant
 ```
@@ -398,7 +398,7 @@ func ResetWithGrantOption()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrant.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/externaltablegrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/externaltablegrant"
 
 externaltablegrant.ExternalTableGrant_IsConstruct(x interface{}) *bool
 ```
@@ -430,7 +430,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrant.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/externaltablegrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/externaltablegrant"
 
 externaltablegrant.ExternalTableGrant_IsTerraformElement(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ externaltablegrant.ExternalTableGrant_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrant.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/externaltablegrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/externaltablegrant"
 
 externaltablegrant.ExternalTableGrant_IsTerraformResource(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ externaltablegrant.ExternalTableGrant_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrant.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/externaltablegrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/externaltablegrant"
 
 externaltablegrant.ExternalTableGrant_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -951,7 +951,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.externalTableGrant.ExternalTableGrantConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/externaltablegrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/externaltablegrant"
 
 &externaltablegrant.ExternalTableGrantConfig {
 	Connection: interface{},

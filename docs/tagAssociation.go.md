@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.tagAssociation.TagAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tagassociation"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/tagassociation"
 
 tagassociation.NewTagAssociation(scope Construct, id *string, config TagAssociationConfig) TagAssociation
 ```
@@ -382,7 +382,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.tagAssociation.TagAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tagassociation"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/tagassociation"
 
 tagassociation.TagAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -414,7 +414,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.tagAssociation.TagAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tagassociation"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/tagassociation"
 
 tagassociation.TagAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -428,7 +428,7 @@ tagassociation.TagAssociation_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.tagAssociation.TagAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tagassociation"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/tagassociation"
 
 tagassociation.TagAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -442,7 +442,7 @@ tagassociation.TagAssociation_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.tagAssociation.TagAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tagassociation"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/tagassociation"
 
 tagassociation.TagAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -847,7 +847,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.tagAssociation.TagAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tagassociation"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/tagassociation"
 
 &tagassociation.TagAssociationConfig {
 	Connection: interface{},
@@ -864,7 +864,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tagassociation"
 	Id: *string,
 	ObjectName: *string,
 	SkipValidation: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.tagAssociation.TagAssociationTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10.tagAssociation.TagAssociationTimeouts,
 }
 ```
 
@@ -1078,7 +1078,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.tagAssociation.TagAssociationObjectIdentifier.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tagassociation"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/tagassociation"
 
 &tagassociation.TagAssociationObjectIdentifier {
 	Name: *string,
@@ -1144,7 +1144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.tagAssociation.TagAssociationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tagassociation"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/tagassociation"
 
 &tagassociation.TagAssociationTimeouts {
 	Create: *string,
@@ -1178,7 +1178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.tagAssociation.TagAssociationObjectIdentifierList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tagassociation"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/tagassociation"
 
 tagassociation.NewTagAssociationObjectIdentifierList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TagAssociationObjectIdentifierList
 ```
@@ -1321,7 +1321,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.tagAssociation.TagAssociationObjectIdentifierOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tagassociation"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/tagassociation"
 
 tagassociation.NewTagAssociationObjectIdentifierOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TagAssociationObjectIdentifierOutputReference
 ```
@@ -1668,7 +1668,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.tagAssociation.TagAssociationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tagassociation"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/tagassociation"
 
 tagassociation.NewTagAssociationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TagAssociationTimeoutsOutputReference
 ```
