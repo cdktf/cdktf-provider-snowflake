@@ -1,7 +1,3 @@
-# `snowflake_external_table_grant`
-
-Refer to the Terraform Registory for docs: [`snowflake_external_table_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/resources/external_table_grant).
-
 # `externalTableGrant` Submodule <a name="`externalTableGrant` Submodule" id="@cdktf/provider-snowflake.externalTableGrant"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

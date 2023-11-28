@@ -1,7 +1,3 @@
-# `snowflake_sequence_grant`
-
-Refer to the Terraform Registory for docs: [`snowflake_sequence_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/resources/sequence_grant).
-
 # `sequenceGrant` Submodule <a name="`sequenceGrant` Submodule" id="@cdktf/provider-snowflake.sequenceGrant"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

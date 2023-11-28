@@ -1,7 +1,3 @@
-# `snowflake_scim_integration`
-
-Refer to the Terraform Registory for docs: [`snowflake_scim_integration`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/resources/scim_integration).
-
 # `scimIntegration` Submodule <a name="`scimIntegration` Submodule" id="@cdktf/provider-snowflake.scimIntegration"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

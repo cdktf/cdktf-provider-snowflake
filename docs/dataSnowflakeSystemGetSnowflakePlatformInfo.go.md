@@ -1,7 +1,3 @@
-# `data_snowflake_system_get_snowflake_platform_info`
-
-Refer to the Terraform Registory for docs: [`data_snowflake_system_get_snowflake_platform_info`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/data-sources/system_get_snowflake_platform_info).
-
 # `dataSnowflakeSystemGetSnowflakePlatformInfo` Submodule <a name="`dataSnowflakeSystemGetSnowflakePlatformInfo` Submodule" id="@cdktf/provider-snowflake.dataSnowflakeSystemGetSnowflakePlatformInfo"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSystemGetSnowflakePlatformInfo.DataSnowflakeSystemGetSnowflakePlatformInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakesystemgetsnowflakeplatforminfo"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakesystemgetsnowflakeplatforminfo"
 
 datasnowflakesystemgetsnowflakeplatforminfo.NewDataSnowflakeSystemGetSnowflakePlatformInfo(scope Construct, id *string, config DataSnowflakeSystemGetSnowflakePlatformInfoConfig) DataSnowflakeSystemGetSnowflakePlatformInfo
 ```
@@ -278,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeSystemGetSnowflakePlatformInfo.DataSnowflakeSystemGetSnowflakePlatformInfo.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakesystemgetsnowflakeplatforminfo"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakesystemgetsnowflakeplatforminfo"
 
 datasnowflakesystemgetsnowflakeplatforminfo.DataSnowflakeSystemGetSnowflakePlatformInfo_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeSystemGetSnowflakePlatformInfo.DataSnowflakeSystemGetSnowflakePlatformInfo.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakesystemgetsnowflakeplatforminfo"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakesystemgetsnowflakeplatforminfo"
 
 datasnowflakesystemgetsnowflakeplatforminfo.DataSnowflakeSystemGetSnowflakePlatformInfo_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ datasnowflakesystemgetsnowflakeplatforminfo.DataSnowflakeSystemGetSnowflakePlatf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeSystemGetSnowflakePlatformInfo.DataSnowflakeSystemGetSnowflakePlatformInfo.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakesystemgetsnowflakeplatforminfo"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakesystemgetsnowflakeplatforminfo"
 
 datasnowflakesystemgetsnowflakeplatforminfo.DataSnowflakeSystemGetSnowflakePlatformInfo_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ datasnowflakesystemgetsnowflakeplatforminfo.DataSnowflakeSystemGetSnowflakePlatf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.dataSnowflakeSystemGetSnowflakePlatformInfo.DataSnowflakeSystemGetSnowflakePlatformInfo.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakesystemgetsnowflakeplatforminfo"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakesystemgetsnowflakeplatforminfo"
 
 datasnowflakesystemgetsnowflakeplatforminfo.DataSnowflakeSystemGetSnowflakePlatformInfo_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -589,7 +585,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSystemGetSnowflakePlatformInfo.DataSnowflakeSystemGetSnowflakePlatformInfoConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakesystemgetsnowflakeplatforminfo"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakesystemgetsnowflakeplatforminfo"
 
 &datasnowflakesystemgetsnowflakeplatforminfo.DataSnowflakeSystemGetSnowflakePlatformInfoConfig {
 	Connection: interface{},

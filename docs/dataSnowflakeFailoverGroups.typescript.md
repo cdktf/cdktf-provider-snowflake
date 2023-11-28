@@ -1,7 +1,3 @@
-# `data_snowflake_failover_groups`
-
-Refer to the Terraform Registory for docs: [`data_snowflake_failover_groups`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/data-sources/failover_groups).
-
 # `dataSnowflakeFailoverGroups` Submodule <a name="`dataSnowflakeFailoverGroups` Submodule" id="@cdktf/provider-snowflake.dataSnowflakeFailoverGroups"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

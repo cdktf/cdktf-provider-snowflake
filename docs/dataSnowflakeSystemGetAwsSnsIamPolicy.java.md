@@ -1,7 +1,3 @@
-# `data_snowflake_system_get_aws_sns_iam_policy`
-
-Refer to the Terraform Registory for docs: [`data_snowflake_system_get_aws_sns_iam_policy`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/data-sources/system_get_aws_sns_iam_policy).
-
 # `dataSnowflakeSystemGetAwsSnsIamPolicy` Submodule <a name="`dataSnowflakeSystemGetAwsSnsIamPolicy` Submodule" id="@cdktf/provider-snowflake.dataSnowflakeSystemGetAwsSnsIamPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

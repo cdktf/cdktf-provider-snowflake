@@ -1,7 +1,3 @@
-# `snowflake_schema_grant`
-
-Refer to the Terraform Registory for docs: [`snowflake_schema_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/resources/schema_grant).
-
 # `schemaGrant` Submodule <a name="`schemaGrant` Submodule" id="@cdktf/provider-snowflake.schemaGrant"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

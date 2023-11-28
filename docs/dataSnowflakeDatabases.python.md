@@ -1,7 +1,3 @@
-# `data_snowflake_databases`
-
-Refer to the Terraform Registory for docs: [`data_snowflake_databases`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/data-sources/databases).
-
 # `dataSnowflakeDatabases` Submodule <a name="`dataSnowflakeDatabases` Submodule" id="@cdktf/provider-snowflake.dataSnowflakeDatabases"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

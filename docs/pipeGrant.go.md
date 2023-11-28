@@ -1,7 +1,3 @@
-# `snowflake_pipe_grant`
-
-Refer to the Terraform Registory for docs: [`snowflake_pipe_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/resources/pipe_grant).
-
 # `pipeGrant` Submodule <a name="`pipeGrant` Submodule" id="@cdktf/provider-snowflake.pipeGrant"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.pipeGrant.PipeGrant.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/pipegrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/pipegrant"
 
 pipegrant.NewPipeGrant(scope Construct, id *string, config PipeGrantConfig) PipeGrant
 ```
@@ -395,7 +391,7 @@ func ResetWithGrantOption()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.pipeGrant.PipeGrant.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/pipegrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/pipegrant"
 
 pipegrant.PipeGrant_IsConstruct(x interface{}) *bool
 ```
@@ -427,7 +423,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.pipeGrant.PipeGrant.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/pipegrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/pipegrant"
 
 pipegrant.PipeGrant_IsTerraformElement(x interface{}) *bool
 ```
@@ -441,7 +437,7 @@ pipegrant.PipeGrant_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.pipeGrant.PipeGrant.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/pipegrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/pipegrant"
 
 pipegrant.PipeGrant_IsTerraformResource(x interface{}) *bool
 ```
@@ -455,7 +451,7 @@ pipegrant.PipeGrant_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.pipeGrant.PipeGrant.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/pipegrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/pipegrant"
 
 pipegrant.PipeGrant_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -904,7 +900,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.pipeGrant.PipeGrantConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/pipegrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/pipegrant"
 
 &pipegrant.PipeGrantConfig {
 	Connection: interface{},

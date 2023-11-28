@@ -1,7 +1,3 @@
-# `snowflake_function_grant`
-
-Refer to the Terraform Registory for docs: [`snowflake_function_grant`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/resources/function_grant).
-
 # `functionGrant` Submodule <a name="`functionGrant` Submodule" id="@cdktf/provider-snowflake.functionGrant"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

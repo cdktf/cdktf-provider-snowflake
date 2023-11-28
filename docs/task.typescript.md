@@ -1,7 +1,3 @@
-# `snowflake_task`
-
-Refer to the Terraform Registory for docs: [`snowflake_task`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/resources/task).
-
 # `task` Submodule <a name="`task` Submodule" id="@cdktf/provider-snowflake.task"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

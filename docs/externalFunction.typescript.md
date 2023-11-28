@@ -1,7 +1,3 @@
-# `snowflake_external_function`
-
-Refer to the Terraform Registory for docs: [`snowflake_external_function`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/resources/external_function).
-
 # `externalFunction` Submodule <a name="`externalFunction` Submodule" id="@cdktf/provider-snowflake.externalFunction"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

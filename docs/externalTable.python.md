@@ -1,7 +1,3 @@
-# `snowflake_external_table`
-
-Refer to the Terraform Registory for docs: [`snowflake_external_table`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/resources/external_table).
-
 # `externalTable` Submodule <a name="`externalTable` Submodule" id="@cdktf/provider-snowflake.externalTable"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

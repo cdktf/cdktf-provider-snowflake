@@ -1,7 +1,3 @@
-# `data_snowflake_sequences`
-
-Refer to the Terraform Registory for docs: [`data_snowflake_sequences`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/data-sources/sequences).
-
 # `dataSnowflakeSequences` Submodule <a name="`dataSnowflakeSequences` Submodule" id="@cdktf/provider-snowflake.dataSnowflakeSequences"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

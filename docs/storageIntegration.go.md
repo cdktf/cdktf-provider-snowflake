@@ -1,7 +1,3 @@
-# `snowflake_storage_integration`
-
-Refer to the Terraform Registory for docs: [`snowflake_storage_integration`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/resources/storage_integration).
-
 # `storageIntegration` Submodule <a name="`storageIntegration` Submodule" id="@cdktf/provider-snowflake.storageIntegration"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.storageIntegration.StorageIntegration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/storageintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/storageintegration"
 
 storageintegration.NewStorageIntegration(scope Construct, id *string, config StorageIntegrationConfig) StorageIntegration
 ```
@@ -388,7 +384,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.storageIntegration.StorageIntegration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/storageintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/storageintegration"
 
 storageintegration.StorageIntegration_IsConstruct(x interface{}) *bool
 ```
@@ -420,7 +416,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.storageIntegration.StorageIntegration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/storageintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/storageintegration"
 
 storageintegration.StorageIntegration_IsTerraformElement(x interface{}) *bool
 ```
@@ -434,7 +430,7 @@ storageintegration.StorageIntegration_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.storageIntegration.StorageIntegration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/storageintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/storageintegration"
 
 storageintegration.StorageIntegration_IsTerraformResource(x interface{}) *bool
 ```
@@ -448,7 +444,7 @@ storageintegration.StorageIntegration_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.storageIntegration.StorageIntegration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/storageintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/storageintegration"
 
 storageintegration.StorageIntegration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -985,7 +981,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.storageIntegration.StorageIntegrationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/storageintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/storageintegration"
 
 &storageintegration.StorageIntegrationConfig {
 	Connection: interface{},

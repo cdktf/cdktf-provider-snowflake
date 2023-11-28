@@ -1,7 +1,3 @@
-# `snowflake_table_column_masking_policy_application`
-
-Refer to the Terraform Registory for docs: [`snowflake_table_column_masking_policy_application`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/resources/table_column_masking_policy_application).
-
 # `tableColumnMaskingPolicyApplication` Submodule <a name="`tableColumnMaskingPolicyApplication` Submodule" id="@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `snowflake_function`
-
-Refer to the Terraform Registory for docs: [`snowflake_function`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/resources/function).
-
 # `functionResource` Submodule <a name="`functionResource` Submodule" id="@cdktf/provider-snowflake.functionResource"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

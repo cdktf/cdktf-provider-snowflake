@@ -1,7 +1,3 @@
-# `data_snowflake_database_roles`
-
-Refer to the Terraform Registory for docs: [`data_snowflake_database_roles`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/data-sources/database_roles).
-
 # `dataSnowflakeDatabaseRoles` Submodule <a name="`dataSnowflakeDatabaseRoles` Submodule" id="@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

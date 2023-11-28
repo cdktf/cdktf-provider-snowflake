@@ -1,7 +1,3 @@
-# `snowflake_table_column_masking_policy_application`
-
-Refer to the Terraform Registory for docs: [`snowflake_table_column_masking_policy_application`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.76.0/docs/resources/table_column_masking_policy_application).
-
 # `tableColumnMaskingPolicyApplication` Submodule <a name="`tableColumnMaskingPolicyApplication` Submodule" id="@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/tablecolumnmaskingpolicyapplication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tablecolumnmaskingpolicyapplication"
 
 tablecolumnmaskingpolicyapplication.NewTableColumnMaskingPolicyApplication(scope Construct, id *string, config TableColumnMaskingPolicyApplicationConfig) TableColumnMaskingPolicyApplication
 ```
@@ -339,7 +335,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/tablecolumnmaskingpolicyapplication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tablecolumnmaskingpolicyapplication"
 
 tablecolumnmaskingpolicyapplication.TableColumnMaskingPolicyApplication_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +367,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/tablecolumnmaskingpolicyapplication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tablecolumnmaskingpolicyapplication"
 
 tablecolumnmaskingpolicyapplication.TableColumnMaskingPolicyApplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +381,7 @@ tablecolumnmaskingpolicyapplication.TableColumnMaskingPolicyApplication_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplication.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/tablecolumnmaskingpolicyapplication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tablecolumnmaskingpolicyapplication"
 
 tablecolumnmaskingpolicyapplication.TableColumnMaskingPolicyApplication_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ tablecolumnmaskingpolicyapplication.TableColumnMaskingPolicyApplication_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplication.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/tablecolumnmaskingpolicyapplication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tablecolumnmaskingpolicyapplication"
 
 tablecolumnmaskingpolicyapplication.TableColumnMaskingPolicyApplication_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -716,7 +712,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/tablecolumnmaskingpolicyapplication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tablecolumnmaskingpolicyapplication"
 
 &tablecolumnmaskingpolicyapplication.TableColumnMaskingPolicyApplicationConfig {
 	Connection: interface{},
