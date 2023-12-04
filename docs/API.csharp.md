@@ -108,6 +108,7 @@ The following submodules are available:
 - [tagMaskingPolicyAssociation](./tagMaskingPolicyAssociation.csharp.md)
 - [task](./task.csharp.md)
 - [taskGrant](./taskGrant.csharp.md)
+- [unsafeExecute](./unsafeExecute.csharp.md)
 - [user](./user.csharp.md)
 - [userGrant](./userGrant.csharp.md)
 - [userOwnershipGrant](./userOwnershipGrant.csharp.md)

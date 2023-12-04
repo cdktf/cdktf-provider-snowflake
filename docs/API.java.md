@@ -108,6 +108,7 @@ The following submodules are available:
 - [tagMaskingPolicyAssociation](./tagMaskingPolicyAssociation.java.md)
 - [task](./task.java.md)
 - [taskGrant](./taskGrant.java.md)
+- [unsafeExecute](./unsafeExecute.java.md)
 - [user](./user.java.md)
 - [userGrant](./userGrant.java.md)
 - [userOwnershipGrant](./userOwnershipGrant.java.md)
