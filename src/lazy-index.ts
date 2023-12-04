@@ -72,6 +72,7 @@ Object.defineProperty(exports, 'tagGrant', { get: function () { return require('
 Object.defineProperty(exports, 'tagMaskingPolicyAssociation', { get: function () { return require('./tag-masking-policy-association'); } });
 Object.defineProperty(exports, 'task', { get: function () { return require('./task'); } });
 Object.defineProperty(exports, 'taskGrant', { get: function () { return require('./task-grant'); } });
+Object.defineProperty(exports, 'unsafeExecute', { get: function () { return require('./unsafe-execute'); } });
 Object.defineProperty(exports, 'user', { get: function () { return require('./user'); } });
 Object.defineProperty(exports, 'userGrant', { get: function () { return require('./user-grant'); } });
 Object.defineProperty(exports, 'userOwnershipGrant', { get: function () { return require('./user-ownership-grant'); } });

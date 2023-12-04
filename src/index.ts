@@ -72,6 +72,7 @@ export * as tagGrant from './tag-grant';
 export * as tagMaskingPolicyAssociation from './tag-masking-policy-association';
 export * as task from './task';
 export * as taskGrant from './task-grant';
+export * as unsafeExecute from './unsafe-execute';
 export * as user from './user';
 export * as userGrant from './user-grant';
 export * as userOwnershipGrant from './user-ownership-grant';

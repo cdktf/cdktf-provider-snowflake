@@ -108,6 +108,7 @@ The following submodules are available:
 - [tagMaskingPolicyAssociation](./tagMaskingPolicyAssociation.typescript.md)
 - [task](./task.typescript.md)
 - [taskGrant](./taskGrant.typescript.md)
+- [unsafeExecute](./unsafeExecute.typescript.md)
 - [user](./user.typescript.md)
 - [userGrant](./userGrant.typescript.md)
 - [userOwnershipGrant](./userOwnershipGrant.typescript.md)

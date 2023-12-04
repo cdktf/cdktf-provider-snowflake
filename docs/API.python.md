@@ -108,6 +108,7 @@ The following submodules are available:
 - [tagMaskingPolicyAssociation](./tagMaskingPolicyAssociation.python.md)
 - [task](./task.python.md)
 - [taskGrant](./taskGrant.python.md)
+- [unsafeExecute](./unsafeExecute.python.md)
 - [user](./user.python.md)
 - [userGrant](./userGrant.python.md)
 - [userOwnershipGrant](./userOwnershipGrant.python.md)
