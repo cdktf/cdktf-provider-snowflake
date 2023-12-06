@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasks(scope Construct, id *string, config DataSnowflakeTasksConfig) DataSnowflakeTasks
 ```
@@ -274,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasks.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflaketasks"
 
 datasnowflaketasks.DataSnowflakeTasks_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasks.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflaketasks"
 
 datasnowflaketasks.DataSnowflakeTasks_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ datasnowflaketasks.DataSnowflakeTasks_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasks.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflaketasks"
 
 datasnowflaketasks.DataSnowflakeTasks_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ datasnowflaketasks.DataSnowflakeTasks_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasks.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflaketasks"
 
 datasnowflaketasks.DataSnowflakeTasks_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -618,7 +618,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksConfig {
 	Connection: interface{},
@@ -769,7 +769,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasks {
 
@@ -784,7 +784,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketask
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksList
 ```
@@ -916,7 +916,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksOutputReference
 ```
