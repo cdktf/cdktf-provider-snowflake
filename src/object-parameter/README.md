@@ -1,3 +1,3 @@
 # `snowflake_object_parameter`
 
-Refer to the Terraform Registory for docs: [`snowflake_object_parameter`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.77.0/docs/resources/object_parameter).
+Refer to the Terraform Registory for docs: [`snowflake_object_parameter`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/resources/object_parameter).
