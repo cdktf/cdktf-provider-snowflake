@@ -4,12 +4,12 @@
 
 ### PasswordPolicy <a name="PasswordPolicy" id="@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.77.0/docs/resources/password_policy snowflake_password_policy}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/resources/password_policy snowflake_password_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/passwordpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/passwordpolicy"
 
 passwordpolicy.NewPasswordPolicy(scope Construct, id *string, config PasswordPolicyConfig) PasswordPolicy
 ```
@@ -73,12 +73,14 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.resetComment">ResetComment</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.resetHistory">ResetHistory</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.resetIfNotExists">ResetIfNotExists</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.resetLockoutTimeMins">ResetLockoutTimeMins</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.resetMaxAgeDays">ResetMaxAgeDays</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.resetMaxLength">ResetMaxLength</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.resetMaxRetries">ResetMaxRetries</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.resetMinAgeDays">ResetMinAgeDays</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.resetMinLength">ResetMinLength</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.resetMinLowerCaseChars">ResetMinLowerCaseChars</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.resetMinNumericChars">ResetMinNumericChars</a></code> | *No description.* |
@@ -376,6 +378,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 func ResetComment()
 ```
 
+##### `ResetHistory` <a name="ResetHistory" id="@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.resetHistory"></a>
+
+```go
+func ResetHistory()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.resetId"></a>
 
 ```go
@@ -410,6 +418,12 @@ func ResetMaxLength()
 
 ```go
 func ResetMaxRetries()
+```
+
+##### `ResetMinAgeDays` <a name="ResetMinAgeDays" id="@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.resetMinAgeDays"></a>
+
+```go
+func ResetMinAgeDays()
 ```
 
 ##### `ResetMinLength` <a name="ResetMinLength" id="@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.resetMinLength"></a>
@@ -462,7 +476,7 @@ func ResetOrReplace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/passwordpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/passwordpolicy"
 
 passwordpolicy.PasswordPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -494,7 +508,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/passwordpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/passwordpolicy"
 
 passwordpolicy.PasswordPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -508,7 +522,7 @@ passwordpolicy.PasswordPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/passwordpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/passwordpolicy"
 
 passwordpolicy.PasswordPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -522,7 +536,7 @@ passwordpolicy.PasswordPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/passwordpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/passwordpolicy"
 
 passwordpolicy.PasswordPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -551,7 +565,7 @@ The construct id used in the generated config for the PasswordPolicy to import.
 
 The id of the existing PasswordPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.77.0/docs/resources/password_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/resources/password_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -584,12 +598,14 @@ Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 | <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.property.qualifiedName">QualifiedName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.property.commentInput">CommentInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.property.databaseInput">DatabaseInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.property.historyInput">HistoryInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.property.ifNotExistsInput">IfNotExistsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.property.lockoutTimeMinsInput">LockoutTimeMinsInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.property.maxAgeDaysInput">MaxAgeDaysInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.property.maxLengthInput">MaxLengthInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.property.maxRetriesInput">MaxRetriesInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.property.minAgeDaysInput">MinAgeDaysInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.property.minLengthInput">MinLengthInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.property.minLowerCaseCharsInput">MinLowerCaseCharsInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.property.minNumericCharsInput">MinNumericCharsInput</a></code> | <code>*f64</code> | *No description.* |
@@ -600,12 +616,14 @@ Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 | <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.property.schemaInput">SchemaInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.property.comment">Comment</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.property.database">Database</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.property.history">History</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.property.ifNotExists">IfNotExists</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.property.lockoutTimeMins">LockoutTimeMins</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.property.maxAgeDays">MaxAgeDays</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.property.maxLength">MaxLength</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.property.maxRetries">MaxRetries</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.property.minAgeDays">MinAgeDays</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.property.minLength">MinLength</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.property.minLowerCaseChars">MinLowerCaseChars</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.property.minNumericChars">MinNumericChars</a></code> | <code>*f64</code> | *No description.* |
@@ -789,6 +807,16 @@ func DatabaseInput() *string
 
 ---
 
+##### `HistoryInput`<sup>Optional</sup> <a name="HistoryInput" id="@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.property.historyInput"></a>
+
+```go
+func HistoryInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.property.idInput"></a>
 
 ```go
@@ -843,6 +871,16 @@ func MaxLengthInput() *f64
 
 ```go
 func MaxRetriesInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `MinAgeDaysInput`<sup>Optional</sup> <a name="MinAgeDaysInput" id="@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.property.minAgeDaysInput"></a>
+
+```go
+func MinAgeDaysInput() *f64
 ```
 
 - *Type:* *f64
@@ -949,6 +987,16 @@ func Database() *string
 
 ---
 
+##### `History`<sup>Required</sup> <a name="History" id="@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.property.history"></a>
+
+```go
+func History() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.property.id"></a>
 
 ```go
@@ -1003,6 +1051,16 @@ func MaxLength() *f64
 
 ```go
 func MaxRetries() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `MinAgeDays`<sup>Required</sup> <a name="MinAgeDays" id="@cdktf/provider-snowflake.passwordPolicy.PasswordPolicy.property.minAgeDays"></a>
+
+```go
+func MinAgeDays() *f64
 ```
 
 - *Type:* *f64
@@ -1114,7 +1172,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.passwordPolicy.PasswordPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/passwordpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/passwordpolicy"
 
 &passwordpolicy.PasswordPolicyConfig {
 	Connection: interface{},
@@ -1128,12 +1186,14 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/passwordpolic
 	Name: *string,
 	Schema: *string,
 	Comment: *string,
+	History: *f64,
 	Id: *string,
 	IfNotExists: interface{},
 	LockoutTimeMins: *f64,
 	MaxAgeDays: *f64,
 	MaxLength: *f64,
 	MaxRetries: *f64,
+	MinAgeDays: *f64,
 	MinLength: *f64,
 	MinLowerCaseChars: *f64,
 	MinNumericChars: *f64,
@@ -1158,12 +1218,14 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/passwordpolic
 | <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Identifier for the password policy; must be unique for your account. |
 | <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicyConfig.property.schema">Schema</a></code> | <code>*string</code> | The schema this password policy belongs to. |
 | <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicyConfig.property.comment">Comment</a></code> | <code>*string</code> | Adds a comment or overwrites an existing comment for the password policy. |
-| <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.77.0/docs/resources/password_policy#id PasswordPolicy#id}. |
+| <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicyConfig.property.history">History</a></code> | <code>*f64</code> | Specifies the number of the most recent passwords that Snowflake stores. |
+| <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/resources/password_policy#id PasswordPolicy#id}. |
 | <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicyConfig.property.ifNotExists">IfNotExists</a></code> | <code>interface{}</code> | Prevent overwriting a previous password policy with the same name. |
 | <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicyConfig.property.lockoutTimeMins">LockoutTimeMins</a></code> | <code>*f64</code> | Specifies the number of minutes the user account will be locked after exhausting the designated number of password retries (i.e. PASSWORD_MAX_RETRIES). Supported range: 1 to 999, inclusive. Default: 15. |
 | <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicyConfig.property.maxAgeDays">MaxAgeDays</a></code> | <code>*f64</code> | Specifies the maximum number of days before the password must be changed. |
 | <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicyConfig.property.maxLength">MaxLength</a></code> | <code>*f64</code> | Specifies the maximum number of characters the password must contain. |
 | <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicyConfig.property.maxRetries">MaxRetries</a></code> | <code>*f64</code> | Specifies the maximum number of attempts to enter a password before being locked out. |
+| <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicyConfig.property.minAgeDays">MinAgeDays</a></code> | <code>*f64</code> | Specifies the number of days the user must wait before a recently changed password can be changed again. |
 | <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicyConfig.property.minLength">MinLength</a></code> | <code>*f64</code> | Specifies the minimum number of characters the password must contain. Supported range: 8 to 256, inclusive. Default: 8. |
 | <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicyConfig.property.minLowerCaseChars">MinLowerCaseChars</a></code> | <code>*f64</code> | Specifies the minimum number of lowercase characters the password must contain. Supported range: 0 to 256, inclusive. Default: 1. |
 | <code><a href="#@cdktf/provider-snowflake.passwordPolicy.PasswordPolicyConfig.property.minNumericChars">MinNumericChars</a></code> | <code>*f64</code> | Specifies the minimum number of numeric characters the password must contain. Supported range: 0 to 256, inclusive. Default: 1. |
@@ -1253,7 +1315,7 @@ Database *string
 
 The database this password policy belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.77.0/docs/resources/password_policy#database PasswordPolicy#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/resources/password_policy#database PasswordPolicy#database}
 
 ---
 
@@ -1267,7 +1329,7 @@ Name *string
 
 Identifier for the password policy; must be unique for your account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.77.0/docs/resources/password_policy#name PasswordPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/resources/password_policy#name PasswordPolicy#name}
 
 ---
 
@@ -1281,7 +1343,7 @@ Schema *string
 
 The schema this password policy belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.77.0/docs/resources/password_policy#schema PasswordPolicy#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/resources/password_policy#schema PasswordPolicy#schema}
 
 ---
 
@@ -1295,7 +1357,23 @@ Comment *string
 
 Adds a comment or overwrites an existing comment for the password policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.77.0/docs/resources/password_policy#comment PasswordPolicy#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/resources/password_policy#comment PasswordPolicy#comment}
+
+---
+
+##### `History`<sup>Optional</sup> <a name="History" id="@cdktf/provider-snowflake.passwordPolicy.PasswordPolicyConfig.property.history"></a>
+
+```go
+History *f64
+```
+
+- *Type:* *f64
+
+Specifies the number of the most recent passwords that Snowflake stores.
+
+These stored passwords cannot be repeated when a user updates their password value. The current password value does not count towards the history. When you increase the history value, Snowflake saves the previous values. When you decrease the value, Snowflake saves the stored values up to that value that is set. For example, if the history value is 8 and you change the history value to 3, Snowflake stores the most recent 3 passwords and deletes the 5 older password values from the history. Default: 0 Max: 24
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/resources/password_policy#history PasswordPolicy#history}
 
 ---
 
@@ -1307,7 +1385,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.77.0/docs/resources/password_policy#id PasswordPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/resources/password_policy#id PasswordPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1324,7 +1402,7 @@ IfNotExists interface{}
 
 Prevent overwriting a previous password policy with the same name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.77.0/docs/resources/password_policy#if_not_exists PasswordPolicy#if_not_exists}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/resources/password_policy#if_not_exists PasswordPolicy#if_not_exists}
 
 ---
 
@@ -1338,7 +1416,7 @@ LockoutTimeMins *f64
 
 Specifies the number of minutes the user account will be locked after exhausting the designated number of password retries (i.e. PASSWORD_MAX_RETRIES). Supported range: 1 to 999, inclusive. Default: 15.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.77.0/docs/resources/password_policy#lockout_time_mins PasswordPolicy#lockout_time_mins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/resources/password_policy#lockout_time_mins PasswordPolicy#lockout_time_mins}
 
 ---
 
@@ -1354,7 +1432,7 @@ Specifies the maximum number of days before the password must be changed.
 
 Supported range: 0 to 999, inclusive. A value of zero (i.e. 0) indicates that the password does not need to be changed. Snowflake does not recommend choosing this value for a default account-level password policy or for any user-level policy. Instead, choose a value that meets your internal security guidelines. Default: 90, which means the password must be changed every 90 days.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.77.0/docs/resources/password_policy#max_age_days PasswordPolicy#max_age_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/resources/password_policy#max_age_days PasswordPolicy#max_age_days}
 
 ---
 
@@ -1370,7 +1448,7 @@ Specifies the maximum number of characters the password must contain.
 
 This number must be greater than or equal to the sum of PASSWORD_MIN_LENGTH, PASSWORD_MIN_UPPER_CASE_CHARS, and PASSWORD_MIN_LOWER_CASE_CHARS. Supported range: 8 to 256, inclusive. Default: 256
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.77.0/docs/resources/password_policy#max_length PasswordPolicy#max_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/resources/password_policy#max_length PasswordPolicy#max_length}
 
 ---
 
@@ -1386,7 +1464,23 @@ Specifies the maximum number of attempts to enter a password before being locked
 
 Supported range: 1 to 10, inclusive. Default: 5
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.77.0/docs/resources/password_policy#max_retries PasswordPolicy#max_retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/resources/password_policy#max_retries PasswordPolicy#max_retries}
+
+---
+
+##### `MinAgeDays`<sup>Optional</sup> <a name="MinAgeDays" id="@cdktf/provider-snowflake.passwordPolicy.PasswordPolicyConfig.property.minAgeDays"></a>
+
+```go
+MinAgeDays *f64
+```
+
+- *Type:* *f64
+
+Specifies the number of days the user must wait before a recently changed password can be changed again.
+
+Supported range: 0 to 999, inclusive. Default: 0
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/resources/password_policy#min_age_days PasswordPolicy#min_age_days}
 
 ---
 
@@ -1400,7 +1494,7 @@ MinLength *f64
 
 Specifies the minimum number of characters the password must contain. Supported range: 8 to 256, inclusive. Default: 8.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.77.0/docs/resources/password_policy#min_length PasswordPolicy#min_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/resources/password_policy#min_length PasswordPolicy#min_length}
 
 ---
 
@@ -1414,7 +1508,7 @@ MinLowerCaseChars *f64
 
 Specifies the minimum number of lowercase characters the password must contain. Supported range: 0 to 256, inclusive. Default: 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.77.0/docs/resources/password_policy#min_lower_case_chars PasswordPolicy#min_lower_case_chars}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/resources/password_policy#min_lower_case_chars PasswordPolicy#min_lower_case_chars}
 
 ---
 
@@ -1428,7 +1522,7 @@ MinNumericChars *f64
 
 Specifies the minimum number of numeric characters the password must contain. Supported range: 0 to 256, inclusive. Default: 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.77.0/docs/resources/password_policy#min_numeric_chars PasswordPolicy#min_numeric_chars}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/resources/password_policy#min_numeric_chars PasswordPolicy#min_numeric_chars}
 
 ---
 
@@ -1442,7 +1536,7 @@ MinSpecialChars *f64
 
 Specifies the minimum number of special characters the password must contain. Supported range: 0 to 256, inclusive. Default: 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.77.0/docs/resources/password_policy#min_special_chars PasswordPolicy#min_special_chars}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/resources/password_policy#min_special_chars PasswordPolicy#min_special_chars}
 
 ---
 
@@ -1456,7 +1550,7 @@ MinUpperCaseChars *f64
 
 Specifies the minimum number of uppercase characters the password must contain. Supported range: 0 to 256, inclusive. Default: 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.77.0/docs/resources/password_policy#min_upper_case_chars PasswordPolicy#min_upper_case_chars}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/resources/password_policy#min_upper_case_chars PasswordPolicy#min_upper_case_chars}
 
 ---
 
@@ -1470,7 +1564,7 @@ OrReplace interface{}
 
 Whether to override a previous password policy with the same name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.77.0/docs/resources/password_policy#or_replace PasswordPolicy#or_replace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/resources/password_policy#or_replace PasswordPolicy#or_replace}
 
 ---
 

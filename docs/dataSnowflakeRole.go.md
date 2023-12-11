@@ -4,12 +4,12 @@
 
 ### DataSnowflakeRole <a name="DataSnowflakeRole" id="@cdktf/provider-snowflake.dataSnowflakeRole.DataSnowflakeRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.77.0/docs/data-sources/role snowflake_role}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/data-sources/role snowflake_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeRole.DataSnowflakeRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakerole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakerole"
 
 datasnowflakerole.NewDataSnowflakeRole(scope Construct, id *string, config DataSnowflakeRoleConfig) DataSnowflakeRole
 ```
@@ -274,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeRole.DataSnowflakeRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakerole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakerole"
 
 datasnowflakerole.DataSnowflakeRole_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeRole.DataSnowflakeRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakerole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakerole"
 
 datasnowflakerole.DataSnowflakeRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ datasnowflakerole.DataSnowflakeRole_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeRole.DataSnowflakeRole.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakerole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakerole"
 
 datasnowflakerole.DataSnowflakeRole_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ datasnowflakerole.DataSnowflakeRole_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.dataSnowflakeRole.DataSnowflakeRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakerole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakerole"
 
 datasnowflakerole.DataSnowflakeRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -363,7 +363,7 @@ The construct id used in the generated config for the DataSnowflakeRole to impor
 
 The id of the existing DataSnowflakeRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.77.0/docs/data-sources/role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/data-sources/role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -596,7 +596,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeRole.DataSnowflakeRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakerole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakerole"
 
 &datasnowflakerole.DataSnowflakeRoleConfig {
 	Connection: interface{},
@@ -623,7 +623,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflake
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRole.DataSnowflakeRoleConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRole.DataSnowflakeRoleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRole.DataSnowflakeRoleConfig.property.name">Name</a></code> | <code>*string</code> | The role for which to return metadata. |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRole.DataSnowflakeRoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.77.0/docs/data-sources/role#id DataSnowflakeRole#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRole.DataSnowflakeRoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/data-sources/role#id DataSnowflakeRole#id}. |
 
 ---
 
@@ -707,7 +707,7 @@ Name *string
 
 The role for which to return metadata.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.77.0/docs/data-sources/role#name DataSnowflakeRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/data-sources/role#name DataSnowflakeRole#name}
 
 ---
 
@@ -719,7 +719,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.77.0/docs/data-sources/role#id DataSnowflakeRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/data-sources/role#id DataSnowflakeRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

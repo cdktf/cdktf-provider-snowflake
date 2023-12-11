@@ -4,12 +4,12 @@
 
 ### TagMaskingPolicyAssociation <a name="TagMaskingPolicyAssociation" id="@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.77.0/docs/resources/tag_masking_policy_association snowflake_tag_masking_policy_association}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/resources/tag_masking_policy_association snowflake_tag_masking_policy_association}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/tagmaskingpolicyassociation"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tagmaskingpolicyassociation"
 
 tagmaskingpolicyassociation.NewTagMaskingPolicyAssociation(scope Construct, id *string, config TagMaskingPolicyAssociationConfig) TagMaskingPolicyAssociation
 ```
@@ -378,7 +378,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/tagmaskingpolicyassociation"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tagmaskingpolicyassociation"
 
 tagmaskingpolicyassociation.TagMaskingPolicyAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/tagmaskingpolicyassociation"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tagmaskingpolicyassociation"
 
 tagmaskingpolicyassociation.TagMaskingPolicyAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ tagmaskingpolicyassociation.TagMaskingPolicyAssociation_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/tagmaskingpolicyassociation"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tagmaskingpolicyassociation"
 
 tagmaskingpolicyassociation.TagMaskingPolicyAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ tagmaskingpolicyassociation.TagMaskingPolicyAssociation_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/tagmaskingpolicyassociation"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tagmaskingpolicyassociation"
 
 tagmaskingpolicyassociation.TagMaskingPolicyAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -467,7 +467,7 @@ The construct id used in the generated config for the TagMaskingPolicyAssociatio
 
 The id of the existing TagMaskingPolicyAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.77.0/docs/resources/tag_masking_policy_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/resources/tag_masking_policy_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -733,7 +733,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/tagmaskingpolicyassociation"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tagmaskingpolicyassociation"
 
 &tagmaskingpolicyassociation.TagMaskingPolicyAssociationConfig {
 	Connection: interface{},
@@ -762,7 +762,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/tagmaskingpol
 | <code><a href="#@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociationConfig.property.maskingPolicyId">MaskingPolicyId</a></code> | <code>*string</code> | The resource id of the masking policy. |
 | <code><a href="#@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociationConfig.property.tagId">TagId</a></code> | <code>*string</code> | Specifies the identifier for the tag. Note: format must follow: "databaseName"."schemaName"."tagName" or "databaseName.schemaName.tagName" or "databaseName\|schemaName.tagName" (snowflake_tag.tag.id). |
-| <code><a href="#@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.77.0/docs/resources/tag_masking_policy_association#id TagMaskingPolicyAssociation#id}. |
+| <code><a href="#@cdktf/provider-snowflake.tagMaskingPolicyAssociation.TagMaskingPolicyAssociationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/resources/tag_masking_policy_association#id TagMaskingPolicyAssociation#id}. |
 
 ---
 
@@ -846,7 +846,7 @@ MaskingPolicyId *string
 
 The resource id of the masking policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.77.0/docs/resources/tag_masking_policy_association#masking_policy_id TagMaskingPolicyAssociation#masking_policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/resources/tag_masking_policy_association#masking_policy_id TagMaskingPolicyAssociation#masking_policy_id}
 
 ---
 
@@ -860,7 +860,7 @@ TagId *string
 
 Specifies the identifier for the tag. Note: format must follow: "databaseName"."schemaName"."tagName" or "databaseName.schemaName.tagName" or "databaseName|schemaName.tagName" (snowflake_tag.tag.id).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.77.0/docs/resources/tag_masking_policy_association#tag_id TagMaskingPolicyAssociation#tag_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/resources/tag_masking_policy_association#tag_id TagMaskingPolicyAssociation#tag_id}
 
 ---
 
@@ -872,7 +872,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.77.0/docs/resources/tag_masking_policy_association#id TagMaskingPolicyAssociation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/resources/tag_masking_policy_association#id TagMaskingPolicyAssociation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

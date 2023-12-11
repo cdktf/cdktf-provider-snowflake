@@ -4,7 +4,7 @@
 
 ### DataSnowflakeDatabases <a name="DataSnowflakeDatabases" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.77.0/docs/data-sources/databases snowflake_databases}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/data-sources/databases snowflake_databases}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.Initializer"></a>
 
@@ -391,7 +391,7 @@ The construct id used in the generated config for the DataSnowflakeDatabases to 
 
 The id of the existing DataSnowflakeDatabases that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.77.0/docs/data-sources/databases#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/data-sources/databases#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -707,7 +707,7 @@ const dataSnowflakeDatabasesConfig: dataSnowflakeDatabases.DataSnowflakeDatabase
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.property.history">history</a></code> | <code>boolean \| cdktf.IResolvable</code> | Optionally includes dropped databases that have not yet been purged The output also includes an additional `dropped_on` column. |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.77.0/docs/data-sources/databases#id DataSnowflakeDatabases#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/data-sources/databases#id DataSnowflakeDatabases#id}. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.property.pattern">pattern</a></code> | <code>string</code> | Optionally filters the databases by a pattern. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.property.startsWith">startsWith</a></code> | <code>string</code> | Optionally filters the databases by a pattern. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.property.terse">terse</a></code> | <code>boolean \| cdktf.IResolvable</code> | Optionally returns only the columns `created_on` and `name` in the results. |
@@ -794,7 +794,7 @@ public readonly history: boolean | IResolvable;
 
 Optionally includes dropped databases that have not yet been purged The output also includes an additional `dropped_on` column.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.77.0/docs/data-sources/databases#history DataSnowflakeDatabases#history}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/data-sources/databases#history DataSnowflakeDatabases#history}
 
 ---
 
@@ -806,7 +806,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.77.0/docs/data-sources/databases#id DataSnowflakeDatabases#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/data-sources/databases#id DataSnowflakeDatabases#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -823,7 +823,7 @@ public readonly pattern: string;
 
 Optionally filters the databases by a pattern.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.77.0/docs/data-sources/databases#pattern DataSnowflakeDatabases#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/data-sources/databases#pattern DataSnowflakeDatabases#pattern}
 
 ---
 
@@ -837,7 +837,7 @@ public readonly startsWith: string;
 
 Optionally filters the databases by a pattern.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.77.0/docs/data-sources/databases#starts_with DataSnowflakeDatabases#starts_with}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/data-sources/databases#starts_with DataSnowflakeDatabases#starts_with}
 
 ---
 
@@ -851,7 +851,7 @@ public readonly terse: boolean | IResolvable;
 
 Optionally returns only the columns `created_on` and `name` in the results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.77.0/docs/data-sources/databases#terse DataSnowflakeDatabases#terse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/data-sources/databases#terse DataSnowflakeDatabases#terse}
 
 ---
 
