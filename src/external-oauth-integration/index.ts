@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/resources/external_oauth_integration
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.1/docs/resources/external_oauth_integration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,41 +15,41 @@ export interface ExternalOauthIntegrationConfig extends cdktf.TerraformMetaArgum
   /**
   * Specifies the list of roles that the client can set as the primary role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/resources/external_oauth_integration#allowed_roles ExternalOauthIntegration#allowed_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.1/docs/resources/external_oauth_integration#allowed_roles ExternalOauthIntegration#allowed_roles}
   */
   readonly allowedRoles?: string[];
   /**
   * Specifies whether the OAuth client or user can use a role that is not defined in the OAuth access token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/resources/external_oauth_integration#any_role_mode ExternalOauthIntegration#any_role_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.1/docs/resources/external_oauth_integration#any_role_mode ExternalOauthIntegration#any_role_mode}
   */
   readonly anyRoleMode?: string;
   /**
   * Specifies additional values that can be used for the access token's audience validation on top of using the Customer's Snowflake Account URL 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/resources/external_oauth_integration#audience_urls ExternalOauthIntegration#audience_urls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.1/docs/resources/external_oauth_integration#audience_urls ExternalOauthIntegration#audience_urls}
   */
   readonly audienceUrls?: string[];
   /**
   * Specifies the list of roles that a client cannot set as the primary role. Do not include ACCOUNTADMIN, ORGADMIN or SECURITYADMIN as they are already implicitly enforced and will cause in-place updates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/resources/external_oauth_integration#blocked_roles ExternalOauthIntegration#blocked_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.1/docs/resources/external_oauth_integration#blocked_roles ExternalOauthIntegration#blocked_roles}
   */
   readonly blockedRoles?: string[];
   /**
   * Specifies a comment for the OAuth integration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/resources/external_oauth_integration#comment ExternalOauthIntegration#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.1/docs/resources/external_oauth_integration#comment ExternalOauthIntegration#comment}
   */
   readonly comment?: string;
   /**
   * Specifies whether to initiate operation of the integration or suspend it.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/resources/external_oauth_integration#enabled ExternalOauthIntegration#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.1/docs/resources/external_oauth_integration#enabled ExternalOauthIntegration#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/resources/external_oauth_integration#id ExternalOauthIntegration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.1/docs/resources/external_oauth_integration#id ExternalOauthIntegration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -58,67 +58,67 @@ export interface ExternalOauthIntegrationConfig extends cdktf.TerraformMetaArgum
   /**
   * Specifies the URL to define the OAuth 2.0 authorization server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/resources/external_oauth_integration#issuer ExternalOauthIntegration#issuer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.1/docs/resources/external_oauth_integration#issuer ExternalOauthIntegration#issuer}
   */
   readonly issuer: string;
   /**
   * Specifies the endpoint or a list of endpoints from which to download public keys or certificates to validate an External OAuth access token. The maximum number of URLs that can be specified in the list is 3.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/resources/external_oauth_integration#jws_keys_urls ExternalOauthIntegration#jws_keys_urls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.1/docs/resources/external_oauth_integration#jws_keys_urls ExternalOauthIntegration#jws_keys_urls}
   */
   readonly jwsKeysUrls?: string[];
   /**
   * Specifies the name of the External Oath integration. This name follows the rules for Object Identifiers. The name should be unique among security integrations in your account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/resources/external_oauth_integration#name ExternalOauthIntegration#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.1/docs/resources/external_oauth_integration#name ExternalOauthIntegration#name}
   */
   readonly name: string;
   /**
   * Specifies a Base64-encoded RSA public key, without the -----BEGIN PUBLIC KEY----- and -----END PUBLIC KEY----- headers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/resources/external_oauth_integration#rsa_public_key ExternalOauthIntegration#rsa_public_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.1/docs/resources/external_oauth_integration#rsa_public_key ExternalOauthIntegration#rsa_public_key}
   */
   readonly rsaPublicKey?: string;
   /**
   * Specifies a second RSA public key, without the -----BEGIN PUBLIC KEY----- and -----END PUBLIC KEY----- headers. Used for key rotation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/resources/external_oauth_integration#rsa_public_key_2 ExternalOauthIntegration#rsa_public_key_2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.1/docs/resources/external_oauth_integration#rsa_public_key_2 ExternalOauthIntegration#rsa_public_key_2}
   */
   readonly rsaPublicKey2?: string;
   /**
   * Specifies the scope delimiter in the authorization token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/resources/external_oauth_integration#scope_delimiter ExternalOauthIntegration#scope_delimiter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.1/docs/resources/external_oauth_integration#scope_delimiter ExternalOauthIntegration#scope_delimiter}
   */
   readonly scopeDelimiter?: string;
   /**
   * Specifies the access token claim to map the access token to an account role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/resources/external_oauth_integration#scope_mapping_attribute ExternalOauthIntegration#scope_mapping_attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.1/docs/resources/external_oauth_integration#scope_mapping_attribute ExternalOauthIntegration#scope_mapping_attribute}
   */
   readonly scopeMappingAttribute?: string;
   /**
   * Indicates which Snowflake user record attribute should be used to map the access token to a Snowflake user record.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/resources/external_oauth_integration#snowflake_user_mapping_attribute ExternalOauthIntegration#snowflake_user_mapping_attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.1/docs/resources/external_oauth_integration#snowflake_user_mapping_attribute ExternalOauthIntegration#snowflake_user_mapping_attribute}
   */
   readonly snowflakeUserMappingAttribute: string;
   /**
   * Specifies the access token claim or claims that can be used to map the access token to a Snowflake user record.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/resources/external_oauth_integration#token_user_mapping_claims ExternalOauthIntegration#token_user_mapping_claims}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.1/docs/resources/external_oauth_integration#token_user_mapping_claims ExternalOauthIntegration#token_user_mapping_claims}
   */
   readonly tokenUserMappingClaims: string[];
   /**
   * Specifies the OAuth 2.0 authorization server to be Okta, Microsoft Azure AD, Ping Identity PingFederate, or a Custom OAuth 2.0 authorization server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/resources/external_oauth_integration#type ExternalOauthIntegration#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.1/docs/resources/external_oauth_integration#type ExternalOauthIntegration#type}
   */
   readonly type: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/resources/external_oauth_integration snowflake_external_oauth_integration}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.1/docs/resources/external_oauth_integration snowflake_external_oauth_integration}
 */
 export class ExternalOauthIntegration extends cdktf.TerraformResource {
 
@@ -134,7 +134,7 @@ export class ExternalOauthIntegration extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ExternalOauthIntegration resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ExternalOauthIntegration to import
-  * @param importFromId The id of the existing ExternalOauthIntegration that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/resources/external_oauth_integration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ExternalOauthIntegration that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.1/docs/resources/external_oauth_integration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ExternalOauthIntegration to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -146,7 +146,7 @@ export class ExternalOauthIntegration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/resources/external_oauth_integration snowflake_external_oauth_integration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.1/docs/resources/external_oauth_integration snowflake_external_oauth_integration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -157,7 +157,7 @@ export class ExternalOauthIntegration extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_external_oauth_integration',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.79.0',
+        providerVersion: '0.79.1',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,

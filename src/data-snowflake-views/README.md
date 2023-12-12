@@ -1,3 +1,3 @@
 # `data_snowflake_views`
 
-Refer to the Terraform Registory for docs: [`data_snowflake_views`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.0/docs/data-sources/views).
+Refer to the Terraform Registory for docs: [`data_snowflake_views`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.1/docs/data-sources/views).
