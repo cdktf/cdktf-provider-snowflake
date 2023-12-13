@@ -4,7 +4,7 @@
 
 ### DataSnowflakeTasks <a name="DataSnowflakeTasks" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasks"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.1/docs/data-sources/tasks snowflake_tasks}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/data-sources/tasks snowflake_tasks}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasks.Initializer"></a>
 
@@ -363,7 +363,7 @@ The construct id used in the generated config for the DataSnowflakeTasks to impo
 
 The id of the existing DataSnowflakeTasks that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.1/docs/data-sources/tasks#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/data-sources/tasks#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -647,7 +647,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflake
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksConfig.property.database">Database</a></code> | <code>*string</code> | The database from which to return the schemas from. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksConfig.property.schema">Schema</a></code> | <code>*string</code> | The schema from which to return the tasks from. |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.1/docs/data-sources/tasks#id DataSnowflakeTasks#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/data-sources/tasks#id DataSnowflakeTasks#id}. |
 
 ---
 
@@ -731,7 +731,7 @@ Database *string
 
 The database from which to return the schemas from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.1/docs/data-sources/tasks#database DataSnowflakeTasks#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/data-sources/tasks#database DataSnowflakeTasks#database}
 
 ---
 
@@ -745,7 +745,7 @@ Schema *string
 
 The schema from which to return the tasks from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.1/docs/data-sources/tasks#schema DataSnowflakeTasks#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/data-sources/tasks#schema DataSnowflakeTasks#schema}
 
 ---
 
@@ -757,7 +757,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.1/docs/data-sources/tasks#id DataSnowflakeTasks#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/data-sources/tasks#id DataSnowflakeTasks#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

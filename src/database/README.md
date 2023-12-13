@@ -1,3 +1,3 @@
 # `snowflake_database`
 
-Refer to the Terraform Registory for docs: [`snowflake_database`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.1/docs/resources/database).
+Refer to the Terraform Registory for docs: [`snowflake_database`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/resources/database).
