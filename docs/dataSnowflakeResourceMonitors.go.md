@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeResourceMonitors.DataSnowflakeResourceMonitors.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakeresourcemonitors"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeresourcemonitors"
 
 datasnowflakeresourcemonitors.NewDataSnowflakeResourceMonitors(scope Construct, id *string, config DataSnowflakeResourceMonitorsConfig) DataSnowflakeResourceMonitors
 ```
@@ -274,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeResourceMonitors.DataSnowflakeResourceMonitors.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakeresourcemonitors"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeresourcemonitors"
 
 datasnowflakeresourcemonitors.DataSnowflakeResourceMonitors_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeResourceMonitors.DataSnowflakeResourceMonitors.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakeresourcemonitors"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeresourcemonitors"
 
 datasnowflakeresourcemonitors.DataSnowflakeResourceMonitors_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ datasnowflakeresourcemonitors.DataSnowflakeResourceMonitors_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeResourceMonitors.DataSnowflakeResourceMonitors.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakeresourcemonitors"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeresourcemonitors"
 
 datasnowflakeresourcemonitors.DataSnowflakeResourceMonitors_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ datasnowflakeresourcemonitors.DataSnowflakeResourceMonitors_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.dataSnowflakeResourceMonitors.DataSnowflakeResourceMonitors.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakeresourcemonitors"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeresourcemonitors"
 
 datasnowflakeresourcemonitors.DataSnowflakeResourceMonitors_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -574,7 +574,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeResourceMonitors.DataSnowflakeResourceMonitorsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakeresourcemonitors"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeresourcemonitors"
 
 &datasnowflakeresourcemonitors.DataSnowflakeResourceMonitorsConfig {
 	Connection: interface{},
@@ -693,7 +693,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeResourceMonitors.DataSnowflakeResourceMonitorsResourceMonitors.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakeresourcemonitors"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeresourcemonitors"
 
 &datasnowflakeresourcemonitors.DataSnowflakeResourceMonitorsResourceMonitors {
 
@@ -708,7 +708,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflake
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeResourceMonitors.DataSnowflakeResourceMonitorsResourceMonitorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakeresourcemonitors"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeresourcemonitors"
 
 datasnowflakeresourcemonitors.NewDataSnowflakeResourceMonitorsResourceMonitorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeResourceMonitorsResourceMonitorsList
 ```
@@ -840,7 +840,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeResourceMonitors.DataSnowflakeResourceMonitorsResourceMonitorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakeresourcemonitors"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeresourcemonitors"
 
 datasnowflakeresourcemonitors.NewDataSnowflakeResourceMonitorsResourceMonitorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeResourceMonitorsResourceMonitorsOutputReference
 ```
