@@ -4,12 +4,12 @@
 
 ### DataSnowflakeCurrentAccount <a name="DataSnowflakeCurrentAccount" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.1/docs/data-sources/current_account snowflake_current_account}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/data-sources/current_account snowflake_current_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakecurrentaccount"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakecurrentaccount"
 
 datasnowflakecurrentaccount.NewDataSnowflakeCurrentAccount(scope Construct, id *string, config DataSnowflakeCurrentAccountConfig) DataSnowflakeCurrentAccount
 ```
@@ -274,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakecurrentaccount"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakecurrentaccount"
 
 datasnowflakecurrentaccount.DataSnowflakeCurrentAccount_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakecurrentaccount"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakecurrentaccount"
 
 datasnowflakecurrentaccount.DataSnowflakeCurrentAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ datasnowflakecurrentaccount.DataSnowflakeCurrentAccount_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakecurrentaccount"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakecurrentaccount"
 
 datasnowflakecurrentaccount.DataSnowflakeCurrentAccount_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ datasnowflakecurrentaccount.DataSnowflakeCurrentAccount_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakecurrentaccount"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakecurrentaccount"
 
 datasnowflakecurrentaccount.DataSnowflakeCurrentAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -363,7 +363,7 @@ The construct id used in the generated config for the DataSnowflakeCurrentAccoun
 
 The id of the existing DataSnowflakeCurrentAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.1/docs/data-sources/current_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/data-sources/current_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -596,7 +596,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakecurrentaccount"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakecurrentaccount"
 
 &datasnowflakecurrentaccount.DataSnowflakeCurrentAccountConfig {
 	Connection: interface{},
@@ -621,7 +621,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflake
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.1/docs/data-sources/current_account#id DataSnowflakeCurrentAccount#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/data-sources/current_account#id DataSnowflakeCurrentAccount#id}. |
 
 ---
 
@@ -703,7 +703,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.79.1/docs/data-sources/current_account#id DataSnowflakeCurrentAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/data-sources/current_account#id DataSnowflakeCurrentAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -1,7 +1,7 @@
 
-# CDKTF prebuilt bindings for Snowflake-Labs/snowflake provider version 0.79.1
+# CDKTF prebuilt bindings for Snowflake-Labs/snowflake provider version 0.80.0
 
-This repo builds and publishes the [Terraform snowflake provider](https://registry.terraform.io/providers/Snowflake-Labs/snowflake/0.79.1/docs) bindings for [CDK for Terraform](https://cdk.tf).
+This repo builds and publishes the [Terraform snowflake provider](https://registry.terraform.io/providers/Snowflake-Labs/snowflake/0.80.0/docs) bindings for [CDK for Terraform](https://cdk.tf).
 
 ## Available Packages
 
@@ -61,7 +61,7 @@ This project is explicitly not tracking the Terraform snowflake provider version
 These are the upstream dependencies:
 
 - [CDK for Terraform](https://cdk.tf)
-- [Terraform snowflake provider](https://registry.terraform.io/providers/Snowflake-Labs/snowflake/0.79.1)
+- [Terraform snowflake provider](https://registry.terraform.io/providers/Snowflake-Labs/snowflake/0.80.0)
 - [Terraform Engine](https://terraform.io)
 
 If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.
