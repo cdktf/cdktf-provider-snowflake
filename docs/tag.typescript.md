@@ -4,7 +4,7 @@
 
 ### Tag <a name="Tag" id="@cdktf/provider-snowflake.tag.Tag"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/resources/tag snowflake_tag}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/tag snowflake_tag}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.tag.Tag.Initializer"></a>
 
@@ -481,7 +481,7 @@ The construct id used in the generated config for the Tag to import.
 
 The id of the existing Tag that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/resources/tag#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/tag#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -834,7 +834,7 @@ const tagConfig: tag.TagConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.tag.TagConfig.property.schema">schema</a></code> | <code>string</code> | The schema in which to create the tag. |
 | <code><a href="#@cdktf/provider-snowflake.tag.TagConfig.property.allowedValues">allowedValues</a></code> | <code>string[]</code> | List of allowed values for the tag. |
 | <code><a href="#@cdktf/provider-snowflake.tag.TagConfig.property.comment">comment</a></code> | <code>string</code> | Specifies a comment for the tag. |
-| <code><a href="#@cdktf/provider-snowflake.tag.TagConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/resources/tag#id Tag#id}. |
+| <code><a href="#@cdktf/provider-snowflake.tag.TagConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/tag#id Tag#id}. |
 
 ---
 
@@ -918,7 +918,7 @@ public readonly database: string;
 
 The database in which to create the tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/resources/tag#database Tag#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/tag#database Tag#database}
 
 ---
 
@@ -932,7 +932,7 @@ public readonly name: string;
 
 Specifies the identifier for the tag; must be unique for the database in which the tag is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/resources/tag#name Tag#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/tag#name Tag#name}
 
 ---
 
@@ -946,7 +946,7 @@ public readonly schema: string;
 
 The schema in which to create the tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/resources/tag#schema Tag#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/tag#schema Tag#schema}
 
 ---
 
@@ -960,7 +960,7 @@ public readonly allowedValues: string[];
 
 List of allowed values for the tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/resources/tag#allowed_values Tag#allowed_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/tag#allowed_values Tag#allowed_values}
 
 ---
 
@@ -974,7 +974,7 @@ public readonly comment: string;
 
 Specifies a comment for the tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/resources/tag#comment Tag#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/tag#comment Tag#comment}
 
 ---
 
@@ -986,7 +986,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/resources/tag#id Tag#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/tag#id Tag#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

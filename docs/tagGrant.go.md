@@ -4,7 +4,7 @@
 
 ### TagGrant <a name="TagGrant" id="@cdktf/provider-snowflake.tagGrant.TagGrant"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/resources/tag_grant snowflake_tag_grant}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/tag_grant snowflake_tag_grant}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.tagGrant.TagGrant.Initializer"></a>
 
@@ -502,7 +502,7 @@ The construct id used in the generated config for the TagGrant to import.
 
 The id of the existing TagGrant that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/resources/tag_grant#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/tag_grant#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -937,7 +937,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/taggrant"
 | <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrantConfig.property.schemaName">SchemaName</a></code> | <code>*string</code> | The name of the schema containing the tag on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrantConfig.property.tagName">TagName</a></code> | <code>*string</code> | The name of the tag on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrantConfig.property.enableMultipleGrants">EnableMultipleGrants</a></code> | <code>interface{}</code> | When this is set to true, multiple grants of the same type can be created. |
-| <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrantConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/resources/tag_grant#id TagGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrantConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/tag_grant#id TagGrant#id}. |
 | <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrantConfig.property.privilege">Privilege</a></code> | <code>*string</code> | The privilege to grant on the tag. To grant all privileges, use the value `ALL PRIVILEGES`. |
 | <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrantConfig.property.revertOwnershipToRoleName">RevertOwnershipToRoleName</a></code> | <code>*string</code> | The name of the role to revert ownership to on destroy. |
 | <code><a href="#@cdktf/provider-snowflake.tagGrant.TagGrantConfig.property.roles">Roles</a></code> | <code>*[]*string</code> | Grants privilege to these roles. |
@@ -1025,7 +1025,7 @@ DatabaseName *string
 
 The name of the database containing the tag on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/resources/tag_grant#database_name TagGrant#database_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/tag_grant#database_name TagGrant#database_name}
 
 ---
 
@@ -1039,7 +1039,7 @@ SchemaName *string
 
 The name of the schema containing the tag on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/resources/tag_grant#schema_name TagGrant#schema_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/tag_grant#schema_name TagGrant#schema_name}
 
 ---
 
@@ -1053,7 +1053,7 @@ TagName *string
 
 The name of the tag on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/resources/tag_grant#tag_name TagGrant#tag_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/tag_grant#tag_name TagGrant#tag_name}
 
 ---
 
@@ -1069,7 +1069,7 @@ When this is set to true, multiple grants of the same type can be created.
 
 This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/resources/tag_grant#enable_multiple_grants TagGrant#enable_multiple_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/tag_grant#enable_multiple_grants TagGrant#enable_multiple_grants}
 
 ---
 
@@ -1081,7 +1081,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/resources/tag_grant#id TagGrant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/tag_grant#id TagGrant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1098,7 +1098,7 @@ Privilege *string
 
 The privilege to grant on the tag. To grant all privileges, use the value `ALL PRIVILEGES`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/resources/tag_grant#privilege TagGrant#privilege}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/tag_grant#privilege TagGrant#privilege}
 
 ---
 
@@ -1114,7 +1114,7 @@ The name of the role to revert ownership to on destroy.
 
 Has no effect unless `privilege` is set to `OWNERSHIP`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/resources/tag_grant#revert_ownership_to_role_name TagGrant#revert_ownership_to_role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/tag_grant#revert_ownership_to_role_name TagGrant#revert_ownership_to_role_name}
 
 ---
 
@@ -1128,7 +1128,7 @@ Roles *[]*string
 
 Grants privilege to these roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/resources/tag_grant#roles TagGrant#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/tag_grant#roles TagGrant#roles}
 
 ---
 
@@ -1142,7 +1142,7 @@ WithGrantOption interface{}
 
 When this is set to true, allows the recipient role to grant the privileges to other roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/resources/tag_grant#with_grant_option TagGrant#with_grant_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/tag_grant#with_grant_option TagGrant#with_grant_option}
 
 ---
 

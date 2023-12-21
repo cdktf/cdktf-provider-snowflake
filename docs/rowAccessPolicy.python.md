@@ -4,7 +4,7 @@
 
 ### RowAccessPolicy <a name="RowAccessPolicy" id="@cdktf/provider-snowflake.rowAccessPolicy.RowAccessPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/resources/row_access_policy snowflake_row_access_policy}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/row_access_policy snowflake_row_access_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.rowAccessPolicy.RowAccessPolicy.Initializer"></a>
 
@@ -48,7 +48,7 @@ rowAccessPolicy.RowAccessPolicy(
 | <code><a href="#@cdktf/provider-snowflake.rowAccessPolicy.RowAccessPolicy.Initializer.parameter.schema">schema</a></code> | <code>str</code> | The schema in which to create the row access policy. |
 | <code><a href="#@cdktf/provider-snowflake.rowAccessPolicy.RowAccessPolicy.Initializer.parameter.signature">signature</a></code> | <code>typing.Mapping[str]</code> | Specifies signature (arguments) for the row access policy (uppercase and sorted to avoid recreation of resource). |
 | <code><a href="#@cdktf/provider-snowflake.rowAccessPolicy.RowAccessPolicy.Initializer.parameter.comment">comment</a></code> | <code>str</code> | Specifies a comment for the row access policy. |
-| <code><a href="#@cdktf/provider-snowflake.rowAccessPolicy.RowAccessPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/resources/row_access_policy#id RowAccessPolicy#id}. |
+| <code><a href="#@cdktf/provider-snowflake.rowAccessPolicy.RowAccessPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/row_access_policy#id RowAccessPolicy#id}. |
 
 ---
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 The database in which to create the row access policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/resources/row_access_policy#database RowAccessPolicy#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/row_access_policy#database RowAccessPolicy#database}
 
 ---
 
@@ -130,7 +130,7 @@ Specifies the identifier for the row access policy;
 
 must be unique for the database and schema in which the row access policy is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/resources/row_access_policy#name RowAccessPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/row_access_policy#name RowAccessPolicy#name}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the SQL expression. The expression can be any boolean-valued SQL expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/resources/row_access_policy#row_access_expression RowAccessPolicy#row_access_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/row_access_policy#row_access_expression RowAccessPolicy#row_access_expression}
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The schema in which to create the row access policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/resources/row_access_policy#schema RowAccessPolicy#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/row_access_policy#schema RowAccessPolicy#schema}
 
 ---
 
@@ -162,7 +162,7 @@ Specifies signature (arguments) for the row access policy (uppercase and sorted 
 
 A signature specifies a set of attributes that must be considered to determine whether the row is accessible. The attribute values come from the database object (e.g. table or view) to be protected by the row access policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/resources/row_access_policy#signature RowAccessPolicy#signature}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/row_access_policy#signature RowAccessPolicy#signature}
 
 ---
 
@@ -172,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies a comment for the row access policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/resources/row_access_policy#comment RowAccessPolicy#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/row_access_policy#comment RowAccessPolicy#comment}
 
 ---
 
@@ -180,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/resources/row_access_policy#id RowAccessPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/row_access_policy#id RowAccessPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -663,7 +663,7 @@ The construct id used in the generated config for the RowAccessPolicy to import.
 
 The id of the existing RowAccessPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/resources/row_access_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/row_access_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1054,7 +1054,7 @@ rowAccessPolicy.RowAccessPolicyConfig(
 | <code><a href="#@cdktf/provider-snowflake.rowAccessPolicy.RowAccessPolicyConfig.property.schema">schema</a></code> | <code>str</code> | The schema in which to create the row access policy. |
 | <code><a href="#@cdktf/provider-snowflake.rowAccessPolicy.RowAccessPolicyConfig.property.signature">signature</a></code> | <code>typing.Mapping[str]</code> | Specifies signature (arguments) for the row access policy (uppercase and sorted to avoid recreation of resource). |
 | <code><a href="#@cdktf/provider-snowflake.rowAccessPolicy.RowAccessPolicyConfig.property.comment">comment</a></code> | <code>str</code> | Specifies a comment for the row access policy. |
-| <code><a href="#@cdktf/provider-snowflake.rowAccessPolicy.RowAccessPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/resources/row_access_policy#id RowAccessPolicy#id}. |
+| <code><a href="#@cdktf/provider-snowflake.rowAccessPolicy.RowAccessPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/row_access_policy#id RowAccessPolicy#id}. |
 
 ---
 
@@ -1138,7 +1138,7 @@ database: str
 
 The database in which to create the row access policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/resources/row_access_policy#database RowAccessPolicy#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/row_access_policy#database RowAccessPolicy#database}
 
 ---
 
@@ -1154,7 +1154,7 @@ Specifies the identifier for the row access policy;
 
 must be unique for the database and schema in which the row access policy is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/resources/row_access_policy#name RowAccessPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/row_access_policy#name RowAccessPolicy#name}
 
 ---
 
@@ -1168,7 +1168,7 @@ row_access_expression: str
 
 Specifies the SQL expression. The expression can be any boolean-valued SQL expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/resources/row_access_policy#row_access_expression RowAccessPolicy#row_access_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/row_access_policy#row_access_expression RowAccessPolicy#row_access_expression}
 
 ---
 
@@ -1182,7 +1182,7 @@ schema: str
 
 The schema in which to create the row access policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/resources/row_access_policy#schema RowAccessPolicy#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/row_access_policy#schema RowAccessPolicy#schema}
 
 ---
 
@@ -1198,7 +1198,7 @@ Specifies signature (arguments) for the row access policy (uppercase and sorted 
 
 A signature specifies a set of attributes that must be considered to determine whether the row is accessible. The attribute values come from the database object (e.g. table or view) to be protected by the row access policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/resources/row_access_policy#signature RowAccessPolicy#signature}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/row_access_policy#signature RowAccessPolicy#signature}
 
 ---
 
@@ -1212,7 +1212,7 @@ comment: str
 
 Specifies a comment for the row access policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/resources/row_access_policy#comment RowAccessPolicy#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/row_access_policy#comment RowAccessPolicy#comment}
 
 ---
 
@@ -1224,7 +1224,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/resources/row_access_policy#id RowAccessPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/row_access_policy#id RowAccessPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
