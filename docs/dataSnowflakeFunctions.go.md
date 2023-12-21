@@ -4,12 +4,12 @@
 
 ### DataSnowflakeFunctions <a name="DataSnowflakeFunctions" id="@cdktf/provider-snowflake.dataSnowflakeFunctions.DataSnowflakeFunctions"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/data-sources/functions snowflake_functions}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/data-sources/functions snowflake_functions}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeFunctions.DataSnowflakeFunctions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakefunctions"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakefunctions"
 
 datasnowflakefunctions.NewDataSnowflakeFunctions(scope Construct, id *string, config DataSnowflakeFunctionsConfig) DataSnowflakeFunctions
 ```
@@ -274,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeFunctions.DataSnowflakeFunctions.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakefunctions"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakefunctions"
 
 datasnowflakefunctions.DataSnowflakeFunctions_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeFunctions.DataSnowflakeFunctions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakefunctions"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakefunctions"
 
 datasnowflakefunctions.DataSnowflakeFunctions_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ datasnowflakefunctions.DataSnowflakeFunctions_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeFunctions.DataSnowflakeFunctions.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakefunctions"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakefunctions"
 
 datasnowflakefunctions.DataSnowflakeFunctions_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ datasnowflakefunctions.DataSnowflakeFunctions_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.dataSnowflakeFunctions.DataSnowflakeFunctions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakefunctions"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakefunctions"
 
 datasnowflakefunctions.DataSnowflakeFunctions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -363,7 +363,7 @@ The construct id used in the generated config for the DataSnowflakeFunctions to 
 
 The id of the existing DataSnowflakeFunctions that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/data-sources/functions#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/data-sources/functions#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -618,7 +618,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeFunctions.DataSnowflakeFunctionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakefunctions"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakefunctions"
 
 &datasnowflakefunctions.DataSnowflakeFunctionsConfig {
 	Connection: interface{},
@@ -647,7 +647,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflake
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeFunctions.DataSnowflakeFunctionsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeFunctions.DataSnowflakeFunctionsConfig.property.database">Database</a></code> | <code>*string</code> | The database from which to return the schemas from. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeFunctions.DataSnowflakeFunctionsConfig.property.schema">Schema</a></code> | <code>*string</code> | The schema from which to return the functions from. |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeFunctions.DataSnowflakeFunctionsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/data-sources/functions#id DataSnowflakeFunctions#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeFunctions.DataSnowflakeFunctionsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/data-sources/functions#id DataSnowflakeFunctions#id}. |
 
 ---
 
@@ -731,7 +731,7 @@ Database *string
 
 The database from which to return the schemas from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/data-sources/functions#database DataSnowflakeFunctions#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/data-sources/functions#database DataSnowflakeFunctions#database}
 
 ---
 
@@ -745,7 +745,7 @@ Schema *string
 
 The schema from which to return the functions from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/data-sources/functions#schema DataSnowflakeFunctions#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/data-sources/functions#schema DataSnowflakeFunctions#schema}
 
 ---
 
@@ -757,7 +757,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.80.0/docs/data-sources/functions#id DataSnowflakeFunctions#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/data-sources/functions#id DataSnowflakeFunctions#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -769,7 +769,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeFunctions.DataSnowflakeFunctionsFunctions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakefunctions"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakefunctions"
 
 &datasnowflakefunctions.DataSnowflakeFunctionsFunctions {
 
@@ -784,7 +784,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflake
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeFunctions.DataSnowflakeFunctionsFunctionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakefunctions"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakefunctions"
 
 datasnowflakefunctions.NewDataSnowflakeFunctionsFunctionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeFunctionsFunctionsList
 ```
@@ -916,7 +916,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeFunctions.DataSnowflakeFunctionsFunctionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakefunctions"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakefunctions"
 
 datasnowflakefunctions.NewDataSnowflakeFunctionsFunctionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeFunctionsFunctionsOutputReference
 ```
