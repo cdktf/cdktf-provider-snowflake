@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeFailoverGroups.DataSnowflakeFailoverGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakefailovergroups"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakefailovergroups"
 
 datasnowflakefailovergroups.NewDataSnowflakeFailoverGroups(scope Construct, id *string, config DataSnowflakeFailoverGroupsConfig) DataSnowflakeFailoverGroups
 ```
@@ -281,7 +281,7 @@ func ResetInAccount()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeFailoverGroups.DataSnowflakeFailoverGroups.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakefailovergroups"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakefailovergroups"
 
 datasnowflakefailovergroups.DataSnowflakeFailoverGroups_IsConstruct(x interface{}) *bool
 ```
@@ -313,7 +313,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeFailoverGroups.DataSnowflakeFailoverGroups.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakefailovergroups"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakefailovergroups"
 
 datasnowflakefailovergroups.DataSnowflakeFailoverGroups_IsTerraformElement(x interface{}) *bool
 ```
@@ -327,7 +327,7 @@ datasnowflakefailovergroups.DataSnowflakeFailoverGroups_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeFailoverGroups.DataSnowflakeFailoverGroups.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakefailovergroups"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakefailovergroups"
 
 datasnowflakefailovergroups.DataSnowflakeFailoverGroups_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -341,7 +341,7 @@ datasnowflakefailovergroups.DataSnowflakeFailoverGroups_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.dataSnowflakeFailoverGroups.DataSnowflakeFailoverGroups.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakefailovergroups"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakefailovergroups"
 
 datasnowflakefailovergroups.DataSnowflakeFailoverGroups_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -603,7 +603,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeFailoverGroups.DataSnowflakeFailoverGroupsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakefailovergroups"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakefailovergroups"
 
 &datasnowflakefailovergroups.DataSnowflakeFailoverGroupsConfig {
 	Connection: interface{},
@@ -738,7 +738,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeFailoverGroups.DataSnowflakeFailoverGroupsFailoverGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakefailovergroups"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakefailovergroups"
 
 &datasnowflakefailovergroups.DataSnowflakeFailoverGroupsFailoverGroups {
 
@@ -753,7 +753,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakefail
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeFailoverGroups.DataSnowflakeFailoverGroupsFailoverGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakefailovergroups"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakefailovergroups"
 
 datasnowflakefailovergroups.NewDataSnowflakeFailoverGroupsFailoverGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeFailoverGroupsFailoverGroupsList
 ```
@@ -885,7 +885,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeFailoverGroups.DataSnowflakeFailoverGroupsFailoverGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakefailovergroups"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakefailovergroups"
 
 datasnowflakefailovergroups.NewDataSnowflakeFailoverGroupsFailoverGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeFailoverGroupsFailoverGroupsOutputReference
 ```
