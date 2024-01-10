@@ -140,6 +140,43 @@ export function stageTagToTerraform(struct?: StageTag | cdktf.IResolvable): any 
   }
 }
 
+
+export function stageTagToHclTerraform(struct?: StageTag | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    database: {
+      value: cdktf.stringToHclTerraform(struct!.database),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    schema: {
+      value: cdktf.stringToHclTerraform(struct!.schema),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class StageTagOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -606,5 +643,103 @@ export class Stage extends cdktf.TerraformResource {
       url: cdktf.stringToTerraform(this._url),
       tag: cdktf.listMapper(stageTagToTerraform, true)(this._tag.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      aws_external_id: {
+        value: cdktf.stringToHclTerraform(this._awsExternalId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      comment: {
+        value: cdktf.stringToHclTerraform(this._comment),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      copy_options: {
+        value: cdktf.stringToHclTerraform(this._copyOptions),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      credentials: {
+        value: cdktf.stringToHclTerraform(this._credentials),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      database: {
+        value: cdktf.stringToHclTerraform(this._database),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      directory: {
+        value: cdktf.stringToHclTerraform(this._directory),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      encryption: {
+        value: cdktf.stringToHclTerraform(this._encryption),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      file_format: {
+        value: cdktf.stringToHclTerraform(this._fileFormat),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      schema: {
+        value: cdktf.stringToHclTerraform(this._schema),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      snowflake_iam_user: {
+        value: cdktf.stringToHclTerraform(this._snowflakeIamUser),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      storage_integration: {
+        value: cdktf.stringToHclTerraform(this._storageIntegration),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      url: {
+        value: cdktf.stringToHclTerraform(this._url),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tag: {
+        value: cdktf.listMapperHcl(stageTagToHclTerraform, true)(this._tag.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "StageTagList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

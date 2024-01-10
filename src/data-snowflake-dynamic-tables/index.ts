@@ -56,6 +56,17 @@ export function dataSnowflakeDynamicTablesRecordsToTerraform(struct?: DataSnowfl
   }
 }
 
+
+export function dataSnowflakeDynamicTablesRecordsToHclTerraform(struct?: DataSnowflakeDynamicTablesRecords): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataSnowflakeDynamicTablesRecordsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -236,6 +247,37 @@ export function dataSnowflakeDynamicTablesInToTerraform(struct?: DataSnowflakeDy
   }
 }
 
+
+export function dataSnowflakeDynamicTablesInToHclTerraform(struct?: DataSnowflakeDynamicTablesInOutputReference | DataSnowflakeDynamicTablesIn): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    account: {
+      value: cdktf.booleanToHclTerraform(struct!.account),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    database: {
+      value: cdktf.stringToHclTerraform(struct!.database),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    schema: {
+      value: cdktf.stringToHclTerraform(struct!.schema),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DataSnowflakeDynamicTablesInOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -347,6 +389,25 @@ export function dataSnowflakeDynamicTablesLikeToTerraform(struct?: DataSnowflake
   }
 }
 
+
+export function dataSnowflakeDynamicTablesLikeToHclTerraform(struct?: DataSnowflakeDynamicTablesLikeOutputReference | DataSnowflakeDynamicTablesLike): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    pattern: {
+      value: cdktf.stringToHclTerraform(struct!.pattern),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DataSnowflakeDynamicTablesLikeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -416,6 +477,31 @@ export function dataSnowflakeDynamicTablesLimitToTerraform(struct?: DataSnowflak
     from: cdktf.stringToTerraform(struct!.from),
     rows: cdktf.numberToTerraform(struct!.rows),
   }
+}
+
+
+export function dataSnowflakeDynamicTablesLimitToHclTerraform(struct?: DataSnowflakeDynamicTablesLimitOutputReference | DataSnowflakeDynamicTablesLimit): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    from: {
+      value: cdktf.stringToHclTerraform(struct!.from),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    rows: {
+      value: cdktf.numberToHclTerraform(struct!.rows),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataSnowflakeDynamicTablesLimitOutputReference extends cdktf.ComplexObject {
@@ -649,5 +735,43 @@ export class DataSnowflakeDynamicTables extends cdktf.TerraformDataSource {
       like: dataSnowflakeDynamicTablesLikeToTerraform(this._like.internalValue),
       limit: dataSnowflakeDynamicTablesLimitToTerraform(this._limit.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      starts_with: {
+        value: cdktf.stringToHclTerraform(this._startsWith),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      in: {
+        value: dataSnowflakeDynamicTablesInToHclTerraform(this._in.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataSnowflakeDynamicTablesInList",
+      },
+      like: {
+        value: dataSnowflakeDynamicTablesLikeToHclTerraform(this._like.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataSnowflakeDynamicTablesLikeList",
+      },
+      limit: {
+        value: dataSnowflakeDynamicTablesLimitToHclTerraform(this._limit.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataSnowflakeDynamicTablesLimitList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

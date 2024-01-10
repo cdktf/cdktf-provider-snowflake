@@ -476,4 +476,114 @@ export class Task extends cdktf.TerraformResource {
       when: cdktf.stringToTerraform(this._when),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      after: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._after),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      allow_overlapping_execution: {
+        value: cdktf.booleanToHclTerraform(this._allowOverlappingExecution),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      comment: {
+        value: cdktf.stringToHclTerraform(this._comment),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      database: {
+        value: cdktf.stringToHclTerraform(this._database),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enabled: {
+        value: cdktf.booleanToHclTerraform(this._enabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      error_integration: {
+        value: cdktf.stringToHclTerraform(this._errorIntegration),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      schedule: {
+        value: cdktf.stringToHclTerraform(this._schedule),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      schema: {
+        value: cdktf.stringToHclTerraform(this._schema),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      session_parameters: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._sessionParameters),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      sql_statement: {
+        value: cdktf.stringToHclTerraform(this._sqlStatement),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      suspend_task_after_num_failures: {
+        value: cdktf.numberToHclTerraform(this._suspendTaskAfterNumFailures),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      user_task_managed_initial_warehouse_size: {
+        value: cdktf.stringToHclTerraform(this._userTaskManagedInitialWarehouseSize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      user_task_timeout_ms: {
+        value: cdktf.numberToHclTerraform(this._userTaskTimeoutMs),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      warehouse: {
+        value: cdktf.stringToHclTerraform(this._warehouse),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      when: {
+        value: cdktf.stringToHclTerraform(this._when),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

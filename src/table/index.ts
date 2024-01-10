@@ -119,6 +119,37 @@ export function tableColumnDefaultToTerraform(struct?: TableColumnDefaultOutputR
   }
 }
 
+
+export function tableColumnDefaultToHclTerraform(struct?: TableColumnDefaultOutputReference | TableColumnDefault): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    constant: {
+      value: cdktf.stringToHclTerraform(struct!.constant),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    expression: {
+      value: cdktf.stringToHclTerraform(struct!.expression),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sequence: {
+      value: cdktf.stringToHclTerraform(struct!.sequence),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class TableColumnDefaultOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -235,6 +266,31 @@ export function tableColumnIdentityToTerraform(struct?: TableColumnIdentityOutpu
     start_num: cdktf.numberToTerraform(struct!.startNum),
     step_num: cdktf.numberToTerraform(struct!.stepNum),
   }
+}
+
+
+export function tableColumnIdentityToHclTerraform(struct?: TableColumnIdentityOutputReference | TableColumnIdentity): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    start_num: {
+      value: cdktf.numberToHclTerraform(struct!.startNum),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    step_num: {
+      value: cdktf.numberToHclTerraform(struct!.stepNum),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class TableColumnIdentityOutputReference extends cdktf.ComplexObject {
@@ -366,6 +422,61 @@ export function tableColumnToTerraform(struct?: TableColumn | cdktf.IResolvable)
     default: tableColumnDefaultToTerraform(struct!.default),
     identity: tableColumnIdentityToTerraform(struct!.identity),
   }
+}
+
+
+export function tableColumnToHclTerraform(struct?: TableColumn | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comment: {
+      value: cdktf.stringToHclTerraform(struct!.comment),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    masking_policy: {
+      value: cdktf.stringToHclTerraform(struct!.maskingPolicy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    nullable: {
+      value: cdktf.booleanToHclTerraform(struct!.nullable),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    default: {
+      value: tableColumnDefaultToHclTerraform(struct!.default),
+      isBlock: true,
+      type: "list",
+      storageClassType: "TableColumnDefaultList",
+    },
+    identity: {
+      value: tableColumnIdentityToHclTerraform(struct!.identity),
+      isBlock: true,
+      type: "list",
+      storageClassType: "TableColumnIdentityList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class TableColumnOutputReference extends cdktf.ComplexObject {
@@ -600,6 +711,31 @@ export function tablePrimaryKeyToTerraform(struct?: TablePrimaryKeyOutputReferen
   }
 }
 
+
+export function tablePrimaryKeyToHclTerraform(struct?: TablePrimaryKeyOutputReference | TablePrimaryKey): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    keys: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.keys),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class TablePrimaryKeyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -705,6 +841,43 @@ export function tableTagToTerraform(struct?: TableTag | cdktf.IResolvable): any 
     schema: cdktf.stringToTerraform(struct!.schema),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function tableTagToHclTerraform(struct?: TableTag | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    database: {
+      value: cdktf.stringToHclTerraform(struct!.database),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    schema: {
+      value: cdktf.stringToHclTerraform(struct!.schema),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class TableTagOutputReference extends cdktf.ComplexObject {
@@ -1126,5 +1299,85 @@ export class Table extends cdktf.TerraformResource {
       primary_key: tablePrimaryKeyToTerraform(this._primaryKey.internalValue),
       tag: cdktf.listMapper(tableTagToTerraform, true)(this._tag.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      change_tracking: {
+        value: cdktf.booleanToHclTerraform(this._changeTracking),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      cluster_by: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._clusterBy),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      comment: {
+        value: cdktf.stringToHclTerraform(this._comment),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      data_retention_days: {
+        value: cdktf.numberToHclTerraform(this._dataRetentionDays),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      data_retention_time_in_days: {
+        value: cdktf.numberToHclTerraform(this._dataRetentionTimeInDays),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      database: {
+        value: cdktf.stringToHclTerraform(this._database),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      schema: {
+        value: cdktf.stringToHclTerraform(this._schema),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      column: {
+        value: cdktf.listMapperHcl(tableColumnToHclTerraform, true)(this._column.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "TableColumnList",
+      },
+      primary_key: {
+        value: tablePrimaryKeyToHclTerraform(this._primaryKey.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "TablePrimaryKeyList",
+      },
+      tag: {
+        value: cdktf.listMapperHcl(tableTagToHclTerraform, true)(this._tag.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "TableTagList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

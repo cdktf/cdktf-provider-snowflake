@@ -62,6 +62,17 @@ export function dataSnowflakeGrantsGrantsToTerraform(struct?: DataSnowflakeGrant
   }
 }
 
+
+export function dataSnowflakeGrantsGrantsToHclTerraform(struct?: DataSnowflakeGrantsGrants): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataSnowflakeGrantsGrantsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -175,6 +186,31 @@ export function dataSnowflakeGrantsFutureGrantsInSchemaToTerraform(struct?: Data
   }
 }
 
+
+export function dataSnowflakeGrantsFutureGrantsInSchemaToHclTerraform(struct?: DataSnowflakeGrantsFutureGrantsInSchemaOutputReference | DataSnowflakeGrantsFutureGrantsInSchema): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    database_name: {
+      value: cdktf.stringToHclTerraform(struct!.databaseName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    schema_name: {
+      value: cdktf.stringToHclTerraform(struct!.schemaName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DataSnowflakeGrantsFutureGrantsInSchemaOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -268,6 +304,31 @@ export function dataSnowflakeGrantsFutureGrantsInToTerraform(struct?: DataSnowfl
   }
 }
 
+
+export function dataSnowflakeGrantsFutureGrantsInToHclTerraform(struct?: DataSnowflakeGrantsFutureGrantsInOutputReference | DataSnowflakeGrantsFutureGrantsIn): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    database: {
+      value: cdktf.stringToHclTerraform(struct!.database),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    schema: {
+      value: dataSnowflakeGrantsFutureGrantsInSchemaToHclTerraform(struct!.schema),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataSnowflakeGrantsFutureGrantsInSchemaList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DataSnowflakeGrantsFutureGrantsInOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -357,6 +418,25 @@ export function dataSnowflakeGrantsFutureGrantsToToTerraform(struct?: DataSnowfl
   }
 }
 
+
+export function dataSnowflakeGrantsFutureGrantsToToHclTerraform(struct?: DataSnowflakeGrantsFutureGrantsToOutputReference | DataSnowflakeGrantsFutureGrantsTo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    role: {
+      value: cdktf.stringToHclTerraform(struct!.role),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DataSnowflakeGrantsFutureGrantsToOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -426,6 +506,31 @@ export function dataSnowflakeGrantsGrantsOfToTerraform(struct?: DataSnowflakeGra
     role: cdktf.stringToTerraform(struct!.role),
     share: cdktf.stringToTerraform(struct!.share),
   }
+}
+
+
+export function dataSnowflakeGrantsGrantsOfToHclTerraform(struct?: DataSnowflakeGrantsGrantsOfOutputReference | DataSnowflakeGrantsGrantsOf): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    role: {
+      value: cdktf.stringToHclTerraform(struct!.role),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    share: {
+      value: cdktf.stringToHclTerraform(struct!.share),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataSnowflakeGrantsGrantsOfOutputReference extends cdktf.ComplexObject {
@@ -529,6 +634,37 @@ export function dataSnowflakeGrantsGrantsOnToTerraform(struct?: DataSnowflakeGra
     object_name: cdktf.stringToTerraform(struct!.objectName),
     object_type: cdktf.stringToTerraform(struct!.objectType),
   }
+}
+
+
+export function dataSnowflakeGrantsGrantsOnToHclTerraform(struct?: DataSnowflakeGrantsGrantsOnOutputReference | DataSnowflakeGrantsGrantsOn): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    account: {
+      value: cdktf.booleanToHclTerraform(struct!.account),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    object_name: {
+      value: cdktf.stringToHclTerraform(struct!.objectName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    object_type: {
+      value: cdktf.stringToHclTerraform(struct!.objectType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataSnowflakeGrantsGrantsOnOutputReference extends cdktf.ComplexObject {
@@ -654,6 +790,37 @@ export function dataSnowflakeGrantsGrantsToToTerraform(struct?: DataSnowflakeGra
     share: cdktf.stringToTerraform(struct!.share),
     user: cdktf.stringToTerraform(struct!.user),
   }
+}
+
+
+export function dataSnowflakeGrantsGrantsToToHclTerraform(struct?: DataSnowflakeGrantsGrantsToOutputReference | DataSnowflakeGrantsGrantsTo): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    role: {
+      value: cdktf.stringToHclTerraform(struct!.role),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    share: {
+      value: cdktf.stringToHclTerraform(struct!.share),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    user: {
+      value: cdktf.stringToHclTerraform(struct!.user),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataSnowflakeGrantsGrantsToOutputReference extends cdktf.ComplexObject {
@@ -927,5 +1094,49 @@ export class DataSnowflakeGrants extends cdktf.TerraformDataSource {
       grants_on: dataSnowflakeGrantsGrantsOnToTerraform(this._grantsOn.internalValue),
       grants_to: dataSnowflakeGrantsGrantsToToTerraform(this._grantsTo.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      future_grants_in: {
+        value: dataSnowflakeGrantsFutureGrantsInToHclTerraform(this._futureGrantsIn.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataSnowflakeGrantsFutureGrantsInList",
+      },
+      future_grants_to: {
+        value: dataSnowflakeGrantsFutureGrantsToToHclTerraform(this._futureGrantsTo.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataSnowflakeGrantsFutureGrantsToList",
+      },
+      grants_of: {
+        value: dataSnowflakeGrantsGrantsOfToHclTerraform(this._grantsOf.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataSnowflakeGrantsGrantsOfList",
+      },
+      grants_on: {
+        value: dataSnowflakeGrantsGrantsOnToHclTerraform(this._grantsOn.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataSnowflakeGrantsGrantsOnList",
+      },
+      grants_to: {
+        value: dataSnowflakeGrantsGrantsToToHclTerraform(this._grantsTo.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataSnowflakeGrantsGrantsToList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

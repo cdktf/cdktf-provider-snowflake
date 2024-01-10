@@ -107,6 +107,37 @@ export function failoverGroupFromReplicaToTerraform(struct?: FailoverGroupFromRe
   }
 }
 
+
+export function failoverGroupFromReplicaToHclTerraform(struct?: FailoverGroupFromReplicaOutputReference | FailoverGroupFromReplica): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    organization_name: {
+      value: cdktf.stringToHclTerraform(struct!.organizationName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    source_account_name: {
+      value: cdktf.stringToHclTerraform(struct!.sourceAccountName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class FailoverGroupFromReplicaOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -216,6 +247,31 @@ export function failoverGroupReplicationScheduleCronToTerraform(struct?: Failove
   }
 }
 
+
+export function failoverGroupReplicationScheduleCronToHclTerraform(struct?: FailoverGroupReplicationScheduleCronOutputReference | FailoverGroupReplicationScheduleCron): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    expression: {
+      value: cdktf.stringToHclTerraform(struct!.expression),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    time_zone: {
+      value: cdktf.stringToHclTerraform(struct!.timeZone),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class FailoverGroupReplicationScheduleCronOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -304,6 +360,31 @@ export function failoverGroupReplicationScheduleToTerraform(struct?: FailoverGro
     interval: cdktf.numberToTerraform(struct!.interval),
     cron: failoverGroupReplicationScheduleCronToTerraform(struct!.cron),
   }
+}
+
+
+export function failoverGroupReplicationScheduleToHclTerraform(struct?: FailoverGroupReplicationScheduleOutputReference | FailoverGroupReplicationSchedule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    cron: {
+      value: failoverGroupReplicationScheduleCronToHclTerraform(struct!.cron),
+      isBlock: true,
+      type: "list",
+      storageClassType: "FailoverGroupReplicationScheduleCronList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class FailoverGroupReplicationScheduleOutputReference extends cdktf.ComplexObject {
@@ -618,5 +699,73 @@ export class FailoverGroup extends cdktf.TerraformResource {
       from_replica: failoverGroupFromReplicaToTerraform(this._fromReplica.internalValue),
       replication_schedule: failoverGroupReplicationScheduleToTerraform(this._replicationSchedule.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      allowed_accounts: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedAccounts),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      allowed_databases: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedDatabases),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      allowed_integration_types: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedIntegrationTypes),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      allowed_shares: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedShares),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ignore_edition_check: {
+        value: cdktf.booleanToHclTerraform(this._ignoreEditionCheck),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      object_types: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._objectTypes),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      from_replica: {
+        value: failoverGroupFromReplicaToHclTerraform(this._fromReplica.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "FailoverGroupFromReplicaList",
+      },
+      replication_schedule: {
+        value: failoverGroupReplicationScheduleToHclTerraform(this._replicationSchedule.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "FailoverGroupReplicationScheduleList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

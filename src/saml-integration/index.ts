@@ -469,4 +469,108 @@ export class SamlIntegration extends cdktf.TerraformResource {
       saml2_x509_cert: cdktf.stringToTerraform(this._saml2X509Cert),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      enabled: {
+        value: cdktf.booleanToHclTerraform(this._enabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      saml2_enable_sp_initiated: {
+        value: cdktf.booleanToHclTerraform(this._saml2EnableSpInitiated),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      saml2_force_authn: {
+        value: cdktf.booleanToHclTerraform(this._saml2ForceAuthn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      saml2_issuer: {
+        value: cdktf.stringToHclTerraform(this._saml2Issuer),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      saml2_post_logout_redirect_url: {
+        value: cdktf.stringToHclTerraform(this._saml2PostLogoutRedirectUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      saml2_provider: {
+        value: cdktf.stringToHclTerraform(this._saml2Provider),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      saml2_requested_nameid_format: {
+        value: cdktf.stringToHclTerraform(this._saml2RequestedNameidFormat),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      saml2_sign_request: {
+        value: cdktf.booleanToHclTerraform(this._saml2SignRequest),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      saml2_snowflake_acs_url: {
+        value: cdktf.stringToHclTerraform(this._saml2SnowflakeAcsUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      saml2_snowflake_issuer_url: {
+        value: cdktf.stringToHclTerraform(this._saml2SnowflakeIssuerUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      saml2_snowflake_x509_cert: {
+        value: cdktf.stringToHclTerraform(this._saml2SnowflakeX509Cert),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      saml2_sp_initiated_login_page_label: {
+        value: cdktf.stringToHclTerraform(this._saml2SpInitiatedLoginPageLabel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      saml2_sso_url: {
+        value: cdktf.stringToHclTerraform(this._saml2SsoUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      saml2_x509_cert: {
+        value: cdktf.stringToHclTerraform(this._saml2X509Cert),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

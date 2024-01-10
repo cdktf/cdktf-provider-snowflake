@@ -62,6 +62,17 @@ export function dataSnowflakeParametersParametersToTerraform(struct?: DataSnowfl
   }
 }
 
+
+export function dataSnowflakeParametersParametersToHclTerraform(struct?: DataSnowflakeParametersParameters): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataSnowflakeParametersParametersOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -313,5 +324,49 @@ export class DataSnowflakeParameters extends cdktf.TerraformDataSource {
       pattern: cdktf.stringToTerraform(this._pattern),
       user: cdktf.stringToTerraform(this._user),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      object_name: {
+        value: cdktf.stringToHclTerraform(this._objectName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      object_type: {
+        value: cdktf.stringToHclTerraform(this._objectType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      parameter_type: {
+        value: cdktf.stringToHclTerraform(this._parameterType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      pattern: {
+        value: cdktf.stringToHclTerraform(this._pattern),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      user: {
+        value: cdktf.stringToHclTerraform(this._user),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

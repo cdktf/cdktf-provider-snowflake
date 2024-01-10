@@ -146,4 +146,30 @@ export class TagMaskingPolicyAssociation extends cdktf.TerraformResource {
       tag_id: cdktf.stringToTerraform(this._tagId),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      masking_policy_id: {
+        value: cdktf.stringToHclTerraform(this._maskingPolicyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tag_id: {
+        value: cdktf.stringToHclTerraform(this._tagId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

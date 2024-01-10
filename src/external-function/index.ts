@@ -148,6 +148,31 @@ export function externalFunctionArgToTerraform(struct?: ExternalFunctionArg | cd
   }
 }
 
+
+export function externalFunctionArgToHclTerraform(struct?: ExternalFunctionArg | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ExternalFunctionArgOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -268,6 +293,31 @@ export function externalFunctionHeaderToTerraform(struct?: ExternalFunctionHeade
     name: cdktf.stringToTerraform(struct!.name),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function externalFunctionHeaderToHclTerraform(struct?: ExternalFunctionHeader | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ExternalFunctionHeaderOutputReference extends cdktf.ComplexObject {
@@ -739,5 +789,121 @@ export class ExternalFunction extends cdktf.TerraformResource {
       arg: cdktf.listMapper(externalFunctionArgToTerraform, true)(this._arg.internalValue),
       header: cdktf.listMapper(externalFunctionHeaderToTerraform, true)(this._header.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      api_integration: {
+        value: cdktf.stringToHclTerraform(this._apiIntegration),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      comment: {
+        value: cdktf.stringToHclTerraform(this._comment),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      compression: {
+        value: cdktf.stringToHclTerraform(this._compression),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      context_headers: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._contextHeaders),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      database: {
+        value: cdktf.stringToHclTerraform(this._database),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      max_batch_rows: {
+        value: cdktf.numberToHclTerraform(this._maxBatchRows),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      null_input_behavior: {
+        value: cdktf.stringToHclTerraform(this._nullInputBehavior),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      request_translator: {
+        value: cdktf.stringToHclTerraform(this._requestTranslator),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      response_translator: {
+        value: cdktf.stringToHclTerraform(this._responseTranslator),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      return_behavior: {
+        value: cdktf.stringToHclTerraform(this._returnBehavior),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      return_null_allowed: {
+        value: cdktf.booleanToHclTerraform(this._returnNullAllowed),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      return_type: {
+        value: cdktf.stringToHclTerraform(this._returnType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      schema: {
+        value: cdktf.stringToHclTerraform(this._schema),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      url_of_proxy_and_resource: {
+        value: cdktf.stringToHclTerraform(this._urlOfProxyAndResource),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      arg: {
+        value: cdktf.listMapperHcl(externalFunctionArgToHclTerraform, true)(this._arg.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ExternalFunctionArgList",
+      },
+      header: {
+        value: cdktf.listMapperHcl(externalFunctionHeaderToHclTerraform, true)(this._header.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "ExternalFunctionHeaderList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

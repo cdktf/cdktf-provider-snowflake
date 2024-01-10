@@ -475,4 +475,114 @@ export class ExternalOauthIntegration extends cdktf.TerraformResource {
       type: cdktf.stringToTerraform(this._type),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      allowed_roles: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedRoles),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      any_role_mode: {
+        value: cdktf.stringToHclTerraform(this._anyRoleMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      audience_urls: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._audienceUrls),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      blocked_roles: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._blockedRoles),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      comment: {
+        value: cdktf.stringToHclTerraform(this._comment),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enabled: {
+        value: cdktf.booleanToHclTerraform(this._enabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      issuer: {
+        value: cdktf.stringToHclTerraform(this._issuer),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      jws_keys_urls: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._jwsKeysUrls),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rsa_public_key: {
+        value: cdktf.stringToHclTerraform(this._rsaPublicKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rsa_public_key_2: {
+        value: cdktf.stringToHclTerraform(this._rsaPublicKey2),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      scope_delimiter: {
+        value: cdktf.stringToHclTerraform(this._scopeDelimiter),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      scope_mapping_attribute: {
+        value: cdktf.stringToHclTerraform(this._scopeMappingAttribute),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      snowflake_user_mapping_attribute: {
+        value: cdktf.stringToHclTerraform(this._snowflakeUserMappingAttribute),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      token_user_mapping_claims: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tokenUserMappingClaims),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

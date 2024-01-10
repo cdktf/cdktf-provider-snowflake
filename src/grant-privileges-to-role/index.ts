@@ -94,6 +94,31 @@ export function grantPrivilegesToRoleOnAccountObjectToTerraform(struct?: GrantPr
   }
 }
 
+
+export function grantPrivilegesToRoleOnAccountObjectToHclTerraform(struct?: GrantPrivilegesToRoleOnAccountObjectOutputReference | GrantPrivilegesToRoleOnAccountObject): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    object_name: {
+      value: cdktf.stringToHclTerraform(struct!.objectName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    object_type: {
+      value: cdktf.stringToHclTerraform(struct!.objectType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GrantPrivilegesToRoleOnAccountObjectOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -189,6 +214,37 @@ export function grantPrivilegesToRoleOnSchemaToTerraform(struct?: GrantPrivilege
     future_schemas_in_database: cdktf.stringToTerraform(struct!.futureSchemasInDatabase),
     schema_name: cdktf.stringToTerraform(struct!.schemaName),
   }
+}
+
+
+export function grantPrivilegesToRoleOnSchemaToHclTerraform(struct?: GrantPrivilegesToRoleOnSchemaOutputReference | GrantPrivilegesToRoleOnSchema): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    all_schemas_in_database: {
+      value: cdktf.stringToHclTerraform(struct!.allSchemasInDatabase),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    future_schemas_in_database: {
+      value: cdktf.stringToHclTerraform(struct!.futureSchemasInDatabase),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    schema_name: {
+      value: cdktf.stringToHclTerraform(struct!.schemaName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GrantPrivilegesToRoleOnSchemaOutputReference extends cdktf.ComplexObject {
@@ -316,6 +372,37 @@ export function grantPrivilegesToRoleOnSchemaObjectAllToTerraform(struct?: Grant
   }
 }
 
+
+export function grantPrivilegesToRoleOnSchemaObjectAllToHclTerraform(struct?: GrantPrivilegesToRoleOnSchemaObjectAllOutputReference | GrantPrivilegesToRoleOnSchemaObjectAll): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    in_database: {
+      value: cdktf.stringToHclTerraform(struct!.inDatabase),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    in_schema: {
+      value: cdktf.stringToHclTerraform(struct!.inSchema),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    object_type_plural: {
+      value: cdktf.stringToHclTerraform(struct!.objectTypePlural),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GrantPrivilegesToRoleOnSchemaObjectAllOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -436,6 +523,37 @@ export function grantPrivilegesToRoleOnSchemaObjectFutureToTerraform(struct?: Gr
     in_schema: cdktf.stringToTerraform(struct!.inSchema),
     object_type_plural: cdktf.stringToTerraform(struct!.objectTypePlural),
   }
+}
+
+
+export function grantPrivilegesToRoleOnSchemaObjectFutureToHclTerraform(struct?: GrantPrivilegesToRoleOnSchemaObjectFutureOutputReference | GrantPrivilegesToRoleOnSchemaObjectFuture): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    in_database: {
+      value: cdktf.stringToHclTerraform(struct!.inDatabase),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    in_schema: {
+      value: cdktf.stringToHclTerraform(struct!.inSchema),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    object_type_plural: {
+      value: cdktf.stringToHclTerraform(struct!.objectTypePlural),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GrantPrivilegesToRoleOnSchemaObjectFutureOutputReference extends cdktf.ComplexObject {
@@ -565,6 +683,43 @@ export function grantPrivilegesToRoleOnSchemaObjectToTerraform(struct?: GrantPri
     all: grantPrivilegesToRoleOnSchemaObjectAllToTerraform(struct!.all),
     future: grantPrivilegesToRoleOnSchemaObjectFutureToTerraform(struct!.future),
   }
+}
+
+
+export function grantPrivilegesToRoleOnSchemaObjectToHclTerraform(struct?: GrantPrivilegesToRoleOnSchemaObjectOutputReference | GrantPrivilegesToRoleOnSchemaObject): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    object_name: {
+      value: cdktf.stringToHclTerraform(struct!.objectName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    object_type: {
+      value: cdktf.stringToHclTerraform(struct!.objectType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    all: {
+      value: grantPrivilegesToRoleOnSchemaObjectAllToHclTerraform(struct!.all),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GrantPrivilegesToRoleOnSchemaObjectAllList",
+    },
+    future: {
+      value: grantPrivilegesToRoleOnSchemaObjectFutureToHclTerraform(struct!.future),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GrantPrivilegesToRoleOnSchemaObjectFutureList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GrantPrivilegesToRoleOnSchemaObjectOutputReference extends cdktf.ComplexObject {
@@ -905,5 +1060,67 @@ export class GrantPrivilegesToRole extends cdktf.TerraformResource {
       on_schema: grantPrivilegesToRoleOnSchemaToTerraform(this._onSchema.internalValue),
       on_schema_object: grantPrivilegesToRoleOnSchemaObjectToTerraform(this._onSchemaObject.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      all_privileges: {
+        value: cdktf.booleanToHclTerraform(this._allPrivileges),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      on_account: {
+        value: cdktf.booleanToHclTerraform(this._onAccount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      privileges: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._privileges),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      role_name: {
+        value: cdktf.stringToHclTerraform(this._roleName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      with_grant_option: {
+        value: cdktf.booleanToHclTerraform(this._withGrantOption),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      on_account_object: {
+        value: grantPrivilegesToRoleOnAccountObjectToHclTerraform(this._onAccountObject.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GrantPrivilegesToRoleOnAccountObjectList",
+      },
+      on_schema: {
+        value: grantPrivilegesToRoleOnSchemaToHclTerraform(this._onSchema.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GrantPrivilegesToRoleOnSchemaList",
+      },
+      on_schema_object: {
+        value: grantPrivilegesToRoleOnSchemaObjectToHclTerraform(this._onSchemaObject.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GrantPrivilegesToRoleOnSchemaObjectList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

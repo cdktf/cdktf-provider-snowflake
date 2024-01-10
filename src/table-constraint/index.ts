@@ -118,6 +118,31 @@ export function tableConstraintForeignKeyPropertiesReferencesToTerraform(struct?
   }
 }
 
+
+export function tableConstraintForeignKeyPropertiesReferencesToHclTerraform(struct?: TableConstraintForeignKeyPropertiesReferencesOutputReference | TableConstraintForeignKeyPropertiesReferences): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    columns: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.columns),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    table_id: {
+      value: cdktf.stringToHclTerraform(struct!.tableId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class TableConstraintForeignKeyPropertiesReferencesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -220,6 +245,43 @@ export function tableConstraintForeignKeyPropertiesToTerraform(struct?: TableCon
     on_update: cdktf.stringToTerraform(struct!.onUpdate),
     references: tableConstraintForeignKeyPropertiesReferencesToTerraform(struct!.references),
   }
+}
+
+
+export function tableConstraintForeignKeyPropertiesToHclTerraform(struct?: TableConstraintForeignKeyPropertiesOutputReference | TableConstraintForeignKeyProperties): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    match: {
+      value: cdktf.stringToHclTerraform(struct!.match),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    on_delete: {
+      value: cdktf.stringToHclTerraform(struct!.onDelete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    on_update: {
+      value: cdktf.stringToHclTerraform(struct!.onUpdate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    references: {
+      value: tableConstraintForeignKeyPropertiesReferencesToHclTerraform(struct!.references),
+      isBlock: true,
+      type: "list",
+      storageClassType: "TableConstraintForeignKeyPropertiesReferencesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class TableConstraintForeignKeyPropertiesOutputReference extends cdktf.ComplexObject {
@@ -623,5 +685,91 @@ export class TableConstraint extends cdktf.TerraformResource {
       validate: cdktf.booleanToTerraform(this._validate),
       foreign_key_properties: tableConstraintForeignKeyPropertiesToTerraform(this._foreignKeyProperties.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      columns: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._columns),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      comment: {
+        value: cdktf.stringToHclTerraform(this._comment),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      deferrable: {
+        value: cdktf.booleanToHclTerraform(this._deferrable),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      enable: {
+        value: cdktf.booleanToHclTerraform(this._enable),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      enforced: {
+        value: cdktf.booleanToHclTerraform(this._enforced),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      initially: {
+        value: cdktf.stringToHclTerraform(this._initially),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rely: {
+        value: cdktf.booleanToHclTerraform(this._rely),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      table_id: {
+        value: cdktf.stringToHclTerraform(this._tableId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      validate: {
+        value: cdktf.booleanToHclTerraform(this._validate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      foreign_key_properties: {
+        value: tableConstraintForeignKeyPropertiesToHclTerraform(this._foreignKeyProperties.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "TableConstraintForeignKeyPropertiesList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

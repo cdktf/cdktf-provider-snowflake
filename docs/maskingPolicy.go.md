@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.maskingPolicy.MaskingPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/maskingpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/maskingpolicy"
 
 maskingpolicy.NewMaskingPolicy(scope Construct, id *string, config MaskingPolicyConfig) MaskingPolicy
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.maskingPolicy.MaskingPolicy.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.maskingPolicy.MaskingPolicy.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-snowflake.maskingPolicy.MaskingPolicy.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-snowflake.maskingPolicy.MaskingPolicy.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.maskingPolicy.MaskingPolicy.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.maskingPolicy.MaskingPolicy.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-snowflake.maskingPolicy.MaskingPolicy.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -130,6 +131,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-snowflake.maskingPolicy.MaskingPolicy.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-snowflake.maskingPolicy.MaskingPolicy.toMetadata"></a>
 
@@ -419,7 +426,7 @@ func ResetOrReplace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.maskingPolicy.MaskingPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/maskingpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/maskingpolicy"
 
 maskingpolicy.MaskingPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.maskingPolicy.MaskingPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/maskingpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/maskingpolicy"
 
 maskingpolicy.MaskingPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +472,7 @@ maskingpolicy.MaskingPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.maskingPolicy.MaskingPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/maskingpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/maskingpolicy"
 
 maskingpolicy.MaskingPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +486,7 @@ maskingpolicy.MaskingPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.maskingPolicy.MaskingPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/maskingpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/maskingpolicy"
 
 maskingpolicy.MaskingPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -961,7 +968,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.maskingPolicy.MaskingPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/maskingpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/maskingpolicy"
 
 &maskingpolicy.MaskingPolicyConfig {
 	Connection: interface{},
@@ -976,7 +983,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/maskingpolicy
 	Name: *string,
 	ReturnDataType: *string,
 	Schema: *string,
-	Signature: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10.maskingPolicy.MaskingPolicySignature,
+	Signature: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11.maskingPolicy.MaskingPolicySignature,
 	Comment: *string,
 	ExemptOtherPolicies: interface{},
 	Id: *string,
@@ -1242,7 +1249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.maskingPolicy.MaskingPolicySignature.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/maskingpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/maskingpolicy"
 
 &maskingpolicy.MaskingPolicySignature {
 	Column: interface{},
@@ -1276,7 +1283,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.maskingPolicy.MaskingPolicySignatureColumn.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/maskingpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/maskingpolicy"
 
 &maskingpolicy.MaskingPolicySignatureColumn {
 	Name: *string,
@@ -1328,7 +1335,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.maskingPolicy.MaskingPolicySignatureColumnList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/maskingpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/maskingpolicy"
 
 maskingpolicy.NewMaskingPolicySignatureColumnList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MaskingPolicySignatureColumnList
 ```
@@ -1369,10 +1376,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.maskingPolicy.MaskingPolicySignatureColumnList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-snowflake.maskingPolicy.MaskingPolicySignatureColumnList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.maskingPolicy.MaskingPolicySignatureColumnList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-snowflake.maskingPolicy.MaskingPolicySignatureColumnList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-snowflake.maskingPolicy.MaskingPolicySignatureColumnList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-snowflake.maskingPolicy.MaskingPolicySignatureColumnList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-snowflake.maskingPolicy.MaskingPolicySignatureColumnList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -1471,7 +1495,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.maskingPolicy.MaskingPolicySignatureColumnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/maskingpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/maskingpolicy"
 
 maskingpolicy.NewMaskingPolicySignatureColumnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MaskingPolicySignatureColumnOutputReference
 ```
@@ -1782,7 +1806,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.maskingPolicy.MaskingPolicySignatureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/maskingpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/maskingpolicy"
 
 maskingpolicy.NewMaskingPolicySignatureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MaskingPolicySignatureOutputReference
 ```

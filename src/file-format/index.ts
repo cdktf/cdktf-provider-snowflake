@@ -956,4 +956,234 @@ export class FileFormat extends cdktf.TerraformResource {
       trim_space: cdktf.booleanToTerraform(this._trimSpace),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      allow_duplicate: {
+        value: cdktf.booleanToHclTerraform(this._allowDuplicate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      binary_as_text: {
+        value: cdktf.booleanToHclTerraform(this._binaryAsText),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      binary_format: {
+        value: cdktf.stringToHclTerraform(this._binaryFormat),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      comment: {
+        value: cdktf.stringToHclTerraform(this._comment),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      compression: {
+        value: cdktf.stringToHclTerraform(this._compression),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      database: {
+        value: cdktf.stringToHclTerraform(this._database),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      date_format: {
+        value: cdktf.stringToHclTerraform(this._dateFormat),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      disable_auto_convert: {
+        value: cdktf.booleanToHclTerraform(this._disableAutoConvert),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      disable_snowflake_data: {
+        value: cdktf.booleanToHclTerraform(this._disableSnowflakeData),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      empty_field_as_null: {
+        value: cdktf.booleanToHclTerraform(this._emptyFieldAsNull),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      enable_octal: {
+        value: cdktf.booleanToHclTerraform(this._enableOctal),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      encoding: {
+        value: cdktf.stringToHclTerraform(this._encoding),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      error_on_column_count_mismatch: {
+        value: cdktf.booleanToHclTerraform(this._errorOnColumnCountMismatch),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      escape: {
+        value: cdktf.stringToHclTerraform(this._escape),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      escape_unenclosed_field: {
+        value: cdktf.stringToHclTerraform(this._escapeUnenclosedField),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      field_delimiter: {
+        value: cdktf.stringToHclTerraform(this._fieldDelimiter),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      field_optionally_enclosed_by: {
+        value: cdktf.stringToHclTerraform(this._fieldOptionallyEnclosedBy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      file_extension: {
+        value: cdktf.stringToHclTerraform(this._fileExtension),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      format_type: {
+        value: cdktf.stringToHclTerraform(this._formatType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ignore_utf8_errors: {
+        value: cdktf.booleanToHclTerraform(this._ignoreUtf8Errors),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      null_if: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._nullIf),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      parse_header: {
+        value: cdktf.booleanToHclTerraform(this._parseHeader),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      preserve_space: {
+        value: cdktf.booleanToHclTerraform(this._preserveSpace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      record_delimiter: {
+        value: cdktf.stringToHclTerraform(this._recordDelimiter),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      replace_invalid_characters: {
+        value: cdktf.booleanToHclTerraform(this._replaceInvalidCharacters),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      schema: {
+        value: cdktf.stringToHclTerraform(this._schema),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      skip_blank_lines: {
+        value: cdktf.booleanToHclTerraform(this._skipBlankLines),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      skip_byte_order_mark: {
+        value: cdktf.booleanToHclTerraform(this._skipByteOrderMark),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      skip_header: {
+        value: cdktf.numberToHclTerraform(this._skipHeader),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      strip_null_values: {
+        value: cdktf.booleanToHclTerraform(this._stripNullValues),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      strip_outer_array: {
+        value: cdktf.booleanToHclTerraform(this._stripOuterArray),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      strip_outer_element: {
+        value: cdktf.booleanToHclTerraform(this._stripOuterElement),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      time_format: {
+        value: cdktf.stringToHclTerraform(this._timeFormat),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timestamp_format: {
+        value: cdktf.stringToHclTerraform(this._timestampFormat),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      trim_space: {
+        value: cdktf.booleanToHclTerraform(this._trimSpace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

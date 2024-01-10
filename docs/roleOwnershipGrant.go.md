@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrant.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/roleownershipgrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/roleownershipgrant"
 
 roleownershipgrant.NewRoleOwnershipGrant(scope Construct, id *string, config RoleOwnershipGrantConfig) RoleOwnershipGrant
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrant.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrant.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrant.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrant.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrant.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrant.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrant.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -127,6 +128,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrant.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrant.toMetadata"></a>
 
@@ -392,7 +399,7 @@ func ResetRevertOwnershipToRoleName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrant.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/roleownershipgrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/roleownershipgrant"
 
 roleownershipgrant.RoleOwnershipGrant_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrant.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/roleownershipgrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/roleownershipgrant"
 
 roleownershipgrant.RoleOwnershipGrant_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +445,7 @@ roleownershipgrant.RoleOwnershipGrant_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrant.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/roleownershipgrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/roleownershipgrant"
 
 roleownershipgrant.RoleOwnershipGrant_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +459,7 @@ roleownershipgrant.RoleOwnershipGrant_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrant.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/roleownershipgrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/roleownershipgrant"
 
 roleownershipgrant.RoleOwnershipGrant_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -791,7 +798,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrantConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/roleownershipgrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/roleownershipgrant"
 
 &roleownershipgrant.RoleOwnershipGrantConfig {
 	Connection: interface{},
