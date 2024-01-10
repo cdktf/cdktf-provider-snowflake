@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeShares.DataSnowflakeShares.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakeshares"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeshares"
 
 datasnowflakeshares.NewDataSnowflakeShares(scope Construct, id *string, config DataSnowflakeSharesConfig) DataSnowflakeShares
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeShares.DataSnowflakeShares.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeShares.DataSnowflakeShares.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeShares.DataSnowflakeShares.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeShares.DataSnowflakeShares.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeShares.DataSnowflakeShares.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeShares.DataSnowflakeShares.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeShares.DataSnowflakeShares.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -120,6 +121,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-snowflake.dataSnowflakeShares.DataSnowflakeShares.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-snowflake.dataSnowflakeShares.DataSnowflakeShares.toMetadata"></a>
 
@@ -281,7 +290,7 @@ func ResetPattern()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeShares.DataSnowflakeShares.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakeshares"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeshares"
 
 datasnowflakeshares.DataSnowflakeShares_IsConstruct(x interface{}) *bool
 ```
@@ -313,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeShares.DataSnowflakeShares.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakeshares"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeshares"
 
 datasnowflakeshares.DataSnowflakeShares_IsTerraformElement(x interface{}) *bool
 ```
@@ -327,7 +336,7 @@ datasnowflakeshares.DataSnowflakeShares_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeShares.DataSnowflakeShares.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakeshares"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeshares"
 
 datasnowflakeshares.DataSnowflakeShares_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -341,7 +350,7 @@ datasnowflakeshares.DataSnowflakeShares_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.dataSnowflakeShares.DataSnowflakeShares.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakeshares"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeshares"
 
 datasnowflakeshares.DataSnowflakeShares_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -603,7 +612,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeShares.DataSnowflakeSharesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakeshares"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeshares"
 
 &datasnowflakeshares.DataSnowflakeSharesConfig {
 	Connection: interface{},
@@ -738,7 +747,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeShares.DataSnowflakeSharesShares.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakeshares"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeshares"
 
 &datasnowflakeshares.DataSnowflakeSharesShares {
 
@@ -753,7 +762,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflake
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeShares.DataSnowflakeSharesSharesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakeshares"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeshares"
 
 datasnowflakeshares.NewDataSnowflakeSharesSharesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSharesSharesList
 ```
@@ -794,10 +803,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeShares.DataSnowflakeSharesSharesList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeShares.DataSnowflakeSharesSharesList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeShares.DataSnowflakeSharesSharesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeShares.DataSnowflakeSharesSharesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeShares.DataSnowflakeSharesSharesList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-snowflake.dataSnowflakeShares.DataSnowflakeSharesSharesList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-snowflake.dataSnowflakeShares.DataSnowflakeSharesSharesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -885,7 +911,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeShares.DataSnowflakeSharesSharesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v10/datasnowflakeshares"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeshares"
 
 datasnowflakeshares.NewDataSnowflakeSharesSharesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSharesSharesOutputReference
 ```

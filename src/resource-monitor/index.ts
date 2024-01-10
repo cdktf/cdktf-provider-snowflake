@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/resource_monitor
 // generated from terraform resource schema
 
@@ -412,5 +407,97 @@ export class ResourceMonitor extends cdktf.TerraformResource {
       suspend_triggers: cdktf.listMapper(cdktf.numberToTerraform, false)(this._suspendTriggers),
       warehouses: cdktf.listMapper(cdktf.stringToTerraform, false)(this._warehouses),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      credit_quota: {
+        value: cdktf.numberToHclTerraform(this._creditQuota),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      end_timestamp: {
+        value: cdktf.stringToHclTerraform(this._endTimestamp),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      frequency: {
+        value: cdktf.stringToHclTerraform(this._frequency),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      notify_triggers: {
+        value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(this._notifyTriggers),
+        isBlock: false,
+        type: "set",
+        storageClassType: "numberList",
+      },
+      notify_users: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._notifyUsers),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      set_for_account: {
+        value: cdktf.booleanToHclTerraform(this._setForAccount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      start_timestamp: {
+        value: cdktf.stringToHclTerraform(this._startTimestamp),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      suspend_immediate_trigger: {
+        value: cdktf.numberToHclTerraform(this._suspendImmediateTrigger),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      suspend_immediate_triggers: {
+        value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(this._suspendImmediateTriggers),
+        isBlock: false,
+        type: "set",
+        storageClassType: "numberList",
+      },
+      suspend_trigger: {
+        value: cdktf.numberToHclTerraform(this._suspendTrigger),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      suspend_triggers: {
+        value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(this._suspendTriggers),
+        isBlock: false,
+        type: "set",
+        storageClassType: "numberList",
+      },
+      warehouses: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._warehouses),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

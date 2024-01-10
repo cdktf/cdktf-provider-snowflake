@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/account_grant
 // generated from terraform resource schema
 
@@ -199,5 +194,43 @@ export class AccountGrant extends cdktf.TerraformResource {
       roles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._roles),
       with_grant_option: cdktf.booleanToTerraform(this._withGrantOption),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      enable_multiple_grants: {
+        value: cdktf.booleanToHclTerraform(this._enableMultipleGrants),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      privilege: {
+        value: cdktf.stringToHclTerraform(this._privilege),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      roles: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._roles),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      with_grant_option: {
+        value: cdktf.booleanToHclTerraform(this._withGrantOption),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

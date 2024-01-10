@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/external_table
 // generated from terraform resource schema
 
@@ -135,6 +130,37 @@ export function externalTableColumnToTerraform(struct?: ExternalTableColumn | cd
     name: cdktf.stringToTerraform(struct!.name),
     type: cdktf.stringToTerraform(struct!.type),
   }
+}
+
+
+export function externalTableColumnToHclTerraform(struct?: ExternalTableColumn | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    as: {
+      value: cdktf.stringToHclTerraform(struct!.as),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ExternalTableColumnOutputReference extends cdktf.ComplexObject {
@@ -290,6 +316,43 @@ export function externalTableTagToTerraform(struct?: ExternalTableTag | cdktf.IR
     schema: cdktf.stringToTerraform(struct!.schema),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function externalTableTagToHclTerraform(struct?: ExternalTableTag | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    database: {
+      value: cdktf.stringToHclTerraform(struct!.database),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    schema: {
+      value: cdktf.stringToHclTerraform(struct!.schema),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ExternalTableTagOutputReference extends cdktf.ComplexObject {
@@ -754,5 +817,103 @@ export class ExternalTable extends cdktf.TerraformResource {
       column: cdktf.listMapper(externalTableColumnToTerraform, true)(this._column.internalValue),
       tag: cdktf.listMapper(externalTableTagToTerraform, true)(this._tag.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      auto_refresh: {
+        value: cdktf.booleanToHclTerraform(this._autoRefresh),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      aws_sns_topic: {
+        value: cdktf.stringToHclTerraform(this._awsSnsTopic),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      comment: {
+        value: cdktf.stringToHclTerraform(this._comment),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      copy_grants: {
+        value: cdktf.booleanToHclTerraform(this._copyGrants),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      database: {
+        value: cdktf.stringToHclTerraform(this._database),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      file_format: {
+        value: cdktf.stringToHclTerraform(this._fileFormat),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      location: {
+        value: cdktf.stringToHclTerraform(this._location),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      partition_by: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._partitionBy),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      pattern: {
+        value: cdktf.stringToHclTerraform(this._pattern),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      refresh_on_create: {
+        value: cdktf.booleanToHclTerraform(this._refreshOnCreate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      schema: {
+        value: cdktf.stringToHclTerraform(this._schema),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      column: {
+        value: cdktf.listMapperHcl(externalTableColumnToHclTerraform, true)(this._column.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ExternalTableColumnList",
+      },
+      tag: {
+        value: cdktf.listMapperHcl(externalTableTagToHclTerraform, true)(this._tag.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ExternalTableTagList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

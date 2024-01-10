@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/api_integration
 // generated from terraform resource schema
 
@@ -405,5 +400,91 @@ export class ApiIntegration extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      api_allowed_prefixes: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._apiAllowedPrefixes),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      api_aws_role_arn: {
+        value: cdktf.stringToHclTerraform(this._apiAwsRoleArn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      api_blocked_prefixes: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._apiBlockedPrefixes),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      api_gcp_service_account: {
+        value: cdktf.stringToHclTerraform(this._apiGcpServiceAccount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      api_key: {
+        value: cdktf.stringToHclTerraform(this._apiKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      api_provider: {
+        value: cdktf.stringToHclTerraform(this._apiProvider),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      azure_ad_application_id: {
+        value: cdktf.stringToHclTerraform(this._azureAdApplicationId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      azure_tenant_id: {
+        value: cdktf.stringToHclTerraform(this._azureTenantId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      comment: {
+        value: cdktf.stringToHclTerraform(this._comment),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enabled: {
+        value: cdktf.booleanToHclTerraform(this._enabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      google_audience: {
+        value: cdktf.stringToHclTerraform(this._googleAudience),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

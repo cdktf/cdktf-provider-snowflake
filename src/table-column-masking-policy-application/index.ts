@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/table_column_masking_policy_application
 // generated from terraform resource schema
 
@@ -166,5 +161,37 @@ export class TableColumnMaskingPolicyApplication extends cdktf.TerraformResource
       masking_policy: cdktf.stringToTerraform(this._maskingPolicy),
       table: cdktf.stringToTerraform(this._table),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      column: {
+        value: cdktf.stringToHclTerraform(this._column),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      masking_policy: {
+        value: cdktf.stringToHclTerraform(this._maskingPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      table: {
+        value: cdktf.stringToHclTerraform(this._table),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

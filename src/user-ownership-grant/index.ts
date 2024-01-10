@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/user_ownership_grant
 // generated from terraform resource schema
 
@@ -193,5 +188,43 @@ export class UserOwnershipGrant extends cdktf.TerraformResource {
       revert_ownership_to_role_name: cdktf.stringToTerraform(this._revertOwnershipToRoleName),
       to_role_name: cdktf.stringToTerraform(this._toRoleName),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      current_grants: {
+        value: cdktf.stringToHclTerraform(this._currentGrants),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      on_user_name: {
+        value: cdktf.stringToHclTerraform(this._onUserName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      revert_ownership_to_role_name: {
+        value: cdktf.stringToHclTerraform(this._revertOwnershipToRoleName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      to_role_name: {
+        value: cdktf.stringToHclTerraform(this._toRoleName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

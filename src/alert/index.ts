@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/alert
 // generated from terraform resource schema
 
@@ -100,6 +95,31 @@ export function alertAlertScheduleCronToTerraform(struct?: AlertAlertScheduleCro
   }
 }
 
+
+export function alertAlertScheduleCronToHclTerraform(struct?: AlertAlertScheduleCronOutputReference | AlertAlertScheduleCron): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    expression: {
+      value: cdktf.stringToHclTerraform(struct!.expression),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    time_zone: {
+      value: cdktf.stringToHclTerraform(struct!.timeZone),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AlertAlertScheduleCronOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -188,6 +208,31 @@ export function alertAlertScheduleToTerraform(struct?: AlertAlertScheduleOutputR
     interval: cdktf.numberToTerraform(struct!.interval),
     cron: alertAlertScheduleCronToTerraform(struct!.cron),
   }
+}
+
+
+export function alertAlertScheduleToHclTerraform(struct?: AlertAlertScheduleOutputReference | AlertAlertSchedule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    cron: {
+      value: alertAlertScheduleCronToHclTerraform(struct!.cron),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AlertAlertScheduleCronList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AlertAlertScheduleOutputReference extends cdktf.ComplexObject {
@@ -487,5 +532,73 @@ export class Alert extends cdktf.TerraformResource {
       warehouse: cdktf.stringToTerraform(this._warehouse),
       alert_schedule: alertAlertScheduleToTerraform(this._alertSchedule.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      action: {
+        value: cdktf.stringToHclTerraform(this._action),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      comment: {
+        value: cdktf.stringToHclTerraform(this._comment),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      condition: {
+        value: cdktf.stringToHclTerraform(this._condition),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      database: {
+        value: cdktf.stringToHclTerraform(this._database),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enabled: {
+        value: cdktf.booleanToHclTerraform(this._enabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      schema: {
+        value: cdktf.stringToHclTerraform(this._schema),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      warehouse: {
+        value: cdktf.stringToHclTerraform(this._warehouse),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      alert_schedule: {
+        value: alertAlertScheduleToHclTerraform(this._alertSchedule.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AlertAlertScheduleList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

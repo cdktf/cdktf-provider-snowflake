@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/oauth_integration
 // generated from terraform resource schema
 
@@ -342,5 +337,79 @@ export class OauthIntegration extends cdktf.TerraformResource {
       oauth_refresh_token_validity: cdktf.numberToTerraform(this._oauthRefreshTokenValidity),
       oauth_use_secondary_roles: cdktf.stringToTerraform(this._oauthUseSecondaryRoles),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      blocked_roles_list: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._blockedRolesList),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      comment: {
+        value: cdktf.stringToHclTerraform(this._comment),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enabled: {
+        value: cdktf.booleanToHclTerraform(this._enabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      oauth_client: {
+        value: cdktf.stringToHclTerraform(this._oauthClient),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      oauth_client_type: {
+        value: cdktf.stringToHclTerraform(this._oauthClientType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      oauth_issue_refresh_tokens: {
+        value: cdktf.booleanToHclTerraform(this._oauthIssueRefreshTokens),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      oauth_redirect_uri: {
+        value: cdktf.stringToHclTerraform(this._oauthRedirectUri),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      oauth_refresh_token_validity: {
+        value: cdktf.numberToHclTerraform(this._oauthRefreshTokenValidity),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      oauth_use_secondary_roles: {
+        value: cdktf.stringToHclTerraform(this._oauthUseSecondaryRoles),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

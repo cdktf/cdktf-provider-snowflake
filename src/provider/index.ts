@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs
 // generated from terraform resource schema
 
@@ -328,6 +323,49 @@ export function snowflakeProviderTokenAccessorToTerraform(struct?: SnowflakeProv
     refresh_token: cdktf.stringToTerraform(struct!.refreshToken),
     token_endpoint: cdktf.stringToTerraform(struct!.tokenEndpoint),
   }
+}
+
+
+export function snowflakeProviderTokenAccessorToHclTerraform(struct?: SnowflakeProviderTokenAccessor): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    client_id: {
+      value: cdktf.stringToHclTerraform(struct!.clientId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_secret: {
+      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    redirect_uri: {
+      value: cdktf.stringToHclTerraform(struct!.redirectUri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    refresh_token: {
+      value: cdktf.stringToHclTerraform(struct!.refreshToken),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    token_endpoint: {
+      value: cdktf.stringToHclTerraform(struct!.tokenEndpoint),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 
@@ -1199,5 +1237,283 @@ export class SnowflakeProvider extends cdktf.TerraformProvider {
       alias: cdktf.stringToTerraform(this._alias),
       token_accessor: snowflakeProviderTokenAccessorToTerraform(this._tokenAccessor),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account: {
+        value: cdktf.stringToHclTerraform(this._account),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      authenticator: {
+        value: cdktf.stringToHclTerraform(this._authenticator),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      browser_auth: {
+        value: cdktf.booleanToHclTerraform(this._browserAuth),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      client_ip: {
+        value: cdktf.stringToHclTerraform(this._clientIp),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      client_request_mfa_token: {
+        value: cdktf.booleanToHclTerraform(this._clientRequestMfaToken),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      client_store_temporary_credential: {
+        value: cdktf.booleanToHclTerraform(this._clientStoreTemporaryCredential),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      client_timeout: {
+        value: cdktf.numberToHclTerraform(this._clientTimeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      disable_query_context_cache: {
+        value: cdktf.booleanToHclTerraform(this._disableQueryContextCache),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      disable_telemetry: {
+        value: cdktf.booleanToHclTerraform(this._disableTelemetry),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      external_browser_timeout: {
+        value: cdktf.numberToHclTerraform(this._externalBrowserTimeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      host: {
+        value: cdktf.stringToHclTerraform(this._host),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      insecure_mode: {
+        value: cdktf.booleanToHclTerraform(this._insecureMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      jwt_client_timeout: {
+        value: cdktf.numberToHclTerraform(this._jwtClientTimeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      jwt_expire_timeout: {
+        value: cdktf.numberToHclTerraform(this._jwtExpireTimeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      keep_session_alive: {
+        value: cdktf.booleanToHclTerraform(this._keepSessionAlive),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      login_timeout: {
+        value: cdktf.numberToHclTerraform(this._loginTimeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      oauth_access_token: {
+        value: cdktf.stringToHclTerraform(this._oauthAccessToken),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      oauth_client_id: {
+        value: cdktf.stringToHclTerraform(this._oauthClientId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      oauth_client_secret: {
+        value: cdktf.stringToHclTerraform(this._oauthClientSecret),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      oauth_endpoint: {
+        value: cdktf.stringToHclTerraform(this._oauthEndpoint),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      oauth_redirect_url: {
+        value: cdktf.stringToHclTerraform(this._oauthRedirectUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      oauth_refresh_token: {
+        value: cdktf.stringToHclTerraform(this._oauthRefreshToken),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ocsp_fail_open: {
+        value: cdktf.booleanToHclTerraform(this._ocspFailOpen),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      okta_url: {
+        value: cdktf.stringToHclTerraform(this._oktaUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      params: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._params),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      passcode: {
+        value: cdktf.stringToHclTerraform(this._passcode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      passcode_in_password: {
+        value: cdktf.booleanToHclTerraform(this._passcodeInPassword),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      password: {
+        value: cdktf.stringToHclTerraform(this._password),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      port: {
+        value: cdktf.numberToHclTerraform(this._port),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      private_key: {
+        value: cdktf.stringToHclTerraform(this._privateKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      private_key_passphrase: {
+        value: cdktf.stringToHclTerraform(this._privateKeyPassphrase),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      private_key_path: {
+        value: cdktf.stringToHclTerraform(this._privateKeyPath),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      profile: {
+        value: cdktf.stringToHclTerraform(this._profile),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      protocol: {
+        value: cdktf.stringToHclTerraform(this._protocol),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      request_timeout: {
+        value: cdktf.numberToHclTerraform(this._requestTimeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      role: {
+        value: cdktf.stringToHclTerraform(this._role),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      session_params: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._sessionParams),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      token: {
+        value: cdktf.stringToHclTerraform(this._token),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      user: {
+        value: cdktf.stringToHclTerraform(this._user),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      username: {
+        value: cdktf.stringToHclTerraform(this._username),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      validate_default_parameters: {
+        value: cdktf.booleanToHclTerraform(this._validateDefaultParameters),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      warehouse: {
+        value: cdktf.stringToHclTerraform(this._warehouse),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      alias: {
+        value: cdktf.stringToHclTerraform(this._alias),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      token_accessor: {
+        value: snowflakeProviderTokenAccessorToHclTerraform(this._tokenAccessor),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SnowflakeProviderTokenAccessorList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/data-sources/storage_integrations
 // generated from terraform resource schema
 
@@ -30,6 +25,17 @@ export function dataSnowflakeStorageIntegrationsStorageIntegrationsToTerraform(s
   }
   return {
   }
+}
+
+
+export function dataSnowflakeStorageIntegrationsStorageIntegrationsToHclTerraform(struct?: DataSnowflakeStorageIntegrationsStorageIntegrations): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataSnowflakeStorageIntegrationsStorageIntegrationsOutputReference extends cdktf.ComplexObject {
@@ -188,5 +194,19 @@ export class DataSnowflakeStorageIntegrations extends cdktf.TerraformDataSource 
     return {
       id: cdktf.stringToTerraform(this._id),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

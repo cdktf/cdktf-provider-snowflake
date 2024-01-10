@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/object_parameter
 // generated from terraform resource schema
 
@@ -81,6 +76,37 @@ export function objectParameterObjectIdentifierToTerraform(struct?: ObjectParame
     name: cdktf.stringToTerraform(struct!.name),
     schema: cdktf.stringToTerraform(struct!.schema),
   }
+}
+
+
+export function objectParameterObjectIdentifierToHclTerraform(struct?: ObjectParameterObjectIdentifier | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    database: {
+      value: cdktf.stringToHclTerraform(struct!.database),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    schema: {
+      value: cdktf.stringToHclTerraform(struct!.schema),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ObjectParameterObjectIdentifierOutputReference extends cdktf.ComplexObject {
@@ -371,5 +397,49 @@ export class ObjectParameter extends cdktf.TerraformResource {
       value: cdktf.stringToTerraform(this._value),
       object_identifier: cdktf.listMapper(objectParameterObjectIdentifierToTerraform, true)(this._objectIdentifier.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      key: {
+        value: cdktf.stringToHclTerraform(this._key),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      object_type: {
+        value: cdktf.stringToHclTerraform(this._objectType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      on_account: {
+        value: cdktf.booleanToHclTerraform(this._onAccount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      value: {
+        value: cdktf.stringToHclTerraform(this._value),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      object_identifier: {
+        value: cdktf.listMapperHcl(objectParameterObjectIdentifierToHclTerraform, true)(this._objectIdentifier.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ObjectParameterObjectIdentifierList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

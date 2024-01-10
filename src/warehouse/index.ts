@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/warehouse
 // generated from terraform resource schema
 
@@ -506,5 +501,121 @@ export class Warehouse extends cdktf.TerraformResource {
       warehouse_size: cdktf.stringToTerraform(this._warehouseSize),
       warehouse_type: cdktf.stringToTerraform(this._warehouseType),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      auto_resume: {
+        value: cdktf.booleanToHclTerraform(this._autoResume),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      auto_suspend: {
+        value: cdktf.numberToHclTerraform(this._autoSuspend),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      comment: {
+        value: cdktf.stringToHclTerraform(this._comment),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enable_query_acceleration: {
+        value: cdktf.booleanToHclTerraform(this._enableQueryAcceleration),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      initially_suspended: {
+        value: cdktf.booleanToHclTerraform(this._initiallySuspended),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      max_cluster_count: {
+        value: cdktf.numberToHclTerraform(this._maxClusterCount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      max_concurrency_level: {
+        value: cdktf.numberToHclTerraform(this._maxConcurrencyLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      min_cluster_count: {
+        value: cdktf.numberToHclTerraform(this._minClusterCount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      query_acceleration_max_scale_factor: {
+        value: cdktf.numberToHclTerraform(this._queryAccelerationMaxScaleFactor),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      resource_monitor: {
+        value: cdktf.stringToHclTerraform(this._resourceMonitor),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      scaling_policy: {
+        value: cdktf.stringToHclTerraform(this._scalingPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      statement_queued_timeout_in_seconds: {
+        value: cdktf.numberToHclTerraform(this._statementQueuedTimeoutInSeconds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      statement_timeout_in_seconds: {
+        value: cdktf.numberToHclTerraform(this._statementTimeoutInSeconds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      wait_for_provisioning: {
+        value: cdktf.booleanToHclTerraform(this._waitForProvisioning),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      warehouse_size: {
+        value: cdktf.stringToHclTerraform(this._warehouseSize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      warehouse_type: {
+        value: cdktf.stringToHclTerraform(this._warehouseType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

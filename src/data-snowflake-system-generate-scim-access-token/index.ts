@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/data-sources/system_generate_scim_access_token
 // generated from terraform resource schema
 
@@ -129,5 +124,25 @@ export class DataSnowflakeSystemGenerateScimAccessToken extends cdktf.TerraformD
       id: cdktf.stringToTerraform(this._id),
       integration_name: cdktf.stringToTerraform(this._integrationName),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      integration_name: {
+        value: cdktf.stringToHclTerraform(this._integrationName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

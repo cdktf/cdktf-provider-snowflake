@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/account_password_policy_attachment
 // generated from terraform resource schema
 
@@ -124,5 +119,25 @@ export class AccountPasswordPolicyAttachment extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       password_policy: cdktf.stringToTerraform(this._passwordPolicy),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      password_policy: {
+        value: cdktf.stringToHclTerraform(this._passwordPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/task_grant
 // generated from terraform resource schema
 
@@ -337,5 +332,79 @@ export class TaskGrant extends cdktf.TerraformResource {
       task_name: cdktf.stringToTerraform(this._taskName),
       with_grant_option: cdktf.booleanToTerraform(this._withGrantOption),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      database_name: {
+        value: cdktf.stringToHclTerraform(this._databaseName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enable_multiple_grants: {
+        value: cdktf.booleanToHclTerraform(this._enableMultipleGrants),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      on_all: {
+        value: cdktf.booleanToHclTerraform(this._onAll),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      on_future: {
+        value: cdktf.booleanToHclTerraform(this._onFuture),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      privilege: {
+        value: cdktf.stringToHclTerraform(this._privilege),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      revert_ownership_to_role_name: {
+        value: cdktf.stringToHclTerraform(this._revertOwnershipToRoleName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      roles: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._roles),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      schema_name: {
+        value: cdktf.stringToHclTerraform(this._schemaName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      task_name: {
+        value: cdktf.stringToHclTerraform(this._taskName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      with_grant_option: {
+        value: cdktf.booleanToHclTerraform(this._withGrantOption),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

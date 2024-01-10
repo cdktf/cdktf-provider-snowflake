@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/stream
 // generated from terraform resource schema
 
@@ -339,5 +334,79 @@ export class Stream extends cdktf.TerraformResource {
       schema: cdktf.stringToTerraform(this._schema),
       show_initial_rows: cdktf.booleanToTerraform(this._showInitialRows),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      append_only: {
+        value: cdktf.booleanToHclTerraform(this._appendOnly),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      comment: {
+        value: cdktf.stringToHclTerraform(this._comment),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      database: {
+        value: cdktf.stringToHclTerraform(this._database),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      insert_only: {
+        value: cdktf.booleanToHclTerraform(this._insertOnly),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      on_stage: {
+        value: cdktf.stringToHclTerraform(this._onStage),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      on_table: {
+        value: cdktf.stringToHclTerraform(this._onTable),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      on_view: {
+        value: cdktf.stringToHclTerraform(this._onView),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      schema: {
+        value: cdktf.stringToHclTerraform(this._schema),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      show_initial_rows: {
+        value: cdktf.booleanToHclTerraform(this._showInitialRows),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

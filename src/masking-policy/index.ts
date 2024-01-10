@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/masking_policy
 // generated from terraform resource schema
 
@@ -104,6 +99,31 @@ export function maskingPolicySignatureColumnToTerraform(struct?: MaskingPolicySi
     name: cdktf.stringToTerraform(struct!.name),
     type: cdktf.stringToTerraform(struct!.type),
   }
+}
+
+
+export function maskingPolicySignatureColumnToHclTerraform(struct?: MaskingPolicySignatureColumn | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MaskingPolicySignatureColumnOutputReference extends cdktf.ComplexObject {
@@ -219,6 +239,25 @@ export function maskingPolicySignatureToTerraform(struct?: MaskingPolicySignatur
   return {
     column: cdktf.listMapper(maskingPolicySignatureColumnToTerraform, true)(struct!.column),
   }
+}
+
+
+export function maskingPolicySignatureToHclTerraform(struct?: MaskingPolicySignatureOutputReference | MaskingPolicySignature): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    column: {
+      value: cdktf.listMapperHcl(maskingPolicySignatureColumnToHclTerraform, true)(struct!.column),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MaskingPolicySignatureColumnList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MaskingPolicySignatureOutputReference extends cdktf.ComplexObject {
@@ -516,5 +555,79 @@ export class MaskingPolicy extends cdktf.TerraformResource {
       schema: cdktf.stringToTerraform(this._schema),
       signature: maskingPolicySignatureToTerraform(this._signature.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      comment: {
+        value: cdktf.stringToHclTerraform(this._comment),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      database: {
+        value: cdktf.stringToHclTerraform(this._database),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      exempt_other_policies: {
+        value: cdktf.booleanToHclTerraform(this._exemptOtherPolicies),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      if_not_exists: {
+        value: cdktf.booleanToHclTerraform(this._ifNotExists),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      masking_expression: {
+        value: cdktf.stringToHclTerraform(this._maskingExpression),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      or_replace: {
+        value: cdktf.booleanToHclTerraform(this._orReplace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      return_data_type: {
+        value: cdktf.stringToHclTerraform(this._returnDataType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      schema: {
+        value: cdktf.stringToHclTerraform(this._schema),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      signature: {
+        value: maskingPolicySignatureToHclTerraform(this._signature.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MaskingPolicySignatureList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }
