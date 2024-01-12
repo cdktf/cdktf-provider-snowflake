@@ -4,7 +4,7 @@
 
 ### ExternalTable <a name="ExternalTable" id="@cdktf/provider-snowflake.externalTable.ExternalTable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/external_table snowflake_external_table}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/external_table snowflake_external_table}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.externalTable.ExternalTable.Initializer"></a>
 
@@ -35,6 +35,7 @@ externalTable.ExternalTable(
   partition_by: typing.List[str] = None,
   pattern: str = None,
   refresh_on_create: typing.Union[bool, IResolvable] = None,
+  table_format: str = None,
   tag: typing.Union[IResolvable, typing.List[ExternalTableTag]] = None
 )
 ```
@@ -60,10 +61,11 @@ externalTable.ExternalTable(
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.Initializer.parameter.awsSnsTopic">aws_sns_topic</a></code> | <code>str</code> | Specifies the aws sns topic for the external table. |
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.Initializer.parameter.comment">comment</a></code> | <code>str</code> | Specifies a comment for the external table. |
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.Initializer.parameter.copyGrants">copy_grants</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies to retain the access permissions from the original table when an external table is recreated using the CREATE OR REPLACE TABLE variant. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/external_table#id ExternalTable#id}. |
+| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/external_table#id ExternalTable#id}. |
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.Initializer.parameter.partitionBy">partition_by</a></code> | <code>typing.List[str]</code> | Specifies any partition columns to evaluate for the external table. |
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.Initializer.parameter.pattern">pattern</a></code> | <code>str</code> | Specifies the file names and/or paths on the external stage to match. |
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.Initializer.parameter.refreshOnCreate">refresh_on_create</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies weather to refresh when an external table is created. |
+| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.Initializer.parameter.tableFormat">table_format</a></code> | <code>str</code> | Identifies the external table table type. For now, only "delta" for Delta Lake table format is supported. |
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.Initializer.parameter.tag">tag</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTag">ExternalTableTag</a>]]</code> | tag block. |
 
 ---
@@ -134,7 +136,7 @@ Must be unique amongst siblings in the same scope
 
 column block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/external_table#column ExternalTable#column}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/external_table#column ExternalTable#column}
 
 ---
 
@@ -144,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The database in which to create the external table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/external_table#database ExternalTable#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/external_table#database ExternalTable#database}
 
 ---
 
@@ -154,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the file format for the external table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/external_table#file_format ExternalTable#file_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/external_table#file_format ExternalTable#file_format}
 
 ---
 
@@ -164,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies a location for the external table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/external_table#location ExternalTable#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/external_table#location ExternalTable#location}
 
 ---
 
@@ -176,7 +178,7 @@ Specifies the identifier for the external table;
 
 must be unique for the database and schema in which the externalTable is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/external_table#name ExternalTable#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/external_table#name ExternalTable#name}
 
 ---
 
@@ -186,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The schema in which to create the external table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/external_table#schema ExternalTable#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/external_table#schema ExternalTable#schema}
 
 ---
 
@@ -196,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies whether to automatically refresh the external table metadata once, immediately after the external table is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/external_table#auto_refresh ExternalTable#auto_refresh}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/external_table#auto_refresh ExternalTable#auto_refresh}
 
 ---
 
@@ -206,7 +208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the aws sns topic for the external table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/external_table#aws_sns_topic ExternalTable#aws_sns_topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/external_table#aws_sns_topic ExternalTable#aws_sns_topic}
 
 ---
 
@@ -216,7 +218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies a comment for the external table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/external_table#comment ExternalTable#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/external_table#comment ExternalTable#comment}
 
 ---
 
@@ -226,7 +228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies to retain the access permissions from the original table when an external table is recreated using the CREATE OR REPLACE TABLE variant.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/external_table#copy_grants ExternalTable#copy_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/external_table#copy_grants ExternalTable#copy_grants}
 
 ---
 
@@ -234,7 +236,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/external_table#id ExternalTable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/external_table#id ExternalTable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -247,7 +249,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Specifies any partition columns to evaluate for the external table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/external_table#partition_by ExternalTable#partition_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/external_table#partition_by ExternalTable#partition_by}
 
 ---
 
@@ -257,7 +259,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the file names and/or paths on the external stage to match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/external_table#pattern ExternalTable#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/external_table#pattern ExternalTable#pattern}
 
 ---
 
@@ -267,7 +269,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies weather to refresh when an external table is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/external_table#refresh_on_create ExternalTable#refresh_on_create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/external_table#refresh_on_create ExternalTable#refresh_on_create}
+
+---
+
+##### `table_format`<sup>Optional</sup> <a name="table_format" id="@cdktf/provider-snowflake.externalTable.ExternalTable.Initializer.parameter.tableFormat"></a>
+
+- *Type:* str
+
+Identifies the external table table type. For now, only "delta" for Delta Lake table format is supported.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/external_table#table_format ExternalTable#table_format}
 
 ---
 
@@ -277,7 +289,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 tag block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/external_table#tag ExternalTable#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/external_table#tag ExternalTable#tag}
 
 ---
 
@@ -318,6 +330,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.resetPartitionBy">reset_partition_by</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.resetPattern">reset_pattern</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.resetRefreshOnCreate">reset_refresh_on_create</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.resetTableFormat">reset_table_format</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.resetTag">reset_tag</a></code> | *No description.* |
 
 ---
@@ -723,6 +736,12 @@ def reset_pattern() -> None
 def reset_refresh_on_create() -> None
 ```
 
+##### `reset_table_format` <a name="reset_table_format" id="@cdktf/provider-snowflake.externalTable.ExternalTable.resetTableFormat"></a>
+
+```python
+def reset_table_format() -> None
+```
+
 ##### `reset_tag` <a name="reset_tag" id="@cdktf/provider-snowflake.externalTable.ExternalTable.resetTag"></a>
 
 ```python
@@ -843,7 +862,7 @@ The construct id used in the generated config for the ExternalTable to import.
 
 The id of the existing ExternalTable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/external_table#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/external_table#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -890,6 +909,7 @@ Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.patternInput">pattern_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.refreshOnCreateInput">refresh_on_create_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.schemaInput">schema_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.tableFormatInput">table_format_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.tagInput">tag_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTag">ExternalTableTag</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.autoRefresh">auto_refresh</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.awsSnsTopic">aws_sns_topic</a></code> | <code>str</code> | *No description.* |
@@ -904,6 +924,7 @@ Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.pattern">pattern</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.refreshOnCreate">refresh_on_create</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.schema">schema</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTable.property.tableFormat">table_format</a></code> | <code>str</code> | *No description.* |
 
 ---
 
@@ -1219,6 +1240,16 @@ schema_input: str
 
 ---
 
+##### `table_format_input`<sup>Optional</sup> <a name="table_format_input" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.tableFormatInput"></a>
+
+```python
+table_format_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `tag_input`<sup>Optional</sup> <a name="tag_input" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.tagInput"></a>
 
 ```python
@@ -1359,6 +1390,16 @@ schema: str
 
 ---
 
+##### `table_format`<sup>Required</sup> <a name="table_format" id="@cdktf/provider-snowflake.externalTable.ExternalTable.property.tableFormat"></a>
+
+```python
+table_format: str
+```
+
+- *Type:* str
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -1413,7 +1454,7 @@ as: str
 
 String that specifies the expression for the column. When queried, the column returns results derived from this expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/external_table#as ExternalTable#as}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/external_table#as ExternalTable#as}
 
 ---
 
@@ -1427,7 +1468,7 @@ name: str
 
 Column name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/external_table#name ExternalTable#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/external_table#name ExternalTable#name}
 
 ---
 
@@ -1441,7 +1482,7 @@ type: str
 
 Column type, e.g. VARIANT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/external_table#type ExternalTable#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/external_table#type ExternalTable#type}
 
 ---
 
@@ -1474,6 +1515,7 @@ externalTable.ExternalTableConfig(
   partition_by: typing.List[str] = None,
   pattern: str = None,
   refresh_on_create: typing.Union[bool, IResolvable] = None,
+  table_format: str = None,
   tag: typing.Union[IResolvable, typing.List[ExternalTableTag]] = None
 )
 ```
@@ -1499,10 +1541,11 @@ externalTable.ExternalTableConfig(
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.awsSnsTopic">aws_sns_topic</a></code> | <code>str</code> | Specifies the aws sns topic for the external table. |
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.comment">comment</a></code> | <code>str</code> | Specifies a comment for the external table. |
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.copyGrants">copy_grants</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies to retain the access permissions from the original table when an external table is recreated using the CREATE OR REPLACE TABLE variant. |
-| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/external_table#id ExternalTable#id}. |
+| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/external_table#id ExternalTable#id}. |
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.partitionBy">partition_by</a></code> | <code>typing.List[str]</code> | Specifies any partition columns to evaluate for the external table. |
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.pattern">pattern</a></code> | <code>str</code> | Specifies the file names and/or paths on the external stage to match. |
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.refreshOnCreate">refresh_on_create</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies weather to refresh when an external table is created. |
+| <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.tableFormat">table_format</a></code> | <code>str</code> | Identifies the external table table type. For now, only "delta" for Delta Lake table format is supported. |
 | <code><a href="#@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.tag">tag</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-snowflake.externalTable.ExternalTableTag">ExternalTableTag</a>]]</code> | tag block. |
 
 ---
@@ -1587,7 +1630,7 @@ column: typing.Union[IResolvable, typing.List[ExternalTableColumn]]
 
 column block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/external_table#column ExternalTable#column}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/external_table#column ExternalTable#column}
 
 ---
 
@@ -1601,7 +1644,7 @@ database: str
 
 The database in which to create the external table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/external_table#database ExternalTable#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/external_table#database ExternalTable#database}
 
 ---
 
@@ -1615,7 +1658,7 @@ file_format: str
 
 Specifies the file format for the external table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/external_table#file_format ExternalTable#file_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/external_table#file_format ExternalTable#file_format}
 
 ---
 
@@ -1629,7 +1672,7 @@ location: str
 
 Specifies a location for the external table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/external_table#location ExternalTable#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/external_table#location ExternalTable#location}
 
 ---
 
@@ -1645,7 +1688,7 @@ Specifies the identifier for the external table;
 
 must be unique for the database and schema in which the externalTable is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/external_table#name ExternalTable#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/external_table#name ExternalTable#name}
 
 ---
 
@@ -1659,7 +1702,7 @@ schema: str
 
 The schema in which to create the external table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/external_table#schema ExternalTable#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/external_table#schema ExternalTable#schema}
 
 ---
 
@@ -1673,7 +1716,7 @@ auto_refresh: typing.Union[bool, IResolvable]
 
 Specifies whether to automatically refresh the external table metadata once, immediately after the external table is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/external_table#auto_refresh ExternalTable#auto_refresh}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/external_table#auto_refresh ExternalTable#auto_refresh}
 
 ---
 
@@ -1687,7 +1730,7 @@ aws_sns_topic: str
 
 Specifies the aws sns topic for the external table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/external_table#aws_sns_topic ExternalTable#aws_sns_topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/external_table#aws_sns_topic ExternalTable#aws_sns_topic}
 
 ---
 
@@ -1701,7 +1744,7 @@ comment: str
 
 Specifies a comment for the external table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/external_table#comment ExternalTable#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/external_table#comment ExternalTable#comment}
 
 ---
 
@@ -1715,7 +1758,7 @@ copy_grants: typing.Union[bool, IResolvable]
 
 Specifies to retain the access permissions from the original table when an external table is recreated using the CREATE OR REPLACE TABLE variant.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/external_table#copy_grants ExternalTable#copy_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/external_table#copy_grants ExternalTable#copy_grants}
 
 ---
 
@@ -1727,7 +1770,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/external_table#id ExternalTable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/external_table#id ExternalTable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1744,7 +1787,7 @@ partition_by: typing.List[str]
 
 Specifies any partition columns to evaluate for the external table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/external_table#partition_by ExternalTable#partition_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/external_table#partition_by ExternalTable#partition_by}
 
 ---
 
@@ -1758,7 +1801,7 @@ pattern: str
 
 Specifies the file names and/or paths on the external stage to match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/external_table#pattern ExternalTable#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/external_table#pattern ExternalTable#pattern}
 
 ---
 
@@ -1772,7 +1815,21 @@ refresh_on_create: typing.Union[bool, IResolvable]
 
 Specifies weather to refresh when an external table is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/external_table#refresh_on_create ExternalTable#refresh_on_create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/external_table#refresh_on_create ExternalTable#refresh_on_create}
+
+---
+
+##### `table_format`<sup>Optional</sup> <a name="table_format" id="@cdktf/provider-snowflake.externalTable.ExternalTableConfig.property.tableFormat"></a>
+
+```python
+table_format: str
+```
+
+- *Type:* str
+
+Identifies the external table table type. For now, only "delta" for Delta Lake table format is supported.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/external_table#table_format ExternalTable#table_format}
 
 ---
 
@@ -1786,7 +1843,7 @@ tag: typing.Union[IResolvable, typing.List[ExternalTableTag]]
 
 tag block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/external_table#tag ExternalTable#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/external_table#tag ExternalTable#tag}
 
 ---
 
@@ -1826,7 +1883,7 @@ name: str
 
 Tag name, e.g. department.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/external_table#name ExternalTable#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/external_table#name ExternalTable#name}
 
 ---
 
@@ -1840,7 +1897,7 @@ value: str
 
 Tag value, e.g. marketing_info.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/external_table#value ExternalTable#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/external_table#value ExternalTable#value}
 
 ---
 
@@ -1854,7 +1911,7 @@ database: str
 
 Name of the database that the tag was created in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/external_table#database ExternalTable#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/external_table#database ExternalTable#database}
 
 ---
 
@@ -1868,7 +1925,7 @@ schema: str
 
 Name of the schema that the tag was created in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/resources/external_table#schema ExternalTable#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/external_table#schema ExternalTable#schema}
 
 ---
 

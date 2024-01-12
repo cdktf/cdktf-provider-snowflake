@@ -4,7 +4,7 @@
 
 ### DataSnowflakeStorageIntegrations <a name="DataSnowflakeStorageIntegrations" id="@cdktf/provider-snowflake.dataSnowflakeStorageIntegrations.DataSnowflakeStorageIntegrations"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/data-sources/storage_integrations snowflake_storage_integrations}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/data-sources/storage_integrations snowflake_storage_integrations}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeStorageIntegrations.DataSnowflakeStorageIntegrations.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataSnowflakeStorageIntegr
 
 The id of the existing DataSnowflakeStorageIntegrations that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/data-sources/storage_integrations#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/data-sources/storage_integrations#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -608,7 +608,7 @@ new DataSnowflakeStorageIntegrationsConfig {
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStorageIntegrations.DataSnowflakeStorageIntegrationsConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStorageIntegrations.DataSnowflakeStorageIntegrationsConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStorageIntegrations.DataSnowflakeStorageIntegrationsConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStorageIntegrations.DataSnowflakeStorageIntegrationsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/data-sources/storage_integrations#id DataSnowflakeStorageIntegrations#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStorageIntegrations.DataSnowflakeStorageIntegrationsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/data-sources/storage_integrations#id DataSnowflakeStorageIntegrations#id}. |
 
 ---
 
@@ -690,7 +690,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.82.0/docs/data-sources/storage_integrations#id DataSnowflakeStorageIntegrations#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/data-sources/storage_integrations#id DataSnowflakeStorageIntegrations#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
