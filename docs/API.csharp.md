@@ -63,6 +63,7 @@ The following submodules are available:
 - [fileFormatGrant](./fileFormatGrant.csharp.md)
 - [functionGrant](./functionGrant.csharp.md)
 - [functionResource](./functionResource.csharp.md)
+- [grantPrivilegesToDatabaseRole](./grantPrivilegesToDatabaseRole.csharp.md)
 - [grantPrivilegesToRole](./grantPrivilegesToRole.csharp.md)
 - [integrationGrant](./integrationGrant.csharp.md)
 - [managedAccount](./managedAccount.csharp.md)

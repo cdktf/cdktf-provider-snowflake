@@ -25,6 +25,7 @@ Object.defineProperty(exports, 'fileFormat', { get: function () { return require
 Object.defineProperty(exports, 'fileFormatGrant', { get: function () { return require('./file-format-grant'); } });
 Object.defineProperty(exports, 'functionResource', { get: function () { return require('./function-resource'); } });
 Object.defineProperty(exports, 'functionGrant', { get: function () { return require('./function-grant'); } });
+Object.defineProperty(exports, 'grantPrivilegesToDatabaseRole', { get: function () { return require('./grant-privileges-to-database-role'); } });
 Object.defineProperty(exports, 'grantPrivilegesToRole', { get: function () { return require('./grant-privileges-to-role'); } });
 Object.defineProperty(exports, 'integrationGrant', { get: function () { return require('./integration-grant'); } });
 Object.defineProperty(exports, 'managedAccount', { get: function () { return require('./managed-account'); } });
