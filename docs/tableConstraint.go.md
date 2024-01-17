@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.tableConstraint.TableConstraint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/tableconstraint"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tableconstraint"
 
 tableconstraint.NewTableConstraint(scope Construct, id *string, config TableConstraintConfig) TableConstraint
 ```
@@ -454,7 +454,7 @@ func ResetValidate()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.tableConstraint.TableConstraint.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/tableconstraint"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tableconstraint"
 
 tableconstraint.TableConstraint_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.tableConstraint.TableConstraint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/tableconstraint"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tableconstraint"
 
 tableconstraint.TableConstraint_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ tableconstraint.TableConstraint_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.tableConstraint.TableConstraint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/tableconstraint"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tableconstraint"
 
 tableconstraint.TableConstraint_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ tableconstraint.TableConstraint_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.tableConstraint.TableConstraint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/tableconstraint"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tableconstraint"
 
 tableconstraint.TableConstraint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1029,7 +1029,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/tableconstraint"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tableconstraint"
 
 &tableconstraint.TableConstraintConfig {
 	Connection: interface{},
@@ -1047,7 +1047,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/tableconstrai
 	Deferrable: interface{},
 	Enable: interface{},
 	Enforced: interface{},
-	ForeignKeyProperties: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11.tableConstraint.TableConstraintForeignKeyProperties,
+	ForeignKeyProperties: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.tableConstraint.TableConstraintForeignKeyProperties,
 	Id: *string,
 	Initially: *string,
 	Rely: interface{},
@@ -1344,13 +1344,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintForeignKeyProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/tableconstraint"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tableconstraint"
 
 &tableconstraint.TableConstraintForeignKeyProperties {
 	Match: *string,
 	OnDelete: *string,
 	OnUpdate: *string,
-	References: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11.tableConstraint.TableConstraintForeignKeyPropertiesReferences,
+	References: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.tableConstraint.TableConstraintForeignKeyPropertiesReferences,
 }
 ```
 
@@ -1426,7 +1426,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintForeignKeyPropertiesReferences.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/tableconstraint"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tableconstraint"
 
 &tableconstraint.TableConstraintForeignKeyPropertiesReferences {
 	Columns: *[]*string,
@@ -1478,7 +1478,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintForeignKeyPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/tableconstraint"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tableconstraint"
 
 tableconstraint.NewTableConstraintForeignKeyPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TableConstraintForeignKeyPropertiesOutputReference
 ```
@@ -1856,7 +1856,7 @@ func InternalValue() TableConstraintForeignKeyProperties
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintForeignKeyPropertiesReferencesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/tableconstraint"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tableconstraint"
 
 tableconstraint.NewTableConstraintForeignKeyPropertiesReferencesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TableConstraintForeignKeyPropertiesReferencesOutputReference
 ```
