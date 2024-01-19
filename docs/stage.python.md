@@ -4,7 +4,7 @@
 
 ### Stage <a name="Stage" id="@cdktf/provider-snowflake.stage.Stage"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/stage snowflake_stage}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.0/docs/resources/stage snowflake_stage}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.stage.Stage.Initializer"></a>
 
@@ -53,15 +53,15 @@ stage.Stage(
 | <code><a href="#@cdktf/provider-snowflake.stage.Stage.Initializer.parameter.database">database</a></code> | <code>str</code> | The database in which to create the stage. |
 | <code><a href="#@cdktf/provider-snowflake.stage.Stage.Initializer.parameter.name">name</a></code> | <code>str</code> | Specifies the identifier for the stage; |
 | <code><a href="#@cdktf/provider-snowflake.stage.Stage.Initializer.parameter.schema">schema</a></code> | <code>str</code> | The schema in which to create the stage. |
-| <code><a href="#@cdktf/provider-snowflake.stage.Stage.Initializer.parameter.awsExternalId">aws_external_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/stage#aws_external_id Stage#aws_external_id}. |
+| <code><a href="#@cdktf/provider-snowflake.stage.Stage.Initializer.parameter.awsExternalId">aws_external_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.0/docs/resources/stage#aws_external_id Stage#aws_external_id}. |
 | <code><a href="#@cdktf/provider-snowflake.stage.Stage.Initializer.parameter.comment">comment</a></code> | <code>str</code> | Specifies a comment for the stage. |
 | <code><a href="#@cdktf/provider-snowflake.stage.Stage.Initializer.parameter.copyOptions">copy_options</a></code> | <code>str</code> | Specifies the copy options for the stage. |
 | <code><a href="#@cdktf/provider-snowflake.stage.Stage.Initializer.parameter.credentials">credentials</a></code> | <code>str</code> | Specifies the credentials for the stage. |
 | <code><a href="#@cdktf/provider-snowflake.stage.Stage.Initializer.parameter.directory">directory</a></code> | <code>str</code> | Specifies the directory settings for the stage. |
 | <code><a href="#@cdktf/provider-snowflake.stage.Stage.Initializer.parameter.encryption">encryption</a></code> | <code>str</code> | Specifies the encryption settings for the stage. |
 | <code><a href="#@cdktf/provider-snowflake.stage.Stage.Initializer.parameter.fileFormat">file_format</a></code> | <code>str</code> | Specifies the file format for the stage. |
-| <code><a href="#@cdktf/provider-snowflake.stage.Stage.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/stage#id Stage#id}. |
-| <code><a href="#@cdktf/provider-snowflake.stage.Stage.Initializer.parameter.snowflakeIamUser">snowflake_iam_user</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/stage#snowflake_iam_user Stage#snowflake_iam_user}. |
+| <code><a href="#@cdktf/provider-snowflake.stage.Stage.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.0/docs/resources/stage#id Stage#id}. |
+| <code><a href="#@cdktf/provider-snowflake.stage.Stage.Initializer.parameter.snowflakeIamUser">snowflake_iam_user</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.0/docs/resources/stage#snowflake_iam_user Stage#snowflake_iam_user}. |
 | <code><a href="#@cdktf/provider-snowflake.stage.Stage.Initializer.parameter.storageIntegration">storage_integration</a></code> | <code>str</code> | Specifies the name of the storage integration used to delegate authentication responsibility for external cloud storage to a Snowflake identity and access management (IAM) entity. |
 | <code><a href="#@cdktf/provider-snowflake.stage.Stage.Initializer.parameter.tag">tag</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-snowflake.stage.StageTag">StageTag</a>]]</code> | tag block. |
 | <code><a href="#@cdktf/provider-snowflake.stage.Stage.Initializer.parameter.url">url</a></code> | <code>str</code> | Specifies the URL for the stage. |
@@ -134,7 +134,7 @@ Must be unique amongst siblings in the same scope
 
 The database in which to create the stage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/stage#database Stage#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.0/docs/resources/stage#database Stage#database}
 
 ---
 
@@ -146,7 +146,7 @@ Specifies the identifier for the stage;
 
 must be unique for the database and schema in which the stage is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/stage#name Stage#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.0/docs/resources/stage#name Stage#name}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The schema in which to create the stage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/stage#schema Stage#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.0/docs/resources/stage#schema Stage#schema}
 
 ---
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/stage#aws_external_id Stage#aws_external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.0/docs/resources/stage#aws_external_id Stage#aws_external_id}.
 
 ---
 
@@ -174,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies a comment for the stage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/stage#comment Stage#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.0/docs/resources/stage#comment Stage#comment}
 
 ---
 
@@ -184,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the copy options for the stage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/stage#copy_options Stage#copy_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.0/docs/resources/stage#copy_options Stage#copy_options}
 
 ---
 
@@ -194,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the credentials for the stage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/stage#credentials Stage#credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.0/docs/resources/stage#credentials Stage#credentials}
 
 ---
 
@@ -204,7 +204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the directory settings for the stage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/stage#directory Stage#directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.0/docs/resources/stage#directory Stage#directory}
 
 ---
 
@@ -214,7 +214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the encryption settings for the stage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/stage#encryption Stage#encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.0/docs/resources/stage#encryption Stage#encryption}
 
 ---
 
@@ -224,7 +224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the file format for the stage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/stage#file_format Stage#file_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.0/docs/resources/stage#file_format Stage#file_format}
 
 ---
 
@@ -232,7 +232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/stage#id Stage#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.0/docs/resources/stage#id Stage#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -243,7 +243,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/stage#snowflake_iam_user Stage#snowflake_iam_user}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.0/docs/resources/stage#snowflake_iam_user Stage#snowflake_iam_user}.
 
 ---
 
@@ -253,7 +253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the name of the storage integration used to delegate authentication responsibility for external cloud storage to a Snowflake identity and access management (IAM) entity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/stage#storage_integration Stage#storage_integration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.0/docs/resources/stage#storage_integration Stage#storage_integration}
 
 ---
 
@@ -263,7 +263,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 tag block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/stage#tag Stage#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.0/docs/resources/stage#tag Stage#tag}
 
 ---
 
@@ -273,7 +273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the URL for the stage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/stage#url Stage#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.0/docs/resources/stage#url Stage#url}
 
 ---
 
@@ -845,7 +845,7 @@ The construct id used in the generated config for the Stage to import.
 
 The id of the existing Stage that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/stage#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.0/docs/resources/stage#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1417,15 +1417,15 @@ stage.StageConfig(
 | <code><a href="#@cdktf/provider-snowflake.stage.StageConfig.property.database">database</a></code> | <code>str</code> | The database in which to create the stage. |
 | <code><a href="#@cdktf/provider-snowflake.stage.StageConfig.property.name">name</a></code> | <code>str</code> | Specifies the identifier for the stage; |
 | <code><a href="#@cdktf/provider-snowflake.stage.StageConfig.property.schema">schema</a></code> | <code>str</code> | The schema in which to create the stage. |
-| <code><a href="#@cdktf/provider-snowflake.stage.StageConfig.property.awsExternalId">aws_external_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/stage#aws_external_id Stage#aws_external_id}. |
+| <code><a href="#@cdktf/provider-snowflake.stage.StageConfig.property.awsExternalId">aws_external_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.0/docs/resources/stage#aws_external_id Stage#aws_external_id}. |
 | <code><a href="#@cdktf/provider-snowflake.stage.StageConfig.property.comment">comment</a></code> | <code>str</code> | Specifies a comment for the stage. |
 | <code><a href="#@cdktf/provider-snowflake.stage.StageConfig.property.copyOptions">copy_options</a></code> | <code>str</code> | Specifies the copy options for the stage. |
 | <code><a href="#@cdktf/provider-snowflake.stage.StageConfig.property.credentials">credentials</a></code> | <code>str</code> | Specifies the credentials for the stage. |
 | <code><a href="#@cdktf/provider-snowflake.stage.StageConfig.property.directory">directory</a></code> | <code>str</code> | Specifies the directory settings for the stage. |
 | <code><a href="#@cdktf/provider-snowflake.stage.StageConfig.property.encryption">encryption</a></code> | <code>str</code> | Specifies the encryption settings for the stage. |
 | <code><a href="#@cdktf/provider-snowflake.stage.StageConfig.property.fileFormat">file_format</a></code> | <code>str</code> | Specifies the file format for the stage. |
-| <code><a href="#@cdktf/provider-snowflake.stage.StageConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/stage#id Stage#id}. |
-| <code><a href="#@cdktf/provider-snowflake.stage.StageConfig.property.snowflakeIamUser">snowflake_iam_user</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/stage#snowflake_iam_user Stage#snowflake_iam_user}. |
+| <code><a href="#@cdktf/provider-snowflake.stage.StageConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.0/docs/resources/stage#id Stage#id}. |
+| <code><a href="#@cdktf/provider-snowflake.stage.StageConfig.property.snowflakeIamUser">snowflake_iam_user</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.0/docs/resources/stage#snowflake_iam_user Stage#snowflake_iam_user}. |
 | <code><a href="#@cdktf/provider-snowflake.stage.StageConfig.property.storageIntegration">storage_integration</a></code> | <code>str</code> | Specifies the name of the storage integration used to delegate authentication responsibility for external cloud storage to a Snowflake identity and access management (IAM) entity. |
 | <code><a href="#@cdktf/provider-snowflake.stage.StageConfig.property.tag">tag</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-snowflake.stage.StageTag">StageTag</a>]]</code> | tag block. |
 | <code><a href="#@cdktf/provider-snowflake.stage.StageConfig.property.url">url</a></code> | <code>str</code> | Specifies the URL for the stage. |
@@ -1512,7 +1512,7 @@ database: str
 
 The database in which to create the stage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/stage#database Stage#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.0/docs/resources/stage#database Stage#database}
 
 ---
 
@@ -1528,7 +1528,7 @@ Specifies the identifier for the stage;
 
 must be unique for the database and schema in which the stage is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/stage#name Stage#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.0/docs/resources/stage#name Stage#name}
 
 ---
 
@@ -1542,7 +1542,7 @@ schema: str
 
 The schema in which to create the stage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/stage#schema Stage#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.0/docs/resources/stage#schema Stage#schema}
 
 ---
 
@@ -1554,7 +1554,7 @@ aws_external_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/stage#aws_external_id Stage#aws_external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.0/docs/resources/stage#aws_external_id Stage#aws_external_id}.
 
 ---
 
@@ -1568,7 +1568,7 @@ comment: str
 
 Specifies a comment for the stage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/stage#comment Stage#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.0/docs/resources/stage#comment Stage#comment}
 
 ---
 
@@ -1582,7 +1582,7 @@ copy_options: str
 
 Specifies the copy options for the stage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/stage#copy_options Stage#copy_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.0/docs/resources/stage#copy_options Stage#copy_options}
 
 ---
 
@@ -1596,7 +1596,7 @@ credentials: str
 
 Specifies the credentials for the stage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/stage#credentials Stage#credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.0/docs/resources/stage#credentials Stage#credentials}
 
 ---
 
@@ -1610,7 +1610,7 @@ directory: str
 
 Specifies the directory settings for the stage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/stage#directory Stage#directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.0/docs/resources/stage#directory Stage#directory}
 
 ---
 
@@ -1624,7 +1624,7 @@ encryption: str
 
 Specifies the encryption settings for the stage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/stage#encryption Stage#encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.0/docs/resources/stage#encryption Stage#encryption}
 
 ---
 
@@ -1638,7 +1638,7 @@ file_format: str
 
 Specifies the file format for the stage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/stage#file_format Stage#file_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.0/docs/resources/stage#file_format Stage#file_format}
 
 ---
 
@@ -1650,7 +1650,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/stage#id Stage#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.0/docs/resources/stage#id Stage#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1665,7 +1665,7 @@ snowflake_iam_user: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/stage#snowflake_iam_user Stage#snowflake_iam_user}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.0/docs/resources/stage#snowflake_iam_user Stage#snowflake_iam_user}.
 
 ---
 
@@ -1679,7 +1679,7 @@ storage_integration: str
 
 Specifies the name of the storage integration used to delegate authentication responsibility for external cloud storage to a Snowflake identity and access management (IAM) entity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/stage#storage_integration Stage#storage_integration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.0/docs/resources/stage#storage_integration Stage#storage_integration}
 
 ---
 
@@ -1693,7 +1693,7 @@ tag: typing.Union[IResolvable, typing.List[StageTag]]
 
 tag block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/stage#tag Stage#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.0/docs/resources/stage#tag Stage#tag}
 
 ---
 
@@ -1707,7 +1707,7 @@ url: str
 
 Specifies the URL for the stage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/stage#url Stage#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.0/docs/resources/stage#url Stage#url}
 
 ---
 
@@ -1747,7 +1747,7 @@ name: str
 
 Tag name, e.g. department.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/stage#name Stage#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.0/docs/resources/stage#name Stage#name}
 
 ---
 
@@ -1761,7 +1761,7 @@ value: str
 
 Tag value, e.g. marketing_info.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/stage#value Stage#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.0/docs/resources/stage#value Stage#value}
 
 ---
 
@@ -1775,7 +1775,7 @@ database: str
 
 Name of the database that the tag was created in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/stage#database Stage#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.0/docs/resources/stage#database Stage#database}
 
 ---
 
@@ -1789,7 +1789,7 @@ schema: str
 
 Name of the schema that the tag was created in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/stage#schema Stage#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.0/docs/resources/stage#schema Stage#schema}
 
 ---
 

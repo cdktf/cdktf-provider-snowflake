@@ -63,6 +63,8 @@ The following submodules are available:
 - [fileFormatGrant](./fileFormatGrant.java.md)
 - [functionGrant](./functionGrant.java.md)
 - [functionResource](./functionResource.java.md)
+- [grantAccountRole](./grantAccountRole.java.md)
+- [grantDatabaseRole](./grantDatabaseRole.java.md)
 - [grantPrivilegesToDatabaseRole](./grantPrivilegesToDatabaseRole.java.md)
 - [grantPrivilegesToRole](./grantPrivilegesToRole.java.md)
 - [integrationGrant](./integrationGrant.java.md)
