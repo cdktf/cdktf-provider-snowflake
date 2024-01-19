@@ -63,6 +63,8 @@ The following submodules are available:
 - [fileFormatGrant](./fileFormatGrant.python.md)
 - [functionGrant](./functionGrant.python.md)
 - [functionResource](./functionResource.python.md)
+- [grantAccountRole](./grantAccountRole.python.md)
+- [grantDatabaseRole](./grantDatabaseRole.python.md)
 - [grantPrivilegesToDatabaseRole](./grantPrivilegesToDatabaseRole.python.md)
 - [grantPrivilegesToRole](./grantPrivilegesToRole.python.md)
 - [integrationGrant](./integrationGrant.python.md)

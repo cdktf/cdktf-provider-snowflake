@@ -25,6 +25,8 @@ export * as fileFormat from './file-format';
 export * as fileFormatGrant from './file-format-grant';
 export * as functionResource from './function-resource';
 export * as functionGrant from './function-grant';
+export * as grantAccountRole from './grant-account-role';
+export * as grantDatabaseRole from './grant-database-role';
 export * as grantPrivilegesToDatabaseRole from './grant-privileges-to-database-role';
 export * as grantPrivilegesToRole from './grant-privileges-to-role';
 export * as integrationGrant from './integration-grant';

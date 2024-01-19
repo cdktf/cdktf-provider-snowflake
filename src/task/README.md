@@ -1,3 +1,3 @@
 # `snowflake_task`
 
-Refer to the Terraform Registry for docs: [`snowflake_task`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.83.1/docs/resources/task).
+Refer to the Terraform Registry for docs: [`snowflake_task`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.0/docs/resources/task).
