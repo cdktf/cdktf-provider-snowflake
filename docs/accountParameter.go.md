@@ -4,12 +4,12 @@
 
 ### AccountParameter <a name="AccountParameter" id="@cdktf/provider-snowflake.accountParameter.AccountParameter"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.1/docs/resources/account_parameter snowflake_account_parameter}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/account_parameter snowflake_account_parameter}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.accountParameter.AccountParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/accountparameter"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/accountparameter"
 
 accountparameter.NewAccountParameter(scope Construct, id *string, config AccountParameterConfig) AccountParameter
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.accountParameter.AccountParameter.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/accountparameter"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/accountparameter"
 
 accountparameter.AccountParameter_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.accountParameter.AccountParameter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/accountparameter"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/accountparameter"
 
 accountparameter.AccountParameter_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ accountparameter.AccountParameter_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.accountParameter.AccountParameter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/accountparameter"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/accountparameter"
 
 accountparameter.AccountParameter_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ accountparameter.AccountParameter_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.accountParameter.AccountParameter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/accountparameter"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/accountparameter"
 
 accountparameter.AccountParameter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the AccountParameter to import
 
 The id of the existing AccountParameter that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.1/docs/resources/account_parameter#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/account_parameter#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.accountParameter.AccountParameterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/accountparameter"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/accountparameter"
 
 &accountparameter.AccountParameterConfig {
 	Connection: interface{},
@@ -769,7 +769,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/accountparame
 | <code><a href="#@cdktf/provider-snowflake.accountParameter.AccountParameterConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.accountParameter.AccountParameterConfig.property.key">Key</a></code> | <code>*string</code> | Name of account parameter. Valid values are those in [account parameters](https://docs.snowflake.com/en/sql-reference/parameters.html#account-parameters). |
 | <code><a href="#@cdktf/provider-snowflake.accountParameter.AccountParameterConfig.property.value">Value</a></code> | <code>*string</code> | Value of account parameter, as a string. Constraints are the same as those for the parameters in Snowflake documentation. |
-| <code><a href="#@cdktf/provider-snowflake.accountParameter.AccountParameterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.1/docs/resources/account_parameter#id AccountParameter#id}. |
+| <code><a href="#@cdktf/provider-snowflake.accountParameter.AccountParameterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/account_parameter#id AccountParameter#id}. |
 
 ---
 
@@ -853,7 +853,7 @@ Key *string
 
 Name of account parameter. Valid values are those in [account parameters](https://docs.snowflake.com/en/sql-reference/parameters.html#account-parameters).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.1/docs/resources/account_parameter#key AccountParameter#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/account_parameter#key AccountParameter#key}
 
 ---
 
@@ -867,7 +867,7 @@ Value *string
 
 Value of account parameter, as a string. Constraints are the same as those for the parameters in Snowflake documentation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.1/docs/resources/account_parameter#value AccountParameter#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/account_parameter#value AccountParameter#value}
 
 ---
 
@@ -879,7 +879,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.1/docs/resources/account_parameter#id AccountParameter#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/account_parameter#id AccountParameter#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

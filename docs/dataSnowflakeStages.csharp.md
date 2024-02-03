@@ -4,7 +4,7 @@
 
 ### DataSnowflakeStages <a name="DataSnowflakeStages" id="@cdktf/provider-snowflake.dataSnowflakeStages.DataSnowflakeStages"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.1/docs/data-sources/stages snowflake_stages}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/data-sources/stages snowflake_stages}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeStages.DataSnowflakeStages.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataSnowflakeStages to imp
 
 The id of the existing DataSnowflakeStages that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.1/docs/data-sources/stages#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/data-sources/stages#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -656,7 +656,7 @@ new DataSnowflakeStagesConfig {
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesConfig.property.database">Database</a></code> | <code>string</code> | The database from which to return the schemas from. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesConfig.property.schema">Schema</a></code> | <code>string</code> | The schema from which to return the stages from. |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.1/docs/data-sources/stages#id DataSnowflakeStages#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStages.DataSnowflakeStagesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/data-sources/stages#id DataSnowflakeStages#id}. |
 
 ---
 
@@ -740,7 +740,7 @@ public string Database { get; set; }
 
 The database from which to return the schemas from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.1/docs/data-sources/stages#database DataSnowflakeStages#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/data-sources/stages#database DataSnowflakeStages#database}
 
 ---
 
@@ -754,7 +754,7 @@ public string Schema { get; set; }
 
 The schema from which to return the stages from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.1/docs/data-sources/stages#schema DataSnowflakeStages#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/data-sources/stages#schema DataSnowflakeStages#schema}
 
 ---
 
@@ -766,7 +766,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.1/docs/data-sources/stages#id DataSnowflakeStages#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/data-sources/stages#id DataSnowflakeStages#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
