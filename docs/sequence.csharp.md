@@ -4,7 +4,7 @@
 
 ### Sequence <a name="Sequence" id="@cdktf/provider-snowflake.sequence.Sequence"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.1/docs/resources/sequence snowflake_sequence}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/sequence snowflake_sequence}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.sequence.Sequence.Initializer"></a>
 
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.sequence.Sequence.resetComment">ResetComment</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sequence.Sequence.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sequence.Sequence.resetIncrement">ResetIncrement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.sequence.Sequence.resetOrdering">ResetOrdering</a></code> | *No description.* |
 
 ---
 
@@ -385,6 +386,12 @@ private void ResetId()
 private void ResetIncrement()
 ```
 
+##### `ResetOrdering` <a name="ResetOrdering" id="@cdktf/provider-snowflake.sequence.Sequence.resetOrdering"></a>
+
+```csharp
+private void ResetOrdering()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -488,7 +495,7 @@ The construct id used in the generated config for the Sequence to import.
 
 The id of the existing Sequence that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.1/docs/resources/sequence#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/sequence#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -525,12 +532,14 @@ Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 | <code><a href="#@cdktf/provider-snowflake.sequence.Sequence.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sequence.Sequence.property.incrementInput">IncrementInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sequence.Sequence.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.sequence.Sequence.property.orderingInput">OrderingInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sequence.Sequence.property.schemaInput">SchemaInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sequence.Sequence.property.comment">Comment</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sequence.Sequence.property.database">Database</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sequence.Sequence.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sequence.Sequence.property.increment">Increment</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sequence.Sequence.property.name">Name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.sequence.Sequence.property.ordering">Ordering</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.sequence.Sequence.property.schema">Schema</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -747,6 +756,16 @@ public string NameInput { get; }
 
 ---
 
+##### `OrderingInput`<sup>Optional</sup> <a name="OrderingInput" id="@cdktf/provider-snowflake.sequence.Sequence.property.orderingInput"></a>
+
+```csharp
+public string OrderingInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `SchemaInput`<sup>Optional</sup> <a name="SchemaInput" id="@cdktf/provider-snowflake.sequence.Sequence.property.schemaInput"></a>
 
 ```csharp
@@ -807,6 +826,16 @@ public string Name { get; }
 
 ---
 
+##### `Ordering`<sup>Required</sup> <a name="Ordering" id="@cdktf/provider-snowflake.sequence.Sequence.property.ordering"></a>
+
+```csharp
+public string Ordering { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `Schema`<sup>Required</sup> <a name="Schema" id="@cdktf/provider-snowflake.sequence.Sequence.property.schema"></a>
 
 ```csharp
@@ -857,7 +886,8 @@ new SequenceConfig {
     string Schema,
     string Comment = null,
     string Id = null,
-    double Increment = null
+    double Increment = null,
+    string Ordering = null
 };
 ```
 
@@ -876,8 +906,9 @@ new SequenceConfig {
 | <code><a href="#@cdktf/provider-snowflake.sequence.SequenceConfig.property.name">Name</a></code> | <code>string</code> | Specifies the name for the sequence. |
 | <code><a href="#@cdktf/provider-snowflake.sequence.SequenceConfig.property.schema">Schema</a></code> | <code>string</code> | The schema in which to create the sequence. Don't use the \| character. |
 | <code><a href="#@cdktf/provider-snowflake.sequence.SequenceConfig.property.comment">Comment</a></code> | <code>string</code> | Specifies a comment for the sequence. |
-| <code><a href="#@cdktf/provider-snowflake.sequence.SequenceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.1/docs/resources/sequence#id Sequence#id}. |
+| <code><a href="#@cdktf/provider-snowflake.sequence.SequenceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/sequence#id Sequence#id}. |
 | <code><a href="#@cdktf/provider-snowflake.sequence.SequenceConfig.property.increment">Increment</a></code> | <code>double</code> | The amount the sequence will increase by each time it is used. |
+| <code><a href="#@cdktf/provider-snowflake.sequence.SequenceConfig.property.ordering">Ordering</a></code> | <code>string</code> | The ordering of the sequence. Either ORDER or NOORDER. Default is ORDER. |
 
 ---
 
@@ -961,7 +992,7 @@ public string Database { get; set; }
 
 The database in which to create the sequence. Don't use the | character.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.1/docs/resources/sequence#database Sequence#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/sequence#database Sequence#database}
 
 ---
 
@@ -975,7 +1006,7 @@ public string Name { get; set; }
 
 Specifies the name for the sequence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.1/docs/resources/sequence#name Sequence#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/sequence#name Sequence#name}
 
 ---
 
@@ -989,7 +1020,7 @@ public string Schema { get; set; }
 
 The schema in which to create the sequence. Don't use the | character.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.1/docs/resources/sequence#schema Sequence#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/sequence#schema Sequence#schema}
 
 ---
 
@@ -1003,7 +1034,7 @@ public string Comment { get; set; }
 
 Specifies a comment for the sequence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.1/docs/resources/sequence#comment Sequence#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/sequence#comment Sequence#comment}
 
 ---
 
@@ -1015,7 +1046,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.1/docs/resources/sequence#id Sequence#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/sequence#id Sequence#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1032,7 +1063,21 @@ public double Increment { get; set; }
 
 The amount the sequence will increase by each time it is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.84.1/docs/resources/sequence#increment Sequence#increment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/sequence#increment Sequence#increment}
+
+---
+
+##### `Ordering`<sup>Optional</sup> <a name="Ordering" id="@cdktf/provider-snowflake.sequence.SequenceConfig.property.ordering"></a>
+
+```csharp
+public string Ordering { get; set; }
+```
+
+- *Type:* string
+
+The ordering of the sequence. Either ORDER or NOORDER. Default is ORDER.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/sequence#ordering Sequence#ordering}
 
 ---
 

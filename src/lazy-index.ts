@@ -27,8 +27,10 @@ Object.defineProperty(exports, 'functionResource', { get: function () { return r
 Object.defineProperty(exports, 'functionGrant', { get: function () { return require('./function-grant'); } });
 Object.defineProperty(exports, 'grantAccountRole', { get: function () { return require('./grant-account-role'); } });
 Object.defineProperty(exports, 'grantDatabaseRole', { get: function () { return require('./grant-database-role'); } });
+Object.defineProperty(exports, 'grantPrivilegesToAccountRole', { get: function () { return require('./grant-privileges-to-account-role'); } });
 Object.defineProperty(exports, 'grantPrivilegesToDatabaseRole', { get: function () { return require('./grant-privileges-to-database-role'); } });
 Object.defineProperty(exports, 'grantPrivilegesToRole', { get: function () { return require('./grant-privileges-to-role'); } });
+Object.defineProperty(exports, 'grantPrivilegesToShare', { get: function () { return require('./grant-privileges-to-share'); } });
 Object.defineProperty(exports, 'integrationGrant', { get: function () { return require('./integration-grant'); } });
 Object.defineProperty(exports, 'managedAccount', { get: function () { return require('./managed-account'); } });
 Object.defineProperty(exports, 'maskingPolicy', { get: function () { return require('./masking-policy'); } });
