@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/grant_database_role
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/grant_database_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface GrantDatabaseRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The fully qualified name of the database role which will be granted to share or parent role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/grant_database_role#database_role_name GrantDatabaseRole#database_role_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/grant_database_role#database_role_name GrantDatabaseRole#database_role_name}
   */
   readonly databaseRoleName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/grant_database_role#id GrantDatabaseRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/grant_database_role#id GrantDatabaseRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,25 +28,25 @@ export interface GrantDatabaseRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The fully qualified name of the parent database role which will create a parent-child relationship between the roles.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/grant_database_role#parent_database_role_name GrantDatabaseRole#parent_database_role_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/grant_database_role#parent_database_role_name GrantDatabaseRole#parent_database_role_name}
   */
   readonly parentDatabaseRoleName?: string;
   /**
   * The fully qualified name of the parent account role which will create a parent-child relationship between the roles.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/grant_database_role#parent_role_name GrantDatabaseRole#parent_role_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/grant_database_role#parent_role_name GrantDatabaseRole#parent_role_name}
   */
   readonly parentRoleName?: string;
   /**
   * The fully qualified name of the share on which privileges will be granted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/grant_database_role#share_name GrantDatabaseRole#share_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/grant_database_role#share_name GrantDatabaseRole#share_name}
   */
   readonly shareName?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/grant_database_role snowflake_grant_database_role}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/grant_database_role snowflake_grant_database_role}
 */
 export class GrantDatabaseRole extends cdktf.TerraformResource {
 
@@ -62,7 +62,7 @@ export class GrantDatabaseRole extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GrantDatabaseRole resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GrantDatabaseRole to import
-  * @param importFromId The id of the existing GrantDatabaseRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/grant_database_role#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GrantDatabaseRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/grant_database_role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GrantDatabaseRole to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +74,7 @@ export class GrantDatabaseRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/grant_database_role snowflake_grant_database_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/grant_database_role snowflake_grant_database_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +85,7 @@ export class GrantDatabaseRole extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_grant_database_role',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.85.0',
+        providerVersion: '0.86.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,

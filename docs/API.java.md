@@ -120,6 +120,7 @@ The following submodules are available:
 - [user](./user.java.md)
 - [userGrant](./userGrant.java.md)
 - [userOwnershipGrant](./userOwnershipGrant.java.md)
+- [userPasswordPolicyAttachment](./userPasswordPolicyAttachment.java.md)
 - [userPublicKeys](./userPublicKeys.java.md)
 - [view](./view.java.md)
 - [viewGrant](./viewGrant.java.md)

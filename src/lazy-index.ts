@@ -81,6 +81,7 @@ Object.defineProperty(exports, 'unsafeExecute', { get: function () { return requ
 Object.defineProperty(exports, 'user', { get: function () { return require('./user'); } });
 Object.defineProperty(exports, 'userGrant', { get: function () { return require('./user-grant'); } });
 Object.defineProperty(exports, 'userOwnershipGrant', { get: function () { return require('./user-ownership-grant'); } });
+Object.defineProperty(exports, 'userPasswordPolicyAttachment', { get: function () { return require('./user-password-policy-attachment'); } });
 Object.defineProperty(exports, 'userPublicKeys', { get: function () { return require('./user-public-keys'); } });
 Object.defineProperty(exports, 'view', { get: function () { return require('./view'); } });
 Object.defineProperty(exports, 'viewGrant', { get: function () { return require('./view-grant'); } });

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/scim_integration
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/scim_integration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface ScimIntegrationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/scim_integration#id ScimIntegration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/scim_integration#id ScimIntegration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,31 +22,31 @@ export interface ScimIntegrationConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies the name of the SCIM integration. This name follows the rules for Object Identifiers. The name should be unique among security integrations in your account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/scim_integration#name ScimIntegration#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/scim_integration#name ScimIntegration#name}
   */
   readonly name: string;
   /**
   * Specifies an existing network policy active for your account. The network policy restricts the list of user IP addresses when exchanging an authorization code for an access or refresh token and when using a refresh token to obtain a new access token. If this parameter is not set, the network policy for the account (if any) is used instead.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/scim_integration#network_policy ScimIntegration#network_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/scim_integration#network_policy ScimIntegration#network_policy}
   */
   readonly networkPolicy?: string;
   /**
   * Specify the SCIM role in Snowflake that owns any users and roles that are imported from the identity provider into Snowflake using SCIM.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/scim_integration#provisioner_role ScimIntegration#provisioner_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/scim_integration#provisioner_role ScimIntegration#provisioner_role}
   */
   readonly provisionerRole: string;
   /**
   * Specifies the client type for the scim integration
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/scim_integration#scim_client ScimIntegration#scim_client}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/scim_integration#scim_client ScimIntegration#scim_client}
   */
   readonly scimClient: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/scim_integration snowflake_scim_integration}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/scim_integration snowflake_scim_integration}
 */
 export class ScimIntegration extends cdktf.TerraformResource {
 
@@ -62,7 +62,7 @@ export class ScimIntegration extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ScimIntegration resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ScimIntegration to import
-  * @param importFromId The id of the existing ScimIntegration that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/scim_integration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ScimIntegration that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/scim_integration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ScimIntegration to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +74,7 @@ export class ScimIntegration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/scim_integration snowflake_scim_integration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/scim_integration snowflake_scim_integration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +85,7 @@ export class ScimIntegration extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_scim_integration',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.85.0',
+        providerVersion: '0.86.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,

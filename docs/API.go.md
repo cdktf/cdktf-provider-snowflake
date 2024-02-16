@@ -120,6 +120,7 @@ The following submodules are available:
 - [user](./user.go.md)
 - [userGrant](./userGrant.go.md)
 - [userOwnershipGrant](./userOwnershipGrant.go.md)
+- [userPasswordPolicyAttachment](./userPasswordPolicyAttachment.go.md)
 - [userPublicKeys](./userPublicKeys.go.md)
 - [view](./view.go.md)
 - [viewGrant](./viewGrant.go.md)

@@ -81,6 +81,7 @@ export * as unsafeExecute from './unsafe-execute';
 export * as user from './user';
 export * as userGrant from './user-grant';
 export * as userOwnershipGrant from './user-ownership-grant';
+export * as userPasswordPolicyAttachment from './user-password-policy-attachment';
 export * as userPublicKeys from './user-public-keys';
 export * as view from './view';
 export * as viewGrant from './view-grant';
