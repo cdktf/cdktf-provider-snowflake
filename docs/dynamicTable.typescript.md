@@ -4,7 +4,7 @@
 
 ### DynamicTable <a name="DynamicTable" id="@cdktf/provider-snowflake.dynamicTable.DynamicTable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/dynamic_table snowflake_dynamic_table}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/dynamic_table snowflake_dynamic_table}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dynamicTable.DynamicTable.Initializer"></a>
 
@@ -76,7 +76,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.putTargetLag">putTargetLag</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.resetComment">resetComment</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.resetInitialize">resetInitialize</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.resetOrReplace">resetOrReplace</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.resetRefreshMode">resetRefreshMode</a></code> | *No description.* |
 
 ---
 
@@ -392,10 +394,22 @@ public resetComment(): void
 public resetId(): void
 ```
 
+##### `resetInitialize` <a name="resetInitialize" id="@cdktf/provider-snowflake.dynamicTable.DynamicTable.resetInitialize"></a>
+
+```typescript
+public resetInitialize(): void
+```
+
 ##### `resetOrReplace` <a name="resetOrReplace" id="@cdktf/provider-snowflake.dynamicTable.DynamicTable.resetOrReplace"></a>
 
 ```typescript
 public resetOrReplace(): void
+```
+
+##### `resetRefreshMode` <a name="resetRefreshMode" id="@cdktf/provider-snowflake.dynamicTable.DynamicTable.resetRefreshMode"></a>
+
+```typescript
+public resetRefreshMode(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -501,7 +515,7 @@ The construct id used in the generated config for the DynamicTable to import.
 
 The id of the existing DynamicTable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/dynamic_table#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/dynamic_table#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -534,12 +548,12 @@ Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.automaticClustering">automaticClustering</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.bytes">bytes</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.clusterBy">clusterBy</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.createdOn">createdOn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.dataTimestamp">dataTimestamp</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.isClone">isClone</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.isReplica">isReplica</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.lastSuspendedOn">lastSuspendedOn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.owner">owner</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.refreshMode">refreshMode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.refreshModeReason">refreshModeReason</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.rows">rows</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.schedulingState">schedulingState</a></code> | <code>string</code> | *No description.* |
@@ -547,18 +561,22 @@ Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.commentInput">commentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.databaseInput">databaseInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.initializeInput">initializeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.orReplaceInput">orReplaceInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.queryInput">queryInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.refreshModeInput">refreshModeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.schemaInput">schemaInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.targetLagInput">targetLagInput</a></code> | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTargetLag">DynamicTableTargetLag</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.warehouseInput">warehouseInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.comment">comment</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.database">database</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.initialize">initialize</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.orReplace">orReplace</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.query">query</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.refreshMode">refreshMode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.schema">schema</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.warehouse">warehouse</a></code> | <code>string</code> | *No description.* |
 
@@ -736,6 +754,16 @@ public readonly clusterBy: string;
 
 ---
 
+##### `createdOn`<sup>Required</sup> <a name="createdOn" id="@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.createdOn"></a>
+
+```typescript
+public readonly createdOn: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `dataTimestamp`<sup>Required</sup> <a name="dataTimestamp" id="@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.dataTimestamp"></a>
 
 ```typescript
@@ -780,16 +808,6 @@ public readonly lastSuspendedOn: string;
 
 ```typescript
 public readonly owner: string;
-```
-
-- *Type:* string
-
----
-
-##### `refreshMode`<sup>Required</sup> <a name="refreshMode" id="@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.refreshMode"></a>
-
-```typescript
-public readonly refreshMode: string;
 ```
 
 - *Type:* string
@@ -866,6 +884,16 @@ public readonly idInput: string;
 
 ---
 
+##### `initializeInput`<sup>Optional</sup> <a name="initializeInput" id="@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.initializeInput"></a>
+
+```typescript
+public readonly initializeInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.nameInput"></a>
 
 ```typescript
@@ -890,6 +918,16 @@ public readonly orReplaceInput: boolean | IResolvable;
 
 ```typescript
 public readonly queryInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `refreshModeInput`<sup>Optional</sup> <a name="refreshModeInput" id="@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.refreshModeInput"></a>
+
+```typescript
+public readonly refreshModeInput: string;
 ```
 
 - *Type:* string
@@ -956,6 +994,16 @@ public readonly id: string;
 
 ---
 
+##### `initialize`<sup>Required</sup> <a name="initialize" id="@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.initialize"></a>
+
+```typescript
+public readonly initialize: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.name"></a>
 
 ```typescript
@@ -980,6 +1028,16 @@ public readonly orReplace: boolean | IResolvable;
 
 ```typescript
 public readonly query: string;
+```
+
+- *Type:* string
+
+---
+
+##### `refreshMode`<sup>Required</sup> <a name="refreshMode" id="@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.refreshMode"></a>
+
+```typescript
+public readonly refreshMode: string;
 ```
 
 - *Type:* string
@@ -1054,8 +1112,10 @@ const dynamicTableConfig: dynamicTable.DynamicTableConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableConfig.property.targetLag">targetLag</a></code> | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTargetLag">DynamicTableTargetLag</a></code> | target_lag block. |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableConfig.property.warehouse">warehouse</a></code> | <code>string</code> | The warehouse in which to create the dynamic table. |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableConfig.property.comment">comment</a></code> | <code>string</code> | Specifies a comment for the dynamic table. |
-| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/dynamic_table#id DynamicTable#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/dynamic_table#id DynamicTable#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableConfig.property.initialize">initialize</a></code> | <code>string</code> | Initialize trigger for the dynamic table. Can only be set on creation. Available options are ON_CREATE and ON_SCHEDULE. |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableConfig.property.orReplace">orReplace</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies whether to replace the dynamic table if it already exists. |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableConfig.property.refreshMode">refreshMode</a></code> | <code>string</code> | INCREMENTAL to use incremental refreshes, FULL to recompute the whole table on every refresh, or AUTO to let Snowflake decide. |
 
 ---
 
@@ -1139,7 +1199,7 @@ public readonly database: string;
 
 The database in which to create the dynamic table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/dynamic_table#database DynamicTable#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/dynamic_table#database DynamicTable#database}
 
 ---
 
@@ -1153,7 +1213,7 @@ public readonly name: string;
 
 Specifies the identifier (i.e. name) for the dynamic table; must be unique for the schema in which the dynamic table is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/dynamic_table#name DynamicTable#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/dynamic_table#name DynamicTable#name}
 
 ---
 
@@ -1167,7 +1227,7 @@ public readonly query: string;
 
 Specifies the query to use to populate the dynamic table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/dynamic_table#query DynamicTable#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/dynamic_table#query DynamicTable#query}
 
 ---
 
@@ -1181,7 +1241,7 @@ public readonly schema: string;
 
 The schema in which to create the dynamic table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/dynamic_table#schema DynamicTable#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/dynamic_table#schema DynamicTable#schema}
 
 ---
 
@@ -1195,7 +1255,7 @@ public readonly targetLag: DynamicTableTargetLag;
 
 target_lag block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/dynamic_table#target_lag DynamicTable#target_lag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/dynamic_table#target_lag DynamicTable#target_lag}
 
 ---
 
@@ -1209,7 +1269,7 @@ public readonly warehouse: string;
 
 The warehouse in which to create the dynamic table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/dynamic_table#warehouse DynamicTable#warehouse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/dynamic_table#warehouse DynamicTable#warehouse}
 
 ---
 
@@ -1223,7 +1283,7 @@ public readonly comment: string;
 
 Specifies a comment for the dynamic table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/dynamic_table#comment DynamicTable#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/dynamic_table#comment DynamicTable#comment}
 
 ---
 
@@ -1235,10 +1295,24 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/dynamic_table#id DynamicTable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/dynamic_table#id DynamicTable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `initialize`<sup>Optional</sup> <a name="initialize" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableConfig.property.initialize"></a>
+
+```typescript
+public readonly initialize: string;
+```
+
+- *Type:* string
+
+Initialize trigger for the dynamic table. Can only be set on creation. Available options are ON_CREATE and ON_SCHEDULE.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/dynamic_table#initialize DynamicTable#initialize}
 
 ---
 
@@ -1252,7 +1326,21 @@ public readonly orReplace: boolean | IResolvable;
 
 Specifies whether to replace the dynamic table if it already exists.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/dynamic_table#or_replace DynamicTable#or_replace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/dynamic_table#or_replace DynamicTable#or_replace}
+
+---
+
+##### `refreshMode`<sup>Optional</sup> <a name="refreshMode" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableConfig.property.refreshMode"></a>
+
+```typescript
+public readonly refreshMode: string;
+```
+
+- *Type:* string
+
+INCREMENTAL to use incremental refreshes, FULL to recompute the whole table on every refresh, or AUTO to let Snowflake decide.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/dynamic_table#refresh_mode DynamicTable#refresh_mode}
 
 ---
 
@@ -1285,7 +1373,7 @@ public readonly downstream: boolean | IResolvable;
 
 Specifies whether the target lag time is downstream.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/dynamic_table#downstream DynamicTable#downstream}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/dynamic_table#downstream DynamicTable#downstream}
 
 ---
 
@@ -1299,7 +1387,7 @@ public readonly maximumDuration: string;
 
 Specifies the maximum target lag time for the dynamic table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/dynamic_table#maximum_duration DynamicTable#maximum_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/dynamic_table#maximum_duration DynamicTable#maximum_duration}
 
 ---
 

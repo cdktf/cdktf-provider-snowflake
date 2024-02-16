@@ -4,12 +4,12 @@
 
 ### SchemaGrant <a name="SchemaGrant" id="@cdktf/provider-snowflake.schemaGrant.SchemaGrant"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/schema_grant snowflake_schema_grant}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/schema_grant snowflake_schema_grant}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schemaGrant.SchemaGrant.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schemagrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schemagrant"
 
 schemagrant.NewSchemaGrant(scope Construct, id *string, config SchemaGrantConfig) SchemaGrant
 ```
@@ -448,7 +448,7 @@ func ResetWithGrantOption()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.schemaGrant.SchemaGrant.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schemagrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schemagrant"
 
 schemagrant.SchemaGrant_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.schemaGrant.SchemaGrant.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schemagrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schemagrant"
 
 schemagrant.SchemaGrant_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ schemagrant.SchemaGrant_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.schemaGrant.SchemaGrant.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schemagrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schemagrant"
 
 schemagrant.SchemaGrant_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ schemagrant.SchemaGrant_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.schemaGrant.SchemaGrant.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schemagrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schemagrant"
 
 schemagrant.SchemaGrant_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -537,7 +537,7 @@ The construct id used in the generated config for the SchemaGrant to import.
 
 The id of the existing SchemaGrant that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/schema_grant#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/schema_grant#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -979,7 +979,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.schemaGrant.SchemaGrantConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schemagrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schemagrant"
 
 &schemagrant.SchemaGrantConfig {
 	Connection: interface{},
@@ -1016,7 +1016,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schemagrant"
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrantConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrantConfig.property.databaseName">DatabaseName</a></code> | <code>*string</code> | The name of the database containing the schema on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrantConfig.property.enableMultipleGrants">EnableMultipleGrants</a></code> | <code>interface{}</code> | When this is set to true, multiple grants of the same type can be created. |
-| <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrantConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/schema_grant#id SchemaGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrantConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/schema_grant#id SchemaGrant#id}. |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrantConfig.property.onAll">OnAll</a></code> | <code>interface{}</code> | When this is set to true, apply this grant on all schemas in the given database. |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrantConfig.property.onFuture">OnFuture</a></code> | <code>interface{}</code> | When this is set to true, apply this grant on all future schemas in the given database. |
 | <code><a href="#@cdktf/provider-snowflake.schemaGrant.SchemaGrantConfig.property.privilege">Privilege</a></code> | <code>*string</code> | The privilege to grant on the current or future schema. |
@@ -1108,7 +1108,7 @@ DatabaseName *string
 
 The name of the database containing the schema on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/schema_grant#database_name SchemaGrant#database_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/schema_grant#database_name SchemaGrant#database_name}
 
 ---
 
@@ -1124,7 +1124,7 @@ When this is set to true, multiple grants of the same type can be created.
 
 This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/schema_grant#enable_multiple_grants SchemaGrant#enable_multiple_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/schema_grant#enable_multiple_grants SchemaGrant#enable_multiple_grants}
 
 ---
 
@@ -1136,7 +1136,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/schema_grant#id SchemaGrant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/schema_grant#id SchemaGrant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1155,7 +1155,7 @@ When this is set to true, apply this grant on all schemas in the given database.
 
 The schema_name and shares fields must be unset in order to use on_all. Cannot be used together with on_future.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/schema_grant#on_all SchemaGrant#on_all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/schema_grant#on_all SchemaGrant#on_all}
 
 ---
 
@@ -1171,7 +1171,7 @@ When this is set to true, apply this grant on all future schemas in the given da
 
 The schema_name and shares fields must be unset in order to use on_future. Cannot be used together with on_all.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/schema_grant#on_future SchemaGrant#on_future}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/schema_grant#on_future SchemaGrant#on_future}
 
 ---
 
@@ -1187,7 +1187,7 @@ The privilege to grant on the current or future schema.
 
 Note that if "OWNERSHIP" is specified, ensure that the role that terraform is using is granted access. To grant all privileges, use the value `ALL PRIVILEGES`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/schema_grant#privilege SchemaGrant#privilege}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/schema_grant#privilege SchemaGrant#privilege}
 
 ---
 
@@ -1203,7 +1203,7 @@ The name of the role to revert ownership to on destroy.
 
 Has no effect unless `privilege` is set to `OWNERSHIP`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/schema_grant#revert_ownership_to_role_name SchemaGrant#revert_ownership_to_role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/schema_grant#revert_ownership_to_role_name SchemaGrant#revert_ownership_to_role_name}
 
 ---
 
@@ -1217,7 +1217,7 @@ Roles *[]*string
 
 Grants privilege to these roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/schema_grant#roles SchemaGrant#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/schema_grant#roles SchemaGrant#roles}
 
 ---
 
@@ -1231,7 +1231,7 @@ SchemaName *string
 
 The name of the schema on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/schema_grant#schema_name SchemaGrant#schema_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/schema_grant#schema_name SchemaGrant#schema_name}
 
 ---
 
@@ -1245,7 +1245,7 @@ Shares *[]*string
 
 Grants privilege to these shares (only valid if on_future and on_all are unset).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/schema_grant#shares SchemaGrant#shares}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/schema_grant#shares SchemaGrant#shares}
 
 ---
 
@@ -1259,7 +1259,7 @@ WithGrantOption interface{}
 
 When this is set to true, allows the recipient role to grant the privileges to other roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/resources/schema_grant#with_grant_option SchemaGrant#with_grant_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/schema_grant#with_grant_option SchemaGrant#with_grant_option}
 
 ---
 

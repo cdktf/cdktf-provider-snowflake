@@ -4,7 +4,7 @@
 
 ### DataSnowflakeExternalTables <a name="DataSnowflakeExternalTables" id="@cdktf/provider-snowflake.dataSnowflakeExternalTables.DataSnowflakeExternalTables"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/data-sources/external_tables snowflake_external_tables}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/data-sources/external_tables snowflake_external_tables}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeExternalTables.DataSnowflakeExternalTables.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataSnowflakeExternalTable
 
 The id of the existing DataSnowflakeExternalTables that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/data-sources/external_tables#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/data-sources/external_tables#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -645,7 +645,7 @@ const dataSnowflakeExternalTablesConfig: dataSnowflakeExternalTables.DataSnowfla
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeExternalTables.DataSnowflakeExternalTablesConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeExternalTables.DataSnowflakeExternalTablesConfig.property.database">database</a></code> | <code>string</code> | The database from which to return the schemas from. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeExternalTables.DataSnowflakeExternalTablesConfig.property.schema">schema</a></code> | <code>string</code> | The schema from which to return the external tables from. |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeExternalTables.DataSnowflakeExternalTablesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/data-sources/external_tables#id DataSnowflakeExternalTables#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeExternalTables.DataSnowflakeExternalTablesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/data-sources/external_tables#id DataSnowflakeExternalTables#id}. |
 
 ---
 
@@ -729,7 +729,7 @@ public readonly database: string;
 
 The database from which to return the schemas from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/data-sources/external_tables#database DataSnowflakeExternalTables#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/data-sources/external_tables#database DataSnowflakeExternalTables#database}
 
 ---
 
@@ -743,7 +743,7 @@ public readonly schema: string;
 
 The schema from which to return the external tables from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/data-sources/external_tables#schema DataSnowflakeExternalTables#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/data-sources/external_tables#schema DataSnowflakeExternalTables#schema}
 
 ---
 
@@ -755,7 +755,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.85.0/docs/data-sources/external_tables#id DataSnowflakeExternalTables#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/data-sources/external_tables#id DataSnowflakeExternalTables#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

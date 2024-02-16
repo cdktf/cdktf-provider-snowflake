@@ -120,6 +120,7 @@ The following submodules are available:
 - [user](./user.python.md)
 - [userGrant](./userGrant.python.md)
 - [userOwnershipGrant](./userOwnershipGrant.python.md)
+- [userPasswordPolicyAttachment](./userPasswordPolicyAttachment.python.md)
 - [userPublicKeys](./userPublicKeys.python.md)
 - [view](./view.python.md)
 - [viewGrant](./viewGrant.python.md)

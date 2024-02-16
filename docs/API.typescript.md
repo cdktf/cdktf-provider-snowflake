@@ -120,6 +120,7 @@ The following submodules are available:
 - [user](./user.typescript.md)
 - [userGrant](./userGrant.typescript.md)
 - [userOwnershipGrant](./userOwnershipGrant.typescript.md)
+- [userPasswordPolicyAttachment](./userPasswordPolicyAttachment.typescript.md)
 - [userPublicKeys](./userPublicKeys.typescript.md)
 - [view](./view.typescript.md)
 - [viewGrant](./viewGrant.typescript.md)

@@ -120,6 +120,7 @@ The following submodules are available:
 - [user](./user.csharp.md)
 - [userGrant](./userGrant.csharp.md)
 - [userOwnershipGrant](./userOwnershipGrant.csharp.md)
+- [userPasswordPolicyAttachment](./userPasswordPolicyAttachment.csharp.md)
 - [userPublicKeys](./userPublicKeys.csharp.md)
 - [view](./view.csharp.md)
 - [viewGrant](./viewGrant.csharp.md)
