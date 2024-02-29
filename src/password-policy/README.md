@@ -1,3 +1,3 @@
 # `snowflake_password_policy`
 
-Refer to the Terraform Registry for docs: [`snowflake_password_policy`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/password_policy).
+Refer to the Terraform Registry for docs: [`snowflake_password_policy`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/password_policy).

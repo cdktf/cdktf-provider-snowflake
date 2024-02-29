@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,41 +10,35 @@ export interface TableConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies whether to enable change tracking on the table. Default false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#change_tracking Table#change_tracking}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#change_tracking Table#change_tracking}
   */
   readonly changeTracking?: boolean | cdktf.IResolvable;
   /**
   * A list of one or more table columns/expressions to be used as clustering key(s) for the table
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#cluster_by Table#cluster_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#cluster_by Table#cluster_by}
   */
   readonly clusterBy?: string[];
   /**
   * Specifies a comment for the table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#comment Table#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#comment Table#comment}
   */
   readonly comment?: string;
   /**
-  * Specifies the retention period for the table so that Time Travel actions (SELECT, CLONE, UNDROP) can be performed on historical data in the table. Default value is 1, if you wish to inherit the parent schema setting then pass in the schema attribute to this argument.
+  * Specifies the retention period for the table so that Time Travel actions (SELECT, CLONE, UNDROP) can be performed on historical data in the table. If you wish to inherit the parent schema setting then pass in the schema attribute to this argument or do not fill this parameter at all; the default value for this field is -1, which is a fallback to use Snowflake default - in this case the schema value
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#data_retention_days Table#data_retention_days}
-  */
-  readonly dataRetentionDays?: number;
-  /**
-  * Specifies the retention period for the table so that Time Travel actions (SELECT, CLONE, UNDROP) can be performed on historical data in the table. Default value is 1, if you wish to inherit the parent schema setting then pass in the schema attribute to this argument.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#data_retention_time_in_days Table#data_retention_time_in_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#data_retention_time_in_days Table#data_retention_time_in_days}
   */
   readonly dataRetentionTimeInDays?: number;
   /**
   * The database in which to create the table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#database Table#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#database Table#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#id Table#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#id Table#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -58,31 +47,31 @@ export interface TableConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies the identifier for the table; must be unique for the database and schema in which the table is created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#name Table#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#name Table#name}
   */
   readonly name: string;
   /**
   * The schema in which to create the table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#schema Table#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#schema Table#schema}
   */
   readonly schema: string;
   /**
   * column block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#column Table#column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#column Table#column}
   */
   readonly column: TableColumn[] | cdktf.IResolvable;
   /**
   * primary_key block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#primary_key Table#primary_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#primary_key Table#primary_key}
   */
   readonly primaryKey?: TablePrimaryKey;
   /**
   * tag block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#tag Table#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#tag Table#tag}
   */
   readonly tag?: TableTag[] | cdktf.IResolvable;
 }
@@ -90,19 +79,19 @@ export interface TableColumnDefault {
   /**
   * The default constant value for the column
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#constant Table#constant}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#constant Table#constant}
   */
   readonly constant?: string;
   /**
   * The default expression value for the column
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#expression Table#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#expression Table#expression}
   */
   readonly expression?: string;
   /**
   * The default sequence to use for the column
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#sequence Table#sequence}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#sequence Table#sequence}
   */
   readonly sequence?: string;
 }
@@ -246,13 +235,13 @@ export interface TableColumnIdentity {
   /**
   * The number to start incrementing at.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#start_num Table#start_num}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#start_num Table#start_num}
   */
   readonly startNum?: number;
   /**
   * Step size to increment by.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#step_num Table#step_num}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#step_num Table#step_num}
   */
   readonly stepNum?: number;
 }
@@ -365,45 +354,51 @@ export class TableColumnIdentityOutputReference extends cdktf.ComplexObject {
 }
 export interface TableColumn {
   /**
+  * Column collation, e.g. utf8
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#collate Table#collate}
+  */
+  readonly collate?: string;
+  /**
   * Column comment
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#comment Table#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#comment Table#comment}
   */
   readonly comment?: string;
   /**
   * Masking policy to apply on column. It has to be a fully qualified name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#masking_policy Table#masking_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#masking_policy Table#masking_policy}
   */
   readonly maskingPolicy?: string;
   /**
   * Column name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#name Table#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#name Table#name}
   */
   readonly name: string;
   /**
   * Whether this column can contain null values. **Note**: Depending on your Snowflake version, the default value will not suffice if this column is used in a primary key constraint.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#nullable Table#nullable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#nullable Table#nullable}
   */
   readonly nullable?: boolean | cdktf.IResolvable;
   /**
   * Column type, e.g. VARIANT
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#type Table#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#type Table#type}
   */
   readonly type: string;
   /**
   * default block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#default Table#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#default Table#default}
   */
   readonly default?: TableColumnDefault;
   /**
   * identity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#identity Table#identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#identity Table#identity}
   */
   readonly identity?: TableColumnIdentity;
 }
@@ -414,6 +409,7 @@ export function tableColumnToTerraform(struct?: TableColumn | cdktf.IResolvable)
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    collate: cdktf.stringToTerraform(struct!.collate),
     comment: cdktf.stringToTerraform(struct!.comment),
     masking_policy: cdktf.stringToTerraform(struct!.maskingPolicy),
     name: cdktf.stringToTerraform(struct!.name),
@@ -431,6 +427,12 @@ export function tableColumnToHclTerraform(struct?: TableColumn | cdktf.IResolvab
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
+    collate: {
+      value: cdktf.stringToHclTerraform(struct!.collate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     comment: {
       value: cdktf.stringToHclTerraform(struct!.comment),
       isBlock: false,
@@ -499,6 +501,10 @@ export class TableColumnOutputReference extends cdktf.ComplexObject {
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._collate !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.collate = this._collate;
+    }
     if (this._comment !== undefined) {
       hasAnyValues = true;
       internalValueResult.comment = this._comment;
@@ -534,6 +540,7 @@ export class TableColumnOutputReference extends cdktf.ComplexObject {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
+      this._collate = undefined;
       this._comment = undefined;
       this._maskingPolicy = undefined;
       this._name = undefined;
@@ -549,6 +556,7 @@ export class TableColumnOutputReference extends cdktf.ComplexObject {
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
+      this._collate = value.collate;
       this._comment = value.comment;
       this._maskingPolicy = value.maskingPolicy;
       this._name = value.name;
@@ -557,6 +565,22 @@ export class TableColumnOutputReference extends cdktf.ComplexObject {
       this._default.internalValue = value.default;
       this._identity.internalValue = value.identity;
     }
+  }
+
+  // collate - computed: false, optional: true, required: false
+  private _collate?: string; 
+  public get collate() {
+    return this.getStringAttribute('collate');
+  }
+  public set collate(value: string) {
+    this._collate = value;
+  }
+  public resetCollate() {
+    this._collate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get collateInput() {
+    return this._collate;
   }
 
   // comment - computed: false, optional: true, required: false
@@ -689,13 +713,13 @@ export interface TablePrimaryKey {
   /**
   * Columns to use in primary key
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#keys Table#keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#keys Table#keys}
   */
   readonly keys: string[];
   /**
   * Name of constraint
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#name Table#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#name Table#name}
   */
   readonly name?: string;
 }
@@ -807,25 +831,25 @@ export interface TableTag {
   /**
   * Name of the database that the tag was created in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#database Table#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#database Table#database}
   */
   readonly database?: string;
   /**
   * Tag name, e.g. department.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#name Table#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#name Table#name}
   */
   readonly name: string;
   /**
   * Name of the schema that the tag was created in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#schema Table#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#schema Table#schema}
   */
   readonly schema?: string;
   /**
   * Tag value, e.g. marketing_info.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#value Table#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#value Table#value}
   */
   readonly value: string;
 }
@@ -1022,7 +1046,7 @@ export class TableTagList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table snowflake_table}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table snowflake_table}
 */
 export class Table extends cdktf.TerraformResource {
 
@@ -1038,7 +1062,7 @@ export class Table extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Table resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Table to import
-  * @param importFromId The id of the existing Table that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Table that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Table to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1050,7 +1074,7 @@ export class Table extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table snowflake_table} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table snowflake_table} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1061,7 +1085,7 @@ export class Table extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_table',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.86.0',
+        providerVersion: '0.87.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
@@ -1075,7 +1099,6 @@ export class Table extends cdktf.TerraformResource {
     this._changeTracking = config.changeTracking;
     this._clusterBy = config.clusterBy;
     this._comment = config.comment;
-    this._dataRetentionDays = config.dataRetentionDays;
     this._dataRetentionTimeInDays = config.dataRetentionTimeInDays;
     this._database = config.database;
     this._id = config.id;
@@ -1136,22 +1159,6 @@ export class Table extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get commentInput() {
     return this._comment;
-  }
-
-  // data_retention_days - computed: false, optional: true, required: false
-  private _dataRetentionDays?: number; 
-  public get dataRetentionDays() {
-    return this.getNumberAttribute('data_retention_days');
-  }
-  public set dataRetentionDays(value: number) {
-    this._dataRetentionDays = value;
-  }
-  public resetDataRetentionDays() {
-    this._dataRetentionDays = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get dataRetentionDaysInput() {
-    return this._dataRetentionDays;
   }
 
   // data_retention_time_in_days - computed: false, optional: true, required: false
@@ -1289,7 +1296,6 @@ export class Table extends cdktf.TerraformResource {
       change_tracking: cdktf.booleanToTerraform(this._changeTracking),
       cluster_by: cdktf.listMapper(cdktf.stringToTerraform, false)(this._clusterBy),
       comment: cdktf.stringToTerraform(this._comment),
-      data_retention_days: cdktf.numberToTerraform(this._dataRetentionDays),
       data_retention_time_in_days: cdktf.numberToTerraform(this._dataRetentionTimeInDays),
       database: cdktf.stringToTerraform(this._database),
       id: cdktf.stringToTerraform(this._id),
@@ -1320,12 +1326,6 @@ export class Table extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      data_retention_days: {
-        value: cdktf.numberToHclTerraform(this._dataRetentionDays),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "number",
       },
       data_retention_time_in_days: {
         value: cdktf.numberToHclTerraform(this._dataRetentionTimeInDays),

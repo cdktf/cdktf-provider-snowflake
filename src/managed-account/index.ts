@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/managed_account
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/managed_account
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +10,23 @@ export interface ManagedAccountConfig extends cdktf.TerraformMetaArguments {
   /**
   * Identifier, as well as login name, for the initial user in the managed account. This user serves as the account administrator for the account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/managed_account#admin_name ManagedAccount#admin_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/managed_account#admin_name ManagedAccount#admin_name}
   */
   readonly adminName: string;
   /**
   * Password for the initial user in the managed account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/managed_account#admin_password ManagedAccount#admin_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/managed_account#admin_password ManagedAccount#admin_password}
   */
   readonly adminPassword: string;
   /**
   * Specifies a comment for the managed account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/managed_account#comment ManagedAccount#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/managed_account#comment ManagedAccount#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/managed_account#id ManagedAccount#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/managed_account#id ManagedAccount#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,19 +35,19 @@ export interface ManagedAccountConfig extends cdktf.TerraformMetaArguments {
   /**
   * Identifier for the managed account; must be unique for your account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/managed_account#name ManagedAccount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/managed_account#name ManagedAccount#name}
   */
   readonly name: string;
   /**
   * Specifies the type of managed account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/managed_account#type ManagedAccount#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/managed_account#type ManagedAccount#type}
   */
   readonly type?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/managed_account snowflake_managed_account}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/managed_account snowflake_managed_account}
 */
 export class ManagedAccount extends cdktf.TerraformResource {
 
@@ -68,7 +63,7 @@ export class ManagedAccount extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ManagedAccount resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ManagedAccount to import
-  * @param importFromId The id of the existing ManagedAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/managed_account#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ManagedAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/managed_account#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ManagedAccount to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -80,7 +75,7 @@ export class ManagedAccount extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/managed_account snowflake_managed_account} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/managed_account snowflake_managed_account} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -91,7 +86,7 @@ export class ManagedAccount extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_managed_account',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.86.0',
+        providerVersion: '0.87.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
