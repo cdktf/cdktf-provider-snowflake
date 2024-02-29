@@ -4,7 +4,7 @@
 
 ### Table <a name="Table" id="@cdktf/provider-snowflake.table.Table"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table snowflake_table}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table snowflake_table}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.table.Table.Initializer"></a>
 
@@ -28,7 +28,6 @@ table.Table(
   change_tracking: typing.Union[bool, IResolvable] = None,
   cluster_by: typing.List[str] = None,
   comment: str = None,
-  data_retention_days: typing.Union[int, float] = None,
   data_retention_time_in_days: typing.Union[int, float] = None,
   id: str = None,
   primary_key: TablePrimaryKey = None,
@@ -54,9 +53,8 @@ table.Table(
 | <code><a href="#@cdktf/provider-snowflake.table.Table.Initializer.parameter.changeTracking">change_tracking</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether to enable change tracking on the table. Default false. |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.Initializer.parameter.clusterBy">cluster_by</a></code> | <code>typing.List[str]</code> | A list of one or more table columns/expressions to be used as clustering key(s) for the table. |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.Initializer.parameter.comment">comment</a></code> | <code>str</code> | Specifies a comment for the table. |
-| <code><a href="#@cdktf/provider-snowflake.table.Table.Initializer.parameter.dataRetentionDays">data_retention_days</a></code> | <code>typing.Union[int, float]</code> | Specifies the retention period for the table so that Time Travel actions (SELECT, CLONE, UNDROP) can be performed on historical data in the table. |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.Initializer.parameter.dataRetentionTimeInDays">data_retention_time_in_days</a></code> | <code>typing.Union[int, float]</code> | Specifies the retention period for the table so that Time Travel actions (SELECT, CLONE, UNDROP) can be performed on historical data in the table. |
-| <code><a href="#@cdktf/provider-snowflake.table.Table.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#id Table#id}. |
+| <code><a href="#@cdktf/provider-snowflake.table.Table.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#id Table#id}. |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.Initializer.parameter.primaryKey">primary_key</a></code> | <code><a href="#@cdktf/provider-snowflake.table.TablePrimaryKey">TablePrimaryKey</a></code> | primary_key block. |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.Initializer.parameter.tag">tag</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-snowflake.table.TableTag">TableTag</a>]]</code> | tag block. |
 
@@ -128,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 column block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#column Table#column}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#column Table#column}
 
 ---
 
@@ -138,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The database in which to create the table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#database Table#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#database Table#database}
 
 ---
 
@@ -150,7 +148,7 @@ Specifies the identifier for the table;
 
 must be unique for the database and schema in which the table is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#name Table#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#name Table#name}
 
 ---
 
@@ -160,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The schema in which to create the table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#schema Table#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#schema Table#schema}
 
 ---
 
@@ -170,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies whether to enable change tracking on the table. Default false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#change_tracking Table#change_tracking}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#change_tracking Table#change_tracking}
 
 ---
 
@@ -180,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 A list of one or more table columns/expressions to be used as clustering key(s) for the table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#cluster_by Table#cluster_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#cluster_by Table#cluster_by}
 
 ---
 
@@ -190,19 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies a comment for the table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#comment Table#comment}
-
----
-
-##### `data_retention_days`<sup>Optional</sup> <a name="data_retention_days" id="@cdktf/provider-snowflake.table.Table.Initializer.parameter.dataRetentionDays"></a>
-
-- *Type:* typing.Union[int, float]
-
-Specifies the retention period for the table so that Time Travel actions (SELECT, CLONE, UNDROP) can be performed on historical data in the table.
-
-Default value is 1, if you wish to inherit the parent schema setting then pass in the schema attribute to this argument.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#data_retention_days Table#data_retention_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#comment Table#comment}
 
 ---
 
@@ -212,9 +198,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the retention period for the table so that Time Travel actions (SELECT, CLONE, UNDROP) can be performed on historical data in the table.
 
-Default value is 1, if you wish to inherit the parent schema setting then pass in the schema attribute to this argument.
+If you wish to inherit the parent schema setting then pass in the schema attribute to this argument or do not fill this parameter at all; the default value for this field is -1, which is a fallback to use Snowflake default - in this case the schema value
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#data_retention_time_in_days Table#data_retention_time_in_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#data_retention_time_in_days Table#data_retention_time_in_days}
 
 ---
 
@@ -222,7 +208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#id Table#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#id Table#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -235,7 +221,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 primary_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#primary_key Table#primary_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#primary_key Table#primary_key}
 
 ---
 
@@ -245,7 +231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 tag block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#tag Table#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#tag Table#tag}
 
 ---
 
@@ -282,7 +268,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 | <code><a href="#@cdktf/provider-snowflake.table.Table.resetChangeTracking">reset_change_tracking</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.resetClusterBy">reset_cluster_by</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.resetComment">reset_comment</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.table.Table.resetDataRetentionDays">reset_data_retention_days</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.resetDataRetentionTimeInDays">reset_data_retention_time_in_days</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.resetPrimaryKey">reset_primary_key</a></code> | *No description.* |
@@ -644,7 +629,7 @@ def put_primary_key(
 
 Columns to use in primary key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#keys Table#keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#keys Table#keys}
 
 ---
 
@@ -654,7 +639,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Name of constraint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#name Table#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#name Table#name}
 
 ---
 
@@ -688,12 +673,6 @@ def reset_cluster_by() -> None
 
 ```python
 def reset_comment() -> None
-```
-
-##### `reset_data_retention_days` <a name="reset_data_retention_days" id="@cdktf/provider-snowflake.table.Table.resetDataRetentionDays"></a>
-
-```python
-def reset_data_retention_days() -> None
 ```
 
 ##### `reset_data_retention_time_in_days` <a name="reset_data_retention_time_in_days" id="@cdktf/provider-snowflake.table.Table.resetDataRetentionTimeInDays"></a>
@@ -834,7 +813,7 @@ The construct id used in the generated config for the Table to import.
 
 The id of the existing Table that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -874,7 +853,6 @@ Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 | <code><a href="#@cdktf/provider-snowflake.table.Table.property.columnInput">column_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-snowflake.table.TableColumn">TableColumn</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.property.commentInput">comment_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.property.databaseInput">database_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.table.Table.property.dataRetentionDaysInput">data_retention_days_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.property.dataRetentionTimeInDaysInput">data_retention_time_in_days_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
@@ -885,7 +863,6 @@ Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 | <code><a href="#@cdktf/provider-snowflake.table.Table.property.clusterBy">cluster_by</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.property.comment">comment</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.property.database">database</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.table.Table.property.dataRetentionDays">data_retention_days</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.property.dataRetentionTimeInDays">data_retention_time_in_days</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.property.name">name</a></code> | <code>str</code> | *No description.* |
@@ -1135,16 +1112,6 @@ database_input: str
 
 ---
 
-##### `data_retention_days_input`<sup>Optional</sup> <a name="data_retention_days_input" id="@cdktf/provider-snowflake.table.Table.property.dataRetentionDaysInput"></a>
-
-```python
-data_retention_days_input: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
----
-
 ##### `data_retention_time_in_days_input`<sup>Optional</sup> <a name="data_retention_time_in_days_input" id="@cdktf/provider-snowflake.table.Table.property.dataRetentionTimeInDaysInput"></a>
 
 ```python
@@ -1245,16 +1212,6 @@ database: str
 
 ---
 
-##### `data_retention_days`<sup>Required</sup> <a name="data_retention_days" id="@cdktf/provider-snowflake.table.Table.property.dataRetentionDays"></a>
-
-```python
-data_retention_days: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
----
-
 ##### `data_retention_time_in_days`<sup>Required</sup> <a name="data_retention_time_in_days" id="@cdktf/provider-snowflake.table.Table.property.dataRetentionTimeInDays"></a>
 
 ```python
@@ -1325,6 +1282,7 @@ from cdktf_cdktf_provider_snowflake import table
 table.TableColumn(
   name: str,
   type: str,
+  collate: str = None,
   comment: str = None,
   default: TableColumnDefault = None,
   identity: TableColumnIdentity = None,
@@ -1339,6 +1297,7 @@ table.TableColumn(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-snowflake.table.TableColumn.property.name">name</a></code> | <code>str</code> | Column name. |
 | <code><a href="#@cdktf/provider-snowflake.table.TableColumn.property.type">type</a></code> | <code>str</code> | Column type, e.g. VARIANT. |
+| <code><a href="#@cdktf/provider-snowflake.table.TableColumn.property.collate">collate</a></code> | <code>str</code> | Column collation, e.g. utf8. |
 | <code><a href="#@cdktf/provider-snowflake.table.TableColumn.property.comment">comment</a></code> | <code>str</code> | Column comment. |
 | <code><a href="#@cdktf/provider-snowflake.table.TableColumn.property.default">default</a></code> | <code><a href="#@cdktf/provider-snowflake.table.TableColumnDefault">TableColumnDefault</a></code> | default block. |
 | <code><a href="#@cdktf/provider-snowflake.table.TableColumn.property.identity">identity</a></code> | <code><a href="#@cdktf/provider-snowflake.table.TableColumnIdentity">TableColumnIdentity</a></code> | identity block. |
@@ -1357,7 +1316,7 @@ name: str
 
 Column name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#name Table#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#name Table#name}
 
 ---
 
@@ -1371,7 +1330,21 @@ type: str
 
 Column type, e.g. VARIANT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#type Table#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#type Table#type}
+
+---
+
+##### `collate`<sup>Optional</sup> <a name="collate" id="@cdktf/provider-snowflake.table.TableColumn.property.collate"></a>
+
+```python
+collate: str
+```
+
+- *Type:* str
+
+Column collation, e.g. utf8.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#collate Table#collate}
 
 ---
 
@@ -1385,7 +1358,7 @@ comment: str
 
 Column comment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#comment Table#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#comment Table#comment}
 
 ---
 
@@ -1399,7 +1372,7 @@ default: TableColumnDefault
 
 default block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#default Table#default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#default Table#default}
 
 ---
 
@@ -1413,7 +1386,7 @@ identity: TableColumnIdentity
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#identity Table#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#identity Table#identity}
 
 ---
 
@@ -1427,7 +1400,7 @@ masking_policy: str
 
 Masking policy to apply on column. It has to be a fully qualified name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#masking_policy Table#masking_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#masking_policy Table#masking_policy}
 
 ---
 
@@ -1443,7 +1416,7 @@ Whether this column can contain null values.
 
 **Note**: Depending on your Snowflake version, the default value will not suffice if this column is used in a primary key constraint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#nullable Table#nullable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#nullable Table#nullable}
 
 ---
 
@@ -1481,7 +1454,7 @@ constant: str
 
 The default constant value for the column.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#constant Table#constant}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#constant Table#constant}
 
 ---
 
@@ -1495,7 +1468,7 @@ expression: str
 
 The default expression value for the column.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#expression Table#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#expression Table#expression}
 
 ---
 
@@ -1509,7 +1482,7 @@ sequence: str
 
 The default sequence to use for the column.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#sequence Table#sequence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#sequence Table#sequence}
 
 ---
 
@@ -1545,7 +1518,7 @@ start_num: typing.Union[int, float]
 
 The number to start incrementing at.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#start_num Table#start_num}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#start_num Table#start_num}
 
 ---
 
@@ -1559,7 +1532,7 @@ step_num: typing.Union[int, float]
 
 Step size to increment by.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#step_num Table#step_num}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#step_num Table#step_num}
 
 ---
 
@@ -1585,7 +1558,6 @@ table.TableConfig(
   change_tracking: typing.Union[bool, IResolvable] = None,
   cluster_by: typing.List[str] = None,
   comment: str = None,
-  data_retention_days: typing.Union[int, float] = None,
   data_retention_time_in_days: typing.Union[int, float] = None,
   id: str = None,
   primary_key: TablePrimaryKey = None,
@@ -1611,9 +1583,8 @@ table.TableConfig(
 | <code><a href="#@cdktf/provider-snowflake.table.TableConfig.property.changeTracking">change_tracking</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether to enable change tracking on the table. Default false. |
 | <code><a href="#@cdktf/provider-snowflake.table.TableConfig.property.clusterBy">cluster_by</a></code> | <code>typing.List[str]</code> | A list of one or more table columns/expressions to be used as clustering key(s) for the table. |
 | <code><a href="#@cdktf/provider-snowflake.table.TableConfig.property.comment">comment</a></code> | <code>str</code> | Specifies a comment for the table. |
-| <code><a href="#@cdktf/provider-snowflake.table.TableConfig.property.dataRetentionDays">data_retention_days</a></code> | <code>typing.Union[int, float]</code> | Specifies the retention period for the table so that Time Travel actions (SELECT, CLONE, UNDROP) can be performed on historical data in the table. |
 | <code><a href="#@cdktf/provider-snowflake.table.TableConfig.property.dataRetentionTimeInDays">data_retention_time_in_days</a></code> | <code>typing.Union[int, float]</code> | Specifies the retention period for the table so that Time Travel actions (SELECT, CLONE, UNDROP) can be performed on historical data in the table. |
-| <code><a href="#@cdktf/provider-snowflake.table.TableConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#id Table#id}. |
+| <code><a href="#@cdktf/provider-snowflake.table.TableConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#id Table#id}. |
 | <code><a href="#@cdktf/provider-snowflake.table.TableConfig.property.primaryKey">primary_key</a></code> | <code><a href="#@cdktf/provider-snowflake.table.TablePrimaryKey">TablePrimaryKey</a></code> | primary_key block. |
 | <code><a href="#@cdktf/provider-snowflake.table.TableConfig.property.tag">tag</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-snowflake.table.TableTag">TableTag</a>]]</code> | tag block. |
 
@@ -1699,7 +1670,7 @@ column: typing.Union[IResolvable, typing.List[TableColumn]]
 
 column block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#column Table#column}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#column Table#column}
 
 ---
 
@@ -1713,7 +1684,7 @@ database: str
 
 The database in which to create the table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#database Table#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#database Table#database}
 
 ---
 
@@ -1729,7 +1700,7 @@ Specifies the identifier for the table;
 
 must be unique for the database and schema in which the table is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#name Table#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#name Table#name}
 
 ---
 
@@ -1743,7 +1714,7 @@ schema: str
 
 The schema in which to create the table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#schema Table#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#schema Table#schema}
 
 ---
 
@@ -1757,7 +1728,7 @@ change_tracking: typing.Union[bool, IResolvable]
 
 Specifies whether to enable change tracking on the table. Default false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#change_tracking Table#change_tracking}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#change_tracking Table#change_tracking}
 
 ---
 
@@ -1771,7 +1742,7 @@ cluster_by: typing.List[str]
 
 A list of one or more table columns/expressions to be used as clustering key(s) for the table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#cluster_by Table#cluster_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#cluster_by Table#cluster_by}
 
 ---
 
@@ -1785,23 +1756,7 @@ comment: str
 
 Specifies a comment for the table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#comment Table#comment}
-
----
-
-##### `data_retention_days`<sup>Optional</sup> <a name="data_retention_days" id="@cdktf/provider-snowflake.table.TableConfig.property.dataRetentionDays"></a>
-
-```python
-data_retention_days: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
-Specifies the retention period for the table so that Time Travel actions (SELECT, CLONE, UNDROP) can be performed on historical data in the table.
-
-Default value is 1, if you wish to inherit the parent schema setting then pass in the schema attribute to this argument.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#data_retention_days Table#data_retention_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#comment Table#comment}
 
 ---
 
@@ -1815,9 +1770,9 @@ data_retention_time_in_days: typing.Union[int, float]
 
 Specifies the retention period for the table so that Time Travel actions (SELECT, CLONE, UNDROP) can be performed on historical data in the table.
 
-Default value is 1, if you wish to inherit the parent schema setting then pass in the schema attribute to this argument.
+If you wish to inherit the parent schema setting then pass in the schema attribute to this argument or do not fill this parameter at all; the default value for this field is -1, which is a fallback to use Snowflake default - in this case the schema value
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#data_retention_time_in_days Table#data_retention_time_in_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#data_retention_time_in_days Table#data_retention_time_in_days}
 
 ---
 
@@ -1829,7 +1784,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#id Table#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#id Table#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1846,7 +1801,7 @@ primary_key: TablePrimaryKey
 
 primary_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#primary_key Table#primary_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#primary_key Table#primary_key}
 
 ---
 
@@ -1860,7 +1815,7 @@ tag: typing.Union[IResolvable, typing.List[TableTag]]
 
 tag block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#tag Table#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#tag Table#tag}
 
 ---
 
@@ -1896,7 +1851,7 @@ keys: typing.List[str]
 
 Columns to use in primary key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#keys Table#keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#keys Table#keys}
 
 ---
 
@@ -1910,7 +1865,7 @@ name: str
 
 Name of constraint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#name Table#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#name Table#name}
 
 ---
 
@@ -1950,7 +1905,7 @@ name: str
 
 Tag name, e.g. department.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#name Table#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#name Table#name}
 
 ---
 
@@ -1964,7 +1919,7 @@ value: str
 
 Tag value, e.g. marketing_info.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#value Table#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#value Table#value}
 
 ---
 
@@ -1978,7 +1933,7 @@ database: str
 
 Name of the database that the tag was created in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#database Table#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#database Table#database}
 
 ---
 
@@ -1992,7 +1947,7 @@ schema: str
 
 Name of the schema that the tag was created in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#schema Table#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#schema Table#schema}
 
 ---
 
@@ -2936,6 +2891,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-snowflake.table.TableColumnOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-snowflake.table.TableColumnOutputReference.putDefault">put_default</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.TableColumnOutputReference.putIdentity">put_identity</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.table.TableColumnOutputReference.resetCollate">reset_collate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.TableColumnOutputReference.resetComment">reset_comment</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.TableColumnOutputReference.resetDefault">reset_default</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.TableColumnOutputReference.resetIdentity">reset_identity</a></code> | *No description.* |
@@ -3132,7 +3088,7 @@ def put_default(
 
 The default constant value for the column.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#constant Table#constant}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#constant Table#constant}
 
 ---
 
@@ -3142,7 +3098,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The default expression value for the column.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#expression Table#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#expression Table#expression}
 
 ---
 
@@ -3152,7 +3108,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The default sequence to use for the column.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#sequence Table#sequence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#sequence Table#sequence}
 
 ---
 
@@ -3171,7 +3127,7 @@ def put_identity(
 
 The number to start incrementing at.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#start_num Table#start_num}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#start_num Table#start_num}
 
 ---
 
@@ -3181,9 +3137,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Step size to increment by.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/table#step_num Table#step_num}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/table#step_num Table#step_num}
 
 ---
+
+##### `reset_collate` <a name="reset_collate" id="@cdktf/provider-snowflake.table.TableColumnOutputReference.resetCollate"></a>
+
+```python
+def reset_collate() -> None
+```
 
 ##### `reset_comment` <a name="reset_comment" id="@cdktf/provider-snowflake.table.TableColumnOutputReference.resetComment"></a>
 
@@ -3224,6 +3186,7 @@ def reset_nullable() -> None
 | <code><a href="#@cdktf/provider-snowflake.table.TableColumnOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.TableColumnOutputReference.property.default">default</a></code> | <code><a href="#@cdktf/provider-snowflake.table.TableColumnDefaultOutputReference">TableColumnDefaultOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.TableColumnOutputReference.property.identity">identity</a></code> | <code><a href="#@cdktf/provider-snowflake.table.TableColumnIdentityOutputReference">TableColumnIdentityOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.table.TableColumnOutputReference.property.collateInput">collate_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.TableColumnOutputReference.property.commentInput">comment_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.TableColumnOutputReference.property.defaultInput">default_input</a></code> | <code><a href="#@cdktf/provider-snowflake.table.TableColumnDefault">TableColumnDefault</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.TableColumnOutputReference.property.identityInput">identity_input</a></code> | <code><a href="#@cdktf/provider-snowflake.table.TableColumnIdentity">TableColumnIdentity</a></code> | *No description.* |
@@ -3231,6 +3194,7 @@ def reset_nullable() -> None
 | <code><a href="#@cdktf/provider-snowflake.table.TableColumnOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.TableColumnOutputReference.property.nullableInput">nullable_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.TableColumnOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.table.TableColumnOutputReference.property.collate">collate</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.TableColumnOutputReference.property.comment">comment</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.TableColumnOutputReference.property.maskingPolicy">masking_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.TableColumnOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
@@ -3281,6 +3245,16 @@ identity: TableColumnIdentityOutputReference
 ```
 
 - *Type:* <a href="#@cdktf/provider-snowflake.table.TableColumnIdentityOutputReference">TableColumnIdentityOutputReference</a>
+
+---
+
+##### `collate_input`<sup>Optional</sup> <a name="collate_input" id="@cdktf/provider-snowflake.table.TableColumnOutputReference.property.collateInput"></a>
+
+```python
+collate_input: str
+```
+
+- *Type:* str
 
 ---
 
@@ -3348,6 +3322,16 @@ nullable_input: typing.Union[bool, IResolvable]
 
 ```python
 type_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `collate`<sup>Required</sup> <a name="collate" id="@cdktf/provider-snowflake.table.TableColumnOutputReference.property.collate"></a>
+
+```python
+collate: str
 ```
 
 - *Type:* str

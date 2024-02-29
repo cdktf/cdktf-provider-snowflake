@@ -4,7 +4,7 @@
 
 ### GrantPrivilegesToShare <a name="GrantPrivilegesToShare" id="@cdktf/provider-snowflake.grantPrivilegesToShare.GrantPrivilegesToShare"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/grant_privileges_to_share snowflake_grant_privileges_to_share}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/grant_privileges_to_share snowflake_grant_privileges_to_share}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.grantPrivilegesToShare.GrantPrivilegesToShare.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the GrantPrivilegesToShare to 
 
 The id of the existing GrantPrivilegesToShare that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/grant_privileges_to_share#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/grant_privileges_to_share#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -949,7 +949,7 @@ new GrantPrivilegesToShareConfig {
 | <code><a href="#@cdktf/provider-snowflake.grantPrivilegesToShare.GrantPrivilegesToShareConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.grantPrivilegesToShare.GrantPrivilegesToShareConfig.property.privileges">Privileges</a></code> | <code>string[]</code> | The privileges to grant on the share. See available list of privileges: https://docs.snowflake.com/en/sql-reference/sql/grant-privilege-share#syntax. |
 | <code><a href="#@cdktf/provider-snowflake.grantPrivilegesToShare.GrantPrivilegesToShareConfig.property.toShare">ToShare</a></code> | <code>string</code> | The fully qualified name of the share on which privileges will be granted. |
-| <code><a href="#@cdktf/provider-snowflake.grantPrivilegesToShare.GrantPrivilegesToShareConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/grant_privileges_to_share#id GrantPrivilegesToShare#id}. |
+| <code><a href="#@cdktf/provider-snowflake.grantPrivilegesToShare.GrantPrivilegesToShareConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/grant_privileges_to_share#id GrantPrivilegesToShare#id}. |
 | <code><a href="#@cdktf/provider-snowflake.grantPrivilegesToShare.GrantPrivilegesToShareConfig.property.onAllTablesInSchema">OnAllTablesInSchema</a></code> | <code>string</code> | The fully qualified identifier for the schema for which the specified privilege will be granted for all tables. |
 | <code><a href="#@cdktf/provider-snowflake.grantPrivilegesToShare.GrantPrivilegesToShareConfig.property.onDatabase">OnDatabase</a></code> | <code>string</code> | The fully qualified name of the database on which privileges will be granted. |
 | <code><a href="#@cdktf/provider-snowflake.grantPrivilegesToShare.GrantPrivilegesToShareConfig.property.onSchema">OnSchema</a></code> | <code>string</code> | The fully qualified name of the schema on which privileges will be granted. |
@@ -1039,7 +1039,7 @@ public string[] Privileges { get; set; }
 
 The privileges to grant on the share. See available list of privileges: https://docs.snowflake.com/en/sql-reference/sql/grant-privilege-share#syntax.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/grant_privileges_to_share#privileges GrantPrivilegesToShare#privileges}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/grant_privileges_to_share#privileges GrantPrivilegesToShare#privileges}
 
 ---
 
@@ -1053,7 +1053,7 @@ public string ToShare { get; set; }
 
 The fully qualified name of the share on which privileges will be granted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/grant_privileges_to_share#to_share GrantPrivilegesToShare#to_share}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/grant_privileges_to_share#to_share GrantPrivilegesToShare#to_share}
 
 ---
 
@@ -1065,7 +1065,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/grant_privileges_to_share#id GrantPrivilegesToShare#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/grant_privileges_to_share#id GrantPrivilegesToShare#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1082,7 +1082,7 @@ public string OnAllTablesInSchema { get; set; }
 
 The fully qualified identifier for the schema for which the specified privilege will be granted for all tables.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/grant_privileges_to_share#on_all_tables_in_schema GrantPrivilegesToShare#on_all_tables_in_schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/grant_privileges_to_share#on_all_tables_in_schema GrantPrivilegesToShare#on_all_tables_in_schema}
 
 ---
 
@@ -1096,7 +1096,7 @@ public string OnDatabase { get; set; }
 
 The fully qualified name of the database on which privileges will be granted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/grant_privileges_to_share#on_database GrantPrivilegesToShare#on_database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/grant_privileges_to_share#on_database GrantPrivilegesToShare#on_database}
 
 ---
 
@@ -1110,7 +1110,7 @@ public string OnSchema { get; set; }
 
 The fully qualified name of the schema on which privileges will be granted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/grant_privileges_to_share#on_schema GrantPrivilegesToShare#on_schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/grant_privileges_to_share#on_schema GrantPrivilegesToShare#on_schema}
 
 ---
 
@@ -1124,7 +1124,7 @@ public string OnTable { get; set; }
 
 The fully qualified name of the table on which privileges will be granted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/grant_privileges_to_share#on_table GrantPrivilegesToShare#on_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/grant_privileges_to_share#on_table GrantPrivilegesToShare#on_table}
 
 ---
 
@@ -1138,7 +1138,7 @@ public string OnTag { get; set; }
 
 The fully qualified name of the tag on which privileges will be granted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/grant_privileges_to_share#on_tag GrantPrivilegesToShare#on_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/grant_privileges_to_share#on_tag GrantPrivilegesToShare#on_tag}
 
 ---
 
@@ -1152,7 +1152,7 @@ public string OnView { get; set; }
 
 The fully qualified name of the view on which privileges will be granted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/resources/grant_privileges_to_share#on_view GrantPrivilegesToShare#on_view}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/grant_privileges_to_share#on_view GrantPrivilegesToShare#on_view}
 
 ---
 

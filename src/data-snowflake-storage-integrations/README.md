@@ -1,3 +1,3 @@
 # `data_snowflake_storage_integrations`
 
-Refer to the Terraform Registry for docs: [`data_snowflake_storage_integrations`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.86.0/docs/data-sources/storage_integrations).
+Refer to the Terraform Registry for docs: [`data_snowflake_storage_integrations`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/data-sources/storage_integrations).
