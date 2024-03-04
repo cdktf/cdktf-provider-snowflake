@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.accountGrant.AccountGrant.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/accountgrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/accountgrant"
 
 accountgrant.NewAccountGrant(scope Construct, id *string, config AccountGrantConfig) AccountGrant
 ```
@@ -413,7 +413,7 @@ func ResetWithGrantOption()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.accountGrant.AccountGrant.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/accountgrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/accountgrant"
 
 accountgrant.AccountGrant_IsConstruct(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.accountGrant.AccountGrant.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/accountgrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/accountgrant"
 
 accountgrant.AccountGrant_IsTerraformElement(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ accountgrant.AccountGrant_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.accountGrant.AccountGrant.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/accountgrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/accountgrant"
 
 accountgrant.AccountGrant_IsTerraformResource(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ accountgrant.AccountGrant_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.accountGrant.AccountGrant.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/accountgrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/accountgrant"
 
 accountgrant.AccountGrant_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -812,7 +812,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.accountGrant.AccountGrantConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/accountgrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/accountgrant"
 
 &accountgrant.AccountGrantConfig {
 	Connection: interface{},
