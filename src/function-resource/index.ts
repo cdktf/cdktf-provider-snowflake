@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/function
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/resources/function
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface FunctionResourceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies a comment for the function.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/function#comment FunctionResource#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/resources/function#comment FunctionResource#comment}
   */
   readonly comment?: string;
   /**
   * The database in which to create the function. Don't use the | character.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/function#database FunctionResource#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/resources/function#database FunctionResource#database}
   */
   readonly database: string;
   /**
   * The handler method for Java / Python function.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/function#handler FunctionResource#handler}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/resources/function#handler FunctionResource#handler}
   */
   readonly handler?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/function#id FunctionResource#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/resources/function#id FunctionResource#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,79 +40,79 @@ export interface FunctionResourceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Imports for Java / Python functions. For Java this a list of jar files, for Python this is a list of Python files.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/function#imports FunctionResource#imports}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/resources/function#imports FunctionResource#imports}
   */
   readonly imports?: string[];
   /**
   * Specifies that the function is secure.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/function#is_secure FunctionResource#is_secure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/resources/function#is_secure FunctionResource#is_secure}
   */
   readonly isSecure?: boolean | cdktf.IResolvable;
   /**
   * Specifies the language of the stored function code.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/function#language FunctionResource#language}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/resources/function#language FunctionResource#language}
   */
   readonly language?: string;
   /**
   * Specifies the identifier for the function; does not have to be unique for the schema in which the function is created. Don't use the | character.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/function#name FunctionResource#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/resources/function#name FunctionResource#name}
   */
   readonly name: string;
   /**
   * Specifies the behavior of the function when called with null inputs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/function#null_input_behavior FunctionResource#null_input_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/resources/function#null_input_behavior FunctionResource#null_input_behavior}
   */
   readonly nullInputBehavior?: string;
   /**
   * List of package imports to use for Java / Python functions. For Java, package imports should be of the form: package_name:version_number, where package_name is snowflake_domain:package. For Python use it should be: ('numpy','pandas','xgboost==1.5.0').
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/function#packages FunctionResource#packages}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/resources/function#packages FunctionResource#packages}
   */
   readonly packages?: string[];
   /**
   * Specifies the behavior of the function when returning results
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/function#return_behavior FunctionResource#return_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/resources/function#return_behavior FunctionResource#return_behavior}
   */
   readonly returnBehavior?: string;
   /**
   * The return type of the function
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/function#return_type FunctionResource#return_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/resources/function#return_type FunctionResource#return_type}
   */
   readonly returnType: string;
   /**
   * Required for Python functions. Specifies Python runtime version.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/function#runtime_version FunctionResource#runtime_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/resources/function#runtime_version FunctionResource#runtime_version}
   */
   readonly runtimeVersion?: string;
   /**
   * The schema in which to create the function. Don't use the | character.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/function#schema FunctionResource#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/resources/function#schema FunctionResource#schema}
   */
   readonly schema: string;
   /**
   * Specifies the javascript / java / scala / sql / python code used to create the function.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/function#statement FunctionResource#statement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/resources/function#statement FunctionResource#statement}
   */
   readonly statement: string;
   /**
   * The target path for the Java / Python functions. For Java, it is the path of compiled jar files and for the Python it is the path of the Python files.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/function#target_path FunctionResource#target_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/resources/function#target_path FunctionResource#target_path}
   */
   readonly targetPath?: string;
   /**
   * arguments block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/function#arguments FunctionResource#arguments}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/resources/function#arguments FunctionResource#arguments}
   */
   readonly arguments?: FunctionResourceArguments[] | cdktf.IResolvable;
 }
@@ -120,13 +120,13 @@ export interface FunctionResourceArguments {
   /**
   * The argument name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/function#name FunctionResource#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/resources/function#name FunctionResource#name}
   */
   readonly name: string;
   /**
   * The argument type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/function#type FunctionResource#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/resources/function#type FunctionResource#type}
   */
   readonly type: string;
 }
@@ -265,7 +265,7 @@ export class FunctionResourceArgumentsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/function snowflake_function}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/resources/function snowflake_function}
 */
 export class FunctionResource extends cdktf.TerraformResource {
 
@@ -281,7 +281,7 @@ export class FunctionResource extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a FunctionResource resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FunctionResource to import
-  * @param importFromId The id of the existing FunctionResource that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/function#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing FunctionResource that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/resources/function#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FunctionResource to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -293,7 +293,7 @@ export class FunctionResource extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/resources/function snowflake_function} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/resources/function snowflake_function} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -304,7 +304,7 @@ export class FunctionResource extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_function',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.87.0',
+        providerVersion: '0.87.1',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
