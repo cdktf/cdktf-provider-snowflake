@@ -4,12 +4,12 @@
 
 ### DataSnowflakeDatabases <a name="DataSnowflakeDatabases" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/data-sources/databases snowflake_databases}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/data-sources/databases snowflake_databases}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakedatabases"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakedatabases"
 
 datasnowflakedatabases.NewDataSnowflakeDatabases(scope Construct, id *string, config DataSnowflakeDatabasesConfig) DataSnowflakeDatabases
 ```
@@ -311,7 +311,7 @@ func ResetTerse()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakedatabases"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakedatabases"
 
 datasnowflakedatabases.DataSnowflakeDatabases_IsConstruct(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakedatabases"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakedatabases"
 
 datasnowflakedatabases.DataSnowflakeDatabases_IsTerraformElement(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datasnowflakedatabases.DataSnowflakeDatabases_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakedatabases"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakedatabases"
 
 datasnowflakedatabases.DataSnowflakeDatabases_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ datasnowflakedatabases.DataSnowflakeDatabases_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakedatabases"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakedatabases"
 
 datasnowflakedatabases.DataSnowflakeDatabases_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -400,7 +400,7 @@ The construct id used in the generated config for the DataSnowflakeDatabases to 
 
 The id of the existing DataSnowflakeDatabases that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/data-sources/databases#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/data-sources/databases#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -699,7 +699,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakedatabases"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakedatabases"
 
 &datasnowflakedatabases.DataSnowflakeDatabasesConfig {
 	Connection: interface{},
@@ -729,7 +729,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.property.history">History</a></code> | <code>interface{}</code> | Optionally includes dropped databases that have not yet been purged The output also includes an additional `dropped_on` column. |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/data-sources/databases#id DataSnowflakeDatabases#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/data-sources/databases#id DataSnowflakeDatabases#id}. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.property.pattern">Pattern</a></code> | <code>*string</code> | Optionally filters the databases by a pattern. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.property.startsWith">StartsWith</a></code> | <code>*string</code> | Optionally filters the databases by a pattern. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.property.terse">Terse</a></code> | <code>interface{}</code> | Optionally returns only the columns `created_on` and `name` in the results. |
@@ -816,7 +816,7 @@ History interface{}
 
 Optionally includes dropped databases that have not yet been purged The output also includes an additional `dropped_on` column.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/data-sources/databases#history DataSnowflakeDatabases#history}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/data-sources/databases#history DataSnowflakeDatabases#history}
 
 ---
 
@@ -828,7 +828,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/data-sources/databases#id DataSnowflakeDatabases#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/data-sources/databases#id DataSnowflakeDatabases#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -845,7 +845,7 @@ Pattern *string
 
 Optionally filters the databases by a pattern.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/data-sources/databases#pattern DataSnowflakeDatabases#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/data-sources/databases#pattern DataSnowflakeDatabases#pattern}
 
 ---
 
@@ -859,7 +859,7 @@ StartsWith *string
 
 Optionally filters the databases by a pattern.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/data-sources/databases#starts_with DataSnowflakeDatabases#starts_with}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/data-sources/databases#starts_with DataSnowflakeDatabases#starts_with}
 
 ---
 
@@ -873,7 +873,7 @@ Terse interface{}
 
 Optionally returns only the columns `created_on` and `name` in the results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.0/docs/data-sources/databases#terse DataSnowflakeDatabases#terse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/data-sources/databases#terse DataSnowflakeDatabases#terse}
 
 ---
 
@@ -882,7 +882,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesDatabases.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakedatabases"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakedatabases"
 
 &datasnowflakedatabases.DataSnowflakeDatabasesDatabases {
 
@@ -895,7 +895,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesDatabasesReplicationConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakedatabases"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakedatabases"
 
 &datasnowflakedatabases.DataSnowflakeDatabasesDatabasesReplicationConfiguration {
 
@@ -910,7 +910,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesDatabasesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakedatabases"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakedatabases"
 
 datasnowflakedatabases.NewDataSnowflakeDatabasesDatabasesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeDatabasesDatabasesList
 ```
@@ -1059,7 +1059,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesDatabasesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakedatabases"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakedatabases"
 
 datasnowflakedatabases.NewDataSnowflakeDatabasesDatabasesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeDatabasesDatabasesOutputReference
 ```
@@ -1436,7 +1436,7 @@ func InternalValue() DataSnowflakeDatabasesDatabases
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesDatabasesReplicationConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakedatabases"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakedatabases"
 
 datasnowflakedatabases.NewDataSnowflakeDatabasesDatabasesReplicationConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeDatabasesDatabasesReplicationConfigurationList
 ```
@@ -1585,7 +1585,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesDatabasesReplicationConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakedatabases"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakedatabases"
 
 datasnowflakedatabases.NewDataSnowflakeDatabasesDatabasesReplicationConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeDatabasesDatabasesReplicationConfigurationOutputReference
 ```
