@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/resources/session_parameter
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/session_parameter
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface SessionParameterConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/resources/session_parameter#id SessionParameter#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/session_parameter#id SessionParameter#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,31 +17,31 @@ export interface SessionParameterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Name of session parameter. Valid values are those in [session parameters](https://docs.snowflake.com/en/sql-reference/parameters.html#session-parameters).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/resources/session_parameter#key SessionParameter#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/session_parameter#key SessionParameter#key}
   */
   readonly key: string;
   /**
   * If true, the session parameter will be set on the account level.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/resources/session_parameter#on_account SessionParameter#on_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/session_parameter#on_account SessionParameter#on_account}
   */
   readonly onAccount?: boolean | cdktf.IResolvable;
   /**
   * The user to set the session parameter for. Required if on_account is false
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/resources/session_parameter#user SessionParameter#user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/session_parameter#user SessionParameter#user}
   */
   readonly user?: string;
   /**
   * Value of session parameter, as a string. Constraints are the same as those for the parameters in Snowflake documentation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/resources/session_parameter#value SessionParameter#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/session_parameter#value SessionParameter#value}
   */
   readonly value: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/resources/session_parameter snowflake_session_parameter}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/session_parameter snowflake_session_parameter}
 */
 export class SessionParameter extends cdktf.TerraformResource {
 
@@ -62,7 +57,7 @@ export class SessionParameter extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SessionParameter resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SessionParameter to import
-  * @param importFromId The id of the existing SessionParameter that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/resources/session_parameter#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SessionParameter that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/session_parameter#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SessionParameter to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +69,7 @@ export class SessionParameter extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/resources/session_parameter snowflake_session_parameter} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/session_parameter snowflake_session_parameter} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +80,7 @@ export class SessionParameter extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_session_parameter',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.87.1',
+        providerVersion: '0.87.2',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,

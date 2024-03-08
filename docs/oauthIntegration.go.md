@@ -4,12 +4,12 @@
 
 ### OauthIntegration <a name="OauthIntegration" id="@cdktf/provider-snowflake.oauthIntegration.OauthIntegration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/resources/oauth_integration snowflake_oauth_integration}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/oauth_integration snowflake_oauth_integration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegration"
 
 oauthintegration.NewOauthIntegration(scope Construct, id *string, config OauthIntegrationConfig) OauthIntegration
 ```
@@ -441,7 +441,7 @@ func ResetOauthUseSecondaryRoles()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegration"
 
 oauthintegration.OauthIntegration_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegration"
 
 oauthintegration.OauthIntegration_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ oauthintegration.OauthIntegration_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegration"
 
 oauthintegration.OauthIntegration_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ oauthintegration.OauthIntegration_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.oauthIntegration.OauthIntegration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegration"
 
 oauthintegration.OauthIntegration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -530,7 +530,7 @@ The construct id used in the generated config for the OauthIntegration to import
 
 The id of the existing OauthIntegration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/resources/oauth_integration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/oauth_integration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -983,7 +983,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.oauthIntegration.OauthIntegrationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegration"
 
 &oauthintegration.OauthIntegrationConfig {
 	Connection: interface{},
@@ -1023,7 +1023,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrat
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegrationConfig.property.blockedRolesList">BlockedRolesList</a></code> | <code>*[]*string</code> | List of roles that a user cannot explicitly consent to using after authenticating. |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegrationConfig.property.comment">Comment</a></code> | <code>*string</code> | Specifies a comment for the OAuth integration. |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegrationConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Specifies whether this OAuth integration is enabled or disabled. |
-| <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegrationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/resources/oauth_integration#id OauthIntegration#id}. |
+| <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegrationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/oauth_integration#id OauthIntegration#id}. |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegrationConfig.property.oauthClientType">OauthClientType</a></code> | <code>*string</code> | Specifies the type of client being registered. Snowflake supports both confidential and public clients. |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegrationConfig.property.oauthIssueRefreshTokens">OauthIssueRefreshTokens</a></code> | <code>interface{}</code> | Specifies whether to allow the client to exchange a refresh token for an access token when the current access token has expired. |
 | <code><a href="#@cdktf/provider-snowflake.oauthIntegration.OauthIntegrationConfig.property.oauthRedirectUri">OauthRedirectUri</a></code> | <code>*string</code> | Specifies the client URI. After a user is authenticated, the web browser is redirected to this URI. |
@@ -1114,7 +1114,7 @@ Specifies the name of the OAuth integration.
 
 This name follows the rules for Object Identifiers. The name should be unique among security integrations in your account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/resources/oauth_integration#name OauthIntegration#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/oauth_integration#name OauthIntegration#name}
 
 ---
 
@@ -1128,7 +1128,7 @@ OauthClient *string
 
 Specifies the OAuth client type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/resources/oauth_integration#oauth_client OauthIntegration#oauth_client}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/oauth_integration#oauth_client OauthIntegration#oauth_client}
 
 ---
 
@@ -1144,7 +1144,7 @@ List of roles that a user cannot explicitly consent to using after authenticatin
 
 Do not include ACCOUNTADMIN, ORGADMIN or SECURITYADMIN as they are already implicitly enforced and will cause in-place updates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/resources/oauth_integration#blocked_roles_list OauthIntegration#blocked_roles_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/oauth_integration#blocked_roles_list OauthIntegration#blocked_roles_list}
 
 ---
 
@@ -1158,7 +1158,7 @@ Comment *string
 
 Specifies a comment for the OAuth integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/resources/oauth_integration#comment OauthIntegration#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/oauth_integration#comment OauthIntegration#comment}
 
 ---
 
@@ -1172,7 +1172,7 @@ Enabled interface{}
 
 Specifies whether this OAuth integration is enabled or disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/resources/oauth_integration#enabled OauthIntegration#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/oauth_integration#enabled OauthIntegration#enabled}
 
 ---
 
@@ -1184,7 +1184,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/resources/oauth_integration#id OauthIntegration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/oauth_integration#id OauthIntegration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1201,7 +1201,7 @@ OauthClientType *string
 
 Specifies the type of client being registered. Snowflake supports both confidential and public clients.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/resources/oauth_integration#oauth_client_type OauthIntegration#oauth_client_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/oauth_integration#oauth_client_type OauthIntegration#oauth_client_type}
 
 ---
 
@@ -1215,7 +1215,7 @@ OauthIssueRefreshTokens interface{}
 
 Specifies whether to allow the client to exchange a refresh token for an access token when the current access token has expired.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/resources/oauth_integration#oauth_issue_refresh_tokens OauthIntegration#oauth_issue_refresh_tokens}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/oauth_integration#oauth_issue_refresh_tokens OauthIntegration#oauth_issue_refresh_tokens}
 
 ---
 
@@ -1229,7 +1229,7 @@ OauthRedirectUri *string
 
 Specifies the client URI. After a user is authenticated, the web browser is redirected to this URI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/resources/oauth_integration#oauth_redirect_uri OauthIntegration#oauth_redirect_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/oauth_integration#oauth_redirect_uri OauthIntegration#oauth_redirect_uri}
 
 ---
 
@@ -1243,7 +1243,7 @@ OauthRefreshTokenValidity *f64
 
 Specifies how long refresh tokens should be valid (in seconds). OAUTH_ISSUE_REFRESH_TOKENS must be set to TRUE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/resources/oauth_integration#oauth_refresh_token_validity OauthIntegration#oauth_refresh_token_validity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/oauth_integration#oauth_refresh_token_validity OauthIntegration#oauth_refresh_token_validity}
 
 ---
 
@@ -1257,7 +1257,7 @@ OauthUseSecondaryRoles *string
 
 Specifies whether default secondary roles set in the user properties are activated by default in the session being opened.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.1/docs/resources/oauth_integration#oauth_use_secondary_roles OauthIntegration#oauth_use_secondary_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/oauth_integration#oauth_use_secondary_roles OauthIntegration#oauth_use_secondary_roles}
 
 ---
 
