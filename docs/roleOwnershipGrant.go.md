@@ -4,12 +4,12 @@
 
 ### RoleOwnershipGrant <a name="RoleOwnershipGrant" id="@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrant"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/role_ownership_grant snowflake_role_ownership_grant}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/role_ownership_grant snowflake_role_ownership_grant}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrant.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/roleownershipgrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/roleownershipgrant"
 
 roleownershipgrant.NewRoleOwnershipGrant(scope Construct, id *string, config RoleOwnershipGrantConfig) RoleOwnershipGrant
 ```
@@ -399,7 +399,7 @@ func ResetRevertOwnershipToRoleName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrant.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/roleownershipgrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/roleownershipgrant"
 
 roleownershipgrant.RoleOwnershipGrant_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrant.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/roleownershipgrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/roleownershipgrant"
 
 roleownershipgrant.RoleOwnershipGrant_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ roleownershipgrant.RoleOwnershipGrant_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrant.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/roleownershipgrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/roleownershipgrant"
 
 roleownershipgrant.RoleOwnershipGrant_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ roleownershipgrant.RoleOwnershipGrant_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrant.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/roleownershipgrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/roleownershipgrant"
 
 roleownershipgrant.RoleOwnershipGrant_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -488,7 +488,7 @@ The construct id used in the generated config for the RoleOwnershipGrant to impo
 
 The id of the existing RoleOwnershipGrant that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/role_ownership_grant#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/role_ownership_grant#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -798,7 +798,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrantConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/roleownershipgrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/roleownershipgrant"
 
 &roleownershipgrant.RoleOwnershipGrantConfig {
 	Connection: interface{},
@@ -830,7 +830,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/roleownership
 | <code><a href="#@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrantConfig.property.onRoleName">OnRoleName</a></code> | <code>*string</code> | The name of the role ownership is granted on. |
 | <code><a href="#@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrantConfig.property.toRoleName">ToRoleName</a></code> | <code>*string</code> | The name of the role to grant ownership. |
 | <code><a href="#@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrantConfig.property.currentGrants">CurrentGrants</a></code> | <code>*string</code> | Specifies whether to remove or transfer all existing outbound privileges on the object when ownership is transferred to a new role. |
-| <code><a href="#@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrantConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/role_ownership_grant#id RoleOwnershipGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrantConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/role_ownership_grant#id RoleOwnershipGrant#id}. |
 | <code><a href="#@cdktf/provider-snowflake.roleOwnershipGrant.RoleOwnershipGrantConfig.property.revertOwnershipToRoleName">RevertOwnershipToRoleName</a></code> | <code>*string</code> | The name of the role to revert ownership to on destroy. |
 
 ---
@@ -915,7 +915,7 @@ OnRoleName *string
 
 The name of the role ownership is granted on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/role_ownership_grant#on_role_name RoleOwnershipGrant#on_role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/role_ownership_grant#on_role_name RoleOwnershipGrant#on_role_name}
 
 ---
 
@@ -931,7 +931,7 @@ The name of the role to grant ownership.
 
 Please ensure that the role that terraform is using is granted access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/role_ownership_grant#to_role_name RoleOwnershipGrant#to_role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/role_ownership_grant#to_role_name RoleOwnershipGrant#to_role_name}
 
 ---
 
@@ -945,7 +945,7 @@ CurrentGrants *string
 
 Specifies whether to remove or transfer all existing outbound privileges on the object when ownership is transferred to a new role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/role_ownership_grant#current_grants RoleOwnershipGrant#current_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/role_ownership_grant#current_grants RoleOwnershipGrant#current_grants}
 
 ---
 
@@ -957,7 +957,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/role_ownership_grant#id RoleOwnershipGrant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/role_ownership_grant#id RoleOwnershipGrant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -974,7 +974,7 @@ RevertOwnershipToRoleName *string
 
 The name of the role to revert ownership to on destroy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/role_ownership_grant#revert_ownership_to_role_name RoleOwnershipGrant#revert_ownership_to_role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/role_ownership_grant#revert_ownership_to_role_name RoleOwnershipGrant#revert_ownership_to_role_name}
 
 ---
 

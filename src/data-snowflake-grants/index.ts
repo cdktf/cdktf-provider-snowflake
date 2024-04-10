@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/data-sources/grants
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/data-sources/grants
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataSnowflakeGrantsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/data-sources/grants#id DataSnowflakeGrants#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/data-sources/grants#id DataSnowflakeGrants#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,31 +17,31 @@ export interface DataSnowflakeGrantsConfig extends cdktf.TerraformMetaArguments 
   /**
   * future_grants_in block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/data-sources/grants#future_grants_in DataSnowflakeGrants#future_grants_in}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/data-sources/grants#future_grants_in DataSnowflakeGrants#future_grants_in}
   */
   readonly futureGrantsIn?: DataSnowflakeGrantsFutureGrantsIn;
   /**
   * future_grants_to block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/data-sources/grants#future_grants_to DataSnowflakeGrants#future_grants_to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/data-sources/grants#future_grants_to DataSnowflakeGrants#future_grants_to}
   */
   readonly futureGrantsTo?: DataSnowflakeGrantsFutureGrantsTo;
   /**
   * grants_of block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/data-sources/grants#grants_of DataSnowflakeGrants#grants_of}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/data-sources/grants#grants_of DataSnowflakeGrants#grants_of}
   */
   readonly grantsOf?: DataSnowflakeGrantsGrantsOf;
   /**
   * grants_on block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/data-sources/grants#grants_on DataSnowflakeGrants#grants_on}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/data-sources/grants#grants_on DataSnowflakeGrants#grants_on}
   */
   readonly grantsOn?: DataSnowflakeGrantsGrantsOn;
   /**
   * grants_to block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/data-sources/grants#grants_to DataSnowflakeGrants#grants_to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/data-sources/grants#grants_to DataSnowflakeGrants#grants_to}
   */
   readonly grantsTo?: DataSnowflakeGrantsGrantsTo;
 }
@@ -160,137 +155,19 @@ export class DataSnowflakeGrantsGrantsList extends cdktf.ComplexList {
     return new DataSnowflakeGrantsGrantsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface DataSnowflakeGrantsFutureGrantsInSchema {
-  /**
-  * The database in which the scehma resides. Optional when querying a schema in the current database.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/data-sources/grants#database_name DataSnowflakeGrants#database_name}
-  */
-  readonly databaseName?: string;
-  /**
-  * The name of the schema to list all privileges of new (ie. future) objects granted to
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/data-sources/grants#schema_name DataSnowflakeGrants#schema_name}
-  */
-  readonly schemaName: string;
-}
-
-export function dataSnowflakeGrantsFutureGrantsInSchemaToTerraform(struct?: DataSnowflakeGrantsFutureGrantsInSchemaOutputReference | DataSnowflakeGrantsFutureGrantsInSchema): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    database_name: cdktf.stringToTerraform(struct!.databaseName),
-    schema_name: cdktf.stringToTerraform(struct!.schemaName),
-  }
-}
-
-
-export function dataSnowflakeGrantsFutureGrantsInSchemaToHclTerraform(struct?: DataSnowflakeGrantsFutureGrantsInSchemaOutputReference | DataSnowflakeGrantsFutureGrantsInSchema): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-    database_name: {
-      value: cdktf.stringToHclTerraform(struct!.databaseName),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    schema_name: {
-      value: cdktf.stringToHclTerraform(struct!.schemaName),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class DataSnowflakeGrantsFutureGrantsInSchemaOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): DataSnowflakeGrantsFutureGrantsInSchema | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._databaseName !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.databaseName = this._databaseName;
-    }
-    if (this._schemaName !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.schemaName = this._schemaName;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: DataSnowflakeGrantsFutureGrantsInSchema | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._databaseName = undefined;
-      this._schemaName = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._databaseName = value.databaseName;
-      this._schemaName = value.schemaName;
-    }
-  }
-
-  // database_name - computed: false, optional: true, required: false
-  private _databaseName?: string; 
-  public get databaseName() {
-    return this.getStringAttribute('database_name');
-  }
-  public set databaseName(value: string) {
-    this._databaseName = value;
-  }
-  public resetDatabaseName() {
-    this._databaseName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get databaseNameInput() {
-    return this._databaseName;
-  }
-
-  // schema_name - computed: false, optional: false, required: true
-  private _schemaName?: string; 
-  public get schemaName() {
-    return this.getStringAttribute('schema_name');
-  }
-  public set schemaName(value: string) {
-    this._schemaName = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get schemaNameInput() {
-    return this._schemaName;
-  }
-}
 export interface DataSnowflakeGrantsFutureGrantsIn {
   /**
   * Lists all privileges on new (i.e. future) objects of a specified type in the database granted to a role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/data-sources/grants#database DataSnowflakeGrants#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/data-sources/grants#database DataSnowflakeGrants#database}
   */
   readonly database?: string;
   /**
-  * schema block
+  * Lists all privileges on new (i.e. future) objects of a specified type in the schema granted to a role. Schema must be a fully qualified name ("&lt;db_name&gt;"."&lt;schema_name&gt;").
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/data-sources/grants#schema DataSnowflakeGrants#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/data-sources/grants#schema DataSnowflakeGrants#schema}
   */
-  readonly schema?: DataSnowflakeGrantsFutureGrantsInSchema;
+  readonly schema?: string;
 }
 
 export function dataSnowflakeGrantsFutureGrantsInToTerraform(struct?: DataSnowflakeGrantsFutureGrantsInOutputReference | DataSnowflakeGrantsFutureGrantsIn): any {
@@ -300,7 +177,7 @@ export function dataSnowflakeGrantsFutureGrantsInToTerraform(struct?: DataSnowfl
   }
   return {
     database: cdktf.stringToTerraform(struct!.database),
-    schema: dataSnowflakeGrantsFutureGrantsInSchemaToTerraform(struct!.schema),
+    schema: cdktf.stringToTerraform(struct!.schema),
   }
 }
 
@@ -318,10 +195,10 @@ export function dataSnowflakeGrantsFutureGrantsInToHclTerraform(struct?: DataSno
       storageClassType: "string",
     },
     schema: {
-      value: dataSnowflakeGrantsFutureGrantsInSchemaToHclTerraform(struct!.schema),
-      isBlock: true,
-      type: "list",
-      storageClassType: "DataSnowflakeGrantsFutureGrantsInSchemaList",
+      value: cdktf.stringToHclTerraform(struct!.schema),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
     },
   };
 
@@ -347,9 +224,9 @@ export class DataSnowflakeGrantsFutureGrantsInOutputReference extends cdktf.Comp
       hasAnyValues = true;
       internalValueResult.database = this._database;
     }
-    if (this._schema?.internalValue !== undefined) {
+    if (this._schema !== undefined) {
       hasAnyValues = true;
-      internalValueResult.schema = this._schema?.internalValue;
+      internalValueResult.schema = this._schema;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -358,12 +235,12 @@ export class DataSnowflakeGrantsFutureGrantsInOutputReference extends cdktf.Comp
     if (value === undefined) {
       this.isEmptyObject = false;
       this._database = undefined;
-      this._schema.internalValue = undefined;
+      this._schema = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._database = value.database;
-      this._schema.internalValue = value.schema;
+      this._schema = value.schema;
     }
   }
 
@@ -384,28 +261,34 @@ export class DataSnowflakeGrantsFutureGrantsInOutputReference extends cdktf.Comp
   }
 
   // schema - computed: false, optional: true, required: false
-  private _schema = new DataSnowflakeGrantsFutureGrantsInSchemaOutputReference(this, "schema");
+  private _schema?: string; 
   public get schema() {
-    return this._schema;
+    return this.getStringAttribute('schema');
   }
-  public putSchema(value: DataSnowflakeGrantsFutureGrantsInSchema) {
-    this._schema.internalValue = value;
+  public set schema(value: string) {
+    this._schema = value;
   }
   public resetSchema() {
-    this._schema.internalValue = undefined;
+    this._schema = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get schemaInput() {
-    return this._schema.internalValue;
+    return this._schema;
   }
 }
 export interface DataSnowflakeGrantsFutureGrantsTo {
   /**
-  * Lists all privileges on new (i.e. future) objects of a specified type in a database or schema granted to the role.
+  * Lists all privileges on new (i.e. future) objects of a specified type in a database or schema granted to the account role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/data-sources/grants#role DataSnowflakeGrants#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/data-sources/grants#account_role DataSnowflakeGrants#account_role}
   */
-  readonly role: string;
+  readonly accountRole?: string;
+  /**
+  * Lists all privileges on new (i.e. future) objects granted to the database role. Must be a fully qualified name ("&lt;db_name&gt;"."&lt;database_role_name&gt;").
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/data-sources/grants#database_role DataSnowflakeGrants#database_role}
+  */
+  readonly databaseRole?: string;
 }
 
 export function dataSnowflakeGrantsFutureGrantsToToTerraform(struct?: DataSnowflakeGrantsFutureGrantsToOutputReference | DataSnowflakeGrantsFutureGrantsTo): any {
@@ -414,7 +297,8 @@ export function dataSnowflakeGrantsFutureGrantsToToTerraform(struct?: DataSnowfl
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    role: cdktf.stringToTerraform(struct!.role),
+    account_role: cdktf.stringToTerraform(struct!.accountRole),
+    database_role: cdktf.stringToTerraform(struct!.databaseRole),
   }
 }
 
@@ -425,8 +309,14 @@ export function dataSnowflakeGrantsFutureGrantsToToHclTerraform(struct?: DataSno
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    role: {
-      value: cdktf.stringToHclTerraform(struct!.role),
+    account_role: {
+      value: cdktf.stringToHclTerraform(struct!.accountRole),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    database_role: {
+      value: cdktf.stringToHclTerraform(struct!.databaseRole),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -451,9 +341,13 @@ export class DataSnowflakeGrantsFutureGrantsToOutputReference extends cdktf.Comp
   public get internalValue(): DataSnowflakeGrantsFutureGrantsTo | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._role !== undefined) {
+    if (this._accountRole !== undefined) {
       hasAnyValues = true;
-      internalValueResult.role = this._role;
+      internalValueResult.accountRole = this._accountRole;
+    }
+    if (this._databaseRole !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.databaseRole = this._databaseRole;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -461,38 +355,71 @@ export class DataSnowflakeGrantsFutureGrantsToOutputReference extends cdktf.Comp
   public set internalValue(value: DataSnowflakeGrantsFutureGrantsTo | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._role = undefined;
+      this._accountRole = undefined;
+      this._databaseRole = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._role = value.role;
+      this._accountRole = value.accountRole;
+      this._databaseRole = value.databaseRole;
     }
   }
 
-  // role - computed: false, optional: false, required: true
-  private _role?: string; 
-  public get role() {
-    return this.getStringAttribute('role');
+  // account_role - computed: false, optional: true, required: false
+  private _accountRole?: string; 
+  public get accountRole() {
+    return this.getStringAttribute('account_role');
   }
-  public set role(value: string) {
-    this._role = value;
+  public set accountRole(value: string) {
+    this._accountRole = value;
+  }
+  public resetAccountRole() {
+    this._accountRole = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get roleInput() {
-    return this._role;
+  public get accountRoleInput() {
+    return this._accountRole;
+  }
+
+  // database_role - computed: false, optional: true, required: false
+  private _databaseRole?: string; 
+  public get databaseRole() {
+    return this.getStringAttribute('database_role');
+  }
+  public set databaseRole(value: string) {
+    this._databaseRole = value;
+  }
+  public resetDatabaseRole() {
+    this._databaseRole = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get databaseRoleInput() {
+    return this._databaseRole;
   }
 }
 export interface DataSnowflakeGrantsGrantsOf {
   /**
-  * Lists all users and roles to which the role has been granted
+  * Lists all users and roles to which the account role has been granted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/data-sources/grants#role DataSnowflakeGrants#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/data-sources/grants#account_role DataSnowflakeGrants#account_role}
   */
-  readonly role?: string;
+  readonly accountRole?: string;
+  /**
+  * Lists all the users and roles to which the application role has been granted. Must be a fully qualified name ("&lt;db_name&gt;"."&lt;database_role_name&gt;").
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/data-sources/grants#application_role DataSnowflakeGrants#application_role}
+  */
+  readonly applicationRole?: string;
+  /**
+  * Lists all users and roles to which the database role has been granted. Must be a fully qualified name ("&lt;db_name&gt;"."&lt;database_role_name&gt;").
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/data-sources/grants#database_role DataSnowflakeGrants#database_role}
+  */
+  readonly databaseRole?: string;
   /**
   * Lists all the accounts for the share and indicates the accounts that are using the share.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/data-sources/grants#share DataSnowflakeGrants#share}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/data-sources/grants#share DataSnowflakeGrants#share}
   */
   readonly share?: string;
 }
@@ -503,7 +430,9 @@ export function dataSnowflakeGrantsGrantsOfToTerraform(struct?: DataSnowflakeGra
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    role: cdktf.stringToTerraform(struct!.role),
+    account_role: cdktf.stringToTerraform(struct!.accountRole),
+    application_role: cdktf.stringToTerraform(struct!.applicationRole),
+    database_role: cdktf.stringToTerraform(struct!.databaseRole),
     share: cdktf.stringToTerraform(struct!.share),
   }
 }
@@ -515,8 +444,20 @@ export function dataSnowflakeGrantsGrantsOfToHclTerraform(struct?: DataSnowflake
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    role: {
-      value: cdktf.stringToHclTerraform(struct!.role),
+    account_role: {
+      value: cdktf.stringToHclTerraform(struct!.accountRole),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    application_role: {
+      value: cdktf.stringToHclTerraform(struct!.applicationRole),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    database_role: {
+      value: cdktf.stringToHclTerraform(struct!.databaseRole),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -547,9 +488,17 @@ export class DataSnowflakeGrantsGrantsOfOutputReference extends cdktf.ComplexObj
   public get internalValue(): DataSnowflakeGrantsGrantsOf | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._role !== undefined) {
+    if (this._accountRole !== undefined) {
       hasAnyValues = true;
-      internalValueResult.role = this._role;
+      internalValueResult.accountRole = this._accountRole;
+    }
+    if (this._applicationRole !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.applicationRole = this._applicationRole;
+    }
+    if (this._databaseRole !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.databaseRole = this._databaseRole;
     }
     if (this._share !== undefined) {
       hasAnyValues = true;
@@ -561,30 +510,66 @@ export class DataSnowflakeGrantsGrantsOfOutputReference extends cdktf.ComplexObj
   public set internalValue(value: DataSnowflakeGrantsGrantsOf | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._role = undefined;
+      this._accountRole = undefined;
+      this._applicationRole = undefined;
+      this._databaseRole = undefined;
       this._share = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._role = value.role;
+      this._accountRole = value.accountRole;
+      this._applicationRole = value.applicationRole;
+      this._databaseRole = value.databaseRole;
       this._share = value.share;
     }
   }
 
-  // role - computed: false, optional: true, required: false
-  private _role?: string; 
-  public get role() {
-    return this.getStringAttribute('role');
+  // account_role - computed: false, optional: true, required: false
+  private _accountRole?: string; 
+  public get accountRole() {
+    return this.getStringAttribute('account_role');
   }
-  public set role(value: string) {
-    this._role = value;
+  public set accountRole(value: string) {
+    this._accountRole = value;
   }
-  public resetRole() {
-    this._role = undefined;
+  public resetAccountRole() {
+    this._accountRole = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get roleInput() {
-    return this._role;
+  public get accountRoleInput() {
+    return this._accountRole;
+  }
+
+  // application_role - computed: false, optional: true, required: false
+  private _applicationRole?: string; 
+  public get applicationRole() {
+    return this.getStringAttribute('application_role');
+  }
+  public set applicationRole(value: string) {
+    this._applicationRole = value;
+  }
+  public resetApplicationRole() {
+    this._applicationRole = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get applicationRoleInput() {
+    return this._applicationRole;
+  }
+
+  // database_role - computed: false, optional: true, required: false
+  private _databaseRole?: string; 
+  public get databaseRole() {
+    return this.getStringAttribute('database_role');
+  }
+  public set databaseRole(value: string) {
+    this._databaseRole = value;
+  }
+  public resetDatabaseRole() {
+    this._databaseRole = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get databaseRoleInput() {
+    return this._databaseRole;
   }
 
   // share - computed: false, optional: true, required: false
@@ -607,19 +592,19 @@ export interface DataSnowflakeGrantsGrantsOn {
   /**
   * Object hierarchy to list privileges on. The only valid value is: ACCOUNT. Setting this attribute lists all the account-level (i.e. global) privileges that have been granted to roles.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/data-sources/grants#account DataSnowflakeGrants#account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/data-sources/grants#account DataSnowflakeGrants#account}
   */
   readonly account?: boolean | cdktf.IResolvable;
   /**
-  * Name of object to list privileges on
+  * Name of object to list privileges on.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/data-sources/grants#object_name DataSnowflakeGrants#object_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/data-sources/grants#object_name DataSnowflakeGrants#object_name}
   */
   readonly objectName?: string;
   /**
   * Type of object to list privileges on.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/data-sources/grants#object_type DataSnowflakeGrants#object_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/data-sources/grants#object_type DataSnowflakeGrants#object_type}
   */
   readonly objectType?: string;
 }
@@ -759,25 +744,126 @@ export class DataSnowflakeGrantsGrantsOnOutputReference extends cdktf.ComplexObj
     return this._objectType;
   }
 }
+export interface DataSnowflakeGrantsGrantsToShare {
+  /**
+  * Lists all of the privileges and roles granted to the specified share.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/data-sources/grants#share_name DataSnowflakeGrants#share_name}
+  */
+  readonly shareName: string;
+}
+
+export function dataSnowflakeGrantsGrantsToShareToTerraform(struct?: DataSnowflakeGrantsGrantsToShareOutputReference | DataSnowflakeGrantsGrantsToShare): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    share_name: cdktf.stringToTerraform(struct!.shareName),
+  }
+}
+
+
+export function dataSnowflakeGrantsGrantsToShareToHclTerraform(struct?: DataSnowflakeGrantsGrantsToShareOutputReference | DataSnowflakeGrantsGrantsToShare): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    share_name: {
+      value: cdktf.stringToHclTerraform(struct!.shareName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataSnowflakeGrantsGrantsToShareOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DataSnowflakeGrantsGrantsToShare | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._shareName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.shareName = this._shareName;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataSnowflakeGrantsGrantsToShare | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._shareName = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._shareName = value.shareName;
+    }
+  }
+
+  // share_name - computed: false, optional: false, required: true
+  private _shareName?: string; 
+  public get shareName() {
+    return this.getStringAttribute('share_name');
+  }
+  public set shareName(value: string) {
+    this._shareName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get shareNameInput() {
+    return this._shareName;
+  }
+}
 export interface DataSnowflakeGrantsGrantsTo {
   /**
-  * Lists all privileges and roles granted to the role
+  * Lists all privileges and roles granted to the role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/data-sources/grants#role DataSnowflakeGrants#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/data-sources/grants#account_role DataSnowflakeGrants#account_role}
   */
-  readonly role?: string;
+  readonly accountRole?: string;
   /**
-  * Lists all the privileges granted to the share
+  * Lists all the privileges and roles granted to the application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/data-sources/grants#share DataSnowflakeGrants#share}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/data-sources/grants#application DataSnowflakeGrants#application}
   */
-  readonly share?: string;
+  readonly application?: string;
   /**
-  * Lists all the roles granted to the user. Note that the PUBLIC role, which is automatically available to every user, is not listed
+  * Lists all the privileges and roles granted to the application role. Must be a fully qualified name ("&lt;app_name&gt;"."&lt;app_role_name&gt;").
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/data-sources/grants#user DataSnowflakeGrants#user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/data-sources/grants#application_role DataSnowflakeGrants#application_role}
+  */
+  readonly applicationRole?: string;
+  /**
+  * Lists all privileges and roles granted to the database role. Must be a fully qualified name ("&lt;db_name&gt;"."&lt;database_role_name&gt;").
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/data-sources/grants#database_role DataSnowflakeGrants#database_role}
+  */
+  readonly databaseRole?: string;
+  /**
+  * Lists all the roles granted to the user. Note that the PUBLIC role, which is automatically available to every user, is not listed.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/data-sources/grants#user DataSnowflakeGrants#user}
   */
   readonly user?: string;
+  /**
+  * share block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/data-sources/grants#share DataSnowflakeGrants#share}
+  */
+  readonly share?: DataSnowflakeGrantsGrantsToShare;
 }
 
 export function dataSnowflakeGrantsGrantsToToTerraform(struct?: DataSnowflakeGrantsGrantsToOutputReference | DataSnowflakeGrantsGrantsTo): any {
@@ -786,9 +872,12 @@ export function dataSnowflakeGrantsGrantsToToTerraform(struct?: DataSnowflakeGra
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    role: cdktf.stringToTerraform(struct!.role),
-    share: cdktf.stringToTerraform(struct!.share),
+    account_role: cdktf.stringToTerraform(struct!.accountRole),
+    application: cdktf.stringToTerraform(struct!.application),
+    application_role: cdktf.stringToTerraform(struct!.applicationRole),
+    database_role: cdktf.stringToTerraform(struct!.databaseRole),
     user: cdktf.stringToTerraform(struct!.user),
+    share: dataSnowflakeGrantsGrantsToShareToTerraform(struct!.share),
   }
 }
 
@@ -799,14 +888,26 @@ export function dataSnowflakeGrantsGrantsToToHclTerraform(struct?: DataSnowflake
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    role: {
-      value: cdktf.stringToHclTerraform(struct!.role),
+    account_role: {
+      value: cdktf.stringToHclTerraform(struct!.accountRole),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
-    share: {
-      value: cdktf.stringToHclTerraform(struct!.share),
+    application: {
+      value: cdktf.stringToHclTerraform(struct!.application),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    application_role: {
+      value: cdktf.stringToHclTerraform(struct!.applicationRole),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    database_role: {
+      value: cdktf.stringToHclTerraform(struct!.databaseRole),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -816,6 +917,12 @@ export function dataSnowflakeGrantsGrantsToToHclTerraform(struct?: DataSnowflake
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    share: {
+      value: dataSnowflakeGrantsGrantsToShareToHclTerraform(struct!.share),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataSnowflakeGrantsGrantsToShareList",
     },
   };
 
@@ -837,17 +944,29 @@ export class DataSnowflakeGrantsGrantsToOutputReference extends cdktf.ComplexObj
   public get internalValue(): DataSnowflakeGrantsGrantsTo | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._role !== undefined) {
+    if (this._accountRole !== undefined) {
       hasAnyValues = true;
-      internalValueResult.role = this._role;
+      internalValueResult.accountRole = this._accountRole;
     }
-    if (this._share !== undefined) {
+    if (this._application !== undefined) {
       hasAnyValues = true;
-      internalValueResult.share = this._share;
+      internalValueResult.application = this._application;
+    }
+    if (this._applicationRole !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.applicationRole = this._applicationRole;
+    }
+    if (this._databaseRole !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.databaseRole = this._databaseRole;
     }
     if (this._user !== undefined) {
       hasAnyValues = true;
       internalValueResult.user = this._user;
+    }
+    if (this._share?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.share = this._share?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -855,48 +974,86 @@ export class DataSnowflakeGrantsGrantsToOutputReference extends cdktf.ComplexObj
   public set internalValue(value: DataSnowflakeGrantsGrantsTo | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._role = undefined;
-      this._share = undefined;
+      this._accountRole = undefined;
+      this._application = undefined;
+      this._applicationRole = undefined;
+      this._databaseRole = undefined;
       this._user = undefined;
+      this._share.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._role = value.role;
-      this._share = value.share;
+      this._accountRole = value.accountRole;
+      this._application = value.application;
+      this._applicationRole = value.applicationRole;
+      this._databaseRole = value.databaseRole;
       this._user = value.user;
+      this._share.internalValue = value.share;
     }
   }
 
-  // role - computed: false, optional: true, required: false
-  private _role?: string; 
-  public get role() {
-    return this.getStringAttribute('role');
+  // account_role - computed: false, optional: true, required: false
+  private _accountRole?: string; 
+  public get accountRole() {
+    return this.getStringAttribute('account_role');
   }
-  public set role(value: string) {
-    this._role = value;
+  public set accountRole(value: string) {
+    this._accountRole = value;
   }
-  public resetRole() {
-    this._role = undefined;
+  public resetAccountRole() {
+    this._accountRole = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get roleInput() {
-    return this._role;
+  public get accountRoleInput() {
+    return this._accountRole;
   }
 
-  // share - computed: false, optional: true, required: false
-  private _share?: string; 
-  public get share() {
-    return this.getStringAttribute('share');
+  // application - computed: false, optional: true, required: false
+  private _application?: string; 
+  public get application() {
+    return this.getStringAttribute('application');
   }
-  public set share(value: string) {
-    this._share = value;
+  public set application(value: string) {
+    this._application = value;
   }
-  public resetShare() {
-    this._share = undefined;
+  public resetApplication() {
+    this._application = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get shareInput() {
-    return this._share;
+  public get applicationInput() {
+    return this._application;
+  }
+
+  // application_role - computed: false, optional: true, required: false
+  private _applicationRole?: string; 
+  public get applicationRole() {
+    return this.getStringAttribute('application_role');
+  }
+  public set applicationRole(value: string) {
+    this._applicationRole = value;
+  }
+  public resetApplicationRole() {
+    this._applicationRole = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get applicationRoleInput() {
+    return this._applicationRole;
+  }
+
+  // database_role - computed: false, optional: true, required: false
+  private _databaseRole?: string; 
+  public get databaseRole() {
+    return this.getStringAttribute('database_role');
+  }
+  public set databaseRole(value: string) {
+    this._databaseRole = value;
+  }
+  public resetDatabaseRole() {
+    this._databaseRole = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get databaseRoleInput() {
+    return this._databaseRole;
   }
 
   // user - computed: false, optional: true, required: false
@@ -914,10 +1071,26 @@ export class DataSnowflakeGrantsGrantsToOutputReference extends cdktf.ComplexObj
   public get userInput() {
     return this._user;
   }
+
+  // share - computed: false, optional: true, required: false
+  private _share = new DataSnowflakeGrantsGrantsToShareOutputReference(this, "share");
+  public get share() {
+    return this._share;
+  }
+  public putShare(value: DataSnowflakeGrantsGrantsToShare) {
+    this._share.internalValue = value;
+  }
+  public resetShare() {
+    this._share.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get shareInput() {
+    return this._share.internalValue;
+  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/data-sources/grants snowflake_grants}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/data-sources/grants snowflake_grants}
 */
 export class DataSnowflakeGrants extends cdktf.TerraformDataSource {
 
@@ -933,7 +1106,7 @@ export class DataSnowflakeGrants extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataSnowflakeGrants resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataSnowflakeGrants to import
-  * @param importFromId The id of the existing DataSnowflakeGrants that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/data-sources/grants#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataSnowflakeGrants that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/data-sources/grants#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataSnowflakeGrants to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -945,7 +1118,7 @@ export class DataSnowflakeGrants extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/data-sources/grants snowflake_grants} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/data-sources/grants snowflake_grants} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -956,7 +1129,7 @@ export class DataSnowflakeGrants extends cdktf.TerraformDataSource {
       terraformResourceType: 'snowflake_grants',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.87.2',
+        providerVersion: '0.88.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,

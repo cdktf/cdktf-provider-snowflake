@@ -65,6 +65,7 @@ The following submodules are available:
 - [functionResource](./functionResource.csharp.md)
 - [grantAccountRole](./grantAccountRole.csharp.md)
 - [grantDatabaseRole](./grantDatabaseRole.csharp.md)
+- [grantOwnership](./grantOwnership.csharp.md)
 - [grantPrivilegesToAccountRole](./grantPrivilegesToAccountRole.csharp.md)
 - [grantPrivilegesToDatabaseRole](./grantPrivilegesToDatabaseRole.csharp.md)
 - [grantPrivilegesToRole](./grantPrivilegesToRole.csharp.md)

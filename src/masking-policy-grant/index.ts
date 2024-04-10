@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/masking_policy_grant
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/masking_policy_grant
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface MaskingPolicyGrantConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the database containing the masking policy on which to grant privileges.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/masking_policy_grant#database_name MaskingPolicyGrant#database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/masking_policy_grant#database_name MaskingPolicyGrant#database_name}
   */
   readonly databaseName: string;
   /**
   * When this is set to true, multiple grants of the same type can be created. This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/masking_policy_grant#enable_multiple_grants MaskingPolicyGrant#enable_multiple_grants}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/masking_policy_grant#enable_multiple_grants MaskingPolicyGrant#enable_multiple_grants}
   */
   readonly enableMultipleGrants?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/masking_policy_grant#id MaskingPolicyGrant#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/masking_policy_grant#id MaskingPolicyGrant#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,43 +29,43 @@ export interface MaskingPolicyGrantConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the masking policy on which to grant privileges immediately.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/masking_policy_grant#masking_policy_name MaskingPolicyGrant#masking_policy_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/masking_policy_grant#masking_policy_name MaskingPolicyGrant#masking_policy_name}
   */
   readonly maskingPolicyName: string;
   /**
   * The privilege to grant on the masking policy. To grant all privileges, use the value `ALL PRIVILEGES`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/masking_policy_grant#privilege MaskingPolicyGrant#privilege}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/masking_policy_grant#privilege MaskingPolicyGrant#privilege}
   */
   readonly privilege?: string;
   /**
   * The name of the role to revert ownership to on destroy. Has no effect unless `privilege` is set to `OWNERSHIP`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/masking_policy_grant#revert_ownership_to_role_name MaskingPolicyGrant#revert_ownership_to_role_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/masking_policy_grant#revert_ownership_to_role_name MaskingPolicyGrant#revert_ownership_to_role_name}
   */
   readonly revertOwnershipToRoleName?: string;
   /**
   * Grants privilege to these roles.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/masking_policy_grant#roles MaskingPolicyGrant#roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/masking_policy_grant#roles MaskingPolicyGrant#roles}
   */
   readonly roles?: string[];
   /**
   * The name of the schema containing the masking policy on which to grant privileges.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/masking_policy_grant#schema_name MaskingPolicyGrant#schema_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/masking_policy_grant#schema_name MaskingPolicyGrant#schema_name}
   */
   readonly schemaName: string;
   /**
   * When this is set to true, allows the recipient role to grant the privileges to other roles.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/masking_policy_grant#with_grant_option MaskingPolicyGrant#with_grant_option}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/masking_policy_grant#with_grant_option MaskingPolicyGrant#with_grant_option}
   */
   readonly withGrantOption?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/masking_policy_grant snowflake_masking_policy_grant}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/masking_policy_grant snowflake_masking_policy_grant}
 */
 export class MaskingPolicyGrant extends cdktf.TerraformResource {
 
@@ -86,7 +81,7 @@ export class MaskingPolicyGrant extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a MaskingPolicyGrant resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MaskingPolicyGrant to import
-  * @param importFromId The id of the existing MaskingPolicyGrant that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/masking_policy_grant#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MaskingPolicyGrant that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/masking_policy_grant#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MaskingPolicyGrant to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -98,7 +93,7 @@ export class MaskingPolicyGrant extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/masking_policy_grant snowflake_masking_policy_grant} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/masking_policy_grant snowflake_masking_policy_grant} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -109,7 +104,7 @@ export class MaskingPolicyGrant extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_masking_policy_grant',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.87.2',
+        providerVersion: '0.88.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,

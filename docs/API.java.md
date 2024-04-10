@@ -65,6 +65,7 @@ The following submodules are available:
 - [functionResource](./functionResource.java.md)
 - [grantAccountRole](./grantAccountRole.java.md)
 - [grantDatabaseRole](./grantDatabaseRole.java.md)
+- [grantOwnership](./grantOwnership.java.md)
 - [grantPrivilegesToAccountRole](./grantPrivilegesToAccountRole.java.md)
 - [grantPrivilegesToDatabaseRole](./grantPrivilegesToDatabaseRole.java.md)
 - [grantPrivilegesToRole](./grantPrivilegesToRole.java.md)
