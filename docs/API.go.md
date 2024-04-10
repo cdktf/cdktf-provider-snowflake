@@ -65,6 +65,7 @@ The following submodules are available:
 - [functionResource](./functionResource.go.md)
 - [grantAccountRole](./grantAccountRole.go.md)
 - [grantDatabaseRole](./grantDatabaseRole.go.md)
+- [grantOwnership](./grantOwnership.go.md)
 - [grantPrivilegesToAccountRole](./grantPrivilegesToAccountRole.go.md)
 - [grantPrivilegesToDatabaseRole](./grantPrivilegesToDatabaseRole.go.md)
 - [grantPrivilegesToRole](./grantPrivilegesToRole.go.md)

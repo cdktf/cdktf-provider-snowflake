@@ -4,7 +4,7 @@
 
 ### ViewGrant <a name="ViewGrant" id="@cdktf/provider-snowflake.viewGrant.ViewGrant"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/view_grant snowflake_view_grant}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/view_grant snowflake_view_grant}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.viewGrant.ViewGrant.Initializer"></a>
 
@@ -544,7 +544,7 @@ The construct id used in the generated config for the ViewGrant to import.
 
 The id of the existing ViewGrant that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/view_grant#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/view_grant#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1026,7 +1026,7 @@ const viewGrantConfig: viewGrant.ViewGrantConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrantConfig.property.databaseName">databaseName</a></code> | <code>string</code> | The name of the database containing the current or future views on which to grant privileges. |
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrantConfig.property.enableMultipleGrants">enableMultipleGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true, multiple grants of the same type can be created. |
-| <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrantConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/view_grant#id ViewGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrantConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/view_grant#id ViewGrant#id}. |
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrantConfig.property.onAll">onAll</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true and a schema_name is provided, apply this grant on all views in the given schema. |
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrantConfig.property.onFuture">onFuture</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this is set to true and a schema_name is provided, apply this grant on all future views in the given schema. |
 | <code><a href="#@cdktf/provider-snowflake.viewGrant.ViewGrantConfig.property.privilege">privilege</a></code> | <code>string</code> | The privilege to grant on the current or future view. To grant all privileges, use the value `ALL PRIVILEGES`. |
@@ -1119,7 +1119,7 @@ public readonly databaseName: string;
 
 The name of the database containing the current or future views on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/view_grant#database_name ViewGrant#database_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/view_grant#database_name ViewGrant#database_name}
 
 ---
 
@@ -1135,7 +1135,7 @@ When this is set to true, multiple grants of the same type can be created.
 
 This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/view_grant#enable_multiple_grants ViewGrant#enable_multiple_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/view_grant#enable_multiple_grants ViewGrant#enable_multiple_grants}
 
 ---
 
@@ -1147,7 +1147,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/view_grant#id ViewGrant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/view_grant#id ViewGrant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1166,7 +1166,7 @@ When this is set to true and a schema_name is provided, apply this grant on all 
 
 When this is true and no schema_name is provided apply this grant on all views in the given database. The view_name and shares fields must be unset in order to use on_all. Cannot be used together with on_future.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/view_grant#on_all ViewGrant#on_all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/view_grant#on_all ViewGrant#on_all}
 
 ---
 
@@ -1182,7 +1182,7 @@ When this is set to true and a schema_name is provided, apply this grant on all 
 
 When this is true and no schema_name is provided apply this grant on all future views in the given database. The view_name and shares fields must be unset in order to use on_future. Cannot be used together with on_all.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/view_grant#on_future ViewGrant#on_future}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/view_grant#on_future ViewGrant#on_future}
 
 ---
 
@@ -1196,7 +1196,7 @@ public readonly privilege: string;
 
 The privilege to grant on the current or future view. To grant all privileges, use the value `ALL PRIVILEGES`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/view_grant#privilege ViewGrant#privilege}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/view_grant#privilege ViewGrant#privilege}
 
 ---
 
@@ -1212,7 +1212,7 @@ The name of the role to revert ownership to on destroy.
 
 Has no effect unless `privilege` is set to `OWNERSHIP`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/view_grant#revert_ownership_to_role_name ViewGrant#revert_ownership_to_role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/view_grant#revert_ownership_to_role_name ViewGrant#revert_ownership_to_role_name}
 
 ---
 
@@ -1226,7 +1226,7 @@ public readonly roles: string[];
 
 Grants privilege to these roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/view_grant#roles ViewGrant#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/view_grant#roles ViewGrant#roles}
 
 ---
 
@@ -1240,7 +1240,7 @@ public readonly schemaName: string;
 
 The name of the schema containing the current or future views on which to grant privileges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/view_grant#schema_name ViewGrant#schema_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/view_grant#schema_name ViewGrant#schema_name}
 
 ---
 
@@ -1254,7 +1254,7 @@ public readonly shares: string[];
 
 Grants privilege to these shares (only valid if on_future and on_all are unset).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/view_grant#shares ViewGrant#shares}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/view_grant#shares ViewGrant#shares}
 
 ---
 
@@ -1268,7 +1268,7 @@ public readonly viewName: string;
 
 The name of the view on which to grant privileges immediately (only valid if on_future and on_all are unset).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/view_grant#view_name ViewGrant#view_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/view_grant#view_name ViewGrant#view_name}
 
 ---
 
@@ -1282,7 +1282,7 @@ public readonly withGrantOption: boolean | IResolvable;
 
 When this is set to true, allows the recipient role to grant the privileges to other roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.87.2/docs/resources/view_grant#with_grant_option ViewGrant#with_grant_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/view_grant#with_grant_option ViewGrant#with_grant_option}
 
 ---
 

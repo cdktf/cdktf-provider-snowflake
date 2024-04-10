@@ -27,6 +27,7 @@ export * as functionResource from './function-resource';
 export * as functionGrant from './function-grant';
 export * as grantAccountRole from './grant-account-role';
 export * as grantDatabaseRole from './grant-database-role';
+export * as grantOwnership from './grant-ownership';
 export * as grantPrivilegesToAccountRole from './grant-privileges-to-account-role';
 export * as grantPrivilegesToDatabaseRole from './grant-privileges-to-database-role';
 export * as grantPrivilegesToRole from './grant-privileges-to-role';

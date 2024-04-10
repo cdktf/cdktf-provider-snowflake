@@ -65,6 +65,7 @@ The following submodules are available:
 - [functionResource](./functionResource.python.md)
 - [grantAccountRole](./grantAccountRole.python.md)
 - [grantDatabaseRole](./grantDatabaseRole.python.md)
+- [grantOwnership](./grantOwnership.python.md)
 - [grantPrivilegesToAccountRole](./grantPrivilegesToAccountRole.python.md)
 - [grantPrivilegesToDatabaseRole](./grantPrivilegesToDatabaseRole.python.md)
 - [grantPrivilegesToRole](./grantPrivilegesToRole.python.md)

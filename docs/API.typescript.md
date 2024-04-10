@@ -65,6 +65,7 @@ The following submodules are available:
 - [functionResource](./functionResource.typescript.md)
 - [grantAccountRole](./grantAccountRole.typescript.md)
 - [grantDatabaseRole](./grantDatabaseRole.typescript.md)
+- [grantOwnership](./grantOwnership.typescript.md)
 - [grantPrivilegesToAccountRole](./grantPrivilegesToAccountRole.typescript.md)
 - [grantPrivilegesToDatabaseRole](./grantPrivilegesToDatabaseRole.typescript.md)
 - [grantPrivilegesToRole](./grantPrivilegesToRole.typescript.md)
