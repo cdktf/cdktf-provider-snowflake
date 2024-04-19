@@ -4,12 +4,12 @@
 
 ### DataSnowflakeAlerts <a name="DataSnowflakeAlerts" id="@cdktf/provider-snowflake.dataSnowflakeAlerts.DataSnowflakeAlerts"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/data-sources/alerts snowflake_alerts}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/data-sources/alerts snowflake_alerts}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeAlerts.DataSnowflakeAlerts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakealerts"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakealerts"
 
 datasnowflakealerts.NewDataSnowflakeAlerts(scope Construct, id *string, config DataSnowflakeAlertsConfig) DataSnowflakeAlerts
 ```
@@ -304,7 +304,7 @@ func ResetSchema()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeAlerts.DataSnowflakeAlerts.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakealerts"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakealerts"
 
 datasnowflakealerts.DataSnowflakeAlerts_IsConstruct(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeAlerts.DataSnowflakeAlerts.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakealerts"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakealerts"
 
 datasnowflakealerts.DataSnowflakeAlerts_IsTerraformElement(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datasnowflakealerts.DataSnowflakeAlerts_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeAlerts.DataSnowflakeAlerts.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakealerts"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakealerts"
 
 datasnowflakealerts.DataSnowflakeAlerts_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ datasnowflakealerts.DataSnowflakeAlerts_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.dataSnowflakeAlerts.DataSnowflakeAlerts.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakealerts"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakealerts"
 
 datasnowflakealerts.DataSnowflakeAlerts_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -393,7 +393,7 @@ The construct id used in the generated config for the DataSnowflakeAlerts to imp
 
 The id of the existing DataSnowflakeAlerts that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/data-sources/alerts#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/data-sources/alerts#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -670,7 +670,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeAlerts.DataSnowflakeAlertsAlerts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakealerts"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakealerts"
 
 &datasnowflakealerts.DataSnowflakeAlertsAlerts {
 
@@ -683,7 +683,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeAlerts.DataSnowflakeAlertsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakealerts"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakealerts"
 
 &datasnowflakealerts.DataSnowflakeAlertsConfig {
 	Connection: interface{},
@@ -712,7 +712,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeAlerts.DataSnowflakeAlertsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeAlerts.DataSnowflakeAlertsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeAlerts.DataSnowflakeAlertsConfig.property.database">Database</a></code> | <code>*string</code> | The database from which to return the alerts from. |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeAlerts.DataSnowflakeAlertsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/data-sources/alerts#id DataSnowflakeAlerts#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeAlerts.DataSnowflakeAlertsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/data-sources/alerts#id DataSnowflakeAlerts#id}. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeAlerts.DataSnowflakeAlertsConfig.property.pattern">Pattern</a></code> | <code>*string</code> | Filters the command output by object name. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeAlerts.DataSnowflakeAlertsConfig.property.schema">Schema</a></code> | <code>*string</code> | The schema from which to return the alerts from. |
 
@@ -798,7 +798,7 @@ Database *string
 
 The database from which to return the alerts from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/data-sources/alerts#database DataSnowflakeAlerts#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/data-sources/alerts#database DataSnowflakeAlerts#database}
 
 ---
 
@@ -810,7 +810,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/data-sources/alerts#id DataSnowflakeAlerts#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/data-sources/alerts#id DataSnowflakeAlerts#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -827,7 +827,7 @@ Pattern *string
 
 Filters the command output by object name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/data-sources/alerts#pattern DataSnowflakeAlerts#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/data-sources/alerts#pattern DataSnowflakeAlerts#pattern}
 
 ---
 
@@ -841,7 +841,7 @@ Schema *string
 
 The schema from which to return the alerts from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/data-sources/alerts#schema DataSnowflakeAlerts#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/data-sources/alerts#schema DataSnowflakeAlerts#schema}
 
 ---
 
@@ -852,7 +852,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeAlerts.DataSnowflakeAlertsAlertsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakealerts"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakealerts"
 
 datasnowflakealerts.NewDataSnowflakeAlertsAlertsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeAlertsAlertsList
 ```
@@ -1001,7 +1001,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeAlerts.DataSnowflakeAlertsAlertsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakealerts"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakealerts"
 
 datasnowflakealerts.NewDataSnowflakeAlertsAlertsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeAlertsAlertsOutputReference
 ```

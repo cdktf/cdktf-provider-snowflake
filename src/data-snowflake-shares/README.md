@@ -1,3 +1,3 @@
 # `data_snowflake_shares`
 
-Refer to the Terraform Registry for docs: [`data_snowflake_shares`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/data-sources/shares).
+Refer to the Terraform Registry for docs: [`data_snowflake_shares`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/data-sources/shares).

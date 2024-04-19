@@ -4,12 +4,12 @@
 
 ### DataSnowflakeWarehouses <a name="DataSnowflakeWarehouses" id="@cdktf/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehouses"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/data-sources/warehouses snowflake_warehouses}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/data-sources/warehouses snowflake_warehouses}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehouses.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakewarehouses"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakewarehouses"
 
 datasnowflakewarehouses.NewDataSnowflakeWarehouses(scope Construct, id *string, config DataSnowflakeWarehousesConfig) DataSnowflakeWarehouses
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehouses.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakewarehouses"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakewarehouses"
 
 datasnowflakewarehouses.DataSnowflakeWarehouses_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehouses.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakewarehouses"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakewarehouses"
 
 datasnowflakewarehouses.DataSnowflakeWarehouses_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datasnowflakewarehouses.DataSnowflakeWarehouses_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehouses.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakewarehouses"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakewarehouses"
 
 datasnowflakewarehouses.DataSnowflakeWarehouses_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datasnowflakewarehouses.DataSnowflakeWarehouses_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehouses.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakewarehouses"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakewarehouses"
 
 datasnowflakewarehouses.DataSnowflakeWarehouses_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataSnowflakeWarehouses to
 
 The id of the existing DataSnowflakeWarehouses that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/data-sources/warehouses#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/data-sources/warehouses#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -583,7 +583,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakewarehouses"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakewarehouses"
 
 &datasnowflakewarehouses.DataSnowflakeWarehousesConfig {
 	Connection: interface{},
@@ -608,7 +608,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/data-sources/warehouses#id DataSnowflakeWarehouses#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/data-sources/warehouses#id DataSnowflakeWarehouses#id}. |
 
 ---
 
@@ -690,7 +690,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/data-sources/warehouses#id DataSnowflakeWarehouses#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/data-sources/warehouses#id DataSnowflakeWarehouses#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -702,7 +702,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehouses.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakewarehouses"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakewarehouses"
 
 &datasnowflakewarehouses.DataSnowflakeWarehousesWarehouses {
 
@@ -717,7 +717,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakewarehouses"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakewarehouses"
 
 datasnowflakewarehouses.NewDataSnowflakeWarehousesWarehousesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeWarehousesWarehousesList
 ```
@@ -866,7 +866,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeWarehouses.DataSnowflakeWarehousesWarehousesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakewarehouses"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakewarehouses"
 
 datasnowflakewarehouses.NewDataSnowflakeWarehousesWarehousesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeWarehousesWarehousesOutputReference
 ```

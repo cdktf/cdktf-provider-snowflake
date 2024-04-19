@@ -4,7 +4,7 @@
 
 ### ResourceMonitor <a name="ResourceMonitor" id="@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/resource_monitor snowflake_resource_monitor}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/resource_monitor snowflake_resource_monitor}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.Initializer"></a>
 
@@ -53,7 +53,7 @@ resourceMonitor.ResourceMonitor(
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.Initializer.parameter.creditQuota">credit_quota</a></code> | <code>typing.Union[int, float]</code> | The number of credits allocated monthly to the resource monitor. |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.Initializer.parameter.endTimestamp">end_timestamp</a></code> | <code>str</code> | The date and time when the resource monitor suspends the assigned warehouses. |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.Initializer.parameter.frequency">frequency</a></code> | <code>str</code> | The frequency interval at which the credit usage resets to 0. |
-| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/resource_monitor#id ResourceMonitor#id}. |
+| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/resource_monitor#id ResourceMonitor#id}. |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.Initializer.parameter.notifyTriggers">notify_triggers</a></code> | <code>typing.List[typing.Union[int, float]]</code> | A list of percentage thresholds at which to send an alert to subscribed users. |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.Initializer.parameter.notifyUsers">notify_users</a></code> | <code>typing.List[str]</code> | Specifies the list of users to receive email notifications on resource monitors. |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitor.Initializer.parameter.setForAccount">set_for_account</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether the resource monitor should be applied globally to your Snowflake account (defaults to false). |
@@ -132,7 +132,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier for the resource monitor; must be unique for your account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/resource_monitor#name ResourceMonitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/resource_monitor#name ResourceMonitor#name}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The number of credits allocated monthly to the resource monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/resource_monitor#credit_quota ResourceMonitor#credit_quota}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/resource_monitor#credit_quota ResourceMonitor#credit_quota}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The date and time when the resource monitor suspends the assigned warehouses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/resource_monitor#end_timestamp ResourceMonitor#end_timestamp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/resource_monitor#end_timestamp ResourceMonitor#end_timestamp}
 
 ---
 
@@ -164,7 +164,7 @@ The frequency interval at which the credit usage resets to 0.
 
 If you set a frequency for a resource monitor, you must also set START_TIMESTAMP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/resource_monitor#frequency ResourceMonitor#frequency}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/resource_monitor#frequency ResourceMonitor#frequency}
 
 ---
 
@@ -172,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/resource_monitor#id ResourceMonitor#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/resource_monitor#id ResourceMonitor#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -185,7 +185,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 A list of percentage thresholds at which to send an alert to subscribed users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/resource_monitor#notify_triggers ResourceMonitor#notify_triggers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/resource_monitor#notify_triggers ResourceMonitor#notify_triggers}
 
 ---
 
@@ -195,7 +195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the list of users to receive email notifications on resource monitors.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/resource_monitor#notify_users ResourceMonitor#notify_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/resource_monitor#notify_users ResourceMonitor#notify_users}
 
 ---
 
@@ -205,7 +205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies whether the resource monitor should be applied globally to your Snowflake account (defaults to false).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/resource_monitor#set_for_account ResourceMonitor#set_for_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/resource_monitor#set_for_account ResourceMonitor#set_for_account}
 
 ---
 
@@ -215,7 +215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The date and time when the resource monitor starts monitoring credit usage for the assigned warehouses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/resource_monitor#start_timestamp ResourceMonitor#start_timestamp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/resource_monitor#start_timestamp ResourceMonitor#start_timestamp}
 
 ---
 
@@ -225,7 +225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The number that represents the percentage threshold at which to immediately suspend all warehouses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/resource_monitor#suspend_immediate_trigger ResourceMonitor#suspend_immediate_trigger}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/resource_monitor#suspend_immediate_trigger ResourceMonitor#suspend_immediate_trigger}
 
 ---
 
@@ -235,7 +235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 A list of percentage thresholds at which to suspend all warehouses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/resource_monitor#suspend_immediate_triggers ResourceMonitor#suspend_immediate_triggers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/resource_monitor#suspend_immediate_triggers ResourceMonitor#suspend_immediate_triggers}
 
 ---
 
@@ -245,7 +245,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The number that represents the percentage threshold at which to suspend all warehouses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/resource_monitor#suspend_trigger ResourceMonitor#suspend_trigger}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/resource_monitor#suspend_trigger ResourceMonitor#suspend_trigger}
 
 ---
 
@@ -255,7 +255,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 A list of percentage thresholds at which to suspend all warehouses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/resource_monitor#suspend_triggers ResourceMonitor#suspend_triggers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/resource_monitor#suspend_triggers ResourceMonitor#suspend_triggers}
 
 ---
 
@@ -265,7 +265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 A list of warehouses to apply the resource monitor to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/resource_monitor#warehouses ResourceMonitor#warehouses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/resource_monitor#warehouses ResourceMonitor#warehouses}
 
 ---
 
@@ -829,7 +829,7 @@ The construct id used in the generated config for the ResourceMonitor to import.
 
 The id of the existing ResourceMonitor that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/resource_monitor#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/resource_monitor#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1379,7 +1379,7 @@ resourceMonitor.ResourceMonitorConfig(
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.creditQuota">credit_quota</a></code> | <code>typing.Union[int, float]</code> | The number of credits allocated monthly to the resource monitor. |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.endTimestamp">end_timestamp</a></code> | <code>str</code> | The date and time when the resource monitor suspends the assigned warehouses. |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.frequency">frequency</a></code> | <code>str</code> | The frequency interval at which the credit usage resets to 0. |
-| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/resource_monitor#id ResourceMonitor#id}. |
+| <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/resource_monitor#id ResourceMonitor#id}. |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.notifyTriggers">notify_triggers</a></code> | <code>typing.List[typing.Union[int, float]]</code> | A list of percentage thresholds at which to send an alert to subscribed users. |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.notifyUsers">notify_users</a></code> | <code>typing.List[str]</code> | Specifies the list of users to receive email notifications on resource monitors. |
 | <code><a href="#@cdktf/provider-snowflake.resourceMonitor.ResourceMonitorConfig.property.setForAccount">set_for_account</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether the resource monitor should be applied globally to your Snowflake account (defaults to false). |
@@ -1472,7 +1472,7 @@ name: str
 
 Identifier for the resource monitor; must be unique for your account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/resource_monitor#name ResourceMonitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/resource_monitor#name ResourceMonitor#name}
 
 ---
 
@@ -1486,7 +1486,7 @@ credit_quota: typing.Union[int, float]
 
 The number of credits allocated monthly to the resource monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/resource_monitor#credit_quota ResourceMonitor#credit_quota}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/resource_monitor#credit_quota ResourceMonitor#credit_quota}
 
 ---
 
@@ -1500,7 +1500,7 @@ end_timestamp: str
 
 The date and time when the resource monitor suspends the assigned warehouses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/resource_monitor#end_timestamp ResourceMonitor#end_timestamp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/resource_monitor#end_timestamp ResourceMonitor#end_timestamp}
 
 ---
 
@@ -1516,7 +1516,7 @@ The frequency interval at which the credit usage resets to 0.
 
 If you set a frequency for a resource monitor, you must also set START_TIMESTAMP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/resource_monitor#frequency ResourceMonitor#frequency}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/resource_monitor#frequency ResourceMonitor#frequency}
 
 ---
 
@@ -1528,7 +1528,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/resource_monitor#id ResourceMonitor#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/resource_monitor#id ResourceMonitor#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1545,7 +1545,7 @@ notify_triggers: typing.List[typing.Union[int, float]]
 
 A list of percentage thresholds at which to send an alert to subscribed users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/resource_monitor#notify_triggers ResourceMonitor#notify_triggers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/resource_monitor#notify_triggers ResourceMonitor#notify_triggers}
 
 ---
 
@@ -1559,7 +1559,7 @@ notify_users: typing.List[str]
 
 Specifies the list of users to receive email notifications on resource monitors.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/resource_monitor#notify_users ResourceMonitor#notify_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/resource_monitor#notify_users ResourceMonitor#notify_users}
 
 ---
 
@@ -1573,7 +1573,7 @@ set_for_account: typing.Union[bool, IResolvable]
 
 Specifies whether the resource monitor should be applied globally to your Snowflake account (defaults to false).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/resource_monitor#set_for_account ResourceMonitor#set_for_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/resource_monitor#set_for_account ResourceMonitor#set_for_account}
 
 ---
 
@@ -1587,7 +1587,7 @@ start_timestamp: str
 
 The date and time when the resource monitor starts monitoring credit usage for the assigned warehouses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/resource_monitor#start_timestamp ResourceMonitor#start_timestamp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/resource_monitor#start_timestamp ResourceMonitor#start_timestamp}
 
 ---
 
@@ -1601,7 +1601,7 @@ suspend_immediate_trigger: typing.Union[int, float]
 
 The number that represents the percentage threshold at which to immediately suspend all warehouses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/resource_monitor#suspend_immediate_trigger ResourceMonitor#suspend_immediate_trigger}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/resource_monitor#suspend_immediate_trigger ResourceMonitor#suspend_immediate_trigger}
 
 ---
 
@@ -1615,7 +1615,7 @@ suspend_immediate_triggers: typing.List[typing.Union[int, float]]
 
 A list of percentage thresholds at which to suspend all warehouses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/resource_monitor#suspend_immediate_triggers ResourceMonitor#suspend_immediate_triggers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/resource_monitor#suspend_immediate_triggers ResourceMonitor#suspend_immediate_triggers}
 
 ---
 
@@ -1629,7 +1629,7 @@ suspend_trigger: typing.Union[int, float]
 
 The number that represents the percentage threshold at which to suspend all warehouses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/resource_monitor#suspend_trigger ResourceMonitor#suspend_trigger}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/resource_monitor#suspend_trigger ResourceMonitor#suspend_trigger}
 
 ---
 
@@ -1643,7 +1643,7 @@ suspend_triggers: typing.List[typing.Union[int, float]]
 
 A list of percentage thresholds at which to suspend all warehouses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/resource_monitor#suspend_triggers ResourceMonitor#suspend_triggers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/resource_monitor#suspend_triggers ResourceMonitor#suspend_triggers}
 
 ---
 
@@ -1657,7 +1657,7 @@ warehouses: typing.List[str]
 
 A list of warehouses to apply the resource monitor to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/resource_monitor#warehouses ResourceMonitor#warehouses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/resource_monitor#warehouses ResourceMonitor#warehouses}
 
 ---
 

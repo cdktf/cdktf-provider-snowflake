@@ -4,12 +4,12 @@
 
 ### GrantPrivilegesToRole <a name="GrantPrivilegesToRole" id="@cdktf/provider-snowflake.grantPrivilegesToRole.GrantPrivilegesToRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/grant_privileges_to_role snowflake_grant_privileges_to_role}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/grant_privileges_to_role snowflake_grant_privileges_to_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.grantPrivilegesToRole.GrantPrivilegesToRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/grantprivilegestorole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/grantprivilegestorole"
 
 grantprivilegestorole.NewGrantPrivilegesToRole(scope Construct, id *string, config GrantPrivilegesToRoleConfig) GrantPrivilegesToRole
 ```
@@ -473,7 +473,7 @@ func ResetWithGrantOption()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.grantPrivilegesToRole.GrantPrivilegesToRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/grantprivilegestorole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/grantprivilegestorole"
 
 grantprivilegestorole.GrantPrivilegesToRole_IsConstruct(x interface{}) *bool
 ```
@@ -505,7 +505,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.grantPrivilegesToRole.GrantPrivilegesToRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/grantprivilegestorole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/grantprivilegestorole"
 
 grantprivilegestorole.GrantPrivilegesToRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -519,7 +519,7 @@ grantprivilegestorole.GrantPrivilegesToRole_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.grantPrivilegesToRole.GrantPrivilegesToRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/grantprivilegestorole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/grantprivilegestorole"
 
 grantprivilegestorole.GrantPrivilegesToRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -533,7 +533,7 @@ grantprivilegestorole.GrantPrivilegesToRole_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.grantPrivilegesToRole.GrantPrivilegesToRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/grantprivilegestorole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/grantprivilegestorole"
 
 grantprivilegestorole.GrantPrivilegesToRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -562,7 +562,7 @@ The construct id used in the generated config for the GrantPrivilegesToRole to i
 
 The id of the existing GrantPrivilegesToRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/grant_privileges_to_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/grant_privileges_to_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -960,7 +960,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.grantPrivilegesToRole.GrantPrivilegesToRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/grantprivilegestorole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/grantprivilegestorole"
 
 &grantprivilegestorole.GrantPrivilegesToRoleConfig {
 	Connection: interface{},
@@ -974,9 +974,9 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/grantprivileg
 	AllPrivileges: interface{},
 	Id: *string,
 	OnAccount: interface{},
-	OnAccountObject: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11.grantPrivilegesToRole.GrantPrivilegesToRoleOnAccountObject,
-	OnSchema: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11.grantPrivilegesToRole.GrantPrivilegesToRoleOnSchema,
-	OnSchemaObject: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11.grantPrivilegesToRole.GrantPrivilegesToRoleOnSchemaObject,
+	OnAccountObject: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.grantPrivilegesToRole.GrantPrivilegesToRoleOnAccountObject,
+	OnSchema: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.grantPrivilegesToRole.GrantPrivilegesToRoleOnSchema,
+	OnSchemaObject: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.grantPrivilegesToRole.GrantPrivilegesToRoleOnSchemaObject,
 	Privileges: *[]*string,
 	WithGrantOption: interface{},
 }
@@ -995,7 +995,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/grantprivileg
 | <code><a href="#@cdktf/provider-snowflake.grantPrivilegesToRole.GrantPrivilegesToRoleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.grantPrivilegesToRole.GrantPrivilegesToRoleConfig.property.roleName">RoleName</a></code> | <code>*string</code> | The fully qualified name of the role to which privileges will be granted. |
 | <code><a href="#@cdktf/provider-snowflake.grantPrivilegesToRole.GrantPrivilegesToRoleConfig.property.allPrivileges">AllPrivileges</a></code> | <code>interface{}</code> | Grant all privileges on the account role. |
-| <code><a href="#@cdktf/provider-snowflake.grantPrivilegesToRole.GrantPrivilegesToRoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/grant_privileges_to_role#id GrantPrivilegesToRole#id}. |
+| <code><a href="#@cdktf/provider-snowflake.grantPrivilegesToRole.GrantPrivilegesToRoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/grant_privileges_to_role#id GrantPrivilegesToRole#id}. |
 | <code><a href="#@cdktf/provider-snowflake.grantPrivilegesToRole.GrantPrivilegesToRoleConfig.property.onAccount">OnAccount</a></code> | <code>interface{}</code> | If true, the privileges will be granted on the account. |
 | <code><a href="#@cdktf/provider-snowflake.grantPrivilegesToRole.GrantPrivilegesToRoleConfig.property.onAccountObject">OnAccountObject</a></code> | <code><a href="#@cdktf/provider-snowflake.grantPrivilegesToRole.GrantPrivilegesToRoleOnAccountObject">GrantPrivilegesToRoleOnAccountObject</a></code> | on_account_object block. |
 | <code><a href="#@cdktf/provider-snowflake.grantPrivilegesToRole.GrantPrivilegesToRoleConfig.property.onSchema">OnSchema</a></code> | <code><a href="#@cdktf/provider-snowflake.grantPrivilegesToRole.GrantPrivilegesToRoleOnSchema">GrantPrivilegesToRoleOnSchema</a></code> | on_schema block. |
@@ -1085,7 +1085,7 @@ RoleName *string
 
 The fully qualified name of the role to which privileges will be granted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/grant_privileges_to_role#role_name GrantPrivilegesToRole#role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/grant_privileges_to_role#role_name GrantPrivilegesToRole#role_name}
 
 ---
 
@@ -1099,7 +1099,7 @@ AllPrivileges interface{}
 
 Grant all privileges on the account role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/grant_privileges_to_role#all_privileges GrantPrivilegesToRole#all_privileges}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/grant_privileges_to_role#all_privileges GrantPrivilegesToRole#all_privileges}
 
 ---
 
@@ -1111,7 +1111,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/grant_privileges_to_role#id GrantPrivilegesToRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/grant_privileges_to_role#id GrantPrivilegesToRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1128,7 +1128,7 @@ OnAccount interface{}
 
 If true, the privileges will be granted on the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/grant_privileges_to_role#on_account GrantPrivilegesToRole#on_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/grant_privileges_to_role#on_account GrantPrivilegesToRole#on_account}
 
 ---
 
@@ -1142,7 +1142,7 @@ OnAccountObject GrantPrivilegesToRoleOnAccountObject
 
 on_account_object block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/grant_privileges_to_role#on_account_object GrantPrivilegesToRole#on_account_object}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/grant_privileges_to_role#on_account_object GrantPrivilegesToRole#on_account_object}
 
 ---
 
@@ -1156,7 +1156,7 @@ OnSchema GrantPrivilegesToRoleOnSchema
 
 on_schema block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/grant_privileges_to_role#on_schema GrantPrivilegesToRole#on_schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/grant_privileges_to_role#on_schema GrantPrivilegesToRole#on_schema}
 
 ---
 
@@ -1170,7 +1170,7 @@ OnSchemaObject GrantPrivilegesToRoleOnSchemaObject
 
 on_schema_object block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/grant_privileges_to_role#on_schema_object GrantPrivilegesToRole#on_schema_object}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/grant_privileges_to_role#on_schema_object GrantPrivilegesToRole#on_schema_object}
 
 ---
 
@@ -1184,7 +1184,7 @@ Privileges *[]*string
 
 The privileges to grant on the account role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/grant_privileges_to_role#privileges GrantPrivilegesToRole#privileges}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/grant_privileges_to_role#privileges GrantPrivilegesToRole#privileges}
 
 ---
 
@@ -1198,7 +1198,7 @@ WithGrantOption interface{}
 
 Specifies whether the grantee can grant the privileges to other users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/grant_privileges_to_role#with_grant_option GrantPrivilegesToRole#with_grant_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/grant_privileges_to_role#with_grant_option GrantPrivilegesToRole#with_grant_option}
 
 ---
 
@@ -1207,7 +1207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.grantPrivilegesToRole.GrantPrivilegesToRoleOnAccountObject.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/grantprivilegestorole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/grantprivilegestorole"
 
 &grantprivilegestorole.GrantPrivilegesToRoleOnAccountObject {
 	ObjectName: *string,
@@ -1234,7 +1234,7 @@ ObjectName *string
 
 The fully qualified name of the object on which privileges will be granted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/grant_privileges_to_role#object_name GrantPrivilegesToRole#object_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/grant_privileges_to_role#object_name GrantPrivilegesToRole#object_name}
 
 ---
 
@@ -1250,7 +1250,7 @@ The object type of the account object on which privileges will be granted.
 
 Valid values are: USER | RESOURCE MONITOR | WAREHOUSE | DATABASE | INTEGRATION | FAILOVER GROUP | REPLICATION GROUP | EXTERNAL VOLUME
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/grant_privileges_to_role#object_type GrantPrivilegesToRole#object_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/grant_privileges_to_role#object_type GrantPrivilegesToRole#object_type}
 
 ---
 
@@ -1259,7 +1259,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.grantPrivilegesToRole.GrantPrivilegesToRoleOnSchema.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/grantprivilegestorole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/grantprivilegestorole"
 
 &grantprivilegestorole.GrantPrivilegesToRoleOnSchema {
 	AllSchemasInDatabase: *string,
@@ -1288,7 +1288,7 @@ AllSchemasInDatabase *string
 
 The fully qualified name of the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/grant_privileges_to_role#all_schemas_in_database GrantPrivilegesToRole#all_schemas_in_database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/grant_privileges_to_role#all_schemas_in_database GrantPrivilegesToRole#all_schemas_in_database}
 
 ---
 
@@ -1302,7 +1302,7 @@ FutureSchemasInDatabase *string
 
 The fully qualified name of the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/grant_privileges_to_role#future_schemas_in_database GrantPrivilegesToRole#future_schemas_in_database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/grant_privileges_to_role#future_schemas_in_database GrantPrivilegesToRole#future_schemas_in_database}
 
 ---
 
@@ -1316,7 +1316,7 @@ SchemaName *string
 
 The fully qualified name of the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/grant_privileges_to_role#schema_name GrantPrivilegesToRole#schema_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/grant_privileges_to_role#schema_name GrantPrivilegesToRole#schema_name}
 
 ---
 
@@ -1325,11 +1325,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.grantPrivilegesToRole.GrantPrivilegesToRoleOnSchemaObject.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/grantprivilegestorole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/grantprivilegestorole"
 
 &grantprivilegestorole.GrantPrivilegesToRoleOnSchemaObject {
-	All: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11.grantPrivilegesToRole.GrantPrivilegesToRoleOnSchemaObjectAll,
-	Future: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11.grantPrivilegesToRole.GrantPrivilegesToRoleOnSchemaObjectFuture,
+	All: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.grantPrivilegesToRole.GrantPrivilegesToRoleOnSchemaObjectAll,
+	Future: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.grantPrivilegesToRole.GrantPrivilegesToRoleOnSchemaObjectFuture,
 	ObjectName: *string,
 	ObjectType: *string,
 }
@@ -1356,7 +1356,7 @@ All GrantPrivilegesToRoleOnSchemaObjectAll
 
 all block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/grant_privileges_to_role#all GrantPrivilegesToRole#all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/grant_privileges_to_role#all GrantPrivilegesToRole#all}
 
 ---
 
@@ -1370,7 +1370,7 @@ Future GrantPrivilegesToRoleOnSchemaObjectFuture
 
 future block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/grant_privileges_to_role#future GrantPrivilegesToRole#future}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/grant_privileges_to_role#future GrantPrivilegesToRole#future}
 
 ---
 
@@ -1384,7 +1384,7 @@ ObjectName *string
 
 The fully qualified name of the object on which privileges will be granted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/grant_privileges_to_role#object_name GrantPrivilegesToRole#object_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/grant_privileges_to_role#object_name GrantPrivilegesToRole#object_name}
 
 ---
 
@@ -1398,9 +1398,9 @@ ObjectType *string
 
 The object type of the schema object on which privileges will be granted.
 
-Valid values are: ALERT | DYNAMIC TABLE | EVENT TABLE | FILE FORMAT | FUNCTION | PROCEDURE | SECRET | SEQUENCE | PIPE | MASKING POLICY | PASSWORD POLICY | ROW ACCESS POLICY | SESSION POLICY | TAG | STAGE | STREAM | TABLE | EXTERNAL TABLE | TASK | VIEW | MATERIALIZED VIEW | NETWORK RULE | PACKAGES POLICY | STREAMLIT | ICEBERG TABLE
+Valid values are: AGGREGATION POLICY | ALERT | AUTHENTICATION POLICY | DATA METRIC FUNCTION | DYNAMIC TABLE | EVENT TABLE | EXTERNAL TABLE | FILE FORMAT | FUNCTION | GIT REPOSITORY | HYBRID TABLE | IMAGE REPOSITORY | ICEBERG TABLE | MASKING POLICY | MATERIALIZED VIEW | MODEL | NETWORK RULE | PACKAGES POLICY | PASSWORD POLICY | PIPE | PROCEDURE | PROJECTION POLICY | ROW ACCESS POLICY | SECRET | SERVICE | SESSION POLICY | SEQUENCE | STAGE | STREAM | TABLE | TAG | TASK | VIEW | STREAMLIT
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/grant_privileges_to_role#object_type GrantPrivilegesToRole#object_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/grant_privileges_to_role#object_type GrantPrivilegesToRole#object_type}
 
 ---
 
@@ -1409,7 +1409,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.grantPrivilegesToRole.GrantPrivilegesToRoleOnSchemaObjectAll.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/grantprivilegestorole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/grantprivilegestorole"
 
 &grantprivilegestorole.GrantPrivilegesToRoleOnSchemaObjectAll {
 	ObjectTypePlural: *string,
@@ -1438,9 +1438,9 @@ ObjectTypePlural *string
 
 The plural object type of the schema object on which privileges will be granted.
 
-Valid values are: ALERTS | DYNAMIC TABLES | EVENT TABLES | FILE FORMATS | FUNCTIONS | PROCEDURES | SECRETS | SEQUENCES | PIPES | MASKING POLICIES | PASSWORD POLICIES | ROW ACCESS POLICIES | SESSION POLICIES | TAGS | STAGES | STREAMS | TABLES | EXTERNAL TABLES | TASKS | VIEWS | MATERIALIZED VIEWS | NETWORK RULES | PACKAGES POLICIES | STREAMLITS | ICEBERG TABLES
+Valid values are: AGGREGATION POLICIES | ALERTS | AUTHENTICATION POLICIES | DATA METRIC FUNCTIONS | DYNAMIC TABLES | EVENT TABLES | EXTERNAL TABLES | FILE FORMATS | FUNCTIONS | GIT REPOSITORIES | HYBRID TABLES | IMAGE REPOSITORIES | ICEBERG TABLES | MASKING POLICIES | MATERIALIZED VIEWS | MODELS | NETWORK RULES | PACKAGES POLICIES | PASSWORD POLICIES | PIPES | PROCEDURES | PROJECTION POLICIES | ROW ACCESS POLICIES | SECRETS | SERVICES | SESSION POLICIES | SEQUENCES | STAGES | STREAMS | TABLES | TAGS | TASKS | VIEWS | STREAMLITS
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/grant_privileges_to_role#object_type_plural GrantPrivilegesToRole#object_type_plural}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/grant_privileges_to_role#object_type_plural GrantPrivilegesToRole#object_type_plural}
 
 ---
 
@@ -1454,7 +1454,7 @@ InDatabase *string
 
 The fully qualified name of the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/grant_privileges_to_role#in_database GrantPrivilegesToRole#in_database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/grant_privileges_to_role#in_database GrantPrivilegesToRole#in_database}
 
 ---
 
@@ -1468,7 +1468,7 @@ InSchema *string
 
 The fully qualified name of the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/grant_privileges_to_role#in_schema GrantPrivilegesToRole#in_schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/grant_privileges_to_role#in_schema GrantPrivilegesToRole#in_schema}
 
 ---
 
@@ -1477,7 +1477,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.grantPrivilegesToRole.GrantPrivilegesToRoleOnSchemaObjectFuture.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/grantprivilegestorole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/grantprivilegestorole"
 
 &grantprivilegestorole.GrantPrivilegesToRoleOnSchemaObjectFuture {
 	ObjectTypePlural: *string,
@@ -1506,9 +1506,9 @@ ObjectTypePlural *string
 
 The plural object type of the schema object on which privileges will be granted.
 
-Valid values are: ALERTS | DYNAMIC TABLES | EVENT TABLES | FILE FORMATS | FUNCTIONS | PROCEDURES | SECRETS | SEQUENCES | PIPES | MASKING POLICIES | PASSWORD POLICIES | ROW ACCESS POLICIES | SESSION POLICIES | TAGS | STAGES | STREAMS | TABLES | EXTERNAL TABLES | TASKS | VIEWS | MATERIALIZED VIEWS | NETWORK RULES | PACKAGES POLICIES | ICEBERG TABLES
+Valid values are: ALERTS | AUTHENTICATION POLICIES | DATA METRIC FUNCTIONS | DYNAMIC TABLES | EVENT TABLES | EXTERNAL TABLES | FILE FORMATS | FUNCTIONS | GIT REPOSITORIES | HYBRID TABLES | ICEBERG TABLES | MATERIALIZED VIEWS | MODELS | NETWORK RULES | PASSWORD POLICIES | PIPES | PROCEDURES | SECRETS | SERVICES | SEQUENCES | STAGES | STREAMS | TABLES | TASKS | VIEWS
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/grant_privileges_to_role#object_type_plural GrantPrivilegesToRole#object_type_plural}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/grant_privileges_to_role#object_type_plural GrantPrivilegesToRole#object_type_plural}
 
 ---
 
@@ -1522,7 +1522,7 @@ InDatabase *string
 
 The fully qualified name of the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/grant_privileges_to_role#in_database GrantPrivilegesToRole#in_database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/grant_privileges_to_role#in_database GrantPrivilegesToRole#in_database}
 
 ---
 
@@ -1536,7 +1536,7 @@ InSchema *string
 
 The fully qualified name of the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.88.0/docs/resources/grant_privileges_to_role#in_schema GrantPrivilegesToRole#in_schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/grant_privileges_to_role#in_schema GrantPrivilegesToRole#in_schema}
 
 ---
 
@@ -1547,7 +1547,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.grantPrivilegesToRole.GrantPrivilegesToRoleOnAccountObjectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/grantprivilegestorole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/grantprivilegestorole"
 
 grantprivilegestorole.NewGrantPrivilegesToRoleOnAccountObjectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GrantPrivilegesToRoleOnAccountObjectOutputReference
 ```
@@ -1840,7 +1840,7 @@ func InternalValue() GrantPrivilegesToRoleOnAccountObject
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.grantPrivilegesToRole.GrantPrivilegesToRoleOnSchemaObjectAllOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/grantprivilegestorole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/grantprivilegestorole"
 
 grantprivilegestorole.NewGrantPrivilegesToRoleOnSchemaObjectAllOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GrantPrivilegesToRoleOnSchemaObjectAllOutputReference
 ```
@@ -2169,7 +2169,7 @@ func InternalValue() GrantPrivilegesToRoleOnSchemaObjectAll
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.grantPrivilegesToRole.GrantPrivilegesToRoleOnSchemaObjectFutureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/grantprivilegestorole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/grantprivilegestorole"
 
 grantprivilegestorole.NewGrantPrivilegesToRoleOnSchemaObjectFutureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GrantPrivilegesToRoleOnSchemaObjectFutureOutputReference
 ```
@@ -2498,7 +2498,7 @@ func InternalValue() GrantPrivilegesToRoleOnSchemaObjectFuture
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.grantPrivilegesToRole.GrantPrivilegesToRoleOnSchemaObjectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/grantprivilegestorole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/grantprivilegestorole"
 
 grantprivilegestorole.NewGrantPrivilegesToRoleOnSchemaObjectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GrantPrivilegesToRoleOnSchemaObjectOutputReference
 ```
@@ -2889,7 +2889,7 @@ func InternalValue() GrantPrivilegesToRoleOnSchemaObject
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.grantPrivilegesToRole.GrantPrivilegesToRoleOnSchemaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/grantprivilegestorole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/grantprivilegestorole"
 
 grantprivilegestorole.NewGrantPrivilegesToRoleOnSchemaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GrantPrivilegesToRoleOnSchemaOutputReference
 ```
