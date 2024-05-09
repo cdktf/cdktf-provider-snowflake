@@ -1,3 +1,3 @@
 # `snowflake_external_oauth_integration`
 
-Refer to the Terraform Registry for docs: [`snowflake_external_oauth_integration`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/external_oauth_integration).
+Refer to the Terraform Registry for docs: [`snowflake_external_oauth_integration`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.90.0/docs/resources/external_oauth_integration).
