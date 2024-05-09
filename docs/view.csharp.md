@@ -4,7 +4,7 @@
 
 ### View <a name="View" id="@cdktf/provider-snowflake.view.View"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/view snowflake_view}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.90.0/docs/resources/view snowflake_view}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.view.View.Initializer"></a>
 
@@ -522,7 +522,7 @@ The construct id used in the generated config for the View to import.
 
 The id of the existing View that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/view#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.90.0/docs/resources/view#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -993,7 +993,7 @@ new ViewConfig {
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.statement">Statement</a></code> | <code>string</code> | Specifies the query used to create the view. |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.comment">Comment</a></code> | <code>string</code> | Specifies a comment for the view. |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.copyGrants">CopyGrants</a></code> | <code>object</code> | Retains the access permissions from the original view when a new view is created using the OR REPLACE clause. |
-| <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/view#id View#id}. |
+| <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.90.0/docs/resources/view#id View#id}. |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.isSecure">IsSecure</a></code> | <code>object</code> | Specifies that the view is secure. |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.orReplace">OrReplace</a></code> | <code>object</code> | Overwrites the View if it exists. |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.tag">Tag</a></code> | <code>object</code> | tag block. |
@@ -1080,7 +1080,7 @@ public string Database { get; set; }
 
 The database in which to create the view. Don't use the | character.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/view#database View#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.90.0/docs/resources/view#database View#database}
 
 ---
 
@@ -1096,7 +1096,7 @@ Specifies the identifier for the view;
 
 must be unique for the schema in which the view is created. Don't use the | character.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/view#name View#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.90.0/docs/resources/view#name View#name}
 
 ---
 
@@ -1110,7 +1110,7 @@ public string Schema { get; set; }
 
 The schema in which to create the view. Don't use the | character.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/view#schema View#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.90.0/docs/resources/view#schema View#schema}
 
 ---
 
@@ -1124,7 +1124,7 @@ public string Statement { get; set; }
 
 Specifies the query used to create the view.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/view#statement View#statement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.90.0/docs/resources/view#statement View#statement}
 
 ---
 
@@ -1138,7 +1138,7 @@ public string Comment { get; set; }
 
 Specifies a comment for the view.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/view#comment View#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.90.0/docs/resources/view#comment View#comment}
 
 ---
 
@@ -1154,7 +1154,7 @@ Retains the access permissions from the original view when a new view is created
 
 OR REPLACE must be set when COPY GRANTS is set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/view#copy_grants View#copy_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.90.0/docs/resources/view#copy_grants View#copy_grants}
 
 ---
 
@@ -1166,7 +1166,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/view#id View#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.90.0/docs/resources/view#id View#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1185,7 +1185,7 @@ Specifies that the view is secure.
 
 By design, the Snowflake's `SHOW VIEWS` command does not provide information about secure views (consult [view usage notes](https://docs.snowflake.com/en/sql-reference/sql/create-view#usage-notes)) which is essential to manage/import view with Terraform. Use the role owning the view while managing secure views.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/view#is_secure View#is_secure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.90.0/docs/resources/view#is_secure View#is_secure}
 
 ---
 
@@ -1199,7 +1199,7 @@ public object OrReplace { get; set; }
 
 Overwrites the View if it exists.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/view#or_replace View#or_replace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.90.0/docs/resources/view#or_replace View#or_replace}
 
 ---
 
@@ -1213,7 +1213,7 @@ public object Tag { get; set; }
 
 tag block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/view#tag View#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.90.0/docs/resources/view#tag View#tag}
 
 ---
 
@@ -1253,7 +1253,7 @@ public string Name { get; set; }
 
 Tag name, e.g. department.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/view#name View#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.90.0/docs/resources/view#name View#name}
 
 ---
 
@@ -1267,7 +1267,7 @@ public string Value { get; set; }
 
 Tag value, e.g. marketing_info.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/view#value View#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.90.0/docs/resources/view#value View#value}
 
 ---
 
@@ -1281,7 +1281,7 @@ public string Database { get; set; }
 
 Name of the database that the tag was created in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/view#database View#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.90.0/docs/resources/view#database View#database}
 
 ---
 
@@ -1295,7 +1295,7 @@ public string Schema { get; set; }
 
 Name of the schema that the tag was created in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/view#schema View#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.90.0/docs/resources/view#schema View#schema}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### AccountGrant <a name="AccountGrant" id="@cdktf/provider-snowflake.accountGrant.AccountGrant"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/account_grant snowflake_account_grant}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.90.0/docs/resources/account_grant snowflake_account_grant}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.accountGrant.AccountGrant.Initializer"></a>
 
@@ -502,7 +502,7 @@ The construct id used in the generated config for the AccountGrant to import.
 
 The id of the existing AccountGrant that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/account_grant#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.90.0/docs/resources/account_grant#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -842,7 +842,7 @@ new AccountGrantConfig {
 | <code><a href="#@cdktf/provider-snowflake.accountGrant.AccountGrantConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.accountGrant.AccountGrantConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.accountGrant.AccountGrantConfig.property.enableMultipleGrants">EnableMultipleGrants</a></code> | <code>object</code> | When this is set to true, multiple grants of the same type can be created. |
-| <code><a href="#@cdktf/provider-snowflake.accountGrant.AccountGrantConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/account_grant#id AccountGrant#id}. |
+| <code><a href="#@cdktf/provider-snowflake.accountGrant.AccountGrantConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.90.0/docs/resources/account_grant#id AccountGrant#id}. |
 | <code><a href="#@cdktf/provider-snowflake.accountGrant.AccountGrantConfig.property.privilege">Privilege</a></code> | <code>string</code> | The account privilege to grant. |
 | <code><a href="#@cdktf/provider-snowflake.accountGrant.AccountGrantConfig.property.roles">Roles</a></code> | <code>string[]</code> | Grants privilege to these roles. |
 | <code><a href="#@cdktf/provider-snowflake.accountGrant.AccountGrantConfig.property.withGrantOption">WithGrantOption</a></code> | <code>object</code> | When this is set to true, allows the recipient role to grant the privileges to other roles. |
@@ -931,7 +931,7 @@ When this is set to true, multiple grants of the same type can be created.
 
 This will cause Terraform to not revoke grants applied to roles and objects outside Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/account_grant#enable_multiple_grants AccountGrant#enable_multiple_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.90.0/docs/resources/account_grant#enable_multiple_grants AccountGrant#enable_multiple_grants}
 
 ---
 
@@ -943,7 +943,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/account_grant#id AccountGrant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.90.0/docs/resources/account_grant#id AccountGrant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -962,7 +962,7 @@ The account privilege to grant.
 
 Valid privileges are those in [globalPrivileges](https://docs.snowflake.com/en/sql-reference/sql/grant-privilege.html). To grant all privileges, use the value `ALL PRIVILEGES`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/account_grant#privilege AccountGrant#privilege}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.90.0/docs/resources/account_grant#privilege AccountGrant#privilege}
 
 ---
 
@@ -976,7 +976,7 @@ public string[] Roles { get; set; }
 
 Grants privilege to these roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/account_grant#roles AccountGrant#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.90.0/docs/resources/account_grant#roles AccountGrant#roles}
 
 ---
 
@@ -990,7 +990,7 @@ public object WithGrantOption { get; set; }
 
 When this is set to true, allows the recipient role to grant the privileges to other roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/resources/account_grant#with_grant_option AccountGrant#with_grant_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.90.0/docs/resources/account_grant#with_grant_option AccountGrant#with_grant_option}
 
 ---
 

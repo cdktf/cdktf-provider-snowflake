@@ -4,12 +4,12 @@
 
 ### DataSnowflakeDatabase <a name="DataSnowflakeDatabase" id="@cdktf/provider-snowflake.dataSnowflakeDatabase.DataSnowflakeDatabase"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/data-sources/database snowflake_database}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.90.0/docs/data-sources/database snowflake_database}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeDatabase.DataSnowflakeDatabase.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakedatabase"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakedatabase"
 
 datasnowflakedatabase.NewDataSnowflakeDatabase(scope Construct, id *string, config DataSnowflakeDatabaseConfig) DataSnowflakeDatabase
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeDatabase.DataSnowflakeDatabase.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakedatabase"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakedatabase"
 
 datasnowflakedatabase.DataSnowflakeDatabase_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeDatabase.DataSnowflakeDatabase.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakedatabase"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakedatabase"
 
 datasnowflakedatabase.DataSnowflakeDatabase_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datasnowflakedatabase.DataSnowflakeDatabase_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeDatabase.DataSnowflakeDatabase.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakedatabase"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakedatabase"
 
 datasnowflakedatabase.DataSnowflakeDatabase_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datasnowflakedatabase.DataSnowflakeDatabase_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.dataSnowflakeDatabase.DataSnowflakeDatabase.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakedatabase"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakedatabase"
 
 datasnowflakedatabase.DataSnowflakeDatabase_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataSnowflakeDatabase to i
 
 The id of the existing DataSnowflakeDatabase that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/data-sources/database#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.90.0/docs/data-sources/database#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -682,7 +682,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeDatabase.DataSnowflakeDatabaseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakedatabase"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakedatabase"
 
 &datasnowflakedatabase.DataSnowflakeDatabaseConfig {
 	Connection: interface{},
@@ -709,7 +709,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabase.DataSnowflakeDatabaseConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabase.DataSnowflakeDatabaseConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabase.DataSnowflakeDatabaseConfig.property.name">Name</a></code> | <code>*string</code> | The database from which to return its metadata. |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabase.DataSnowflakeDatabaseConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/data-sources/database#id DataSnowflakeDatabase#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabase.DataSnowflakeDatabaseConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.90.0/docs/data-sources/database#id DataSnowflakeDatabase#id}. |
 
 ---
 
@@ -793,7 +793,7 @@ Name *string
 
 The database from which to return its metadata.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/data-sources/database#name DataSnowflakeDatabase#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.90.0/docs/data-sources/database#name DataSnowflakeDatabase#name}
 
 ---
 
@@ -805,7 +805,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.89.0/docs/data-sources/database#id DataSnowflakeDatabase#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.90.0/docs/data-sources/database#id DataSnowflakeDatabase#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
