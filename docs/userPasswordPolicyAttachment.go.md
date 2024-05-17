@@ -4,12 +4,12 @@
 
 ### UserPasswordPolicyAttachment <a name="UserPasswordPolicyAttachment" id="@cdktf/provider-snowflake.userPasswordPolicyAttachment.UserPasswordPolicyAttachment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.90.0/docs/resources/user_password_policy_attachment snowflake_user_password_policy_attachment}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/user_password_policy_attachment snowflake_user_password_policy_attachment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.userPasswordPolicyAttachment.UserPasswordPolicyAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/userpasswordpolicyattachment"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/userpasswordpolicyattachment"
 
 userpasswordpolicyattachment.NewUserPasswordPolicyAttachment(scope Construct, id *string, config UserPasswordPolicyAttachmentConfig) UserPasswordPolicyAttachment
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.userPasswordPolicyAttachment.UserPasswordPolicyAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/userpasswordpolicyattachment"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/userpasswordpolicyattachment"
 
 userpasswordpolicyattachment.UserPasswordPolicyAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.userPasswordPolicyAttachment.UserPasswordPolicyAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/userpasswordpolicyattachment"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/userpasswordpolicyattachment"
 
 userpasswordpolicyattachment.UserPasswordPolicyAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ userpasswordpolicyattachment.UserPasswordPolicyAttachment_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.userPasswordPolicyAttachment.UserPasswordPolicyAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/userpasswordpolicyattachment"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/userpasswordpolicyattachment"
 
 userpasswordpolicyattachment.UserPasswordPolicyAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ userpasswordpolicyattachment.UserPasswordPolicyAttachment_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.userPasswordPolicyAttachment.UserPasswordPolicyAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/userpasswordpolicyattachment"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/userpasswordpolicyattachment"
 
 userpasswordpolicyattachment.UserPasswordPolicyAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the UserPasswordPolicyAttachme
 
 The id of the existing UserPasswordPolicyAttachment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.90.0/docs/resources/user_password_policy_attachment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/user_password_policy_attachment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.userPasswordPolicyAttachment.UserPasswordPolicyAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/userpasswordpolicyattachment"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/userpasswordpolicyattachment"
 
 &userpasswordpolicyattachment.UserPasswordPolicyAttachmentConfig {
 	Connection: interface{},
@@ -769,7 +769,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/userpasswordp
 | <code><a href="#@cdktf/provider-snowflake.userPasswordPolicyAttachment.UserPasswordPolicyAttachmentConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.userPasswordPolicyAttachment.UserPasswordPolicyAttachmentConfig.property.passwordPolicyName">PasswordPolicyName</a></code> | <code>*string</code> | Fully qualified name of the password policy. |
 | <code><a href="#@cdktf/provider-snowflake.userPasswordPolicyAttachment.UserPasswordPolicyAttachmentConfig.property.userName">UserName</a></code> | <code>*string</code> | User name of the user you want to attach the password policy to. |
-| <code><a href="#@cdktf/provider-snowflake.userPasswordPolicyAttachment.UserPasswordPolicyAttachmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.90.0/docs/resources/user_password_policy_attachment#id UserPasswordPolicyAttachment#id}. |
+| <code><a href="#@cdktf/provider-snowflake.userPasswordPolicyAttachment.UserPasswordPolicyAttachmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/user_password_policy_attachment#id UserPasswordPolicyAttachment#id}. |
 
 ---
 
@@ -853,7 +853,7 @@ PasswordPolicyName *string
 
 Fully qualified name of the password policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.90.0/docs/resources/user_password_policy_attachment#password_policy_name UserPasswordPolicyAttachment#password_policy_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/user_password_policy_attachment#password_policy_name UserPasswordPolicyAttachment#password_policy_name}
 
 ---
 
@@ -867,7 +867,7 @@ UserName *string
 
 User name of the user you want to attach the password policy to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.90.0/docs/resources/user_password_policy_attachment#user_name UserPasswordPolicyAttachment#user_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/user_password_policy_attachment#user_name UserPasswordPolicyAttachment#user_name}
 
 ---
 
@@ -879,7 +879,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.90.0/docs/resources/user_password_policy_attachment#id UserPasswordPolicyAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/user_password_policy_attachment#id UserPasswordPolicyAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
