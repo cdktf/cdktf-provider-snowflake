@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.account.Account.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/account"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/account"
 
 account.NewAccount(scope Construct, id *string, config AccountConfig) Account
 ```
@@ -448,7 +448,7 @@ func ResetRegionGroup()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.account.Account.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/account"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/account"
 
 account.Account_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.account.Account.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/account"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/account"
 
 account.Account_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ account.Account_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.account.Account.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/account"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/account"
 
 account.Account_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ account.Account_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.account.Account.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/account"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/account"
 
 account.Account_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1056,7 +1056,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.account.AccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/account"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/account"
 
 &account.AccountConfig {
 	Connection: interface{},
