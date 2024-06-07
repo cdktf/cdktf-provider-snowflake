@@ -80,6 +80,7 @@ The following submodules are available:
 - [materializedViewGrant](./materializedViewGrant.csharp.md)
 - [networkPolicy](./networkPolicy.csharp.md)
 - [networkPolicyAttachment](./networkPolicyAttachment.csharp.md)
+- [networkRule](./networkRule.csharp.md)
 - [notificationIntegration](./notificationIntegration.csharp.md)
 - [oauthIntegration](./oauthIntegration.csharp.md)
 - [objectParameter](./objectParameter.csharp.md)

@@ -41,6 +41,7 @@ Object.defineProperty(exports, 'materializedView', { get: function () { return r
 Object.defineProperty(exports, 'materializedViewGrant', { get: function () { return require('./materialized-view-grant'); } });
 Object.defineProperty(exports, 'networkPolicy', { get: function () { return require('./network-policy'); } });
 Object.defineProperty(exports, 'networkPolicyAttachment', { get: function () { return require('./network-policy-attachment'); } });
+Object.defineProperty(exports, 'networkRule', { get: function () { return require('./network-rule'); } });
 Object.defineProperty(exports, 'notificationIntegration', { get: function () { return require('./notification-integration'); } });
 Object.defineProperty(exports, 'oauthIntegration', { get: function () { return require('./oauth-integration'); } });
 Object.defineProperty(exports, 'objectParameter', { get: function () { return require('./object-parameter'); } });

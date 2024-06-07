@@ -4,7 +4,7 @@
 
 ### DynamicTable <a name="DynamicTable" id="@cdktf/provider-snowflake.dynamicTable.DynamicTable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/dynamic_table snowflake_dynamic_table}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/dynamic_table snowflake_dynamic_table}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dynamicTable.DynamicTable.Initializer"></a>
 
@@ -515,7 +515,7 @@ The construct id used in the generated config for the DynamicTable to import.
 
 The id of the existing DynamicTable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/dynamic_table#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/dynamic_table#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1131,7 +1131,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/dynamictable"
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableConfig.property.targetLag">TargetLag</a></code> | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTargetLag">DynamicTableTargetLag</a></code> | target_lag block. |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableConfig.property.warehouse">Warehouse</a></code> | <code>*string</code> | The warehouse in which to create the dynamic table. |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableConfig.property.comment">Comment</a></code> | <code>*string</code> | Specifies a comment for the dynamic table. |
-| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/dynamic_table#id DynamicTable#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/dynamic_table#id DynamicTable#id}. |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableConfig.property.initialize">Initialize</a></code> | <code>*string</code> | Initialize trigger for the dynamic table. Can only be set on creation. Available options are ON_CREATE and ON_SCHEDULE. |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableConfig.property.orReplace">OrReplace</a></code> | <code>interface{}</code> | Specifies whether to replace the dynamic table if it already exists. |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableConfig.property.refreshMode">RefreshMode</a></code> | <code>*string</code> | INCREMENTAL to use incremental refreshes, FULL to recompute the whole table on every refresh, or AUTO to let Snowflake decide. |
@@ -1218,7 +1218,7 @@ Database *string
 
 The database in which to create the dynamic table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/dynamic_table#database DynamicTable#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/dynamic_table#database DynamicTable#database}
 
 ---
 
@@ -1232,7 +1232,7 @@ Name *string
 
 Specifies the identifier (i.e. name) for the dynamic table; must be unique for the schema in which the dynamic table is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/dynamic_table#name DynamicTable#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/dynamic_table#name DynamicTable#name}
 
 ---
 
@@ -1246,7 +1246,7 @@ Query *string
 
 Specifies the query to use to populate the dynamic table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/dynamic_table#query DynamicTable#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/dynamic_table#query DynamicTable#query}
 
 ---
 
@@ -1260,7 +1260,7 @@ Schema *string
 
 The schema in which to create the dynamic table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/dynamic_table#schema DynamicTable#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/dynamic_table#schema DynamicTable#schema}
 
 ---
 
@@ -1274,7 +1274,7 @@ TargetLag DynamicTableTargetLag
 
 target_lag block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/dynamic_table#target_lag DynamicTable#target_lag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/dynamic_table#target_lag DynamicTable#target_lag}
 
 ---
 
@@ -1288,7 +1288,7 @@ Warehouse *string
 
 The warehouse in which to create the dynamic table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/dynamic_table#warehouse DynamicTable#warehouse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/dynamic_table#warehouse DynamicTable#warehouse}
 
 ---
 
@@ -1302,7 +1302,7 @@ Comment *string
 
 Specifies a comment for the dynamic table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/dynamic_table#comment DynamicTable#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/dynamic_table#comment DynamicTable#comment}
 
 ---
 
@@ -1314,7 +1314,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/dynamic_table#id DynamicTable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/dynamic_table#id DynamicTable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1331,7 +1331,7 @@ Initialize *string
 
 Initialize trigger for the dynamic table. Can only be set on creation. Available options are ON_CREATE and ON_SCHEDULE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/dynamic_table#initialize DynamicTable#initialize}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/dynamic_table#initialize DynamicTable#initialize}
 
 ---
 
@@ -1345,7 +1345,7 @@ OrReplace interface{}
 
 Specifies whether to replace the dynamic table if it already exists.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/dynamic_table#or_replace DynamicTable#or_replace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/dynamic_table#or_replace DynamicTable#or_replace}
 
 ---
 
@@ -1359,7 +1359,7 @@ RefreshMode *string
 
 INCREMENTAL to use incremental refreshes, FULL to recompute the whole table on every refresh, or AUTO to let Snowflake decide.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/dynamic_table#refresh_mode DynamicTable#refresh_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/dynamic_table#refresh_mode DynamicTable#refresh_mode}
 
 ---
 
@@ -1395,7 +1395,7 @@ Downstream interface{}
 
 Specifies whether the target lag time is downstream.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/dynamic_table#downstream DynamicTable#downstream}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/dynamic_table#downstream DynamicTable#downstream}
 
 ---
 
@@ -1409,7 +1409,7 @@ MaximumDuration *string
 
 Specifies the maximum target lag time for the dynamic table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/dynamic_table#maximum_duration DynamicTable#maximum_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/dynamic_table#maximum_duration DynamicTable#maximum_duration}
 
 ---
 

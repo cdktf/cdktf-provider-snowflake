@@ -80,6 +80,7 @@ The following submodules are available:
 - [materializedViewGrant](./materializedViewGrant.java.md)
 - [networkPolicy](./networkPolicy.java.md)
 - [networkPolicyAttachment](./networkPolicyAttachment.java.md)
+- [networkRule](./networkRule.java.md)
 - [notificationIntegration](./notificationIntegration.java.md)
 - [oauthIntegration](./oauthIntegration.java.md)
 - [objectParameter](./objectParameter.java.md)

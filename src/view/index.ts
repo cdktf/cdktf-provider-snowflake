@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/view
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/view
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface ViewConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies a comment for the view.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/view#comment View#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/view#comment View#comment}
   */
   readonly comment?: string;
   /**
   * Retains the access permissions from the original view when a new view is created using the OR REPLACE clause. OR REPLACE must be set when COPY GRANTS is set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/view#copy_grants View#copy_grants}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/view#copy_grants View#copy_grants}
   */
   readonly copyGrants?: boolean | cdktf.IResolvable;
   /**
   * The database in which to create the view. Don't use the | character.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/view#database View#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/view#database View#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/view#id View#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/view#id View#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,37 +40,37 @@ export interface ViewConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies that the view is secure. By design, the Snowflake's `SHOW VIEWS` command does not provide information about secure views (consult [view usage notes](https://docs.snowflake.com/en/sql-reference/sql/create-view#usage-notes)) which is essential to manage/import view with Terraform. Use the role owning the view while managing secure views.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/view#is_secure View#is_secure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/view#is_secure View#is_secure}
   */
   readonly isSecure?: boolean | cdktf.IResolvable;
   /**
   * Specifies the identifier for the view; must be unique for the schema in which the view is created. Don't use the | character.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/view#name View#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/view#name View#name}
   */
   readonly name: string;
   /**
   * Overwrites the View if it exists.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/view#or_replace View#or_replace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/view#or_replace View#or_replace}
   */
   readonly orReplace?: boolean | cdktf.IResolvable;
   /**
   * The schema in which to create the view. Don't use the | character.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/view#schema View#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/view#schema View#schema}
   */
   readonly schema: string;
   /**
   * Specifies the query used to create the view.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/view#statement View#statement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/view#statement View#statement}
   */
   readonly statement: string;
   /**
   * tag block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/view#tag View#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/view#tag View#tag}
   */
   readonly tag?: ViewTag[] | cdktf.IResolvable;
 }
@@ -78,25 +78,25 @@ export interface ViewTag {
   /**
   * Name of the database that the tag was created in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/view#database View#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/view#database View#database}
   */
   readonly database?: string;
   /**
   * Tag name, e.g. department.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/view#name View#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/view#name View#name}
   */
   readonly name: string;
   /**
   * Name of the schema that the tag was created in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/view#schema View#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/view#schema View#schema}
   */
   readonly schema?: string;
   /**
   * Tag value, e.g. marketing_info.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/view#value View#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/view#value View#value}
   */
   readonly value: string;
 }
@@ -293,7 +293,7 @@ export class ViewTagList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/view snowflake_view}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/view snowflake_view}
 */
 export class View extends cdktf.TerraformResource {
 
@@ -309,7 +309,7 @@ export class View extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a View resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the View to import
-  * @param importFromId The id of the existing View that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/view#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing View that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/view#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the View to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -321,7 +321,7 @@ export class View extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/view snowflake_view} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/view snowflake_view} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -332,7 +332,7 @@ export class View extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_view',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.91.0',
+        providerVersion: '0.92.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,

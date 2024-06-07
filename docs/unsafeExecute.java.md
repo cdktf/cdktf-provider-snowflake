@@ -4,7 +4,7 @@
 
 ### UnsafeExecute <a name="UnsafeExecute" id="@cdktf/provider-snowflake.unsafeExecute.UnsafeExecute"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/unsafe_execute snowflake_unsafe_execute}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/unsafe_execute snowflake_unsafe_execute}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.unsafeExecute.UnsafeExecute.Initializer"></a>
 
@@ -43,7 +43,7 @@ UnsafeExecute.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-snowflake.unsafeExecute.UnsafeExecute.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.unsafeExecute.UnsafeExecute.Initializer.parameter.execute">execute</a></code> | <code>java.lang.String</code> | SQL statement to execute. Forces recreation of resource on change. |
 | <code><a href="#@cdktf/provider-snowflake.unsafeExecute.UnsafeExecute.Initializer.parameter.revert">revert</a></code> | <code>java.lang.String</code> | SQL statement to revert the execute statement. Invoked when resource is being destroyed. |
-| <code><a href="#@cdktf/provider-snowflake.unsafeExecute.UnsafeExecute.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/unsafe_execute#id UnsafeExecute#id}. |
+| <code><a href="#@cdktf/provider-snowflake.unsafeExecute.UnsafeExecute.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/unsafe_execute#id UnsafeExecute#id}. |
 | <code><a href="#@cdktf/provider-snowflake.unsafeExecute.UnsafeExecute.Initializer.parameter.query">query</a></code> | <code>java.lang.String</code> | Optional SQL statement to do a read. Invoked after creation and every time it is changed. |
 
 ---
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 SQL statement to execute. Forces recreation of resource on change.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/unsafe_execute#execute UnsafeExecute#execute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/unsafe_execute#execute UnsafeExecute#execute}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 SQL statement to revert the execute statement. Invoked when resource is being destroyed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/unsafe_execute#revert UnsafeExecute#revert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/unsafe_execute#revert UnsafeExecute#revert}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/unsafe_execute#id UnsafeExecute#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/unsafe_execute#id UnsafeExecute#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -145,7 +145,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Optional SQL statement to do a read. Invoked after creation and every time it is changed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/unsafe_execute#query UnsafeExecute#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/unsafe_execute#query UnsafeExecute#query}
 
 ---
 
@@ -586,7 +586,7 @@ The construct id used in the generated config for the UnsafeExecute to import.
 
 The id of the existing UnsafeExecute that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/unsafe_execute#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/unsafe_execute#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -919,7 +919,7 @@ UnsafeExecuteConfig.builder()
 | <code><a href="#@cdktf/provider-snowflake.unsafeExecute.UnsafeExecuteConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.unsafeExecute.UnsafeExecuteConfig.property.execute">execute</a></code> | <code>java.lang.String</code> | SQL statement to execute. Forces recreation of resource on change. |
 | <code><a href="#@cdktf/provider-snowflake.unsafeExecute.UnsafeExecuteConfig.property.revert">revert</a></code> | <code>java.lang.String</code> | SQL statement to revert the execute statement. Invoked when resource is being destroyed. |
-| <code><a href="#@cdktf/provider-snowflake.unsafeExecute.UnsafeExecuteConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/unsafe_execute#id UnsafeExecute#id}. |
+| <code><a href="#@cdktf/provider-snowflake.unsafeExecute.UnsafeExecuteConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/unsafe_execute#id UnsafeExecute#id}. |
 | <code><a href="#@cdktf/provider-snowflake.unsafeExecute.UnsafeExecuteConfig.property.query">query</a></code> | <code>java.lang.String</code> | Optional SQL statement to do a read. Invoked after creation and every time it is changed. |
 
 ---
@@ -1004,7 +1004,7 @@ public java.lang.String getExecute();
 
 SQL statement to execute. Forces recreation of resource on change.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/unsafe_execute#execute UnsafeExecute#execute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/unsafe_execute#execute UnsafeExecute#execute}
 
 ---
 
@@ -1018,7 +1018,7 @@ public java.lang.String getRevert();
 
 SQL statement to revert the execute statement. Invoked when resource is being destroyed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/unsafe_execute#revert UnsafeExecute#revert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/unsafe_execute#revert UnsafeExecute#revert}
 
 ---
 
@@ -1030,7 +1030,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/unsafe_execute#id UnsafeExecute#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/unsafe_execute#id UnsafeExecute#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1047,7 +1047,7 @@ public java.lang.String getQuery();
 
 Optional SQL statement to do a read. Invoked after creation and every time it is changed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/unsafe_execute#query UnsafeExecute#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/unsafe_execute#query UnsafeExecute#query}
 
 ---
 

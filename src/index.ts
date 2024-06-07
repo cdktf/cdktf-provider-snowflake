@@ -41,6 +41,7 @@ export * as materializedView from './materialized-view';
 export * as materializedViewGrant from './materialized-view-grant';
 export * as networkPolicy from './network-policy';
 export * as networkPolicyAttachment from './network-policy-attachment';
+export * as networkRule from './network-rule';
 export * as notificationIntegration from './notification-integration';
 export * as oauthIntegration from './oauth-integration';
 export * as objectParameter from './object-parameter';

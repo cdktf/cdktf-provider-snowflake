@@ -80,6 +80,7 @@ The following submodules are available:
 - [materializedViewGrant](./materializedViewGrant.typescript.md)
 - [networkPolicy](./networkPolicy.typescript.md)
 - [networkPolicyAttachment](./networkPolicyAttachment.typescript.md)
+- [networkRule](./networkRule.typescript.md)
 - [notificationIntegration](./notificationIntegration.typescript.md)
 - [oauthIntegration](./oauthIntegration.typescript.md)
 - [objectParameter](./objectParameter.typescript.md)
