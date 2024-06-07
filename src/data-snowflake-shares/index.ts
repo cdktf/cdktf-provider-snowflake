@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/data-sources/shares
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/data-sources/shares
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataSnowflakeSharesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/data-sources/shares#id DataSnowflakeShares#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/data-sources/shares#id DataSnowflakeShares#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,7 +17,7 @@ export interface DataSnowflakeSharesConfig extends cdktf.TerraformMetaArguments 
   /**
   * Filters the command output by object name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/data-sources/shares#pattern DataSnowflakeShares#pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/data-sources/shares#pattern DataSnowflakeShares#pattern}
   */
   readonly pattern?: string;
 }
@@ -123,7 +118,7 @@ export class DataSnowflakeSharesSharesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/data-sources/shares snowflake_shares}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/data-sources/shares snowflake_shares}
 */
 export class DataSnowflakeShares extends cdktf.TerraformDataSource {
 
@@ -139,7 +134,7 @@ export class DataSnowflakeShares extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataSnowflakeShares resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataSnowflakeShares to import
-  * @param importFromId The id of the existing DataSnowflakeShares that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/data-sources/shares#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataSnowflakeShares that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/data-sources/shares#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataSnowflakeShares to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -151,7 +146,7 @@ export class DataSnowflakeShares extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/data-sources/shares snowflake_shares} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/data-sources/shares snowflake_shares} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -162,7 +157,7 @@ export class DataSnowflakeShares extends cdktf.TerraformDataSource {
       terraformResourceType: 'snowflake_shares',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.91.0',
+        providerVersion: '0.92.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,

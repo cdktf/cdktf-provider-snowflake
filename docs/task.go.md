@@ -4,12 +4,12 @@
 
 ### Task <a name="Task" id="@cdktf/provider-snowflake.task.Task"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/task snowflake_task}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/task snowflake_task}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.task.Task.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/task"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/task"
 
 task.NewTask(scope Construct, id *string, config TaskConfig) Task
 ```
@@ -469,7 +469,7 @@ func ResetWhen()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.task.Task.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/task"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/task"
 
 task.Task_IsConstruct(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.task.Task.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/task"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/task"
 
 task.Task_IsTerraformElement(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ task.Task_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.task.Task.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/task"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/task"
 
 task.Task_IsTerraformResource(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ task.Task_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.task.Task.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/task"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/task"
 
 task.Task_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -558,7 +558,7 @@ The construct id used in the generated config for the Task to import.
 
 The id of the existing Task that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/task#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/task#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1132,7 +1132,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.task.TaskConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/task"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/task"
 
 &task.TaskConfig {
 	Connection: interface{},
@@ -1182,7 +1182,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/task"
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.comment">Comment</a></code> | <code>*string</code> | Specifies a comment for the task. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Specifies if the task should be started (enabled) after creation or should remain suspended (default). |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.errorIntegration">ErrorIntegration</a></code> | <code>*string</code> | Specifies the name of the notification integration used for error notifications. |
-| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/task#id Task#id}. |
+| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/task#id Task#id}. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.schedule">Schedule</a></code> | <code>*string</code> | The schedule for periodically running the task. This can be a cron or interval in minutes. (Conflict with after). |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.sessionParameters">SessionParameters</a></code> | <code>*map[string]*string</code> | Specifies session parameters to set for the session when the task runs. A task supports all session parameters. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.suspendTaskAfterNumFailures">SuspendTaskAfterNumFailures</a></code> | <code>*f64</code> | Specifies the number of consecutive failed task runs after which the current task is suspended automatically. |
@@ -1273,7 +1273,7 @@ Database *string
 
 The database in which to create the task.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/task#database Task#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/task#database Task#database}
 
 ---
 
@@ -1289,7 +1289,7 @@ Specifies the identifier for the task;
 
 must be unique for the database and schema in which the task is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/task#name Task#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/task#name Task#name}
 
 ---
 
@@ -1303,7 +1303,7 @@ Schema *string
 
 The schema in which to create the task.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/task#schema Task#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/task#schema Task#schema}
 
 ---
 
@@ -1317,7 +1317,7 @@ SqlStatement *string
 
 Any single SQL statement, or a call to a stored procedure, executed when the task runs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/task#sql_statement Task#sql_statement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/task#sql_statement Task#sql_statement}
 
 ---
 
@@ -1333,7 +1333,7 @@ Specifies one or more predecessor tasks for the current task.
 
 Use this option to create a DAG of tasks or add this task to an existing DAG. A DAG is a series of tasks that starts with a scheduled root task and is linked together by dependencies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/task#after Task#after}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/task#after Task#after}
 
 ---
 
@@ -1347,7 +1347,7 @@ AllowOverlappingExecution interface{}
 
 By default, Snowflake ensures that only one instance of a particular DAG is allowed to run at a time, setting the parameter value to TRUE permits DAG runs to overlap.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/task#allow_overlapping_execution Task#allow_overlapping_execution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/task#allow_overlapping_execution Task#allow_overlapping_execution}
 
 ---
 
@@ -1361,7 +1361,7 @@ Comment *string
 
 Specifies a comment for the task.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/task#comment Task#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/task#comment Task#comment}
 
 ---
 
@@ -1375,7 +1375,7 @@ Enabled interface{}
 
 Specifies if the task should be started (enabled) after creation or should remain suspended (default).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/task#enabled Task#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/task#enabled Task#enabled}
 
 ---
 
@@ -1389,7 +1389,7 @@ ErrorIntegration *string
 
 Specifies the name of the notification integration used for error notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/task#error_integration Task#error_integration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/task#error_integration Task#error_integration}
 
 ---
 
@@ -1401,7 +1401,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/task#id Task#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/task#id Task#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1418,7 +1418,7 @@ Schedule *string
 
 The schedule for periodically running the task. This can be a cron or interval in minutes. (Conflict with after).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/task#schedule Task#schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/task#schedule Task#schedule}
 
 ---
 
@@ -1432,7 +1432,7 @@ SessionParameters *map[string]*string
 
 Specifies session parameters to set for the session when the task runs. A task supports all session parameters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/task#session_parameters Task#session_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/task#session_parameters Task#session_parameters}
 
 ---
 
@@ -1448,7 +1448,7 @@ Specifies the number of consecutive failed task runs after which the current tas
 
 The default is 0 (no automatic suspension).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/task#suspend_task_after_num_failures Task#suspend_task_after_num_failures}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/task#suspend_task_after_num_failures Task#suspend_task_after_num_failures}
 
 ---
 
@@ -1464,7 +1464,7 @@ Specifies the size of the compute resources to provision for the first run of th
 
 Once a task has successfully completed a few runs, Snowflake ignores this parameter setting. (Conflicts with warehouse)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/task#user_task_managed_initial_warehouse_size Task#user_task_managed_initial_warehouse_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/task#user_task_managed_initial_warehouse_size Task#user_task_managed_initial_warehouse_size}
 
 ---
 
@@ -1478,7 +1478,7 @@ UserTaskTimeoutMs *f64
 
 Specifies the time limit on a single run of the task before it times out (in milliseconds).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/task#user_task_timeout_ms Task#user_task_timeout_ms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/task#user_task_timeout_ms Task#user_task_timeout_ms}
 
 ---
 
@@ -1494,7 +1494,7 @@ The warehouse the task will use.
 
 Omit this parameter to use Snowflake-managed compute resources for runs of this task. (Conflicts with user_task_managed_initial_warehouse_size)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/task#warehouse Task#warehouse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/task#warehouse Task#warehouse}
 
 ---
 
@@ -1508,7 +1508,7 @@ When *string
 
 Specifies a Boolean SQL expression; multiple conditions joined with AND/OR are supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/task#when Task#when}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/task#when Task#when}
 
 ---
 

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/network_policy
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/network_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +8,37 @@ import * as cdktf from 'cdktf';
 
 export interface NetworkPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Specifies one or more IPv4 addresses (CIDR notation) that are allowed access to your Snowflake account
+  * Specifies one or more IPv4 addresses (CIDR notation) that are allowed access to your Snowflake account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/network_policy#allowed_ip_list NetworkPolicy#allowed_ip_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/network_policy#allowed_ip_list NetworkPolicy#allowed_ip_list}
   */
-  readonly allowedIpList: string[];
+  readonly allowedIpList?: string[];
   /**
-  * Specifies one or more IPv4 addresses (CIDR notation) that are denied access to your Snowflake account<br><br>**Do not** add `0.0.0.0/0` to `blocked_ip_list`
+  * Specifies a list of fully qualified network rules that contain the network identifiers that are allowed access to Snowflake.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/network_policy#blocked_ip_list NetworkPolicy#blocked_ip_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/network_policy#allowed_network_rule_list NetworkPolicy#allowed_network_rule_list}
+  */
+  readonly allowedNetworkRuleList?: string[];
+  /**
+  * Specifies one or more IPv4 addresses (CIDR notation) that are denied access to your Snowflake account<br><br>**Do not** add `0.0.0.0/0` to `blocked_ip_list`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/network_policy#blocked_ip_list NetworkPolicy#blocked_ip_list}
   */
   readonly blockedIpList?: string[];
   /**
+  * Specifies a list of fully qualified network rules that contain the network identifiers that are denied access to Snowflake.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/network_policy#blocked_network_rule_list NetworkPolicy#blocked_network_rule_list}
+  */
+  readonly blockedNetworkRuleList?: string[];
+  /**
   * Specifies a comment for the network policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/network_policy#comment NetworkPolicy#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/network_policy#comment NetworkPolicy#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/network_policy#id NetworkPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/network_policy#id NetworkPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,13 +47,13 @@ export interface NetworkPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies the identifier for the network policy; must be unique for the account in which the network policy is created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/network_policy#name NetworkPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/network_policy#name NetworkPolicy#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/network_policy snowflake_network_policy}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/network_policy snowflake_network_policy}
 */
 export class NetworkPolicy extends cdktf.TerraformResource {
 
@@ -62,7 +69,7 @@ export class NetworkPolicy extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a NetworkPolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkPolicy to import
-  * @param importFromId The id of the existing NetworkPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/network_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetworkPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/network_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +81,7 @@ export class NetworkPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/network_policy snowflake_network_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/network_policy snowflake_network_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +92,7 @@ export class NetworkPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_network_policy',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.91.0',
+        providerVersion: '0.92.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
@@ -97,7 +104,9 @@ export class NetworkPolicy extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._allowedIpList = config.allowedIpList;
+    this._allowedNetworkRuleList = config.allowedNetworkRuleList;
     this._blockedIpList = config.blockedIpList;
+    this._blockedNetworkRuleList = config.blockedNetworkRuleList;
     this._comment = config.comment;
     this._id = config.id;
     this._name = config.name;
@@ -107,7 +116,7 @@ export class NetworkPolicy extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // allowed_ip_list - computed: false, optional: false, required: true
+  // allowed_ip_list - computed: false, optional: true, required: false
   private _allowedIpList?: string[]; 
   public get allowedIpList() {
     return cdktf.Fn.tolist(this.getListAttribute('allowed_ip_list'));
@@ -115,9 +124,28 @@ export class NetworkPolicy extends cdktf.TerraformResource {
   public set allowedIpList(value: string[]) {
     this._allowedIpList = value;
   }
+  public resetAllowedIpList() {
+    this._allowedIpList = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get allowedIpListInput() {
     return this._allowedIpList;
+  }
+
+  // allowed_network_rule_list - computed: false, optional: true, required: false
+  private _allowedNetworkRuleList?: string[]; 
+  public get allowedNetworkRuleList() {
+    return cdktf.Fn.tolist(this.getListAttribute('allowed_network_rule_list'));
+  }
+  public set allowedNetworkRuleList(value: string[]) {
+    this._allowedNetworkRuleList = value;
+  }
+  public resetAllowedNetworkRuleList() {
+    this._allowedNetworkRuleList = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedNetworkRuleListInput() {
+    return this._allowedNetworkRuleList;
   }
 
   // blocked_ip_list - computed: false, optional: true, required: false
@@ -134,6 +162,22 @@ export class NetworkPolicy extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get blockedIpListInput() {
     return this._blockedIpList;
+  }
+
+  // blocked_network_rule_list - computed: false, optional: true, required: false
+  private _blockedNetworkRuleList?: string[]; 
+  public get blockedNetworkRuleList() {
+    return cdktf.Fn.tolist(this.getListAttribute('blocked_network_rule_list'));
+  }
+  public set blockedNetworkRuleList(value: string[]) {
+    this._blockedNetworkRuleList = value;
+  }
+  public resetBlockedNetworkRuleList() {
+    this._blockedNetworkRuleList = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get blockedNetworkRuleListInput() {
+    return this._blockedNetworkRuleList;
   }
 
   // comment - computed: false, optional: true, required: false
@@ -188,7 +232,9 @@ export class NetworkPolicy extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       allowed_ip_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedIpList),
+      allowed_network_rule_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedNetworkRuleList),
       blocked_ip_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._blockedIpList),
+      blocked_network_rule_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._blockedNetworkRuleList),
       comment: cdktf.stringToTerraform(this._comment),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
@@ -203,8 +249,20 @@ export class NetworkPolicy extends cdktf.TerraformResource {
         type: "set",
         storageClassType: "stringList",
       },
+      allowed_network_rule_list: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedNetworkRuleList),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
       blocked_ip_list: {
         value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._blockedIpList),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      blocked_network_rule_list: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._blockedNetworkRuleList),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",

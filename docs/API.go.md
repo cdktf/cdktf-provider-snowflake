@@ -80,6 +80,7 @@ The following submodules are available:
 - [materializedViewGrant](./materializedViewGrant.go.md)
 - [networkPolicy](./networkPolicy.go.md)
 - [networkPolicyAttachment](./networkPolicyAttachment.go.md)
+- [networkRule](./networkRule.go.md)
 - [notificationIntegration](./notificationIntegration.go.md)
 - [oauthIntegration](./oauthIntegration.go.md)
 - [objectParameter](./objectParameter.go.md)

@@ -4,7 +4,7 @@
 
 ### NetworkPolicy <a name="NetworkPolicy" id="@cdktf/provider-snowflake.networkPolicy.NetworkPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/network_policy snowflake_network_policy}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/network_policy snowflake_network_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.networkPolicy.NetworkPolicy.Initializer"></a>
 
@@ -73,7 +73,10 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.networkPolicy.NetworkPolicy.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-snowflake.networkPolicy.NetworkPolicy.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-snowflake.networkPolicy.NetworkPolicy.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-snowflake.networkPolicy.NetworkPolicy.resetAllowedIpList">ResetAllowedIpList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.networkPolicy.NetworkPolicy.resetAllowedNetworkRuleList">ResetAllowedNetworkRuleList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.networkPolicy.NetworkPolicy.resetBlockedIpList">ResetBlockedIpList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.networkPolicy.NetworkPolicy.resetBlockedNetworkRuleList">ResetBlockedNetworkRuleList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.networkPolicy.NetworkPolicy.resetComment">ResetComment</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.networkPolicy.NetworkPolicy.resetId">ResetId</a></code> | *No description.* |
 
@@ -367,10 +370,28 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `ResetAllowedIpList` <a name="ResetAllowedIpList" id="@cdktf/provider-snowflake.networkPolicy.NetworkPolicy.resetAllowedIpList"></a>
+
+```csharp
+private void ResetAllowedIpList()
+```
+
+##### `ResetAllowedNetworkRuleList` <a name="ResetAllowedNetworkRuleList" id="@cdktf/provider-snowflake.networkPolicy.NetworkPolicy.resetAllowedNetworkRuleList"></a>
+
+```csharp
+private void ResetAllowedNetworkRuleList()
+```
+
 ##### `ResetBlockedIpList` <a name="ResetBlockedIpList" id="@cdktf/provider-snowflake.networkPolicy.NetworkPolicy.resetBlockedIpList"></a>
 
 ```csharp
 private void ResetBlockedIpList()
+```
+
+##### `ResetBlockedNetworkRuleList` <a name="ResetBlockedNetworkRuleList" id="@cdktf/provider-snowflake.networkPolicy.NetworkPolicy.resetBlockedNetworkRuleList"></a>
+
+```csharp
+private void ResetBlockedNetworkRuleList()
 ```
 
 ##### `ResetComment` <a name="ResetComment" id="@cdktf/provider-snowflake.networkPolicy.NetworkPolicy.resetComment"></a>
@@ -488,7 +509,7 @@ The construct id used in the generated config for the NetworkPolicy to import.
 
 The id of the existing NetworkPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/network_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/network_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -519,12 +540,16 @@ Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 | <code><a href="#@cdktf/provider-snowflake.networkPolicy.NetworkPolicy.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.networkPolicy.NetworkPolicy.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.networkPolicy.NetworkPolicy.property.allowedIpListInput">AllowedIpListInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.networkPolicy.NetworkPolicy.property.allowedNetworkRuleListInput">AllowedNetworkRuleListInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.networkPolicy.NetworkPolicy.property.blockedIpListInput">BlockedIpListInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.networkPolicy.NetworkPolicy.property.blockedNetworkRuleListInput">BlockedNetworkRuleListInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.networkPolicy.NetworkPolicy.property.commentInput">CommentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.networkPolicy.NetworkPolicy.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.networkPolicy.NetworkPolicy.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.networkPolicy.NetworkPolicy.property.allowedIpList">AllowedIpList</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.networkPolicy.NetworkPolicy.property.allowedNetworkRuleList">AllowedNetworkRuleList</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.networkPolicy.NetworkPolicy.property.blockedIpList">BlockedIpList</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.networkPolicy.NetworkPolicy.property.blockedNetworkRuleList">BlockedNetworkRuleList</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.networkPolicy.NetworkPolicy.property.comment">Comment</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.networkPolicy.NetworkPolicy.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.networkPolicy.NetworkPolicy.property.name">Name</a></code> | <code>string</code> | *No description.* |
@@ -683,10 +708,30 @@ public string[] AllowedIpListInput { get; }
 
 ---
 
+##### `AllowedNetworkRuleListInput`<sup>Optional</sup> <a name="AllowedNetworkRuleListInput" id="@cdktf/provider-snowflake.networkPolicy.NetworkPolicy.property.allowedNetworkRuleListInput"></a>
+
+```csharp
+public string[] AllowedNetworkRuleListInput { get; }
+```
+
+- *Type:* string[]
+
+---
+
 ##### `BlockedIpListInput`<sup>Optional</sup> <a name="BlockedIpListInput" id="@cdktf/provider-snowflake.networkPolicy.NetworkPolicy.property.blockedIpListInput"></a>
 
 ```csharp
 public string[] BlockedIpListInput { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `BlockedNetworkRuleListInput`<sup>Optional</sup> <a name="BlockedNetworkRuleListInput" id="@cdktf/provider-snowflake.networkPolicy.NetworkPolicy.property.blockedNetworkRuleListInput"></a>
+
+```csharp
+public string[] BlockedNetworkRuleListInput { get; }
 ```
 
 - *Type:* string[]
@@ -733,10 +778,30 @@ public string[] AllowedIpList { get; }
 
 ---
 
+##### `AllowedNetworkRuleList`<sup>Required</sup> <a name="AllowedNetworkRuleList" id="@cdktf/provider-snowflake.networkPolicy.NetworkPolicy.property.allowedNetworkRuleList"></a>
+
+```csharp
+public string[] AllowedNetworkRuleList { get; }
+```
+
+- *Type:* string[]
+
+---
+
 ##### `BlockedIpList`<sup>Required</sup> <a name="BlockedIpList" id="@cdktf/provider-snowflake.networkPolicy.NetworkPolicy.property.blockedIpList"></a>
 
 ```csharp
 public string[] BlockedIpList { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `BlockedNetworkRuleList`<sup>Required</sup> <a name="BlockedNetworkRuleList" id="@cdktf/provider-snowflake.networkPolicy.NetworkPolicy.property.blockedNetworkRuleList"></a>
+
+```csharp
+public string[] BlockedNetworkRuleList { get; }
 ```
 
 - *Type:* string[]
@@ -808,9 +873,11 @@ new NetworkPolicyConfig {
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
     object[] Provisioners = null,
-    string[] AllowedIpList,
     string Name,
+    string[] AllowedIpList = null,
+    string[] AllowedNetworkRuleList = null,
     string[] BlockedIpList = null,
+    string[] BlockedNetworkRuleList = null,
     string Comment = null,
     string Id = null
 };
@@ -827,11 +894,13 @@ new NetworkPolicyConfig {
 | <code><a href="#@cdktf/provider-snowflake.networkPolicy.NetworkPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.networkPolicy.NetworkPolicyConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.networkPolicy.NetworkPolicyConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.networkPolicy.NetworkPolicyConfig.property.allowedIpList">AllowedIpList</a></code> | <code>string[]</code> | Specifies one or more IPv4 addresses (CIDR notation) that are allowed access to your Snowflake account. |
 | <code><a href="#@cdktf/provider-snowflake.networkPolicy.NetworkPolicyConfig.property.name">Name</a></code> | <code>string</code> | Specifies the identifier for the network policy; |
+| <code><a href="#@cdktf/provider-snowflake.networkPolicy.NetworkPolicyConfig.property.allowedIpList">AllowedIpList</a></code> | <code>string[]</code> | Specifies one or more IPv4 addresses (CIDR notation) that are allowed access to your Snowflake account. |
+| <code><a href="#@cdktf/provider-snowflake.networkPolicy.NetworkPolicyConfig.property.allowedNetworkRuleList">AllowedNetworkRuleList</a></code> | <code>string[]</code> | Specifies a list of fully qualified network rules that contain the network identifiers that are allowed access to Snowflake. |
 | <code><a href="#@cdktf/provider-snowflake.networkPolicy.NetworkPolicyConfig.property.blockedIpList">BlockedIpList</a></code> | <code>string[]</code> | Specifies one or more IPv4 addresses (CIDR notation) that are denied access to your Snowflake account<br><br>**Do not** add `0.0.0.0/0` to `blocked_ip_list`. |
+| <code><a href="#@cdktf/provider-snowflake.networkPolicy.NetworkPolicyConfig.property.blockedNetworkRuleList">BlockedNetworkRuleList</a></code> | <code>string[]</code> | Specifies a list of fully qualified network rules that contain the network identifiers that are denied access to Snowflake. |
 | <code><a href="#@cdktf/provider-snowflake.networkPolicy.NetworkPolicyConfig.property.comment">Comment</a></code> | <code>string</code> | Specifies a comment for the network policy. |
-| <code><a href="#@cdktf/provider-snowflake.networkPolicy.NetworkPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/network_policy#id NetworkPolicy#id}. |
+| <code><a href="#@cdktf/provider-snowflake.networkPolicy.NetworkPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/network_policy#id NetworkPolicy#id}. |
 
 ---
 
@@ -905,20 +974,6 @@ public object[] Provisioners { get; set; }
 
 ---
 
-##### `AllowedIpList`<sup>Required</sup> <a name="AllowedIpList" id="@cdktf/provider-snowflake.networkPolicy.NetworkPolicyConfig.property.allowedIpList"></a>
-
-```csharp
-public string[] AllowedIpList { get; set; }
-```
-
-- *Type:* string[]
-
-Specifies one or more IPv4 addresses (CIDR notation) that are allowed access to your Snowflake account.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/network_policy#allowed_ip_list NetworkPolicy#allowed_ip_list}
-
----
-
 ##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-snowflake.networkPolicy.NetworkPolicyConfig.property.name"></a>
 
 ```csharp
@@ -931,7 +986,35 @@ Specifies the identifier for the network policy;
 
 must be unique for the account in which the network policy is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/network_policy#name NetworkPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/network_policy#name NetworkPolicy#name}
+
+---
+
+##### `AllowedIpList`<sup>Optional</sup> <a name="AllowedIpList" id="@cdktf/provider-snowflake.networkPolicy.NetworkPolicyConfig.property.allowedIpList"></a>
+
+```csharp
+public string[] AllowedIpList { get; set; }
+```
+
+- *Type:* string[]
+
+Specifies one or more IPv4 addresses (CIDR notation) that are allowed access to your Snowflake account.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/network_policy#allowed_ip_list NetworkPolicy#allowed_ip_list}
+
+---
+
+##### `AllowedNetworkRuleList`<sup>Optional</sup> <a name="AllowedNetworkRuleList" id="@cdktf/provider-snowflake.networkPolicy.NetworkPolicyConfig.property.allowedNetworkRuleList"></a>
+
+```csharp
+public string[] AllowedNetworkRuleList { get; set; }
+```
+
+- *Type:* string[]
+
+Specifies a list of fully qualified network rules that contain the network identifiers that are allowed access to Snowflake.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/network_policy#allowed_network_rule_list NetworkPolicy#allowed_network_rule_list}
 
 ---
 
@@ -945,7 +1028,21 @@ public string[] BlockedIpList { get; set; }
 
 Specifies one or more IPv4 addresses (CIDR notation) that are denied access to your Snowflake account<br><br>**Do not** add `0.0.0.0/0` to `blocked_ip_list`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/network_policy#blocked_ip_list NetworkPolicy#blocked_ip_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/network_policy#blocked_ip_list NetworkPolicy#blocked_ip_list}
+
+---
+
+##### `BlockedNetworkRuleList`<sup>Optional</sup> <a name="BlockedNetworkRuleList" id="@cdktf/provider-snowflake.networkPolicy.NetworkPolicyConfig.property.blockedNetworkRuleList"></a>
+
+```csharp
+public string[] BlockedNetworkRuleList { get; set; }
+```
+
+- *Type:* string[]
+
+Specifies a list of fully qualified network rules that contain the network identifiers that are denied access to Snowflake.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/network_policy#blocked_network_rule_list NetworkPolicy#blocked_network_rule_list}
 
 ---
 
@@ -959,7 +1056,7 @@ public string Comment { get; set; }
 
 Specifies a comment for the network policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/network_policy#comment NetworkPolicy#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/network_policy#comment NetworkPolicy#comment}
 
 ---
 
@@ -971,7 +1068,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/network_policy#id NetworkPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/network_policy#id NetworkPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

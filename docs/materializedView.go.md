@@ -4,12 +4,12 @@
 
 ### MaterializedView <a name="MaterializedView" id="@cdktf/provider-snowflake.materializedView.MaterializedView"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/materialized_view snowflake_materialized_view}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/materialized_view snowflake_materialized_view}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.materializedView.MaterializedView.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/materializedview"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/materializedview"
 
 materializedview.NewMaterializedView(scope Construct, id *string, config MaterializedViewConfig) MaterializedView
 ```
@@ -426,7 +426,7 @@ func ResetTag()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.materializedView.MaterializedView.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/materializedview"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/materializedview"
 
 materializedview.MaterializedView_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.materializedView.MaterializedView.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/materializedview"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/materializedview"
 
 materializedview.MaterializedView_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ materializedview.MaterializedView_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.materializedView.MaterializedView.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/materializedview"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/materializedview"
 
 materializedview.MaterializedView_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ materializedview.MaterializedView_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.materializedView.MaterializedView.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/materializedview"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/materializedview"
 
 materializedview.MaterializedView_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -515,7 +515,7 @@ The construct id used in the generated config for the MaterializedView to import
 
 The id of the existing MaterializedView that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/materialized_view#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/materialized_view#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -935,7 +935,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.materializedView.MaterializedViewConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/materializedview"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/materializedview"
 
 &materializedview.MaterializedViewConfig {
 	Connection: interface{},
@@ -975,7 +975,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/materializedv
 | <code><a href="#@cdktf/provider-snowflake.materializedView.MaterializedViewConfig.property.statement">Statement</a></code> | <code>*string</code> | Specifies the query used to create the view. |
 | <code><a href="#@cdktf/provider-snowflake.materializedView.MaterializedViewConfig.property.warehouse">Warehouse</a></code> | <code>*string</code> | The warehouse name. |
 | <code><a href="#@cdktf/provider-snowflake.materializedView.MaterializedViewConfig.property.comment">Comment</a></code> | <code>*string</code> | Specifies a comment for the view. |
-| <code><a href="#@cdktf/provider-snowflake.materializedView.MaterializedViewConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/materialized_view#id MaterializedView#id}. |
+| <code><a href="#@cdktf/provider-snowflake.materializedView.MaterializedViewConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/materialized_view#id MaterializedView#id}. |
 | <code><a href="#@cdktf/provider-snowflake.materializedView.MaterializedViewConfig.property.isSecure">IsSecure</a></code> | <code>interface{}</code> | Specifies that the view is secure. |
 | <code><a href="#@cdktf/provider-snowflake.materializedView.MaterializedViewConfig.property.orReplace">OrReplace</a></code> | <code>interface{}</code> | Overwrites the View if it exists. |
 | <code><a href="#@cdktf/provider-snowflake.materializedView.MaterializedViewConfig.property.tag">Tag</a></code> | <code>interface{}</code> | tag block. |
@@ -1062,7 +1062,7 @@ Database *string
 
 The database in which to create the view. Don't use the | character.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/materialized_view#database MaterializedView#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/materialized_view#database MaterializedView#database}
 
 ---
 
@@ -1076,7 +1076,7 @@ Name *string
 
 Specifies the identifier for the view; must be unique for the schema in which the view is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/materialized_view#name MaterializedView#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/materialized_view#name MaterializedView#name}
 
 ---
 
@@ -1090,7 +1090,7 @@ Schema *string
 
 The schema in which to create the view. Don't use the | character.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/materialized_view#schema MaterializedView#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/materialized_view#schema MaterializedView#schema}
 
 ---
 
@@ -1104,7 +1104,7 @@ Statement *string
 
 Specifies the query used to create the view.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/materialized_view#statement MaterializedView#statement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/materialized_view#statement MaterializedView#statement}
 
 ---
 
@@ -1118,7 +1118,7 @@ Warehouse *string
 
 The warehouse name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/materialized_view#warehouse MaterializedView#warehouse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/materialized_view#warehouse MaterializedView#warehouse}
 
 ---
 
@@ -1132,7 +1132,7 @@ Comment *string
 
 Specifies a comment for the view.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/materialized_view#comment MaterializedView#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/materialized_view#comment MaterializedView#comment}
 
 ---
 
@@ -1144,7 +1144,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/materialized_view#id MaterializedView#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/materialized_view#id MaterializedView#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1161,7 +1161,7 @@ IsSecure interface{}
 
 Specifies that the view is secure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/materialized_view#is_secure MaterializedView#is_secure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/materialized_view#is_secure MaterializedView#is_secure}
 
 ---
 
@@ -1175,7 +1175,7 @@ OrReplace interface{}
 
 Overwrites the View if it exists.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/materialized_view#or_replace MaterializedView#or_replace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/materialized_view#or_replace MaterializedView#or_replace}
 
 ---
 
@@ -1189,7 +1189,7 @@ Tag interface{}
 
 tag block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/materialized_view#tag MaterializedView#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/materialized_view#tag MaterializedView#tag}
 
 ---
 
@@ -1198,7 +1198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.materializedView.MaterializedViewTag.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/materializedview"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/materializedview"
 
 &materializedview.MaterializedViewTag {
 	Name: *string,
@@ -1229,7 +1229,7 @@ Name *string
 
 Tag name, e.g. department.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/materialized_view#name MaterializedView#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/materialized_view#name MaterializedView#name}
 
 ---
 
@@ -1243,7 +1243,7 @@ Value *string
 
 Tag value, e.g. marketing_info.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/materialized_view#value MaterializedView#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/materialized_view#value MaterializedView#value}
 
 ---
 
@@ -1257,7 +1257,7 @@ Database *string
 
 Name of the database that the tag was created in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/materialized_view#database MaterializedView#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/materialized_view#database MaterializedView#database}
 
 ---
 
@@ -1271,7 +1271,7 @@ Schema *string
 
 Name of the schema that the tag was created in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.91.0/docs/resources/materialized_view#schema MaterializedView#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/materialized_view#schema MaterializedView#schema}
 
 ---
 
@@ -1282,7 +1282,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.materializedView.MaterializedViewTagList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/materializedview"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/materializedview"
 
 materializedview.NewMaterializedViewTagList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MaterializedViewTagList
 ```
@@ -1442,7 +1442,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.materializedView.MaterializedViewTagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/materializedview"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/materializedview"
 
 materializedview.NewMaterializedViewTagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MaterializedViewTagOutputReference
 ```

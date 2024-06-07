@@ -80,6 +80,7 @@ The following submodules are available:
 - [materializedViewGrant](./materializedViewGrant.python.md)
 - [networkPolicy](./networkPolicy.python.md)
 - [networkPolicyAttachment](./networkPolicyAttachment.python.md)
+- [networkRule](./networkRule.python.md)
 - [notificationIntegration](./notificationIntegration.python.md)
 - [oauthIntegration](./oauthIntegration.python.md)
 - [objectParameter](./objectParameter.python.md)
