@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/notification_integration
 // generated from terraform resource schema
 
