@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/tag_masking_policy_association
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/tag_masking_policy_association
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface TagMaskingPolicyAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/tag_masking_policy_association#id TagMaskingPolicyAssociation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/tag_masking_policy_association#id TagMaskingPolicyAssociation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,19 +22,19 @@ export interface TagMaskingPolicyAssociationConfig extends cdktf.TerraformMetaAr
   /**
   * The resource id of the masking policy
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/tag_masking_policy_association#masking_policy_id TagMaskingPolicyAssociation#masking_policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/tag_masking_policy_association#masking_policy_id TagMaskingPolicyAssociation#masking_policy_id}
   */
   readonly maskingPolicyId: string;
   /**
   * Specifies the identifier for the tag. Note: format must follow: "databaseName"."schemaName"."tagName" or "databaseName.schemaName.tagName" or "databaseName|schemaName.tagName" (snowflake_tag.tag.id)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/tag_masking_policy_association#tag_id TagMaskingPolicyAssociation#tag_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/tag_masking_policy_association#tag_id TagMaskingPolicyAssociation#tag_id}
   */
   readonly tagId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/tag_masking_policy_association snowflake_tag_masking_policy_association}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/tag_masking_policy_association snowflake_tag_masking_policy_association}
 */
 export class TagMaskingPolicyAssociation extends cdktf.TerraformResource {
 
@@ -50,7 +50,7 @@ export class TagMaskingPolicyAssociation extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a TagMaskingPolicyAssociation resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TagMaskingPolicyAssociation to import
-  * @param importFromId The id of the existing TagMaskingPolicyAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/tag_masking_policy_association#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing TagMaskingPolicyAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/tag_masking_policy_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TagMaskingPolicyAssociation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -62,7 +62,7 @@ export class TagMaskingPolicyAssociation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/tag_masking_policy_association snowflake_tag_masking_policy_association} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/tag_masking_policy_association snowflake_tag_masking_policy_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -73,7 +73,7 @@ export class TagMaskingPolicyAssociation extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_tag_masking_policy_association',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.92.0',
+        providerVersion: '0.93.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,

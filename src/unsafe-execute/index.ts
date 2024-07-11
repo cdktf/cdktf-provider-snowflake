@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/unsafe_execute
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/unsafe_execute
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface UnsafeExecuteConfig extends cdktf.TerraformMetaArguments {
   /**
   * SQL statement to execute. Forces recreation of resource on change.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/unsafe_execute#execute UnsafeExecute#execute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/unsafe_execute#execute UnsafeExecute#execute}
   */
   readonly execute: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/unsafe_execute#id UnsafeExecute#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/unsafe_execute#id UnsafeExecute#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,19 +28,19 @@ export interface UnsafeExecuteConfig extends cdktf.TerraformMetaArguments {
   /**
   * Optional SQL statement to do a read. Invoked after creation and every time it is changed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/unsafe_execute#query UnsafeExecute#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/unsafe_execute#query UnsafeExecute#query}
   */
   readonly query?: string;
   /**
   * SQL statement to revert the execute statement. Invoked when resource is being destroyed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/unsafe_execute#revert UnsafeExecute#revert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/unsafe_execute#revert UnsafeExecute#revert}
   */
   readonly revert: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/unsafe_execute snowflake_unsafe_execute}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/unsafe_execute snowflake_unsafe_execute}
 */
 export class UnsafeExecute extends cdktf.TerraformResource {
 
@@ -56,7 +56,7 @@ export class UnsafeExecute extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a UnsafeExecute resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the UnsafeExecute to import
-  * @param importFromId The id of the existing UnsafeExecute that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/unsafe_execute#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing UnsafeExecute that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/unsafe_execute#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the UnsafeExecute to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -68,7 +68,7 @@ export class UnsafeExecute extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.92.0/docs/resources/unsafe_execute snowflake_unsafe_execute} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/unsafe_execute snowflake_unsafe_execute} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +79,7 @@ export class UnsafeExecute extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_unsafe_execute',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.92.0',
+        providerVersion: '0.93.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
