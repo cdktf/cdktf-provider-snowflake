@@ -4,12 +4,12 @@
 
 ### ApiAuthenticationIntegrationWithJwtBearer <a name="ApiAuthenticationIntegrationWithJwtBearer" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearer"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/api_authentication_integration_with_jwt_bearer snowflake_api_authentication_integration_with_jwt_bearer}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/resources/api_authentication_integration_with_jwt_bearer snowflake_api_authentication_integration_with_jwt_bearer}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithjwtbearer"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithjwtbearer"
 
 apiauthenticationintegrationwithjwtbearer.NewApiAuthenticationIntegrationWithJwtBearer(scope Construct, id *string, config ApiAuthenticationIntegrationWithJwtBearerConfig) ApiAuthenticationIntegrationWithJwtBearer
 ```
@@ -427,7 +427,7 @@ func ResetOauthTokenEndpoint()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithjwtbearer"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithjwtbearer"
 
 apiauthenticationintegrationwithjwtbearer.ApiAuthenticationIntegrationWithJwtBearer_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithjwtbearer"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithjwtbearer"
 
 apiauthenticationintegrationwithjwtbearer.ApiAuthenticationIntegrationWithJwtBearer_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ apiauthenticationintegrationwithjwtbearer.ApiAuthenticationIntegrationWithJwtBea
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithjwtbearer"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithjwtbearer"
 
 apiauthenticationintegrationwithjwtbearer.ApiAuthenticationIntegrationWithJwtBearer_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ apiauthenticationintegrationwithjwtbearer.ApiAuthenticationIntegrationWithJwtBea
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithjwtbearer"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithjwtbearer"
 
 apiauthenticationintegrationwithjwtbearer.ApiAuthenticationIntegrationWithJwtBearer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -516,7 +516,7 @@ The construct id used in the generated config for the ApiAuthenticationIntegrati
 
 The id of the existing ApiAuthenticationIntegrationWithJwtBearer that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/api_authentication_integration_with_jwt_bearer#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/resources/api_authentication_integration_with_jwt_bearer#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1002,7 +1002,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithjwtbearer"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithjwtbearer"
 
 &apiauthenticationintegrationwithjwtbearer.ApiAuthenticationIntegrationWithJwtBearerConfig {
 	Connection: interface{},
@@ -1040,11 +1040,11 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthentica
 | <code><a href="#@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Specifies whether this security integration is enabled or disabled. |
 | <code><a href="#@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerConfig.property.name">Name</a></code> | <code>*string</code> | Specifies the identifier (i.e. name) for the integration. This value must be unique in your account. |
-| <code><a href="#@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerConfig.property.oauthAssertionIssuer">OauthAssertionIssuer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/api_authentication_integration_with_jwt_bearer#oauth_assertion_issuer ApiAuthenticationIntegrationWithJwtBearer#oauth_assertion_issuer}. |
+| <code><a href="#@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerConfig.property.oauthAssertionIssuer">OauthAssertionIssuer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/resources/api_authentication_integration_with_jwt_bearer#oauth_assertion_issuer ApiAuthenticationIntegrationWithJwtBearer#oauth_assertion_issuer}. |
 | <code><a href="#@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerConfig.property.oauthClientId">OauthClientId</a></code> | <code>*string</code> | Specifies the client ID for the OAuth application in the external service. |
 | <code><a href="#@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerConfig.property.oauthClientSecret">OauthClientSecret</a></code> | <code>*string</code> | Specifies the client secret for the OAuth application in the ServiceNow instance from the previous step. |
 | <code><a href="#@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerConfig.property.comment">Comment</a></code> | <code>*string</code> | Specifies a comment for the integration. |
-| <code><a href="#@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/api_authentication_integration_with_jwt_bearer#id ApiAuthenticationIntegrationWithJwtBearer#id}. |
+| <code><a href="#@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/resources/api_authentication_integration_with_jwt_bearer#id ApiAuthenticationIntegrationWithJwtBearer#id}. |
 | <code><a href="#@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerConfig.property.oauthAccessTokenValidity">OauthAccessTokenValidity</a></code> | <code>*f64</code> | Specifies the default lifetime of the OAuth access token (in seconds) issued by an OAuth server. |
 | <code><a href="#@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerConfig.property.oauthAuthorizationEndpoint">OauthAuthorizationEndpoint</a></code> | <code>*string</code> | Specifies the URL for authenticating to the external service. |
 | <code><a href="#@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerConfig.property.oauthClientAuthMethod">OauthClientAuthMethod</a></code> | <code>*string</code> | Specifies that POST is used as the authentication method to the external service. |
@@ -1133,7 +1133,7 @@ Enabled interface{}
 
 Specifies whether this security integration is enabled or disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/api_authentication_integration_with_jwt_bearer#enabled ApiAuthenticationIntegrationWithJwtBearer#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/resources/api_authentication_integration_with_jwt_bearer#enabled ApiAuthenticationIntegrationWithJwtBearer#enabled}
 
 ---
 
@@ -1147,7 +1147,7 @@ Name *string
 
 Specifies the identifier (i.e. name) for the integration. This value must be unique in your account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/api_authentication_integration_with_jwt_bearer#name ApiAuthenticationIntegrationWithJwtBearer#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/resources/api_authentication_integration_with_jwt_bearer#name ApiAuthenticationIntegrationWithJwtBearer#name}
 
 ---
 
@@ -1159,7 +1159,7 @@ OauthAssertionIssuer *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/api_authentication_integration_with_jwt_bearer#oauth_assertion_issuer ApiAuthenticationIntegrationWithJwtBearer#oauth_assertion_issuer}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/resources/api_authentication_integration_with_jwt_bearer#oauth_assertion_issuer ApiAuthenticationIntegrationWithJwtBearer#oauth_assertion_issuer}.
 
 ---
 
@@ -1173,7 +1173,7 @@ OauthClientId *string
 
 Specifies the client ID for the OAuth application in the external service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/api_authentication_integration_with_jwt_bearer#oauth_client_id ApiAuthenticationIntegrationWithJwtBearer#oauth_client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/resources/api_authentication_integration_with_jwt_bearer#oauth_client_id ApiAuthenticationIntegrationWithJwtBearer#oauth_client_id}
 
 ---
 
@@ -1189,7 +1189,7 @@ Specifies the client secret for the OAuth application in the ServiceNow instance
 
 The connector uses this to request an access token from the ServiceNow instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/api_authentication_integration_with_jwt_bearer#oauth_client_secret ApiAuthenticationIntegrationWithJwtBearer#oauth_client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/resources/api_authentication_integration_with_jwt_bearer#oauth_client_secret ApiAuthenticationIntegrationWithJwtBearer#oauth_client_secret}
 
 ---
 
@@ -1203,7 +1203,7 @@ Comment *string
 
 Specifies a comment for the integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/api_authentication_integration_with_jwt_bearer#comment ApiAuthenticationIntegrationWithJwtBearer#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/resources/api_authentication_integration_with_jwt_bearer#comment ApiAuthenticationIntegrationWithJwtBearer#comment}
 
 ---
 
@@ -1215,7 +1215,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/api_authentication_integration_with_jwt_bearer#id ApiAuthenticationIntegrationWithJwtBearer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/resources/api_authentication_integration_with_jwt_bearer#id ApiAuthenticationIntegrationWithJwtBearer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1232,7 +1232,7 @@ OauthAccessTokenValidity *f64
 
 Specifies the default lifetime of the OAuth access token (in seconds) issued by an OAuth server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/api_authentication_integration_with_jwt_bearer#oauth_access_token_validity ApiAuthenticationIntegrationWithJwtBearer#oauth_access_token_validity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/resources/api_authentication_integration_with_jwt_bearer#oauth_access_token_validity ApiAuthenticationIntegrationWithJwtBearer#oauth_access_token_validity}
 
 ---
 
@@ -1246,7 +1246,7 @@ OauthAuthorizationEndpoint *string
 
 Specifies the URL for authenticating to the external service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/api_authentication_integration_with_jwt_bearer#oauth_authorization_endpoint ApiAuthenticationIntegrationWithJwtBearer#oauth_authorization_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/resources/api_authentication_integration_with_jwt_bearer#oauth_authorization_endpoint ApiAuthenticationIntegrationWithJwtBearer#oauth_authorization_endpoint}
 
 ---
 
@@ -1262,7 +1262,7 @@ Specifies that POST is used as the authentication method to the external service
 
 If removed from the config, the resource is recreated. Valid values are (case-insensitive): `CLIENT_SECRET_POST`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/api_authentication_integration_with_jwt_bearer#oauth_client_auth_method ApiAuthenticationIntegrationWithJwtBearer#oauth_client_auth_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/resources/api_authentication_integration_with_jwt_bearer#oauth_client_auth_method ApiAuthenticationIntegrationWithJwtBearer#oauth_client_auth_method}
 
 ---
 
@@ -1276,7 +1276,7 @@ OauthRefreshTokenValidity *f64
 
 Specifies the value to determine the validity of the refresh token obtained from the OAuth server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/api_authentication_integration_with_jwt_bearer#oauth_refresh_token_validity ApiAuthenticationIntegrationWithJwtBearer#oauth_refresh_token_validity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/resources/api_authentication_integration_with_jwt_bearer#oauth_refresh_token_validity ApiAuthenticationIntegrationWithJwtBearer#oauth_refresh_token_validity}
 
 ---
 
@@ -1292,7 +1292,7 @@ Specifies the token endpoint used by the client to obtain an access token by pre
 
 The token endpoint is used with every authorization grant except for the implicit grant type (since an access token is issued directly). If removed from the config, the resource is recreated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/api_authentication_integration_with_jwt_bearer#oauth_token_endpoint ApiAuthenticationIntegrationWithJwtBearer#oauth_token_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/resources/api_authentication_integration_with_jwt_bearer#oauth_token_endpoint ApiAuthenticationIntegrationWithJwtBearer#oauth_token_endpoint}
 
 ---
 
@@ -1301,7 +1301,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithjwtbearer"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithjwtbearer"
 
 &apiauthenticationintegrationwithjwtbearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutput {
 
@@ -1314,7 +1314,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthentica
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutputAuthType.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithjwtbearer"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithjwtbearer"
 
 &apiauthenticationintegrationwithjwtbearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutputAuthType {
 
@@ -1327,7 +1327,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthentica
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutputComment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithjwtbearer"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithjwtbearer"
 
 &apiauthenticationintegrationwithjwtbearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutputComment {
 
@@ -1340,7 +1340,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthentica
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutputEnabled.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithjwtbearer"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithjwtbearer"
 
 &apiauthenticationintegrationwithjwtbearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutputEnabled {
 
@@ -1353,7 +1353,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthentica
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthAccessTokenValidity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithjwtbearer"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithjwtbearer"
 
 &apiauthenticationintegrationwithjwtbearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthAccessTokenValidity {
 
@@ -1366,7 +1366,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthentica
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthAllowedScopes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithjwtbearer"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithjwtbearer"
 
 &apiauthenticationintegrationwithjwtbearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthAllowedScopes {
 
@@ -1379,7 +1379,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthentica
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthAuthorizationEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithjwtbearer"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithjwtbearer"
 
 &apiauthenticationintegrationwithjwtbearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthAuthorizationEndpoint {
 
@@ -1392,7 +1392,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthentica
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthClientAuthMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithjwtbearer"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithjwtbearer"
 
 &apiauthenticationintegrationwithjwtbearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthClientAuthMethod {
 
@@ -1405,7 +1405,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthentica
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthClientId.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithjwtbearer"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithjwtbearer"
 
 &apiauthenticationintegrationwithjwtbearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthClientId {
 
@@ -1418,7 +1418,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthentica
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthGrant.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithjwtbearer"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithjwtbearer"
 
 &apiauthenticationintegrationwithjwtbearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthGrant {
 
@@ -1431,7 +1431,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthentica
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthRefreshTokenValidity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithjwtbearer"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithjwtbearer"
 
 &apiauthenticationintegrationwithjwtbearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthRefreshTokenValidity {
 
@@ -1444,7 +1444,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthentica
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthTokenEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithjwtbearer"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithjwtbearer"
 
 &apiauthenticationintegrationwithjwtbearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthTokenEndpoint {
 
@@ -1457,7 +1457,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthentica
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutputParentIntegration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithjwtbearer"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithjwtbearer"
 
 &apiauthenticationintegrationwithjwtbearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutputParentIntegration {
 
@@ -1470,7 +1470,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthentica
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithjwtbearer"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithjwtbearer"
 
 &apiauthenticationintegrationwithjwtbearer.ApiAuthenticationIntegrationWithJwtBearerShowOutput {
 
@@ -1485,7 +1485,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthentica
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutputAuthTypeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithjwtbearer"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithjwtbearer"
 
 apiauthenticationintegrationwithjwtbearer.NewApiAuthenticationIntegrationWithJwtBearerDescribeOutputAuthTypeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApiAuthenticationIntegrationWithJwtBearerDescribeOutputAuthTypeList
 ```
@@ -1634,7 +1634,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutputAuthTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithjwtbearer"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithjwtbearer"
 
 apiauthenticationintegrationwithjwtbearer.NewApiAuthenticationIntegrationWithJwtBearerDescribeOutputAuthTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApiAuthenticationIntegrationWithJwtBearerDescribeOutputAuthTypeOutputReference
 ```
@@ -1945,7 +1945,7 @@ func InternalValue() ApiAuthenticationIntegrationWithJwtBearerDescribeOutputAuth
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutputCommentList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithjwtbearer"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithjwtbearer"
 
 apiauthenticationintegrationwithjwtbearer.NewApiAuthenticationIntegrationWithJwtBearerDescribeOutputCommentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApiAuthenticationIntegrationWithJwtBearerDescribeOutputCommentList
 ```
@@ -2094,7 +2094,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutputCommentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithjwtbearer"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithjwtbearer"
 
 apiauthenticationintegrationwithjwtbearer.NewApiAuthenticationIntegrationWithJwtBearerDescribeOutputCommentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApiAuthenticationIntegrationWithJwtBearerDescribeOutputCommentOutputReference
 ```
@@ -2405,7 +2405,7 @@ func InternalValue() ApiAuthenticationIntegrationWithJwtBearerDescribeOutputComm
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutputEnabledList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithjwtbearer"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithjwtbearer"
 
 apiauthenticationintegrationwithjwtbearer.NewApiAuthenticationIntegrationWithJwtBearerDescribeOutputEnabledList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApiAuthenticationIntegrationWithJwtBearerDescribeOutputEnabledList
 ```
@@ -2554,7 +2554,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutputEnabledOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithjwtbearer"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithjwtbearer"
 
 apiauthenticationintegrationwithjwtbearer.NewApiAuthenticationIntegrationWithJwtBearerDescribeOutputEnabledOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApiAuthenticationIntegrationWithJwtBearerDescribeOutputEnabledOutputReference
 ```
@@ -2865,7 +2865,7 @@ func InternalValue() ApiAuthenticationIntegrationWithJwtBearerDescribeOutputEnab
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithjwtbearer"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithjwtbearer"
 
 apiauthenticationintegrationwithjwtbearer.NewApiAuthenticationIntegrationWithJwtBearerDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApiAuthenticationIntegrationWithJwtBearerDescribeOutputList
 ```
@@ -3014,7 +3014,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthAccessTokenValidityList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithjwtbearer"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithjwtbearer"
 
 apiauthenticationintegrationwithjwtbearer.NewApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthAccessTokenValidityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthAccessTokenValidityList
 ```
@@ -3163,7 +3163,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthAccessTokenValidityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithjwtbearer"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithjwtbearer"
 
 apiauthenticationintegrationwithjwtbearer.NewApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthAccessTokenValidityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthAccessTokenValidityOutputReference
 ```
@@ -3474,7 +3474,7 @@ func InternalValue() ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOaut
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthAllowedScopesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithjwtbearer"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithjwtbearer"
 
 apiauthenticationintegrationwithjwtbearer.NewApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthAllowedScopesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthAllowedScopesList
 ```
@@ -3623,7 +3623,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthAllowedScopesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithjwtbearer"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithjwtbearer"
 
 apiauthenticationintegrationwithjwtbearer.NewApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthAllowedScopesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthAllowedScopesOutputReference
 ```
@@ -3934,7 +3934,7 @@ func InternalValue() ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOaut
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthAuthorizationEndpointList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithjwtbearer"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithjwtbearer"
 
 apiauthenticationintegrationwithjwtbearer.NewApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthAuthorizationEndpointList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthAuthorizationEndpointList
 ```
@@ -4083,7 +4083,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthAuthorizationEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithjwtbearer"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithjwtbearer"
 
 apiauthenticationintegrationwithjwtbearer.NewApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthAuthorizationEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthAuthorizationEndpointOutputReference
 ```
@@ -4394,7 +4394,7 @@ func InternalValue() ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOaut
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthClientAuthMethodList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithjwtbearer"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithjwtbearer"
 
 apiauthenticationintegrationwithjwtbearer.NewApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthClientAuthMethodList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthClientAuthMethodList
 ```
@@ -4543,7 +4543,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthClientAuthMethodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithjwtbearer"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithjwtbearer"
 
 apiauthenticationintegrationwithjwtbearer.NewApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthClientAuthMethodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthClientAuthMethodOutputReference
 ```
@@ -4854,7 +4854,7 @@ func InternalValue() ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOaut
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthClientIdList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithjwtbearer"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithjwtbearer"
 
 apiauthenticationintegrationwithjwtbearer.NewApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthClientIdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthClientIdList
 ```
@@ -5003,7 +5003,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthClientIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithjwtbearer"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithjwtbearer"
 
 apiauthenticationintegrationwithjwtbearer.NewApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthClientIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthClientIdOutputReference
 ```
@@ -5314,7 +5314,7 @@ func InternalValue() ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOaut
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthGrantList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithjwtbearer"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithjwtbearer"
 
 apiauthenticationintegrationwithjwtbearer.NewApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthGrantList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthGrantList
 ```
@@ -5463,7 +5463,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthGrantOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithjwtbearer"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithjwtbearer"
 
 apiauthenticationintegrationwithjwtbearer.NewApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthGrantOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthGrantOutputReference
 ```
@@ -5774,7 +5774,7 @@ func InternalValue() ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOaut
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthRefreshTokenValidityList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithjwtbearer"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithjwtbearer"
 
 apiauthenticationintegrationwithjwtbearer.NewApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthRefreshTokenValidityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthRefreshTokenValidityList
 ```
@@ -5923,7 +5923,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthRefreshTokenValidityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithjwtbearer"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithjwtbearer"
 
 apiauthenticationintegrationwithjwtbearer.NewApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthRefreshTokenValidityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthRefreshTokenValidityOutputReference
 ```
@@ -6234,7 +6234,7 @@ func InternalValue() ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOaut
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthTokenEndpointList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithjwtbearer"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithjwtbearer"
 
 apiauthenticationintegrationwithjwtbearer.NewApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthTokenEndpointList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthTokenEndpointList
 ```
@@ -6383,7 +6383,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthTokenEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithjwtbearer"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithjwtbearer"
 
 apiauthenticationintegrationwithjwtbearer.NewApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthTokenEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOauthTokenEndpointOutputReference
 ```
@@ -6694,7 +6694,7 @@ func InternalValue() ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOaut
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithjwtbearer"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithjwtbearer"
 
 apiauthenticationintegrationwithjwtbearer.NewApiAuthenticationIntegrationWithJwtBearerDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApiAuthenticationIntegrationWithJwtBearerDescribeOutputOutputReference
 ```
@@ -7093,7 +7093,7 @@ func InternalValue() ApiAuthenticationIntegrationWithJwtBearerDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutputParentIntegrationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithjwtbearer"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithjwtbearer"
 
 apiauthenticationintegrationwithjwtbearer.NewApiAuthenticationIntegrationWithJwtBearerDescribeOutputParentIntegrationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApiAuthenticationIntegrationWithJwtBearerDescribeOutputParentIntegrationList
 ```
@@ -7242,7 +7242,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerDescribeOutputParentIntegrationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithjwtbearer"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithjwtbearer"
 
 apiauthenticationintegrationwithjwtbearer.NewApiAuthenticationIntegrationWithJwtBearerDescribeOutputParentIntegrationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApiAuthenticationIntegrationWithJwtBearerDescribeOutputParentIntegrationOutputReference
 ```
@@ -7553,7 +7553,7 @@ func InternalValue() ApiAuthenticationIntegrationWithJwtBearerDescribeOutputPare
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithjwtbearer"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithjwtbearer"
 
 apiauthenticationintegrationwithjwtbearer.NewApiAuthenticationIntegrationWithJwtBearerShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApiAuthenticationIntegrationWithJwtBearerShowOutputList
 ```
@@ -7702,7 +7702,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithJwtBearer.ApiAuthenticationIntegrationWithJwtBearerShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithjwtbearer"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithjwtbearer"
 
 apiauthenticationintegrationwithjwtbearer.NewApiAuthenticationIntegrationWithJwtBearerShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApiAuthenticationIntegrationWithJwtBearerShowOutputOutputReference
 ```

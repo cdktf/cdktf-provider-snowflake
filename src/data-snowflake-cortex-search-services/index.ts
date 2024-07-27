@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/data-sources/cortex_search_services
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/data-sources/cortex_search_services
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataSnowflakeCortexSearchServicesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/data-sources/cortex_search_services#id DataSnowflakeCortexSearchServices#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/data-sources/cortex_search_services#id DataSnowflakeCortexSearchServices#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,25 +17,25 @@ export interface DataSnowflakeCortexSearchServicesConfig extends cdktf.Terraform
   /**
   * Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/data-sources/cortex_search_services#like DataSnowflakeCortexSearchServices#like}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/data-sources/cortex_search_services#like DataSnowflakeCortexSearchServices#like}
   */
   readonly like?: string;
   /**
   * Filters the output with **case-sensitive** characters indicating the beginning of the object name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/data-sources/cortex_search_services#starts_with DataSnowflakeCortexSearchServices#starts_with}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/data-sources/cortex_search_services#starts_with DataSnowflakeCortexSearchServices#starts_with}
   */
   readonly startsWith?: string;
   /**
   * in block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/data-sources/cortex_search_services#in DataSnowflakeCortexSearchServices#in}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/data-sources/cortex_search_services#in DataSnowflakeCortexSearchServices#in}
   */
   readonly in?: DataSnowflakeCortexSearchServicesIn;
   /**
   * limit block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/data-sources/cortex_search_services#limit DataSnowflakeCortexSearchServices#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/data-sources/cortex_search_services#limit DataSnowflakeCortexSearchServices#limit}
   */
   readonly limit?: DataSnowflakeCortexSearchServicesLimit;
 }
@@ -143,19 +138,19 @@ export interface DataSnowflakeCortexSearchServicesIn {
   /**
   * Returns records for the entire account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/data-sources/cortex_search_services#account DataSnowflakeCortexSearchServices#account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/data-sources/cortex_search_services#account DataSnowflakeCortexSearchServices#account}
   */
   readonly account?: boolean | cdktf.IResolvable;
   /**
   * Returns records for the current database in use or for a specified database (db_name).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/data-sources/cortex_search_services#database DataSnowflakeCortexSearchServices#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/data-sources/cortex_search_services#database DataSnowflakeCortexSearchServices#database}
   */
   readonly database?: string;
   /**
   * Returns records for the current schema in use or a specified schema (schema_name).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/data-sources/cortex_search_services#schema DataSnowflakeCortexSearchServices#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/data-sources/cortex_search_services#schema DataSnowflakeCortexSearchServices#schema}
   */
   readonly schema?: string;
 }
@@ -299,13 +294,13 @@ export interface DataSnowflakeCortexSearchServicesLimit {
   /**
   * Specifies a **case-sensitive** pattern that is used to match object name. After the first match, the limit on the number of rows will be applied.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/data-sources/cortex_search_services#from DataSnowflakeCortexSearchServices#from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/data-sources/cortex_search_services#from DataSnowflakeCortexSearchServices#from}
   */
   readonly from?: string;
   /**
   * The maximum number of rows to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/data-sources/cortex_search_services#rows DataSnowflakeCortexSearchServices#rows}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/data-sources/cortex_search_services#rows DataSnowflakeCortexSearchServices#rows}
   */
   readonly rows: number;
 }
@@ -415,7 +410,7 @@ export class DataSnowflakeCortexSearchServicesLimitOutputReference extends cdktf
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/data-sources/cortex_search_services snowflake_cortex_search_services}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/data-sources/cortex_search_services snowflake_cortex_search_services}
 */
 export class DataSnowflakeCortexSearchServices extends cdktf.TerraformDataSource {
 
@@ -431,7 +426,7 @@ export class DataSnowflakeCortexSearchServices extends cdktf.TerraformDataSource
   * Generates CDKTF code for importing a DataSnowflakeCortexSearchServices resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataSnowflakeCortexSearchServices to import
-  * @param importFromId The id of the existing DataSnowflakeCortexSearchServices that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/data-sources/cortex_search_services#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataSnowflakeCortexSearchServices that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/data-sources/cortex_search_services#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataSnowflakeCortexSearchServices to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -443,7 +438,7 @@ export class DataSnowflakeCortexSearchServices extends cdktf.TerraformDataSource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/data-sources/cortex_search_services snowflake_cortex_search_services} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/data-sources/cortex_search_services snowflake_cortex_search_services} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -454,7 +449,7 @@ export class DataSnowflakeCortexSearchServices extends cdktf.TerraformDataSource
       terraformResourceType: 'snowflake_cortex_search_services',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.93.0',
+        providerVersion: '0.94.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,

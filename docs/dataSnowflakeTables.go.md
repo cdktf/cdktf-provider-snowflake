@@ -4,12 +4,12 @@
 
 ### DataSnowflakeTables <a name="DataSnowflakeTables" id="@cdktf/provider-snowflake.dataSnowflakeTables.DataSnowflakeTables"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/data-sources/tables snowflake_tables}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/data-sources/tables snowflake_tables}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTables.DataSnowflakeTables.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketables"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketables"
 
 datasnowflaketables.NewDataSnowflakeTables(scope Construct, id *string, config DataSnowflakeTablesConfig) DataSnowflakeTables
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeTables.DataSnowflakeTables.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketables"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketables"
 
 datasnowflaketables.DataSnowflakeTables_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeTables.DataSnowflakeTables.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketables"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketables"
 
 datasnowflaketables.DataSnowflakeTables_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datasnowflaketables.DataSnowflakeTables_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeTables.DataSnowflakeTables.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketables"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketables"
 
 datasnowflaketables.DataSnowflakeTables_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datasnowflaketables.DataSnowflakeTables_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.dataSnowflakeTables.DataSnowflakeTables.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketables"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketables"
 
 datasnowflaketables.DataSnowflakeTables_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataSnowflakeTables to imp
 
 The id of the existing DataSnowflakeTables that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/data-sources/tables#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/data-sources/tables#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -627,7 +627,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTables.DataSnowflakeTablesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketables"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketables"
 
 &datasnowflaketables.DataSnowflakeTablesConfig {
 	Connection: interface{},
@@ -656,7 +656,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTables.DataSnowflakeTablesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTables.DataSnowflakeTablesConfig.property.database">Database</a></code> | <code>*string</code> | The database from which to return the schemas from. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTables.DataSnowflakeTablesConfig.property.schema">Schema</a></code> | <code>*string</code> | The schema from which to return the tables from. |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTables.DataSnowflakeTablesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/data-sources/tables#id DataSnowflakeTables#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTables.DataSnowflakeTablesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/data-sources/tables#id DataSnowflakeTables#id}. |
 
 ---
 
@@ -740,7 +740,7 @@ Database *string
 
 The database from which to return the schemas from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/data-sources/tables#database DataSnowflakeTables#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/data-sources/tables#database DataSnowflakeTables#database}
 
 ---
 
@@ -754,7 +754,7 @@ Schema *string
 
 The schema from which to return the tables from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/data-sources/tables#schema DataSnowflakeTables#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/data-sources/tables#schema DataSnowflakeTables#schema}
 
 ---
 
@@ -766,7 +766,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/data-sources/tables#id DataSnowflakeTables#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/data-sources/tables#id DataSnowflakeTables#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -778,7 +778,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTables.DataSnowflakeTablesTables.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketables"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketables"
 
 &datasnowflaketables.DataSnowflakeTablesTables {
 
@@ -793,7 +793,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTables.DataSnowflakeTablesTablesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketables"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketables"
 
 datasnowflaketables.NewDataSnowflakeTablesTablesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTablesTablesList
 ```
@@ -942,7 +942,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTables.DataSnowflakeTablesTablesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketables"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketables"
 
 datasnowflaketables.NewDataSnowflakeTablesTablesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTablesTablesOutputReference
 ```

@@ -4,7 +4,7 @@
 
 ### Role <a name="Role" id="@cdktf/provider-snowflake.role.Role"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/role snowflake_role}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/resources/role snowflake_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.role.Role.Initializer"></a>
 
@@ -73,10 +73,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.role.Role.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-snowflake.role.Role.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-snowflake.role.Role.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-snowflake.role.Role.putTag">putTag</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.role.Role.resetComment">resetComment</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.role.Role.resetId">resetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.role.Role.resetTag">resetTag</a></code> | *No description.* |
 
 ---
 
@@ -368,18 +366,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `putTag` <a name="putTag" id="@cdktf/provider-snowflake.role.Role.putTag"></a>
-
-```typescript
-public putTag(value: IResolvable | RoleTag[]): void
-```
-
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-snowflake.role.Role.putTag.parameter.value"></a>
-
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-snowflake.role.RoleTag">RoleTag</a>[]
-
----
-
 ##### `resetComment` <a name="resetComment" id="@cdktf/provider-snowflake.role.Role.resetComment"></a>
 
 ```typescript
@@ -390,12 +376,6 @@ public resetComment(): void
 
 ```typescript
 public resetId(): void
-```
-
-##### `resetTag` <a name="resetTag" id="@cdktf/provider-snowflake.role.Role.resetTag"></a>
-
-```typescript
-public resetTag(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -501,7 +481,7 @@ The construct id used in the generated config for the Role to import.
 
 The id of the existing Role that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/resources/role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -531,11 +511,10 @@ Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 | <code><a href="#@cdktf/provider-snowflake.role.Role.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.role.Role.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.role.Role.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.role.Role.property.tag">tag</a></code> | <code><a href="#@cdktf/provider-snowflake.role.RoleTagList">RoleTagList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.role.Role.property.showOutput">showOutput</a></code> | <code><a href="#@cdktf/provider-snowflake.role.RoleShowOutputList">RoleShowOutputList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.role.Role.property.commentInput">commentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.role.Role.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.role.Role.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.role.Role.property.tagInput">tagInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.role.RoleTag">RoleTag</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.role.Role.property.comment">comment</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.role.Role.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.role.Role.property.name">name</a></code> | <code>string</code> | *No description.* |
@@ -684,13 +663,13 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 
 ---
 
-##### `tag`<sup>Required</sup> <a name="tag" id="@cdktf/provider-snowflake.role.Role.property.tag"></a>
+##### `showOutput`<sup>Required</sup> <a name="showOutput" id="@cdktf/provider-snowflake.role.Role.property.showOutput"></a>
 
 ```typescript
-public readonly tag: RoleTagList;
+public readonly showOutput: RoleShowOutputList;
 ```
 
-- *Type:* <a href="#@cdktf/provider-snowflake.role.RoleTagList">RoleTagList</a>
+- *Type:* <a href="#@cdktf/provider-snowflake.role.RoleShowOutputList">RoleShowOutputList</a>
 
 ---
 
@@ -721,16 +700,6 @@ public readonly nameInput: string;
 ```
 
 - *Type:* string
-
----
-
-##### `tagInput`<sup>Optional</sup> <a name="tagInput" id="@cdktf/provider-snowflake.role.Role.property.tagInput"></a>
-
-```typescript
-public readonly tagInput: IResolvable | RoleTag[];
-```
-
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-snowflake.role.RoleTag">RoleTag</a>[]
 
 ---
 
@@ -805,10 +774,9 @@ const roleConfig: role.RoleConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.role.RoleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.role.RoleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.role.RoleConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.role.RoleConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/role#name Role#name}. |
-| <code><a href="#@cdktf/provider-snowflake.role.RoleConfig.property.comment">comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/role#comment Role#comment}. |
-| <code><a href="#@cdktf/provider-snowflake.role.RoleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/role#id Role#id}. |
-| <code><a href="#@cdktf/provider-snowflake.role.RoleConfig.property.tag">tag</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.role.RoleTag">RoleTag</a>[]</code> | tag block. |
+| <code><a href="#@cdktf/provider-snowflake.role.RoleConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/resources/role#name Role#name}. |
+| <code><a href="#@cdktf/provider-snowflake.role.RoleConfig.property.comment">comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/resources/role#comment Role#comment}. |
+| <code><a href="#@cdktf/provider-snowflake.role.RoleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/resources/role#id Role#id}. |
 
 ---
 
@@ -890,7 +858,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/role#name Role#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/resources/role#name Role#name}.
 
 ---
 
@@ -902,7 +870,7 @@ public readonly comment: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/role#comment Role#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/resources/role#comment Role#comment}.
 
 ---
 
@@ -914,125 +882,45 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/role#id Role#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/resources/role#id Role#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `tag`<sup>Optional</sup> <a name="tag" id="@cdktf/provider-snowflake.role.RoleConfig.property.tag"></a>
+### RoleShowOutput <a name="RoleShowOutput" id="@cdktf/provider-snowflake.role.RoleShowOutput"></a>
 
-```typescript
-public readonly tag: IResolvable | RoleTag[];
-```
-
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-snowflake.role.RoleTag">RoleTag</a>[]
-
-tag block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/role#tag Role#tag}
-
----
-
-### RoleTag <a name="RoleTag" id="@cdktf/provider-snowflake.role.RoleTag"></a>
-
-#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.role.RoleTag.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.role.RoleShowOutput.Initializer"></a>
 
 ```typescript
 import { role } from '@cdktf/provider-snowflake'
 
-const roleTag: role.RoleTag = { ... }
+const roleShowOutput: role.RoleShowOutput = { ... }
 ```
 
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.role.RoleTag.property.name">name</a></code> | <code>string</code> | Tag name, e.g. department. |
-| <code><a href="#@cdktf/provider-snowflake.role.RoleTag.property.value">value</a></code> | <code>string</code> | Tag value, e.g. marketing_info. |
-| <code><a href="#@cdktf/provider-snowflake.role.RoleTag.property.database">database</a></code> | <code>string</code> | Name of the database that the tag was created in. |
-| <code><a href="#@cdktf/provider-snowflake.role.RoleTag.property.schema">schema</a></code> | <code>string</code> | Name of the schema that the tag was created in. |
-
----
-
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.role.RoleTag.property.name"></a>
-
-```typescript
-public readonly name: string;
-```
-
-- *Type:* string
-
-Tag name, e.g. department.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/role#name Role#name}
-
----
-
-##### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-snowflake.role.RoleTag.property.value"></a>
-
-```typescript
-public readonly value: string;
-```
-
-- *Type:* string
-
-Tag value, e.g. marketing_info.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/role#value Role#value}
-
----
-
-##### `database`<sup>Optional</sup> <a name="database" id="@cdktf/provider-snowflake.role.RoleTag.property.database"></a>
-
-```typescript
-public readonly database: string;
-```
-
-- *Type:* string
-
-Name of the database that the tag was created in.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/role#database Role#database}
-
----
-
-##### `schema`<sup>Optional</sup> <a name="schema" id="@cdktf/provider-snowflake.role.RoleTag.property.schema"></a>
-
-```typescript
-public readonly schema: string;
-```
-
-- *Type:* string
-
-Name of the schema that the tag was created in.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/role#schema Role#schema}
-
----
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### RoleTagList <a name="RoleTagList" id="@cdktf/provider-snowflake.role.RoleTagList"></a>
+### RoleShowOutputList <a name="RoleShowOutputList" id="@cdktf/provider-snowflake.role.RoleShowOutputList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.role.RoleTagList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.role.RoleShowOutputList.Initializer"></a>
 
 ```typescript
 import { role } from '@cdktf/provider-snowflake'
 
-new role.RoleTagList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+new role.RoleShowOutputList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.role.RoleTagList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-snowflake.role.RoleTagList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-snowflake.role.RoleTagList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktf/provider-snowflake.role.RoleShowOutputList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.role.RoleShowOutputList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-snowflake.role.RoleShowOutputList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.role.RoleTagList.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.role.RoleShowOutputList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1040,7 +928,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.role.RoleTagList.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.role.RoleShowOutputList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -1048,7 +936,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-snowflake.role.RoleTagList.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-snowflake.role.RoleShowOutputList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* boolean
 
@@ -1060,15 +948,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.role.RoleTagList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-snowflake.role.RoleTagList.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.role.RoleTagList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-snowflake.role.RoleTagList.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-snowflake.role.RoleTagList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.role.RoleShowOutputList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-snowflake.role.RoleShowOutputList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.role.RoleShowOutputList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-snowflake.role.RoleShowOutputList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-snowflake.role.RoleShowOutputList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `allWithMapKey` <a name="allWithMapKey" id="@cdktf/provider-snowflake.role.RoleTagList.allWithMapKey"></a>
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktf/provider-snowflake.role.RoleShowOutputList.allWithMapKey"></a>
 
 ```typescript
 public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
@@ -1078,19 +966,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-snowflake.role.RoleTagList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-snowflake.role.RoleShowOutputList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* string
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-snowflake.role.RoleTagList.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-snowflake.role.RoleShowOutputList.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-snowflake.role.RoleTagList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktf/provider-snowflake.role.RoleShowOutputList.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -1098,13 +986,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-snowflake.role.RoleTagList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-snowflake.role.RoleShowOutputList.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-snowflake.role.RoleTagList.toString"></a>
+##### `toString` <a name="toString" id="@cdktf/provider-snowflake.role.RoleShowOutputList.toString"></a>
 
 ```typescript
 public toString(): string
@@ -1114,13 +1002,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-snowflake.role.RoleTagList.get"></a>
+##### `get` <a name="get" id="@cdktf/provider-snowflake.role.RoleShowOutputList.get"></a>
 
 ```typescript
-public get(index: number): RoleTagOutputReference
+public get(index: number): RoleShowOutputOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.role.RoleTagList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-snowflake.role.RoleShowOutputList.get.parameter.index"></a>
 
 - *Type:* number
 
@@ -1133,13 +1021,12 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.role.RoleTagList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-snowflake.role.RoleTagList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.role.RoleTagList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.role.RoleTag">RoleTag</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.role.RoleShowOutputList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-snowflake.role.RoleShowOutputList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-snowflake.role.RoleTagList.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-snowflake.role.RoleShowOutputList.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -1153,7 +1040,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.role.RoleTagList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.role.RoleShowOutputList.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -1163,37 +1050,27 @@ public readonly fqn: string;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-snowflake.role.RoleTagList.property.internalValue"></a>
 
-```typescript
-public readonly internalValue: IResolvable | RoleTag[];
-```
+### RoleShowOutputOutputReference <a name="RoleShowOutputOutputReference" id="@cdktf/provider-snowflake.role.RoleShowOutputOutputReference"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-snowflake.role.RoleTag">RoleTag</a>[]
-
----
-
-
-### RoleTagOutputReference <a name="RoleTagOutputReference" id="@cdktf/provider-snowflake.role.RoleTagOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.role.RoleTagOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.Initializer"></a>
 
 ```typescript
 import { role } from '@cdktf/provider-snowflake'
 
-new role.RoleTagOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+new role.RoleShowOutputOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.role.RoleTagOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-snowflake.role.RoleTagOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-snowflake.role.RoleTagOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-snowflake.role.RoleTagOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.role.RoleTagOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1201,7 +1078,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.role.RoleTagOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -1209,7 +1086,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-snowflake.role.RoleTagOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* number
 
@@ -1217,7 +1094,7 @@ the index of this item in the list.
 
 ---
 
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-snowflake.role.RoleTagOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* boolean
 
@@ -1229,151 +1106,149 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.role.RoleTagOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.role.RoleTagOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.role.RoleTagOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.role.RoleTagOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.role.RoleTagOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.role.RoleTagOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.role.RoleTagOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.role.RoleTagOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.role.RoleTagOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.role.RoleTagOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.role.RoleTagOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.role.RoleTagOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-snowflake.role.RoleTagOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-snowflake.role.RoleTagOutputReference.resetDatabase">resetDatabase</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.role.RoleTagOutputReference.resetSchema">resetSchema</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-snowflake.role.RoleTagOutputReference.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.role.RoleTagOutputReference.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.role.RoleTagOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.role.RoleTagOutputReference.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.role.RoleTagOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.role.RoleTagOutputReference.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.role.RoleTagOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.role.RoleTagOutputReference.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.role.RoleTagOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.role.RoleTagOutputReference.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.role.RoleTagOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.role.RoleTagOutputReference.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.role.RoleTagOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.role.RoleTagOutputReference.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.role.RoleTagOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.role.RoleTagOutputReference.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.role.RoleTagOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.role.RoleTagOutputReference.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.role.RoleTagOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.role.RoleTagOutputReference.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.role.RoleTagOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-snowflake.role.RoleTagOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -1381,13 +1256,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-snowflake.role.RoleTagOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-snowflake.role.RoleTagOutputReference.toString"></a>
+##### `toString` <a name="toString" id="@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.toString"></a>
 
 ```typescript
 public toString(): string
@@ -1397,38 +1272,28 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `resetDatabase` <a name="resetDatabase" id="@cdktf/provider-snowflake.role.RoleTagOutputReference.resetDatabase"></a>
-
-```typescript
-public resetDatabase(): void
-```
-
-##### `resetSchema` <a name="resetSchema" id="@cdktf/provider-snowflake.role.RoleTagOutputReference.resetSchema"></a>
-
-```typescript
-public resetSchema(): void
-```
-
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.role.RoleTagOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-snowflake.role.RoleTagOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.role.RoleTagOutputReference.property.databaseInput">databaseInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.role.RoleTagOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.role.RoleTagOutputReference.property.schemaInput">schemaInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.role.RoleTagOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.role.RoleTagOutputReference.property.database">database</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.role.RoleTagOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.role.RoleTagOutputReference.property.schema">schema</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.role.RoleTagOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.role.RoleTagOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.role.RoleTag">RoleTag</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.property.assignedToUsers">assignedToUsers</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.property.comment">comment</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.property.createdOn">createdOn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.property.grantedRoles">grantedRoles</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.property.grantedToRoles">grantedToRoles</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.property.isCurrent">isCurrent</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.property.isDefault">isDefault</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.property.isInherited">isInherited</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.property.owner">owner</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-snowflake.role.RoleShowOutput">RoleShowOutput</a></code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-snowflake.role.RoleTagOutputReference.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -1442,7 +1307,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.role.RoleTagOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -1452,57 +1317,87 @@ public readonly fqn: string;
 
 ---
 
-##### `databaseInput`<sup>Optional</sup> <a name="databaseInput" id="@cdktf/provider-snowflake.role.RoleTagOutputReference.property.databaseInput"></a>
+##### `assignedToUsers`<sup>Required</sup> <a name="assignedToUsers" id="@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.property.assignedToUsers"></a>
 
 ```typescript
-public readonly databaseInput: string;
+public readonly assignedToUsers: number;
+```
+
+- *Type:* number
+
+---
+
+##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.property.comment"></a>
+
+```typescript
+public readonly comment: string;
 ```
 
 - *Type:* string
 
 ---
 
-##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-snowflake.role.RoleTagOutputReference.property.nameInput"></a>
+##### `createdOn`<sup>Required</sup> <a name="createdOn" id="@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.property.createdOn"></a>
 
 ```typescript
-public readonly nameInput: string;
+public readonly createdOn: string;
 ```
 
 - *Type:* string
 
 ---
 
-##### `schemaInput`<sup>Optional</sup> <a name="schemaInput" id="@cdktf/provider-snowflake.role.RoleTagOutputReference.property.schemaInput"></a>
+##### `grantedRoles`<sup>Required</sup> <a name="grantedRoles" id="@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.property.grantedRoles"></a>
 
 ```typescript
-public readonly schemaInput: string;
+public readonly grantedRoles: number;
 ```
 
-- *Type:* string
+- *Type:* number
 
 ---
 
-##### `valueInput`<sup>Optional</sup> <a name="valueInput" id="@cdktf/provider-snowflake.role.RoleTagOutputReference.property.valueInput"></a>
+##### `grantedToRoles`<sup>Required</sup> <a name="grantedToRoles" id="@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.property.grantedToRoles"></a>
 
 ```typescript
-public readonly valueInput: string;
+public readonly grantedToRoles: number;
 ```
 
-- *Type:* string
+- *Type:* number
 
 ---
 
-##### `database`<sup>Required</sup> <a name="database" id="@cdktf/provider-snowflake.role.RoleTagOutputReference.property.database"></a>
+##### `isCurrent`<sup>Required</sup> <a name="isCurrent" id="@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.property.isCurrent"></a>
 
 ```typescript
-public readonly database: string;
+public readonly isCurrent: IResolvable;
 ```
 
-- *Type:* string
+- *Type:* cdktf.IResolvable
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.role.RoleTagOutputReference.property.name"></a>
+##### `isDefault`<sup>Required</sup> <a name="isDefault" id="@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.property.isDefault"></a>
+
+```typescript
+public readonly isDefault: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `isInherited`<sup>Required</sup> <a name="isInherited" id="@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.property.isInherited"></a>
+
+```typescript
+public readonly isInherited: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -1512,33 +1407,23 @@ public readonly name: string;
 
 ---
 
-##### `schema`<sup>Required</sup> <a name="schema" id="@cdktf/provider-snowflake.role.RoleTagOutputReference.property.schema"></a>
+##### `owner`<sup>Required</sup> <a name="owner" id="@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.property.owner"></a>
 
 ```typescript
-public readonly schema: string;
+public readonly owner: string;
 ```
 
 - *Type:* string
 
 ---
 
-##### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-snowflake.role.RoleTagOutputReference.property.value"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-snowflake.role.RoleShowOutputOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly value: string;
+public readonly internalValue: RoleShowOutput;
 ```
 
-- *Type:* string
-
----
-
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-snowflake.role.RoleTagOutputReference.property.internalValue"></a>
-
-```typescript
-public readonly internalValue: IResolvable | RoleTag;
-```
-
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-snowflake.role.RoleTag">RoleTag</a>
+- *Type:* <a href="#@cdktf/provider-snowflake.role.RoleShowOutput">RoleShowOutput</a>
 
 ---
 

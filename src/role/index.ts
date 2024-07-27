@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/role
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/resources/role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,107 +8,46 @@ import * as cdktf from 'cdktf';
 
 export interface RoleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/role#comment Role#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/resources/role#comment Role#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/role#id Role#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/resources/role#id Role#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/role#name Role#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/resources/role#name Role#name}
   */
   readonly name: string;
-  /**
-  * tag block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/role#tag Role#tag}
-  */
-  readonly tag?: RoleTag[] | cdktf.IResolvable;
 }
-export interface RoleTag {
-  /**
-  * Name of the database that the tag was created in.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/role#database Role#database}
-  */
-  readonly database?: string;
-  /**
-  * Tag name, e.g. department.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/role#name Role#name}
-  */
-  readonly name: string;
-  /**
-  * Name of the schema that the tag was created in.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/role#schema Role#schema}
-  */
-  readonly schema?: string;
-  /**
-  * Tag value, e.g. marketing_info.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/role#value Role#value}
-  */
-  readonly value: string;
+export interface RoleShowOutput {
 }
 
-export function roleTagToTerraform(struct?: RoleTag | cdktf.IResolvable): any {
+export function roleShowOutputToTerraform(struct?: RoleShowOutput): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    database: cdktf.stringToTerraform(struct!.database),
-    name: cdktf.stringToTerraform(struct!.name),
-    schema: cdktf.stringToTerraform(struct!.schema),
-    value: cdktf.stringToTerraform(struct!.value),
   }
 }
 
 
-export function roleTagToHclTerraform(struct?: RoleTag | cdktf.IResolvable): any {
+export function roleShowOutputToHclTerraform(struct?: RoleShowOutput): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    database: {
-      value: cdktf.stringToHclTerraform(struct!.database),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    schema: {
-      value: cdktf.stringToHclTerraform(struct!.schema),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
   };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+  return attrs;
 }
 
-export class RoleTagOutputReference extends cdktf.ComplexObject {
+export class RoleShowOutputOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -125,115 +59,73 @@ export class RoleTagOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): RoleTag | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): RoleShowOutput | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._database !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.database = this._database;
-    }
-    if (this._name !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.name = this._name;
-    }
-    if (this._schema !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.schema = this._schema;
-    }
-    if (this._value !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.value = this._value;
-    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RoleTag | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RoleShowOutput | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._database = undefined;
-      this._name = undefined;
-      this._schema = undefined;
-      this._value = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._database = value.database;
-      this._name = value.name;
-      this._schema = value.schema;
-      this._value = value.value;
     }
   }
 
-  // database - computed: false, optional: true, required: false
-  private _database?: string; 
-  public get database() {
-    return this.getStringAttribute('database');
-  }
-  public set database(value: string) {
-    this._database = value;
-  }
-  public resetDatabase() {
-    this._database = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get databaseInput() {
-    return this._database;
+  // assigned_to_users - computed: true, optional: false, required: false
+  public get assignedToUsers() {
+    return this.getNumberAttribute('assigned_to_users');
   }
 
-  // name - computed: false, optional: false, required: true
-  private _name?: string; 
+  // comment - computed: true, optional: false, required: false
+  public get comment() {
+    return this.getStringAttribute('comment');
+  }
+
+  // created_on - computed: true, optional: false, required: false
+  public get createdOn() {
+    return this.getStringAttribute('created_on');
+  }
+
+  // granted_roles - computed: true, optional: false, required: false
+  public get grantedRoles() {
+    return this.getNumberAttribute('granted_roles');
+  }
+
+  // granted_to_roles - computed: true, optional: false, required: false
+  public get grantedToRoles() {
+    return this.getNumberAttribute('granted_to_roles');
+  }
+
+  // is_current - computed: true, optional: false, required: false
+  public get isCurrent() {
+    return this.getBooleanAttribute('is_current');
+  }
+
+  // is_default - computed: true, optional: false, required: false
+  public get isDefault() {
+    return this.getBooleanAttribute('is_default');
+  }
+
+  // is_inherited - computed: true, optional: false, required: false
+  public get isInherited() {
+    return this.getBooleanAttribute('is_inherited');
+  }
+
+  // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string) {
-    this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name;
-  }
 
-  // schema - computed: false, optional: true, required: false
-  private _schema?: string; 
-  public get schema() {
-    return this.getStringAttribute('schema');
-  }
-  public set schema(value: string) {
-    this._schema = value;
-  }
-  public resetSchema() {
-    this._schema = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get schemaInput() {
-    return this._schema;
-  }
-
-  // value - computed: false, optional: false, required: true
-  private _value?: string; 
-  public get value() {
-    return this.getStringAttribute('value');
-  }
-  public set value(value: string) {
-    this._value = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get valueInput() {
-    return this._value;
+  // owner - computed: true, optional: false, required: false
+  public get owner() {
+    return this.getStringAttribute('owner');
   }
 }
 
-export class RoleTagList extends cdktf.ComplexList {
-  public internalValue? : RoleTag[] | cdktf.IResolvable
+export class RoleShowOutputList extends cdktf.ComplexList {
 
   /**
   * @param terraformResource The parent resource
@@ -247,13 +139,13 @@ export class RoleTagList extends cdktf.ComplexList {
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): RoleTagOutputReference {
-    return new RoleTagOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): RoleShowOutputOutputReference {
+    return new RoleShowOutputOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/role snowflake_role}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/resources/role snowflake_role}
 */
 export class Role extends cdktf.TerraformResource {
 
@@ -269,7 +161,7 @@ export class Role extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Role resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Role to import
-  * @param importFromId The id of the existing Role that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/role#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Role that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/resources/role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Role to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -281,7 +173,7 @@ export class Role extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/resources/role snowflake_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/resources/role snowflake_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -292,7 +184,7 @@ export class Role extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_role',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.93.0',
+        providerVersion: '0.94.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
@@ -306,7 +198,6 @@ export class Role extends cdktf.TerraformResource {
     this._comment = config.comment;
     this._id = config.id;
     this._name = config.name;
-    this._tag.internalValue = config.tag;
   }
 
   // ==========
@@ -358,20 +249,10 @@ export class Role extends cdktf.TerraformResource {
     return this._name;
   }
 
-  // tag - computed: false, optional: true, required: false
-  private _tag = new RoleTagList(this, "tag", false);
-  public get tag() {
-    return this._tag;
-  }
-  public putTag(value: RoleTag[] | cdktf.IResolvable) {
-    this._tag.internalValue = value;
-  }
-  public resetTag() {
-    this._tag.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagInput() {
-    return this._tag.internalValue;
+  // show_output - computed: true, optional: false, required: false
+  private _showOutput = new RoleShowOutputList(this, "show_output", false);
+  public get showOutput() {
+    return this._showOutput;
   }
 
   // =========
@@ -383,7 +264,6 @@ export class Role extends cdktf.TerraformResource {
       comment: cdktf.stringToTerraform(this._comment),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
-      tag: cdktf.listMapper(roleTagToTerraform, true)(this._tag.internalValue),
     };
   }
 
@@ -406,12 +286,6 @@ export class Role extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      tag: {
-        value: cdktf.listMapperHcl(roleTagToHclTerraform, true)(this._tag.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "RoleTagList",
       },
     };
 

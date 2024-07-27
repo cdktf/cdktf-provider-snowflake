@@ -4,12 +4,12 @@
 
 ### DataSnowflakeDynamicTables <a name="DataSnowflakeDynamicTables" id="@cdktf/provider-snowflake.dataSnowflakeDynamicTables.DataSnowflakeDynamicTables"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/data-sources/dynamic_tables snowflake_dynamic_tables}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/data-sources/dynamic_tables snowflake_dynamic_tables}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeDynamicTables.DataSnowflakeDynamicTables.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakedynamictables"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakedynamictables"
 
 datasnowflakedynamictables.NewDataSnowflakeDynamicTables(scope Construct, id *string, config DataSnowflakeDynamicTablesConfig) DataSnowflakeDynamicTables
 ```
@@ -350,7 +350,7 @@ func ResetStartsWith()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeDynamicTables.DataSnowflakeDynamicTables.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakedynamictables"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakedynamictables"
 
 datasnowflakedynamictables.DataSnowflakeDynamicTables_IsConstruct(x interface{}) *bool
 ```
@@ -382,7 +382,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeDynamicTables.DataSnowflakeDynamicTables.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakedynamictables"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakedynamictables"
 
 datasnowflakedynamictables.DataSnowflakeDynamicTables_IsTerraformElement(x interface{}) *bool
 ```
@@ -396,7 +396,7 @@ datasnowflakedynamictables.DataSnowflakeDynamicTables_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeDynamicTables.DataSnowflakeDynamicTables.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakedynamictables"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakedynamictables"
 
 datasnowflakedynamictables.DataSnowflakeDynamicTables_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ datasnowflakedynamictables.DataSnowflakeDynamicTables_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.dataSnowflakeDynamicTables.DataSnowflakeDynamicTables.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakedynamictables"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakedynamictables"
 
 datasnowflakedynamictables.DataSnowflakeDynamicTables_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -439,7 +439,7 @@ The construct id used in the generated config for the DataSnowflakeDynamicTables
 
 The id of the existing DataSnowflakeDynamicTables that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/data-sources/dynamic_tables#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/data-sources/dynamic_tables#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -738,7 +738,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeDynamicTables.DataSnowflakeDynamicTablesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakedynamictables"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakedynamictables"
 
 &datasnowflakedynamictables.DataSnowflakeDynamicTablesConfig {
 	Connection: interface{},
@@ -749,9 +749,9 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Id: *string,
-	In: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11.dataSnowflakeDynamicTables.DataSnowflakeDynamicTablesIn,
-	Like: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11.dataSnowflakeDynamicTables.DataSnowflakeDynamicTablesLike,
-	Limit: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11.dataSnowflakeDynamicTables.DataSnowflakeDynamicTablesLimit,
+	In: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.dataSnowflakeDynamicTables.DataSnowflakeDynamicTablesIn,
+	Like: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.dataSnowflakeDynamicTables.DataSnowflakeDynamicTablesLike,
+	Limit: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.dataSnowflakeDynamicTables.DataSnowflakeDynamicTablesLimit,
 	StartsWith: *string,
 }
 ```
@@ -767,7 +767,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDynamicTables.DataSnowflakeDynamicTablesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDynamicTables.DataSnowflakeDynamicTablesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDynamicTables.DataSnowflakeDynamicTablesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDynamicTables.DataSnowflakeDynamicTablesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/data-sources/dynamic_tables#id DataSnowflakeDynamicTables#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDynamicTables.DataSnowflakeDynamicTablesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/data-sources/dynamic_tables#id DataSnowflakeDynamicTables#id}. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDynamicTables.DataSnowflakeDynamicTablesConfig.property.in">In</a></code> | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDynamicTables.DataSnowflakeDynamicTablesIn">DataSnowflakeDynamicTablesIn</a></code> | in block. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDynamicTables.DataSnowflakeDynamicTablesConfig.property.like">Like</a></code> | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDynamicTables.DataSnowflakeDynamicTablesLike">DataSnowflakeDynamicTablesLike</a></code> | like block. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDynamicTables.DataSnowflakeDynamicTablesConfig.property.limit">Limit</a></code> | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDynamicTables.DataSnowflakeDynamicTablesLimit">DataSnowflakeDynamicTablesLimit</a></code> | limit block. |
@@ -853,7 +853,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/data-sources/dynamic_tables#id DataSnowflakeDynamicTables#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/data-sources/dynamic_tables#id DataSnowflakeDynamicTables#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -870,7 +870,7 @@ In DataSnowflakeDynamicTablesIn
 
 in block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/data-sources/dynamic_tables#in DataSnowflakeDynamicTables#in}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/data-sources/dynamic_tables#in DataSnowflakeDynamicTables#in}
 
 ---
 
@@ -884,7 +884,7 @@ Like DataSnowflakeDynamicTablesLike
 
 like block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/data-sources/dynamic_tables#like DataSnowflakeDynamicTables#like}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/data-sources/dynamic_tables#like DataSnowflakeDynamicTables#like}
 
 ---
 
@@ -898,7 +898,7 @@ Limit DataSnowflakeDynamicTablesLimit
 
 limit block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/data-sources/dynamic_tables#limit DataSnowflakeDynamicTables#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/data-sources/dynamic_tables#limit DataSnowflakeDynamicTables#limit}
 
 ---
 
@@ -914,7 +914,7 @@ Optionally filters the command output based on the characters that appear at the
 
 The string is case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/data-sources/dynamic_tables#starts_with DataSnowflakeDynamicTables#starts_with}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/data-sources/dynamic_tables#starts_with DataSnowflakeDynamicTables#starts_with}
 
 ---
 
@@ -923,7 +923,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeDynamicTables.DataSnowflakeDynamicTablesIn.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakedynamictables"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakedynamictables"
 
 &datasnowflakedynamictables.DataSnowflakeDynamicTablesIn {
 	Account: interface{},
@@ -952,7 +952,7 @@ Account interface{}
 
 Returns records for the entire account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/data-sources/dynamic_tables#account DataSnowflakeDynamicTables#account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/data-sources/dynamic_tables#account DataSnowflakeDynamicTables#account}
 
 ---
 
@@ -966,7 +966,7 @@ Database *string
 
 Returns records for the current database in use or for a specified database (db_name).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/data-sources/dynamic_tables#database DataSnowflakeDynamicTables#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/data-sources/dynamic_tables#database DataSnowflakeDynamicTables#database}
 
 ---
 
@@ -980,7 +980,7 @@ Schema *string
 
 Returns records for the current schema in use or a specified schema (schema_name).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/data-sources/dynamic_tables#schema DataSnowflakeDynamicTables#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/data-sources/dynamic_tables#schema DataSnowflakeDynamicTables#schema}
 
 ---
 
@@ -989,7 +989,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeDynamicTables.DataSnowflakeDynamicTablesLike.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakedynamictables"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakedynamictables"
 
 &datasnowflakedynamictables.DataSnowflakeDynamicTablesLike {
 	Pattern: *string,
@@ -1016,7 +1016,7 @@ Filters the command output by object name.
 
 The filter uses case-insensitive pattern matching with support for SQL wildcard characters (% and _).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/data-sources/dynamic_tables#pattern DataSnowflakeDynamicTables#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/data-sources/dynamic_tables#pattern DataSnowflakeDynamicTables#pattern}
 
 ---
 
@@ -1025,7 +1025,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeDynamicTables.DataSnowflakeDynamicTablesLimit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakedynamictables"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakedynamictables"
 
 &datasnowflakedynamictables.DataSnowflakeDynamicTablesLimit {
 	From: *string,
@@ -1054,7 +1054,7 @@ The optional FROM 'name_string' subclause effectively serves as a “cursor” f
 
 This enables fetching the specified number of rows following the first row whose object name matches the specified string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/data-sources/dynamic_tables#from DataSnowflakeDynamicTables#from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/data-sources/dynamic_tables#from DataSnowflakeDynamicTables#from}
 
 ---
 
@@ -1068,7 +1068,7 @@ Rows *f64
 
 Specifies the maximum number of rows to return.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.93.0/docs/data-sources/dynamic_tables#rows DataSnowflakeDynamicTables#rows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.0/docs/data-sources/dynamic_tables#rows DataSnowflakeDynamicTables#rows}
 
 ---
 
@@ -1077,7 +1077,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeDynamicTables.DataSnowflakeDynamicTablesRecords.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakedynamictables"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakedynamictables"
 
 &datasnowflakedynamictables.DataSnowflakeDynamicTablesRecords {
 
@@ -1092,7 +1092,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeDynamicTables.DataSnowflakeDynamicTablesInOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakedynamictables"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakedynamictables"
 
 datasnowflakedynamictables.NewDataSnowflakeDynamicTablesInOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataSnowflakeDynamicTablesInOutputReference
 ```
@@ -1428,7 +1428,7 @@ func InternalValue() DataSnowflakeDynamicTablesIn
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeDynamicTables.DataSnowflakeDynamicTablesLikeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakedynamictables"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakedynamictables"
 
 datasnowflakedynamictables.NewDataSnowflakeDynamicTablesLikeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataSnowflakeDynamicTablesLikeOutputReference
 ```
@@ -1699,7 +1699,7 @@ func InternalValue() DataSnowflakeDynamicTablesLike
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeDynamicTables.DataSnowflakeDynamicTablesLimitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakedynamictables"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakedynamictables"
 
 datasnowflakedynamictables.NewDataSnowflakeDynamicTablesLimitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataSnowflakeDynamicTablesLimitOutputReference
 ```
@@ -2006,7 +2006,7 @@ func InternalValue() DataSnowflakeDynamicTablesLimit
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeDynamicTables.DataSnowflakeDynamicTablesRecordsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakedynamictables"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakedynamictables"
 
 datasnowflakedynamictables.NewDataSnowflakeDynamicTablesRecordsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeDynamicTablesRecordsList
 ```
@@ -2155,7 +2155,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeDynamicTables.DataSnowflakeDynamicTablesRecordsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakedynamictables"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakedynamictables"
 
 datasnowflakedynamictables.NewDataSnowflakeDynamicTablesRecordsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeDynamicTablesRecordsOutputReference
 ```
