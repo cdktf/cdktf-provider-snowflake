@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.database.Database.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/database"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/database"
 
 database.NewDatabase(scope Construct, id *string, config DatabaseConfig) Database
 ```
@@ -531,7 +531,7 @@ func ResetUserTaskTimeoutMs()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.database.Database.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/database"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/database"
 
 database.Database_IsConstruct(x interface{}) *bool
 ```
@@ -563,7 +563,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.database.Database.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/database"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/database"
 
 database.Database_IsTerraformElement(x interface{}) *bool
 ```
@@ -577,7 +577,7 @@ database.Database_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.database.Database.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/database"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/database"
 
 database.Database_IsTerraformResource(x interface{}) *bool
 ```
@@ -591,7 +591,7 @@ database.Database_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.database.Database.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/database"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/database"
 
 database.Database_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1282,7 +1282,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.database.DatabaseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/database"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/database"
 
 &database.DatabaseConfig {
 	Connection: interface{},
@@ -1305,7 +1305,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/database"
 	MaxDataExtensionTimeInDays: *f64,
 	QuotedIdentifiersIgnoreCase: interface{},
 	ReplaceInvalidCharacters: interface{},
-	Replication: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11.database.DatabaseReplication,
+	Replication: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.database.DatabaseReplication,
 	StorageSerializationPolicy: *string,
 	SuspendTaskAfterNumFailures: *f64,
 	TaskAutoRetryAttempts: *f64,
@@ -1743,7 +1743,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.database.DatabaseReplication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/database"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/database"
 
 &database.DatabaseReplication {
 	EnableToAccount: interface{},
@@ -1795,7 +1795,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.database.DatabaseReplicationEnableToAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/database"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/database"
 
 &database.DatabaseReplicationEnableToAccount {
 	AccountIdentifier: *string,
@@ -1847,7 +1847,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.database.DatabaseReplicationEnableToAccountList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/database"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/database"
 
 database.NewDatabaseReplicationEnableToAccountList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseReplicationEnableToAccountList
 ```
@@ -2007,7 +2007,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.database.DatabaseReplicationEnableToAccountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/database"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/database"
 
 database.NewDatabaseReplicationEnableToAccountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseReplicationEnableToAccountOutputReference
 ```
@@ -2325,7 +2325,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.database.DatabaseReplicationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/database"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/database"
 
 database.NewDatabaseReplicationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatabaseReplicationOutputReference
 ```
