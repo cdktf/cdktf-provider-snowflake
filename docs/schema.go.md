@@ -4,12 +4,12 @@
 
 ### Schema <a name="Schema" id="@cdktf/provider-snowflake.schema.Schema"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.1/docs/resources/schema snowflake_schema}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/schema snowflake_schema}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schema.Schema.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 schema.NewSchema(scope Construct, id *string, config SchemaConfig) Schema
 ```
@@ -525,7 +525,7 @@ func ResetWithManagedAccess()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.schema.Schema.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 schema.Schema_IsConstruct(x interface{}) *bool
 ```
@@ -557,7 +557,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.schema.Schema.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 schema.Schema_IsTerraformElement(x interface{}) *bool
 ```
@@ -571,7 +571,7 @@ schema.Schema_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.schema.Schema.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 schema.Schema_IsTerraformResource(x interface{}) *bool
 ```
@@ -585,7 +585,7 @@ schema.Schema_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.schema.Schema.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 schema.Schema_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -614,7 +614,7 @@ The construct id used in the generated config for the Schema to import.
 
 The id of the existing Schema that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.1/docs/resources/schema#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/schema#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -645,6 +645,7 @@ Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 | <code><a href="#@cdktf/provider-snowflake.schema.Schema.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schema.Schema.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schema.Schema.property.describeOutput">DescribeOutput</a></code> | <code><a href="#@cdktf/provider-snowflake.schema.SchemaDescribeOutputList">SchemaDescribeOutputList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.schema.Schema.property.fullyQualifiedName">FullyQualifiedName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schema.Schema.property.parameters">Parameters</a></code> | <code><a href="#@cdktf/provider-snowflake.schema.SchemaParametersList">SchemaParametersList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schema.Schema.property.showOutput">ShowOutput</a></code> | <code><a href="#@cdktf/provider-snowflake.schema.SchemaShowOutputList">SchemaShowOutputList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.schema.Schema.property.catalogInput">CatalogInput</a></code> | <code>*string</code> | *No description.* |
@@ -845,6 +846,16 @@ func DescribeOutput() SchemaDescribeOutputList
 ```
 
 - *Type:* <a href="#@cdktf/provider-snowflake.schema.SchemaDescribeOutputList">SchemaDescribeOutputList</a>
+
+---
+
+##### `FullyQualifiedName`<sup>Required</sup> <a name="FullyQualifiedName" id="@cdktf/provider-snowflake.schema.Schema.property.fullyQualifiedName"></a>
+
+```go
+func FullyQualifiedName() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -1353,7 +1364,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.schema.SchemaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 &schema.SchemaConfig {
 	Connection: interface{},
@@ -1408,7 +1419,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
 | <code><a href="#@cdktf/provider-snowflake.schema.SchemaConfig.property.defaultDdlCollation">DefaultDdlCollation</a></code> | <code>*string</code> | Specifies a default collation specification for all schemas and tables added to the database. |
 | <code><a href="#@cdktf/provider-snowflake.schema.SchemaConfig.property.enableConsoleOutput">EnableConsoleOutput</a></code> | <code>interface{}</code> | If true, enables stdout/stderr fast path logging for anonymous stored procedures. |
 | <code><a href="#@cdktf/provider-snowflake.schema.SchemaConfig.property.externalVolume">ExternalVolume</a></code> | <code>*string</code> | The database parameter that specifies the default external volume to use for Iceberg tables. For more information, see [EXTERNAL_VOLUME](https://docs.snowflake.com/en/sql-reference/parameters#external-volume). |
-| <code><a href="#@cdktf/provider-snowflake.schema.SchemaConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.1/docs/resources/schema#id Schema#id}. |
+| <code><a href="#@cdktf/provider-snowflake.schema.SchemaConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/schema#id Schema#id}. |
 | <code><a href="#@cdktf/provider-snowflake.schema.SchemaConfig.property.isTransient">IsTransient</a></code> | <code>*string</code> | Specifies the schema as transient. |
 | <code><a href="#@cdktf/provider-snowflake.schema.SchemaConfig.property.logLevel">LogLevel</a></code> | <code>*string</code> | Specifies the severity level of messages that should be ingested and made available in the active event table. |
 | <code><a href="#@cdktf/provider-snowflake.schema.SchemaConfig.property.maxDataExtensionTimeInDays">MaxDataExtensionTimeInDays</a></code> | <code>*f64</code> | Object parameter that specifies the maximum number of days for which Snowflake can extend the data retention period for tables in the database to prevent streams on the tables from becoming stale. |
@@ -1506,7 +1517,7 @@ Database *string
 
 The database in which to create the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.1/docs/resources/schema#database Schema#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/schema#database Schema#database}
 
 ---
 
@@ -1522,7 +1533,7 @@ Specifies the identifier for the schema;
 
 must be unique for the database in which the schema is created. When the name is `PUBLIC`, during creation the provider checks if this schema has already been created and, in such case, `ALTER` is used to match the desired state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.1/docs/resources/schema#name Schema#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/schema#name Schema#name}
 
 ---
 
@@ -1536,7 +1547,7 @@ Catalog *string
 
 The database parameter that specifies the default catalog to use for Iceberg tables. For more information, see [CATALOG](https://docs.snowflake.com/en/sql-reference/parameters#catalog).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.1/docs/resources/schema#catalog Schema#catalog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/schema#catalog Schema#catalog}
 
 ---
 
@@ -1550,7 +1561,7 @@ Comment *string
 
 Specifies a comment for the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.1/docs/resources/schema#comment Schema#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/schema#comment Schema#comment}
 
 ---
 
@@ -1566,7 +1577,7 @@ Specifies the number of days for which Time Travel actions (CLONE and UNDROP) ca
 
 For more details, see [Understanding & Using Time Travel](https://docs.snowflake.com/en/user-guide/data-time-travel).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.1/docs/resources/schema#data_retention_time_in_days Schema#data_retention_time_in_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/schema#data_retention_time_in_days Schema#data_retention_time_in_days}
 
 ---
 
@@ -1582,7 +1593,7 @@ Specifies a default collation specification for all schemas and tables added to 
 
 It can be overridden on schema or table level. For more information, see [collation specification](https://docs.snowflake.com/en/sql-reference/collation#label-collation-specification).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.1/docs/resources/schema#default_ddl_collation Schema#default_ddl_collation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/schema#default_ddl_collation Schema#default_ddl_collation}
 
 ---
 
@@ -1596,7 +1607,7 @@ EnableConsoleOutput interface{}
 
 If true, enables stdout/stderr fast path logging for anonymous stored procedures.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.1/docs/resources/schema#enable_console_output Schema#enable_console_output}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/schema#enable_console_output Schema#enable_console_output}
 
 ---
 
@@ -1610,7 +1621,7 @@ ExternalVolume *string
 
 The database parameter that specifies the default external volume to use for Iceberg tables. For more information, see [EXTERNAL_VOLUME](https://docs.snowflake.com/en/sql-reference/parameters#external-volume).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.1/docs/resources/schema#external_volume Schema#external_volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/schema#external_volume Schema#external_volume}
 
 ---
 
@@ -1622,7 +1633,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.1/docs/resources/schema#id Schema#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/schema#id Schema#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1641,7 +1652,7 @@ Specifies the schema as transient.
 
 Transient schemas do not have a Fail-safe period so they do not incur additional storage costs once they leave Time Travel; however, this means they are also not protected by Fail-safe in the event of a data loss. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.1/docs/resources/schema#is_transient Schema#is_transient}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/schema#is_transient Schema#is_transient}
 
 ---
 
@@ -1657,7 +1668,7 @@ Specifies the severity level of messages that should be ingested and made availa
 
 Valid options are: [TRACE DEBUG INFO WARN ERROR FATAL OFF]. Messages at the specified level (and at more severe levels) are ingested. For more information, see [LOG_LEVEL](https://docs.snowflake.com/en/sql-reference/parameters.html#label-log-level).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.1/docs/resources/schema#log_level Schema#log_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/schema#log_level Schema#log_level}
 
 ---
 
@@ -1673,7 +1684,7 @@ Object parameter that specifies the maximum number of days for which Snowflake c
 
 For a detailed description of this parameter, see [MAX_DATA_EXTENSION_TIME_IN_DAYS](https://docs.snowflake.com/en/sql-reference/parameters.html#label-max-data-extension-time-in-days).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.1/docs/resources/schema#max_data_extension_time_in_days Schema#max_data_extension_time_in_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/schema#max_data_extension_time_in_days Schema#max_data_extension_time_in_days}
 
 ---
 
@@ -1687,9 +1698,9 @@ PipeExecutionPaused interface{}
 
 Specifies whether to pause a running pipe, primarily in preparation for transferring ownership of the pipe to a different role.
 
-For more information, see [PIPE_EXECUTION_PAUSED](https://docs.snowflake.com/en/sql-reference/parameters#pipe-execution-paused).
+For more information, check [PIPE_EXECUTION_PAUSED docs](https://docs.snowflake.com/en/sql-reference/parameters#pipe-execution-paused).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.1/docs/resources/schema#pipe_execution_paused Schema#pipe_execution_paused}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/schema#pipe_execution_paused Schema#pipe_execution_paused}
 
 ---
 
@@ -1703,7 +1714,7 @@ QuotedIdentifiersIgnoreCase interface{}
 
 If true, the case of quoted identifiers is ignored. For more information, see [QUOTED_IDENTIFIERS_IGNORE_CASE](https://docs.snowflake.com/en/sql-reference/parameters#quoted-identifiers-ignore-case).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.1/docs/resources/schema#quoted_identifiers_ignore_case Schema#quoted_identifiers_ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/schema#quoted_identifiers_ignore_case Schema#quoted_identifiers_ignore_case}
 
 ---
 
@@ -1719,7 +1730,7 @@ Specifies whether to replace invalid UTF-8 characters with the Unicode replaceme
 
 You can only set this parameter for tables that use an external Iceberg catalog. For more information, see [REPLACE_INVALID_CHARACTERS](https://docs.snowflake.com/en/sql-reference/parameters#replace-invalid-characters).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.1/docs/resources/schema#replace_invalid_characters Schema#replace_invalid_characters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/schema#replace_invalid_characters Schema#replace_invalid_characters}
 
 ---
 
@@ -1735,7 +1746,7 @@ The storage serialization policy for Iceberg tables that use Snowflake as the ca
 
 Valid options are: [COMPATIBLE OPTIMIZED]. COMPATIBLE: Snowflake performs encoding and compression of data files that ensures interoperability with third-party compute engines. OPTIMIZED: Snowflake performs encoding and compression of data files that ensures the best table performance within Snowflake. For more information, see [STORAGE_SERIALIZATION_POLICY](https://docs.snowflake.com/en/sql-reference/parameters#storage-serialization-policy).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.1/docs/resources/schema#storage_serialization_policy Schema#storage_serialization_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/schema#storage_serialization_policy Schema#storage_serialization_policy}
 
 ---
 
@@ -1751,7 +1762,7 @@ How many times a task must fail in a row before it is automatically suspended.
 
 0 disables auto-suspending. For more information, see [SUSPEND_TASK_AFTER_NUM_FAILURES](https://docs.snowflake.com/en/sql-reference/parameters#suspend-task-after-num-failures).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.1/docs/resources/schema#suspend_task_after_num_failures Schema#suspend_task_after_num_failures}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/schema#suspend_task_after_num_failures Schema#suspend_task_after_num_failures}
 
 ---
 
@@ -1765,7 +1776,7 @@ TaskAutoRetryAttempts *f64
 
 Maximum automatic retries allowed for a user task. For more information, see [TASK_AUTO_RETRY_ATTEMPTS](https://docs.snowflake.com/en/sql-reference/parameters#task-auto-retry-attempts).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.1/docs/resources/schema#task_auto_retry_attempts Schema#task_auto_retry_attempts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/schema#task_auto_retry_attempts Schema#task_auto_retry_attempts}
 
 ---
 
@@ -1781,7 +1792,7 @@ Controls how trace events are ingested into the event table.
 
 Valid options are: [ALWAYS ON_EVENT OFF]. For information about levels, see [TRACE_LEVEL](https://docs.snowflake.com/en/sql-reference/parameters.html#label-trace-level).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.1/docs/resources/schema#trace_level Schema#trace_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/schema#trace_level Schema#trace_level}
 
 ---
 
@@ -1797,7 +1808,7 @@ The initial size of warehouse to use for managed warehouses in the absence of hi
 
 For more information, see [USER_TASK_MANAGED_INITIAL_WAREHOUSE_SIZE](https://docs.snowflake.com/en/sql-reference/parameters#user-task-managed-initial-warehouse-size).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.1/docs/resources/schema#user_task_managed_initial_warehouse_size Schema#user_task_managed_initial_warehouse_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/schema#user_task_managed_initial_warehouse_size Schema#user_task_managed_initial_warehouse_size}
 
 ---
 
@@ -1811,7 +1822,7 @@ UserTaskMinimumTriggerIntervalInSeconds *f64
 
 Minimum amount of time between Triggered Task executions in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.1/docs/resources/schema#user_task_minimum_trigger_interval_in_seconds Schema#user_task_minimum_trigger_interval_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/schema#user_task_minimum_trigger_interval_in_seconds Schema#user_task_minimum_trigger_interval_in_seconds}
 
 ---
 
@@ -1825,7 +1836,7 @@ UserTaskTimeoutMs *f64
 
 User task execution timeout in milliseconds. For more information, see [USER_TASK_TIMEOUT_MS](https://docs.snowflake.com/en/sql-reference/parameters#user-task-timeout-ms).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.1/docs/resources/schema#user_task_timeout_ms Schema#user_task_timeout_ms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/schema#user_task_timeout_ms Schema#user_task_timeout_ms}
 
 ---
 
@@ -1841,7 +1852,7 @@ Specifies a managed schema.
 
 Managed access schemas centralize privilege management with the schema owner. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.1/docs/resources/schema#with_managed_access Schema#with_managed_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/schema#with_managed_access Schema#with_managed_access}
 
 ---
 
@@ -1850,7 +1861,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.schema.SchemaDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 &schema.SchemaDescribeOutput {
 
@@ -1863,7 +1874,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.schema.SchemaParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 &schema.SchemaParameters {
 
@@ -1876,7 +1887,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.schema.SchemaParametersCatalog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 &schema.SchemaParametersCatalog {
 
@@ -1889,7 +1900,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.schema.SchemaParametersDataRetentionTimeInDays.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 &schema.SchemaParametersDataRetentionTimeInDays {
 
@@ -1902,7 +1913,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.schema.SchemaParametersDefaultDdlCollation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 &schema.SchemaParametersDefaultDdlCollation {
 
@@ -1915,7 +1926,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.schema.SchemaParametersEnableConsoleOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 &schema.SchemaParametersEnableConsoleOutput {
 
@@ -1928,7 +1939,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.schema.SchemaParametersExternalVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 &schema.SchemaParametersExternalVolume {
 
@@ -1941,7 +1952,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.schema.SchemaParametersLogLevel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 &schema.SchemaParametersLogLevel {
 
@@ -1954,7 +1965,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.schema.SchemaParametersMaxDataExtensionTimeInDays.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 &schema.SchemaParametersMaxDataExtensionTimeInDays {
 
@@ -1967,7 +1978,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.schema.SchemaParametersPipeExecutionPaused.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 &schema.SchemaParametersPipeExecutionPaused {
 
@@ -1980,7 +1991,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.schema.SchemaParametersQuotedIdentifiersIgnoreCase.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 &schema.SchemaParametersQuotedIdentifiersIgnoreCase {
 
@@ -1993,7 +2004,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.schema.SchemaParametersReplaceInvalidCharacters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 &schema.SchemaParametersReplaceInvalidCharacters {
 
@@ -2006,7 +2017,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.schema.SchemaParametersStorageSerializationPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 &schema.SchemaParametersStorageSerializationPolicy {
 
@@ -2019,7 +2030,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.schema.SchemaParametersSuspendTaskAfterNumFailures.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 &schema.SchemaParametersSuspendTaskAfterNumFailures {
 
@@ -2032,7 +2043,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.schema.SchemaParametersTaskAutoRetryAttempts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 &schema.SchemaParametersTaskAutoRetryAttempts {
 
@@ -2045,7 +2056,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.schema.SchemaParametersTraceLevel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 &schema.SchemaParametersTraceLevel {
 
@@ -2058,7 +2069,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.schema.SchemaParametersUserTaskManagedInitialWarehouseSize.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 &schema.SchemaParametersUserTaskManagedInitialWarehouseSize {
 
@@ -2071,7 +2082,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.schema.SchemaParametersUserTaskMinimumTriggerIntervalInSeconds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 &schema.SchemaParametersUserTaskMinimumTriggerIntervalInSeconds {
 
@@ -2084,7 +2095,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.schema.SchemaParametersUserTaskTimeoutMs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 &schema.SchemaParametersUserTaskTimeoutMs {
 
@@ -2097,7 +2108,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.schema.SchemaShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 &schema.SchemaShowOutput {
 
@@ -2112,7 +2123,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schema.SchemaDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 schema.NewSchemaDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SchemaDescribeOutputList
 ```
@@ -2261,7 +2272,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schema.SchemaDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 schema.NewSchemaDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SchemaDescribeOutputOutputReference
 ```
@@ -2561,7 +2572,7 @@ func InternalValue() SchemaDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schema.SchemaParametersCatalogList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 schema.NewSchemaParametersCatalogList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SchemaParametersCatalogList
 ```
@@ -2710,7 +2721,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schema.SchemaParametersCatalogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 schema.NewSchemaParametersCatalogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SchemaParametersCatalogOutputReference
 ```
@@ -3032,7 +3043,7 @@ func InternalValue() SchemaParametersCatalog
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schema.SchemaParametersDataRetentionTimeInDaysList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 schema.NewSchemaParametersDataRetentionTimeInDaysList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SchemaParametersDataRetentionTimeInDaysList
 ```
@@ -3181,7 +3192,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schema.SchemaParametersDataRetentionTimeInDaysOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 schema.NewSchemaParametersDataRetentionTimeInDaysOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SchemaParametersDataRetentionTimeInDaysOutputReference
 ```
@@ -3503,7 +3514,7 @@ func InternalValue() SchemaParametersDataRetentionTimeInDays
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schema.SchemaParametersDefaultDdlCollationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 schema.NewSchemaParametersDefaultDdlCollationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SchemaParametersDefaultDdlCollationList
 ```
@@ -3652,7 +3663,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schema.SchemaParametersDefaultDdlCollationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 schema.NewSchemaParametersDefaultDdlCollationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SchemaParametersDefaultDdlCollationOutputReference
 ```
@@ -3974,7 +3985,7 @@ func InternalValue() SchemaParametersDefaultDdlCollation
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schema.SchemaParametersEnableConsoleOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 schema.NewSchemaParametersEnableConsoleOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SchemaParametersEnableConsoleOutputList
 ```
@@ -4123,7 +4134,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schema.SchemaParametersEnableConsoleOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 schema.NewSchemaParametersEnableConsoleOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SchemaParametersEnableConsoleOutputOutputReference
 ```
@@ -4445,7 +4456,7 @@ func InternalValue() SchemaParametersEnableConsoleOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schema.SchemaParametersExternalVolumeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 schema.NewSchemaParametersExternalVolumeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SchemaParametersExternalVolumeList
 ```
@@ -4594,7 +4605,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schema.SchemaParametersExternalVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 schema.NewSchemaParametersExternalVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SchemaParametersExternalVolumeOutputReference
 ```
@@ -4916,7 +4927,7 @@ func InternalValue() SchemaParametersExternalVolume
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schema.SchemaParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 schema.NewSchemaParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SchemaParametersList
 ```
@@ -5065,7 +5076,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schema.SchemaParametersLogLevelList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 schema.NewSchemaParametersLogLevelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SchemaParametersLogLevelList
 ```
@@ -5214,7 +5225,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schema.SchemaParametersLogLevelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 schema.NewSchemaParametersLogLevelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SchemaParametersLogLevelOutputReference
 ```
@@ -5536,7 +5547,7 @@ func InternalValue() SchemaParametersLogLevel
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schema.SchemaParametersMaxDataExtensionTimeInDaysList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 schema.NewSchemaParametersMaxDataExtensionTimeInDaysList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SchemaParametersMaxDataExtensionTimeInDaysList
 ```
@@ -5685,7 +5696,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schema.SchemaParametersMaxDataExtensionTimeInDaysOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 schema.NewSchemaParametersMaxDataExtensionTimeInDaysOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SchemaParametersMaxDataExtensionTimeInDaysOutputReference
 ```
@@ -6007,7 +6018,7 @@ func InternalValue() SchemaParametersMaxDataExtensionTimeInDays
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schema.SchemaParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 schema.NewSchemaParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SchemaParametersOutputReference
 ```
@@ -6461,7 +6472,7 @@ func InternalValue() SchemaParameters
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schema.SchemaParametersPipeExecutionPausedList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 schema.NewSchemaParametersPipeExecutionPausedList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SchemaParametersPipeExecutionPausedList
 ```
@@ -6610,7 +6621,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schema.SchemaParametersPipeExecutionPausedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 schema.NewSchemaParametersPipeExecutionPausedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SchemaParametersPipeExecutionPausedOutputReference
 ```
@@ -6932,7 +6943,7 @@ func InternalValue() SchemaParametersPipeExecutionPaused
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schema.SchemaParametersQuotedIdentifiersIgnoreCaseList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 schema.NewSchemaParametersQuotedIdentifiersIgnoreCaseList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SchemaParametersQuotedIdentifiersIgnoreCaseList
 ```
@@ -7081,7 +7092,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schema.SchemaParametersQuotedIdentifiersIgnoreCaseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 schema.NewSchemaParametersQuotedIdentifiersIgnoreCaseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SchemaParametersQuotedIdentifiersIgnoreCaseOutputReference
 ```
@@ -7403,7 +7414,7 @@ func InternalValue() SchemaParametersQuotedIdentifiersIgnoreCase
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schema.SchemaParametersReplaceInvalidCharactersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 schema.NewSchemaParametersReplaceInvalidCharactersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SchemaParametersReplaceInvalidCharactersList
 ```
@@ -7552,7 +7563,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schema.SchemaParametersReplaceInvalidCharactersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 schema.NewSchemaParametersReplaceInvalidCharactersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SchemaParametersReplaceInvalidCharactersOutputReference
 ```
@@ -7874,7 +7885,7 @@ func InternalValue() SchemaParametersReplaceInvalidCharacters
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schema.SchemaParametersStorageSerializationPolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 schema.NewSchemaParametersStorageSerializationPolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SchemaParametersStorageSerializationPolicyList
 ```
@@ -8023,7 +8034,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schema.SchemaParametersStorageSerializationPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 schema.NewSchemaParametersStorageSerializationPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SchemaParametersStorageSerializationPolicyOutputReference
 ```
@@ -8345,7 +8356,7 @@ func InternalValue() SchemaParametersStorageSerializationPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schema.SchemaParametersSuspendTaskAfterNumFailuresList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 schema.NewSchemaParametersSuspendTaskAfterNumFailuresList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SchemaParametersSuspendTaskAfterNumFailuresList
 ```
@@ -8494,7 +8505,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schema.SchemaParametersSuspendTaskAfterNumFailuresOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 schema.NewSchemaParametersSuspendTaskAfterNumFailuresOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SchemaParametersSuspendTaskAfterNumFailuresOutputReference
 ```
@@ -8816,7 +8827,7 @@ func InternalValue() SchemaParametersSuspendTaskAfterNumFailures
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schema.SchemaParametersTaskAutoRetryAttemptsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 schema.NewSchemaParametersTaskAutoRetryAttemptsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SchemaParametersTaskAutoRetryAttemptsList
 ```
@@ -8965,7 +8976,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schema.SchemaParametersTaskAutoRetryAttemptsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 schema.NewSchemaParametersTaskAutoRetryAttemptsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SchemaParametersTaskAutoRetryAttemptsOutputReference
 ```
@@ -9287,7 +9298,7 @@ func InternalValue() SchemaParametersTaskAutoRetryAttempts
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schema.SchemaParametersTraceLevelList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 schema.NewSchemaParametersTraceLevelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SchemaParametersTraceLevelList
 ```
@@ -9436,7 +9447,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schema.SchemaParametersTraceLevelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 schema.NewSchemaParametersTraceLevelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SchemaParametersTraceLevelOutputReference
 ```
@@ -9758,7 +9769,7 @@ func InternalValue() SchemaParametersTraceLevel
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schema.SchemaParametersUserTaskManagedInitialWarehouseSizeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 schema.NewSchemaParametersUserTaskManagedInitialWarehouseSizeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SchemaParametersUserTaskManagedInitialWarehouseSizeList
 ```
@@ -9907,7 +9918,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schema.SchemaParametersUserTaskManagedInitialWarehouseSizeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 schema.NewSchemaParametersUserTaskManagedInitialWarehouseSizeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SchemaParametersUserTaskManagedInitialWarehouseSizeOutputReference
 ```
@@ -10229,7 +10240,7 @@ func InternalValue() SchemaParametersUserTaskManagedInitialWarehouseSize
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schema.SchemaParametersUserTaskMinimumTriggerIntervalInSecondsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 schema.NewSchemaParametersUserTaskMinimumTriggerIntervalInSecondsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SchemaParametersUserTaskMinimumTriggerIntervalInSecondsList
 ```
@@ -10378,7 +10389,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schema.SchemaParametersUserTaskMinimumTriggerIntervalInSecondsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 schema.NewSchemaParametersUserTaskMinimumTriggerIntervalInSecondsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SchemaParametersUserTaskMinimumTriggerIntervalInSecondsOutputReference
 ```
@@ -10700,7 +10711,7 @@ func InternalValue() SchemaParametersUserTaskMinimumTriggerIntervalInSeconds
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schema.SchemaParametersUserTaskTimeoutMsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 schema.NewSchemaParametersUserTaskTimeoutMsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SchemaParametersUserTaskTimeoutMsList
 ```
@@ -10849,7 +10860,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schema.SchemaParametersUserTaskTimeoutMsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 schema.NewSchemaParametersUserTaskTimeoutMsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SchemaParametersUserTaskTimeoutMsOutputReference
 ```
@@ -11171,7 +11182,7 @@ func InternalValue() SchemaParametersUserTaskTimeoutMs
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schema.SchemaShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 schema.NewSchemaShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SchemaShowOutputList
 ```
@@ -11320,7 +11331,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.schema.SchemaShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/schema"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/schema"
 
 schema.NewSchemaShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SchemaShowOutputOutputReference
 ```
