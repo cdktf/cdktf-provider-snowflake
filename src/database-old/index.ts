@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.1/docs/resources/database_old
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/database_old
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,35 +15,35 @@ export interface DatabaseOldConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies a comment for the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.1/docs/resources/database_old#comment DatabaseOld#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/database_old#comment DatabaseOld#comment}
   */
   readonly comment?: string;
   /**
   * Number of days for which Snowflake retains historical data for performing Time Travel actions (SELECT, CLONE, UNDROP) on the object. A value of 0 effectively disables Time Travel for the specified database. Default value for this field is set to -1, which is a fallback to use Snowflake default. For more information, see [Understanding & Using Time Travel](https://docs.snowflake.com/en/user-guide/data-time-travel).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.1/docs/resources/database_old#data_retention_time_in_days DatabaseOld#data_retention_time_in_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/database_old#data_retention_time_in_days DatabaseOld#data_retention_time_in_days}
   */
   readonly dataRetentionTimeInDays?: number;
   /**
   * Specify a database to create a clone from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.1/docs/resources/database_old#from_database DatabaseOld#from_database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/database_old#from_database DatabaseOld#from_database}
   */
   readonly fromDatabase?: string;
   /**
   * Specify a fully-qualified path to a database to create a replica from. A fully qualified path follows the format of `"<organization_name>"."<account_name>"."<db_name>"`. An example would be: `"myorg1"."account1"."db1"`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.1/docs/resources/database_old#from_replica DatabaseOld#from_replica}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/database_old#from_replica DatabaseOld#from_replica}
   */
   readonly fromReplica?: string;
   /**
   * Specify a provider and a share in this map to create a database from a share. As of version 0.87.0, the provider field is the account locator.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.1/docs/resources/database_old#from_share DatabaseOld#from_share}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/database_old#from_share DatabaseOld#from_share}
   */
   readonly fromShare?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.1/docs/resources/database_old#id DatabaseOld#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/database_old#id DatabaseOld#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -52,29 +52,29 @@ export interface DatabaseOldConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies a database as transient. Transient databases do not have a Fail-safe period so they do not incur additional storage costs once they leave Time Travel; however, this means they are also not protected by Fail-safe in the event of a data loss.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.1/docs/resources/database_old#is_transient DatabaseOld#is_transient}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/database_old#is_transient DatabaseOld#is_transient}
   */
   readonly isTransient?: boolean | cdktf.IResolvable;
   /**
   * Specifies the identifier for the database; must be unique for your account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.1/docs/resources/database_old#name DatabaseOld#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/database_old#name DatabaseOld#name}
   */
   readonly name: string;
   /**
   * replication_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.1/docs/resources/database_old#replication_configuration DatabaseOld#replication_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/database_old#replication_configuration DatabaseOld#replication_configuration}
   */
   readonly replicationConfiguration?: DatabaseOldReplicationConfiguration;
 }
 export interface DatabaseOldReplicationConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.1/docs/resources/database_old#accounts DatabaseOld#accounts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/database_old#accounts DatabaseOld#accounts}
   */
   readonly accounts: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.1/docs/resources/database_old#ignore_edition_check DatabaseOld#ignore_edition_check}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/database_old#ignore_edition_check DatabaseOld#ignore_edition_check}
   */
   readonly ignoreEditionCheck?: boolean | cdktf.IResolvable;
 }
@@ -184,7 +184,7 @@ export class DatabaseOldReplicationConfigurationOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.1/docs/resources/database_old snowflake_database_old}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/database_old snowflake_database_old}
 */
 export class DatabaseOld extends cdktf.TerraformResource {
 
@@ -200,7 +200,7 @@ export class DatabaseOld extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DatabaseOld resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatabaseOld to import
-  * @param importFromId The id of the existing DatabaseOld that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.1/docs/resources/database_old#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DatabaseOld that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/database_old#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatabaseOld to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -212,7 +212,7 @@ export class DatabaseOld extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.94.1/docs/resources/database_old snowflake_database_old} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/database_old snowflake_database_old} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -223,7 +223,7 @@ export class DatabaseOld extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_database_old',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.94.1',
+        providerVersion: '0.95.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
