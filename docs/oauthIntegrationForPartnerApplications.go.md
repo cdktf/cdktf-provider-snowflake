@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplications.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 oauthintegrationforpartnerapplications.NewOauthIntegrationForPartnerApplications(scope Construct, id *string, config OauthIntegrationForPartnerApplicationsConfig) OauthIntegrationForPartnerApplications
 ```
@@ -427,7 +427,7 @@ func ResetOauthUseSecondaryRoles()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplications.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 oauthintegrationforpartnerapplications.OauthIntegrationForPartnerApplications_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplications.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 oauthintegrationforpartnerapplications.OauthIntegrationForPartnerApplications_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ oauthintegrationforpartnerapplications.OauthIntegrationForPartnerApplications_Is
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplications.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 oauthintegrationforpartnerapplications.OauthIntegrationForPartnerApplications_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ oauthintegrationforpartnerapplications.OauthIntegrationForPartnerApplications_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplications.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 oauthintegrationforpartnerapplications.OauthIntegrationForPartnerApplications_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -969,7 +969,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 &oauthintegrationforpartnerapplications.OauthIntegrationForPartnerApplicationsConfig {
 	Connection: interface{},
@@ -1242,7 +1242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 &oauthintegrationforpartnerapplications.OauthIntegrationForPartnerApplicationsDescribeOutput {
 
@@ -1255,7 +1255,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrat
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputBlockedRolesListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 &oauthintegrationforpartnerapplications.OauthIntegrationForPartnerApplicationsDescribeOutputBlockedRolesListStruct {
 
@@ -1268,7 +1268,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrat
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputComment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 &oauthintegrationforpartnerapplications.OauthIntegrationForPartnerApplicationsDescribeOutputComment {
 
@@ -1281,7 +1281,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrat
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputEnabled.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 &oauthintegrationforpartnerapplications.OauthIntegrationForPartnerApplicationsDescribeOutputEnabled {
 
@@ -1294,7 +1294,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrat
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputNetworkPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 &oauthintegrationforpartnerapplications.OauthIntegrationForPartnerApplicationsDescribeOutputNetworkPolicy {
 
@@ -1307,7 +1307,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrat
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthAllowedAuthorizationEndpoints.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 &oauthintegrationforpartnerapplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthAllowedAuthorizationEndpoints {
 
@@ -1320,7 +1320,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrat
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthAllowedTokenEndpoints.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 &oauthintegrationforpartnerapplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthAllowedTokenEndpoints {
 
@@ -1333,7 +1333,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrat
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthAllowNonTlsRedirectUri.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 &oauthintegrationforpartnerapplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthAllowNonTlsRedirectUri {
 
@@ -1346,7 +1346,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrat
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthAuthorizationEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 &oauthintegrationforpartnerapplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthAuthorizationEndpoint {
 
@@ -1359,7 +1359,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrat
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthClientId.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 &oauthintegrationforpartnerapplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthClientId {
 
@@ -1372,7 +1372,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrat
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthClientRsaPublicKey2Fp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 &oauthintegrationforpartnerapplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthClientRsaPublicKey2Fp {
 
@@ -1385,7 +1385,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrat
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthClientRsaPublicKeyFp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 &oauthintegrationforpartnerapplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthClientRsaPublicKeyFp {
 
@@ -1398,7 +1398,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrat
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthClientType.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 &oauthintegrationforpartnerapplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthClientType {
 
@@ -1411,7 +1411,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrat
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthEnforcePkce.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 &oauthintegrationforpartnerapplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthEnforcePkce {
 
@@ -1424,7 +1424,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrat
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthIssueRefreshTokens.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 &oauthintegrationforpartnerapplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthIssueRefreshTokens {
 
@@ -1437,7 +1437,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrat
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthRedirectUri.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 &oauthintegrationforpartnerapplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthRedirectUri {
 
@@ -1450,7 +1450,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrat
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthRefreshTokenValidity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 &oauthintegrationforpartnerapplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthRefreshTokenValidity {
 
@@ -1463,7 +1463,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrat
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthTokenEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 &oauthintegrationforpartnerapplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthTokenEndpoint {
 
@@ -1476,7 +1476,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrat
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthUseSecondaryRoles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 &oauthintegrationforpartnerapplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthUseSecondaryRoles {
 
@@ -1489,7 +1489,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrat
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputPreAuthorizedRolesListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 &oauthintegrationforpartnerapplications.OauthIntegrationForPartnerApplicationsDescribeOutputPreAuthorizedRolesListStruct {
 
@@ -1502,7 +1502,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrat
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 &oauthintegrationforpartnerapplications.OauthIntegrationForPartnerApplicationsShowOutput {
 
@@ -1517,7 +1517,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrat
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputBlockedRolesListStructList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 oauthintegrationforpartnerapplications.NewOauthIntegrationForPartnerApplicationsDescribeOutputBlockedRolesListStructList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OauthIntegrationForPartnerApplicationsDescribeOutputBlockedRolesListStructList
 ```
@@ -1666,7 +1666,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputBlockedRolesListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 oauthintegrationforpartnerapplications.NewOauthIntegrationForPartnerApplicationsDescribeOutputBlockedRolesListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OauthIntegrationForPartnerApplicationsDescribeOutputBlockedRolesListStructOutputReference
 ```
@@ -1977,7 +1977,7 @@ func InternalValue() OauthIntegrationForPartnerApplicationsDescribeOutputBlocked
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputCommentList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 oauthintegrationforpartnerapplications.NewOauthIntegrationForPartnerApplicationsDescribeOutputCommentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OauthIntegrationForPartnerApplicationsDescribeOutputCommentList
 ```
@@ -2126,7 +2126,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputCommentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 oauthintegrationforpartnerapplications.NewOauthIntegrationForPartnerApplicationsDescribeOutputCommentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OauthIntegrationForPartnerApplicationsDescribeOutputCommentOutputReference
 ```
@@ -2437,7 +2437,7 @@ func InternalValue() OauthIntegrationForPartnerApplicationsDescribeOutputComment
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputEnabledList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 oauthintegrationforpartnerapplications.NewOauthIntegrationForPartnerApplicationsDescribeOutputEnabledList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OauthIntegrationForPartnerApplicationsDescribeOutputEnabledList
 ```
@@ -2586,7 +2586,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputEnabledOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 oauthintegrationforpartnerapplications.NewOauthIntegrationForPartnerApplicationsDescribeOutputEnabledOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OauthIntegrationForPartnerApplicationsDescribeOutputEnabledOutputReference
 ```
@@ -2897,7 +2897,7 @@ func InternalValue() OauthIntegrationForPartnerApplicationsDescribeOutputEnabled
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 oauthintegrationforpartnerapplications.NewOauthIntegrationForPartnerApplicationsDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OauthIntegrationForPartnerApplicationsDescribeOutputList
 ```
@@ -3046,7 +3046,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputNetworkPolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 oauthintegrationforpartnerapplications.NewOauthIntegrationForPartnerApplicationsDescribeOutputNetworkPolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OauthIntegrationForPartnerApplicationsDescribeOutputNetworkPolicyList
 ```
@@ -3195,7 +3195,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputNetworkPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 oauthintegrationforpartnerapplications.NewOauthIntegrationForPartnerApplicationsDescribeOutputNetworkPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OauthIntegrationForPartnerApplicationsDescribeOutputNetworkPolicyOutputReference
 ```
@@ -3506,7 +3506,7 @@ func InternalValue() OauthIntegrationForPartnerApplicationsDescribeOutputNetwork
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthAllowedAuthorizationEndpointsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 oauthintegrationforpartnerapplications.NewOauthIntegrationForPartnerApplicationsDescribeOutputOauthAllowedAuthorizationEndpointsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OauthIntegrationForPartnerApplicationsDescribeOutputOauthAllowedAuthorizationEndpointsList
 ```
@@ -3655,7 +3655,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthAllowedAuthorizationEndpointsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 oauthintegrationforpartnerapplications.NewOauthIntegrationForPartnerApplicationsDescribeOutputOauthAllowedAuthorizationEndpointsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OauthIntegrationForPartnerApplicationsDescribeOutputOauthAllowedAuthorizationEndpointsOutputReference
 ```
@@ -3966,7 +3966,7 @@ func InternalValue() OauthIntegrationForPartnerApplicationsDescribeOutputOauthAl
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthAllowedTokenEndpointsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 oauthintegrationforpartnerapplications.NewOauthIntegrationForPartnerApplicationsDescribeOutputOauthAllowedTokenEndpointsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OauthIntegrationForPartnerApplicationsDescribeOutputOauthAllowedTokenEndpointsList
 ```
@@ -4115,7 +4115,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthAllowedTokenEndpointsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 oauthintegrationforpartnerapplications.NewOauthIntegrationForPartnerApplicationsDescribeOutputOauthAllowedTokenEndpointsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OauthIntegrationForPartnerApplicationsDescribeOutputOauthAllowedTokenEndpointsOutputReference
 ```
@@ -4426,7 +4426,7 @@ func InternalValue() OauthIntegrationForPartnerApplicationsDescribeOutputOauthAl
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthAllowNonTlsRedirectUriList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 oauthintegrationforpartnerapplications.NewOauthIntegrationForPartnerApplicationsDescribeOutputOauthAllowNonTlsRedirectUriList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OauthIntegrationForPartnerApplicationsDescribeOutputOauthAllowNonTlsRedirectUriList
 ```
@@ -4575,7 +4575,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthAllowNonTlsRedirectUriOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 oauthintegrationforpartnerapplications.NewOauthIntegrationForPartnerApplicationsDescribeOutputOauthAllowNonTlsRedirectUriOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OauthIntegrationForPartnerApplicationsDescribeOutputOauthAllowNonTlsRedirectUriOutputReference
 ```
@@ -4886,7 +4886,7 @@ func InternalValue() OauthIntegrationForPartnerApplicationsDescribeOutputOauthAl
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthAuthorizationEndpointList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 oauthintegrationforpartnerapplications.NewOauthIntegrationForPartnerApplicationsDescribeOutputOauthAuthorizationEndpointList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OauthIntegrationForPartnerApplicationsDescribeOutputOauthAuthorizationEndpointList
 ```
@@ -5035,7 +5035,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthAuthorizationEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 oauthintegrationforpartnerapplications.NewOauthIntegrationForPartnerApplicationsDescribeOutputOauthAuthorizationEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OauthIntegrationForPartnerApplicationsDescribeOutputOauthAuthorizationEndpointOutputReference
 ```
@@ -5346,7 +5346,7 @@ func InternalValue() OauthIntegrationForPartnerApplicationsDescribeOutputOauthAu
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthClientIdList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 oauthintegrationforpartnerapplications.NewOauthIntegrationForPartnerApplicationsDescribeOutputOauthClientIdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OauthIntegrationForPartnerApplicationsDescribeOutputOauthClientIdList
 ```
@@ -5495,7 +5495,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthClientIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 oauthintegrationforpartnerapplications.NewOauthIntegrationForPartnerApplicationsDescribeOutputOauthClientIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OauthIntegrationForPartnerApplicationsDescribeOutputOauthClientIdOutputReference
 ```
@@ -5806,7 +5806,7 @@ func InternalValue() OauthIntegrationForPartnerApplicationsDescribeOutputOauthCl
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthClientRsaPublicKey2FpList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 oauthintegrationforpartnerapplications.NewOauthIntegrationForPartnerApplicationsDescribeOutputOauthClientRsaPublicKey2FpList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OauthIntegrationForPartnerApplicationsDescribeOutputOauthClientRsaPublicKey2FpList
 ```
@@ -5955,7 +5955,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthClientRsaPublicKey2FpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 oauthintegrationforpartnerapplications.NewOauthIntegrationForPartnerApplicationsDescribeOutputOauthClientRsaPublicKey2FpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OauthIntegrationForPartnerApplicationsDescribeOutputOauthClientRsaPublicKey2FpOutputReference
 ```
@@ -6266,7 +6266,7 @@ func InternalValue() OauthIntegrationForPartnerApplicationsDescribeOutputOauthCl
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthClientRsaPublicKeyFpList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 oauthintegrationforpartnerapplications.NewOauthIntegrationForPartnerApplicationsDescribeOutputOauthClientRsaPublicKeyFpList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OauthIntegrationForPartnerApplicationsDescribeOutputOauthClientRsaPublicKeyFpList
 ```
@@ -6415,7 +6415,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthClientRsaPublicKeyFpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 oauthintegrationforpartnerapplications.NewOauthIntegrationForPartnerApplicationsDescribeOutputOauthClientRsaPublicKeyFpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OauthIntegrationForPartnerApplicationsDescribeOutputOauthClientRsaPublicKeyFpOutputReference
 ```
@@ -6726,7 +6726,7 @@ func InternalValue() OauthIntegrationForPartnerApplicationsDescribeOutputOauthCl
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthClientTypeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 oauthintegrationforpartnerapplications.NewOauthIntegrationForPartnerApplicationsDescribeOutputOauthClientTypeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OauthIntegrationForPartnerApplicationsDescribeOutputOauthClientTypeList
 ```
@@ -6875,7 +6875,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthClientTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 oauthintegrationforpartnerapplications.NewOauthIntegrationForPartnerApplicationsDescribeOutputOauthClientTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OauthIntegrationForPartnerApplicationsDescribeOutputOauthClientTypeOutputReference
 ```
@@ -7186,7 +7186,7 @@ func InternalValue() OauthIntegrationForPartnerApplicationsDescribeOutputOauthCl
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthEnforcePkceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 oauthintegrationforpartnerapplications.NewOauthIntegrationForPartnerApplicationsDescribeOutputOauthEnforcePkceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OauthIntegrationForPartnerApplicationsDescribeOutputOauthEnforcePkceList
 ```
@@ -7335,7 +7335,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthEnforcePkceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 oauthintegrationforpartnerapplications.NewOauthIntegrationForPartnerApplicationsDescribeOutputOauthEnforcePkceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OauthIntegrationForPartnerApplicationsDescribeOutputOauthEnforcePkceOutputReference
 ```
@@ -7646,7 +7646,7 @@ func InternalValue() OauthIntegrationForPartnerApplicationsDescribeOutputOauthEn
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthIssueRefreshTokensList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 oauthintegrationforpartnerapplications.NewOauthIntegrationForPartnerApplicationsDescribeOutputOauthIssueRefreshTokensList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OauthIntegrationForPartnerApplicationsDescribeOutputOauthIssueRefreshTokensList
 ```
@@ -7795,7 +7795,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthIssueRefreshTokensOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 oauthintegrationforpartnerapplications.NewOauthIntegrationForPartnerApplicationsDescribeOutputOauthIssueRefreshTokensOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OauthIntegrationForPartnerApplicationsDescribeOutputOauthIssueRefreshTokensOutputReference
 ```
@@ -8106,7 +8106,7 @@ func InternalValue() OauthIntegrationForPartnerApplicationsDescribeOutputOauthIs
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthRedirectUriList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 oauthintegrationforpartnerapplications.NewOauthIntegrationForPartnerApplicationsDescribeOutputOauthRedirectUriList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OauthIntegrationForPartnerApplicationsDescribeOutputOauthRedirectUriList
 ```
@@ -8255,7 +8255,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthRedirectUriOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 oauthintegrationforpartnerapplications.NewOauthIntegrationForPartnerApplicationsDescribeOutputOauthRedirectUriOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OauthIntegrationForPartnerApplicationsDescribeOutputOauthRedirectUriOutputReference
 ```
@@ -8566,7 +8566,7 @@ func InternalValue() OauthIntegrationForPartnerApplicationsDescribeOutputOauthRe
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthRefreshTokenValidityList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 oauthintegrationforpartnerapplications.NewOauthIntegrationForPartnerApplicationsDescribeOutputOauthRefreshTokenValidityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OauthIntegrationForPartnerApplicationsDescribeOutputOauthRefreshTokenValidityList
 ```
@@ -8715,7 +8715,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthRefreshTokenValidityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 oauthintegrationforpartnerapplications.NewOauthIntegrationForPartnerApplicationsDescribeOutputOauthRefreshTokenValidityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OauthIntegrationForPartnerApplicationsDescribeOutputOauthRefreshTokenValidityOutputReference
 ```
@@ -9026,7 +9026,7 @@ func InternalValue() OauthIntegrationForPartnerApplicationsDescribeOutputOauthRe
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthTokenEndpointList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 oauthintegrationforpartnerapplications.NewOauthIntegrationForPartnerApplicationsDescribeOutputOauthTokenEndpointList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OauthIntegrationForPartnerApplicationsDescribeOutputOauthTokenEndpointList
 ```
@@ -9175,7 +9175,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthTokenEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 oauthintegrationforpartnerapplications.NewOauthIntegrationForPartnerApplicationsDescribeOutputOauthTokenEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OauthIntegrationForPartnerApplicationsDescribeOutputOauthTokenEndpointOutputReference
 ```
@@ -9486,7 +9486,7 @@ func InternalValue() OauthIntegrationForPartnerApplicationsDescribeOutputOauthTo
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthUseSecondaryRolesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 oauthintegrationforpartnerapplications.NewOauthIntegrationForPartnerApplicationsDescribeOutputOauthUseSecondaryRolesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OauthIntegrationForPartnerApplicationsDescribeOutputOauthUseSecondaryRolesList
 ```
@@ -9635,7 +9635,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputOauthUseSecondaryRolesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 oauthintegrationforpartnerapplications.NewOauthIntegrationForPartnerApplicationsDescribeOutputOauthUseSecondaryRolesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OauthIntegrationForPartnerApplicationsDescribeOutputOauthUseSecondaryRolesOutputReference
 ```
@@ -9946,7 +9946,7 @@ func InternalValue() OauthIntegrationForPartnerApplicationsDescribeOutputOauthUs
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 oauthintegrationforpartnerapplications.NewOauthIntegrationForPartnerApplicationsDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OauthIntegrationForPartnerApplicationsDescribeOutputOutputReference
 ```
@@ -10422,7 +10422,7 @@ func InternalValue() OauthIntegrationForPartnerApplicationsDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputPreAuthorizedRolesListStructList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 oauthintegrationforpartnerapplications.NewOauthIntegrationForPartnerApplicationsDescribeOutputPreAuthorizedRolesListStructList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OauthIntegrationForPartnerApplicationsDescribeOutputPreAuthorizedRolesListStructList
 ```
@@ -10571,7 +10571,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsDescribeOutputPreAuthorizedRolesListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 oauthintegrationforpartnerapplications.NewOauthIntegrationForPartnerApplicationsDescribeOutputPreAuthorizedRolesListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OauthIntegrationForPartnerApplicationsDescribeOutputPreAuthorizedRolesListStructOutputReference
 ```
@@ -10882,7 +10882,7 @@ func InternalValue() OauthIntegrationForPartnerApplicationsDescribeOutputPreAuth
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 oauthintegrationforpartnerapplications.NewOauthIntegrationForPartnerApplicationsShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OauthIntegrationForPartnerApplicationsShowOutputList
 ```
@@ -11031,7 +11031,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.oauthIntegrationForPartnerApplications.OauthIntegrationForPartnerApplicationsShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/oauthintegrationforpartnerapplications"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/oauthintegrationforpartnerapplications"
 
 oauthintegrationforpartnerapplications.NewOauthIntegrationForPartnerApplicationsShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OauthIntegrationForPartnerApplicationsShowOutputOutputReference
 ```
