@@ -4,12 +4,12 @@
 
 ### DataSnowflakeSystemGenerateScimAccessToken <a name="DataSnowflakeSystemGenerateScimAccessToken" id="@cdktf/provider-snowflake.dataSnowflakeSystemGenerateScimAccessToken.DataSnowflakeSystemGenerateScimAccessToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/data-sources/system_generate_scim_access_token snowflake_system_generate_scim_access_token}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/data-sources/system_generate_scim_access_token snowflake_system_generate_scim_access_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSystemGenerateScimAccessToken.DataSnowflakeSystemGenerateScimAccessToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakesystemgeneratescimaccesstoken"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakesystemgeneratescimaccesstoken"
 
 datasnowflakesystemgeneratescimaccesstoken.NewDataSnowflakeSystemGenerateScimAccessToken(scope Construct, id *string, config DataSnowflakeSystemGenerateScimAccessTokenConfig) DataSnowflakeSystemGenerateScimAccessToken
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeSystemGenerateScimAccessToken.DataSnowflakeSystemGenerateScimAccessToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakesystemgeneratescimaccesstoken"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakesystemgeneratescimaccesstoken"
 
 datasnowflakesystemgeneratescimaccesstoken.DataSnowflakeSystemGenerateScimAccessToken_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeSystemGenerateScimAccessToken.DataSnowflakeSystemGenerateScimAccessToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakesystemgeneratescimaccesstoken"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakesystemgeneratescimaccesstoken"
 
 datasnowflakesystemgeneratescimaccesstoken.DataSnowflakeSystemGenerateScimAccessToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datasnowflakesystemgeneratescimaccesstoken.DataSnowflakeSystemGenerateScimAccess
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeSystemGenerateScimAccessToken.DataSnowflakeSystemGenerateScimAccessToken.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakesystemgeneratescimaccesstoken"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakesystemgeneratescimaccesstoken"
 
 datasnowflakesystemgeneratescimaccesstoken.DataSnowflakeSystemGenerateScimAccessToken_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datasnowflakesystemgeneratescimaccesstoken.DataSnowflakeSystemGenerateScimAccess
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.dataSnowflakeSystemGenerateScimAccessToken.DataSnowflakeSystemGenerateScimAccessToken.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakesystemgeneratescimaccesstoken"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakesystemgeneratescimaccesstoken"
 
 datasnowflakesystemgeneratescimaccesstoken.DataSnowflakeSystemGenerateScimAccessToken_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataSnowflakeSystemGenerat
 
 The id of the existing DataSnowflakeSystemGenerateScimAccessToken that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/data-sources/system_generate_scim_access_token#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/data-sources/system_generate_scim_access_token#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -605,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSystemGenerateScimAccessToken.DataSnowflakeSystemGenerateScimAccessTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakesystemgeneratescimaccesstoken"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakesystemgeneratescimaccesstoken"
 
 &datasnowflakesystemgeneratescimaccesstoken.DataSnowflakeSystemGenerateScimAccessTokenConfig {
 	Connection: interface{},
@@ -632,7 +632,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSystemGenerateScimAccessToken.DataSnowflakeSystemGenerateScimAccessTokenConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSystemGenerateScimAccessToken.DataSnowflakeSystemGenerateScimAccessTokenConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSystemGenerateScimAccessToken.DataSnowflakeSystemGenerateScimAccessTokenConfig.property.integrationName">IntegrationName</a></code> | <code>*string</code> | SCIM Integration Name. |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSystemGenerateScimAccessToken.DataSnowflakeSystemGenerateScimAccessTokenConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/data-sources/system_generate_scim_access_token#id DataSnowflakeSystemGenerateScimAccessToken#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeSystemGenerateScimAccessToken.DataSnowflakeSystemGenerateScimAccessTokenConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/data-sources/system_generate_scim_access_token#id DataSnowflakeSystemGenerateScimAccessToken#id}. |
 
 ---
 
@@ -716,7 +716,7 @@ IntegrationName *string
 
 SCIM Integration Name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/data-sources/system_generate_scim_access_token#integration_name DataSnowflakeSystemGenerateScimAccessToken#integration_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/data-sources/system_generate_scim_access_token#integration_name DataSnowflakeSystemGenerateScimAccessToken#integration_name}
 
 ---
 
@@ -728,7 +728,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/data-sources/system_generate_scim_access_token#id DataSnowflakeSystemGenerateScimAccessToken#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/data-sources/system_generate_scim_access_token#id DataSnowflakeSystemGenerateScimAccessToken#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

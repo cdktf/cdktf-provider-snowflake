@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/masking_policy
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/masking_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,89 +8,363 @@ import * as cdktf from 'cdktf';
 
 export interface MaskingPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Specifies the SQL expression that transforms the data. To mitigate permadiff on this field, the provider replaces blank characters with a space. This can lead to false positives in cases where a change in case or run of whitespace is semantically significant.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/masking_policy#body MaskingPolicy#body}
+  */
+  readonly body: string;
+  /**
   * Specifies a comment for the masking policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/masking_policy#comment MaskingPolicy#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/masking_policy#comment MaskingPolicy#comment}
   */
   readonly comment?: string;
   /**
-  * The database in which to create the masking policy.
+  * The database in which to create the masking policy. Due to technical limitations (read more [here](https://github.com/Snowflake-Labs/terraform-provider-snowflake/blob/main/docs/technical-documentation/identifiers_rework_design_decisions.md#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `(`, `)`, `"`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/masking_policy#database MaskingPolicy#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/masking_policy#database MaskingPolicy#database}
   */
   readonly database: string;
   /**
-  * Specifies whether the row access policy or conditional masking policy can reference a column that is already protected by a masking policy.
+  * Specifies whether the row access policy or conditional masking policy can reference a column that is already protected by a masking policy. Due to Snowflake limitations, when value is chenged, the resource is recreated. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/masking_policy#exempt_other_policies MaskingPolicy#exempt_other_policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/masking_policy#exempt_other_policies MaskingPolicy#exempt_other_policies}
   */
-  readonly exemptOtherPolicies?: boolean | cdktf.IResolvable;
+  readonly exemptOtherPolicies?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/masking_policy#id MaskingPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/masking_policy#id MaskingPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Prevent overwriting a previous masking policy with the same name.
+  * Specifies the identifier for the masking policy; must be unique for the database and schema in which the masking policy is created. Due to technical limitations (read more [here](https://github.com/Snowflake-Labs/terraform-provider-snowflake/blob/main/docs/technical-documentation/identifiers_rework_design_decisions.md#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `(`, `)`, `"`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/masking_policy#if_not_exists MaskingPolicy#if_not_exists}
-  */
-  readonly ifNotExists?: boolean | cdktf.IResolvable;
-  /**
-  * Specifies the SQL expression that transforms the data.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/masking_policy#masking_expression MaskingPolicy#masking_expression}
-  */
-  readonly maskingExpression: string;
-  /**
-  * Specifies the identifier for the masking policy; must be unique for the database and schema in which the masking policy is created.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/masking_policy#name MaskingPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/masking_policy#name MaskingPolicy#name}
   */
   readonly name: string;
   /**
-  * Whether to override a previous masking policy with the same name.
+  * The return data type must match the input data type of the first column that is specified as an input column. For more information about data types, check [Snowflake docs](https://docs.snowflake.com/en/sql-reference/intro-summary-data-types).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/masking_policy#or_replace MaskingPolicy#or_replace}
-  */
-  readonly orReplace?: boolean | cdktf.IResolvable;
-  /**
-  * Specifies the data type to return.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/masking_policy#return_data_type MaskingPolicy#return_data_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/masking_policy#return_data_type MaskingPolicy#return_data_type}
   */
   readonly returnDataType: string;
   /**
-  * The schema in which to create the masking policy.
+  * The schema in which to create the masking policy. Due to technical limitations (read more [here](https://github.com/Snowflake-Labs/terraform-provider-snowflake/blob/main/docs/technical-documentation/identifiers_rework_design_decisions.md#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `(`, `)`, `"`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/masking_policy#schema MaskingPolicy#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/masking_policy#schema MaskingPolicy#schema}
   */
   readonly schema: string;
   /**
-  * signature block
+  * argument block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/masking_policy#signature MaskingPolicy#signature}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/masking_policy#argument MaskingPolicy#argument}
   */
-  readonly signature: MaskingPolicySignature;
+  readonly argument: MaskingPolicyArgument[] | cdktf.IResolvable;
 }
-export interface MaskingPolicySignatureColumn {
+export interface MaskingPolicyDescribeOutputSignature {
+}
+
+export function maskingPolicyDescribeOutputSignatureToTerraform(struct?: MaskingPolicyDescribeOutputSignature): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function maskingPolicyDescribeOutputSignatureToHclTerraform(struct?: MaskingPolicyDescribeOutputSignature): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class MaskingPolicyDescribeOutputSignatureOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
-  * Specifies the column name to mask.
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): MaskingPolicyDescribeOutputSignature | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MaskingPolicyDescribeOutputSignature | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // type - computed: true, optional: false, required: false
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+}
+
+export class MaskingPolicyDescribeOutputSignatureList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): MaskingPolicyDescribeOutputSignatureOutputReference {
+    return new MaskingPolicyDescribeOutputSignatureOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface MaskingPolicyDescribeOutput {
+}
+
+export function maskingPolicyDescribeOutputToTerraform(struct?: MaskingPolicyDescribeOutput): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function maskingPolicyDescribeOutputToHclTerraform(struct?: MaskingPolicyDescribeOutput): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class MaskingPolicyDescribeOutputOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): MaskingPolicyDescribeOutput | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MaskingPolicyDescribeOutput | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // body - computed: true, optional: false, required: false
+  public get body() {
+    return this.getStringAttribute('body');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // return_type - computed: true, optional: false, required: false
+  public get returnType() {
+    return this.getStringAttribute('return_type');
+  }
+
+  // signature - computed: true, optional: false, required: false
+  private _signature = new MaskingPolicyDescribeOutputSignatureList(this, "signature", false);
+  public get signature() {
+    return this._signature;
+  }
+}
+
+export class MaskingPolicyDescribeOutputList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): MaskingPolicyDescribeOutputOutputReference {
+    return new MaskingPolicyDescribeOutputOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface MaskingPolicyShowOutput {
+}
+
+export function maskingPolicyShowOutputToTerraform(struct?: MaskingPolicyShowOutput): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function maskingPolicyShowOutputToHclTerraform(struct?: MaskingPolicyShowOutput): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class MaskingPolicyShowOutputOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): MaskingPolicyShowOutput | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MaskingPolicyShowOutput | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // comment - computed: true, optional: false, required: false
+  public get comment() {
+    return this.getStringAttribute('comment');
+  }
+
+  // created_on - computed: true, optional: false, required: false
+  public get createdOn() {
+    return this.getStringAttribute('created_on');
+  }
+
+  // database_name - computed: true, optional: false, required: false
+  public get databaseName() {
+    return this.getStringAttribute('database_name');
+  }
+
+  // exempt_other_policies - computed: true, optional: false, required: false
+  public get exemptOtherPolicies() {
+    return this.getBooleanAttribute('exempt_other_policies');
+  }
+
+  // kind - computed: true, optional: false, required: false
+  public get kind() {
+    return this.getStringAttribute('kind');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // owner - computed: true, optional: false, required: false
+  public get owner() {
+    return this.getStringAttribute('owner');
+  }
+
+  // owner_role_type - computed: true, optional: false, required: false
+  public get ownerRoleType() {
+    return this.getStringAttribute('owner_role_type');
+  }
+
+  // schema_name - computed: true, optional: false, required: false
+  public get schemaName() {
+    return this.getStringAttribute('schema_name');
+  }
+}
+
+export class MaskingPolicyShowOutputList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): MaskingPolicyShowOutputOutputReference {
+    return new MaskingPolicyShowOutputOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface MaskingPolicyArgument {
+  /**
+  * The argument name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/masking_policy#name MaskingPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/masking_policy#name MaskingPolicy#name}
   */
   readonly name: string;
   /**
-  * Specifies the column type to mask.
+  * The argument type. VECTOR data types are not yet supported. For more information about data types, check [Snowflake docs](https://docs.snowflake.com/en/sql-reference/intro-summary-data-types).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/masking_policy#type MaskingPolicy#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/masking_policy#type MaskingPolicy#type}
   */
   readonly type: string;
 }
 
-export function maskingPolicySignatureColumnToTerraform(struct?: MaskingPolicySignatureColumn | cdktf.IResolvable): any {
+export function maskingPolicyArgumentToTerraform(struct?: MaskingPolicyArgument | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -107,7 +376,7 @@ export function maskingPolicySignatureColumnToTerraform(struct?: MaskingPolicySi
 }
 
 
-export function maskingPolicySignatureColumnToHclTerraform(struct?: MaskingPolicySignatureColumn | cdktf.IResolvable): any {
+export function maskingPolicyArgumentToHclTerraform(struct?: MaskingPolicyArgument | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -131,7 +400,7 @@ export function maskingPolicySignatureColumnToHclTerraform(struct?: MaskingPolic
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MaskingPolicySignatureColumnOutputReference extends cdktf.ComplexObject {
+export class MaskingPolicyArgumentOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -145,7 +414,7 @@ export class MaskingPolicySignatureColumnOutputReference extends cdktf.ComplexOb
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MaskingPolicySignatureColumn | cdktf.IResolvable | undefined {
+  public get internalValue(): MaskingPolicyArgument | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -162,7 +431,7 @@ export class MaskingPolicySignatureColumnOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MaskingPolicySignatureColumn | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MaskingPolicyArgument | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -208,8 +477,8 @@ export class MaskingPolicySignatureColumnOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class MaskingPolicySignatureColumnList extends cdktf.ComplexList {
-  public internalValue? : MaskingPolicySignatureColumn[] | cdktf.IResolvable
+export class MaskingPolicyArgumentList extends cdktf.ComplexList {
+  public internalValue? : MaskingPolicyArgument[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -223,96 +492,13 @@ export class MaskingPolicySignatureColumnList extends cdktf.ComplexList {
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): MaskingPolicySignatureColumnOutputReference {
-    return new MaskingPolicySignatureColumnOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface MaskingPolicySignature {
-  /**
-  * column block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/masking_policy#column MaskingPolicy#column}
-  */
-  readonly column: MaskingPolicySignatureColumn[] | cdktf.IResolvable;
-}
-
-export function maskingPolicySignatureToTerraform(struct?: MaskingPolicySignatureOutputReference | MaskingPolicySignature): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    column: cdktf.listMapper(maskingPolicySignatureColumnToTerraform, true)(struct!.column),
-  }
-}
-
-
-export function maskingPolicySignatureToHclTerraform(struct?: MaskingPolicySignatureOutputReference | MaskingPolicySignature): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-    column: {
-      value: cdktf.listMapperHcl(maskingPolicySignatureColumnToHclTerraform, true)(struct!.column),
-      isBlock: true,
-      type: "list",
-      storageClassType: "MaskingPolicySignatureColumnList",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class MaskingPolicySignatureOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): MaskingPolicySignature | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._column?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.column = this._column?.internalValue;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: MaskingPolicySignature | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._column.internalValue = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._column.internalValue = value.column;
-    }
-  }
-
-  // column - computed: false, optional: false, required: true
-  private _column = new MaskingPolicySignatureColumnList(this, "column", false);
-  public get column() {
-    return this._column;
-  }
-  public putColumn(value: MaskingPolicySignatureColumn[] | cdktf.IResolvable) {
-    this._column.internalValue = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get columnInput() {
-    return this._column.internalValue;
+  public get(index: number): MaskingPolicyArgumentOutputReference {
+    return new MaskingPolicyArgumentOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/masking_policy snowflake_masking_policy}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/masking_policy snowflake_masking_policy}
 */
 export class MaskingPolicy extends cdktf.TerraformResource {
 
@@ -328,7 +514,7 @@ export class MaskingPolicy extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a MaskingPolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MaskingPolicy to import
-  * @param importFromId The id of the existing MaskingPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/masking_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MaskingPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/masking_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MaskingPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -340,7 +526,7 @@ export class MaskingPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/masking_policy snowflake_masking_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/masking_policy snowflake_masking_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -351,7 +537,7 @@ export class MaskingPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_masking_policy',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.95.0',
+        providerVersion: '0.96.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
@@ -362,22 +548,33 @@ export class MaskingPolicy extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._body = config.body;
     this._comment = config.comment;
     this._database = config.database;
     this._exemptOtherPolicies = config.exemptOtherPolicies;
     this._id = config.id;
-    this._ifNotExists = config.ifNotExists;
-    this._maskingExpression = config.maskingExpression;
     this._name = config.name;
-    this._orReplace = config.orReplace;
     this._returnDataType = config.returnDataType;
     this._schema = config.schema;
-    this._signature.internalValue = config.signature;
+    this._argument.internalValue = config.argument;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // body - computed: false, optional: false, required: true
+  private _body?: string; 
+  public get body() {
+    return this.getStringAttribute('body');
+  }
+  public set body(value: string) {
+    this._body = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bodyInput() {
+    return this._body;
+  }
 
   // comment - computed: false, optional: true, required: false
   private _comment?: string; 
@@ -408,12 +605,18 @@ export class MaskingPolicy extends cdktf.TerraformResource {
     return this._database;
   }
 
-  // exempt_other_policies - computed: false, optional: true, required: false
-  private _exemptOtherPolicies?: boolean | cdktf.IResolvable; 
-  public get exemptOtherPolicies() {
-    return this.getBooleanAttribute('exempt_other_policies');
+  // describe_output - computed: true, optional: false, required: false
+  private _describeOutput = new MaskingPolicyDescribeOutputList(this, "describe_output", false);
+  public get describeOutput() {
+    return this._describeOutput;
   }
-  public set exemptOtherPolicies(value: boolean | cdktf.IResolvable) {
+
+  // exempt_other_policies - computed: false, optional: true, required: false
+  private _exemptOtherPolicies?: string; 
+  public get exemptOtherPolicies() {
+    return this.getStringAttribute('exempt_other_policies');
+  }
+  public set exemptOtherPolicies(value: string) {
     this._exemptOtherPolicies = value;
   }
   public resetExemptOtherPolicies() {
@@ -445,35 +648,6 @@ export class MaskingPolicy extends cdktf.TerraformResource {
     return this._id;
   }
 
-  // if_not_exists - computed: false, optional: true, required: false
-  private _ifNotExists?: boolean | cdktf.IResolvable; 
-  public get ifNotExists() {
-    return this.getBooleanAttribute('if_not_exists');
-  }
-  public set ifNotExists(value: boolean | cdktf.IResolvable) {
-    this._ifNotExists = value;
-  }
-  public resetIfNotExists() {
-    this._ifNotExists = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get ifNotExistsInput() {
-    return this._ifNotExists;
-  }
-
-  // masking_expression - computed: false, optional: false, required: true
-  private _maskingExpression?: string; 
-  public get maskingExpression() {
-    return this.getStringAttribute('masking_expression');
-  }
-  public set maskingExpression(value: string) {
-    this._maskingExpression = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get maskingExpressionInput() {
-    return this._maskingExpression;
-  }
-
   // name - computed: false, optional: false, required: true
   private _name?: string; 
   public get name() {
@@ -485,22 +659,6 @@ export class MaskingPolicy extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
-  }
-
-  // or_replace - computed: false, optional: true, required: false
-  private _orReplace?: boolean | cdktf.IResolvable; 
-  public get orReplace() {
-    return this.getBooleanAttribute('or_replace');
-  }
-  public set orReplace(value: boolean | cdktf.IResolvable) {
-    this._orReplace = value;
-  }
-  public resetOrReplace() {
-    this._orReplace = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get orReplaceInput() {
-    return this._orReplace;
   }
 
   // return_data_type - computed: false, optional: false, required: true
@@ -529,17 +687,23 @@ export class MaskingPolicy extends cdktf.TerraformResource {
     return this._schema;
   }
 
-  // signature - computed: false, optional: false, required: true
-  private _signature = new MaskingPolicySignatureOutputReference(this, "signature");
-  public get signature() {
-    return this._signature;
+  // show_output - computed: true, optional: false, required: false
+  private _showOutput = new MaskingPolicyShowOutputList(this, "show_output", false);
+  public get showOutput() {
+    return this._showOutput;
   }
-  public putSignature(value: MaskingPolicySignature) {
-    this._signature.internalValue = value;
+
+  // argument - computed: false, optional: false, required: true
+  private _argument = new MaskingPolicyArgumentList(this, "argument", false);
+  public get argument() {
+    return this._argument;
+  }
+  public putArgument(value: MaskingPolicyArgument[] | cdktf.IResolvable) {
+    this._argument.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get signatureInput() {
-    return this._signature.internalValue;
+  public get argumentInput() {
+    return this._argument.internalValue;
   }
 
   // =========
@@ -548,22 +712,26 @@ export class MaskingPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      body: cdktf.stringToTerraform(this._body),
       comment: cdktf.stringToTerraform(this._comment),
       database: cdktf.stringToTerraform(this._database),
-      exempt_other_policies: cdktf.booleanToTerraform(this._exemptOtherPolicies),
+      exempt_other_policies: cdktf.stringToTerraform(this._exemptOtherPolicies),
       id: cdktf.stringToTerraform(this._id),
-      if_not_exists: cdktf.booleanToTerraform(this._ifNotExists),
-      masking_expression: cdktf.stringToTerraform(this._maskingExpression),
       name: cdktf.stringToTerraform(this._name),
-      or_replace: cdktf.booleanToTerraform(this._orReplace),
       return_data_type: cdktf.stringToTerraform(this._returnDataType),
       schema: cdktf.stringToTerraform(this._schema),
-      signature: maskingPolicySignatureToTerraform(this._signature.internalValue),
+      argument: cdktf.listMapper(maskingPolicyArgumentToTerraform, true)(this._argument.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      body: {
+        value: cdktf.stringToHclTerraform(this._body),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       comment: {
         value: cdktf.stringToHclTerraform(this._comment),
         isBlock: false,
@@ -577,25 +745,13 @@ export class MaskingPolicy extends cdktf.TerraformResource {
         storageClassType: "string",
       },
       exempt_other_policies: {
-        value: cdktf.booleanToHclTerraform(this._exemptOtherPolicies),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "boolean",
-      },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktf.stringToHclTerraform(this._exemptOtherPolicies),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
-      if_not_exists: {
-        value: cdktf.booleanToHclTerraform(this._ifNotExists),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "boolean",
-      },
-      masking_expression: {
-        value: cdktf.stringToHclTerraform(this._maskingExpression),
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -605,12 +761,6 @@ export class MaskingPolicy extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      or_replace: {
-        value: cdktf.booleanToHclTerraform(this._orReplace),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "boolean",
       },
       return_data_type: {
         value: cdktf.stringToHclTerraform(this._returnDataType),
@@ -624,11 +774,11 @@ export class MaskingPolicy extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
-      signature: {
-        value: maskingPolicySignatureToHclTerraform(this._signature.internalValue),
+      argument: {
+        value: cdktf.listMapperHcl(maskingPolicyArgumentToHclTerraform, true)(this._argument.internalValue),
         isBlock: true,
         type: "list",
-        storageClassType: "MaskingPolicySignatureList",
+        storageClassType: "MaskingPolicyArgumentList",
       },
     };
 
