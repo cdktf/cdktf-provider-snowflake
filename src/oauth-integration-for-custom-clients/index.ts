@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/oauth_integration_for_custom_clients
 // generated from terraform resource schema
 
