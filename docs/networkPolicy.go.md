@@ -4,7 +4,7 @@
 
 ### NetworkPolicy <a name="NetworkPolicy" id="@cdktf/provider-snowflake.networkPolicy.NetworkPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/network_policy snowflake_network_policy}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/network_policy snowflake_network_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.networkPolicy.NetworkPolicy.Initializer"></a>
 
@@ -509,7 +509,7 @@ The construct id used in the generated config for the NetworkPolicy to import.
 
 The id of the existing NetworkPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/network_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/network_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -933,7 +933,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/networkpolicy
 | <code><a href="#@cdktf/provider-snowflake.networkPolicy.NetworkPolicyConfig.property.blockedIpList">BlockedIpList</a></code> | <code>*[]*string</code> | Specifies one or more IPv4 addresses (CIDR notation) that are denied access to your Snowflake account. |
 | <code><a href="#@cdktf/provider-snowflake.networkPolicy.NetworkPolicyConfig.property.blockedNetworkRuleList">BlockedNetworkRuleList</a></code> | <code>*[]*string</code> | Specifies a list of fully qualified network rules that contain the network identifiers that are denied access to Snowflake. |
 | <code><a href="#@cdktf/provider-snowflake.networkPolicy.NetworkPolicyConfig.property.comment">Comment</a></code> | <code>*string</code> | Specifies a comment for the network policy. |
-| <code><a href="#@cdktf/provider-snowflake.networkPolicy.NetworkPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/network_policy#id NetworkPolicy#id}. |
+| <code><a href="#@cdktf/provider-snowflake.networkPolicy.NetworkPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/network_policy#id NetworkPolicy#id}. |
 
 ---
 
@@ -1019,7 +1019,7 @@ Specifies the identifier for the network policy;
 
 must be unique for the account in which the network policy is created. Due to technical limitations (read more [here](https://github.com/Snowflake-Labs/terraform-provider-snowflake/blob/main/docs/technical-documentation/identifiers_rework_design_decisions.md#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `(`, `)`, `"`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/network_policy#name NetworkPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/network_policy#name NetworkPolicy#name}
 
 ---
 
@@ -1033,7 +1033,7 @@ AllowedIpList *[]*string
 
 Specifies one or more IPv4 addresses (CIDR notation) that are allowed access to your Snowflake account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/network_policy#allowed_ip_list NetworkPolicy#allowed_ip_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/network_policy#allowed_ip_list NetworkPolicy#allowed_ip_list}
 
 ---
 
@@ -1047,7 +1047,7 @@ AllowedNetworkRuleList *[]*string
 
 Specifies a list of fully qualified network rules that contain the network identifiers that are allowed access to Snowflake.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/network_policy#allowed_network_rule_list NetworkPolicy#allowed_network_rule_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/network_policy#allowed_network_rule_list NetworkPolicy#allowed_network_rule_list}
 
 ---
 
@@ -1063,7 +1063,7 @@ Specifies one or more IPv4 addresses (CIDR notation) that are denied access to y
 
 **Do not** add `0.0.0.0/0` to `blocked_ip_list`, in order to block all IP addresses except a select list, you only need to add IP addresses to `allowed_ip_list`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/network_policy#blocked_ip_list NetworkPolicy#blocked_ip_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/network_policy#blocked_ip_list NetworkPolicy#blocked_ip_list}
 
 ---
 
@@ -1077,7 +1077,7 @@ BlockedNetworkRuleList *[]*string
 
 Specifies a list of fully qualified network rules that contain the network identifiers that are denied access to Snowflake.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/network_policy#blocked_network_rule_list NetworkPolicy#blocked_network_rule_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/network_policy#blocked_network_rule_list NetworkPolicy#blocked_network_rule_list}
 
 ---
 
@@ -1091,7 +1091,7 @@ Comment *string
 
 Specifies a comment for the network policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/network_policy#comment NetworkPolicy#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/network_policy#comment NetworkPolicy#comment}
 
 ---
 
@@ -1103,7 +1103,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/network_policy#id NetworkPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/network_policy#id NetworkPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

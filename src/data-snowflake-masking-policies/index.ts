@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/data-sources/masking_policies
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/data-sources/masking_policies
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +13,322 @@ import * as cdktf from 'cdktf';
 
 export interface DataSnowflakeMaskingPoliciesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The database from which to return the schemas from.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/data-sources/masking_policies#database DataSnowflakeMaskingPolicies#database}
-  */
-  readonly database: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/data-sources/masking_policies#id DataSnowflakeMaskingPolicies#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/data-sources/masking_policies#id DataSnowflakeMaskingPolicies#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * The schema from which to return the maskingPolicies from.
+  * Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/data-sources/masking_policies#schema DataSnowflakeMaskingPolicies#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/data-sources/masking_policies#like DataSnowflakeMaskingPolicies#like}
   */
-  readonly schema: string;
+  readonly like?: string;
+  /**
+  * Runs DESC MASKING POLICY for each masking policy returned by SHOW MASKING POLICIES. The output of describe is saved to the description field. By default this value is set to true.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/data-sources/masking_policies#with_describe DataSnowflakeMaskingPolicies#with_describe}
+  */
+  readonly withDescribe?: boolean | cdktf.IResolvable;
+  /**
+  * in block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/data-sources/masking_policies#in DataSnowflakeMaskingPolicies#in}
+  */
+  readonly in?: DataSnowflakeMaskingPoliciesIn;
+  /**
+  * limit block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/data-sources/masking_policies#limit DataSnowflakeMaskingPolicies#limit}
+  */
+  readonly limit?: DataSnowflakeMaskingPoliciesLimit;
+}
+export interface DataSnowflakeMaskingPoliciesMaskingPoliciesDescribeOutputSignature {
+}
+
+export function dataSnowflakeMaskingPoliciesMaskingPoliciesDescribeOutputSignatureToTerraform(struct?: DataSnowflakeMaskingPoliciesMaskingPoliciesDescribeOutputSignature): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataSnowflakeMaskingPoliciesMaskingPoliciesDescribeOutputSignatureToHclTerraform(struct?: DataSnowflakeMaskingPoliciesMaskingPoliciesDescribeOutputSignature): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataSnowflakeMaskingPoliciesMaskingPoliciesDescribeOutputSignatureOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataSnowflakeMaskingPoliciesMaskingPoliciesDescribeOutputSignature | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataSnowflakeMaskingPoliciesMaskingPoliciesDescribeOutputSignature | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // type - computed: true, optional: false, required: false
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+}
+
+export class DataSnowflakeMaskingPoliciesMaskingPoliciesDescribeOutputSignatureList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataSnowflakeMaskingPoliciesMaskingPoliciesDescribeOutputSignatureOutputReference {
+    return new DataSnowflakeMaskingPoliciesMaskingPoliciesDescribeOutputSignatureOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataSnowflakeMaskingPoliciesMaskingPoliciesDescribeOutput {
+}
+
+export function dataSnowflakeMaskingPoliciesMaskingPoliciesDescribeOutputToTerraform(struct?: DataSnowflakeMaskingPoliciesMaskingPoliciesDescribeOutput): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataSnowflakeMaskingPoliciesMaskingPoliciesDescribeOutputToHclTerraform(struct?: DataSnowflakeMaskingPoliciesMaskingPoliciesDescribeOutput): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataSnowflakeMaskingPoliciesMaskingPoliciesDescribeOutputOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataSnowflakeMaskingPoliciesMaskingPoliciesDescribeOutput | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataSnowflakeMaskingPoliciesMaskingPoliciesDescribeOutput | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // body - computed: true, optional: false, required: false
+  public get body() {
+    return this.getStringAttribute('body');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // return_type - computed: true, optional: false, required: false
+  public get returnType() {
+    return this.getStringAttribute('return_type');
+  }
+
+  // signature - computed: true, optional: false, required: false
+  private _signature = new DataSnowflakeMaskingPoliciesMaskingPoliciesDescribeOutputSignatureList(this, "signature", false);
+  public get signature() {
+    return this._signature;
+  }
+}
+
+export class DataSnowflakeMaskingPoliciesMaskingPoliciesDescribeOutputList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataSnowflakeMaskingPoliciesMaskingPoliciesDescribeOutputOutputReference {
+    return new DataSnowflakeMaskingPoliciesMaskingPoliciesDescribeOutputOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataSnowflakeMaskingPoliciesMaskingPoliciesShowOutput {
+}
+
+export function dataSnowflakeMaskingPoliciesMaskingPoliciesShowOutputToTerraform(struct?: DataSnowflakeMaskingPoliciesMaskingPoliciesShowOutput): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataSnowflakeMaskingPoliciesMaskingPoliciesShowOutputToHclTerraform(struct?: DataSnowflakeMaskingPoliciesMaskingPoliciesShowOutput): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataSnowflakeMaskingPoliciesMaskingPoliciesShowOutputOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataSnowflakeMaskingPoliciesMaskingPoliciesShowOutput | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataSnowflakeMaskingPoliciesMaskingPoliciesShowOutput | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // comment - computed: true, optional: false, required: false
+  public get comment() {
+    return this.getStringAttribute('comment');
+  }
+
+  // created_on - computed: true, optional: false, required: false
+  public get createdOn() {
+    return this.getStringAttribute('created_on');
+  }
+
+  // database_name - computed: true, optional: false, required: false
+  public get databaseName() {
+    return this.getStringAttribute('database_name');
+  }
+
+  // exempt_other_policies - computed: true, optional: false, required: false
+  public get exemptOtherPolicies() {
+    return this.getBooleanAttribute('exempt_other_policies');
+  }
+
+  // kind - computed: true, optional: false, required: false
+  public get kind() {
+    return this.getStringAttribute('kind');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // owner - computed: true, optional: false, required: false
+  public get owner() {
+    return this.getStringAttribute('owner');
+  }
+
+  // owner_role_type - computed: true, optional: false, required: false
+  public get ownerRoleType() {
+    return this.getStringAttribute('owner_role_type');
+  }
+
+  // schema_name - computed: true, optional: false, required: false
+  public get schemaName() {
+    return this.getStringAttribute('schema_name');
+  }
+}
+
+export class DataSnowflakeMaskingPoliciesMaskingPoliciesShowOutputList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataSnowflakeMaskingPoliciesMaskingPoliciesShowOutputOutputReference {
+    return new DataSnowflakeMaskingPoliciesMaskingPoliciesShowOutputOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface DataSnowflakeMaskingPoliciesMaskingPolicies {
 }
@@ -83,29 +381,16 @@ export class DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference extends 
     }
   }
 
-  // comment - computed: true, optional: false, required: false
-  public get comment() {
-    return this.getStringAttribute('comment');
+  // describe_output - computed: true, optional: false, required: false
+  private _describeOutput = new DataSnowflakeMaskingPoliciesMaskingPoliciesDescribeOutputList(this, "describe_output", false);
+  public get describeOutput() {
+    return this._describeOutput;
   }
 
-  // database - computed: true, optional: false, required: false
-  public get database() {
-    return this.getStringAttribute('database');
-  }
-
-  // kind - computed: true, optional: false, required: false
-  public get kind() {
-    return this.getStringAttribute('kind');
-  }
-
-  // name - computed: true, optional: false, required: false
-  public get name() {
-    return this.getStringAttribute('name');
-  }
-
-  // schema - computed: true, optional: false, required: false
-  public get schema() {
-    return this.getStringAttribute('schema');
+  // show_output - computed: true, optional: false, required: false
+  private _showOutput = new DataSnowflakeMaskingPoliciesMaskingPoliciesShowOutputList(this, "show_output", false);
+  public get showOutput() {
+    return this._showOutput;
   }
 }
 
@@ -127,9 +412,353 @@ export class DataSnowflakeMaskingPoliciesMaskingPoliciesList extends cdktf.Compl
     return new DataSnowflakeMaskingPoliciesMaskingPoliciesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataSnowflakeMaskingPoliciesIn {
+  /**
+  * Returns records for the entire account.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/data-sources/masking_policies#account DataSnowflakeMaskingPolicies#account}
+  */
+  readonly account?: boolean | cdktf.IResolvable;
+  /**
+  * Returns records for the specified application.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/data-sources/masking_policies#application DataSnowflakeMaskingPolicies#application}
+  */
+  readonly application?: string;
+  /**
+  * Returns records for the specified application package.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/data-sources/masking_policies#application_package DataSnowflakeMaskingPolicies#application_package}
+  */
+  readonly applicationPackage?: string;
+  /**
+  * Returns records for the current database in use or for a specified database.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/data-sources/masking_policies#database DataSnowflakeMaskingPolicies#database}
+  */
+  readonly database?: string;
+  /**
+  * Returns records for the current schema in use or a specified schema. Use fully qualified name.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/data-sources/masking_policies#schema DataSnowflakeMaskingPolicies#schema}
+  */
+  readonly schema?: string;
+}
+
+export function dataSnowflakeMaskingPoliciesInToTerraform(struct?: DataSnowflakeMaskingPoliciesInOutputReference | DataSnowflakeMaskingPoliciesIn): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    account: cdktf.booleanToTerraform(struct!.account),
+    application: cdktf.stringToTerraform(struct!.application),
+    application_package: cdktf.stringToTerraform(struct!.applicationPackage),
+    database: cdktf.stringToTerraform(struct!.database),
+    schema: cdktf.stringToTerraform(struct!.schema),
+  }
+}
+
+
+export function dataSnowflakeMaskingPoliciesInToHclTerraform(struct?: DataSnowflakeMaskingPoliciesInOutputReference | DataSnowflakeMaskingPoliciesIn): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    account: {
+      value: cdktf.booleanToHclTerraform(struct!.account),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    application: {
+      value: cdktf.stringToHclTerraform(struct!.application),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    application_package: {
+      value: cdktf.stringToHclTerraform(struct!.applicationPackage),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    database: {
+      value: cdktf.stringToHclTerraform(struct!.database),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    schema: {
+      value: cdktf.stringToHclTerraform(struct!.schema),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataSnowflakeMaskingPoliciesInOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DataSnowflakeMaskingPoliciesIn | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._account !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.account = this._account;
+    }
+    if (this._application !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.application = this._application;
+    }
+    if (this._applicationPackage !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.applicationPackage = this._applicationPackage;
+    }
+    if (this._database !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.database = this._database;
+    }
+    if (this._schema !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.schema = this._schema;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataSnowflakeMaskingPoliciesIn | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._account = undefined;
+      this._application = undefined;
+      this._applicationPackage = undefined;
+      this._database = undefined;
+      this._schema = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._account = value.account;
+      this._application = value.application;
+      this._applicationPackage = value.applicationPackage;
+      this._database = value.database;
+      this._schema = value.schema;
+    }
+  }
+
+  // account - computed: false, optional: true, required: false
+  private _account?: boolean | cdktf.IResolvable; 
+  public get account() {
+    return this.getBooleanAttribute('account');
+  }
+  public set account(value: boolean | cdktf.IResolvable) {
+    this._account = value;
+  }
+  public resetAccount() {
+    this._account = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accountInput() {
+    return this._account;
+  }
+
+  // application - computed: false, optional: true, required: false
+  private _application?: string; 
+  public get application() {
+    return this.getStringAttribute('application');
+  }
+  public set application(value: string) {
+    this._application = value;
+  }
+  public resetApplication() {
+    this._application = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get applicationInput() {
+    return this._application;
+  }
+
+  // application_package - computed: false, optional: true, required: false
+  private _applicationPackage?: string; 
+  public get applicationPackage() {
+    return this.getStringAttribute('application_package');
+  }
+  public set applicationPackage(value: string) {
+    this._applicationPackage = value;
+  }
+  public resetApplicationPackage() {
+    this._applicationPackage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get applicationPackageInput() {
+    return this._applicationPackage;
+  }
+
+  // database - computed: false, optional: true, required: false
+  private _database?: string; 
+  public get database() {
+    return this.getStringAttribute('database');
+  }
+  public set database(value: string) {
+    this._database = value;
+  }
+  public resetDatabase() {
+    this._database = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get databaseInput() {
+    return this._database;
+  }
+
+  // schema - computed: false, optional: true, required: false
+  private _schema?: string; 
+  public get schema() {
+    return this.getStringAttribute('schema');
+  }
+  public set schema(value: string) {
+    this._schema = value;
+  }
+  public resetSchema() {
+    this._schema = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get schemaInput() {
+    return this._schema;
+  }
+}
+export interface DataSnowflakeMaskingPoliciesLimit {
+  /**
+  * Specifies a **case-sensitive** pattern that is used to match object name. After the first match, the limit on the number of rows will be applied.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/data-sources/masking_policies#from DataSnowflakeMaskingPolicies#from}
+  */
+  readonly from?: string;
+  /**
+  * The maximum number of rows to return.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/data-sources/masking_policies#rows DataSnowflakeMaskingPolicies#rows}
+  */
+  readonly rows: number;
+}
+
+export function dataSnowflakeMaskingPoliciesLimitToTerraform(struct?: DataSnowflakeMaskingPoliciesLimitOutputReference | DataSnowflakeMaskingPoliciesLimit): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    from: cdktf.stringToTerraform(struct!.from),
+    rows: cdktf.numberToTerraform(struct!.rows),
+  }
+}
+
+
+export function dataSnowflakeMaskingPoliciesLimitToHclTerraform(struct?: DataSnowflakeMaskingPoliciesLimitOutputReference | DataSnowflakeMaskingPoliciesLimit): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    from: {
+      value: cdktf.stringToHclTerraform(struct!.from),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    rows: {
+      value: cdktf.numberToHclTerraform(struct!.rows),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataSnowflakeMaskingPoliciesLimitOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DataSnowflakeMaskingPoliciesLimit | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._from !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.from = this._from;
+    }
+    if (this._rows !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rows = this._rows;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataSnowflakeMaskingPoliciesLimit | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._from = undefined;
+      this._rows = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._from = value.from;
+      this._rows = value.rows;
+    }
+  }
+
+  // from - computed: false, optional: true, required: false
+  private _from?: string; 
+  public get from() {
+    return this.getStringAttribute('from');
+  }
+  public set from(value: string) {
+    this._from = value;
+  }
+  public resetFrom() {
+    this._from = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fromInput() {
+    return this._from;
+  }
+
+  // rows - computed: false, optional: false, required: true
+  private _rows?: number; 
+  public get rows() {
+    return this.getNumberAttribute('rows');
+  }
+  public set rows(value: number) {
+    this._rows = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rowsInput() {
+    return this._rows;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/data-sources/masking_policies snowflake_masking_policies}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/data-sources/masking_policies snowflake_masking_policies}
 */
 export class DataSnowflakeMaskingPolicies extends cdktf.TerraformDataSource {
 
@@ -145,7 +774,7 @@ export class DataSnowflakeMaskingPolicies extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataSnowflakeMaskingPolicies resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataSnowflakeMaskingPolicies to import
-  * @param importFromId The id of the existing DataSnowflakeMaskingPolicies that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/data-sources/masking_policies#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataSnowflakeMaskingPolicies that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/data-sources/masking_policies#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataSnowflakeMaskingPolicies to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -157,18 +786,18 @@ export class DataSnowflakeMaskingPolicies extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/data-sources/masking_policies snowflake_masking_policies} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/data-sources/masking_policies snowflake_masking_policies} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataSnowflakeMaskingPoliciesConfig
+  * @param options DataSnowflakeMaskingPoliciesConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: DataSnowflakeMaskingPoliciesConfig) {
+  public constructor(scope: Construct, id: string, config: DataSnowflakeMaskingPoliciesConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'snowflake_masking_policies',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.95.0',
+        providerVersion: '0.96.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
@@ -179,27 +808,16 @@ export class DataSnowflakeMaskingPolicies extends cdktf.TerraformDataSource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._database = config.database;
     this._id = config.id;
-    this._schema = config.schema;
+    this._like = config.like;
+    this._withDescribe = config.withDescribe;
+    this._in.internalValue = config.in;
+    this._limit.internalValue = config.limit;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
-
-  // database - computed: false, optional: false, required: true
-  private _database?: string; 
-  public get database() {
-    return this.getStringAttribute('database');
-  }
-  public set database(value: string) {
-    this._database = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get databaseInput() {
-    return this._database;
-  }
 
   // id - computed: true, optional: true, required: false
   private _id?: string; 
@@ -217,23 +835,74 @@ export class DataSnowflakeMaskingPolicies extends cdktf.TerraformDataSource {
     return this._id;
   }
 
+  // like - computed: false, optional: true, required: false
+  private _like?: string; 
+  public get like() {
+    return this.getStringAttribute('like');
+  }
+  public set like(value: string) {
+    this._like = value;
+  }
+  public resetLike() {
+    this._like = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get likeInput() {
+    return this._like;
+  }
+
   // masking_policies - computed: true, optional: false, required: false
   private _maskingPolicies = new DataSnowflakeMaskingPoliciesMaskingPoliciesList(this, "masking_policies", false);
   public get maskingPolicies() {
     return this._maskingPolicies;
   }
 
-  // schema - computed: false, optional: false, required: true
-  private _schema?: string; 
-  public get schema() {
-    return this.getStringAttribute('schema');
+  // with_describe - computed: false, optional: true, required: false
+  private _withDescribe?: boolean | cdktf.IResolvable; 
+  public get withDescribe() {
+    return this.getBooleanAttribute('with_describe');
   }
-  public set schema(value: string) {
-    this._schema = value;
+  public set withDescribe(value: boolean | cdktf.IResolvable) {
+    this._withDescribe = value;
+  }
+  public resetWithDescribe() {
+    this._withDescribe = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get schemaInput() {
-    return this._schema;
+  public get withDescribeInput() {
+    return this._withDescribe;
+  }
+
+  // in - computed: false, optional: true, required: false
+  private _in = new DataSnowflakeMaskingPoliciesInOutputReference(this, "in");
+  public get in() {
+    return this._in;
+  }
+  public putIn(value: DataSnowflakeMaskingPoliciesIn) {
+    this._in.internalValue = value;
+  }
+  public resetIn() {
+    this._in.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inInput() {
+    return this._in.internalValue;
+  }
+
+  // limit - computed: false, optional: true, required: false
+  private _limit = new DataSnowflakeMaskingPoliciesLimitOutputReference(this, "limit");
+  public get limit() {
+    return this._limit;
+  }
+  public putLimit(value: DataSnowflakeMaskingPoliciesLimit) {
+    this._limit.internalValue = value;
+  }
+  public resetLimit() {
+    this._limit.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get limitInput() {
+    return this._limit.internalValue;
   }
 
   // =========
@@ -242,31 +911,45 @@ export class DataSnowflakeMaskingPolicies extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      database: cdktf.stringToTerraform(this._database),
       id: cdktf.stringToTerraform(this._id),
-      schema: cdktf.stringToTerraform(this._schema),
+      like: cdktf.stringToTerraform(this._like),
+      with_describe: cdktf.booleanToTerraform(this._withDescribe),
+      in: dataSnowflakeMaskingPoliciesInToTerraform(this._in.internalValue),
+      limit: dataSnowflakeMaskingPoliciesLimitToTerraform(this._limit.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      database: {
-        value: cdktf.stringToHclTerraform(this._database),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
       id: {
         value: cdktf.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
-      schema: {
-        value: cdktf.stringToHclTerraform(this._schema),
+      like: {
+        value: cdktf.stringToHclTerraform(this._like),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      with_describe: {
+        value: cdktf.booleanToHclTerraform(this._withDescribe),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      in: {
+        value: dataSnowflakeMaskingPoliciesInToHclTerraform(this._in.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataSnowflakeMaskingPoliciesInList",
+      },
+      limit: {
+        value: dataSnowflakeMaskingPoliciesLimitToHclTerraform(this._limit.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataSnowflakeMaskingPoliciesLimitList",
       },
     };
 

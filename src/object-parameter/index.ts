@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/object_parameter
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/object_parameter
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface ObjectParameterConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/object_parameter#id ObjectParameter#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/object_parameter#id ObjectParameter#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,31 +22,31 @@ export interface ObjectParameterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Name of object parameter. Valid values are those in [object parameters](https://docs.snowflake.com/en/sql-reference/parameters.html#object-parameters).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/object_parameter#key ObjectParameter#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/object_parameter#key ObjectParameter#key}
   */
   readonly key: string;
   /**
   * Type of object to which the parameter applies. Valid values are those in [object types](https://docs.snowflake.com/en/sql-reference/parameters.html#object-types). If no value is provided, then the resource will default to setting the object parameter at account level.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/object_parameter#object_type ObjectParameter#object_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/object_parameter#object_type ObjectParameter#object_type}
   */
   readonly objectType?: string;
   /**
   * If true, the object parameter will be set on the account level.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/object_parameter#on_account ObjectParameter#on_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/object_parameter#on_account ObjectParameter#on_account}
   */
   readonly onAccount?: boolean | cdktf.IResolvable;
   /**
   * Value of object parameter, as a string. Constraints are the same as those for the parameters in Snowflake documentation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/object_parameter#value ObjectParameter#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/object_parameter#value ObjectParameter#value}
   */
   readonly value: string;
   /**
   * object_identifier block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/object_parameter#object_identifier ObjectParameter#object_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/object_parameter#object_identifier ObjectParameter#object_identifier}
   */
   readonly objectIdentifier?: ObjectParameterObjectIdentifier[] | cdktf.IResolvable;
 }
@@ -54,19 +54,19 @@ export interface ObjectParameterObjectIdentifier {
   /**
   * Name of the database that the object was created in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/object_parameter#database ObjectParameter#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/object_parameter#database ObjectParameter#database}
   */
   readonly database?: string;
   /**
   * Name of the object to set the parameter for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/object_parameter#name ObjectParameter#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/object_parameter#name ObjectParameter#name}
   */
   readonly name: string;
   /**
   * Name of the schema that the object was created in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/object_parameter#schema ObjectParameter#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/object_parameter#schema ObjectParameter#schema}
   */
   readonly schema?: string;
 }
@@ -237,7 +237,7 @@ export class ObjectParameterObjectIdentifierList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/object_parameter snowflake_object_parameter}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/object_parameter snowflake_object_parameter}
 */
 export class ObjectParameter extends cdktf.TerraformResource {
 
@@ -253,7 +253,7 @@ export class ObjectParameter extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ObjectParameter resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ObjectParameter to import
-  * @param importFromId The id of the existing ObjectParameter that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/object_parameter#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ObjectParameter that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/object_parameter#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ObjectParameter to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -265,7 +265,7 @@ export class ObjectParameter extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/object_parameter snowflake_object_parameter} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/object_parameter snowflake_object_parameter} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -276,7 +276,7 @@ export class ObjectParameter extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_object_parameter',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.95.0',
+        providerVersion: '0.96.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,

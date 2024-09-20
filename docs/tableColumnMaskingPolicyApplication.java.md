@@ -4,7 +4,7 @@
 
 ### TableColumnMaskingPolicyApplication <a name="TableColumnMaskingPolicyApplication" id="@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/table_column_masking_policy_application snowflake_table_column_masking_policy_application}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/table_column_masking_policy_application snowflake_table_column_masking_policy_application}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplication.Initializer"></a>
 
@@ -44,7 +44,7 @@ TableColumnMaskingPolicyApplication.Builder.create(Construct scope, java.lang.St
 | <code><a href="#@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplication.Initializer.parameter.column">column</a></code> | <code>java.lang.String</code> | The column to apply the masking policy to. |
 | <code><a href="#@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplication.Initializer.parameter.maskingPolicy">maskingPolicy</a></code> | <code>java.lang.String</code> | Fully qualified name (`database.schema.policyname`) of the policy to apply. |
 | <code><a href="#@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplication.Initializer.parameter.table">table</a></code> | <code>java.lang.String</code> | The fully qualified name (`database.schema.table`) of the table to apply the masking policy to. |
-| <code><a href="#@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplication.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/table_column_masking_policy_application#id TableColumnMaskingPolicyApplication#id}. |
+| <code><a href="#@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplication.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/table_column_masking_policy_application#id TableColumnMaskingPolicyApplication#id}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The column to apply the masking policy to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/table_column_masking_policy_application#column TableColumnMaskingPolicyApplication#column}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/table_column_masking_policy_application#column TableColumnMaskingPolicyApplication#column}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Fully qualified name (`database.schema.policyname`) of the policy to apply.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/table_column_masking_policy_application#masking_policy TableColumnMaskingPolicyApplication#masking_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/table_column_masking_policy_application#masking_policy TableColumnMaskingPolicyApplication#masking_policy}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The fully qualified name (`database.schema.table`) of the table to apply the masking policy to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/table_column_masking_policy_application#table TableColumnMaskingPolicyApplication#table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/table_column_masking_policy_application#table TableColumnMaskingPolicyApplication#table}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/table_column_masking_policy_application#id TableColumnMaskingPolicyApplication#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/table_column_masking_policy_application#id TableColumnMaskingPolicyApplication#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -579,7 +579,7 @@ The construct id used in the generated config for the TableColumnMaskingPolicyAp
 
 The id of the existing TableColumnMaskingPolicyApplication that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/table_column_masking_policy_application#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/table_column_masking_policy_application#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -902,7 +902,7 @@ TableColumnMaskingPolicyApplicationConfig.builder()
 | <code><a href="#@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplicationConfig.property.column">column</a></code> | <code>java.lang.String</code> | The column to apply the masking policy to. |
 | <code><a href="#@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplicationConfig.property.maskingPolicy">maskingPolicy</a></code> | <code>java.lang.String</code> | Fully qualified name (`database.schema.policyname`) of the policy to apply. |
 | <code><a href="#@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplicationConfig.property.table">table</a></code> | <code>java.lang.String</code> | The fully qualified name (`database.schema.table`) of the table to apply the masking policy to. |
-| <code><a href="#@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplicationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/table_column_masking_policy_application#id TableColumnMaskingPolicyApplication#id}. |
+| <code><a href="#@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplicationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/table_column_masking_policy_application#id TableColumnMaskingPolicyApplication#id}. |
 
 ---
 
@@ -986,7 +986,7 @@ public java.lang.String getColumn();
 
 The column to apply the masking policy to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/table_column_masking_policy_application#column TableColumnMaskingPolicyApplication#column}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/table_column_masking_policy_application#column TableColumnMaskingPolicyApplication#column}
 
 ---
 
@@ -1000,7 +1000,7 @@ public java.lang.String getMaskingPolicy();
 
 Fully qualified name (`database.schema.policyname`) of the policy to apply.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/table_column_masking_policy_application#masking_policy TableColumnMaskingPolicyApplication#masking_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/table_column_masking_policy_application#masking_policy TableColumnMaskingPolicyApplication#masking_policy}
 
 ---
 
@@ -1014,7 +1014,7 @@ public java.lang.String getTable();
 
 The fully qualified name (`database.schema.table`) of the table to apply the masking policy to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/table_column_masking_policy_application#table TableColumnMaskingPolicyApplication#table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/table_column_masking_policy_application#table TableColumnMaskingPolicyApplication#table}
 
 ---
 
@@ -1026,7 +1026,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.95.0/docs/resources/table_column_masking_policy_application#id TableColumnMaskingPolicyApplication#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/table_column_masking_policy_application#id TableColumnMaskingPolicyApplication#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
