@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.networkPolicy.NetworkPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/networkpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/networkpolicy"
 
 networkpolicy.NewNetworkPolicy(scope Construct, id *string, config NetworkPolicyConfig) NetworkPolicy
 ```
@@ -420,7 +420,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.networkPolicy.NetworkPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/networkpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/networkpolicy"
 
 networkpolicy.NetworkPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.networkPolicy.NetworkPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/networkpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/networkpolicy"
 
 networkpolicy.NetworkPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ networkpolicy.NetworkPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.networkPolicy.NetworkPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/networkpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/networkpolicy"
 
 networkpolicy.NetworkPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ networkpolicy.NetworkPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.networkPolicy.NetworkPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/networkpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/networkpolicy"
 
 networkpolicy.NetworkPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -896,7 +896,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.networkPolicy.NetworkPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/networkpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/networkpolicy"
 
 &networkpolicy.NetworkPolicyConfig {
 	Connection: interface{},
@@ -1115,7 +1115,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.networkPolicy.NetworkPolicyDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/networkpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/networkpolicy"
 
 &networkpolicy.NetworkPolicyDescribeOutput {
 
@@ -1128,7 +1128,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/networkpolicy
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.networkPolicy.NetworkPolicyShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/networkpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/networkpolicy"
 
 &networkpolicy.NetworkPolicyShowOutput {
 
@@ -1143,7 +1143,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/networkpolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.networkPolicy.NetworkPolicyDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/networkpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/networkpolicy"
 
 networkpolicy.NewNetworkPolicyDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkPolicyDescribeOutputList
 ```
@@ -1292,7 +1292,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.networkPolicy.NetworkPolicyDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/networkpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/networkpolicy"
 
 networkpolicy.NewNetworkPolicyDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkPolicyDescribeOutputOutputReference
 ```
@@ -1603,7 +1603,7 @@ func InternalValue() NetworkPolicyDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.networkPolicy.NetworkPolicyShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/networkpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/networkpolicy"
 
 networkpolicy.NewNetworkPolicyShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkPolicyShowOutputList
 ```
@@ -1752,7 +1752,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.networkPolicy.NetworkPolicyShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/networkpolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/networkpolicy"
 
 networkpolicy.NewNetworkPolicyShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkPolicyShowOutputOutputReference
 ```
