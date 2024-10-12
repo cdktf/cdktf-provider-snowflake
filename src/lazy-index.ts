@@ -32,6 +32,7 @@ Object.defineProperty(exports, 'grantOwnership', { get: function () { return req
 Object.defineProperty(exports, 'grantPrivilegesToAccountRole', { get: function () { return require('./grant-privileges-to-account-role'); } });
 Object.defineProperty(exports, 'grantPrivilegesToDatabaseRole', { get: function () { return require('./grant-privileges-to-database-role'); } });
 Object.defineProperty(exports, 'grantPrivilegesToShare', { get: function () { return require('./grant-privileges-to-share'); } });
+Object.defineProperty(exports, 'legacyServiceUser', { get: function () { return require('./legacy-service-user'); } });
 Object.defineProperty(exports, 'managedAccount', { get: function () { return require('./managed-account'); } });
 Object.defineProperty(exports, 'maskingPolicy', { get: function () { return require('./masking-policy'); } });
 Object.defineProperty(exports, 'materializedView', { get: function () { return require('./materialized-view'); } });
@@ -55,12 +56,15 @@ Object.defineProperty(exports, 'schema', { get: function () { return require('./
 Object.defineProperty(exports, 'scimIntegration', { get: function () { return require('./scim-integration'); } });
 Object.defineProperty(exports, 'secondaryDatabase', { get: function () { return require('./secondary-database'); } });
 Object.defineProperty(exports, 'sequence', { get: function () { return require('./sequence'); } });
+Object.defineProperty(exports, 'serviceUser', { get: function () { return require('./service-user'); } });
 Object.defineProperty(exports, 'sessionParameter', { get: function () { return require('./session-parameter'); } });
 Object.defineProperty(exports, 'share', { get: function () { return require('./share'); } });
 Object.defineProperty(exports, 'sharedDatabase', { get: function () { return require('./shared-database'); } });
 Object.defineProperty(exports, 'stage', { get: function () { return require('./stage'); } });
 Object.defineProperty(exports, 'storageIntegration', { get: function () { return require('./storage-integration'); } });
 Object.defineProperty(exports, 'stream', { get: function () { return require('./stream'); } });
+Object.defineProperty(exports, 'streamOnExternalTable', { get: function () { return require('./stream-on-external-table'); } });
+Object.defineProperty(exports, 'streamOnTable', { get: function () { return require('./stream-on-table'); } });
 Object.defineProperty(exports, 'streamlit', { get: function () { return require('./streamlit'); } });
 Object.defineProperty(exports, 'table', { get: function () { return require('./table'); } });
 Object.defineProperty(exports, 'tableColumnMaskingPolicyApplication', { get: function () { return require('./table-column-masking-policy-application'); } });

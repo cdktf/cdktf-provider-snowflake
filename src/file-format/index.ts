@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/file_format
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/file_format
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,119 +15,119 @@ export interface FileFormatConfig extends cdktf.TerraformMetaArguments {
   /**
   * Boolean that specifies to allow duplicate object field names (only the last one will be preserved).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/file_format#allow_duplicate FileFormat#allow_duplicate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/file_format#allow_duplicate FileFormat#allow_duplicate}
   */
   readonly allowDuplicate?: boolean | cdktf.IResolvable;
   /**
   * Boolean that specifies whether to interpret columns with no defined logical data type as UTF-8 text.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/file_format#binary_as_text FileFormat#binary_as_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/file_format#binary_as_text FileFormat#binary_as_text}
   */
   readonly binaryAsText?: boolean | cdktf.IResolvable;
   /**
   * Defines the encoding format for binary input or output.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/file_format#binary_format FileFormat#binary_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/file_format#binary_format FileFormat#binary_format}
   */
   readonly binaryFormat?: string;
   /**
   * Specifies a comment for the file format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/file_format#comment FileFormat#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/file_format#comment FileFormat#comment}
   */
   readonly comment?: string;
   /**
   * Specifies the current compression algorithm for the data file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/file_format#compression FileFormat#compression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/file_format#compression FileFormat#compression}
   */
   readonly compression?: string;
   /**
   * The database in which to create the file format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/file_format#database FileFormat#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/file_format#database FileFormat#database}
   */
   readonly database: string;
   /**
   * Defines the format of date values in the data files (data loading) or table (data unloading).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/file_format#date_format FileFormat#date_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/file_format#date_format FileFormat#date_format}
   */
   readonly dateFormat?: string;
   /**
   * Boolean that specifies whether the XML parser disables automatic conversion of numeric and Boolean values from text to native representation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/file_format#disable_auto_convert FileFormat#disable_auto_convert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/file_format#disable_auto_convert FileFormat#disable_auto_convert}
   */
   readonly disableAutoConvert?: boolean | cdktf.IResolvable;
   /**
   * Boolean that specifies whether the XML parser disables recognition of Snowflake semi-structured data tags.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/file_format#disable_snowflake_data FileFormat#disable_snowflake_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/file_format#disable_snowflake_data FileFormat#disable_snowflake_data}
   */
   readonly disableSnowflakeData?: boolean | cdktf.IResolvable;
   /**
   * Specifies whether to insert SQL NULL for empty fields in an input file, which are represented by two successive delimiters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/file_format#empty_field_as_null FileFormat#empty_field_as_null}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/file_format#empty_field_as_null FileFormat#empty_field_as_null}
   */
   readonly emptyFieldAsNull?: boolean | cdktf.IResolvable;
   /**
   * Boolean that enables parsing of octal numbers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/file_format#enable_octal FileFormat#enable_octal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/file_format#enable_octal FileFormat#enable_octal}
   */
   readonly enableOctal?: boolean | cdktf.IResolvable;
   /**
   * String (constant) that specifies the character set of the source data when loading data into a table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/file_format#encoding FileFormat#encoding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/file_format#encoding FileFormat#encoding}
   */
   readonly encoding?: string;
   /**
   * Boolean that specifies whether to generate a parsing error if the number of delimited columns (i.e. fields) in an input file does not match the number of columns in the corresponding table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/file_format#error_on_column_count_mismatch FileFormat#error_on_column_count_mismatch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/file_format#error_on_column_count_mismatch FileFormat#error_on_column_count_mismatch}
   */
   readonly errorOnColumnCountMismatch?: boolean | cdktf.IResolvable;
   /**
   * Single character string used as the escape character for field values.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/file_format#escape FileFormat#escape}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/file_format#escape FileFormat#escape}
   */
   readonly escape?: string;
   /**
   * Single character string used as the escape character for unenclosed field values only.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/file_format#escape_unenclosed_field FileFormat#escape_unenclosed_field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/file_format#escape_unenclosed_field FileFormat#escape_unenclosed_field}
   */
   readonly escapeUnenclosedField?: string;
   /**
   * Specifies one or more singlebyte or multibyte characters that separate fields in an input file (data loading) or unloaded file (data unloading).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/file_format#field_delimiter FileFormat#field_delimiter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/file_format#field_delimiter FileFormat#field_delimiter}
   */
   readonly fieldDelimiter?: string;
   /**
   * Character used to enclose strings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/file_format#field_optionally_enclosed_by FileFormat#field_optionally_enclosed_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/file_format#field_optionally_enclosed_by FileFormat#field_optionally_enclosed_by}
   */
   readonly fieldOptionallyEnclosedBy?: string;
   /**
   * Specifies the extension for files unloaded to a stage.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/file_format#file_extension FileFormat#file_extension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/file_format#file_extension FileFormat#file_extension}
   */
   readonly fileExtension?: string;
   /**
   * Specifies the format of the input files (for data loading) or output files (for data unloading).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/file_format#format_type FileFormat#format_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/file_format#format_type FileFormat#format_type}
   */
   readonly formatType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/file_format#id FileFormat#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/file_format#id FileFormat#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -136,109 +136,109 @@ export interface FileFormatConfig extends cdktf.TerraformMetaArguments {
   /**
   * Boolean that specifies whether UTF-8 encoding errors produce error conditions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/file_format#ignore_utf8_errors FileFormat#ignore_utf8_errors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/file_format#ignore_utf8_errors FileFormat#ignore_utf8_errors}
   */
   readonly ignoreUtf8Errors?: boolean | cdktf.IResolvable;
   /**
   * Specifies the identifier for the file format; must be unique for the database and schema in which the file format is created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/file_format#name FileFormat#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/file_format#name FileFormat#name}
   */
   readonly name: string;
   /**
   * String used to convert to and from SQL NULL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/file_format#null_if FileFormat#null_if}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/file_format#null_if FileFormat#null_if}
   */
   readonly nullIf?: string[];
   /**
   * Boolean that specifies whether to use the first row headers in the data files to determine column names.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/file_format#parse_header FileFormat#parse_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/file_format#parse_header FileFormat#parse_header}
   */
   readonly parseHeader?: boolean | cdktf.IResolvable;
   /**
   * Boolean that specifies whether the XML parser preserves leading and trailing spaces in element content.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/file_format#preserve_space FileFormat#preserve_space}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/file_format#preserve_space FileFormat#preserve_space}
   */
   readonly preserveSpace?: boolean | cdktf.IResolvable;
   /**
   * Specifies one or more singlebyte or multibyte characters that separate records in an input file (data loading) or unloaded file (data unloading).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/file_format#record_delimiter FileFormat#record_delimiter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/file_format#record_delimiter FileFormat#record_delimiter}
   */
   readonly recordDelimiter?: string;
   /**
   * Boolean that specifies whether to replace invalid UTF-8 characters with the Unicode replacement character (�).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/file_format#replace_invalid_characters FileFormat#replace_invalid_characters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/file_format#replace_invalid_characters FileFormat#replace_invalid_characters}
   */
   readonly replaceInvalidCharacters?: boolean | cdktf.IResolvable;
   /**
   * The schema in which to create the file format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/file_format#schema FileFormat#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/file_format#schema FileFormat#schema}
   */
   readonly schema: string;
   /**
   * Boolean that specifies to skip any blank lines encountered in the data files.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/file_format#skip_blank_lines FileFormat#skip_blank_lines}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/file_format#skip_blank_lines FileFormat#skip_blank_lines}
   */
   readonly skipBlankLines?: boolean | cdktf.IResolvable;
   /**
   * Boolean that specifies whether to skip the BOM (byte order mark), if present in a data file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/file_format#skip_byte_order_mark FileFormat#skip_byte_order_mark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/file_format#skip_byte_order_mark FileFormat#skip_byte_order_mark}
   */
   readonly skipByteOrderMark?: boolean | cdktf.IResolvable;
   /**
   * Number of lines at the start of the file to skip.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/file_format#skip_header FileFormat#skip_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/file_format#skip_header FileFormat#skip_header}
   */
   readonly skipHeader?: number;
   /**
   * Boolean that instructs the JSON parser to remove object fields or array elements containing null values.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/file_format#strip_null_values FileFormat#strip_null_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/file_format#strip_null_values FileFormat#strip_null_values}
   */
   readonly stripNullValues?: boolean | cdktf.IResolvable;
   /**
   * Boolean that instructs the JSON parser to remove outer brackets.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/file_format#strip_outer_array FileFormat#strip_outer_array}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/file_format#strip_outer_array FileFormat#strip_outer_array}
   */
   readonly stripOuterArray?: boolean | cdktf.IResolvable;
   /**
   * Boolean that specifies whether the XML parser strips out the outer XML element, exposing 2nd level elements as separate documents.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/file_format#strip_outer_element FileFormat#strip_outer_element}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/file_format#strip_outer_element FileFormat#strip_outer_element}
   */
   readonly stripOuterElement?: boolean | cdktf.IResolvable;
   /**
   * Defines the format of time values in the data files (data loading) or table (data unloading).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/file_format#time_format FileFormat#time_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/file_format#time_format FileFormat#time_format}
   */
   readonly timeFormat?: string;
   /**
   * Defines the format of timestamp values in the data files (data loading) or table (data unloading).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/file_format#timestamp_format FileFormat#timestamp_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/file_format#timestamp_format FileFormat#timestamp_format}
   */
   readonly timestampFormat?: string;
   /**
   * Boolean that specifies whether to remove white space from fields.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/file_format#trim_space FileFormat#trim_space}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/file_format#trim_space FileFormat#trim_space}
   */
   readonly trimSpace?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/file_format snowflake_file_format}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/file_format snowflake_file_format}
 */
 export class FileFormat extends cdktf.TerraformResource {
 
@@ -254,7 +254,7 @@ export class FileFormat extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a FileFormat resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FileFormat to import
-  * @param importFromId The id of the existing FileFormat that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/file_format#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing FileFormat that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/file_format#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FileFormat to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -266,7 +266,7 @@ export class FileFormat extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/file_format snowflake_file_format} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/file_format snowflake_file_format} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -277,7 +277,7 @@ export class FileFormat extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_file_format',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.96.0',
+        providerVersion: '0.97.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
