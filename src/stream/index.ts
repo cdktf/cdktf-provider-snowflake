@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/stream
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/stream
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +10,23 @@ export interface StreamConfig extends cdktf.TerraformMetaArguments {
   /**
   * Type of the stream that will be created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/stream#append_only Stream#append_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/stream#append_only Stream#append_only}
   */
   readonly appendOnly?: boolean | cdktf.IResolvable;
   /**
   * Specifies a comment for the stream.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/stream#comment Stream#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/stream#comment Stream#comment}
   */
   readonly comment?: string;
   /**
   * The database in which to create the stream.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/stream#database Stream#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/stream#database Stream#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/stream#id Stream#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/stream#id Stream#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,49 +35,49 @@ export interface StreamConfig extends cdktf.TerraformMetaArguments {
   /**
   * Create an insert only stream type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/stream#insert_only Stream#insert_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/stream#insert_only Stream#insert_only}
   */
   readonly insertOnly?: boolean | cdktf.IResolvable;
   /**
   * Specifies the identifier for the stream; must be unique for the database and schema in which the stream is created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/stream#name Stream#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/stream#name Stream#name}
   */
   readonly name: string;
   /**
   * Specifies an identifier for the stage the stream will monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/stream#on_stage Stream#on_stage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/stream#on_stage Stream#on_stage}
   */
   readonly onStage?: string;
   /**
   * Specifies an identifier for the table the stream will monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/stream#on_table Stream#on_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/stream#on_table Stream#on_table}
   */
   readonly onTable?: string;
   /**
   * Specifies an identifier for the view the stream will monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/stream#on_view Stream#on_view}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/stream#on_view Stream#on_view}
   */
   readonly onView?: string;
   /**
   * The schema in which to create the stream.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/stream#schema Stream#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/stream#schema Stream#schema}
   */
   readonly schema: string;
   /**
   * Specifies whether to return all existing rows in the source table as row inserts the first time the stream is consumed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/stream#show_initial_rows Stream#show_initial_rows}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/stream#show_initial_rows Stream#show_initial_rows}
   */
   readonly showInitialRows?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/stream snowflake_stream}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/stream snowflake_stream}
 */
 export class Stream extends cdktf.TerraformResource {
 
@@ -98,7 +93,7 @@ export class Stream extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Stream resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Stream to import
-  * @param importFromId The id of the existing Stream that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/stream#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Stream that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/stream#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Stream to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -110,7 +105,7 @@ export class Stream extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.96.0/docs/resources/stream snowflake_stream} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/stream snowflake_stream} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -121,7 +116,7 @@ export class Stream extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_stream',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.96.0',
+        providerVersion: '0.97.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
