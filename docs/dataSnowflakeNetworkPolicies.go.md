@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeNetworkPolicies.DataSnowflakeNetworkPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakenetworkpolicies"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakenetworkpolicies"
 
 datasnowflakenetworkpolicies.NewDataSnowflakeNetworkPolicies(scope Construct, id *string, config DataSnowflakeNetworkPoliciesConfig) DataSnowflakeNetworkPolicies
 ```
@@ -297,7 +297,7 @@ func ResetWithDescribe()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeNetworkPolicies.DataSnowflakeNetworkPolicies.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakenetworkpolicies"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakenetworkpolicies"
 
 datasnowflakenetworkpolicies.DataSnowflakeNetworkPolicies_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeNetworkPolicies.DataSnowflakeNetworkPolicies.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakenetworkpolicies"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakenetworkpolicies"
 
 datasnowflakenetworkpolicies.DataSnowflakeNetworkPolicies_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datasnowflakenetworkpolicies.DataSnowflakeNetworkPolicies_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeNetworkPolicies.DataSnowflakeNetworkPolicies.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakenetworkpolicies"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakenetworkpolicies"
 
 datasnowflakenetworkpolicies.DataSnowflakeNetworkPolicies_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datasnowflakenetworkpolicies.DataSnowflakeNetworkPolicies_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.dataSnowflakeNetworkPolicies.DataSnowflakeNetworkPolicies.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakenetworkpolicies"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakenetworkpolicies"
 
 datasnowflakenetworkpolicies.DataSnowflakeNetworkPolicies_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -641,7 +641,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeNetworkPolicies.DataSnowflakeNetworkPoliciesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakenetworkpolicies"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakenetworkpolicies"
 
 &datasnowflakenetworkpolicies.DataSnowflakeNetworkPoliciesConfig {
 	Connection: interface{},
@@ -794,7 +794,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeNetworkPolicies.DataSnowflakeNetworkPoliciesNetworkPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakenetworkpolicies"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakenetworkpolicies"
 
 &datasnowflakenetworkpolicies.DataSnowflakeNetworkPoliciesNetworkPolicies {
 
@@ -807,7 +807,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakenetw
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeNetworkPolicies.DataSnowflakeNetworkPoliciesNetworkPoliciesDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakenetworkpolicies"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakenetworkpolicies"
 
 &datasnowflakenetworkpolicies.DataSnowflakeNetworkPoliciesNetworkPoliciesDescribeOutput {
 
@@ -820,7 +820,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakenetw
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeNetworkPolicies.DataSnowflakeNetworkPoliciesNetworkPoliciesShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakenetworkpolicies"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakenetworkpolicies"
 
 &datasnowflakenetworkpolicies.DataSnowflakeNetworkPoliciesNetworkPoliciesShowOutput {
 
@@ -835,7 +835,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakenetw
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeNetworkPolicies.DataSnowflakeNetworkPoliciesNetworkPoliciesDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakenetworkpolicies"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakenetworkpolicies"
 
 datasnowflakenetworkpolicies.NewDataSnowflakeNetworkPoliciesNetworkPoliciesDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeNetworkPoliciesNetworkPoliciesDescribeOutputList
 ```
@@ -984,7 +984,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeNetworkPolicies.DataSnowflakeNetworkPoliciesNetworkPoliciesDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakenetworkpolicies"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakenetworkpolicies"
 
 datasnowflakenetworkpolicies.NewDataSnowflakeNetworkPoliciesNetworkPoliciesDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeNetworkPoliciesNetworkPoliciesDescribeOutputOutputReference
 ```
@@ -1295,7 +1295,7 @@ func InternalValue() DataSnowflakeNetworkPoliciesNetworkPoliciesDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeNetworkPolicies.DataSnowflakeNetworkPoliciesNetworkPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakenetworkpolicies"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakenetworkpolicies"
 
 datasnowflakenetworkpolicies.NewDataSnowflakeNetworkPoliciesNetworkPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeNetworkPoliciesNetworkPoliciesList
 ```
@@ -1444,7 +1444,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeNetworkPolicies.DataSnowflakeNetworkPoliciesNetworkPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakenetworkpolicies"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakenetworkpolicies"
 
 datasnowflakenetworkpolicies.NewDataSnowflakeNetworkPoliciesNetworkPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeNetworkPoliciesNetworkPoliciesOutputReference
 ```
@@ -1733,7 +1733,7 @@ func InternalValue() DataSnowflakeNetworkPoliciesNetworkPolicies
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeNetworkPolicies.DataSnowflakeNetworkPoliciesNetworkPoliciesShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakenetworkpolicies"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakenetworkpolicies"
 
 datasnowflakenetworkpolicies.NewDataSnowflakeNetworkPoliciesNetworkPoliciesShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeNetworkPoliciesNetworkPoliciesShowOutputList
 ```
@@ -1882,7 +1882,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeNetworkPolicies.DataSnowflakeNetworkPoliciesNetworkPoliciesShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakenetworkpolicies"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakenetworkpolicies"
 
 datasnowflakenetworkpolicies.NewDataSnowflakeNetworkPoliciesNetworkPoliciesShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeNetworkPoliciesNetworkPoliciesShowOutputOutputReference
 ```
