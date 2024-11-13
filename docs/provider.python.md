@@ -4,7 +4,7 @@
 
 ### SnowflakeProvider <a name="SnowflakeProvider" id="@cdktf/provider-snowflake.provider.SnowflakeProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs snowflake}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs snowflake}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer"></a>
 
@@ -15,30 +15,36 @@ provider.SnowflakeProvider(
   scope: Construct,
   id: str,
   account: str = None,
+  account_name: str = None,
   alias: str = None,
   authenticator: str = None,
   browser_auth: typing.Union[bool, IResolvable] = None,
   client_ip: str = None,
-  client_request_mfa_token: typing.Union[bool, IResolvable] = None,
-  client_store_temporary_credential: typing.Union[bool, IResolvable] = None,
+  client_request_mfa_token: str = None,
+  client_store_temporary_credential: str = None,
   client_timeout: typing.Union[int, float] = None,
+  disable_console_login: str = None,
   disable_query_context_cache: typing.Union[bool, IResolvable] = None,
   disable_telemetry: typing.Union[bool, IResolvable] = None,
+  driver_tracing: str = None,
   external_browser_timeout: typing.Union[int, float] = None,
   host: str = None,
+  include_retry_reason: str = None,
   insecure_mode: typing.Union[bool, IResolvable] = None,
   jwt_client_timeout: typing.Union[int, float] = None,
   jwt_expire_timeout: typing.Union[int, float] = None,
   keep_session_alive: typing.Union[bool, IResolvable] = None,
   login_timeout: typing.Union[int, float] = None,
+  max_retry_count: typing.Union[int, float] = None,
   oauth_access_token: str = None,
   oauth_client_id: str = None,
   oauth_client_secret: str = None,
   oauth_endpoint: str = None,
   oauth_redirect_url: str = None,
   oauth_refresh_token: str = None,
-  ocsp_fail_open: typing.Union[bool, IResolvable] = None,
+  ocsp_fail_open: str = None,
   okta_url: str = None,
+  organization_name: str = None,
   params: typing.Mapping[str] = None,
   passcode: str = None,
   passcode_in_password: typing.Union[bool, IResolvable] = None,
@@ -53,11 +59,12 @@ provider.SnowflakeProvider(
   request_timeout: typing.Union[int, float] = None,
   role: str = None,
   session_params: typing.Mapping[str] = None,
+  tmp_directory_path: str = None,
   token: str = None,
   token_accessor: SnowflakeProviderTokenAccessor = None,
   user: str = None,
   username: str = None,
-  validate_default_parameters: typing.Union[bool, IResolvable] = None,
+  validate_default_parameters: str = None,
   warehouse: str = None
 )
 ```
@@ -66,50 +73,57 @@ provider.SnowflakeProvider(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.account">account</a></code> | <code>str</code> | Specifies your Snowflake account identifier assigned, by Snowflake. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.account">account</a></code> | <code>str</code> | Use `account_name` and `organization_name` instead. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.accountName">account_name</a></code> | <code>str</code> | Specifies your Snowflake account name assigned by Snowflake. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.alias">alias</a></code> | <code>str</code> | Alias name. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.authenticator">authenticator</a></code> | <code>str</code> | Specifies the [authentication type](https://pkg.go.dev/github.com/snowflakedb/gosnowflake#AuthType) to use when connecting to Snowflake. Valid values include: Snowflake, OAuth, ExternalBrowser, Okta, JWT, TokenAccessor, UsernamePasswordMFA. Can also be sourced from the `SNOWFLAKE_AUTHENTICATOR` environment variable. It has to be set explicitly to JWT for private key authentication. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.authenticator">authenticator</a></code> | <code>str</code> | Specifies the [authentication type](https://pkg.go.dev/github.com/snowflakedb/gosnowflake#AuthType) to use when connecting to Snowflake. Valid options are: `SNOWFLAKE` \| `OAUTH` \| `EXTERNALBROWSER` \| `OKTA` \| `JWT` \| `SNOWFLAKE_JWT` \| `TOKENACCESSOR` \| `USERNAMEPASSWORDMFA`. Value `JWT` is deprecated and will be removed in future releases. Can also be sourced from the `SNOWFLAKE_AUTHENTICATOR` environment variable. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.browserAuth">browser_auth</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Required when `oauth_refresh_token` is used. Can also be sourced from `SNOWFLAKE_USE_BROWSER_AUTH` environment variable. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.clientIp">client_ip</a></code> | <code>str</code> | IP address for network checks. Can also be sourced from the `SNOWFLAKE_CLIENT_IP` environment variable. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.clientRequestMfaToken">client_request_mfa_token</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When true the MFA token is cached in the credential manager. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.clientStoreTemporaryCredential">client_store_temporary_credential</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When true the ID token is cached in the credential manager. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.clientRequestMfaToken">client_request_mfa_token</a></code> | <code>str</code> | When true the MFA token is cached in the credential manager. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.clientStoreTemporaryCredential">client_store_temporary_credential</a></code> | <code>str</code> | When true the ID token is cached in the credential manager. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.clientTimeout">client_timeout</a></code> | <code>typing.Union[int, float]</code> | The timeout in seconds for the client to complete the authentication. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.disableQueryContextCache">disable_query_context_cache</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Should HTAP query context cache be disabled. Can also be sourced from the `SNOWFLAKE_DISABLE_QUERY_CONTEXT_CACHE` environment variable. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.disableTelemetry">disable_telemetry</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether to disable telemetry. Can also be sourced from the `SNOWFLAKE_DISABLE_TELEMETRY` environment variable. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.disableConsoleLogin">disable_console_login</a></code> | <code>str</code> | Indicates whether console login should be disabled in the driver. Can also be sourced from the `SNOWFLAKE_DISABLE_CONSOLE_LOGIN` environment variable. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.disableQueryContextCache">disable_query_context_cache</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Disables HTAP query context cache in the driver. Can also be sourced from the `SNOWFLAKE_DISABLE_QUERY_CONTEXT_CACHE` environment variable. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.disableTelemetry">disable_telemetry</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Disables telemetry in the driver. Can also be sourced from the `DISABLE_TELEMETRY` environment variable. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.driverTracing">driver_tracing</a></code> | <code>str</code> | Specifies the logging level to be used by the driver. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.externalBrowserTimeout">external_browser_timeout</a></code> | <code>typing.Union[int, float]</code> | The timeout in seconds for the external browser to complete the authentication. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.host">host</a></code> | <code>str</code> | Supports passing in a custom host value to the snowflake go driver for use with privatelink. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.host">host</a></code> | <code>str</code> | Specifies a custom host value used by the driver for privatelink connections. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.includeRetryReason">include_retry_reason</a></code> | <code>str</code> | Should retried request contain retry reason. Can also be sourced from the `SNOWFLAKE_INCLUDE_RETRY_REASON` environment variable. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.insecureMode">insecure_mode</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, bypass the Online Certificate Status Protocol (OCSP) certificate revocation check. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.jwtClientTimeout">jwt_client_timeout</a></code> | <code>typing.Union[int, float]</code> | The timeout in seconds for the JWT client to complete the authentication. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.jwtExpireTimeout">jwt_expire_timeout</a></code> | <code>typing.Union[int, float]</code> | JWT expire after timeout in seconds. Can also be sourced from the `SNOWFLAKE_JWT_EXPIRE_TIMEOUT` environment variable. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.keepSessionAlive">keep_session_alive</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enables the session to persist even after the connection is closed. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.loginTimeout">login_timeout</a></code> | <code>typing.Union[int, float]</code> | Login retry timeout EXCLUDING network roundtrip and read out http response. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.loginTimeout">login_timeout</a></code> | <code>typing.Union[int, float]</code> | Login retry timeout in seconds EXCLUDING network roundtrip and read out http response. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.maxRetryCount">max_retry_count</a></code> | <code>typing.Union[int, float]</code> | Specifies how many times non-periodic HTTP request can be retried by the driver. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.oauthAccessToken">oauth_access_token</a></code> | <code>str</code> | Token for use with OAuth. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.oauthClientId">oauth_client_id</a></code> | <code>str</code> | Required when `oauth_refresh_token` is used. Can also be sourced from `SNOWFLAKE_OAUTH_CLIENT_ID` environment variable. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.oauthClientSecret">oauth_client_secret</a></code> | <code>str</code> | Required when `oauth_refresh_token` is used. Can also be sourced from `SNOWFLAKE_OAUTH_CLIENT_SECRET` environment variable. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.oauthEndpoint">oauth_endpoint</a></code> | <code>str</code> | Required when `oauth_refresh_token` is used. Can also be sourced from `SNOWFLAKE_OAUTH_ENDPOINT` environment variable. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.oauthRedirectUrl">oauth_redirect_url</a></code> | <code>str</code> | Required when `oauth_refresh_token` is used. Can also be sourced from `SNOWFLAKE_OAUTH_REDIRECT_URL` environment variable. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.oauthRefreshToken">oauth_refresh_token</a></code> | <code>str</code> | Token for use with OAuth. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.ocspFailOpen">ocsp_fail_open</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | True represents OCSP fail open mode. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.oktaUrl">okta_url</a></code> | <code>str</code> | The URL of the Okta server. e.g. https://example.okta.com. Can also be sourced from the `SNOWFLAKE_OKTA_URL` environment variable. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.params">params</a></code> | <code>typing.Mapping[str]</code> | Sets other connection (i.e. session) parameters. [Parameters](https://docs.snowflake.com/en/sql-reference/parameters). |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.ocspFailOpen">ocsp_fail_open</a></code> | <code>str</code> | True represents OCSP fail open mode. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.oktaUrl">okta_url</a></code> | <code>str</code> | The URL of the Okta server. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.organizationName">organization_name</a></code> | <code>str</code> | Specifies your Snowflake organization name assigned by Snowflake. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.params">params</a></code> | <code>typing.Mapping[str]</code> | Sets other connection (i.e. session) parameters. [Parameters](https://docs.snowflake.com/en/sql-reference/parameters). This field can not be set with environmental variables. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.passcode">passcode</a></code> | <code>str</code> | Specifies the passcode provided by Duo when using multi-factor authentication (MFA) for login. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.passcodeInPassword">passcode_in_password</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | False by default. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.password">password</a></code> | <code>str</code> | Password for username+password auth. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.port">port</a></code> | <code>typing.Union[int, float]</code> | Support custom port values to snowflake go driver for use with privatelink. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.password">password</a></code> | <code>str</code> | Password for user + password auth. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.port">port</a></code> | <code>typing.Union[int, float]</code> | Specifies a custom port value used by the driver for privatelink connections. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.privateKey">private_key</a></code> | <code>str</code> | Private Key for username+private-key auth. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.privateKeyPassphrase">private_key_passphrase</a></code> | <code>str</code> | Supports the encryption ciphers aes-128-cbc, aes-128-gcm, aes-192-cbc, aes-192-gcm, aes-256-cbc, aes-256-gcm, and des-ede3-cbc. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.privateKeyPath">private_key_path</a></code> | <code>str</code> | Path to a private key for using keypair authentication. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.profile">profile</a></code> | <code>str</code> | Sets the profile to read from ~/.snowflake/config file. Can also be sourced from the `SNOWFLAKE_PROFILE` environment variable. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.protocol">protocol</a></code> | <code>str</code> | Either http or https, defaults to https. Can also be sourced from the `SNOWFLAKE_PROTOCOL` environment variable. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.protocol">protocol</a></code> | <code>str</code> | A protocol used in the connection. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.region">region</a></code> | <code>str</code> | Snowflake region, such as "eu-central-1", with this parameter. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.requestTimeout">request_timeout</a></code> | <code>typing.Union[int, float]</code> | request retry timeout EXCLUDING network roundtrip and read out http response. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.requestTimeout">request_timeout</a></code> | <code>typing.Union[int, float]</code> | request retry timeout in seconds EXCLUDING network roundtrip and read out http response. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.role">role</a></code> | <code>str</code> | Specifies the role to use by default for accessing Snowflake objects in the client session. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.sessionParams">session_params</a></code> | <code>typing.Mapping[str]</code> | Sets session parameters. [Parameters](https://docs.snowflake.com/en/sql-reference/parameters). |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.tmpDirectoryPath">tmp_directory_path</a></code> | <code>str</code> | Sets temporary directory used by the driver for operations like encrypting, compressing etc. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.token">token</a></code> | <code>str</code> | Token to use for OAuth and other forms of token based auth. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.tokenAccessor">token_accessor</a></code> | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderTokenAccessor">SnowflakeProviderTokenAccessor</a></code> | token_accessor block. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.user">user</a></code> | <code>str</code> | Username. Can also be sourced from the `SNOWFLAKE_USER` environment variable. Required unless using `profile`. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.username">username</a></code> | <code>str</code> | Username for username+password authentication. Can also be sourced from the `SNOWFLAKE_USERNAME` environment variable. Required unless using `profile`. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.validateDefaultParameters">validate_default_parameters</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | True by default. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.user">user</a></code> | <code>str</code> | Username. Required unless using `profile`. Can also be sourced from the `SNOWFLAKE_USER` environment variable. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.username">username</a></code> | <code>str</code> | Username for user + password authentication. Required unless using `profile`. Can also be sourced from the `SNOWFLAKE_USERNAME` environment variable. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.validateDefaultParameters">validate_default_parameters</a></code> | <code>str</code> | True by default. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.warehouse">warehouse</a></code> | <code>str</code> | Specifies the virtual warehouse to use by default for queries, loading, etc. |
 
 ---
@@ -136,11 +150,23 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Specifies your Snowflake account identifier assigned, by Snowflake.
+Use `account_name` and `organization_name` instead.
 
-For information about account identifiers, see the [Snowflake documentation](https://docs.snowflake.com/en/user-guide/admin-account-identifier.html). Can also be sourced from the `SNOWFLAKE_ACCOUNT` environment variable. Required unless using `profile`.
+Specifies your Snowflake account identifier assigned, by Snowflake. The [account locator](https://docs.snowflake.com/en/user-guide/admin-account-identifier#format-2-account-locator-in-a-region) format is not supported. For information about account identifiers, see the [Snowflake documentation](https://docs.snowflake.com/en/user-guide/admin-account-identifier.html). Required unless using `profile`. Can also be sourced from the `SNOWFLAKE_ACCOUNT` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#account SnowflakeProvider#account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#account SnowflakeProvider#account}
+
+---
+
+##### `account_name`<sup>Optional</sup> <a name="account_name" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.accountName"></a>
+
+- *Type:* str
+
+Specifies your Snowflake account name assigned by Snowflake.
+
+For information about account identifiers, see the [Snowflake documentation](https://docs.snowflake.com/en/user-guide/admin-account-identifier#account-name). Required unless using `profile`. Can also be sourced from the `SNOWFLAKE_ACCOUNT_NAME` environment variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#account_name SnowflakeProvider#account_name}
 
 ---
 
@@ -150,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#alias SnowflakeProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#alias SnowflakeProvider#alias}
 
 ---
 
@@ -158,9 +184,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Specifies the [authentication type](https://pkg.go.dev/github.com/snowflakedb/gosnowflake#AuthType) to use when connecting to Snowflake. Valid values include: Snowflake, OAuth, ExternalBrowser, Okta, JWT, TokenAccessor, UsernamePasswordMFA. Can also be sourced from the `SNOWFLAKE_AUTHENTICATOR` environment variable. It has to be set explicitly to JWT for private key authentication.
+Specifies the [authentication type](https://pkg.go.dev/github.com/snowflakedb/gosnowflake#AuthType) to use when connecting to Snowflake. Valid options are: `SNOWFLAKE` | `OAUTH` | `EXTERNALBROWSER` | `OKTA` | `JWT` | `SNOWFLAKE_JWT` | `TOKENACCESSOR` | `USERNAMEPASSWORDMFA`. Value `JWT` is deprecated and will be removed in future releases. Can also be sourced from the `SNOWFLAKE_AUTHENTICATOR` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#authenticator SnowflakeProvider#authenticator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#authenticator SnowflakeProvider#authenticator}
 
 ---
 
@@ -170,7 +196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Required when `oauth_refresh_token` is used. Can also be sourced from `SNOWFLAKE_USE_BROWSER_AUTH` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#browser_auth SnowflakeProvider#browser_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#browser_auth SnowflakeProvider#browser_auth}
 
 ---
 
@@ -180,31 +206,31 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 IP address for network checks. Can also be sourced from the `SNOWFLAKE_CLIENT_IP` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#client_ip SnowflakeProvider#client_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#client_ip SnowflakeProvider#client_ip}
 
 ---
 
 ##### `client_request_mfa_token`<sup>Optional</sup> <a name="client_request_mfa_token" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.clientRequestMfaToken"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* str
 
 When true the MFA token is cached in the credential manager.
 
 True by default in Windows/OSX. False for Linux. Can also be sourced from the `SNOWFLAKE_CLIENT_REQUEST_MFA_TOKEN` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#client_request_mfa_token SnowflakeProvider#client_request_mfa_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#client_request_mfa_token SnowflakeProvider#client_request_mfa_token}
 
 ---
 
 ##### `client_store_temporary_credential`<sup>Optional</sup> <a name="client_store_temporary_credential" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.clientStoreTemporaryCredential"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* str
 
 When true the ID token is cached in the credential manager.
 
 True by default in Windows/OSX. False for Linux. Can also be sourced from the `SNOWFLAKE_CLIENT_STORE_TEMPORARY_CREDENTIAL` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#client_store_temporary_credential SnowflakeProvider#client_store_temporary_credential}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#client_store_temporary_credential SnowflakeProvider#client_store_temporary_credential}
 
 ---
 
@@ -214,9 +240,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The timeout in seconds for the client to complete the authentication.
 
-Default is 900 seconds. Can also be sourced from the `SNOWFLAKE_CLIENT_TIMEOUT` environment variable.
+Can also be sourced from the `SNOWFLAKE_CLIENT_TIMEOUT` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#client_timeout SnowflakeProvider#client_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#client_timeout SnowflakeProvider#client_timeout}
+
+---
+
+##### `disable_console_login`<sup>Optional</sup> <a name="disable_console_login" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.disableConsoleLogin"></a>
+
+- *Type:* str
+
+Indicates whether console login should be disabled in the driver. Can also be sourced from the `SNOWFLAKE_DISABLE_CONSOLE_LOGIN` environment variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#disable_console_login SnowflakeProvider#disable_console_login}
 
 ---
 
@@ -224,9 +260,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Should HTAP query context cache be disabled. Can also be sourced from the `SNOWFLAKE_DISABLE_QUERY_CONTEXT_CACHE` environment variable.
+Disables HTAP query context cache in the driver. Can also be sourced from the `SNOWFLAKE_DISABLE_QUERY_CONTEXT_CACHE` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#disable_query_context_cache SnowflakeProvider#disable_query_context_cache}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#disable_query_context_cache SnowflakeProvider#disable_query_context_cache}
 
 ---
 
@@ -234,9 +270,21 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Indicates whether to disable telemetry. Can also be sourced from the `SNOWFLAKE_DISABLE_TELEMETRY` environment variable.
+Disables telemetry in the driver. Can also be sourced from the `DISABLE_TELEMETRY` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#disable_telemetry SnowflakeProvider#disable_telemetry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#disable_telemetry SnowflakeProvider#disable_telemetry}
+
+---
+
+##### `driver_tracing`<sup>Optional</sup> <a name="driver_tracing" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.driverTracing"></a>
+
+- *Type:* str
+
+Specifies the logging level to be used by the driver.
+
+Valid options are: `trace` | `debug` | `info` | `print` | `warning` | `error` | `fatal` | `panic`. Can also be sourced from the `SNOWFLAKE_DRIVER_TRACING` environment variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#driver_tracing SnowflakeProvider#driver_tracing}
 
 ---
 
@@ -246,9 +294,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The timeout in seconds for the external browser to complete the authentication.
 
-Default is 120 seconds. Can also be sourced from the `SNOWFLAKE_EXTERNAL_BROWSER_TIMEOUT` environment variable.
+Can also be sourced from the `SNOWFLAKE_EXTERNAL_BROWSER_TIMEOUT` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#external_browser_timeout SnowflakeProvider#external_browser_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#external_browser_timeout SnowflakeProvider#external_browser_timeout}
 
 ---
 
@@ -256,11 +304,21 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Supports passing in a custom host value to the snowflake go driver for use with privatelink.
+Specifies a custom host value used by the driver for privatelink connections.
 
 Can also be sourced from the `SNOWFLAKE_HOST` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#host SnowflakeProvider#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#host SnowflakeProvider#host}
+
+---
+
+##### `include_retry_reason`<sup>Optional</sup> <a name="include_retry_reason" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.includeRetryReason"></a>
+
+- *Type:* str
+
+Should retried request contain retry reason. Can also be sourced from the `SNOWFLAKE_INCLUDE_RETRY_REASON` environment variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#include_retry_reason SnowflakeProvider#include_retry_reason}
 
 ---
 
@@ -272,7 +330,7 @@ If true, bypass the Online Certificate Status Protocol (OCSP) certificate revoca
 
 IMPORTANT: Change the default value for testing or emergency situations only. Can also be sourced from the `SNOWFLAKE_INSECURE_MODE` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#insecure_mode SnowflakeProvider#insecure_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#insecure_mode SnowflakeProvider#insecure_mode}
 
 ---
 
@@ -282,9 +340,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The timeout in seconds for the JWT client to complete the authentication.
 
-Default is 10 seconds. Can also be sourced from the `SNOWFLAKE_JWT_CLIENT_TIMEOUT` environment variable.
+Can also be sourced from the `SNOWFLAKE_JWT_CLIENT_TIMEOUT` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#jwt_client_timeout SnowflakeProvider#jwt_client_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#jwt_client_timeout SnowflakeProvider#jwt_client_timeout}
 
 ---
 
@@ -294,7 +352,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 JWT expire after timeout in seconds. Can also be sourced from the `SNOWFLAKE_JWT_EXPIRE_TIMEOUT` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#jwt_expire_timeout SnowflakeProvider#jwt_expire_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#jwt_expire_timeout SnowflakeProvider#jwt_expire_timeout}
 
 ---
 
@@ -306,7 +364,7 @@ Enables the session to persist even after the connection is closed.
 
 Can also be sourced from the `SNOWFLAKE_KEEP_SESSION_ALIVE` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#keep_session_alive SnowflakeProvider#keep_session_alive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#keep_session_alive SnowflakeProvider#keep_session_alive}
 
 ---
 
@@ -314,11 +372,23 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* typing.Union[int, float]
 
-Login retry timeout EXCLUDING network roundtrip and read out http response.
+Login retry timeout in seconds EXCLUDING network roundtrip and read out http response.
 
 Can also be sourced from the `SNOWFLAKE_LOGIN_TIMEOUT` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#login_timeout SnowflakeProvider#login_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#login_timeout SnowflakeProvider#login_timeout}
+
+---
+
+##### `max_retry_count`<sup>Optional</sup> <a name="max_retry_count" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.maxRetryCount"></a>
+
+- *Type:* typing.Union[int, float]
+
+Specifies how many times non-periodic HTTP request can be retried by the driver.
+
+Can also be sourced from the `SNOWFLAKE_MAX_RETRY_COUNT` environment variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#max_retry_count SnowflakeProvider#max_retry_count}
 
 ---
 
@@ -330,7 +400,7 @@ Token for use with OAuth.
 
 Generating the token is left to other tools. Cannot be used with `browser_auth`, `private_key_path`, `oauth_refresh_token` or `password`. Can also be sourced from `SNOWFLAKE_OAUTH_ACCESS_TOKEN` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#oauth_access_token SnowflakeProvider#oauth_access_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#oauth_access_token SnowflakeProvider#oauth_access_token}
 
 ---
 
@@ -340,7 +410,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Required when `oauth_refresh_token` is used. Can also be sourced from `SNOWFLAKE_OAUTH_CLIENT_ID` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#oauth_client_id SnowflakeProvider#oauth_client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#oauth_client_id SnowflakeProvider#oauth_client_id}
 
 ---
 
@@ -350,7 +420,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Required when `oauth_refresh_token` is used. Can also be sourced from `SNOWFLAKE_OAUTH_CLIENT_SECRET` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#oauth_client_secret SnowflakeProvider#oauth_client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#oauth_client_secret SnowflakeProvider#oauth_client_secret}
 
 ---
 
@@ -360,7 +430,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Required when `oauth_refresh_token` is used. Can also be sourced from `SNOWFLAKE_OAUTH_ENDPOINT` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#oauth_endpoint SnowflakeProvider#oauth_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#oauth_endpoint SnowflakeProvider#oauth_endpoint}
 
 ---
 
@@ -370,7 +440,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Required when `oauth_refresh_token` is used. Can also be sourced from `SNOWFLAKE_OAUTH_REDIRECT_URL` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#oauth_redirect_url SnowflakeProvider#oauth_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#oauth_redirect_url SnowflakeProvider#oauth_redirect_url}
 
 ---
 
@@ -382,19 +452,19 @@ Token for use with OAuth.
 
 Setup and generation of the token is left to other tools. Should be used in conjunction with `oauth_client_id`, `oauth_client_secret`, `oauth_endpoint`, `oauth_redirect_url`. Cannot be used with `browser_auth`, `private_key_path`, `oauth_access_token` or `password`. Can also be sourced from `SNOWFLAKE_OAUTH_REFRESH_TOKEN` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#oauth_refresh_token SnowflakeProvider#oauth_refresh_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#oauth_refresh_token SnowflakeProvider#oauth_refresh_token}
 
 ---
 
 ##### `ocsp_fail_open`<sup>Optional</sup> <a name="ocsp_fail_open" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.ocspFailOpen"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* str
 
 True represents OCSP fail open mode.
 
 False represents OCSP fail closed mode. Fail open true by default. Can also be sourced from the `SNOWFLAKE_OCSP_FAIL_OPEN` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#ocsp_fail_open SnowflakeProvider#ocsp_fail_open}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#ocsp_fail_open SnowflakeProvider#ocsp_fail_open}
 
 ---
 
@@ -402,9 +472,23 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-The URL of the Okta server. e.g. https://example.okta.com. Can also be sourced from the `SNOWFLAKE_OKTA_URL` environment variable.
+The URL of the Okta server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#okta_url SnowflakeProvider#okta_url}
+e.g. https://example.okta.com. Okta URL host needs to to have a suffix `okta.com`. Read more in Snowflake [docs](https://docs.snowflake.com/en/user-guide/oauth-okta). Can also be sourced from the `SNOWFLAKE_OKTA_URL` environment variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#okta_url SnowflakeProvider#okta_url}
+
+---
+
+##### `organization_name`<sup>Optional</sup> <a name="organization_name" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.organizationName"></a>
+
+- *Type:* str
+
+Specifies your Snowflake organization name assigned by Snowflake.
+
+For information about account identifiers, see the [Snowflake documentation](https://docs.snowflake.com/en/user-guide/admin-account-identifier#organization-name). Required unless using `profile`. Can also be sourced from the `SNOWFLAKE_ORGANIZATION_NAME` environment variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#organization_name SnowflakeProvider#organization_name}
 
 ---
 
@@ -412,9 +496,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* typing.Mapping[str]
 
-Sets other connection (i.e. session) parameters. [Parameters](https://docs.snowflake.com/en/sql-reference/parameters).
+Sets other connection (i.e. session) parameters. [Parameters](https://docs.snowflake.com/en/sql-reference/parameters). This field can not be set with environmental variables.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#params SnowflakeProvider#params}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#params SnowflakeProvider#params}
 
 ---
 
@@ -426,7 +510,7 @@ Specifies the passcode provided by Duo when using multi-factor authentication (M
 
 Can also be sourced from the `SNOWFLAKE_PASSCODE` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#passcode SnowflakeProvider#passcode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#passcode SnowflakeProvider#passcode}
 
 ---
 
@@ -436,9 +520,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 False by default.
 
-Set to true if the MFA passcode is embedded in the login password. Appends the MFA passcode to the end of the password. Can also be sourced from the `SNOWFLAKE_PASSCODE_IN_PASSWORD` environment variable.
+Set to true if the MFA passcode is embedded to the configured password. Can also be sourced from the `SNOWFLAKE_PASSCODE_IN_PASSWORD` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#passcode_in_password SnowflakeProvider#passcode_in_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#passcode_in_password SnowflakeProvider#passcode_in_password}
 
 ---
 
@@ -446,11 +530,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Password for username+password auth.
+Password for user + password auth.
 
 Cannot be used with `browser_auth` or `private_key_path`. Can also be sourced from the `SNOWFLAKE_PASSWORD` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#password SnowflakeProvider#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#password SnowflakeProvider#password}
 
 ---
 
@@ -458,11 +542,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* typing.Union[int, float]
 
-Support custom port values to snowflake go driver for use with privatelink.
+Specifies a custom port value used by the driver for privatelink connections.
 
 Can also be sourced from the `SNOWFLAKE_PORT` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#port SnowflakeProvider#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#port SnowflakeProvider#port}
 
 ---
 
@@ -472,9 +556,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Private Key for username+private-key auth.
 
-Cannot be used with `browser_auth` or `password`. Can also be sourced from `SNOWFLAKE_PRIVATE_KEY` environment variable.
+Cannot be used with `browser_auth` or `password`. Can also be sourced from the `SNOWFLAKE_PRIVATE_KEY` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#private_key SnowflakeProvider#private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#private_key SnowflakeProvider#private_key}
 
 ---
 
@@ -484,9 +568,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Supports the encryption ciphers aes-128-cbc, aes-128-gcm, aes-192-cbc, aes-192-gcm, aes-256-cbc, aes-256-gcm, and des-ede3-cbc.
 
-Can also be sourced from `SNOWFLAKE_PRIVATE_KEY_PASSPHRASE` environment variable.
+Can also be sourced from the `SNOWFLAKE_PRIVATE_KEY_PASSPHRASE` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#private_key_passphrase SnowflakeProvider#private_key_passphrase}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#private_key_passphrase SnowflakeProvider#private_key_passphrase}
 
 ---
 
@@ -498,7 +582,7 @@ Path to a private key for using keypair authentication.
 
 Cannot be used with `browser_auth`, `oauth_access_token` or `password`. Can also be sourced from `SNOWFLAKE_PRIVATE_KEY_PATH` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#private_key_path SnowflakeProvider#private_key_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#private_key_path SnowflakeProvider#private_key_path}
 
 ---
 
@@ -508,7 +592,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Sets the profile to read from ~/.snowflake/config file. Can also be sourced from the `SNOWFLAKE_PROFILE` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#profile SnowflakeProvider#profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#profile SnowflakeProvider#profile}
 
 ---
 
@@ -516,9 +600,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Either http or https, defaults to https. Can also be sourced from the `SNOWFLAKE_PROTOCOL` environment variable.
+A protocol used in the connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#protocol SnowflakeProvider#protocol}
+Valid options are: `http` | `https`. Can also be sourced from the `SNOWFLAKE_PROTOCOL` environment variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#protocol SnowflakeProvider#protocol}
 
 ---
 
@@ -530,7 +616,7 @@ Snowflake region, such as "eu-central-1", with this parameter.
 
 However, since this parameter is deprecated, it is best to specify the region as part of the account parameter. For details, see the description of the account parameter. [Snowflake region](https://docs.snowflake.com/en/user-guide/intro-regions.html) to use.  Required if using the [legacy format for the `account` identifier](https://docs.snowflake.com/en/user-guide/admin-account-identifier.html#format-2-legacy-account-locator-in-a-region) in the form of `<cloud_region_id>.<cloud>`. Can also be sourced from the `SNOWFLAKE_REGION` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#region SnowflakeProvider#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#region SnowflakeProvider#region}
 
 ---
 
@@ -538,11 +624,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* typing.Union[int, float]
 
-request retry timeout EXCLUDING network roundtrip and read out http response.
+request retry timeout in seconds EXCLUDING network roundtrip and read out http response.
 
 Can also be sourced from the `SNOWFLAKE_REQUEST_TIMEOUT` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#request_timeout SnowflakeProvider#request_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#request_timeout SnowflakeProvider#request_timeout}
 
 ---
 
@@ -552,9 +638,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the role to use by default for accessing Snowflake objects in the client session.
 
-Can also be sourced from the `SNOWFLAKE_ROLE` environment variable. .
+Can also be sourced from the `SNOWFLAKE_ROLE` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#role SnowflakeProvider#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#role SnowflakeProvider#role}
 
 ---
 
@@ -564,7 +650,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Sets session parameters. [Parameters](https://docs.snowflake.com/en/sql-reference/parameters).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#session_params SnowflakeProvider#session_params}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#session_params SnowflakeProvider#session_params}
+
+---
+
+##### `tmp_directory_path`<sup>Optional</sup> <a name="tmp_directory_path" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.tmpDirectoryPath"></a>
+
+- *Type:* str
+
+Sets temporary directory used by the driver for operations like encrypting, compressing etc.
+
+Can also be sourced from the `SNOWFLAKE_TMP_DIRECTORY_PATH` environment variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#tmp_directory_path SnowflakeProvider#tmp_directory_path}
 
 ---
 
@@ -576,7 +674,7 @@ Token to use for OAuth and other forms of token based auth.
 
 Can also be sourced from the `SNOWFLAKE_TOKEN` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#token SnowflakeProvider#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#token SnowflakeProvider#token}
 
 ---
 
@@ -586,7 +684,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 token_accessor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#token_accessor SnowflakeProvider#token_accessor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#token_accessor SnowflakeProvider#token_accessor}
 
 ---
 
@@ -594,9 +692,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Username. Can also be sourced from the `SNOWFLAKE_USER` environment variable. Required unless using `profile`.
+Username. Required unless using `profile`. Can also be sourced from the `SNOWFLAKE_USER` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#user SnowflakeProvider#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#user SnowflakeProvider#user}
 
 ---
 
@@ -604,21 +702,21 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Username for username+password authentication. Can also be sourced from the `SNOWFLAKE_USERNAME` environment variable. Required unless using `profile`.
+Username for user + password authentication. Required unless using `profile`. Can also be sourced from the `SNOWFLAKE_USERNAME` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#username SnowflakeProvider#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#username SnowflakeProvider#username}
 
 ---
 
 ##### `validate_default_parameters`<sup>Optional</sup> <a name="validate_default_parameters" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.validateDefaultParameters"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* str
 
 True by default.
 
 If false, disables the validation checks for Database, Schema, Warehouse and Role at the time a connection is established. Can also be sourced from the `SNOWFLAKE_VALIDATE_DEFAULT_PARAMETERS` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#validate_default_parameters SnowflakeProvider#validate_default_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#validate_default_parameters SnowflakeProvider#validate_default_parameters}
 
 ---
 
@@ -630,7 +728,7 @@ Specifies the virtual warehouse to use by default for queries, loading, etc.
 
 in the client session. Can also be sourced from the `SNOWFLAKE_WAREHOUSE` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#warehouse SnowflakeProvider#warehouse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#warehouse SnowflakeProvider#warehouse}
 
 ---
 
@@ -646,6 +744,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.toMetadata">to_metadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetAccount">reset_account</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetAccountName">reset_account_name</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetAlias">reset_alias</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetAuthenticator">reset_authenticator</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetBrowserAuth">reset_browser_auth</a></code> | *No description.* |
@@ -653,15 +752,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetClientRequestMfaToken">reset_client_request_mfa_token</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetClientStoreTemporaryCredential">reset_client_store_temporary_credential</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetClientTimeout">reset_client_timeout</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetDisableConsoleLogin">reset_disable_console_login</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetDisableQueryContextCache">reset_disable_query_context_cache</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetDisableTelemetry">reset_disable_telemetry</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetDriverTracing">reset_driver_tracing</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetExternalBrowserTimeout">reset_external_browser_timeout</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetHost">reset_host</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetIncludeRetryReason">reset_include_retry_reason</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetInsecureMode">reset_insecure_mode</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetJwtClientTimeout">reset_jwt_client_timeout</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetJwtExpireTimeout">reset_jwt_expire_timeout</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetKeepSessionAlive">reset_keep_session_alive</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetLoginTimeout">reset_login_timeout</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetMaxRetryCount">reset_max_retry_count</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetOauthAccessToken">reset_oauth_access_token</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetOauthClientId">reset_oauth_client_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetOauthClientSecret">reset_oauth_client_secret</a></code> | *No description.* |
@@ -670,6 +773,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetOauthRefreshToken">reset_oauth_refresh_token</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetOcspFailOpen">reset_ocsp_fail_open</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetOktaUrl">reset_okta_url</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetOrganizationName">reset_organization_name</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetParams">reset_params</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetPasscode">reset_passcode</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetPasscodeInPassword">reset_passcode_in_password</a></code> | *No description.* |
@@ -684,6 +788,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetRequestTimeout">reset_request_timeout</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetRole">reset_role</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetSessionParams">reset_session_params</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetTmpDirectoryPath">reset_tmp_directory_path</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetToken">reset_token</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetTokenAccessor">reset_token_accessor</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetUser">reset_user</a></code> | *No description.* |
@@ -774,6 +879,12 @@ Adds this resource to the terraform JSON output.
 def reset_account() -> None
 ```
 
+##### `reset_account_name` <a name="reset_account_name" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.resetAccountName"></a>
+
+```python
+def reset_account_name() -> None
+```
+
 ##### `reset_alias` <a name="reset_alias" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.resetAlias"></a>
 
 ```python
@@ -816,6 +927,12 @@ def reset_client_store_temporary_credential() -> None
 def reset_client_timeout() -> None
 ```
 
+##### `reset_disable_console_login` <a name="reset_disable_console_login" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.resetDisableConsoleLogin"></a>
+
+```python
+def reset_disable_console_login() -> None
+```
+
 ##### `reset_disable_query_context_cache` <a name="reset_disable_query_context_cache" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.resetDisableQueryContextCache"></a>
 
 ```python
@@ -828,6 +945,12 @@ def reset_disable_query_context_cache() -> None
 def reset_disable_telemetry() -> None
 ```
 
+##### `reset_driver_tracing` <a name="reset_driver_tracing" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.resetDriverTracing"></a>
+
+```python
+def reset_driver_tracing() -> None
+```
+
 ##### `reset_external_browser_timeout` <a name="reset_external_browser_timeout" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.resetExternalBrowserTimeout"></a>
 
 ```python
@@ -838,6 +961,12 @@ def reset_external_browser_timeout() -> None
 
 ```python
 def reset_host() -> None
+```
+
+##### `reset_include_retry_reason` <a name="reset_include_retry_reason" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.resetIncludeRetryReason"></a>
+
+```python
+def reset_include_retry_reason() -> None
 ```
 
 ##### `reset_insecure_mode` <a name="reset_insecure_mode" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.resetInsecureMode"></a>
@@ -868,6 +997,12 @@ def reset_keep_session_alive() -> None
 
 ```python
 def reset_login_timeout() -> None
+```
+
+##### `reset_max_retry_count` <a name="reset_max_retry_count" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.resetMaxRetryCount"></a>
+
+```python
+def reset_max_retry_count() -> None
 ```
 
 ##### `reset_oauth_access_token` <a name="reset_oauth_access_token" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.resetOauthAccessToken"></a>
@@ -916,6 +1051,12 @@ def reset_ocsp_fail_open() -> None
 
 ```python
 def reset_okta_url() -> None
+```
+
+##### `reset_organization_name` <a name="reset_organization_name" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.resetOrganizationName"></a>
+
+```python
+def reset_organization_name() -> None
 ```
 
 ##### `reset_params` <a name="reset_params" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.resetParams"></a>
@@ -1000,6 +1141,12 @@ def reset_role() -> None
 
 ```python
 def reset_session_params() -> None
+```
+
+##### `reset_tmp_directory_path` <a name="reset_tmp_directory_path" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.resetTmpDirectoryPath"></a>
+
+```python
+def reset_tmp_directory_path() -> None
 ```
 
 ##### `reset_token` <a name="reset_token" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.resetToken"></a>
@@ -1152,7 +1299,7 @@ The construct id used in the generated config for the SnowflakeProvider to impor
 
 The id of the existing SnowflakeProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1178,30 +1325,36 @@ Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.terraformProviderSource">terraform_provider_source</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.alias">alias</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.accountInput">account_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.accountNameInput">account_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.aliasInput">alias_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.authenticatorInput">authenticator_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.browserAuthInput">browser_auth_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.clientIpInput">client_ip_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.clientRequestMfaTokenInput">client_request_mfa_token_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.clientStoreTemporaryCredentialInput">client_store_temporary_credential_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.clientRequestMfaTokenInput">client_request_mfa_token_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.clientStoreTemporaryCredentialInput">client_store_temporary_credential_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.clientTimeoutInput">client_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.disableConsoleLoginInput">disable_console_login_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.disableQueryContextCacheInput">disable_query_context_cache_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.disableTelemetryInput">disable_telemetry_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.driverTracingInput">driver_tracing_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.externalBrowserTimeoutInput">external_browser_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.hostInput">host_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.includeRetryReasonInput">include_retry_reason_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.insecureModeInput">insecure_mode_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.jwtClientTimeoutInput">jwt_client_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.jwtExpireTimeoutInput">jwt_expire_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.keepSessionAliveInput">keep_session_alive_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.loginTimeoutInput">login_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.maxRetryCountInput">max_retry_count_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.oauthAccessTokenInput">oauth_access_token_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.oauthClientIdInput">oauth_client_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.oauthClientSecretInput">oauth_client_secret_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.oauthEndpointInput">oauth_endpoint_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.oauthRedirectUrlInput">oauth_redirect_url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.oauthRefreshTokenInput">oauth_refresh_token_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.ocspFailOpenInput">ocsp_fail_open_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.ocspFailOpenInput">ocsp_fail_open_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.oktaUrlInput">okta_url_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.organizationNameInput">organization_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.paramsInput">params_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.passcodeInPasswordInput">passcode_in_password_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.passcodeInput">passcode_input</a></code> | <code>str</code> | *No description.* |
@@ -1216,36 +1369,43 @@ Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.requestTimeoutInput">request_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.roleInput">role_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.sessionParamsInput">session_params_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.tmpDirectoryPathInput">tmp_directory_path_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.tokenAccessorInput">token_accessor_input</a></code> | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderTokenAccessor">SnowflakeProviderTokenAccessor</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.tokenInput">token_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.userInput">user_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.usernameInput">username_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.validateDefaultParametersInput">validate_default_parameters_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.validateDefaultParametersInput">validate_default_parameters_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.warehouseInput">warehouse_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.account">account</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.accountName">account_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.authenticator">authenticator</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.browserAuth">browser_auth</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.clientIp">client_ip</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.clientRequestMfaToken">client_request_mfa_token</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.clientStoreTemporaryCredential">client_store_temporary_credential</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.clientRequestMfaToken">client_request_mfa_token</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.clientStoreTemporaryCredential">client_store_temporary_credential</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.clientTimeout">client_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.disableConsoleLogin">disable_console_login</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.disableQueryContextCache">disable_query_context_cache</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.disableTelemetry">disable_telemetry</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.driverTracing">driver_tracing</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.externalBrowserTimeout">external_browser_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.host">host</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.includeRetryReason">include_retry_reason</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.insecureMode">insecure_mode</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.jwtClientTimeout">jwt_client_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.jwtExpireTimeout">jwt_expire_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.keepSessionAlive">keep_session_alive</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.loginTimeout">login_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.maxRetryCount">max_retry_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.oauthAccessToken">oauth_access_token</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.oauthClientId">oauth_client_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.oauthClientSecret">oauth_client_secret</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.oauthEndpoint">oauth_endpoint</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.oauthRedirectUrl">oauth_redirect_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.oauthRefreshToken">oauth_refresh_token</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.ocspFailOpen">ocsp_fail_open</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.ocspFailOpen">ocsp_fail_open</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.oktaUrl">okta_url</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.organizationName">organization_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.params">params</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.passcode">passcode</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.passcodeInPassword">passcode_in_password</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
@@ -1260,11 +1420,12 @@ Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.requestTimeout">request_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.role">role</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.sessionParams">session_params</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.tmpDirectoryPath">tmp_directory_path</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.token">token</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.tokenAccessor">token_accessor</a></code> | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderTokenAccessor">SnowflakeProviderTokenAccessor</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.user">user</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.username">username</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.validateDefaultParameters">validate_default_parameters</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.validateDefaultParameters">validate_default_parameters</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.warehouse">warehouse</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -1371,6 +1532,16 @@ account_input: str
 
 ---
 
+##### `account_name_input`<sup>Optional</sup> <a name="account_name_input" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.accountNameInput"></a>
+
+```python
+account_name_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `alias_input`<sup>Optional</sup> <a name="alias_input" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.aliasInput"></a>
 
 ```python
@@ -1414,20 +1585,20 @@ client_ip_input: str
 ##### `client_request_mfa_token_input`<sup>Optional</sup> <a name="client_request_mfa_token_input" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.clientRequestMfaTokenInput"></a>
 
 ```python
-client_request_mfa_token_input: typing.Union[bool, IResolvable]
+client_request_mfa_token_input: str
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* str
 
 ---
 
 ##### `client_store_temporary_credential_input`<sup>Optional</sup> <a name="client_store_temporary_credential_input" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.clientStoreTemporaryCredentialInput"></a>
 
 ```python
-client_store_temporary_credential_input: typing.Union[bool, IResolvable]
+client_store_temporary_credential_input: str
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* str
 
 ---
 
@@ -1438,6 +1609,16 @@ client_timeout_input: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
+
+---
+
+##### `disable_console_login_input`<sup>Optional</sup> <a name="disable_console_login_input" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.disableConsoleLoginInput"></a>
+
+```python
+disable_console_login_input: str
+```
+
+- *Type:* str
 
 ---
 
@@ -1461,6 +1642,16 @@ disable_telemetry_input: typing.Union[bool, IResolvable]
 
 ---
 
+##### `driver_tracing_input`<sup>Optional</sup> <a name="driver_tracing_input" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.driverTracingInput"></a>
+
+```python
+driver_tracing_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `external_browser_timeout_input`<sup>Optional</sup> <a name="external_browser_timeout_input" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.externalBrowserTimeoutInput"></a>
 
 ```python
@@ -1475,6 +1666,16 @@ external_browser_timeout_input: typing.Union[int, float]
 
 ```python
 host_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `include_retry_reason_input`<sup>Optional</sup> <a name="include_retry_reason_input" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.includeRetryReasonInput"></a>
+
+```python
+include_retry_reason_input: str
 ```
 
 - *Type:* str
@@ -1525,6 +1726,16 @@ keep_session_alive_input: typing.Union[bool, IResolvable]
 
 ```python
 login_timeout_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `max_retry_count_input`<sup>Optional</sup> <a name="max_retry_count_input" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.maxRetryCountInput"></a>
+
+```python
+max_retry_count_input: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
@@ -1594,10 +1805,10 @@ oauth_refresh_token_input: str
 ##### `ocsp_fail_open_input`<sup>Optional</sup> <a name="ocsp_fail_open_input" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.ocspFailOpenInput"></a>
 
 ```python
-ocsp_fail_open_input: typing.Union[bool, IResolvable]
+ocsp_fail_open_input: str
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* str
 
 ---
 
@@ -1605,6 +1816,16 @@ ocsp_fail_open_input: typing.Union[bool, IResolvable]
 
 ```python
 okta_url_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `organization_name_input`<sup>Optional</sup> <a name="organization_name_input" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.organizationNameInput"></a>
+
+```python
+organization_name_input: str
 ```
 
 - *Type:* str
@@ -1751,6 +1972,16 @@ session_params_input: typing.Mapping[str]
 
 ---
 
+##### `tmp_directory_path_input`<sup>Optional</sup> <a name="tmp_directory_path_input" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.tmpDirectoryPathInput"></a>
+
+```python
+tmp_directory_path_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `token_accessor_input`<sup>Optional</sup> <a name="token_accessor_input" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.tokenAccessorInput"></a>
 
 ```python
@@ -1794,10 +2025,10 @@ username_input: str
 ##### `validate_default_parameters_input`<sup>Optional</sup> <a name="validate_default_parameters_input" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.validateDefaultParametersInput"></a>
 
 ```python
-validate_default_parameters_input: typing.Union[bool, IResolvable]
+validate_default_parameters_input: str
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* str
 
 ---
 
@@ -1815,6 +2046,16 @@ warehouse_input: str
 
 ```python
 account: str
+```
+
+- *Type:* str
+
+---
+
+##### `account_name`<sup>Optional</sup> <a name="account_name" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.accountName"></a>
+
+```python
+account_name: str
 ```
 
 - *Type:* str
@@ -1854,20 +2095,20 @@ client_ip: str
 ##### `client_request_mfa_token`<sup>Optional</sup> <a name="client_request_mfa_token" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.clientRequestMfaToken"></a>
 
 ```python
-client_request_mfa_token: typing.Union[bool, IResolvable]
+client_request_mfa_token: str
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* str
 
 ---
 
 ##### `client_store_temporary_credential`<sup>Optional</sup> <a name="client_store_temporary_credential" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.clientStoreTemporaryCredential"></a>
 
 ```python
-client_store_temporary_credential: typing.Union[bool, IResolvable]
+client_store_temporary_credential: str
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* str
 
 ---
 
@@ -1878,6 +2119,16 @@ client_timeout: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
+
+---
+
+##### `disable_console_login`<sup>Optional</sup> <a name="disable_console_login" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.disableConsoleLogin"></a>
+
+```python
+disable_console_login: str
+```
+
+- *Type:* str
 
 ---
 
@@ -1901,6 +2152,16 @@ disable_telemetry: typing.Union[bool, IResolvable]
 
 ---
 
+##### `driver_tracing`<sup>Optional</sup> <a name="driver_tracing" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.driverTracing"></a>
+
+```python
+driver_tracing: str
+```
+
+- *Type:* str
+
+---
+
 ##### `external_browser_timeout`<sup>Optional</sup> <a name="external_browser_timeout" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.externalBrowserTimeout"></a>
 
 ```python
@@ -1915,6 +2176,16 @@ external_browser_timeout: typing.Union[int, float]
 
 ```python
 host: str
+```
+
+- *Type:* str
+
+---
+
+##### `include_retry_reason`<sup>Optional</sup> <a name="include_retry_reason" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.includeRetryReason"></a>
+
+```python
+include_retry_reason: str
 ```
 
 - *Type:* str
@@ -1965,6 +2236,16 @@ keep_session_alive: typing.Union[bool, IResolvable]
 
 ```python
 login_timeout: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `max_retry_count`<sup>Optional</sup> <a name="max_retry_count" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.maxRetryCount"></a>
+
+```python
+max_retry_count: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
@@ -2034,10 +2315,10 @@ oauth_refresh_token: str
 ##### `ocsp_fail_open`<sup>Optional</sup> <a name="ocsp_fail_open" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.ocspFailOpen"></a>
 
 ```python
-ocsp_fail_open: typing.Union[bool, IResolvable]
+ocsp_fail_open: str
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* str
 
 ---
 
@@ -2045,6 +2326,16 @@ ocsp_fail_open: typing.Union[bool, IResolvable]
 
 ```python
 okta_url: str
+```
+
+- *Type:* str
+
+---
+
+##### `organization_name`<sup>Optional</sup> <a name="organization_name" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.organizationName"></a>
+
+```python
+organization_name: str
 ```
 
 - *Type:* str
@@ -2191,6 +2482,16 @@ session_params: typing.Mapping[str]
 
 ---
 
+##### `tmp_directory_path`<sup>Optional</sup> <a name="tmp_directory_path" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.tmpDirectoryPath"></a>
+
+```python
+tmp_directory_path: str
+```
+
+- *Type:* str
+
+---
+
 ##### `token`<sup>Optional</sup> <a name="token" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.token"></a>
 
 ```python
@@ -2234,10 +2535,10 @@ username: str
 ##### `validate_default_parameters`<sup>Optional</sup> <a name="validate_default_parameters" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.validateDefaultParameters"></a>
 
 ```python
-validate_default_parameters: typing.Union[bool, IResolvable]
+validate_default_parameters: str
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* str
 
 ---
 
@@ -2280,30 +2581,36 @@ from cdktf_cdktf_provider_snowflake import provider
 
 provider.SnowflakeProviderConfig(
   account: str = None,
+  account_name: str = None,
   alias: str = None,
   authenticator: str = None,
   browser_auth: typing.Union[bool, IResolvable] = None,
   client_ip: str = None,
-  client_request_mfa_token: typing.Union[bool, IResolvable] = None,
-  client_store_temporary_credential: typing.Union[bool, IResolvable] = None,
+  client_request_mfa_token: str = None,
+  client_store_temporary_credential: str = None,
   client_timeout: typing.Union[int, float] = None,
+  disable_console_login: str = None,
   disable_query_context_cache: typing.Union[bool, IResolvable] = None,
   disable_telemetry: typing.Union[bool, IResolvable] = None,
+  driver_tracing: str = None,
   external_browser_timeout: typing.Union[int, float] = None,
   host: str = None,
+  include_retry_reason: str = None,
   insecure_mode: typing.Union[bool, IResolvable] = None,
   jwt_client_timeout: typing.Union[int, float] = None,
   jwt_expire_timeout: typing.Union[int, float] = None,
   keep_session_alive: typing.Union[bool, IResolvable] = None,
   login_timeout: typing.Union[int, float] = None,
+  max_retry_count: typing.Union[int, float] = None,
   oauth_access_token: str = None,
   oauth_client_id: str = None,
   oauth_client_secret: str = None,
   oauth_endpoint: str = None,
   oauth_redirect_url: str = None,
   oauth_refresh_token: str = None,
-  ocsp_fail_open: typing.Union[bool, IResolvable] = None,
+  ocsp_fail_open: str = None,
   okta_url: str = None,
+  organization_name: str = None,
   params: typing.Mapping[str] = None,
   passcode: str = None,
   passcode_in_password: typing.Union[bool, IResolvable] = None,
@@ -2318,11 +2625,12 @@ provider.SnowflakeProviderConfig(
   request_timeout: typing.Union[int, float] = None,
   role: str = None,
   session_params: typing.Mapping[str] = None,
+  tmp_directory_path: str = None,
   token: str = None,
   token_accessor: SnowflakeProviderTokenAccessor = None,
   user: str = None,
   username: str = None,
-  validate_default_parameters: typing.Union[bool, IResolvable] = None,
+  validate_default_parameters: str = None,
   warehouse: str = None
 )
 ```
@@ -2331,50 +2639,57 @@ provider.SnowflakeProviderConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.account">account</a></code> | <code>str</code> | Specifies your Snowflake account identifier assigned, by Snowflake. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.account">account</a></code> | <code>str</code> | Use `account_name` and `organization_name` instead. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.accountName">account_name</a></code> | <code>str</code> | Specifies your Snowflake account name assigned by Snowflake. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.alias">alias</a></code> | <code>str</code> | Alias name. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.authenticator">authenticator</a></code> | <code>str</code> | Specifies the [authentication type](https://pkg.go.dev/github.com/snowflakedb/gosnowflake#AuthType) to use when connecting to Snowflake. Valid values include: Snowflake, OAuth, ExternalBrowser, Okta, JWT, TokenAccessor, UsernamePasswordMFA. Can also be sourced from the `SNOWFLAKE_AUTHENTICATOR` environment variable. It has to be set explicitly to JWT for private key authentication. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.authenticator">authenticator</a></code> | <code>str</code> | Specifies the [authentication type](https://pkg.go.dev/github.com/snowflakedb/gosnowflake#AuthType) to use when connecting to Snowflake. Valid options are: `SNOWFLAKE` \| `OAUTH` \| `EXTERNALBROWSER` \| `OKTA` \| `JWT` \| `SNOWFLAKE_JWT` \| `TOKENACCESSOR` \| `USERNAMEPASSWORDMFA`. Value `JWT` is deprecated and will be removed in future releases. Can also be sourced from the `SNOWFLAKE_AUTHENTICATOR` environment variable. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.browserAuth">browser_auth</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Required when `oauth_refresh_token` is used. Can also be sourced from `SNOWFLAKE_USE_BROWSER_AUTH` environment variable. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.clientIp">client_ip</a></code> | <code>str</code> | IP address for network checks. Can also be sourced from the `SNOWFLAKE_CLIENT_IP` environment variable. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.clientRequestMfaToken">client_request_mfa_token</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When true the MFA token is cached in the credential manager. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.clientStoreTemporaryCredential">client_store_temporary_credential</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When true the ID token is cached in the credential manager. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.clientRequestMfaToken">client_request_mfa_token</a></code> | <code>str</code> | When true the MFA token is cached in the credential manager. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.clientStoreTemporaryCredential">client_store_temporary_credential</a></code> | <code>str</code> | When true the ID token is cached in the credential manager. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.clientTimeout">client_timeout</a></code> | <code>typing.Union[int, float]</code> | The timeout in seconds for the client to complete the authentication. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.disableQueryContextCache">disable_query_context_cache</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Should HTAP query context cache be disabled. Can also be sourced from the `SNOWFLAKE_DISABLE_QUERY_CONTEXT_CACHE` environment variable. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.disableTelemetry">disable_telemetry</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether to disable telemetry. Can also be sourced from the `SNOWFLAKE_DISABLE_TELEMETRY` environment variable. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.disableConsoleLogin">disable_console_login</a></code> | <code>str</code> | Indicates whether console login should be disabled in the driver. Can also be sourced from the `SNOWFLAKE_DISABLE_CONSOLE_LOGIN` environment variable. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.disableQueryContextCache">disable_query_context_cache</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Disables HTAP query context cache in the driver. Can also be sourced from the `SNOWFLAKE_DISABLE_QUERY_CONTEXT_CACHE` environment variable. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.disableTelemetry">disable_telemetry</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Disables telemetry in the driver. Can also be sourced from the `DISABLE_TELEMETRY` environment variable. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.driverTracing">driver_tracing</a></code> | <code>str</code> | Specifies the logging level to be used by the driver. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.externalBrowserTimeout">external_browser_timeout</a></code> | <code>typing.Union[int, float]</code> | The timeout in seconds for the external browser to complete the authentication. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.host">host</a></code> | <code>str</code> | Supports passing in a custom host value to the snowflake go driver for use with privatelink. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.host">host</a></code> | <code>str</code> | Specifies a custom host value used by the driver for privatelink connections. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.includeRetryReason">include_retry_reason</a></code> | <code>str</code> | Should retried request contain retry reason. Can also be sourced from the `SNOWFLAKE_INCLUDE_RETRY_REASON` environment variable. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.insecureMode">insecure_mode</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, bypass the Online Certificate Status Protocol (OCSP) certificate revocation check. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.jwtClientTimeout">jwt_client_timeout</a></code> | <code>typing.Union[int, float]</code> | The timeout in seconds for the JWT client to complete the authentication. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.jwtExpireTimeout">jwt_expire_timeout</a></code> | <code>typing.Union[int, float]</code> | JWT expire after timeout in seconds. Can also be sourced from the `SNOWFLAKE_JWT_EXPIRE_TIMEOUT` environment variable. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.keepSessionAlive">keep_session_alive</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enables the session to persist even after the connection is closed. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.loginTimeout">login_timeout</a></code> | <code>typing.Union[int, float]</code> | Login retry timeout EXCLUDING network roundtrip and read out http response. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.loginTimeout">login_timeout</a></code> | <code>typing.Union[int, float]</code> | Login retry timeout in seconds EXCLUDING network roundtrip and read out http response. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.maxRetryCount">max_retry_count</a></code> | <code>typing.Union[int, float]</code> | Specifies how many times non-periodic HTTP request can be retried by the driver. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.oauthAccessToken">oauth_access_token</a></code> | <code>str</code> | Token for use with OAuth. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.oauthClientId">oauth_client_id</a></code> | <code>str</code> | Required when `oauth_refresh_token` is used. Can also be sourced from `SNOWFLAKE_OAUTH_CLIENT_ID` environment variable. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.oauthClientSecret">oauth_client_secret</a></code> | <code>str</code> | Required when `oauth_refresh_token` is used. Can also be sourced from `SNOWFLAKE_OAUTH_CLIENT_SECRET` environment variable. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.oauthEndpoint">oauth_endpoint</a></code> | <code>str</code> | Required when `oauth_refresh_token` is used. Can also be sourced from `SNOWFLAKE_OAUTH_ENDPOINT` environment variable. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.oauthRedirectUrl">oauth_redirect_url</a></code> | <code>str</code> | Required when `oauth_refresh_token` is used. Can also be sourced from `SNOWFLAKE_OAUTH_REDIRECT_URL` environment variable. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.oauthRefreshToken">oauth_refresh_token</a></code> | <code>str</code> | Token for use with OAuth. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.ocspFailOpen">ocsp_fail_open</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | True represents OCSP fail open mode. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.oktaUrl">okta_url</a></code> | <code>str</code> | The URL of the Okta server. e.g. https://example.okta.com. Can also be sourced from the `SNOWFLAKE_OKTA_URL` environment variable. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.params">params</a></code> | <code>typing.Mapping[str]</code> | Sets other connection (i.e. session) parameters. [Parameters](https://docs.snowflake.com/en/sql-reference/parameters). |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.ocspFailOpen">ocsp_fail_open</a></code> | <code>str</code> | True represents OCSP fail open mode. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.oktaUrl">okta_url</a></code> | <code>str</code> | The URL of the Okta server. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.organizationName">organization_name</a></code> | <code>str</code> | Specifies your Snowflake organization name assigned by Snowflake. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.params">params</a></code> | <code>typing.Mapping[str]</code> | Sets other connection (i.e. session) parameters. [Parameters](https://docs.snowflake.com/en/sql-reference/parameters). This field can not be set with environmental variables. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.passcode">passcode</a></code> | <code>str</code> | Specifies the passcode provided by Duo when using multi-factor authentication (MFA) for login. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.passcodeInPassword">passcode_in_password</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | False by default. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.password">password</a></code> | <code>str</code> | Password for username+password auth. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.port">port</a></code> | <code>typing.Union[int, float]</code> | Support custom port values to snowflake go driver for use with privatelink. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.password">password</a></code> | <code>str</code> | Password for user + password auth. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.port">port</a></code> | <code>typing.Union[int, float]</code> | Specifies a custom port value used by the driver for privatelink connections. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.privateKey">private_key</a></code> | <code>str</code> | Private Key for username+private-key auth. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.privateKeyPassphrase">private_key_passphrase</a></code> | <code>str</code> | Supports the encryption ciphers aes-128-cbc, aes-128-gcm, aes-192-cbc, aes-192-gcm, aes-256-cbc, aes-256-gcm, and des-ede3-cbc. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.privateKeyPath">private_key_path</a></code> | <code>str</code> | Path to a private key for using keypair authentication. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.profile">profile</a></code> | <code>str</code> | Sets the profile to read from ~/.snowflake/config file. Can also be sourced from the `SNOWFLAKE_PROFILE` environment variable. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.protocol">protocol</a></code> | <code>str</code> | Either http or https, defaults to https. Can also be sourced from the `SNOWFLAKE_PROTOCOL` environment variable. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.protocol">protocol</a></code> | <code>str</code> | A protocol used in the connection. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.region">region</a></code> | <code>str</code> | Snowflake region, such as "eu-central-1", with this parameter. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.requestTimeout">request_timeout</a></code> | <code>typing.Union[int, float]</code> | request retry timeout EXCLUDING network roundtrip and read out http response. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.requestTimeout">request_timeout</a></code> | <code>typing.Union[int, float]</code> | request retry timeout in seconds EXCLUDING network roundtrip and read out http response. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.role">role</a></code> | <code>str</code> | Specifies the role to use by default for accessing Snowflake objects in the client session. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.sessionParams">session_params</a></code> | <code>typing.Mapping[str]</code> | Sets session parameters. [Parameters](https://docs.snowflake.com/en/sql-reference/parameters). |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.tmpDirectoryPath">tmp_directory_path</a></code> | <code>str</code> | Sets temporary directory used by the driver for operations like encrypting, compressing etc. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.token">token</a></code> | <code>str</code> | Token to use for OAuth and other forms of token based auth. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.tokenAccessor">token_accessor</a></code> | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderTokenAccessor">SnowflakeProviderTokenAccessor</a></code> | token_accessor block. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.user">user</a></code> | <code>str</code> | Username. Can also be sourced from the `SNOWFLAKE_USER` environment variable. Required unless using `profile`. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.username">username</a></code> | <code>str</code> | Username for username+password authentication. Can also be sourced from the `SNOWFLAKE_USERNAME` environment variable. Required unless using `profile`. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.validateDefaultParameters">validate_default_parameters</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | True by default. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.user">user</a></code> | <code>str</code> | Username. Required unless using `profile`. Can also be sourced from the `SNOWFLAKE_USER` environment variable. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.username">username</a></code> | <code>str</code> | Username for user + password authentication. Required unless using `profile`. Can also be sourced from the `SNOWFLAKE_USERNAME` environment variable. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.validateDefaultParameters">validate_default_parameters</a></code> | <code>str</code> | True by default. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.warehouse">warehouse</a></code> | <code>str</code> | Specifies the virtual warehouse to use by default for queries, loading, etc. |
 
 ---
@@ -2387,11 +2702,27 @@ account: str
 
 - *Type:* str
 
-Specifies your Snowflake account identifier assigned, by Snowflake.
+Use `account_name` and `organization_name` instead.
 
-For information about account identifiers, see the [Snowflake documentation](https://docs.snowflake.com/en/user-guide/admin-account-identifier.html). Can also be sourced from the `SNOWFLAKE_ACCOUNT` environment variable. Required unless using `profile`.
+Specifies your Snowflake account identifier assigned, by Snowflake. The [account locator](https://docs.snowflake.com/en/user-guide/admin-account-identifier#format-2-account-locator-in-a-region) format is not supported. For information about account identifiers, see the [Snowflake documentation](https://docs.snowflake.com/en/user-guide/admin-account-identifier.html). Required unless using `profile`. Can also be sourced from the `SNOWFLAKE_ACCOUNT` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#account SnowflakeProvider#account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#account SnowflakeProvider#account}
+
+---
+
+##### `account_name`<sup>Optional</sup> <a name="account_name" id="@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.accountName"></a>
+
+```python
+account_name: str
+```
+
+- *Type:* str
+
+Specifies your Snowflake account name assigned by Snowflake.
+
+For information about account identifiers, see the [Snowflake documentation](https://docs.snowflake.com/en/user-guide/admin-account-identifier#account-name). Required unless using `profile`. Can also be sourced from the `SNOWFLAKE_ACCOUNT_NAME` environment variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#account_name SnowflakeProvider#account_name}
 
 ---
 
@@ -2405,7 +2736,7 @@ alias: str
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#alias SnowflakeProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#alias SnowflakeProvider#alias}
 
 ---
 
@@ -2417,9 +2748,9 @@ authenticator: str
 
 - *Type:* str
 
-Specifies the [authentication type](https://pkg.go.dev/github.com/snowflakedb/gosnowflake#AuthType) to use when connecting to Snowflake. Valid values include: Snowflake, OAuth, ExternalBrowser, Okta, JWT, TokenAccessor, UsernamePasswordMFA. Can also be sourced from the `SNOWFLAKE_AUTHENTICATOR` environment variable. It has to be set explicitly to JWT for private key authentication.
+Specifies the [authentication type](https://pkg.go.dev/github.com/snowflakedb/gosnowflake#AuthType) to use when connecting to Snowflake. Valid options are: `SNOWFLAKE` | `OAUTH` | `EXTERNALBROWSER` | `OKTA` | `JWT` | `SNOWFLAKE_JWT` | `TOKENACCESSOR` | `USERNAMEPASSWORDMFA`. Value `JWT` is deprecated and will be removed in future releases. Can also be sourced from the `SNOWFLAKE_AUTHENTICATOR` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#authenticator SnowflakeProvider#authenticator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#authenticator SnowflakeProvider#authenticator}
 
 ---
 
@@ -2433,7 +2764,7 @@ browser_auth: typing.Union[bool, IResolvable]
 
 Required when `oauth_refresh_token` is used. Can also be sourced from `SNOWFLAKE_USE_BROWSER_AUTH` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#browser_auth SnowflakeProvider#browser_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#browser_auth SnowflakeProvider#browser_auth}
 
 ---
 
@@ -2447,39 +2778,39 @@ client_ip: str
 
 IP address for network checks. Can also be sourced from the `SNOWFLAKE_CLIENT_IP` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#client_ip SnowflakeProvider#client_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#client_ip SnowflakeProvider#client_ip}
 
 ---
 
 ##### `client_request_mfa_token`<sup>Optional</sup> <a name="client_request_mfa_token" id="@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.clientRequestMfaToken"></a>
 
 ```python
-client_request_mfa_token: typing.Union[bool, IResolvable]
+client_request_mfa_token: str
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* str
 
 When true the MFA token is cached in the credential manager.
 
 True by default in Windows/OSX. False for Linux. Can also be sourced from the `SNOWFLAKE_CLIENT_REQUEST_MFA_TOKEN` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#client_request_mfa_token SnowflakeProvider#client_request_mfa_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#client_request_mfa_token SnowflakeProvider#client_request_mfa_token}
 
 ---
 
 ##### `client_store_temporary_credential`<sup>Optional</sup> <a name="client_store_temporary_credential" id="@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.clientStoreTemporaryCredential"></a>
 
 ```python
-client_store_temporary_credential: typing.Union[bool, IResolvable]
+client_store_temporary_credential: str
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* str
 
 When true the ID token is cached in the credential manager.
 
 True by default in Windows/OSX. False for Linux. Can also be sourced from the `SNOWFLAKE_CLIENT_STORE_TEMPORARY_CREDENTIAL` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#client_store_temporary_credential SnowflakeProvider#client_store_temporary_credential}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#client_store_temporary_credential SnowflakeProvider#client_store_temporary_credential}
 
 ---
 
@@ -2493,9 +2824,23 @@ client_timeout: typing.Union[int, float]
 
 The timeout in seconds for the client to complete the authentication.
 
-Default is 900 seconds. Can also be sourced from the `SNOWFLAKE_CLIENT_TIMEOUT` environment variable.
+Can also be sourced from the `SNOWFLAKE_CLIENT_TIMEOUT` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#client_timeout SnowflakeProvider#client_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#client_timeout SnowflakeProvider#client_timeout}
+
+---
+
+##### `disable_console_login`<sup>Optional</sup> <a name="disable_console_login" id="@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.disableConsoleLogin"></a>
+
+```python
+disable_console_login: str
+```
+
+- *Type:* str
+
+Indicates whether console login should be disabled in the driver. Can also be sourced from the `SNOWFLAKE_DISABLE_CONSOLE_LOGIN` environment variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#disable_console_login SnowflakeProvider#disable_console_login}
 
 ---
 
@@ -2507,9 +2852,9 @@ disable_query_context_cache: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Should HTAP query context cache be disabled. Can also be sourced from the `SNOWFLAKE_DISABLE_QUERY_CONTEXT_CACHE` environment variable.
+Disables HTAP query context cache in the driver. Can also be sourced from the `SNOWFLAKE_DISABLE_QUERY_CONTEXT_CACHE` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#disable_query_context_cache SnowflakeProvider#disable_query_context_cache}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#disable_query_context_cache SnowflakeProvider#disable_query_context_cache}
 
 ---
 
@@ -2521,9 +2866,25 @@ disable_telemetry: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Indicates whether to disable telemetry. Can also be sourced from the `SNOWFLAKE_DISABLE_TELEMETRY` environment variable.
+Disables telemetry in the driver. Can also be sourced from the `DISABLE_TELEMETRY` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#disable_telemetry SnowflakeProvider#disable_telemetry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#disable_telemetry SnowflakeProvider#disable_telemetry}
+
+---
+
+##### `driver_tracing`<sup>Optional</sup> <a name="driver_tracing" id="@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.driverTracing"></a>
+
+```python
+driver_tracing: str
+```
+
+- *Type:* str
+
+Specifies the logging level to be used by the driver.
+
+Valid options are: `trace` | `debug` | `info` | `print` | `warning` | `error` | `fatal` | `panic`. Can also be sourced from the `SNOWFLAKE_DRIVER_TRACING` environment variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#driver_tracing SnowflakeProvider#driver_tracing}
 
 ---
 
@@ -2537,9 +2898,9 @@ external_browser_timeout: typing.Union[int, float]
 
 The timeout in seconds for the external browser to complete the authentication.
 
-Default is 120 seconds. Can also be sourced from the `SNOWFLAKE_EXTERNAL_BROWSER_TIMEOUT` environment variable.
+Can also be sourced from the `SNOWFLAKE_EXTERNAL_BROWSER_TIMEOUT` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#external_browser_timeout SnowflakeProvider#external_browser_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#external_browser_timeout SnowflakeProvider#external_browser_timeout}
 
 ---
 
@@ -2551,11 +2912,25 @@ host: str
 
 - *Type:* str
 
-Supports passing in a custom host value to the snowflake go driver for use with privatelink.
+Specifies a custom host value used by the driver for privatelink connections.
 
 Can also be sourced from the `SNOWFLAKE_HOST` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#host SnowflakeProvider#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#host SnowflakeProvider#host}
+
+---
+
+##### `include_retry_reason`<sup>Optional</sup> <a name="include_retry_reason" id="@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.includeRetryReason"></a>
+
+```python
+include_retry_reason: str
+```
+
+- *Type:* str
+
+Should retried request contain retry reason. Can also be sourced from the `SNOWFLAKE_INCLUDE_RETRY_REASON` environment variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#include_retry_reason SnowflakeProvider#include_retry_reason}
 
 ---
 
@@ -2571,7 +2946,7 @@ If true, bypass the Online Certificate Status Protocol (OCSP) certificate revoca
 
 IMPORTANT: Change the default value for testing or emergency situations only. Can also be sourced from the `SNOWFLAKE_INSECURE_MODE` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#insecure_mode SnowflakeProvider#insecure_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#insecure_mode SnowflakeProvider#insecure_mode}
 
 ---
 
@@ -2585,9 +2960,9 @@ jwt_client_timeout: typing.Union[int, float]
 
 The timeout in seconds for the JWT client to complete the authentication.
 
-Default is 10 seconds. Can also be sourced from the `SNOWFLAKE_JWT_CLIENT_TIMEOUT` environment variable.
+Can also be sourced from the `SNOWFLAKE_JWT_CLIENT_TIMEOUT` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#jwt_client_timeout SnowflakeProvider#jwt_client_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#jwt_client_timeout SnowflakeProvider#jwt_client_timeout}
 
 ---
 
@@ -2601,7 +2976,7 @@ jwt_expire_timeout: typing.Union[int, float]
 
 JWT expire after timeout in seconds. Can also be sourced from the `SNOWFLAKE_JWT_EXPIRE_TIMEOUT` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#jwt_expire_timeout SnowflakeProvider#jwt_expire_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#jwt_expire_timeout SnowflakeProvider#jwt_expire_timeout}
 
 ---
 
@@ -2617,7 +2992,7 @@ Enables the session to persist even after the connection is closed.
 
 Can also be sourced from the `SNOWFLAKE_KEEP_SESSION_ALIVE` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#keep_session_alive SnowflakeProvider#keep_session_alive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#keep_session_alive SnowflakeProvider#keep_session_alive}
 
 ---
 
@@ -2629,11 +3004,27 @@ login_timeout: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Login retry timeout EXCLUDING network roundtrip and read out http response.
+Login retry timeout in seconds EXCLUDING network roundtrip and read out http response.
 
 Can also be sourced from the `SNOWFLAKE_LOGIN_TIMEOUT` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#login_timeout SnowflakeProvider#login_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#login_timeout SnowflakeProvider#login_timeout}
+
+---
+
+##### `max_retry_count`<sup>Optional</sup> <a name="max_retry_count" id="@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.maxRetryCount"></a>
+
+```python
+max_retry_count: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Specifies how many times non-periodic HTTP request can be retried by the driver.
+
+Can also be sourced from the `SNOWFLAKE_MAX_RETRY_COUNT` environment variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#max_retry_count SnowflakeProvider#max_retry_count}
 
 ---
 
@@ -2649,7 +3040,7 @@ Token for use with OAuth.
 
 Generating the token is left to other tools. Cannot be used with `browser_auth`, `private_key_path`, `oauth_refresh_token` or `password`. Can also be sourced from `SNOWFLAKE_OAUTH_ACCESS_TOKEN` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#oauth_access_token SnowflakeProvider#oauth_access_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#oauth_access_token SnowflakeProvider#oauth_access_token}
 
 ---
 
@@ -2663,7 +3054,7 @@ oauth_client_id: str
 
 Required when `oauth_refresh_token` is used. Can also be sourced from `SNOWFLAKE_OAUTH_CLIENT_ID` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#oauth_client_id SnowflakeProvider#oauth_client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#oauth_client_id SnowflakeProvider#oauth_client_id}
 
 ---
 
@@ -2677,7 +3068,7 @@ oauth_client_secret: str
 
 Required when `oauth_refresh_token` is used. Can also be sourced from `SNOWFLAKE_OAUTH_CLIENT_SECRET` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#oauth_client_secret SnowflakeProvider#oauth_client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#oauth_client_secret SnowflakeProvider#oauth_client_secret}
 
 ---
 
@@ -2691,7 +3082,7 @@ oauth_endpoint: str
 
 Required when `oauth_refresh_token` is used. Can also be sourced from `SNOWFLAKE_OAUTH_ENDPOINT` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#oauth_endpoint SnowflakeProvider#oauth_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#oauth_endpoint SnowflakeProvider#oauth_endpoint}
 
 ---
 
@@ -2705,7 +3096,7 @@ oauth_redirect_url: str
 
 Required when `oauth_refresh_token` is used. Can also be sourced from `SNOWFLAKE_OAUTH_REDIRECT_URL` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#oauth_redirect_url SnowflakeProvider#oauth_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#oauth_redirect_url SnowflakeProvider#oauth_redirect_url}
 
 ---
 
@@ -2721,23 +3112,23 @@ Token for use with OAuth.
 
 Setup and generation of the token is left to other tools. Should be used in conjunction with `oauth_client_id`, `oauth_client_secret`, `oauth_endpoint`, `oauth_redirect_url`. Cannot be used with `browser_auth`, `private_key_path`, `oauth_access_token` or `password`. Can also be sourced from `SNOWFLAKE_OAUTH_REFRESH_TOKEN` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#oauth_refresh_token SnowflakeProvider#oauth_refresh_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#oauth_refresh_token SnowflakeProvider#oauth_refresh_token}
 
 ---
 
 ##### `ocsp_fail_open`<sup>Optional</sup> <a name="ocsp_fail_open" id="@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.ocspFailOpen"></a>
 
 ```python
-ocsp_fail_open: typing.Union[bool, IResolvable]
+ocsp_fail_open: str
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* str
 
 True represents OCSP fail open mode.
 
 False represents OCSP fail closed mode. Fail open true by default. Can also be sourced from the `SNOWFLAKE_OCSP_FAIL_OPEN` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#ocsp_fail_open SnowflakeProvider#ocsp_fail_open}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#ocsp_fail_open SnowflakeProvider#ocsp_fail_open}
 
 ---
 
@@ -2749,9 +3140,27 @@ okta_url: str
 
 - *Type:* str
 
-The URL of the Okta server. e.g. https://example.okta.com. Can also be sourced from the `SNOWFLAKE_OKTA_URL` environment variable.
+The URL of the Okta server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#okta_url SnowflakeProvider#okta_url}
+e.g. https://example.okta.com. Okta URL host needs to to have a suffix `okta.com`. Read more in Snowflake [docs](https://docs.snowflake.com/en/user-guide/oauth-okta). Can also be sourced from the `SNOWFLAKE_OKTA_URL` environment variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#okta_url SnowflakeProvider#okta_url}
+
+---
+
+##### `organization_name`<sup>Optional</sup> <a name="organization_name" id="@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.organizationName"></a>
+
+```python
+organization_name: str
+```
+
+- *Type:* str
+
+Specifies your Snowflake organization name assigned by Snowflake.
+
+For information about account identifiers, see the [Snowflake documentation](https://docs.snowflake.com/en/user-guide/admin-account-identifier#organization-name). Required unless using `profile`. Can also be sourced from the `SNOWFLAKE_ORGANIZATION_NAME` environment variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#organization_name SnowflakeProvider#organization_name}
 
 ---
 
@@ -2763,9 +3172,9 @@ params: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Sets other connection (i.e. session) parameters. [Parameters](https://docs.snowflake.com/en/sql-reference/parameters).
+Sets other connection (i.e. session) parameters. [Parameters](https://docs.snowflake.com/en/sql-reference/parameters). This field can not be set with environmental variables.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#params SnowflakeProvider#params}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#params SnowflakeProvider#params}
 
 ---
 
@@ -2781,7 +3190,7 @@ Specifies the passcode provided by Duo when using multi-factor authentication (M
 
 Can also be sourced from the `SNOWFLAKE_PASSCODE` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#passcode SnowflakeProvider#passcode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#passcode SnowflakeProvider#passcode}
 
 ---
 
@@ -2795,9 +3204,9 @@ passcode_in_password: typing.Union[bool, IResolvable]
 
 False by default.
 
-Set to true if the MFA passcode is embedded in the login password. Appends the MFA passcode to the end of the password. Can also be sourced from the `SNOWFLAKE_PASSCODE_IN_PASSWORD` environment variable.
+Set to true if the MFA passcode is embedded to the configured password. Can also be sourced from the `SNOWFLAKE_PASSCODE_IN_PASSWORD` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#passcode_in_password SnowflakeProvider#passcode_in_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#passcode_in_password SnowflakeProvider#passcode_in_password}
 
 ---
 
@@ -2809,11 +3218,11 @@ password: str
 
 - *Type:* str
 
-Password for username+password auth.
+Password for user + password auth.
 
 Cannot be used with `browser_auth` or `private_key_path`. Can also be sourced from the `SNOWFLAKE_PASSWORD` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#password SnowflakeProvider#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#password SnowflakeProvider#password}
 
 ---
 
@@ -2825,11 +3234,11 @@ port: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Support custom port values to snowflake go driver for use with privatelink.
+Specifies a custom port value used by the driver for privatelink connections.
 
 Can also be sourced from the `SNOWFLAKE_PORT` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#port SnowflakeProvider#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#port SnowflakeProvider#port}
 
 ---
 
@@ -2843,9 +3252,9 @@ private_key: str
 
 Private Key for username+private-key auth.
 
-Cannot be used with `browser_auth` or `password`. Can also be sourced from `SNOWFLAKE_PRIVATE_KEY` environment variable.
+Cannot be used with `browser_auth` or `password`. Can also be sourced from the `SNOWFLAKE_PRIVATE_KEY` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#private_key SnowflakeProvider#private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#private_key SnowflakeProvider#private_key}
 
 ---
 
@@ -2859,9 +3268,9 @@ private_key_passphrase: str
 
 Supports the encryption ciphers aes-128-cbc, aes-128-gcm, aes-192-cbc, aes-192-gcm, aes-256-cbc, aes-256-gcm, and des-ede3-cbc.
 
-Can also be sourced from `SNOWFLAKE_PRIVATE_KEY_PASSPHRASE` environment variable.
+Can also be sourced from the `SNOWFLAKE_PRIVATE_KEY_PASSPHRASE` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#private_key_passphrase SnowflakeProvider#private_key_passphrase}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#private_key_passphrase SnowflakeProvider#private_key_passphrase}
 
 ---
 
@@ -2877,7 +3286,7 @@ Path to a private key for using keypair authentication.
 
 Cannot be used with `browser_auth`, `oauth_access_token` or `password`. Can also be sourced from `SNOWFLAKE_PRIVATE_KEY_PATH` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#private_key_path SnowflakeProvider#private_key_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#private_key_path SnowflakeProvider#private_key_path}
 
 ---
 
@@ -2891,7 +3300,7 @@ profile: str
 
 Sets the profile to read from ~/.snowflake/config file. Can also be sourced from the `SNOWFLAKE_PROFILE` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#profile SnowflakeProvider#profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#profile SnowflakeProvider#profile}
 
 ---
 
@@ -2903,9 +3312,11 @@ protocol: str
 
 - *Type:* str
 
-Either http or https, defaults to https. Can also be sourced from the `SNOWFLAKE_PROTOCOL` environment variable.
+A protocol used in the connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#protocol SnowflakeProvider#protocol}
+Valid options are: `http` | `https`. Can also be sourced from the `SNOWFLAKE_PROTOCOL` environment variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#protocol SnowflakeProvider#protocol}
 
 ---
 
@@ -2921,7 +3332,7 @@ Snowflake region, such as "eu-central-1", with this parameter.
 
 However, since this parameter is deprecated, it is best to specify the region as part of the account parameter. For details, see the description of the account parameter. [Snowflake region](https://docs.snowflake.com/en/user-guide/intro-regions.html) to use.  Required if using the [legacy format for the `account` identifier](https://docs.snowflake.com/en/user-guide/admin-account-identifier.html#format-2-legacy-account-locator-in-a-region) in the form of `<cloud_region_id>.<cloud>`. Can also be sourced from the `SNOWFLAKE_REGION` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#region SnowflakeProvider#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#region SnowflakeProvider#region}
 
 ---
 
@@ -2933,11 +3344,11 @@ request_timeout: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-request retry timeout EXCLUDING network roundtrip and read out http response.
+request retry timeout in seconds EXCLUDING network roundtrip and read out http response.
 
 Can also be sourced from the `SNOWFLAKE_REQUEST_TIMEOUT` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#request_timeout SnowflakeProvider#request_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#request_timeout SnowflakeProvider#request_timeout}
 
 ---
 
@@ -2951,9 +3362,9 @@ role: str
 
 Specifies the role to use by default for accessing Snowflake objects in the client session.
 
-Can also be sourced from the `SNOWFLAKE_ROLE` environment variable. .
+Can also be sourced from the `SNOWFLAKE_ROLE` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#role SnowflakeProvider#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#role SnowflakeProvider#role}
 
 ---
 
@@ -2967,7 +3378,23 @@ session_params: typing.Mapping[str]
 
 Sets session parameters. [Parameters](https://docs.snowflake.com/en/sql-reference/parameters).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#session_params SnowflakeProvider#session_params}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#session_params SnowflakeProvider#session_params}
+
+---
+
+##### `tmp_directory_path`<sup>Optional</sup> <a name="tmp_directory_path" id="@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.tmpDirectoryPath"></a>
+
+```python
+tmp_directory_path: str
+```
+
+- *Type:* str
+
+Sets temporary directory used by the driver for operations like encrypting, compressing etc.
+
+Can also be sourced from the `SNOWFLAKE_TMP_DIRECTORY_PATH` environment variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#tmp_directory_path SnowflakeProvider#tmp_directory_path}
 
 ---
 
@@ -2983,7 +3410,7 @@ Token to use for OAuth and other forms of token based auth.
 
 Can also be sourced from the `SNOWFLAKE_TOKEN` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#token SnowflakeProvider#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#token SnowflakeProvider#token}
 
 ---
 
@@ -2997,7 +3424,7 @@ token_accessor: SnowflakeProviderTokenAccessor
 
 token_accessor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#token_accessor SnowflakeProvider#token_accessor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#token_accessor SnowflakeProvider#token_accessor}
 
 ---
 
@@ -3009,9 +3436,9 @@ user: str
 
 - *Type:* str
 
-Username. Can also be sourced from the `SNOWFLAKE_USER` environment variable. Required unless using `profile`.
+Username. Required unless using `profile`. Can also be sourced from the `SNOWFLAKE_USER` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#user SnowflakeProvider#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#user SnowflakeProvider#user}
 
 ---
 
@@ -3023,25 +3450,25 @@ username: str
 
 - *Type:* str
 
-Username for username+password authentication. Can also be sourced from the `SNOWFLAKE_USERNAME` environment variable. Required unless using `profile`.
+Username for user + password authentication. Required unless using `profile`. Can also be sourced from the `SNOWFLAKE_USERNAME` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#username SnowflakeProvider#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#username SnowflakeProvider#username}
 
 ---
 
 ##### `validate_default_parameters`<sup>Optional</sup> <a name="validate_default_parameters" id="@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.validateDefaultParameters"></a>
 
 ```python
-validate_default_parameters: typing.Union[bool, IResolvable]
+validate_default_parameters: str
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* str
 
 True by default.
 
 If false, disables the validation checks for Database, Schema, Warehouse and Role at the time a connection is established. Can also be sourced from the `SNOWFLAKE_VALIDATE_DEFAULT_PARAMETERS` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#validate_default_parameters SnowflakeProvider#validate_default_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#validate_default_parameters SnowflakeProvider#validate_default_parameters}
 
 ---
 
@@ -3057,7 +3484,7 @@ Specifies the virtual warehouse to use by default for queries, loading, etc.
 
 in the client session. Can also be sourced from the `SNOWFLAKE_WAREHOUSE` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#warehouse SnowflakeProvider#warehouse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#warehouse SnowflakeProvider#warehouse}
 
 ---
 
@@ -3101,7 +3528,7 @@ The client ID for the OAuth provider when using a refresh token to renew access 
 
 Can also be sourced from the `SNOWFLAKE_TOKEN_ACCESSOR_CLIENT_ID` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#client_id SnowflakeProvider#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#client_id SnowflakeProvider#client_id}
 
 ---
 
@@ -3117,7 +3544,7 @@ The client secret for the OAuth provider when using a refresh token to renew acc
 
 Can also be sourced from the `SNOWFLAKE_TOKEN_ACCESSOR_CLIENT_SECRET` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#client_secret SnowflakeProvider#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#client_secret SnowflakeProvider#client_secret}
 
 ---
 
@@ -3133,7 +3560,7 @@ The redirect URI for the OAuth provider when using a refresh token to renew acce
 
 Can also be sourced from the `SNOWFLAKE_TOKEN_ACCESSOR_REDIRECT_URI` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#redirect_uri SnowflakeProvider#redirect_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#redirect_uri SnowflakeProvider#redirect_uri}
 
 ---
 
@@ -3149,7 +3576,7 @@ The refresh token for the OAuth provider when using a refresh token to renew acc
 
 Can also be sourced from the `SNOWFLAKE_TOKEN_ACCESSOR_REFRESH_TOKEN` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#refresh_token SnowflakeProvider#refresh_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#refresh_token SnowflakeProvider#refresh_token}
 
 ---
 
@@ -3163,7 +3590,7 @@ token_endpoint: str
 
 The token endpoint for the OAuth provider e.g. https://{yourDomain}/oauth/token when using a refresh token to renew access token. Can also be sourced from the `SNOWFLAKE_TOKEN_ACCESSOR_TOKEN_ENDPOINT` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#token_endpoint SnowflakeProvider#token_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#token_endpoint SnowflakeProvider#token_endpoint}
 
 ---
 

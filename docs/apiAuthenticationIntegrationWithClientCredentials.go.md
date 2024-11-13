@@ -4,12 +4,12 @@
 
 ### ApiAuthenticationIntegrationWithClientCredentials <a name="ApiAuthenticationIntegrationWithClientCredentials" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentials"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/api_authentication_integration_with_client_credentials snowflake_api_authentication_integration_with_client_credentials}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/api_authentication_integration_with_client_credentials snowflake_api_authentication_integration_with_client_credentials}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithclientcredentials"
 
 apiauthenticationintegrationwithclientcredentials.NewApiAuthenticationIntegrationWithClientCredentials(scope Construct, id *string, config ApiAuthenticationIntegrationWithClientCredentialsConfig) ApiAuthenticationIntegrationWithClientCredentials
 ```
@@ -427,7 +427,7 @@ func ResetOauthTokenEndpoint()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentials.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithclientcredentials"
 
 apiauthenticationintegrationwithclientcredentials.ApiAuthenticationIntegrationWithClientCredentials_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentials.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithclientcredentials"
 
 apiauthenticationintegrationwithclientcredentials.ApiAuthenticationIntegrationWithClientCredentials_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ apiauthenticationintegrationwithclientcredentials.ApiAuthenticationIntegrationWi
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentials.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithclientcredentials"
 
 apiauthenticationintegrationwithclientcredentials.ApiAuthenticationIntegrationWithClientCredentials_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ apiauthenticationintegrationwithclientcredentials.ApiAuthenticationIntegrationWi
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentials.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithclientcredentials"
 
 apiauthenticationintegrationwithclientcredentials.ApiAuthenticationIntegrationWithClientCredentials_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -516,7 +516,7 @@ The construct id used in the generated config for the ApiAuthenticationIntegrati
 
 The id of the existing ApiAuthenticationIntegrationWithClientCredentials that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/api_authentication_integration_with_client_credentials#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/api_authentication_integration_with_client_credentials#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -991,7 +991,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentialsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithclientcredentials"
 
 &apiauthenticationintegrationwithclientcredentials.ApiAuthenticationIntegrationWithClientCredentialsConfig {
 	Connection: interface{},
@@ -1031,7 +1031,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthentica
 | <code><a href="#@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentialsConfig.property.oauthClientId">OauthClientId</a></code> | <code>*string</code> | Specifies the client ID for the OAuth application in the external service. |
 | <code><a href="#@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentialsConfig.property.oauthClientSecret">OauthClientSecret</a></code> | <code>*string</code> | Specifies the client secret for the OAuth application in the ServiceNow instance from the previous step. |
 | <code><a href="#@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentialsConfig.property.comment">Comment</a></code> | <code>*string</code> | Specifies a comment for the integration. |
-| <code><a href="#@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentialsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/api_authentication_integration_with_client_credentials#id ApiAuthenticationIntegrationWithClientCredentials#id}. |
+| <code><a href="#@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentialsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/api_authentication_integration_with_client_credentials#id ApiAuthenticationIntegrationWithClientCredentials#id}. |
 | <code><a href="#@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentialsConfig.property.oauthAccessTokenValidity">OauthAccessTokenValidity</a></code> | <code>*f64</code> | Specifies the default lifetime of the OAuth access token (in seconds) issued by an OAuth server. |
 | <code><a href="#@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentialsConfig.property.oauthAllowedScopes">OauthAllowedScopes</a></code> | <code>*[]*string</code> | Specifies a list of scopes to use when making a request from the OAuth by a role with USAGE on the integration during the OAuth client credentials flow. |
 | <code><a href="#@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentialsConfig.property.oauthClientAuthMethod">OauthClientAuthMethod</a></code> | <code>*string</code> | Specifies that POST is used as the authentication method to the external service. |
@@ -1120,7 +1120,7 @@ Enabled interface{}
 
 Specifies whether this security integration is enabled or disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/api_authentication_integration_with_client_credentials#enabled ApiAuthenticationIntegrationWithClientCredentials#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/api_authentication_integration_with_client_credentials#enabled ApiAuthenticationIntegrationWithClientCredentials#enabled}
 
 ---
 
@@ -1134,7 +1134,7 @@ Name *string
 
 Specifies the identifier (i.e. name) for the integration. This value must be unique in your account. Due to technical limitations (read more [here](https://github.com/Snowflake-Labs/terraform-provider-snowflake/blob/main/docs/technical-documentation/identifiers_rework_design_decisions.md#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `(`, `)`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/api_authentication_integration_with_client_credentials#name ApiAuthenticationIntegrationWithClientCredentials#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/api_authentication_integration_with_client_credentials#name ApiAuthenticationIntegrationWithClientCredentials#name}
 
 ---
 
@@ -1148,7 +1148,7 @@ OauthClientId *string
 
 Specifies the client ID for the OAuth application in the external service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/api_authentication_integration_with_client_credentials#oauth_client_id ApiAuthenticationIntegrationWithClientCredentials#oauth_client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/api_authentication_integration_with_client_credentials#oauth_client_id ApiAuthenticationIntegrationWithClientCredentials#oauth_client_id}
 
 ---
 
@@ -1164,7 +1164,7 @@ Specifies the client secret for the OAuth application in the ServiceNow instance
 
 The connector uses this to request an access token from the ServiceNow instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/api_authentication_integration_with_client_credentials#oauth_client_secret ApiAuthenticationIntegrationWithClientCredentials#oauth_client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/api_authentication_integration_with_client_credentials#oauth_client_secret ApiAuthenticationIntegrationWithClientCredentials#oauth_client_secret}
 
 ---
 
@@ -1178,7 +1178,7 @@ Comment *string
 
 Specifies a comment for the integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/api_authentication_integration_with_client_credentials#comment ApiAuthenticationIntegrationWithClientCredentials#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/api_authentication_integration_with_client_credentials#comment ApiAuthenticationIntegrationWithClientCredentials#comment}
 
 ---
 
@@ -1190,7 +1190,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/api_authentication_integration_with_client_credentials#id ApiAuthenticationIntegrationWithClientCredentials#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/api_authentication_integration_with_client_credentials#id ApiAuthenticationIntegrationWithClientCredentials#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1207,7 +1207,7 @@ OauthAccessTokenValidity *f64
 
 Specifies the default lifetime of the OAuth access token (in seconds) issued by an OAuth server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/api_authentication_integration_with_client_credentials#oauth_access_token_validity ApiAuthenticationIntegrationWithClientCredentials#oauth_access_token_validity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/api_authentication_integration_with_client_credentials#oauth_access_token_validity ApiAuthenticationIntegrationWithClientCredentials#oauth_access_token_validity}
 
 ---
 
@@ -1221,7 +1221,7 @@ OauthAllowedScopes *[]*string
 
 Specifies a list of scopes to use when making a request from the OAuth by a role with USAGE on the integration during the OAuth client credentials flow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/api_authentication_integration_with_client_credentials#oauth_allowed_scopes ApiAuthenticationIntegrationWithClientCredentials#oauth_allowed_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/api_authentication_integration_with_client_credentials#oauth_allowed_scopes ApiAuthenticationIntegrationWithClientCredentials#oauth_allowed_scopes}
 
 ---
 
@@ -1237,7 +1237,7 @@ Specifies that POST is used as the authentication method to the external service
 
 If removed from the config, the resource is recreated. Valid values are (case-insensitive): `CLIENT_SECRET_POST`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/api_authentication_integration_with_client_credentials#oauth_client_auth_method ApiAuthenticationIntegrationWithClientCredentials#oauth_client_auth_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/api_authentication_integration_with_client_credentials#oauth_client_auth_method ApiAuthenticationIntegrationWithClientCredentials#oauth_client_auth_method}
 
 ---
 
@@ -1251,7 +1251,7 @@ OauthRefreshTokenValidity *f64
 
 Specifies the value to determine the validity of the refresh token obtained from the OAuth server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/api_authentication_integration_with_client_credentials#oauth_refresh_token_validity ApiAuthenticationIntegrationWithClientCredentials#oauth_refresh_token_validity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/api_authentication_integration_with_client_credentials#oauth_refresh_token_validity ApiAuthenticationIntegrationWithClientCredentials#oauth_refresh_token_validity}
 
 ---
 
@@ -1267,7 +1267,7 @@ Specifies the token endpoint used by the client to obtain an access token by pre
 
 The token endpoint is used with every authorization grant except for the implicit grant type (since an access token is issued directly). If removed from the config, the resource is recreated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/api_authentication_integration_with_client_credentials#oauth_token_endpoint ApiAuthenticationIntegrationWithClientCredentials#oauth_token_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/api_authentication_integration_with_client_credentials#oauth_token_endpoint ApiAuthenticationIntegrationWithClientCredentials#oauth_token_endpoint}
 
 ---
 
@@ -1276,7 +1276,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithclientcredentials"
 
 &apiauthenticationintegrationwithclientcredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutput {
 
@@ -1289,7 +1289,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthentica
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputAuthType.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithclientcredentials"
 
 &apiauthenticationintegrationwithclientcredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputAuthType {
 
@@ -1302,7 +1302,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthentica
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputComment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithclientcredentials"
 
 &apiauthenticationintegrationwithclientcredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputComment {
 
@@ -1315,7 +1315,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthentica
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputEnabled.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithclientcredentials"
 
 &apiauthenticationintegrationwithclientcredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputEnabled {
 
@@ -1328,7 +1328,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthentica
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthAccessTokenValidity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithclientcredentials"
 
 &apiauthenticationintegrationwithclientcredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthAccessTokenValidity {
 
@@ -1341,7 +1341,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthentica
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthAllowedScopes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithclientcredentials"
 
 &apiauthenticationintegrationwithclientcredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthAllowedScopes {
 
@@ -1354,7 +1354,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthentica
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthAuthorizationEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithclientcredentials"
 
 &apiauthenticationintegrationwithclientcredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthAuthorizationEndpoint {
 
@@ -1367,7 +1367,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthentica
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthClientAuthMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithclientcredentials"
 
 &apiauthenticationintegrationwithclientcredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthClientAuthMethod {
 
@@ -1380,7 +1380,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthentica
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthClientId.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithclientcredentials"
 
 &apiauthenticationintegrationwithclientcredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthClientId {
 
@@ -1393,7 +1393,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthentica
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthGrant.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithclientcredentials"
 
 &apiauthenticationintegrationwithclientcredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthGrant {
 
@@ -1406,7 +1406,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthentica
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthRefreshTokenValidity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithclientcredentials"
 
 &apiauthenticationintegrationwithclientcredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthRefreshTokenValidity {
 
@@ -1419,7 +1419,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthentica
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthTokenEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithclientcredentials"
 
 &apiauthenticationintegrationwithclientcredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthTokenEndpoint {
 
@@ -1432,7 +1432,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthentica
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputParentIntegration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithclientcredentials"
 
 &apiauthenticationintegrationwithclientcredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputParentIntegration {
 
@@ -1445,7 +1445,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthentica
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentialsShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithclientcredentials"
 
 &apiauthenticationintegrationwithclientcredentials.ApiAuthenticationIntegrationWithClientCredentialsShowOutput {
 
@@ -1460,7 +1460,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthentica
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputAuthTypeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithclientcredentials"
 
 apiauthenticationintegrationwithclientcredentials.NewApiAuthenticationIntegrationWithClientCredentialsDescribeOutputAuthTypeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputAuthTypeList
 ```
@@ -1609,7 +1609,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputAuthTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithclientcredentials"
 
 apiauthenticationintegrationwithclientcredentials.NewApiAuthenticationIntegrationWithClientCredentialsDescribeOutputAuthTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputAuthTypeOutputReference
 ```
@@ -1920,7 +1920,7 @@ func InternalValue() ApiAuthenticationIntegrationWithClientCredentialsDescribeOu
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputCommentList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithclientcredentials"
 
 apiauthenticationintegrationwithclientcredentials.NewApiAuthenticationIntegrationWithClientCredentialsDescribeOutputCommentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputCommentList
 ```
@@ -2069,7 +2069,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputCommentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithclientcredentials"
 
 apiauthenticationintegrationwithclientcredentials.NewApiAuthenticationIntegrationWithClientCredentialsDescribeOutputCommentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputCommentOutputReference
 ```
@@ -2380,7 +2380,7 @@ func InternalValue() ApiAuthenticationIntegrationWithClientCredentialsDescribeOu
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputEnabledList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithclientcredentials"
 
 apiauthenticationintegrationwithclientcredentials.NewApiAuthenticationIntegrationWithClientCredentialsDescribeOutputEnabledList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputEnabledList
 ```
@@ -2529,7 +2529,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputEnabledOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithclientcredentials"
 
 apiauthenticationintegrationwithclientcredentials.NewApiAuthenticationIntegrationWithClientCredentialsDescribeOutputEnabledOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputEnabledOutputReference
 ```
@@ -2840,7 +2840,7 @@ func InternalValue() ApiAuthenticationIntegrationWithClientCredentialsDescribeOu
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithclientcredentials"
 
 apiauthenticationintegrationwithclientcredentials.NewApiAuthenticationIntegrationWithClientCredentialsDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputList
 ```
@@ -2989,7 +2989,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthAccessTokenValidityList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithclientcredentials"
 
 apiauthenticationintegrationwithclientcredentials.NewApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthAccessTokenValidityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthAccessTokenValidityList
 ```
@@ -3138,7 +3138,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthAccessTokenValidityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithclientcredentials"
 
 apiauthenticationintegrationwithclientcredentials.NewApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthAccessTokenValidityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthAccessTokenValidityOutputReference
 ```
@@ -3449,7 +3449,7 @@ func InternalValue() ApiAuthenticationIntegrationWithClientCredentialsDescribeOu
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthAllowedScopesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithclientcredentials"
 
 apiauthenticationintegrationwithclientcredentials.NewApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthAllowedScopesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthAllowedScopesList
 ```
@@ -3598,7 +3598,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthAllowedScopesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithclientcredentials"
 
 apiauthenticationintegrationwithclientcredentials.NewApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthAllowedScopesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthAllowedScopesOutputReference
 ```
@@ -3909,7 +3909,7 @@ func InternalValue() ApiAuthenticationIntegrationWithClientCredentialsDescribeOu
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthAuthorizationEndpointList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithclientcredentials"
 
 apiauthenticationintegrationwithclientcredentials.NewApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthAuthorizationEndpointList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthAuthorizationEndpointList
 ```
@@ -4058,7 +4058,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthAuthorizationEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithclientcredentials"
 
 apiauthenticationintegrationwithclientcredentials.NewApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthAuthorizationEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthAuthorizationEndpointOutputReference
 ```
@@ -4369,7 +4369,7 @@ func InternalValue() ApiAuthenticationIntegrationWithClientCredentialsDescribeOu
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthClientAuthMethodList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithclientcredentials"
 
 apiauthenticationintegrationwithclientcredentials.NewApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthClientAuthMethodList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthClientAuthMethodList
 ```
@@ -4518,7 +4518,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthClientAuthMethodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithclientcredentials"
 
 apiauthenticationintegrationwithclientcredentials.NewApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthClientAuthMethodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthClientAuthMethodOutputReference
 ```
@@ -4829,7 +4829,7 @@ func InternalValue() ApiAuthenticationIntegrationWithClientCredentialsDescribeOu
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthClientIdList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithclientcredentials"
 
 apiauthenticationintegrationwithclientcredentials.NewApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthClientIdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthClientIdList
 ```
@@ -4978,7 +4978,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthClientIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithclientcredentials"
 
 apiauthenticationintegrationwithclientcredentials.NewApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthClientIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthClientIdOutputReference
 ```
@@ -5289,7 +5289,7 @@ func InternalValue() ApiAuthenticationIntegrationWithClientCredentialsDescribeOu
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthGrantList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithclientcredentials"
 
 apiauthenticationintegrationwithclientcredentials.NewApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthGrantList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthGrantList
 ```
@@ -5438,7 +5438,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthGrantOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithclientcredentials"
 
 apiauthenticationintegrationwithclientcredentials.NewApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthGrantOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthGrantOutputReference
 ```
@@ -5749,7 +5749,7 @@ func InternalValue() ApiAuthenticationIntegrationWithClientCredentialsDescribeOu
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthRefreshTokenValidityList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithclientcredentials"
 
 apiauthenticationintegrationwithclientcredentials.NewApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthRefreshTokenValidityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthRefreshTokenValidityList
 ```
@@ -5898,7 +5898,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthRefreshTokenValidityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithclientcredentials"
 
 apiauthenticationintegrationwithclientcredentials.NewApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthRefreshTokenValidityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthRefreshTokenValidityOutputReference
 ```
@@ -6209,7 +6209,7 @@ func InternalValue() ApiAuthenticationIntegrationWithClientCredentialsDescribeOu
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthTokenEndpointList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithclientcredentials"
 
 apiauthenticationintegrationwithclientcredentials.NewApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthTokenEndpointList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthTokenEndpointList
 ```
@@ -6358,7 +6358,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthTokenEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithclientcredentials"
 
 apiauthenticationintegrationwithclientcredentials.NewApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthTokenEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOauthTokenEndpointOutputReference
 ```
@@ -6669,7 +6669,7 @@ func InternalValue() ApiAuthenticationIntegrationWithClientCredentialsDescribeOu
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithclientcredentials"
 
 apiauthenticationintegrationwithclientcredentials.NewApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputOutputReference
 ```
@@ -7068,7 +7068,7 @@ func InternalValue() ApiAuthenticationIntegrationWithClientCredentialsDescribeOu
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputParentIntegrationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithclientcredentials"
 
 apiauthenticationintegrationwithclientcredentials.NewApiAuthenticationIntegrationWithClientCredentialsDescribeOutputParentIntegrationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputParentIntegrationList
 ```
@@ -7217,7 +7217,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputParentIntegrationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithclientcredentials"
 
 apiauthenticationintegrationwithclientcredentials.NewApiAuthenticationIntegrationWithClientCredentialsDescribeOutputParentIntegrationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApiAuthenticationIntegrationWithClientCredentialsDescribeOutputParentIntegrationOutputReference
 ```
@@ -7528,7 +7528,7 @@ func InternalValue() ApiAuthenticationIntegrationWithClientCredentialsDescribeOu
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentialsShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithclientcredentials"
 
 apiauthenticationintegrationwithclientcredentials.NewApiAuthenticationIntegrationWithClientCredentialsShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApiAuthenticationIntegrationWithClientCredentialsShowOutputList
 ```
@@ -7677,7 +7677,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.apiAuthenticationIntegrationWithClientCredentials.ApiAuthenticationIntegrationWithClientCredentialsShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/apiauthenticationintegrationwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/apiauthenticationintegrationwithclientcredentials"
 
 apiauthenticationintegrationwithclientcredentials.NewApiAuthenticationIntegrationWithClientCredentialsShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApiAuthenticationIntegrationWithClientCredentialsShowOutputOutputReference
 ```

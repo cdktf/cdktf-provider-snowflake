@@ -4,7 +4,7 @@
 
 ### Streamlit <a name="Streamlit" id="@cdktf/provider-snowflake.streamlit.Streamlit"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/streamlit snowflake_streamlit}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/streamlit snowflake_streamlit}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.streamlit.Streamlit.Initializer"></a>
 
@@ -509,7 +509,7 @@ The construct id used in the generated config for the Streamlit to import.
 
 The id of the existing Streamlit that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/streamlit#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/streamlit#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1008,7 +1008,7 @@ const streamlitConfig: streamlit.StreamlitConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.streamlit.StreamlitConfig.property.comment">comment</a></code> | <code>string</code> | Specifies a comment for the streamlit. |
 | <code><a href="#@cdktf/provider-snowflake.streamlit.StreamlitConfig.property.directoryLocation">directoryLocation</a></code> | <code>string</code> | Specifies the full path to the named stage containing the Streamlit Python files, media files, and the environment.yml file. |
 | <code><a href="#@cdktf/provider-snowflake.streamlit.StreamlitConfig.property.externalAccessIntegrations">externalAccessIntegrations</a></code> | <code>string[]</code> | External access integrations connected to the Streamlit. |
-| <code><a href="#@cdktf/provider-snowflake.streamlit.StreamlitConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/streamlit#id Streamlit#id}. |
+| <code><a href="#@cdktf/provider-snowflake.streamlit.StreamlitConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/streamlit#id Streamlit#id}. |
 | <code><a href="#@cdktf/provider-snowflake.streamlit.StreamlitConfig.property.queryWarehouse">queryWarehouse</a></code> | <code>string</code> | Specifies the warehouse where SQL queries issued by the Streamlit application are run. |
 | <code><a href="#@cdktf/provider-snowflake.streamlit.StreamlitConfig.property.title">title</a></code> | <code>string</code> | Specifies a title for the Streamlit app to display in Snowsight. |
 
@@ -1094,7 +1094,7 @@ public readonly database: string;
 
 The database in which to create the streamlit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/streamlit#database Streamlit#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/streamlit#database Streamlit#database}
 
 ---
 
@@ -1108,7 +1108,7 @@ public readonly mainFile: string;
 
 Specifies the filename of the Streamlit Python application. This filename is relative to the value of `root_location`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/streamlit#main_file Streamlit#main_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/streamlit#main_file Streamlit#main_file}
 
 ---
 
@@ -1122,7 +1122,7 @@ public readonly name: string;
 
 String that specifies the identifier (i.e. name) for the streamlit; must be unique in your account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/streamlit#name Streamlit#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/streamlit#name Streamlit#name}
 
 ---
 
@@ -1136,7 +1136,7 @@ public readonly schema: string;
 
 The schema in which to create the streamlit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/streamlit#schema Streamlit#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/streamlit#schema Streamlit#schema}
 
 ---
 
@@ -1150,7 +1150,7 @@ public readonly stage: string;
 
 The stage in which streamlit files are located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/streamlit#stage Streamlit#stage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/streamlit#stage Streamlit#stage}
 
 ---
 
@@ -1164,7 +1164,7 @@ public readonly comment: string;
 
 Specifies a comment for the streamlit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/streamlit#comment Streamlit#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/streamlit#comment Streamlit#comment}
 
 ---
 
@@ -1178,7 +1178,7 @@ public readonly directoryLocation: string;
 
 Specifies the full path to the named stage containing the Streamlit Python files, media files, and the environment.yml file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/streamlit#directory_location Streamlit#directory_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/streamlit#directory_location Streamlit#directory_location}
 
 ---
 
@@ -1192,7 +1192,7 @@ public readonly externalAccessIntegrations: string[];
 
 External access integrations connected to the Streamlit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/streamlit#external_access_integrations Streamlit#external_access_integrations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/streamlit#external_access_integrations Streamlit#external_access_integrations}
 
 ---
 
@@ -1204,7 +1204,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/streamlit#id Streamlit#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/streamlit#id Streamlit#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1221,7 +1221,7 @@ public readonly queryWarehouse: string;
 
 Specifies the warehouse where SQL queries issued by the Streamlit application are run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/streamlit#query_warehouse Streamlit#query_warehouse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/streamlit#query_warehouse Streamlit#query_warehouse}
 
 ---
 
@@ -1235,7 +1235,7 @@ public readonly title: string;
 
 Specifies a title for the Streamlit app to display in Snowsight.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/streamlit#title Streamlit#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/streamlit#title Streamlit#title}
 
 ---
 

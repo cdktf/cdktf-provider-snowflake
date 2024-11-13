@@ -4,12 +4,12 @@
 
 ### StreamOnExternalTable <a name="StreamOnExternalTable" id="@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/stream_on_external_table snowflake_stream_on_external_table}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/stream_on_external_table snowflake_stream_on_external_table}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/streamonexternaltable"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/streamonexternaltable"
 
 streamonexternaltable.NewStreamOnExternalTable(scope Construct, id *string, config StreamOnExternalTableConfig) StreamOnExternalTable
 ```
@@ -446,7 +446,7 @@ func ResetInsertOnly()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTable.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/streamonexternaltable"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/streamonexternaltable"
 
 streamonexternaltable.StreamOnExternalTable_IsConstruct(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/streamonexternaltable"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/streamonexternaltable"
 
 streamonexternaltable.StreamOnExternalTable_IsTerraformElement(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ streamonexternaltable.StreamOnExternalTable_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTable.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/streamonexternaltable"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/streamonexternaltable"
 
 streamonexternaltable.StreamOnExternalTable_IsTerraformResource(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ streamonexternaltable.StreamOnExternalTable_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTable.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/streamonexternaltable"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/streamonexternaltable"
 
 streamonexternaltable.StreamOnExternalTable_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -535,7 +535,7 @@ The construct id used in the generated config for the StreamOnExternalTable to i
 
 The id of the existing StreamOnExternalTable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/stream_on_external_table#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/stream_on_external_table#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -570,6 +570,8 @@ Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 | <code><a href="#@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTable.property.describeOutput">DescribeOutput</a></code> | <code><a href="#@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableDescribeOutputList">StreamOnExternalTableDescribeOutputList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTable.property.fullyQualifiedName">FullyQualifiedName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTable.property.showOutput">ShowOutput</a></code> | <code><a href="#@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableShowOutputList">StreamOnExternalTableShowOutputList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTable.property.stale">Stale</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTable.property.streamType">StreamType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTable.property.atInput">AtInput</a></code> | <code><a href="#@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableAt">StreamOnExternalTableAt</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTable.property.beforeInput">BeforeInput</a></code> | <code><a href="#@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableBefore">StreamOnExternalTableBefore</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTable.property.commentInput">CommentInput</a></code> | <code>*string</code> | *No description.* |
@@ -783,6 +785,26 @@ func ShowOutput() StreamOnExternalTableShowOutputList
 
 ---
 
+##### `Stale`<sup>Required</sup> <a name="Stale" id="@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTable.property.stale"></a>
+
+```go
+func Stale() IResolvable
+```
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable
+
+---
+
+##### `StreamType`<sup>Required</sup> <a name="StreamType" id="@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTable.property.streamType"></a>
+
+```go
+func StreamType() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `AtInput`<sup>Optional</sup> <a name="AtInput" id="@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTable.property.atInput"></a>
 
 ```go
@@ -988,7 +1010,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableAt.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/streamonexternaltable"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/streamonexternaltable"
 
 &streamonexternaltable.StreamOnExternalTableAt {
 	Offset: *string,
@@ -1019,7 +1041,7 @@ Offset *string
 
 Specifies the difference in seconds from the current time to use for Time Travel, in the form -N where N can be an integer or arithmetic expression (e.g. -120 is 120 seconds, -30*60 is 1800 seconds or 30 minutes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/stream_on_external_table#offset StreamOnExternalTable#offset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/stream_on_external_table#offset StreamOnExternalTable#offset}
 
 ---
 
@@ -1035,7 +1057,7 @@ Specifies the query ID of a statement to use as the reference point for Time Tra
 
 This parameter supports any statement of one of the following types: DML (e.g. INSERT, UPDATE, DELETE), TCL (BEGIN, COMMIT transaction), SELECT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/stream_on_external_table#statement StreamOnExternalTable#statement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/stream_on_external_table#statement StreamOnExternalTable#statement}
 
 ---
 
@@ -1049,7 +1071,7 @@ Stream *string
 
 Specifies the identifier (i.e. name) for an existing stream on the queried table or view. The current offset in the stream is used as the AT point in time for returning change data for the source object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/stream_on_external_table#stream StreamOnExternalTable#stream}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/stream_on_external_table#stream StreamOnExternalTable#stream}
 
 ---
 
@@ -1065,7 +1087,7 @@ Specifies an exact date and time to use for Time Travel.
 
 The value must be explicitly cast to a TIMESTAMP, TIMESTAMP_LTZ, TIMESTAMP_NTZ, or TIMESTAMP_TZ data type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/stream_on_external_table#timestamp StreamOnExternalTable#timestamp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/stream_on_external_table#timestamp StreamOnExternalTable#timestamp}
 
 ---
 
@@ -1074,7 +1096,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableBefore.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/streamonexternaltable"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/streamonexternaltable"
 
 &streamonexternaltable.StreamOnExternalTableBefore {
 	Offset: *string,
@@ -1105,7 +1127,7 @@ Offset *string
 
 Specifies the difference in seconds from the current time to use for Time Travel, in the form -N where N can be an integer or arithmetic expression (e.g. -120 is 120 seconds, -30*60 is 1800 seconds or 30 minutes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/stream_on_external_table#offset StreamOnExternalTable#offset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/stream_on_external_table#offset StreamOnExternalTable#offset}
 
 ---
 
@@ -1121,7 +1143,7 @@ Specifies the query ID of a statement to use as the reference point for Time Tra
 
 This parameter supports any statement of one of the following types: DML (e.g. INSERT, UPDATE, DELETE), TCL (BEGIN, COMMIT transaction), SELECT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/stream_on_external_table#statement StreamOnExternalTable#statement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/stream_on_external_table#statement StreamOnExternalTable#statement}
 
 ---
 
@@ -1135,7 +1157,7 @@ Stream *string
 
 Specifies the identifier (i.e. name) for an existing stream on the queried table or view. The current offset in the stream is used as the AT point in time for returning change data for the source object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/stream_on_external_table#stream StreamOnExternalTable#stream}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/stream_on_external_table#stream StreamOnExternalTable#stream}
 
 ---
 
@@ -1151,7 +1173,7 @@ Specifies an exact date and time to use for Time Travel.
 
 The value must be explicitly cast to a TIMESTAMP, TIMESTAMP_LTZ, TIMESTAMP_NTZ, or TIMESTAMP_TZ data type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/stream_on_external_table#timestamp StreamOnExternalTable#timestamp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/stream_on_external_table#timestamp StreamOnExternalTable#timestamp}
 
 ---
 
@@ -1160,7 +1182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/streamonexternaltable"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/streamonexternaltable"
 
 &streamonexternaltable.StreamOnExternalTableConfig {
 	Connection: interface{},
@@ -1174,8 +1196,8 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/streamonexter
 	ExternalTable: *string,
 	Name: *string,
 	Schema: *string,
-	At: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11.streamOnExternalTable.StreamOnExternalTableAt,
-	Before: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11.streamOnExternalTable.StreamOnExternalTableBefore,
+	At: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.streamOnExternalTable.StreamOnExternalTableAt,
+	Before: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.streamOnExternalTable.StreamOnExternalTableBefore,
 	Comment: *string,
 	CopyGrants: interface{},
 	Id: *string,
@@ -1202,7 +1224,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/streamonexter
 | <code><a href="#@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableConfig.property.before">Before</a></code> | <code><a href="#@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableBefore">StreamOnExternalTableBefore</a></code> | before block. |
 | <code><a href="#@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableConfig.property.comment">Comment</a></code> | <code>*string</code> | Specifies a comment for the stream. |
 | <code><a href="#@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableConfig.property.copyGrants">CopyGrants</a></code> | <code>interface{}</code> | Retains the access permissions from the original stream when a stream is recreated using the OR REPLACE clause. |
-| <code><a href="#@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/stream_on_external_table#id StreamOnExternalTable#id}. |
+| <code><a href="#@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/stream_on_external_table#id StreamOnExternalTable#id}. |
 | <code><a href="#@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableConfig.property.insertOnly">InsertOnly</a></code> | <code>*string</code> | Specifies whether this is an insert-only stream. |
 
 ---
@@ -1289,7 +1311,7 @@ The database in which to create the stream.
 
 Due to technical limitations (read more [here](https://github.com/Snowflake-Labs/terraform-provider-snowflake/blob/main/docs/technical-documentation/identifiers_rework_design_decisions.md#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `(`, `)`, `"`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/stream_on_external_table#database StreamOnExternalTable#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/stream_on_external_table#database StreamOnExternalTable#database}
 
 ---
 
@@ -1305,7 +1327,7 @@ Specifies an identifier for the external table the stream will monitor.
 
 Due to technical limitations (read more [here](https://github.com/Snowflake-Labs/terraform-provider-snowflake/blob/main/docs/technical-documentation/identifiers_rework_design_decisions.md#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `(`, `)`, `"`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/stream_on_external_table#external_table StreamOnExternalTable#external_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/stream_on_external_table#external_table StreamOnExternalTable#external_table}
 
 ---
 
@@ -1321,7 +1343,7 @@ Specifies the identifier for the stream;
 
 must be unique for the database and schema in which the stream is created. Due to technical limitations (read more [here](https://github.com/Snowflake-Labs/terraform-provider-snowflake/blob/main/docs/technical-documentation/identifiers_rework_design_decisions.md#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `(`, `)`, `"`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/stream_on_external_table#name StreamOnExternalTable#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/stream_on_external_table#name StreamOnExternalTable#name}
 
 ---
 
@@ -1337,7 +1359,7 @@ The schema in which to create the stream.
 
 Due to technical limitations (read more [here](https://github.com/Snowflake-Labs/terraform-provider-snowflake/blob/main/docs/technical-documentation/identifiers_rework_design_decisions.md#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `(`, `)`, `"`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/stream_on_external_table#schema StreamOnExternalTable#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/stream_on_external_table#schema StreamOnExternalTable#schema}
 
 ---
 
@@ -1351,7 +1373,7 @@ At StreamOnExternalTableAt
 
 at block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/stream_on_external_table#at StreamOnExternalTable#at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/stream_on_external_table#at StreamOnExternalTable#at}
 
 ---
 
@@ -1365,7 +1387,7 @@ Before StreamOnExternalTableBefore
 
 before block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/stream_on_external_table#before StreamOnExternalTable#before}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/stream_on_external_table#before StreamOnExternalTable#before}
 
 ---
 
@@ -1379,7 +1401,7 @@ Comment *string
 
 Specifies a comment for the stream.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/stream_on_external_table#comment StreamOnExternalTable#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/stream_on_external_table#comment StreamOnExternalTable#comment}
 
 ---
 
@@ -1395,7 +1417,7 @@ Retains the access permissions from the original stream when a stream is recreat
 
 That is sometimes used when the provider detects changes for fields that can not be changed by ALTER. This value will not have any effect when creating a new stream.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/stream_on_external_table#copy_grants StreamOnExternalTable#copy_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/stream_on_external_table#copy_grants StreamOnExternalTable#copy_grants}
 
 ---
 
@@ -1407,7 +1429,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/stream_on_external_table#id StreamOnExternalTable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/stream_on_external_table#id StreamOnExternalTable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1426,7 +1448,7 @@ Specifies whether this is an insert-only stream.
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/stream_on_external_table#insert_only StreamOnExternalTable#insert_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/stream_on_external_table#insert_only StreamOnExternalTable#insert_only}
 
 ---
 
@@ -1435,7 +1457,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/streamonexternaltable"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/streamonexternaltable"
 
 &streamonexternaltable.StreamOnExternalTableDescribeOutput {
 
@@ -1448,7 +1470,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/streamonexter
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/streamonexternaltable"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/streamonexternaltable"
 
 &streamonexternaltable.StreamOnExternalTableShowOutput {
 
@@ -1463,7 +1485,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/streamonexter
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableAtOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/streamonexternaltable"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/streamonexternaltable"
 
 streamonexternaltable.NewStreamOnExternalTableAtOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StreamOnExternalTableAtOutputReference
 ```
@@ -1828,7 +1850,7 @@ func InternalValue() StreamOnExternalTableAt
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableBeforeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/streamonexternaltable"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/streamonexternaltable"
 
 streamonexternaltable.NewStreamOnExternalTableBeforeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StreamOnExternalTableBeforeOutputReference
 ```
@@ -2193,7 +2215,7 @@ func InternalValue() StreamOnExternalTableBefore
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/streamonexternaltable"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/streamonexternaltable"
 
 streamonexternaltable.NewStreamOnExternalTableDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StreamOnExternalTableDescribeOutputList
 ```
@@ -2342,7 +2364,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/streamonexternaltable"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/streamonexternaltable"
 
 streamonexternaltable.NewStreamOnExternalTableDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StreamOnExternalTableDescribeOutputOutputReference
 ```
@@ -2576,7 +2598,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableDescribeOutputOutputReference.property.ownerRoleType">OwnerRoleType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableDescribeOutputOutputReference.property.schemaName">SchemaName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableDescribeOutputOutputReference.property.sourceType">SourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableDescribeOutputOutputReference.property.stale">Stale</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableDescribeOutputOutputReference.property.stale">Stale</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableDescribeOutputOutputReference.property.staleAfter">StaleAfter</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableDescribeOutputOutputReference.property.tableName">TableName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableDescribeOutputOutputReference.property.type">Type</a></code> | <code>*string</code> | *No description.* |
@@ -2721,10 +2743,10 @@ func SourceType() *string
 ##### `Stale`<sup>Required</sup> <a name="Stale" id="@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableDescribeOutputOutputReference.property.stale"></a>
 
 ```go
-func Stale() *string
+func Stale() IResolvable
 ```
 
-- *Type:* *string
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable
 
 ---
 
@@ -2774,7 +2796,7 @@ func InternalValue() StreamOnExternalTableDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/streamonexternaltable"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/streamonexternaltable"
 
 streamonexternaltable.NewStreamOnExternalTableShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StreamOnExternalTableShowOutputList
 ```
@@ -2923,7 +2945,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/streamonexternaltable"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/streamonexternaltable"
 
 streamonexternaltable.NewStreamOnExternalTableShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StreamOnExternalTableShowOutputOutputReference
 ```
@@ -3157,7 +3179,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableShowOutputOutputReference.property.ownerRoleType">OwnerRoleType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableShowOutputOutputReference.property.schemaName">SchemaName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableShowOutputOutputReference.property.sourceType">SourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableShowOutputOutputReference.property.stale">Stale</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableShowOutputOutputReference.property.stale">Stale</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableShowOutputOutputReference.property.staleAfter">StaleAfter</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableShowOutputOutputReference.property.tableName">TableName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableShowOutputOutputReference.property.type">Type</a></code> | <code>*string</code> | *No description.* |
@@ -3302,10 +3324,10 @@ func SourceType() *string
 ##### `Stale`<sup>Required</sup> <a name="Stale" id="@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableShowOutputOutputReference.property.stale"></a>
 
 ```go
-func Stale() *string
+func Stale() IResolvable
 ```
 
-- *Type:* *string
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable
 
 ---
 

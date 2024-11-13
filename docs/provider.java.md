@@ -4,7 +4,7 @@
 
 ### SnowflakeProvider <a name="SnowflakeProvider" id="@cdktf/provider-snowflake.provider.SnowflakeProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs snowflake}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs snowflake}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer"></a>
 
@@ -13,22 +13,24 @@ import com.hashicorp.cdktf.providers.snowflake.provider.SnowflakeProvider;
 
 SnowflakeProvider.Builder.create(Construct scope, java.lang.String id)
 //  .account(java.lang.String)
+//  .accountName(java.lang.String)
 //  .alias(java.lang.String)
 //  .authenticator(java.lang.String)
 //  .browserAuth(java.lang.Boolean)
 //  .browserAuth(IResolvable)
 //  .clientIp(java.lang.String)
-//  .clientRequestMfaToken(java.lang.Boolean)
-//  .clientRequestMfaToken(IResolvable)
-//  .clientStoreTemporaryCredential(java.lang.Boolean)
-//  .clientStoreTemporaryCredential(IResolvable)
+//  .clientRequestMfaToken(java.lang.String)
+//  .clientStoreTemporaryCredential(java.lang.String)
 //  .clientTimeout(java.lang.Number)
+//  .disableConsoleLogin(java.lang.String)
 //  .disableQueryContextCache(java.lang.Boolean)
 //  .disableQueryContextCache(IResolvable)
 //  .disableTelemetry(java.lang.Boolean)
 //  .disableTelemetry(IResolvable)
+//  .driverTracing(java.lang.String)
 //  .externalBrowserTimeout(java.lang.Number)
 //  .host(java.lang.String)
+//  .includeRetryReason(java.lang.String)
 //  .insecureMode(java.lang.Boolean)
 //  .insecureMode(IResolvable)
 //  .jwtClientTimeout(java.lang.Number)
@@ -36,15 +38,16 @@ SnowflakeProvider.Builder.create(Construct scope, java.lang.String id)
 //  .keepSessionAlive(java.lang.Boolean)
 //  .keepSessionAlive(IResolvable)
 //  .loginTimeout(java.lang.Number)
+//  .maxRetryCount(java.lang.Number)
 //  .oauthAccessToken(java.lang.String)
 //  .oauthClientId(java.lang.String)
 //  .oauthClientSecret(java.lang.String)
 //  .oauthEndpoint(java.lang.String)
 //  .oauthRedirectUrl(java.lang.String)
 //  .oauthRefreshToken(java.lang.String)
-//  .ocspFailOpen(java.lang.Boolean)
-//  .ocspFailOpen(IResolvable)
+//  .ocspFailOpen(java.lang.String)
 //  .oktaUrl(java.lang.String)
+//  .organizationName(java.lang.String)
 //  .params(java.util.Map<java.lang.String, java.lang.String>)
 //  .passcode(java.lang.String)
 //  .passcodeInPassword(java.lang.Boolean)
@@ -60,12 +63,12 @@ SnowflakeProvider.Builder.create(Construct scope, java.lang.String id)
 //  .requestTimeout(java.lang.Number)
 //  .role(java.lang.String)
 //  .sessionParams(java.util.Map<java.lang.String, java.lang.String>)
+//  .tmpDirectoryPath(java.lang.String)
 //  .token(java.lang.String)
 //  .tokenAccessor(SnowflakeProviderTokenAccessor)
 //  .user(java.lang.String)
 //  .username(java.lang.String)
-//  .validateDefaultParameters(java.lang.Boolean)
-//  .validateDefaultParameters(IResolvable)
+//  .validateDefaultParameters(java.lang.String)
 //  .warehouse(java.lang.String)
     .build();
 ```
@@ -74,50 +77,57 @@ SnowflakeProvider.Builder.create(Construct scope, java.lang.String id)
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.account">account</a></code> | <code>java.lang.String</code> | Specifies your Snowflake account identifier assigned, by Snowflake. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.account">account</a></code> | <code>java.lang.String</code> | Use `account_name` and `organization_name` instead. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.accountName">accountName</a></code> | <code>java.lang.String</code> | Specifies your Snowflake account name assigned by Snowflake. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.alias">alias</a></code> | <code>java.lang.String</code> | Alias name. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.authenticator">authenticator</a></code> | <code>java.lang.String</code> | Specifies the [authentication type](https://pkg.go.dev/github.com/snowflakedb/gosnowflake#AuthType) to use when connecting to Snowflake. Valid values include: Snowflake, OAuth, ExternalBrowser, Okta, JWT, TokenAccessor, UsernamePasswordMFA. Can also be sourced from the `SNOWFLAKE_AUTHENTICATOR` environment variable. It has to be set explicitly to JWT for private key authentication. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.authenticator">authenticator</a></code> | <code>java.lang.String</code> | Specifies the [authentication type](https://pkg.go.dev/github.com/snowflakedb/gosnowflake#AuthType) to use when connecting to Snowflake. Valid options are: `SNOWFLAKE` \| `OAUTH` \| `EXTERNALBROWSER` \| `OKTA` \| `JWT` \| `SNOWFLAKE_JWT` \| `TOKENACCESSOR` \| `USERNAMEPASSWORDMFA`. Value `JWT` is deprecated and will be removed in future releases. Can also be sourced from the `SNOWFLAKE_AUTHENTICATOR` environment variable. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.browserAuth">browserAuth</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Required when `oauth_refresh_token` is used. Can also be sourced from `SNOWFLAKE_USE_BROWSER_AUTH` environment variable. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.clientIp">clientIp</a></code> | <code>java.lang.String</code> | IP address for network checks. Can also be sourced from the `SNOWFLAKE_CLIENT_IP` environment variable. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.clientRequestMfaToken">clientRequestMfaToken</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When true the MFA token is cached in the credential manager. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.clientStoreTemporaryCredential">clientStoreTemporaryCredential</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When true the ID token is cached in the credential manager. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.clientRequestMfaToken">clientRequestMfaToken</a></code> | <code>java.lang.String</code> | When true the MFA token is cached in the credential manager. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.clientStoreTemporaryCredential">clientStoreTemporaryCredential</a></code> | <code>java.lang.String</code> | When true the ID token is cached in the credential manager. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.clientTimeout">clientTimeout</a></code> | <code>java.lang.Number</code> | The timeout in seconds for the client to complete the authentication. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.disableQueryContextCache">disableQueryContextCache</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Should HTAP query context cache be disabled. Can also be sourced from the `SNOWFLAKE_DISABLE_QUERY_CONTEXT_CACHE` environment variable. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.disableTelemetry">disableTelemetry</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Indicates whether to disable telemetry. Can also be sourced from the `SNOWFLAKE_DISABLE_TELEMETRY` environment variable. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.disableConsoleLogin">disableConsoleLogin</a></code> | <code>java.lang.String</code> | Indicates whether console login should be disabled in the driver. Can also be sourced from the `SNOWFLAKE_DISABLE_CONSOLE_LOGIN` environment variable. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.disableQueryContextCache">disableQueryContextCache</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Disables HTAP query context cache in the driver. Can also be sourced from the `SNOWFLAKE_DISABLE_QUERY_CONTEXT_CACHE` environment variable. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.disableTelemetry">disableTelemetry</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Disables telemetry in the driver. Can also be sourced from the `DISABLE_TELEMETRY` environment variable. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.driverTracing">driverTracing</a></code> | <code>java.lang.String</code> | Specifies the logging level to be used by the driver. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.externalBrowserTimeout">externalBrowserTimeout</a></code> | <code>java.lang.Number</code> | The timeout in seconds for the external browser to complete the authentication. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.host">host</a></code> | <code>java.lang.String</code> | Supports passing in a custom host value to the snowflake go driver for use with privatelink. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.host">host</a></code> | <code>java.lang.String</code> | Specifies a custom host value used by the driver for privatelink connections. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.includeRetryReason">includeRetryReason</a></code> | <code>java.lang.String</code> | Should retried request contain retry reason. Can also be sourced from the `SNOWFLAKE_INCLUDE_RETRY_REASON` environment variable. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.insecureMode">insecureMode</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If true, bypass the Online Certificate Status Protocol (OCSP) certificate revocation check. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.jwtClientTimeout">jwtClientTimeout</a></code> | <code>java.lang.Number</code> | The timeout in seconds for the JWT client to complete the authentication. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.jwtExpireTimeout">jwtExpireTimeout</a></code> | <code>java.lang.Number</code> | JWT expire after timeout in seconds. Can also be sourced from the `SNOWFLAKE_JWT_EXPIRE_TIMEOUT` environment variable. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.keepSessionAlive">keepSessionAlive</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Enables the session to persist even after the connection is closed. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.loginTimeout">loginTimeout</a></code> | <code>java.lang.Number</code> | Login retry timeout EXCLUDING network roundtrip and read out http response. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.loginTimeout">loginTimeout</a></code> | <code>java.lang.Number</code> | Login retry timeout in seconds EXCLUDING network roundtrip and read out http response. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.maxRetryCount">maxRetryCount</a></code> | <code>java.lang.Number</code> | Specifies how many times non-periodic HTTP request can be retried by the driver. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.oauthAccessToken">oauthAccessToken</a></code> | <code>java.lang.String</code> | Token for use with OAuth. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.oauthClientId">oauthClientId</a></code> | <code>java.lang.String</code> | Required when `oauth_refresh_token` is used. Can also be sourced from `SNOWFLAKE_OAUTH_CLIENT_ID` environment variable. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.oauthClientSecret">oauthClientSecret</a></code> | <code>java.lang.String</code> | Required when `oauth_refresh_token` is used. Can also be sourced from `SNOWFLAKE_OAUTH_CLIENT_SECRET` environment variable. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.oauthEndpoint">oauthEndpoint</a></code> | <code>java.lang.String</code> | Required when `oauth_refresh_token` is used. Can also be sourced from `SNOWFLAKE_OAUTH_ENDPOINT` environment variable. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.oauthRedirectUrl">oauthRedirectUrl</a></code> | <code>java.lang.String</code> | Required when `oauth_refresh_token` is used. Can also be sourced from `SNOWFLAKE_OAUTH_REDIRECT_URL` environment variable. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.oauthRefreshToken">oauthRefreshToken</a></code> | <code>java.lang.String</code> | Token for use with OAuth. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.ocspFailOpen">ocspFailOpen</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | True represents OCSP fail open mode. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.oktaUrl">oktaUrl</a></code> | <code>java.lang.String</code> | The URL of the Okta server. e.g. https://example.okta.com. Can also be sourced from the `SNOWFLAKE_OKTA_URL` environment variable. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.params">params</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Sets other connection (i.e. session) parameters. [Parameters](https://docs.snowflake.com/en/sql-reference/parameters). |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.ocspFailOpen">ocspFailOpen</a></code> | <code>java.lang.String</code> | True represents OCSP fail open mode. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.oktaUrl">oktaUrl</a></code> | <code>java.lang.String</code> | The URL of the Okta server. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.organizationName">organizationName</a></code> | <code>java.lang.String</code> | Specifies your Snowflake organization name assigned by Snowflake. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.params">params</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Sets other connection (i.e. session) parameters. [Parameters](https://docs.snowflake.com/en/sql-reference/parameters). This field can not be set with environmental variables. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.passcode">passcode</a></code> | <code>java.lang.String</code> | Specifies the passcode provided by Duo when using multi-factor authentication (MFA) for login. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.passcodeInPassword">passcodeInPassword</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | False by default. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.password">password</a></code> | <code>java.lang.String</code> | Password for username+password auth. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.port">port</a></code> | <code>java.lang.Number</code> | Support custom port values to snowflake go driver for use with privatelink. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.password">password</a></code> | <code>java.lang.String</code> | Password for user + password auth. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.port">port</a></code> | <code>java.lang.Number</code> | Specifies a custom port value used by the driver for privatelink connections. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.privateKey">privateKey</a></code> | <code>java.lang.String</code> | Private Key for username+private-key auth. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.privateKeyPassphrase">privateKeyPassphrase</a></code> | <code>java.lang.String</code> | Supports the encryption ciphers aes-128-cbc, aes-128-gcm, aes-192-cbc, aes-192-gcm, aes-256-cbc, aes-256-gcm, and des-ede3-cbc. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.privateKeyPath">privateKeyPath</a></code> | <code>java.lang.String</code> | Path to a private key for using keypair authentication. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.profile">profile</a></code> | <code>java.lang.String</code> | Sets the profile to read from ~/.snowflake/config file. Can also be sourced from the `SNOWFLAKE_PROFILE` environment variable. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.protocol">protocol</a></code> | <code>java.lang.String</code> | Either http or https, defaults to https. Can also be sourced from the `SNOWFLAKE_PROTOCOL` environment variable. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.protocol">protocol</a></code> | <code>java.lang.String</code> | A protocol used in the connection. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Snowflake region, such as "eu-central-1", with this parameter. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.requestTimeout">requestTimeout</a></code> | <code>java.lang.Number</code> | request retry timeout EXCLUDING network roundtrip and read out http response. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.requestTimeout">requestTimeout</a></code> | <code>java.lang.Number</code> | request retry timeout in seconds EXCLUDING network roundtrip and read out http response. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Specifies the role to use by default for accessing Snowflake objects in the client session. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.sessionParams">sessionParams</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Sets session parameters. [Parameters](https://docs.snowflake.com/en/sql-reference/parameters). |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.tmpDirectoryPath">tmpDirectoryPath</a></code> | <code>java.lang.String</code> | Sets temporary directory used by the driver for operations like encrypting, compressing etc. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.token">token</a></code> | <code>java.lang.String</code> | Token to use for OAuth and other forms of token based auth. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.tokenAccessor">tokenAccessor</a></code> | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderTokenAccessor">SnowflakeProviderTokenAccessor</a></code> | token_accessor block. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.user">user</a></code> | <code>java.lang.String</code> | Username. Can also be sourced from the `SNOWFLAKE_USER` environment variable. Required unless using `profile`. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.username">username</a></code> | <code>java.lang.String</code> | Username for username+password authentication. Can also be sourced from the `SNOWFLAKE_USERNAME` environment variable. Required unless using `profile`. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.validateDefaultParameters">validateDefaultParameters</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | True by default. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.user">user</a></code> | <code>java.lang.String</code> | Username. Required unless using `profile`. Can also be sourced from the `SNOWFLAKE_USER` environment variable. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.username">username</a></code> | <code>java.lang.String</code> | Username for user + password authentication. Required unless using `profile`. Can also be sourced from the `SNOWFLAKE_USERNAME` environment variable. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.validateDefaultParameters">validateDefaultParameters</a></code> | <code>java.lang.String</code> | True by default. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.warehouse">warehouse</a></code> | <code>java.lang.String</code> | Specifies the virtual warehouse to use by default for queries, loading, etc. |
 
 ---
@@ -144,11 +154,23 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Specifies your Snowflake account identifier assigned, by Snowflake.
+Use `account_name` and `organization_name` instead.
 
-For information about account identifiers, see the [Snowflake documentation](https://docs.snowflake.com/en/user-guide/admin-account-identifier.html). Can also be sourced from the `SNOWFLAKE_ACCOUNT` environment variable. Required unless using `profile`.
+Specifies your Snowflake account identifier assigned, by Snowflake. The [account locator](https://docs.snowflake.com/en/user-guide/admin-account-identifier#format-2-account-locator-in-a-region) format is not supported. For information about account identifiers, see the [Snowflake documentation](https://docs.snowflake.com/en/user-guide/admin-account-identifier.html). Required unless using `profile`. Can also be sourced from the `SNOWFLAKE_ACCOUNT` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#account SnowflakeProvider#account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#account SnowflakeProvider#account}
+
+---
+
+##### `accountName`<sup>Optional</sup> <a name="accountName" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.accountName"></a>
+
+- *Type:* java.lang.String
+
+Specifies your Snowflake account name assigned by Snowflake.
+
+For information about account identifiers, see the [Snowflake documentation](https://docs.snowflake.com/en/user-guide/admin-account-identifier#account-name). Required unless using `profile`. Can also be sourced from the `SNOWFLAKE_ACCOUNT_NAME` environment variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#account_name SnowflakeProvider#account_name}
 
 ---
 
@@ -158,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#alias SnowflakeProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#alias SnowflakeProvider#alias}
 
 ---
 
@@ -166,9 +188,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.lang.String
 
-Specifies the [authentication type](https://pkg.go.dev/github.com/snowflakedb/gosnowflake#AuthType) to use when connecting to Snowflake. Valid values include: Snowflake, OAuth, ExternalBrowser, Okta, JWT, TokenAccessor, UsernamePasswordMFA. Can also be sourced from the `SNOWFLAKE_AUTHENTICATOR` environment variable. It has to be set explicitly to JWT for private key authentication.
+Specifies the [authentication type](https://pkg.go.dev/github.com/snowflakedb/gosnowflake#AuthType) to use when connecting to Snowflake. Valid options are: `SNOWFLAKE` | `OAUTH` | `EXTERNALBROWSER` | `OKTA` | `JWT` | `SNOWFLAKE_JWT` | `TOKENACCESSOR` | `USERNAMEPASSWORDMFA`. Value `JWT` is deprecated and will be removed in future releases. Can also be sourced from the `SNOWFLAKE_AUTHENTICATOR` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#authenticator SnowflakeProvider#authenticator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#authenticator SnowflakeProvider#authenticator}
 
 ---
 
@@ -178,7 +200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Required when `oauth_refresh_token` is used. Can also be sourced from `SNOWFLAKE_USE_BROWSER_AUTH` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#browser_auth SnowflakeProvider#browser_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#browser_auth SnowflakeProvider#browser_auth}
 
 ---
 
@@ -188,31 +210,31 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 IP address for network checks. Can also be sourced from the `SNOWFLAKE_CLIENT_IP` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#client_ip SnowflakeProvider#client_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#client_ip SnowflakeProvider#client_ip}
 
 ---
 
 ##### `clientRequestMfaToken`<sup>Optional</sup> <a name="clientRequestMfaToken" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.clientRequestMfaToken"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.String
 
 When true the MFA token is cached in the credential manager.
 
 True by default in Windows/OSX. False for Linux. Can also be sourced from the `SNOWFLAKE_CLIENT_REQUEST_MFA_TOKEN` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#client_request_mfa_token SnowflakeProvider#client_request_mfa_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#client_request_mfa_token SnowflakeProvider#client_request_mfa_token}
 
 ---
 
 ##### `clientStoreTemporaryCredential`<sup>Optional</sup> <a name="clientStoreTemporaryCredential" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.clientStoreTemporaryCredential"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.String
 
 When true the ID token is cached in the credential manager.
 
 True by default in Windows/OSX. False for Linux. Can also be sourced from the `SNOWFLAKE_CLIENT_STORE_TEMPORARY_CREDENTIAL` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#client_store_temporary_credential SnowflakeProvider#client_store_temporary_credential}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#client_store_temporary_credential SnowflakeProvider#client_store_temporary_credential}
 
 ---
 
@@ -222,9 +244,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The timeout in seconds for the client to complete the authentication.
 
-Default is 900 seconds. Can also be sourced from the `SNOWFLAKE_CLIENT_TIMEOUT` environment variable.
+Can also be sourced from the `SNOWFLAKE_CLIENT_TIMEOUT` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#client_timeout SnowflakeProvider#client_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#client_timeout SnowflakeProvider#client_timeout}
+
+---
+
+##### `disableConsoleLogin`<sup>Optional</sup> <a name="disableConsoleLogin" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.disableConsoleLogin"></a>
+
+- *Type:* java.lang.String
+
+Indicates whether console login should be disabled in the driver. Can also be sourced from the `SNOWFLAKE_DISABLE_CONSOLE_LOGIN` environment variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#disable_console_login SnowflakeProvider#disable_console_login}
 
 ---
 
@@ -232,9 +264,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Should HTAP query context cache be disabled. Can also be sourced from the `SNOWFLAKE_DISABLE_QUERY_CONTEXT_CACHE` environment variable.
+Disables HTAP query context cache in the driver. Can also be sourced from the `SNOWFLAKE_DISABLE_QUERY_CONTEXT_CACHE` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#disable_query_context_cache SnowflakeProvider#disable_query_context_cache}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#disable_query_context_cache SnowflakeProvider#disable_query_context_cache}
 
 ---
 
@@ -242,9 +274,21 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Indicates whether to disable telemetry. Can also be sourced from the `SNOWFLAKE_DISABLE_TELEMETRY` environment variable.
+Disables telemetry in the driver. Can also be sourced from the `DISABLE_TELEMETRY` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#disable_telemetry SnowflakeProvider#disable_telemetry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#disable_telemetry SnowflakeProvider#disable_telemetry}
+
+---
+
+##### `driverTracing`<sup>Optional</sup> <a name="driverTracing" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.driverTracing"></a>
+
+- *Type:* java.lang.String
+
+Specifies the logging level to be used by the driver.
+
+Valid options are: `trace` | `debug` | `info` | `print` | `warning` | `error` | `fatal` | `panic`. Can also be sourced from the `SNOWFLAKE_DRIVER_TRACING` environment variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#driver_tracing SnowflakeProvider#driver_tracing}
 
 ---
 
@@ -254,9 +298,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The timeout in seconds for the external browser to complete the authentication.
 
-Default is 120 seconds. Can also be sourced from the `SNOWFLAKE_EXTERNAL_BROWSER_TIMEOUT` environment variable.
+Can also be sourced from the `SNOWFLAKE_EXTERNAL_BROWSER_TIMEOUT` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#external_browser_timeout SnowflakeProvider#external_browser_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#external_browser_timeout SnowflakeProvider#external_browser_timeout}
 
 ---
 
@@ -264,11 +308,21 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.lang.String
 
-Supports passing in a custom host value to the snowflake go driver for use with privatelink.
+Specifies a custom host value used by the driver for privatelink connections.
 
 Can also be sourced from the `SNOWFLAKE_HOST` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#host SnowflakeProvider#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#host SnowflakeProvider#host}
+
+---
+
+##### `includeRetryReason`<sup>Optional</sup> <a name="includeRetryReason" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.includeRetryReason"></a>
+
+- *Type:* java.lang.String
+
+Should retried request contain retry reason. Can also be sourced from the `SNOWFLAKE_INCLUDE_RETRY_REASON` environment variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#include_retry_reason SnowflakeProvider#include_retry_reason}
 
 ---
 
@@ -280,7 +334,7 @@ If true, bypass the Online Certificate Status Protocol (OCSP) certificate revoca
 
 IMPORTANT: Change the default value for testing or emergency situations only. Can also be sourced from the `SNOWFLAKE_INSECURE_MODE` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#insecure_mode SnowflakeProvider#insecure_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#insecure_mode SnowflakeProvider#insecure_mode}
 
 ---
 
@@ -290,9 +344,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The timeout in seconds for the JWT client to complete the authentication.
 
-Default is 10 seconds. Can also be sourced from the `SNOWFLAKE_JWT_CLIENT_TIMEOUT` environment variable.
+Can also be sourced from the `SNOWFLAKE_JWT_CLIENT_TIMEOUT` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#jwt_client_timeout SnowflakeProvider#jwt_client_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#jwt_client_timeout SnowflakeProvider#jwt_client_timeout}
 
 ---
 
@@ -302,7 +356,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 JWT expire after timeout in seconds. Can also be sourced from the `SNOWFLAKE_JWT_EXPIRE_TIMEOUT` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#jwt_expire_timeout SnowflakeProvider#jwt_expire_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#jwt_expire_timeout SnowflakeProvider#jwt_expire_timeout}
 
 ---
 
@@ -314,7 +368,7 @@ Enables the session to persist even after the connection is closed.
 
 Can also be sourced from the `SNOWFLAKE_KEEP_SESSION_ALIVE` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#keep_session_alive SnowflakeProvider#keep_session_alive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#keep_session_alive SnowflakeProvider#keep_session_alive}
 
 ---
 
@@ -322,11 +376,23 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.lang.Number
 
-Login retry timeout EXCLUDING network roundtrip and read out http response.
+Login retry timeout in seconds EXCLUDING network roundtrip and read out http response.
 
 Can also be sourced from the `SNOWFLAKE_LOGIN_TIMEOUT` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#login_timeout SnowflakeProvider#login_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#login_timeout SnowflakeProvider#login_timeout}
+
+---
+
+##### `maxRetryCount`<sup>Optional</sup> <a name="maxRetryCount" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.maxRetryCount"></a>
+
+- *Type:* java.lang.Number
+
+Specifies how many times non-periodic HTTP request can be retried by the driver.
+
+Can also be sourced from the `SNOWFLAKE_MAX_RETRY_COUNT` environment variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#max_retry_count SnowflakeProvider#max_retry_count}
 
 ---
 
@@ -338,7 +404,7 @@ Token for use with OAuth.
 
 Generating the token is left to other tools. Cannot be used with `browser_auth`, `private_key_path`, `oauth_refresh_token` or `password`. Can also be sourced from `SNOWFLAKE_OAUTH_ACCESS_TOKEN` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#oauth_access_token SnowflakeProvider#oauth_access_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#oauth_access_token SnowflakeProvider#oauth_access_token}
 
 ---
 
@@ -348,7 +414,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Required when `oauth_refresh_token` is used. Can also be sourced from `SNOWFLAKE_OAUTH_CLIENT_ID` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#oauth_client_id SnowflakeProvider#oauth_client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#oauth_client_id SnowflakeProvider#oauth_client_id}
 
 ---
 
@@ -358,7 +424,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Required when `oauth_refresh_token` is used. Can also be sourced from `SNOWFLAKE_OAUTH_CLIENT_SECRET` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#oauth_client_secret SnowflakeProvider#oauth_client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#oauth_client_secret SnowflakeProvider#oauth_client_secret}
 
 ---
 
@@ -368,7 +434,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Required when `oauth_refresh_token` is used. Can also be sourced from `SNOWFLAKE_OAUTH_ENDPOINT` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#oauth_endpoint SnowflakeProvider#oauth_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#oauth_endpoint SnowflakeProvider#oauth_endpoint}
 
 ---
 
@@ -378,7 +444,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Required when `oauth_refresh_token` is used. Can also be sourced from `SNOWFLAKE_OAUTH_REDIRECT_URL` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#oauth_redirect_url SnowflakeProvider#oauth_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#oauth_redirect_url SnowflakeProvider#oauth_redirect_url}
 
 ---
 
@@ -390,19 +456,19 @@ Token for use with OAuth.
 
 Setup and generation of the token is left to other tools. Should be used in conjunction with `oauth_client_id`, `oauth_client_secret`, `oauth_endpoint`, `oauth_redirect_url`. Cannot be used with `browser_auth`, `private_key_path`, `oauth_access_token` or `password`. Can also be sourced from `SNOWFLAKE_OAUTH_REFRESH_TOKEN` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#oauth_refresh_token SnowflakeProvider#oauth_refresh_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#oauth_refresh_token SnowflakeProvider#oauth_refresh_token}
 
 ---
 
 ##### `ocspFailOpen`<sup>Optional</sup> <a name="ocspFailOpen" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.ocspFailOpen"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.String
 
 True represents OCSP fail open mode.
 
 False represents OCSP fail closed mode. Fail open true by default. Can also be sourced from the `SNOWFLAKE_OCSP_FAIL_OPEN` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#ocsp_fail_open SnowflakeProvider#ocsp_fail_open}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#ocsp_fail_open SnowflakeProvider#ocsp_fail_open}
 
 ---
 
@@ -410,9 +476,23 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.lang.String
 
-The URL of the Okta server. e.g. https://example.okta.com. Can also be sourced from the `SNOWFLAKE_OKTA_URL` environment variable.
+The URL of the Okta server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#okta_url SnowflakeProvider#okta_url}
+e.g. https://example.okta.com. Okta URL host needs to to have a suffix `okta.com`. Read more in Snowflake [docs](https://docs.snowflake.com/en/user-guide/oauth-okta). Can also be sourced from the `SNOWFLAKE_OKTA_URL` environment variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#okta_url SnowflakeProvider#okta_url}
+
+---
+
+##### `organizationName`<sup>Optional</sup> <a name="organizationName" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.organizationName"></a>
+
+- *Type:* java.lang.String
+
+Specifies your Snowflake organization name assigned by Snowflake.
+
+For information about account identifiers, see the [Snowflake documentation](https://docs.snowflake.com/en/user-guide/admin-account-identifier#organization-name). Required unless using `profile`. Can also be sourced from the `SNOWFLAKE_ORGANIZATION_NAME` environment variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#organization_name SnowflakeProvider#organization_name}
 
 ---
 
@@ -420,9 +500,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Sets other connection (i.e. session) parameters. [Parameters](https://docs.snowflake.com/en/sql-reference/parameters).
+Sets other connection (i.e. session) parameters. [Parameters](https://docs.snowflake.com/en/sql-reference/parameters). This field can not be set with environmental variables.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#params SnowflakeProvider#params}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#params SnowflakeProvider#params}
 
 ---
 
@@ -434,7 +514,7 @@ Specifies the passcode provided by Duo when using multi-factor authentication (M
 
 Can also be sourced from the `SNOWFLAKE_PASSCODE` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#passcode SnowflakeProvider#passcode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#passcode SnowflakeProvider#passcode}
 
 ---
 
@@ -444,9 +524,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 False by default.
 
-Set to true if the MFA passcode is embedded in the login password. Appends the MFA passcode to the end of the password. Can also be sourced from the `SNOWFLAKE_PASSCODE_IN_PASSWORD` environment variable.
+Set to true if the MFA passcode is embedded to the configured password. Can also be sourced from the `SNOWFLAKE_PASSCODE_IN_PASSWORD` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#passcode_in_password SnowflakeProvider#passcode_in_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#passcode_in_password SnowflakeProvider#passcode_in_password}
 
 ---
 
@@ -454,11 +534,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.lang.String
 
-Password for username+password auth.
+Password for user + password auth.
 
 Cannot be used with `browser_auth` or `private_key_path`. Can also be sourced from the `SNOWFLAKE_PASSWORD` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#password SnowflakeProvider#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#password SnowflakeProvider#password}
 
 ---
 
@@ -466,11 +546,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.lang.Number
 
-Support custom port values to snowflake go driver for use with privatelink.
+Specifies a custom port value used by the driver for privatelink connections.
 
 Can also be sourced from the `SNOWFLAKE_PORT` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#port SnowflakeProvider#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#port SnowflakeProvider#port}
 
 ---
 
@@ -480,9 +560,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Private Key for username+private-key auth.
 
-Cannot be used with `browser_auth` or `password`. Can also be sourced from `SNOWFLAKE_PRIVATE_KEY` environment variable.
+Cannot be used with `browser_auth` or `password`. Can also be sourced from the `SNOWFLAKE_PRIVATE_KEY` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#private_key SnowflakeProvider#private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#private_key SnowflakeProvider#private_key}
 
 ---
 
@@ -492,9 +572,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Supports the encryption ciphers aes-128-cbc, aes-128-gcm, aes-192-cbc, aes-192-gcm, aes-256-cbc, aes-256-gcm, and des-ede3-cbc.
 
-Can also be sourced from `SNOWFLAKE_PRIVATE_KEY_PASSPHRASE` environment variable.
+Can also be sourced from the `SNOWFLAKE_PRIVATE_KEY_PASSPHRASE` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#private_key_passphrase SnowflakeProvider#private_key_passphrase}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#private_key_passphrase SnowflakeProvider#private_key_passphrase}
 
 ---
 
@@ -506,7 +586,7 @@ Path to a private key for using keypair authentication.
 
 Cannot be used with `browser_auth`, `oauth_access_token` or `password`. Can also be sourced from `SNOWFLAKE_PRIVATE_KEY_PATH` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#private_key_path SnowflakeProvider#private_key_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#private_key_path SnowflakeProvider#private_key_path}
 
 ---
 
@@ -516,7 +596,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Sets the profile to read from ~/.snowflake/config file. Can also be sourced from the `SNOWFLAKE_PROFILE` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#profile SnowflakeProvider#profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#profile SnowflakeProvider#profile}
 
 ---
 
@@ -524,9 +604,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.lang.String
 
-Either http or https, defaults to https. Can also be sourced from the `SNOWFLAKE_PROTOCOL` environment variable.
+A protocol used in the connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#protocol SnowflakeProvider#protocol}
+Valid options are: `http` | `https`. Can also be sourced from the `SNOWFLAKE_PROTOCOL` environment variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#protocol SnowflakeProvider#protocol}
 
 ---
 
@@ -538,7 +620,7 @@ Snowflake region, such as "eu-central-1", with this parameter.
 
 However, since this parameter is deprecated, it is best to specify the region as part of the account parameter. For details, see the description of the account parameter. [Snowflake region](https://docs.snowflake.com/en/user-guide/intro-regions.html) to use.  Required if using the [legacy format for the `account` identifier](https://docs.snowflake.com/en/user-guide/admin-account-identifier.html#format-2-legacy-account-locator-in-a-region) in the form of `<cloud_region_id>.<cloud>`. Can also be sourced from the `SNOWFLAKE_REGION` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#region SnowflakeProvider#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#region SnowflakeProvider#region}
 
 ---
 
@@ -546,11 +628,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.lang.Number
 
-request retry timeout EXCLUDING network roundtrip and read out http response.
+request retry timeout in seconds EXCLUDING network roundtrip and read out http response.
 
 Can also be sourced from the `SNOWFLAKE_REQUEST_TIMEOUT` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#request_timeout SnowflakeProvider#request_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#request_timeout SnowflakeProvider#request_timeout}
 
 ---
 
@@ -560,9 +642,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the role to use by default for accessing Snowflake objects in the client session.
 
-Can also be sourced from the `SNOWFLAKE_ROLE` environment variable. .
+Can also be sourced from the `SNOWFLAKE_ROLE` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#role SnowflakeProvider#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#role SnowflakeProvider#role}
 
 ---
 
@@ -572,7 +654,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Sets session parameters. [Parameters](https://docs.snowflake.com/en/sql-reference/parameters).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#session_params SnowflakeProvider#session_params}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#session_params SnowflakeProvider#session_params}
+
+---
+
+##### `tmpDirectoryPath`<sup>Optional</sup> <a name="tmpDirectoryPath" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.tmpDirectoryPath"></a>
+
+- *Type:* java.lang.String
+
+Sets temporary directory used by the driver for operations like encrypting, compressing etc.
+
+Can also be sourced from the `SNOWFLAKE_TMP_DIRECTORY_PATH` environment variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#tmp_directory_path SnowflakeProvider#tmp_directory_path}
 
 ---
 
@@ -584,7 +678,7 @@ Token to use for OAuth and other forms of token based auth.
 
 Can also be sourced from the `SNOWFLAKE_TOKEN` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#token SnowflakeProvider#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#token SnowflakeProvider#token}
 
 ---
 
@@ -594,7 +688,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 token_accessor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#token_accessor SnowflakeProvider#token_accessor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#token_accessor SnowflakeProvider#token_accessor}
 
 ---
 
@@ -602,9 +696,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.lang.String
 
-Username. Can also be sourced from the `SNOWFLAKE_USER` environment variable. Required unless using `profile`.
+Username. Required unless using `profile`. Can also be sourced from the `SNOWFLAKE_USER` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#user SnowflakeProvider#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#user SnowflakeProvider#user}
 
 ---
 
@@ -612,21 +706,21 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.lang.String
 
-Username for username+password authentication. Can also be sourced from the `SNOWFLAKE_USERNAME` environment variable. Required unless using `profile`.
+Username for user + password authentication. Required unless using `profile`. Can also be sourced from the `SNOWFLAKE_USERNAME` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#username SnowflakeProvider#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#username SnowflakeProvider#username}
 
 ---
 
 ##### `validateDefaultParameters`<sup>Optional</sup> <a name="validateDefaultParameters" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.validateDefaultParameters"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.String
 
 True by default.
 
 If false, disables the validation checks for Database, Schema, Warehouse and Role at the time a connection is established. Can also be sourced from the `SNOWFLAKE_VALIDATE_DEFAULT_PARAMETERS` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#validate_default_parameters SnowflakeProvider#validate_default_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#validate_default_parameters SnowflakeProvider#validate_default_parameters}
 
 ---
 
@@ -638,7 +732,7 @@ Specifies the virtual warehouse to use by default for queries, loading, etc.
 
 in the client session. Can also be sourced from the `SNOWFLAKE_WAREHOUSE` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#warehouse SnowflakeProvider#warehouse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#warehouse SnowflakeProvider#warehouse}
 
 ---
 
@@ -654,6 +748,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.toMetadata">toMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetAccount">resetAccount</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetAccountName">resetAccountName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetAlias">resetAlias</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetAuthenticator">resetAuthenticator</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetBrowserAuth">resetBrowserAuth</a></code> | *No description.* |
@@ -661,15 +756,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetClientRequestMfaToken">resetClientRequestMfaToken</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetClientStoreTemporaryCredential">resetClientStoreTemporaryCredential</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetClientTimeout">resetClientTimeout</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetDisableConsoleLogin">resetDisableConsoleLogin</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetDisableQueryContextCache">resetDisableQueryContextCache</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetDisableTelemetry">resetDisableTelemetry</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetDriverTracing">resetDriverTracing</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetExternalBrowserTimeout">resetExternalBrowserTimeout</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetHost">resetHost</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetIncludeRetryReason">resetIncludeRetryReason</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetInsecureMode">resetInsecureMode</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetJwtClientTimeout">resetJwtClientTimeout</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetJwtExpireTimeout">resetJwtExpireTimeout</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetKeepSessionAlive">resetKeepSessionAlive</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetLoginTimeout">resetLoginTimeout</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetMaxRetryCount">resetMaxRetryCount</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetOauthAccessToken">resetOauthAccessToken</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetOauthClientId">resetOauthClientId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetOauthClientSecret">resetOauthClientSecret</a></code> | *No description.* |
@@ -678,6 +777,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetOauthRefreshToken">resetOauthRefreshToken</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetOcspFailOpen">resetOcspFailOpen</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetOktaUrl">resetOktaUrl</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetOrganizationName">resetOrganizationName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetParams">resetParams</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetPasscode">resetPasscode</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetPasscodeInPassword">resetPasscodeInPassword</a></code> | *No description.* |
@@ -692,6 +792,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetRequestTimeout">resetRequestTimeout</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetRole">resetRole</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetSessionParams">resetSessionParams</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetTmpDirectoryPath">resetTmpDirectoryPath</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetToken">resetToken</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetTokenAccessor">resetTokenAccessor</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.resetUser">resetUser</a></code> | *No description.* |
@@ -777,6 +878,12 @@ Adds this resource to the terraform JSON output.
 public void resetAccount()
 ```
 
+##### `resetAccountName` <a name="resetAccountName" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.resetAccountName"></a>
+
+```java
+public void resetAccountName()
+```
+
 ##### `resetAlias` <a name="resetAlias" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.resetAlias"></a>
 
 ```java
@@ -819,6 +926,12 @@ public void resetClientStoreTemporaryCredential()
 public void resetClientTimeout()
 ```
 
+##### `resetDisableConsoleLogin` <a name="resetDisableConsoleLogin" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.resetDisableConsoleLogin"></a>
+
+```java
+public void resetDisableConsoleLogin()
+```
+
 ##### `resetDisableQueryContextCache` <a name="resetDisableQueryContextCache" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.resetDisableQueryContextCache"></a>
 
 ```java
@@ -831,6 +944,12 @@ public void resetDisableQueryContextCache()
 public void resetDisableTelemetry()
 ```
 
+##### `resetDriverTracing` <a name="resetDriverTracing" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.resetDriverTracing"></a>
+
+```java
+public void resetDriverTracing()
+```
+
 ##### `resetExternalBrowserTimeout` <a name="resetExternalBrowserTimeout" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.resetExternalBrowserTimeout"></a>
 
 ```java
@@ -841,6 +960,12 @@ public void resetExternalBrowserTimeout()
 
 ```java
 public void resetHost()
+```
+
+##### `resetIncludeRetryReason` <a name="resetIncludeRetryReason" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.resetIncludeRetryReason"></a>
+
+```java
+public void resetIncludeRetryReason()
 ```
 
 ##### `resetInsecureMode` <a name="resetInsecureMode" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.resetInsecureMode"></a>
@@ -871,6 +996,12 @@ public void resetKeepSessionAlive()
 
 ```java
 public void resetLoginTimeout()
+```
+
+##### `resetMaxRetryCount` <a name="resetMaxRetryCount" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.resetMaxRetryCount"></a>
+
+```java
+public void resetMaxRetryCount()
 ```
 
 ##### `resetOauthAccessToken` <a name="resetOauthAccessToken" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.resetOauthAccessToken"></a>
@@ -919,6 +1050,12 @@ public void resetOcspFailOpen()
 
 ```java
 public void resetOktaUrl()
+```
+
+##### `resetOrganizationName` <a name="resetOrganizationName" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.resetOrganizationName"></a>
+
+```java
+public void resetOrganizationName()
 ```
 
 ##### `resetParams` <a name="resetParams" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.resetParams"></a>
@@ -1003,6 +1140,12 @@ public void resetRole()
 
 ```java
 public void resetSessionParams()
+```
+
+##### `resetTmpDirectoryPath` <a name="resetTmpDirectoryPath" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.resetTmpDirectoryPath"></a>
+
+```java
+public void resetTmpDirectoryPath()
 ```
 
 ##### `resetToken` <a name="resetToken" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.resetToken"></a>
@@ -1144,7 +1287,7 @@ The construct id used in the generated config for the SnowflakeProvider to impor
 
 The id of the existing SnowflakeProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1170,30 +1313,36 @@ Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.terraformProviderSource">terraformProviderSource</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.alias">alias</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.accountInput">accountInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.accountNameInput">accountNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.aliasInput">aliasInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.authenticatorInput">authenticatorInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.browserAuthInput">browserAuthInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.clientIpInput">clientIpInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.clientRequestMfaTokenInput">clientRequestMfaTokenInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.clientStoreTemporaryCredentialInput">clientStoreTemporaryCredentialInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.clientRequestMfaTokenInput">clientRequestMfaTokenInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.clientStoreTemporaryCredentialInput">clientStoreTemporaryCredentialInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.clientTimeoutInput">clientTimeoutInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.disableConsoleLoginInput">disableConsoleLoginInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.disableQueryContextCacheInput">disableQueryContextCacheInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.disableTelemetryInput">disableTelemetryInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.driverTracingInput">driverTracingInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.externalBrowserTimeoutInput">externalBrowserTimeoutInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.hostInput">hostInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.includeRetryReasonInput">includeRetryReasonInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.insecureModeInput">insecureModeInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.jwtClientTimeoutInput">jwtClientTimeoutInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.jwtExpireTimeoutInput">jwtExpireTimeoutInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.keepSessionAliveInput">keepSessionAliveInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.loginTimeoutInput">loginTimeoutInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.maxRetryCountInput">maxRetryCountInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.oauthAccessTokenInput">oauthAccessTokenInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.oauthClientIdInput">oauthClientIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.oauthClientSecretInput">oauthClientSecretInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.oauthEndpointInput">oauthEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.oauthRedirectUrlInput">oauthRedirectUrlInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.oauthRefreshTokenInput">oauthRefreshTokenInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.ocspFailOpenInput">ocspFailOpenInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.ocspFailOpenInput">ocspFailOpenInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.oktaUrlInput">oktaUrlInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.organizationNameInput">organizationNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.paramsInput">paramsInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.passcodeInPasswordInput">passcodeInPasswordInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.passcodeInput">passcodeInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1208,36 +1357,43 @@ Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.requestTimeoutInput">requestTimeoutInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.roleInput">roleInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.sessionParamsInput">sessionParamsInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.tmpDirectoryPathInput">tmpDirectoryPathInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.tokenAccessorInput">tokenAccessorInput</a></code> | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderTokenAccessor">SnowflakeProviderTokenAccessor</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.tokenInput">tokenInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.userInput">userInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.usernameInput">usernameInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.validateDefaultParametersInput">validateDefaultParametersInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.validateDefaultParametersInput">validateDefaultParametersInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.warehouseInput">warehouseInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.account">account</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.accountName">accountName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.authenticator">authenticator</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.browserAuth">browserAuth</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.clientIp">clientIp</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.clientRequestMfaToken">clientRequestMfaToken</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.clientStoreTemporaryCredential">clientStoreTemporaryCredential</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.clientRequestMfaToken">clientRequestMfaToken</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.clientStoreTemporaryCredential">clientStoreTemporaryCredential</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.clientTimeout">clientTimeout</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.disableConsoleLogin">disableConsoleLogin</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.disableQueryContextCache">disableQueryContextCache</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.disableTelemetry">disableTelemetry</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.driverTracing">driverTracing</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.externalBrowserTimeout">externalBrowserTimeout</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.host">host</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.includeRetryReason">includeRetryReason</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.insecureMode">insecureMode</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.jwtClientTimeout">jwtClientTimeout</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.jwtExpireTimeout">jwtExpireTimeout</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.keepSessionAlive">keepSessionAlive</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.loginTimeout">loginTimeout</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.maxRetryCount">maxRetryCount</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.oauthAccessToken">oauthAccessToken</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.oauthClientId">oauthClientId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.oauthClientSecret">oauthClientSecret</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.oauthEndpoint">oauthEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.oauthRedirectUrl">oauthRedirectUrl</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.oauthRefreshToken">oauthRefreshToken</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.ocspFailOpen">ocspFailOpen</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.ocspFailOpen">ocspFailOpen</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.oktaUrl">oktaUrl</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.organizationName">organizationName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.params">params</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.passcode">passcode</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.passcodeInPassword">passcodeInPassword</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
@@ -1252,11 +1408,12 @@ Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.requestTimeout">requestTimeout</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.role">role</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.sessionParams">sessionParams</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.tmpDirectoryPath">tmpDirectoryPath</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.token">token</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.tokenAccessor">tokenAccessor</a></code> | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderTokenAccessor">SnowflakeProviderTokenAccessor</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.user">user</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.username">username</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.validateDefaultParameters">validateDefaultParameters</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.validateDefaultParameters">validateDefaultParameters</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.warehouse">warehouse</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
@@ -1363,6 +1520,16 @@ public java.lang.String getAccountInput();
 
 ---
 
+##### `accountNameInput`<sup>Optional</sup> <a name="accountNameInput" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.accountNameInput"></a>
+
+```java
+public java.lang.String getAccountNameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `aliasInput`<sup>Optional</sup> <a name="aliasInput" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.aliasInput"></a>
 
 ```java
@@ -1406,20 +1573,20 @@ public java.lang.String getClientIpInput();
 ##### `clientRequestMfaTokenInput`<sup>Optional</sup> <a name="clientRequestMfaTokenInput" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.clientRequestMfaTokenInput"></a>
 
 ```java
-public java.lang.Object getClientRequestMfaTokenInput();
+public java.lang.String getClientRequestMfaTokenInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.String
 
 ---
 
 ##### `clientStoreTemporaryCredentialInput`<sup>Optional</sup> <a name="clientStoreTemporaryCredentialInput" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.clientStoreTemporaryCredentialInput"></a>
 
 ```java
-public java.lang.Object getClientStoreTemporaryCredentialInput();
+public java.lang.String getClientStoreTemporaryCredentialInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.String
 
 ---
 
@@ -1430,6 +1597,16 @@ public java.lang.Number getClientTimeoutInput();
 ```
 
 - *Type:* java.lang.Number
+
+---
+
+##### `disableConsoleLoginInput`<sup>Optional</sup> <a name="disableConsoleLoginInput" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.disableConsoleLoginInput"></a>
+
+```java
+public java.lang.String getDisableConsoleLoginInput();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -1453,6 +1630,16 @@ public java.lang.Object getDisableTelemetryInput();
 
 ---
 
+##### `driverTracingInput`<sup>Optional</sup> <a name="driverTracingInput" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.driverTracingInput"></a>
+
+```java
+public java.lang.String getDriverTracingInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `externalBrowserTimeoutInput`<sup>Optional</sup> <a name="externalBrowserTimeoutInput" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.externalBrowserTimeoutInput"></a>
 
 ```java
@@ -1467,6 +1654,16 @@ public java.lang.Number getExternalBrowserTimeoutInput();
 
 ```java
 public java.lang.String getHostInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `includeRetryReasonInput`<sup>Optional</sup> <a name="includeRetryReasonInput" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.includeRetryReasonInput"></a>
+
+```java
+public java.lang.String getIncludeRetryReasonInput();
 ```
 
 - *Type:* java.lang.String
@@ -1517,6 +1714,16 @@ public java.lang.Object getKeepSessionAliveInput();
 
 ```java
 public java.lang.Number getLoginTimeoutInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `maxRetryCountInput`<sup>Optional</sup> <a name="maxRetryCountInput" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.maxRetryCountInput"></a>
+
+```java
+public java.lang.Number getMaxRetryCountInput();
 ```
 
 - *Type:* java.lang.Number
@@ -1586,10 +1793,10 @@ public java.lang.String getOauthRefreshTokenInput();
 ##### `ocspFailOpenInput`<sup>Optional</sup> <a name="ocspFailOpenInput" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.ocspFailOpenInput"></a>
 
 ```java
-public java.lang.Object getOcspFailOpenInput();
+public java.lang.String getOcspFailOpenInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.String
 
 ---
 
@@ -1597,6 +1804,16 @@ public java.lang.Object getOcspFailOpenInput();
 
 ```java
 public java.lang.String getOktaUrlInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `organizationNameInput`<sup>Optional</sup> <a name="organizationNameInput" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.organizationNameInput"></a>
+
+```java
+public java.lang.String getOrganizationNameInput();
 ```
 
 - *Type:* java.lang.String
@@ -1743,6 +1960,16 @@ public java.util.Map<java.lang.String, java.lang.String> getSessionParamsInput()
 
 ---
 
+##### `tmpDirectoryPathInput`<sup>Optional</sup> <a name="tmpDirectoryPathInput" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.tmpDirectoryPathInput"></a>
+
+```java
+public java.lang.String getTmpDirectoryPathInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `tokenAccessorInput`<sup>Optional</sup> <a name="tokenAccessorInput" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.tokenAccessorInput"></a>
 
 ```java
@@ -1786,10 +2013,10 @@ public java.lang.String getUsernameInput();
 ##### `validateDefaultParametersInput`<sup>Optional</sup> <a name="validateDefaultParametersInput" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.validateDefaultParametersInput"></a>
 
 ```java
-public java.lang.Object getValidateDefaultParametersInput();
+public java.lang.String getValidateDefaultParametersInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.String
 
 ---
 
@@ -1807,6 +2034,16 @@ public java.lang.String getWarehouseInput();
 
 ```java
 public java.lang.String getAccount();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `accountName`<sup>Optional</sup> <a name="accountName" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.accountName"></a>
+
+```java
+public java.lang.String getAccountName();
 ```
 
 - *Type:* java.lang.String
@@ -1846,20 +2083,20 @@ public java.lang.String getClientIp();
 ##### `clientRequestMfaToken`<sup>Optional</sup> <a name="clientRequestMfaToken" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.clientRequestMfaToken"></a>
 
 ```java
-public java.lang.Object getClientRequestMfaToken();
+public java.lang.String getClientRequestMfaToken();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.String
 
 ---
 
 ##### `clientStoreTemporaryCredential`<sup>Optional</sup> <a name="clientStoreTemporaryCredential" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.clientStoreTemporaryCredential"></a>
 
 ```java
-public java.lang.Object getClientStoreTemporaryCredential();
+public java.lang.String getClientStoreTemporaryCredential();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.String
 
 ---
 
@@ -1870,6 +2107,16 @@ public java.lang.Number getClientTimeout();
 ```
 
 - *Type:* java.lang.Number
+
+---
+
+##### `disableConsoleLogin`<sup>Optional</sup> <a name="disableConsoleLogin" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.disableConsoleLogin"></a>
+
+```java
+public java.lang.String getDisableConsoleLogin();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -1893,6 +2140,16 @@ public java.lang.Object getDisableTelemetry();
 
 ---
 
+##### `driverTracing`<sup>Optional</sup> <a name="driverTracing" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.driverTracing"></a>
+
+```java
+public java.lang.String getDriverTracing();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `externalBrowserTimeout`<sup>Optional</sup> <a name="externalBrowserTimeout" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.externalBrowserTimeout"></a>
 
 ```java
@@ -1907,6 +2164,16 @@ public java.lang.Number getExternalBrowserTimeout();
 
 ```java
 public java.lang.String getHost();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `includeRetryReason`<sup>Optional</sup> <a name="includeRetryReason" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.includeRetryReason"></a>
+
+```java
+public java.lang.String getIncludeRetryReason();
 ```
 
 - *Type:* java.lang.String
@@ -1957,6 +2224,16 @@ public java.lang.Object getKeepSessionAlive();
 
 ```java
 public java.lang.Number getLoginTimeout();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `maxRetryCount`<sup>Optional</sup> <a name="maxRetryCount" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.maxRetryCount"></a>
+
+```java
+public java.lang.Number getMaxRetryCount();
 ```
 
 - *Type:* java.lang.Number
@@ -2026,10 +2303,10 @@ public java.lang.String getOauthRefreshToken();
 ##### `ocspFailOpen`<sup>Optional</sup> <a name="ocspFailOpen" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.ocspFailOpen"></a>
 
 ```java
-public java.lang.Object getOcspFailOpen();
+public java.lang.String getOcspFailOpen();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.String
 
 ---
 
@@ -2037,6 +2314,16 @@ public java.lang.Object getOcspFailOpen();
 
 ```java
 public java.lang.String getOktaUrl();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `organizationName`<sup>Optional</sup> <a name="organizationName" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.organizationName"></a>
+
+```java
+public java.lang.String getOrganizationName();
 ```
 
 - *Type:* java.lang.String
@@ -2183,6 +2470,16 @@ public java.util.Map<java.lang.String, java.lang.String> getSessionParams();
 
 ---
 
+##### `tmpDirectoryPath`<sup>Optional</sup> <a name="tmpDirectoryPath" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.tmpDirectoryPath"></a>
+
+```java
+public java.lang.String getTmpDirectoryPath();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `token`<sup>Optional</sup> <a name="token" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.token"></a>
 
 ```java
@@ -2226,10 +2523,10 @@ public java.lang.String getUsername();
 ##### `validateDefaultParameters`<sup>Optional</sup> <a name="validateDefaultParameters" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.validateDefaultParameters"></a>
 
 ```java
-public java.lang.Object getValidateDefaultParameters();
+public java.lang.String getValidateDefaultParameters();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.String
 
 ---
 
@@ -2272,22 +2569,24 @@ import com.hashicorp.cdktf.providers.snowflake.provider.SnowflakeProviderConfig;
 
 SnowflakeProviderConfig.builder()
 //  .account(java.lang.String)
+//  .accountName(java.lang.String)
 //  .alias(java.lang.String)
 //  .authenticator(java.lang.String)
 //  .browserAuth(java.lang.Boolean)
 //  .browserAuth(IResolvable)
 //  .clientIp(java.lang.String)
-//  .clientRequestMfaToken(java.lang.Boolean)
-//  .clientRequestMfaToken(IResolvable)
-//  .clientStoreTemporaryCredential(java.lang.Boolean)
-//  .clientStoreTemporaryCredential(IResolvable)
+//  .clientRequestMfaToken(java.lang.String)
+//  .clientStoreTemporaryCredential(java.lang.String)
 //  .clientTimeout(java.lang.Number)
+//  .disableConsoleLogin(java.lang.String)
 //  .disableQueryContextCache(java.lang.Boolean)
 //  .disableQueryContextCache(IResolvable)
 //  .disableTelemetry(java.lang.Boolean)
 //  .disableTelemetry(IResolvable)
+//  .driverTracing(java.lang.String)
 //  .externalBrowserTimeout(java.lang.Number)
 //  .host(java.lang.String)
+//  .includeRetryReason(java.lang.String)
 //  .insecureMode(java.lang.Boolean)
 //  .insecureMode(IResolvable)
 //  .jwtClientTimeout(java.lang.Number)
@@ -2295,15 +2594,16 @@ SnowflakeProviderConfig.builder()
 //  .keepSessionAlive(java.lang.Boolean)
 //  .keepSessionAlive(IResolvable)
 //  .loginTimeout(java.lang.Number)
+//  .maxRetryCount(java.lang.Number)
 //  .oauthAccessToken(java.lang.String)
 //  .oauthClientId(java.lang.String)
 //  .oauthClientSecret(java.lang.String)
 //  .oauthEndpoint(java.lang.String)
 //  .oauthRedirectUrl(java.lang.String)
 //  .oauthRefreshToken(java.lang.String)
-//  .ocspFailOpen(java.lang.Boolean)
-//  .ocspFailOpen(IResolvable)
+//  .ocspFailOpen(java.lang.String)
 //  .oktaUrl(java.lang.String)
+//  .organizationName(java.lang.String)
 //  .params(java.util.Map<java.lang.String, java.lang.String>)
 //  .passcode(java.lang.String)
 //  .passcodeInPassword(java.lang.Boolean)
@@ -2319,12 +2619,12 @@ SnowflakeProviderConfig.builder()
 //  .requestTimeout(java.lang.Number)
 //  .role(java.lang.String)
 //  .sessionParams(java.util.Map<java.lang.String, java.lang.String>)
+//  .tmpDirectoryPath(java.lang.String)
 //  .token(java.lang.String)
 //  .tokenAccessor(SnowflakeProviderTokenAccessor)
 //  .user(java.lang.String)
 //  .username(java.lang.String)
-//  .validateDefaultParameters(java.lang.Boolean)
-//  .validateDefaultParameters(IResolvable)
+//  .validateDefaultParameters(java.lang.String)
 //  .warehouse(java.lang.String)
     .build();
 ```
@@ -2333,50 +2633,57 @@ SnowflakeProviderConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.account">account</a></code> | <code>java.lang.String</code> | Specifies your Snowflake account identifier assigned, by Snowflake. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.account">account</a></code> | <code>java.lang.String</code> | Use `account_name` and `organization_name` instead. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.accountName">accountName</a></code> | <code>java.lang.String</code> | Specifies your Snowflake account name assigned by Snowflake. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.alias">alias</a></code> | <code>java.lang.String</code> | Alias name. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.authenticator">authenticator</a></code> | <code>java.lang.String</code> | Specifies the [authentication type](https://pkg.go.dev/github.com/snowflakedb/gosnowflake#AuthType) to use when connecting to Snowflake. Valid values include: Snowflake, OAuth, ExternalBrowser, Okta, JWT, TokenAccessor, UsernamePasswordMFA. Can also be sourced from the `SNOWFLAKE_AUTHENTICATOR` environment variable. It has to be set explicitly to JWT for private key authentication. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.authenticator">authenticator</a></code> | <code>java.lang.String</code> | Specifies the [authentication type](https://pkg.go.dev/github.com/snowflakedb/gosnowflake#AuthType) to use when connecting to Snowflake. Valid options are: `SNOWFLAKE` \| `OAUTH` \| `EXTERNALBROWSER` \| `OKTA` \| `JWT` \| `SNOWFLAKE_JWT` \| `TOKENACCESSOR` \| `USERNAMEPASSWORDMFA`. Value `JWT` is deprecated and will be removed in future releases. Can also be sourced from the `SNOWFLAKE_AUTHENTICATOR` environment variable. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.browserAuth">browserAuth</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Required when `oauth_refresh_token` is used. Can also be sourced from `SNOWFLAKE_USE_BROWSER_AUTH` environment variable. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.clientIp">clientIp</a></code> | <code>java.lang.String</code> | IP address for network checks. Can also be sourced from the `SNOWFLAKE_CLIENT_IP` environment variable. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.clientRequestMfaToken">clientRequestMfaToken</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When true the MFA token is cached in the credential manager. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.clientStoreTemporaryCredential">clientStoreTemporaryCredential</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When true the ID token is cached in the credential manager. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.clientRequestMfaToken">clientRequestMfaToken</a></code> | <code>java.lang.String</code> | When true the MFA token is cached in the credential manager. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.clientStoreTemporaryCredential">clientStoreTemporaryCredential</a></code> | <code>java.lang.String</code> | When true the ID token is cached in the credential manager. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.clientTimeout">clientTimeout</a></code> | <code>java.lang.Number</code> | The timeout in seconds for the client to complete the authentication. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.disableQueryContextCache">disableQueryContextCache</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Should HTAP query context cache be disabled. Can also be sourced from the `SNOWFLAKE_DISABLE_QUERY_CONTEXT_CACHE` environment variable. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.disableTelemetry">disableTelemetry</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Indicates whether to disable telemetry. Can also be sourced from the `SNOWFLAKE_DISABLE_TELEMETRY` environment variable. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.disableConsoleLogin">disableConsoleLogin</a></code> | <code>java.lang.String</code> | Indicates whether console login should be disabled in the driver. Can also be sourced from the `SNOWFLAKE_DISABLE_CONSOLE_LOGIN` environment variable. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.disableQueryContextCache">disableQueryContextCache</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Disables HTAP query context cache in the driver. Can also be sourced from the `SNOWFLAKE_DISABLE_QUERY_CONTEXT_CACHE` environment variable. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.disableTelemetry">disableTelemetry</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Disables telemetry in the driver. Can also be sourced from the `DISABLE_TELEMETRY` environment variable. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.driverTracing">driverTracing</a></code> | <code>java.lang.String</code> | Specifies the logging level to be used by the driver. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.externalBrowserTimeout">externalBrowserTimeout</a></code> | <code>java.lang.Number</code> | The timeout in seconds for the external browser to complete the authentication. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.host">host</a></code> | <code>java.lang.String</code> | Supports passing in a custom host value to the snowflake go driver for use with privatelink. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.host">host</a></code> | <code>java.lang.String</code> | Specifies a custom host value used by the driver for privatelink connections. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.includeRetryReason">includeRetryReason</a></code> | <code>java.lang.String</code> | Should retried request contain retry reason. Can also be sourced from the `SNOWFLAKE_INCLUDE_RETRY_REASON` environment variable. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.insecureMode">insecureMode</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If true, bypass the Online Certificate Status Protocol (OCSP) certificate revocation check. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.jwtClientTimeout">jwtClientTimeout</a></code> | <code>java.lang.Number</code> | The timeout in seconds for the JWT client to complete the authentication. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.jwtExpireTimeout">jwtExpireTimeout</a></code> | <code>java.lang.Number</code> | JWT expire after timeout in seconds. Can also be sourced from the `SNOWFLAKE_JWT_EXPIRE_TIMEOUT` environment variable. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.keepSessionAlive">keepSessionAlive</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Enables the session to persist even after the connection is closed. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.loginTimeout">loginTimeout</a></code> | <code>java.lang.Number</code> | Login retry timeout EXCLUDING network roundtrip and read out http response. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.loginTimeout">loginTimeout</a></code> | <code>java.lang.Number</code> | Login retry timeout in seconds EXCLUDING network roundtrip and read out http response. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.maxRetryCount">maxRetryCount</a></code> | <code>java.lang.Number</code> | Specifies how many times non-periodic HTTP request can be retried by the driver. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.oauthAccessToken">oauthAccessToken</a></code> | <code>java.lang.String</code> | Token for use with OAuth. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.oauthClientId">oauthClientId</a></code> | <code>java.lang.String</code> | Required when `oauth_refresh_token` is used. Can also be sourced from `SNOWFLAKE_OAUTH_CLIENT_ID` environment variable. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.oauthClientSecret">oauthClientSecret</a></code> | <code>java.lang.String</code> | Required when `oauth_refresh_token` is used. Can also be sourced from `SNOWFLAKE_OAUTH_CLIENT_SECRET` environment variable. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.oauthEndpoint">oauthEndpoint</a></code> | <code>java.lang.String</code> | Required when `oauth_refresh_token` is used. Can also be sourced from `SNOWFLAKE_OAUTH_ENDPOINT` environment variable. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.oauthRedirectUrl">oauthRedirectUrl</a></code> | <code>java.lang.String</code> | Required when `oauth_refresh_token` is used. Can also be sourced from `SNOWFLAKE_OAUTH_REDIRECT_URL` environment variable. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.oauthRefreshToken">oauthRefreshToken</a></code> | <code>java.lang.String</code> | Token for use with OAuth. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.ocspFailOpen">ocspFailOpen</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | True represents OCSP fail open mode. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.oktaUrl">oktaUrl</a></code> | <code>java.lang.String</code> | The URL of the Okta server. e.g. https://example.okta.com. Can also be sourced from the `SNOWFLAKE_OKTA_URL` environment variable. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.params">params</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Sets other connection (i.e. session) parameters. [Parameters](https://docs.snowflake.com/en/sql-reference/parameters). |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.ocspFailOpen">ocspFailOpen</a></code> | <code>java.lang.String</code> | True represents OCSP fail open mode. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.oktaUrl">oktaUrl</a></code> | <code>java.lang.String</code> | The URL of the Okta server. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.organizationName">organizationName</a></code> | <code>java.lang.String</code> | Specifies your Snowflake organization name assigned by Snowflake. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.params">params</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Sets other connection (i.e. session) parameters. [Parameters](https://docs.snowflake.com/en/sql-reference/parameters). This field can not be set with environmental variables. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.passcode">passcode</a></code> | <code>java.lang.String</code> | Specifies the passcode provided by Duo when using multi-factor authentication (MFA) for login. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.passcodeInPassword">passcodeInPassword</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | False by default. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.password">password</a></code> | <code>java.lang.String</code> | Password for username+password auth. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.port">port</a></code> | <code>java.lang.Number</code> | Support custom port values to snowflake go driver for use with privatelink. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.password">password</a></code> | <code>java.lang.String</code> | Password for user + password auth. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.port">port</a></code> | <code>java.lang.Number</code> | Specifies a custom port value used by the driver for privatelink connections. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.privateKey">privateKey</a></code> | <code>java.lang.String</code> | Private Key for username+private-key auth. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.privateKeyPassphrase">privateKeyPassphrase</a></code> | <code>java.lang.String</code> | Supports the encryption ciphers aes-128-cbc, aes-128-gcm, aes-192-cbc, aes-192-gcm, aes-256-cbc, aes-256-gcm, and des-ede3-cbc. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.privateKeyPath">privateKeyPath</a></code> | <code>java.lang.String</code> | Path to a private key for using keypair authentication. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.profile">profile</a></code> | <code>java.lang.String</code> | Sets the profile to read from ~/.snowflake/config file. Can also be sourced from the `SNOWFLAKE_PROFILE` environment variable. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.protocol">protocol</a></code> | <code>java.lang.String</code> | Either http or https, defaults to https. Can also be sourced from the `SNOWFLAKE_PROTOCOL` environment variable. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.protocol">protocol</a></code> | <code>java.lang.String</code> | A protocol used in the connection. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.region">region</a></code> | <code>java.lang.String</code> | Snowflake region, such as "eu-central-1", with this parameter. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.requestTimeout">requestTimeout</a></code> | <code>java.lang.Number</code> | request retry timeout EXCLUDING network roundtrip and read out http response. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.requestTimeout">requestTimeout</a></code> | <code>java.lang.Number</code> | request retry timeout in seconds EXCLUDING network roundtrip and read out http response. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.role">role</a></code> | <code>java.lang.String</code> | Specifies the role to use by default for accessing Snowflake objects in the client session. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.sessionParams">sessionParams</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Sets session parameters. [Parameters](https://docs.snowflake.com/en/sql-reference/parameters). |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.tmpDirectoryPath">tmpDirectoryPath</a></code> | <code>java.lang.String</code> | Sets temporary directory used by the driver for operations like encrypting, compressing etc. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.token">token</a></code> | <code>java.lang.String</code> | Token to use for OAuth and other forms of token based auth. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.tokenAccessor">tokenAccessor</a></code> | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderTokenAccessor">SnowflakeProviderTokenAccessor</a></code> | token_accessor block. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.user">user</a></code> | <code>java.lang.String</code> | Username. Can also be sourced from the `SNOWFLAKE_USER` environment variable. Required unless using `profile`. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.username">username</a></code> | <code>java.lang.String</code> | Username for username+password authentication. Can also be sourced from the `SNOWFLAKE_USERNAME` environment variable. Required unless using `profile`. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.validateDefaultParameters">validateDefaultParameters</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | True by default. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.user">user</a></code> | <code>java.lang.String</code> | Username. Required unless using `profile`. Can also be sourced from the `SNOWFLAKE_USER` environment variable. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.username">username</a></code> | <code>java.lang.String</code> | Username for user + password authentication. Required unless using `profile`. Can also be sourced from the `SNOWFLAKE_USERNAME` environment variable. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.validateDefaultParameters">validateDefaultParameters</a></code> | <code>java.lang.String</code> | True by default. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.warehouse">warehouse</a></code> | <code>java.lang.String</code> | Specifies the virtual warehouse to use by default for queries, loading, etc. |
 
 ---
@@ -2389,11 +2696,27 @@ public java.lang.String getAccount();
 
 - *Type:* java.lang.String
 
-Specifies your Snowflake account identifier assigned, by Snowflake.
+Use `account_name` and `organization_name` instead.
 
-For information about account identifiers, see the [Snowflake documentation](https://docs.snowflake.com/en/user-guide/admin-account-identifier.html). Can also be sourced from the `SNOWFLAKE_ACCOUNT` environment variable. Required unless using `profile`.
+Specifies your Snowflake account identifier assigned, by Snowflake. The [account locator](https://docs.snowflake.com/en/user-guide/admin-account-identifier#format-2-account-locator-in-a-region) format is not supported. For information about account identifiers, see the [Snowflake documentation](https://docs.snowflake.com/en/user-guide/admin-account-identifier.html). Required unless using `profile`. Can also be sourced from the `SNOWFLAKE_ACCOUNT` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#account SnowflakeProvider#account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#account SnowflakeProvider#account}
+
+---
+
+##### `accountName`<sup>Optional</sup> <a name="accountName" id="@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.accountName"></a>
+
+```java
+public java.lang.String getAccountName();
+```
+
+- *Type:* java.lang.String
+
+Specifies your Snowflake account name assigned by Snowflake.
+
+For information about account identifiers, see the [Snowflake documentation](https://docs.snowflake.com/en/user-guide/admin-account-identifier#account-name). Required unless using `profile`. Can also be sourced from the `SNOWFLAKE_ACCOUNT_NAME` environment variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#account_name SnowflakeProvider#account_name}
 
 ---
 
@@ -2407,7 +2730,7 @@ public java.lang.String getAlias();
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#alias SnowflakeProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#alias SnowflakeProvider#alias}
 
 ---
 
@@ -2419,9 +2742,9 @@ public java.lang.String getAuthenticator();
 
 - *Type:* java.lang.String
 
-Specifies the [authentication type](https://pkg.go.dev/github.com/snowflakedb/gosnowflake#AuthType) to use when connecting to Snowflake. Valid values include: Snowflake, OAuth, ExternalBrowser, Okta, JWT, TokenAccessor, UsernamePasswordMFA. Can also be sourced from the `SNOWFLAKE_AUTHENTICATOR` environment variable. It has to be set explicitly to JWT for private key authentication.
+Specifies the [authentication type](https://pkg.go.dev/github.com/snowflakedb/gosnowflake#AuthType) to use when connecting to Snowflake. Valid options are: `SNOWFLAKE` | `OAUTH` | `EXTERNALBROWSER` | `OKTA` | `JWT` | `SNOWFLAKE_JWT` | `TOKENACCESSOR` | `USERNAMEPASSWORDMFA`. Value `JWT` is deprecated and will be removed in future releases. Can also be sourced from the `SNOWFLAKE_AUTHENTICATOR` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#authenticator SnowflakeProvider#authenticator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#authenticator SnowflakeProvider#authenticator}
 
 ---
 
@@ -2435,7 +2758,7 @@ public java.lang.Object getBrowserAuth();
 
 Required when `oauth_refresh_token` is used. Can also be sourced from `SNOWFLAKE_USE_BROWSER_AUTH` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#browser_auth SnowflakeProvider#browser_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#browser_auth SnowflakeProvider#browser_auth}
 
 ---
 
@@ -2449,39 +2772,39 @@ public java.lang.String getClientIp();
 
 IP address for network checks. Can also be sourced from the `SNOWFLAKE_CLIENT_IP` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#client_ip SnowflakeProvider#client_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#client_ip SnowflakeProvider#client_ip}
 
 ---
 
 ##### `clientRequestMfaToken`<sup>Optional</sup> <a name="clientRequestMfaToken" id="@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.clientRequestMfaToken"></a>
 
 ```java
-public java.lang.Object getClientRequestMfaToken();
+public java.lang.String getClientRequestMfaToken();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.String
 
 When true the MFA token is cached in the credential manager.
 
 True by default in Windows/OSX. False for Linux. Can also be sourced from the `SNOWFLAKE_CLIENT_REQUEST_MFA_TOKEN` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#client_request_mfa_token SnowflakeProvider#client_request_mfa_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#client_request_mfa_token SnowflakeProvider#client_request_mfa_token}
 
 ---
 
 ##### `clientStoreTemporaryCredential`<sup>Optional</sup> <a name="clientStoreTemporaryCredential" id="@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.clientStoreTemporaryCredential"></a>
 
 ```java
-public java.lang.Object getClientStoreTemporaryCredential();
+public java.lang.String getClientStoreTemporaryCredential();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.String
 
 When true the ID token is cached in the credential manager.
 
 True by default in Windows/OSX. False for Linux. Can also be sourced from the `SNOWFLAKE_CLIENT_STORE_TEMPORARY_CREDENTIAL` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#client_store_temporary_credential SnowflakeProvider#client_store_temporary_credential}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#client_store_temporary_credential SnowflakeProvider#client_store_temporary_credential}
 
 ---
 
@@ -2495,9 +2818,23 @@ public java.lang.Number getClientTimeout();
 
 The timeout in seconds for the client to complete the authentication.
 
-Default is 900 seconds. Can also be sourced from the `SNOWFLAKE_CLIENT_TIMEOUT` environment variable.
+Can also be sourced from the `SNOWFLAKE_CLIENT_TIMEOUT` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#client_timeout SnowflakeProvider#client_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#client_timeout SnowflakeProvider#client_timeout}
+
+---
+
+##### `disableConsoleLogin`<sup>Optional</sup> <a name="disableConsoleLogin" id="@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.disableConsoleLogin"></a>
+
+```java
+public java.lang.String getDisableConsoleLogin();
+```
+
+- *Type:* java.lang.String
+
+Indicates whether console login should be disabled in the driver. Can also be sourced from the `SNOWFLAKE_DISABLE_CONSOLE_LOGIN` environment variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#disable_console_login SnowflakeProvider#disable_console_login}
 
 ---
 
@@ -2509,9 +2846,9 @@ public java.lang.Object getDisableQueryContextCache();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Should HTAP query context cache be disabled. Can also be sourced from the `SNOWFLAKE_DISABLE_QUERY_CONTEXT_CACHE` environment variable.
+Disables HTAP query context cache in the driver. Can also be sourced from the `SNOWFLAKE_DISABLE_QUERY_CONTEXT_CACHE` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#disable_query_context_cache SnowflakeProvider#disable_query_context_cache}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#disable_query_context_cache SnowflakeProvider#disable_query_context_cache}
 
 ---
 
@@ -2523,9 +2860,25 @@ public java.lang.Object getDisableTelemetry();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Indicates whether to disable telemetry. Can also be sourced from the `SNOWFLAKE_DISABLE_TELEMETRY` environment variable.
+Disables telemetry in the driver. Can also be sourced from the `DISABLE_TELEMETRY` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#disable_telemetry SnowflakeProvider#disable_telemetry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#disable_telemetry SnowflakeProvider#disable_telemetry}
+
+---
+
+##### `driverTracing`<sup>Optional</sup> <a name="driverTracing" id="@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.driverTracing"></a>
+
+```java
+public java.lang.String getDriverTracing();
+```
+
+- *Type:* java.lang.String
+
+Specifies the logging level to be used by the driver.
+
+Valid options are: `trace` | `debug` | `info` | `print` | `warning` | `error` | `fatal` | `panic`. Can also be sourced from the `SNOWFLAKE_DRIVER_TRACING` environment variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#driver_tracing SnowflakeProvider#driver_tracing}
 
 ---
 
@@ -2539,9 +2892,9 @@ public java.lang.Number getExternalBrowserTimeout();
 
 The timeout in seconds for the external browser to complete the authentication.
 
-Default is 120 seconds. Can also be sourced from the `SNOWFLAKE_EXTERNAL_BROWSER_TIMEOUT` environment variable.
+Can also be sourced from the `SNOWFLAKE_EXTERNAL_BROWSER_TIMEOUT` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#external_browser_timeout SnowflakeProvider#external_browser_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#external_browser_timeout SnowflakeProvider#external_browser_timeout}
 
 ---
 
@@ -2553,11 +2906,25 @@ public java.lang.String getHost();
 
 - *Type:* java.lang.String
 
-Supports passing in a custom host value to the snowflake go driver for use with privatelink.
+Specifies a custom host value used by the driver for privatelink connections.
 
 Can also be sourced from the `SNOWFLAKE_HOST` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#host SnowflakeProvider#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#host SnowflakeProvider#host}
+
+---
+
+##### `includeRetryReason`<sup>Optional</sup> <a name="includeRetryReason" id="@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.includeRetryReason"></a>
+
+```java
+public java.lang.String getIncludeRetryReason();
+```
+
+- *Type:* java.lang.String
+
+Should retried request contain retry reason. Can also be sourced from the `SNOWFLAKE_INCLUDE_RETRY_REASON` environment variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#include_retry_reason SnowflakeProvider#include_retry_reason}
 
 ---
 
@@ -2573,7 +2940,7 @@ If true, bypass the Online Certificate Status Protocol (OCSP) certificate revoca
 
 IMPORTANT: Change the default value for testing or emergency situations only. Can also be sourced from the `SNOWFLAKE_INSECURE_MODE` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#insecure_mode SnowflakeProvider#insecure_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#insecure_mode SnowflakeProvider#insecure_mode}
 
 ---
 
@@ -2587,9 +2954,9 @@ public java.lang.Number getJwtClientTimeout();
 
 The timeout in seconds for the JWT client to complete the authentication.
 
-Default is 10 seconds. Can also be sourced from the `SNOWFLAKE_JWT_CLIENT_TIMEOUT` environment variable.
+Can also be sourced from the `SNOWFLAKE_JWT_CLIENT_TIMEOUT` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#jwt_client_timeout SnowflakeProvider#jwt_client_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#jwt_client_timeout SnowflakeProvider#jwt_client_timeout}
 
 ---
 
@@ -2603,7 +2970,7 @@ public java.lang.Number getJwtExpireTimeout();
 
 JWT expire after timeout in seconds. Can also be sourced from the `SNOWFLAKE_JWT_EXPIRE_TIMEOUT` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#jwt_expire_timeout SnowflakeProvider#jwt_expire_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#jwt_expire_timeout SnowflakeProvider#jwt_expire_timeout}
 
 ---
 
@@ -2619,7 +2986,7 @@ Enables the session to persist even after the connection is closed.
 
 Can also be sourced from the `SNOWFLAKE_KEEP_SESSION_ALIVE` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#keep_session_alive SnowflakeProvider#keep_session_alive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#keep_session_alive SnowflakeProvider#keep_session_alive}
 
 ---
 
@@ -2631,11 +2998,27 @@ public java.lang.Number getLoginTimeout();
 
 - *Type:* java.lang.Number
 
-Login retry timeout EXCLUDING network roundtrip and read out http response.
+Login retry timeout in seconds EXCLUDING network roundtrip and read out http response.
 
 Can also be sourced from the `SNOWFLAKE_LOGIN_TIMEOUT` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#login_timeout SnowflakeProvider#login_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#login_timeout SnowflakeProvider#login_timeout}
+
+---
+
+##### `maxRetryCount`<sup>Optional</sup> <a name="maxRetryCount" id="@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.maxRetryCount"></a>
+
+```java
+public java.lang.Number getMaxRetryCount();
+```
+
+- *Type:* java.lang.Number
+
+Specifies how many times non-periodic HTTP request can be retried by the driver.
+
+Can also be sourced from the `SNOWFLAKE_MAX_RETRY_COUNT` environment variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#max_retry_count SnowflakeProvider#max_retry_count}
 
 ---
 
@@ -2651,7 +3034,7 @@ Token for use with OAuth.
 
 Generating the token is left to other tools. Cannot be used with `browser_auth`, `private_key_path`, `oauth_refresh_token` or `password`. Can also be sourced from `SNOWFLAKE_OAUTH_ACCESS_TOKEN` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#oauth_access_token SnowflakeProvider#oauth_access_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#oauth_access_token SnowflakeProvider#oauth_access_token}
 
 ---
 
@@ -2665,7 +3048,7 @@ public java.lang.String getOauthClientId();
 
 Required when `oauth_refresh_token` is used. Can also be sourced from `SNOWFLAKE_OAUTH_CLIENT_ID` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#oauth_client_id SnowflakeProvider#oauth_client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#oauth_client_id SnowflakeProvider#oauth_client_id}
 
 ---
 
@@ -2679,7 +3062,7 @@ public java.lang.String getOauthClientSecret();
 
 Required when `oauth_refresh_token` is used. Can also be sourced from `SNOWFLAKE_OAUTH_CLIENT_SECRET` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#oauth_client_secret SnowflakeProvider#oauth_client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#oauth_client_secret SnowflakeProvider#oauth_client_secret}
 
 ---
 
@@ -2693,7 +3076,7 @@ public java.lang.String getOauthEndpoint();
 
 Required when `oauth_refresh_token` is used. Can also be sourced from `SNOWFLAKE_OAUTH_ENDPOINT` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#oauth_endpoint SnowflakeProvider#oauth_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#oauth_endpoint SnowflakeProvider#oauth_endpoint}
 
 ---
 
@@ -2707,7 +3090,7 @@ public java.lang.String getOauthRedirectUrl();
 
 Required when `oauth_refresh_token` is used. Can also be sourced from `SNOWFLAKE_OAUTH_REDIRECT_URL` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#oauth_redirect_url SnowflakeProvider#oauth_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#oauth_redirect_url SnowflakeProvider#oauth_redirect_url}
 
 ---
 
@@ -2723,23 +3106,23 @@ Token for use with OAuth.
 
 Setup and generation of the token is left to other tools. Should be used in conjunction with `oauth_client_id`, `oauth_client_secret`, `oauth_endpoint`, `oauth_redirect_url`. Cannot be used with `browser_auth`, `private_key_path`, `oauth_access_token` or `password`. Can also be sourced from `SNOWFLAKE_OAUTH_REFRESH_TOKEN` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#oauth_refresh_token SnowflakeProvider#oauth_refresh_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#oauth_refresh_token SnowflakeProvider#oauth_refresh_token}
 
 ---
 
 ##### `ocspFailOpen`<sup>Optional</sup> <a name="ocspFailOpen" id="@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.ocspFailOpen"></a>
 
 ```java
-public java.lang.Object getOcspFailOpen();
+public java.lang.String getOcspFailOpen();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.String
 
 True represents OCSP fail open mode.
 
 False represents OCSP fail closed mode. Fail open true by default. Can also be sourced from the `SNOWFLAKE_OCSP_FAIL_OPEN` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#ocsp_fail_open SnowflakeProvider#ocsp_fail_open}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#ocsp_fail_open SnowflakeProvider#ocsp_fail_open}
 
 ---
 
@@ -2751,9 +3134,27 @@ public java.lang.String getOktaUrl();
 
 - *Type:* java.lang.String
 
-The URL of the Okta server. e.g. https://example.okta.com. Can also be sourced from the `SNOWFLAKE_OKTA_URL` environment variable.
+The URL of the Okta server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#okta_url SnowflakeProvider#okta_url}
+e.g. https://example.okta.com. Okta URL host needs to to have a suffix `okta.com`. Read more in Snowflake [docs](https://docs.snowflake.com/en/user-guide/oauth-okta). Can also be sourced from the `SNOWFLAKE_OKTA_URL` environment variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#okta_url SnowflakeProvider#okta_url}
+
+---
+
+##### `organizationName`<sup>Optional</sup> <a name="organizationName" id="@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.organizationName"></a>
+
+```java
+public java.lang.String getOrganizationName();
+```
+
+- *Type:* java.lang.String
+
+Specifies your Snowflake organization name assigned by Snowflake.
+
+For information about account identifiers, see the [Snowflake documentation](https://docs.snowflake.com/en/user-guide/admin-account-identifier#organization-name). Required unless using `profile`. Can also be sourced from the `SNOWFLAKE_ORGANIZATION_NAME` environment variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#organization_name SnowflakeProvider#organization_name}
 
 ---
 
@@ -2765,9 +3166,9 @@ public java.util.Map<java.lang.String, java.lang.String> getParams();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Sets other connection (i.e. session) parameters. [Parameters](https://docs.snowflake.com/en/sql-reference/parameters).
+Sets other connection (i.e. session) parameters. [Parameters](https://docs.snowflake.com/en/sql-reference/parameters). This field can not be set with environmental variables.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#params SnowflakeProvider#params}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#params SnowflakeProvider#params}
 
 ---
 
@@ -2783,7 +3184,7 @@ Specifies the passcode provided by Duo when using multi-factor authentication (M
 
 Can also be sourced from the `SNOWFLAKE_PASSCODE` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#passcode SnowflakeProvider#passcode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#passcode SnowflakeProvider#passcode}
 
 ---
 
@@ -2797,9 +3198,9 @@ public java.lang.Object getPasscodeInPassword();
 
 False by default.
 
-Set to true if the MFA passcode is embedded in the login password. Appends the MFA passcode to the end of the password. Can also be sourced from the `SNOWFLAKE_PASSCODE_IN_PASSWORD` environment variable.
+Set to true if the MFA passcode is embedded to the configured password. Can also be sourced from the `SNOWFLAKE_PASSCODE_IN_PASSWORD` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#passcode_in_password SnowflakeProvider#passcode_in_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#passcode_in_password SnowflakeProvider#passcode_in_password}
 
 ---
 
@@ -2811,11 +3212,11 @@ public java.lang.String getPassword();
 
 - *Type:* java.lang.String
 
-Password for username+password auth.
+Password for user + password auth.
 
 Cannot be used with `browser_auth` or `private_key_path`. Can also be sourced from the `SNOWFLAKE_PASSWORD` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#password SnowflakeProvider#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#password SnowflakeProvider#password}
 
 ---
 
@@ -2827,11 +3228,11 @@ public java.lang.Number getPort();
 
 - *Type:* java.lang.Number
 
-Support custom port values to snowflake go driver for use with privatelink.
+Specifies a custom port value used by the driver for privatelink connections.
 
 Can also be sourced from the `SNOWFLAKE_PORT` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#port SnowflakeProvider#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#port SnowflakeProvider#port}
 
 ---
 
@@ -2845,9 +3246,9 @@ public java.lang.String getPrivateKey();
 
 Private Key for username+private-key auth.
 
-Cannot be used with `browser_auth` or `password`. Can also be sourced from `SNOWFLAKE_PRIVATE_KEY` environment variable.
+Cannot be used with `browser_auth` or `password`. Can also be sourced from the `SNOWFLAKE_PRIVATE_KEY` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#private_key SnowflakeProvider#private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#private_key SnowflakeProvider#private_key}
 
 ---
 
@@ -2861,9 +3262,9 @@ public java.lang.String getPrivateKeyPassphrase();
 
 Supports the encryption ciphers aes-128-cbc, aes-128-gcm, aes-192-cbc, aes-192-gcm, aes-256-cbc, aes-256-gcm, and des-ede3-cbc.
 
-Can also be sourced from `SNOWFLAKE_PRIVATE_KEY_PASSPHRASE` environment variable.
+Can also be sourced from the `SNOWFLAKE_PRIVATE_KEY_PASSPHRASE` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#private_key_passphrase SnowflakeProvider#private_key_passphrase}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#private_key_passphrase SnowflakeProvider#private_key_passphrase}
 
 ---
 
@@ -2879,7 +3280,7 @@ Path to a private key for using keypair authentication.
 
 Cannot be used with `browser_auth`, `oauth_access_token` or `password`. Can also be sourced from `SNOWFLAKE_PRIVATE_KEY_PATH` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#private_key_path SnowflakeProvider#private_key_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#private_key_path SnowflakeProvider#private_key_path}
 
 ---
 
@@ -2893,7 +3294,7 @@ public java.lang.String getProfile();
 
 Sets the profile to read from ~/.snowflake/config file. Can also be sourced from the `SNOWFLAKE_PROFILE` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#profile SnowflakeProvider#profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#profile SnowflakeProvider#profile}
 
 ---
 
@@ -2905,9 +3306,11 @@ public java.lang.String getProtocol();
 
 - *Type:* java.lang.String
 
-Either http or https, defaults to https. Can also be sourced from the `SNOWFLAKE_PROTOCOL` environment variable.
+A protocol used in the connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#protocol SnowflakeProvider#protocol}
+Valid options are: `http` | `https`. Can also be sourced from the `SNOWFLAKE_PROTOCOL` environment variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#protocol SnowflakeProvider#protocol}
 
 ---
 
@@ -2923,7 +3326,7 @@ Snowflake region, such as "eu-central-1", with this parameter.
 
 However, since this parameter is deprecated, it is best to specify the region as part of the account parameter. For details, see the description of the account parameter. [Snowflake region](https://docs.snowflake.com/en/user-guide/intro-regions.html) to use.  Required if using the [legacy format for the `account` identifier](https://docs.snowflake.com/en/user-guide/admin-account-identifier.html#format-2-legacy-account-locator-in-a-region) in the form of `<cloud_region_id>.<cloud>`. Can also be sourced from the `SNOWFLAKE_REGION` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#region SnowflakeProvider#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#region SnowflakeProvider#region}
 
 ---
 
@@ -2935,11 +3338,11 @@ public java.lang.Number getRequestTimeout();
 
 - *Type:* java.lang.Number
 
-request retry timeout EXCLUDING network roundtrip and read out http response.
+request retry timeout in seconds EXCLUDING network roundtrip and read out http response.
 
 Can also be sourced from the `SNOWFLAKE_REQUEST_TIMEOUT` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#request_timeout SnowflakeProvider#request_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#request_timeout SnowflakeProvider#request_timeout}
 
 ---
 
@@ -2953,9 +3356,9 @@ public java.lang.String getRole();
 
 Specifies the role to use by default for accessing Snowflake objects in the client session.
 
-Can also be sourced from the `SNOWFLAKE_ROLE` environment variable. .
+Can also be sourced from the `SNOWFLAKE_ROLE` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#role SnowflakeProvider#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#role SnowflakeProvider#role}
 
 ---
 
@@ -2969,7 +3372,23 @@ public java.util.Map<java.lang.String, java.lang.String> getSessionParams();
 
 Sets session parameters. [Parameters](https://docs.snowflake.com/en/sql-reference/parameters).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#session_params SnowflakeProvider#session_params}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#session_params SnowflakeProvider#session_params}
+
+---
+
+##### `tmpDirectoryPath`<sup>Optional</sup> <a name="tmpDirectoryPath" id="@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.tmpDirectoryPath"></a>
+
+```java
+public java.lang.String getTmpDirectoryPath();
+```
+
+- *Type:* java.lang.String
+
+Sets temporary directory used by the driver for operations like encrypting, compressing etc.
+
+Can also be sourced from the `SNOWFLAKE_TMP_DIRECTORY_PATH` environment variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#tmp_directory_path SnowflakeProvider#tmp_directory_path}
 
 ---
 
@@ -2985,7 +3404,7 @@ Token to use for OAuth and other forms of token based auth.
 
 Can also be sourced from the `SNOWFLAKE_TOKEN` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#token SnowflakeProvider#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#token SnowflakeProvider#token}
 
 ---
 
@@ -2999,7 +3418,7 @@ public SnowflakeProviderTokenAccessor getTokenAccessor();
 
 token_accessor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#token_accessor SnowflakeProvider#token_accessor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#token_accessor SnowflakeProvider#token_accessor}
 
 ---
 
@@ -3011,9 +3430,9 @@ public java.lang.String getUser();
 
 - *Type:* java.lang.String
 
-Username. Can also be sourced from the `SNOWFLAKE_USER` environment variable. Required unless using `profile`.
+Username. Required unless using `profile`. Can also be sourced from the `SNOWFLAKE_USER` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#user SnowflakeProvider#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#user SnowflakeProvider#user}
 
 ---
 
@@ -3025,25 +3444,25 @@ public java.lang.String getUsername();
 
 - *Type:* java.lang.String
 
-Username for username+password authentication. Can also be sourced from the `SNOWFLAKE_USERNAME` environment variable. Required unless using `profile`.
+Username for user + password authentication. Required unless using `profile`. Can also be sourced from the `SNOWFLAKE_USERNAME` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#username SnowflakeProvider#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#username SnowflakeProvider#username}
 
 ---
 
 ##### `validateDefaultParameters`<sup>Optional</sup> <a name="validateDefaultParameters" id="@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.validateDefaultParameters"></a>
 
 ```java
-public java.lang.Object getValidateDefaultParameters();
+public java.lang.String getValidateDefaultParameters();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.String
 
 True by default.
 
 If false, disables the validation checks for Database, Schema, Warehouse and Role at the time a connection is established. Can also be sourced from the `SNOWFLAKE_VALIDATE_DEFAULT_PARAMETERS` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#validate_default_parameters SnowflakeProvider#validate_default_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#validate_default_parameters SnowflakeProvider#validate_default_parameters}
 
 ---
 
@@ -3059,7 +3478,7 @@ Specifies the virtual warehouse to use by default for queries, loading, etc.
 
 in the client session. Can also be sourced from the `SNOWFLAKE_WAREHOUSE` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#warehouse SnowflakeProvider#warehouse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#warehouse SnowflakeProvider#warehouse}
 
 ---
 
@@ -3103,7 +3522,7 @@ The client ID for the OAuth provider when using a refresh token to renew access 
 
 Can also be sourced from the `SNOWFLAKE_TOKEN_ACCESSOR_CLIENT_ID` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#client_id SnowflakeProvider#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#client_id SnowflakeProvider#client_id}
 
 ---
 
@@ -3119,7 +3538,7 @@ The client secret for the OAuth provider when using a refresh token to renew acc
 
 Can also be sourced from the `SNOWFLAKE_TOKEN_ACCESSOR_CLIENT_SECRET` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#client_secret SnowflakeProvider#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#client_secret SnowflakeProvider#client_secret}
 
 ---
 
@@ -3135,7 +3554,7 @@ The redirect URI for the OAuth provider when using a refresh token to renew acce
 
 Can also be sourced from the `SNOWFLAKE_TOKEN_ACCESSOR_REDIRECT_URI` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#redirect_uri SnowflakeProvider#redirect_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#redirect_uri SnowflakeProvider#redirect_uri}
 
 ---
 
@@ -3151,7 +3570,7 @@ The refresh token for the OAuth provider when using a refresh token to renew acc
 
 Can also be sourced from the `SNOWFLAKE_TOKEN_ACCESSOR_REFRESH_TOKEN` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#refresh_token SnowflakeProvider#refresh_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#refresh_token SnowflakeProvider#refresh_token}
 
 ---
 
@@ -3165,7 +3584,7 @@ public java.lang.String getTokenEndpoint();
 
 The token endpoint for the OAuth provider e.g. https://{yourDomain}/oauth/token when using a refresh token to renew access token. Can also be sourced from the `SNOWFLAKE_TOKEN_ACCESSOR_TOKEN_ENDPOINT` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs#token_endpoint SnowflakeProvider#token_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs#token_endpoint SnowflakeProvider#token_endpoint}
 
 ---
 
