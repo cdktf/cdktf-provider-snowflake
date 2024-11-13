@@ -1,3 +1,3 @@
 # `snowflake_failover_group`
 
-Refer to the Terraform Registry for docs: [`snowflake_failover_group`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/failover_group).
+Refer to the Terraform Registry for docs: [`snowflake_failover_group`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/failover_group).

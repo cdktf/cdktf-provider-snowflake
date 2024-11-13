@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/grant_ownership
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/grant_ownership
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface GrantOwnershipConfig extends cdktf.TerraformMetaArguments {
   /**
   * The fully qualified name of the account role to which privileges will be granted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/grant_ownership#account_role_name GrantOwnership#account_role_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/grant_ownership#account_role_name GrantOwnership#account_role_name}
   */
   readonly accountRoleName?: string;
   /**
   * The fully qualified name of the database role to which privileges will be granted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/grant_ownership#database_role_name GrantOwnership#database_role_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/grant_ownership#database_role_name GrantOwnership#database_role_name}
   */
   readonly databaseRoleName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/grant_ownership#id GrantOwnership#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/grant_ownership#id GrantOwnership#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,13 +34,13 @@ export interface GrantOwnershipConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies whether to remove or transfer all existing outbound privileges on the object when ownership is transferred to a new role. Available options are: REVOKE for removing existing privileges and COPY to transfer them with ownership. For more information head over to [Snowflake documentation](https://docs.snowflake.com/en/sql-reference/sql/grant-ownership#optional-parameters).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/grant_ownership#outbound_privileges GrantOwnership#outbound_privileges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/grant_ownership#outbound_privileges GrantOwnership#outbound_privileges}
   */
   readonly outboundPrivileges?: string;
   /**
   * on block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/grant_ownership#on GrantOwnership#on}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/grant_ownership#on GrantOwnership#on}
   */
   readonly on: GrantOwnershipOn;
 }
@@ -48,19 +48,19 @@ export interface GrantOwnershipOnAll {
   /**
   * The fully qualified name of the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/grant_ownership#in_database GrantOwnership#in_database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/grant_ownership#in_database GrantOwnership#in_database}
   */
   readonly inDatabase?: string;
   /**
   * The fully qualified name of the schema.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/grant_ownership#in_schema GrantOwnership#in_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/grant_ownership#in_schema GrantOwnership#in_schema}
   */
   readonly inSchema?: string;
   /**
   * Specifies the type of object in plural form on which you are transferring ownership. Available values are: AGGREGATION POLICIES | ALERTS | AUTHENTICATION POLICIES | COMPUTE POOLS | DATA METRIC FUNCTIONS | DATABASES | DATABASE ROLES | DYNAMIC TABLES | EVENT TABLES | EXTERNAL TABLES | EXTERNAL VOLUMES | FAILOVER GROUPS | FILE FORMATS | FUNCTIONS | GIT REPOSITORIES | HYBRID TABLES | ICEBERG TABLES | IMAGE REPOSITORIES | INTEGRATIONS | MATERIALIZED VIEWS | NETWORK POLICIES | NETWORK RULES | PACKAGES POLICIES | PIPES | PROCEDURES | MASKING POLICIES | PASSWORD POLICIES | PROJECTION POLICIES | REPLICATION GROUPS | ROLES | ROW ACCESS POLICIES | SCHEMAS | SESSION POLICIES | SECRETS | SEQUENCES | STAGES | STREAMS | TABLES | TAGS | TASKS | USERS | VIEWS | WAREHOUSES. For more information head over to [Snowflake documentation](https://docs.snowflake.com/en/sql-reference/sql/grant-ownership#required-parameters).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/grant_ownership#object_type_plural GrantOwnership#object_type_plural}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/grant_ownership#object_type_plural GrantOwnership#object_type_plural}
   */
   readonly objectTypePlural: string;
 }
@@ -201,19 +201,19 @@ export interface GrantOwnershipOnFuture {
   /**
   * The fully qualified name of the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/grant_ownership#in_database GrantOwnership#in_database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/grant_ownership#in_database GrantOwnership#in_database}
   */
   readonly inDatabase?: string;
   /**
   * The fully qualified name of the schema.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/grant_ownership#in_schema GrantOwnership#in_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/grant_ownership#in_schema GrantOwnership#in_schema}
   */
   readonly inSchema?: string;
   /**
   * Specifies the type of object in plural form on which you are transferring ownership. Available values are: AGGREGATION POLICIES | ALERTS | AUTHENTICATION POLICIES | COMPUTE POOLS | DATA METRIC FUNCTIONS | DATABASES | DATABASE ROLES | DYNAMIC TABLES | EVENT TABLES | EXTERNAL TABLES | EXTERNAL VOLUMES | FAILOVER GROUPS | FILE FORMATS | FUNCTIONS | GIT REPOSITORIES | HYBRID TABLES | ICEBERG TABLES | IMAGE REPOSITORIES | INTEGRATIONS | MATERIALIZED VIEWS | NETWORK POLICIES | NETWORK RULES | PACKAGES POLICIES | PIPES | PROCEDURES | MASKING POLICIES | PASSWORD POLICIES | PROJECTION POLICIES | REPLICATION GROUPS | ROLES | ROW ACCESS POLICIES | SCHEMAS | SESSION POLICIES | SECRETS | SEQUENCES | STAGES | STREAMS | TABLES | TAGS | TASKS | USERS | VIEWS | WAREHOUSES. For more information head over to [Snowflake documentation](https://docs.snowflake.com/en/sql-reference/sql/grant-ownership#required-parameters).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/grant_ownership#object_type_plural GrantOwnership#object_type_plural}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/grant_ownership#object_type_plural GrantOwnership#object_type_plural}
   */
   readonly objectTypePlural: string;
 }
@@ -354,25 +354,25 @@ export interface GrantOwnershipOn {
   /**
   * Specifies the identifier for the object on which you are transferring ownership.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/grant_ownership#object_name GrantOwnership#object_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/grant_ownership#object_name GrantOwnership#object_name}
   */
   readonly objectName?: string;
   /**
   * Specifies the type of object on which you are transferring ownership. Available values are: AGGREGATION POLICY | ALERT | AUTHENTICATION POLICY | COMPUTE POOL | DATA METRIC FUNCTION | DATABASE | DATABASE ROLE | DYNAMIC TABLE | EVENT TABLE | EXTERNAL TABLE | EXTERNAL VOLUME | FAILOVER GROUP | FILE FORMAT | FUNCTION | GIT REPOSITORY | HYBRID TABLE | ICEBERG TABLE | IMAGE REPOSITORY | INTEGRATION | MATERIALIZED VIEW | NETWORK POLICY | NETWORK RULE | PACKAGES POLICY | PIPE | PROCEDURE | MASKING POLICY | PASSWORD POLICY | PROJECTION POLICY | REPLICATION GROUP | ROLE | ROW ACCESS POLICY | SCHEMA | SESSION POLICY | SECRET | SEQUENCE | STAGE | STREAM | TABLE | TAG | TASK | USER | VIEW | WAREHOUSE
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/grant_ownership#object_type GrantOwnership#object_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/grant_ownership#object_type GrantOwnership#object_type}
   */
   readonly objectType?: string;
   /**
   * all block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/grant_ownership#all GrantOwnership#all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/grant_ownership#all GrantOwnership#all}
   */
   readonly all?: GrantOwnershipOnAll;
   /**
   * future block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/grant_ownership#future GrantOwnership#future}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/grant_ownership#future GrantOwnership#future}
   */
   readonly future?: GrantOwnershipOnFuture;
 }
@@ -543,7 +543,7 @@ export class GrantOwnershipOnOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/grant_ownership snowflake_grant_ownership}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/grant_ownership snowflake_grant_ownership}
 */
 export class GrantOwnership extends cdktf.TerraformResource {
 
@@ -559,7 +559,7 @@ export class GrantOwnership extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GrantOwnership resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GrantOwnership to import
-  * @param importFromId The id of the existing GrantOwnership that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/grant_ownership#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GrantOwnership that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/grant_ownership#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GrantOwnership to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -571,7 +571,7 @@ export class GrantOwnership extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.97.0/docs/resources/grant_ownership snowflake_grant_ownership} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/grant_ownership snowflake_grant_ownership} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -582,7 +582,7 @@ export class GrantOwnership extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_grant_ownership',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.97.0',
+        providerVersion: '0.98.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
