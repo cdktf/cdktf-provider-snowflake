@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/table_column_masking_policy_application
 // generated from terraform resource schema
 

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/data-sources/system_generate_scim_access_token
 // generated from terraform resource schema
 
