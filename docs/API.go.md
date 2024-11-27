@@ -57,6 +57,7 @@ The following submodules are available:
 - [dataSnowflakeSystemGetPrivatelinkConfig](./dataSnowflakeSystemGetPrivatelinkConfig.go.md)
 - [dataSnowflakeSystemGetSnowflakePlatformInfo](./dataSnowflakeSystemGetSnowflakePlatformInfo.go.md)
 - [dataSnowflakeTables](./dataSnowflakeTables.go.md)
+- [dataSnowflakeTags](./dataSnowflakeTags.go.md)
 - [dataSnowflakeTasks](./dataSnowflakeTasks.go.md)
 - [dataSnowflakeUsers](./dataSnowflakeUsers.go.md)
 - [dataSnowflakeViews](./dataSnowflakeViews.go.md)

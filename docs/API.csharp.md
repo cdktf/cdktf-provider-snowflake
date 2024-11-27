@@ -57,6 +57,7 @@ The following submodules are available:
 - [dataSnowflakeSystemGetPrivatelinkConfig](./dataSnowflakeSystemGetPrivatelinkConfig.csharp.md)
 - [dataSnowflakeSystemGetSnowflakePlatformInfo](./dataSnowflakeSystemGetSnowflakePlatformInfo.csharp.md)
 - [dataSnowflakeTables](./dataSnowflakeTables.csharp.md)
+- [dataSnowflakeTags](./dataSnowflakeTags.csharp.md)
 - [dataSnowflakeTasks](./dataSnowflakeTasks.csharp.md)
 - [dataSnowflakeUsers](./dataSnowflakeUsers.csharp.md)
 - [dataSnowflakeViews](./dataSnowflakeViews.csharp.md)

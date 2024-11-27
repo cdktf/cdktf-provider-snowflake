@@ -57,6 +57,7 @@ The following submodules are available:
 - [dataSnowflakeSystemGetPrivatelinkConfig](./dataSnowflakeSystemGetPrivatelinkConfig.typescript.md)
 - [dataSnowflakeSystemGetSnowflakePlatformInfo](./dataSnowflakeSystemGetSnowflakePlatformInfo.typescript.md)
 - [dataSnowflakeTables](./dataSnowflakeTables.typescript.md)
+- [dataSnowflakeTags](./dataSnowflakeTags.typescript.md)
 - [dataSnowflakeTasks](./dataSnowflakeTasks.typescript.md)
 - [dataSnowflakeUsers](./dataSnowflakeUsers.typescript.md)
 - [dataSnowflakeViews](./dataSnowflakeViews.typescript.md)

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/data-sources/connections
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/data-sources/connections
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataSnowflakeConnectionsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/data-sources/connections#id DataSnowflakeConnections#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/data-sources/connections#id DataSnowflakeConnections#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,7 +22,7 @@ export interface DataSnowflakeConnectionsConfig extends cdktf.TerraformMetaArgum
   /**
   * Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/data-sources/connections#like DataSnowflakeConnections#like}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/data-sources/connections#like DataSnowflakeConnections#like}
   */
   readonly like?: string;
 }
@@ -234,7 +234,7 @@ export class DataSnowflakeConnectionsConnectionsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/data-sources/connections snowflake_connections}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/data-sources/connections snowflake_connections}
 */
 export class DataSnowflakeConnections extends cdktf.TerraformDataSource {
 
@@ -250,7 +250,7 @@ export class DataSnowflakeConnections extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataSnowflakeConnections resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataSnowflakeConnections to import
-  * @param importFromId The id of the existing DataSnowflakeConnections that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/data-sources/connections#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataSnowflakeConnections that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/data-sources/connections#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataSnowflakeConnections to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -262,7 +262,7 @@ export class DataSnowflakeConnections extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/data-sources/connections snowflake_connections} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/data-sources/connections snowflake_connections} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -273,7 +273,7 @@ export class DataSnowflakeConnections extends cdktf.TerraformDataSource {
       terraformResourceType: 'snowflake_connections',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.98.0',
+        providerVersion: '0.99.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,

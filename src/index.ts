@@ -132,6 +132,7 @@ export * as dataSnowflakeSystemGetAwsSnsIamPolicy from './data-snowflake-system-
 export * as dataSnowflakeSystemGetPrivatelinkConfig from './data-snowflake-system-get-privatelink-config';
 export * as dataSnowflakeSystemGetSnowflakePlatformInfo from './data-snowflake-system-get-snowflake-platform-info';
 export * as dataSnowflakeTables from './data-snowflake-tables';
+export * as dataSnowflakeTags from './data-snowflake-tags';
 export * as dataSnowflakeTasks from './data-snowflake-tasks';
 export * as dataSnowflakeUsers from './data-snowflake-users';
 export * as dataSnowflakeViews from './data-snowflake-views';

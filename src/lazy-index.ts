@@ -132,6 +132,7 @@ Object.defineProperty(exports, 'dataSnowflakeSystemGetAwsSnsIamPolicy', { get: f
 Object.defineProperty(exports, 'dataSnowflakeSystemGetPrivatelinkConfig', { get: function () { return require('./data-snowflake-system-get-privatelink-config'); } });
 Object.defineProperty(exports, 'dataSnowflakeSystemGetSnowflakePlatformInfo', { get: function () { return require('./data-snowflake-system-get-snowflake-platform-info'); } });
 Object.defineProperty(exports, 'dataSnowflakeTables', { get: function () { return require('./data-snowflake-tables'); } });
+Object.defineProperty(exports, 'dataSnowflakeTags', { get: function () { return require('./data-snowflake-tags'); } });
 Object.defineProperty(exports, 'dataSnowflakeTasks', { get: function () { return require('./data-snowflake-tasks'); } });
 Object.defineProperty(exports, 'dataSnowflakeUsers', { get: function () { return require('./data-snowflake-users'); } });
 Object.defineProperty(exports, 'dataSnowflakeViews', { get: function () { return require('./data-snowflake-views'); } });
