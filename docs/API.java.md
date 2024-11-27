@@ -57,6 +57,7 @@ The following submodules are available:
 - [dataSnowflakeSystemGetPrivatelinkConfig](./dataSnowflakeSystemGetPrivatelinkConfig.java.md)
 - [dataSnowflakeSystemGetSnowflakePlatformInfo](./dataSnowflakeSystemGetSnowflakePlatformInfo.java.md)
 - [dataSnowflakeTables](./dataSnowflakeTables.java.md)
+- [dataSnowflakeTags](./dataSnowflakeTags.java.md)
 - [dataSnowflakeTasks](./dataSnowflakeTasks.java.md)
 - [dataSnowflakeUsers](./dataSnowflakeUsers.java.md)
 - [dataSnowflakeViews](./dataSnowflakeViews.java.md)

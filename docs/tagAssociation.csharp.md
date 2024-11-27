@@ -4,7 +4,7 @@
 
 ### TagAssociation <a name="TagAssociation" id="@cdktf/provider-snowflake.tagAssociation.TagAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/tag_association snowflake_tag_association}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/resources/tag_association snowflake_tag_association}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.tagAssociation.TagAssociation.Initializer"></a>
 
@@ -521,7 +521,7 @@ The construct id used in the generated config for the TagAssociation to import.
 
 The id of the existing TagAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/tag_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/resources/tag_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -933,7 +933,7 @@ new TagAssociationConfig {
 | <code><a href="#@cdktf/provider-snowflake.tagAssociation.TagAssociationConfig.property.objectType">ObjectType</a></code> | <code>string</code> | Specifies the type of object to add a tag. |
 | <code><a href="#@cdktf/provider-snowflake.tagAssociation.TagAssociationConfig.property.tagId">TagId</a></code> | <code>string</code> | Specifies the identifier for the tag. Note: format must follow: "databaseName"."schemaName"."tagName" or "databaseName.schemaName.tagName" or "databaseName\|schemaName.tagName" (snowflake_tag.tag.id). |
 | <code><a href="#@cdktf/provider-snowflake.tagAssociation.TagAssociationConfig.property.tagValue">TagValue</a></code> | <code>string</code> | Specifies the value of the tag, (e.g. 'finance' or 'engineering'). |
-| <code><a href="#@cdktf/provider-snowflake.tagAssociation.TagAssociationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/tag_association#id TagAssociation#id}. |
+| <code><a href="#@cdktf/provider-snowflake.tagAssociation.TagAssociationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/resources/tag_association#id TagAssociation#id}. |
 | <code><a href="#@cdktf/provider-snowflake.tagAssociation.TagAssociationConfig.property.objectName">ObjectName</a></code> | <code>string</code> | Specifies the object identifier for the tag association. |
 | <code><a href="#@cdktf/provider-snowflake.tagAssociation.TagAssociationConfig.property.skipValidation">SkipValidation</a></code> | <code>object</code> | If true, skips validation of the tag association. |
 | <code><a href="#@cdktf/provider-snowflake.tagAssociation.TagAssociationConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.tagAssociation.TagAssociationTimeouts">TagAssociationTimeouts</a></code> | timeouts block. |
@@ -1020,7 +1020,7 @@ public object ObjectIdentifier { get; set; }
 
 object_identifier block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/tag_association#object_identifier TagAssociation#object_identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/resources/tag_association#object_identifier TagAssociation#object_identifier}
 
 ---
 
@@ -1036,7 +1036,7 @@ Specifies the type of object to add a tag.
 
 Allowed object types: [ACCOUNT APPLICATION APPLICATION PACKAGE DATABASE FAILOVER GROUP INTEGRATION NETWORK POLICY REPLICATION GROUP ROLE SHARE USER WAREHOUSE DATABASE ROLE SCHEMA ALERT SNOWFLAKE.CORE.BUDGET SNOWFLAKE.ML.CLASSIFICATION EXTERNAL FUNCTION EXTERNAL TABLE FUNCTION GIT REPOSITORY ICEBERG TABLE MATERIALIZED VIEW PIPE MASKING POLICY PASSWORD POLICY ROW ACCESS POLICY SESSION POLICY PRIVACY POLICY PROCEDURE STAGE STREAM TABLE TASK VIEW COLUMN EVENT TABLE].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/tag_association#object_type TagAssociation#object_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/resources/tag_association#object_type TagAssociation#object_type}
 
 ---
 
@@ -1050,7 +1050,7 @@ public string TagId { get; set; }
 
 Specifies the identifier for the tag. Note: format must follow: "databaseName"."schemaName"."tagName" or "databaseName.schemaName.tagName" or "databaseName|schemaName.tagName" (snowflake_tag.tag.id).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/tag_association#tag_id TagAssociation#tag_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/resources/tag_association#tag_id TagAssociation#tag_id}
 
 ---
 
@@ -1064,7 +1064,7 @@ public string TagValue { get; set; }
 
 Specifies the value of the tag, (e.g. 'finance' or 'engineering').
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/tag_association#tag_value TagAssociation#tag_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/resources/tag_association#tag_value TagAssociation#tag_value}
 
 ---
 
@@ -1076,7 +1076,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/tag_association#id TagAssociation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/resources/tag_association#id TagAssociation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1093,7 +1093,7 @@ public string ObjectName { get; set; }
 
 Specifies the object identifier for the tag association.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/tag_association#object_name TagAssociation#object_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/resources/tag_association#object_name TagAssociation#object_name}
 
 ---
 
@@ -1107,7 +1107,7 @@ public object SkipValidation { get; set; }
 
 If true, skips validation of the tag association.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/tag_association#skip_validation TagAssociation#skip_validation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/resources/tag_association#skip_validation TagAssociation#skip_validation}
 
 ---
 
@@ -1121,7 +1121,7 @@ public TagAssociationTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/tag_association#timeouts TagAssociation#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/resources/tag_association#timeouts TagAssociation#timeouts}
 
 ---
 
@@ -1159,7 +1159,7 @@ public string Name { get; set; }
 
 Name of the object to associate the tag with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/tag_association#name TagAssociation#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/resources/tag_association#name TagAssociation#name}
 
 ---
 
@@ -1173,7 +1173,7 @@ public string Database { get; set; }
 
 Name of the database that the object was created in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/tag_association#database TagAssociation#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/resources/tag_association#database TagAssociation#database}
 
 ---
 
@@ -1187,7 +1187,7 @@ public string Schema { get; set; }
 
 Name of the schema that the object was created in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/tag_association#schema TagAssociation#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/resources/tag_association#schema TagAssociation#schema}
 
 ---
 
@@ -1207,7 +1207,7 @@ new TagAssociationTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.tagAssociation.TagAssociationTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/tag_association#create TagAssociation#create}. |
+| <code><a href="#@cdktf/provider-snowflake.tagAssociation.TagAssociationTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/resources/tag_association#create TagAssociation#create}. |
 
 ---
 
@@ -1219,7 +1219,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.98.0/docs/resources/tag_association#create TagAssociation#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/resources/tag_association#create TagAssociation#create}.
 
 ---
 
