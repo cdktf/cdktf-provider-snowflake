@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/resources/user_authentication_policy_attachment
 // generated from terraform resource schema
 
