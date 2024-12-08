@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/provider"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/provider"
 
 provider.NewSnowflakeProvider(scope Construct, id *string, config SnowflakeProviderConfig) SnowflakeProvider
 ```
@@ -508,7 +508,7 @@ func ResetWarehouse()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/provider"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/provider"
 
 provider.SnowflakeProvider_IsConstruct(x interface{}) *bool
 ```
@@ -540,7 +540,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/provider"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/provider"
 
 provider.SnowflakeProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -554,7 +554,7 @@ provider.SnowflakeProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/provider"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/provider"
 
 provider.SnowflakeProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -568,7 +568,7 @@ provider.SnowflakeProvider_IsTerraformProvider(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/provider"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/provider"
 
 provider.SnowflakeProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1875,7 +1875,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/provider"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/provider"
 
 &provider.SnowflakeProviderConfig {
 	Account: *string,
@@ -1925,7 +1925,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/provider"
 	SessionParams: *map[string]*string,
 	TmpDirectoryPath: *string,
 	Token: *string,
-	TokenAccessor: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11.provider.SnowflakeProviderTokenAccessor,
+	TokenAccessor: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.provider.SnowflakeProviderTokenAccessor,
 	User: *string,
 	Username: *string,
 	ValidateDefaultParameters: *string,
@@ -2791,7 +2791,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.provider.SnowflakeProviderTokenAccessor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/provider"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/provider"
 
 &provider.SnowflakeProviderTokenAccessor {
 	ClientId: *string,

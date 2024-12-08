@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUser(scope Construct, id *string, config LegacyServiceUserConfig) LegacyServiceUser
 ```
@@ -896,7 +896,7 @@ func ResetWeekStart()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.LegacyServiceUser_IsConstruct(x interface{}) *bool
 ```
@@ -928,7 +928,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.LegacyServiceUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -942,7 +942,7 @@ legacyserviceuser.LegacyServiceUser_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.LegacyServiceUser_IsTerraformResource(x interface{}) *bool
 ```
@@ -956,7 +956,7 @@ legacyserviceuser.LegacyServiceUser_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.LegacyServiceUser_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -2879,7 +2879,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserConfig {
 	Connection: interface{},
@@ -4272,7 +4272,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParameters {
 
@@ -4285,7 +4285,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersAbortDetachedQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersAbortDetachedQuery {
 
@@ -4298,7 +4298,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersAutocommit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersAutocommit {
 
@@ -4311,7 +4311,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersBinaryInputFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersBinaryInputFormat {
 
@@ -4324,7 +4324,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersBinaryOutputFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersBinaryOutputFormat {
 
@@ -4337,7 +4337,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersClientMemoryLimit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersClientMemoryLimit {
 
@@ -4350,7 +4350,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersClientMetadataRequestUseConnectionCtx.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersClientMetadataRequestUseConnectionCtx {
 
@@ -4363,7 +4363,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersClientPrefetchThreads.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersClientPrefetchThreads {
 
@@ -4376,7 +4376,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersClientResultChunkSize.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersClientResultChunkSize {
 
@@ -4389,7 +4389,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersClientResultColumnCaseInsensitive.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersClientResultColumnCaseInsensitive {
 
@@ -4402,7 +4402,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersClientSessionKeepAlive.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersClientSessionKeepAlive {
 
@@ -4415,7 +4415,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersClientSessionKeepAliveHeartbeatFrequency.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersClientSessionKeepAliveHeartbeatFrequency {
 
@@ -4428,7 +4428,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersClientTimestampTypeMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersClientTimestampTypeMapping {
 
@@ -4441,7 +4441,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersDateInputFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersDateInputFormat {
 
@@ -4454,7 +4454,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersDateOutputFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersDateOutputFormat {
 
@@ -4467,7 +4467,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersEnableUnloadPhysicalTypeOptimization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersEnableUnloadPhysicalTypeOptimization {
 
@@ -4480,7 +4480,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersEnableUnredactedQuerySyntaxError.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersEnableUnredactedQuerySyntaxError {
 
@@ -4493,7 +4493,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersErrorOnNondeterministicMerge.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersErrorOnNondeterministicMerge {
 
@@ -4506,7 +4506,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersErrorOnNondeterministicUpdate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersErrorOnNondeterministicUpdate {
 
@@ -4519,7 +4519,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersGeographyOutputFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersGeographyOutputFormat {
 
@@ -4532,7 +4532,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersGeometryOutputFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersGeometryOutputFormat {
 
@@ -4545,7 +4545,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersJdbcTreatDecimalAsInt.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersJdbcTreatDecimalAsInt {
 
@@ -4558,7 +4558,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersJdbcTreatTimestampNtzAsUtc.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersJdbcTreatTimestampNtzAsUtc {
 
@@ -4571,7 +4571,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersJdbcUseSessionTimezone.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersJdbcUseSessionTimezone {
 
@@ -4584,7 +4584,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersJsonIndent.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersJsonIndent {
 
@@ -4597,7 +4597,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersLockTimeout.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersLockTimeout {
 
@@ -4610,7 +4610,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersLogLevel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersLogLevel {
 
@@ -4623,7 +4623,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersMultiStatementCount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersMultiStatementCount {
 
@@ -4636,7 +4636,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersNetworkPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersNetworkPolicy {
 
@@ -4649,7 +4649,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersNoorderSequenceAsDefault.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersNoorderSequenceAsDefault {
 
@@ -4662,7 +4662,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersOdbcTreatDecimalAsInt.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersOdbcTreatDecimalAsInt {
 
@@ -4675,7 +4675,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersPreventUnloadToInternalStages.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersPreventUnloadToInternalStages {
 
@@ -4688,7 +4688,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersQueryTag.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersQueryTag {
 
@@ -4701,7 +4701,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersQuotedIdentifiersIgnoreCase.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersQuotedIdentifiersIgnoreCase {
 
@@ -4714,7 +4714,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersRowsPerResultset.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersRowsPerResultset {
 
@@ -4727,7 +4727,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersS3StageVpceDnsName.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersS3StageVpceDnsName {
 
@@ -4740,7 +4740,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersSearchPath.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersSearchPath {
 
@@ -4753,7 +4753,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersSimulatedDataSharingConsumer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersSimulatedDataSharingConsumer {
 
@@ -4766,7 +4766,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersStatementQueuedTimeoutInSeconds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersStatementQueuedTimeoutInSeconds {
 
@@ -4779,7 +4779,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersStatementTimeoutInSeconds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersStatementTimeoutInSeconds {
 
@@ -4792,7 +4792,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersStrictJsonOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersStrictJsonOutput {
 
@@ -4805,7 +4805,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersTimeInputFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersTimeInputFormat {
 
@@ -4818,7 +4818,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersTimeOutputFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersTimeOutputFormat {
 
@@ -4831,7 +4831,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersTimestampDayIsAlways24H.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersTimestampDayIsAlways24H {
 
@@ -4844,7 +4844,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersTimestampInputFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersTimestampInputFormat {
 
@@ -4857,7 +4857,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersTimestampLtzOutputFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersTimestampLtzOutputFormat {
 
@@ -4870,7 +4870,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersTimestampNtzOutputFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersTimestampNtzOutputFormat {
 
@@ -4883,7 +4883,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersTimestampOutputFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersTimestampOutputFormat {
 
@@ -4896,7 +4896,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersTimestampTypeMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersTimestampTypeMapping {
 
@@ -4909,7 +4909,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersTimestampTzOutputFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersTimestampTzOutputFormat {
 
@@ -4922,7 +4922,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersTimezone.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersTimezone {
 
@@ -4935,7 +4935,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersTraceLevel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersTraceLevel {
 
@@ -4948,7 +4948,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersTransactionAbortOnError.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersTransactionAbortOnError {
 
@@ -4961,7 +4961,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersTransactionDefaultIsolationLevel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersTransactionDefaultIsolationLevel {
 
@@ -4974,7 +4974,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersTwoDigitCenturyStart.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersTwoDigitCenturyStart {
 
@@ -4987,7 +4987,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersUnsupportedDdlAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersUnsupportedDdlAction {
 
@@ -5000,7 +5000,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersUseCachedResult.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersUseCachedResult {
 
@@ -5013,7 +5013,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersWeekOfYearPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersWeekOfYearPolicy {
 
@@ -5026,7 +5026,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersWeekStart.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserParametersWeekStart {
 
@@ -5039,7 +5039,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 &legacyserviceuser.LegacyServiceUserShowOutput {
 
@@ -5054,7 +5054,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyservice
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersAbortDetachedQueryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersAbortDetachedQueryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersAbortDetachedQueryList
 ```
@@ -5203,7 +5203,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersAbortDetachedQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersAbortDetachedQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersAbortDetachedQueryOutputReference
 ```
@@ -5525,7 +5525,7 @@ func InternalValue() LegacyServiceUserParametersAbortDetachedQuery
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersAutocommitList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersAutocommitList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersAutocommitList
 ```
@@ -5674,7 +5674,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersAutocommitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersAutocommitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersAutocommitOutputReference
 ```
@@ -5996,7 +5996,7 @@ func InternalValue() LegacyServiceUserParametersAutocommit
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersBinaryInputFormatList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersBinaryInputFormatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersBinaryInputFormatList
 ```
@@ -6145,7 +6145,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersBinaryInputFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersBinaryInputFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersBinaryInputFormatOutputReference
 ```
@@ -6467,7 +6467,7 @@ func InternalValue() LegacyServiceUserParametersBinaryInputFormat
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersBinaryOutputFormatList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersBinaryOutputFormatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersBinaryOutputFormatList
 ```
@@ -6616,7 +6616,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersBinaryOutputFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersBinaryOutputFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersBinaryOutputFormatOutputReference
 ```
@@ -6938,7 +6938,7 @@ func InternalValue() LegacyServiceUserParametersBinaryOutputFormat
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersClientMemoryLimitList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersClientMemoryLimitList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersClientMemoryLimitList
 ```
@@ -7087,7 +7087,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersClientMemoryLimitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersClientMemoryLimitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersClientMemoryLimitOutputReference
 ```
@@ -7409,7 +7409,7 @@ func InternalValue() LegacyServiceUserParametersClientMemoryLimit
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersClientMetadataRequestUseConnectionCtxList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersClientMetadataRequestUseConnectionCtxList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersClientMetadataRequestUseConnectionCtxList
 ```
@@ -7558,7 +7558,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersClientMetadataRequestUseConnectionCtxOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersClientMetadataRequestUseConnectionCtxOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersClientMetadataRequestUseConnectionCtxOutputReference
 ```
@@ -7880,7 +7880,7 @@ func InternalValue() LegacyServiceUserParametersClientMetadataRequestUseConnecti
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersClientPrefetchThreadsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersClientPrefetchThreadsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersClientPrefetchThreadsList
 ```
@@ -8029,7 +8029,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersClientPrefetchThreadsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersClientPrefetchThreadsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersClientPrefetchThreadsOutputReference
 ```
@@ -8351,7 +8351,7 @@ func InternalValue() LegacyServiceUserParametersClientPrefetchThreads
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersClientResultChunkSizeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersClientResultChunkSizeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersClientResultChunkSizeList
 ```
@@ -8500,7 +8500,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersClientResultChunkSizeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersClientResultChunkSizeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersClientResultChunkSizeOutputReference
 ```
@@ -8822,7 +8822,7 @@ func InternalValue() LegacyServiceUserParametersClientResultChunkSize
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersClientResultColumnCaseInsensitiveList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersClientResultColumnCaseInsensitiveList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersClientResultColumnCaseInsensitiveList
 ```
@@ -8971,7 +8971,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersClientResultColumnCaseInsensitiveOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersClientResultColumnCaseInsensitiveOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersClientResultColumnCaseInsensitiveOutputReference
 ```
@@ -9293,7 +9293,7 @@ func InternalValue() LegacyServiceUserParametersClientResultColumnCaseInsensitiv
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersClientSessionKeepAliveHeartbeatFrequencyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersClientSessionKeepAliveHeartbeatFrequencyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersClientSessionKeepAliveHeartbeatFrequencyList
 ```
@@ -9442,7 +9442,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersClientSessionKeepAliveHeartbeatFrequencyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersClientSessionKeepAliveHeartbeatFrequencyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersClientSessionKeepAliveHeartbeatFrequencyOutputReference
 ```
@@ -9764,7 +9764,7 @@ func InternalValue() LegacyServiceUserParametersClientSessionKeepAliveHeartbeatF
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersClientSessionKeepAliveList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersClientSessionKeepAliveList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersClientSessionKeepAliveList
 ```
@@ -9913,7 +9913,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersClientSessionKeepAliveOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersClientSessionKeepAliveOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersClientSessionKeepAliveOutputReference
 ```
@@ -10235,7 +10235,7 @@ func InternalValue() LegacyServiceUserParametersClientSessionKeepAlive
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersClientTimestampTypeMappingList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersClientTimestampTypeMappingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersClientTimestampTypeMappingList
 ```
@@ -10384,7 +10384,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersClientTimestampTypeMappingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersClientTimestampTypeMappingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersClientTimestampTypeMappingOutputReference
 ```
@@ -10706,7 +10706,7 @@ func InternalValue() LegacyServiceUserParametersClientTimestampTypeMapping
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersDateInputFormatList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersDateInputFormatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersDateInputFormatList
 ```
@@ -10855,7 +10855,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersDateInputFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersDateInputFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersDateInputFormatOutputReference
 ```
@@ -11177,7 +11177,7 @@ func InternalValue() LegacyServiceUserParametersDateInputFormat
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersDateOutputFormatList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersDateOutputFormatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersDateOutputFormatList
 ```
@@ -11326,7 +11326,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersDateOutputFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersDateOutputFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersDateOutputFormatOutputReference
 ```
@@ -11648,7 +11648,7 @@ func InternalValue() LegacyServiceUserParametersDateOutputFormat
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersEnableUnloadPhysicalTypeOptimizationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersEnableUnloadPhysicalTypeOptimizationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersEnableUnloadPhysicalTypeOptimizationList
 ```
@@ -11797,7 +11797,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersEnableUnloadPhysicalTypeOptimizationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersEnableUnloadPhysicalTypeOptimizationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersEnableUnloadPhysicalTypeOptimizationOutputReference
 ```
@@ -12119,7 +12119,7 @@ func InternalValue() LegacyServiceUserParametersEnableUnloadPhysicalTypeOptimiza
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersEnableUnredactedQuerySyntaxErrorList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersEnableUnredactedQuerySyntaxErrorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersEnableUnredactedQuerySyntaxErrorList
 ```
@@ -12268,7 +12268,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersEnableUnredactedQuerySyntaxErrorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersEnableUnredactedQuerySyntaxErrorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersEnableUnredactedQuerySyntaxErrorOutputReference
 ```
@@ -12590,7 +12590,7 @@ func InternalValue() LegacyServiceUserParametersEnableUnredactedQuerySyntaxError
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersErrorOnNondeterministicMergeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersErrorOnNondeterministicMergeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersErrorOnNondeterministicMergeList
 ```
@@ -12739,7 +12739,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersErrorOnNondeterministicMergeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersErrorOnNondeterministicMergeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersErrorOnNondeterministicMergeOutputReference
 ```
@@ -13061,7 +13061,7 @@ func InternalValue() LegacyServiceUserParametersErrorOnNondeterministicMerge
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersErrorOnNondeterministicUpdateList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersErrorOnNondeterministicUpdateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersErrorOnNondeterministicUpdateList
 ```
@@ -13210,7 +13210,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersErrorOnNondeterministicUpdateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersErrorOnNondeterministicUpdateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersErrorOnNondeterministicUpdateOutputReference
 ```
@@ -13532,7 +13532,7 @@ func InternalValue() LegacyServiceUserParametersErrorOnNondeterministicUpdate
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersGeographyOutputFormatList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersGeographyOutputFormatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersGeographyOutputFormatList
 ```
@@ -13681,7 +13681,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersGeographyOutputFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersGeographyOutputFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersGeographyOutputFormatOutputReference
 ```
@@ -14003,7 +14003,7 @@ func InternalValue() LegacyServiceUserParametersGeographyOutputFormat
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersGeometryOutputFormatList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersGeometryOutputFormatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersGeometryOutputFormatList
 ```
@@ -14152,7 +14152,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersGeometryOutputFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersGeometryOutputFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersGeometryOutputFormatOutputReference
 ```
@@ -14474,7 +14474,7 @@ func InternalValue() LegacyServiceUserParametersGeometryOutputFormat
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersJdbcTreatDecimalAsIntList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersJdbcTreatDecimalAsIntList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersJdbcTreatDecimalAsIntList
 ```
@@ -14623,7 +14623,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersJdbcTreatDecimalAsIntOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersJdbcTreatDecimalAsIntOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersJdbcTreatDecimalAsIntOutputReference
 ```
@@ -14945,7 +14945,7 @@ func InternalValue() LegacyServiceUserParametersJdbcTreatDecimalAsInt
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersJdbcTreatTimestampNtzAsUtcList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersJdbcTreatTimestampNtzAsUtcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersJdbcTreatTimestampNtzAsUtcList
 ```
@@ -15094,7 +15094,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersJdbcTreatTimestampNtzAsUtcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersJdbcTreatTimestampNtzAsUtcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersJdbcTreatTimestampNtzAsUtcOutputReference
 ```
@@ -15416,7 +15416,7 @@ func InternalValue() LegacyServiceUserParametersJdbcTreatTimestampNtzAsUtc
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersJdbcUseSessionTimezoneList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersJdbcUseSessionTimezoneList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersJdbcUseSessionTimezoneList
 ```
@@ -15565,7 +15565,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersJdbcUseSessionTimezoneOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersJdbcUseSessionTimezoneOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersJdbcUseSessionTimezoneOutputReference
 ```
@@ -15887,7 +15887,7 @@ func InternalValue() LegacyServiceUserParametersJdbcUseSessionTimezone
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersJsonIndentList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersJsonIndentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersJsonIndentList
 ```
@@ -16036,7 +16036,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersJsonIndentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersJsonIndentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersJsonIndentOutputReference
 ```
@@ -16358,7 +16358,7 @@ func InternalValue() LegacyServiceUserParametersJsonIndent
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersList
 ```
@@ -16507,7 +16507,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersLockTimeoutList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersLockTimeoutList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersLockTimeoutList
 ```
@@ -16656,7 +16656,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersLockTimeoutOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersLockTimeoutOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersLockTimeoutOutputReference
 ```
@@ -16978,7 +16978,7 @@ func InternalValue() LegacyServiceUserParametersLockTimeout
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersLogLevelList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersLogLevelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersLogLevelList
 ```
@@ -17127,7 +17127,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersLogLevelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersLogLevelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersLogLevelOutputReference
 ```
@@ -17449,7 +17449,7 @@ func InternalValue() LegacyServiceUserParametersLogLevel
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersMultiStatementCountList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersMultiStatementCountList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersMultiStatementCountList
 ```
@@ -17598,7 +17598,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersMultiStatementCountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersMultiStatementCountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersMultiStatementCountOutputReference
 ```
@@ -17920,7 +17920,7 @@ func InternalValue() LegacyServiceUserParametersMultiStatementCount
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersNetworkPolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersNetworkPolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersNetworkPolicyList
 ```
@@ -18069,7 +18069,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersNetworkPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersNetworkPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersNetworkPolicyOutputReference
 ```
@@ -18391,7 +18391,7 @@ func InternalValue() LegacyServiceUserParametersNetworkPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersNoorderSequenceAsDefaultList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersNoorderSequenceAsDefaultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersNoorderSequenceAsDefaultList
 ```
@@ -18540,7 +18540,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersNoorderSequenceAsDefaultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersNoorderSequenceAsDefaultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersNoorderSequenceAsDefaultOutputReference
 ```
@@ -18862,7 +18862,7 @@ func InternalValue() LegacyServiceUserParametersNoorderSequenceAsDefault
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersOdbcTreatDecimalAsIntList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersOdbcTreatDecimalAsIntList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersOdbcTreatDecimalAsIntList
 ```
@@ -19011,7 +19011,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersOdbcTreatDecimalAsIntOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersOdbcTreatDecimalAsIntOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersOdbcTreatDecimalAsIntOutputReference
 ```
@@ -19333,7 +19333,7 @@ func InternalValue() LegacyServiceUserParametersOdbcTreatDecimalAsInt
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersOutputReference
 ```
@@ -20238,7 +20238,7 @@ func InternalValue() LegacyServiceUserParameters
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersPreventUnloadToInternalStagesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersPreventUnloadToInternalStagesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersPreventUnloadToInternalStagesList
 ```
@@ -20387,7 +20387,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersPreventUnloadToInternalStagesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersPreventUnloadToInternalStagesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersPreventUnloadToInternalStagesOutputReference
 ```
@@ -20709,7 +20709,7 @@ func InternalValue() LegacyServiceUserParametersPreventUnloadToInternalStages
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersQueryTagList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersQueryTagList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersQueryTagList
 ```
@@ -20858,7 +20858,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersQueryTagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersQueryTagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersQueryTagOutputReference
 ```
@@ -21180,7 +21180,7 @@ func InternalValue() LegacyServiceUserParametersQueryTag
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersQuotedIdentifiersIgnoreCaseList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersQuotedIdentifiersIgnoreCaseList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersQuotedIdentifiersIgnoreCaseList
 ```
@@ -21329,7 +21329,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersQuotedIdentifiersIgnoreCaseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersQuotedIdentifiersIgnoreCaseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersQuotedIdentifiersIgnoreCaseOutputReference
 ```
@@ -21651,7 +21651,7 @@ func InternalValue() LegacyServiceUserParametersQuotedIdentifiersIgnoreCase
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersRowsPerResultsetList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersRowsPerResultsetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersRowsPerResultsetList
 ```
@@ -21800,7 +21800,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersRowsPerResultsetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersRowsPerResultsetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersRowsPerResultsetOutputReference
 ```
@@ -22122,7 +22122,7 @@ func InternalValue() LegacyServiceUserParametersRowsPerResultset
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersS3StageVpceDnsNameList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersS3StageVpceDnsNameList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersS3StageVpceDnsNameList
 ```
@@ -22271,7 +22271,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersS3StageVpceDnsNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersS3StageVpceDnsNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersS3StageVpceDnsNameOutputReference
 ```
@@ -22593,7 +22593,7 @@ func InternalValue() LegacyServiceUserParametersS3StageVpceDnsName
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersSearchPathList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersSearchPathList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersSearchPathList
 ```
@@ -22742,7 +22742,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersSearchPathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersSearchPathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersSearchPathOutputReference
 ```
@@ -23064,7 +23064,7 @@ func InternalValue() LegacyServiceUserParametersSearchPath
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersSimulatedDataSharingConsumerList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersSimulatedDataSharingConsumerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersSimulatedDataSharingConsumerList
 ```
@@ -23213,7 +23213,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersSimulatedDataSharingConsumerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersSimulatedDataSharingConsumerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersSimulatedDataSharingConsumerOutputReference
 ```
@@ -23535,7 +23535,7 @@ func InternalValue() LegacyServiceUserParametersSimulatedDataSharingConsumer
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersStatementQueuedTimeoutInSecondsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersStatementQueuedTimeoutInSecondsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersStatementQueuedTimeoutInSecondsList
 ```
@@ -23684,7 +23684,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersStatementQueuedTimeoutInSecondsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersStatementQueuedTimeoutInSecondsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersStatementQueuedTimeoutInSecondsOutputReference
 ```
@@ -24006,7 +24006,7 @@ func InternalValue() LegacyServiceUserParametersStatementQueuedTimeoutInSeconds
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersStatementTimeoutInSecondsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersStatementTimeoutInSecondsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersStatementTimeoutInSecondsList
 ```
@@ -24155,7 +24155,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersStatementTimeoutInSecondsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersStatementTimeoutInSecondsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersStatementTimeoutInSecondsOutputReference
 ```
@@ -24477,7 +24477,7 @@ func InternalValue() LegacyServiceUserParametersStatementTimeoutInSeconds
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersStrictJsonOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersStrictJsonOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersStrictJsonOutputList
 ```
@@ -24626,7 +24626,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersStrictJsonOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersStrictJsonOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersStrictJsonOutputOutputReference
 ```
@@ -24948,7 +24948,7 @@ func InternalValue() LegacyServiceUserParametersStrictJsonOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersTimeInputFormatList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersTimeInputFormatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersTimeInputFormatList
 ```
@@ -25097,7 +25097,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersTimeInputFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersTimeInputFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersTimeInputFormatOutputReference
 ```
@@ -25419,7 +25419,7 @@ func InternalValue() LegacyServiceUserParametersTimeInputFormat
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersTimeOutputFormatList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersTimeOutputFormatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersTimeOutputFormatList
 ```
@@ -25568,7 +25568,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersTimeOutputFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersTimeOutputFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersTimeOutputFormatOutputReference
 ```
@@ -25890,7 +25890,7 @@ func InternalValue() LegacyServiceUserParametersTimeOutputFormat
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersTimestampDayIsAlways24HList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersTimestampDayIsAlways24HList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersTimestampDayIsAlways24HList
 ```
@@ -26039,7 +26039,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersTimestampDayIsAlways24HOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersTimestampDayIsAlways24HOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersTimestampDayIsAlways24HOutputReference
 ```
@@ -26361,7 +26361,7 @@ func InternalValue() LegacyServiceUserParametersTimestampDayIsAlways24H
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersTimestampInputFormatList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersTimestampInputFormatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersTimestampInputFormatList
 ```
@@ -26510,7 +26510,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersTimestampInputFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersTimestampInputFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersTimestampInputFormatOutputReference
 ```
@@ -26832,7 +26832,7 @@ func InternalValue() LegacyServiceUserParametersTimestampInputFormat
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersTimestampLtzOutputFormatList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersTimestampLtzOutputFormatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersTimestampLtzOutputFormatList
 ```
@@ -26981,7 +26981,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersTimestampLtzOutputFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersTimestampLtzOutputFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersTimestampLtzOutputFormatOutputReference
 ```
@@ -27303,7 +27303,7 @@ func InternalValue() LegacyServiceUserParametersTimestampLtzOutputFormat
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersTimestampNtzOutputFormatList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersTimestampNtzOutputFormatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersTimestampNtzOutputFormatList
 ```
@@ -27452,7 +27452,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersTimestampNtzOutputFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersTimestampNtzOutputFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersTimestampNtzOutputFormatOutputReference
 ```
@@ -27774,7 +27774,7 @@ func InternalValue() LegacyServiceUserParametersTimestampNtzOutputFormat
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersTimestampOutputFormatList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersTimestampOutputFormatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersTimestampOutputFormatList
 ```
@@ -27923,7 +27923,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersTimestampOutputFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersTimestampOutputFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersTimestampOutputFormatOutputReference
 ```
@@ -28245,7 +28245,7 @@ func InternalValue() LegacyServiceUserParametersTimestampOutputFormat
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersTimestampTypeMappingList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersTimestampTypeMappingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersTimestampTypeMappingList
 ```
@@ -28394,7 +28394,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersTimestampTypeMappingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersTimestampTypeMappingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersTimestampTypeMappingOutputReference
 ```
@@ -28716,7 +28716,7 @@ func InternalValue() LegacyServiceUserParametersTimestampTypeMapping
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersTimestampTzOutputFormatList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersTimestampTzOutputFormatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersTimestampTzOutputFormatList
 ```
@@ -28865,7 +28865,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersTimestampTzOutputFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersTimestampTzOutputFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersTimestampTzOutputFormatOutputReference
 ```
@@ -29187,7 +29187,7 @@ func InternalValue() LegacyServiceUserParametersTimestampTzOutputFormat
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersTimezoneList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersTimezoneList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersTimezoneList
 ```
@@ -29336,7 +29336,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersTimezoneOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersTimezoneOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersTimezoneOutputReference
 ```
@@ -29658,7 +29658,7 @@ func InternalValue() LegacyServiceUserParametersTimezone
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersTraceLevelList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersTraceLevelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersTraceLevelList
 ```
@@ -29807,7 +29807,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersTraceLevelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersTraceLevelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersTraceLevelOutputReference
 ```
@@ -30129,7 +30129,7 @@ func InternalValue() LegacyServiceUserParametersTraceLevel
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersTransactionAbortOnErrorList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersTransactionAbortOnErrorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersTransactionAbortOnErrorList
 ```
@@ -30278,7 +30278,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersTransactionAbortOnErrorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersTransactionAbortOnErrorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersTransactionAbortOnErrorOutputReference
 ```
@@ -30600,7 +30600,7 @@ func InternalValue() LegacyServiceUserParametersTransactionAbortOnError
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersTransactionDefaultIsolationLevelList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersTransactionDefaultIsolationLevelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersTransactionDefaultIsolationLevelList
 ```
@@ -30749,7 +30749,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersTransactionDefaultIsolationLevelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersTransactionDefaultIsolationLevelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersTransactionDefaultIsolationLevelOutputReference
 ```
@@ -31071,7 +31071,7 @@ func InternalValue() LegacyServiceUserParametersTransactionDefaultIsolationLevel
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersTwoDigitCenturyStartList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersTwoDigitCenturyStartList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersTwoDigitCenturyStartList
 ```
@@ -31220,7 +31220,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersTwoDigitCenturyStartOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersTwoDigitCenturyStartOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersTwoDigitCenturyStartOutputReference
 ```
@@ -31542,7 +31542,7 @@ func InternalValue() LegacyServiceUserParametersTwoDigitCenturyStart
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersUnsupportedDdlActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersUnsupportedDdlActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersUnsupportedDdlActionList
 ```
@@ -31691,7 +31691,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersUnsupportedDdlActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersUnsupportedDdlActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersUnsupportedDdlActionOutputReference
 ```
@@ -32013,7 +32013,7 @@ func InternalValue() LegacyServiceUserParametersUnsupportedDdlAction
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersUseCachedResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersUseCachedResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersUseCachedResultList
 ```
@@ -32162,7 +32162,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersUseCachedResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersUseCachedResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersUseCachedResultOutputReference
 ```
@@ -32484,7 +32484,7 @@ func InternalValue() LegacyServiceUserParametersUseCachedResult
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersWeekOfYearPolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersWeekOfYearPolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersWeekOfYearPolicyList
 ```
@@ -32633,7 +32633,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersWeekOfYearPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersWeekOfYearPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersWeekOfYearPolicyOutputReference
 ```
@@ -32955,7 +32955,7 @@ func InternalValue() LegacyServiceUserParametersWeekOfYearPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersWeekStartList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersWeekStartList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserParametersWeekStartList
 ```
@@ -33104,7 +33104,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersWeekStartOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserParametersWeekStartOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserParametersWeekStartOutputReference
 ```
@@ -33426,7 +33426,7 @@ func InternalValue() LegacyServiceUserParametersWeekStart
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LegacyServiceUserShowOutputList
 ```
@@ -33575,7 +33575,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/legacyserviceuser"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/legacyserviceuser"
 
 legacyserviceuser.NewLegacyServiceUserShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LegacyServiceUserShowOutputOutputReference
 ```
