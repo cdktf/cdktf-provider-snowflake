@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.secretWithBasicAuthentication.SecretWithBasicAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/secretwithbasicauthentication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/secretwithbasicauthentication"
 
 secretwithbasicauthentication.NewSecretWithBasicAuthentication(scope Construct, id *string, config SecretWithBasicAuthenticationConfig) SecretWithBasicAuthentication
 ```
@@ -392,7 +392,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.secretWithBasicAuthentication.SecretWithBasicAuthentication.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/secretwithbasicauthentication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/secretwithbasicauthentication"
 
 secretwithbasicauthentication.SecretWithBasicAuthentication_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.secretWithBasicAuthentication.SecretWithBasicAuthentication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/secretwithbasicauthentication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/secretwithbasicauthentication"
 
 secretwithbasicauthentication.SecretWithBasicAuthentication_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ secretwithbasicauthentication.SecretWithBasicAuthentication_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.secretWithBasicAuthentication.SecretWithBasicAuthentication.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/secretwithbasicauthentication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/secretwithbasicauthentication"
 
 secretwithbasicauthentication.SecretWithBasicAuthentication_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ secretwithbasicauthentication.SecretWithBasicAuthentication_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.secretWithBasicAuthentication.SecretWithBasicAuthentication.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/secretwithbasicauthentication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/secretwithbasicauthentication"
 
 secretwithbasicauthentication.SecretWithBasicAuthentication_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -879,7 +879,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.secretWithBasicAuthentication.SecretWithBasicAuthenticationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/secretwithbasicauthentication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/secretwithbasicauthentication"
 
 &secretwithbasicauthentication.SecretWithBasicAuthenticationConfig {
 	Connection: interface{},
@@ -1098,7 +1098,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.secretWithBasicAuthentication.SecretWithBasicAuthenticationDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/secretwithbasicauthentication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/secretwithbasicauthentication"
 
 &secretwithbasicauthentication.SecretWithBasicAuthenticationDescribeOutput {
 
@@ -1111,7 +1111,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/secretwithbasicau
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.secretWithBasicAuthentication.SecretWithBasicAuthenticationShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/secretwithbasicauthentication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/secretwithbasicauthentication"
 
 &secretwithbasicauthentication.SecretWithBasicAuthenticationShowOutput {
 
@@ -1126,7 +1126,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/secretwithbasicau
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.secretWithBasicAuthentication.SecretWithBasicAuthenticationDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/secretwithbasicauthentication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/secretwithbasicauthentication"
 
 secretwithbasicauthentication.NewSecretWithBasicAuthenticationDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecretWithBasicAuthenticationDescribeOutputList
 ```
@@ -1275,7 +1275,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.secretWithBasicAuthentication.SecretWithBasicAuthenticationDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/secretwithbasicauthentication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/secretwithbasicauthentication"
 
 secretwithbasicauthentication.NewSecretWithBasicAuthenticationDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecretWithBasicAuthenticationDescribeOutputOutputReference
 ```
@@ -1674,7 +1674,7 @@ func InternalValue() SecretWithBasicAuthenticationDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.secretWithBasicAuthentication.SecretWithBasicAuthenticationShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/secretwithbasicauthentication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/secretwithbasicauthentication"
 
 secretwithbasicauthentication.NewSecretWithBasicAuthenticationShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecretWithBasicAuthenticationShowOutputList
 ```
@@ -1823,7 +1823,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.secretWithBasicAuthentication.SecretWithBasicAuthenticationShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/secretwithbasicauthentication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/secretwithbasicauthentication"
 
 secretwithbasicauthentication.NewSecretWithBasicAuthenticationShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecretWithBasicAuthenticationShowOutputOutputReference
 ```

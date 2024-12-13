@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.secretWithAuthorizationCodeGrant.SecretWithAuthorizationCodeGrant.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/secretwithauthorizationcodegrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/secretwithauthorizationcodegrant"
 
 secretwithauthorizationcodegrant.NewSecretWithAuthorizationCodeGrant(scope Construct, id *string, config SecretWithAuthorizationCodeGrantConfig) SecretWithAuthorizationCodeGrant
 ```
@@ -392,7 +392,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.secretWithAuthorizationCodeGrant.SecretWithAuthorizationCodeGrant.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/secretwithauthorizationcodegrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/secretwithauthorizationcodegrant"
 
 secretwithauthorizationcodegrant.SecretWithAuthorizationCodeGrant_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.secretWithAuthorizationCodeGrant.SecretWithAuthorizationCodeGrant.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/secretwithauthorizationcodegrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/secretwithauthorizationcodegrant"
 
 secretwithauthorizationcodegrant.SecretWithAuthorizationCodeGrant_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ secretwithauthorizationcodegrant.SecretWithAuthorizationCodeGrant_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.secretWithAuthorizationCodeGrant.SecretWithAuthorizationCodeGrant.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/secretwithauthorizationcodegrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/secretwithauthorizationcodegrant"
 
 secretwithauthorizationcodegrant.SecretWithAuthorizationCodeGrant_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ secretwithauthorizationcodegrant.SecretWithAuthorizationCodeGrant_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.secretWithAuthorizationCodeGrant.SecretWithAuthorizationCodeGrant.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/secretwithauthorizationcodegrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/secretwithauthorizationcodegrant"
 
 secretwithauthorizationcodegrant.SecretWithAuthorizationCodeGrant_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -901,7 +901,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.secretWithAuthorizationCodeGrant.SecretWithAuthorizationCodeGrantConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/secretwithauthorizationcodegrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/secretwithauthorizationcodegrant"
 
 &secretwithauthorizationcodegrant.SecretWithAuthorizationCodeGrantConfig {
 	Connection: interface{},
@@ -1140,7 +1140,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.secretWithAuthorizationCodeGrant.SecretWithAuthorizationCodeGrantDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/secretwithauthorizationcodegrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/secretwithauthorizationcodegrant"
 
 &secretwithauthorizationcodegrant.SecretWithAuthorizationCodeGrantDescribeOutput {
 
@@ -1153,7 +1153,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/secretwithauthori
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.secretWithAuthorizationCodeGrant.SecretWithAuthorizationCodeGrantShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/secretwithauthorizationcodegrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/secretwithauthorizationcodegrant"
 
 &secretwithauthorizationcodegrant.SecretWithAuthorizationCodeGrantShowOutput {
 
@@ -1168,7 +1168,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/secretwithauthori
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.secretWithAuthorizationCodeGrant.SecretWithAuthorizationCodeGrantDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/secretwithauthorizationcodegrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/secretwithauthorizationcodegrant"
 
 secretwithauthorizationcodegrant.NewSecretWithAuthorizationCodeGrantDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecretWithAuthorizationCodeGrantDescribeOutputList
 ```
@@ -1317,7 +1317,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.secretWithAuthorizationCodeGrant.SecretWithAuthorizationCodeGrantDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/secretwithauthorizationcodegrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/secretwithauthorizationcodegrant"
 
 secretwithauthorizationcodegrant.NewSecretWithAuthorizationCodeGrantDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecretWithAuthorizationCodeGrantDescribeOutputOutputReference
 ```
@@ -1716,7 +1716,7 @@ func InternalValue() SecretWithAuthorizationCodeGrantDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.secretWithAuthorizationCodeGrant.SecretWithAuthorizationCodeGrantShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/secretwithauthorizationcodegrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/secretwithauthorizationcodegrant"
 
 secretwithauthorizationcodegrant.NewSecretWithAuthorizationCodeGrantShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecretWithAuthorizationCodeGrantShowOutputList
 ```
@@ -1865,7 +1865,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.secretWithAuthorizationCodeGrant.SecretWithAuthorizationCodeGrantShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/secretwithauthorizationcodegrant"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/secretwithauthorizationcodegrant"
 
 secretwithauthorizationcodegrant.NewSecretWithAuthorizationCodeGrantShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecretWithAuthorizationCodeGrantShowOutputOutputReference
 ```
