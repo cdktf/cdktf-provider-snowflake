@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/resources/account
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/resources/account
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,94 +8,321 @@ import * as cdktf from 'cdktf';
 
 export interface AccountConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Login name of the initial administrative user of the account. A new user is created in the new account with this name and password and granted the ACCOUNTADMIN role in the account. A login name can be any string consisting of letters, numbers, and underscores. Login names are always case-insensitive.
+  * Login name of the initial administrative user of the account. A new user is created in the new account with this name and password and granted the ACCOUNTADMIN role in the account. A login name can be any string consisting of letters, numbers, and underscores. Login names are always case-insensitive. External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/resources/account#admin_name Account#admin_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/resources/account#admin_name Account#admin_name}
   */
   readonly adminName: string;
   /**
-  * Password for the initial administrative user of the account. Optional if the `ADMIN_RSA_PUBLIC_KEY` parameter is specified. For more information about passwords in Snowflake, see [Snowflake-provided Password Policy](https://docs.snowflake.com/en/sql-reference/sql/create-account.html#:~:text=Snowflake%2Dprovided%20Password%20Policy).
+  * Password for the initial administrative user of the account. Either admin_password or admin_rsa_public_key has to be specified. This field cannot be used whenever admin_user_type is set to SERVICE. External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/resources/account#admin_password Account#admin_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/resources/account#admin_password Account#admin_password}
   */
   readonly adminPassword?: string;
   /**
-  * Assigns a public key to the initial administrative user of the account in order to implement [key pair authentication](https://docs.snowflake.com/en/sql-reference/sql/create-account.html#:~:text=key%20pair%20authentication) for the user. Optional if the `ADMIN_PASSWORD` parameter is specified.
+  * Assigns a public key to the initial administrative user of the account. Either admin_password or admin_rsa_public_key has to be specified. External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/resources/account#admin_rsa_public_key Account#admin_rsa_public_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/resources/account#admin_rsa_public_key Account#admin_rsa_public_key}
   */
   readonly adminRsaPublicKey?: string;
   /**
+  * Used for setting the type of the first user that is assigned the ACCOUNTADMIN role during account creation. Valid options are: `PERSON` | `SERVICE` | `LEGACY_SERVICE` External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/resources/account#admin_user_type Account#admin_user_type}
+  */
+  readonly adminUserType?: string;
+  /**
   * Specifies a comment for the account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/resources/account#comment Account#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/resources/account#comment Account#comment}
   */
   readonly comment?: string;
   /**
-  * [Snowflake Edition](https://docs.snowflake.com/en/user-guide/intro-editions.html) of the account. Valid values are: STANDARD | ENTERPRISE | BUSINESS_CRITICAL
+  * Snowflake Edition of the account. See more about Snowflake Editions in the [official documentation](https://docs.snowflake.com/en/user-guide/intro-editions). Valid options are: `STANDARD` | `ENTERPRISE` | `BUSINESS_CRITICAL`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/resources/account#edition Account#edition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/resources/account#edition Account#edition}
   */
   readonly edition: string;
   /**
-  * Email address of the initial administrative user of the account. This email address is used to send any notifications about the account.
+  * Email address of the initial administrative user of the account. This email address is used to send any notifications about the account. External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/resources/account#email Account#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/resources/account#email Account#email}
   */
   readonly email: string;
   /**
-  * First name of the initial administrative user of the account
+  * First name of the initial administrative user of the account. This field cannot be used whenever admin_user_type is set to SERVICE. External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/resources/account#first_name Account#first_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/resources/account#first_name Account#first_name}
   */
   readonly firstName?: string;
   /**
-  * Specifies the number of days to wait before dropping the account. The default is 3 days.
+  * Specifies the number of days during which the account can be restored (“undropped”). The minimum is 3 days and the maximum is 90 days.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/resources/account#grace_period_in_days Account#grace_period_in_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/resources/account#grace_period_in_days Account#grace_period_in_days}
   */
-  readonly gracePeriodInDays?: number;
+  readonly gracePeriodInDays: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/resources/account#id Account#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/resources/account#id Account#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Last name of the initial administrative user of the account
+  * Sets an account property that determines whether the ORGADMIN role is enabled in the account. Only an organization administrator (i.e. user with the ORGADMIN role) can set the property.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/resources/account#last_name Account#last_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/resources/account#is_org_admin Account#is_org_admin}
+  */
+  readonly isOrgAdmin?: string;
+  /**
+  * Last name of the initial administrative user of the account. This field cannot be used whenever admin_user_type is set to SERVICE. External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/resources/account#last_name Account#last_name}
   */
   readonly lastName?: string;
   /**
-  * Specifies whether the new user created to administer the account is forced to change their password upon first login into the account.
+  * Specifies whether the new user created to administer the account is forced to change their password upon first login into the account. This field cannot be used whenever admin_user_type is set to SERVICE. External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/resources/account#must_change_password Account#must_change_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/resources/account#must_change_password Account#must_change_password}
   */
-  readonly mustChangePassword?: boolean | cdktf.IResolvable;
+  readonly mustChangePassword?: string;
   /**
-  * Specifies the identifier (i.e. name) for the account; must be unique within an organization, regardless of which Snowflake Region the account is in. In addition, the identifier must start with an alphabetic character and cannot contain spaces or special characters except for underscores (_). Note that if the account name includes underscores, features that do not accept account names with underscores (e.g. Okta SSO or SCIM) can reference a version of the account name that substitutes hyphens (-) for the underscores.
+  * Specifies the identifier (i.e. name) for the account. It must be unique within an organization, regardless of which Snowflake Region the account is in and must start with an alphabetic character and cannot contain spaces or special characters except for underscores (_). Note that if the account name includes underscores, features that do not accept account names with underscores (e.g. Okta SSO or SCIM) can reference a version of the account name that substitutes hyphens (-) for the underscores.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/resources/account#name Account#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/resources/account#name Account#name}
   */
   readonly name: string;
   /**
-  * ID of the Snowflake Region where the account is created. If no value is provided, Snowflake creates the account in the same Snowflake Region as the current account (i.e. the account in which the CREATE ACCOUNT statement is executed.)
+  * [Snowflake Region ID](https://docs.snowflake.com/en/user-guide/admin-account-identifier.html#label-snowflake-region-ids) of the region where the account is created. If no value is provided, Snowflake creates the account in the same Snowflake Region as the current account (i.e. the account in which the CREATE ACCOUNT statement is executed.)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/resources/account#region Account#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/resources/account#region Account#region}
   */
   readonly region?: string;
   /**
-  * ID of the Snowflake Region where the account is created. If no value is provided, Snowflake creates the account in the same Snowflake Region as the current account (i.e. the account in which the CREATE ACCOUNT statement is executed.)
+  * ID of the region group where the account is created. To retrieve the region group ID for existing accounts in your organization, execute the [SHOW REGIONS](https://docs.snowflake.com/en/sql-reference/sql/show-regions) command. For information about when you might need to specify region group, see [Region groups](https://docs.snowflake.com/en/user-guide/admin-account-identifier.html#label-region-groups).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/resources/account#region_group Account#region_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/resources/account#region_group Account#region_group}
   */
   readonly regionGroup?: string;
 }
+export interface AccountShowOutput {
+}
+
+export function accountShowOutputToTerraform(struct?: AccountShowOutput): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function accountShowOutputToHclTerraform(struct?: AccountShowOutput): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class AccountShowOutputOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AccountShowOutput | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AccountShowOutput | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // account_locator - computed: true, optional: false, required: false
+  public get accountLocator() {
+    return this.getStringAttribute('account_locator');
+  }
+
+  // account_locator_url - computed: true, optional: false, required: false
+  public get accountLocatorUrl() {
+    return this.getStringAttribute('account_locator_url');
+  }
+
+  // account_name - computed: true, optional: false, required: false
+  public get accountName() {
+    return this.getStringAttribute('account_name');
+  }
+
+  // account_old_url_last_used - computed: true, optional: false, required: false
+  public get accountOldUrlLastUsed() {
+    return this.getStringAttribute('account_old_url_last_used');
+  }
+
+  // account_old_url_saved_on - computed: true, optional: false, required: false
+  public get accountOldUrlSavedOn() {
+    return this.getStringAttribute('account_old_url_saved_on');
+  }
+
+  // account_url - computed: true, optional: false, required: false
+  public get accountUrl() {
+    return this.getStringAttribute('account_url');
+  }
+
+  // comment - computed: true, optional: false, required: false
+  public get comment() {
+    return this.getStringAttribute('comment');
+  }
+
+  // consumption_billing_entity_name - computed: true, optional: false, required: false
+  public get consumptionBillingEntityName() {
+    return this.getStringAttribute('consumption_billing_entity_name');
+  }
+
+  // created_on - computed: true, optional: false, required: false
+  public get createdOn() {
+    return this.getStringAttribute('created_on');
+  }
+
+  // dropped_on - computed: true, optional: false, required: false
+  public get droppedOn() {
+    return this.getStringAttribute('dropped_on');
+  }
+
+  // edition - computed: true, optional: false, required: false
+  public get edition() {
+    return this.getStringAttribute('edition');
+  }
+
+  // is_events_account - computed: true, optional: false, required: false
+  public get isEventsAccount() {
+    return this.getBooleanAttribute('is_events_account');
+  }
+
+  // is_org_admin - computed: true, optional: false, required: false
+  public get isOrgAdmin() {
+    return this.getBooleanAttribute('is_org_admin');
+  }
+
+  // is_organization_account - computed: true, optional: false, required: false
+  public get isOrganizationAccount() {
+    return this.getBooleanAttribute('is_organization_account');
+  }
+
+  // managed_accounts - computed: true, optional: false, required: false
+  public get managedAccounts() {
+    return this.getNumberAttribute('managed_accounts');
+  }
+
+  // marketplace_consumer_billing_entity_name - computed: true, optional: false, required: false
+  public get marketplaceConsumerBillingEntityName() {
+    return this.getStringAttribute('marketplace_consumer_billing_entity_name');
+  }
+
+  // marketplace_provider_billing_entity_name - computed: true, optional: false, required: false
+  public get marketplaceProviderBillingEntityName() {
+    return this.getStringAttribute('marketplace_provider_billing_entity_name');
+  }
+
+  // moved_on - computed: true, optional: false, required: false
+  public get movedOn() {
+    return this.getStringAttribute('moved_on');
+  }
+
+  // moved_to_organization - computed: true, optional: false, required: false
+  public get movedToOrganization() {
+    return this.getStringAttribute('moved_to_organization');
+  }
+
+  // old_account_url - computed: true, optional: false, required: false
+  public get oldAccountUrl() {
+    return this.getStringAttribute('old_account_url');
+  }
+
+  // organization_name - computed: true, optional: false, required: false
+  public get organizationName() {
+    return this.getStringAttribute('organization_name');
+  }
+
+  // organization_old_url - computed: true, optional: false, required: false
+  public get organizationOldUrl() {
+    return this.getStringAttribute('organization_old_url');
+  }
+
+  // organization_old_url_last_used - computed: true, optional: false, required: false
+  public get organizationOldUrlLastUsed() {
+    return this.getStringAttribute('organization_old_url_last_used');
+  }
+
+  // organization_old_url_saved_on - computed: true, optional: false, required: false
+  public get organizationOldUrlSavedOn() {
+    return this.getStringAttribute('organization_old_url_saved_on');
+  }
+
+  // organization_url_expiration_on - computed: true, optional: false, required: false
+  public get organizationUrlExpirationOn() {
+    return this.getStringAttribute('organization_url_expiration_on');
+  }
+
+  // region_group - computed: true, optional: false, required: false
+  public get regionGroup() {
+    return this.getStringAttribute('region_group');
+  }
+
+  // restored_on - computed: true, optional: false, required: false
+  public get restoredOn() {
+    return this.getStringAttribute('restored_on');
+  }
+
+  // scheduled_deletion_time - computed: true, optional: false, required: false
+  public get scheduledDeletionTime() {
+    return this.getStringAttribute('scheduled_deletion_time');
+  }
+
+  // snowflake_region - computed: true, optional: false, required: false
+  public get snowflakeRegion() {
+    return this.getStringAttribute('snowflake_region');
+  }
+}
+
+export class AccountShowOutputList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AccountShowOutputOutputReference {
+    return new AccountShowOutputOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/resources/account snowflake_account}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/resources/account snowflake_account}
 */
 export class Account extends cdktf.TerraformResource {
 
@@ -116,7 +338,7 @@ export class Account extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Account resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Account to import
-  * @param importFromId The id of the existing Account that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/resources/account#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Account that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/resources/account#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Account to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -128,7 +350,7 @@ export class Account extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/resources/account snowflake_account} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/resources/account snowflake_account} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -139,7 +361,7 @@ export class Account extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_account',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.99.0',
+        providerVersion: '0.100.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
@@ -153,12 +375,14 @@ export class Account extends cdktf.TerraformResource {
     this._adminName = config.adminName;
     this._adminPassword = config.adminPassword;
     this._adminRsaPublicKey = config.adminRsaPublicKey;
+    this._adminUserType = config.adminUserType;
     this._comment = config.comment;
     this._edition = config.edition;
     this._email = config.email;
     this._firstName = config.firstName;
     this._gracePeriodInDays = config.gracePeriodInDays;
     this._id = config.id;
+    this._isOrgAdmin = config.isOrgAdmin;
     this._lastName = config.lastName;
     this._mustChangePassword = config.mustChangePassword;
     this._name = config.name;
@@ -213,6 +437,22 @@ export class Account extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get adminRsaPublicKeyInput() {
     return this._adminRsaPublicKey;
+  }
+
+  // admin_user_type - computed: false, optional: true, required: false
+  private _adminUserType?: string; 
+  public get adminUserType() {
+    return this.getStringAttribute('admin_user_type');
+  }
+  public set adminUserType(value: string) {
+    this._adminUserType = value;
+  }
+  public resetAdminUserType() {
+    this._adminUserType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get adminUserTypeInput() {
+    return this._adminUserType;
   }
 
   // comment - computed: false, optional: true, required: false
@@ -278,16 +518,13 @@ export class Account extends cdktf.TerraformResource {
     return this.getStringAttribute('fully_qualified_name');
   }
 
-  // grace_period_in_days - computed: false, optional: true, required: false
+  // grace_period_in_days - computed: false, optional: false, required: true
   private _gracePeriodInDays?: number; 
   public get gracePeriodInDays() {
     return this.getNumberAttribute('grace_period_in_days');
   }
   public set gracePeriodInDays(value: number) {
     this._gracePeriodInDays = value;
-  }
-  public resetGracePeriodInDays() {
-    this._gracePeriodInDays = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get gracePeriodInDaysInput() {
@@ -310,9 +547,20 @@ export class Account extends cdktf.TerraformResource {
     return this._id;
   }
 
-  // is_org_admin - computed: true, optional: false, required: false
+  // is_org_admin - computed: false, optional: true, required: false
+  private _isOrgAdmin?: string; 
   public get isOrgAdmin() {
-    return this.getBooleanAttribute('is_org_admin');
+    return this.getStringAttribute('is_org_admin');
+  }
+  public set isOrgAdmin(value: string) {
+    this._isOrgAdmin = value;
+  }
+  public resetIsOrgAdmin() {
+    this._isOrgAdmin = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get isOrgAdminInput() {
+    return this._isOrgAdmin;
   }
 
   // last_name - computed: false, optional: true, required: false
@@ -332,11 +580,11 @@ export class Account extends cdktf.TerraformResource {
   }
 
   // must_change_password - computed: false, optional: true, required: false
-  private _mustChangePassword?: boolean | cdktf.IResolvable; 
+  private _mustChangePassword?: string; 
   public get mustChangePassword() {
-    return this.getBooleanAttribute('must_change_password');
+    return this.getStringAttribute('must_change_password');
   }
-  public set mustChangePassword(value: boolean | cdktf.IResolvable) {
+  public set mustChangePassword(value: string) {
     this._mustChangePassword = value;
   }
   public resetMustChangePassword() {
@@ -392,6 +640,12 @@ export class Account extends cdktf.TerraformResource {
     return this._regionGroup;
   }
 
+  // show_output - computed: true, optional: false, required: false
+  private _showOutput = new AccountShowOutputList(this, "show_output", false);
+  public get showOutput() {
+    return this._showOutput;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -401,14 +655,16 @@ export class Account extends cdktf.TerraformResource {
       admin_name: cdktf.stringToTerraform(this._adminName),
       admin_password: cdktf.stringToTerraform(this._adminPassword),
       admin_rsa_public_key: cdktf.stringToTerraform(this._adminRsaPublicKey),
+      admin_user_type: cdktf.stringToTerraform(this._adminUserType),
       comment: cdktf.stringToTerraform(this._comment),
       edition: cdktf.stringToTerraform(this._edition),
       email: cdktf.stringToTerraform(this._email),
       first_name: cdktf.stringToTerraform(this._firstName),
       grace_period_in_days: cdktf.numberToTerraform(this._gracePeriodInDays),
       id: cdktf.stringToTerraform(this._id),
+      is_org_admin: cdktf.stringToTerraform(this._isOrgAdmin),
       last_name: cdktf.stringToTerraform(this._lastName),
-      must_change_password: cdktf.booleanToTerraform(this._mustChangePassword),
+      must_change_password: cdktf.stringToTerraform(this._mustChangePassword),
       name: cdktf.stringToTerraform(this._name),
       region: cdktf.stringToTerraform(this._region),
       region_group: cdktf.stringToTerraform(this._regionGroup),
@@ -431,6 +687,12 @@ export class Account extends cdktf.TerraformResource {
       },
       admin_rsa_public_key: {
         value: cdktf.stringToHclTerraform(this._adminRsaPublicKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      admin_user_type: {
+        value: cdktf.stringToHclTerraform(this._adminUserType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -471,6 +733,12 @@ export class Account extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
+      is_org_admin: {
+        value: cdktf.stringToHclTerraform(this._isOrgAdmin),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       last_name: {
         value: cdktf.stringToHclTerraform(this._lastName),
         isBlock: false,
@@ -478,10 +746,10 @@ export class Account extends cdktf.TerraformResource {
         storageClassType: "string",
       },
       must_change_password: {
-        value: cdktf.booleanToHclTerraform(this._mustChangePassword),
+        value: cdktf.stringToHclTerraform(this._mustChangePassword),
         isBlock: false,
         type: "simple",
-        storageClassType: "boolean",
+        storageClassType: "string",
       },
       name: {
         value: cdktf.stringToHclTerraform(this._name),

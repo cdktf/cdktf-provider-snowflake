@@ -4,12 +4,12 @@
 
 ### NetworkRule <a name="NetworkRule" id="@cdktf/provider-snowflake.networkRule.NetworkRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/resources/network_rule snowflake_network_rule}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/resources/network_rule snowflake_network_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.networkRule.NetworkRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/networkrule"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/networkrule"
 
 networkrule.NewNetworkRule(scope Construct, id *string, config NetworkRuleConfig) NetworkRule
 ```
@@ -392,7 +392,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.networkRule.NetworkRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/networkrule"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/networkrule"
 
 networkrule.NetworkRule_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.networkRule.NetworkRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/networkrule"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/networkrule"
 
 networkrule.NetworkRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ networkrule.NetworkRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.networkRule.NetworkRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/networkrule"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/networkrule"
 
 networkrule.NetworkRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ networkrule.NetworkRule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.networkRule.NetworkRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/networkrule"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/networkrule"
 
 networkrule.NetworkRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -481,7 +481,7 @@ The construct id used in the generated config for the NetworkRule to import.
 
 The id of the existing NetworkRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/resources/network_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/resources/network_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -868,7 +868,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.networkRule.NetworkRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/networkrule"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/networkrule"
 
 &networkrule.NetworkRuleConfig {
 	Connection: interface{},
@@ -907,7 +907,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/networkrule"
 | <code><a href="#@cdktf/provider-snowflake.networkRule.NetworkRuleConfig.property.type">Type</a></code> | <code>*string</code> | Specifies the type of network identifiers being allowed or blocked. |
 | <code><a href="#@cdktf/provider-snowflake.networkRule.NetworkRuleConfig.property.valueList">ValueList</a></code> | <code>*[]*string</code> | Specifies the network identifiers that will be allowed or blocked. |
 | <code><a href="#@cdktf/provider-snowflake.networkRule.NetworkRuleConfig.property.comment">Comment</a></code> | <code>*string</code> | Specifies a comment for the network rule. |
-| <code><a href="#@cdktf/provider-snowflake.networkRule.NetworkRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/resources/network_rule#id NetworkRule#id}. |
+| <code><a href="#@cdktf/provider-snowflake.networkRule.NetworkRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/resources/network_rule#id NetworkRule#id}. |
 
 ---
 
@@ -991,7 +991,7 @@ Database *string
 
 The database in which to create the network rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/resources/network_rule#database NetworkRule#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/resources/network_rule#database NetworkRule#database}
 
 ---
 
@@ -1005,7 +1005,7 @@ Mode *string
 
 Specifies what is restricted by the network rule. Valid values are INGRESS, INTERNAL_STAGE and EGRESS; see https://docs.snowflake.com/en/sql-reference/sql/create-network-rule#required-parameters for details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/resources/network_rule#mode NetworkRule#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/resources/network_rule#mode NetworkRule#mode}
 
 ---
 
@@ -1021,7 +1021,7 @@ Specifies the identifier for the network rule;
 
 must be unique for the database and schema in which the network rule is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/resources/network_rule#name NetworkRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/resources/network_rule#name NetworkRule#name}
 
 ---
 
@@ -1035,7 +1035,7 @@ Schema *string
 
 The schema in which to create the network rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/resources/network_rule#schema NetworkRule#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/resources/network_rule#schema NetworkRule#schema}
 
 ---
 
@@ -1051,7 +1051,7 @@ Specifies the type of network identifiers being allowed or blocked.
 
 A network rule can have only one type. Allowed values are IPV4, AWSVPCEID, AZURELINKID and HOST_PORT; allowed values are determined by the mode of the network rule; see https://docs.snowflake.com/en/sql-reference/sql/create-network-rule#required-parameters for details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/resources/network_rule#type NetworkRule#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/resources/network_rule#type NetworkRule#type}
 
 ---
 
@@ -1067,7 +1067,7 @@ Specifies the network identifiers that will be allowed or blocked.
 
 Valid values in the list are determined by the type of network rule, see https://docs.snowflake.com/en/sql-reference/sql/create-network-rule#required-parameters for details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/resources/network_rule#value_list NetworkRule#value_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/resources/network_rule#value_list NetworkRule#value_list}
 
 ---
 
@@ -1081,7 +1081,7 @@ Comment *string
 
 Specifies a comment for the network rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/resources/network_rule#comment NetworkRule#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/resources/network_rule#comment NetworkRule#comment}
 
 ---
 
@@ -1093,7 +1093,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/resources/network_rule#id NetworkRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/resources/network_rule#id NetworkRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

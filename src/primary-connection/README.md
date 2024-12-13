@@ -1,3 +1,3 @@
 # `snowflake_primary_connection`
 
-Refer to the Terraform Registry for docs: [`snowflake_primary_connection`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/resources/primary_connection).
+Refer to the Terraform Registry for docs: [`snowflake_primary_connection`](https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/resources/primary_connection).

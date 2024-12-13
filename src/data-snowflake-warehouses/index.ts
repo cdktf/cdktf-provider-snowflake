@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/data-sources/warehouses
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/data-sources/warehouses
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataSnowflakeWarehousesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/data-sources/warehouses#id DataSnowflakeWarehouses#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/data-sources/warehouses#id DataSnowflakeWarehouses#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,19 +17,19 @@ export interface DataSnowflakeWarehousesConfig extends cdktf.TerraformMetaArgume
   /**
   * Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/data-sources/warehouses#like DataSnowflakeWarehouses#like}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/data-sources/warehouses#like DataSnowflakeWarehouses#like}
   */
   readonly like?: string;
   /**
   * Runs DESC WAREHOUSE for each warehouse returned by SHOW WAREHOUSES. The output of describe is saved to the description field. By default this value is set to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/data-sources/warehouses#with_describe DataSnowflakeWarehouses#with_describe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/data-sources/warehouses#with_describe DataSnowflakeWarehouses#with_describe}
   */
   readonly withDescribe?: boolean | cdktf.IResolvable;
   /**
   * Runs SHOW PARAMETERS FOR WAREHOUSE for each warehouse returned by SHOW WAREHOUSES. The output of describe is saved to the parameters field as a map. By default this value is set to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/data-sources/warehouses#with_parameters DataSnowflakeWarehouses#with_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/data-sources/warehouses#with_parameters DataSnowflakeWarehouses#with_parameters}
   */
   readonly withParameters?: boolean | cdktf.IResolvable;
 }
@@ -791,7 +786,7 @@ export class DataSnowflakeWarehousesWarehousesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/data-sources/warehouses snowflake_warehouses}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/data-sources/warehouses snowflake_warehouses}
 */
 export class DataSnowflakeWarehouses extends cdktf.TerraformDataSource {
 
@@ -807,7 +802,7 @@ export class DataSnowflakeWarehouses extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataSnowflakeWarehouses resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataSnowflakeWarehouses to import
-  * @param importFromId The id of the existing DataSnowflakeWarehouses that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/data-sources/warehouses#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataSnowflakeWarehouses that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/data-sources/warehouses#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataSnowflakeWarehouses to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -819,7 +814,7 @@ export class DataSnowflakeWarehouses extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.99.0/docs/data-sources/warehouses snowflake_warehouses} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/data-sources/warehouses snowflake_warehouses} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -830,7 +825,7 @@ export class DataSnowflakeWarehouses extends cdktf.TerraformDataSource {
       terraformResourceType: 'snowflake_warehouses',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '0.99.0',
+        providerVersion: '0.100.0',
         providerVersionConstraint: ' ~> 0.40'
       },
       provider: config.provider,
