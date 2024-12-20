@@ -4,12 +4,12 @@
 
 ### SecondaryConnection <a name="SecondaryConnection" id="@cdktf/provider-snowflake.secondaryConnection.SecondaryConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/resources/secondary_connection snowflake_secondary_connection}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/secondary_connection snowflake_secondary_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.secondaryConnection.SecondaryConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/secondaryconnection"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/secondaryconnection"
 
 secondaryconnection.NewSecondaryConnection(scope Construct, id *string, config SecondaryConnectionConfig) SecondaryConnection
 ```
@@ -392,7 +392,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.secondaryConnection.SecondaryConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/secondaryconnection"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/secondaryconnection"
 
 secondaryconnection.SecondaryConnection_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.secondaryConnection.SecondaryConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/secondaryconnection"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/secondaryconnection"
 
 secondaryconnection.SecondaryConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ secondaryconnection.SecondaryConnection_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.secondaryConnection.SecondaryConnection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/secondaryconnection"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/secondaryconnection"
 
 secondaryconnection.SecondaryConnection_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ secondaryconnection.SecondaryConnection_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.secondaryConnection.SecondaryConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/secondaryconnection"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/secondaryconnection"
 
 secondaryconnection.SecondaryConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -481,7 +481,7 @@ The construct id used in the generated config for the SecondaryConnection to imp
 
 The id of the existing SecondaryConnection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/resources/secondary_connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/secondary_connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -802,7 +802,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.secondaryConnection.SecondaryConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/secondaryconnection"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/secondaryconnection"
 
 &secondaryconnection.SecondaryConnectionConfig {
 	Connection: interface{},
@@ -833,7 +833,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/secondaryconn
 | <code><a href="#@cdktf/provider-snowflake.secondaryConnection.SecondaryConnectionConfig.property.asReplicaOf">AsReplicaOf</a></code> | <code>*string</code> | Specifies the identifier for a primary connection from which to create a replica (i.e. a secondary connection). For more information about this resource, see [docs](./primary_connection). |
 | <code><a href="#@cdktf/provider-snowflake.secondaryConnection.SecondaryConnectionConfig.property.name">Name</a></code> | <code>*string</code> | String that specifies the identifier (i.e. name) for the connection. Must start with an alphabetic character and may only contain letters, decimal digits (0-9), and underscores (_). For a secondary connection, the name must match the name of its primary connection. Due to technical limitations (read more [here](https://github.com/Snowflake-Labs/terraform-provider-snowflake/blob/main/docs/technical-documentation/identifiers_rework_design_decisions.md#known-limitations-and-identifier-recommendations)), avoid using the following characters: `\|`, `.`, `"`. |
 | <code><a href="#@cdktf/provider-snowflake.secondaryConnection.SecondaryConnectionConfig.property.comment">Comment</a></code> | <code>*string</code> | Specifies a comment for the secondary connection. |
-| <code><a href="#@cdktf/provider-snowflake.secondaryConnection.SecondaryConnectionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/resources/secondary_connection#id SecondaryConnection#id}. |
+| <code><a href="#@cdktf/provider-snowflake.secondaryConnection.SecondaryConnectionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/secondary_connection#id SecondaryConnection#id}. |
 
 ---
 
@@ -917,7 +917,7 @@ AsReplicaOf *string
 
 Specifies the identifier for a primary connection from which to create a replica (i.e. a secondary connection). For more information about this resource, see [docs](./primary_connection).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/resources/secondary_connection#as_replica_of SecondaryConnection#as_replica_of}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/secondary_connection#as_replica_of SecondaryConnection#as_replica_of}
 
 ---
 
@@ -931,7 +931,7 @@ Name *string
 
 String that specifies the identifier (i.e. name) for the connection. Must start with an alphabetic character and may only contain letters, decimal digits (0-9), and underscores (_). For a secondary connection, the name must match the name of its primary connection. Due to technical limitations (read more [here](https://github.com/Snowflake-Labs/terraform-provider-snowflake/blob/main/docs/technical-documentation/identifiers_rework_design_decisions.md#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/resources/secondary_connection#name SecondaryConnection#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/secondary_connection#name SecondaryConnection#name}
 
 ---
 
@@ -945,7 +945,7 @@ Comment *string
 
 Specifies a comment for the secondary connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/resources/secondary_connection#comment SecondaryConnection#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/secondary_connection#comment SecondaryConnection#comment}
 
 ---
 
@@ -957,7 +957,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/resources/secondary_connection#id SecondaryConnection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/secondary_connection#id SecondaryConnection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -969,7 +969,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.secondaryConnection.SecondaryConnectionShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/secondaryconnection"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/secondaryconnection"
 
 &secondaryconnection.SecondaryConnectionShowOutput {
 
@@ -984,7 +984,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/secondaryconn
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.secondaryConnection.SecondaryConnectionShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/secondaryconnection"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/secondaryconnection"
 
 secondaryconnection.NewSecondaryConnectionShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecondaryConnectionShowOutputList
 ```
@@ -1133,7 +1133,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.secondaryConnection.SecondaryConnectionShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/secondaryconnection"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/secondaryconnection"
 
 secondaryconnection.NewSecondaryConnectionShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecondaryConnectionShowOutputOutputReference
 ```

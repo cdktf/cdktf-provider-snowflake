@@ -4,12 +4,12 @@
 
 ### DataSnowflakeAccountRoles <a name="DataSnowflakeAccountRoles" id="@cdktf/provider-snowflake.dataSnowflakeAccountRoles.DataSnowflakeAccountRoles"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/data-sources/account_roles snowflake_account_roles}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/data-sources/account_roles snowflake_account_roles}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeAccountRoles.DataSnowflakeAccountRoles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakeaccountroles"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeaccountroles"
 
 datasnowflakeaccountroles.NewDataSnowflakeAccountRoles(scope Construct, id *string, config DataSnowflakeAccountRolesConfig) DataSnowflakeAccountRoles
 ```
@@ -297,7 +297,7 @@ func ResetLike()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeAccountRoles.DataSnowflakeAccountRoles.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakeaccountroles"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeaccountroles"
 
 datasnowflakeaccountroles.DataSnowflakeAccountRoles_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeAccountRoles.DataSnowflakeAccountRoles.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakeaccountroles"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeaccountroles"
 
 datasnowflakeaccountroles.DataSnowflakeAccountRoles_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datasnowflakeaccountroles.DataSnowflakeAccountRoles_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeAccountRoles.DataSnowflakeAccountRoles.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakeaccountroles"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeaccountroles"
 
 datasnowflakeaccountroles.DataSnowflakeAccountRoles_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datasnowflakeaccountroles.DataSnowflakeAccountRoles_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.dataSnowflakeAccountRoles.DataSnowflakeAccountRoles.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakeaccountroles"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeaccountroles"
 
 datasnowflakeaccountroles.DataSnowflakeAccountRoles_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataSnowflakeAccountRoles 
 
 The id of the existing DataSnowflakeAccountRoles that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/data-sources/account_roles#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/data-sources/account_roles#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -641,7 +641,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeAccountRoles.DataSnowflakeAccountRolesAccountRoles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakeaccountroles"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeaccountroles"
 
 &datasnowflakeaccountroles.DataSnowflakeAccountRolesAccountRoles {
 
@@ -654,7 +654,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeAccountRoles.DataSnowflakeAccountRolesAccountRolesShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakeaccountroles"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeaccountroles"
 
 &datasnowflakeaccountroles.DataSnowflakeAccountRolesAccountRolesShowOutput {
 
@@ -667,7 +667,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeAccountRoles.DataSnowflakeAccountRolesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakeaccountroles"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeaccountroles"
 
 &datasnowflakeaccountroles.DataSnowflakeAccountRolesConfig {
 	Connection: interface{},
@@ -694,7 +694,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeAccountRoles.DataSnowflakeAccountRolesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeAccountRoles.DataSnowflakeAccountRolesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeAccountRoles.DataSnowflakeAccountRolesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeAccountRoles.DataSnowflakeAccountRolesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/data-sources/account_roles#id DataSnowflakeAccountRoles#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeAccountRoles.DataSnowflakeAccountRolesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/data-sources/account_roles#id DataSnowflakeAccountRoles#id}. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeAccountRoles.DataSnowflakeAccountRolesConfig.property.inClass">InClass</a></code> | <code>*string</code> | Filters the SHOW GRANTS output by class name. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeAccountRoles.DataSnowflakeAccountRolesConfig.property.like">Like</a></code> | <code>*string</code> | Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`). |
 
@@ -778,7 +778,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/data-sources/account_roles#id DataSnowflakeAccountRoles#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/data-sources/account_roles#id DataSnowflakeAccountRoles#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -795,7 +795,7 @@ InClass *string
 
 Filters the SHOW GRANTS output by class name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/data-sources/account_roles#in_class DataSnowflakeAccountRoles#in_class}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/data-sources/account_roles#in_class DataSnowflakeAccountRoles#in_class}
 
 ---
 
@@ -809,7 +809,7 @@ Like *string
 
 Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/data-sources/account_roles#like DataSnowflakeAccountRoles#like}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/data-sources/account_roles#like DataSnowflakeAccountRoles#like}
 
 ---
 
@@ -820,7 +820,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeAccountRoles.DataSnowflakeAccountRolesAccountRolesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakeaccountroles"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeaccountroles"
 
 datasnowflakeaccountroles.NewDataSnowflakeAccountRolesAccountRolesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeAccountRolesAccountRolesList
 ```
@@ -969,7 +969,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeAccountRoles.DataSnowflakeAccountRolesAccountRolesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakeaccountroles"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeaccountroles"
 
 datasnowflakeaccountroles.NewDataSnowflakeAccountRolesAccountRolesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeAccountRolesAccountRolesOutputReference
 ```
@@ -1247,7 +1247,7 @@ func InternalValue() DataSnowflakeAccountRolesAccountRoles
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeAccountRoles.DataSnowflakeAccountRolesAccountRolesShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakeaccountroles"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeaccountroles"
 
 datasnowflakeaccountroles.NewDataSnowflakeAccountRolesAccountRolesShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeAccountRolesAccountRolesShowOutputList
 ```
@@ -1396,7 +1396,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeAccountRoles.DataSnowflakeAccountRolesAccountRolesShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflakeaccountroles"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeaccountroles"
 
 datasnowflakeaccountroles.NewDataSnowflakeAccountRolesAccountRolesShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeAccountRolesAccountRolesShowOutputOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### DataSnowflakeTasks <a name="DataSnowflakeTasks" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasks"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/data-sources/tasks snowflake_tasks}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/data-sources/tasks snowflake_tasks}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasks(scope Construct, id *string, config DataSnowflakeTasksConfig) DataSnowflakeTasks
 ```
@@ -351,7 +351,7 @@ func ResetWithParameters()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasks.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.DataSnowflakeTasks_IsConstruct(x interface{}) *bool
 ```
@@ -383,7 +383,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasks.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.DataSnowflakeTasks_IsTerraformElement(x interface{}) *bool
 ```
@@ -397,7 +397,7 @@ datasnowflaketasks.DataSnowflakeTasks_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasks.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.DataSnowflakeTasks_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -411,7 +411,7 @@ datasnowflaketasks.DataSnowflakeTasks_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasks.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.DataSnowflakeTasks_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -440,7 +440,7 @@ The construct id used in the generated config for the DataSnowflakeTasks to impo
 
 The id of the existing DataSnowflakeTasks that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/data-sources/tasks#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/data-sources/tasks#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -783,7 +783,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksConfig {
 	Connection: interface{},
@@ -794,9 +794,9 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Id: *string,
-	In: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11.dataSnowflakeTasks.DataSnowflakeTasksIn,
+	In: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.dataSnowflakeTasks.DataSnowflakeTasksIn,
 	Like: *string,
-	Limit: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11.dataSnowflakeTasks.DataSnowflakeTasksLimit,
+	Limit: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.dataSnowflakeTasks.DataSnowflakeTasksLimit,
 	RootOnly: interface{},
 	StartsWith: *string,
 	WithParameters: interface{},
@@ -814,7 +814,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/data-sources/tasks#id DataSnowflakeTasks#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/data-sources/tasks#id DataSnowflakeTasks#id}. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksConfig.property.in">In</a></code> | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksIn">DataSnowflakeTasksIn</a></code> | in block. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksConfig.property.like">Like</a></code> | <code>*string</code> | Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`). |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksConfig.property.limit">Limit</a></code> | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksLimit">DataSnowflakeTasksLimit</a></code> | limit block. |
@@ -902,7 +902,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/data-sources/tasks#id DataSnowflakeTasks#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/data-sources/tasks#id DataSnowflakeTasks#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -919,7 +919,7 @@ In DataSnowflakeTasksIn
 
 in block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/data-sources/tasks#in DataSnowflakeTasks#in}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/data-sources/tasks#in DataSnowflakeTasks#in}
 
 ---
 
@@ -933,7 +933,7 @@ Like *string
 
 Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/data-sources/tasks#like DataSnowflakeTasks#like}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/data-sources/tasks#like DataSnowflakeTasks#like}
 
 ---
 
@@ -947,7 +947,7 @@ Limit DataSnowflakeTasksLimit
 
 limit block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/data-sources/tasks#limit DataSnowflakeTasks#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/data-sources/tasks#limit DataSnowflakeTasks#limit}
 
 ---
 
@@ -961,7 +961,7 @@ RootOnly interface{}
 
 Filters the command output to return only root tasks (tasks with no predecessors).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/data-sources/tasks#root_only DataSnowflakeTasks#root_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/data-sources/tasks#root_only DataSnowflakeTasks#root_only}
 
 ---
 
@@ -975,7 +975,7 @@ StartsWith *string
 
 Filters the output with **case-sensitive** characters indicating the beginning of the object name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/data-sources/tasks#starts_with DataSnowflakeTasks#starts_with}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/data-sources/tasks#starts_with DataSnowflakeTasks#starts_with}
 
 ---
 
@@ -991,7 +991,7 @@ Runs SHOW PARAMETERS FOR TASK for each task returned by SHOW TASK and saves the 
 
 By default this value is set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/data-sources/tasks#with_parameters DataSnowflakeTasks#with_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/data-sources/tasks#with_parameters DataSnowflakeTasks#with_parameters}
 
 ---
 
@@ -1000,7 +1000,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksIn.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksIn {
 	Account: interface{},
@@ -1033,7 +1033,7 @@ Account interface{}
 
 Returns records for the entire account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/data-sources/tasks#account DataSnowflakeTasks#account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/data-sources/tasks#account DataSnowflakeTasks#account}
 
 ---
 
@@ -1047,7 +1047,7 @@ Application *string
 
 Returns records for the specified application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/data-sources/tasks#application DataSnowflakeTasks#application}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/data-sources/tasks#application DataSnowflakeTasks#application}
 
 ---
 
@@ -1061,7 +1061,7 @@ ApplicationPackage *string
 
 Returns records for the specified application package.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/data-sources/tasks#application_package DataSnowflakeTasks#application_package}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/data-sources/tasks#application_package DataSnowflakeTasks#application_package}
 
 ---
 
@@ -1075,7 +1075,7 @@ Database *string
 
 Returns records for the current database in use or for a specified database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/data-sources/tasks#database DataSnowflakeTasks#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/data-sources/tasks#database DataSnowflakeTasks#database}
 
 ---
 
@@ -1089,7 +1089,7 @@ Schema *string
 
 Returns records for the current schema in use or a specified schema. Use fully qualified name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/data-sources/tasks#schema DataSnowflakeTasks#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/data-sources/tasks#schema DataSnowflakeTasks#schema}
 
 ---
 
@@ -1098,7 +1098,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksLimit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksLimit {
 	Rows: *f64,
@@ -1125,7 +1125,7 @@ Rows *f64
 
 The maximum number of rows to return.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/data-sources/tasks#rows DataSnowflakeTasks#rows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/data-sources/tasks#rows DataSnowflakeTasks#rows}
 
 ---
 
@@ -1141,7 +1141,7 @@ Specifies a **case-sensitive** pattern that is used to match object name.
 
 After the first match, the limit on the number of rows will be applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/0.100.0/docs/data-sources/tasks#from DataSnowflakeTasks#from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/data-sources/tasks#from DataSnowflakeTasks#from}
 
 ---
 
@@ -1150,7 +1150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasks {
 
@@ -1163,7 +1163,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParameters {
 
@@ -1176,7 +1176,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersAbortDetachedQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersAbortDetachedQuery {
 
@@ -1189,7 +1189,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersAutocommit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersAutocommit {
 
@@ -1202,7 +1202,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersBinaryInputFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersBinaryInputFormat {
 
@@ -1215,7 +1215,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersBinaryOutputFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersBinaryOutputFormat {
 
@@ -1228,7 +1228,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersClientMemoryLimit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersClientMemoryLimit {
 
@@ -1241,7 +1241,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersClientMetadataRequestUseConnectionCtx.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersClientMetadataRequestUseConnectionCtx {
 
@@ -1254,7 +1254,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersClientPrefetchThreads.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersClientPrefetchThreads {
 
@@ -1267,7 +1267,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersClientResultChunkSize.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersClientResultChunkSize {
 
@@ -1280,7 +1280,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersClientResultColumnCaseInsensitive.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersClientResultColumnCaseInsensitive {
 
@@ -1293,7 +1293,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersClientSessionKeepAlive.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersClientSessionKeepAlive {
 
@@ -1306,7 +1306,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersClientSessionKeepAliveHeartbeatFrequency.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersClientSessionKeepAliveHeartbeatFrequency {
 
@@ -1319,7 +1319,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersClientTimestampTypeMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersClientTimestampTypeMapping {
 
@@ -1332,7 +1332,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersDateInputFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersDateInputFormat {
 
@@ -1345,7 +1345,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersDateOutputFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersDateOutputFormat {
 
@@ -1358,7 +1358,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersEnableUnloadPhysicalTypeOptimization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersEnableUnloadPhysicalTypeOptimization {
 
@@ -1371,7 +1371,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersErrorOnNondeterministicMerge.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersErrorOnNondeterministicMerge {
 
@@ -1384,7 +1384,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersErrorOnNondeterministicUpdate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersErrorOnNondeterministicUpdate {
 
@@ -1397,7 +1397,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersGeographyOutputFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersGeographyOutputFormat {
 
@@ -1410,7 +1410,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersGeometryOutputFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersGeometryOutputFormat {
 
@@ -1423,7 +1423,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersJdbcTreatTimestampNtzAsUtc.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersJdbcTreatTimestampNtzAsUtc {
 
@@ -1436,7 +1436,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersJdbcUseSessionTimezone.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersJdbcUseSessionTimezone {
 
@@ -1449,7 +1449,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersJsonIndent.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersJsonIndent {
 
@@ -1462,7 +1462,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersLockTimeout.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersLockTimeout {
 
@@ -1475,7 +1475,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersLogLevel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersLogLevel {
 
@@ -1488,7 +1488,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersMultiStatementCount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersMultiStatementCount {
 
@@ -1501,7 +1501,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersNoorderSequenceAsDefault.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersNoorderSequenceAsDefault {
 
@@ -1514,7 +1514,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersOdbcTreatDecimalAsInt.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersOdbcTreatDecimalAsInt {
 
@@ -1527,7 +1527,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersQueryTag.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersQueryTag {
 
@@ -1540,7 +1540,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersQuotedIdentifiersIgnoreCase.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersQuotedIdentifiersIgnoreCase {
 
@@ -1553,7 +1553,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersRowsPerResultset.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersRowsPerResultset {
 
@@ -1566,7 +1566,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersS3StageVpceDnsName.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersS3StageVpceDnsName {
 
@@ -1579,7 +1579,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersSearchPath.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersSearchPath {
 
@@ -1592,7 +1592,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersStatementQueuedTimeoutInSeconds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersStatementQueuedTimeoutInSeconds {
 
@@ -1605,7 +1605,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersStatementTimeoutInSeconds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersStatementTimeoutInSeconds {
 
@@ -1618,7 +1618,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersStrictJsonOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersStrictJsonOutput {
 
@@ -1631,7 +1631,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersSuspendTaskAfterNumFailures.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersSuspendTaskAfterNumFailures {
 
@@ -1644,7 +1644,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersTaskAutoRetryAttempts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersTaskAutoRetryAttempts {
 
@@ -1657,7 +1657,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersTimeInputFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersTimeInputFormat {
 
@@ -1670,7 +1670,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersTimeOutputFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersTimeOutputFormat {
 
@@ -1683,7 +1683,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersTimestampDayIsAlways24H.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersTimestampDayIsAlways24H {
 
@@ -1696,7 +1696,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersTimestampInputFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersTimestampInputFormat {
 
@@ -1709,7 +1709,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersTimestampLtzOutputFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersTimestampLtzOutputFormat {
 
@@ -1722,7 +1722,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersTimestampNtzOutputFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersTimestampNtzOutputFormat {
 
@@ -1735,7 +1735,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersTimestampOutputFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersTimestampOutputFormat {
 
@@ -1748,7 +1748,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersTimestampTypeMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersTimestampTypeMapping {
 
@@ -1761,7 +1761,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersTimestampTzOutputFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersTimestampTzOutputFormat {
 
@@ -1774,7 +1774,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersTimezone.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersTimezone {
 
@@ -1787,7 +1787,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersTraceLevel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersTraceLevel {
 
@@ -1800,7 +1800,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersTransactionAbortOnError.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersTransactionAbortOnError {
 
@@ -1813,7 +1813,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersTransactionDefaultIsolationLevel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersTransactionDefaultIsolationLevel {
 
@@ -1826,7 +1826,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersTwoDigitCenturyStart.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersTwoDigitCenturyStart {
 
@@ -1839,7 +1839,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersUnsupportedDdlAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersUnsupportedDdlAction {
 
@@ -1852,7 +1852,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersUseCachedResult.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersUseCachedResult {
 
@@ -1865,7 +1865,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersUserTaskManagedInitialWarehouseSize.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersUserTaskManagedInitialWarehouseSize {
 
@@ -1878,7 +1878,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersUserTaskMinimumTriggerIntervalInSeconds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersUserTaskMinimumTriggerIntervalInSeconds {
 
@@ -1891,7 +1891,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersUserTaskTimeoutMs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersUserTaskTimeoutMs {
 
@@ -1904,7 +1904,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersWeekOfYearPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersWeekOfYearPolicy {
 
@@ -1917,7 +1917,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersWeekStart.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksParametersWeekStart {
 
@@ -1930,7 +1930,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksShowOutput {
 
@@ -1943,7 +1943,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksShowOutputTaskRelations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 &datasnowflaketasks.DataSnowflakeTasksTasksShowOutputTaskRelations {
 
@@ -1958,7 +1958,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflake
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksInOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksInOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataSnowflakeTasksInOutputReference
 ```
@@ -2352,7 +2352,7 @@ func InternalValue() DataSnowflakeTasksIn
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksLimitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksLimitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataSnowflakeTasksLimitOutputReference
 ```
@@ -2652,7 +2652,7 @@ func InternalValue() DataSnowflakeTasksLimit
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksList
 ```
@@ -2801,7 +2801,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksOutputReference
 ```
@@ -3090,7 +3090,7 @@ func InternalValue() DataSnowflakeTasksTasks
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersAbortDetachedQueryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersAbortDetachedQueryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersAbortDetachedQueryList
 ```
@@ -3239,7 +3239,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersAbortDetachedQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersAbortDetachedQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersAbortDetachedQueryOutputReference
 ```
@@ -3561,7 +3561,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersAbortDetachedQuery
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersAutocommitList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersAutocommitList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersAutocommitList
 ```
@@ -3710,7 +3710,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersAutocommitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersAutocommitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersAutocommitOutputReference
 ```
@@ -4032,7 +4032,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersAutocommit
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersBinaryInputFormatList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersBinaryInputFormatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersBinaryInputFormatList
 ```
@@ -4181,7 +4181,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersBinaryInputFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersBinaryInputFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersBinaryInputFormatOutputReference
 ```
@@ -4503,7 +4503,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersBinaryInputFormat
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersBinaryOutputFormatList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersBinaryOutputFormatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersBinaryOutputFormatList
 ```
@@ -4652,7 +4652,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersBinaryOutputFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersBinaryOutputFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersBinaryOutputFormatOutputReference
 ```
@@ -4974,7 +4974,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersBinaryOutputFormat
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersClientMemoryLimitList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersClientMemoryLimitList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersClientMemoryLimitList
 ```
@@ -5123,7 +5123,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersClientMemoryLimitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersClientMemoryLimitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersClientMemoryLimitOutputReference
 ```
@@ -5445,7 +5445,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersClientMemoryLimit
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersClientMetadataRequestUseConnectionCtxList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersClientMetadataRequestUseConnectionCtxList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersClientMetadataRequestUseConnectionCtxList
 ```
@@ -5594,7 +5594,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersClientMetadataRequestUseConnectionCtxOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersClientMetadataRequestUseConnectionCtxOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersClientMetadataRequestUseConnectionCtxOutputReference
 ```
@@ -5916,7 +5916,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersClientMetadataRequestUseCo
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersClientPrefetchThreadsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersClientPrefetchThreadsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersClientPrefetchThreadsList
 ```
@@ -6065,7 +6065,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersClientPrefetchThreadsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersClientPrefetchThreadsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersClientPrefetchThreadsOutputReference
 ```
@@ -6387,7 +6387,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersClientPrefetchThreads
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersClientResultChunkSizeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersClientResultChunkSizeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersClientResultChunkSizeList
 ```
@@ -6536,7 +6536,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersClientResultChunkSizeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersClientResultChunkSizeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersClientResultChunkSizeOutputReference
 ```
@@ -6858,7 +6858,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersClientResultChunkSize
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersClientResultColumnCaseInsensitiveList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersClientResultColumnCaseInsensitiveList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersClientResultColumnCaseInsensitiveList
 ```
@@ -7007,7 +7007,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersClientResultColumnCaseInsensitiveOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersClientResultColumnCaseInsensitiveOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersClientResultColumnCaseInsensitiveOutputReference
 ```
@@ -7329,7 +7329,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersClientResultColumnCaseInse
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersClientSessionKeepAliveHeartbeatFrequencyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersClientSessionKeepAliveHeartbeatFrequencyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersClientSessionKeepAliveHeartbeatFrequencyList
 ```
@@ -7478,7 +7478,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersClientSessionKeepAliveHeartbeatFrequencyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersClientSessionKeepAliveHeartbeatFrequencyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersClientSessionKeepAliveHeartbeatFrequencyOutputReference
 ```
@@ -7800,7 +7800,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersClientSessionKeepAliveHear
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersClientSessionKeepAliveList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersClientSessionKeepAliveList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersClientSessionKeepAliveList
 ```
@@ -7949,7 +7949,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersClientSessionKeepAliveOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersClientSessionKeepAliveOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersClientSessionKeepAliveOutputReference
 ```
@@ -8271,7 +8271,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersClientSessionKeepAlive
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersClientTimestampTypeMappingList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersClientTimestampTypeMappingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersClientTimestampTypeMappingList
 ```
@@ -8420,7 +8420,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersClientTimestampTypeMappingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersClientTimestampTypeMappingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersClientTimestampTypeMappingOutputReference
 ```
@@ -8742,7 +8742,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersClientTimestampTypeMapping
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersDateInputFormatList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersDateInputFormatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersDateInputFormatList
 ```
@@ -8891,7 +8891,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersDateInputFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersDateInputFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersDateInputFormatOutputReference
 ```
@@ -9213,7 +9213,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersDateInputFormat
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersDateOutputFormatList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersDateOutputFormatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersDateOutputFormatList
 ```
@@ -9362,7 +9362,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersDateOutputFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersDateOutputFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersDateOutputFormatOutputReference
 ```
@@ -9684,7 +9684,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersDateOutputFormat
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersEnableUnloadPhysicalTypeOptimizationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersEnableUnloadPhysicalTypeOptimizationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersEnableUnloadPhysicalTypeOptimizationList
 ```
@@ -9833,7 +9833,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersEnableUnloadPhysicalTypeOptimizationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersEnableUnloadPhysicalTypeOptimizationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersEnableUnloadPhysicalTypeOptimizationOutputReference
 ```
@@ -10155,7 +10155,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersEnableUnloadPhysicalTypeOp
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersErrorOnNondeterministicMergeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersErrorOnNondeterministicMergeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersErrorOnNondeterministicMergeList
 ```
@@ -10304,7 +10304,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersErrorOnNondeterministicMergeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersErrorOnNondeterministicMergeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersErrorOnNondeterministicMergeOutputReference
 ```
@@ -10626,7 +10626,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersErrorOnNondeterministicMer
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersErrorOnNondeterministicUpdateList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersErrorOnNondeterministicUpdateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersErrorOnNondeterministicUpdateList
 ```
@@ -10775,7 +10775,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersErrorOnNondeterministicUpdateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersErrorOnNondeterministicUpdateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersErrorOnNondeterministicUpdateOutputReference
 ```
@@ -11097,7 +11097,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersErrorOnNondeterministicUpd
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersGeographyOutputFormatList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersGeographyOutputFormatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersGeographyOutputFormatList
 ```
@@ -11246,7 +11246,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersGeographyOutputFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersGeographyOutputFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersGeographyOutputFormatOutputReference
 ```
@@ -11568,7 +11568,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersGeographyOutputFormat
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersGeometryOutputFormatList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersGeometryOutputFormatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersGeometryOutputFormatList
 ```
@@ -11717,7 +11717,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersGeometryOutputFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersGeometryOutputFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersGeometryOutputFormatOutputReference
 ```
@@ -12039,7 +12039,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersGeometryOutputFormat
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersJdbcTreatTimestampNtzAsUtcList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersJdbcTreatTimestampNtzAsUtcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersJdbcTreatTimestampNtzAsUtcList
 ```
@@ -12188,7 +12188,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersJdbcTreatTimestampNtzAsUtcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersJdbcTreatTimestampNtzAsUtcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersJdbcTreatTimestampNtzAsUtcOutputReference
 ```
@@ -12510,7 +12510,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersJdbcTreatTimestampNtzAsUtc
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersJdbcUseSessionTimezoneList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersJdbcUseSessionTimezoneList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersJdbcUseSessionTimezoneList
 ```
@@ -12659,7 +12659,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersJdbcUseSessionTimezoneOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersJdbcUseSessionTimezoneOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersJdbcUseSessionTimezoneOutputReference
 ```
@@ -12981,7 +12981,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersJdbcUseSessionTimezone
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersJsonIndentList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersJsonIndentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersJsonIndentList
 ```
@@ -13130,7 +13130,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersJsonIndentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersJsonIndentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersJsonIndentOutputReference
 ```
@@ -13452,7 +13452,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersJsonIndent
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersList
 ```
@@ -13601,7 +13601,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersLockTimeoutList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersLockTimeoutList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersLockTimeoutList
 ```
@@ -13750,7 +13750,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersLockTimeoutOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersLockTimeoutOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersLockTimeoutOutputReference
 ```
@@ -14072,7 +14072,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersLockTimeout
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersLogLevelList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersLogLevelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersLogLevelList
 ```
@@ -14221,7 +14221,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersLogLevelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersLogLevelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersLogLevelOutputReference
 ```
@@ -14543,7 +14543,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersLogLevel
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersMultiStatementCountList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersMultiStatementCountList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersMultiStatementCountList
 ```
@@ -14692,7 +14692,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersMultiStatementCountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersMultiStatementCountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersMultiStatementCountOutputReference
 ```
@@ -15014,7 +15014,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersMultiStatementCount
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersNoorderSequenceAsDefaultList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersNoorderSequenceAsDefaultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersNoorderSequenceAsDefaultList
 ```
@@ -15163,7 +15163,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersNoorderSequenceAsDefaultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersNoorderSequenceAsDefaultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersNoorderSequenceAsDefaultOutputReference
 ```
@@ -15485,7 +15485,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersNoorderSequenceAsDefault
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersOdbcTreatDecimalAsIntList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersOdbcTreatDecimalAsIntList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersOdbcTreatDecimalAsIntList
 ```
@@ -15634,7 +15634,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersOdbcTreatDecimalAsIntOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersOdbcTreatDecimalAsIntOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersOdbcTreatDecimalAsIntOutputReference
 ```
@@ -15956,7 +15956,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersOdbcTreatDecimalAsInt
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersOutputReference
 ```
@@ -16861,7 +16861,7 @@ func InternalValue() DataSnowflakeTasksTasksParameters
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersQueryTagList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersQueryTagList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersQueryTagList
 ```
@@ -17010,7 +17010,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersQueryTagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersQueryTagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersQueryTagOutputReference
 ```
@@ -17332,7 +17332,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersQueryTag
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersQuotedIdentifiersIgnoreCaseList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersQuotedIdentifiersIgnoreCaseList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersQuotedIdentifiersIgnoreCaseList
 ```
@@ -17481,7 +17481,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersQuotedIdentifiersIgnoreCaseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersQuotedIdentifiersIgnoreCaseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersQuotedIdentifiersIgnoreCaseOutputReference
 ```
@@ -17803,7 +17803,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersQuotedIdentifiersIgnoreCas
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersRowsPerResultsetList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersRowsPerResultsetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersRowsPerResultsetList
 ```
@@ -17952,7 +17952,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersRowsPerResultsetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersRowsPerResultsetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersRowsPerResultsetOutputReference
 ```
@@ -18274,7 +18274,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersRowsPerResultset
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersS3StageVpceDnsNameList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersS3StageVpceDnsNameList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersS3StageVpceDnsNameList
 ```
@@ -18423,7 +18423,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersS3StageVpceDnsNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersS3StageVpceDnsNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersS3StageVpceDnsNameOutputReference
 ```
@@ -18745,7 +18745,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersS3StageVpceDnsName
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersSearchPathList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersSearchPathList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersSearchPathList
 ```
@@ -18894,7 +18894,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersSearchPathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersSearchPathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersSearchPathOutputReference
 ```
@@ -19216,7 +19216,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersSearchPath
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersStatementQueuedTimeoutInSecondsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersStatementQueuedTimeoutInSecondsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersStatementQueuedTimeoutInSecondsList
 ```
@@ -19365,7 +19365,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersStatementQueuedTimeoutInSecondsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersStatementQueuedTimeoutInSecondsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersStatementQueuedTimeoutInSecondsOutputReference
 ```
@@ -19687,7 +19687,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersStatementQueuedTimeoutInSe
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersStatementTimeoutInSecondsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersStatementTimeoutInSecondsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersStatementTimeoutInSecondsList
 ```
@@ -19836,7 +19836,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersStatementTimeoutInSecondsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersStatementTimeoutInSecondsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersStatementTimeoutInSecondsOutputReference
 ```
@@ -20158,7 +20158,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersStatementTimeoutInSeconds
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersStrictJsonOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersStrictJsonOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersStrictJsonOutputList
 ```
@@ -20307,7 +20307,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersStrictJsonOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersStrictJsonOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersStrictJsonOutputOutputReference
 ```
@@ -20629,7 +20629,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersStrictJsonOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersSuspendTaskAfterNumFailuresList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersSuspendTaskAfterNumFailuresList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersSuspendTaskAfterNumFailuresList
 ```
@@ -20778,7 +20778,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersSuspendTaskAfterNumFailuresOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersSuspendTaskAfterNumFailuresOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersSuspendTaskAfterNumFailuresOutputReference
 ```
@@ -21100,7 +21100,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersSuspendTaskAfterNumFailure
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersTaskAutoRetryAttemptsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersTaskAutoRetryAttemptsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersTaskAutoRetryAttemptsList
 ```
@@ -21249,7 +21249,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersTaskAutoRetryAttemptsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersTaskAutoRetryAttemptsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersTaskAutoRetryAttemptsOutputReference
 ```
@@ -21571,7 +21571,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersTaskAutoRetryAttempts
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersTimeInputFormatList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersTimeInputFormatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersTimeInputFormatList
 ```
@@ -21720,7 +21720,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersTimeInputFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersTimeInputFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersTimeInputFormatOutputReference
 ```
@@ -22042,7 +22042,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersTimeInputFormat
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersTimeOutputFormatList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersTimeOutputFormatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersTimeOutputFormatList
 ```
@@ -22191,7 +22191,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersTimeOutputFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersTimeOutputFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersTimeOutputFormatOutputReference
 ```
@@ -22513,7 +22513,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersTimeOutputFormat
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersTimestampDayIsAlways24HList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersTimestampDayIsAlways24HList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersTimestampDayIsAlways24HList
 ```
@@ -22662,7 +22662,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersTimestampDayIsAlways24HOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersTimestampDayIsAlways24HOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersTimestampDayIsAlways24HOutputReference
 ```
@@ -22984,7 +22984,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersTimestampDayIsAlways24H
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersTimestampInputFormatList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersTimestampInputFormatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersTimestampInputFormatList
 ```
@@ -23133,7 +23133,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersTimestampInputFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersTimestampInputFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersTimestampInputFormatOutputReference
 ```
@@ -23455,7 +23455,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersTimestampInputFormat
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersTimestampLtzOutputFormatList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersTimestampLtzOutputFormatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersTimestampLtzOutputFormatList
 ```
@@ -23604,7 +23604,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersTimestampLtzOutputFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersTimestampLtzOutputFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersTimestampLtzOutputFormatOutputReference
 ```
@@ -23926,7 +23926,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersTimestampLtzOutputFormat
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersTimestampNtzOutputFormatList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersTimestampNtzOutputFormatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersTimestampNtzOutputFormatList
 ```
@@ -24075,7 +24075,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersTimestampNtzOutputFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersTimestampNtzOutputFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersTimestampNtzOutputFormatOutputReference
 ```
@@ -24397,7 +24397,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersTimestampNtzOutputFormat
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersTimestampOutputFormatList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersTimestampOutputFormatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersTimestampOutputFormatList
 ```
@@ -24546,7 +24546,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersTimestampOutputFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersTimestampOutputFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersTimestampOutputFormatOutputReference
 ```
@@ -24868,7 +24868,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersTimestampOutputFormat
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersTimestampTypeMappingList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersTimestampTypeMappingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersTimestampTypeMappingList
 ```
@@ -25017,7 +25017,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersTimestampTypeMappingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersTimestampTypeMappingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersTimestampTypeMappingOutputReference
 ```
@@ -25339,7 +25339,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersTimestampTypeMapping
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersTimestampTzOutputFormatList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersTimestampTzOutputFormatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersTimestampTzOutputFormatList
 ```
@@ -25488,7 +25488,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersTimestampTzOutputFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersTimestampTzOutputFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersTimestampTzOutputFormatOutputReference
 ```
@@ -25810,7 +25810,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersTimestampTzOutputFormat
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersTimezoneList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersTimezoneList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersTimezoneList
 ```
@@ -25959,7 +25959,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersTimezoneOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersTimezoneOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersTimezoneOutputReference
 ```
@@ -26281,7 +26281,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersTimezone
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersTraceLevelList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersTraceLevelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersTraceLevelList
 ```
@@ -26430,7 +26430,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersTraceLevelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersTraceLevelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersTraceLevelOutputReference
 ```
@@ -26752,7 +26752,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersTraceLevel
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersTransactionAbortOnErrorList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersTransactionAbortOnErrorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersTransactionAbortOnErrorList
 ```
@@ -26901,7 +26901,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersTransactionAbortOnErrorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersTransactionAbortOnErrorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersTransactionAbortOnErrorOutputReference
 ```
@@ -27223,7 +27223,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersTransactionAbortOnError
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersTransactionDefaultIsolationLevelList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersTransactionDefaultIsolationLevelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersTransactionDefaultIsolationLevelList
 ```
@@ -27372,7 +27372,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersTransactionDefaultIsolationLevelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersTransactionDefaultIsolationLevelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersTransactionDefaultIsolationLevelOutputReference
 ```
@@ -27694,7 +27694,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersTransactionDefaultIsolatio
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersTwoDigitCenturyStartList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersTwoDigitCenturyStartList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersTwoDigitCenturyStartList
 ```
@@ -27843,7 +27843,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersTwoDigitCenturyStartOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersTwoDigitCenturyStartOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersTwoDigitCenturyStartOutputReference
 ```
@@ -28165,7 +28165,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersTwoDigitCenturyStart
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersUnsupportedDdlActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersUnsupportedDdlActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersUnsupportedDdlActionList
 ```
@@ -28314,7 +28314,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersUnsupportedDdlActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersUnsupportedDdlActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersUnsupportedDdlActionOutputReference
 ```
@@ -28636,7 +28636,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersUnsupportedDdlAction
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersUseCachedResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersUseCachedResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersUseCachedResultList
 ```
@@ -28785,7 +28785,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersUseCachedResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersUseCachedResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersUseCachedResultOutputReference
 ```
@@ -29107,7 +29107,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersUseCachedResult
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersUserTaskManagedInitialWarehouseSizeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersUserTaskManagedInitialWarehouseSizeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersUserTaskManagedInitialWarehouseSizeList
 ```
@@ -29256,7 +29256,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersUserTaskManagedInitialWarehouseSizeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersUserTaskManagedInitialWarehouseSizeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersUserTaskManagedInitialWarehouseSizeOutputReference
 ```
@@ -29578,7 +29578,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersUserTaskManagedInitialWare
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersUserTaskMinimumTriggerIntervalInSecondsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersUserTaskMinimumTriggerIntervalInSecondsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersUserTaskMinimumTriggerIntervalInSecondsList
 ```
@@ -29727,7 +29727,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersUserTaskMinimumTriggerIntervalInSecondsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersUserTaskMinimumTriggerIntervalInSecondsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersUserTaskMinimumTriggerIntervalInSecondsOutputReference
 ```
@@ -30049,7 +30049,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersUserTaskMinimumTriggerInte
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersUserTaskTimeoutMsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersUserTaskTimeoutMsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersUserTaskTimeoutMsList
 ```
@@ -30198,7 +30198,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersUserTaskTimeoutMsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersUserTaskTimeoutMsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersUserTaskTimeoutMsOutputReference
 ```
@@ -30520,7 +30520,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersUserTaskTimeoutMs
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersWeekOfYearPolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersWeekOfYearPolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersWeekOfYearPolicyList
 ```
@@ -30669,7 +30669,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersWeekOfYearPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersWeekOfYearPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersWeekOfYearPolicyOutputReference
 ```
@@ -30991,7 +30991,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersWeekOfYearPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersWeekStartList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersWeekStartList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksParametersWeekStartList
 ```
@@ -31140,7 +31140,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksParametersWeekStartOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksParametersWeekStartOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksParametersWeekStartOutputReference
 ```
@@ -31462,7 +31462,7 @@ func InternalValue() DataSnowflakeTasksTasksParametersWeekStart
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksShowOutputList
 ```
@@ -31611,7 +31611,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksShowOutputOutputReference
 ```
@@ -32120,7 +32120,7 @@ func InternalValue() DataSnowflakeTasksTasksShowOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksShowOutputTaskRelationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksShowOutputTaskRelationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeTasksTasksShowOutputTaskRelationsList
 ```
@@ -32269,7 +32269,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTasks.DataSnowflakeTasksTasksShowOutputTaskRelationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v11/datasnowflaketasks"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflaketasks"
 
 datasnowflaketasks.NewDataSnowflakeTasksTasksShowOutputTaskRelationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeTasksTasksShowOutputTaskRelationsOutputReference
 ```
