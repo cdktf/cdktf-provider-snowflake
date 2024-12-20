@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/streamlit
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/streamlit
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,29 +10,29 @@ export interface StreamlitConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies a comment for the streamlit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/streamlit#comment Streamlit#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/streamlit#comment Streamlit#comment}
   */
   readonly comment?: string;
   /**
   * The database in which to create the streamlit Due to technical limitations (read more [here](https://github.com/Snowflake-Labs/terraform-provider-snowflake/blob/main/docs/technical-documentation/identifiers_rework_design_decisions.md#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/streamlit#database Streamlit#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/streamlit#database Streamlit#database}
   */
   readonly database: string;
   /**
   * Specifies the full path to the named stage containing the Streamlit Python files, media files, and the environment.yml file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/streamlit#directory_location Streamlit#directory_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/streamlit#directory_location Streamlit#directory_location}
   */
   readonly directoryLocation?: string;
   /**
   * External access integrations connected to the Streamlit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/streamlit#external_access_integrations Streamlit#external_access_integrations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/streamlit#external_access_integrations Streamlit#external_access_integrations}
   */
   readonly externalAccessIntegrations?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/streamlit#id Streamlit#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/streamlit#id Streamlit#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,37 +41,37 @@ export interface StreamlitConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies the filename of the Streamlit Python application. This filename is relative to the value of `directory_location`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/streamlit#main_file Streamlit#main_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/streamlit#main_file Streamlit#main_file}
   */
   readonly mainFile: string;
   /**
   * String that specifies the identifier (i.e. name) for the streamlit; must be unique in your account. Due to technical limitations (read more [here](https://github.com/Snowflake-Labs/terraform-provider-snowflake/blob/main/docs/technical-documentation/identifiers_rework_design_decisions.md#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/streamlit#name Streamlit#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/streamlit#name Streamlit#name}
   */
   readonly name: string;
   /**
   * Specifies the warehouse where SQL queries issued by the Streamlit application are run. Due to Snowflake limitations warehouse identifier can consist of only upper-cased letters. For more information about this resource, see [docs](./warehouse).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/streamlit#query_warehouse Streamlit#query_warehouse}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/streamlit#query_warehouse Streamlit#query_warehouse}
   */
   readonly queryWarehouse?: string;
   /**
   * The schema in which to create the streamlit. Due to technical limitations (read more [here](https://github.com/Snowflake-Labs/terraform-provider-snowflake/blob/main/docs/technical-documentation/identifiers_rework_design_decisions.md#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/streamlit#schema Streamlit#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/streamlit#schema Streamlit#schema}
   */
   readonly schema: string;
   /**
   * The stage in which streamlit files are located. For more information about this resource, see [docs](./stage).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/streamlit#stage Streamlit#stage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/streamlit#stage Streamlit#stage}
   */
   readonly stage: string;
   /**
   * Specifies a title for the Streamlit app to display in Snowsight.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/streamlit#title Streamlit#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/streamlit#title Streamlit#title}
   */
   readonly title?: string;
 }
@@ -327,7 +322,7 @@ export class StreamlitShowOutputList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/streamlit snowflake_streamlit}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/streamlit snowflake_streamlit}
 */
 export class Streamlit extends cdktf.TerraformResource {
 
@@ -343,7 +338,7 @@ export class Streamlit extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Streamlit resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Streamlit to import
-  * @param importFromId The id of the existing Streamlit that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/streamlit#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Streamlit that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/streamlit#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Streamlit to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -355,7 +350,7 @@ export class Streamlit extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/streamlit snowflake_streamlit} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/streamlit snowflake_streamlit} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -366,7 +361,7 @@ export class Streamlit extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_streamlit',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '1.0.0',
+        providerVersion: '1.0.1',
         providerVersionConstraint: ' ~> 1.0'
       },
       provider: config.provider,

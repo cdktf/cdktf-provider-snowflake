@@ -4,7 +4,7 @@
 
 ### DataSnowflakeStreamlits <a name="DataSnowflakeStreamlits" id="@cdktf/provider-snowflake.dataSnowflakeStreamlits.DataSnowflakeStreamlits"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/data-sources/streamlits snowflake_streamlits}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/data-sources/streamlits snowflake_streamlits}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeStreamlits.DataSnowflakeStreamlits.Initializer"></a>
 
@@ -426,7 +426,7 @@ The construct id used in the generated config for the DataSnowflakeStreamlits to
 
 The id of the existing DataSnowflakeStreamlits that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/data-sources/streamlits#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/data-sources/streamlits#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -741,7 +741,7 @@ const dataSnowflakeStreamlitsConfig: dataSnowflakeStreamlits.DataSnowflakeStream
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStreamlits.DataSnowflakeStreamlitsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStreamlits.DataSnowflakeStreamlitsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStreamlits.DataSnowflakeStreamlitsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStreamlits.DataSnowflakeStreamlitsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/data-sources/streamlits#id DataSnowflakeStreamlits#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStreamlits.DataSnowflakeStreamlitsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/data-sources/streamlits#id DataSnowflakeStreamlits#id}. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStreamlits.DataSnowflakeStreamlitsConfig.property.in">in</a></code> | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStreamlits.DataSnowflakeStreamlitsIn">DataSnowflakeStreamlitsIn</a></code> | in block. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStreamlits.DataSnowflakeStreamlitsConfig.property.like">like</a></code> | <code>string</code> | Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`). |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStreamlits.DataSnowflakeStreamlitsConfig.property.limit">limit</a></code> | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStreamlits.DataSnowflakeStreamlitsLimit">DataSnowflakeStreamlitsLimit</a></code> | limit block. |
@@ -827,7 +827,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/data-sources/streamlits#id DataSnowflakeStreamlits#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/data-sources/streamlits#id DataSnowflakeStreamlits#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -844,7 +844,7 @@ public readonly in: DataSnowflakeStreamlitsIn;
 
 in block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/data-sources/streamlits#in DataSnowflakeStreamlits#in}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/data-sources/streamlits#in DataSnowflakeStreamlits#in}
 
 ---
 
@@ -858,7 +858,7 @@ public readonly like: string;
 
 Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/data-sources/streamlits#like DataSnowflakeStreamlits#like}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/data-sources/streamlits#like DataSnowflakeStreamlits#like}
 
 ---
 
@@ -872,7 +872,7 @@ public readonly limit: DataSnowflakeStreamlitsLimit;
 
 limit block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/data-sources/streamlits#limit DataSnowflakeStreamlits#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/data-sources/streamlits#limit DataSnowflakeStreamlits#limit}
 
 ---
 
@@ -888,7 +888,7 @@ Runs DESC STREAMLIT for each streamlit returned by SHOW STREAMLITS.
 
 The output of describe is saved to the description field. By default this value is set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/data-sources/streamlits#with_describe DataSnowflakeStreamlits#with_describe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/data-sources/streamlits#with_describe DataSnowflakeStreamlits#with_describe}
 
 ---
 
@@ -922,7 +922,7 @@ public readonly account: boolean | IResolvable;
 
 Returns records for the entire account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/data-sources/streamlits#account DataSnowflakeStreamlits#account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/data-sources/streamlits#account DataSnowflakeStreamlits#account}
 
 ---
 
@@ -936,7 +936,7 @@ public readonly database: string;
 
 Returns records for the current database in use or for a specified database (db_name).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/data-sources/streamlits#database DataSnowflakeStreamlits#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/data-sources/streamlits#database DataSnowflakeStreamlits#database}
 
 ---
 
@@ -950,7 +950,7 @@ public readonly schema: string;
 
 Returns records for the current schema in use or a specified schema (schema_name).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/data-sources/streamlits#schema DataSnowflakeStreamlits#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/data-sources/streamlits#schema DataSnowflakeStreamlits#schema}
 
 ---
 
@@ -983,7 +983,7 @@ public readonly rows: number;
 
 The maximum number of rows to return.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/data-sources/streamlits#rows DataSnowflakeStreamlits#rows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/data-sources/streamlits#rows DataSnowflakeStreamlits#rows}
 
 ---
 
@@ -999,7 +999,7 @@ Specifies a **case-sensitive** pattern that is used to match object name.
 
 After the first match, the limit on the number of rows will be applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/data-sources/streamlits#from DataSnowflakeStreamlits#from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/data-sources/streamlits#from DataSnowflakeStreamlits#from}
 
 ---
 

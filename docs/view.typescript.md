@@ -4,7 +4,7 @@
 
 ### View <a name="View" id="@cdktf/provider-snowflake.view.View"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/view snowflake_view}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/view snowflake_view}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.view.View.Initializer"></a>
 
@@ -616,7 +616,7 @@ The construct id used in the generated config for the View to import.
 
 The id of the existing View that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/view#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/view#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1225,7 +1225,7 @@ public readonly policyName: string;
 
 Aggregation policy name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/view#policy_name View#policy_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/view#policy_name View#policy_name}
 
 ---
 
@@ -1239,7 +1239,7 @@ public readonly entityKey: string[];
 
 Defines which columns uniquely identify an entity within the view.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/view#entity_key View#entity_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/view#entity_key View#entity_key}
 
 ---
 
@@ -1274,7 +1274,7 @@ public readonly columnName: string;
 
 Specifies affected column name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/view#column_name View#column_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/view#column_name View#column_name}
 
 ---
 
@@ -1288,7 +1288,7 @@ public readonly comment: string;
 
 Specifies a comment for the column.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/view#comment View#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/view#comment View#comment}
 
 ---
 
@@ -1302,7 +1302,7 @@ public readonly maskingPolicy: ViewColumnMaskingPolicy;
 
 masking_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/view#masking_policy View#masking_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/view#masking_policy View#masking_policy}
 
 ---
 
@@ -1316,7 +1316,7 @@ public readonly projectionPolicy: ViewColumnProjectionPolicy;
 
 projection_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/view#projection_policy View#projection_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/view#projection_policy View#projection_policy}
 
 ---
 
@@ -1349,7 +1349,7 @@ public readonly policyName: string;
 
 Specifies the masking policy to set on a column. For more information about this resource, see [docs](./masking_policy).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/view#policy_name View#policy_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/view#policy_name View#policy_name}
 
 ---
 
@@ -1365,7 +1365,7 @@ Specifies the arguments to pass into the conditional masking policy SQL expressi
 
 The first column in the list specifies the column for the policy conditions to mask or tokenize the data and must match the column to which the masking policy is set. The additional columns specify the columns to evaluate to determine whether to mask or tokenize the data in each row of the query result when a query is made on the first column. If the USING clause is omitted, Snowflake treats the conditional masking policy as a normal masking policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/view#using View#using}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/view#using View#using}
 
 ---
 
@@ -1397,7 +1397,7 @@ public readonly policyName: string;
 
 Specifies the projection policy to set on a column.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/view#policy_name View#policy_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/view#policy_name View#policy_name}
 
 ---
 
@@ -1433,7 +1433,7 @@ const viewConfig: view.ViewConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.copyGrants">copyGrants</a></code> | <code>boolean \| cdktf.IResolvable</code> | Retains the access permissions from the original view when a view is recreated using the OR REPLACE clause. |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.dataMetricFunction">dataMetricFunction</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.view.ViewDataMetricFunction">ViewDataMetricFunction</a>[]</code> | data_metric_function block. |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.dataMetricSchedule">dataMetricSchedule</a></code> | <code><a href="#@cdktf/provider-snowflake.view.ViewDataMetricSchedule">ViewDataMetricSchedule</a></code> | data_metric_schedule block. |
-| <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/view#id View#id}. |
+| <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/view#id View#id}. |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.isRecursive">isRecursive</a></code> | <code>string</code> | Specifies that the view can refer to itself using recursive syntax without necessarily using a CTE (common table expression). |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.isSecure">isSecure</a></code> | <code>string</code> | Specifies that the view is secure. |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.isTemporary">isTemporary</a></code> | <code>string</code> | Specifies that the view persists only for the duration of the session that you created it in. |
@@ -1523,7 +1523,7 @@ The database in which to create the view.
 
 Due to technical limitations (read more [here](https://github.com/Snowflake-Labs/terraform-provider-snowflake/blob/main/docs/technical-documentation/identifiers_rework_design_decisions.md#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/view#database View#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/view#database View#database}
 
 ---
 
@@ -1539,7 +1539,7 @@ Specifies the identifier for the view;
 
 must be unique for the schema in which the view is created. Due to technical limitations (read more [here](https://github.com/Snowflake-Labs/terraform-provider-snowflake/blob/main/docs/technical-documentation/identifiers_rework_design_decisions.md#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/view#name View#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/view#name View#name}
 
 ---
 
@@ -1555,7 +1555,7 @@ The schema in which to create the view.
 
 Due to technical limitations (read more [here](https://github.com/Snowflake-Labs/terraform-provider-snowflake/blob/main/docs/technical-documentation/identifiers_rework_design_decisions.md#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/view#schema View#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/view#schema View#schema}
 
 ---
 
@@ -1571,7 +1571,7 @@ Specifies the query used to create the view.
 
 To mitigate permadiff on this field, the provider replaces blank characters with a space. This can lead to false positives in cases where a change in case or run of whitespace is semantically significant.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/view#statement View#statement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/view#statement View#statement}
 
 ---
 
@@ -1585,7 +1585,7 @@ public readonly aggregationPolicy: ViewAggregationPolicy;
 
 aggregation_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/view#aggregation_policy View#aggregation_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/view#aggregation_policy View#aggregation_policy}
 
 ---
 
@@ -1601,7 +1601,7 @@ Specifies to enable or disable change tracking on the table.
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/view#change_tracking View#change_tracking}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/view#change_tracking View#change_tracking}
 
 ---
 
@@ -1615,7 +1615,7 @@ public readonly column: IResolvable | ViewColumn[];
 
 column block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/view#column View#column}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/view#column View#column}
 
 ---
 
@@ -1629,7 +1629,7 @@ public readonly comment: string;
 
 Specifies a comment for the view.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/view#comment View#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/view#comment View#comment}
 
 ---
 
@@ -1645,7 +1645,7 @@ Retains the access permissions from the original view when a view is recreated u
 
 This is used when the provider detects changes for fields that can not be changed by ALTER. This value will not have any effect during creating a new object with Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/view#copy_grants View#copy_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/view#copy_grants View#copy_grants}
 
 ---
 
@@ -1659,7 +1659,7 @@ public readonly dataMetricFunction: IResolvable | ViewDataMetricFunction[];
 
 data_metric_function block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/view#data_metric_function View#data_metric_function}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/view#data_metric_function View#data_metric_function}
 
 ---
 
@@ -1673,7 +1673,7 @@ public readonly dataMetricSchedule: ViewDataMetricSchedule;
 
 data_metric_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/view#data_metric_schedule View#data_metric_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/view#data_metric_schedule View#data_metric_schedule}
 
 ---
 
@@ -1685,7 +1685,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/view#id View#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/view#id View#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1704,7 +1704,7 @@ Specifies that the view can refer to itself using recursive syntax without neces
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/view#is_recursive View#is_recursive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/view#is_recursive View#is_recursive}
 
 ---
 
@@ -1720,7 +1720,7 @@ Specifies that the view is secure.
 
 By design, the Snowflake's `SHOW VIEWS` command does not provide information about secure views (consult [view usage notes](https://docs.snowflake.com/en/sql-reference/sql/create-view#usage-notes)) which is essential to manage/import view with Terraform. Use the role owning the view while managing secure views. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/view#is_secure View#is_secure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/view#is_secure View#is_secure}
 
 ---
 
@@ -1736,7 +1736,7 @@ Specifies that the view persists only for the duration of the session that you c
 
 A temporary view and all its contents are dropped at the end of the session. In context of this provider, it means that it's dropped after a Terraform operation. This results in a permanent plan with object creation. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/view#is_temporary View#is_temporary}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/view#is_temporary View#is_temporary}
 
 ---
 
@@ -1750,7 +1750,7 @@ public readonly rowAccessPolicy: ViewRowAccessPolicy;
 
 row_access_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/view#row_access_policy View#row_access_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/view#row_access_policy View#row_access_policy}
 
 ---
 
@@ -1786,7 +1786,7 @@ Identifier of the data metric function to add to the table or view or drop from 
 
 This function identifier must be provided without arguments in parenthesis.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/view#function_name View#function_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/view#function_name View#function_name}
 
 ---
 
@@ -1802,7 +1802,7 @@ The table or view columns on which to associate the data metric function.
 
 The data types of the columns must match the data types of the columns specified in the data metric function definition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/view#on View#on}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/view#on View#on}
 
 ---
 
@@ -1818,7 +1818,7 @@ The status of the metrics association.
 
 Valid values are: `STARTED` | `SUSPENDED`. When status of a data metric function is changed, it is being reassigned with `DROP DATA METRIC FUNCTION` and `ADD DATA METRIC FUNCTION`, and then its status is changed by `MODIFY DATA METRIC FUNCTION` 
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/view#schedule_status View#schedule_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/view#schedule_status View#schedule_status}
 
 ---
 
@@ -1853,7 +1853,7 @@ Specifies an interval (in minutes) of wait time inserted between runs of the dat
 
 Conflicts with `using_cron`. Valid values are: `5` | `15` | `30` | `60` | `720` | `1440`. Due to Snowflake limitations, changes in this field are not managed by the provider. Please consider using [taint](https://developer.hashicorp.com/terraform/cli/commands/taint) command, `using_cron` field, or [replace_triggered_by](https://developer.hashicorp.com/terraform/language/meta-arguments/lifecycle#replace_triggered_by) metadata argument.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/view#minutes View#minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/view#minutes View#minutes}
 
 ---
 
@@ -1869,7 +1869,7 @@ Specifies a cron expression and time zone for periodically running the data metr
 
 Supports a subset of standard cron utility syntax. Conflicts with `minutes`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/view#using_cron View#using_cron}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/view#using_cron View#using_cron}
 
 ---
 
@@ -1913,7 +1913,7 @@ public readonly on: string[];
 
 Defines which columns are affected by the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/view#on View#on}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/view#on View#on}
 
 ---
 
@@ -1927,7 +1927,7 @@ public readonly policyName: string;
 
 Row access policy name. For more information about this resource, see [docs](./row_access_policy).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/view#policy_name View#policy_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/view#policy_name View#policy_name}
 
 ---
 

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/external_volume
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/external_volume
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface ExternalVolumeConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies whether write operations are allowed for the external volume; must be set to TRUE for Iceberg tables that use Snowflake as the catalog. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/external_volume#allow_writes ExternalVolume#allow_writes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/external_volume#allow_writes ExternalVolume#allow_writes}
   */
   readonly allowWrites?: string;
   /**
   * Specifies a comment for the external volume.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/external_volume#comment ExternalVolume#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/external_volume#comment ExternalVolume#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/external_volume#id ExternalVolume#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/external_volume#id ExternalVolume#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,13 +29,13 @@ export interface ExternalVolumeConfig extends cdktf.TerraformMetaArguments {
   /**
   * Identifier for the external volume; must be unique for your account. Due to technical limitations (read more [here](https://github.com/Snowflake-Labs/terraform-provider-snowflake/blob/main/docs/technical-documentation/identifiers_rework_design_decisions.md#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/external_volume#name ExternalVolume#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/external_volume#name ExternalVolume#name}
   */
   readonly name: string;
   /**
   * storage_location block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/external_volume#storage_location ExternalVolume#storage_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/external_volume#storage_location ExternalVolume#storage_location}
   */
   readonly storageLocation: ExternalVolumeStorageLocation[] | cdktf.IResolvable;
 }
@@ -228,43 +223,43 @@ export interface ExternalVolumeStorageLocation {
   /**
   * Specifies the ID for your Office 365 tenant that the allowed and blocked storage accounts belong to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/external_volume#azure_tenant_id ExternalVolume#azure_tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/external_volume#azure_tenant_id ExternalVolume#azure_tenant_id}
   */
   readonly azureTenantId?: string;
   /**
   * Specifies the ID for the KMS-managed key used to encrypt files.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/external_volume#encryption_kms_key_id ExternalVolume#encryption_kms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/external_volume#encryption_kms_key_id ExternalVolume#encryption_kms_key_id}
   */
   readonly encryptionKmsKeyId?: string;
   /**
   * Specifies the encryption type used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/external_volume#encryption_type ExternalVolume#encryption_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/external_volume#encryption_type ExternalVolume#encryption_type}
   */
   readonly encryptionType?: string;
   /**
   * Specifies the case-sensitive Amazon Resource Name (ARN) of the AWS identity and access management (IAM) role that grants privileges on the S3 bucket containing your data files.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/external_volume#storage_aws_role_arn ExternalVolume#storage_aws_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/external_volume#storage_aws_role_arn ExternalVolume#storage_aws_role_arn}
   */
   readonly storageAwsRoleArn?: string;
   /**
   * Specifies the base URL for your cloud storage location.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/external_volume#storage_base_url ExternalVolume#storage_base_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/external_volume#storage_base_url ExternalVolume#storage_base_url}
   */
   readonly storageBaseUrl: string;
   /**
   * Name of the storage location. Must be unique for the external volume. Do not use the name `terraform_provider_sentinel_storage_location` - this is reserved for the provider for performing update operations. Due to technical limitations (read more [here](https://github.com/Snowflake-Labs/terraform-provider-snowflake/blob/main/docs/technical-documentation/identifiers_rework_design_decisions.md#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/external_volume#storage_location_name ExternalVolume#storage_location_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/external_volume#storage_location_name ExternalVolume#storage_location_name}
   */
   readonly storageLocationName: string;
   /**
   * Specifies the cloud storage provider that stores your data files. Valid values are (case-insensitive): `GCS` | `AZURE` | `S3` | `S3GOV`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/external_volume#storage_provider ExternalVolume#storage_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/external_volume#storage_provider ExternalVolume#storage_provider}
   */
   readonly storageProvider: string;
 }
@@ -550,7 +545,7 @@ export class ExternalVolumeStorageLocationList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/external_volume snowflake_external_volume}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/external_volume snowflake_external_volume}
 */
 export class ExternalVolume extends cdktf.TerraformResource {
 
@@ -566,7 +561,7 @@ export class ExternalVolume extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ExternalVolume resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ExternalVolume to import
-  * @param importFromId The id of the existing ExternalVolume that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/external_volume#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ExternalVolume that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/external_volume#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ExternalVolume to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -578,7 +573,7 @@ export class ExternalVolume extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/resources/external_volume snowflake_external_volume} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/external_volume snowflake_external_volume} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -589,7 +584,7 @@ export class ExternalVolume extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_external_volume',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '1.0.0',
+        providerVersion: '1.0.1',
         providerVersionConstraint: ' ~> 1.0'
       },
       provider: config.provider,

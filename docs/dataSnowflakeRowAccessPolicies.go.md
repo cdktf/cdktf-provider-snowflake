@@ -4,12 +4,12 @@
 
 ### DataSnowflakeRowAccessPolicies <a name="DataSnowflakeRowAccessPolicies" id="@cdktf/provider-snowflake.dataSnowflakeRowAccessPolicies.DataSnowflakeRowAccessPolicies"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/data-sources/row_access_policies snowflake_row_access_policies}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/data-sources/row_access_policies snowflake_row_access_policies}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeRowAccessPolicies.DataSnowflakeRowAccessPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakerowaccesspolicies"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakerowaccesspolicies"
 
 datasnowflakerowaccesspolicies.NewDataSnowflakeRowAccessPolicies(scope Construct, id *string, config DataSnowflakeRowAccessPoliciesConfig) DataSnowflakeRowAccessPolicies
 ```
@@ -337,7 +337,7 @@ func ResetWithDescribe()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeRowAccessPolicies.DataSnowflakeRowAccessPolicies.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakerowaccesspolicies"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakerowaccesspolicies"
 
 datasnowflakerowaccesspolicies.DataSnowflakeRowAccessPolicies_IsConstruct(x interface{}) *bool
 ```
@@ -369,7 +369,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeRowAccessPolicies.DataSnowflakeRowAccessPolicies.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakerowaccesspolicies"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakerowaccesspolicies"
 
 datasnowflakerowaccesspolicies.DataSnowflakeRowAccessPolicies_IsTerraformElement(x interface{}) *bool
 ```
@@ -383,7 +383,7 @@ datasnowflakerowaccesspolicies.DataSnowflakeRowAccessPolicies_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeRowAccessPolicies.DataSnowflakeRowAccessPolicies.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakerowaccesspolicies"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakerowaccesspolicies"
 
 datasnowflakerowaccesspolicies.DataSnowflakeRowAccessPolicies_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -397,7 +397,7 @@ datasnowflakerowaccesspolicies.DataSnowflakeRowAccessPolicies_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.dataSnowflakeRowAccessPolicies.DataSnowflakeRowAccessPolicies.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakerowaccesspolicies"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakerowaccesspolicies"
 
 datasnowflakerowaccesspolicies.DataSnowflakeRowAccessPolicies_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -426,7 +426,7 @@ The construct id used in the generated config for the DataSnowflakeRowAccessPoli
 
 The id of the existing DataSnowflakeRowAccessPolicies that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/data-sources/row_access_policies#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/data-sources/row_access_policies#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -725,7 +725,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeRowAccessPolicies.DataSnowflakeRowAccessPoliciesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakerowaccesspolicies"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakerowaccesspolicies"
 
 &datasnowflakerowaccesspolicies.DataSnowflakeRowAccessPoliciesConfig {
 	Connection: interface{},
@@ -736,9 +736,9 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Id: *string,
-	In: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12.dataSnowflakeRowAccessPolicies.DataSnowflakeRowAccessPoliciesIn,
+	In: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.dataSnowflakeRowAccessPolicies.DataSnowflakeRowAccessPoliciesIn,
 	Like: *string,
-	Limit: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12.dataSnowflakeRowAccessPolicies.DataSnowflakeRowAccessPoliciesLimit,
+	Limit: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.dataSnowflakeRowAccessPolicies.DataSnowflakeRowAccessPoliciesLimit,
 	WithDescribe: interface{},
 }
 ```
@@ -754,7 +754,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRowAccessPolicies.DataSnowflakeRowAccessPoliciesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRowAccessPolicies.DataSnowflakeRowAccessPoliciesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRowAccessPolicies.DataSnowflakeRowAccessPoliciesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRowAccessPolicies.DataSnowflakeRowAccessPoliciesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/data-sources/row_access_policies#id DataSnowflakeRowAccessPolicies#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRowAccessPolicies.DataSnowflakeRowAccessPoliciesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/data-sources/row_access_policies#id DataSnowflakeRowAccessPolicies#id}. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRowAccessPolicies.DataSnowflakeRowAccessPoliciesConfig.property.in">In</a></code> | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRowAccessPolicies.DataSnowflakeRowAccessPoliciesIn">DataSnowflakeRowAccessPoliciesIn</a></code> | in block. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRowAccessPolicies.DataSnowflakeRowAccessPoliciesConfig.property.like">Like</a></code> | <code>*string</code> | Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`). |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRowAccessPolicies.DataSnowflakeRowAccessPoliciesConfig.property.limit">Limit</a></code> | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeRowAccessPolicies.DataSnowflakeRowAccessPoliciesLimit">DataSnowflakeRowAccessPoliciesLimit</a></code> | limit block. |
@@ -840,7 +840,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/data-sources/row_access_policies#id DataSnowflakeRowAccessPolicies#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/data-sources/row_access_policies#id DataSnowflakeRowAccessPolicies#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -857,7 +857,7 @@ In DataSnowflakeRowAccessPoliciesIn
 
 in block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/data-sources/row_access_policies#in DataSnowflakeRowAccessPolicies#in}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/data-sources/row_access_policies#in DataSnowflakeRowAccessPolicies#in}
 
 ---
 
@@ -871,7 +871,7 @@ Like *string
 
 Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/data-sources/row_access_policies#like DataSnowflakeRowAccessPolicies#like}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/data-sources/row_access_policies#like DataSnowflakeRowAccessPolicies#like}
 
 ---
 
@@ -885,7 +885,7 @@ Limit DataSnowflakeRowAccessPoliciesLimit
 
 limit block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/data-sources/row_access_policies#limit DataSnowflakeRowAccessPolicies#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/data-sources/row_access_policies#limit DataSnowflakeRowAccessPolicies#limit}
 
 ---
 
@@ -901,7 +901,7 @@ Runs DESC ROW ACCESS POLICY for each row access policy returned by SHOW ROW ACCE
 
 The output of describe is saved to the description field. By default this value is set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/data-sources/row_access_policies#with_describe DataSnowflakeRowAccessPolicies#with_describe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/data-sources/row_access_policies#with_describe DataSnowflakeRowAccessPolicies#with_describe}
 
 ---
 
@@ -910,7 +910,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeRowAccessPolicies.DataSnowflakeRowAccessPoliciesIn.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakerowaccesspolicies"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakerowaccesspolicies"
 
 &datasnowflakerowaccesspolicies.DataSnowflakeRowAccessPoliciesIn {
 	Account: interface{},
@@ -943,7 +943,7 @@ Account interface{}
 
 Returns records for the entire account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/data-sources/row_access_policies#account DataSnowflakeRowAccessPolicies#account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/data-sources/row_access_policies#account DataSnowflakeRowAccessPolicies#account}
 
 ---
 
@@ -957,7 +957,7 @@ Application *string
 
 Returns records for the specified application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/data-sources/row_access_policies#application DataSnowflakeRowAccessPolicies#application}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/data-sources/row_access_policies#application DataSnowflakeRowAccessPolicies#application}
 
 ---
 
@@ -971,7 +971,7 @@ ApplicationPackage *string
 
 Returns records for the specified application package.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/data-sources/row_access_policies#application_package DataSnowflakeRowAccessPolicies#application_package}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/data-sources/row_access_policies#application_package DataSnowflakeRowAccessPolicies#application_package}
 
 ---
 
@@ -985,7 +985,7 @@ Database *string
 
 Returns records for the current database in use or for a specified database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/data-sources/row_access_policies#database DataSnowflakeRowAccessPolicies#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/data-sources/row_access_policies#database DataSnowflakeRowAccessPolicies#database}
 
 ---
 
@@ -999,7 +999,7 @@ Schema *string
 
 Returns records for the current schema in use or a specified schema. Use fully qualified name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/data-sources/row_access_policies#schema DataSnowflakeRowAccessPolicies#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/data-sources/row_access_policies#schema DataSnowflakeRowAccessPolicies#schema}
 
 ---
 
@@ -1008,7 +1008,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeRowAccessPolicies.DataSnowflakeRowAccessPoliciesLimit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakerowaccesspolicies"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakerowaccesspolicies"
 
 &datasnowflakerowaccesspolicies.DataSnowflakeRowAccessPoliciesLimit {
 	Rows: *f64,
@@ -1035,7 +1035,7 @@ Rows *f64
 
 The maximum number of rows to return.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/data-sources/row_access_policies#rows DataSnowflakeRowAccessPolicies#rows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/data-sources/row_access_policies#rows DataSnowflakeRowAccessPolicies#rows}
 
 ---
 
@@ -1051,7 +1051,7 @@ Specifies a **case-sensitive** pattern that is used to match object name.
 
 After the first match, the limit on the number of rows will be applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.0/docs/data-sources/row_access_policies#from DataSnowflakeRowAccessPolicies#from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/data-sources/row_access_policies#from DataSnowflakeRowAccessPolicies#from}
 
 ---
 
@@ -1060,7 +1060,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeRowAccessPolicies.DataSnowflakeRowAccessPoliciesRowAccessPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakerowaccesspolicies"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakerowaccesspolicies"
 
 &datasnowflakerowaccesspolicies.DataSnowflakeRowAccessPoliciesRowAccessPolicies {
 
@@ -1073,7 +1073,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeRowAccessPolicies.DataSnowflakeRowAccessPoliciesRowAccessPoliciesDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakerowaccesspolicies"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakerowaccesspolicies"
 
 &datasnowflakerowaccesspolicies.DataSnowflakeRowAccessPoliciesRowAccessPoliciesDescribeOutput {
 
@@ -1086,7 +1086,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeRowAccessPolicies.DataSnowflakeRowAccessPoliciesRowAccessPoliciesDescribeOutputSignature.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakerowaccesspolicies"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakerowaccesspolicies"
 
 &datasnowflakerowaccesspolicies.DataSnowflakeRowAccessPoliciesRowAccessPoliciesDescribeOutputSignature {
 
@@ -1099,7 +1099,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeRowAccessPolicies.DataSnowflakeRowAccessPoliciesRowAccessPoliciesShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakerowaccesspolicies"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakerowaccesspolicies"
 
 &datasnowflakerowaccesspolicies.DataSnowflakeRowAccessPoliciesRowAccessPoliciesShowOutput {
 
@@ -1114,7 +1114,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeRowAccessPolicies.DataSnowflakeRowAccessPoliciesInOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakerowaccesspolicies"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakerowaccesspolicies"
 
 datasnowflakerowaccesspolicies.NewDataSnowflakeRowAccessPoliciesInOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataSnowflakeRowAccessPoliciesInOutputReference
 ```
@@ -1508,7 +1508,7 @@ func InternalValue() DataSnowflakeRowAccessPoliciesIn
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeRowAccessPolicies.DataSnowflakeRowAccessPoliciesLimitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakerowaccesspolicies"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakerowaccesspolicies"
 
 datasnowflakerowaccesspolicies.NewDataSnowflakeRowAccessPoliciesLimitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataSnowflakeRowAccessPoliciesLimitOutputReference
 ```
@@ -1808,7 +1808,7 @@ func InternalValue() DataSnowflakeRowAccessPoliciesLimit
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeRowAccessPolicies.DataSnowflakeRowAccessPoliciesRowAccessPoliciesDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakerowaccesspolicies"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakerowaccesspolicies"
 
 datasnowflakerowaccesspolicies.NewDataSnowflakeRowAccessPoliciesRowAccessPoliciesDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeRowAccessPoliciesRowAccessPoliciesDescribeOutputList
 ```
@@ -1957,7 +1957,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeRowAccessPolicies.DataSnowflakeRowAccessPoliciesRowAccessPoliciesDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakerowaccesspolicies"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakerowaccesspolicies"
 
 datasnowflakerowaccesspolicies.NewDataSnowflakeRowAccessPoliciesRowAccessPoliciesDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeRowAccessPoliciesRowAccessPoliciesDescribeOutputOutputReference
 ```
@@ -2268,7 +2268,7 @@ func InternalValue() DataSnowflakeRowAccessPoliciesRowAccessPoliciesDescribeOutp
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeRowAccessPolicies.DataSnowflakeRowAccessPoliciesRowAccessPoliciesDescribeOutputSignatureList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakerowaccesspolicies"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakerowaccesspolicies"
 
 datasnowflakerowaccesspolicies.NewDataSnowflakeRowAccessPoliciesRowAccessPoliciesDescribeOutputSignatureList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeRowAccessPoliciesRowAccessPoliciesDescribeOutputSignatureList
 ```
@@ -2417,7 +2417,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeRowAccessPolicies.DataSnowflakeRowAccessPoliciesRowAccessPoliciesDescribeOutputSignatureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakerowaccesspolicies"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakerowaccesspolicies"
 
 datasnowflakerowaccesspolicies.NewDataSnowflakeRowAccessPoliciesRowAccessPoliciesDescribeOutputSignatureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeRowAccessPoliciesRowAccessPoliciesDescribeOutputSignatureOutputReference
 ```
@@ -2706,7 +2706,7 @@ func InternalValue() DataSnowflakeRowAccessPoliciesRowAccessPoliciesDescribeOutp
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeRowAccessPolicies.DataSnowflakeRowAccessPoliciesRowAccessPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakerowaccesspolicies"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakerowaccesspolicies"
 
 datasnowflakerowaccesspolicies.NewDataSnowflakeRowAccessPoliciesRowAccessPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeRowAccessPoliciesRowAccessPoliciesList
 ```
@@ -2855,7 +2855,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeRowAccessPolicies.DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakerowaccesspolicies"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakerowaccesspolicies"
 
 datasnowflakerowaccesspolicies.NewDataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeRowAccessPoliciesRowAccessPoliciesOutputReference
 ```
@@ -3144,7 +3144,7 @@ func InternalValue() DataSnowflakeRowAccessPoliciesRowAccessPolicies
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeRowAccessPolicies.DataSnowflakeRowAccessPoliciesRowAccessPoliciesShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakerowaccesspolicies"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakerowaccesspolicies"
 
 datasnowflakerowaccesspolicies.NewDataSnowflakeRowAccessPoliciesRowAccessPoliciesShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeRowAccessPoliciesRowAccessPoliciesShowOutputList
 ```
@@ -3293,7 +3293,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeRowAccessPolicies.DataSnowflakeRowAccessPoliciesRowAccessPoliciesShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakerowaccesspolicies"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakerowaccesspolicies"
 
 datasnowflakerowaccesspolicies.NewDataSnowflakeRowAccessPoliciesRowAccessPoliciesShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeRowAccessPoliciesRowAccessPoliciesShowOutputOutputReference
 ```
