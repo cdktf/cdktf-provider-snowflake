@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/data-sources/external_functions
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/external_functions
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface DataSnowflakeExternalFunctionsConfig extends cdktf.TerraformMet
   /**
   * The database from which to return the schemas from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/data-sources/external_functions#database DataSnowflakeExternalFunctions#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/external_functions#database DataSnowflakeExternalFunctions#database}
   */
   readonly database?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/data-sources/external_functions#id DataSnowflakeExternalFunctions#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/external_functions#id DataSnowflakeExternalFunctions#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,7 +28,7 @@ export interface DataSnowflakeExternalFunctionsConfig extends cdktf.TerraformMet
   /**
   * The schema from which to return the external functions from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/data-sources/external_functions#schema DataSnowflakeExternalFunctions#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/external_functions#schema DataSnowflakeExternalFunctions#schema}
   */
   readonly schema?: string;
 }
@@ -129,7 +129,7 @@ export class DataSnowflakeExternalFunctionsExternalFunctionsList extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/data-sources/external_functions snowflake_external_functions}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/external_functions snowflake_external_functions}
 */
 export class DataSnowflakeExternalFunctions extends cdktf.TerraformDataSource {
 
@@ -145,7 +145,7 @@ export class DataSnowflakeExternalFunctions extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataSnowflakeExternalFunctions resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataSnowflakeExternalFunctions to import
-  * @param importFromId The id of the existing DataSnowflakeExternalFunctions that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/data-sources/external_functions#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataSnowflakeExternalFunctions that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/external_functions#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataSnowflakeExternalFunctions to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -157,7 +157,7 @@ export class DataSnowflakeExternalFunctions extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/data-sources/external_functions snowflake_external_functions} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/external_functions snowflake_external_functions} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -168,7 +168,7 @@ export class DataSnowflakeExternalFunctions extends cdktf.TerraformDataSource {
       terraformResourceType: 'snowflake_external_functions',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '1.0.1',
+        providerVersion: '1.0.2',
         providerVersionConstraint: ' ~> 1.0'
       },
       provider: config.provider,
