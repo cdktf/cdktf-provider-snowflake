@@ -4,12 +4,12 @@
 
 ### Saml2Integration <a name="Saml2Integration" id="@cdktf/provider-snowflake.saml2Integration.Saml2Integration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/saml2_integration snowflake_saml2_integration}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/saml2_integration snowflake_saml2_integration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.saml2Integration.Saml2Integration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 saml2integration.NewSaml2Integration(scope Construct, id *string, config Saml2IntegrationConfig) Saml2Integration
 ```
@@ -469,7 +469,7 @@ func ResetSaml2SpInitiatedLoginPageLabel()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.saml2Integration.Saml2Integration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 saml2integration.Saml2Integration_IsConstruct(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.saml2Integration.Saml2Integration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 saml2integration.Saml2Integration_IsTerraformElement(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ saml2integration.Saml2Integration_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.saml2Integration.Saml2Integration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 saml2integration.Saml2Integration_IsTerraformResource(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ saml2integration.Saml2Integration_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.saml2Integration.Saml2Integration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 saml2integration.Saml2Integration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -558,7 +558,7 @@ The construct id used in the generated config for the Saml2Integration to import
 
 The id of the existing Saml2Integration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/saml2_integration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/saml2_integration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1187,7 +1187,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 &saml2integration.Saml2IntegrationConfig {
 	Connection: interface{},
@@ -1238,7 +1238,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integrat
 | <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationConfig.property.allowedUserDomains">AllowedUserDomains</a></code> | <code>*[]*string</code> | A list of email domains that can authenticate with a SAML2 security integration. |
 | <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationConfig.property.comment">Comment</a></code> | <code>*string</code> | Specifies a comment for the integration. |
 | <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationConfig.property.enabled">Enabled</a></code> | <code>*string</code> | Specifies whether this security integration is enabled or disabled. |
-| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/saml2_integration#id Saml2Integration#id}. |
+| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/saml2_integration#id Saml2Integration#id}. |
 | <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationConfig.property.saml2EnableSpInitiated">Saml2EnableSpInitiated</a></code> | <code>*string</code> | The Boolean indicating if the Log In With button will be shown on the login page. |
 | <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationConfig.property.saml2ForceAuthn">Saml2ForceAuthn</a></code> | <code>*string</code> | The Boolean indicating whether users, during the initial authentication flow, are forced to authenticate again to access Snowflake. |
 | <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationConfig.property.saml2PostLogoutRedirectUrl">Saml2PostLogoutRedirectUrl</a></code> | <code>*string</code> | The endpoint to which Snowflake redirects users after clicking the Log Out button in the classic Snowflake web interface. |
@@ -1332,7 +1332,7 @@ Specifies the name of the SAML2 integration.
 
 This name follows the rules for Object Identifiers. The name should be unique among security integrations in your account. Due to technical limitations (read more [here](https://github.com/Snowflake-Labs/terraform-provider-snowflake/blob/main/docs/technical-documentation/identifiers_rework_design_decisions.md#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/saml2_integration#name Saml2Integration#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/saml2_integration#name Saml2Integration#name}
 
 ---
 
@@ -1346,7 +1346,7 @@ Saml2Issuer *string
 
 The string containing the IdP EntityID / Issuer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/saml2_integration#saml2_issuer Saml2Integration#saml2_issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/saml2_integration#saml2_issuer Saml2Integration#saml2_issuer}
 
 ---
 
@@ -1360,7 +1360,7 @@ Saml2Provider *string
 
 The string describing the IdP. Valid options are: `OKTA` | `ADFS` | `CUSTOM`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/saml2_integration#saml2_provider Saml2Integration#saml2_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/saml2_integration#saml2_provider Saml2Integration#saml2_provider}
 
 ---
 
@@ -1374,7 +1374,7 @@ Saml2SsoUrl *string
 
 The string containing the IdP SSO URL, where the user should be redirected by Snowflake (the Service Provider) with a SAML AuthnRequest message.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/saml2_integration#saml2_sso_url Saml2Integration#saml2_sso_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/saml2_integration#saml2_sso_url Saml2Integration#saml2_sso_url}
 
 ---
 
@@ -1388,7 +1388,7 @@ Saml2X509Cert *string
 
 The Base64 encoded IdP signing certificate on a single line without the leading -----BEGIN CERTIFICATE----- and ending -----END CERTIFICATE----- markers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/saml2_integration#saml2_x509_cert Saml2Integration#saml2_x509_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/saml2_integration#saml2_x509_cert Saml2Integration#saml2_x509_cert}
 
 ---
 
@@ -1404,7 +1404,7 @@ A list of regular expressions that email addresses are matched against to authen
 
 If this field changes value from non-empty to empty, the whole resource is recreated because of Snowflake limitations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/saml2_integration#allowed_email_patterns Saml2Integration#allowed_email_patterns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/saml2_integration#allowed_email_patterns Saml2Integration#allowed_email_patterns}
 
 ---
 
@@ -1420,7 +1420,7 @@ A list of email domains that can authenticate with a SAML2 security integration.
 
 If this field changes value from non-empty to empty, the whole resource is recreated because of Snowflake limitations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/saml2_integration#allowed_user_domains Saml2Integration#allowed_user_domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/saml2_integration#allowed_user_domains Saml2Integration#allowed_user_domains}
 
 ---
 
@@ -1434,7 +1434,7 @@ Comment *string
 
 Specifies a comment for the integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/saml2_integration#comment Saml2Integration#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/saml2_integration#comment Saml2Integration#comment}
 
 ---
 
@@ -1450,7 +1450,7 @@ Specifies whether this security integration is enabled or disabled.
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/saml2_integration#enabled Saml2Integration#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/saml2_integration#enabled Saml2Integration#enabled}
 
 ---
 
@@ -1462,7 +1462,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/saml2_integration#id Saml2Integration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/saml2_integration#id Saml2Integration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1481,7 +1481,7 @@ The Boolean indicating if the Log In With button will be shown on the login page
 
 TRUE: displays the Log in With button on the login page. FALSE: does not display the Log in With button on the login page. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/saml2_integration#saml2_enable_sp_initiated Saml2Integration#saml2_enable_sp_initiated}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/saml2_integration#saml2_enable_sp_initiated Saml2Integration#saml2_enable_sp_initiated}
 
 ---
 
@@ -1497,7 +1497,7 @@ The Boolean indicating whether users, during the initial authentication flow, ar
 
 When set to TRUE, Snowflake sets the ForceAuthn SAML parameter to TRUE in the outgoing request from Snowflake to the identity provider. TRUE: forces users to authenticate again to access Snowflake, even if a valid session with the identity provider exists. FALSE: does not force users to authenticate again to access Snowflake. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/saml2_integration#saml2_force_authn Saml2Integration#saml2_force_authn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/saml2_integration#saml2_force_authn Saml2Integration#saml2_force_authn}
 
 ---
 
@@ -1513,7 +1513,7 @@ The endpoint to which Snowflake redirects users after clicking the Log Out butto
 
 Snowflake terminates the Snowflake session upon redirecting to the specified endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/saml2_integration#saml2_post_logout_redirect_url Saml2Integration#saml2_post_logout_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/saml2_integration#saml2_post_logout_redirect_url Saml2Integration#saml2_post_logout_redirect_url}
 
 ---
 
@@ -1527,7 +1527,7 @@ Saml2RequestedNameidFormat *string
 
 The SAML NameID format allows Snowflake to set an expectation of the identifying attribute of the user (i.e. SAML Subject) in the SAML assertion from the IdP to ensure a valid authentication to Snowflake. Valid options are: `urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified` | `urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress` | `urn:oasis:names:tc:SAML:1.1:nameid-format:X509SubjectName` | `urn:oasis:names:tc:SAML:1.1:nameid-format:WindowsDomainQualifiedName` | `urn:oasis:names:tc:SAML:2.0:nameid-format:kerberos` | `urn:oasis:names:tc:SAML:2.0:nameid-format:persistent` | `urn:oasis:names:tc:SAML:2.0:nameid-format:transient`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/saml2_integration#saml2_requested_nameid_format Saml2Integration#saml2_requested_nameid_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/saml2_integration#saml2_requested_nameid_format Saml2Integration#saml2_requested_nameid_format}
 
 ---
 
@@ -1543,7 +1543,7 @@ The Boolean indicating whether SAML requests are signed.
 
 TRUE: allows SAML requests to be signed. FALSE: does not allow SAML requests to be signed. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/saml2_integration#saml2_sign_request Saml2Integration#saml2_sign_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/saml2_integration#saml2_sign_request Saml2Integration#saml2_sign_request}
 
 ---
 
@@ -1559,7 +1559,7 @@ The string containing the Snowflake Assertion Consumer Service URL to which the 
 
 This property will be set in the SAML authentication request generated by Snowflake when initiating a SAML SSO operation with the IdP. If an incorrect value is specified, Snowflake returns an error message indicating the acceptable values to use. Because Okta does not support underscores in URLs, the underscore in the account name must be converted to a hyphen. See [docs](https://docs.snowflake.com/en/user-guide/organizations-connect#okta-urls).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/saml2_integration#saml2_snowflake_acs_url Saml2Integration#saml2_snowflake_acs_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/saml2_integration#saml2_snowflake_acs_url Saml2Integration#saml2_snowflake_acs_url}
 
 ---
 
@@ -1575,7 +1575,7 @@ The string containing the EntityID / Issuer for the Snowflake service provider.
 
 If an incorrect value is specified, Snowflake returns an error message indicating the acceptable values to use. Because Okta does not support underscores in URLs, the underscore in the account name must be converted to a hyphen. See [docs](https://docs.snowflake.com/en/user-guide/organizations-connect#okta-urls).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/saml2_integration#saml2_snowflake_issuer_url Saml2Integration#saml2_snowflake_issuer_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/saml2_integration#saml2_snowflake_issuer_url Saml2Integration#saml2_snowflake_issuer_url}
 
 ---
 
@@ -1591,7 +1591,7 @@ The string containing the label to display after the Log In With button on the l
 
 If this field changes value from non-empty to empty, the whole resource is recreated because of Snowflake limitations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.1/docs/resources/saml2_integration#saml2_sp_initiated_login_page_label Saml2Integration#saml2_sp_initiated_login_page_label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/saml2_integration#saml2_sp_initiated_login_page_label Saml2Integration#saml2_sp_initiated_login_page_label}
 
 ---
 
@@ -1600,7 +1600,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 &saml2integration.Saml2IntegrationDescribeOutput {
 
@@ -1613,7 +1613,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integrat
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputAllowedEmailPatterns.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 &saml2integration.Saml2IntegrationDescribeOutputAllowedEmailPatterns {
 
@@ -1626,7 +1626,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integrat
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputAllowedUserDomains.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 &saml2integration.Saml2IntegrationDescribeOutputAllowedUserDomains {
 
@@ -1639,7 +1639,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integrat
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputComment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 &saml2integration.Saml2IntegrationDescribeOutputComment {
 
@@ -1652,7 +1652,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integrat
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2DigestMethodsUsed.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 &saml2integration.Saml2IntegrationDescribeOutputSaml2DigestMethodsUsed {
 
@@ -1665,7 +1665,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integrat
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2EnableSpInitiated.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 &saml2integration.Saml2IntegrationDescribeOutputSaml2EnableSpInitiated {
 
@@ -1678,7 +1678,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integrat
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2ForceAuthn.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 &saml2integration.Saml2IntegrationDescribeOutputSaml2ForceAuthn {
 
@@ -1691,7 +1691,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integrat
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2Issuer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 &saml2integration.Saml2IntegrationDescribeOutputSaml2Issuer {
 
@@ -1704,7 +1704,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integrat
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2PostLogoutRedirectUrl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 &saml2integration.Saml2IntegrationDescribeOutputSaml2PostLogoutRedirectUrl {
 
@@ -1717,7 +1717,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integrat
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2Provider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 &saml2integration.Saml2IntegrationDescribeOutputSaml2Provider {
 
@@ -1730,7 +1730,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integrat
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2RequestedNameidFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 &saml2integration.Saml2IntegrationDescribeOutputSaml2RequestedNameidFormat {
 
@@ -1743,7 +1743,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integrat
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SignatureMethodsUsed.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 &saml2integration.Saml2IntegrationDescribeOutputSaml2SignatureMethodsUsed {
 
@@ -1756,7 +1756,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integrat
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SignRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 &saml2integration.Saml2IntegrationDescribeOutputSaml2SignRequest {
 
@@ -1769,7 +1769,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integrat
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SnowflakeAcsUrl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 &saml2integration.Saml2IntegrationDescribeOutputSaml2SnowflakeAcsUrl {
 
@@ -1782,7 +1782,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integrat
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SnowflakeIssuerUrl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 &saml2integration.Saml2IntegrationDescribeOutputSaml2SnowflakeIssuerUrl {
 
@@ -1795,7 +1795,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integrat
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SnowflakeMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 &saml2integration.Saml2IntegrationDescribeOutputSaml2SnowflakeMetadata {
 
@@ -1808,7 +1808,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integrat
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SnowflakeX509Cert.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 &saml2integration.Saml2IntegrationDescribeOutputSaml2SnowflakeX509Cert {
 
@@ -1821,7 +1821,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integrat
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SpInitiatedLoginPageLabel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 &saml2integration.Saml2IntegrationDescribeOutputSaml2SpInitiatedLoginPageLabel {
 
@@ -1834,7 +1834,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integrat
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SsoUrl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 &saml2integration.Saml2IntegrationDescribeOutputSaml2SsoUrl {
 
@@ -1847,7 +1847,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integrat
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2X509Cert.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 &saml2integration.Saml2IntegrationDescribeOutputSaml2X509Cert {
 
@@ -1860,7 +1860,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integrat
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 &saml2integration.Saml2IntegrationShowOutput {
 
@@ -1875,7 +1875,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integrat
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputAllowedEmailPatternsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 saml2integration.NewSaml2IntegrationDescribeOutputAllowedEmailPatternsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Saml2IntegrationDescribeOutputAllowedEmailPatternsList
 ```
@@ -2024,7 +2024,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputAllowedEmailPatternsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 saml2integration.NewSaml2IntegrationDescribeOutputAllowedEmailPatternsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Saml2IntegrationDescribeOutputAllowedEmailPatternsOutputReference
 ```
@@ -2335,7 +2335,7 @@ func InternalValue() Saml2IntegrationDescribeOutputAllowedEmailPatterns
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputAllowedUserDomainsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 saml2integration.NewSaml2IntegrationDescribeOutputAllowedUserDomainsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Saml2IntegrationDescribeOutputAllowedUserDomainsList
 ```
@@ -2484,7 +2484,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputAllowedUserDomainsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 saml2integration.NewSaml2IntegrationDescribeOutputAllowedUserDomainsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Saml2IntegrationDescribeOutputAllowedUserDomainsOutputReference
 ```
@@ -2795,7 +2795,7 @@ func InternalValue() Saml2IntegrationDescribeOutputAllowedUserDomains
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputCommentList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 saml2integration.NewSaml2IntegrationDescribeOutputCommentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Saml2IntegrationDescribeOutputCommentList
 ```
@@ -2944,7 +2944,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputCommentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 saml2integration.NewSaml2IntegrationDescribeOutputCommentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Saml2IntegrationDescribeOutputCommentOutputReference
 ```
@@ -3255,7 +3255,7 @@ func InternalValue() Saml2IntegrationDescribeOutputComment
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 saml2integration.NewSaml2IntegrationDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Saml2IntegrationDescribeOutputList
 ```
@@ -3404,7 +3404,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 saml2integration.NewSaml2IntegrationDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Saml2IntegrationDescribeOutputOutputReference
 ```
@@ -3880,7 +3880,7 @@ func InternalValue() Saml2IntegrationDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2DigestMethodsUsedList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 saml2integration.NewSaml2IntegrationDescribeOutputSaml2DigestMethodsUsedList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Saml2IntegrationDescribeOutputSaml2DigestMethodsUsedList
 ```
@@ -4029,7 +4029,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2DigestMethodsUsedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 saml2integration.NewSaml2IntegrationDescribeOutputSaml2DigestMethodsUsedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Saml2IntegrationDescribeOutputSaml2DigestMethodsUsedOutputReference
 ```
@@ -4340,7 +4340,7 @@ func InternalValue() Saml2IntegrationDescribeOutputSaml2DigestMethodsUsed
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2EnableSpInitiatedList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 saml2integration.NewSaml2IntegrationDescribeOutputSaml2EnableSpInitiatedList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Saml2IntegrationDescribeOutputSaml2EnableSpInitiatedList
 ```
@@ -4489,7 +4489,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2EnableSpInitiatedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 saml2integration.NewSaml2IntegrationDescribeOutputSaml2EnableSpInitiatedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Saml2IntegrationDescribeOutputSaml2EnableSpInitiatedOutputReference
 ```
@@ -4800,7 +4800,7 @@ func InternalValue() Saml2IntegrationDescribeOutputSaml2EnableSpInitiated
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2ForceAuthnList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 saml2integration.NewSaml2IntegrationDescribeOutputSaml2ForceAuthnList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Saml2IntegrationDescribeOutputSaml2ForceAuthnList
 ```
@@ -4949,7 +4949,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2ForceAuthnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 saml2integration.NewSaml2IntegrationDescribeOutputSaml2ForceAuthnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Saml2IntegrationDescribeOutputSaml2ForceAuthnOutputReference
 ```
@@ -5260,7 +5260,7 @@ func InternalValue() Saml2IntegrationDescribeOutputSaml2ForceAuthn
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2IssuerList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 saml2integration.NewSaml2IntegrationDescribeOutputSaml2IssuerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Saml2IntegrationDescribeOutputSaml2IssuerList
 ```
@@ -5409,7 +5409,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2IssuerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 saml2integration.NewSaml2IntegrationDescribeOutputSaml2IssuerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Saml2IntegrationDescribeOutputSaml2IssuerOutputReference
 ```
@@ -5720,7 +5720,7 @@ func InternalValue() Saml2IntegrationDescribeOutputSaml2Issuer
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2PostLogoutRedirectUrlList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 saml2integration.NewSaml2IntegrationDescribeOutputSaml2PostLogoutRedirectUrlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Saml2IntegrationDescribeOutputSaml2PostLogoutRedirectUrlList
 ```
@@ -5869,7 +5869,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2PostLogoutRedirectUrlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 saml2integration.NewSaml2IntegrationDescribeOutputSaml2PostLogoutRedirectUrlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Saml2IntegrationDescribeOutputSaml2PostLogoutRedirectUrlOutputReference
 ```
@@ -6180,7 +6180,7 @@ func InternalValue() Saml2IntegrationDescribeOutputSaml2PostLogoutRedirectUrl
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2ProviderList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 saml2integration.NewSaml2IntegrationDescribeOutputSaml2ProviderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Saml2IntegrationDescribeOutputSaml2ProviderList
 ```
@@ -6329,7 +6329,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2ProviderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 saml2integration.NewSaml2IntegrationDescribeOutputSaml2ProviderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Saml2IntegrationDescribeOutputSaml2ProviderOutputReference
 ```
@@ -6640,7 +6640,7 @@ func InternalValue() Saml2IntegrationDescribeOutputSaml2Provider
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2RequestedNameidFormatList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 saml2integration.NewSaml2IntegrationDescribeOutputSaml2RequestedNameidFormatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Saml2IntegrationDescribeOutputSaml2RequestedNameidFormatList
 ```
@@ -6789,7 +6789,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2RequestedNameidFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 saml2integration.NewSaml2IntegrationDescribeOutputSaml2RequestedNameidFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Saml2IntegrationDescribeOutputSaml2RequestedNameidFormatOutputReference
 ```
@@ -7100,7 +7100,7 @@ func InternalValue() Saml2IntegrationDescribeOutputSaml2RequestedNameidFormat
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SignatureMethodsUsedList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 saml2integration.NewSaml2IntegrationDescribeOutputSaml2SignatureMethodsUsedList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Saml2IntegrationDescribeOutputSaml2SignatureMethodsUsedList
 ```
@@ -7249,7 +7249,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SignatureMethodsUsedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 saml2integration.NewSaml2IntegrationDescribeOutputSaml2SignatureMethodsUsedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Saml2IntegrationDescribeOutputSaml2SignatureMethodsUsedOutputReference
 ```
@@ -7560,7 +7560,7 @@ func InternalValue() Saml2IntegrationDescribeOutputSaml2SignatureMethodsUsed
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SignRequestList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 saml2integration.NewSaml2IntegrationDescribeOutputSaml2SignRequestList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Saml2IntegrationDescribeOutputSaml2SignRequestList
 ```
@@ -7709,7 +7709,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SignRequestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 saml2integration.NewSaml2IntegrationDescribeOutputSaml2SignRequestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Saml2IntegrationDescribeOutputSaml2SignRequestOutputReference
 ```
@@ -8020,7 +8020,7 @@ func InternalValue() Saml2IntegrationDescribeOutputSaml2SignRequest
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SnowflakeAcsUrlList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 saml2integration.NewSaml2IntegrationDescribeOutputSaml2SnowflakeAcsUrlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Saml2IntegrationDescribeOutputSaml2SnowflakeAcsUrlList
 ```
@@ -8169,7 +8169,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SnowflakeAcsUrlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 saml2integration.NewSaml2IntegrationDescribeOutputSaml2SnowflakeAcsUrlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Saml2IntegrationDescribeOutputSaml2SnowflakeAcsUrlOutputReference
 ```
@@ -8480,7 +8480,7 @@ func InternalValue() Saml2IntegrationDescribeOutputSaml2SnowflakeAcsUrl
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SnowflakeIssuerUrlList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 saml2integration.NewSaml2IntegrationDescribeOutputSaml2SnowflakeIssuerUrlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Saml2IntegrationDescribeOutputSaml2SnowflakeIssuerUrlList
 ```
@@ -8629,7 +8629,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SnowflakeIssuerUrlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 saml2integration.NewSaml2IntegrationDescribeOutputSaml2SnowflakeIssuerUrlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Saml2IntegrationDescribeOutputSaml2SnowflakeIssuerUrlOutputReference
 ```
@@ -8940,7 +8940,7 @@ func InternalValue() Saml2IntegrationDescribeOutputSaml2SnowflakeIssuerUrl
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SnowflakeMetadataList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 saml2integration.NewSaml2IntegrationDescribeOutputSaml2SnowflakeMetadataList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Saml2IntegrationDescribeOutputSaml2SnowflakeMetadataList
 ```
@@ -9089,7 +9089,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SnowflakeMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 saml2integration.NewSaml2IntegrationDescribeOutputSaml2SnowflakeMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Saml2IntegrationDescribeOutputSaml2SnowflakeMetadataOutputReference
 ```
@@ -9400,7 +9400,7 @@ func InternalValue() Saml2IntegrationDescribeOutputSaml2SnowflakeMetadata
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SnowflakeX509CertList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 saml2integration.NewSaml2IntegrationDescribeOutputSaml2SnowflakeX509CertList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Saml2IntegrationDescribeOutputSaml2SnowflakeX509CertList
 ```
@@ -9549,7 +9549,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SnowflakeX509CertOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 saml2integration.NewSaml2IntegrationDescribeOutputSaml2SnowflakeX509CertOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Saml2IntegrationDescribeOutputSaml2SnowflakeX509CertOutputReference
 ```
@@ -9860,7 +9860,7 @@ func InternalValue() Saml2IntegrationDescribeOutputSaml2SnowflakeX509Cert
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SpInitiatedLoginPageLabelList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 saml2integration.NewSaml2IntegrationDescribeOutputSaml2SpInitiatedLoginPageLabelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Saml2IntegrationDescribeOutputSaml2SpInitiatedLoginPageLabelList
 ```
@@ -10009,7 +10009,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SpInitiatedLoginPageLabelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 saml2integration.NewSaml2IntegrationDescribeOutputSaml2SpInitiatedLoginPageLabelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Saml2IntegrationDescribeOutputSaml2SpInitiatedLoginPageLabelOutputReference
 ```
@@ -10320,7 +10320,7 @@ func InternalValue() Saml2IntegrationDescribeOutputSaml2SpInitiatedLoginPageLabe
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SsoUrlList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 saml2integration.NewSaml2IntegrationDescribeOutputSaml2SsoUrlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Saml2IntegrationDescribeOutputSaml2SsoUrlList
 ```
@@ -10469,7 +10469,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2SsoUrlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 saml2integration.NewSaml2IntegrationDescribeOutputSaml2SsoUrlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Saml2IntegrationDescribeOutputSaml2SsoUrlOutputReference
 ```
@@ -10780,7 +10780,7 @@ func InternalValue() Saml2IntegrationDescribeOutputSaml2SsoUrl
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2X509CertList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 saml2integration.NewSaml2IntegrationDescribeOutputSaml2X509CertList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Saml2IntegrationDescribeOutputSaml2X509CertList
 ```
@@ -10929,7 +10929,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputSaml2X509CertOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 saml2integration.NewSaml2IntegrationDescribeOutputSaml2X509CertOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Saml2IntegrationDescribeOutputSaml2X509CertOutputReference
 ```
@@ -11240,7 +11240,7 @@ func InternalValue() Saml2IntegrationDescribeOutputSaml2X509Cert
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 saml2integration.NewSaml2IntegrationShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Saml2IntegrationShowOutputList
 ```
@@ -11389,7 +11389,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/saml2integration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/saml2integration"
 
 saml2integration.NewSaml2IntegrationShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Saml2IntegrationShowOutputOutputReference
 ```
