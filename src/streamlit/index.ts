@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/streamlit
 // generated from terraform resource schema
 
