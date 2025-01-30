@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/secretwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/secretwithclientcredentials"
 
 secretwithclientcredentials.NewSecretWithClientCredentials(scope Construct, id *string, config SecretWithClientCredentialsConfig) SecretWithClientCredentials
 ```
@@ -392,7 +392,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentials.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/secretwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/secretwithclientcredentials"
 
 secretwithclientcredentials.SecretWithClientCredentials_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentials.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/secretwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/secretwithclientcredentials"
 
 secretwithclientcredentials.SecretWithClientCredentials_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ secretwithclientcredentials.SecretWithClientCredentials_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentials.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/secretwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/secretwithclientcredentials"
 
 secretwithclientcredentials.SecretWithClientCredentials_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ secretwithclientcredentials.SecretWithClientCredentials_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentials.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/secretwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/secretwithclientcredentials"
 
 secretwithclientcredentials.SecretWithClientCredentials_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -879,7 +879,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentialsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/secretwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/secretwithclientcredentials"
 
 &secretwithclientcredentials.SecretWithClientCredentialsConfig {
 	Connection: interface{},
@@ -1098,7 +1098,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentialsDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/secretwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/secretwithclientcredentials"
 
 &secretwithclientcredentials.SecretWithClientCredentialsDescribeOutput {
 
@@ -1111,7 +1111,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/secretwithcli
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentialsShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/secretwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/secretwithclientcredentials"
 
 &secretwithclientcredentials.SecretWithClientCredentialsShowOutput {
 
@@ -1126,7 +1126,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/secretwithcli
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentialsDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/secretwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/secretwithclientcredentials"
 
 secretwithclientcredentials.NewSecretWithClientCredentialsDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecretWithClientCredentialsDescribeOutputList
 ```
@@ -1275,7 +1275,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentialsDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/secretwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/secretwithclientcredentials"
 
 secretwithclientcredentials.NewSecretWithClientCredentialsDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecretWithClientCredentialsDescribeOutputOutputReference
 ```
@@ -1674,7 +1674,7 @@ func InternalValue() SecretWithClientCredentialsDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentialsShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/secretwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/secretwithclientcredentials"
 
 secretwithclientcredentials.NewSecretWithClientCredentialsShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecretWithClientCredentialsShowOutputList
 ```
@@ -1823,7 +1823,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.secretWithClientCredentials.SecretWithClientCredentialsShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/secretwithclientcredentials"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/secretwithclientcredentials"
 
 secretwithclientcredentials.NewSecretWithClientCredentialsShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecretWithClientCredentialsShowOutputOutputReference
 ```
