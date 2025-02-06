@@ -4,7 +4,7 @@
 
 ### StreamOnDirectoryTable <a name="StreamOnDirectoryTable" id="@cdktf/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/stream_on_directory_table snowflake_stream_on_directory_table}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/resources/stream_on_directory_table snowflake_stream_on_directory_table}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTable.Initializer"></a>
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the StreamOnDirectoryTable to 
 
 The id of the existing StreamOnDirectoryTable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/stream_on_directory_table#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/resources/stream_on_directory_table#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -934,7 +934,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/streamondirec
 | <code><a href="#@cdktf/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTableConfig.property.stage">Stage</a></code> | <code>*string</code> | Specifies an identifier for the stage the stream will monitor. |
 | <code><a href="#@cdktf/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTableConfig.property.comment">Comment</a></code> | <code>*string</code> | Specifies a comment for the stream. |
 | <code><a href="#@cdktf/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTableConfig.property.copyGrants">CopyGrants</a></code> | <code>interface{}</code> | Retains the access permissions from the original stream when a stream is recreated using the OR REPLACE clause. |
-| <code><a href="#@cdktf/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTableConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/stream_on_directory_table#id StreamOnDirectoryTable#id}. |
+| <code><a href="#@cdktf/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTableConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/resources/stream_on_directory_table#id StreamOnDirectoryTable#id}. |
 
 ---
 
@@ -1018,9 +1018,9 @@ Database *string
 
 The database in which to create the stream.
 
-Due to technical limitations (read more [here](https://github.com/Snowflake-Labs/terraform-provider-snowflake/blob/main/docs/technical-documentation/identifiers_rework_design_decisions.md#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
+Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/stream_on_directory_table#database StreamOnDirectoryTable#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/resources/stream_on_directory_table#database StreamOnDirectoryTable#database}
 
 ---
 
@@ -1034,9 +1034,9 @@ Name *string
 
 Specifies the identifier for the stream;
 
-must be unique for the database and schema in which the stream is created. Due to technical limitations (read more [here](https://github.com/Snowflake-Labs/terraform-provider-snowflake/blob/main/docs/technical-documentation/identifiers_rework_design_decisions.md#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
+must be unique for the database and schema in which the stream is created. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/stream_on_directory_table#name StreamOnDirectoryTable#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/resources/stream_on_directory_table#name StreamOnDirectoryTable#name}
 
 ---
 
@@ -1050,9 +1050,9 @@ Schema *string
 
 The schema in which to create the stream.
 
-Due to technical limitations (read more [here](https://github.com/Snowflake-Labs/terraform-provider-snowflake/blob/main/docs/technical-documentation/identifiers_rework_design_decisions.md#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
+Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/stream_on_directory_table#schema StreamOnDirectoryTable#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/resources/stream_on_directory_table#schema StreamOnDirectoryTable#schema}
 
 ---
 
@@ -1066,9 +1066,9 @@ Stage *string
 
 Specifies an identifier for the stage the stream will monitor.
 
-Due to Snowflake limitations, the provider can not read the stage's database and schema. For stages, Snowflake returns only partially qualified name instead of fully qualified name. Please use stages located in the same schema as the stream. Due to technical limitations (read more [here](https://github.com/Snowflake-Labs/terraform-provider-snowflake/blob/main/docs/technical-documentation/identifiers_rework_design_decisions.md#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`. For more information about this resource, see [docs](./stage).
+Due to Snowflake limitations, the provider can not read the stage's database and schema. For stages, Snowflake returns only partially qualified name instead of fully qualified name. Please use stages located in the same schema as the stream. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`. For more information about this resource, see [docs](./stage).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/stream_on_directory_table#stage StreamOnDirectoryTable#stage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/resources/stream_on_directory_table#stage StreamOnDirectoryTable#stage}
 
 ---
 
@@ -1082,7 +1082,7 @@ Comment *string
 
 Specifies a comment for the stream.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/stream_on_directory_table#comment StreamOnDirectoryTable#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/resources/stream_on_directory_table#comment StreamOnDirectoryTable#comment}
 
 ---
 
@@ -1098,7 +1098,7 @@ Retains the access permissions from the original stream when a stream is recreat
 
 This is used when the provider detects changes for fields that can not be changed by ALTER. This value will not have any effect during creating a new object with Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/stream_on_directory_table#copy_grants StreamOnDirectoryTable#copy_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/resources/stream_on_directory_table#copy_grants StreamOnDirectoryTable#copy_grants}
 
 ---
 
@@ -1110,7 +1110,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/stream_on_directory_table#id StreamOnDirectoryTable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/resources/stream_on_directory_table#id StreamOnDirectoryTable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

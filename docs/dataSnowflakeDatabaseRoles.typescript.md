@@ -4,7 +4,7 @@
 
 ### DataSnowflakeDatabaseRoles <a name="DataSnowflakeDatabaseRoles" id="@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRoles"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/database_roles snowflake_database_roles}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/database_roles snowflake_database_roles}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRoles.Initializer"></a>
 
@@ -399,7 +399,7 @@ The construct id used in the generated config for the DataSnowflakeDatabaseRoles
 
 The id of the existing DataSnowflakeDatabaseRoles that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/database_roles#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/database_roles#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -693,7 +693,7 @@ const dataSnowflakeDatabaseRolesConfig: dataSnowflakeDatabaseRoles.DataSnowflake
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRolesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRolesConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRolesConfig.property.inDatabase">inDatabase</a></code> | <code>string</code> | The database from which to return the database roles from. |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRolesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/database_roles#id DataSnowflakeDatabaseRoles#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRolesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/database_roles#id DataSnowflakeDatabaseRoles#id}. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRolesConfig.property.like">like</a></code> | <code>string</code> | Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`). |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRolesConfig.property.limit">limit</a></code> | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRolesLimit">DataSnowflakeDatabaseRolesLimit</a></code> | limit block. |
 
@@ -779,7 +779,7 @@ public readonly inDatabase: string;
 
 The database from which to return the database roles from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/database_roles#in_database DataSnowflakeDatabaseRoles#in_database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/database_roles#in_database DataSnowflakeDatabaseRoles#in_database}
 
 ---
 
@@ -791,7 +791,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/database_roles#id DataSnowflakeDatabaseRoles#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/database_roles#id DataSnowflakeDatabaseRoles#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -808,7 +808,7 @@ public readonly like: string;
 
 Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/database_roles#like DataSnowflakeDatabaseRoles#like}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/database_roles#like DataSnowflakeDatabaseRoles#like}
 
 ---
 
@@ -822,7 +822,7 @@ public readonly limit: DataSnowflakeDatabaseRolesLimit;
 
 limit block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/database_roles#limit DataSnowflakeDatabaseRoles#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/database_roles#limit DataSnowflakeDatabaseRoles#limit}
 
 ---
 
@@ -877,7 +877,7 @@ public readonly rows: number;
 
 The maximum number of rows to return.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/database_roles#rows DataSnowflakeDatabaseRoles#rows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/database_roles#rows DataSnowflakeDatabaseRoles#rows}
 
 ---
 
@@ -893,7 +893,7 @@ Specifies a **case-sensitive** pattern that is used to match object name.
 
 After the first match, the limit on the number of rows will be applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/database_roles#from DataSnowflakeDatabaseRoles#from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/database_roles#from DataSnowflakeDatabaseRoles#from}
 
 ---
 
