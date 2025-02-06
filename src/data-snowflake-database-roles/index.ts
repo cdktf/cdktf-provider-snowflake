@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/database_roles
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/database_roles
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataSnowflakeDatabaseRolesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/database_roles#id DataSnowflakeDatabaseRoles#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/database_roles#id DataSnowflakeDatabaseRoles#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,19 +17,19 @@ export interface DataSnowflakeDatabaseRolesConfig extends cdktf.TerraformMetaArg
   /**
   * The database from which to return the database roles from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/database_roles#in_database DataSnowflakeDatabaseRoles#in_database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/database_roles#in_database DataSnowflakeDatabaseRoles#in_database}
   */
   readonly inDatabase: string;
   /**
   * Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/database_roles#like DataSnowflakeDatabaseRoles#like}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/database_roles#like DataSnowflakeDatabaseRoles#like}
   */
   readonly like?: string;
   /**
   * limit block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/database_roles#limit DataSnowflakeDatabaseRoles#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/database_roles#limit DataSnowflakeDatabaseRoles#limit}
   */
   readonly limit?: DataSnowflakeDatabaseRolesLimit;
 }
@@ -248,13 +243,13 @@ export interface DataSnowflakeDatabaseRolesLimit {
   /**
   * Specifies a **case-sensitive** pattern that is used to match object name. After the first match, the limit on the number of rows will be applied.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/database_roles#from DataSnowflakeDatabaseRoles#from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/database_roles#from DataSnowflakeDatabaseRoles#from}
   */
   readonly from?: string;
   /**
   * The maximum number of rows to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/database_roles#rows DataSnowflakeDatabaseRoles#rows}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/database_roles#rows DataSnowflakeDatabaseRoles#rows}
   */
   readonly rows: number;
 }
@@ -364,7 +359,7 @@ export class DataSnowflakeDatabaseRolesLimitOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/database_roles snowflake_database_roles}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/database_roles snowflake_database_roles}
 */
 export class DataSnowflakeDatabaseRoles extends cdktf.TerraformDataSource {
 
@@ -380,7 +375,7 @@ export class DataSnowflakeDatabaseRoles extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataSnowflakeDatabaseRoles resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataSnowflakeDatabaseRoles to import
-  * @param importFromId The id of the existing DataSnowflakeDatabaseRoles that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/database_roles#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataSnowflakeDatabaseRoles that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/database_roles#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataSnowflakeDatabaseRoles to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -392,7 +387,7 @@ export class DataSnowflakeDatabaseRoles extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/database_roles snowflake_database_roles} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/database_roles snowflake_database_roles} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -403,7 +398,7 @@ export class DataSnowflakeDatabaseRoles extends cdktf.TerraformDataSource {
       terraformResourceType: 'snowflake_database_roles',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '1.0.2',
+        providerVersion: '1.0.3',
         providerVersionConstraint: ' ~> 1.0'
       },
       provider: config.provider,

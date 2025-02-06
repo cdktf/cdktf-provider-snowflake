@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/sequences
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/sequences
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface DataSnowflakeSequencesConfig extends cdktf.TerraformMetaArgumen
   /**
   * The database from which to return the schemas from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/sequences#database DataSnowflakeSequences#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/sequences#database DataSnowflakeSequences#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/sequences#id DataSnowflakeSequences#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/sequences#id DataSnowflakeSequences#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,7 +23,7 @@ export interface DataSnowflakeSequencesConfig extends cdktf.TerraformMetaArgumen
   /**
   * The schema from which to return the sequences from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/sequences#schema DataSnowflakeSequences#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/sequences#schema DataSnowflakeSequences#schema}
   */
   readonly schema: string;
 }
@@ -124,7 +119,7 @@ export class DataSnowflakeSequencesSequencesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/sequences snowflake_sequences}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/sequences snowflake_sequences}
 */
 export class DataSnowflakeSequences extends cdktf.TerraformDataSource {
 
@@ -140,7 +135,7 @@ export class DataSnowflakeSequences extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataSnowflakeSequences resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataSnowflakeSequences to import
-  * @param importFromId The id of the existing DataSnowflakeSequences that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/sequences#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataSnowflakeSequences that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/sequences#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataSnowflakeSequences to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -152,7 +147,7 @@ export class DataSnowflakeSequences extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/sequences snowflake_sequences} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/sequences snowflake_sequences} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -163,7 +158,7 @@ export class DataSnowflakeSequences extends cdktf.TerraformDataSource {
       terraformResourceType: 'snowflake_sequences',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '1.0.2',
+        providerVersion: '1.0.3',
         providerVersionConstraint: ' ~> 1.0'
       },
       provider: config.provider,

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/grants
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/grants
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataSnowflakeGrantsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/grants#id DataSnowflakeGrants#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/grants#id DataSnowflakeGrants#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,31 +17,31 @@ export interface DataSnowflakeGrantsConfig extends cdktf.TerraformMetaArguments 
   /**
   * future_grants_in block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/grants#future_grants_in DataSnowflakeGrants#future_grants_in}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/grants#future_grants_in DataSnowflakeGrants#future_grants_in}
   */
   readonly futureGrantsIn?: DataSnowflakeGrantsFutureGrantsIn;
   /**
   * future_grants_to block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/grants#future_grants_to DataSnowflakeGrants#future_grants_to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/grants#future_grants_to DataSnowflakeGrants#future_grants_to}
   */
   readonly futureGrantsTo?: DataSnowflakeGrantsFutureGrantsTo;
   /**
   * grants_of block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/grants#grants_of DataSnowflakeGrants#grants_of}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/grants#grants_of DataSnowflakeGrants#grants_of}
   */
   readonly grantsOf?: DataSnowflakeGrantsGrantsOf;
   /**
   * grants_on block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/grants#grants_on DataSnowflakeGrants#grants_on}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/grants#grants_on DataSnowflakeGrants#grants_on}
   */
   readonly grantsOn?: DataSnowflakeGrantsGrantsOn;
   /**
   * grants_to block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/grants#grants_to DataSnowflakeGrants#grants_to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/grants#grants_to DataSnowflakeGrants#grants_to}
   */
   readonly grantsTo?: DataSnowflakeGrantsGrantsTo;
 }
@@ -164,13 +159,13 @@ export interface DataSnowflakeGrantsFutureGrantsIn {
   /**
   * Lists all privileges on new (i.e. future) objects of a specified type in the database granted to a role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/grants#database DataSnowflakeGrants#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/grants#database DataSnowflakeGrants#database}
   */
   readonly database?: string;
   /**
   * Lists all privileges on new (i.e. future) objects of a specified type in the schema granted to a role. Schema must be a fully qualified name ("&lt;db_name&gt;"."&lt;schema_name&gt;").
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/grants#schema DataSnowflakeGrants#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/grants#schema DataSnowflakeGrants#schema}
   */
   readonly schema?: string;
 }
@@ -285,13 +280,13 @@ export interface DataSnowflakeGrantsFutureGrantsTo {
   /**
   * Lists all privileges on new (i.e. future) objects of a specified type in a database or schema granted to the account role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/grants#account_role DataSnowflakeGrants#account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/grants#account_role DataSnowflakeGrants#account_role}
   */
   readonly accountRole?: string;
   /**
   * Lists all privileges on new (i.e. future) objects granted to the database role. Must be a fully qualified name ("&lt;db_name&gt;"."&lt;database_role_name&gt;").
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/grants#database_role DataSnowflakeGrants#database_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/grants#database_role DataSnowflakeGrants#database_role}
   */
   readonly databaseRole?: string;
 }
@@ -406,25 +401,25 @@ export interface DataSnowflakeGrantsGrantsOf {
   /**
   * Lists all users and roles to which the account role has been granted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/grants#account_role DataSnowflakeGrants#account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/grants#account_role DataSnowflakeGrants#account_role}
   */
   readonly accountRole?: string;
   /**
   * Lists all the users and roles to which the application role has been granted. Must be a fully qualified name ("&lt;db_name&gt;"."&lt;database_role_name&gt;").
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/grants#application_role DataSnowflakeGrants#application_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/grants#application_role DataSnowflakeGrants#application_role}
   */
   readonly applicationRole?: string;
   /**
   * Lists all users and roles to which the database role has been granted. Must be a fully qualified name ("&lt;db_name&gt;"."&lt;database_role_name&gt;").
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/grants#database_role DataSnowflakeGrants#database_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/grants#database_role DataSnowflakeGrants#database_role}
   */
   readonly databaseRole?: string;
   /**
   * Lists all the accounts for the share and indicates the accounts that are using the share.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/grants#share DataSnowflakeGrants#share}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/grants#share DataSnowflakeGrants#share}
   */
   readonly share?: string;
 }
@@ -597,19 +592,19 @@ export interface DataSnowflakeGrantsGrantsOn {
   /**
   * Object hierarchy to list privileges on. The only valid value is: ACCOUNT. Setting this attribute lists all the account-level (i.e. global) privileges that have been granted to roles.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/grants#account DataSnowflakeGrants#account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/grants#account DataSnowflakeGrants#account}
   */
   readonly account?: boolean | cdktf.IResolvable;
   /**
   * Name of object to list privileges on.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/grants#object_name DataSnowflakeGrants#object_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/grants#object_name DataSnowflakeGrants#object_name}
   */
   readonly objectName?: string;
   /**
   * Type of object to list privileges on.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/grants#object_type DataSnowflakeGrants#object_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/grants#object_type DataSnowflakeGrants#object_type}
   */
   readonly objectType?: string;
 }
@@ -753,7 +748,7 @@ export interface DataSnowflakeGrantsGrantsToShare {
   /**
   * Lists all of the privileges and roles granted to the specified share.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/grants#share_name DataSnowflakeGrants#share_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/grants#share_name DataSnowflakeGrants#share_name}
   */
   readonly shareName: string;
 }
@@ -836,37 +831,37 @@ export interface DataSnowflakeGrantsGrantsTo {
   /**
   * Lists all privileges and roles granted to the role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/grants#account_role DataSnowflakeGrants#account_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/grants#account_role DataSnowflakeGrants#account_role}
   */
   readonly accountRole?: string;
   /**
   * Lists all the privileges and roles granted to the application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/grants#application DataSnowflakeGrants#application}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/grants#application DataSnowflakeGrants#application}
   */
   readonly application?: string;
   /**
   * Lists all the privileges and roles granted to the application role. Must be a fully qualified name ("&lt;app_name&gt;"."&lt;app_role_name&gt;").
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/grants#application_role DataSnowflakeGrants#application_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/grants#application_role DataSnowflakeGrants#application_role}
   */
   readonly applicationRole?: string;
   /**
   * Lists all privileges and roles granted to the database role. Must be a fully qualified name ("&lt;db_name&gt;"."&lt;database_role_name&gt;").
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/grants#database_role DataSnowflakeGrants#database_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/grants#database_role DataSnowflakeGrants#database_role}
   */
   readonly databaseRole?: string;
   /**
   * Lists all the roles granted to the user. Note that the PUBLIC role, which is automatically available to every user, is not listed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/grants#user DataSnowflakeGrants#user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/grants#user DataSnowflakeGrants#user}
   */
   readonly user?: string;
   /**
   * share block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/grants#share DataSnowflakeGrants#share}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/grants#share DataSnowflakeGrants#share}
   */
   readonly share?: DataSnowflakeGrantsGrantsToShare;
 }
@@ -1095,7 +1090,7 @@ export class DataSnowflakeGrantsGrantsToOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/grants snowflake_grants}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/grants snowflake_grants}
 */
 export class DataSnowflakeGrants extends cdktf.TerraformDataSource {
 
@@ -1111,7 +1106,7 @@ export class DataSnowflakeGrants extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataSnowflakeGrants resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataSnowflakeGrants to import
-  * @param importFromId The id of the existing DataSnowflakeGrants that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/grants#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataSnowflakeGrants that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/grants#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataSnowflakeGrants to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1123,7 +1118,7 @@ export class DataSnowflakeGrants extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/data-sources/grants snowflake_grants} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/data-sources/grants snowflake_grants} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1134,7 +1129,7 @@ export class DataSnowflakeGrants extends cdktf.TerraformDataSource {
       terraformResourceType: 'snowflake_grants',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '1.0.2',
+        providerVersion: '1.0.3',
         providerVersionConstraint: ' ~> 1.0'
       },
       provider: config.provider,

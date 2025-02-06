@@ -4,12 +4,12 @@
 
 ### TableConstraint <a name="TableConstraint" id="@cdktf/provider-snowflake.tableConstraint.TableConstraint"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/table_constraint snowflake_table_constraint}.
+Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/resources/table_constraint snowflake_table_constraint}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.tableConstraint.TableConstraint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/tableconstraint"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tableconstraint"
 
 tableconstraint.NewTableConstraint(scope Construct, id *string, config TableConstraintConfig) TableConstraint
 ```
@@ -454,7 +454,7 @@ func ResetValidate()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.tableConstraint.TableConstraint.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/tableconstraint"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tableconstraint"
 
 tableconstraint.TableConstraint_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.tableConstraint.TableConstraint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/tableconstraint"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tableconstraint"
 
 tableconstraint.TableConstraint_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ tableconstraint.TableConstraint_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.tableConstraint.TableConstraint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/tableconstraint"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tableconstraint"
 
 tableconstraint.TableConstraint_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ tableconstraint.TableConstraint_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.tableConstraint.TableConstraint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/tableconstraint"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tableconstraint"
 
 tableconstraint.TableConstraint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -543,7 +543,7 @@ The construct id used in the generated config for the TableConstraint to import.
 
 The id of the existing TableConstraint that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/table_constraint#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/resources/table_constraint#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1029,7 +1029,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/tableconstraint"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tableconstraint"
 
 &tableconstraint.TableConstraintConfig {
 	Connection: interface{},
@@ -1047,7 +1047,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/tableconstrai
 	Deferrable: interface{},
 	Enable: interface{},
 	Enforced: interface{},
-	ForeignKeyProperties: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12.tableConstraint.TableConstraintForeignKeyProperties,
+	ForeignKeyProperties: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.tableConstraint.TableConstraintForeignKeyProperties,
 	Id: *string,
 	Initially: *string,
 	Rely: interface{},
@@ -1075,7 +1075,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/tableconstrai
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.enable">Enable</a></code> | <code>interface{}</code> | Specifies whether the constraint is enabled or disabled. These properties are provided for compatibility with Oracle. |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.enforced">Enforced</a></code> | <code>interface{}</code> | Whether the constraint is enforced. |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.foreignKeyProperties">ForeignKeyProperties</a></code> | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintForeignKeyProperties">TableConstraintForeignKeyProperties</a></code> | foreign_key_properties block. |
-| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/table_constraint#id TableConstraint#id}. |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/resources/table_constraint#id TableConstraint#id}. |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.initially">Initially</a></code> | <code>*string</code> | Whether the constraint is initially deferred or immediate. |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.rely">Rely</a></code> | <code>interface{}</code> | Specifies whether a constraint in NOVALIDATE mode is taken into account during query rewrite. |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.validate">Validate</a></code> | <code>interface{}</code> | Specifies whether to validate existing data on the table when a constraint is created. |
@@ -1162,7 +1162,7 @@ Columns *[]*string
 
 Columns to use in constraint key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/table_constraint#columns TableConstraint#columns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/resources/table_constraint#columns TableConstraint#columns}
 
 ---
 
@@ -1176,7 +1176,7 @@ Name *string
 
 Name of constraint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/table_constraint#name TableConstraint#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/resources/table_constraint#name TableConstraint#name}
 
 ---
 
@@ -1190,7 +1190,7 @@ TableId *string
 
 Identifier for table to create constraint on. Format must follow: "\"&lt;db_name&gt;\".\"&lt;schema_name&gt;\".\"&lt;table_name&gt;\"" or "&lt;db_name&gt;.&lt;schema_name&gt;.&lt;table_name&gt;" (snowflake_table.my_table.id).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/table_constraint#table_id TableConstraint#table_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/resources/table_constraint#table_id TableConstraint#table_id}
 
 ---
 
@@ -1204,7 +1204,7 @@ Type *string
 
 Type of constraint, one of 'UNIQUE', 'PRIMARY KEY', or 'FOREIGN KEY'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/table_constraint#type TableConstraint#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/resources/table_constraint#type TableConstraint#type}
 
 ---
 
@@ -1218,7 +1218,7 @@ Comment *string
 
 Comment for the table constraint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/table_constraint#comment TableConstraint#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/resources/table_constraint#comment TableConstraint#comment}
 
 ---
 
@@ -1232,7 +1232,7 @@ Deferrable interface{}
 
 Whether the constraint is deferrable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/table_constraint#deferrable TableConstraint#deferrable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/resources/table_constraint#deferrable TableConstraint#deferrable}
 
 ---
 
@@ -1246,7 +1246,7 @@ Enable interface{}
 
 Specifies whether the constraint is enabled or disabled. These properties are provided for compatibility with Oracle.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/table_constraint#enable TableConstraint#enable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/resources/table_constraint#enable TableConstraint#enable}
 
 ---
 
@@ -1260,7 +1260,7 @@ Enforced interface{}
 
 Whether the constraint is enforced.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/table_constraint#enforced TableConstraint#enforced}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/resources/table_constraint#enforced TableConstraint#enforced}
 
 ---
 
@@ -1274,7 +1274,7 @@ ForeignKeyProperties TableConstraintForeignKeyProperties
 
 foreign_key_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/table_constraint#foreign_key_properties TableConstraint#foreign_key_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/resources/table_constraint#foreign_key_properties TableConstraint#foreign_key_properties}
 
 ---
 
@@ -1286,7 +1286,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/table_constraint#id TableConstraint#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/resources/table_constraint#id TableConstraint#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1303,7 +1303,7 @@ Initially *string
 
 Whether the constraint is initially deferred or immediate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/table_constraint#initially TableConstraint#initially}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/resources/table_constraint#initially TableConstraint#initially}
 
 ---
 
@@ -1317,7 +1317,7 @@ Rely interface{}
 
 Specifies whether a constraint in NOVALIDATE mode is taken into account during query rewrite.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/table_constraint#rely TableConstraint#rely}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/resources/table_constraint#rely TableConstraint#rely}
 
 ---
 
@@ -1333,7 +1333,7 @@ Specifies whether to validate existing data on the table when a constraint is cr
 
 Only used in conjunction with the ENABLE property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/table_constraint#validate TableConstraint#validate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/resources/table_constraint#validate TableConstraint#validate}
 
 ---
 
@@ -1342,10 +1342,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintForeignKeyProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/tableconstraint"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tableconstraint"
 
 &tableconstraint.TableConstraintForeignKeyProperties {
-	References: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12.tableConstraint.TableConstraintForeignKeyPropertiesReferences,
+	References: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.tableConstraint.TableConstraintForeignKeyPropertiesReferences,
 	Match: *string,
 	OnDelete: *string,
 	OnUpdate: *string,
@@ -1373,7 +1373,7 @@ References TableConstraintForeignKeyPropertiesReferences
 
 references block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/table_constraint#references TableConstraint#references}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/resources/table_constraint#references TableConstraint#references}
 
 ---
 
@@ -1387,7 +1387,7 @@ Match *string
 
 The match type for the foreign key. Not applicable for primary/unique keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/table_constraint#match TableConstraint#match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/resources/table_constraint#match TableConstraint#match}
 
 ---
 
@@ -1401,7 +1401,7 @@ OnDelete *string
 
 Specifies the action performed when the primary/unique key for the foreign key is deleted. Not applicable for primary/unique keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/table_constraint#on_delete TableConstraint#on_delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/resources/table_constraint#on_delete TableConstraint#on_delete}
 
 ---
 
@@ -1415,7 +1415,7 @@ OnUpdate *string
 
 Specifies the action performed when the primary/unique key for the foreign key is updated. Not applicable for primary/unique keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/table_constraint#on_update TableConstraint#on_update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/resources/table_constraint#on_update TableConstraint#on_update}
 
 ---
 
@@ -1424,7 +1424,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintForeignKeyPropertiesReferences.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/tableconstraint"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tableconstraint"
 
 &tableconstraint.TableConstraintForeignKeyPropertiesReferences {
 	Columns: *[]*string,
@@ -1451,7 +1451,7 @@ Columns *[]*string
 
 Columns to use in foreign key reference.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/table_constraint#columns TableConstraint#columns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/resources/table_constraint#columns TableConstraint#columns}
 
 ---
 
@@ -1465,7 +1465,7 @@ TableId *string
 
 Name of constraint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.2/docs/resources/table_constraint#table_id TableConstraint#table_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/resources/table_constraint#table_id TableConstraint#table_id}
 
 ---
 
@@ -1476,7 +1476,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintForeignKeyPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/tableconstraint"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tableconstraint"
 
 tableconstraint.NewTableConstraintForeignKeyPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TableConstraintForeignKeyPropertiesOutputReference
 ```
@@ -1847,7 +1847,7 @@ func InternalValue() TableConstraintForeignKeyProperties
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintForeignKeyPropertiesReferencesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/tableconstraint"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tableconstraint"
 
 tableconstraint.NewTableConstraintForeignKeyPropertiesReferencesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TableConstraintForeignKeyPropertiesReferencesOutputReference
 ```
