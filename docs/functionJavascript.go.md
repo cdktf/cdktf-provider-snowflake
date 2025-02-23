@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.functionJavascript.FunctionJavascript.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functionjavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/functionjavascript"
 
 functionjavascript.NewFunctionJavascript(scope Construct, id *string, config FunctionJavascriptConfig) FunctionJavascript
 ```
@@ -461,7 +461,7 @@ func ResetTraceLevel()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.functionJavascript.FunctionJavascript.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functionjavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/functionjavascript"
 
 functionjavascript.FunctionJavascript_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.functionJavascript.FunctionJavascript.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functionjavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/functionjavascript"
 
 functionjavascript.FunctionJavascript_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ functionjavascript.FunctionJavascript_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.functionJavascript.FunctionJavascript.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functionjavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/functionjavascript"
 
 functionjavascript.FunctionJavascript_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ functionjavascript.FunctionJavascript_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.functionJavascript.FunctionJavascript.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functionjavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/functionjavascript"
 
 functionjavascript.FunctionJavascript_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1124,7 +1124,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.functionJavascript.FunctionJavascriptArguments.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functionjavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/functionjavascript"
 
 &functionjavascript.FunctionJavascriptArguments {
 	ArgDataType: *string,
@@ -1194,7 +1194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.functionJavascript.FunctionJavascriptConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functionjavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/functionjavascript"
 
 &functionjavascript.FunctionJavascriptConfig {
 	Connection: interface{},
@@ -1553,7 +1553,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.functionJavascript.FunctionJavascriptParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functionjavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/functionjavascript"
 
 &functionjavascript.FunctionJavascriptParameters {
 
@@ -1566,7 +1566,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functionjavascrip
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.functionJavascript.FunctionJavascriptParametersEnableConsoleOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functionjavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/functionjavascript"
 
 &functionjavascript.FunctionJavascriptParametersEnableConsoleOutput {
 
@@ -1579,7 +1579,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functionjavascrip
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogLevel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functionjavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/functionjavascript"
 
 &functionjavascript.FunctionJavascriptParametersLogLevel {
 
@@ -1592,7 +1592,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functionjavascrip
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.functionJavascript.FunctionJavascriptParametersMetricLevel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functionjavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/functionjavascript"
 
 &functionjavascript.FunctionJavascriptParametersMetricLevel {
 
@@ -1605,7 +1605,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functionjavascrip
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.functionJavascript.FunctionJavascriptParametersTraceLevel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functionjavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/functionjavascript"
 
 &functionjavascript.FunctionJavascriptParametersTraceLevel {
 
@@ -1618,7 +1618,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functionjavascrip
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.functionJavascript.FunctionJavascriptShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functionjavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/functionjavascript"
 
 &functionjavascript.FunctionJavascriptShowOutput {
 
@@ -1633,7 +1633,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functionjavascrip
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.functionJavascript.FunctionJavascriptArgumentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functionjavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/functionjavascript"
 
 functionjavascript.NewFunctionJavascriptArgumentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FunctionJavascriptArgumentsList
 ```
@@ -1793,7 +1793,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.functionJavascript.FunctionJavascriptArgumentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functionjavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/functionjavascript"
 
 functionjavascript.NewFunctionJavascriptArgumentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FunctionJavascriptArgumentsOutputReference
 ```
@@ -2133,7 +2133,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.functionJavascript.FunctionJavascriptParametersEnableConsoleOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functionjavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/functionjavascript"
 
 functionjavascript.NewFunctionJavascriptParametersEnableConsoleOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FunctionJavascriptParametersEnableConsoleOutputList
 ```
@@ -2282,7 +2282,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.functionJavascript.FunctionJavascriptParametersEnableConsoleOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functionjavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/functionjavascript"
 
 functionjavascript.NewFunctionJavascriptParametersEnableConsoleOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FunctionJavascriptParametersEnableConsoleOutputOutputReference
 ```
@@ -2604,7 +2604,7 @@ func InternalValue() FunctionJavascriptParametersEnableConsoleOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.functionJavascript.FunctionJavascriptParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functionjavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/functionjavascript"
 
 functionjavascript.NewFunctionJavascriptParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FunctionJavascriptParametersList
 ```
@@ -2753,7 +2753,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogLevelList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functionjavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/functionjavascript"
 
 functionjavascript.NewFunctionJavascriptParametersLogLevelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FunctionJavascriptParametersLogLevelList
 ```
@@ -2902,7 +2902,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.functionJavascript.FunctionJavascriptParametersLogLevelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functionjavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/functionjavascript"
 
 functionjavascript.NewFunctionJavascriptParametersLogLevelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FunctionJavascriptParametersLogLevelOutputReference
 ```
@@ -3224,7 +3224,7 @@ func InternalValue() FunctionJavascriptParametersLogLevel
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.functionJavascript.FunctionJavascriptParametersMetricLevelList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functionjavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/functionjavascript"
 
 functionjavascript.NewFunctionJavascriptParametersMetricLevelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FunctionJavascriptParametersMetricLevelList
 ```
@@ -3373,7 +3373,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.functionJavascript.FunctionJavascriptParametersMetricLevelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functionjavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/functionjavascript"
 
 functionjavascript.NewFunctionJavascriptParametersMetricLevelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FunctionJavascriptParametersMetricLevelOutputReference
 ```
@@ -3695,7 +3695,7 @@ func InternalValue() FunctionJavascriptParametersMetricLevel
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.functionJavascript.FunctionJavascriptParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functionjavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/functionjavascript"
 
 functionjavascript.NewFunctionJavascriptParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FunctionJavascriptParametersOutputReference
 ```
@@ -4006,7 +4006,7 @@ func InternalValue() FunctionJavascriptParameters
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.functionJavascript.FunctionJavascriptParametersTraceLevelList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functionjavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/functionjavascript"
 
 functionjavascript.NewFunctionJavascriptParametersTraceLevelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FunctionJavascriptParametersTraceLevelList
 ```
@@ -4155,7 +4155,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.functionJavascript.FunctionJavascriptParametersTraceLevelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functionjavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/functionjavascript"
 
 functionjavascript.NewFunctionJavascriptParametersTraceLevelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FunctionJavascriptParametersTraceLevelOutputReference
 ```
@@ -4477,7 +4477,7 @@ func InternalValue() FunctionJavascriptParametersTraceLevel
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.functionJavascript.FunctionJavascriptShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functionjavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/functionjavascript"
 
 functionjavascript.NewFunctionJavascriptShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FunctionJavascriptShowOutputList
 ```
@@ -4626,7 +4626,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.functionJavascript.FunctionJavascriptShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/functionjavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/functionjavascript"
 
 functionjavascript.NewFunctionJavascriptShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FunctionJavascriptShowOutputOutputReference
 ```
