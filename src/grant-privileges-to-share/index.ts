@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/resources/grant_privileges_to_share
+// https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.4/docs/resources/grant_privileges_to_share
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface GrantPrivilegesToShareConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/resources/grant_privileges_to_share#id GrantPrivilegesToShare#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.4/docs/resources/grant_privileges_to_share#id GrantPrivilegesToShare#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,61 +17,61 @@ export interface GrantPrivilegesToShareConfig extends cdktf.TerraformMetaArgumen
   /**
   * The fully qualified identifier for the schema for which the specified privilege will be granted for all tables.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/resources/grant_privileges_to_share#on_all_tables_in_schema GrantPrivilegesToShare#on_all_tables_in_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.4/docs/resources/grant_privileges_to_share#on_all_tables_in_schema GrantPrivilegesToShare#on_all_tables_in_schema}
   */
   readonly onAllTablesInSchema?: string;
   /**
   * The fully qualified name of the database on which privileges will be granted. For more information about this resource, see [docs](./database).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/resources/grant_privileges_to_share#on_database GrantPrivilegesToShare#on_database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.4/docs/resources/grant_privileges_to_share#on_database GrantPrivilegesToShare#on_database}
   */
   readonly onDatabase?: string;
   /**
   * The fully qualified name of the function on which privileges will be granted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/resources/grant_privileges_to_share#on_function GrantPrivilegesToShare#on_function}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.4/docs/resources/grant_privileges_to_share#on_function GrantPrivilegesToShare#on_function}
   */
   readonly onFunction?: string;
   /**
   * The fully qualified name of the schema on which privileges will be granted. For more information about this resource, see [docs](./schema).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/resources/grant_privileges_to_share#on_schema GrantPrivilegesToShare#on_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.4/docs/resources/grant_privileges_to_share#on_schema GrantPrivilegesToShare#on_schema}
   */
   readonly onSchema?: string;
   /**
   * The fully qualified name of the table on which privileges will be granted. For more information about this resource, see [docs](./table).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/resources/grant_privileges_to_share#on_table GrantPrivilegesToShare#on_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.4/docs/resources/grant_privileges_to_share#on_table GrantPrivilegesToShare#on_table}
   */
   readonly onTable?: string;
   /**
   * The fully qualified name of the tag on which privileges will be granted. For more information about this resource, see [docs](./tag).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/resources/grant_privileges_to_share#on_tag GrantPrivilegesToShare#on_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.4/docs/resources/grant_privileges_to_share#on_tag GrantPrivilegesToShare#on_tag}
   */
   readonly onTag?: string;
   /**
   * The fully qualified name of the view on which privileges will be granted. For more information about this resource, see [docs](./view).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/resources/grant_privileges_to_share#on_view GrantPrivilegesToShare#on_view}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.4/docs/resources/grant_privileges_to_share#on_view GrantPrivilegesToShare#on_view}
   */
   readonly onView?: string;
   /**
   * The privileges to grant on the share. See available list of privileges: https://docs.snowflake.com/en/sql-reference/sql/grant-privilege-share#syntax
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/resources/grant_privileges_to_share#privileges GrantPrivilegesToShare#privileges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.4/docs/resources/grant_privileges_to_share#privileges GrantPrivilegesToShare#privileges}
   */
   readonly privileges: string[];
   /**
   * The fully qualified name of the share on which privileges will be granted. For more information about this resource, see [docs](./share).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/resources/grant_privileges_to_share#to_share GrantPrivilegesToShare#to_share}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.4/docs/resources/grant_privileges_to_share#to_share GrantPrivilegesToShare#to_share}
   */
   readonly toShare: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/resources/grant_privileges_to_share snowflake_grant_privileges_to_share}
+* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.4/docs/resources/grant_privileges_to_share snowflake_grant_privileges_to_share}
 */
 export class GrantPrivilegesToShare extends cdktf.TerraformResource {
 
@@ -92,7 +87,7 @@ export class GrantPrivilegesToShare extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GrantPrivilegesToShare resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GrantPrivilegesToShare to import
-  * @param importFromId The id of the existing GrantPrivilegesToShare that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/resources/grant_privileges_to_share#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GrantPrivilegesToShare that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.4/docs/resources/grant_privileges_to_share#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GrantPrivilegesToShare to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -104,7 +99,7 @@ export class GrantPrivilegesToShare extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.3/docs/resources/grant_privileges_to_share snowflake_grant_privileges_to_share} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.4/docs/resources/grant_privileges_to_share snowflake_grant_privileges_to_share} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -115,7 +110,7 @@ export class GrantPrivilegesToShare extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_grant_privileges_to_share',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '1.0.3',
+        providerVersion: '1.0.4',
         providerVersionConstraint: ' ~> 1.0'
       },
       provider: config.provider,
