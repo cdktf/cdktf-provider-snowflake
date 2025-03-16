@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeAccounts.DataSnowflakeAccounts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakeaccounts"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeaccounts"
 
 datasnowflakeaccounts.NewDataSnowflakeAccounts(scope Construct, id *string, config DataSnowflakeAccountsConfig) DataSnowflakeAccounts
 ```
@@ -297,7 +297,7 @@ func ResetWithHistory()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeAccounts.DataSnowflakeAccounts.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakeaccounts"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeaccounts"
 
 datasnowflakeaccounts.DataSnowflakeAccounts_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeAccounts.DataSnowflakeAccounts.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakeaccounts"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeaccounts"
 
 datasnowflakeaccounts.DataSnowflakeAccounts_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datasnowflakeaccounts.DataSnowflakeAccounts_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeAccounts.DataSnowflakeAccounts.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakeaccounts"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeaccounts"
 
 datasnowflakeaccounts.DataSnowflakeAccounts_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datasnowflakeaccounts.DataSnowflakeAccounts_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.dataSnowflakeAccounts.DataSnowflakeAccounts.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakeaccounts"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeaccounts"
 
 datasnowflakeaccounts.DataSnowflakeAccounts_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -641,7 +641,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeAccounts.DataSnowflakeAccountsAccounts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakeaccounts"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeaccounts"
 
 &datasnowflakeaccounts.DataSnowflakeAccountsAccounts {
 
@@ -654,7 +654,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeAccounts.DataSnowflakeAccountsAccountsShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakeaccounts"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeaccounts"
 
 &datasnowflakeaccounts.DataSnowflakeAccountsAccountsShowOutput {
 
@@ -667,7 +667,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeAccounts.DataSnowflakeAccountsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakeaccounts"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeaccounts"
 
 &datasnowflakeaccounts.DataSnowflakeAccountsConfig {
 	Connection: interface{},
@@ -820,7 +820,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeAccounts.DataSnowflakeAccountsAccountsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakeaccounts"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeaccounts"
 
 datasnowflakeaccounts.NewDataSnowflakeAccountsAccountsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeAccountsAccountsList
 ```
@@ -969,7 +969,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeAccounts.DataSnowflakeAccountsAccountsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakeaccounts"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeaccounts"
 
 datasnowflakeaccounts.NewDataSnowflakeAccountsAccountsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeAccountsAccountsOutputReference
 ```
@@ -1247,7 +1247,7 @@ func InternalValue() DataSnowflakeAccountsAccounts
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeAccounts.DataSnowflakeAccountsAccountsShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakeaccounts"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeaccounts"
 
 datasnowflakeaccounts.NewDataSnowflakeAccountsAccountsShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeAccountsAccountsShowOutputList
 ```
@@ -1396,7 +1396,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeAccounts.DataSnowflakeAccountsAccountsShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakeaccounts"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeaccounts"
 
 datasnowflakeaccounts.NewDataSnowflakeAccountsAccountsShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeAccountsAccountsShowOutputOutputReference
 ```
