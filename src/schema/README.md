@@ -1,3 +1,3 @@
 # `snowflake_schema`
 
-Refer to the Terraform Registry for docs: [`snowflake_schema`](https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.4/docs/resources/schema).
+Refer to the Terraform Registry for docs: [`snowflake_schema`](https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/schema).
