@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.table.Table.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/table"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/table"
 
 table.NewTable(scope Construct, id *string, config TableConfig) Table
 ```
@@ -466,7 +466,7 @@ func ResetTag()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.table.Table.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/table"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/table"
 
 table.Table_IsConstruct(x interface{}) *bool
 ```
@@ -498,7 +498,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.table.Table.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/table"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/table"
 
 table.Table_IsTerraformElement(x interface{}) *bool
 ```
@@ -512,7 +512,7 @@ table.Table_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.table.Table.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/table"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/table"
 
 table.Table_IsTerraformResource(x interface{}) *bool
 ```
@@ -526,7 +526,7 @@ table.Table_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.table.Table.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/table"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/table"
 
 table.Table_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1019,15 +1019,15 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.table.TableColumn.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/table"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/table"
 
 &table.TableColumn {
 	Name: *string,
 	Type: *string,
 	Collate: *string,
 	Comment: *string,
-	Default: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12.table.TableColumnDefault,
-	Identity: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12.table.TableColumnIdentity,
+	Default: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13.table.TableColumnDefault,
+	Identity: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13.table.TableColumnIdentity,
 	MaskingPolicy: *string,
 	Nullable: interface{},
 }
@@ -1167,7 +1167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.table.TableColumnDefault.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/table"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/table"
 
 &table.TableColumnDefault {
 	Constant: *string,
@@ -1233,7 +1233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.table.TableColumnIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/table"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/table"
 
 &table.TableColumnIdentity {
 	StartNum: *f64,
@@ -1283,7 +1283,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.table.TableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/table"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/table"
 
 &table.TableConfig {
 	Connection: interface{},
@@ -1302,7 +1302,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/table"
 	Comment: *string,
 	DataRetentionTimeInDays: *f64,
 	Id: *string,
-	PrimaryKey: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12.table.TablePrimaryKey,
+	PrimaryKey: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13.table.TablePrimaryKey,
 	Tag: interface{},
 }
 ```
@@ -1566,7 +1566,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.table.TablePrimaryKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/table"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/table"
 
 &table.TablePrimaryKey {
 	Keys: *[]*string,
@@ -1616,7 +1616,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.table.TableTag.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/table"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/table"
 
 &table.TableTag {
 	Name: *string,
@@ -1700,7 +1700,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.table.TableColumnDefaultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/table"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/table"
 
 table.NewTableColumnDefaultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TableColumnDefaultOutputReference
 ```
@@ -2036,7 +2036,7 @@ func InternalValue() TableColumnDefault
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.table.TableColumnIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/table"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/table"
 
 table.NewTableColumnIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TableColumnIdentityOutputReference
 ```
@@ -2343,7 +2343,7 @@ func InternalValue() TableColumnIdentity
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.table.TableColumnList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/table"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/table"
 
 table.NewTableColumnList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TableColumnList
 ```
@@ -2503,7 +2503,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.table.TableColumnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/table"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/table"
 
 table.NewTableColumnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TableColumnOutputReference
 ```
@@ -3025,7 +3025,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.table.TablePrimaryKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/table"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/table"
 
 table.NewTablePrimaryKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TablePrimaryKeyOutputReference
 ```
@@ -3325,7 +3325,7 @@ func InternalValue() TablePrimaryKey
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.table.TableTagList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/table"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/table"
 
 table.NewTableTagList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TableTagList
 ```
@@ -3485,7 +3485,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.table.TableTagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/table"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/table"
 
 table.NewTableTagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TableTagOutputReference
 ```

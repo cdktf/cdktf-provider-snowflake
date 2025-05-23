@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrations(scope Construct, id *string, config DataSnowflakeSecurityIntegrationsConfig) DataSnowflakeSecurityIntegrations
 ```
@@ -297,7 +297,7 @@ func ResetWithDescribe()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrations.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrations_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrations.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrations_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrations_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrations.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrations_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrations_IsTerraformD
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrations.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrations_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -641,7 +641,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsConfig {
 	Connection: interface{},
@@ -794,7 +794,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrations {
 
@@ -807,7 +807,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutput {
 
@@ -820,7 +820,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputAllowedEmailPatterns.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputAllowedEmailPatterns {
 
@@ -833,7 +833,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputAllowedUserDomains.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputAllowedUserDomains {
 
@@ -846,7 +846,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputAuthType.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputAuthType {
 
@@ -859,7 +859,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputBlockedRolesListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputBlockedRolesListStruct {
 
@@ -872,7 +872,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputComment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputComment {
 
@@ -885,7 +885,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputEnabled.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputEnabled {
 
@@ -898,7 +898,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthAllowedRolesListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthAllowedRolesListStruct {
 
@@ -911,7 +911,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthAnyRoleMode.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthAnyRoleMode {
 
@@ -924,7 +924,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthAudienceListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthAudienceListStruct {
 
@@ -937,7 +937,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthBlockedRolesListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthBlockedRolesListStruct {
 
@@ -950,7 +950,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthIssuer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthIssuer {
 
@@ -963,7 +963,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthJwsKeysUrl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthJwsKeysUrl {
 
@@ -976,7 +976,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthRsaPublicKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthRsaPublicKey {
 
@@ -989,7 +989,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthRsaPublicKey2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthRsaPublicKey2 {
 
@@ -1002,7 +1002,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthScopeDelimiter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthScopeDelimiter {
 
@@ -1015,7 +1015,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthSnowflakeUserMappingAttribute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthSnowflakeUserMappingAttribute {
 
@@ -1028,7 +1028,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthTokenUserMappingClaim.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthTokenUserMappingClaim {
 
@@ -1041,7 +1041,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputNetworkPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputNetworkPolicy {
 
@@ -1054,7 +1054,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthAccessTokenValidity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthAccessTokenValidity {
 
@@ -1067,7 +1067,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthAllowedAuthorizationEndpoints.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthAllowedAuthorizationEndpoints {
 
@@ -1080,7 +1080,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthAllowedScopes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthAllowedScopes {
 
@@ -1093,7 +1093,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthAllowedTokenEndpoints.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthAllowedTokenEndpoints {
 
@@ -1106,7 +1106,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthAllowNonTlsRedirectUri.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthAllowNonTlsRedirectUri {
 
@@ -1119,7 +1119,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthAuthorizationEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthAuthorizationEndpoint {
 
@@ -1132,7 +1132,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientAuthMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientAuthMethod {
 
@@ -1145,7 +1145,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientId.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientId {
 
@@ -1158,7 +1158,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientRsaPublicKey2Fp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientRsaPublicKey2Fp {
 
@@ -1171,7 +1171,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientRsaPublicKeyFp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientRsaPublicKeyFp {
 
@@ -1184,7 +1184,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientType.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientType {
 
@@ -1197,7 +1197,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthEnforcePkce.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthEnforcePkce {
 
@@ -1210,7 +1210,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthGrant.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthGrant {
 
@@ -1223,7 +1223,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthIssueRefreshTokens.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthIssueRefreshTokens {
 
@@ -1236,7 +1236,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthRedirectUri.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthRedirectUri {
 
@@ -1249,7 +1249,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthRefreshTokenValidity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthRefreshTokenValidity {
 
@@ -1262,7 +1262,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthTokenEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthTokenEndpoint {
 
@@ -1275,7 +1275,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthUseSecondaryRoles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthUseSecondaryRoles {
 
@@ -1288,7 +1288,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputParentIntegration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputParentIntegration {
 
@@ -1301,7 +1301,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputPreAuthorizedRolesListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputPreAuthorizedRolesListStruct {
 
@@ -1314,7 +1314,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputRunAsRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputRunAsRole {
 
@@ -1327,7 +1327,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2DigestMethodsUsed.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2DigestMethodsUsed {
 
@@ -1340,7 +1340,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2EnableSpInitiated.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2EnableSpInitiated {
 
@@ -1353,7 +1353,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2ForceAuthn.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2ForceAuthn {
 
@@ -1366,7 +1366,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2Issuer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2Issuer {
 
@@ -1379,7 +1379,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2PostLogoutRedirectUrl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2PostLogoutRedirectUrl {
 
@@ -1392,7 +1392,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2Provider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2Provider {
 
@@ -1405,7 +1405,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2RequestedNameidFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2RequestedNameidFormat {
 
@@ -1418,7 +1418,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SignatureMethodsUsed.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SignatureMethodsUsed {
 
@@ -1431,7 +1431,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SignRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SignRequest {
 
@@ -1444,7 +1444,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SnowflakeAcsUrl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SnowflakeAcsUrl {
 
@@ -1457,7 +1457,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SnowflakeIssuerUrl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SnowflakeIssuerUrl {
 
@@ -1470,7 +1470,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SnowflakeMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SnowflakeMetadata {
 
@@ -1483,7 +1483,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SnowflakeX509Cert.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SnowflakeX509Cert {
 
@@ -1496,7 +1496,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SpInitiatedLoginPageLabel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SpInitiatedLoginPageLabel {
 
@@ -1509,7 +1509,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SsoUrl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SsoUrl {
 
@@ -1522,7 +1522,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2X509Cert.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2X509Cert {
 
@@ -1535,7 +1535,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSyncPassword.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSyncPassword {
 
@@ -1548,7 +1548,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 &datasnowflakesecurityintegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsShowOutput {
 
@@ -1563,7 +1563,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputAllowedEmailPatternsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputAllowedEmailPatternsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputAllowedEmailPatternsList
 ```
@@ -1712,7 +1712,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputAllowedEmailPatternsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputAllowedEmailPatternsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputAllowedEmailPatternsOutputReference
 ```
@@ -2023,7 +2023,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputAllowedUserDomainsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputAllowedUserDomainsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputAllowedUserDomainsList
 ```
@@ -2172,7 +2172,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputAllowedUserDomainsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputAllowedUserDomainsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputAllowedUserDomainsOutputReference
 ```
@@ -2483,7 +2483,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputAuthTypeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputAuthTypeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputAuthTypeList
 ```
@@ -2632,7 +2632,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputAuthTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputAuthTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputAuthTypeOutputReference
 ```
@@ -2943,7 +2943,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputBlockedRolesListStructList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputBlockedRolesListStructList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputBlockedRolesListStructList
 ```
@@ -3092,7 +3092,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputBlockedRolesListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputBlockedRolesListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputBlockedRolesListStructOutputReference
 ```
@@ -3403,7 +3403,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputCommentList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputCommentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputCommentList
 ```
@@ -3552,7 +3552,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputCommentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputCommentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputCommentOutputReference
 ```
@@ -3863,7 +3863,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputEnabledList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputEnabledList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputEnabledList
 ```
@@ -4012,7 +4012,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputEnabledOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputEnabledOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputEnabledOutputReference
 ```
@@ -4323,7 +4323,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthAllowedRolesListStructList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthAllowedRolesListStructList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthAllowedRolesListStructList
 ```
@@ -4472,7 +4472,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthAllowedRolesListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthAllowedRolesListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthAllowedRolesListStructOutputReference
 ```
@@ -4783,7 +4783,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthAnyRoleModeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthAnyRoleModeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthAnyRoleModeList
 ```
@@ -4932,7 +4932,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthAnyRoleModeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthAnyRoleModeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthAnyRoleModeOutputReference
 ```
@@ -5243,7 +5243,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthAudienceListStructList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthAudienceListStructList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthAudienceListStructList
 ```
@@ -5392,7 +5392,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthAudienceListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthAudienceListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthAudienceListStructOutputReference
 ```
@@ -5703,7 +5703,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthBlockedRolesListStructList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthBlockedRolesListStructList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthBlockedRolesListStructList
 ```
@@ -5852,7 +5852,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthBlockedRolesListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthBlockedRolesListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthBlockedRolesListStructOutputReference
 ```
@@ -6163,7 +6163,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthIssuerList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthIssuerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthIssuerList
 ```
@@ -6312,7 +6312,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthIssuerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthIssuerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthIssuerOutputReference
 ```
@@ -6623,7 +6623,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthJwsKeysUrlList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthJwsKeysUrlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthJwsKeysUrlList
 ```
@@ -6772,7 +6772,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthJwsKeysUrlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthJwsKeysUrlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthJwsKeysUrlOutputReference
 ```
@@ -7083,7 +7083,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthRsaPublicKey2List.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthRsaPublicKey2List(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthRsaPublicKey2List
 ```
@@ -7232,7 +7232,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthRsaPublicKey2OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthRsaPublicKey2OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthRsaPublicKey2OutputReference
 ```
@@ -7543,7 +7543,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthRsaPublicKeyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthRsaPublicKeyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthRsaPublicKeyList
 ```
@@ -7692,7 +7692,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthRsaPublicKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthRsaPublicKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthRsaPublicKeyOutputReference
 ```
@@ -8003,7 +8003,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthScopeDelimiterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthScopeDelimiterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthScopeDelimiterList
 ```
@@ -8152,7 +8152,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthScopeDelimiterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthScopeDelimiterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthScopeDelimiterOutputReference
 ```
@@ -8463,7 +8463,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthSnowflakeUserMappingAttributeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthSnowflakeUserMappingAttributeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthSnowflakeUserMappingAttributeList
 ```
@@ -8612,7 +8612,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthSnowflakeUserMappingAttributeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthSnowflakeUserMappingAttributeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthSnowflakeUserMappingAttributeOutputReference
 ```
@@ -8923,7 +8923,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthTokenUserMappingClaimList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthTokenUserMappingClaimList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthTokenUserMappingClaimList
 ```
@@ -9072,7 +9072,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthTokenUserMappingClaimOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthTokenUserMappingClaimOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputExternalOauthTokenUserMappingClaimOutputReference
 ```
@@ -9383,7 +9383,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputList
 ```
@@ -9532,7 +9532,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputNetworkPolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputNetworkPolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputNetworkPolicyList
 ```
@@ -9681,7 +9681,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputNetworkPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputNetworkPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputNetworkPolicyOutputReference
 ```
@@ -9992,7 +9992,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthAccessTokenValidityList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthAccessTokenValidityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthAccessTokenValidityList
 ```
@@ -10141,7 +10141,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthAccessTokenValidityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthAccessTokenValidityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthAccessTokenValidityOutputReference
 ```
@@ -10452,7 +10452,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthAllowedAuthorizationEndpointsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthAllowedAuthorizationEndpointsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthAllowedAuthorizationEndpointsList
 ```
@@ -10601,7 +10601,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthAllowedAuthorizationEndpointsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthAllowedAuthorizationEndpointsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthAllowedAuthorizationEndpointsOutputReference
 ```
@@ -10912,7 +10912,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthAllowedScopesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthAllowedScopesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthAllowedScopesList
 ```
@@ -11061,7 +11061,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthAllowedScopesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthAllowedScopesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthAllowedScopesOutputReference
 ```
@@ -11372,7 +11372,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthAllowedTokenEndpointsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthAllowedTokenEndpointsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthAllowedTokenEndpointsList
 ```
@@ -11521,7 +11521,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthAllowedTokenEndpointsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthAllowedTokenEndpointsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthAllowedTokenEndpointsOutputReference
 ```
@@ -11832,7 +11832,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthAllowNonTlsRedirectUriList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthAllowNonTlsRedirectUriList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthAllowNonTlsRedirectUriList
 ```
@@ -11981,7 +11981,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthAllowNonTlsRedirectUriOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthAllowNonTlsRedirectUriOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthAllowNonTlsRedirectUriOutputReference
 ```
@@ -12292,7 +12292,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthAuthorizationEndpointList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthAuthorizationEndpointList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthAuthorizationEndpointList
 ```
@@ -12441,7 +12441,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthAuthorizationEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthAuthorizationEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthAuthorizationEndpointOutputReference
 ```
@@ -12752,7 +12752,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientAuthMethodList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientAuthMethodList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientAuthMethodList
 ```
@@ -12901,7 +12901,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientAuthMethodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientAuthMethodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientAuthMethodOutputReference
 ```
@@ -13212,7 +13212,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientIdList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientIdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientIdList
 ```
@@ -13361,7 +13361,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientIdOutputReference
 ```
@@ -13672,7 +13672,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientRsaPublicKey2FpList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientRsaPublicKey2FpList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientRsaPublicKey2FpList
 ```
@@ -13821,7 +13821,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientRsaPublicKey2FpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientRsaPublicKey2FpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientRsaPublicKey2FpOutputReference
 ```
@@ -14132,7 +14132,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientRsaPublicKeyFpList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientRsaPublicKeyFpList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientRsaPublicKeyFpList
 ```
@@ -14281,7 +14281,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientRsaPublicKeyFpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientRsaPublicKeyFpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientRsaPublicKeyFpOutputReference
 ```
@@ -14592,7 +14592,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientTypeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientTypeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientTypeList
 ```
@@ -14741,7 +14741,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientTypeOutputReference
 ```
@@ -15052,7 +15052,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthEnforcePkceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthEnforcePkceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthEnforcePkceList
 ```
@@ -15201,7 +15201,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthEnforcePkceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthEnforcePkceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthEnforcePkceOutputReference
 ```
@@ -15512,7 +15512,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthGrantList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthGrantList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthGrantList
 ```
@@ -15661,7 +15661,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthGrantOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthGrantOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthGrantOutputReference
 ```
@@ -15972,7 +15972,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthIssueRefreshTokensList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthIssueRefreshTokensList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthIssueRefreshTokensList
 ```
@@ -16121,7 +16121,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthIssueRefreshTokensOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthIssueRefreshTokensOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthIssueRefreshTokensOutputReference
 ```
@@ -16432,7 +16432,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthRedirectUriList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthRedirectUriList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthRedirectUriList
 ```
@@ -16581,7 +16581,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthRedirectUriOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthRedirectUriOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthRedirectUriOutputReference
 ```
@@ -16892,7 +16892,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthRefreshTokenValidityList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthRefreshTokenValidityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthRefreshTokenValidityList
 ```
@@ -17041,7 +17041,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthRefreshTokenValidityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthRefreshTokenValidityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthRefreshTokenValidityOutputReference
 ```
@@ -17352,7 +17352,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthTokenEndpointList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthTokenEndpointList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthTokenEndpointList
 ```
@@ -17501,7 +17501,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthTokenEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthTokenEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthTokenEndpointOutputReference
 ```
@@ -17812,7 +17812,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthUseSecondaryRolesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthUseSecondaryRolesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthUseSecondaryRolesList
 ```
@@ -17961,7 +17961,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthUseSecondaryRolesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthUseSecondaryRolesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthUseSecondaryRolesOutputReference
 ```
@@ -18272,7 +18272,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOutputReference
 ```
@@ -19155,7 +19155,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputParentIntegrationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputParentIntegrationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputParentIntegrationList
 ```
@@ -19304,7 +19304,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputParentIntegrationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputParentIntegrationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputParentIntegrationOutputReference
 ```
@@ -19615,7 +19615,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputPreAuthorizedRolesListStructList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputPreAuthorizedRolesListStructList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputPreAuthorizedRolesListStructList
 ```
@@ -19764,7 +19764,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputPreAuthorizedRolesListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputPreAuthorizedRolesListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputPreAuthorizedRolesListStructOutputReference
 ```
@@ -20075,7 +20075,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputRunAsRoleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputRunAsRoleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputRunAsRoleList
 ```
@@ -20224,7 +20224,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputRunAsRoleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputRunAsRoleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputRunAsRoleOutputReference
 ```
@@ -20535,7 +20535,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2DigestMethodsUsedList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2DigestMethodsUsedList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2DigestMethodsUsedList
 ```
@@ -20684,7 +20684,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2DigestMethodsUsedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2DigestMethodsUsedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2DigestMethodsUsedOutputReference
 ```
@@ -20995,7 +20995,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2EnableSpInitiatedList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2EnableSpInitiatedList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2EnableSpInitiatedList
 ```
@@ -21144,7 +21144,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2EnableSpInitiatedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2EnableSpInitiatedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2EnableSpInitiatedOutputReference
 ```
@@ -21455,7 +21455,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2ForceAuthnList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2ForceAuthnList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2ForceAuthnList
 ```
@@ -21604,7 +21604,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2ForceAuthnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2ForceAuthnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2ForceAuthnOutputReference
 ```
@@ -21915,7 +21915,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2IssuerList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2IssuerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2IssuerList
 ```
@@ -22064,7 +22064,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2IssuerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2IssuerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2IssuerOutputReference
 ```
@@ -22375,7 +22375,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2PostLogoutRedirectUrlList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2PostLogoutRedirectUrlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2PostLogoutRedirectUrlList
 ```
@@ -22524,7 +22524,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2PostLogoutRedirectUrlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2PostLogoutRedirectUrlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2PostLogoutRedirectUrlOutputReference
 ```
@@ -22835,7 +22835,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2ProviderList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2ProviderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2ProviderList
 ```
@@ -22984,7 +22984,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2ProviderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2ProviderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2ProviderOutputReference
 ```
@@ -23295,7 +23295,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2RequestedNameidFormatList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2RequestedNameidFormatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2RequestedNameidFormatList
 ```
@@ -23444,7 +23444,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2RequestedNameidFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2RequestedNameidFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2RequestedNameidFormatOutputReference
 ```
@@ -23755,7 +23755,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SignatureMethodsUsedList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SignatureMethodsUsedList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SignatureMethodsUsedList
 ```
@@ -23904,7 +23904,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SignatureMethodsUsedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SignatureMethodsUsedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SignatureMethodsUsedOutputReference
 ```
@@ -24215,7 +24215,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SignRequestList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SignRequestList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SignRequestList
 ```
@@ -24364,7 +24364,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SignRequestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SignRequestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SignRequestOutputReference
 ```
@@ -24675,7 +24675,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SnowflakeAcsUrlList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SnowflakeAcsUrlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SnowflakeAcsUrlList
 ```
@@ -24824,7 +24824,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SnowflakeAcsUrlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SnowflakeAcsUrlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SnowflakeAcsUrlOutputReference
 ```
@@ -25135,7 +25135,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SnowflakeIssuerUrlList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SnowflakeIssuerUrlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SnowflakeIssuerUrlList
 ```
@@ -25284,7 +25284,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SnowflakeIssuerUrlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SnowflakeIssuerUrlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SnowflakeIssuerUrlOutputReference
 ```
@@ -25595,7 +25595,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SnowflakeMetadataList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SnowflakeMetadataList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SnowflakeMetadataList
 ```
@@ -25744,7 +25744,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SnowflakeMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SnowflakeMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SnowflakeMetadataOutputReference
 ```
@@ -26055,7 +26055,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SnowflakeX509CertList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SnowflakeX509CertList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SnowflakeX509CertList
 ```
@@ -26204,7 +26204,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SnowflakeX509CertOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SnowflakeX509CertOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SnowflakeX509CertOutputReference
 ```
@@ -26515,7 +26515,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SpInitiatedLoginPageLabelList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SpInitiatedLoginPageLabelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SpInitiatedLoginPageLabelList
 ```
@@ -26664,7 +26664,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SpInitiatedLoginPageLabelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SpInitiatedLoginPageLabelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SpInitiatedLoginPageLabelOutputReference
 ```
@@ -26975,7 +26975,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SsoUrlList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SsoUrlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SsoUrlList
 ```
@@ -27124,7 +27124,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SsoUrlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SsoUrlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SsoUrlOutputReference
 ```
@@ -27435,7 +27435,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2X509CertList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2X509CertList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2X509CertList
 ```
@@ -27584,7 +27584,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2X509CertOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2X509CertOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2X509CertOutputReference
 ```
@@ -27895,7 +27895,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSyncPasswordList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSyncPasswordList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSyncPasswordList
 ```
@@ -28044,7 +28044,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSyncPasswordOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSyncPasswordOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSyncPasswordOutputReference
 ```
@@ -28355,7 +28355,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescri
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsList
 ```
@@ -28504,7 +28504,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsOutputReference
 ```
@@ -28793,7 +28793,7 @@ func InternalValue() DataSnowflakeSecurityIntegrationsSecurityIntegrations
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsShowOutputList
 ```
@@ -28942,7 +28942,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeSecurityIntegrations.DataSnowflakeSecurityIntegrationsSecurityIntegrationsShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakesecurityintegrations"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakesecurityintegrations"
 
 datasnowflakesecurityintegrations.NewDataSnowflakeSecurityIntegrationsSecurityIntegrationsShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeSecurityIntegrationsSecurityIntegrationsShowOutputOutputReference
 ```
