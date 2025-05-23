@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRoles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakedatabaseroles"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakedatabaseroles"
 
 datasnowflakedatabaseroles.NewDataSnowflakeDatabaseRoles(scope Construct, id *string, config DataSnowflakeDatabaseRolesConfig) DataSnowflakeDatabaseRoles
 ```
@@ -310,7 +310,7 @@ func ResetLimit()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRoles.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakedatabaseroles"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakedatabaseroles"
 
 datasnowflakedatabaseroles.DataSnowflakeDatabaseRoles_IsConstruct(x interface{}) *bool
 ```
@@ -342,7 +342,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRoles.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakedatabaseroles"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakedatabaseroles"
 
 datasnowflakedatabaseroles.DataSnowflakeDatabaseRoles_IsTerraformElement(x interface{}) *bool
 ```
@@ -356,7 +356,7 @@ datasnowflakedatabaseroles.DataSnowflakeDatabaseRoles_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRoles.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakedatabaseroles"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakedatabaseroles"
 
 datasnowflakedatabaseroles.DataSnowflakeDatabaseRoles_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -370,7 +370,7 @@ datasnowflakedatabaseroles.DataSnowflakeDatabaseRoles_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRoles.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakedatabaseroles"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakedatabaseroles"
 
 datasnowflakedatabaseroles.DataSnowflakeDatabaseRoles_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -676,7 +676,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRolesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakedatabaseroles"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakedatabaseroles"
 
 &datasnowflakedatabaseroles.DataSnowflakeDatabaseRolesConfig {
 	Connection: interface{},
@@ -689,7 +689,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 	InDatabase: *string,
 	Id: *string,
 	Like: *string,
-	Limit: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRolesLimit,
+	Limit: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRolesLimit,
 }
 ```
 
@@ -843,7 +843,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRolesDatabaseRoles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakedatabaseroles"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakedatabaseroles"
 
 &datasnowflakedatabaseroles.DataSnowflakeDatabaseRolesDatabaseRoles {
 
@@ -856,7 +856,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRolesDatabaseRolesShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakedatabaseroles"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakedatabaseroles"
 
 &datasnowflakedatabaseroles.DataSnowflakeDatabaseRolesDatabaseRolesShowOutput {
 
@@ -869,7 +869,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRolesLimit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakedatabaseroles"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakedatabaseroles"
 
 &datasnowflakedatabaseroles.DataSnowflakeDatabaseRolesLimit {
 	Rows: *f64,
@@ -923,7 +923,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRolesDatabaseRolesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakedatabaseroles"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakedatabaseroles"
 
 datasnowflakedatabaseroles.NewDataSnowflakeDatabaseRolesDatabaseRolesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeDatabaseRolesDatabaseRolesList
 ```
@@ -1072,7 +1072,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRolesDatabaseRolesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakedatabaseroles"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakedatabaseroles"
 
 datasnowflakedatabaseroles.NewDataSnowflakeDatabaseRolesDatabaseRolesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeDatabaseRolesDatabaseRolesOutputReference
 ```
@@ -1350,7 +1350,7 @@ func InternalValue() DataSnowflakeDatabaseRolesDatabaseRoles
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRolesDatabaseRolesShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakedatabaseroles"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakedatabaseroles"
 
 datasnowflakedatabaseroles.NewDataSnowflakeDatabaseRolesDatabaseRolesShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeDatabaseRolesDatabaseRolesShowOutputList
 ```
@@ -1499,7 +1499,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRolesDatabaseRolesShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakedatabaseroles"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakedatabaseroles"
 
 datasnowflakedatabaseroles.NewDataSnowflakeDatabaseRolesDatabaseRolesShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeDatabaseRolesDatabaseRolesShowOutputOutputReference
 ```
@@ -1898,7 +1898,7 @@ func InternalValue() DataSnowflakeDatabaseRolesDatabaseRolesShowOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeDatabaseRoles.DataSnowflakeDatabaseRolesLimitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/datasnowflakedatabaseroles"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/datasnowflakedatabaseroles"
 
 datasnowflakedatabaseroles.NewDataSnowflakeDatabaseRolesLimitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataSnowflakeDatabaseRolesLimitOutputReference
 ```

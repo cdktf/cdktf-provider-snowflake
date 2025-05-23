@@ -14,7 +14,7 @@ const actions = require("@actions/core");
 
 // set by the projen file that generates this script
 const CONSTRAINT = " ~> 1.0";
-const FQ_PROVIDER_NAME = "Snowflake-Labs/snowflake";
+const FQ_PROVIDER_NAME = "snowflakedb/snowflake";
 
 (async function main() {
   if (await newerMatchingProviderVersionExists()) {

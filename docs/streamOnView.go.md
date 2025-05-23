@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.streamOnView.StreamOnView.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/streamonview"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/streamonview"
 
 streamonview.NewStreamOnView(scope Construct, id *string, config StreamOnViewConfig) StreamOnView
 ```
@@ -453,7 +453,7 @@ func ResetShowInitialRows()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.streamOnView.StreamOnView.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/streamonview"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/streamonview"
 
 streamonview.StreamOnView_IsConstruct(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.streamOnView.StreamOnView.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/streamonview"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/streamonview"
 
 streamonview.StreamOnView_IsTerraformElement(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ streamonview.StreamOnView_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.streamOnView.StreamOnView.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/streamonview"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/streamonview"
 
 streamonview.StreamOnView_IsTerraformResource(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ streamonview.StreamOnView_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.streamOnView.StreamOnView.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/streamonview"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/streamonview"
 
 streamonview.StreamOnView_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1039,7 +1039,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.streamOnView.StreamOnViewAt.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/streamonview"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/streamonview"
 
 &streamonview.StreamOnViewAt {
 	Offset: *string,
@@ -1125,7 +1125,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.streamOnView.StreamOnViewBefore.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/streamonview"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/streamonview"
 
 &streamonview.StreamOnViewBefore {
 	Offset: *string,
@@ -1211,7 +1211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.streamOnView.StreamOnViewConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/streamonview"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/streamonview"
 
 &streamonview.StreamOnViewConfig {
 	Connection: interface{},
@@ -1226,8 +1226,8 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/streamonview"
 	Schema: *string,
 	View: *string,
 	AppendOnly: *string,
-	At: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12.streamOnView.StreamOnViewAt,
-	Before: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12.streamOnView.StreamOnViewBefore,
+	At: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13.streamOnView.StreamOnViewAt,
+	Before: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13.streamOnView.StreamOnViewBefore,
 	Comment: *string,
 	CopyGrants: interface{},
 	Id: *string,
@@ -1504,7 +1504,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.streamOnView.StreamOnViewDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/streamonview"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/streamonview"
 
 &streamonview.StreamOnViewDescribeOutput {
 
@@ -1517,7 +1517,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/streamonview"
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.streamOnView.StreamOnViewShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/streamonview"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/streamonview"
 
 &streamonview.StreamOnViewShowOutput {
 
@@ -1532,7 +1532,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/streamonview"
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.streamOnView.StreamOnViewAtOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/streamonview"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/streamonview"
 
 streamonview.NewStreamOnViewAtOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StreamOnViewAtOutputReference
 ```
@@ -1897,7 +1897,7 @@ func InternalValue() StreamOnViewAt
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.streamOnView.StreamOnViewBeforeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/streamonview"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/streamonview"
 
 streamonview.NewStreamOnViewBeforeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StreamOnViewBeforeOutputReference
 ```
@@ -2262,7 +2262,7 @@ func InternalValue() StreamOnViewBefore
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.streamOnView.StreamOnViewDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/streamonview"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/streamonview"
 
 streamonview.NewStreamOnViewDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StreamOnViewDescribeOutputList
 ```
@@ -2411,7 +2411,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.streamOnView.StreamOnViewDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/streamonview"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/streamonview"
 
 streamonview.NewStreamOnViewDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StreamOnViewDescribeOutputOutputReference
 ```
@@ -2843,7 +2843,7 @@ func InternalValue() StreamOnViewDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.streamOnView.StreamOnViewShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/streamonview"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/streamonview"
 
 streamonview.NewStreamOnViewShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StreamOnViewShowOutputList
 ```
@@ -2992,7 +2992,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.streamOnView.StreamOnViewShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v12/streamonview"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/streamonview"
 
 streamonview.NewStreamOnViewShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StreamOnViewShowOutputOutputReference
 ```
