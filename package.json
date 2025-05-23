@@ -157,7 +157,7 @@
   "cdktf": {
     "isDeprecated": false,
     "provider": {
-      "name": "registry.terraform.io/snowflake-labs/snowflake",
+      "name": "registry.terraform.io/snowflakedb/snowflake",
       "version": "1.0.5"
     }
   },
