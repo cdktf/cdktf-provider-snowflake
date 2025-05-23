@@ -4,7 +4,7 @@
 
 ### FunctionSql <a name="FunctionSql" id="@cdktf/provider-snowflake.functionSql.FunctionSql"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/function_sql snowflake_function_sql}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql snowflake_function_sql}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.functionSql.FunctionSql.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSql.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSql.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSql.putArguments">putArguments</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSql.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSql.resetArguments">resetArguments</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSql.resetComment">resetComment</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSql.resetEnableConsoleOutput">resetEnableConsoleOutput</a></code> | *No description.* |
@@ -82,6 +83,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSql.resetLogLevel">resetLogLevel</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSql.resetMetricLevel">resetMetricLevel</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSql.resetReturnResultsBehavior">resetReturnResultsBehavior</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSql.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSql.resetTraceLevel">resetTraceLevel</a></code> | *No description.* |
 
 ---
@@ -386,6 +388,18 @@ public putArguments(value: IResolvable | FunctionSqlArguments[]): void
 
 ---
 
+##### `putTimeouts` <a name="putTimeouts" id="@cdktf/provider-snowflake.functionSql.FunctionSql.putTimeouts"></a>
+
+```typescript
+public putTimeouts(value: FunctionSqlTimeouts): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-snowflake.functionSql.FunctionSql.putTimeouts.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlTimeouts">FunctionSqlTimeouts</a>
+
+---
+
 ##### `resetArguments` <a name="resetArguments" id="@cdktf/provider-snowflake.functionSql.FunctionSql.resetArguments"></a>
 
 ```typescript
@@ -432,6 +446,12 @@ public resetMetricLevel(): void
 
 ```typescript
 public resetReturnResultsBehavior(): void
+```
+
+##### `resetTimeouts` <a name="resetTimeouts" id="@cdktf/provider-snowflake.functionSql.FunctionSql.resetTimeouts"></a>
+
+```typescript
+public resetTimeouts(): void
 ```
 
 ##### `resetTraceLevel` <a name="resetTraceLevel" id="@cdktf/provider-snowflake.functionSql.FunctionSql.resetTraceLevel"></a>
@@ -543,7 +563,7 @@ The construct id used in the generated config for the FunctionSql to import.
 
 The id of the existing FunctionSql that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/function_sql#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -578,6 +598,7 @@ Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 | <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSql.property.functionLanguage">functionLanguage</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSql.property.parameters">parameters</a></code> | <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlParametersList">FunctionSqlParametersList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSql.property.showOutput">showOutput</a></code> | <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlShowOutputList">FunctionSqlShowOutputList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSql.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference">FunctionSqlTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSql.property.argumentsInput">argumentsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlArguments">FunctionSqlArguments</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSql.property.commentInput">commentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSql.property.databaseInput">databaseInput</a></code> | <code>string</code> | *No description.* |
@@ -591,6 +612,7 @@ Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 | <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSql.property.returnResultsBehaviorInput">returnResultsBehaviorInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSql.property.returnTypeInput">returnTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSql.property.schemaInput">schemaInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSql.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlTimeouts">FunctionSqlTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSql.property.traceLevelInput">traceLevelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSql.property.comment">comment</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSql.property.database">database</a></code> | <code>string</code> | *No description.* |
@@ -800,6 +822,16 @@ public readonly showOutput: FunctionSqlShowOutputList;
 
 ---
 
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-snowflake.functionSql.FunctionSql.property.timeouts"></a>
+
+```typescript
+public readonly timeouts: FunctionSqlTimeoutsOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference">FunctionSqlTimeoutsOutputReference</a>
+
+---
+
 ##### `argumentsInput`<sup>Optional</sup> <a name="argumentsInput" id="@cdktf/provider-snowflake.functionSql.FunctionSql.property.argumentsInput"></a>
 
 ```typescript
@@ -927,6 +959,16 @@ public readonly schemaInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-snowflake.functionSql.FunctionSql.property.timeoutsInput"></a>
+
+```typescript
+public readonly timeoutsInput: IResolvable | FunctionSqlTimeouts;
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlTimeouts">FunctionSqlTimeouts</a>
 
 ---
 
@@ -1120,7 +1162,7 @@ public readonly argDataType: string;
 
 The argument type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/function_sql#arg_data_type FunctionSql#arg_data_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#arg_data_type FunctionSql#arg_data_type}
 
 ---
 
@@ -1136,7 +1178,7 @@ The argument name.
 
 The provider wraps it in double quotes by default, so be aware of that while referencing the argument in the function definition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/function_sql#arg_name FunctionSql#arg_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#arg_name FunctionSql#arg_name}
 
 ---
 
@@ -1152,7 +1194,7 @@ Optional default value for the argument.
 
 For text values use single quotes. Numeric values can be unquoted. External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/function_sql#arg_default_value FunctionSql#arg_default_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#arg_default_value FunctionSql#arg_default_value}
 
 ---
 
@@ -1183,13 +1225,14 @@ const functionSqlConfig: functionSql.FunctionSqlConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlConfig.property.returnType">returnType</a></code> | <code>string</code> | Specifies the results returned by the UDF, which determines the UDF type. |
 | <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlConfig.property.schema">schema</a></code> | <code>string</code> | The schema in which to create the function. |
 | <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlConfig.property.arguments">arguments</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlArguments">FunctionSqlArguments</a>[]</code> | arguments block. |
-| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlConfig.property.comment">comment</a></code> | <code>string</code> | Specifies a comment for the function. |
-| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlConfig.property.enableConsoleOutput">enableConsoleOutput</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable stdout/stderr fast path logging for anonyous stored procs. |
-| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/function_sql#id FunctionSql#id}. |
-| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlConfig.property.isSecure">isSecure</a></code> | <code>string</code> | Specifies that the function is secure. |
+| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlConfig.property.comment">comment</a></code> | <code>string</code> | (Default: `user-defined function`) Specifies a comment for the function. |
+| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlConfig.property.enableConsoleOutput">enableConsoleOutput</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable stdout/stderr fast path logging for anonymous stored procs. |
+| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#id FunctionSql#id}. |
+| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlConfig.property.isSecure">isSecure</a></code> | <code>string</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies that the function is secure. |
 | <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlConfig.property.logLevel">logLevel</a></code> | <code>string</code> | LOG_LEVEL to use when filtering events For more information, check [LOG_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#log-level). |
 | <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlConfig.property.metricLevel">metricLevel</a></code> | <code>string</code> | METRIC_LEVEL value to control whether to emit metrics to Event Table For more information, check [METRIC_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#metric-level). |
 | <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlConfig.property.returnResultsBehavior">returnResultsBehavior</a></code> | <code>string</code> | Specifies the behavior of the function when returning results. Valid values are (case-insensitive): `VOLATILE` \| `IMMUTABLE`. |
+| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlTimeouts">FunctionSqlTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlConfig.property.traceLevel">traceLevel</a></code> | <code>string</code> | Trace level value to use when generating/filtering trace events For more information, check [TRACE_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#trace-level). |
 
 ---
@@ -1276,7 +1319,7 @@ The database in which to create the function.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/function_sql#database FunctionSql#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#database FunctionSql#database}
 
 ---
 
@@ -1292,7 +1335,7 @@ Defines the handler code executed when the UDF is called.
 
 Wrapping `$$` signs are added by the provider automatically; do not include them. The `function_definition` value must be SQL source code. For more information, see [Introduction to SQL UDFs](https://docs.snowflake.com/en/developer-guide/udf/sql/udf-sql-introduction). To mitigate permadiff on this field, the provider replaces blank characters with a space. This can lead to false positives in cases where a change in case or run of whitespace is semantically significant.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/function_sql#function_definition FunctionSql#function_definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#function_definition FunctionSql#function_definition}
 
 ---
 
@@ -1308,7 +1351,7 @@ The name of the function;
 
 the identifier does not need to be unique for the schema in which the function is created because UDFs are identified and resolved by the combination of the name and argument types. Check the [docs](https://docs.snowflake.com/en/sql-reference/sql/create-function#all-languages). Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/function_sql#name FunctionSql#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#name FunctionSql#name}
 
 ---
 
@@ -1324,7 +1367,7 @@ Specifies the results returned by the UDF, which determines the UDF type.
 
 Use `<result_data_type>` to create a scalar UDF that returns a single value with the specified data type. Use `TABLE (col_name col_data_type, ...)` to creates a table UDF that returns tabular results with the specified table column(s) and column type(s). For the details, consult the [docs](https://docs.snowflake.com/en/sql-reference/sql/create-function#all-languages).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/function_sql#return_type FunctionSql#return_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#return_type FunctionSql#return_type}
 
 ---
 
@@ -1340,7 +1383,7 @@ The schema in which to create the function.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/function_sql#schema FunctionSql#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#schema FunctionSql#schema}
 
 ---
 
@@ -1354,7 +1397,7 @@ public readonly arguments: IResolvable | FunctionSqlArguments[];
 
 arguments block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/function_sql#arguments FunctionSql#arguments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#arguments FunctionSql#arguments}
 
 ---
 
@@ -1366,9 +1409,9 @@ public readonly comment: string;
 
 - *Type:* string
 
-Specifies a comment for the function.
+(Default: `user-defined function`) Specifies a comment for the function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/function_sql#comment FunctionSql#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#comment FunctionSql#comment}
 
 ---
 
@@ -1380,11 +1423,11 @@ public readonly enableConsoleOutput: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Enable stdout/stderr fast path logging for anonyous stored procs.
+Enable stdout/stderr fast path logging for anonymous stored procs.
 
 This is a public parameter (similar to LOG_LEVEL). For more information, check [ENABLE_CONSOLE_OUTPUT docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-console-output).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/function_sql#enable_console_output FunctionSql#enable_console_output}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#enable_console_output FunctionSql#enable_console_output}
 
 ---
 
@@ -1396,7 +1439,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/function_sql#id FunctionSql#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#id FunctionSql#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1411,11 +1454,11 @@ public readonly isSecure: string;
 
 - *Type:* string
 
-Specifies that the function is secure.
+(Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies that the function is secure.
 
 By design, the Snowflake's `SHOW FUNCTIONS` command does not provide information about secure functions (consult [function docs](https://docs.snowflake.com/en/sql-reference/sql/create-function#id1) and [Protecting Sensitive Information with Secure UDFs and Stored Procedures](https://docs.snowflake.com/en/developer-guide/secure-udf-procedure)) which is essential to manage/import function with Terraform. Use the role owning the function while managing secure functions. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/function_sql#is_secure FunctionSql#is_secure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#is_secure FunctionSql#is_secure}
 
 ---
 
@@ -1429,7 +1472,7 @@ public readonly logLevel: string;
 
 LOG_LEVEL to use when filtering events For more information, check [LOG_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#log-level).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/function_sql#log_level FunctionSql#log_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#log_level FunctionSql#log_level}
 
 ---
 
@@ -1443,7 +1486,7 @@ public readonly metricLevel: string;
 
 METRIC_LEVEL value to control whether to emit metrics to Event Table For more information, check [METRIC_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#metric-level).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/function_sql#metric_level FunctionSql#metric_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#metric_level FunctionSql#metric_level}
 
 ---
 
@@ -1457,7 +1500,21 @@ public readonly returnResultsBehavior: string;
 
 Specifies the behavior of the function when returning results. Valid values are (case-insensitive): `VOLATILE` | `IMMUTABLE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/function_sql#return_results_behavior FunctionSql#return_results_behavior}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#return_results_behavior FunctionSql#return_results_behavior}
+
+---
+
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-snowflake.functionSql.FunctionSqlConfig.property.timeouts"></a>
+
+```typescript
+public readonly timeouts: FunctionSqlTimeouts;
+```
+
+- *Type:* <a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlTimeouts">FunctionSqlTimeouts</a>
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#timeouts FunctionSql#timeouts}
 
 ---
 
@@ -1471,7 +1528,7 @@ public readonly traceLevel: string;
 
 Trace level value to use when generating/filtering trace events For more information, check [TRACE_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#trace-level).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/function_sql#trace_level FunctionSql#trace_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#trace_level FunctionSql#trace_level}
 
 ---
 
@@ -1540,6 +1597,75 @@ import { functionSql } from '@cdktf/provider-snowflake'
 const functionSqlShowOutput: functionSql.FunctionSqlShowOutput = { ... }
 ```
 
+
+### FunctionSqlTimeouts <a name="FunctionSqlTimeouts" id="@cdktf/provider-snowflake.functionSql.FunctionSqlTimeouts"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.functionSql.FunctionSqlTimeouts.Initializer"></a>
+
+```typescript
+import { functionSql } from '@cdktf/provider-snowflake'
+
+const functionSqlTimeouts: functionSql.FunctionSqlTimeouts = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#create FunctionSql#create}. |
+| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#delete FunctionSql#delete}. |
+| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#read FunctionSql#read}. |
+| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#update FunctionSql#update}. |
+
+---
+
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-snowflake.functionSql.FunctionSqlTimeouts.property.create"></a>
+
+```typescript
+public readonly create: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#create FunctionSql#create}.
+
+---
+
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-snowflake.functionSql.FunctionSqlTimeouts.property.delete"></a>
+
+```typescript
+public readonly delete: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#delete FunctionSql#delete}.
+
+---
+
+##### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-snowflake.functionSql.FunctionSqlTimeouts.property.read"></a>
+
+```typescript
+public readonly read: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#read FunctionSql#read}.
+
+---
+
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-snowflake.functionSql.FunctionSqlTimeouts.property.update"></a>
+
+```typescript
+public readonly update: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#update FunctionSql#update}.
+
+---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
@@ -5019,6 +5145,371 @@ public readonly internalValue: FunctionSqlShowOutput;
 ```
 
 - *Type:* <a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlShowOutput">FunctionSqlShowOutput</a>
+
+---
+
+
+### FunctionSqlTimeoutsOutputReference <a name="FunctionSqlTimeoutsOutputReference" id="@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.Initializer"></a>
+
+```typescript
+import { functionSql } from '@cdktf/provider-snowflake'
+
+new functionSql.FunctionSqlTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.resetCreate">resetCreate</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.resetDelete">resetDelete</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.resetRead">resetRead</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.resetUpdate">resetUpdate</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetCreate` <a name="resetCreate" id="@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.resetCreate"></a>
+
+```typescript
+public resetCreate(): void
+```
+
+##### `resetDelete` <a name="resetDelete" id="@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.resetDelete"></a>
+
+```typescript
+public resetDelete(): void
+```
+
+##### `resetRead` <a name="resetRead" id="@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.resetRead"></a>
+
+```typescript
+public resetRead(): void
+```
+
+##### `resetUpdate` <a name="resetUpdate" id="@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.resetUpdate"></a>
+
+```typescript
+public resetUpdate(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.property.createInput">createInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.property.readInput">readInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.property.updateInput">updateInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.property.read">read</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlTimeouts">FunctionSqlTimeouts</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `createInput`<sup>Optional</sup> <a name="createInput" id="@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.property.createInput"></a>
+
+```typescript
+public readonly createInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `deleteInput`<sup>Optional</sup> <a name="deleteInput" id="@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.property.deleteInput"></a>
+
+```typescript
+public readonly deleteInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `readInput`<sup>Optional</sup> <a name="readInput" id="@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.property.readInput"></a>
+
+```typescript
+public readonly readInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `updateInput`<sup>Optional</sup> <a name="updateInput" id="@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.property.updateInput"></a>
+
+```typescript
+public readonly updateInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.property.create"></a>
+
+```typescript
+public readonly create: string;
+```
+
+- *Type:* string
+
+---
+
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.property.delete"></a>
+
+```typescript
+public readonly delete: string;
+```
+
+- *Type:* string
+
+---
+
+##### `read`<sup>Required</sup> <a name="read" id="@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.property.read"></a>
+
+```typescript
+public readonly read: string;
+```
+
+- *Type:* string
+
+---
+
+##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.property.update"></a>
+
+```typescript
+public readonly update: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | FunctionSqlTimeouts;
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlTimeouts">FunctionSqlTimeouts</a>
 
 ---
 

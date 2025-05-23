@@ -4,7 +4,7 @@
 
 ### ExternalFunction <a name="ExternalFunction" id="@cdktf/provider-snowflake.externalFunction.ExternalFunction"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_function snowflake_external_function}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function snowflake_external_function}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.externalFunction.ExternalFunction.Initializer"></a>
 
@@ -38,7 +38,8 @@ externalFunction.ExternalFunction(
   null_input_behavior: str = None,
   request_translator: str = None,
   response_translator: str = None,
-  return_null_allowed: typing.Union[bool, IResolvable] = None
+  return_null_allowed: typing.Union[bool, IResolvable] = None,
+  timeouts: ExternalFunctionTimeouts = None
 )
 ```
 
@@ -61,16 +62,17 @@ externalFunction.ExternalFunction(
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.Initializer.parameter.schema">schema</a></code> | <code>str</code> | The schema in which to create the external function. |
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.Initializer.parameter.urlOfProxyAndResource">url_of_proxy_and_resource</a></code> | <code>str</code> | This is the invocation URL of the proxy service and resource through which Snowflake calls the remote service. |
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.Initializer.parameter.arg">arg</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionArg">ExternalFunctionArg</a>]]</code> | arg block. |
-| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.Initializer.parameter.comment">comment</a></code> | <code>str</code> | A description of the external function. |
-| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.Initializer.parameter.compression">compression</a></code> | <code>str</code> | If specified, the JSON payload is compressed when sent from Snowflake to the proxy service, and when sent back from the proxy service to Snowflake. |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.Initializer.parameter.comment">comment</a></code> | <code>str</code> | (Default: `user-defined function`) A description of the external function. |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.Initializer.parameter.compression">compression</a></code> | <code>str</code> | (Default: `AUTO`) If specified, the JSON payload is compressed when sent from Snowflake to the proxy service, and when sent back from the proxy service to Snowflake. |
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.Initializer.parameter.contextHeaders">context_headers</a></code> | <code>typing.List[str]</code> | Binds Snowflake context function results to HTTP headers. |
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.Initializer.parameter.header">header</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionHeader">ExternalFunctionHeader</a>]]</code> | header block. |
-| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_function#id ExternalFunction#id}. |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#id ExternalFunction#id}. |
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.Initializer.parameter.maxBatchRows">max_batch_rows</a></code> | <code>typing.Union[int, float]</code> | This specifies the maximum number of rows in each batch sent to the proxy service. |
-| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.Initializer.parameter.nullInputBehavior">null_input_behavior</a></code> | <code>str</code> | Specifies the behavior of the external function when called with null inputs. |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.Initializer.parameter.nullInputBehavior">null_input_behavior</a></code> | <code>str</code> | (Default: `CALLED ON NULL INPUT`) Specifies the behavior of the external function when called with null inputs. |
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.Initializer.parameter.requestTranslator">request_translator</a></code> | <code>str</code> | This specifies the name of the request translator function. |
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.Initializer.parameter.responseTranslator">response_translator</a></code> | <code>str</code> | This specifies the name of the response translator function. |
-| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.Initializer.parameter.returnNullAllowed">return_null_allowed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether the function can return NULL values (true) or must return only NON-NULL values (false). |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.Initializer.parameter.returnNullAllowed">return_null_allowed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | (Default: `true`) Indicates whether the function can return NULL values (true) or must return only NON-NULL values (false). |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeouts">ExternalFunctionTimeouts</a></code> | timeouts block. |
 
 ---
 
@@ -140,7 +142,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the API integration object that should be used to authenticate the call to the proxy service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_function#api_integration ExternalFunction#api_integration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#api_integration ExternalFunction#api_integration}
 
 ---
 
@@ -150,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The database in which to create the external function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_function#database ExternalFunction#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#database ExternalFunction#database}
 
 ---
 
@@ -162,7 +164,7 @@ Specifies the identifier for the external function.
 
 The identifier can contain the schema name and database name, as well as the function name. The function's signature (name and argument data types) must be unique within the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_function#name ExternalFunction#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#name ExternalFunction#name}
 
 ---
 
@@ -172,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the behavior of the function when returning results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_function#return_behavior ExternalFunction#return_behavior}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#return_behavior ExternalFunction#return_behavior}
 
 ---
 
@@ -182,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the data type returned by the external function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_function#return_type ExternalFunction#return_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#return_type ExternalFunction#return_type}
 
 ---
 
@@ -192,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The schema in which to create the external function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_function#schema ExternalFunction#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#schema ExternalFunction#schema}
 
 ---
 
@@ -202,7 +204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 This is the invocation URL of the proxy service and resource through which Snowflake calls the remote service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_function#url_of_proxy_and_resource ExternalFunction#url_of_proxy_and_resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#url_of_proxy_and_resource ExternalFunction#url_of_proxy_and_resource}
 
 ---
 
@@ -212,7 +214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 arg block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_function#arg ExternalFunction#arg}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#arg ExternalFunction#arg}
 
 ---
 
@@ -220,9 +222,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-A description of the external function.
+(Default: `user-defined function`) A description of the external function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_function#comment ExternalFunction#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#comment ExternalFunction#comment}
 
 ---
 
@@ -230,9 +232,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-If specified, the JSON payload is compressed when sent from Snowflake to the proxy service, and when sent back from the proxy service to Snowflake.
+(Default: `AUTO`) If specified, the JSON payload is compressed when sent from Snowflake to the proxy service, and when sent back from the proxy service to Snowflake.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_function#compression ExternalFunction#compression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#compression ExternalFunction#compression}
 
 ---
 
@@ -242,7 +244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Binds Snowflake context function results to HTTP headers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_function#context_headers ExternalFunction#context_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#context_headers ExternalFunction#context_headers}
 
 ---
 
@@ -252,7 +254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_function#header ExternalFunction#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#header ExternalFunction#header}
 
 ---
 
@@ -260,7 +262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_function#id ExternalFunction#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#id ExternalFunction#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -273,7 +275,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 This specifies the maximum number of rows in each batch sent to the proxy service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_function#max_batch_rows ExternalFunction#max_batch_rows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#max_batch_rows ExternalFunction#max_batch_rows}
 
 ---
 
@@ -281,9 +283,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Specifies the behavior of the external function when called with null inputs.
+(Default: `CALLED ON NULL INPUT`) Specifies the behavior of the external function when called with null inputs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_function#null_input_behavior ExternalFunction#null_input_behavior}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#null_input_behavior ExternalFunction#null_input_behavior}
 
 ---
 
@@ -293,7 +295,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 This specifies the name of the request translator function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_function#request_translator ExternalFunction#request_translator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#request_translator ExternalFunction#request_translator}
 
 ---
 
@@ -303,7 +305,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 This specifies the name of the response translator function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_function#response_translator ExternalFunction#response_translator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#response_translator ExternalFunction#response_translator}
 
 ---
 
@@ -311,9 +313,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Indicates whether the function can return NULL values (true) or must return only NON-NULL values (false).
+(Default: `true`) Indicates whether the function can return NULL values (true) or must return only NON-NULL values (false).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_function#return_null_allowed ExternalFunction#return_null_allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#return_null_allowed ExternalFunction#return_null_allowed}
+
+---
+
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-snowflake.externalFunction.ExternalFunction.Initializer.parameter.timeouts"></a>
+
+- *Type:* <a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeouts">ExternalFunctionTimeouts</a>
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#timeouts ExternalFunction#timeouts}
 
 ---
 
@@ -346,6 +358,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.putArg">put_arg</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.putHeader">put_header</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.resetArg">reset_arg</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.resetComment">reset_comment</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.resetCompression">reset_compression</a></code> | *No description.* |
@@ -357,6 +370,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.resetRequestTranslator">reset_request_translator</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.resetResponseTranslator">reset_response_translator</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.resetReturnNullAllowed">reset_return_null_allowed</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
 ---
 
@@ -713,6 +727,49 @@ def put_header(
 
 ---
 
+##### `put_timeouts` <a name="put_timeouts" id="@cdktf/provider-snowflake.externalFunction.ExternalFunction.putTimeouts"></a>
+
+```python
+def put_timeouts(
+  create: str = None,
+  delete: str = None,
+  read: str = None,
+  update: str = None
+) -> None
+```
+
+###### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-snowflake.externalFunction.ExternalFunction.putTimeouts.parameter.create"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#create ExternalFunction#create}.
+
+---
+
+###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-snowflake.externalFunction.ExternalFunction.putTimeouts.parameter.delete"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#delete ExternalFunction#delete}.
+
+---
+
+###### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-snowflake.externalFunction.ExternalFunction.putTimeouts.parameter.read"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#read ExternalFunction#read}.
+
+---
+
+###### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-snowflake.externalFunction.ExternalFunction.putTimeouts.parameter.update"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#update ExternalFunction#update}.
+
+---
+
 ##### `reset_arg` <a name="reset_arg" id="@cdktf/provider-snowflake.externalFunction.ExternalFunction.resetArg"></a>
 
 ```python
@@ -777,6 +834,12 @@ def reset_response_translator() -> None
 
 ```python
 def reset_return_null_allowed() -> None
+```
+
+##### `reset_timeouts` <a name="reset_timeouts" id="@cdktf/provider-snowflake.externalFunction.ExternalFunction.resetTimeouts"></a>
+
+```python
+def reset_timeouts() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -893,7 +956,7 @@ The construct id used in the generated config for the ExternalFunction to import
 
 The id of the existing ExternalFunction that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_function#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -927,6 +990,7 @@ Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.property.createdOn">created_on</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.property.fullyQualifiedName">fully_qualified_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.property.header">header</a></code> | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionHeaderList">ExternalFunctionHeaderList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference">ExternalFunctionTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.property.apiIntegrationInput">api_integration_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.property.argInput">arg_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionArg">ExternalFunctionArg</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.property.commentInput">comment_input</a></code> | <code>str</code> | *No description.* |
@@ -944,6 +1008,7 @@ Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.property.returnNullAllowedInput">return_null_allowed_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.property.returnTypeInput">return_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.property.schemaInput">schema_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeouts">ExternalFunctionTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.property.urlOfProxyAndResourceInput">url_of_proxy_and_resource_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.property.apiIntegration">api_integration</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunction.property.comment">comment</a></code> | <code>str</code> | *No description.* |
@@ -1146,6 +1211,16 @@ header: ExternalFunctionHeaderList
 
 ---
 
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-snowflake.externalFunction.ExternalFunction.property.timeouts"></a>
+
+```python
+timeouts: ExternalFunctionTimeoutsOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference">ExternalFunctionTimeoutsOutputReference</a>
+
+---
+
 ##### `api_integration_input`<sup>Optional</sup> <a name="api_integration_input" id="@cdktf/provider-snowflake.externalFunction.ExternalFunction.property.apiIntegrationInput"></a>
 
 ```python
@@ -1313,6 +1388,16 @@ schema_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-snowflake.externalFunction.ExternalFunction.property.timeoutsInput"></a>
+
+```python
+timeouts_input: typing.Union[IResolvable, ExternalFunctionTimeouts]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeouts">ExternalFunctionTimeouts</a>]
 
 ---
 
@@ -1538,7 +1623,7 @@ name: str
 
 Argument name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_function#name ExternalFunction#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#name ExternalFunction#name}
 
 ---
 
@@ -1552,7 +1637,7 @@ type: str
 
 Argument type, e.g. VARCHAR.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_function#type ExternalFunction#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#type ExternalFunction#type}
 
 ---
 
@@ -1588,7 +1673,8 @@ externalFunction.ExternalFunctionConfig(
   null_input_behavior: str = None,
   request_translator: str = None,
   response_translator: str = None,
-  return_null_allowed: typing.Union[bool, IResolvable] = None
+  return_null_allowed: typing.Union[bool, IResolvable] = None,
+  timeouts: ExternalFunctionTimeouts = None
 )
 ```
 
@@ -1611,16 +1697,17 @@ externalFunction.ExternalFunctionConfig(
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionConfig.property.schema">schema</a></code> | <code>str</code> | The schema in which to create the external function. |
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionConfig.property.urlOfProxyAndResource">url_of_proxy_and_resource</a></code> | <code>str</code> | This is the invocation URL of the proxy service and resource through which Snowflake calls the remote service. |
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionConfig.property.arg">arg</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionArg">ExternalFunctionArg</a>]]</code> | arg block. |
-| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionConfig.property.comment">comment</a></code> | <code>str</code> | A description of the external function. |
-| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionConfig.property.compression">compression</a></code> | <code>str</code> | If specified, the JSON payload is compressed when sent from Snowflake to the proxy service, and when sent back from the proxy service to Snowflake. |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionConfig.property.comment">comment</a></code> | <code>str</code> | (Default: `user-defined function`) A description of the external function. |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionConfig.property.compression">compression</a></code> | <code>str</code> | (Default: `AUTO`) If specified, the JSON payload is compressed when sent from Snowflake to the proxy service, and when sent back from the proxy service to Snowflake. |
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionConfig.property.contextHeaders">context_headers</a></code> | <code>typing.List[str]</code> | Binds Snowflake context function results to HTTP headers. |
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionConfig.property.header">header</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionHeader">ExternalFunctionHeader</a>]]</code> | header block. |
-| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_function#id ExternalFunction#id}. |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#id ExternalFunction#id}. |
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionConfig.property.maxBatchRows">max_batch_rows</a></code> | <code>typing.Union[int, float]</code> | This specifies the maximum number of rows in each batch sent to the proxy service. |
-| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionConfig.property.nullInputBehavior">null_input_behavior</a></code> | <code>str</code> | Specifies the behavior of the external function when called with null inputs. |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionConfig.property.nullInputBehavior">null_input_behavior</a></code> | <code>str</code> | (Default: `CALLED ON NULL INPUT`) Specifies the behavior of the external function when called with null inputs. |
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionConfig.property.requestTranslator">request_translator</a></code> | <code>str</code> | This specifies the name of the request translator function. |
 | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionConfig.property.responseTranslator">response_translator</a></code> | <code>str</code> | This specifies the name of the response translator function. |
-| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionConfig.property.returnNullAllowed">return_null_allowed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether the function can return NULL values (true) or must return only NON-NULL values (false). |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionConfig.property.returnNullAllowed">return_null_allowed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | (Default: `true`) Indicates whether the function can return NULL values (true) or must return only NON-NULL values (false). |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeouts">ExternalFunctionTimeouts</a></code> | timeouts block. |
 
 ---
 
@@ -1704,7 +1791,7 @@ api_integration: str
 
 The name of the API integration object that should be used to authenticate the call to the proxy service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_function#api_integration ExternalFunction#api_integration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#api_integration ExternalFunction#api_integration}
 
 ---
 
@@ -1718,7 +1805,7 @@ database: str
 
 The database in which to create the external function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_function#database ExternalFunction#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#database ExternalFunction#database}
 
 ---
 
@@ -1734,7 +1821,7 @@ Specifies the identifier for the external function.
 
 The identifier can contain the schema name and database name, as well as the function name. The function's signature (name and argument data types) must be unique within the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_function#name ExternalFunction#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#name ExternalFunction#name}
 
 ---
 
@@ -1748,7 +1835,7 @@ return_behavior: str
 
 Specifies the behavior of the function when returning results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_function#return_behavior ExternalFunction#return_behavior}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#return_behavior ExternalFunction#return_behavior}
 
 ---
 
@@ -1762,7 +1849,7 @@ return_type: str
 
 Specifies the data type returned by the external function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_function#return_type ExternalFunction#return_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#return_type ExternalFunction#return_type}
 
 ---
 
@@ -1776,7 +1863,7 @@ schema: str
 
 The schema in which to create the external function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_function#schema ExternalFunction#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#schema ExternalFunction#schema}
 
 ---
 
@@ -1790,7 +1877,7 @@ url_of_proxy_and_resource: str
 
 This is the invocation URL of the proxy service and resource through which Snowflake calls the remote service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_function#url_of_proxy_and_resource ExternalFunction#url_of_proxy_and_resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#url_of_proxy_and_resource ExternalFunction#url_of_proxy_and_resource}
 
 ---
 
@@ -1804,7 +1891,7 @@ arg: typing.Union[IResolvable, typing.List[ExternalFunctionArg]]
 
 arg block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_function#arg ExternalFunction#arg}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#arg ExternalFunction#arg}
 
 ---
 
@@ -1816,9 +1903,9 @@ comment: str
 
 - *Type:* str
 
-A description of the external function.
+(Default: `user-defined function`) A description of the external function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_function#comment ExternalFunction#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#comment ExternalFunction#comment}
 
 ---
 
@@ -1830,9 +1917,9 @@ compression: str
 
 - *Type:* str
 
-If specified, the JSON payload is compressed when sent from Snowflake to the proxy service, and when sent back from the proxy service to Snowflake.
+(Default: `AUTO`) If specified, the JSON payload is compressed when sent from Snowflake to the proxy service, and when sent back from the proxy service to Snowflake.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_function#compression ExternalFunction#compression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#compression ExternalFunction#compression}
 
 ---
 
@@ -1846,7 +1933,7 @@ context_headers: typing.List[str]
 
 Binds Snowflake context function results to HTTP headers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_function#context_headers ExternalFunction#context_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#context_headers ExternalFunction#context_headers}
 
 ---
 
@@ -1860,7 +1947,7 @@ header: typing.Union[IResolvable, typing.List[ExternalFunctionHeader]]
 
 header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_function#header ExternalFunction#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#header ExternalFunction#header}
 
 ---
 
@@ -1872,7 +1959,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_function#id ExternalFunction#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#id ExternalFunction#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1889,7 +1976,7 @@ max_batch_rows: typing.Union[int, float]
 
 This specifies the maximum number of rows in each batch sent to the proxy service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_function#max_batch_rows ExternalFunction#max_batch_rows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#max_batch_rows ExternalFunction#max_batch_rows}
 
 ---
 
@@ -1901,9 +1988,9 @@ null_input_behavior: str
 
 - *Type:* str
 
-Specifies the behavior of the external function when called with null inputs.
+(Default: `CALLED ON NULL INPUT`) Specifies the behavior of the external function when called with null inputs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_function#null_input_behavior ExternalFunction#null_input_behavior}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#null_input_behavior ExternalFunction#null_input_behavior}
 
 ---
 
@@ -1917,7 +2004,7 @@ request_translator: str
 
 This specifies the name of the request translator function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_function#request_translator ExternalFunction#request_translator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#request_translator ExternalFunction#request_translator}
 
 ---
 
@@ -1931,7 +2018,7 @@ response_translator: str
 
 This specifies the name of the response translator function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_function#response_translator ExternalFunction#response_translator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#response_translator ExternalFunction#response_translator}
 
 ---
 
@@ -1943,9 +2030,23 @@ return_null_allowed: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Indicates whether the function can return NULL values (true) or must return only NON-NULL values (false).
+(Default: `true`) Indicates whether the function can return NULL values (true) or must return only NON-NULL values (false).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_function#return_null_allowed ExternalFunction#return_null_allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#return_null_allowed ExternalFunction#return_null_allowed}
+
+---
+
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionConfig.property.timeouts"></a>
+
+```python
+timeouts: ExternalFunctionTimeouts
+```
+
+- *Type:* <a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeouts">ExternalFunctionTimeouts</a>
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#timeouts ExternalFunction#timeouts}
 
 ---
 
@@ -1981,7 +2082,7 @@ name: str
 
 Header name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_function#name ExternalFunction#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#name ExternalFunction#name}
 
 ---
 
@@ -1995,7 +2096,81 @@ value: str
 
 Header value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_function#value ExternalFunction#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#value ExternalFunction#value}
+
+---
+
+### ExternalFunctionTimeouts <a name="ExternalFunctionTimeouts" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeouts"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeouts.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_snowflake import external_function
+
+externalFunction.ExternalFunctionTimeouts(
+  create: str = None,
+  delete: str = None,
+  read: str = None,
+  update: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#create ExternalFunction#create}. |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#delete ExternalFunction#delete}. |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#read ExternalFunction#read}. |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#update ExternalFunction#update}. |
+
+---
+
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeouts.property.create"></a>
+
+```python
+create: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#create ExternalFunction#create}.
+
+---
+
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeouts.property.delete"></a>
+
+```python
+delete: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#delete ExternalFunction#delete}.
+
+---
+
+##### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeouts.property.read"></a>
+
+```python
+read: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#read ExternalFunction#read}.
+
+---
+
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeouts.property.update"></a>
+
+```python
+update: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_function#update ExternalFunction#update}.
 
 ---
 
@@ -3013,6 +3188,396 @@ internal_value: typing.Union[IResolvable, ExternalFunctionHeader]
 ```
 
 - *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionHeader">ExternalFunctionHeader</a>]
+
+---
+
+
+### ExternalFunctionTimeoutsOutputReference <a name="ExternalFunctionTimeoutsOutputReference" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_snowflake import external_function
+
+externalFunction.ExternalFunctionTimeoutsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.resetRead">reset_read</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_create` <a name="reset_create" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.resetCreate"></a>
+
+```python
+def reset_create() -> None
+```
+
+##### `reset_delete` <a name="reset_delete" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.resetDelete"></a>
+
+```python
+def reset_delete() -> None
+```
+
+##### `reset_read` <a name="reset_read" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.resetRead"></a>
+
+```python
+def reset_read() -> None
+```
+
+##### `reset_update` <a name="reset_update" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.resetUpdate"></a>
+
+```python
+def reset_update() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.property.readInput">read_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeouts">ExternalFunctionTimeouts</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.property.createInput"></a>
+
+```python
+create_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.property.deleteInput"></a>
+
+```python
+delete_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `read_input`<sup>Optional</sup> <a name="read_input" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.property.readInput"></a>
+
+```python
+read_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.property.updateInput"></a>
+
+```python
+update_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.property.create"></a>
+
+```python
+create: str
+```
+
+- *Type:* str
+
+---
+
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.property.delete"></a>
+
+```python
+delete: str
+```
+
+- *Type:* str
+
+---
+
+##### `read`<sup>Required</sup> <a name="read" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.property.read"></a>
+
+```python
+read: str
+```
+
+- *Type:* str
+
+---
+
+##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.property.update"></a>
+
+```python
+update: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, ExternalFunctionTimeouts]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeouts">ExternalFunctionTimeouts</a>]
 
 ---
 

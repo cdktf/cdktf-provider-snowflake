@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/stage
+// https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stage
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,53 +15,53 @@ export interface StageConfig extends cdktf.TerraformMetaArguments {
   /**
   * A unique ID assigned to the specific stage. The ID has the following format: &lt;snowflakeAccount&gt;_SFCRole=&lt;snowflakeRoleId&gt;_&lt;randomId&gt;
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/stage#aws_external_id Stage#aws_external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stage#aws_external_id Stage#aws_external_id}
   */
   readonly awsExternalId?: string;
   /**
   * Specifies a comment for the stage.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/stage#comment Stage#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stage#comment Stage#comment}
   */
   readonly comment?: string;
   /**
   * Specifies the copy options for the stage.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/stage#copy_options Stage#copy_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stage#copy_options Stage#copy_options}
   */
   readonly copyOptions?: string;
   /**
   * Specifies the credentials for the stage.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/stage#credentials Stage#credentials}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stage#credentials Stage#credentials}
   */
   readonly credentials?: string;
   /**
   * The database in which to create the stage.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/stage#database Stage#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stage#database Stage#database}
   */
   readonly database: string;
   /**
   * Specifies the directory settings for the stage.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/stage#directory Stage#directory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stage#directory Stage#directory}
   */
   readonly directory?: string;
   /**
   * Specifies the encryption settings for the stage.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/stage#encryption Stage#encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stage#encryption Stage#encryption}
   */
   readonly encryption?: string;
   /**
-  * Specifies the file format for the stage. Specifying the default Snowflake value (e.g. TYPE = CSV) will currently result in a permadiff (check [#2679](https://github.com/Snowflake-Labs/terraform-provider-snowflake/issues/2679)). For now, omit the default values; it will be fixed in the upcoming provider versions. Examples of usage: <b>1. with hardcoding value:</b> `file_format="FORMAT_NAME = DB.SCHEMA.FORMATNAME"` <b>2. from dynamic value:</b> `file_format = "FORMAT_NAME = ${snowflake_file_format.myfileformat.fully_qualified_name}"` <b>3. from expression:</b> `file_format = format("FORMAT_NAME =%s.%s.MYFILEFORMAT", var.db_name, each.value.schema_name)`. Reference: [#265](https://github.com/Snowflake-Labs/terraform-provider-snowflake/issues/265)
+  * Specifies the file format for the stage. Specifying the default Snowflake value (e.g. TYPE = CSV) will currently result in a permadiff (check [#2679](https://github.com/snowflakedb/terraform-provider-snowflake/issues/2679)). For now, omit the default values; it will be fixed in the upcoming provider versions. Examples of usage: <b>1. with hardcoding value:</b> `file_format="FORMAT_NAME = DB.SCHEMA.FORMATNAME"` <b>2. from dynamic value:</b> `file_format = "FORMAT_NAME = ${snowflake_file_format.myfileformat.fully_qualified_name}"` <b>3. from expression:</b> `file_format = format("FORMAT_NAME =%s.%s.MYFILEFORMAT", var.db_name, each.value.schema_name)`. Reference: [#265](https://github.com/snowflakedb/terraform-provider-snowflake/issues/265)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/stage#file_format Stage#file_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stage#file_format Stage#file_format}
   */
   readonly fileFormat?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/stage#id Stage#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stage#id Stage#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -70,63 +70,69 @@ export interface StageConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies the identifier for the stage; must be unique for the database and schema in which the stage is created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/stage#name Stage#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stage#name Stage#name}
   */
   readonly name: string;
   /**
   * The schema in which to create the stage.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/stage#schema Stage#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stage#schema Stage#schema}
   */
   readonly schema: string;
   /**
   * An AWS IAM user created for your Snowflake account. This user is the same for every external S3 stage created in your account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/stage#snowflake_iam_user Stage#snowflake_iam_user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stage#snowflake_iam_user Stage#snowflake_iam_user}
   */
   readonly snowflakeIamUser?: string;
   /**
   * Specifies the name of the storage integration used to delegate authentication responsibility for external cloud storage to a Snowflake identity and access management (IAM) entity.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/stage#storage_integration Stage#storage_integration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stage#storage_integration Stage#storage_integration}
   */
   readonly storageIntegration?: string;
   /**
   * Specifies the URL for the stage.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/stage#url Stage#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stage#url Stage#url}
   */
   readonly url?: string;
   /**
   * tag block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/stage#tag Stage#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stage#tag Stage#tag}
   */
   readonly tag?: StageTag[] | cdktf.IResolvable;
+  /**
+  * timeouts block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stage#timeouts Stage#timeouts}
+  */
+  readonly timeouts?: StageTimeouts;
 }
 export interface StageTag {
   /**
   * Name of the database that the tag was created in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/stage#database Stage#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stage#database Stage#database}
   */
   readonly database?: string;
   /**
   * Tag name, e.g. department.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/stage#name Stage#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stage#name Stage#name}
   */
   readonly name: string;
   /**
   * Name of the schema that the tag was created in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/stage#schema Stage#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stage#schema Stage#schema}
   */
   readonly schema?: string;
   /**
   * Tag value, e.g. marketing_info.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/stage#value Stage#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stage#value Stage#value}
   */
   readonly value: string;
 }
@@ -321,9 +327,202 @@ export class StageTagList extends cdktf.ComplexList {
     return new StageTagOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface StageTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stage#create Stage#create}
+  */
+  readonly create?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stage#delete Stage#delete}
+  */
+  readonly delete?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stage#read Stage#read}
+  */
+  readonly read?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stage#update Stage#update}
+  */
+  readonly update?: string;
+}
+
+export function stageTimeoutsToTerraform(struct?: StageTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    read: cdktf.stringToTerraform(struct!.read),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
+export function stageTimeoutsToHclTerraform(struct?: StageTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    read: {
+      value: cdktf.stringToHclTerraform(struct!.read),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class StageTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): StageTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._create !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    if (this._read !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.read = this._read;
+    }
+    if (this._update !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.update = this._update;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: StageTimeouts | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._create = undefined;
+      this._delete = undefined;
+      this._read = undefined;
+      this._update = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._create = value.create;
+      this._delete = value.delete;
+      this._read = value.read;
+      this._update = value.update;
+    }
+  }
+
+  // create - computed: false, optional: true, required: false
+  private _create?: string; 
+  public get create() {
+    return this.getStringAttribute('create');
+  }
+  public set create(value: string) {
+    this._create = value;
+  }
+  public resetCreate() {
+    this._create = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createInput() {
+    return this._create;
+  }
+
+  // delete - computed: false, optional: true, required: false
+  private _delete?: string; 
+  public get delete() {
+    return this.getStringAttribute('delete');
+  }
+  public set delete(value: string) {
+    this._delete = value;
+  }
+  public resetDelete() {
+    this._delete = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteInput() {
+    return this._delete;
+  }
+
+  // read - computed: false, optional: true, required: false
+  private _read?: string; 
+  public get read() {
+    return this.getStringAttribute('read');
+  }
+  public set read(value: string) {
+    this._read = value;
+  }
+  public resetRead() {
+    this._read = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get readInput() {
+    return this._read;
+  }
+
+  // update - computed: false, optional: true, required: false
+  private _update?: string; 
+  public get update() {
+    return this.getStringAttribute('update');
+  }
+  public set update(value: string) {
+    this._update = value;
+  }
+  public resetUpdate() {
+    this._update = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get updateInput() {
+    return this._update;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/stage snowflake_stage}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stage snowflake_stage}
 */
 export class Stage extends cdktf.TerraformResource {
 
@@ -339,7 +538,7 @@ export class Stage extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Stage resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Stage to import
-  * @param importFromId The id of the existing Stage that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/stage#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Stage that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stage#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Stage to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -351,7 +550,7 @@ export class Stage extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/stage snowflake_stage} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stage snowflake_stage} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -362,7 +561,7 @@ export class Stage extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_stage',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '1.0.5',
+        providerVersion: '1.2.1',
         providerVersionConstraint: ' ~> 1.0'
       },
       provider: config.provider,
@@ -388,6 +587,7 @@ export class Stage extends cdktf.TerraformResource {
     this._storageIntegration = config.storageIntegration;
     this._url = config.url;
     this._tag.internalValue = config.tag;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -630,6 +830,22 @@ export class Stage extends cdktf.TerraformResource {
     return this._tag.internalValue;
   }
 
+  // timeouts - computed: false, optional: true, required: false
+  private _timeouts = new StageTimeoutsOutputReference(this, "timeouts");
+  public get timeouts() {
+    return this._timeouts;
+  }
+  public putTimeouts(value: StageTimeouts) {
+    this._timeouts.internalValue = value;
+  }
+  public resetTimeouts() {
+    this._timeouts.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -651,6 +867,7 @@ export class Stage extends cdktf.TerraformResource {
       storage_integration: cdktf.stringToTerraform(this._storageIntegration),
       url: cdktf.stringToTerraform(this._url),
       tag: cdktf.listMapper(stageTagToTerraform, true)(this._tag.internalValue),
+      timeouts: stageTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 
@@ -745,6 +962,12 @@ export class Stage extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "StageTagList",
+      },
+      timeouts: {
+        value: stageTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "StageTimeouts",
       },
     };
 

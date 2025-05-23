@@ -4,7 +4,7 @@
 
 ### DynamicTable <a name="DynamicTable" id="@cdktf/provider-snowflake.dynamicTable.DynamicTable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/dynamic_table snowflake_dynamic_table}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table snowflake_dynamic_table}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dynamicTable.DynamicTable.Initializer"></a>
 
@@ -35,6 +35,7 @@ DynamicTable.Builder.create(Construct scope, java.lang.String id)
 //  .orReplace(java.lang.Boolean)
 //  .orReplace(IResolvable)
 //  .refreshMode(java.lang.String)
+//  .timeouts(DynamicTableTimeouts)
     .build();
 ```
 
@@ -56,10 +57,11 @@ DynamicTable.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.Initializer.parameter.targetLag">targetLag</a></code> | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTargetLag">DynamicTableTargetLag</a></code> | target_lag block. |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.Initializer.parameter.warehouse">warehouse</a></code> | <code>java.lang.String</code> | The warehouse in which to create the dynamic table. |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.Initializer.parameter.comment">comment</a></code> | <code>java.lang.String</code> | Specifies a comment for the dynamic table. |
-| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/dynamic_table#id DynamicTable#id}. |
-| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.Initializer.parameter.initialize">initialize</a></code> | <code>java.lang.String</code> | Initialize trigger for the dynamic table. Can only be set on creation. Available options are ON_CREATE and ON_SCHEDULE. |
-| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.Initializer.parameter.orReplace">orReplace</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Specifies whether to replace the dynamic table if it already exists. |
-| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.Initializer.parameter.refreshMode">refreshMode</a></code> | <code>java.lang.String</code> | INCREMENTAL to use incremental refreshes, FULL to recompute the whole table on every refresh, or AUTO to let Snowflake decide. |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#id DynamicTable#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.Initializer.parameter.initialize">initialize</a></code> | <code>java.lang.String</code> | (Default: `ON_CREATE`) Initialize trigger for the dynamic table. |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.Initializer.parameter.orReplace">orReplace</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | (Default: `false`) Specifies whether to replace the dynamic table if it already exists. |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.Initializer.parameter.refreshMode">refreshMode</a></code> | <code>java.lang.String</code> | (Default: `AUTO`) INCREMENTAL to use incremental refreshes, FULL to recompute the whole table on every refresh, or AUTO to let Snowflake decide. |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeouts">DynamicTableTimeouts</a></code> | timeouts block. |
 
 ---
 
@@ -129,7 +131,7 @@ Must be unique amongst siblings in the same scope
 
 The database in which to create the dynamic table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/dynamic_table#database DynamicTable#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#database DynamicTable#database}
 
 ---
 
@@ -139,7 +141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the identifier (i.e. name) for the dynamic table; must be unique for the schema in which the dynamic table is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/dynamic_table#name DynamicTable#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#name DynamicTable#name}
 
 ---
 
@@ -149,7 +151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the query to use to populate the dynamic table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/dynamic_table#query DynamicTable#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#query DynamicTable#query}
 
 ---
 
@@ -159,7 +161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The schema in which to create the dynamic table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/dynamic_table#schema DynamicTable#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#schema DynamicTable#schema}
 
 ---
 
@@ -169,7 +171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 target_lag block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/dynamic_table#target_lag DynamicTable#target_lag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#target_lag DynamicTable#target_lag}
 
 ---
 
@@ -179,7 +181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The warehouse in which to create the dynamic table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/dynamic_table#warehouse DynamicTable#warehouse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#warehouse DynamicTable#warehouse}
 
 ---
 
@@ -189,7 +191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies a comment for the dynamic table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/dynamic_table#comment DynamicTable#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#comment DynamicTable#comment}
 
 ---
 
@@ -197,7 +199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/dynamic_table#id DynamicTable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#id DynamicTable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -208,9 +210,11 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Initialize trigger for the dynamic table. Can only be set on creation. Available options are ON_CREATE and ON_SCHEDULE.
+(Default: `ON_CREATE`) Initialize trigger for the dynamic table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/dynamic_table#initialize DynamicTable#initialize}
+Can only be set on creation. Available options are ON_CREATE and ON_SCHEDULE.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#initialize DynamicTable#initialize}
 
 ---
 
@@ -218,9 +222,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Specifies whether to replace the dynamic table if it already exists.
+(Default: `false`) Specifies whether to replace the dynamic table if it already exists.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/dynamic_table#or_replace DynamicTable#or_replace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#or_replace DynamicTable#or_replace}
 
 ---
 
@@ -228,9 +232,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.lang.String
 
-INCREMENTAL to use incremental refreshes, FULL to recompute the whole table on every refresh, or AUTO to let Snowflake decide.
+(Default: `AUTO`) INCREMENTAL to use incremental refreshes, FULL to recompute the whole table on every refresh, or AUTO to let Snowflake decide.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/dynamic_table#refresh_mode DynamicTable#refresh_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#refresh_mode DynamicTable#refresh_mode}
+
+---
+
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-snowflake.dynamicTable.DynamicTable.Initializer.parameter.timeouts"></a>
+
+- *Type:* <a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeouts">DynamicTableTimeouts</a>
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#timeouts DynamicTable#timeouts}
 
 ---
 
@@ -262,11 +276,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.putTargetLag">putTargetLag</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.resetComment">resetComment</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.resetInitialize">resetInitialize</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.resetOrReplace">resetOrReplace</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.resetRefreshMode">resetRefreshMode</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -572,6 +588,18 @@ public void putTargetLag(DynamicTableTargetLag value)
 
 ---
 
+##### `putTimeouts` <a name="putTimeouts" id="@cdktf/provider-snowflake.dynamicTable.DynamicTable.putTimeouts"></a>
+
+```java
+public void putTimeouts(DynamicTableTimeouts value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-snowflake.dynamicTable.DynamicTable.putTimeouts.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeouts">DynamicTableTimeouts</a>
+
+---
+
 ##### `resetComment` <a name="resetComment" id="@cdktf/provider-snowflake.dynamicTable.DynamicTable.resetComment"></a>
 
 ```java
@@ -600,6 +628,12 @@ public void resetOrReplace()
 
 ```java
 public void resetRefreshMode()
+```
+
+##### `resetTimeouts` <a name="resetTimeouts" id="@cdktf/provider-snowflake.dynamicTable.DynamicTable.resetTimeouts"></a>
+
+```java
+public void resetTimeouts()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -705,7 +739,7 @@ The construct id used in the generated config for the DynamicTable to import.
 
 The id of the existing DynamicTable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/dynamic_table#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -749,6 +783,7 @@ Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.rows">rows</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.schedulingState">schedulingState</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.targetLag">targetLag</a></code> | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTargetLagOutputReference">DynamicTableTargetLagOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference">DynamicTableTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.commentInput">commentInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.databaseInput">databaseInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -759,6 +794,7 @@ Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.refreshModeInput">refreshModeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.schemaInput">schemaInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.targetLagInput">targetLagInput</a></code> | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTargetLag">DynamicTableTargetLag</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.timeoutsInput">timeoutsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeouts">DynamicTableTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.warehouseInput">warehouseInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.comment">comment</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.database">database</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1055,6 +1091,16 @@ public DynamicTableTargetLagOutputReference getTargetLag();
 
 ---
 
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.timeouts"></a>
+
+```java
+public DynamicTableTimeoutsOutputReference getTimeouts();
+```
+
+- *Type:* <a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference">DynamicTableTimeoutsOutputReference</a>
+
+---
+
 ##### `commentInput`<sup>Optional</sup> <a name="commentInput" id="@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.commentInput"></a>
 
 ```java
@@ -1152,6 +1198,16 @@ public DynamicTableTargetLag getTargetLagInput();
 ```
 
 - *Type:* <a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTargetLag">DynamicTableTargetLag</a>
+
+---
+
+##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.timeoutsInput"></a>
+
+```java
+public java.lang.Object getTimeoutsInput();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeouts">DynamicTableTimeouts</a>
 
 ---
 
@@ -1316,6 +1372,7 @@ DynamicTableConfig.builder()
 //  .orReplace(java.lang.Boolean)
 //  .orReplace(IResolvable)
 //  .refreshMode(java.lang.String)
+//  .timeouts(DynamicTableTimeouts)
     .build();
 ```
 
@@ -1337,10 +1394,11 @@ DynamicTableConfig.builder()
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableConfig.property.targetLag">targetLag</a></code> | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTargetLag">DynamicTableTargetLag</a></code> | target_lag block. |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableConfig.property.warehouse">warehouse</a></code> | <code>java.lang.String</code> | The warehouse in which to create the dynamic table. |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableConfig.property.comment">comment</a></code> | <code>java.lang.String</code> | Specifies a comment for the dynamic table. |
-| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/dynamic_table#id DynamicTable#id}. |
-| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableConfig.property.initialize">initialize</a></code> | <code>java.lang.String</code> | Initialize trigger for the dynamic table. Can only be set on creation. Available options are ON_CREATE and ON_SCHEDULE. |
-| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableConfig.property.orReplace">orReplace</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Specifies whether to replace the dynamic table if it already exists. |
-| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableConfig.property.refreshMode">refreshMode</a></code> | <code>java.lang.String</code> | INCREMENTAL to use incremental refreshes, FULL to recompute the whole table on every refresh, or AUTO to let Snowflake decide. |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#id DynamicTable#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableConfig.property.initialize">initialize</a></code> | <code>java.lang.String</code> | (Default: `ON_CREATE`) Initialize trigger for the dynamic table. |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableConfig.property.orReplace">orReplace</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | (Default: `false`) Specifies whether to replace the dynamic table if it already exists. |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableConfig.property.refreshMode">refreshMode</a></code> | <code>java.lang.String</code> | (Default: `AUTO`) INCREMENTAL to use incremental refreshes, FULL to recompute the whole table on every refresh, or AUTO to let Snowflake decide. |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeouts">DynamicTableTimeouts</a></code> | timeouts block. |
 
 ---
 
@@ -1424,7 +1482,7 @@ public java.lang.String getDatabase();
 
 The database in which to create the dynamic table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/dynamic_table#database DynamicTable#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#database DynamicTable#database}
 
 ---
 
@@ -1438,7 +1496,7 @@ public java.lang.String getName();
 
 Specifies the identifier (i.e. name) for the dynamic table; must be unique for the schema in which the dynamic table is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/dynamic_table#name DynamicTable#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#name DynamicTable#name}
 
 ---
 
@@ -1452,7 +1510,7 @@ public java.lang.String getQuery();
 
 Specifies the query to use to populate the dynamic table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/dynamic_table#query DynamicTable#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#query DynamicTable#query}
 
 ---
 
@@ -1466,7 +1524,7 @@ public java.lang.String getSchema();
 
 The schema in which to create the dynamic table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/dynamic_table#schema DynamicTable#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#schema DynamicTable#schema}
 
 ---
 
@@ -1480,7 +1538,7 @@ public DynamicTableTargetLag getTargetLag();
 
 target_lag block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/dynamic_table#target_lag DynamicTable#target_lag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#target_lag DynamicTable#target_lag}
 
 ---
 
@@ -1494,7 +1552,7 @@ public java.lang.String getWarehouse();
 
 The warehouse in which to create the dynamic table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/dynamic_table#warehouse DynamicTable#warehouse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#warehouse DynamicTable#warehouse}
 
 ---
 
@@ -1508,7 +1566,7 @@ public java.lang.String getComment();
 
 Specifies a comment for the dynamic table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/dynamic_table#comment DynamicTable#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#comment DynamicTable#comment}
 
 ---
 
@@ -1520,7 +1578,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/dynamic_table#id DynamicTable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#id DynamicTable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1535,9 +1593,11 @@ public java.lang.String getInitialize();
 
 - *Type:* java.lang.String
 
-Initialize trigger for the dynamic table. Can only be set on creation. Available options are ON_CREATE and ON_SCHEDULE.
+(Default: `ON_CREATE`) Initialize trigger for the dynamic table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/dynamic_table#initialize DynamicTable#initialize}
+Can only be set on creation. Available options are ON_CREATE and ON_SCHEDULE.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#initialize DynamicTable#initialize}
 
 ---
 
@@ -1549,9 +1609,9 @@ public java.lang.Object getOrReplace();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Specifies whether to replace the dynamic table if it already exists.
+(Default: `false`) Specifies whether to replace the dynamic table if it already exists.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/dynamic_table#or_replace DynamicTable#or_replace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#or_replace DynamicTable#or_replace}
 
 ---
 
@@ -1563,9 +1623,23 @@ public java.lang.String getRefreshMode();
 
 - *Type:* java.lang.String
 
-INCREMENTAL to use incremental refreshes, FULL to recompute the whole table on every refresh, or AUTO to let Snowflake decide.
+(Default: `AUTO`) INCREMENTAL to use incremental refreshes, FULL to recompute the whole table on every refresh, or AUTO to let Snowflake decide.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/dynamic_table#refresh_mode DynamicTable#refresh_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#refresh_mode DynamicTable#refresh_mode}
+
+---
+
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableConfig.property.timeouts"></a>
+
+```java
+public DynamicTableTimeouts getTimeouts();
+```
+
+- *Type:* <a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeouts">DynamicTableTimeouts</a>
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#timeouts DynamicTable#timeouts}
 
 ---
 
@@ -1602,7 +1676,7 @@ public java.lang.Object getDownstream();
 
 Specifies whether the target lag time is downstream.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/dynamic_table#downstream DynamicTable#downstream}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#downstream DynamicTable#downstream}
 
 ---
 
@@ -1616,7 +1690,81 @@ public java.lang.String getMaximumDuration();
 
 Specifies the maximum target lag time for the dynamic table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/dynamic_table#maximum_duration DynamicTable#maximum_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#maximum_duration DynamicTable#maximum_duration}
+
+---
+
+### DynamicTableTimeouts <a name="DynamicTableTimeouts" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeouts"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeouts.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.snowflake.dynamic_table.DynamicTableTimeouts;
+
+DynamicTableTimeouts.builder()
+//  .create(java.lang.String)
+//  .delete(java.lang.String)
+//  .read(java.lang.String)
+//  .update(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#create DynamicTable#create}. |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#delete DynamicTable#delete}. |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#read DynamicTable#read}. |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#update DynamicTable#update}. |
+
+---
+
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeouts.property.create"></a>
+
+```java
+public java.lang.String getCreate();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#create DynamicTable#create}.
+
+---
+
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeouts.property.delete"></a>
+
+```java
+public java.lang.String getDelete();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#delete DynamicTable#delete}.
+
+---
+
+##### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeouts.property.read"></a>
+
+```java
+public java.lang.String getRead();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#read DynamicTable#read}.
+
+---
+
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeouts.property.update"></a>
+
+```java
+public java.lang.String getUpdate();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#update DynamicTable#update}.
 
 ---
 
@@ -1925,6 +2073,371 @@ public DynamicTableTargetLag getInternalValue();
 ```
 
 - *Type:* <a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTargetLag">DynamicTableTargetLag</a>
+
+---
+
+
+### DynamicTableTimeoutsOutputReference <a name="DynamicTableTimeoutsOutputReference" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.snowflake.dynamic_table.DynamicTableTimeoutsOutputReference;
+
+new DynamicTableTimeoutsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.resetCreate">resetCreate</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.resetDelete">resetDelete</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.resetRead">resetRead</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.resetUpdate">resetUpdate</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetCreate` <a name="resetCreate" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.resetCreate"></a>
+
+```java
+public void resetCreate()
+```
+
+##### `resetDelete` <a name="resetDelete" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.resetDelete"></a>
+
+```java
+public void resetDelete()
+```
+
+##### `resetRead` <a name="resetRead" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.resetRead"></a>
+
+```java
+public void resetRead()
+```
+
+##### `resetUpdate` <a name="resetUpdate" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.resetUpdate"></a>
+
+```java
+public void resetUpdate()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.property.createInput">createInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.property.readInput">readInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.property.updateInput">updateInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.property.create">create</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.property.delete">delete</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.property.read">read</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.property.update">update</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeouts">DynamicTableTimeouts</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `createInput`<sup>Optional</sup> <a name="createInput" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.property.createInput"></a>
+
+```java
+public java.lang.String getCreateInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `deleteInput`<sup>Optional</sup> <a name="deleteInput" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.property.deleteInput"></a>
+
+```java
+public java.lang.String getDeleteInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `readInput`<sup>Optional</sup> <a name="readInput" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.property.readInput"></a>
+
+```java
+public java.lang.String getReadInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `updateInput`<sup>Optional</sup> <a name="updateInput" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.property.updateInput"></a>
+
+```java
+public java.lang.String getUpdateInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.property.create"></a>
+
+```java
+public java.lang.String getCreate();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.property.delete"></a>
+
+```java
+public java.lang.String getDelete();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `read`<sup>Required</sup> <a name="read" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.property.read"></a>
+
+```java
+public java.lang.String getRead();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.property.update"></a>
+
+```java
+public java.lang.String getUpdate();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.property.internalValue"></a>
+
+```java
+public java.lang.Object getInternalValue();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeouts">DynamicTableTimeouts</a>
 
 ---
 

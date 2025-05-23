@@ -4,7 +4,7 @@
 
 ### ManagedAccount <a name="ManagedAccount" id="@cdktf/provider-snowflake.managedAccount.ManagedAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/managed_account snowflake_managed_account}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/managed_account snowflake_managed_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.managedAccount.ManagedAccount.Initializer"></a>
 
@@ -28,6 +28,7 @@ ManagedAccount.Builder.create(Construct scope, java.lang.String id)
     .name(java.lang.String)
 //  .comment(java.lang.String)
 //  .id(java.lang.String)
+//  .timeouts(ManagedAccountTimeouts)
 //  .type(java.lang.String)
     .build();
 ```
@@ -47,8 +48,9 @@ ManagedAccount.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccount.Initializer.parameter.adminPassword">adminPassword</a></code> | <code>java.lang.String</code> | Password for the initial user in the managed account. Check [Snowflake-provided password policy](https://docs.snowflake.com/en/user-guide/admin-user-management#snowflake-provided-password-policy). |
 | <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccount.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Identifier for the managed account; must be unique for your account. |
 | <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccount.Initializer.parameter.comment">comment</a></code> | <code>java.lang.String</code> | Specifies a comment for the managed account. |
-| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccount.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/managed_account#id ManagedAccount#id}. |
-| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccount.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | Specifies the type of managed account. |
+| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccount.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/managed_account#id ManagedAccount#id}. |
+| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccount.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeouts">ManagedAccountTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccount.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | (Default: `READER`) Specifies the type of managed account. |
 
 ---
 
@@ -120,7 +122,7 @@ Identifier, as well as login name, for the initial user in the managed account.
 
 This user serves as the account administrator for the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/managed_account#admin_name ManagedAccount#admin_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/managed_account#admin_name ManagedAccount#admin_name}
 
 ---
 
@@ -130,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Password for the initial user in the managed account. Check [Snowflake-provided password policy](https://docs.snowflake.com/en/user-guide/admin-user-management#snowflake-provided-password-policy).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/managed_account#admin_password ManagedAccount#admin_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/managed_account#admin_password ManagedAccount#admin_password}
 
 ---
 
@@ -140,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Identifier for the managed account; must be unique for your account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/managed_account#name ManagedAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/managed_account#name ManagedAccount#name}
 
 ---
 
@@ -150,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies a comment for the managed account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/managed_account#comment ManagedAccount#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/managed_account#comment ManagedAccount#comment}
 
 ---
 
@@ -158,10 +160,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/managed_account#id ManagedAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/managed_account#id ManagedAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-snowflake.managedAccount.ManagedAccount.Initializer.parameter.timeouts"></a>
+
+- *Type:* <a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeouts">ManagedAccountTimeouts</a>
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/managed_account#timeouts ManagedAccount#timeouts}
 
 ---
 
@@ -169,9 +181,9 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Specifies the type of managed account.
+(Default: `READER`) Specifies the type of managed account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/managed_account#type ManagedAccount#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/managed_account#type ManagedAccount#type}
 
 ---
 
@@ -202,8 +214,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 | <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccount.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccount.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccount.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccount.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccount.resetComment">resetComment</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccount.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccount.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccount.resetType">resetType</a></code> | *No description.* |
 
 ---
@@ -498,6 +512,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `putTimeouts` <a name="putTimeouts" id="@cdktf/provider-snowflake.managedAccount.ManagedAccount.putTimeouts"></a>
+
+```java
+public void putTimeouts(ManagedAccountTimeouts value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-snowflake.managedAccount.ManagedAccount.putTimeouts.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeouts">ManagedAccountTimeouts</a>
+
+---
+
 ##### `resetComment` <a name="resetComment" id="@cdktf/provider-snowflake.managedAccount.ManagedAccount.resetComment"></a>
 
 ```java
@@ -508,6 +534,12 @@ public void resetComment()
 
 ```java
 public void resetId()
+```
+
+##### `resetTimeouts` <a name="resetTimeouts" id="@cdktf/provider-snowflake.managedAccount.ManagedAccount.resetTimeouts"></a>
+
+```java
+public void resetTimeouts()
 ```
 
 ##### `resetType` <a name="resetType" id="@cdktf/provider-snowflake.managedAccount.ManagedAccount.resetType"></a>
@@ -619,7 +651,7 @@ The construct id used in the generated config for the ManagedAccount to import.
 
 The id of the existing ManagedAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/managed_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/managed_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -654,12 +686,14 @@ Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 | <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccount.property.fullyQualifiedName">fullyQualifiedName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccount.property.locator">locator</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccount.property.region">region</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccount.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference">ManagedAccountTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccount.property.url">url</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccount.property.adminNameInput">adminNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccount.property.adminPasswordInput">adminPasswordInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccount.property.commentInput">commentInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccount.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccount.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccount.property.timeoutsInput">timeoutsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeouts">ManagedAccountTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccount.property.typeInput">typeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccount.property.adminName">adminName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccount.property.adminPassword">adminPassword</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -862,6 +896,16 @@ public java.lang.String getRegion();
 
 ---
 
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-snowflake.managedAccount.ManagedAccount.property.timeouts"></a>
+
+```java
+public ManagedAccountTimeoutsOutputReference getTimeouts();
+```
+
+- *Type:* <a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference">ManagedAccountTimeoutsOutputReference</a>
+
+---
+
 ##### `url`<sup>Required</sup> <a name="url" id="@cdktf/provider-snowflake.managedAccount.ManagedAccount.property.url"></a>
 
 ```java
@@ -919,6 +963,16 @@ public java.lang.String getNameInput();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-snowflake.managedAccount.ManagedAccount.property.timeoutsInput"></a>
+
+```java
+public java.lang.Object getTimeoutsInput();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeouts">ManagedAccountTimeouts</a>
 
 ---
 
@@ -1036,6 +1090,7 @@ ManagedAccountConfig.builder()
     .name(java.lang.String)
 //  .comment(java.lang.String)
 //  .id(java.lang.String)
+//  .timeouts(ManagedAccountTimeouts)
 //  .type(java.lang.String)
     .build();
 ```
@@ -1055,8 +1110,9 @@ ManagedAccountConfig.builder()
 | <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountConfig.property.adminPassword">adminPassword</a></code> | <code>java.lang.String</code> | Password for the initial user in the managed account. Check [Snowflake-provided password policy](https://docs.snowflake.com/en/user-guide/admin-user-management#snowflake-provided-password-policy). |
 | <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountConfig.property.name">name</a></code> | <code>java.lang.String</code> | Identifier for the managed account; must be unique for your account. |
 | <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountConfig.property.comment">comment</a></code> | <code>java.lang.String</code> | Specifies a comment for the managed account. |
-| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/managed_account#id ManagedAccount#id}. |
-| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountConfig.property.type">type</a></code> | <code>java.lang.String</code> | Specifies the type of managed account. |
+| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/managed_account#id ManagedAccount#id}. |
+| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeouts">ManagedAccountTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountConfig.property.type">type</a></code> | <code>java.lang.String</code> | (Default: `READER`) Specifies the type of managed account. |
 
 ---
 
@@ -1142,7 +1198,7 @@ Identifier, as well as login name, for the initial user in the managed account.
 
 This user serves as the account administrator for the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/managed_account#admin_name ManagedAccount#admin_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/managed_account#admin_name ManagedAccount#admin_name}
 
 ---
 
@@ -1156,7 +1212,7 @@ public java.lang.String getAdminPassword();
 
 Password for the initial user in the managed account. Check [Snowflake-provided password policy](https://docs.snowflake.com/en/user-guide/admin-user-management#snowflake-provided-password-policy).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/managed_account#admin_password ManagedAccount#admin_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/managed_account#admin_password ManagedAccount#admin_password}
 
 ---
 
@@ -1170,7 +1226,7 @@ public java.lang.String getName();
 
 Identifier for the managed account; must be unique for your account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/managed_account#name ManagedAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/managed_account#name ManagedAccount#name}
 
 ---
 
@@ -1184,7 +1240,7 @@ public java.lang.String getComment();
 
 Specifies a comment for the managed account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/managed_account#comment ManagedAccount#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/managed_account#comment ManagedAccount#comment}
 
 ---
 
@@ -1196,10 +1252,24 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/managed_account#id ManagedAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/managed_account#id ManagedAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountConfig.property.timeouts"></a>
+
+```java
+public ManagedAccountTimeouts getTimeouts();
+```
+
+- *Type:* <a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeouts">ManagedAccountTimeouts</a>
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/managed_account#timeouts ManagedAccount#timeouts}
 
 ---
 
@@ -1211,9 +1281,449 @@ public java.lang.String getType();
 
 - *Type:* java.lang.String
 
-Specifies the type of managed account.
+(Default: `READER`) Specifies the type of managed account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/managed_account#type ManagedAccount#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/managed_account#type ManagedAccount#type}
+
+---
+
+### ManagedAccountTimeouts <a name="ManagedAccountTimeouts" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeouts"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeouts.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.snowflake.managed_account.ManagedAccountTimeouts;
+
+ManagedAccountTimeouts.builder()
+//  .create(java.lang.String)
+//  .delete(java.lang.String)
+//  .read(java.lang.String)
+//  .update(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/managed_account#create ManagedAccount#create}. |
+| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/managed_account#delete ManagedAccount#delete}. |
+| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/managed_account#read ManagedAccount#read}. |
+| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/managed_account#update ManagedAccount#update}. |
+
+---
+
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeouts.property.create"></a>
+
+```java
+public java.lang.String getCreate();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/managed_account#create ManagedAccount#create}.
+
+---
+
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeouts.property.delete"></a>
+
+```java
+public java.lang.String getDelete();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/managed_account#delete ManagedAccount#delete}.
+
+---
+
+##### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeouts.property.read"></a>
+
+```java
+public java.lang.String getRead();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/managed_account#read ManagedAccount#read}.
+
+---
+
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeouts.property.update"></a>
+
+```java
+public java.lang.String getUpdate();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/managed_account#update ManagedAccount#update}.
+
+---
+
+## Classes <a name="Classes" id="Classes"></a>
+
+### ManagedAccountTimeoutsOutputReference <a name="ManagedAccountTimeoutsOutputReference" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.snowflake.managed_account.ManagedAccountTimeoutsOutputReference;
+
+new ManagedAccountTimeoutsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.resetCreate">resetCreate</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.resetDelete">resetDelete</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.resetRead">resetRead</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.resetUpdate">resetUpdate</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetCreate` <a name="resetCreate" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.resetCreate"></a>
+
+```java
+public void resetCreate()
+```
+
+##### `resetDelete` <a name="resetDelete" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.resetDelete"></a>
+
+```java
+public void resetDelete()
+```
+
+##### `resetRead` <a name="resetRead" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.resetRead"></a>
+
+```java
+public void resetRead()
+```
+
+##### `resetUpdate` <a name="resetUpdate" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.resetUpdate"></a>
+
+```java
+public void resetUpdate()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.property.createInput">createInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.property.readInput">readInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.property.updateInput">updateInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.property.create">create</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.property.delete">delete</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.property.read">read</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.property.update">update</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeouts">ManagedAccountTimeouts</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `createInput`<sup>Optional</sup> <a name="createInput" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.property.createInput"></a>
+
+```java
+public java.lang.String getCreateInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `deleteInput`<sup>Optional</sup> <a name="deleteInput" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.property.deleteInput"></a>
+
+```java
+public java.lang.String getDeleteInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `readInput`<sup>Optional</sup> <a name="readInput" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.property.readInput"></a>
+
+```java
+public java.lang.String getReadInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `updateInput`<sup>Optional</sup> <a name="updateInput" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.property.updateInput"></a>
+
+```java
+public java.lang.String getUpdateInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.property.create"></a>
+
+```java
+public java.lang.String getCreate();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.property.delete"></a>
+
+```java
+public java.lang.String getDelete();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `read`<sup>Required</sup> <a name="read" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.property.read"></a>
+
+```java
+public java.lang.String getRead();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.property.update"></a>
+
+```java
+public java.lang.String getUpdate();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.property.internalValue"></a>
+
+```java
+public java.lang.Object getInternalValue();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeouts">ManagedAccountTimeouts</a>
 
 ---
 

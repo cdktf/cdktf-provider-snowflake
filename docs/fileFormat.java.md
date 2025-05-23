@@ -4,7 +4,7 @@
 
 ### FileFormat <a name="FileFormat" id="@cdktf/provider-snowflake.fileFormat.FileFormat"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format snowflake_file_format}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format snowflake_file_format}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer"></a>
 
@@ -74,6 +74,7 @@ FileFormat.Builder.create(Construct scope, java.lang.String id)
 //  .stripOuterElement(java.lang.Boolean)
 //  .stripOuterElement(IResolvable)
 //  .timeFormat(java.lang.String)
+//  .timeouts(FileFormatTimeouts)
 //  .timestampFormat(java.lang.String)
 //  .trimSpace(java.lang.Boolean)
 //  .trimSpace(IResolvable)
@@ -112,7 +113,7 @@ FileFormat.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.fieldDelimiter">fieldDelimiter</a></code> | <code>java.lang.String</code> | Specifies one or more singlebyte or multibyte characters that separate fields in an input file (data loading) or unloaded file (data unloading). |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.fieldOptionallyEnclosedBy">fieldOptionallyEnclosedBy</a></code> | <code>java.lang.String</code> | Character used to enclose strings. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.fileExtension">fileExtension</a></code> | <code>java.lang.String</code> | Specifies the extension for files unloaded to a stage. |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#id FileFormat#id}. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#id FileFormat#id}. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.ignoreUtf8Errors">ignoreUtf8Errors</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Boolean that specifies whether UTF-8 encoding errors produce error conditions. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.nullIf">nullIf</a></code> | <code>java.util.List<java.lang.String></code> | String used to convert to and from SQL NULL. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.parseHeader">parseHeader</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Boolean that specifies whether to use the first row headers in the data files to determine column names. |
@@ -126,6 +127,7 @@ FileFormat.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.stripOuterArray">stripOuterArray</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Boolean that instructs the JSON parser to remove outer brackets. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.stripOuterElement">stripOuterElement</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Boolean that specifies whether the XML parser strips out the outer XML element, exposing 2nd level elements as separate documents. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.timeFormat">timeFormat</a></code> | <code>java.lang.String</code> | Defines the format of time values in the data files (data loading) or table (data unloading). |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeouts">FileFormatTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.timestampFormat">timestampFormat</a></code> | <code>java.lang.String</code> | Defines the format of timestamp values in the data files (data loading) or table (data unloading). |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.trimSpace">trimSpace</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Boolean that specifies whether to remove white space from fields. |
 
@@ -197,7 +199,7 @@ Must be unique amongst siblings in the same scope
 
 The database in which to create the file format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#database FileFormat#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#database FileFormat#database}
 
 ---
 
@@ -207,7 +209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the format of the input files (for data loading) or output files (for data unloading).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#format_type FileFormat#format_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#format_type FileFormat#format_type}
 
 ---
 
@@ -219,7 +221,7 @@ Specifies the identifier for the file format;
 
 must be unique for the database and schema in which the file format is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#name FileFormat#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#name FileFormat#name}
 
 ---
 
@@ -229,7 +231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The schema in which to create the file format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#schema FileFormat#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#schema FileFormat#schema}
 
 ---
 
@@ -239,7 +241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Boolean that specifies to allow duplicate object field names (only the last one will be preserved).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#allow_duplicate FileFormat#allow_duplicate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#allow_duplicate FileFormat#allow_duplicate}
 
 ---
 
@@ -249,7 +251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Boolean that specifies whether to interpret columns with no defined logical data type as UTF-8 text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#binary_as_text FileFormat#binary_as_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#binary_as_text FileFormat#binary_as_text}
 
 ---
 
@@ -259,7 +261,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Defines the encoding format for binary input or output.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#binary_format FileFormat#binary_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#binary_format FileFormat#binary_format}
 
 ---
 
@@ -269,7 +271,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies a comment for the file format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#comment FileFormat#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#comment FileFormat#comment}
 
 ---
 
@@ -279,7 +281,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the current compression algorithm for the data file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#compression FileFormat#compression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#compression FileFormat#compression}
 
 ---
 
@@ -289,7 +291,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Defines the format of date values in the data files (data loading) or table (data unloading).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#date_format FileFormat#date_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#date_format FileFormat#date_format}
 
 ---
 
@@ -299,7 +301,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Boolean that specifies whether the XML parser disables automatic conversion of numeric and Boolean values from text to native representation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#disable_auto_convert FileFormat#disable_auto_convert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#disable_auto_convert FileFormat#disable_auto_convert}
 
 ---
 
@@ -309,7 +311,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Boolean that specifies whether the XML parser disables recognition of Snowflake semi-structured data tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#disable_snowflake_data FileFormat#disable_snowflake_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#disable_snowflake_data FileFormat#disable_snowflake_data}
 
 ---
 
@@ -319,7 +321,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies whether to insert SQL NULL for empty fields in an input file, which are represented by two successive delimiters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#empty_field_as_null FileFormat#empty_field_as_null}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#empty_field_as_null FileFormat#empty_field_as_null}
 
 ---
 
@@ -329,7 +331,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Boolean that enables parsing of octal numbers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#enable_octal FileFormat#enable_octal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#enable_octal FileFormat#enable_octal}
 
 ---
 
@@ -339,7 +341,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 String (constant) that specifies the character set of the source data when loading data into a table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#encoding FileFormat#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#encoding FileFormat#encoding}
 
 ---
 
@@ -349,7 +351,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Boolean that specifies whether to generate a parsing error if the number of delimited columns (i.e. fields) in an input file does not match the number of columns in the corresponding table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#error_on_column_count_mismatch FileFormat#error_on_column_count_mismatch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#error_on_column_count_mismatch FileFormat#error_on_column_count_mismatch}
 
 ---
 
@@ -359,7 +361,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Single character string used as the escape character for field values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#escape FileFormat#escape}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#escape FileFormat#escape}
 
 ---
 
@@ -369,7 +371,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Single character string used as the escape character for unenclosed field values only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#escape_unenclosed_field FileFormat#escape_unenclosed_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#escape_unenclosed_field FileFormat#escape_unenclosed_field}
 
 ---
 
@@ -379,7 +381,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies one or more singlebyte or multibyte characters that separate fields in an input file (data loading) or unloaded file (data unloading).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#field_delimiter FileFormat#field_delimiter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#field_delimiter FileFormat#field_delimiter}
 
 ---
 
@@ -389,7 +391,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Character used to enclose strings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#field_optionally_enclosed_by FileFormat#field_optionally_enclosed_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#field_optionally_enclosed_by FileFormat#field_optionally_enclosed_by}
 
 ---
 
@@ -399,7 +401,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the extension for files unloaded to a stage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#file_extension FileFormat#file_extension}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#file_extension FileFormat#file_extension}
 
 ---
 
@@ -407,7 +409,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#id FileFormat#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#id FileFormat#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -420,7 +422,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Boolean that specifies whether UTF-8 encoding errors produce error conditions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#ignore_utf8_errors FileFormat#ignore_utf8_errors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#ignore_utf8_errors FileFormat#ignore_utf8_errors}
 
 ---
 
@@ -430,7 +432,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 String used to convert to and from SQL NULL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#null_if FileFormat#null_if}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#null_if FileFormat#null_if}
 
 ---
 
@@ -440,7 +442,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Boolean that specifies whether to use the first row headers in the data files to determine column names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#parse_header FileFormat#parse_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#parse_header FileFormat#parse_header}
 
 ---
 
@@ -450,7 +452,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Boolean that specifies whether the XML parser preserves leading and trailing spaces in element content.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#preserve_space FileFormat#preserve_space}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#preserve_space FileFormat#preserve_space}
 
 ---
 
@@ -460,7 +462,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies one or more singlebyte or multibyte characters that separate records in an input file (data loading) or unloaded file (data unloading).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#record_delimiter FileFormat#record_delimiter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#record_delimiter FileFormat#record_delimiter}
 
 ---
 
@@ -470,7 +472,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Boolean that specifies whether to replace invalid UTF-8 characters with the Unicode replacement character (�).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#replace_invalid_characters FileFormat#replace_invalid_characters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#replace_invalid_characters FileFormat#replace_invalid_characters}
 
 ---
 
@@ -480,7 +482,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Boolean that specifies to skip any blank lines encountered in the data files.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#skip_blank_lines FileFormat#skip_blank_lines}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#skip_blank_lines FileFormat#skip_blank_lines}
 
 ---
 
@@ -490,7 +492,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Boolean that specifies whether to skip the BOM (byte order mark), if present in a data file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#skip_byte_order_mark FileFormat#skip_byte_order_mark}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#skip_byte_order_mark FileFormat#skip_byte_order_mark}
 
 ---
 
@@ -500,7 +502,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Number of lines at the start of the file to skip.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#skip_header FileFormat#skip_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#skip_header FileFormat#skip_header}
 
 ---
 
@@ -510,7 +512,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Boolean that instructs the JSON parser to remove object fields or array elements containing null values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#strip_null_values FileFormat#strip_null_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#strip_null_values FileFormat#strip_null_values}
 
 ---
 
@@ -520,7 +522,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Boolean that instructs the JSON parser to remove outer brackets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#strip_outer_array FileFormat#strip_outer_array}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#strip_outer_array FileFormat#strip_outer_array}
 
 ---
 
@@ -530,7 +532,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Boolean that specifies whether the XML parser strips out the outer XML element, exposing 2nd level elements as separate documents.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#strip_outer_element FileFormat#strip_outer_element}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#strip_outer_element FileFormat#strip_outer_element}
 
 ---
 
@@ -540,7 +542,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Defines the format of time values in the data files (data loading) or table (data unloading).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#time_format FileFormat#time_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#time_format FileFormat#time_format}
+
+---
+
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.timeouts"></a>
+
+- *Type:* <a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeouts">FileFormatTimeouts</a>
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#timeouts FileFormat#timeouts}
 
 ---
 
@@ -550,7 +562,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Defines the format of timestamp values in the data files (data loading) or table (data unloading).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#timestamp_format FileFormat#timestamp_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#timestamp_format FileFormat#timestamp_format}
 
 ---
 
@@ -560,7 +572,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Boolean that specifies whether to remove white space from fields.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#trim_space FileFormat#trim_space}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#trim_space FileFormat#trim_space}
 
 ---
 
@@ -591,6 +603,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.resetAllowDuplicate">resetAllowDuplicate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.resetBinaryAsText">resetBinaryAsText</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.resetBinaryFormat">resetBinaryFormat</a></code> | *No description.* |
@@ -622,6 +635,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.resetStripOuterArray">resetStripOuterArray</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.resetStripOuterElement">resetStripOuterElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.resetTimeFormat">resetTimeFormat</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.resetTimestampFormat">resetTimestampFormat</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.resetTrimSpace">resetTrimSpace</a></code> | *No description.* |
 
@@ -917,6 +931,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `putTimeouts` <a name="putTimeouts" id="@cdktf/provider-snowflake.fileFormat.FileFormat.putTimeouts"></a>
+
+```java
+public void putTimeouts(FileFormatTimeouts value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-snowflake.fileFormat.FileFormat.putTimeouts.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeouts">FileFormatTimeouts</a>
+
+---
+
 ##### `resetAllowDuplicate` <a name="resetAllowDuplicate" id="@cdktf/provider-snowflake.fileFormat.FileFormat.resetAllowDuplicate"></a>
 
 ```java
@@ -1103,6 +1129,12 @@ public void resetStripOuterElement()
 public void resetTimeFormat()
 ```
 
+##### `resetTimeouts` <a name="resetTimeouts" id="@cdktf/provider-snowflake.fileFormat.FileFormat.resetTimeouts"></a>
+
+```java
+public void resetTimeouts()
+```
+
 ##### `resetTimestampFormat` <a name="resetTimestampFormat" id="@cdktf/provider-snowflake.fileFormat.FileFormat.resetTimestampFormat"></a>
 
 ```java
@@ -1218,7 +1250,7 @@ The construct id used in the generated config for the FileFormat to import.
 
 The id of the existing FileFormat that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1249,6 +1281,7 @@ Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.fullyQualifiedName">fullyQualifiedName</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference">FileFormatTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.allowDuplicateInput">allowDuplicateInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.binaryAsTextInput">binaryAsTextInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.binaryFormatInput">binaryFormatInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1284,6 +1317,7 @@ Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.stripOuterArrayInput">stripOuterArrayInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.stripOuterElementInput">stripOuterElementInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.timeFormatInput">timeFormatInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.timeoutsInput">timeoutsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeouts">FileFormatTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.timestampFormatInput">timestampFormatInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.trimSpaceInput">trimSpaceInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.allowDuplicate">allowDuplicate</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
@@ -1475,6 +1509,16 @@ public java.lang.String getFullyQualifiedName();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.timeouts"></a>
+
+```java
+public FileFormatTimeoutsOutputReference getTimeouts();
+```
+
+- *Type:* <a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference">FileFormatTimeoutsOutputReference</a>
 
 ---
 
@@ -1825,6 +1869,16 @@ public java.lang.String getTimeFormatInput();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.timeoutsInput"></a>
+
+```java
+public java.lang.Object getTimeoutsInput();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeouts">FileFormatTimeouts</a>
 
 ---
 
@@ -2308,6 +2362,7 @@ FileFormatConfig.builder()
 //  .stripOuterElement(java.lang.Boolean)
 //  .stripOuterElement(IResolvable)
 //  .timeFormat(java.lang.String)
+//  .timeouts(FileFormatTimeouts)
 //  .timestampFormat(java.lang.String)
 //  .trimSpace(java.lang.Boolean)
 //  .trimSpace(IResolvable)
@@ -2346,7 +2401,7 @@ FileFormatConfig.builder()
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.fieldDelimiter">fieldDelimiter</a></code> | <code>java.lang.String</code> | Specifies one or more singlebyte or multibyte characters that separate fields in an input file (data loading) or unloaded file (data unloading). |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.fieldOptionallyEnclosedBy">fieldOptionallyEnclosedBy</a></code> | <code>java.lang.String</code> | Character used to enclose strings. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.fileExtension">fileExtension</a></code> | <code>java.lang.String</code> | Specifies the extension for files unloaded to a stage. |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#id FileFormat#id}. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#id FileFormat#id}. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.ignoreUtf8Errors">ignoreUtf8Errors</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Boolean that specifies whether UTF-8 encoding errors produce error conditions. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.nullIf">nullIf</a></code> | <code>java.util.List<java.lang.String></code> | String used to convert to and from SQL NULL. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.parseHeader">parseHeader</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Boolean that specifies whether to use the first row headers in the data files to determine column names. |
@@ -2360,6 +2415,7 @@ FileFormatConfig.builder()
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.stripOuterArray">stripOuterArray</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Boolean that instructs the JSON parser to remove outer brackets. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.stripOuterElement">stripOuterElement</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Boolean that specifies whether the XML parser strips out the outer XML element, exposing 2nd level elements as separate documents. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.timeFormat">timeFormat</a></code> | <code>java.lang.String</code> | Defines the format of time values in the data files (data loading) or table (data unloading). |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeouts">FileFormatTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.timestampFormat">timestampFormat</a></code> | <code>java.lang.String</code> | Defines the format of timestamp values in the data files (data loading) or table (data unloading). |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.trimSpace">trimSpace</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Boolean that specifies whether to remove white space from fields. |
 
@@ -2445,7 +2501,7 @@ public java.lang.String getDatabase();
 
 The database in which to create the file format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#database FileFormat#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#database FileFormat#database}
 
 ---
 
@@ -2459,7 +2515,7 @@ public java.lang.String getFormatType();
 
 Specifies the format of the input files (for data loading) or output files (for data unloading).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#format_type FileFormat#format_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#format_type FileFormat#format_type}
 
 ---
 
@@ -2475,7 +2531,7 @@ Specifies the identifier for the file format;
 
 must be unique for the database and schema in which the file format is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#name FileFormat#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#name FileFormat#name}
 
 ---
 
@@ -2489,7 +2545,7 @@ public java.lang.String getSchema();
 
 The schema in which to create the file format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#schema FileFormat#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#schema FileFormat#schema}
 
 ---
 
@@ -2503,7 +2559,7 @@ public java.lang.Object getAllowDuplicate();
 
 Boolean that specifies to allow duplicate object field names (only the last one will be preserved).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#allow_duplicate FileFormat#allow_duplicate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#allow_duplicate FileFormat#allow_duplicate}
 
 ---
 
@@ -2517,7 +2573,7 @@ public java.lang.Object getBinaryAsText();
 
 Boolean that specifies whether to interpret columns with no defined logical data type as UTF-8 text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#binary_as_text FileFormat#binary_as_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#binary_as_text FileFormat#binary_as_text}
 
 ---
 
@@ -2531,7 +2587,7 @@ public java.lang.String getBinaryFormat();
 
 Defines the encoding format for binary input or output.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#binary_format FileFormat#binary_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#binary_format FileFormat#binary_format}
 
 ---
 
@@ -2545,7 +2601,7 @@ public java.lang.String getComment();
 
 Specifies a comment for the file format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#comment FileFormat#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#comment FileFormat#comment}
 
 ---
 
@@ -2559,7 +2615,7 @@ public java.lang.String getCompression();
 
 Specifies the current compression algorithm for the data file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#compression FileFormat#compression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#compression FileFormat#compression}
 
 ---
 
@@ -2573,7 +2629,7 @@ public java.lang.String getDateFormat();
 
 Defines the format of date values in the data files (data loading) or table (data unloading).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#date_format FileFormat#date_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#date_format FileFormat#date_format}
 
 ---
 
@@ -2587,7 +2643,7 @@ public java.lang.Object getDisableAutoConvert();
 
 Boolean that specifies whether the XML parser disables automatic conversion of numeric and Boolean values from text to native representation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#disable_auto_convert FileFormat#disable_auto_convert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#disable_auto_convert FileFormat#disable_auto_convert}
 
 ---
 
@@ -2601,7 +2657,7 @@ public java.lang.Object getDisableSnowflakeData();
 
 Boolean that specifies whether the XML parser disables recognition of Snowflake semi-structured data tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#disable_snowflake_data FileFormat#disable_snowflake_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#disable_snowflake_data FileFormat#disable_snowflake_data}
 
 ---
 
@@ -2615,7 +2671,7 @@ public java.lang.Object getEmptyFieldAsNull();
 
 Specifies whether to insert SQL NULL for empty fields in an input file, which are represented by two successive delimiters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#empty_field_as_null FileFormat#empty_field_as_null}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#empty_field_as_null FileFormat#empty_field_as_null}
 
 ---
 
@@ -2629,7 +2685,7 @@ public java.lang.Object getEnableOctal();
 
 Boolean that enables parsing of octal numbers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#enable_octal FileFormat#enable_octal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#enable_octal FileFormat#enable_octal}
 
 ---
 
@@ -2643,7 +2699,7 @@ public java.lang.String getEncoding();
 
 String (constant) that specifies the character set of the source data when loading data into a table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#encoding FileFormat#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#encoding FileFormat#encoding}
 
 ---
 
@@ -2657,7 +2713,7 @@ public java.lang.Object getErrorOnColumnCountMismatch();
 
 Boolean that specifies whether to generate a parsing error if the number of delimited columns (i.e. fields) in an input file does not match the number of columns in the corresponding table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#error_on_column_count_mismatch FileFormat#error_on_column_count_mismatch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#error_on_column_count_mismatch FileFormat#error_on_column_count_mismatch}
 
 ---
 
@@ -2671,7 +2727,7 @@ public java.lang.String getEscape();
 
 Single character string used as the escape character for field values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#escape FileFormat#escape}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#escape FileFormat#escape}
 
 ---
 
@@ -2685,7 +2741,7 @@ public java.lang.String getEscapeUnenclosedField();
 
 Single character string used as the escape character for unenclosed field values only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#escape_unenclosed_field FileFormat#escape_unenclosed_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#escape_unenclosed_field FileFormat#escape_unenclosed_field}
 
 ---
 
@@ -2699,7 +2755,7 @@ public java.lang.String getFieldDelimiter();
 
 Specifies one or more singlebyte or multibyte characters that separate fields in an input file (data loading) or unloaded file (data unloading).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#field_delimiter FileFormat#field_delimiter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#field_delimiter FileFormat#field_delimiter}
 
 ---
 
@@ -2713,7 +2769,7 @@ public java.lang.String getFieldOptionallyEnclosedBy();
 
 Character used to enclose strings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#field_optionally_enclosed_by FileFormat#field_optionally_enclosed_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#field_optionally_enclosed_by FileFormat#field_optionally_enclosed_by}
 
 ---
 
@@ -2727,7 +2783,7 @@ public java.lang.String getFileExtension();
 
 Specifies the extension for files unloaded to a stage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#file_extension FileFormat#file_extension}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#file_extension FileFormat#file_extension}
 
 ---
 
@@ -2739,7 +2795,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#id FileFormat#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#id FileFormat#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2756,7 +2812,7 @@ public java.lang.Object getIgnoreUtf8Errors();
 
 Boolean that specifies whether UTF-8 encoding errors produce error conditions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#ignore_utf8_errors FileFormat#ignore_utf8_errors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#ignore_utf8_errors FileFormat#ignore_utf8_errors}
 
 ---
 
@@ -2770,7 +2826,7 @@ public java.util.List<java.lang.String> getNullIf();
 
 String used to convert to and from SQL NULL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#null_if FileFormat#null_if}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#null_if FileFormat#null_if}
 
 ---
 
@@ -2784,7 +2840,7 @@ public java.lang.Object getParseHeader();
 
 Boolean that specifies whether to use the first row headers in the data files to determine column names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#parse_header FileFormat#parse_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#parse_header FileFormat#parse_header}
 
 ---
 
@@ -2798,7 +2854,7 @@ public java.lang.Object getPreserveSpace();
 
 Boolean that specifies whether the XML parser preserves leading and trailing spaces in element content.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#preserve_space FileFormat#preserve_space}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#preserve_space FileFormat#preserve_space}
 
 ---
 
@@ -2812,7 +2868,7 @@ public java.lang.String getRecordDelimiter();
 
 Specifies one or more singlebyte or multibyte characters that separate records in an input file (data loading) or unloaded file (data unloading).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#record_delimiter FileFormat#record_delimiter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#record_delimiter FileFormat#record_delimiter}
 
 ---
 
@@ -2826,7 +2882,7 @@ public java.lang.Object getReplaceInvalidCharacters();
 
 Boolean that specifies whether to replace invalid UTF-8 characters with the Unicode replacement character (�).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#replace_invalid_characters FileFormat#replace_invalid_characters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#replace_invalid_characters FileFormat#replace_invalid_characters}
 
 ---
 
@@ -2840,7 +2896,7 @@ public java.lang.Object getSkipBlankLines();
 
 Boolean that specifies to skip any blank lines encountered in the data files.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#skip_blank_lines FileFormat#skip_blank_lines}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#skip_blank_lines FileFormat#skip_blank_lines}
 
 ---
 
@@ -2854,7 +2910,7 @@ public java.lang.Object getSkipByteOrderMark();
 
 Boolean that specifies whether to skip the BOM (byte order mark), if present in a data file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#skip_byte_order_mark FileFormat#skip_byte_order_mark}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#skip_byte_order_mark FileFormat#skip_byte_order_mark}
 
 ---
 
@@ -2868,7 +2924,7 @@ public java.lang.Number getSkipHeader();
 
 Number of lines at the start of the file to skip.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#skip_header FileFormat#skip_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#skip_header FileFormat#skip_header}
 
 ---
 
@@ -2882,7 +2938,7 @@ public java.lang.Object getStripNullValues();
 
 Boolean that instructs the JSON parser to remove object fields or array elements containing null values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#strip_null_values FileFormat#strip_null_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#strip_null_values FileFormat#strip_null_values}
 
 ---
 
@@ -2896,7 +2952,7 @@ public java.lang.Object getStripOuterArray();
 
 Boolean that instructs the JSON parser to remove outer brackets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#strip_outer_array FileFormat#strip_outer_array}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#strip_outer_array FileFormat#strip_outer_array}
 
 ---
 
@@ -2910,7 +2966,7 @@ public java.lang.Object getStripOuterElement();
 
 Boolean that specifies whether the XML parser strips out the outer XML element, exposing 2nd level elements as separate documents.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#strip_outer_element FileFormat#strip_outer_element}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#strip_outer_element FileFormat#strip_outer_element}
 
 ---
 
@@ -2924,7 +2980,21 @@ public java.lang.String getTimeFormat();
 
 Defines the format of time values in the data files (data loading) or table (data unloading).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#time_format FileFormat#time_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#time_format FileFormat#time_format}
+
+---
+
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.timeouts"></a>
+
+```java
+public FileFormatTimeouts getTimeouts();
+```
+
+- *Type:* <a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeouts">FileFormatTimeouts</a>
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#timeouts FileFormat#timeouts}
 
 ---
 
@@ -2938,7 +3008,7 @@ public java.lang.String getTimestampFormat();
 
 Defines the format of timestamp values in the data files (data loading) or table (data unloading).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#timestamp_format FileFormat#timestamp_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#timestamp_format FileFormat#timestamp_format}
 
 ---
 
@@ -2952,7 +3022,447 @@ public java.lang.Object getTrimSpace();
 
 Boolean that specifies whether to remove white space from fields.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/file_format#trim_space FileFormat#trim_space}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#trim_space FileFormat#trim_space}
+
+---
+
+### FileFormatTimeouts <a name="FileFormatTimeouts" id="@cdktf/provider-snowflake.fileFormat.FileFormatTimeouts"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.fileFormat.FileFormatTimeouts.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.snowflake.file_format.FileFormatTimeouts;
+
+FileFormatTimeouts.builder()
+//  .create(java.lang.String)
+//  .delete(java.lang.String)
+//  .read(java.lang.String)
+//  .update(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#create FileFormat#create}. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#delete FileFormat#delete}. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#read FileFormat#read}. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#update FileFormat#update}. |
+
+---
+
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-snowflake.fileFormat.FileFormatTimeouts.property.create"></a>
+
+```java
+public java.lang.String getCreate();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#create FileFormat#create}.
+
+---
+
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-snowflake.fileFormat.FileFormatTimeouts.property.delete"></a>
+
+```java
+public java.lang.String getDelete();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#delete FileFormat#delete}.
+
+---
+
+##### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-snowflake.fileFormat.FileFormatTimeouts.property.read"></a>
+
+```java
+public java.lang.String getRead();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#read FileFormat#read}.
+
+---
+
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-snowflake.fileFormat.FileFormatTimeouts.property.update"></a>
+
+```java
+public java.lang.String getUpdate();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/file_format#update FileFormat#update}.
+
+---
+
+## Classes <a name="Classes" id="Classes"></a>
+
+### FileFormatTimeoutsOutputReference <a name="FileFormatTimeoutsOutputReference" id="@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.snowflake.file_format.FileFormatTimeoutsOutputReference;
+
+new FileFormatTimeoutsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.resetCreate">resetCreate</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.resetDelete">resetDelete</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.resetRead">resetRead</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.resetUpdate">resetUpdate</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetCreate` <a name="resetCreate" id="@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.resetCreate"></a>
+
+```java
+public void resetCreate()
+```
+
+##### `resetDelete` <a name="resetDelete" id="@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.resetDelete"></a>
+
+```java
+public void resetDelete()
+```
+
+##### `resetRead` <a name="resetRead" id="@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.resetRead"></a>
+
+```java
+public void resetRead()
+```
+
+##### `resetUpdate` <a name="resetUpdate" id="@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.resetUpdate"></a>
+
+```java
+public void resetUpdate()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.property.createInput">createInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.property.readInput">readInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.property.updateInput">updateInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.property.create">create</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.property.delete">delete</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.property.read">read</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.property.update">update</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeouts">FileFormatTimeouts</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `createInput`<sup>Optional</sup> <a name="createInput" id="@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.property.createInput"></a>
+
+```java
+public java.lang.String getCreateInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `deleteInput`<sup>Optional</sup> <a name="deleteInput" id="@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.property.deleteInput"></a>
+
+```java
+public java.lang.String getDeleteInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `readInput`<sup>Optional</sup> <a name="readInput" id="@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.property.readInput"></a>
+
+```java
+public java.lang.String getReadInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `updateInput`<sup>Optional</sup> <a name="updateInput" id="@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.property.updateInput"></a>
+
+```java
+public java.lang.String getUpdateInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.property.create"></a>
+
+```java
+public java.lang.String getCreate();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.property.delete"></a>
+
+```java
+public java.lang.String getDelete();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `read`<sup>Required</sup> <a name="read" id="@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.property.read"></a>
+
+```java
+public java.lang.String getRead();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.property.update"></a>
+
+```java
+public java.lang.String getUpdate();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.property.internalValue"></a>
+
+```java
+public java.lang.Object getInternalValue();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeouts">FileFormatTimeouts</a>
 
 ---
 

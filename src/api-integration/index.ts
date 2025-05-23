@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/api_integration
+// https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/api_integration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,69 +15,69 @@ export interface ApiIntegrationConfig extends cdktf.TerraformMetaArguments {
   /**
   * Explicitly limits external functions that use the integration to reference one or more HTTPS proxy service endpoints and resources within those proxies.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/api_integration#api_allowed_prefixes ApiIntegration#api_allowed_prefixes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/api_integration#api_allowed_prefixes ApiIntegration#api_allowed_prefixes}
   */
   readonly apiAllowedPrefixes: string[];
   /**
-  * ARN of a cloud platform role.
+  * (Default: ``) ARN of a cloud platform role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/api_integration#api_aws_role_arn ApiIntegration#api_aws_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/api_integration#api_aws_role_arn ApiIntegration#api_aws_role_arn}
   */
   readonly apiAwsRoleArn?: string;
   /**
   * Lists the endpoints and resources in the HTTPS proxy service that are not allowed to be called from Snowflake.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/api_integration#api_blocked_prefixes ApiIntegration#api_blocked_prefixes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/api_integration#api_blocked_prefixes ApiIntegration#api_blocked_prefixes}
   */
   readonly apiBlockedPrefixes?: string[];
   /**
   * The service account used for communication with the Google API Gateway.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/api_integration#api_gcp_service_account ApiIntegration#api_gcp_service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/api_integration#api_gcp_service_account ApiIntegration#api_gcp_service_account}
   */
   readonly apiGcpServiceAccount?: string;
   /**
   * The API key (also called a “subscription key”).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/api_integration#api_key ApiIntegration#api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/api_integration#api_key ApiIntegration#api_key}
   */
   readonly apiKey?: string;
   /**
   * Specifies the HTTPS proxy service type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/api_integration#api_provider ApiIntegration#api_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/api_integration#api_provider ApiIntegration#api_provider}
   */
   readonly apiProvider: string;
   /**
-  * The 'Application (client) id' of the Azure AD app for your remote service.
+  * (Default: ``) The 'Application (client) id' of the Azure AD app for your remote service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/api_integration#azure_ad_application_id ApiIntegration#azure_ad_application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/api_integration#azure_ad_application_id ApiIntegration#azure_ad_application_id}
   */
   readonly azureAdApplicationId?: string;
   /**
-  * Specifies the ID for your Office 365 tenant that all Azure API Management instances belong to.
+  * (Default: ``) Specifies the ID for your Office 365 tenant that all Azure API Management instances belong to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/api_integration#azure_tenant_id ApiIntegration#azure_tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/api_integration#azure_tenant_id ApiIntegration#azure_tenant_id}
   */
   readonly azureTenantId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/api_integration#comment ApiIntegration#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/api_integration#comment ApiIntegration#comment}
   */
   readonly comment?: string;
   /**
-  * Specifies whether this API integration is enabled or disabled. If the API integration is disabled, any external function that relies on it will not work.
+  * (Default: `true`) Specifies whether this API integration is enabled or disabled. If the API integration is disabled, any external function that relies on it will not work.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/api_integration#enabled ApiIntegration#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/api_integration#enabled ApiIntegration#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * The audience claim when generating the JWT (JSON Web Token) to authenticate to the Google API Gateway.
+  * (Default: ``) The audience claim when generating the JWT (JSON Web Token) to authenticate to the Google API Gateway.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/api_integration#google_audience ApiIntegration#google_audience}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/api_integration#google_audience ApiIntegration#google_audience}
   */
   readonly googleAudience?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/api_integration#id ApiIntegration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/api_integration#id ApiIntegration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -86,13 +86,212 @@ export interface ApiIntegrationConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies the name of the API integration. This name follows the rules for Object Identifiers. The name should be unique among api integrations in your account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/api_integration#name ApiIntegration#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/api_integration#name ApiIntegration#name}
   */
   readonly name: string;
+  /**
+  * timeouts block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/api_integration#timeouts ApiIntegration#timeouts}
+  */
+  readonly timeouts?: ApiIntegrationTimeouts;
+}
+export interface ApiIntegrationTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/api_integration#create ApiIntegration#create}
+  */
+  readonly create?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/api_integration#delete ApiIntegration#delete}
+  */
+  readonly delete?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/api_integration#read ApiIntegration#read}
+  */
+  readonly read?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/api_integration#update ApiIntegration#update}
+  */
+  readonly update?: string;
+}
+
+export function apiIntegrationTimeoutsToTerraform(struct?: ApiIntegrationTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    read: cdktf.stringToTerraform(struct!.read),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
+export function apiIntegrationTimeoutsToHclTerraform(struct?: ApiIntegrationTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    read: {
+      value: cdktf.stringToHclTerraform(struct!.read),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ApiIntegrationTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): ApiIntegrationTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._create !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    if (this._read !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.read = this._read;
+    }
+    if (this._update !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.update = this._update;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ApiIntegrationTimeouts | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._create = undefined;
+      this._delete = undefined;
+      this._read = undefined;
+      this._update = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._create = value.create;
+      this._delete = value.delete;
+      this._read = value.read;
+      this._update = value.update;
+    }
+  }
+
+  // create - computed: false, optional: true, required: false
+  private _create?: string; 
+  public get create() {
+    return this.getStringAttribute('create');
+  }
+  public set create(value: string) {
+    this._create = value;
+  }
+  public resetCreate() {
+    this._create = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createInput() {
+    return this._create;
+  }
+
+  // delete - computed: false, optional: true, required: false
+  private _delete?: string; 
+  public get delete() {
+    return this.getStringAttribute('delete');
+  }
+  public set delete(value: string) {
+    this._delete = value;
+  }
+  public resetDelete() {
+    this._delete = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteInput() {
+    return this._delete;
+  }
+
+  // read - computed: false, optional: true, required: false
+  private _read?: string; 
+  public get read() {
+    return this.getStringAttribute('read');
+  }
+  public set read(value: string) {
+    this._read = value;
+  }
+  public resetRead() {
+    this._read = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get readInput() {
+    return this._read;
+  }
+
+  // update - computed: false, optional: true, required: false
+  private _update?: string; 
+  public get update() {
+    return this.getStringAttribute('update');
+  }
+  public set update(value: string) {
+    this._update = value;
+  }
+  public resetUpdate() {
+    this._update = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get updateInput() {
+    return this._update;
+  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/api_integration snowflake_api_integration}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/api_integration snowflake_api_integration}
 */
 export class ApiIntegration extends cdktf.TerraformResource {
 
@@ -108,7 +307,7 @@ export class ApiIntegration extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ApiIntegration resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApiIntegration to import
-  * @param importFromId The id of the existing ApiIntegration that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/api_integration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApiIntegration that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/api_integration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApiIntegration to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -120,7 +319,7 @@ export class ApiIntegration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/api_integration snowflake_api_integration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/api_integration snowflake_api_integration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -131,7 +330,7 @@ export class ApiIntegration extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_api_integration',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '1.0.5',
+        providerVersion: '1.2.1',
         providerVersionConstraint: ' ~> 1.0'
       },
       provider: config.provider,
@@ -155,6 +354,7 @@ export class ApiIntegration extends cdktf.TerraformResource {
     this._googleAudience = config.googleAudience;
     this._id = config.id;
     this._name = config.name;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -390,6 +590,22 @@ export class ApiIntegration extends cdktf.TerraformResource {
     return this._name;
   }
 
+  // timeouts - computed: false, optional: true, required: false
+  private _timeouts = new ApiIntegrationTimeoutsOutputReference(this, "timeouts");
+  public get timeouts() {
+    return this._timeouts;
+  }
+  public putTimeouts(value: ApiIntegrationTimeouts) {
+    this._timeouts.internalValue = value;
+  }
+  public resetTimeouts() {
+    this._timeouts.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -409,6 +625,7 @@ export class ApiIntegration extends cdktf.TerraformResource {
       google_audience: cdktf.stringToTerraform(this._googleAudience),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
+      timeouts: apiIntegrationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 
@@ -491,6 +708,12 @@ export class ApiIntegration extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      timeouts: {
+        value: apiIntegrationTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "ApiIntegrationTimeouts",
       },
     };
 

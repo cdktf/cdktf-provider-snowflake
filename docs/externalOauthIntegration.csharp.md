@@ -4,7 +4,7 @@
 
 ### ExternalOauthIntegration <a name="ExternalOauthIntegration" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_oauth_integration snowflake_external_oauth_integration}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_oauth_integration snowflake_external_oauth_integration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegration.Initializer"></a>
 
@@ -73,6 +73,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegration.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegration.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegration.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegration.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegration.resetComment">ResetComment</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegration.resetExternalOauthAllowedRolesList">ResetExternalOauthAllowedRolesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegration.resetExternalOauthAnyRoleMode">ResetExternalOauthAnyRoleMode</a></code> | *No description.* |
@@ -84,6 +85,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegration.resetExternalOauthScopeDelimiter">ResetExternalOauthScopeDelimiter</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegration.resetExternalOauthScopeMappingAttribute">ResetExternalOauthScopeMappingAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegration.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegration.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -375,6 +377,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `PutTimeouts` <a name="PutTimeouts" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegration.putTimeouts"></a>
+
+```csharp
+private void PutTimeouts(ExternalOauthIntegrationTimeouts Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegration.putTimeouts.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeouts">ExternalOauthIntegrationTimeouts</a>
+
+---
+
 ##### `ResetComment` <a name="ResetComment" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegration.resetComment"></a>
 
 ```csharp
@@ -439,6 +453,12 @@ private void ResetExternalOauthScopeMappingAttribute()
 
 ```csharp
 private void ResetId()
+```
+
+##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegration.resetTimeouts"></a>
+
+```csharp
+private void ResetTimeouts()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -544,7 +564,7 @@ The construct id used in the generated config for the ExternalOauthIntegration t
 
 The id of the existing ExternalOauthIntegration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_oauth_integration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_oauth_integration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -578,6 +598,7 @@ Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 | <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegration.property.fullyQualifiedName">FullyQualifiedName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegration.property.relatedParameters">RelatedParameters</a></code> | <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationRelatedParametersList">ExternalOauthIntegrationRelatedParametersList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegration.property.showOutput">ShowOutput</a></code> | <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationShowOutputList">ExternalOauthIntegrationShowOutputList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegration.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference">ExternalOauthIntegrationTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegration.property.commentInput">CommentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegration.property.enabledInput">EnabledInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegration.property.externalOauthAllowedRolesListInput">ExternalOauthAllowedRolesListInput</a></code> | <code>string[]</code> | *No description.* |
@@ -595,6 +616,7 @@ Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 | <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegration.property.externalOauthTypeInput">ExternalOauthTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegration.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegration.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegration.property.timeoutsInput">TimeoutsInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegration.property.comment">Comment</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegration.property.enabled">Enabled</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegration.property.externalOauthAllowedRolesList">ExternalOauthAllowedRolesList</a></code> | <code>string[]</code> | *No description.* |
@@ -797,6 +819,16 @@ public ExternalOauthIntegrationShowOutputList ShowOutput { get; }
 
 ---
 
+##### `Timeouts`<sup>Required</sup> <a name="Timeouts" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegration.property.timeouts"></a>
+
+```csharp
+public ExternalOauthIntegrationTimeoutsOutputReference Timeouts { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference">ExternalOauthIntegrationTimeoutsOutputReference</a>
+
+---
+
 ##### `CommentInput`<sup>Optional</sup> <a name="CommentInput" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegration.property.commentInput"></a>
 
 ```csharp
@@ -964,6 +996,16 @@ public string NameInput { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegration.property.timeoutsInput"></a>
+
+```csharp
+public object TimeoutsInput { get; }
+```
+
+- *Type:* object
 
 ---
 
@@ -1188,7 +1230,8 @@ new ExternalOauthIntegrationConfig {
     string ExternalOauthRsaPublicKey2 = null,
     string ExternalOauthScopeDelimiter = null,
     string ExternalOauthScopeMappingAttribute = null,
-    string Id = null
+    string Id = null,
+    ExternalOauthIntegrationTimeouts Timeouts = null
 };
 ```
 
@@ -1219,7 +1262,8 @@ new ExternalOauthIntegrationConfig {
 | <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationConfig.property.externalOauthRsaPublicKey2">ExternalOauthRsaPublicKey2</a></code> | <code>string</code> | Specifies a second RSA public key, without the -----BEGIN PUBLIC KEY----- and -----END PUBLIC KEY----- headers. |
 | <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationConfig.property.externalOauthScopeDelimiter">ExternalOauthScopeDelimiter</a></code> | <code>string</code> | Specifies the scope delimiter in the authorization token. |
 | <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationConfig.property.externalOauthScopeMappingAttribute">ExternalOauthScopeMappingAttribute</a></code> | <code>string</code> | Specifies the access token claim to map the access token to an account role. |
-| <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_oauth_integration#id ExternalOauthIntegration#id}. |
+| <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_oauth_integration#id ExternalOauthIntegration#id}. |
+| <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeouts">ExternalOauthIntegrationTimeouts</a></code> | timeouts block. |
 
 ---
 
@@ -1303,7 +1347,7 @@ public object Enabled { get; set; }
 
 Specifies whether to initiate operation of the integration or suspend it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_oauth_integration#enabled ExternalOauthIntegration#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_oauth_integration#enabled ExternalOauthIntegration#enabled}
 
 ---
 
@@ -1317,7 +1361,7 @@ public string ExternalOauthIssuer { get; set; }
 
 Specifies the URL to define the OAuth 2.0 authorization server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_oauth_integration#external_oauth_issuer ExternalOauthIntegration#external_oauth_issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_oauth_integration#external_oauth_issuer ExternalOauthIntegration#external_oauth_issuer}
 
 ---
 
@@ -1333,7 +1377,7 @@ Indicates which Snowflake user record attribute should be used to map the access
 
 Valid values are (case-insensitive): `LOGIN_NAME` | `EMAIL_ADDRESS`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_oauth_integration#external_oauth_snowflake_user_mapping_attribute ExternalOauthIntegration#external_oauth_snowflake_user_mapping_attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_oauth_integration#external_oauth_snowflake_user_mapping_attribute ExternalOauthIntegration#external_oauth_snowflake_user_mapping_attribute}
 
 ---
 
@@ -1349,7 +1393,7 @@ Specifies the access token claim or claims that can be used to map the access to
 
 If removed from the config, the resource is recreated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_oauth_integration#external_oauth_token_user_mapping_claim ExternalOauthIntegration#external_oauth_token_user_mapping_claim}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_oauth_integration#external_oauth_token_user_mapping_claim ExternalOauthIntegration#external_oauth_token_user_mapping_claim}
 
 ---
 
@@ -1363,7 +1407,7 @@ public string ExternalOauthType { get; set; }
 
 Specifies the OAuth 2.0 authorization server to be Okta, Microsoft Azure AD, Ping Identity PingFederate, or a Custom OAuth 2.0 authorization server. Valid values are (case-insensitive): `OKTA` | `AZURE` | `PING_FEDERATE` | `CUSTOM`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_oauth_integration#external_oauth_type ExternalOauthIntegration#external_oauth_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_oauth_integration#external_oauth_type ExternalOauthIntegration#external_oauth_type}
 
 ---
 
@@ -1379,7 +1423,7 @@ Specifies the name of the External Oath integration.
 
 This name follows the rules for Object Identifiers. The name should be unique among security integrations in your account. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_oauth_integration#name ExternalOauthIntegration#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_oauth_integration#name ExternalOauthIntegration#name}
 
 ---
 
@@ -1393,7 +1437,7 @@ public string Comment { get; set; }
 
 Specifies a comment for the OAuth integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_oauth_integration#comment ExternalOauthIntegration#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_oauth_integration#comment ExternalOauthIntegration#comment}
 
 ---
 
@@ -1409,7 +1453,7 @@ Specifies the list of roles that the client can set as the primary role.
 
 For more information about this resource, see [docs](./account_role).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_oauth_integration#external_oauth_allowed_roles_list ExternalOauthIntegration#external_oauth_allowed_roles_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_oauth_integration#external_oauth_allowed_roles_list ExternalOauthIntegration#external_oauth_allowed_roles_list}
 
 ---
 
@@ -1425,7 +1469,7 @@ Specifies whether the OAuth client or user can use a role that is not defined in
 
 Valid values are (case-insensitive): `DISABLE` | `ENABLE` | `ENABLE_FOR_PRIVILEGE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_oauth_integration#external_oauth_any_role_mode ExternalOauthIntegration#external_oauth_any_role_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_oauth_integration#external_oauth_any_role_mode ExternalOauthIntegration#external_oauth_any_role_mode}
 
 ---
 
@@ -1439,7 +1483,7 @@ public string[] ExternalOauthAudienceList { get; set; }
 
 Specifies additional values that can be used for the access token's audience validation on top of using the Customer's Snowflake Account URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_oauth_integration#external_oauth_audience_list ExternalOauthIntegration#external_oauth_audience_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_oauth_integration#external_oauth_audience_list ExternalOauthIntegration#external_oauth_audience_list}
 
 ---
 
@@ -1455,7 +1499,7 @@ Specifies the list of roles that a client cannot set as the primary role.
 
 By default, this list includes the ACCOUNTADMIN, ORGADMIN and SECURITYADMIN roles. To remove these privileged roles from the list, use the ALTER ACCOUNT command to set the EXTERNAL_OAUTH_ADD_PRIVILEGED_ROLES_TO_BLOCKED_LIST account parameter to FALSE. For more information about this resource, see [docs](./account_role).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_oauth_integration#external_oauth_blocked_roles_list ExternalOauthIntegration#external_oauth_blocked_roles_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_oauth_integration#external_oauth_blocked_roles_list ExternalOauthIntegration#external_oauth_blocked_roles_list}
 
 ---
 
@@ -1471,7 +1515,7 @@ Specifies the endpoint or a list of endpoints from which to download public keys
 
 The maximum number of URLs that can be specified in the list is 3. If removed from the config, the resource is recreated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_oauth_integration#external_oauth_jws_keys_url ExternalOauthIntegration#external_oauth_jws_keys_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_oauth_integration#external_oauth_jws_keys_url ExternalOauthIntegration#external_oauth_jws_keys_url}
 
 ---
 
@@ -1487,7 +1531,7 @@ Specifies a Base64-encoded RSA public key, without the -----BEGIN PUBLIC KEY----
 
 If removed from the config, the resource is recreated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_oauth_integration#external_oauth_rsa_public_key ExternalOauthIntegration#external_oauth_rsa_public_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_oauth_integration#external_oauth_rsa_public_key ExternalOauthIntegration#external_oauth_rsa_public_key}
 
 ---
 
@@ -1503,7 +1547,7 @@ Specifies a second RSA public key, without the -----BEGIN PUBLIC KEY----- and --
 
 Used for key rotation. If removed from the config, the resource is recreated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_oauth_integration#external_oauth_rsa_public_key_2 ExternalOauthIntegration#external_oauth_rsa_public_key_2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_oauth_integration#external_oauth_rsa_public_key_2 ExternalOauthIntegration#external_oauth_rsa_public_key_2}
 
 ---
 
@@ -1517,7 +1561,7 @@ public string ExternalOauthScopeDelimiter { get; set; }
 
 Specifies the scope delimiter in the authorization token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_oauth_integration#external_oauth_scope_delimiter ExternalOauthIntegration#external_oauth_scope_delimiter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_oauth_integration#external_oauth_scope_delimiter ExternalOauthIntegration#external_oauth_scope_delimiter}
 
 ---
 
@@ -1533,7 +1577,7 @@ Specifies the access token claim to map the access token to an account role.
 
 If removed from the config, the resource is recreated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_oauth_integration#external_oauth_scope_mapping_attribute ExternalOauthIntegration#external_oauth_scope_mapping_attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_oauth_integration#external_oauth_scope_mapping_attribute ExternalOauthIntegration#external_oauth_scope_mapping_attribute}
 
 ---
 
@@ -1545,10 +1589,24 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/external_oauth_integration#id ExternalOauthIntegration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_oauth_integration#id ExternalOauthIntegration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Timeouts`<sup>Optional</sup> <a name="Timeouts" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationConfig.property.timeouts"></a>
+
+```csharp
+public ExternalOauthIntegrationTimeouts Timeouts { get; set; }
+```
+
+- *Type:* <a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeouts">ExternalOauthIntegrationTimeouts</a>
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_oauth_integration#timeouts ExternalOauthIntegration#timeouts}
 
 ---
 
@@ -1772,6 +1830,80 @@ new ExternalOauthIntegrationShowOutput {
 };
 ```
 
+
+### ExternalOauthIntegrationTimeouts <a name="ExternalOauthIntegrationTimeouts" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeouts"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeouts.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Snowflake;
+
+new ExternalOauthIntegrationTimeouts {
+    string Create = null,
+    string Delete = null,
+    string Read = null,
+    string Update = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_oauth_integration#create ExternalOauthIntegration#create}. |
+| <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_oauth_integration#delete ExternalOauthIntegration#delete}. |
+| <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_oauth_integration#read ExternalOauthIntegration#read}. |
+| <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_oauth_integration#update ExternalOauthIntegration#update}. |
+
+---
+
+##### `Create`<sup>Optional</sup> <a name="Create" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeouts.property.create"></a>
+
+```csharp
+public string Create { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_oauth_integration#create ExternalOauthIntegration#create}.
+
+---
+
+##### `Delete`<sup>Optional</sup> <a name="Delete" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeouts.property.delete"></a>
+
+```csharp
+public string Delete { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_oauth_integration#delete ExternalOauthIntegration#delete}.
+
+---
+
+##### `Read`<sup>Optional</sup> <a name="Read" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeouts.property.read"></a>
+
+```csharp
+public string Read { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_oauth_integration#read ExternalOauthIntegration#read}.
+
+---
+
+##### `Update`<sup>Optional</sup> <a name="Update" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeouts.property.update"></a>
+
+```csharp
+public string Update { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/external_oauth_integration#update ExternalOauthIntegration#update}.
+
+---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
@@ -9690,6 +9822,371 @@ public ExternalOauthIntegrationShowOutput InternalValue { get; }
 ```
 
 - *Type:* <a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationShowOutput">ExternalOauthIntegrationShowOutput</a>
+
+---
+
+
+### ExternalOauthIntegrationTimeoutsOutputReference <a name="ExternalOauthIntegrationTimeoutsOutputReference" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Snowflake;
+
+new ExternalOauthIntegrationTimeoutsOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.resetCreate">ResetCreate</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.resetDelete">ResetDelete</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.resetRead">ResetRead</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.resetUpdate">ResetUpdate</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetCreate` <a name="ResetCreate" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.resetCreate"></a>
+
+```csharp
+private void ResetCreate()
+```
+
+##### `ResetDelete` <a name="ResetDelete" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.resetDelete"></a>
+
+```csharp
+private void ResetDelete()
+```
+
+##### `ResetRead` <a name="ResetRead" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.resetRead"></a>
+
+```csharp
+private void ResetRead()
+```
+
+##### `ResetUpdate` <a name="ResetUpdate" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.resetUpdate"></a>
+
+```csharp
+private void ResetUpdate()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.property.createInput">CreateInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.property.deleteInput">DeleteInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.property.readInput">ReadInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.property.updateInput">UpdateInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.property.create">Create</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.property.delete">Delete</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.property.read">Read</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.property.update">Update</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `CreateInput`<sup>Optional</sup> <a name="CreateInput" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.property.createInput"></a>
+
+```csharp
+public string CreateInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `DeleteInput`<sup>Optional</sup> <a name="DeleteInput" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.property.deleteInput"></a>
+
+```csharp
+public string DeleteInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ReadInput`<sup>Optional</sup> <a name="ReadInput" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.property.readInput"></a>
+
+```csharp
+public string ReadInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `UpdateInput`<sup>Optional</sup> <a name="UpdateInput" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.property.updateInput"></a>
+
+```csharp
+public string UpdateInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Create`<sup>Required</sup> <a name="Create" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.property.create"></a>
+
+```csharp
+public string Create { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Delete`<sup>Required</sup> <a name="Delete" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.property.delete"></a>
+
+```csharp
+public string Delete { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Read`<sup>Required</sup> <a name="Read" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.property.read"></a>
+
+```csharp
+public string Read { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Update`<sup>Required</sup> <a name="Update" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.property.update"></a>
+
+```csharp
+public string Update { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-snowflake.externalOauthIntegration.ExternalOauthIntegrationTimeoutsOutputReference.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
 
 ---
 

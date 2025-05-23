@@ -4,7 +4,7 @@
 
 ### DynamicTable <a name="DynamicTable" id="@cdktf/provider-snowflake.dynamicTable.DynamicTable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/dynamic_table snowflake_dynamic_table}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table snowflake_dynamic_table}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dynamicTable.DynamicTable.Initializer"></a>
 
@@ -74,11 +74,13 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.putTargetLag">PutTargetLag</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.resetComment">ResetComment</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.resetInitialize">ResetInitialize</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.resetOrReplace">ResetOrReplace</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.resetRefreshMode">ResetRefreshMode</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -382,6 +384,18 @@ func PutTargetLag(value DynamicTableTargetLag)
 
 ---
 
+##### `PutTimeouts` <a name="PutTimeouts" id="@cdktf/provider-snowflake.dynamicTable.DynamicTable.putTimeouts"></a>
+
+```go
+func PutTimeouts(value DynamicTableTimeouts)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-snowflake.dynamicTable.DynamicTable.putTimeouts.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeouts">DynamicTableTimeouts</a>
+
+---
+
 ##### `ResetComment` <a name="ResetComment" id="@cdktf/provider-snowflake.dynamicTable.DynamicTable.resetComment"></a>
 
 ```go
@@ -410,6 +424,12 @@ func ResetOrReplace()
 
 ```go
 func ResetRefreshMode()
+```
+
+##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktf/provider-snowflake.dynamicTable.DynamicTable.resetTimeouts"></a>
+
+```go
+func ResetTimeouts()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -515,7 +535,7 @@ The construct id used in the generated config for the DynamicTable to import.
 
 The id of the existing DynamicTable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/dynamic_table#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -559,6 +579,7 @@ Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.rows">Rows</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.schedulingState">SchedulingState</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.targetLag">TargetLag</a></code> | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTargetLagOutputReference">DynamicTableTargetLagOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference">DynamicTableTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.commentInput">CommentInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.databaseInput">DatabaseInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
@@ -569,6 +590,7 @@ Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.refreshModeInput">RefreshModeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.schemaInput">SchemaInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.targetLagInput">TargetLagInput</a></code> | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTargetLag">DynamicTableTargetLag</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.warehouseInput">WarehouseInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.comment">Comment</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.database">Database</a></code> | <code>*string</code> | *No description.* |
@@ -865,6 +887,16 @@ func TargetLag() DynamicTableTargetLagOutputReference
 
 ---
 
+##### `Timeouts`<sup>Required</sup> <a name="Timeouts" id="@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.timeouts"></a>
+
+```go
+func Timeouts() DynamicTableTimeoutsOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference">DynamicTableTimeoutsOutputReference</a>
+
+---
+
 ##### `CommentInput`<sup>Optional</sup> <a name="CommentInput" id="@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.commentInput"></a>
 
 ```go
@@ -962,6 +994,16 @@ func TargetLagInput() DynamicTableTargetLag
 ```
 
 - *Type:* <a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTargetLag">DynamicTableTargetLag</a>
+
+---
+
+##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktf/provider-snowflake.dynamicTable.DynamicTable.property.timeoutsInput"></a>
+
+```go
+func TimeoutsInput() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -1121,6 +1163,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/dynamictable"
 	Initialize: *string,
 	OrReplace: interface{},
 	RefreshMode: *string,
+	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13.dynamicTable.DynamicTableTimeouts,
 }
 ```
 
@@ -1142,10 +1185,11 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/dynamictable"
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableConfig.property.targetLag">TargetLag</a></code> | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTargetLag">DynamicTableTargetLag</a></code> | target_lag block. |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableConfig.property.warehouse">Warehouse</a></code> | <code>*string</code> | The warehouse in which to create the dynamic table. |
 | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableConfig.property.comment">Comment</a></code> | <code>*string</code> | Specifies a comment for the dynamic table. |
-| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/dynamic_table#id DynamicTable#id}. |
-| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableConfig.property.initialize">Initialize</a></code> | <code>*string</code> | Initialize trigger for the dynamic table. Can only be set on creation. Available options are ON_CREATE and ON_SCHEDULE. |
-| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableConfig.property.orReplace">OrReplace</a></code> | <code>interface{}</code> | Specifies whether to replace the dynamic table if it already exists. |
-| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableConfig.property.refreshMode">RefreshMode</a></code> | <code>*string</code> | INCREMENTAL to use incremental refreshes, FULL to recompute the whole table on every refresh, or AUTO to let Snowflake decide. |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#id DynamicTable#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableConfig.property.initialize">Initialize</a></code> | <code>*string</code> | (Default: `ON_CREATE`) Initialize trigger for the dynamic table. |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableConfig.property.orReplace">OrReplace</a></code> | <code>interface{}</code> | (Default: `false`) Specifies whether to replace the dynamic table if it already exists. |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableConfig.property.refreshMode">RefreshMode</a></code> | <code>*string</code> | (Default: `AUTO`) INCREMENTAL to use incremental refreshes, FULL to recompute the whole table on every refresh, or AUTO to let Snowflake decide. |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeouts">DynamicTableTimeouts</a></code> | timeouts block. |
 
 ---
 
@@ -1229,7 +1273,7 @@ Database *string
 
 The database in which to create the dynamic table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/dynamic_table#database DynamicTable#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#database DynamicTable#database}
 
 ---
 
@@ -1243,7 +1287,7 @@ Name *string
 
 Specifies the identifier (i.e. name) for the dynamic table; must be unique for the schema in which the dynamic table is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/dynamic_table#name DynamicTable#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#name DynamicTable#name}
 
 ---
 
@@ -1257,7 +1301,7 @@ Query *string
 
 Specifies the query to use to populate the dynamic table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/dynamic_table#query DynamicTable#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#query DynamicTable#query}
 
 ---
 
@@ -1271,7 +1315,7 @@ Schema *string
 
 The schema in which to create the dynamic table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/dynamic_table#schema DynamicTable#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#schema DynamicTable#schema}
 
 ---
 
@@ -1285,7 +1329,7 @@ TargetLag DynamicTableTargetLag
 
 target_lag block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/dynamic_table#target_lag DynamicTable#target_lag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#target_lag DynamicTable#target_lag}
 
 ---
 
@@ -1299,7 +1343,7 @@ Warehouse *string
 
 The warehouse in which to create the dynamic table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/dynamic_table#warehouse DynamicTable#warehouse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#warehouse DynamicTable#warehouse}
 
 ---
 
@@ -1313,7 +1357,7 @@ Comment *string
 
 Specifies a comment for the dynamic table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/dynamic_table#comment DynamicTable#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#comment DynamicTable#comment}
 
 ---
 
@@ -1325,7 +1369,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/dynamic_table#id DynamicTable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#id DynamicTable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1340,9 +1384,11 @@ Initialize *string
 
 - *Type:* *string
 
-Initialize trigger for the dynamic table. Can only be set on creation. Available options are ON_CREATE and ON_SCHEDULE.
+(Default: `ON_CREATE`) Initialize trigger for the dynamic table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/dynamic_table#initialize DynamicTable#initialize}
+Can only be set on creation. Available options are ON_CREATE and ON_SCHEDULE.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#initialize DynamicTable#initialize}
 
 ---
 
@@ -1354,9 +1400,9 @@ OrReplace interface{}
 
 - *Type:* interface{}
 
-Specifies whether to replace the dynamic table if it already exists.
+(Default: `false`) Specifies whether to replace the dynamic table if it already exists.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/dynamic_table#or_replace DynamicTable#or_replace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#or_replace DynamicTable#or_replace}
 
 ---
 
@@ -1368,9 +1414,23 @@ RefreshMode *string
 
 - *Type:* *string
 
-INCREMENTAL to use incremental refreshes, FULL to recompute the whole table on every refresh, or AUTO to let Snowflake decide.
+(Default: `AUTO`) INCREMENTAL to use incremental refreshes, FULL to recompute the whole table on every refresh, or AUTO to let Snowflake decide.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/dynamic_table#refresh_mode DynamicTable#refresh_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#refresh_mode DynamicTable#refresh_mode}
+
+---
+
+##### `Timeouts`<sup>Optional</sup> <a name="Timeouts" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableConfig.property.timeouts"></a>
+
+```go
+Timeouts DynamicTableTimeouts
+```
+
+- *Type:* <a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeouts">DynamicTableTimeouts</a>
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#timeouts DynamicTable#timeouts}
 
 ---
 
@@ -1406,7 +1466,7 @@ Downstream interface{}
 
 Specifies whether the target lag time is downstream.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/dynamic_table#downstream DynamicTable#downstream}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#downstream DynamicTable#downstream}
 
 ---
 
@@ -1420,7 +1480,81 @@ MaximumDuration *string
 
 Specifies the maximum target lag time for the dynamic table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/dynamic_table#maximum_duration DynamicTable#maximum_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#maximum_duration DynamicTable#maximum_duration}
+
+---
+
+### DynamicTableTimeouts <a name="DynamicTableTimeouts" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeouts"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeouts.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/dynamictable"
+
+&dynamictable.DynamicTableTimeouts {
+	Create: *string,
+	Delete: *string,
+	Read: *string,
+	Update: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#create DynamicTable#create}. |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#delete DynamicTable#delete}. |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#read DynamicTable#read}. |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#update DynamicTable#update}. |
+
+---
+
+##### `Create`<sup>Optional</sup> <a name="Create" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeouts.property.create"></a>
+
+```go
+Create *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#create DynamicTable#create}.
+
+---
+
+##### `Delete`<sup>Optional</sup> <a name="Delete" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeouts.property.delete"></a>
+
+```go
+Delete *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#delete DynamicTable#delete}.
+
+---
+
+##### `Read`<sup>Optional</sup> <a name="Read" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeouts.property.read"></a>
+
+```go
+Read *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#read DynamicTable#read}.
+
+---
+
+##### `Update`<sup>Optional</sup> <a name="Update" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeouts.property.update"></a>
+
+```go
+Update *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/dynamic_table#update DynamicTable#update}.
 
 ---
 
@@ -1729,6 +1863,371 @@ func InternalValue() DynamicTableTargetLag
 ```
 
 - *Type:* <a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTargetLag">DynamicTableTargetLag</a>
+
+---
+
+
+### DynamicTableTimeoutsOutputReference <a name="DynamicTableTimeoutsOutputReference" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/dynamictable"
+
+dynamictable.NewDynamicTableTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DynamicTableTimeoutsOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.resetCreate">ResetCreate</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.resetDelete">ResetDelete</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.resetRead">ResetRead</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.resetUpdate">ResetUpdate</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetCreate` <a name="ResetCreate" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.resetCreate"></a>
+
+```go
+func ResetCreate()
+```
+
+##### `ResetDelete` <a name="ResetDelete" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.resetDelete"></a>
+
+```go
+func ResetDelete()
+```
+
+##### `ResetRead` <a name="ResetRead" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.resetRead"></a>
+
+```go
+func ResetRead()
+```
+
+##### `ResetUpdate` <a name="ResetUpdate" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.resetUpdate"></a>
+
+```go
+func ResetUpdate()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.property.createInput">CreateInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.property.deleteInput">DeleteInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.property.readInput">ReadInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.property.updateInput">UpdateInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.property.create">Create</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.property.delete">Delete</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.property.read">Read</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.property.update">Update</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `CreateInput`<sup>Optional</sup> <a name="CreateInput" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.property.createInput"></a>
+
+```go
+func CreateInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DeleteInput`<sup>Optional</sup> <a name="DeleteInput" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.property.deleteInput"></a>
+
+```go
+func DeleteInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ReadInput`<sup>Optional</sup> <a name="ReadInput" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.property.readInput"></a>
+
+```go
+func ReadInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `UpdateInput`<sup>Optional</sup> <a name="UpdateInput" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.property.updateInput"></a>
+
+```go
+func UpdateInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Create`<sup>Required</sup> <a name="Create" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.property.create"></a>
+
+```go
+func Create() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Delete`<sup>Required</sup> <a name="Delete" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.property.delete"></a>
+
+```go
+func Delete() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Read`<sup>Required</sup> <a name="Read" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.property.read"></a>
+
+```go
+func Read() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Update`<sup>Required</sup> <a name="Update" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.property.update"></a>
+
+```go
+func Update() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-snowflake.dynamicTable.DynamicTableTimeoutsOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataSnowflakeTags <a name="DataSnowflakeTags" id="@cdktf/provider-snowflake.dataSnowflakeTags.DataSnowflakeTags"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/data-sources/tags snowflake_tags}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/tags snowflake_tags}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeTags.DataSnowflakeTags.Initializer"></a>
 
@@ -38,7 +38,7 @@ dataSnowflakeTags.DataSnowflakeTags(
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTags.DataSnowflakeTags.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTags.DataSnowflakeTags.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTags.DataSnowflakeTags.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTags.DataSnowflakeTags.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/data-sources/tags#id DataSnowflakeTags#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTags.DataSnowflakeTags.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/tags#id DataSnowflakeTags#id}. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTags.DataSnowflakeTags.Initializer.parameter.in">in</a></code> | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTags.DataSnowflakeTagsIn">DataSnowflakeTagsIn</a></code> | in block. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTags.DataSnowflakeTags.Initializer.parameter.like">like</a></code> | <code>str</code> | Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`). |
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/data-sources/tags#id DataSnowflakeTags#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/tags#id DataSnowflakeTags#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -121,7 +121,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 in block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/data-sources/tags#in DataSnowflakeTags#in}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/tags#in DataSnowflakeTags#in}
 
 ---
 
@@ -131,7 +131,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/data-sources/tags#like DataSnowflakeTags#like}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/tags#like DataSnowflakeTags#like}
 
 ---
 
@@ -398,7 +398,7 @@ def put_in(
 
 Returns records for the entire account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/data-sources/tags#account DataSnowflakeTags#account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/tags#account DataSnowflakeTags#account}
 
 ---
 
@@ -408,7 +408,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Returns records for the specified application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/data-sources/tags#application DataSnowflakeTags#application}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/tags#application DataSnowflakeTags#application}
 
 ---
 
@@ -418,7 +418,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Returns records for the specified application package.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/data-sources/tags#application_package DataSnowflakeTags#application_package}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/tags#application_package DataSnowflakeTags#application_package}
 
 ---
 
@@ -428,7 +428,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Returns records for the current database in use or for a specified database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/data-sources/tags#database DataSnowflakeTags#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/tags#database DataSnowflakeTags#database}
 
 ---
 
@@ -438,7 +438,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Returns records for the current schema in use or a specified schema. Use fully qualified name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/data-sources/tags#schema DataSnowflakeTags#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/tags#schema DataSnowflakeTags#schema}
 
 ---
 
@@ -574,7 +574,7 @@ The construct id used in the generated config for the DataSnowflakeTags to impor
 
 The id of the existing DataSnowflakeTags that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/data-sources/tags#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/tags#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -856,7 +856,7 @@ dataSnowflakeTags.DataSnowflakeTagsConfig(
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTags.DataSnowflakeTagsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTags.DataSnowflakeTagsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTags.DataSnowflakeTagsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTags.DataSnowflakeTagsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/data-sources/tags#id DataSnowflakeTags#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTags.DataSnowflakeTagsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/tags#id DataSnowflakeTags#id}. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTags.DataSnowflakeTagsConfig.property.in">in</a></code> | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTags.DataSnowflakeTagsIn">DataSnowflakeTagsIn</a></code> | in block. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeTags.DataSnowflakeTagsConfig.property.like">like</a></code> | <code>str</code> | Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`). |
 
@@ -940,7 +940,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/data-sources/tags#id DataSnowflakeTags#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/tags#id DataSnowflakeTags#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -957,7 +957,7 @@ in: DataSnowflakeTagsIn
 
 in block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/data-sources/tags#in DataSnowflakeTags#in}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/tags#in DataSnowflakeTags#in}
 
 ---
 
@@ -971,7 +971,7 @@ like: str
 
 Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/data-sources/tags#like DataSnowflakeTags#like}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/tags#like DataSnowflakeTags#like}
 
 ---
 
@@ -1013,7 +1013,7 @@ account: typing.Union[bool, IResolvable]
 
 Returns records for the entire account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/data-sources/tags#account DataSnowflakeTags#account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/tags#account DataSnowflakeTags#account}
 
 ---
 
@@ -1027,7 +1027,7 @@ application: str
 
 Returns records for the specified application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/data-sources/tags#application DataSnowflakeTags#application}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/tags#application DataSnowflakeTags#application}
 
 ---
 
@@ -1041,7 +1041,7 @@ application_package: str
 
 Returns records for the specified application package.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/data-sources/tags#application_package DataSnowflakeTags#application_package}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/tags#application_package DataSnowflakeTags#application_package}
 
 ---
 
@@ -1055,7 +1055,7 @@ database: str
 
 Returns records for the current database in use or for a specified database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/data-sources/tags#database DataSnowflakeTags#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/tags#database DataSnowflakeTags#database}
 
 ---
 
@@ -1069,7 +1069,7 @@ schema: str
 
 Returns records for the current schema in use or a specified schema. Use fully qualified name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/data-sources/tags#schema DataSnowflakeTags#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/tags#schema DataSnowflakeTags#schema}
 
 ---
 

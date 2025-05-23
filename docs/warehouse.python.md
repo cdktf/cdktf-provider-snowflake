@@ -4,7 +4,7 @@
 
 ### Warehouse <a name="Warehouse" id="@cdktf/provider-snowflake.warehouse.Warehouse"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/warehouse snowflake_warehouse}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse snowflake_warehouse}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.warehouse.Warehouse.Initializer"></a>
 
@@ -36,6 +36,7 @@ warehouse.Warehouse(
   scaling_policy: str = None,
   statement_queued_timeout_in_seconds: typing.Union[int, float] = None,
   statement_timeout_in_seconds: typing.Union[int, float] = None,
+  timeouts: WarehouseTimeouts = None,
   warehouse_size: str = None,
   warehouse_type: str = None
 )
@@ -53,20 +54,21 @@ warehouse.Warehouse(
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.Initializer.parameter.name">name</a></code> | <code>str</code> | Identifier for the virtual warehouse; |
-| <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.Initializer.parameter.autoResume">auto_resume</a></code> | <code>str</code> | Specifies whether to automatically resume a warehouse when a SQL statement (e.g. query) is submitted to it. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value. |
-| <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.Initializer.parameter.autoSuspend">auto_suspend</a></code> | <code>typing.Union[int, float]</code> | Specifies the number of seconds of inactivity after which a warehouse is automatically suspended. |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.Initializer.parameter.autoResume">auto_resume</a></code> | <code>str</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether to automatically resume a warehouse when a SQL statement (e.g. query) is submitted to it. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value. |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.Initializer.parameter.autoSuspend">auto_suspend</a></code> | <code>typing.Union[int, float]</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) Specifies the number of seconds of inactivity after which a warehouse is automatically suspended. |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.Initializer.parameter.comment">comment</a></code> | <code>str</code> | Specifies a comment for the warehouse. |
-| <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.Initializer.parameter.enableQueryAcceleration">enable_query_acceleration</a></code> | <code>str</code> | Specifies whether to enable the query acceleration service for queries that rely on this warehouse for compute resources. |
-| <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/warehouse#id Warehouse#id}. |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.Initializer.parameter.enableQueryAcceleration">enable_query_acceleration</a></code> | <code>str</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether to enable the query acceleration service for queries that rely on this warehouse for compute resources. |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse#id Warehouse#id}. |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.Initializer.parameter.initiallySuspended">initially_suspended</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether the warehouse is created initially in the ‘Suspended’ state. |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.Initializer.parameter.maxClusterCount">max_cluster_count</a></code> | <code>typing.Union[int, float]</code> | Specifies the maximum number of server clusters for the warehouse. |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.Initializer.parameter.maxConcurrencyLevel">max_concurrency_level</a></code> | <code>typing.Union[int, float]</code> | Object parameter that specifies the concurrency level for SQL statements (i.e. queries and DML) executed by a warehouse. |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.Initializer.parameter.minClusterCount">min_cluster_count</a></code> | <code>typing.Union[int, float]</code> | Specifies the minimum number of server clusters for the warehouse (only applies to multi-cluster warehouses). |
-| <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.Initializer.parameter.queryAccelerationMaxScaleFactor">query_acceleration_max_scale_factor</a></code> | <code>typing.Union[int, float]</code> | Specifies the maximum scale factor for leasing compute resources for query acceleration. |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.Initializer.parameter.queryAccelerationMaxScaleFactor">query_acceleration_max_scale_factor</a></code> | <code>typing.Union[int, float]</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) Specifies the maximum scale factor for leasing compute resources for query acceleration. |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.Initializer.parameter.resourceMonitor">resource_monitor</a></code> | <code>str</code> | Specifies the name of a resource monitor that is explicitly assigned to the warehouse. |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.Initializer.parameter.scalingPolicy">scaling_policy</a></code> | <code>str</code> | Specifies the policy for automatically starting and shutting down clusters in a multi-cluster warehouse running in Auto-scale mode. |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.Initializer.parameter.statementQueuedTimeoutInSeconds">statement_queued_timeout_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Object parameter that specifies the time, in seconds, a SQL statement (query, DDL, DML, etc.) can be queued on a warehouse before it is canceled by the system. |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.Initializer.parameter.statementTimeoutInSeconds">statement_timeout_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Specifies the time, in seconds, after which a running SQL statement (query, DDL, DML, etc.) is canceled by the system. |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeouts">WarehouseTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.Initializer.parameter.warehouseSize">warehouse_size</a></code> | <code>str</code> | Specifies the size of the virtual warehouse. |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.Initializer.parameter.warehouseType">warehouse_type</a></code> | <code>str</code> | Specifies warehouse type. |
 
@@ -140,7 +142,7 @@ Identifier for the virtual warehouse;
 
 must be unique for your account. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/warehouse#name Warehouse#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse#name Warehouse#name}
 
 ---
 
@@ -148,9 +150,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Specifies whether to automatically resume a warehouse when a SQL statement (e.g. query) is submitted to it. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
+(Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether to automatically resume a warehouse when a SQL statement (e.g. query) is submitted to it. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/warehouse#auto_resume Warehouse#auto_resume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse#auto_resume Warehouse#auto_resume}
 
 ---
 
@@ -158,9 +160,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* typing.Union[int, float]
 
-Specifies the number of seconds of inactivity after which a warehouse is automatically suspended.
+(Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) Specifies the number of seconds of inactivity after which a warehouse is automatically suspended.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/warehouse#auto_suspend Warehouse#auto_suspend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse#auto_suspend Warehouse#auto_suspend}
 
 ---
 
@@ -170,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies a comment for the warehouse.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/warehouse#comment Warehouse#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse#comment Warehouse#comment}
 
 ---
 
@@ -178,11 +180,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Specifies whether to enable the query acceleration service for queries that rely on this warehouse for compute resources.
+(Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether to enable the query acceleration service for queries that rely on this warehouse for compute resources.
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/warehouse#enable_query_acceleration Warehouse#enable_query_acceleration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse#enable_query_acceleration Warehouse#enable_query_acceleration}
 
 ---
 
@@ -190,7 +192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/warehouse#id Warehouse#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse#id Warehouse#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -203,7 +205,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Specifies whether the warehouse is created initially in the ‘Suspended’ state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/warehouse#initially_suspended Warehouse#initially_suspended}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse#initially_suspended Warehouse#initially_suspended}
 
 ---
 
@@ -213,7 +215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the maximum number of server clusters for the warehouse.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/warehouse#max_cluster_count Warehouse#max_cluster_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse#max_cluster_count Warehouse#max_cluster_count}
 
 ---
 
@@ -223,7 +225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Object parameter that specifies the concurrency level for SQL statements (i.e. queries and DML) executed by a warehouse.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/warehouse#max_concurrency_level Warehouse#max_concurrency_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse#max_concurrency_level Warehouse#max_concurrency_level}
 
 ---
 
@@ -233,7 +235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the minimum number of server clusters for the warehouse (only applies to multi-cluster warehouses).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/warehouse#min_cluster_count Warehouse#min_cluster_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse#min_cluster_count Warehouse#min_cluster_count}
 
 ---
 
@@ -241,11 +243,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* typing.Union[int, float]
 
-Specifies the maximum scale factor for leasing compute resources for query acceleration.
+(Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) Specifies the maximum scale factor for leasing compute resources for query acceleration.
 
 The scale factor is used as a multiplier based on warehouse size.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/warehouse#query_acceleration_max_scale_factor Warehouse#query_acceleration_max_scale_factor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse#query_acceleration_max_scale_factor Warehouse#query_acceleration_max_scale_factor}
 
 ---
 
@@ -257,7 +259,7 @@ Specifies the name of a resource monitor that is explicitly assigned to the ware
 
 For more information about this resource, see [docs](./resource_monitor).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/warehouse#resource_monitor Warehouse#resource_monitor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse#resource_monitor Warehouse#resource_monitor}
 
 ---
 
@@ -269,7 +271,7 @@ Specifies the policy for automatically starting and shutting down clusters in a 
 
 Valid values are (case-insensitive): `STANDARD` | `ECONOMY`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/warehouse#scaling_policy Warehouse#scaling_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse#scaling_policy Warehouse#scaling_policy}
 
 ---
 
@@ -279,7 +281,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Object parameter that specifies the time, in seconds, a SQL statement (query, DDL, DML, etc.) can be queued on a warehouse before it is canceled by the system.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/warehouse#statement_queued_timeout_in_seconds Warehouse#statement_queued_timeout_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse#statement_queued_timeout_in_seconds Warehouse#statement_queued_timeout_in_seconds}
 
 ---
 
@@ -289,7 +291,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the time, in seconds, after which a running SQL statement (query, DDL, DML, etc.) is canceled by the system.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/warehouse#statement_timeout_in_seconds Warehouse#statement_timeout_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse#statement_timeout_in_seconds Warehouse#statement_timeout_in_seconds}
+
+---
+
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-snowflake.warehouse.Warehouse.Initializer.parameter.timeouts"></a>
+
+- *Type:* <a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeouts">WarehouseTimeouts</a>
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse#timeouts Warehouse#timeouts}
 
 ---
 
@@ -301,7 +313,7 @@ Specifies the size of the virtual warehouse.
 
 Valid values are (case-insensitive): `XSMALL` | `X-SMALL` | `SMALL` | `MEDIUM` | `LARGE` | `XLARGE` | `X-LARGE` | `XXLARGE` | `X2LARGE` | `2X-LARGE` | `XXXLARGE` | `X3LARGE` | `3X-LARGE` | `X4LARGE` | `4X-LARGE` | `X5LARGE` | `5X-LARGE` | `X6LARGE` | `6X-LARGE`. Consult [warehouse documentation](https://docs.snowflake.com/en/sql-reference/sql/create-warehouse#optional-properties-objectproperties) for the details. Note: removing the size from config will result in the resource recreation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/warehouse#warehouse_size Warehouse#warehouse_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse#warehouse_size Warehouse#warehouse_size}
 
 ---
 
@@ -313,7 +325,7 @@ Specifies warehouse type.
 
 Valid values are (case-insensitive): `STANDARD` | `SNOWPARK-OPTIMIZED`. Warehouse needs to be suspended to change its type. Provider will handle automatic suspension and resumption if needed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/warehouse#warehouse_type Warehouse#warehouse_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse#warehouse_type Warehouse#warehouse_type}
 
 ---
 
@@ -344,6 +356,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.resetAutoResume">reset_auto_resume</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.resetAutoSuspend">reset_auto_suspend</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.resetComment">reset_comment</a></code> | *No description.* |
@@ -358,6 +371,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.resetScalingPolicy">reset_scaling_policy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.resetStatementQueuedTimeoutInSeconds">reset_statement_queued_timeout_in_seconds</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.resetStatementTimeoutInSeconds">reset_statement_timeout_in_seconds</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.resetWarehouseSize">reset_warehouse_size</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.resetWarehouseType">reset_warehouse_type</a></code> | *No description.* |
 
@@ -688,6 +702,49 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `put_timeouts` <a name="put_timeouts" id="@cdktf/provider-snowflake.warehouse.Warehouse.putTimeouts"></a>
+
+```python
+def put_timeouts(
+  create: str = None,
+  delete: str = None,
+  read: str = None,
+  update: str = None
+) -> None
+```
+
+###### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-snowflake.warehouse.Warehouse.putTimeouts.parameter.create"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse#create Warehouse#create}.
+
+---
+
+###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-snowflake.warehouse.Warehouse.putTimeouts.parameter.delete"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse#delete Warehouse#delete}.
+
+---
+
+###### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-snowflake.warehouse.Warehouse.putTimeouts.parameter.read"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse#read Warehouse#read}.
+
+---
+
+###### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-snowflake.warehouse.Warehouse.putTimeouts.parameter.update"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse#update Warehouse#update}.
+
+---
+
 ##### `reset_auto_resume` <a name="reset_auto_resume" id="@cdktf/provider-snowflake.warehouse.Warehouse.resetAutoResume"></a>
 
 ```python
@@ -770,6 +827,12 @@ def reset_statement_queued_timeout_in_seconds() -> None
 
 ```python
 def reset_statement_timeout_in_seconds() -> None
+```
+
+##### `reset_timeouts` <a name="reset_timeouts" id="@cdktf/provider-snowflake.warehouse.Warehouse.resetTimeouts"></a>
+
+```python
+def reset_timeouts() -> None
 ```
 
 ##### `reset_warehouse_size` <a name="reset_warehouse_size" id="@cdktf/provider-snowflake.warehouse.Warehouse.resetWarehouseSize"></a>
@@ -898,7 +961,7 @@ The construct id used in the generated config for the Warehouse to import.
 
 The id of the existing Warehouse that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/warehouse#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -931,6 +994,7 @@ Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.property.fullyQualifiedName">fully_qualified_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.property.parameters">parameters</a></code> | <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseParametersList">WarehouseParametersList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.property.showOutput">show_output</a></code> | <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseShowOutputList">WarehouseShowOutputList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference">WarehouseTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.property.autoResumeInput">auto_resume_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.property.autoSuspendInput">auto_suspend_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.property.commentInput">comment_input</a></code> | <code>str</code> | *No description.* |
@@ -946,6 +1010,7 @@ Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.property.scalingPolicyInput">scaling_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.property.statementQueuedTimeoutInSecondsInput">statement_queued_timeout_in_seconds_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.property.statementTimeoutInSecondsInput">statement_timeout_in_seconds_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeouts">WarehouseTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.property.warehouseSizeInput">warehouse_size_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.property.warehouseTypeInput">warehouse_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.property.autoResume">auto_resume</a></code> | <code>str</code> | *No description.* |
@@ -1140,6 +1205,16 @@ show_output: WarehouseShowOutputList
 
 ---
 
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-snowflake.warehouse.Warehouse.property.timeouts"></a>
+
+```python
+timeouts: WarehouseTimeoutsOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference">WarehouseTimeoutsOutputReference</a>
+
+---
+
 ##### `auto_resume_input`<sup>Optional</sup> <a name="auto_resume_input" id="@cdktf/provider-snowflake.warehouse.Warehouse.property.autoResumeInput"></a>
 
 ```python
@@ -1287,6 +1362,16 @@ statement_timeout_in_seconds_input: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
+
+---
+
+##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-snowflake.warehouse.Warehouse.property.timeoutsInput"></a>
+
+```python
+timeouts_input: typing.Union[IResolvable, WarehouseTimeouts]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeouts">WarehouseTimeouts</a>]
 
 ---
 
@@ -1530,6 +1615,7 @@ warehouse.WarehouseConfig(
   scaling_policy: str = None,
   statement_queued_timeout_in_seconds: typing.Union[int, float] = None,
   statement_timeout_in_seconds: typing.Union[int, float] = None,
+  timeouts: WarehouseTimeouts = None,
   warehouse_size: str = None,
   warehouse_type: str = None
 )
@@ -1547,20 +1633,21 @@ warehouse.WarehouseConfig(
 | <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseConfig.property.name">name</a></code> | <code>str</code> | Identifier for the virtual warehouse; |
-| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseConfig.property.autoResume">auto_resume</a></code> | <code>str</code> | Specifies whether to automatically resume a warehouse when a SQL statement (e.g. query) is submitted to it. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value. |
-| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseConfig.property.autoSuspend">auto_suspend</a></code> | <code>typing.Union[int, float]</code> | Specifies the number of seconds of inactivity after which a warehouse is automatically suspended. |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseConfig.property.autoResume">auto_resume</a></code> | <code>str</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether to automatically resume a warehouse when a SQL statement (e.g. query) is submitted to it. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value. |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseConfig.property.autoSuspend">auto_suspend</a></code> | <code>typing.Union[int, float]</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) Specifies the number of seconds of inactivity after which a warehouse is automatically suspended. |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseConfig.property.comment">comment</a></code> | <code>str</code> | Specifies a comment for the warehouse. |
-| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseConfig.property.enableQueryAcceleration">enable_query_acceleration</a></code> | <code>str</code> | Specifies whether to enable the query acceleration service for queries that rely on this warehouse for compute resources. |
-| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/warehouse#id Warehouse#id}. |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseConfig.property.enableQueryAcceleration">enable_query_acceleration</a></code> | <code>str</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether to enable the query acceleration service for queries that rely on this warehouse for compute resources. |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse#id Warehouse#id}. |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseConfig.property.initiallySuspended">initially_suspended</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether the warehouse is created initially in the ‘Suspended’ state. |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseConfig.property.maxClusterCount">max_cluster_count</a></code> | <code>typing.Union[int, float]</code> | Specifies the maximum number of server clusters for the warehouse. |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseConfig.property.maxConcurrencyLevel">max_concurrency_level</a></code> | <code>typing.Union[int, float]</code> | Object parameter that specifies the concurrency level for SQL statements (i.e. queries and DML) executed by a warehouse. |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseConfig.property.minClusterCount">min_cluster_count</a></code> | <code>typing.Union[int, float]</code> | Specifies the minimum number of server clusters for the warehouse (only applies to multi-cluster warehouses). |
-| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseConfig.property.queryAccelerationMaxScaleFactor">query_acceleration_max_scale_factor</a></code> | <code>typing.Union[int, float]</code> | Specifies the maximum scale factor for leasing compute resources for query acceleration. |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseConfig.property.queryAccelerationMaxScaleFactor">query_acceleration_max_scale_factor</a></code> | <code>typing.Union[int, float]</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) Specifies the maximum scale factor for leasing compute resources for query acceleration. |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseConfig.property.resourceMonitor">resource_monitor</a></code> | <code>str</code> | Specifies the name of a resource monitor that is explicitly assigned to the warehouse. |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseConfig.property.scalingPolicy">scaling_policy</a></code> | <code>str</code> | Specifies the policy for automatically starting and shutting down clusters in a multi-cluster warehouse running in Auto-scale mode. |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseConfig.property.statementQueuedTimeoutInSeconds">statement_queued_timeout_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Object parameter that specifies the time, in seconds, a SQL statement (query, DDL, DML, etc.) can be queued on a warehouse before it is canceled by the system. |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseConfig.property.statementTimeoutInSeconds">statement_timeout_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Specifies the time, in seconds, after which a running SQL statement (query, DDL, DML, etc.) is canceled by the system. |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeouts">WarehouseTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseConfig.property.warehouseSize">warehouse_size</a></code> | <code>str</code> | Specifies the size of the virtual warehouse. |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseConfig.property.warehouseType">warehouse_type</a></code> | <code>str</code> | Specifies warehouse type. |
 
@@ -1648,7 +1735,7 @@ Identifier for the virtual warehouse;
 
 must be unique for your account. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/warehouse#name Warehouse#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse#name Warehouse#name}
 
 ---
 
@@ -1660,9 +1747,9 @@ auto_resume: str
 
 - *Type:* str
 
-Specifies whether to automatically resume a warehouse when a SQL statement (e.g. query) is submitted to it. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
+(Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether to automatically resume a warehouse when a SQL statement (e.g. query) is submitted to it. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/warehouse#auto_resume Warehouse#auto_resume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse#auto_resume Warehouse#auto_resume}
 
 ---
 
@@ -1674,9 +1761,9 @@ auto_suspend: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Specifies the number of seconds of inactivity after which a warehouse is automatically suspended.
+(Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) Specifies the number of seconds of inactivity after which a warehouse is automatically suspended.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/warehouse#auto_suspend Warehouse#auto_suspend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse#auto_suspend Warehouse#auto_suspend}
 
 ---
 
@@ -1690,7 +1777,7 @@ comment: str
 
 Specifies a comment for the warehouse.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/warehouse#comment Warehouse#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse#comment Warehouse#comment}
 
 ---
 
@@ -1702,11 +1789,11 @@ enable_query_acceleration: str
 
 - *Type:* str
 
-Specifies whether to enable the query acceleration service for queries that rely on this warehouse for compute resources.
+(Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether to enable the query acceleration service for queries that rely on this warehouse for compute resources.
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/warehouse#enable_query_acceleration Warehouse#enable_query_acceleration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse#enable_query_acceleration Warehouse#enable_query_acceleration}
 
 ---
 
@@ -1718,7 +1805,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/warehouse#id Warehouse#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse#id Warehouse#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1735,7 +1822,7 @@ initially_suspended: typing.Union[bool, IResolvable]
 
 Specifies whether the warehouse is created initially in the ‘Suspended’ state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/warehouse#initially_suspended Warehouse#initially_suspended}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse#initially_suspended Warehouse#initially_suspended}
 
 ---
 
@@ -1749,7 +1836,7 @@ max_cluster_count: typing.Union[int, float]
 
 Specifies the maximum number of server clusters for the warehouse.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/warehouse#max_cluster_count Warehouse#max_cluster_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse#max_cluster_count Warehouse#max_cluster_count}
 
 ---
 
@@ -1763,7 +1850,7 @@ max_concurrency_level: typing.Union[int, float]
 
 Object parameter that specifies the concurrency level for SQL statements (i.e. queries and DML) executed by a warehouse.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/warehouse#max_concurrency_level Warehouse#max_concurrency_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse#max_concurrency_level Warehouse#max_concurrency_level}
 
 ---
 
@@ -1777,7 +1864,7 @@ min_cluster_count: typing.Union[int, float]
 
 Specifies the minimum number of server clusters for the warehouse (only applies to multi-cluster warehouses).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/warehouse#min_cluster_count Warehouse#min_cluster_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse#min_cluster_count Warehouse#min_cluster_count}
 
 ---
 
@@ -1789,11 +1876,11 @@ query_acceleration_max_scale_factor: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Specifies the maximum scale factor for leasing compute resources for query acceleration.
+(Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) Specifies the maximum scale factor for leasing compute resources for query acceleration.
 
 The scale factor is used as a multiplier based on warehouse size.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/warehouse#query_acceleration_max_scale_factor Warehouse#query_acceleration_max_scale_factor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse#query_acceleration_max_scale_factor Warehouse#query_acceleration_max_scale_factor}
 
 ---
 
@@ -1809,7 +1896,7 @@ Specifies the name of a resource monitor that is explicitly assigned to the ware
 
 For more information about this resource, see [docs](./resource_monitor).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/warehouse#resource_monitor Warehouse#resource_monitor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse#resource_monitor Warehouse#resource_monitor}
 
 ---
 
@@ -1825,7 +1912,7 @@ Specifies the policy for automatically starting and shutting down clusters in a 
 
 Valid values are (case-insensitive): `STANDARD` | `ECONOMY`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/warehouse#scaling_policy Warehouse#scaling_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse#scaling_policy Warehouse#scaling_policy}
 
 ---
 
@@ -1839,7 +1926,7 @@ statement_queued_timeout_in_seconds: typing.Union[int, float]
 
 Object parameter that specifies the time, in seconds, a SQL statement (query, DDL, DML, etc.) can be queued on a warehouse before it is canceled by the system.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/warehouse#statement_queued_timeout_in_seconds Warehouse#statement_queued_timeout_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse#statement_queued_timeout_in_seconds Warehouse#statement_queued_timeout_in_seconds}
 
 ---
 
@@ -1853,7 +1940,21 @@ statement_timeout_in_seconds: typing.Union[int, float]
 
 Specifies the time, in seconds, after which a running SQL statement (query, DDL, DML, etc.) is canceled by the system.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/warehouse#statement_timeout_in_seconds Warehouse#statement_timeout_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse#statement_timeout_in_seconds Warehouse#statement_timeout_in_seconds}
+
+---
+
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-snowflake.warehouse.WarehouseConfig.property.timeouts"></a>
+
+```python
+timeouts: WarehouseTimeouts
+```
+
+- *Type:* <a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeouts">WarehouseTimeouts</a>
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse#timeouts Warehouse#timeouts}
 
 ---
 
@@ -1869,7 +1970,7 @@ Specifies the size of the virtual warehouse.
 
 Valid values are (case-insensitive): `XSMALL` | `X-SMALL` | `SMALL` | `MEDIUM` | `LARGE` | `XLARGE` | `X-LARGE` | `XXLARGE` | `X2LARGE` | `2X-LARGE` | `XXXLARGE` | `X3LARGE` | `3X-LARGE` | `X4LARGE` | `4X-LARGE` | `X5LARGE` | `5X-LARGE` | `X6LARGE` | `6X-LARGE`. Consult [warehouse documentation](https://docs.snowflake.com/en/sql-reference/sql/create-warehouse#optional-properties-objectproperties) for the details. Note: removing the size from config will result in the resource recreation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/warehouse#warehouse_size Warehouse#warehouse_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse#warehouse_size Warehouse#warehouse_size}
 
 ---
 
@@ -1885,7 +1986,7 @@ Specifies warehouse type.
 
 Valid values are (case-insensitive): `STANDARD` | `SNOWPARK-OPTIMIZED`. Warehouse needs to be suspended to change its type. Provider will handle automatic suspension and resumption if needed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/warehouse#warehouse_type Warehouse#warehouse_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse#warehouse_type Warehouse#warehouse_type}
 
 ---
 
@@ -1943,6 +2044,80 @@ from cdktf_cdktf_provider_snowflake import warehouse
 warehouse.WarehouseShowOutput()
 ```
 
+
+### WarehouseTimeouts <a name="WarehouseTimeouts" id="@cdktf/provider-snowflake.warehouse.WarehouseTimeouts"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.warehouse.WarehouseTimeouts.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_snowflake import warehouse
+
+warehouse.WarehouseTimeouts(
+  create: str = None,
+  delete: str = None,
+  read: str = None,
+  update: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse#create Warehouse#create}. |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse#delete Warehouse#delete}. |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse#read Warehouse#read}. |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse#update Warehouse#update}. |
+
+---
+
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-snowflake.warehouse.WarehouseTimeouts.property.create"></a>
+
+```python
+create: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse#create Warehouse#create}.
+
+---
+
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-snowflake.warehouse.WarehouseTimeouts.property.delete"></a>
+
+```python
+delete: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse#delete Warehouse#delete}.
+
+---
+
+##### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-snowflake.warehouse.WarehouseTimeouts.property.read"></a>
+
+```python
+read: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse#read Warehouse#read}.
+
+---
+
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-snowflake.warehouse.WarehouseTimeouts.property.update"></a>
+
+```python
+update: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/warehouse#update Warehouse#update}.
+
+---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
@@ -4702,6 +4877,396 @@ internal_value: WarehouseShowOutput
 ```
 
 - *Type:* <a href="#@cdktf/provider-snowflake.warehouse.WarehouseShowOutput">WarehouseShowOutput</a>
+
+---
+
+
+### WarehouseTimeoutsOutputReference <a name="WarehouseTimeoutsOutputReference" id="@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_snowflake import warehouse
+
+warehouse.WarehouseTimeoutsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.resetRead">reset_read</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_create` <a name="reset_create" id="@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.resetCreate"></a>
+
+```python
+def reset_create() -> None
+```
+
+##### `reset_delete` <a name="reset_delete" id="@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.resetDelete"></a>
+
+```python
+def reset_delete() -> None
+```
+
+##### `reset_read` <a name="reset_read" id="@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.resetRead"></a>
+
+```python
+def reset_read() -> None
+```
+
+##### `reset_update` <a name="reset_update" id="@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.resetUpdate"></a>
+
+```python
+def reset_update() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.property.readInput">read_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeouts">WarehouseTimeouts</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.property.createInput"></a>
+
+```python
+create_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.property.deleteInput"></a>
+
+```python
+delete_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `read_input`<sup>Optional</sup> <a name="read_input" id="@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.property.readInput"></a>
+
+```python
+read_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.property.updateInput"></a>
+
+```python
+update_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.property.create"></a>
+
+```python
+create: str
+```
+
+- *Type:* str
+
+---
+
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.property.delete"></a>
+
+```python
+delete: str
+```
+
+- *Type:* str
+
+---
+
+##### `read`<sup>Required</sup> <a name="read" id="@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.property.read"></a>
+
+```python
+read: str
+```
+
+- *Type:* str
+
+---
+
+##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.property.update"></a>
+
+```python
+update: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-snowflake.warehouse.WarehouseTimeoutsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, WarehouseTimeouts]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeouts">WarehouseTimeouts</a>]
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### TableConstraint <a name="TableConstraint" id="@cdktf/provider-snowflake.tableConstraint.TableConstraint"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table_constraint snowflake_table_constraint}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table_constraint snowflake_table_constraint}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.tableConstraint.TableConstraint.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.putForeignKeyProperties">PutForeignKeyProperties</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.resetComment">ResetComment</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.resetDeferrable">ResetDeferrable</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.resetEnable">ResetEnable</a></code> | *No description.* |
@@ -82,6 +83,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.resetInitially">ResetInitially</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.resetRely">ResetRely</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.resetValidate">ResetValidate</a></code> | *No description.* |
 
 ---
@@ -386,6 +388,18 @@ private void PutForeignKeyProperties(TableConstraintForeignKeyProperties Value)
 
 ---
 
+##### `PutTimeouts` <a name="PutTimeouts" id="@cdktf/provider-snowflake.tableConstraint.TableConstraint.putTimeouts"></a>
+
+```csharp
+private void PutTimeouts(TableConstraintTimeouts Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-snowflake.tableConstraint.TableConstraint.putTimeouts.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeouts">TableConstraintTimeouts</a>
+
+---
+
 ##### `ResetComment` <a name="ResetComment" id="@cdktf/provider-snowflake.tableConstraint.TableConstraint.resetComment"></a>
 
 ```csharp
@@ -432,6 +446,12 @@ private void ResetInitially()
 
 ```csharp
 private void ResetRely()
+```
+
+##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktf/provider-snowflake.tableConstraint.TableConstraint.resetTimeouts"></a>
+
+```csharp
+private void ResetTimeouts()
 ```
 
 ##### `ResetValidate` <a name="ResetValidate" id="@cdktf/provider-snowflake.tableConstraint.TableConstraint.resetValidate"></a>
@@ -543,7 +563,7 @@ The construct id used in the generated config for the TableConstraint to import.
 
 The id of the existing TableConstraint that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table_constraint#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table_constraint#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -574,6 +594,7 @@ Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.foreignKeyProperties">ForeignKeyProperties</a></code> | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintForeignKeyPropertiesOutputReference">TableConstraintForeignKeyPropertiesOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference">TableConstraintTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.columnsInput">ColumnsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.commentInput">CommentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.deferrableInput">DeferrableInput</a></code> | <code>object</code> | *No description.* |
@@ -585,6 +606,7 @@ Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.relyInput">RelyInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.tableIdInput">TableIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.timeoutsInput">TimeoutsInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.typeInput">TypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.validateInput">ValidateInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.columns">Columns</a></code> | <code>string[]</code> | *No description.* |
@@ -754,6 +776,16 @@ public TableConstraintForeignKeyPropertiesOutputReference ForeignKeyProperties {
 
 ---
 
+##### `Timeouts`<sup>Required</sup> <a name="Timeouts" id="@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.timeouts"></a>
+
+```csharp
+public TableConstraintTimeoutsOutputReference Timeouts { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference">TableConstraintTimeoutsOutputReference</a>
+
+---
+
 ##### `ColumnsInput`<sup>Optional</sup> <a name="ColumnsInput" id="@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.columnsInput"></a>
 
 ```csharp
@@ -861,6 +893,16 @@ public string TableIdInput { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.timeoutsInput"></a>
+
+```csharp
+public object TimeoutsInput { get; }
+```
+
+- *Type:* object
 
 ---
 
@@ -1051,6 +1093,7 @@ new TableConstraintConfig {
     string Id = null,
     string Initially = null,
     object Rely = null,
+    TableConstraintTimeouts Timeouts = null,
     object Validate = null
 };
 ```
@@ -1071,14 +1114,15 @@ new TableConstraintConfig {
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.tableId">TableId</a></code> | <code>string</code> | Identifier for table to create constraint on. Format must follow: "\"&lt;db_name&gt;\".\"&lt;schema_name&gt;\".\"&lt;table_name&gt;\"" or "&lt;db_name&gt;.&lt;schema_name&gt;.&lt;table_name&gt;" (snowflake_table.my_table.id). |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.type">Type</a></code> | <code>string</code> | Type of constraint, one of 'UNIQUE', 'PRIMARY KEY', or 'FOREIGN KEY'. |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.comment">Comment</a></code> | <code>string</code> | Comment for the table constraint. |
-| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.deferrable">Deferrable</a></code> | <code>object</code> | Whether the constraint is deferrable. |
-| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.enable">Enable</a></code> | <code>object</code> | Specifies whether the constraint is enabled or disabled. These properties are provided for compatibility with Oracle. |
-| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.enforced">Enforced</a></code> | <code>object</code> | Whether the constraint is enforced. |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.deferrable">Deferrable</a></code> | <code>object</code> | (Default: `true`) Whether the constraint is deferrable. |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.enable">Enable</a></code> | <code>object</code> | (Default: `true`) Specifies whether the constraint is enabled or disabled. These properties are provided for compatibility with Oracle. |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.enforced">Enforced</a></code> | <code>object</code> | (Default: `false`) Whether the constraint is enforced. |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.foreignKeyProperties">ForeignKeyProperties</a></code> | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintForeignKeyProperties">TableConstraintForeignKeyProperties</a></code> | foreign_key_properties block. |
-| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table_constraint#id TableConstraint#id}. |
-| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.initially">Initially</a></code> | <code>string</code> | Whether the constraint is initially deferred or immediate. |
-| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.rely">Rely</a></code> | <code>object</code> | Specifies whether a constraint in NOVALIDATE mode is taken into account during query rewrite. |
-| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.validate">Validate</a></code> | <code>object</code> | Specifies whether to validate existing data on the table when a constraint is created. |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table_constraint#id TableConstraint#id}. |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.initially">Initially</a></code> | <code>string</code> | (Default: `DEFERRED`) Whether the constraint is initially deferred or immediate. |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.rely">Rely</a></code> | <code>object</code> | (Default: `true`) Specifies whether a constraint in NOVALIDATE mode is taken into account during query rewrite. |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeouts">TableConstraintTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.validate">Validate</a></code> | <code>object</code> | (Default: `false`) Specifies whether to validate existing data on the table when a constraint is created. |
 
 ---
 
@@ -1162,7 +1206,7 @@ public string[] Columns { get; set; }
 
 Columns to use in constraint key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table_constraint#columns TableConstraint#columns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table_constraint#columns TableConstraint#columns}
 
 ---
 
@@ -1176,7 +1220,7 @@ public string Name { get; set; }
 
 Name of constraint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table_constraint#name TableConstraint#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table_constraint#name TableConstraint#name}
 
 ---
 
@@ -1190,7 +1234,7 @@ public string TableId { get; set; }
 
 Identifier for table to create constraint on. Format must follow: "\"&lt;db_name&gt;\".\"&lt;schema_name&gt;\".\"&lt;table_name&gt;\"" or "&lt;db_name&gt;.&lt;schema_name&gt;.&lt;table_name&gt;" (snowflake_table.my_table.id).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table_constraint#table_id TableConstraint#table_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table_constraint#table_id TableConstraint#table_id}
 
 ---
 
@@ -1204,7 +1248,7 @@ public string Type { get; set; }
 
 Type of constraint, one of 'UNIQUE', 'PRIMARY KEY', or 'FOREIGN KEY'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table_constraint#type TableConstraint#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table_constraint#type TableConstraint#type}
 
 ---
 
@@ -1218,7 +1262,7 @@ public string Comment { get; set; }
 
 Comment for the table constraint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table_constraint#comment TableConstraint#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table_constraint#comment TableConstraint#comment}
 
 ---
 
@@ -1230,9 +1274,9 @@ public object Deferrable { get; set; }
 
 - *Type:* object
 
-Whether the constraint is deferrable.
+(Default: `true`) Whether the constraint is deferrable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table_constraint#deferrable TableConstraint#deferrable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table_constraint#deferrable TableConstraint#deferrable}
 
 ---
 
@@ -1244,9 +1288,9 @@ public object Enable { get; set; }
 
 - *Type:* object
 
-Specifies whether the constraint is enabled or disabled. These properties are provided for compatibility with Oracle.
+(Default: `true`) Specifies whether the constraint is enabled or disabled. These properties are provided for compatibility with Oracle.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table_constraint#enable TableConstraint#enable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table_constraint#enable TableConstraint#enable}
 
 ---
 
@@ -1258,9 +1302,9 @@ public object Enforced { get; set; }
 
 - *Type:* object
 
-Whether the constraint is enforced.
+(Default: `false`) Whether the constraint is enforced.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table_constraint#enforced TableConstraint#enforced}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table_constraint#enforced TableConstraint#enforced}
 
 ---
 
@@ -1274,7 +1318,7 @@ public TableConstraintForeignKeyProperties ForeignKeyProperties { get; set; }
 
 foreign_key_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table_constraint#foreign_key_properties TableConstraint#foreign_key_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table_constraint#foreign_key_properties TableConstraint#foreign_key_properties}
 
 ---
 
@@ -1286,7 +1330,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table_constraint#id TableConstraint#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table_constraint#id TableConstraint#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1301,9 +1345,9 @@ public string Initially { get; set; }
 
 - *Type:* string
 
-Whether the constraint is initially deferred or immediate.
+(Default: `DEFERRED`) Whether the constraint is initially deferred or immediate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table_constraint#initially TableConstraint#initially}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table_constraint#initially TableConstraint#initially}
 
 ---
 
@@ -1315,9 +1359,23 @@ public object Rely { get; set; }
 
 - *Type:* object
 
-Specifies whether a constraint in NOVALIDATE mode is taken into account during query rewrite.
+(Default: `true`) Specifies whether a constraint in NOVALIDATE mode is taken into account during query rewrite.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table_constraint#rely TableConstraint#rely}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table_constraint#rely TableConstraint#rely}
+
+---
+
+##### `Timeouts`<sup>Optional</sup> <a name="Timeouts" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.timeouts"></a>
+
+```csharp
+public TableConstraintTimeouts Timeouts { get; set; }
+```
+
+- *Type:* <a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeouts">TableConstraintTimeouts</a>
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table_constraint#timeouts TableConstraint#timeouts}
 
 ---
 
@@ -1329,11 +1387,11 @@ public object Validate { get; set; }
 
 - *Type:* object
 
-Specifies whether to validate existing data on the table when a constraint is created.
+(Default: `false`) Specifies whether to validate existing data on the table when a constraint is created.
 
 Only used in conjunction with the ENABLE property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table_constraint#validate TableConstraint#validate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table_constraint#validate TableConstraint#validate}
 
 ---
 
@@ -1357,9 +1415,9 @@ new TableConstraintForeignKeyProperties {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintForeignKeyProperties.property.references">References</a></code> | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintForeignKeyPropertiesReferences">TableConstraintForeignKeyPropertiesReferences</a></code> | references block. |
-| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintForeignKeyProperties.property.match">Match</a></code> | <code>string</code> | The match type for the foreign key. Not applicable for primary/unique keys. |
-| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintForeignKeyProperties.property.onDelete">OnDelete</a></code> | <code>string</code> | Specifies the action performed when the primary/unique key for the foreign key is deleted. Not applicable for primary/unique keys. |
-| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintForeignKeyProperties.property.onUpdate">OnUpdate</a></code> | <code>string</code> | Specifies the action performed when the primary/unique key for the foreign key is updated. Not applicable for primary/unique keys. |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintForeignKeyProperties.property.match">Match</a></code> | <code>string</code> | (Default: `FULL`) The match type for the foreign key. Not applicable for primary/unique keys. |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintForeignKeyProperties.property.onDelete">OnDelete</a></code> | <code>string</code> | (Default: `NO ACTION`) Specifies the action performed when the primary/unique key for the foreign key is deleted. |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintForeignKeyProperties.property.onUpdate">OnUpdate</a></code> | <code>string</code> | (Default: `NO ACTION`) Specifies the action performed when the primary/unique key for the foreign key is updated. |
 
 ---
 
@@ -1373,7 +1431,7 @@ public TableConstraintForeignKeyPropertiesReferences References { get; set; }
 
 references block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table_constraint#references TableConstraint#references}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table_constraint#references TableConstraint#references}
 
 ---
 
@@ -1385,9 +1443,9 @@ public string Match { get; set; }
 
 - *Type:* string
 
-The match type for the foreign key. Not applicable for primary/unique keys.
+(Default: `FULL`) The match type for the foreign key. Not applicable for primary/unique keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table_constraint#match TableConstraint#match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table_constraint#match TableConstraint#match}
 
 ---
 
@@ -1399,9 +1457,11 @@ public string OnDelete { get; set; }
 
 - *Type:* string
 
-Specifies the action performed when the primary/unique key for the foreign key is deleted. Not applicable for primary/unique keys.
+(Default: `NO ACTION`) Specifies the action performed when the primary/unique key for the foreign key is deleted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table_constraint#on_delete TableConstraint#on_delete}
+Not applicable for primary/unique keys
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table_constraint#on_delete TableConstraint#on_delete}
 
 ---
 
@@ -1413,9 +1473,11 @@ public string OnUpdate { get; set; }
 
 - *Type:* string
 
-Specifies the action performed when the primary/unique key for the foreign key is updated. Not applicable for primary/unique keys.
+(Default: `NO ACTION`) Specifies the action performed when the primary/unique key for the foreign key is updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table_constraint#on_update TableConstraint#on_update}
+Not applicable for primary/unique keys
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table_constraint#on_update TableConstraint#on_update}
 
 ---
 
@@ -1451,7 +1513,7 @@ public string[] Columns { get; set; }
 
 Columns to use in foreign key reference.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table_constraint#columns TableConstraint#columns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table_constraint#columns TableConstraint#columns}
 
 ---
 
@@ -1465,7 +1527,81 @@ public string TableId { get; set; }
 
 Name of constraint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table_constraint#table_id TableConstraint#table_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table_constraint#table_id TableConstraint#table_id}
+
+---
+
+### TableConstraintTimeouts <a name="TableConstraintTimeouts" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeouts"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeouts.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Snowflake;
+
+new TableConstraintTimeouts {
+    string Create = null,
+    string Delete = null,
+    string Read = null,
+    string Update = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table_constraint#create TableConstraint#create}. |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table_constraint#delete TableConstraint#delete}. |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table_constraint#read TableConstraint#read}. |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table_constraint#update TableConstraint#update}. |
+
+---
+
+##### `Create`<sup>Optional</sup> <a name="Create" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeouts.property.create"></a>
+
+```csharp
+public string Create { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table_constraint#create TableConstraint#create}.
+
+---
+
+##### `Delete`<sup>Optional</sup> <a name="Delete" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeouts.property.delete"></a>
+
+```csharp
+public string Delete { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table_constraint#delete TableConstraint#delete}.
+
+---
+
+##### `Read`<sup>Optional</sup> <a name="Read" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeouts.property.read"></a>
+
+```csharp
+public string Read { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table_constraint#read TableConstraint#read}.
+
+---
+
+##### `Update`<sup>Optional</sup> <a name="Update" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeouts.property.update"></a>
+
+```csharp
+public string Update { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table_constraint#update TableConstraint#update}.
 
 ---
 
@@ -2131,6 +2267,371 @@ public TableConstraintForeignKeyPropertiesReferences InternalValue { get; }
 ```
 
 - *Type:* <a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintForeignKeyPropertiesReferences">TableConstraintForeignKeyPropertiesReferences</a>
+
+---
+
+
+### TableConstraintTimeoutsOutputReference <a name="TableConstraintTimeoutsOutputReference" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Snowflake;
+
+new TableConstraintTimeoutsOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.resetCreate">ResetCreate</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.resetDelete">ResetDelete</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.resetRead">ResetRead</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.resetUpdate">ResetUpdate</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetCreate` <a name="ResetCreate" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.resetCreate"></a>
+
+```csharp
+private void ResetCreate()
+```
+
+##### `ResetDelete` <a name="ResetDelete" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.resetDelete"></a>
+
+```csharp
+private void ResetDelete()
+```
+
+##### `ResetRead` <a name="ResetRead" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.resetRead"></a>
+
+```csharp
+private void ResetRead()
+```
+
+##### `ResetUpdate` <a name="ResetUpdate" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.resetUpdate"></a>
+
+```csharp
+private void ResetUpdate()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.property.createInput">CreateInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.property.deleteInput">DeleteInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.property.readInput">ReadInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.property.updateInput">UpdateInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.property.create">Create</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.property.delete">Delete</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.property.read">Read</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.property.update">Update</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `CreateInput`<sup>Optional</sup> <a name="CreateInput" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.property.createInput"></a>
+
+```csharp
+public string CreateInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `DeleteInput`<sup>Optional</sup> <a name="DeleteInput" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.property.deleteInput"></a>
+
+```csharp
+public string DeleteInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ReadInput`<sup>Optional</sup> <a name="ReadInput" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.property.readInput"></a>
+
+```csharp
+public string ReadInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `UpdateInput`<sup>Optional</sup> <a name="UpdateInput" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.property.updateInput"></a>
+
+```csharp
+public string UpdateInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Create`<sup>Required</sup> <a name="Create" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.property.create"></a>
+
+```csharp
+public string Create { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Delete`<sup>Required</sup> <a name="Delete" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.property.delete"></a>
+
+```csharp
+public string Delete { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Read`<sup>Required</sup> <a name="Read" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.property.read"></a>
+
+```csharp
+public string Read { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Update`<sup>Required</sup> <a name="Update" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.property.update"></a>
+
+```csharp
+public string Update { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
 
 ---
 

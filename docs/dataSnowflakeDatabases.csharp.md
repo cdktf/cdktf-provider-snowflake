@@ -4,7 +4,7 @@
 
 ### DataSnowflakeDatabases <a name="DataSnowflakeDatabases" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/data-sources/databases snowflake_databases}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/databases snowflake_databases}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabases.Initializer"></a>
 
@@ -420,7 +420,7 @@ The construct id used in the generated config for the DataSnowflakeDatabases to 
 
 The id of the existing DataSnowflakeDatabases that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/data-sources/databases#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/databases#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -771,12 +771,12 @@ new DataSnowflakeDatabasesConfig {
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/data-sources/databases#id DataSnowflakeDatabases#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/databases#id DataSnowflakeDatabases#id}. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.property.like">Like</a></code> | <code>string</code> | Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`). |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.property.limit">Limit</a></code> | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesLimit">DataSnowflakeDatabasesLimit</a></code> | limit block. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.property.startsWith">StartsWith</a></code> | <code>string</code> | Filters the output with **case-sensitive** characters indicating the beginning of the object name. |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.property.withDescribe">WithDescribe</a></code> | <code>object</code> | Runs DESC DATABASE for each database returned by SHOW DATABASES. |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.property.withParameters">WithParameters</a></code> | <code>object</code> | Runs SHOW PARAMETERS FOR DATABASE for each database returned by SHOW DATABASES. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.property.withDescribe">WithDescribe</a></code> | <code>object</code> | (Default: `true`) Runs DESC DATABASE for each database returned by SHOW DATABASES. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabases.DataSnowflakeDatabasesConfig.property.withParameters">WithParameters</a></code> | <code>object</code> | (Default: `true`) Runs SHOW PARAMETERS FOR DATABASE for each database returned by SHOW DATABASES. |
 
 ---
 
@@ -858,7 +858,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/data-sources/databases#id DataSnowflakeDatabases#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/databases#id DataSnowflakeDatabases#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -875,7 +875,7 @@ public string Like { get; set; }
 
 Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/data-sources/databases#like DataSnowflakeDatabases#like}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/databases#like DataSnowflakeDatabases#like}
 
 ---
 
@@ -889,7 +889,7 @@ public DataSnowflakeDatabasesLimit Limit { get; set; }
 
 limit block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/data-sources/databases#limit DataSnowflakeDatabases#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/databases#limit DataSnowflakeDatabases#limit}
 
 ---
 
@@ -903,7 +903,7 @@ public string StartsWith { get; set; }
 
 Filters the output with **case-sensitive** characters indicating the beginning of the object name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/data-sources/databases#starts_with DataSnowflakeDatabases#starts_with}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/databases#starts_with DataSnowflakeDatabases#starts_with}
 
 ---
 
@@ -915,11 +915,11 @@ public object WithDescribe { get; set; }
 
 - *Type:* object
 
-Runs DESC DATABASE for each database returned by SHOW DATABASES.
+(Default: `true`) Runs DESC DATABASE for each database returned by SHOW DATABASES.
 
 The output of describe is saved to the description field. By default this value is set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/data-sources/databases#with_describe DataSnowflakeDatabases#with_describe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/databases#with_describe DataSnowflakeDatabases#with_describe}
 
 ---
 
@@ -931,11 +931,11 @@ public object WithParameters { get; set; }
 
 - *Type:* object
 
-Runs SHOW PARAMETERS FOR DATABASE for each database returned by SHOW DATABASES.
+(Default: `true`) Runs SHOW PARAMETERS FOR DATABASE for each database returned by SHOW DATABASES.
 
 The output of describe is saved to the parameters field as a map. By default this value is set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/data-sources/databases#with_parameters DataSnowflakeDatabases#with_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/databases#with_parameters DataSnowflakeDatabases#with_parameters}
 
 ---
 
@@ -1231,7 +1231,7 @@ public double Rows { get; set; }
 
 The maximum number of rows to return.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/data-sources/databases#rows DataSnowflakeDatabases#rows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/databases#rows DataSnowflakeDatabases#rows}
 
 ---
 
@@ -1247,7 +1247,7 @@ Specifies a **case-sensitive** pattern that is used to match object name.
 
 After the first match, the limit on the number of rows will be applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/data-sources/databases#from DataSnowflakeDatabases#from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/databases#from DataSnowflakeDatabases#from}
 
 ---
 

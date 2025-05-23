@@ -4,7 +4,7 @@
 
 ### Table <a name="Table" id="@cdktf/provider-snowflake.table.Table"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table snowflake_table}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table snowflake_table}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.table.Table.Initializer"></a>
 
@@ -37,6 +37,7 @@ Table.Builder.create(Construct scope, java.lang.String id)
 //  .primaryKey(TablePrimaryKey)
 //  .tag(IResolvable)
 //  .tag(java.util.List<TableTag>)
+//  .timeouts(TableTimeouts)
     .build();
 ```
 
@@ -55,13 +56,14 @@ Table.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-snowflake.table.Table.Initializer.parameter.database">database</a></code> | <code>java.lang.String</code> | The database in which to create the table. |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Specifies the identifier for the table; |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.Initializer.parameter.schema">schema</a></code> | <code>java.lang.String</code> | The schema in which to create the table. |
-| <code><a href="#@cdktf/provider-snowflake.table.Table.Initializer.parameter.changeTracking">changeTracking</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Specifies whether to enable change tracking on the table. Default false. |
+| <code><a href="#@cdktf/provider-snowflake.table.Table.Initializer.parameter.changeTracking">changeTracking</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | (Default: `false`) Specifies whether to enable change tracking on the table. Default false. |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.Initializer.parameter.clusterBy">clusterBy</a></code> | <code>java.util.List<java.lang.String></code> | A list of one or more table columns/expressions to be used as clustering key(s) for the table. |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.Initializer.parameter.comment">comment</a></code> | <code>java.lang.String</code> | Specifies a comment for the table. |
-| <code><a href="#@cdktf/provider-snowflake.table.Table.Initializer.parameter.dataRetentionTimeInDays">dataRetentionTimeInDays</a></code> | <code>java.lang.Number</code> | Specifies the retention period for the table so that Time Travel actions (SELECT, CLONE, UNDROP) can be performed on historical data in the table. |
-| <code><a href="#@cdktf/provider-snowflake.table.Table.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table#id Table#id}. |
+| <code><a href="#@cdktf/provider-snowflake.table.Table.Initializer.parameter.dataRetentionTimeInDays">dataRetentionTimeInDays</a></code> | <code>java.lang.Number</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) Specifies the retention period for the table so that Time Travel actions (SELECT, CLONE, UNDROP) can be performed on historical data in the table. |
+| <code><a href="#@cdktf/provider-snowflake.table.Table.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#id Table#id}. |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.Initializer.parameter.primaryKey">primaryKey</a></code> | <code><a href="#@cdktf/provider-snowflake.table.TablePrimaryKey">TablePrimaryKey</a></code> | primary_key block. |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.Initializer.parameter.tag">tag</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-snowflake.table.TableTag">TableTag</a>></code> | tag block. |
+| <code><a href="#@cdktf/provider-snowflake.table.Table.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.table.TableTimeouts">TableTimeouts</a></code> | timeouts block. |
 
 ---
 
@@ -131,7 +133,7 @@ Must be unique amongst siblings in the same scope
 
 column block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table#column Table#column}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#column Table#column}
 
 ---
 
@@ -141,7 +143,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The database in which to create the table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table#database Table#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#database Table#database}
 
 ---
 
@@ -153,7 +155,7 @@ Specifies the identifier for the table;
 
 must be unique for the database and schema in which the table is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table#name Table#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#name Table#name}
 
 ---
 
@@ -163,7 +165,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The schema in which to create the table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table#schema Table#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#schema Table#schema}
 
 ---
 
@@ -171,9 +173,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Specifies whether to enable change tracking on the table. Default false.
+(Default: `false`) Specifies whether to enable change tracking on the table. Default false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table#change_tracking Table#change_tracking}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#change_tracking Table#change_tracking}
 
 ---
 
@@ -183,7 +185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 A list of one or more table columns/expressions to be used as clustering key(s) for the table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table#cluster_by Table#cluster_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#cluster_by Table#cluster_by}
 
 ---
 
@@ -193,7 +195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies a comment for the table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table#comment Table#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#comment Table#comment}
 
 ---
 
@@ -201,11 +203,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.lang.Number
 
-Specifies the retention period for the table so that Time Travel actions (SELECT, CLONE, UNDROP) can be performed on historical data in the table.
+(Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) Specifies the retention period for the table so that Time Travel actions (SELECT, CLONE, UNDROP) can be performed on historical data in the table.
 
 If you wish to inherit the parent schema setting then pass in the schema attribute to this argument or do not fill this parameter at all; the default value for this field is -1, which is a fallback to use Snowflake default - in this case the schema value
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table#data_retention_time_in_days Table#data_retention_time_in_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#data_retention_time_in_days Table#data_retention_time_in_days}
 
 ---
 
@@ -213,7 +215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table#id Table#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#id Table#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -226,7 +228,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 primary_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table#primary_key Table#primary_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#primary_key Table#primary_key}
 
 ---
 
@@ -236,7 +238,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 tag block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table#tag Table#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#tag Table#tag}
+
+---
+
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-snowflake.table.Table.Initializer.parameter.timeouts"></a>
+
+- *Type:* <a href="#@cdktf/provider-snowflake.table.TableTimeouts">TableTimeouts</a>
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#timeouts Table#timeouts}
 
 ---
 
@@ -270,6 +282,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 | <code><a href="#@cdktf/provider-snowflake.table.Table.putColumn">putColumn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.putPrimaryKey">putPrimaryKey</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.putTag">putTag</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.table.Table.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.resetChangeTracking">resetChangeTracking</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.resetClusterBy">resetClusterBy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.resetComment">resetComment</a></code> | *No description.* |
@@ -277,6 +290,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 | <code><a href="#@cdktf/provider-snowflake.table.Table.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.resetPrimaryKey">resetPrimaryKey</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.resetTag">resetTag</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.table.Table.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -606,6 +620,18 @@ public void putTag(IResolvable OR java.util.List<TableTag> value)
 
 ---
 
+##### `putTimeouts` <a name="putTimeouts" id="@cdktf/provider-snowflake.table.Table.putTimeouts"></a>
+
+```java
+public void putTimeouts(TableTimeouts value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-snowflake.table.Table.putTimeouts.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-snowflake.table.TableTimeouts">TableTimeouts</a>
+
+---
+
 ##### `resetChangeTracking` <a name="resetChangeTracking" id="@cdktf/provider-snowflake.table.Table.resetChangeTracking"></a>
 
 ```java
@@ -646,6 +672,12 @@ public void resetPrimaryKey()
 
 ```java
 public void resetTag()
+```
+
+##### `resetTimeouts` <a name="resetTimeouts" id="@cdktf/provider-snowflake.table.Table.resetTimeouts"></a>
+
+```java
+public void resetTimeouts()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -751,7 +783,7 @@ The construct id used in the generated config for the Table to import.
 
 The id of the existing Table that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -786,6 +818,7 @@ Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 | <code><a href="#@cdktf/provider-snowflake.table.Table.property.owner">owner</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.property.primaryKey">primaryKey</a></code> | <code><a href="#@cdktf/provider-snowflake.table.TablePrimaryKeyOutputReference">TablePrimaryKeyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.property.tag">tag</a></code> | <code><a href="#@cdktf/provider-snowflake.table.TableTagList">TableTagList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.table.Table.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.table.TableTimeoutsOutputReference">TableTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.property.changeTrackingInput">changeTrackingInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.property.clusterByInput">clusterByInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.property.columnInput">columnInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-snowflake.table.TableColumn">TableColumn</a>></code> | *No description.* |
@@ -797,6 +830,7 @@ Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 | <code><a href="#@cdktf/provider-snowflake.table.Table.property.primaryKeyInput">primaryKeyInput</a></code> | <code><a href="#@cdktf/provider-snowflake.table.TablePrimaryKey">TablePrimaryKey</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.property.schemaInput">schemaInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.property.tagInput">tagInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-snowflake.table.TableTag">TableTag</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.table.Table.property.timeoutsInput">timeoutsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-snowflake.table.TableTimeouts">TableTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.property.changeTracking">changeTracking</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.property.clusterBy">clusterBy</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.property.comment">comment</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1000,6 +1034,16 @@ public TableTagList getTag();
 
 ---
 
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-snowflake.table.Table.property.timeouts"></a>
+
+```java
+public TableTimeoutsOutputReference getTimeouts();
+```
+
+- *Type:* <a href="#@cdktf/provider-snowflake.table.TableTimeoutsOutputReference">TableTimeoutsOutputReference</a>
+
+---
+
 ##### `changeTrackingInput`<sup>Optional</sup> <a name="changeTrackingInput" id="@cdktf/provider-snowflake.table.Table.property.changeTrackingInput"></a>
 
 ```java
@@ -1107,6 +1151,16 @@ public java.lang.Object getTagInput();
 ```
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-snowflake.table.TableTag">TableTag</a>>
+
+---
+
+##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-snowflake.table.Table.property.timeoutsInput"></a>
+
+```java
+public java.lang.Object getTimeoutsInput();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-snowflake.table.TableTimeouts">TableTimeouts</a>
 
 ---
 
@@ -1236,12 +1290,12 @@ TableColumn.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-snowflake.table.TableColumn.property.name">name</a></code> | <code>java.lang.String</code> | Column name. |
 | <code><a href="#@cdktf/provider-snowflake.table.TableColumn.property.type">type</a></code> | <code>java.lang.String</code> | Column type, e.g. VARIANT. For a full list of column types, see [Summary of Data Types](https://docs.snowflake.com/en/sql-reference/intro-summary-data-types). |
-| <code><a href="#@cdktf/provider-snowflake.table.TableColumn.property.collate">collate</a></code> | <code>java.lang.String</code> | Column collation, e.g. utf8. |
-| <code><a href="#@cdktf/provider-snowflake.table.TableColumn.property.comment">comment</a></code> | <code>java.lang.String</code> | Column comment. |
+| <code><a href="#@cdktf/provider-snowflake.table.TableColumn.property.collate">collate</a></code> | <code>java.lang.String</code> | (Default: ``) Column collation, e.g. utf8. |
+| <code><a href="#@cdktf/provider-snowflake.table.TableColumn.property.comment">comment</a></code> | <code>java.lang.String</code> | (Default: ``) Column comment. |
 | <code><a href="#@cdktf/provider-snowflake.table.TableColumn.property.default">default</a></code> | <code><a href="#@cdktf/provider-snowflake.table.TableColumnDefault">TableColumnDefault</a></code> | default block. |
 | <code><a href="#@cdktf/provider-snowflake.table.TableColumn.property.identity">identity</a></code> | <code><a href="#@cdktf/provider-snowflake.table.TableColumnIdentity">TableColumnIdentity</a></code> | identity block. |
-| <code><a href="#@cdktf/provider-snowflake.table.TableColumn.property.maskingPolicy">maskingPolicy</a></code> | <code>java.lang.String</code> | Masking policy to apply on column. It has to be a fully qualified name. |
-| <code><a href="#@cdktf/provider-snowflake.table.TableColumn.property.nullable">nullable</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether this column can contain null values. |
+| <code><a href="#@cdktf/provider-snowflake.table.TableColumn.property.maskingPolicy">maskingPolicy</a></code> | <code>java.lang.String</code> | (Default: ``) Masking policy to apply on column. It has to be a fully qualified name. |
+| <code><a href="#@cdktf/provider-snowflake.table.TableColumn.property.nullable">nullable</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | (Default: `true`) Whether this column can contain null values. |
 
 ---
 
@@ -1255,7 +1309,7 @@ public java.lang.String getName();
 
 Column name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table#name Table#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#name Table#name}
 
 ---
 
@@ -1269,7 +1323,7 @@ public java.lang.String getType();
 
 Column type, e.g. VARIANT. For a full list of column types, see [Summary of Data Types](https://docs.snowflake.com/en/sql-reference/intro-summary-data-types).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table#type Table#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#type Table#type}
 
 ---
 
@@ -1281,9 +1335,9 @@ public java.lang.String getCollate();
 
 - *Type:* java.lang.String
 
-Column collation, e.g. utf8.
+(Default: ``) Column collation, e.g. utf8.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table#collate Table#collate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#collate Table#collate}
 
 ---
 
@@ -1295,9 +1349,9 @@ public java.lang.String getComment();
 
 - *Type:* java.lang.String
 
-Column comment.
+(Default: ``) Column comment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table#comment Table#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#comment Table#comment}
 
 ---
 
@@ -1311,7 +1365,7 @@ public TableColumnDefault getDefault();
 
 default block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table#default Table#default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#default Table#default}
 
 ---
 
@@ -1325,7 +1379,7 @@ public TableColumnIdentity getIdentity();
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table#identity Table#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#identity Table#identity}
 
 ---
 
@@ -1337,9 +1391,9 @@ public java.lang.String getMaskingPolicy();
 
 - *Type:* java.lang.String
 
-Masking policy to apply on column. It has to be a fully qualified name.
+(Default: ``) Masking policy to apply on column. It has to be a fully qualified name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table#masking_policy Table#masking_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#masking_policy Table#masking_policy}
 
 ---
 
@@ -1351,11 +1405,11 @@ public java.lang.Object getNullable();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Whether this column can contain null values.
+(Default: `true`) Whether this column can contain null values.
 
 **Note**: Depending on your Snowflake version, the default value will not suffice if this column is used in a primary key constraint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table#nullable Table#nullable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#nullable Table#nullable}
 
 ---
 
@@ -1393,7 +1447,7 @@ public java.lang.String getConstant();
 
 The default constant value for the column.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table#constant Table#constant}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#constant Table#constant}
 
 ---
 
@@ -1407,7 +1461,7 @@ public java.lang.String getExpression();
 
 The default expression value for the column.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table#expression Table#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#expression Table#expression}
 
 ---
 
@@ -1421,7 +1475,7 @@ public java.lang.String getSequence();
 
 The default sequence to use for the column.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table#sequence Table#sequence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#sequence Table#sequence}
 
 ---
 
@@ -1442,8 +1496,8 @@ TableColumnIdentity.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.table.TableColumnIdentity.property.startNum">startNum</a></code> | <code>java.lang.Number</code> | The number to start incrementing at. |
-| <code><a href="#@cdktf/provider-snowflake.table.TableColumnIdentity.property.stepNum">stepNum</a></code> | <code>java.lang.Number</code> | Step size to increment by. |
+| <code><a href="#@cdktf/provider-snowflake.table.TableColumnIdentity.property.startNum">startNum</a></code> | <code>java.lang.Number</code> | (Default: `1`) The number to start incrementing at. |
+| <code><a href="#@cdktf/provider-snowflake.table.TableColumnIdentity.property.stepNum">stepNum</a></code> | <code>java.lang.Number</code> | (Default: `1`) Step size to increment by. |
 
 ---
 
@@ -1455,9 +1509,9 @@ public java.lang.Number getStartNum();
 
 - *Type:* java.lang.Number
 
-The number to start incrementing at.
+(Default: `1`) The number to start incrementing at.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table#start_num Table#start_num}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#start_num Table#start_num}
 
 ---
 
@@ -1469,9 +1523,9 @@ public java.lang.Number getStepNum();
 
 - *Type:* java.lang.Number
 
-Step size to increment by.
+(Default: `1`) Step size to increment by.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table#step_num Table#step_num}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#step_num Table#step_num}
 
 ---
 
@@ -1508,6 +1562,7 @@ TableConfig.builder()
 //  .primaryKey(TablePrimaryKey)
 //  .tag(IResolvable)
 //  .tag(java.util.List<TableTag>)
+//  .timeouts(TableTimeouts)
     .build();
 ```
 
@@ -1526,13 +1581,14 @@ TableConfig.builder()
 | <code><a href="#@cdktf/provider-snowflake.table.TableConfig.property.database">database</a></code> | <code>java.lang.String</code> | The database in which to create the table. |
 | <code><a href="#@cdktf/provider-snowflake.table.TableConfig.property.name">name</a></code> | <code>java.lang.String</code> | Specifies the identifier for the table; |
 | <code><a href="#@cdktf/provider-snowflake.table.TableConfig.property.schema">schema</a></code> | <code>java.lang.String</code> | The schema in which to create the table. |
-| <code><a href="#@cdktf/provider-snowflake.table.TableConfig.property.changeTracking">changeTracking</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Specifies whether to enable change tracking on the table. Default false. |
+| <code><a href="#@cdktf/provider-snowflake.table.TableConfig.property.changeTracking">changeTracking</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | (Default: `false`) Specifies whether to enable change tracking on the table. Default false. |
 | <code><a href="#@cdktf/provider-snowflake.table.TableConfig.property.clusterBy">clusterBy</a></code> | <code>java.util.List<java.lang.String></code> | A list of one or more table columns/expressions to be used as clustering key(s) for the table. |
 | <code><a href="#@cdktf/provider-snowflake.table.TableConfig.property.comment">comment</a></code> | <code>java.lang.String</code> | Specifies a comment for the table. |
-| <code><a href="#@cdktf/provider-snowflake.table.TableConfig.property.dataRetentionTimeInDays">dataRetentionTimeInDays</a></code> | <code>java.lang.Number</code> | Specifies the retention period for the table so that Time Travel actions (SELECT, CLONE, UNDROP) can be performed on historical data in the table. |
-| <code><a href="#@cdktf/provider-snowflake.table.TableConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table#id Table#id}. |
+| <code><a href="#@cdktf/provider-snowflake.table.TableConfig.property.dataRetentionTimeInDays">dataRetentionTimeInDays</a></code> | <code>java.lang.Number</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) Specifies the retention period for the table so that Time Travel actions (SELECT, CLONE, UNDROP) can be performed on historical data in the table. |
+| <code><a href="#@cdktf/provider-snowflake.table.TableConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#id Table#id}. |
 | <code><a href="#@cdktf/provider-snowflake.table.TableConfig.property.primaryKey">primaryKey</a></code> | <code><a href="#@cdktf/provider-snowflake.table.TablePrimaryKey">TablePrimaryKey</a></code> | primary_key block. |
 | <code><a href="#@cdktf/provider-snowflake.table.TableConfig.property.tag">tag</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-snowflake.table.TableTag">TableTag</a>></code> | tag block. |
+| <code><a href="#@cdktf/provider-snowflake.table.TableConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.table.TableTimeouts">TableTimeouts</a></code> | timeouts block. |
 
 ---
 
@@ -1616,7 +1672,7 @@ public java.lang.Object getColumn();
 
 column block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table#column Table#column}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#column Table#column}
 
 ---
 
@@ -1630,7 +1686,7 @@ public java.lang.String getDatabase();
 
 The database in which to create the table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table#database Table#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#database Table#database}
 
 ---
 
@@ -1646,7 +1702,7 @@ Specifies the identifier for the table;
 
 must be unique for the database and schema in which the table is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table#name Table#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#name Table#name}
 
 ---
 
@@ -1660,7 +1716,7 @@ public java.lang.String getSchema();
 
 The schema in which to create the table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table#schema Table#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#schema Table#schema}
 
 ---
 
@@ -1672,9 +1728,9 @@ public java.lang.Object getChangeTracking();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Specifies whether to enable change tracking on the table. Default false.
+(Default: `false`) Specifies whether to enable change tracking on the table. Default false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table#change_tracking Table#change_tracking}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#change_tracking Table#change_tracking}
 
 ---
 
@@ -1688,7 +1744,7 @@ public java.util.List<java.lang.String> getClusterBy();
 
 A list of one or more table columns/expressions to be used as clustering key(s) for the table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table#cluster_by Table#cluster_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#cluster_by Table#cluster_by}
 
 ---
 
@@ -1702,7 +1758,7 @@ public java.lang.String getComment();
 
 Specifies a comment for the table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table#comment Table#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#comment Table#comment}
 
 ---
 
@@ -1714,11 +1770,11 @@ public java.lang.Number getDataRetentionTimeInDays();
 
 - *Type:* java.lang.Number
 
-Specifies the retention period for the table so that Time Travel actions (SELECT, CLONE, UNDROP) can be performed on historical data in the table.
+(Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) Specifies the retention period for the table so that Time Travel actions (SELECT, CLONE, UNDROP) can be performed on historical data in the table.
 
 If you wish to inherit the parent schema setting then pass in the schema attribute to this argument or do not fill this parameter at all; the default value for this field is -1, which is a fallback to use Snowflake default - in this case the schema value
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table#data_retention_time_in_days Table#data_retention_time_in_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#data_retention_time_in_days Table#data_retention_time_in_days}
 
 ---
 
@@ -1730,7 +1786,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table#id Table#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#id Table#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1747,7 +1803,7 @@ public TablePrimaryKey getPrimaryKey();
 
 primary_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table#primary_key Table#primary_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#primary_key Table#primary_key}
 
 ---
 
@@ -1761,7 +1817,21 @@ public java.lang.Object getTag();
 
 tag block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table#tag Table#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#tag Table#tag}
+
+---
+
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-snowflake.table.TableConfig.property.timeouts"></a>
+
+```java
+public TableTimeouts getTimeouts();
+```
+
+- *Type:* <a href="#@cdktf/provider-snowflake.table.TableTimeouts">TableTimeouts</a>
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#timeouts Table#timeouts}
 
 ---
 
@@ -1797,7 +1867,7 @@ public java.util.List<java.lang.String> getKeys();
 
 Columns to use in primary key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table#keys Table#keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#keys Table#keys}
 
 ---
 
@@ -1811,7 +1881,7 @@ public java.lang.String getName();
 
 Name of constraint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table#name Table#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#name Table#name}
 
 ---
 
@@ -1851,7 +1921,7 @@ public java.lang.String getName();
 
 Tag name, e.g. department.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table#name Table#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#name Table#name}
 
 ---
 
@@ -1865,7 +1935,7 @@ public java.lang.String getValue();
 
 Tag value, e.g. marketing_info.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table#value Table#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#value Table#value}
 
 ---
 
@@ -1879,7 +1949,7 @@ public java.lang.String getDatabase();
 
 Name of the database that the tag was created in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table#database Table#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#database Table#database}
 
 ---
 
@@ -1893,7 +1963,81 @@ public java.lang.String getSchema();
 
 Name of the schema that the tag was created in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/table#schema Table#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#schema Table#schema}
+
+---
+
+### TableTimeouts <a name="TableTimeouts" id="@cdktf/provider-snowflake.table.TableTimeouts"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.table.TableTimeouts.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.snowflake.table.TableTimeouts;
+
+TableTimeouts.builder()
+//  .create(java.lang.String)
+//  .delete(java.lang.String)
+//  .read(java.lang.String)
+//  .update(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.table.TableTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#create Table#create}. |
+| <code><a href="#@cdktf/provider-snowflake.table.TableTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#delete Table#delete}. |
+| <code><a href="#@cdktf/provider-snowflake.table.TableTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#read Table#read}. |
+| <code><a href="#@cdktf/provider-snowflake.table.TableTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#update Table#update}. |
+
+---
+
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-snowflake.table.TableTimeouts.property.create"></a>
+
+```java
+public java.lang.String getCreate();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#create Table#create}.
+
+---
+
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-snowflake.table.TableTimeouts.property.delete"></a>
+
+```java
+public java.lang.String getDelete();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#delete Table#delete}.
+
+---
+
+##### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-snowflake.table.TableTimeouts.property.read"></a>
+
+```java
+public java.lang.String getRead();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#read Table#read}.
+
+---
+
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-snowflake.table.TableTimeouts.property.update"></a>
+
+```java
+public java.lang.String getUpdate();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table#update Table#update}.
 
 ---
 
@@ -4049,6 +4193,371 @@ public java.lang.Object getInternalValue();
 ```
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-snowflake.table.TableTag">TableTag</a>
+
+---
+
+
+### TableTimeoutsOutputReference <a name="TableTimeoutsOutputReference" id="@cdktf/provider-snowflake.table.TableTimeoutsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.snowflake.table.TableTimeoutsOutputReference;
+
+new TableTimeoutsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.resetCreate">resetCreate</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.resetDelete">resetDelete</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.resetRead">resetRead</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.resetUpdate">resetUpdate</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetCreate` <a name="resetCreate" id="@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.resetCreate"></a>
+
+```java
+public void resetCreate()
+```
+
+##### `resetDelete` <a name="resetDelete" id="@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.resetDelete"></a>
+
+```java
+public void resetDelete()
+```
+
+##### `resetRead` <a name="resetRead" id="@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.resetRead"></a>
+
+```java
+public void resetRead()
+```
+
+##### `resetUpdate` <a name="resetUpdate" id="@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.resetUpdate"></a>
+
+```java
+public void resetUpdate()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.property.createInput">createInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.property.readInput">readInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.property.updateInput">updateInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.property.create">create</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.property.delete">delete</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.property.read">read</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.property.update">update</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-snowflake.table.TableTimeouts">TableTimeouts</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `createInput`<sup>Optional</sup> <a name="createInput" id="@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.property.createInput"></a>
+
+```java
+public java.lang.String getCreateInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `deleteInput`<sup>Optional</sup> <a name="deleteInput" id="@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.property.deleteInput"></a>
+
+```java
+public java.lang.String getDeleteInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `readInput`<sup>Optional</sup> <a name="readInput" id="@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.property.readInput"></a>
+
+```java
+public java.lang.String getReadInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `updateInput`<sup>Optional</sup> <a name="updateInput" id="@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.property.updateInput"></a>
+
+```java
+public java.lang.String getUpdateInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.property.create"></a>
+
+```java
+public java.lang.String getCreate();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.property.delete"></a>
+
+```java
+public java.lang.String getDelete();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `read`<sup>Required</sup> <a name="read" id="@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.property.read"></a>
+
+```java
+public java.lang.String getRead();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.property.update"></a>
+
+```java
+public java.lang.String getUpdate();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.property.internalValue"></a>
+
+```java
+public java.lang.Object getInternalValue();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-snowflake.table.TableTimeouts">TableTimeouts</a>
 
 ---
 

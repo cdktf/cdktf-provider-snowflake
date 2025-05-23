@@ -4,7 +4,7 @@
 
 ### Saml2Integration <a name="Saml2Integration" id="@cdktf/provider-snowflake.saml2Integration.Saml2Integration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/saml2_integration snowflake_saml2_integration}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/saml2_integration snowflake_saml2_integration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.saml2Integration.Saml2Integration.Initializer"></a>
 
@@ -41,6 +41,7 @@ Saml2Integration.Builder.create(Construct scope, java.lang.String id)
 //  .saml2SnowflakeAcsUrl(java.lang.String)
 //  .saml2SnowflakeIssuerUrl(java.lang.String)
 //  .saml2SpInitiatedLoginPageLabel(java.lang.String)
+//  .timeouts(Saml2IntegrationTimeouts)
     .build();
 ```
 
@@ -63,16 +64,17 @@ Saml2Integration.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2Integration.Initializer.parameter.allowedEmailPatterns">allowedEmailPatterns</a></code> | <code>java.util.List<java.lang.String></code> | A list of regular expressions that email addresses are matched against to authenticate with a SAML2 security integration. |
 | <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2Integration.Initializer.parameter.allowedUserDomains">allowedUserDomains</a></code> | <code>java.util.List<java.lang.String></code> | A list of email domains that can authenticate with a SAML2 security integration. |
 | <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2Integration.Initializer.parameter.comment">comment</a></code> | <code>java.lang.String</code> | Specifies a comment for the integration. |
-| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2Integration.Initializer.parameter.enabled">enabled</a></code> | <code>java.lang.String</code> | Specifies whether this security integration is enabled or disabled. |
-| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2Integration.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/saml2_integration#id Saml2Integration#id}. |
-| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2Integration.Initializer.parameter.saml2EnableSpInitiated">saml2EnableSpInitiated</a></code> | <code>java.lang.String</code> | The Boolean indicating if the Log In With button will be shown on the login page. |
-| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2Integration.Initializer.parameter.saml2ForceAuthn">saml2ForceAuthn</a></code> | <code>java.lang.String</code> | The Boolean indicating whether users, during the initial authentication flow, are forced to authenticate again to access Snowflake. |
+| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2Integration.Initializer.parameter.enabled">enabled</a></code> | <code>java.lang.String</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether this security integration is enabled or disabled. |
+| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2Integration.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/saml2_integration#id Saml2Integration#id}. |
+| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2Integration.Initializer.parameter.saml2EnableSpInitiated">saml2EnableSpInitiated</a></code> | <code>java.lang.String</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) The Boolean indicating if the Log In With button will be shown on the login page. |
+| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2Integration.Initializer.parameter.saml2ForceAuthn">saml2ForceAuthn</a></code> | <code>java.lang.String</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) The Boolean indicating whether users, during the initial authentication flow, are forced to authenticate again to access Snowflake. |
 | <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2Integration.Initializer.parameter.saml2PostLogoutRedirectUrl">saml2PostLogoutRedirectUrl</a></code> | <code>java.lang.String</code> | The endpoint to which Snowflake redirects users after clicking the Log Out button in the classic Snowflake web interface. |
 | <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2Integration.Initializer.parameter.saml2RequestedNameidFormat">saml2RequestedNameidFormat</a></code> | <code>java.lang.String</code> | The SAML NameID format allows Snowflake to set an expectation of the identifying attribute of the user (i.e. SAML Subject) in the SAML assertion from the IdP to ensure a valid authentication to Snowflake. Valid options are: `urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified` \| `urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress` \| `urn:oasis:names:tc:SAML:1.1:nameid-format:X509SubjectName` \| `urn:oasis:names:tc:SAML:1.1:nameid-format:WindowsDomainQualifiedName` \| `urn:oasis:names:tc:SAML:2.0:nameid-format:kerberos` \| `urn:oasis:names:tc:SAML:2.0:nameid-format:persistent` \| `urn:oasis:names:tc:SAML:2.0:nameid-format:transient`. |
-| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2Integration.Initializer.parameter.saml2SignRequest">saml2SignRequest</a></code> | <code>java.lang.String</code> | The Boolean indicating whether SAML requests are signed. |
+| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2Integration.Initializer.parameter.saml2SignRequest">saml2SignRequest</a></code> | <code>java.lang.String</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) The Boolean indicating whether SAML requests are signed. |
 | <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2Integration.Initializer.parameter.saml2SnowflakeAcsUrl">saml2SnowflakeAcsUrl</a></code> | <code>java.lang.String</code> | The string containing the Snowflake Assertion Consumer Service URL to which the IdP will send its SAML authentication response back to Snowflake. |
 | <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2Integration.Initializer.parameter.saml2SnowflakeIssuerUrl">saml2SnowflakeIssuerUrl</a></code> | <code>java.lang.String</code> | The string containing the EntityID / Issuer for the Snowflake service provider. |
 | <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2Integration.Initializer.parameter.saml2SpInitiatedLoginPageLabel">saml2SpInitiatedLoginPageLabel</a></code> | <code>java.lang.String</code> | The string containing the label to display after the Log In With button on the login page. |
+| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2Integration.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeouts">Saml2IntegrationTimeouts</a></code> | timeouts block. |
 
 ---
 
@@ -144,7 +146,7 @@ Specifies the name of the SAML2 integration.
 
 This name follows the rules for Object Identifiers. The name should be unique among security integrations in your account. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/saml2_integration#name Saml2Integration#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/saml2_integration#name Saml2Integration#name}
 
 ---
 
@@ -154,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The string containing the IdP EntityID / Issuer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/saml2_integration#saml2_issuer Saml2Integration#saml2_issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/saml2_integration#saml2_issuer Saml2Integration#saml2_issuer}
 
 ---
 
@@ -164,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The string describing the IdP. Valid options are: `OKTA` | `ADFS` | `CUSTOM`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/saml2_integration#saml2_provider Saml2Integration#saml2_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/saml2_integration#saml2_provider Saml2Integration#saml2_provider}
 
 ---
 
@@ -174,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The string containing the IdP SSO URL, where the user should be redirected by Snowflake (the Service Provider) with a SAML AuthnRequest message.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/saml2_integration#saml2_sso_url Saml2Integration#saml2_sso_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/saml2_integration#saml2_sso_url Saml2Integration#saml2_sso_url}
 
 ---
 
@@ -184,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The Base64 encoded IdP signing certificate on a single line without the leading -----BEGIN CERTIFICATE----- and ending -----END CERTIFICATE----- markers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/saml2_integration#saml2_x509_cert Saml2Integration#saml2_x509_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/saml2_integration#saml2_x509_cert Saml2Integration#saml2_x509_cert}
 
 ---
 
@@ -196,7 +198,7 @@ A list of regular expressions that email addresses are matched against to authen
 
 If this field changes value from non-empty to empty, the whole resource is recreated because of Snowflake limitations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/saml2_integration#allowed_email_patterns Saml2Integration#allowed_email_patterns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/saml2_integration#allowed_email_patterns Saml2Integration#allowed_email_patterns}
 
 ---
 
@@ -208,7 +210,7 @@ A list of email domains that can authenticate with a SAML2 security integration.
 
 If this field changes value from non-empty to empty, the whole resource is recreated because of Snowflake limitations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/saml2_integration#allowed_user_domains Saml2Integration#allowed_user_domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/saml2_integration#allowed_user_domains Saml2Integration#allowed_user_domains}
 
 ---
 
@@ -218,7 +220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies a comment for the integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/saml2_integration#comment Saml2Integration#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/saml2_integration#comment Saml2Integration#comment}
 
 ---
 
@@ -226,11 +228,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.lang.String
 
-Specifies whether this security integration is enabled or disabled.
+(Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether this security integration is enabled or disabled.
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/saml2_integration#enabled Saml2Integration#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/saml2_integration#enabled Saml2Integration#enabled}
 
 ---
 
@@ -238,7 +240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/saml2_integration#id Saml2Integration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/saml2_integration#id Saml2Integration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -249,11 +251,11 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-The Boolean indicating if the Log In With button will be shown on the login page.
+(Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) The Boolean indicating if the Log In With button will be shown on the login page.
 
 TRUE: displays the Log in With button on the login page. FALSE: does not display the Log in With button on the login page. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/saml2_integration#saml2_enable_sp_initiated Saml2Integration#saml2_enable_sp_initiated}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/saml2_integration#saml2_enable_sp_initiated Saml2Integration#saml2_enable_sp_initiated}
 
 ---
 
@@ -261,11 +263,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.lang.String
 
-The Boolean indicating whether users, during the initial authentication flow, are forced to authenticate again to access Snowflake.
+(Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) The Boolean indicating whether users, during the initial authentication flow, are forced to authenticate again to access Snowflake.
 
 When set to TRUE, Snowflake sets the ForceAuthn SAML parameter to TRUE in the outgoing request from Snowflake to the identity provider. TRUE: forces users to authenticate again to access Snowflake, even if a valid session with the identity provider exists. FALSE: does not force users to authenticate again to access Snowflake. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/saml2_integration#saml2_force_authn Saml2Integration#saml2_force_authn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/saml2_integration#saml2_force_authn Saml2Integration#saml2_force_authn}
 
 ---
 
@@ -277,7 +279,7 @@ The endpoint to which Snowflake redirects users after clicking the Log Out butto
 
 Snowflake terminates the Snowflake session upon redirecting to the specified endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/saml2_integration#saml2_post_logout_redirect_url Saml2Integration#saml2_post_logout_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/saml2_integration#saml2_post_logout_redirect_url Saml2Integration#saml2_post_logout_redirect_url}
 
 ---
 
@@ -287,7 +289,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The SAML NameID format allows Snowflake to set an expectation of the identifying attribute of the user (i.e. SAML Subject) in the SAML assertion from the IdP to ensure a valid authentication to Snowflake. Valid options are: `urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified` | `urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress` | `urn:oasis:names:tc:SAML:1.1:nameid-format:X509SubjectName` | `urn:oasis:names:tc:SAML:1.1:nameid-format:WindowsDomainQualifiedName` | `urn:oasis:names:tc:SAML:2.0:nameid-format:kerberos` | `urn:oasis:names:tc:SAML:2.0:nameid-format:persistent` | `urn:oasis:names:tc:SAML:2.0:nameid-format:transient`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/saml2_integration#saml2_requested_nameid_format Saml2Integration#saml2_requested_nameid_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/saml2_integration#saml2_requested_nameid_format Saml2Integration#saml2_requested_nameid_format}
 
 ---
 
@@ -295,11 +297,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.lang.String
 
-The Boolean indicating whether SAML requests are signed.
+(Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) The Boolean indicating whether SAML requests are signed.
 
 TRUE: allows SAML requests to be signed. FALSE: does not allow SAML requests to be signed. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/saml2_integration#saml2_sign_request Saml2Integration#saml2_sign_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/saml2_integration#saml2_sign_request Saml2Integration#saml2_sign_request}
 
 ---
 
@@ -311,7 +313,7 @@ The string containing the Snowflake Assertion Consumer Service URL to which the 
 
 This property will be set in the SAML authentication request generated by Snowflake when initiating a SAML SSO operation with the IdP. If an incorrect value is specified, Snowflake returns an error message indicating the acceptable values to use. Because Okta does not support underscores in URLs, the underscore in the account name must be converted to a hyphen. See [docs](https://docs.snowflake.com/en/user-guide/organizations-connect#okta-urls).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/saml2_integration#saml2_snowflake_acs_url Saml2Integration#saml2_snowflake_acs_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/saml2_integration#saml2_snowflake_acs_url Saml2Integration#saml2_snowflake_acs_url}
 
 ---
 
@@ -323,7 +325,7 @@ The string containing the EntityID / Issuer for the Snowflake service provider.
 
 If an incorrect value is specified, Snowflake returns an error message indicating the acceptable values to use. Because Okta does not support underscores in URLs, the underscore in the account name must be converted to a hyphen. See [docs](https://docs.snowflake.com/en/user-guide/organizations-connect#okta-urls).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/saml2_integration#saml2_snowflake_issuer_url Saml2Integration#saml2_snowflake_issuer_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/saml2_integration#saml2_snowflake_issuer_url Saml2Integration#saml2_snowflake_issuer_url}
 
 ---
 
@@ -335,7 +337,17 @@ The string containing the label to display after the Log In With button on the l
 
 If this field changes value from non-empty to empty, the whole resource is recreated because of Snowflake limitations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/saml2_integration#saml2_sp_initiated_login_page_label Saml2Integration#saml2_sp_initiated_login_page_label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/saml2_integration#saml2_sp_initiated_login_page_label Saml2Integration#saml2_sp_initiated_login_page_label}
+
+---
+
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-snowflake.saml2Integration.Saml2Integration.Initializer.parameter.timeouts"></a>
+
+- *Type:* <a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeouts">Saml2IntegrationTimeouts</a>
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/saml2_integration#timeouts Saml2Integration#timeouts}
 
 ---
 
@@ -366,6 +378,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 | <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2Integration.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2Integration.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2Integration.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2Integration.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2Integration.resetAllowedEmailPatterns">resetAllowedEmailPatterns</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2Integration.resetAllowedUserDomains">resetAllowedUserDomains</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2Integration.resetComment">resetComment</a></code> | *No description.* |
@@ -379,6 +392,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 | <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2Integration.resetSaml2SnowflakeAcsUrl">resetSaml2SnowflakeAcsUrl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2Integration.resetSaml2SnowflakeIssuerUrl">resetSaml2SnowflakeIssuerUrl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2Integration.resetSaml2SpInitiatedLoginPageLabel">resetSaml2SpInitiatedLoginPageLabel</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2Integration.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -672,6 +686,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `putTimeouts` <a name="putTimeouts" id="@cdktf/provider-snowflake.saml2Integration.Saml2Integration.putTimeouts"></a>
+
+```java
+public void putTimeouts(Saml2IntegrationTimeouts value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-snowflake.saml2Integration.Saml2Integration.putTimeouts.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeouts">Saml2IntegrationTimeouts</a>
+
+---
+
 ##### `resetAllowedEmailPatterns` <a name="resetAllowedEmailPatterns" id="@cdktf/provider-snowflake.saml2Integration.Saml2Integration.resetAllowedEmailPatterns"></a>
 
 ```java
@@ -748,6 +774,12 @@ public void resetSaml2SnowflakeIssuerUrl()
 
 ```java
 public void resetSaml2SpInitiatedLoginPageLabel()
+```
+
+##### `resetTimeouts` <a name="resetTimeouts" id="@cdktf/provider-snowflake.saml2Integration.Saml2Integration.resetTimeouts"></a>
+
+```java
+public void resetTimeouts()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -853,7 +885,7 @@ The construct id used in the generated config for the Saml2Integration to import
 
 The id of the existing Saml2Integration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/saml2_integration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/saml2_integration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -886,6 +918,7 @@ Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 | <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2Integration.property.describeOutput">describeOutput</a></code> | <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationDescribeOutputList">Saml2IntegrationDescribeOutputList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2Integration.property.fullyQualifiedName">fullyQualifiedName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2Integration.property.showOutput">showOutput</a></code> | <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationShowOutputList">Saml2IntegrationShowOutputList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2Integration.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference">Saml2IntegrationTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2Integration.property.allowedEmailPatternsInput">allowedEmailPatternsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2Integration.property.allowedUserDomainsInput">allowedUserDomainsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2Integration.property.commentInput">commentInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -904,6 +937,7 @@ Refer to the {@link https://registry.terraform.io/providers/snowflake-labs/snowf
 | <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2Integration.property.saml2SpInitiatedLoginPageLabelInput">saml2SpInitiatedLoginPageLabelInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2Integration.property.saml2SsoUrlInput">saml2SsoUrlInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2Integration.property.saml2X509CertInput">saml2X509CertInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2Integration.property.timeoutsInput">timeoutsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeouts">Saml2IntegrationTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2Integration.property.allowedEmailPatterns">allowedEmailPatterns</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2Integration.property.allowedUserDomains">allowedUserDomains</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2Integration.property.comment">comment</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1097,6 +1131,16 @@ public Saml2IntegrationShowOutputList getShowOutput();
 
 ---
 
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-snowflake.saml2Integration.Saml2Integration.property.timeouts"></a>
+
+```java
+public Saml2IntegrationTimeoutsOutputReference getTimeouts();
+```
+
+- *Type:* <a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference">Saml2IntegrationTimeoutsOutputReference</a>
+
+---
+
 ##### `allowedEmailPatternsInput`<sup>Optional</sup> <a name="allowedEmailPatternsInput" id="@cdktf/provider-snowflake.saml2Integration.Saml2Integration.property.allowedEmailPatternsInput"></a>
 
 ```java
@@ -1274,6 +1318,16 @@ public java.lang.String getSaml2X509CertInput();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-snowflake.saml2Integration.Saml2Integration.property.timeoutsInput"></a>
+
+```java
+public java.lang.Object getTimeoutsInput();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeouts">Saml2IntegrationTimeouts</a>
 
 ---
 
@@ -1514,6 +1568,7 @@ Saml2IntegrationConfig.builder()
 //  .saml2SnowflakeAcsUrl(java.lang.String)
 //  .saml2SnowflakeIssuerUrl(java.lang.String)
 //  .saml2SpInitiatedLoginPageLabel(java.lang.String)
+//  .timeouts(Saml2IntegrationTimeouts)
     .build();
 ```
 
@@ -1536,16 +1591,17 @@ Saml2IntegrationConfig.builder()
 | <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationConfig.property.allowedEmailPatterns">allowedEmailPatterns</a></code> | <code>java.util.List<java.lang.String></code> | A list of regular expressions that email addresses are matched against to authenticate with a SAML2 security integration. |
 | <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationConfig.property.allowedUserDomains">allowedUserDomains</a></code> | <code>java.util.List<java.lang.String></code> | A list of email domains that can authenticate with a SAML2 security integration. |
 | <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationConfig.property.comment">comment</a></code> | <code>java.lang.String</code> | Specifies a comment for the integration. |
-| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationConfig.property.enabled">enabled</a></code> | <code>java.lang.String</code> | Specifies whether this security integration is enabled or disabled. |
-| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/saml2_integration#id Saml2Integration#id}. |
-| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationConfig.property.saml2EnableSpInitiated">saml2EnableSpInitiated</a></code> | <code>java.lang.String</code> | The Boolean indicating if the Log In With button will be shown on the login page. |
-| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationConfig.property.saml2ForceAuthn">saml2ForceAuthn</a></code> | <code>java.lang.String</code> | The Boolean indicating whether users, during the initial authentication flow, are forced to authenticate again to access Snowflake. |
+| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationConfig.property.enabled">enabled</a></code> | <code>java.lang.String</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether this security integration is enabled or disabled. |
+| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/saml2_integration#id Saml2Integration#id}. |
+| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationConfig.property.saml2EnableSpInitiated">saml2EnableSpInitiated</a></code> | <code>java.lang.String</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) The Boolean indicating if the Log In With button will be shown on the login page. |
+| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationConfig.property.saml2ForceAuthn">saml2ForceAuthn</a></code> | <code>java.lang.String</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) The Boolean indicating whether users, during the initial authentication flow, are forced to authenticate again to access Snowflake. |
 | <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationConfig.property.saml2PostLogoutRedirectUrl">saml2PostLogoutRedirectUrl</a></code> | <code>java.lang.String</code> | The endpoint to which Snowflake redirects users after clicking the Log Out button in the classic Snowflake web interface. |
 | <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationConfig.property.saml2RequestedNameidFormat">saml2RequestedNameidFormat</a></code> | <code>java.lang.String</code> | The SAML NameID format allows Snowflake to set an expectation of the identifying attribute of the user (i.e. SAML Subject) in the SAML assertion from the IdP to ensure a valid authentication to Snowflake. Valid options are: `urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified` \| `urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress` \| `urn:oasis:names:tc:SAML:1.1:nameid-format:X509SubjectName` \| `urn:oasis:names:tc:SAML:1.1:nameid-format:WindowsDomainQualifiedName` \| `urn:oasis:names:tc:SAML:2.0:nameid-format:kerberos` \| `urn:oasis:names:tc:SAML:2.0:nameid-format:persistent` \| `urn:oasis:names:tc:SAML:2.0:nameid-format:transient`. |
-| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationConfig.property.saml2SignRequest">saml2SignRequest</a></code> | <code>java.lang.String</code> | The Boolean indicating whether SAML requests are signed. |
+| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationConfig.property.saml2SignRequest">saml2SignRequest</a></code> | <code>java.lang.String</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) The Boolean indicating whether SAML requests are signed. |
 | <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationConfig.property.saml2SnowflakeAcsUrl">saml2SnowflakeAcsUrl</a></code> | <code>java.lang.String</code> | The string containing the Snowflake Assertion Consumer Service URL to which the IdP will send its SAML authentication response back to Snowflake. |
 | <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationConfig.property.saml2SnowflakeIssuerUrl">saml2SnowflakeIssuerUrl</a></code> | <code>java.lang.String</code> | The string containing the EntityID / Issuer for the Snowflake service provider. |
 | <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationConfig.property.saml2SpInitiatedLoginPageLabel">saml2SpInitiatedLoginPageLabel</a></code> | <code>java.lang.String</code> | The string containing the label to display after the Log In With button on the login page. |
+| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeouts">Saml2IntegrationTimeouts</a></code> | timeouts block. |
 
 ---
 
@@ -1631,7 +1687,7 @@ Specifies the name of the SAML2 integration.
 
 This name follows the rules for Object Identifiers. The name should be unique among security integrations in your account. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/saml2_integration#name Saml2Integration#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/saml2_integration#name Saml2Integration#name}
 
 ---
 
@@ -1645,7 +1701,7 @@ public java.lang.String getSaml2Issuer();
 
 The string containing the IdP EntityID / Issuer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/saml2_integration#saml2_issuer Saml2Integration#saml2_issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/saml2_integration#saml2_issuer Saml2Integration#saml2_issuer}
 
 ---
 
@@ -1659,7 +1715,7 @@ public java.lang.String getSaml2Provider();
 
 The string describing the IdP. Valid options are: `OKTA` | `ADFS` | `CUSTOM`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/saml2_integration#saml2_provider Saml2Integration#saml2_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/saml2_integration#saml2_provider Saml2Integration#saml2_provider}
 
 ---
 
@@ -1673,7 +1729,7 @@ public java.lang.String getSaml2SsoUrl();
 
 The string containing the IdP SSO URL, where the user should be redirected by Snowflake (the Service Provider) with a SAML AuthnRequest message.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/saml2_integration#saml2_sso_url Saml2Integration#saml2_sso_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/saml2_integration#saml2_sso_url Saml2Integration#saml2_sso_url}
 
 ---
 
@@ -1687,7 +1743,7 @@ public java.lang.String getSaml2X509Cert();
 
 The Base64 encoded IdP signing certificate on a single line without the leading -----BEGIN CERTIFICATE----- and ending -----END CERTIFICATE----- markers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/saml2_integration#saml2_x509_cert Saml2Integration#saml2_x509_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/saml2_integration#saml2_x509_cert Saml2Integration#saml2_x509_cert}
 
 ---
 
@@ -1703,7 +1759,7 @@ A list of regular expressions that email addresses are matched against to authen
 
 If this field changes value from non-empty to empty, the whole resource is recreated because of Snowflake limitations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/saml2_integration#allowed_email_patterns Saml2Integration#allowed_email_patterns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/saml2_integration#allowed_email_patterns Saml2Integration#allowed_email_patterns}
 
 ---
 
@@ -1719,7 +1775,7 @@ A list of email domains that can authenticate with a SAML2 security integration.
 
 If this field changes value from non-empty to empty, the whole resource is recreated because of Snowflake limitations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/saml2_integration#allowed_user_domains Saml2Integration#allowed_user_domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/saml2_integration#allowed_user_domains Saml2Integration#allowed_user_domains}
 
 ---
 
@@ -1733,7 +1789,7 @@ public java.lang.String getComment();
 
 Specifies a comment for the integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/saml2_integration#comment Saml2Integration#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/saml2_integration#comment Saml2Integration#comment}
 
 ---
 
@@ -1745,11 +1801,11 @@ public java.lang.String getEnabled();
 
 - *Type:* java.lang.String
 
-Specifies whether this security integration is enabled or disabled.
+(Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether this security integration is enabled or disabled.
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/saml2_integration#enabled Saml2Integration#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/saml2_integration#enabled Saml2Integration#enabled}
 
 ---
 
@@ -1761,7 +1817,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/saml2_integration#id Saml2Integration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/saml2_integration#id Saml2Integration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1776,11 +1832,11 @@ public java.lang.String getSaml2EnableSpInitiated();
 
 - *Type:* java.lang.String
 
-The Boolean indicating if the Log In With button will be shown on the login page.
+(Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) The Boolean indicating if the Log In With button will be shown on the login page.
 
 TRUE: displays the Log in With button on the login page. FALSE: does not display the Log in With button on the login page. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/saml2_integration#saml2_enable_sp_initiated Saml2Integration#saml2_enable_sp_initiated}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/saml2_integration#saml2_enable_sp_initiated Saml2Integration#saml2_enable_sp_initiated}
 
 ---
 
@@ -1792,11 +1848,11 @@ public java.lang.String getSaml2ForceAuthn();
 
 - *Type:* java.lang.String
 
-The Boolean indicating whether users, during the initial authentication flow, are forced to authenticate again to access Snowflake.
+(Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) The Boolean indicating whether users, during the initial authentication flow, are forced to authenticate again to access Snowflake.
 
 When set to TRUE, Snowflake sets the ForceAuthn SAML parameter to TRUE in the outgoing request from Snowflake to the identity provider. TRUE: forces users to authenticate again to access Snowflake, even if a valid session with the identity provider exists. FALSE: does not force users to authenticate again to access Snowflake. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/saml2_integration#saml2_force_authn Saml2Integration#saml2_force_authn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/saml2_integration#saml2_force_authn Saml2Integration#saml2_force_authn}
 
 ---
 
@@ -1812,7 +1868,7 @@ The endpoint to which Snowflake redirects users after clicking the Log Out butto
 
 Snowflake terminates the Snowflake session upon redirecting to the specified endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/saml2_integration#saml2_post_logout_redirect_url Saml2Integration#saml2_post_logout_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/saml2_integration#saml2_post_logout_redirect_url Saml2Integration#saml2_post_logout_redirect_url}
 
 ---
 
@@ -1826,7 +1882,7 @@ public java.lang.String getSaml2RequestedNameidFormat();
 
 The SAML NameID format allows Snowflake to set an expectation of the identifying attribute of the user (i.e. SAML Subject) in the SAML assertion from the IdP to ensure a valid authentication to Snowflake. Valid options are: `urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified` | `urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress` | `urn:oasis:names:tc:SAML:1.1:nameid-format:X509SubjectName` | `urn:oasis:names:tc:SAML:1.1:nameid-format:WindowsDomainQualifiedName` | `urn:oasis:names:tc:SAML:2.0:nameid-format:kerberos` | `urn:oasis:names:tc:SAML:2.0:nameid-format:persistent` | `urn:oasis:names:tc:SAML:2.0:nameid-format:transient`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/saml2_integration#saml2_requested_nameid_format Saml2Integration#saml2_requested_nameid_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/saml2_integration#saml2_requested_nameid_format Saml2Integration#saml2_requested_nameid_format}
 
 ---
 
@@ -1838,11 +1894,11 @@ public java.lang.String getSaml2SignRequest();
 
 - *Type:* java.lang.String
 
-The Boolean indicating whether SAML requests are signed.
+(Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) The Boolean indicating whether SAML requests are signed.
 
 TRUE: allows SAML requests to be signed. FALSE: does not allow SAML requests to be signed. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/saml2_integration#saml2_sign_request Saml2Integration#saml2_sign_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/saml2_integration#saml2_sign_request Saml2Integration#saml2_sign_request}
 
 ---
 
@@ -1858,7 +1914,7 @@ The string containing the Snowflake Assertion Consumer Service URL to which the 
 
 This property will be set in the SAML authentication request generated by Snowflake when initiating a SAML SSO operation with the IdP. If an incorrect value is specified, Snowflake returns an error message indicating the acceptable values to use. Because Okta does not support underscores in URLs, the underscore in the account name must be converted to a hyphen. See [docs](https://docs.snowflake.com/en/user-guide/organizations-connect#okta-urls).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/saml2_integration#saml2_snowflake_acs_url Saml2Integration#saml2_snowflake_acs_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/saml2_integration#saml2_snowflake_acs_url Saml2Integration#saml2_snowflake_acs_url}
 
 ---
 
@@ -1874,7 +1930,7 @@ The string containing the EntityID / Issuer for the Snowflake service provider.
 
 If an incorrect value is specified, Snowflake returns an error message indicating the acceptable values to use. Because Okta does not support underscores in URLs, the underscore in the account name must be converted to a hyphen. See [docs](https://docs.snowflake.com/en/user-guide/organizations-connect#okta-urls).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/saml2_integration#saml2_snowflake_issuer_url Saml2Integration#saml2_snowflake_issuer_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/saml2_integration#saml2_snowflake_issuer_url Saml2Integration#saml2_snowflake_issuer_url}
 
 ---
 
@@ -1890,7 +1946,21 @@ The string containing the label to display after the Log In With button on the l
 
 If this field changes value from non-empty to empty, the whole resource is recreated because of Snowflake limitations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflake-labs/snowflake/1.0.5/docs/resources/saml2_integration#saml2_sp_initiated_login_page_label Saml2Integration#saml2_sp_initiated_login_page_label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/saml2_integration#saml2_sp_initiated_login_page_label Saml2Integration#saml2_sp_initiated_login_page_label}
+
+---
+
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationConfig.property.timeouts"></a>
+
+```java
+public Saml2IntegrationTimeouts getTimeouts();
+```
+
+- *Type:* <a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeouts">Saml2IntegrationTimeouts</a>
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/saml2_integration#timeouts Saml2Integration#timeouts}
 
 ---
 
@@ -2145,6 +2215,80 @@ Saml2IntegrationShowOutput.builder()
     .build();
 ```
 
+
+### Saml2IntegrationTimeouts <a name="Saml2IntegrationTimeouts" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeouts"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeouts.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.snowflake.saml2_integration.Saml2IntegrationTimeouts;
+
+Saml2IntegrationTimeouts.builder()
+//  .create(java.lang.String)
+//  .delete(java.lang.String)
+//  .read(java.lang.String)
+//  .update(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/saml2_integration#create Saml2Integration#create}. |
+| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/saml2_integration#delete Saml2Integration#delete}. |
+| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/saml2_integration#read Saml2Integration#read}. |
+| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/saml2_integration#update Saml2Integration#update}. |
+
+---
+
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeouts.property.create"></a>
+
+```java
+public java.lang.String getCreate();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/saml2_integration#create Saml2Integration#create}.
+
+---
+
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeouts.property.delete"></a>
+
+```java
+public java.lang.String getDelete();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/saml2_integration#delete Saml2Integration#delete}.
+
+---
+
+##### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeouts.property.read"></a>
+
+```java
+public java.lang.String getRead();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/saml2_integration#read Saml2Integration#read}.
+
+---
+
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeouts.property.update"></a>
+
+```java
+public java.lang.String getUpdate();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/saml2_integration#update Saml2Integration#update}.
+
+---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
@@ -11991,6 +12135,371 @@ public Saml2IntegrationShowOutput getInternalValue();
 ```
 
 - *Type:* <a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationShowOutput">Saml2IntegrationShowOutput</a>
+
+---
+
+
+### Saml2IntegrationTimeoutsOutputReference <a name="Saml2IntegrationTimeoutsOutputReference" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.snowflake.saml2_integration.Saml2IntegrationTimeoutsOutputReference;
+
+new Saml2IntegrationTimeoutsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.resetCreate">resetCreate</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.resetDelete">resetDelete</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.resetRead">resetRead</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.resetUpdate">resetUpdate</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetCreate` <a name="resetCreate" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.resetCreate"></a>
+
+```java
+public void resetCreate()
+```
+
+##### `resetDelete` <a name="resetDelete" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.resetDelete"></a>
+
+```java
+public void resetDelete()
+```
+
+##### `resetRead` <a name="resetRead" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.resetRead"></a>
+
+```java
+public void resetRead()
+```
+
+##### `resetUpdate` <a name="resetUpdate" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.resetUpdate"></a>
+
+```java
+public void resetUpdate()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.property.createInput">createInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.property.readInput">readInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.property.updateInput">updateInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.property.create">create</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.property.delete">delete</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.property.read">read</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.property.update">update</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeouts">Saml2IntegrationTimeouts</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `createInput`<sup>Optional</sup> <a name="createInput" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.property.createInput"></a>
+
+```java
+public java.lang.String getCreateInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `deleteInput`<sup>Optional</sup> <a name="deleteInput" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.property.deleteInput"></a>
+
+```java
+public java.lang.String getDeleteInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `readInput`<sup>Optional</sup> <a name="readInput" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.property.readInput"></a>
+
+```java
+public java.lang.String getReadInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `updateInput`<sup>Optional</sup> <a name="updateInput" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.property.updateInput"></a>
+
+```java
+public java.lang.String getUpdateInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.property.create"></a>
+
+```java
+public java.lang.String getCreate();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.property.delete"></a>
+
+```java
+public java.lang.String getDelete();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `read`<sup>Required</sup> <a name="read" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.property.read"></a>
+
+```java
+public java.lang.String getRead();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.property.update"></a>
+
+```java
+public java.lang.String getUpdate();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeoutsOutputReference.property.internalValue"></a>
+
+```java
+public java.lang.Object getInternalValue();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-snowflake.saml2Integration.Saml2IntegrationTimeouts">Saml2IntegrationTimeouts</a>
 
 ---
 
