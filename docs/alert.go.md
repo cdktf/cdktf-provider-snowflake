@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.alert.Alert.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/alert"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/alert"
 
 alert.NewAlert(scope Construct, id *string, config AlertConfig) Alert
 ```
@@ -439,7 +439,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.alert.Alert.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/alert"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/alert"
 
 alert.Alert_IsConstruct(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.alert.Alert.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/alert"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/alert"
 
 alert.Alert_IsTerraformElement(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ alert.Alert_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.alert.Alert.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/alert"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/alert"
 
 alert.Alert_IsTerraformResource(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ alert.Alert_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.alert.Alert.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/alert"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/alert"
 
 alert.Alert_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -981,10 +981,10 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.alert.AlertAlertSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/alert"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/alert"
 
 &alert.AlertAlertSchedule {
-	Cron: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13.alert.AlertAlertScheduleCron,
+	Cron: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14.alert.AlertAlertScheduleCron,
 	Interval: *f64,
 }
 ```
@@ -1033,7 +1033,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.alert.AlertAlertScheduleCron.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/alert"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/alert"
 
 &alert.AlertAlertScheduleCron {
 	Expression: *string,
@@ -1085,7 +1085,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.alert.AlertConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/alert"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/alert"
 
 &alert.AlertConfig {
 	Connection: interface{},
@@ -1101,11 +1101,11 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/alert"
 	Name: *string,
 	Schema: *string,
 	Warehouse: *string,
-	AlertSchedule: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13.alert.AlertAlertSchedule,
+	AlertSchedule: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14.alert.AlertAlertSchedule,
 	Comment: *string,
 	Enabled: interface{},
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13.alert.AlertTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14.alert.AlertTimeouts,
 }
 ```
 
@@ -1366,7 +1366,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.alert.AlertTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/alert"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/alert"
 
 &alert.AlertTimeouts {
 	Create: *string,
@@ -1442,7 +1442,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.alert.AlertAlertScheduleCronOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/alert"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/alert"
 
 alert.NewAlertAlertScheduleCronOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlertAlertScheduleCronOutputReference
 ```
@@ -1735,7 +1735,7 @@ func InternalValue() AlertAlertScheduleCron
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.alert.AlertAlertScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/alert"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/alert"
 
 alert.NewAlertAlertScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlertAlertScheduleOutputReference
 ```
@@ -2055,7 +2055,7 @@ func InternalValue() AlertAlertSchedule
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.alert.AlertTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/alert"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/alert"
 
 alert.NewAlertTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlertTimeoutsOutputReference
 ```

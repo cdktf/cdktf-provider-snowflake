@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/streamonexternaltable"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamonexternaltable"
 
 streamonexternaltable.NewStreamOnExternalTable(scope Construct, id *string, config StreamOnExternalTableConfig) StreamOnExternalTable
 ```
@@ -466,7 +466,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTable.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/streamonexternaltable"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamonexternaltable"
 
 streamonexternaltable.StreamOnExternalTable_IsConstruct(x interface{}) *bool
 ```
@@ -498,7 +498,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/streamonexternaltable"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamonexternaltable"
 
 streamonexternaltable.StreamOnExternalTable_IsTerraformElement(x interface{}) *bool
 ```
@@ -512,7 +512,7 @@ streamonexternaltable.StreamOnExternalTable_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTable.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/streamonexternaltable"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamonexternaltable"
 
 streamonexternaltable.StreamOnExternalTable_IsTerraformResource(x interface{}) *bool
 ```
@@ -526,7 +526,7 @@ streamonexternaltable.StreamOnExternalTable_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTable.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/streamonexternaltable"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamonexternaltable"
 
 streamonexternaltable.StreamOnExternalTable_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1052,7 +1052,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableAt.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/streamonexternaltable"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamonexternaltable"
 
 &streamonexternaltable.StreamOnExternalTableAt {
 	Offset: *string,
@@ -1138,7 +1138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableBefore.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/streamonexternaltable"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamonexternaltable"
 
 &streamonexternaltable.StreamOnExternalTableBefore {
 	Offset: *string,
@@ -1224,7 +1224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/streamonexternaltable"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamonexternaltable"
 
 &streamonexternaltable.StreamOnExternalTableConfig {
 	Connection: interface{},
@@ -1238,13 +1238,13 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/streamonexter
 	ExternalTable: *string,
 	Name: *string,
 	Schema: *string,
-	At: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13.streamOnExternalTable.StreamOnExternalTableAt,
-	Before: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13.streamOnExternalTable.StreamOnExternalTableBefore,
+	At: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14.streamOnExternalTable.StreamOnExternalTableAt,
+	Before: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14.streamOnExternalTable.StreamOnExternalTableBefore,
 	Comment: *string,
 	CopyGrants: interface{},
 	Id: *string,
 	InsertOnly: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13.streamOnExternalTable.StreamOnExternalTableTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14.streamOnExternalTable.StreamOnExternalTableTimeouts,
 }
 ```
 
@@ -1515,7 +1515,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/streamonexternaltable"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamonexternaltable"
 
 &streamonexternaltable.StreamOnExternalTableDescribeOutput {
 
@@ -1528,7 +1528,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/streamonexter
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/streamonexternaltable"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamonexternaltable"
 
 &streamonexternaltable.StreamOnExternalTableShowOutput {
 
@@ -1541,7 +1541,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/streamonexter
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/streamonexternaltable"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamonexternaltable"
 
 &streamonexternaltable.StreamOnExternalTableTimeouts {
 	Create: *string,
@@ -1617,7 +1617,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableAtOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/streamonexternaltable"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamonexternaltable"
 
 streamonexternaltable.NewStreamOnExternalTableAtOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StreamOnExternalTableAtOutputReference
 ```
@@ -1982,7 +1982,7 @@ func InternalValue() StreamOnExternalTableAt
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableBeforeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/streamonexternaltable"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamonexternaltable"
 
 streamonexternaltable.NewStreamOnExternalTableBeforeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StreamOnExternalTableBeforeOutputReference
 ```
@@ -2347,7 +2347,7 @@ func InternalValue() StreamOnExternalTableBefore
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/streamonexternaltable"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamonexternaltable"
 
 streamonexternaltable.NewStreamOnExternalTableDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StreamOnExternalTableDescribeOutputList
 ```
@@ -2496,7 +2496,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/streamonexternaltable"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamonexternaltable"
 
 streamonexternaltable.NewStreamOnExternalTableDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StreamOnExternalTableDescribeOutputOutputReference
 ```
@@ -2928,7 +2928,7 @@ func InternalValue() StreamOnExternalTableDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/streamonexternaltable"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamonexternaltable"
 
 streamonexternaltable.NewStreamOnExternalTableShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StreamOnExternalTableShowOutputList
 ```
@@ -3077,7 +3077,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/streamonexternaltable"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamonexternaltable"
 
 streamonexternaltable.NewStreamOnExternalTableShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StreamOnExternalTableShowOutputOutputReference
 ```
@@ -3509,7 +3509,7 @@ func InternalValue() StreamOnExternalTableShowOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.streamOnExternalTable.StreamOnExternalTableTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/streamonexternaltable"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamonexternaltable"
 
 streamonexternaltable.NewStreamOnExternalTableTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StreamOnExternalTableTimeoutsOutputReference
 ```
