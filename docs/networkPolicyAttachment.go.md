@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.networkPolicyAttachment.NetworkPolicyAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/networkpolicyattachment"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/networkpolicyattachment"
 
 networkpolicyattachment.NewNetworkPolicyAttachment(scope Construct, id *string, config NetworkPolicyAttachmentConfig) NetworkPolicyAttachment
 ```
@@ -419,7 +419,7 @@ func ResetUsers()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.networkPolicyAttachment.NetworkPolicyAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/networkpolicyattachment"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/networkpolicyattachment"
 
 networkpolicyattachment.NetworkPolicyAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.networkPolicyAttachment.NetworkPolicyAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/networkpolicyattachment"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/networkpolicyattachment"
 
 networkpolicyattachment.NetworkPolicyAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ networkpolicyattachment.NetworkPolicyAttachment_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.networkPolicyAttachment.NetworkPolicyAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/networkpolicyattachment"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/networkpolicyattachment"
 
 networkpolicyattachment.NetworkPolicyAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ networkpolicyattachment.NetworkPolicyAttachment_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.networkPolicyAttachment.NetworkPolicyAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/networkpolicyattachment"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/networkpolicyattachment"
 
 networkpolicyattachment.NetworkPolicyAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -818,7 +818,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.networkPolicyAttachment.NetworkPolicyAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/networkpolicyattachment"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/networkpolicyattachment"
 
 &networkpolicyattachment.NetworkPolicyAttachmentConfig {
 	Connection: interface{},
@@ -831,7 +831,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/networkpolicy
 	NetworkPolicyName: *string,
 	Id: *string,
 	SetForAccount: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13.networkPolicyAttachment.NetworkPolicyAttachmentTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14.networkPolicyAttachment.NetworkPolicyAttachmentTimeouts,
 	Users: *[]*string,
 }
 ```
@@ -1003,7 +1003,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.networkPolicyAttachment.NetworkPolicyAttachmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/networkpolicyattachment"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/networkpolicyattachment"
 
 &networkpolicyattachment.NetworkPolicyAttachmentTimeouts {
 	Create: *string,
@@ -1079,7 +1079,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.networkPolicyAttachment.NetworkPolicyAttachmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v13/networkpolicyattachment"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/networkpolicyattachment"
 
 networkpolicyattachment.NewNetworkPolicyAttachmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkPolicyAttachmentTimeoutsOutputReference
 ```
