@@ -4,12 +4,12 @@
 
 ### TableColumnMaskingPolicyApplication <a name="TableColumnMaskingPolicyApplication" id="@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table_column_masking_policy_application snowflake_table_column_masking_policy_application}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/table_column_masking_policy_application snowflake_table_column_masking_policy_application}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/tablecolumnmaskingpolicyapplication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/tablecolumnmaskingpolicyapplication"
 
 tablecolumnmaskingpolicyapplication.NewTableColumnMaskingPolicyApplication(scope Construct, id *string, config TableColumnMaskingPolicyApplicationConfig) TableColumnMaskingPolicyApplication
 ```
@@ -405,7 +405,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/tablecolumnmaskingpolicyapplication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/tablecolumnmaskingpolicyapplication"
 
 tablecolumnmaskingpolicyapplication.TableColumnMaskingPolicyApplication_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/tablecolumnmaskingpolicyapplication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/tablecolumnmaskingpolicyapplication"
 
 tablecolumnmaskingpolicyapplication.TableColumnMaskingPolicyApplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ tablecolumnmaskingpolicyapplication.TableColumnMaskingPolicyApplication_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplication.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/tablecolumnmaskingpolicyapplication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/tablecolumnmaskingpolicyapplication"
 
 tablecolumnmaskingpolicyapplication.TableColumnMaskingPolicyApplication_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ tablecolumnmaskingpolicyapplication.TableColumnMaskingPolicyApplication_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplication.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/tablecolumnmaskingpolicyapplication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/tablecolumnmaskingpolicyapplication"
 
 tablecolumnmaskingpolicyapplication.TableColumnMaskingPolicyApplication_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -494,7 +494,7 @@ The construct id used in the generated config for the TableColumnMaskingPolicyAp
 
 The id of the existing TableColumnMaskingPolicyApplication that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table_column_masking_policy_application#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/table_column_masking_policy_application#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -804,7 +804,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/tablecolumnmaskingpolicyapplication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/tablecolumnmaskingpolicyapplication"
 
 &tablecolumnmaskingpolicyapplication.TableColumnMaskingPolicyApplicationConfig {
 	Connection: interface{},
@@ -818,7 +818,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/tablecolumnma
 	MaskingPolicy: *string,
 	Table: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplicationTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplicationTimeouts,
 }
 ```
 
@@ -836,7 +836,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/tablecolumnma
 | <code><a href="#@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplicationConfig.property.column">Column</a></code> | <code>*string</code> | The column to apply the masking policy to. |
 | <code><a href="#@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplicationConfig.property.maskingPolicy">MaskingPolicy</a></code> | <code>*string</code> | Fully qualified name (`database.schema.policyname`) of the policy to apply. |
 | <code><a href="#@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplicationConfig.property.table">Table</a></code> | <code>*string</code> | The fully qualified name (`database.schema.table`) of the table to apply the masking policy to. |
-| <code><a href="#@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplicationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table_column_masking_policy_application#id TableColumnMaskingPolicyApplication#id}. |
+| <code><a href="#@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplicationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/table_column_masking_policy_application#id TableColumnMaskingPolicyApplication#id}. |
 | <code><a href="#@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplicationConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplicationTimeouts">TableColumnMaskingPolicyApplicationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -921,7 +921,7 @@ Column *string
 
 The column to apply the masking policy to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table_column_masking_policy_application#column TableColumnMaskingPolicyApplication#column}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/table_column_masking_policy_application#column TableColumnMaskingPolicyApplication#column}
 
 ---
 
@@ -935,7 +935,7 @@ MaskingPolicy *string
 
 Fully qualified name (`database.schema.policyname`) of the policy to apply.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table_column_masking_policy_application#masking_policy TableColumnMaskingPolicyApplication#masking_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/table_column_masking_policy_application#masking_policy TableColumnMaskingPolicyApplication#masking_policy}
 
 ---
 
@@ -949,7 +949,7 @@ Table *string
 
 The fully qualified name (`database.schema.table`) of the table to apply the masking policy to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table_column_masking_policy_application#table TableColumnMaskingPolicyApplication#table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/table_column_masking_policy_application#table TableColumnMaskingPolicyApplication#table}
 
 ---
 
@@ -961,7 +961,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table_column_masking_policy_application#id TableColumnMaskingPolicyApplication#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/table_column_masking_policy_application#id TableColumnMaskingPolicyApplication#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -978,7 +978,7 @@ Timeouts TableColumnMaskingPolicyApplicationTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table_column_masking_policy_application#timeouts TableColumnMaskingPolicyApplication#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/table_column_masking_policy_application#timeouts TableColumnMaskingPolicyApplication#timeouts}
 
 ---
 
@@ -987,7 +987,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplicationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/tablecolumnmaskingpolicyapplication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/tablecolumnmaskingpolicyapplication"
 
 &tablecolumnmaskingpolicyapplication.TableColumnMaskingPolicyApplicationTimeouts {
 	Create: *string,
@@ -1001,10 +1001,10 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/tablecolumnma
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplicationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table_column_masking_policy_application#create TableColumnMaskingPolicyApplication#create}. |
-| <code><a href="#@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplicationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table_column_masking_policy_application#delete TableColumnMaskingPolicyApplication#delete}. |
-| <code><a href="#@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplicationTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table_column_masking_policy_application#read TableColumnMaskingPolicyApplication#read}. |
-| <code><a href="#@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplicationTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table_column_masking_policy_application#update TableColumnMaskingPolicyApplication#update}. |
+| <code><a href="#@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplicationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/table_column_masking_policy_application#create TableColumnMaskingPolicyApplication#create}. |
+| <code><a href="#@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplicationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/table_column_masking_policy_application#delete TableColumnMaskingPolicyApplication#delete}. |
+| <code><a href="#@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplicationTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/table_column_masking_policy_application#read TableColumnMaskingPolicyApplication#read}. |
+| <code><a href="#@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplicationTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/table_column_masking_policy_application#update TableColumnMaskingPolicyApplication#update}. |
 
 ---
 
@@ -1016,7 +1016,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table_column_masking_policy_application#create TableColumnMaskingPolicyApplication#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/table_column_masking_policy_application#create TableColumnMaskingPolicyApplication#create}.
 
 ---
 
@@ -1028,7 +1028,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table_column_masking_policy_application#delete TableColumnMaskingPolicyApplication#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/table_column_masking_policy_application#delete TableColumnMaskingPolicyApplication#delete}.
 
 ---
 
@@ -1040,7 +1040,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table_column_masking_policy_application#read TableColumnMaskingPolicyApplication#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/table_column_masking_policy_application#read TableColumnMaskingPolicyApplication#read}.
 
 ---
 
@@ -1052,7 +1052,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/table_column_masking_policy_application#update TableColumnMaskingPolicyApplication#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/table_column_masking_policy_application#update TableColumnMaskingPolicyApplication#update}.
 
 ---
 
@@ -1063,7 +1063,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplicationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/tablecolumnmaskingpolicyapplication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/tablecolumnmaskingpolicyapplication"
 
 tablecolumnmaskingpolicyapplication.NewTableColumnMaskingPolicyApplicationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TableColumnMaskingPolicyApplicationTimeoutsOutputReference
 ```

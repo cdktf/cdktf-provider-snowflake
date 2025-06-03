@@ -4,12 +4,12 @@
 
 ### ProcedureJavascript <a name="ProcedureJavascript" id="@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascript"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/procedure_javascript snowflake_procedure_javascript}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/procedure_javascript snowflake_procedure_javascript}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascript.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/procedurejavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/procedurejavascript"
 
 procedurejavascript.NewProcedureJavascript(scope Construct, id *string, config ProcedureJavascriptConfig) ProcedureJavascript
 ```
@@ -481,7 +481,7 @@ func ResetTraceLevel()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascript.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/procedurejavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/procedurejavascript"
 
 procedurejavascript.ProcedureJavascript_IsConstruct(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascript.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/procedurejavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/procedurejavascript"
 
 procedurejavascript.ProcedureJavascript_IsTerraformElement(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ procedurejavascript.ProcedureJavascript_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascript.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/procedurejavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/procedurejavascript"
 
 procedurejavascript.ProcedureJavascript_IsTerraformResource(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ procedurejavascript.ProcedureJavascript_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascript.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/procedurejavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/procedurejavascript"
 
 procedurejavascript.ProcedureJavascript_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -570,7 +570,7 @@ The construct id used in the generated config for the ProcedureJavascript to imp
 
 The id of the existing ProcedureJavascript that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/procedure_javascript#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/procedure_javascript#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1166,7 +1166,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascriptArguments.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/procedurejavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/procedurejavascript"
 
 &procedurejavascript.ProcedureJavascriptArguments {
 	ArgDataType: *string,
@@ -1195,7 +1195,7 @@ ArgDataType *string
 
 The argument type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/procedure_javascript#arg_data_type ProcedureJavascript#arg_data_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/procedure_javascript#arg_data_type ProcedureJavascript#arg_data_type}
 
 ---
 
@@ -1211,7 +1211,7 @@ The argument name.
 
 The provider wraps it in double quotes by default, so be aware of that while referencing the argument in the procedure definition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/procedure_javascript#arg_name ProcedureJavascript#arg_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/procedure_javascript#arg_name ProcedureJavascript#arg_name}
 
 ---
 
@@ -1227,7 +1227,7 @@ Optional default value for the argument.
 
 For text values use single quotes. Numeric values can be unquoted. External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/procedure_javascript#arg_default_value ProcedureJavascript#arg_default_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/procedure_javascript#arg_default_value ProcedureJavascript#arg_default_value}
 
 ---
 
@@ -1236,7 +1236,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascriptConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/procedurejavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/procedurejavascript"
 
 &procedurejavascript.ProcedureJavascriptConfig {
 	Connection: interface{},
@@ -1260,7 +1260,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/procedurejava
 	LogLevel: *string,
 	MetricLevel: *string,
 	NullInputBehavior: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14.procedureJavascript.ProcedureJavascriptTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.procedureJavascript.ProcedureJavascriptTimeouts,
 	TraceLevel: *string,
 }
 ```
@@ -1285,7 +1285,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/procedurejava
 | <code><a href="#@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascriptConfig.property.comment">Comment</a></code> | <code>*string</code> | (Default: `user-defined procedure`) Specifies a comment for the procedure. |
 | <code><a href="#@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascriptConfig.property.enableConsoleOutput">EnableConsoleOutput</a></code> | <code>interface{}</code> | Enable stdout/stderr fast path logging for anonyous stored procs. |
 | <code><a href="#@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascriptConfig.property.executeAs">ExecuteAs</a></code> | <code>*string</code> | Specifies whether the stored procedure executes with the privileges of the owner (an “owner’s rights” stored procedure) or with the privileges of the caller (a “caller’s rights” stored procedure). |
-| <code><a href="#@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascriptConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/procedure_javascript#id ProcedureJavascript#id}. |
+| <code><a href="#@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascriptConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/procedure_javascript#id ProcedureJavascript#id}. |
 | <code><a href="#@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascriptConfig.property.isSecure">IsSecure</a></code> | <code>*string</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies that the procedure is secure. |
 | <code><a href="#@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascriptConfig.property.logLevel">LogLevel</a></code> | <code>*string</code> | LOG_LEVEL to use when filtering events For more information, check [LOG_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#log-level). |
 | <code><a href="#@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascriptConfig.property.metricLevel">MetricLevel</a></code> | <code>*string</code> | METRIC_LEVEL value to control whether to emit metrics to Event Table For more information, check [METRIC_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#metric-level). |
@@ -1377,7 +1377,7 @@ The database in which to create the procedure.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/procedure_javascript#database ProcedureJavascript#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/procedure_javascript#database ProcedureJavascript#database}
 
 ---
 
@@ -1393,7 +1393,7 @@ The name of the procedure;
 
 the identifier does not need to be unique for the schema in which the procedure is created because stored procedures are [identified and resolved by the combination of the name and argument types](https://docs.snowflake.com/en/developer-guide/udf-stored-procedure-naming-conventions.html#label-procedure-function-name-overloading). Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/procedure_javascript#name ProcedureJavascript#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/procedure_javascript#name ProcedureJavascript#name}
 
 ---
 
@@ -1409,7 +1409,7 @@ Defines the code executed by the stored procedure.
 
 The definition can consist of any valid code. Wrapping `$$` signs are added by the provider automatically; do not include them. The `procedure_definition` value must be JavaScript source code. For more information, see [JavaScript](https://docs.snowflake.com/en/developer-guide/stored-procedure/stored-procedures-javascript). To mitigate permadiff on this field, the provider replaces blank characters with a space. This can lead to false positives in cases where a change in case or run of whitespace is semantically significant.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/procedure_javascript#procedure_definition ProcedureJavascript#procedure_definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/procedure_javascript#procedure_definition ProcedureJavascript#procedure_definition}
 
 ---
 
@@ -1425,7 +1425,7 @@ Specifies the type of the result returned by the stored procedure.
 
 For `<result_data_type>`, use the Snowflake data type that corresponds to the type of the language that you are using (see [SQL and JavaScript data type mapping](https://docs.snowflake.com/en/developer-guide/stored-procedure/stored-procedures-javascript.html#label-stored-procedure-data-type-mapping)). For `RETURNS TABLE ( [ col_name col_data_type [ , ... ] ] )`, if you know the Snowflake data types of the columns in the returned table, specify the column names and types. Otherwise (e.g. if you are determining the column types during run time), you can omit the column names and types (i.e. `TABLE ()`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/procedure_javascript#return_type ProcedureJavascript#return_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/procedure_javascript#return_type ProcedureJavascript#return_type}
 
 ---
 
@@ -1441,7 +1441,7 @@ The schema in which to create the procedure.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/procedure_javascript#schema ProcedureJavascript#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/procedure_javascript#schema ProcedureJavascript#schema}
 
 ---
 
@@ -1455,7 +1455,7 @@ Arguments interface{}
 
 arguments block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/procedure_javascript#arguments ProcedureJavascript#arguments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/procedure_javascript#arguments ProcedureJavascript#arguments}
 
 ---
 
@@ -1469,7 +1469,7 @@ Comment *string
 
 (Default: `user-defined procedure`) Specifies a comment for the procedure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/procedure_javascript#comment ProcedureJavascript#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/procedure_javascript#comment ProcedureJavascript#comment}
 
 ---
 
@@ -1485,7 +1485,7 @@ Enable stdout/stderr fast path logging for anonyous stored procs.
 
 This is a public parameter (similar to LOG_LEVEL). For more information, check [ENABLE_CONSOLE_OUTPUT docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-console-output).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/procedure_javascript#enable_console_output ProcedureJavascript#enable_console_output}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/procedure_javascript#enable_console_output ProcedureJavascript#enable_console_output}
 
 ---
 
@@ -1501,7 +1501,7 @@ Specifies whether the stored procedure executes with the privileges of the owner
 
 If you execute the statement CREATE PROCEDURE … EXECUTE AS CALLER, then in the future the procedure will execute as a caller’s rights procedure. If you execute CREATE PROCEDURE … EXECUTE AS OWNER, then the procedure will execute as an owner’s rights procedure. For more information, see [Understanding caller’s rights and owner’s rights stored procedures](https://docs.snowflake.com/en/developer-guide/stored-procedure/stored-procedures-rights). Valid values are (case-insensitive): `CALLER` | `OWNER`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/procedure_javascript#execute_as ProcedureJavascript#execute_as}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/procedure_javascript#execute_as ProcedureJavascript#execute_as}
 
 ---
 
@@ -1513,7 +1513,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/procedure_javascript#id ProcedureJavascript#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/procedure_javascript#id ProcedureJavascript#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1532,7 +1532,7 @@ IsSecure *string
 
 For more information about secure procedures, see [Protecting Sensitive Information with Secure UDFs and Stored Procedures](https://docs.snowflake.com/en/developer-guide/secure-udf-procedure). Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/procedure_javascript#is_secure ProcedureJavascript#is_secure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/procedure_javascript#is_secure ProcedureJavascript#is_secure}
 
 ---
 
@@ -1546,7 +1546,7 @@ LogLevel *string
 
 LOG_LEVEL to use when filtering events For more information, check [LOG_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#log-level).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/procedure_javascript#log_level ProcedureJavascript#log_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/procedure_javascript#log_level ProcedureJavascript#log_level}
 
 ---
 
@@ -1560,7 +1560,7 @@ MetricLevel *string
 
 METRIC_LEVEL value to control whether to emit metrics to Event Table For more information, check [METRIC_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#metric-level).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/procedure_javascript#metric_level ProcedureJavascript#metric_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/procedure_javascript#metric_level ProcedureJavascript#metric_level}
 
 ---
 
@@ -1576,7 +1576,7 @@ Specifies the behavior of the procedure when called with null inputs.
 
 Valid values are (case-insensitive): `CALLED ON NULL INPUT` | `RETURNS NULL ON NULL INPUT`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/procedure_javascript#null_input_behavior ProcedureJavascript#null_input_behavior}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/procedure_javascript#null_input_behavior ProcedureJavascript#null_input_behavior}
 
 ---
 
@@ -1590,7 +1590,7 @@ Timeouts ProcedureJavascriptTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/procedure_javascript#timeouts ProcedureJavascript#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/procedure_javascript#timeouts ProcedureJavascript#timeouts}
 
 ---
 
@@ -1604,7 +1604,7 @@ TraceLevel *string
 
 Trace level value to use when generating/filtering trace events For more information, check [TRACE_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#trace-level).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/procedure_javascript#trace_level ProcedureJavascript#trace_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/procedure_javascript#trace_level ProcedureJavascript#trace_level}
 
 ---
 
@@ -1613,7 +1613,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascriptParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/procedurejavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/procedurejavascript"
 
 &procedurejavascript.ProcedureJavascriptParameters {
 
@@ -1626,7 +1626,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/procedurejava
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersEnableConsoleOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/procedurejavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/procedurejavascript"
 
 &procedurejavascript.ProcedureJavascriptParametersEnableConsoleOutput {
 
@@ -1639,7 +1639,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/procedurejava
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogLevel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/procedurejavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/procedurejavascript"
 
 &procedurejavascript.ProcedureJavascriptParametersLogLevel {
 
@@ -1652,7 +1652,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/procedurejava
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersMetricLevel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/procedurejavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/procedurejavascript"
 
 &procedurejavascript.ProcedureJavascriptParametersMetricLevel {
 
@@ -1665,7 +1665,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/procedurejava
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersTraceLevel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/procedurejavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/procedurejavascript"
 
 &procedurejavascript.ProcedureJavascriptParametersTraceLevel {
 
@@ -1678,7 +1678,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/procedurejava
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascriptShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/procedurejavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/procedurejavascript"
 
 &procedurejavascript.ProcedureJavascriptShowOutput {
 
@@ -1691,7 +1691,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/procedurejava
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascriptTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/procedurejavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/procedurejavascript"
 
 &procedurejavascript.ProcedureJavascriptTimeouts {
 	Create: *string,
@@ -1705,10 +1705,10 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/procedurejava
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascriptTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/procedure_javascript#create ProcedureJavascript#create}. |
-| <code><a href="#@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascriptTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/procedure_javascript#delete ProcedureJavascript#delete}. |
-| <code><a href="#@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascriptTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/procedure_javascript#read ProcedureJavascript#read}. |
-| <code><a href="#@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascriptTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/procedure_javascript#update ProcedureJavascript#update}. |
+| <code><a href="#@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascriptTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/procedure_javascript#create ProcedureJavascript#create}. |
+| <code><a href="#@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascriptTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/procedure_javascript#delete ProcedureJavascript#delete}. |
+| <code><a href="#@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascriptTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/procedure_javascript#read ProcedureJavascript#read}. |
+| <code><a href="#@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascriptTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/procedure_javascript#update ProcedureJavascript#update}. |
 
 ---
 
@@ -1720,7 +1720,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/procedure_javascript#create ProcedureJavascript#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/procedure_javascript#create ProcedureJavascript#create}.
 
 ---
 
@@ -1732,7 +1732,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/procedure_javascript#delete ProcedureJavascript#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/procedure_javascript#delete ProcedureJavascript#delete}.
 
 ---
 
@@ -1744,7 +1744,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/procedure_javascript#read ProcedureJavascript#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/procedure_javascript#read ProcedureJavascript#read}.
 
 ---
 
@@ -1756,7 +1756,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/procedure_javascript#update ProcedureJavascript#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/procedure_javascript#update ProcedureJavascript#update}.
 
 ---
 
@@ -1767,7 +1767,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascriptArgumentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/procedurejavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/procedurejavascript"
 
 procedurejavascript.NewProcedureJavascriptArgumentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProcedureJavascriptArgumentsList
 ```
@@ -1927,7 +1927,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascriptArgumentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/procedurejavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/procedurejavascript"
 
 procedurejavascript.NewProcedureJavascriptArgumentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProcedureJavascriptArgumentsOutputReference
 ```
@@ -2267,7 +2267,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersEnableConsoleOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/procedurejavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/procedurejavascript"
 
 procedurejavascript.NewProcedureJavascriptParametersEnableConsoleOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProcedureJavascriptParametersEnableConsoleOutputList
 ```
@@ -2416,7 +2416,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersEnableConsoleOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/procedurejavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/procedurejavascript"
 
 procedurejavascript.NewProcedureJavascriptParametersEnableConsoleOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProcedureJavascriptParametersEnableConsoleOutputOutputReference
 ```
@@ -2738,7 +2738,7 @@ func InternalValue() ProcedureJavascriptParametersEnableConsoleOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/procedurejavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/procedurejavascript"
 
 procedurejavascript.NewProcedureJavascriptParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProcedureJavascriptParametersList
 ```
@@ -2887,7 +2887,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogLevelList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/procedurejavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/procedurejavascript"
 
 procedurejavascript.NewProcedureJavascriptParametersLogLevelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProcedureJavascriptParametersLogLevelList
 ```
@@ -3036,7 +3036,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersLogLevelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/procedurejavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/procedurejavascript"
 
 procedurejavascript.NewProcedureJavascriptParametersLogLevelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProcedureJavascriptParametersLogLevelOutputReference
 ```
@@ -3358,7 +3358,7 @@ func InternalValue() ProcedureJavascriptParametersLogLevel
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersMetricLevelList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/procedurejavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/procedurejavascript"
 
 procedurejavascript.NewProcedureJavascriptParametersMetricLevelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProcedureJavascriptParametersMetricLevelList
 ```
@@ -3507,7 +3507,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersMetricLevelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/procedurejavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/procedurejavascript"
 
 procedurejavascript.NewProcedureJavascriptParametersMetricLevelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProcedureJavascriptParametersMetricLevelOutputReference
 ```
@@ -3829,7 +3829,7 @@ func InternalValue() ProcedureJavascriptParametersMetricLevel
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/procedurejavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/procedurejavascript"
 
 procedurejavascript.NewProcedureJavascriptParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProcedureJavascriptParametersOutputReference
 ```
@@ -4140,7 +4140,7 @@ func InternalValue() ProcedureJavascriptParameters
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersTraceLevelList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/procedurejavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/procedurejavascript"
 
 procedurejavascript.NewProcedureJavascriptParametersTraceLevelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProcedureJavascriptParametersTraceLevelList
 ```
@@ -4289,7 +4289,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascriptParametersTraceLevelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/procedurejavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/procedurejavascript"
 
 procedurejavascript.NewProcedureJavascriptParametersTraceLevelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProcedureJavascriptParametersTraceLevelOutputReference
 ```
@@ -4611,7 +4611,7 @@ func InternalValue() ProcedureJavascriptParametersTraceLevel
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascriptShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/procedurejavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/procedurejavascript"
 
 procedurejavascript.NewProcedureJavascriptShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProcedureJavascriptShowOutputList
 ```
@@ -4760,7 +4760,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascriptShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/procedurejavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/procedurejavascript"
 
 procedurejavascript.NewProcedureJavascriptShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProcedureJavascriptShowOutputOutputReference
 ```
@@ -5203,7 +5203,7 @@ func InternalValue() ProcedureJavascriptShowOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.procedureJavascript.ProcedureJavascriptTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/procedurejavascript"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/procedurejavascript"
 
 procedurejavascript.NewProcedureJavascriptTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ProcedureJavascriptTimeoutsOutputReference
 ```

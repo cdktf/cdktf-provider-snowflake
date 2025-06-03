@@ -1,3 +1,3 @@
 # `snowflake_view`
 
-Refer to the Terraform Registry for docs: [`snowflake_view`](https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/view).
+Refer to the Terraform Registry for docs: [`snowflake_view`](https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/view).

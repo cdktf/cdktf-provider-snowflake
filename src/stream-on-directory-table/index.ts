@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_directory_table
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_directory_table
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface StreamOnDirectoryTableConfig extends cdktf.TerraformMetaArgumen
   /**
   * Specifies a comment for the stream.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_directory_table#comment StreamOnDirectoryTable#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_directory_table#comment StreamOnDirectoryTable#comment}
   */
   readonly comment?: string;
   /**
   * (Default: `false`) Retains the access permissions from the original stream when a stream is recreated using the OR REPLACE clause. This is used when the provider detects changes for fields that can not be changed by ALTER. This value will not have any effect during creating a new object with Terraform.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_directory_table#copy_grants StreamOnDirectoryTable#copy_grants}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_directory_table#copy_grants StreamOnDirectoryTable#copy_grants}
   */
   readonly copyGrants?: boolean | cdktf.IResolvable;
   /**
   * The database in which to create the stream. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_directory_table#database StreamOnDirectoryTable#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_directory_table#database StreamOnDirectoryTable#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_directory_table#id StreamOnDirectoryTable#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_directory_table#id StreamOnDirectoryTable#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,25 +40,25 @@ export interface StreamOnDirectoryTableConfig extends cdktf.TerraformMetaArgumen
   /**
   * Specifies the identifier for the stream; must be unique for the database and schema in which the stream is created. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_directory_table#name StreamOnDirectoryTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_directory_table#name StreamOnDirectoryTable#name}
   */
   readonly name: string;
   /**
   * The schema in which to create the stream. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_directory_table#schema StreamOnDirectoryTable#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_directory_table#schema StreamOnDirectoryTable#schema}
   */
   readonly schema: string;
   /**
   * Specifies an identifier for the stage the stream will monitor. Due to Snowflake limitations, the provider can not read the stage's database and schema. For stages, Snowflake returns only partially qualified name instead of fully qualified name. Please use stages located in the same schema as the stream. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`. For more information about this resource, see [docs](./stage).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_directory_table#stage StreamOnDirectoryTable#stage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_directory_table#stage StreamOnDirectoryTable#stage}
   */
   readonly stage: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_directory_table#timeouts StreamOnDirectoryTable#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_directory_table#timeouts StreamOnDirectoryTable#timeouts}
   */
   readonly timeouts?: StreamOnDirectoryTableTimeouts;
 }
@@ -354,19 +354,19 @@ export class StreamOnDirectoryTableShowOutputList extends cdktf.ComplexList {
 }
 export interface StreamOnDirectoryTableTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_directory_table#create StreamOnDirectoryTable#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_directory_table#create StreamOnDirectoryTable#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_directory_table#delete StreamOnDirectoryTable#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_directory_table#delete StreamOnDirectoryTable#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_directory_table#read StreamOnDirectoryTable#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_directory_table#read StreamOnDirectoryTable#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_directory_table#update StreamOnDirectoryTable#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_directory_table#update StreamOnDirectoryTable#update}
   */
   readonly update?: string;
 }
@@ -547,7 +547,7 @@ export class StreamOnDirectoryTableTimeoutsOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_directory_table snowflake_stream_on_directory_table}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_directory_table snowflake_stream_on_directory_table}
 */
 export class StreamOnDirectoryTable extends cdktf.TerraformResource {
 
@@ -563,7 +563,7 @@ export class StreamOnDirectoryTable extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a StreamOnDirectoryTable resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StreamOnDirectoryTable to import
-  * @param importFromId The id of the existing StreamOnDirectoryTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_directory_table#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing StreamOnDirectoryTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_directory_table#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StreamOnDirectoryTable to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -575,7 +575,7 @@ export class StreamOnDirectoryTable extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_directory_table snowflake_stream_on_directory_table} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_directory_table snowflake_stream_on_directory_table} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -586,8 +586,8 @@ export class StreamOnDirectoryTable extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_stream_on_directory_table',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '1.2.1',
-        providerVersionConstraint: ' ~> 1.0'
+        providerVersion: '2.1.0',
+        providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

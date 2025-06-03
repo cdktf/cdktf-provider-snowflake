@@ -4,12 +4,12 @@
 
 ### SecretWithBasicAuthentication <a name="SecretWithBasicAuthentication" id="@cdktf/provider-snowflake.secretWithBasicAuthentication.SecretWithBasicAuthentication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/secret_with_basic_authentication snowflake_secret_with_basic_authentication}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/secret_with_basic_authentication snowflake_secret_with_basic_authentication}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.secretWithBasicAuthentication.SecretWithBasicAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/secretwithbasicauthentication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/secretwithbasicauthentication"
 
 secretwithbasicauthentication.NewSecretWithBasicAuthentication(scope Construct, id *string, config SecretWithBasicAuthenticationConfig) SecretWithBasicAuthentication
 ```
@@ -412,7 +412,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.secretWithBasicAuthentication.SecretWithBasicAuthentication.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/secretwithbasicauthentication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/secretwithbasicauthentication"
 
 secretwithbasicauthentication.SecretWithBasicAuthentication_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.secretWithBasicAuthentication.SecretWithBasicAuthentication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/secretwithbasicauthentication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/secretwithbasicauthentication"
 
 secretwithbasicauthentication.SecretWithBasicAuthentication_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ secretwithbasicauthentication.SecretWithBasicAuthentication_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.secretWithBasicAuthentication.SecretWithBasicAuthentication.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/secretwithbasicauthentication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/secretwithbasicauthentication"
 
 secretwithbasicauthentication.SecretWithBasicAuthentication_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ secretwithbasicauthentication.SecretWithBasicAuthentication_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.secretWithBasicAuthentication.SecretWithBasicAuthentication.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/secretwithbasicauthentication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/secretwithbasicauthentication"
 
 secretwithbasicauthentication.SecretWithBasicAuthentication_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -501,7 +501,7 @@ The construct id used in the generated config for the SecretWithBasicAuthenticat
 
 The id of the existing SecretWithBasicAuthentication that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/secret_with_basic_authentication#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/secret_with_basic_authentication#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -921,7 +921,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.secretWithBasicAuthentication.SecretWithBasicAuthenticationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/secretwithbasicauthentication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/secretwithbasicauthentication"
 
 &secretwithbasicauthentication.SecretWithBasicAuthenticationConfig {
 	Connection: interface{},
@@ -938,7 +938,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/secretwithbas
 	Username: *string,
 	Comment: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14.secretWithBasicAuthentication.SecretWithBasicAuthenticationTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.secretWithBasicAuthentication.SecretWithBasicAuthenticationTimeouts,
 }
 ```
 
@@ -959,7 +959,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/secretwithbas
 | <code><a href="#@cdktf/provider-snowflake.secretWithBasicAuthentication.SecretWithBasicAuthenticationConfig.property.schema">Schema</a></code> | <code>*string</code> | The schema in which to create the secret. |
 | <code><a href="#@cdktf/provider-snowflake.secretWithBasicAuthentication.SecretWithBasicAuthenticationConfig.property.username">Username</a></code> | <code>*string</code> | Specifies the username value to store in the secret. |
 | <code><a href="#@cdktf/provider-snowflake.secretWithBasicAuthentication.SecretWithBasicAuthenticationConfig.property.comment">Comment</a></code> | <code>*string</code> | Specifies a comment for the secret. |
-| <code><a href="#@cdktf/provider-snowflake.secretWithBasicAuthentication.SecretWithBasicAuthenticationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/secret_with_basic_authentication#id SecretWithBasicAuthentication#id}. |
+| <code><a href="#@cdktf/provider-snowflake.secretWithBasicAuthentication.SecretWithBasicAuthenticationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/secret_with_basic_authentication#id SecretWithBasicAuthentication#id}. |
 | <code><a href="#@cdktf/provider-snowflake.secretWithBasicAuthentication.SecretWithBasicAuthenticationConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.secretWithBasicAuthentication.SecretWithBasicAuthenticationTimeouts">SecretWithBasicAuthenticationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1044,7 +1044,7 @@ Database *string
 
 The database in which to create the secret Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/secret_with_basic_authentication#database SecretWithBasicAuthentication#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/secret_with_basic_authentication#database SecretWithBasicAuthentication#database}
 
 ---
 
@@ -1058,7 +1058,7 @@ Name *string
 
 String that specifies the identifier (i.e. name) for the secret, must be unique in your schema. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/secret_with_basic_authentication#name SecretWithBasicAuthentication#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/secret_with_basic_authentication#name SecretWithBasicAuthentication#name}
 
 ---
 
@@ -1074,7 +1074,7 @@ Specifies the password value to store in the secret.
 
 External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/secret_with_basic_authentication#password SecretWithBasicAuthentication#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/secret_with_basic_authentication#password SecretWithBasicAuthentication#password}
 
 ---
 
@@ -1090,7 +1090,7 @@ The schema in which to create the secret.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/secret_with_basic_authentication#schema SecretWithBasicAuthentication#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/secret_with_basic_authentication#schema SecretWithBasicAuthentication#schema}
 
 ---
 
@@ -1104,7 +1104,7 @@ Username *string
 
 Specifies the username value to store in the secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/secret_with_basic_authentication#username SecretWithBasicAuthentication#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/secret_with_basic_authentication#username SecretWithBasicAuthentication#username}
 
 ---
 
@@ -1118,7 +1118,7 @@ Comment *string
 
 Specifies a comment for the secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/secret_with_basic_authentication#comment SecretWithBasicAuthentication#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/secret_with_basic_authentication#comment SecretWithBasicAuthentication#comment}
 
 ---
 
@@ -1130,7 +1130,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/secret_with_basic_authentication#id SecretWithBasicAuthentication#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/secret_with_basic_authentication#id SecretWithBasicAuthentication#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1147,7 +1147,7 @@ Timeouts SecretWithBasicAuthenticationTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/secret_with_basic_authentication#timeouts SecretWithBasicAuthentication#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/secret_with_basic_authentication#timeouts SecretWithBasicAuthentication#timeouts}
 
 ---
 
@@ -1156,7 +1156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.secretWithBasicAuthentication.SecretWithBasicAuthenticationDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/secretwithbasicauthentication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/secretwithbasicauthentication"
 
 &secretwithbasicauthentication.SecretWithBasicAuthenticationDescribeOutput {
 
@@ -1169,7 +1169,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/secretwithbas
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.secretWithBasicAuthentication.SecretWithBasicAuthenticationShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/secretwithbasicauthentication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/secretwithbasicauthentication"
 
 &secretwithbasicauthentication.SecretWithBasicAuthenticationShowOutput {
 
@@ -1182,7 +1182,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/secretwithbas
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.secretWithBasicAuthentication.SecretWithBasicAuthenticationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/secretwithbasicauthentication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/secretwithbasicauthentication"
 
 &secretwithbasicauthentication.SecretWithBasicAuthenticationTimeouts {
 	Create: *string,
@@ -1196,10 +1196,10 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/secretwithbas
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.secretWithBasicAuthentication.SecretWithBasicAuthenticationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/secret_with_basic_authentication#create SecretWithBasicAuthentication#create}. |
-| <code><a href="#@cdktf/provider-snowflake.secretWithBasicAuthentication.SecretWithBasicAuthenticationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/secret_with_basic_authentication#delete SecretWithBasicAuthentication#delete}. |
-| <code><a href="#@cdktf/provider-snowflake.secretWithBasicAuthentication.SecretWithBasicAuthenticationTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/secret_with_basic_authentication#read SecretWithBasicAuthentication#read}. |
-| <code><a href="#@cdktf/provider-snowflake.secretWithBasicAuthentication.SecretWithBasicAuthenticationTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/secret_with_basic_authentication#update SecretWithBasicAuthentication#update}. |
+| <code><a href="#@cdktf/provider-snowflake.secretWithBasicAuthentication.SecretWithBasicAuthenticationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/secret_with_basic_authentication#create SecretWithBasicAuthentication#create}. |
+| <code><a href="#@cdktf/provider-snowflake.secretWithBasicAuthentication.SecretWithBasicAuthenticationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/secret_with_basic_authentication#delete SecretWithBasicAuthentication#delete}. |
+| <code><a href="#@cdktf/provider-snowflake.secretWithBasicAuthentication.SecretWithBasicAuthenticationTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/secret_with_basic_authentication#read SecretWithBasicAuthentication#read}. |
+| <code><a href="#@cdktf/provider-snowflake.secretWithBasicAuthentication.SecretWithBasicAuthenticationTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/secret_with_basic_authentication#update SecretWithBasicAuthentication#update}. |
 
 ---
 
@@ -1211,7 +1211,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/secret_with_basic_authentication#create SecretWithBasicAuthentication#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/secret_with_basic_authentication#create SecretWithBasicAuthentication#create}.
 
 ---
 
@@ -1223,7 +1223,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/secret_with_basic_authentication#delete SecretWithBasicAuthentication#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/secret_with_basic_authentication#delete SecretWithBasicAuthentication#delete}.
 
 ---
 
@@ -1235,7 +1235,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/secret_with_basic_authentication#read SecretWithBasicAuthentication#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/secret_with_basic_authentication#read SecretWithBasicAuthentication#read}.
 
 ---
 
@@ -1247,7 +1247,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/secret_with_basic_authentication#update SecretWithBasicAuthentication#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/secret_with_basic_authentication#update SecretWithBasicAuthentication#update}.
 
 ---
 
@@ -1258,7 +1258,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.secretWithBasicAuthentication.SecretWithBasicAuthenticationDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/secretwithbasicauthentication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/secretwithbasicauthentication"
 
 secretwithbasicauthentication.NewSecretWithBasicAuthenticationDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecretWithBasicAuthenticationDescribeOutputList
 ```
@@ -1407,7 +1407,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.secretWithBasicAuthentication.SecretWithBasicAuthenticationDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/secretwithbasicauthentication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/secretwithbasicauthentication"
 
 secretwithbasicauthentication.NewSecretWithBasicAuthenticationDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecretWithBasicAuthenticationDescribeOutputOutputReference
 ```
@@ -1806,7 +1806,7 @@ func InternalValue() SecretWithBasicAuthenticationDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.secretWithBasicAuthentication.SecretWithBasicAuthenticationShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/secretwithbasicauthentication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/secretwithbasicauthentication"
 
 secretwithbasicauthentication.NewSecretWithBasicAuthenticationShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecretWithBasicAuthenticationShowOutputList
 ```
@@ -1955,7 +1955,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.secretWithBasicAuthentication.SecretWithBasicAuthenticationShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/secretwithbasicauthentication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/secretwithbasicauthentication"
 
 secretwithbasicauthentication.NewSecretWithBasicAuthenticationShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecretWithBasicAuthenticationShowOutputOutputReference
 ```
@@ -2321,7 +2321,7 @@ func InternalValue() SecretWithBasicAuthenticationShowOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.secretWithBasicAuthentication.SecretWithBasicAuthenticationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/secretwithbasicauthentication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/secretwithbasicauthentication"
 
 secretwithbasicauthentication.NewSecretWithBasicAuthenticationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecretWithBasicAuthenticationTimeoutsOutputReference
 ```

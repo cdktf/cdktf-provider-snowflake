@@ -4,12 +4,12 @@
 
 ### Streamlit <a name="Streamlit" id="@cdktf/provider-snowflake.streamlit.Streamlit"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/streamlit snowflake_streamlit}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/streamlit snowflake_streamlit}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.streamlit.Streamlit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamlit"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/streamlit"
 
 streamlit.NewStreamlit(scope Construct, id *string, config StreamlitConfig) Streamlit
 ```
@@ -440,7 +440,7 @@ func ResetTitle()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.streamlit.Streamlit.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamlit"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/streamlit"
 
 streamlit.Streamlit_IsConstruct(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.streamlit.Streamlit.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamlit"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/streamlit"
 
 streamlit.Streamlit_IsTerraformElement(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ streamlit.Streamlit_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.streamlit.Streamlit.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamlit"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/streamlit"
 
 streamlit.Streamlit_IsTerraformResource(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ streamlit.Streamlit_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.streamlit.Streamlit.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamlit"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/streamlit"
 
 streamlit.Streamlit_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -529,7 +529,7 @@ The construct id used in the generated config for the Streamlit to import.
 
 The id of the existing Streamlit that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/streamlit#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/streamlit#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1026,7 +1026,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.streamlit.StreamlitConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamlit"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/streamlit"
 
 &streamlit.StreamlitConfig {
 	Connection: interface{},
@@ -1046,7 +1046,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamlit"
 	ExternalAccessIntegrations: *[]*string,
 	Id: *string,
 	QueryWarehouse: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14.streamlit.StreamlitTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.streamlit.StreamlitTimeouts,
 	Title: *string,
 }
 ```
@@ -1070,7 +1070,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamlit"
 | <code><a href="#@cdktf/provider-snowflake.streamlit.StreamlitConfig.property.comment">Comment</a></code> | <code>*string</code> | Specifies a comment for the streamlit. |
 | <code><a href="#@cdktf/provider-snowflake.streamlit.StreamlitConfig.property.directoryLocation">DirectoryLocation</a></code> | <code>*string</code> | Specifies the full path to the named stage containing the Streamlit Python files, media files, and the environment.yml file. |
 | <code><a href="#@cdktf/provider-snowflake.streamlit.StreamlitConfig.property.externalAccessIntegrations">ExternalAccessIntegrations</a></code> | <code>*[]*string</code> | External access integrations connected to the Streamlit. |
-| <code><a href="#@cdktf/provider-snowflake.streamlit.StreamlitConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/streamlit#id Streamlit#id}. |
+| <code><a href="#@cdktf/provider-snowflake.streamlit.StreamlitConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/streamlit#id Streamlit#id}. |
 | <code><a href="#@cdktf/provider-snowflake.streamlit.StreamlitConfig.property.queryWarehouse">QueryWarehouse</a></code> | <code>*string</code> | Specifies the warehouse where SQL queries issued by the Streamlit application are run. |
 | <code><a href="#@cdktf/provider-snowflake.streamlit.StreamlitConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.streamlit.StreamlitTimeouts">StreamlitTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-snowflake.streamlit.StreamlitConfig.property.title">Title</a></code> | <code>*string</code> | Specifies a title for the Streamlit app to display in Snowsight. |
@@ -1157,7 +1157,7 @@ Database *string
 
 The database in which to create the streamlit Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/streamlit#database Streamlit#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/streamlit#database Streamlit#database}
 
 ---
 
@@ -1171,7 +1171,7 @@ MainFile *string
 
 Specifies the filename of the Streamlit Python application. This filename is relative to the value of `directory_location`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/streamlit#main_file Streamlit#main_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/streamlit#main_file Streamlit#main_file}
 
 ---
 
@@ -1185,7 +1185,7 @@ Name *string
 
 String that specifies the identifier (i.e. name) for the streamlit; must be unique in your account. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/streamlit#name Streamlit#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/streamlit#name Streamlit#name}
 
 ---
 
@@ -1201,7 +1201,7 @@ The schema in which to create the streamlit.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/streamlit#schema Streamlit#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/streamlit#schema Streamlit#schema}
 
 ---
 
@@ -1215,7 +1215,7 @@ Stage *string
 
 The stage in which streamlit files are located. For more information about this resource, see [docs](./stage).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/streamlit#stage Streamlit#stage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/streamlit#stage Streamlit#stage}
 
 ---
 
@@ -1229,7 +1229,7 @@ Comment *string
 
 Specifies a comment for the streamlit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/streamlit#comment Streamlit#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/streamlit#comment Streamlit#comment}
 
 ---
 
@@ -1243,7 +1243,7 @@ DirectoryLocation *string
 
 Specifies the full path to the named stage containing the Streamlit Python files, media files, and the environment.yml file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/streamlit#directory_location Streamlit#directory_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/streamlit#directory_location Streamlit#directory_location}
 
 ---
 
@@ -1257,7 +1257,7 @@ ExternalAccessIntegrations *[]*string
 
 External access integrations connected to the Streamlit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/streamlit#external_access_integrations Streamlit#external_access_integrations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/streamlit#external_access_integrations Streamlit#external_access_integrations}
 
 ---
 
@@ -1269,7 +1269,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/streamlit#id Streamlit#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/streamlit#id Streamlit#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1288,7 +1288,7 @@ Specifies the warehouse where SQL queries issued by the Streamlit application ar
 
 Due to Snowflake limitations warehouse identifier can consist of only upper-cased letters. For more information about this resource, see [docs](./warehouse).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/streamlit#query_warehouse Streamlit#query_warehouse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/streamlit#query_warehouse Streamlit#query_warehouse}
 
 ---
 
@@ -1302,7 +1302,7 @@ Timeouts StreamlitTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/streamlit#timeouts Streamlit#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/streamlit#timeouts Streamlit#timeouts}
 
 ---
 
@@ -1316,7 +1316,7 @@ Title *string
 
 Specifies a title for the Streamlit app to display in Snowsight.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/streamlit#title Streamlit#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/streamlit#title Streamlit#title}
 
 ---
 
@@ -1325,7 +1325,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.streamlit.StreamlitDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamlit"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/streamlit"
 
 &streamlit.StreamlitDescribeOutput {
 
@@ -1338,7 +1338,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamlit"
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.streamlit.StreamlitShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamlit"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/streamlit"
 
 &streamlit.StreamlitShowOutput {
 
@@ -1351,7 +1351,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamlit"
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.streamlit.StreamlitTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamlit"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/streamlit"
 
 &streamlit.StreamlitTimeouts {
 	Create: *string,
@@ -1365,10 +1365,10 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamlit"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.streamlit.StreamlitTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/streamlit#create Streamlit#create}. |
-| <code><a href="#@cdktf/provider-snowflake.streamlit.StreamlitTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/streamlit#delete Streamlit#delete}. |
-| <code><a href="#@cdktf/provider-snowflake.streamlit.StreamlitTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/streamlit#read Streamlit#read}. |
-| <code><a href="#@cdktf/provider-snowflake.streamlit.StreamlitTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/streamlit#update Streamlit#update}. |
+| <code><a href="#@cdktf/provider-snowflake.streamlit.StreamlitTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/streamlit#create Streamlit#create}. |
+| <code><a href="#@cdktf/provider-snowflake.streamlit.StreamlitTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/streamlit#delete Streamlit#delete}. |
+| <code><a href="#@cdktf/provider-snowflake.streamlit.StreamlitTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/streamlit#read Streamlit#read}. |
+| <code><a href="#@cdktf/provider-snowflake.streamlit.StreamlitTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/streamlit#update Streamlit#update}. |
 
 ---
 
@@ -1380,7 +1380,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/streamlit#create Streamlit#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/streamlit#create Streamlit#create}.
 
 ---
 
@@ -1392,7 +1392,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/streamlit#delete Streamlit#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/streamlit#delete Streamlit#delete}.
 
 ---
 
@@ -1404,7 +1404,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/streamlit#read Streamlit#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/streamlit#read Streamlit#read}.
 
 ---
 
@@ -1416,7 +1416,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/streamlit#update Streamlit#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/streamlit#update Streamlit#update}.
 
 ---
 
@@ -1427,7 +1427,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.streamlit.StreamlitDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamlit"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/streamlit"
 
 streamlit.NewStreamlitDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StreamlitDescribeOutputList
 ```
@@ -1576,7 +1576,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.streamlit.StreamlitDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamlit"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/streamlit"
 
 streamlit.NewStreamlitDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StreamlitDescribeOutputOutputReference
 ```
@@ -1964,7 +1964,7 @@ func InternalValue() StreamlitDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.streamlit.StreamlitShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamlit"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/streamlit"
 
 streamlit.NewStreamlitShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StreamlitShowOutputList
 ```
@@ -2113,7 +2113,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.streamlit.StreamlitShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamlit"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/streamlit"
 
 streamlit.NewStreamlitShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StreamlitShowOutputOutputReference
 ```
@@ -2490,7 +2490,7 @@ func InternalValue() StreamlitShowOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.streamlit.StreamlitTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamlit"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/streamlit"
 
 streamlit.NewStreamlitTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StreamlitTimeoutsOutputReference
 ```

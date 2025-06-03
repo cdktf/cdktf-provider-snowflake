@@ -4,12 +4,12 @@
 
 ### StreamOnView <a name="StreamOnView" id="@cdktf/provider-snowflake.streamOnView.StreamOnView"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_view snowflake_stream_on_view}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_view snowflake_stream_on_view}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.streamOnView.StreamOnView.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamonview"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/streamonview"
 
 streamonview.NewStreamOnView(scope Construct, id *string, config StreamOnViewConfig) StreamOnView
 ```
@@ -473,7 +473,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.streamOnView.StreamOnView.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamonview"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/streamonview"
 
 streamonview.StreamOnView_IsConstruct(x interface{}) *bool
 ```
@@ -505,7 +505,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.streamOnView.StreamOnView.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamonview"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/streamonview"
 
 streamonview.StreamOnView_IsTerraformElement(x interface{}) *bool
 ```
@@ -519,7 +519,7 @@ streamonview.StreamOnView_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.streamOnView.StreamOnView.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamonview"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/streamonview"
 
 streamonview.StreamOnView_IsTerraformResource(x interface{}) *bool
 ```
@@ -533,7 +533,7 @@ streamonview.StreamOnView_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.streamOnView.StreamOnView.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamonview"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/streamonview"
 
 streamonview.StreamOnView_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -562,7 +562,7 @@ The construct id used in the generated config for the StreamOnView to import.
 
 The id of the existing StreamOnView that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_view#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_view#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1081,7 +1081,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.streamOnView.StreamOnViewAt.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamonview"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/streamonview"
 
 &streamonview.StreamOnViewAt {
 	Offset: *string,
@@ -1112,7 +1112,7 @@ Offset *string
 
 Specifies the difference in seconds from the current time to use for Time Travel, in the form -N where N can be an integer or arithmetic expression (e.g. -120 is 120 seconds, -30*60 is 1800 seconds or 30 minutes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_view#offset StreamOnView#offset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_view#offset StreamOnView#offset}
 
 ---
 
@@ -1128,7 +1128,7 @@ Specifies the query ID of a statement to use as the reference point for Time Tra
 
 This parameter supports any statement of one of the following types: DML (e.g. INSERT, UPDATE, DELETE), TCL (BEGIN, COMMIT transaction), SELECT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_view#statement StreamOnView#statement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_view#statement StreamOnView#statement}
 
 ---
 
@@ -1142,7 +1142,7 @@ Stream *string
 
 Specifies the identifier (i.e. name) for an existing stream on the queried table or view. The current offset in the stream is used as the AT point in time for returning change data for the source object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_view#stream StreamOnView#stream}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_view#stream StreamOnView#stream}
 
 ---
 
@@ -1158,7 +1158,7 @@ Specifies an exact date and time to use for Time Travel.
 
 The value must be explicitly cast to a TIMESTAMP, TIMESTAMP_LTZ, TIMESTAMP_NTZ, or TIMESTAMP_TZ data type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_view#timestamp StreamOnView#timestamp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_view#timestamp StreamOnView#timestamp}
 
 ---
 
@@ -1167,7 +1167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.streamOnView.StreamOnViewBefore.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamonview"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/streamonview"
 
 &streamonview.StreamOnViewBefore {
 	Offset: *string,
@@ -1198,7 +1198,7 @@ Offset *string
 
 Specifies the difference in seconds from the current time to use for Time Travel, in the form -N where N can be an integer or arithmetic expression (e.g. -120 is 120 seconds, -30*60 is 1800 seconds or 30 minutes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_view#offset StreamOnView#offset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_view#offset StreamOnView#offset}
 
 ---
 
@@ -1214,7 +1214,7 @@ Specifies the query ID of a statement to use as the reference point for Time Tra
 
 This parameter supports any statement of one of the following types: DML (e.g. INSERT, UPDATE, DELETE), TCL (BEGIN, COMMIT transaction), SELECT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_view#statement StreamOnView#statement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_view#statement StreamOnView#statement}
 
 ---
 
@@ -1228,7 +1228,7 @@ Stream *string
 
 Specifies the identifier (i.e. name) for an existing stream on the queried table or view. The current offset in the stream is used as the AT point in time for returning change data for the source object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_view#stream StreamOnView#stream}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_view#stream StreamOnView#stream}
 
 ---
 
@@ -1244,7 +1244,7 @@ Specifies an exact date and time to use for Time Travel.
 
 The value must be explicitly cast to a TIMESTAMP, TIMESTAMP_LTZ, TIMESTAMP_NTZ, or TIMESTAMP_TZ data type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_view#timestamp StreamOnView#timestamp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_view#timestamp StreamOnView#timestamp}
 
 ---
 
@@ -1253,7 +1253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.streamOnView.StreamOnViewConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamonview"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/streamonview"
 
 &streamonview.StreamOnViewConfig {
 	Connection: interface{},
@@ -1268,13 +1268,13 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamonview"
 	Schema: *string,
 	View: *string,
 	AppendOnly: *string,
-	At: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14.streamOnView.StreamOnViewAt,
-	Before: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14.streamOnView.StreamOnViewBefore,
+	At: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.streamOnView.StreamOnViewAt,
+	Before: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.streamOnView.StreamOnViewBefore,
 	Comment: *string,
 	CopyGrants: interface{},
 	Id: *string,
 	ShowInitialRows: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14.streamOnView.StreamOnViewTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.streamOnView.StreamOnViewTimeouts,
 }
 ```
 
@@ -1298,7 +1298,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamonview"
 | <code><a href="#@cdktf/provider-snowflake.streamOnView.StreamOnViewConfig.property.before">Before</a></code> | <code><a href="#@cdktf/provider-snowflake.streamOnView.StreamOnViewBefore">StreamOnViewBefore</a></code> | before block. |
 | <code><a href="#@cdktf/provider-snowflake.streamOnView.StreamOnViewConfig.property.comment">Comment</a></code> | <code>*string</code> | Specifies a comment for the stream. |
 | <code><a href="#@cdktf/provider-snowflake.streamOnView.StreamOnViewConfig.property.copyGrants">CopyGrants</a></code> | <code>interface{}</code> | (Default: `false`) Retains the access permissions from the original stream when a stream is recreated using the OR REPLACE clause. |
-| <code><a href="#@cdktf/provider-snowflake.streamOnView.StreamOnViewConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_view#id StreamOnView#id}. |
+| <code><a href="#@cdktf/provider-snowflake.streamOnView.StreamOnViewConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_view#id StreamOnView#id}. |
 | <code><a href="#@cdktf/provider-snowflake.streamOnView.StreamOnViewConfig.property.showInitialRows">ShowInitialRows</a></code> | <code>*string</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether to return all existing rows in the source table as row inserts the first time the stream is consumed. |
 | <code><a href="#@cdktf/provider-snowflake.streamOnView.StreamOnViewConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.streamOnView.StreamOnViewTimeouts">StreamOnViewTimeouts</a></code> | timeouts block. |
 
@@ -1386,7 +1386,7 @@ The database in which to create the stream.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_view#database StreamOnView#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_view#database StreamOnView#database}
 
 ---
 
@@ -1402,7 +1402,7 @@ Specifies the identifier for the stream;
 
 must be unique for the database and schema in which the stream is created. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_view#name StreamOnView#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_view#name StreamOnView#name}
 
 ---
 
@@ -1418,7 +1418,7 @@ The schema in which to create the stream.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_view#schema StreamOnView#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_view#schema StreamOnView#schema}
 
 ---
 
@@ -1434,7 +1434,7 @@ Specifies an identifier for the view the stream will monitor.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`. For more information about this resource, see [docs](./view).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_view#view StreamOnView#view}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_view#view StreamOnView#view}
 
 ---
 
@@ -1450,7 +1450,7 @@ AppendOnly *string
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_view#append_only StreamOnView#append_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_view#append_only StreamOnView#append_only}
 
 ---
 
@@ -1464,7 +1464,7 @@ At StreamOnViewAt
 
 at block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_view#at StreamOnView#at}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_view#at StreamOnView#at}
 
 ---
 
@@ -1478,7 +1478,7 @@ Before StreamOnViewBefore
 
 before block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_view#before StreamOnView#before}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_view#before StreamOnView#before}
 
 ---
 
@@ -1492,7 +1492,7 @@ Comment *string
 
 Specifies a comment for the stream.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_view#comment StreamOnView#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_view#comment StreamOnView#comment}
 
 ---
 
@@ -1508,7 +1508,7 @@ CopyGrants interface{}
 
 This is used when the provider detects changes for fields that can not be changed by ALTER. This value will not have any effect during creating a new object with Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_view#copy_grants StreamOnView#copy_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_view#copy_grants StreamOnView#copy_grants}
 
 ---
 
@@ -1520,7 +1520,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_view#id StreamOnView#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_view#id StreamOnView#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1539,7 +1539,7 @@ ShowInitialRows *string
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value. External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_view#show_initial_rows StreamOnView#show_initial_rows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_view#show_initial_rows StreamOnView#show_initial_rows}
 
 ---
 
@@ -1553,7 +1553,7 @@ Timeouts StreamOnViewTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_view#timeouts StreamOnView#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_view#timeouts StreamOnView#timeouts}
 
 ---
 
@@ -1562,7 +1562,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.streamOnView.StreamOnViewDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamonview"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/streamonview"
 
 &streamonview.StreamOnViewDescribeOutput {
 
@@ -1575,7 +1575,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamonview"
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.streamOnView.StreamOnViewShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamonview"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/streamonview"
 
 &streamonview.StreamOnViewShowOutput {
 
@@ -1588,7 +1588,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamonview"
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.streamOnView.StreamOnViewTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamonview"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/streamonview"
 
 &streamonview.StreamOnViewTimeouts {
 	Create: *string,
@@ -1602,10 +1602,10 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamonview"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.streamOnView.StreamOnViewTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_view#create StreamOnView#create}. |
-| <code><a href="#@cdktf/provider-snowflake.streamOnView.StreamOnViewTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_view#delete StreamOnView#delete}. |
-| <code><a href="#@cdktf/provider-snowflake.streamOnView.StreamOnViewTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_view#read StreamOnView#read}. |
-| <code><a href="#@cdktf/provider-snowflake.streamOnView.StreamOnViewTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_view#update StreamOnView#update}. |
+| <code><a href="#@cdktf/provider-snowflake.streamOnView.StreamOnViewTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_view#create StreamOnView#create}. |
+| <code><a href="#@cdktf/provider-snowflake.streamOnView.StreamOnViewTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_view#delete StreamOnView#delete}. |
+| <code><a href="#@cdktf/provider-snowflake.streamOnView.StreamOnViewTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_view#read StreamOnView#read}. |
+| <code><a href="#@cdktf/provider-snowflake.streamOnView.StreamOnViewTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_view#update StreamOnView#update}. |
 
 ---
 
@@ -1617,7 +1617,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_view#create StreamOnView#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_view#create StreamOnView#create}.
 
 ---
 
@@ -1629,7 +1629,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_view#delete StreamOnView#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_view#delete StreamOnView#delete}.
 
 ---
 
@@ -1641,7 +1641,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_view#read StreamOnView#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_view#read StreamOnView#read}.
 
 ---
 
@@ -1653,7 +1653,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_view#update StreamOnView#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_view#update StreamOnView#update}.
 
 ---
 
@@ -1664,7 +1664,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.streamOnView.StreamOnViewAtOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamonview"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/streamonview"
 
 streamonview.NewStreamOnViewAtOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StreamOnViewAtOutputReference
 ```
@@ -2029,7 +2029,7 @@ func InternalValue() StreamOnViewAt
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.streamOnView.StreamOnViewBeforeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamonview"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/streamonview"
 
 streamonview.NewStreamOnViewBeforeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StreamOnViewBeforeOutputReference
 ```
@@ -2394,7 +2394,7 @@ func InternalValue() StreamOnViewBefore
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.streamOnView.StreamOnViewDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamonview"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/streamonview"
 
 streamonview.NewStreamOnViewDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StreamOnViewDescribeOutputList
 ```
@@ -2543,7 +2543,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.streamOnView.StreamOnViewDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamonview"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/streamonview"
 
 streamonview.NewStreamOnViewDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StreamOnViewDescribeOutputOutputReference
 ```
@@ -2975,7 +2975,7 @@ func InternalValue() StreamOnViewDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.streamOnView.StreamOnViewShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamonview"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/streamonview"
 
 streamonview.NewStreamOnViewShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StreamOnViewShowOutputList
 ```
@@ -3124,7 +3124,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.streamOnView.StreamOnViewShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamonview"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/streamonview"
 
 streamonview.NewStreamOnViewShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StreamOnViewShowOutputOutputReference
 ```
@@ -3556,7 +3556,7 @@ func InternalValue() StreamOnViewShowOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.streamOnView.StreamOnViewTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamonview"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/streamonview"
 
 streamonview.NewStreamOnViewTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StreamOnViewTimeoutsOutputReference
 ```

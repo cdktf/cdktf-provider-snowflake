@@ -4,12 +4,12 @@
 
 ### DatabaseRole <a name="DatabaseRole" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/database_role snowflake_database_role}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/database_role snowflake_database_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/databaserole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/databaserole"
 
 databaserole.NewDatabaseRole(scope Construct, id *string, config DatabaseRoleConfig) DatabaseRole
 ```
@@ -412,7 +412,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/databaserole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/databaserole"
 
 databaserole.DatabaseRole_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/databaserole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/databaserole"
 
 databaserole.DatabaseRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ databaserole.DatabaseRole_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/databaserole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/databaserole"
 
 databaserole.DatabaseRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ databaserole.DatabaseRole_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.databaseRole.DatabaseRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/databaserole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/databaserole"
 
 databaserole.DatabaseRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -501,7 +501,7 @@ The construct id used in the generated config for the DatabaseRole to import.
 
 The id of the existing DatabaseRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/database_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/database_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -833,7 +833,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/databaserole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/databaserole"
 
 &databaserole.DatabaseRoleConfig {
 	Connection: interface{},
@@ -847,7 +847,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/databaserole"
 	Name: *string,
 	Comment: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14.databaseRole.DatabaseRoleTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.databaseRole.DatabaseRoleTimeouts,
 }
 ```
 
@@ -865,7 +865,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/databaserole"
 | <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleConfig.property.database">Database</a></code> | <code>*string</code> | The database in which to create the database role. |
 | <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleConfig.property.name">Name</a></code> | <code>*string</code> | Specifies the identifier for the database role. |
 | <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleConfig.property.comment">Comment</a></code> | <code>*string</code> | Specifies a comment for the database role. |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/database_role#id DatabaseRole#id}. |
+| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/database_role#id DatabaseRole#id}. |
 | <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeouts">DatabaseRoleTimeouts</a></code> | timeouts block. |
 
 ---
@@ -952,7 +952,7 @@ The database in which to create the database role.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/database_role#database DatabaseRole#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/database_role#database DatabaseRole#database}
 
 ---
 
@@ -968,7 +968,7 @@ Specifies the identifier for the database role.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/database_role#name DatabaseRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/database_role#name DatabaseRole#name}
 
 ---
 
@@ -982,7 +982,7 @@ Comment *string
 
 Specifies a comment for the database role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/database_role#comment DatabaseRole#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/database_role#comment DatabaseRole#comment}
 
 ---
 
@@ -994,7 +994,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/database_role#id DatabaseRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/database_role#id DatabaseRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1011,7 +1011,7 @@ Timeouts DatabaseRoleTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/database_role#timeouts DatabaseRole#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/database_role#timeouts DatabaseRole#timeouts}
 
 ---
 
@@ -1020,7 +1020,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/databaserole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/databaserole"
 
 &databaserole.DatabaseRoleShowOutput {
 
@@ -1033,7 +1033,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/databaserole"
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/databaserole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/databaserole"
 
 &databaserole.DatabaseRoleTimeouts {
 	Create: *string,
@@ -1047,10 +1047,10 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/databaserole"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/database_role#create DatabaseRole#create}. |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/database_role#delete DatabaseRole#delete}. |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/database_role#read DatabaseRole#read}. |
-| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/database_role#update DatabaseRole#update}. |
+| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/database_role#create DatabaseRole#create}. |
+| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/database_role#delete DatabaseRole#delete}. |
+| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/database_role#read DatabaseRole#read}. |
+| <code><a href="#@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/database_role#update DatabaseRole#update}. |
 
 ---
 
@@ -1062,7 +1062,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/database_role#create DatabaseRole#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/database_role#create DatabaseRole#create}.
 
 ---
 
@@ -1074,7 +1074,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/database_role#delete DatabaseRole#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/database_role#delete DatabaseRole#delete}.
 
 ---
 
@@ -1086,7 +1086,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/database_role#read DatabaseRole#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/database_role#read DatabaseRole#read}.
 
 ---
 
@@ -1098,7 +1098,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/database_role#update DatabaseRole#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/database_role#update DatabaseRole#update}.
 
 ---
 
@@ -1109,7 +1109,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/databaserole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/databaserole"
 
 databaserole.NewDatabaseRoleShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseRoleShowOutputList
 ```
@@ -1258,7 +1258,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/databaserole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/databaserole"
 
 databaserole.NewDatabaseRoleShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseRoleShowOutputOutputReference
 ```
@@ -1657,7 +1657,7 @@ func InternalValue() DatabaseRoleShowOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.databaseRole.DatabaseRoleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/databaserole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/databaserole"
 
 databaserole.NewDatabaseRoleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatabaseRoleTimeoutsOutputReference
 ```

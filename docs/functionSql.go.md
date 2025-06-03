@@ -4,12 +4,12 @@
 
 ### FunctionSql <a name="FunctionSql" id="@cdktf/provider-snowflake.functionSql.FunctionSql"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql snowflake_function_sql}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/function_sql snowflake_function_sql}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.functionSql.FunctionSql.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/functionsql"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/functionsql"
 
 functionsql.NewFunctionSql(scope Construct, id *string, config FunctionSqlConfig) FunctionSql
 ```
@@ -474,7 +474,7 @@ func ResetTraceLevel()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.functionSql.FunctionSql.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/functionsql"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/functionsql"
 
 functionsql.FunctionSql_IsConstruct(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.functionSql.FunctionSql.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/functionsql"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/functionsql"
 
 functionsql.FunctionSql_IsTerraformElement(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ functionsql.FunctionSql_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.functionSql.FunctionSql.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/functionsql"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/functionsql"
 
 functionsql.FunctionSql_IsTerraformResource(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ functionsql.FunctionSql_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.functionSql.FunctionSql.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/functionsql"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/functionsql"
 
 functionsql.FunctionSql_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -563,7 +563,7 @@ The construct id used in the generated config for the FunctionSql to import.
 
 The id of the existing FunctionSql that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/function_sql#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1137,7 +1137,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.functionSql.FunctionSqlArguments.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/functionsql"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/functionsql"
 
 &functionsql.FunctionSqlArguments {
 	ArgDataType: *string,
@@ -1166,7 +1166,7 @@ ArgDataType *string
 
 The argument type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#arg_data_type FunctionSql#arg_data_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/function_sql#arg_data_type FunctionSql#arg_data_type}
 
 ---
 
@@ -1182,7 +1182,7 @@ The argument name.
 
 The provider wraps it in double quotes by default, so be aware of that while referencing the argument in the function definition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#arg_name FunctionSql#arg_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/function_sql#arg_name FunctionSql#arg_name}
 
 ---
 
@@ -1198,7 +1198,7 @@ Optional default value for the argument.
 
 For text values use single quotes. Numeric values can be unquoted. External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#arg_default_value FunctionSql#arg_default_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/function_sql#arg_default_value FunctionSql#arg_default_value}
 
 ---
 
@@ -1207,7 +1207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.functionSql.FunctionSqlConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/functionsql"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/functionsql"
 
 &functionsql.FunctionSqlConfig {
 	Connection: interface{},
@@ -1230,7 +1230,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/functionsql"
 	LogLevel: *string,
 	MetricLevel: *string,
 	ReturnResultsBehavior: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14.functionSql.FunctionSqlTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.functionSql.FunctionSqlTimeouts,
 	TraceLevel: *string,
 }
 ```
@@ -1254,7 +1254,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/functionsql"
 | <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlConfig.property.arguments">Arguments</a></code> | <code>interface{}</code> | arguments block. |
 | <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlConfig.property.comment">Comment</a></code> | <code>*string</code> | (Default: `user-defined function`) Specifies a comment for the function. |
 | <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlConfig.property.enableConsoleOutput">EnableConsoleOutput</a></code> | <code>interface{}</code> | Enable stdout/stderr fast path logging for anonymous stored procs. |
-| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#id FunctionSql#id}. |
+| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/function_sql#id FunctionSql#id}. |
 | <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlConfig.property.isSecure">IsSecure</a></code> | <code>*string</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies that the function is secure. |
 | <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlConfig.property.logLevel">LogLevel</a></code> | <code>*string</code> | LOG_LEVEL to use when filtering events For more information, check [LOG_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#log-level). |
 | <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlConfig.property.metricLevel">MetricLevel</a></code> | <code>*string</code> | METRIC_LEVEL value to control whether to emit metrics to Event Table For more information, check [METRIC_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#metric-level). |
@@ -1346,7 +1346,7 @@ The database in which to create the function.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#database FunctionSql#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/function_sql#database FunctionSql#database}
 
 ---
 
@@ -1362,7 +1362,7 @@ Defines the handler code executed when the UDF is called.
 
 Wrapping `$$` signs are added by the provider automatically; do not include them. The `function_definition` value must be SQL source code. For more information, see [Introduction to SQL UDFs](https://docs.snowflake.com/en/developer-guide/udf/sql/udf-sql-introduction). To mitigate permadiff on this field, the provider replaces blank characters with a space. This can lead to false positives in cases where a change in case or run of whitespace is semantically significant.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#function_definition FunctionSql#function_definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/function_sql#function_definition FunctionSql#function_definition}
 
 ---
 
@@ -1378,7 +1378,7 @@ The name of the function;
 
 the identifier does not need to be unique for the schema in which the function is created because UDFs are identified and resolved by the combination of the name and argument types. Check the [docs](https://docs.snowflake.com/en/sql-reference/sql/create-function#all-languages). Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#name FunctionSql#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/function_sql#name FunctionSql#name}
 
 ---
 
@@ -1394,7 +1394,7 @@ Specifies the results returned by the UDF, which determines the UDF type.
 
 Use `<result_data_type>` to create a scalar UDF that returns a single value with the specified data type. Use `TABLE (col_name col_data_type, ...)` to creates a table UDF that returns tabular results with the specified table column(s) and column type(s). For the details, consult the [docs](https://docs.snowflake.com/en/sql-reference/sql/create-function#all-languages).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#return_type FunctionSql#return_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/function_sql#return_type FunctionSql#return_type}
 
 ---
 
@@ -1410,7 +1410,7 @@ The schema in which to create the function.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#schema FunctionSql#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/function_sql#schema FunctionSql#schema}
 
 ---
 
@@ -1424,7 +1424,7 @@ Arguments interface{}
 
 arguments block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#arguments FunctionSql#arguments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/function_sql#arguments FunctionSql#arguments}
 
 ---
 
@@ -1438,7 +1438,7 @@ Comment *string
 
 (Default: `user-defined function`) Specifies a comment for the function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#comment FunctionSql#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/function_sql#comment FunctionSql#comment}
 
 ---
 
@@ -1454,7 +1454,7 @@ Enable stdout/stderr fast path logging for anonymous stored procs.
 
 This is a public parameter (similar to LOG_LEVEL). For more information, check [ENABLE_CONSOLE_OUTPUT docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-console-output).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#enable_console_output FunctionSql#enable_console_output}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/function_sql#enable_console_output FunctionSql#enable_console_output}
 
 ---
 
@@ -1466,7 +1466,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#id FunctionSql#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/function_sql#id FunctionSql#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1485,7 +1485,7 @@ IsSecure *string
 
 By design, the Snowflake's `SHOW FUNCTIONS` command does not provide information about secure functions (consult [function docs](https://docs.snowflake.com/en/sql-reference/sql/create-function#id1) and [Protecting Sensitive Information with Secure UDFs and Stored Procedures](https://docs.snowflake.com/en/developer-guide/secure-udf-procedure)) which is essential to manage/import function with Terraform. Use the role owning the function while managing secure functions. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#is_secure FunctionSql#is_secure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/function_sql#is_secure FunctionSql#is_secure}
 
 ---
 
@@ -1499,7 +1499,7 @@ LogLevel *string
 
 LOG_LEVEL to use when filtering events For more information, check [LOG_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#log-level).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#log_level FunctionSql#log_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/function_sql#log_level FunctionSql#log_level}
 
 ---
 
@@ -1513,7 +1513,7 @@ MetricLevel *string
 
 METRIC_LEVEL value to control whether to emit metrics to Event Table For more information, check [METRIC_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#metric-level).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#metric_level FunctionSql#metric_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/function_sql#metric_level FunctionSql#metric_level}
 
 ---
 
@@ -1527,7 +1527,7 @@ ReturnResultsBehavior *string
 
 Specifies the behavior of the function when returning results. Valid values are (case-insensitive): `VOLATILE` | `IMMUTABLE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#return_results_behavior FunctionSql#return_results_behavior}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/function_sql#return_results_behavior FunctionSql#return_results_behavior}
 
 ---
 
@@ -1541,7 +1541,7 @@ Timeouts FunctionSqlTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#timeouts FunctionSql#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/function_sql#timeouts FunctionSql#timeouts}
 
 ---
 
@@ -1555,7 +1555,7 @@ TraceLevel *string
 
 Trace level value to use when generating/filtering trace events For more information, check [TRACE_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#trace-level).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#trace_level FunctionSql#trace_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/function_sql#trace_level FunctionSql#trace_level}
 
 ---
 
@@ -1564,7 +1564,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.functionSql.FunctionSqlParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/functionsql"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/functionsql"
 
 &functionsql.FunctionSqlParameters {
 
@@ -1577,7 +1577,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/functionsql"
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.functionSql.FunctionSqlParametersEnableConsoleOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/functionsql"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/functionsql"
 
 &functionsql.FunctionSqlParametersEnableConsoleOutput {
 
@@ -1590,7 +1590,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/functionsql"
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.functionSql.FunctionSqlParametersLogLevel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/functionsql"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/functionsql"
 
 &functionsql.FunctionSqlParametersLogLevel {
 
@@ -1603,7 +1603,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/functionsql"
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.functionSql.FunctionSqlParametersMetricLevel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/functionsql"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/functionsql"
 
 &functionsql.FunctionSqlParametersMetricLevel {
 
@@ -1616,7 +1616,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/functionsql"
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.functionSql.FunctionSqlParametersTraceLevel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/functionsql"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/functionsql"
 
 &functionsql.FunctionSqlParametersTraceLevel {
 
@@ -1629,7 +1629,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/functionsql"
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.functionSql.FunctionSqlShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/functionsql"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/functionsql"
 
 &functionsql.FunctionSqlShowOutput {
 
@@ -1642,7 +1642,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/functionsql"
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.functionSql.FunctionSqlTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/functionsql"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/functionsql"
 
 &functionsql.FunctionSqlTimeouts {
 	Create: *string,
@@ -1656,10 +1656,10 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/functionsql"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#create FunctionSql#create}. |
-| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#delete FunctionSql#delete}. |
-| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#read FunctionSql#read}. |
-| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#update FunctionSql#update}. |
+| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/function_sql#create FunctionSql#create}. |
+| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/function_sql#delete FunctionSql#delete}. |
+| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/function_sql#read FunctionSql#read}. |
+| <code><a href="#@cdktf/provider-snowflake.functionSql.FunctionSqlTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/function_sql#update FunctionSql#update}. |
 
 ---
 
@@ -1671,7 +1671,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#create FunctionSql#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/function_sql#create FunctionSql#create}.
 
 ---
 
@@ -1683,7 +1683,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#delete FunctionSql#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/function_sql#delete FunctionSql#delete}.
 
 ---
 
@@ -1695,7 +1695,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#read FunctionSql#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/function_sql#read FunctionSql#read}.
 
 ---
 
@@ -1707,7 +1707,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/function_sql#update FunctionSql#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/function_sql#update FunctionSql#update}.
 
 ---
 
@@ -1718,7 +1718,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.functionSql.FunctionSqlArgumentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/functionsql"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/functionsql"
 
 functionsql.NewFunctionSqlArgumentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FunctionSqlArgumentsList
 ```
@@ -1878,7 +1878,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.functionSql.FunctionSqlArgumentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/functionsql"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/functionsql"
 
 functionsql.NewFunctionSqlArgumentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FunctionSqlArgumentsOutputReference
 ```
@@ -2218,7 +2218,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.functionSql.FunctionSqlParametersEnableConsoleOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/functionsql"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/functionsql"
 
 functionsql.NewFunctionSqlParametersEnableConsoleOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FunctionSqlParametersEnableConsoleOutputList
 ```
@@ -2367,7 +2367,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.functionSql.FunctionSqlParametersEnableConsoleOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/functionsql"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/functionsql"
 
 functionsql.NewFunctionSqlParametersEnableConsoleOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FunctionSqlParametersEnableConsoleOutputOutputReference
 ```
@@ -2689,7 +2689,7 @@ func InternalValue() FunctionSqlParametersEnableConsoleOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.functionSql.FunctionSqlParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/functionsql"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/functionsql"
 
 functionsql.NewFunctionSqlParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FunctionSqlParametersList
 ```
@@ -2838,7 +2838,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.functionSql.FunctionSqlParametersLogLevelList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/functionsql"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/functionsql"
 
 functionsql.NewFunctionSqlParametersLogLevelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FunctionSqlParametersLogLevelList
 ```
@@ -2987,7 +2987,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.functionSql.FunctionSqlParametersLogLevelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/functionsql"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/functionsql"
 
 functionsql.NewFunctionSqlParametersLogLevelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FunctionSqlParametersLogLevelOutputReference
 ```
@@ -3309,7 +3309,7 @@ func InternalValue() FunctionSqlParametersLogLevel
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.functionSql.FunctionSqlParametersMetricLevelList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/functionsql"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/functionsql"
 
 functionsql.NewFunctionSqlParametersMetricLevelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FunctionSqlParametersMetricLevelList
 ```
@@ -3458,7 +3458,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.functionSql.FunctionSqlParametersMetricLevelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/functionsql"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/functionsql"
 
 functionsql.NewFunctionSqlParametersMetricLevelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FunctionSqlParametersMetricLevelOutputReference
 ```
@@ -3780,7 +3780,7 @@ func InternalValue() FunctionSqlParametersMetricLevel
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.functionSql.FunctionSqlParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/functionsql"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/functionsql"
 
 functionsql.NewFunctionSqlParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FunctionSqlParametersOutputReference
 ```
@@ -4091,7 +4091,7 @@ func InternalValue() FunctionSqlParameters
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.functionSql.FunctionSqlParametersTraceLevelList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/functionsql"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/functionsql"
 
 functionsql.NewFunctionSqlParametersTraceLevelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FunctionSqlParametersTraceLevelList
 ```
@@ -4240,7 +4240,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.functionSql.FunctionSqlParametersTraceLevelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/functionsql"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/functionsql"
 
 functionsql.NewFunctionSqlParametersTraceLevelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FunctionSqlParametersTraceLevelOutputReference
 ```
@@ -4562,7 +4562,7 @@ func InternalValue() FunctionSqlParametersTraceLevel
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.functionSql.FunctionSqlShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/functionsql"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/functionsql"
 
 functionsql.NewFunctionSqlShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FunctionSqlShowOutputList
 ```
@@ -4711,7 +4711,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.functionSql.FunctionSqlShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/functionsql"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/functionsql"
 
 functionsql.NewFunctionSqlShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FunctionSqlShowOutputOutputReference
 ```
@@ -5198,7 +5198,7 @@ func InternalValue() FunctionSqlShowOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.functionSql.FunctionSqlTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/functionsql"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/functionsql"
 
 functionsql.NewFunctionSqlTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FunctionSqlTimeoutsOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### DataSnowflakeStreams <a name="DataSnowflakeStreams" id="@cdktf/provider-snowflake.dataSnowflakeStreams.DataSnowflakeStreams"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/streams snowflake_streams}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/data-sources/streams snowflake_streams}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeStreams.DataSnowflakeStreams.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/datasnowflakestreams"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakestreams"
 
 datasnowflakestreams.NewDataSnowflakeStreams(scope Construct, id *string, config DataSnowflakeStreamsConfig) DataSnowflakeStreams
 ```
@@ -344,7 +344,7 @@ func ResetWithDescribe()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeStreams.DataSnowflakeStreams.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/datasnowflakestreams"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakestreams"
 
 datasnowflakestreams.DataSnowflakeStreams_IsConstruct(x interface{}) *bool
 ```
@@ -376,7 +376,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeStreams.DataSnowflakeStreams.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/datasnowflakestreams"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakestreams"
 
 datasnowflakestreams.DataSnowflakeStreams_IsTerraformElement(x interface{}) *bool
 ```
@@ -390,7 +390,7 @@ datasnowflakestreams.DataSnowflakeStreams_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeStreams.DataSnowflakeStreams.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/datasnowflakestreams"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakestreams"
 
 datasnowflakestreams.DataSnowflakeStreams_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -404,7 +404,7 @@ datasnowflakestreams.DataSnowflakeStreams_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.dataSnowflakeStreams.DataSnowflakeStreams.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/datasnowflakestreams"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakestreams"
 
 datasnowflakestreams.DataSnowflakeStreams_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -433,7 +433,7 @@ The construct id used in the generated config for the DataSnowflakeStreams to im
 
 The id of the existing DataSnowflakeStreams that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/streams#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/data-sources/streams#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -754,7 +754,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeStreams.DataSnowflakeStreamsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/datasnowflakestreams"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakestreams"
 
 &datasnowflakestreams.DataSnowflakeStreamsConfig {
 	Connection: interface{},
@@ -765,9 +765,9 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/datasnowflake
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Id: *string,
-	In: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14.dataSnowflakeStreams.DataSnowflakeStreamsIn,
+	In: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.dataSnowflakeStreams.DataSnowflakeStreamsIn,
 	Like: *string,
-	Limit: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14.dataSnowflakeStreams.DataSnowflakeStreamsLimit,
+	Limit: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.dataSnowflakeStreams.DataSnowflakeStreamsLimit,
 	StartsWith: *string,
 	WithDescribe: interface{},
 }
@@ -784,7 +784,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/datasnowflake
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStreams.DataSnowflakeStreamsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStreams.DataSnowflakeStreamsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStreams.DataSnowflakeStreamsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStreams.DataSnowflakeStreamsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/streams#id DataSnowflakeStreams#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStreams.DataSnowflakeStreamsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/data-sources/streams#id DataSnowflakeStreams#id}. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStreams.DataSnowflakeStreamsConfig.property.in">In</a></code> | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStreams.DataSnowflakeStreamsIn">DataSnowflakeStreamsIn</a></code> | in block. |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStreams.DataSnowflakeStreamsConfig.property.like">Like</a></code> | <code>*string</code> | Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`). |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStreams.DataSnowflakeStreamsConfig.property.limit">Limit</a></code> | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeStreams.DataSnowflakeStreamsLimit">DataSnowflakeStreamsLimit</a></code> | limit block. |
@@ -871,7 +871,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/streams#id DataSnowflakeStreams#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/data-sources/streams#id DataSnowflakeStreams#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -888,7 +888,7 @@ In DataSnowflakeStreamsIn
 
 in block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/streams#in DataSnowflakeStreams#in}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/data-sources/streams#in DataSnowflakeStreams#in}
 
 ---
 
@@ -902,7 +902,7 @@ Like *string
 
 Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/streams#like DataSnowflakeStreams#like}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/data-sources/streams#like DataSnowflakeStreams#like}
 
 ---
 
@@ -916,7 +916,7 @@ Limit DataSnowflakeStreamsLimit
 
 limit block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/streams#limit DataSnowflakeStreams#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/data-sources/streams#limit DataSnowflakeStreams#limit}
 
 ---
 
@@ -930,7 +930,7 @@ StartsWith *string
 
 Filters the output with **case-sensitive** characters indicating the beginning of the object name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/streams#starts_with DataSnowflakeStreams#starts_with}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/data-sources/streams#starts_with DataSnowflakeStreams#starts_with}
 
 ---
 
@@ -946,7 +946,7 @@ WithDescribe interface{}
 
 The output of describe is saved to the description field. By default this value is set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/streams#with_describe DataSnowflakeStreams#with_describe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/data-sources/streams#with_describe DataSnowflakeStreams#with_describe}
 
 ---
 
@@ -955,7 +955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeStreams.DataSnowflakeStreamsIn.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/datasnowflakestreams"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakestreams"
 
 &datasnowflakestreams.DataSnowflakeStreamsIn {
 	Account: interface{},
@@ -988,7 +988,7 @@ Account interface{}
 
 Returns records for the entire account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/streams#account DataSnowflakeStreams#account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/data-sources/streams#account DataSnowflakeStreams#account}
 
 ---
 
@@ -1002,7 +1002,7 @@ Application *string
 
 Returns records for the specified application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/streams#application DataSnowflakeStreams#application}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/data-sources/streams#application DataSnowflakeStreams#application}
 
 ---
 
@@ -1016,7 +1016,7 @@ ApplicationPackage *string
 
 Returns records for the specified application package.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/streams#application_package DataSnowflakeStreams#application_package}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/data-sources/streams#application_package DataSnowflakeStreams#application_package}
 
 ---
 
@@ -1030,7 +1030,7 @@ Database *string
 
 Returns records for the current database in use or for a specified database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/streams#database DataSnowflakeStreams#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/data-sources/streams#database DataSnowflakeStreams#database}
 
 ---
 
@@ -1044,7 +1044,7 @@ Schema *string
 
 Returns records for the current schema in use or a specified schema. Use fully qualified name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/streams#schema DataSnowflakeStreams#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/data-sources/streams#schema DataSnowflakeStreams#schema}
 
 ---
 
@@ -1053,7 +1053,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeStreams.DataSnowflakeStreamsLimit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/datasnowflakestreams"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakestreams"
 
 &datasnowflakestreams.DataSnowflakeStreamsLimit {
 	Rows: *f64,
@@ -1080,7 +1080,7 @@ Rows *f64
 
 The maximum number of rows to return.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/streams#rows DataSnowflakeStreams#rows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/data-sources/streams#rows DataSnowflakeStreams#rows}
 
 ---
 
@@ -1096,7 +1096,7 @@ Specifies a **case-sensitive** pattern that is used to match object name.
 
 After the first match, the limit on the number of rows will be applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/streams#from DataSnowflakeStreams#from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/data-sources/streams#from DataSnowflakeStreams#from}
 
 ---
 
@@ -1105,7 +1105,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeStreams.DataSnowflakeStreamsStreams.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/datasnowflakestreams"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakestreams"
 
 &datasnowflakestreams.DataSnowflakeStreamsStreams {
 
@@ -1118,7 +1118,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeStreams.DataSnowflakeStreamsStreamsDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/datasnowflakestreams"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakestreams"
 
 &datasnowflakestreams.DataSnowflakeStreamsStreamsDescribeOutput {
 
@@ -1131,7 +1131,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/datasnowflake
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeStreams.DataSnowflakeStreamsStreamsShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/datasnowflakestreams"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakestreams"
 
 &datasnowflakestreams.DataSnowflakeStreamsStreamsShowOutput {
 
@@ -1146,7 +1146,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/datasnowflake
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeStreams.DataSnowflakeStreamsInOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/datasnowflakestreams"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakestreams"
 
 datasnowflakestreams.NewDataSnowflakeStreamsInOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataSnowflakeStreamsInOutputReference
 ```
@@ -1540,7 +1540,7 @@ func InternalValue() DataSnowflakeStreamsIn
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeStreams.DataSnowflakeStreamsLimitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/datasnowflakestreams"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakestreams"
 
 datasnowflakestreams.NewDataSnowflakeStreamsLimitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataSnowflakeStreamsLimitOutputReference
 ```
@@ -1840,7 +1840,7 @@ func InternalValue() DataSnowflakeStreamsLimit
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeStreams.DataSnowflakeStreamsStreamsDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/datasnowflakestreams"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakestreams"
 
 datasnowflakestreams.NewDataSnowflakeStreamsStreamsDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeStreamsStreamsDescribeOutputList
 ```
@@ -1989,7 +1989,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeStreams.DataSnowflakeStreamsStreamsDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/datasnowflakestreams"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakestreams"
 
 datasnowflakestreams.NewDataSnowflakeStreamsStreamsDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeStreamsStreamsDescribeOutputOutputReference
 ```
@@ -2421,7 +2421,7 @@ func InternalValue() DataSnowflakeStreamsStreamsDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeStreams.DataSnowflakeStreamsStreamsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/datasnowflakestreams"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakestreams"
 
 datasnowflakestreams.NewDataSnowflakeStreamsStreamsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeStreamsStreamsList
 ```
@@ -2570,7 +2570,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeStreams.DataSnowflakeStreamsStreamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/datasnowflakestreams"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakestreams"
 
 datasnowflakestreams.NewDataSnowflakeStreamsStreamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeStreamsStreamsOutputReference
 ```
@@ -2859,7 +2859,7 @@ func InternalValue() DataSnowflakeStreamsStreams
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeStreams.DataSnowflakeStreamsStreamsShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/datasnowflakestreams"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakestreams"
 
 datasnowflakestreams.NewDataSnowflakeStreamsStreamsShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeStreamsStreamsShowOutputList
 ```
@@ -3008,7 +3008,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeStreams.DataSnowflakeStreamsStreamsShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/datasnowflakestreams"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakestreams"
 
 datasnowflakestreams.NewDataSnowflakeStreamsStreamsShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeStreamsStreamsShowOutputOutputReference
 ```

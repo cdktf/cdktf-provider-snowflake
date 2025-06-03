@@ -4,12 +4,12 @@
 
 ### Alert <a name="Alert" id="@cdktf/provider-snowflake.alert.Alert"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/alert snowflake_alert}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/alert snowflake_alert}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.alert.Alert.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/alert"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/alert"
 
 alert.NewAlert(scope Construct, id *string, config AlertConfig) Alert
 ```
@@ -439,7 +439,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.alert.Alert.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/alert"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/alert"
 
 alert.Alert_IsConstruct(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.alert.Alert.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/alert"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/alert"
 
 alert.Alert_IsTerraformElement(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ alert.Alert_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.alert.Alert.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/alert"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/alert"
 
 alert.Alert_IsTerraformResource(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ alert.Alert_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.alert.Alert.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/alert"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/alert"
 
 alert.Alert_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -528,7 +528,7 @@ The construct id used in the generated config for the Alert to import.
 
 The id of the existing Alert that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/alert#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/alert#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -981,10 +981,10 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.alert.AlertAlertSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/alert"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/alert"
 
 &alert.AlertAlertSchedule {
-	Cron: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14.alert.AlertAlertScheduleCron,
+	Cron: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.alert.AlertAlertScheduleCron,
 	Interval: *f64,
 }
 ```
@@ -1008,7 +1008,7 @@ Cron AlertAlertScheduleCron
 
 cron block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/alert#cron Alert#cron}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/alert#cron Alert#cron}
 
 ---
 
@@ -1024,7 +1024,7 @@ Specifies the interval in minutes for the alert schedule.
 
 The interval must be greater than 0 and less than 1440 (24 hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/alert#interval Alert#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/alert#interval Alert#interval}
 
 ---
 
@@ -1033,7 +1033,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.alert.AlertAlertScheduleCron.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/alert"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/alert"
 
 &alert.AlertAlertScheduleCron {
 	Expression: *string,
@@ -1062,7 +1062,7 @@ Specifies the cron expression for the alert.
 
 The cron expression must be in the following format: "minute hour day-of-month month day-of-week". The following values are supported: minute: 0-59 hour: 0-23 day-of-month: 1-31 month: 1-12 day-of-week: 0-6 (0 is Sunday)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/alert#expression Alert#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/alert#expression Alert#expression}
 
 ---
 
@@ -1076,7 +1076,7 @@ TimeZone *string
 
 Specifies the time zone for alert refresh.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/alert#time_zone Alert#time_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/alert#time_zone Alert#time_zone}
 
 ---
 
@@ -1085,7 +1085,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.alert.AlertConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/alert"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/alert"
 
 &alert.AlertConfig {
 	Connection: interface{},
@@ -1101,11 +1101,11 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/alert"
 	Name: *string,
 	Schema: *string,
 	Warehouse: *string,
-	AlertSchedule: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14.alert.AlertAlertSchedule,
+	AlertSchedule: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.alert.AlertAlertSchedule,
 	Comment: *string,
 	Enabled: interface{},
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14.alert.AlertTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.alert.AlertTimeouts,
 }
 ```
 
@@ -1129,7 +1129,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/alert"
 | <code><a href="#@cdktf/provider-snowflake.alert.AlertConfig.property.alertSchedule">AlertSchedule</a></code> | <code><a href="#@cdktf/provider-snowflake.alert.AlertAlertSchedule">AlertAlertSchedule</a></code> | alert_schedule block. |
 | <code><a href="#@cdktf/provider-snowflake.alert.AlertConfig.property.comment">Comment</a></code> | <code>*string</code> | Specifies a comment for the alert. |
 | <code><a href="#@cdktf/provider-snowflake.alert.AlertConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | (Default: `false`) Specifies if an alert should be 'started' (enabled) after creation or should remain 'suspended' (default). |
-| <code><a href="#@cdktf/provider-snowflake.alert.AlertConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/alert#id Alert#id}. |
+| <code><a href="#@cdktf/provider-snowflake.alert.AlertConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/alert#id Alert#id}. |
 | <code><a href="#@cdktf/provider-snowflake.alert.AlertConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.alert.AlertTimeouts">AlertTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1214,7 +1214,7 @@ Action *string
 
 The SQL statement that should be executed if the condition returns one or more rows.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/alert#action Alert#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/alert#action Alert#action}
 
 ---
 
@@ -1228,7 +1228,7 @@ Condition *string
 
 The SQL statement that represents the condition for the alert. (SELECT, SHOW, CALL).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/alert#condition Alert#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/alert#condition Alert#condition}
 
 ---
 
@@ -1242,7 +1242,7 @@ Database *string
 
 The database in which to create the alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/alert#database Alert#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/alert#database Alert#database}
 
 ---
 
@@ -1258,7 +1258,7 @@ Specifies the identifier for the alert;
 
 must be unique for the database and schema in which the alert is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/alert#name Alert#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/alert#name Alert#name}
 
 ---
 
@@ -1272,7 +1272,7 @@ Schema *string
 
 The schema in which to create the alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/alert#schema Alert#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/alert#schema Alert#schema}
 
 ---
 
@@ -1286,7 +1286,7 @@ Warehouse *string
 
 The warehouse the alert will use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/alert#warehouse Alert#warehouse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/alert#warehouse Alert#warehouse}
 
 ---
 
@@ -1300,7 +1300,7 @@ AlertSchedule AlertAlertSchedule
 
 alert_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/alert#alert_schedule Alert#alert_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/alert#alert_schedule Alert#alert_schedule}
 
 ---
 
@@ -1314,7 +1314,7 @@ Comment *string
 
 Specifies a comment for the alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/alert#comment Alert#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/alert#comment Alert#comment}
 
 ---
 
@@ -1328,7 +1328,7 @@ Enabled interface{}
 
 (Default: `false`) Specifies if an alert should be 'started' (enabled) after creation or should remain 'suspended' (default).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/alert#enabled Alert#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/alert#enabled Alert#enabled}
 
 ---
 
@@ -1340,7 +1340,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/alert#id Alert#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/alert#id Alert#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1357,7 +1357,7 @@ Timeouts AlertTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/alert#timeouts Alert#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/alert#timeouts Alert#timeouts}
 
 ---
 
@@ -1366,7 +1366,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.alert.AlertTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/alert"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/alert"
 
 &alert.AlertTimeouts {
 	Create: *string,
@@ -1380,10 +1380,10 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/alert"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.alert.AlertTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/alert#create Alert#create}. |
-| <code><a href="#@cdktf/provider-snowflake.alert.AlertTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/alert#delete Alert#delete}. |
-| <code><a href="#@cdktf/provider-snowflake.alert.AlertTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/alert#read Alert#read}. |
-| <code><a href="#@cdktf/provider-snowflake.alert.AlertTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/alert#update Alert#update}. |
+| <code><a href="#@cdktf/provider-snowflake.alert.AlertTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/alert#create Alert#create}. |
+| <code><a href="#@cdktf/provider-snowflake.alert.AlertTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/alert#delete Alert#delete}. |
+| <code><a href="#@cdktf/provider-snowflake.alert.AlertTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/alert#read Alert#read}. |
+| <code><a href="#@cdktf/provider-snowflake.alert.AlertTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/alert#update Alert#update}. |
 
 ---
 
@@ -1395,7 +1395,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/alert#create Alert#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/alert#create Alert#create}.
 
 ---
 
@@ -1407,7 +1407,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/alert#delete Alert#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/alert#delete Alert#delete}.
 
 ---
 
@@ -1419,7 +1419,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/alert#read Alert#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/alert#read Alert#read}.
 
 ---
 
@@ -1431,7 +1431,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/alert#update Alert#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/alert#update Alert#update}.
 
 ---
 
@@ -1442,7 +1442,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.alert.AlertAlertScheduleCronOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/alert"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/alert"
 
 alert.NewAlertAlertScheduleCronOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlertAlertScheduleCronOutputReference
 ```
@@ -1735,7 +1735,7 @@ func InternalValue() AlertAlertScheduleCron
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.alert.AlertAlertScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/alert"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/alert"
 
 alert.NewAlertAlertScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlertAlertScheduleOutputReference
 ```
@@ -2055,7 +2055,7 @@ func InternalValue() AlertAlertSchedule
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.alert.AlertTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/alert"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/alert"
 
 alert.NewAlertTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlertTimeoutsOutputReference
 ```
