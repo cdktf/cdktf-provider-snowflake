@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.emailNotificationIntegration.EmailNotificationIntegration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/emailnotificationintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/emailnotificationintegration"
 
 emailnotificationintegration.NewEmailNotificationIntegration(scope Construct, id *string, config EmailNotificationIntegrationConfig) EmailNotificationIntegration
 ```
@@ -419,7 +419,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.emailNotificationIntegration.EmailNotificationIntegration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/emailnotificationintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/emailnotificationintegration"
 
 emailnotificationintegration.EmailNotificationIntegration_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.emailNotificationIntegration.EmailNotificationIntegration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/emailnotificationintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/emailnotificationintegration"
 
 emailnotificationintegration.EmailNotificationIntegration_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ emailnotificationintegration.EmailNotificationIntegration_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.emailNotificationIntegration.EmailNotificationIntegration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/emailnotificationintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/emailnotificationintegration"
 
 emailnotificationintegration.EmailNotificationIntegration_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ emailnotificationintegration.EmailNotificationIntegration_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.emailNotificationIntegration.EmailNotificationIntegration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/emailnotificationintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/emailnotificationintegration"
 
 emailnotificationintegration.EmailNotificationIntegration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -851,7 +851,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.emailNotificationIntegration.EmailNotificationIntegrationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/emailnotificationintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/emailnotificationintegration"
 
 &emailnotificationintegration.EmailNotificationIntegrationConfig {
 	Connection: interface{},
@@ -866,7 +866,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/emailnotifica
 	AllowedRecipients: *[]*string,
 	Comment: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.emailNotificationIntegration.EmailNotificationIntegrationTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14.emailNotificationIntegration.EmailNotificationIntegrationTimeouts,
 }
 ```
 
@@ -1046,7 +1046,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.emailNotificationIntegration.EmailNotificationIntegrationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/emailnotificationintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/emailnotificationintegration"
 
 &emailnotificationintegration.EmailNotificationIntegrationTimeouts {
 	Create: *string,
@@ -1122,7 +1122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.emailNotificationIntegration.EmailNotificationIntegrationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/emailnotificationintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/emailnotificationintegration"
 
 emailnotificationintegration.NewEmailNotificationIntegrationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmailNotificationIntegrationTimeoutsOutputReference
 ```
