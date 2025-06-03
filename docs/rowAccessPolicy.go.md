@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.rowAccessPolicy.RowAccessPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/rowaccesspolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/rowaccesspolicy"
 
 rowaccesspolicy.NewRowAccessPolicy(scope Construct, id *string, config RowAccessPolicyConfig) RowAccessPolicy
 ```
@@ -425,7 +425,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.rowAccessPolicy.RowAccessPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/rowaccesspolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/rowaccesspolicy"
 
 rowaccesspolicy.RowAccessPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -457,7 +457,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.rowAccessPolicy.RowAccessPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/rowaccesspolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/rowaccesspolicy"
 
 rowaccesspolicy.RowAccessPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ rowaccesspolicy.RowAccessPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.rowAccessPolicy.RowAccessPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/rowaccesspolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/rowaccesspolicy"
 
 rowaccesspolicy.RowAccessPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ rowaccesspolicy.RowAccessPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.rowAccessPolicy.RowAccessPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/rowaccesspolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/rowaccesspolicy"
 
 rowaccesspolicy.RowAccessPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -923,7 +923,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.rowAccessPolicy.RowAccessPolicyArgument.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/rowaccesspolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/rowaccesspolicy"
 
 &rowaccesspolicy.RowAccessPolicyArgument {
 	Name: *string,
@@ -973,7 +973,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.rowAccessPolicy.RowAccessPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/rowaccesspolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/rowaccesspolicy"
 
 &rowaccesspolicy.RowAccessPolicyConfig {
 	Connection: interface{},
@@ -990,7 +990,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/rowaccesspolicy"
 	Schema: *string,
 	Comment: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.rowAccessPolicy.RowAccessPolicyTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.rowAccessPolicy.RowAccessPolicyTimeouts,
 }
 ```
 
@@ -1212,7 +1212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.rowAccessPolicy.RowAccessPolicyDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/rowaccesspolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/rowaccesspolicy"
 
 &rowaccesspolicy.RowAccessPolicyDescribeOutput {
 
@@ -1225,7 +1225,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/rowaccesspolicy"
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.rowAccessPolicy.RowAccessPolicyDescribeOutputSignature.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/rowaccesspolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/rowaccesspolicy"
 
 &rowaccesspolicy.RowAccessPolicyDescribeOutputSignature {
 
@@ -1238,7 +1238,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/rowaccesspolicy"
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.rowAccessPolicy.RowAccessPolicyShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/rowaccesspolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/rowaccesspolicy"
 
 &rowaccesspolicy.RowAccessPolicyShowOutput {
 
@@ -1251,7 +1251,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/rowaccesspolicy"
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.rowAccessPolicy.RowAccessPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/rowaccesspolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/rowaccesspolicy"
 
 &rowaccesspolicy.RowAccessPolicyTimeouts {
 	Create: *string,
@@ -1327,7 +1327,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.rowAccessPolicy.RowAccessPolicyArgumentList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/rowaccesspolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/rowaccesspolicy"
 
 rowaccesspolicy.NewRowAccessPolicyArgumentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RowAccessPolicyArgumentList
 ```
@@ -1487,7 +1487,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.rowAccessPolicy.RowAccessPolicyArgumentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/rowaccesspolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/rowaccesspolicy"
 
 rowaccesspolicy.NewRowAccessPolicyArgumentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RowAccessPolicyArgumentOutputReference
 ```
@@ -1798,7 +1798,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.rowAccessPolicy.RowAccessPolicyDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/rowaccesspolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/rowaccesspolicy"
 
 rowaccesspolicy.NewRowAccessPolicyDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RowAccessPolicyDescribeOutputList
 ```
@@ -1947,7 +1947,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.rowAccessPolicy.RowAccessPolicyDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/rowaccesspolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/rowaccesspolicy"
 
 rowaccesspolicy.NewRowAccessPolicyDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RowAccessPolicyDescribeOutputOutputReference
 ```
@@ -2258,7 +2258,7 @@ func InternalValue() RowAccessPolicyDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.rowAccessPolicy.RowAccessPolicyDescribeOutputSignatureList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/rowaccesspolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/rowaccesspolicy"
 
 rowaccesspolicy.NewRowAccessPolicyDescribeOutputSignatureList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RowAccessPolicyDescribeOutputSignatureList
 ```
@@ -2407,7 +2407,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.rowAccessPolicy.RowAccessPolicyDescribeOutputSignatureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/rowaccesspolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/rowaccesspolicy"
 
 rowaccesspolicy.NewRowAccessPolicyDescribeOutputSignatureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RowAccessPolicyDescribeOutputSignatureOutputReference
 ```
@@ -2696,7 +2696,7 @@ func InternalValue() RowAccessPolicyDescribeOutputSignature
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.rowAccessPolicy.RowAccessPolicyShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/rowaccesspolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/rowaccesspolicy"
 
 rowaccesspolicy.NewRowAccessPolicyShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RowAccessPolicyShowOutputList
 ```
@@ -2845,7 +2845,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.rowAccessPolicy.RowAccessPolicyShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/rowaccesspolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/rowaccesspolicy"
 
 rowaccesspolicy.NewRowAccessPolicyShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RowAccessPolicyShowOutputOutputReference
 ```
@@ -3211,7 +3211,7 @@ func InternalValue() RowAccessPolicyShowOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.rowAccessPolicy.RowAccessPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/rowaccesspolicy"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/rowaccesspolicy"
 
 rowaccesspolicy.NewRowAccessPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RowAccessPolicyTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.primaryConnection.PrimaryConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/primaryconnection"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/primaryconnection"
 
 primaryconnection.NewPrimaryConnection(scope Construct, id *string, config PrimaryConnectionConfig) PrimaryConnection
 ```
@@ -419,7 +419,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.primaryConnection.PrimaryConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/primaryconnection"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/primaryconnection"
 
 primaryconnection.PrimaryConnection_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.primaryConnection.PrimaryConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/primaryconnection"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/primaryconnection"
 
 primaryconnection.PrimaryConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ primaryconnection.PrimaryConnection_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.primaryConnection.PrimaryConnection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/primaryconnection"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/primaryconnection"
 
 primaryconnection.PrimaryConnection_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ primaryconnection.PrimaryConnection_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.primaryConnection.PrimaryConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/primaryconnection"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/primaryconnection"
 
 primaryconnection.PrimaryConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -851,7 +851,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.primaryConnection.PrimaryConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/primaryconnection"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/primaryconnection"
 
 &primaryconnection.PrimaryConnectionConfig {
 	Connection: interface{},
@@ -865,7 +865,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/primaryconnection
 	Comment: *string,
 	EnableFailoverToAccounts: *[]*string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.primaryConnection.PrimaryConnectionTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.primaryConnection.PrimaryConnectionTimeouts,
 }
 ```
 
@@ -1036,7 +1036,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.primaryConnection.PrimaryConnectionShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/primaryconnection"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/primaryconnection"
 
 &primaryconnection.PrimaryConnectionShowOutput {
 
@@ -1049,7 +1049,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/primaryconnection
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.primaryConnection.PrimaryConnectionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/primaryconnection"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/primaryconnection"
 
 &primaryconnection.PrimaryConnectionTimeouts {
 	Create: *string,
@@ -1125,7 +1125,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.primaryConnection.PrimaryConnectionShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/primaryconnection"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/primaryconnection"
 
 primaryconnection.NewPrimaryConnectionShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PrimaryConnectionShowOutputList
 ```
@@ -1274,7 +1274,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.primaryConnection.PrimaryConnectionShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/primaryconnection"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/primaryconnection"
 
 primaryconnection.NewPrimaryConnectionShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PrimaryConnectionShowOutputOutputReference
 ```
@@ -1673,7 +1673,7 @@ func InternalValue() PrimaryConnectionShowOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.primaryConnection.PrimaryConnectionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/primaryconnection"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/primaryconnection"
 
 primaryconnection.NewPrimaryConnectionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PrimaryConnectionTimeoutsOutputReference
 ```

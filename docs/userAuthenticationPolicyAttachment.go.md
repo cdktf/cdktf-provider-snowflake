@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.userAuthenticationPolicyAttachment.UserAuthenticationPolicyAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/userauthenticationpolicyattachment"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/userauthenticationpolicyattachment"
 
 userauthenticationpolicyattachment.NewUserAuthenticationPolicyAttachment(scope Construct, id *string, config UserAuthenticationPolicyAttachmentConfig) UserAuthenticationPolicyAttachment
 ```
@@ -405,7 +405,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.userAuthenticationPolicyAttachment.UserAuthenticationPolicyAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/userauthenticationpolicyattachment"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/userauthenticationpolicyattachment"
 
 userauthenticationpolicyattachment.UserAuthenticationPolicyAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.userAuthenticationPolicyAttachment.UserAuthenticationPolicyAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/userauthenticationpolicyattachment"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/userauthenticationpolicyattachment"
 
 userauthenticationpolicyattachment.UserAuthenticationPolicyAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ userauthenticationpolicyattachment.UserAuthenticationPolicyAttachment_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.userAuthenticationPolicyAttachment.UserAuthenticationPolicyAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/userauthenticationpolicyattachment"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/userauthenticationpolicyattachment"
 
 userauthenticationpolicyattachment.UserAuthenticationPolicyAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ userauthenticationpolicyattachment.UserAuthenticationPolicyAttachment_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.userAuthenticationPolicyAttachment.UserAuthenticationPolicyAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/userauthenticationpolicyattachment"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/userauthenticationpolicyattachment"
 
 userauthenticationpolicyattachment.UserAuthenticationPolicyAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -782,7 +782,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.userAuthenticationPolicyAttachment.UserAuthenticationPolicyAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/userauthenticationpolicyattachment"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/userauthenticationpolicyattachment"
 
 &userauthenticationpolicyattachment.UserAuthenticationPolicyAttachmentConfig {
 	Connection: interface{},
@@ -795,7 +795,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/userauthenticatio
 	AuthenticationPolicyName: *string,
 	UserName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.userAuthenticationPolicyAttachment.UserAuthenticationPolicyAttachmentTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.userAuthenticationPolicyAttachment.UserAuthenticationPolicyAttachmentTimeouts,
 }
 ```
 
@@ -949,7 +949,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.userAuthenticationPolicyAttachment.UserAuthenticationPolicyAttachmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/userauthenticationpolicyattachment"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/userauthenticationpolicyattachment"
 
 &userauthenticationpolicyattachment.UserAuthenticationPolicyAttachmentTimeouts {
 	Create: *string,
@@ -1025,7 +1025,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.userAuthenticationPolicyAttachment.UserAuthenticationPolicyAttachmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/userauthenticationpolicyattachment"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/userauthenticationpolicyattachment"
 
 userauthenticationpolicyattachment.NewUserAuthenticationPolicyAttachmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) UserAuthenticationPolicyAttachmentTimeoutsOutputReference
 ```

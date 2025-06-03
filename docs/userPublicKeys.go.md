@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.userPublicKeys.UserPublicKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/userpublickeys"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/userpublickeys"
 
 userpublickeys.NewUserPublicKeys(scope Construct, id *string, config UserPublicKeysConfig) UserPublicKeys
 ```
@@ -419,7 +419,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.userPublicKeys.UserPublicKeys.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/userpublickeys"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/userpublickeys"
 
 userpublickeys.UserPublicKeys_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.userPublicKeys.UserPublicKeys.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/userpublickeys"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/userpublickeys"
 
 userpublickeys.UserPublicKeys_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ userpublickeys.UserPublicKeys_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.userPublicKeys.UserPublicKeys.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/userpublickeys"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/userpublickeys"
 
 userpublickeys.UserPublicKeys_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ userpublickeys.UserPublicKeys_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.userPublicKeys.UserPublicKeys.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/userpublickeys"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/userpublickeys"
 
 userpublickeys.UserPublicKeys_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -818,7 +818,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.userPublicKeys.UserPublicKeysConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/userpublickeys"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/userpublickeys"
 
 &userpublickeys.UserPublicKeysConfig {
 	Connection: interface{},
@@ -832,7 +832,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/userpublickeys"
 	Id: *string,
 	RsaPublicKey: *string,
 	RsaPublicKey2: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.userPublicKeys.UserPublicKeysTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.userPublicKeys.UserPublicKeysTimeouts,
 }
 ```
 
@@ -1003,7 +1003,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.userPublicKeys.UserPublicKeysTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/userpublickeys"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/userpublickeys"
 
 &userpublickeys.UserPublicKeysTimeouts {
 	Create: *string,
@@ -1079,7 +1079,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.userPublicKeys.UserPublicKeysTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/userpublickeys"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/userpublickeys"
 
 userpublickeys.NewUserPublicKeysTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) UserPublicKeysTimeoutsOutputReference
 ```

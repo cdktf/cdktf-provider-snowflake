@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeViews.DataSnowflakeViews.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeviews"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakeviews"
 
 datasnowflakeviews.NewDataSnowflakeViews(scope Construct, id *string, config DataSnowflakeViewsConfig) DataSnowflakeViews
 ```
@@ -344,7 +344,7 @@ func ResetWithDescribe()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakeViews.DataSnowflakeViews.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeviews"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakeviews"
 
 datasnowflakeviews.DataSnowflakeViews_IsConstruct(x interface{}) *bool
 ```
@@ -376,7 +376,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakeViews.DataSnowflakeViews.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeviews"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakeviews"
 
 datasnowflakeviews.DataSnowflakeViews_IsTerraformElement(x interface{}) *bool
 ```
@@ -390,7 +390,7 @@ datasnowflakeviews.DataSnowflakeViews_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakeViews.DataSnowflakeViews.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeviews"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakeviews"
 
 datasnowflakeviews.DataSnowflakeViews_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -404,7 +404,7 @@ datasnowflakeviews.DataSnowflakeViews_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.dataSnowflakeViews.DataSnowflakeViews.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeviews"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakeviews"
 
 datasnowflakeviews.DataSnowflakeViews_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -754,7 +754,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeViews.DataSnowflakeViewsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeviews"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakeviews"
 
 &datasnowflakeviews.DataSnowflakeViewsConfig {
 	Connection: interface{},
@@ -765,9 +765,9 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeview
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Id: *string,
-	In: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.dataSnowflakeViews.DataSnowflakeViewsIn,
+	In: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.dataSnowflakeViews.DataSnowflakeViewsIn,
 	Like: *string,
-	Limit: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.dataSnowflakeViews.DataSnowflakeViewsLimit,
+	Limit: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.dataSnowflakeViews.DataSnowflakeViewsLimit,
 	StartsWith: *string,
 	WithDescribe: interface{},
 }
@@ -955,7 +955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeViews.DataSnowflakeViewsIn.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeviews"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakeviews"
 
 &datasnowflakeviews.DataSnowflakeViewsIn {
 	Account: interface{},
@@ -1021,7 +1021,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeViews.DataSnowflakeViewsLimit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeviews"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakeviews"
 
 &datasnowflakeviews.DataSnowflakeViewsLimit {
 	Rows: *f64,
@@ -1073,7 +1073,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeViews.DataSnowflakeViewsViews.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeviews"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakeviews"
 
 &datasnowflakeviews.DataSnowflakeViewsViews {
 
@@ -1086,7 +1086,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeview
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeViews.DataSnowflakeViewsViewsDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeviews"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakeviews"
 
 &datasnowflakeviews.DataSnowflakeViewsViewsDescribeOutput {
 
@@ -1099,7 +1099,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeview
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakeViews.DataSnowflakeViewsViewsShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeviews"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakeviews"
 
 &datasnowflakeviews.DataSnowflakeViewsViewsShowOutput {
 
@@ -1114,7 +1114,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeview
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeViews.DataSnowflakeViewsInOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeviews"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakeviews"
 
 datasnowflakeviews.NewDataSnowflakeViewsInOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataSnowflakeViewsInOutputReference
 ```
@@ -1450,7 +1450,7 @@ func InternalValue() DataSnowflakeViewsIn
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeViews.DataSnowflakeViewsLimitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeviews"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakeviews"
 
 datasnowflakeviews.NewDataSnowflakeViewsLimitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataSnowflakeViewsLimitOutputReference
 ```
@@ -1750,7 +1750,7 @@ func InternalValue() DataSnowflakeViewsLimit
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeViews.DataSnowflakeViewsViewsDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeviews"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakeviews"
 
 datasnowflakeviews.NewDataSnowflakeViewsViewsDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeViewsViewsDescribeOutputList
 ```
@@ -1899,7 +1899,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeViews.DataSnowflakeViewsViewsDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeviews"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakeviews"
 
 datasnowflakeviews.NewDataSnowflakeViewsViewsDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeViewsViewsDescribeOutputOutputReference
 ```
@@ -2298,7 +2298,7 @@ func InternalValue() DataSnowflakeViewsViewsDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeViews.DataSnowflakeViewsViewsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeviews"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakeviews"
 
 datasnowflakeviews.NewDataSnowflakeViewsViewsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeViewsViewsList
 ```
@@ -2447,7 +2447,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeViews.DataSnowflakeViewsViewsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeviews"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakeviews"
 
 datasnowflakeviews.NewDataSnowflakeViewsViewsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeViewsViewsOutputReference
 ```
@@ -2736,7 +2736,7 @@ func InternalValue() DataSnowflakeViewsViews
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeViews.DataSnowflakeViewsViewsShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeviews"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakeviews"
 
 datasnowflakeviews.NewDataSnowflakeViewsViewsShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakeViewsViewsShowOutputList
 ```
@@ -2885,7 +2885,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeViews.DataSnowflakeViewsViewsShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakeviews"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakeviews"
 
 datasnowflakeviews.NewDataSnowflakeViewsViewsShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakeViewsViewsShowOutputOutputReference
 ```

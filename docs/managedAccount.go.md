@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.managedAccount.ManagedAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/managedaccount"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/managedaccount"
 
 managedaccount.NewManagedAccount(scope Construct, id *string, config ManagedAccountConfig) ManagedAccount
 ```
@@ -419,7 +419,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.managedAccount.ManagedAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/managedaccount"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/managedaccount"
 
 managedaccount.ManagedAccount_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.managedAccount.ManagedAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/managedaccount"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/managedaccount"
 
 managedaccount.ManagedAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ managedaccount.ManagedAccount_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.managedAccount.ManagedAccount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/managedaccount"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/managedaccount"
 
 managedaccount.ManagedAccount_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ managedaccount.ManagedAccount_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.managedAccount.ManagedAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/managedaccount"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/managedaccount"
 
 managedaccount.ManagedAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -928,7 +928,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/managedaccount"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/managedaccount"
 
 &managedaccount.ManagedAccountConfig {
 	Connection: interface{},
@@ -943,7 +943,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/managedaccount"
 	Name: *string,
 	Comment: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.managedAccount.ManagedAccountTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.managedAccount.ManagedAccountTimeouts,
 	Type: *string,
 }
 ```
@@ -1145,7 +1145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/managedaccount"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/managedaccount"
 
 &managedaccount.ManagedAccountTimeouts {
 	Create: *string,
@@ -1221,7 +1221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.managedAccount.ManagedAccountTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/managedaccount"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/managedaccount"
 
 managedaccount.NewManagedAccountTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedAccountTimeoutsOutputReference
 ```

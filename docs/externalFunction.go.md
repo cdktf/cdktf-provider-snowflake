@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.externalFunction.ExternalFunction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/externalfunction"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/externalfunction"
 
 externalfunction.NewExternalFunction(scope Construct, id *string, config ExternalFunctionConfig) ExternalFunction
 ```
@@ -501,7 +501,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.externalFunction.ExternalFunction.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/externalfunction"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/externalfunction"
 
 externalfunction.ExternalFunction_IsConstruct(x interface{}) *bool
 ```
@@ -533,7 +533,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.externalFunction.ExternalFunction.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/externalfunction"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/externalfunction"
 
 externalfunction.ExternalFunction_IsTerraformElement(x interface{}) *bool
 ```
@@ -547,7 +547,7 @@ externalfunction.ExternalFunction_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.externalFunction.ExternalFunction.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/externalfunction"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/externalfunction"
 
 externalfunction.ExternalFunction_IsTerraformResource(x interface{}) *bool
 ```
@@ -561,7 +561,7 @@ externalfunction.ExternalFunction_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.externalFunction.ExternalFunction.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/externalfunction"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/externalfunction"
 
 externalfunction.ExternalFunction_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1230,7 +1230,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionArg.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/externalfunction"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/externalfunction"
 
 &externalfunction.ExternalFunctionArg {
 	Name: *string,
@@ -1280,7 +1280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/externalfunction"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/externalfunction"
 
 &externalfunction.ExternalFunctionConfig {
 	Connection: interface{},
@@ -1308,7 +1308,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/externalfunction"
 	RequestTranslator: *string,
 	ResponseTranslator: *string,
 	ReturnNullAllowed: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.externalFunction.ExternalFunctionTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.externalFunction.ExternalFunctionTimeouts,
 }
 ```
 
@@ -1689,7 +1689,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/externalfunction"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/externalfunction"
 
 &externalfunction.ExternalFunctionHeader {
 	Name: *string,
@@ -1739,7 +1739,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/externalfunction"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/externalfunction"
 
 &externalfunction.ExternalFunctionTimeouts {
 	Create: *string,
@@ -1815,7 +1815,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionArgList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/externalfunction"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/externalfunction"
 
 externalfunction.NewExternalFunctionArgList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ExternalFunctionArgList
 ```
@@ -1975,7 +1975,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionArgOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/externalfunction"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/externalfunction"
 
 externalfunction.NewExternalFunctionArgOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ExternalFunctionArgOutputReference
 ```
@@ -2286,7 +2286,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/externalfunction"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/externalfunction"
 
 externalfunction.NewExternalFunctionHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ExternalFunctionHeaderList
 ```
@@ -2446,7 +2446,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/externalfunction"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/externalfunction"
 
 externalfunction.NewExternalFunctionHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ExternalFunctionHeaderOutputReference
 ```
@@ -2757,7 +2757,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.externalFunction.ExternalFunctionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/externalfunction"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/externalfunction"
 
 externalfunction.NewExternalFunctionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ExternalFunctionTimeoutsOutputReference
 ```

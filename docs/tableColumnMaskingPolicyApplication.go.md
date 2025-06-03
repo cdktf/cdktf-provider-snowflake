@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tablecolumnmaskingpolicyapplication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/tablecolumnmaskingpolicyapplication"
 
 tablecolumnmaskingpolicyapplication.NewTableColumnMaskingPolicyApplication(scope Construct, id *string, config TableColumnMaskingPolicyApplicationConfig) TableColumnMaskingPolicyApplication
 ```
@@ -405,7 +405,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tablecolumnmaskingpolicyapplication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/tablecolumnmaskingpolicyapplication"
 
 tablecolumnmaskingpolicyapplication.TableColumnMaskingPolicyApplication_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tablecolumnmaskingpolicyapplication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/tablecolumnmaskingpolicyapplication"
 
 tablecolumnmaskingpolicyapplication.TableColumnMaskingPolicyApplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ tablecolumnmaskingpolicyapplication.TableColumnMaskingPolicyApplication_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplication.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tablecolumnmaskingpolicyapplication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/tablecolumnmaskingpolicyapplication"
 
 tablecolumnmaskingpolicyapplication.TableColumnMaskingPolicyApplication_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ tablecolumnmaskingpolicyapplication.TableColumnMaskingPolicyApplication_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplication.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tablecolumnmaskingpolicyapplication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/tablecolumnmaskingpolicyapplication"
 
 tablecolumnmaskingpolicyapplication.TableColumnMaskingPolicyApplication_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -804,7 +804,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tablecolumnmaskingpolicyapplication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/tablecolumnmaskingpolicyapplication"
 
 &tablecolumnmaskingpolicyapplication.TableColumnMaskingPolicyApplicationConfig {
 	Connection: interface{},
@@ -818,7 +818,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tablecolumnmaskin
 	MaskingPolicy: *string,
 	Table: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplicationTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplicationTimeouts,
 }
 ```
 
@@ -987,7 +987,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplicationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tablecolumnmaskingpolicyapplication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/tablecolumnmaskingpolicyapplication"
 
 &tablecolumnmaskingpolicyapplication.TableColumnMaskingPolicyApplicationTimeouts {
 	Create: *string,
@@ -1063,7 +1063,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.tableColumnMaskingPolicyApplication.TableColumnMaskingPolicyApplicationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/tablecolumnmaskingpolicyapplication"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/tablecolumnmaskingpolicyapplication"
 
 tablecolumnmaskingpolicyapplication.NewTableColumnMaskingPolicyApplicationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TableColumnMaskingPolicyApplicationTimeoutsOutputReference
 ```

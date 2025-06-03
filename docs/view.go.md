@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.view.View.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/view"
 
 view.NewView(scope Construct, id *string, config ViewConfig) View
 ```
@@ -547,7 +547,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.view.View.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/view"
 
 view.View_IsConstruct(x interface{}) *bool
 ```
@@ -579,7 +579,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.view.View.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/view"
 
 view.View_IsTerraformElement(x interface{}) *bool
 ```
@@ -593,7 +593,7 @@ view.View_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.view.View.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/view"
 
 view.View_IsTerraformResource(x interface{}) *bool
 ```
@@ -607,7 +607,7 @@ view.View_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.view.View.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/view"
 
 view.View_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1243,7 +1243,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.view.ViewAggregationPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/view"
 
 &view.ViewAggregationPolicy {
 	PolicyName: *string,
@@ -1293,13 +1293,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.view.ViewColumn.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/view"
 
 &view.ViewColumn {
 	ColumnName: *string,
 	Comment: *string,
-	MaskingPolicy: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.view.ViewColumnMaskingPolicy,
-	ProjectionPolicy: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.view.ViewColumnProjectionPolicy,
+	MaskingPolicy: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.view.ViewColumnMaskingPolicy,
+	ProjectionPolicy: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.view.ViewColumnProjectionPolicy,
 }
 ```
 
@@ -1375,7 +1375,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.view.ViewColumnMaskingPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/view"
 
 &view.ViewColumnMaskingPolicy {
 	PolicyName: *string,
@@ -1427,7 +1427,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.view.ViewColumnProjectionPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/view"
 
 &view.ViewColumnProjectionPolicy {
 	PolicyName: *string,
@@ -1461,7 +1461,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.view.ViewConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/view"
 
 &view.ViewConfig {
 	Connection: interface{},
@@ -1475,19 +1475,19 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
 	Name: *string,
 	Schema: *string,
 	Statement: *string,
-	AggregationPolicy: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.view.ViewAggregationPolicy,
+	AggregationPolicy: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.view.ViewAggregationPolicy,
 	ChangeTracking: *string,
 	Column: interface{},
 	Comment: *string,
 	CopyGrants: interface{},
 	DataMetricFunction: interface{},
-	DataMetricSchedule: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.view.ViewDataMetricSchedule,
+	DataMetricSchedule: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.view.ViewDataMetricSchedule,
 	Id: *string,
 	IsRecursive: *string,
 	IsSecure: *string,
 	IsTemporary: *string,
-	RowAccessPolicy: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.view.ViewRowAccessPolicy,
-	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.view.ViewTimeouts,
+	RowAccessPolicy: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.view.ViewRowAccessPolicy,
+	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.view.ViewTimeouts,
 }
 ```
 
@@ -1854,7 +1854,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.view.ViewDataMetricFunction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/view"
 
 &view.ViewDataMetricFunction {
 	FunctionName: *string,
@@ -1926,7 +1926,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.view.ViewDataMetricSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/view"
 
 &view.ViewDataMetricSchedule {
 	Minutes: *f64,
@@ -1980,7 +1980,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.view.ViewDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/view"
 
 &view.ViewDescribeOutput {
 
@@ -1993,7 +1993,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.view.ViewRowAccessPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/view"
 
 &view.ViewRowAccessPolicy {
 	On: *[]*string,
@@ -2043,7 +2043,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.view.ViewShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/view"
 
 &view.ViewShowOutput {
 
@@ -2056,7 +2056,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.view.ViewTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/view"
 
 &view.ViewTimeouts {
 	Create: *string,
@@ -2132,7 +2132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.view.ViewAggregationPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/view"
 
 view.NewViewAggregationPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ViewAggregationPolicyOutputReference
 ```
@@ -2432,7 +2432,7 @@ func InternalValue() ViewAggregationPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.view.ViewColumnList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/view"
 
 view.NewViewColumnList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ViewColumnList
 ```
@@ -2592,7 +2592,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.view.ViewColumnMaskingPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/view"
 
 view.NewViewColumnMaskingPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ViewColumnMaskingPolicyOutputReference
 ```
@@ -2892,7 +2892,7 @@ func InternalValue() ViewColumnMaskingPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.view.ViewColumnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/view"
 
 view.NewViewColumnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ViewColumnOutputReference
 ```
@@ -3294,7 +3294,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.view.ViewColumnProjectionPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/view"
 
 view.NewViewColumnProjectionPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ViewColumnProjectionPolicyOutputReference
 ```
@@ -3565,7 +3565,7 @@ func InternalValue() ViewColumnProjectionPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.view.ViewDataMetricFunctionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/view"
 
 view.NewViewDataMetricFunctionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ViewDataMetricFunctionList
 ```
@@ -3725,7 +3725,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.view.ViewDataMetricFunctionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/view"
 
 view.NewViewDataMetricFunctionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ViewDataMetricFunctionOutputReference
 ```
@@ -4058,7 +4058,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.view.ViewDataMetricScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/view"
 
 view.NewViewDataMetricScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ViewDataMetricScheduleOutputReference
 ```
@@ -4365,7 +4365,7 @@ func InternalValue() ViewDataMetricSchedule
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.view.ViewDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/view"
 
 view.NewViewDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ViewDescribeOutputList
 ```
@@ -4514,7 +4514,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.view.ViewDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/view"
 
 view.NewViewDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ViewDescribeOutputOutputReference
 ```
@@ -4913,7 +4913,7 @@ func InternalValue() ViewDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.view.ViewRowAccessPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/view"
 
 view.NewViewRowAccessPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ViewRowAccessPolicyOutputReference
 ```
@@ -5206,7 +5206,7 @@ func InternalValue() ViewRowAccessPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.view.ViewShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/view"
 
 view.NewViewShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ViewShowOutputList
 ```
@@ -5355,7 +5355,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.view.ViewShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/view"
 
 view.NewViewShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ViewShowOutputOutputReference
 ```
@@ -5765,7 +5765,7 @@ func InternalValue() ViewShowOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.view.ViewTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/view"
 
 view.NewViewTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ViewTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakePipes.DataSnowflakePipes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakepipes"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakepipes"
 
 datasnowflakepipes.NewDataSnowflakePipes(scope Construct, id *string, config DataSnowflakePipesConfig) DataSnowflakePipes
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.dataSnowflakePipes.DataSnowflakePipes.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakepipes"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakepipes"
 
 datasnowflakepipes.DataSnowflakePipes_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.dataSnowflakePipes.DataSnowflakePipes.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakepipes"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakepipes"
 
 datasnowflakepipes.DataSnowflakePipes_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datasnowflakepipes.DataSnowflakePipes_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-snowflake.dataSnowflakePipes.DataSnowflakePipes.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakepipes"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakepipes"
 
 datasnowflakepipes.DataSnowflakePipes_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datasnowflakepipes.DataSnowflakePipes_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.dataSnowflakePipes.DataSnowflakePipes.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakepipes"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakepipes"
 
 datasnowflakepipes.DataSnowflakePipes_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -627,7 +627,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakePipes.DataSnowflakePipesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakepipes"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakepipes"
 
 &datasnowflakepipes.DataSnowflakePipesConfig {
 	Connection: interface{},
@@ -778,7 +778,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.dataSnowflakePipes.DataSnowflakePipesPipes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakepipes"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakepipes"
 
 &datasnowflakepipes.DataSnowflakePipesPipes {
 
@@ -793,7 +793,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakepipe
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakePipes.DataSnowflakePipesPipesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakepipes"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakepipes"
 
 datasnowflakepipes.NewDataSnowflakePipesPipesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataSnowflakePipesPipesList
 ```
@@ -942,7 +942,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakePipes.DataSnowflakePipesPipesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/datasnowflakepipes"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflakepipes"
 
 datasnowflakepipes.NewDataSnowflakePipesPipesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataSnowflakePipesPipesOutputReference
 ```
