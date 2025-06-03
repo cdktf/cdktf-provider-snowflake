@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.pipe.Pipe.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/pipe"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/pipe"
 
 pipe.NewPipe(scope Construct, id *string, config PipeConfig) Pipe
 ```
@@ -440,7 +440,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.pipe.Pipe.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/pipe"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/pipe"
 
 pipe.Pipe_IsConstruct(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.pipe.Pipe.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/pipe"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/pipe"
 
 pipe.Pipe_IsTerraformElement(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ pipe.Pipe_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.pipe.Pipe.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/pipe"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/pipe"
 
 pipe.Pipe_IsTerraformResource(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ pipe.Pipe_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.pipe.Pipe.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/pipe"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/pipe"
 
 pipe.Pipe_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1004,7 +1004,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.pipe.PipeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/pipe"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/pipe"
 
 &pipe.PipeConfig {
 	Connection: interface{},
@@ -1024,7 +1024,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/pipe"
 	ErrorIntegration: *string,
 	Id: *string,
 	Integration: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.pipe.PipeTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14.pipe.PipeTimeouts,
 }
 ```
 
@@ -1285,7 +1285,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.pipe.PipeTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/pipe"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/pipe"
 
 &pipe.PipeTimeouts {
 	Create: *string,
@@ -1361,7 +1361,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.pipe.PipeTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/pipe"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/pipe"
 
 pipe.NewPipeTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipeTimeoutsOutputReference
 ```

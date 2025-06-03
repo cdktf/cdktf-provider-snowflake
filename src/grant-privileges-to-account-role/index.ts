@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/grant_privileges_to_account_role
 // generated from terraform resource schema
 
