@@ -4,12 +4,12 @@
 
 ### StreamOnDirectoryTable <a name="StreamOnDirectoryTable" id="@cdktf/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_directory_table snowflake_stream_on_directory_table}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_directory_table snowflake_stream_on_directory_table}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamondirectorytable"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/streamondirectorytable"
 
 streamondirectorytable.NewStreamOnDirectoryTable(scope Construct, id *string, config StreamOnDirectoryTableConfig) StreamOnDirectoryTable
 ```
@@ -419,7 +419,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTable.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamondirectorytable"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/streamondirectorytable"
 
 streamondirectorytable.StreamOnDirectoryTable_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamondirectorytable"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/streamondirectorytable"
 
 streamondirectorytable.StreamOnDirectoryTable_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ streamondirectorytable.StreamOnDirectoryTable_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTable.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamondirectorytable"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/streamondirectorytable"
 
 streamondirectorytable.StreamOnDirectoryTable_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ streamondirectorytable.StreamOnDirectoryTable_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTable.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamondirectorytable"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/streamondirectorytable"
 
 streamondirectorytable.StreamOnDirectoryTable_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -508,7 +508,7 @@ The construct id used in the generated config for the StreamOnDirectoryTable to 
 
 The id of the existing StreamOnDirectoryTable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_directory_table#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_directory_table#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -939,7 +939,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamondirectorytable"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/streamondirectorytable"
 
 &streamondirectorytable.StreamOnDirectoryTableConfig {
 	Connection: interface{},
@@ -956,7 +956,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamondirec
 	Comment: *string,
 	CopyGrants: interface{},
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14.streamOnDirectoryTable.StreamOnDirectoryTableTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.streamOnDirectoryTable.StreamOnDirectoryTableTimeouts,
 }
 ```
 
@@ -977,7 +977,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamondirec
 | <code><a href="#@cdktf/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTableConfig.property.stage">Stage</a></code> | <code>*string</code> | Specifies an identifier for the stage the stream will monitor. |
 | <code><a href="#@cdktf/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTableConfig.property.comment">Comment</a></code> | <code>*string</code> | Specifies a comment for the stream. |
 | <code><a href="#@cdktf/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTableConfig.property.copyGrants">CopyGrants</a></code> | <code>interface{}</code> | (Default: `false`) Retains the access permissions from the original stream when a stream is recreated using the OR REPLACE clause. |
-| <code><a href="#@cdktf/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTableConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_directory_table#id StreamOnDirectoryTable#id}. |
+| <code><a href="#@cdktf/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTableConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_directory_table#id StreamOnDirectoryTable#id}. |
 | <code><a href="#@cdktf/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTableConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTableTimeouts">StreamOnDirectoryTableTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1064,7 +1064,7 @@ The database in which to create the stream.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_directory_table#database StreamOnDirectoryTable#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_directory_table#database StreamOnDirectoryTable#database}
 
 ---
 
@@ -1080,7 +1080,7 @@ Specifies the identifier for the stream;
 
 must be unique for the database and schema in which the stream is created. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_directory_table#name StreamOnDirectoryTable#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_directory_table#name StreamOnDirectoryTable#name}
 
 ---
 
@@ -1096,7 +1096,7 @@ The schema in which to create the stream.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_directory_table#schema StreamOnDirectoryTable#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_directory_table#schema StreamOnDirectoryTable#schema}
 
 ---
 
@@ -1112,7 +1112,7 @@ Specifies an identifier for the stage the stream will monitor.
 
 Due to Snowflake limitations, the provider can not read the stage's database and schema. For stages, Snowflake returns only partially qualified name instead of fully qualified name. Please use stages located in the same schema as the stream. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`. For more information about this resource, see [docs](./stage).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_directory_table#stage StreamOnDirectoryTable#stage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_directory_table#stage StreamOnDirectoryTable#stage}
 
 ---
 
@@ -1126,7 +1126,7 @@ Comment *string
 
 Specifies a comment for the stream.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_directory_table#comment StreamOnDirectoryTable#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_directory_table#comment StreamOnDirectoryTable#comment}
 
 ---
 
@@ -1142,7 +1142,7 @@ CopyGrants interface{}
 
 This is used when the provider detects changes for fields that can not be changed by ALTER. This value will not have any effect during creating a new object with Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_directory_table#copy_grants StreamOnDirectoryTable#copy_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_directory_table#copy_grants StreamOnDirectoryTable#copy_grants}
 
 ---
 
@@ -1154,7 +1154,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_directory_table#id StreamOnDirectoryTable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_directory_table#id StreamOnDirectoryTable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1171,7 +1171,7 @@ Timeouts StreamOnDirectoryTableTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_directory_table#timeouts StreamOnDirectoryTable#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_directory_table#timeouts StreamOnDirectoryTable#timeouts}
 
 ---
 
@@ -1180,7 +1180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTableDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamondirectorytable"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/streamondirectorytable"
 
 &streamondirectorytable.StreamOnDirectoryTableDescribeOutput {
 
@@ -1193,7 +1193,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamondirec
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTableShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamondirectorytable"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/streamondirectorytable"
 
 &streamondirectorytable.StreamOnDirectoryTableShowOutput {
 
@@ -1206,7 +1206,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamondirec
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTableTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamondirectorytable"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/streamondirectorytable"
 
 &streamondirectorytable.StreamOnDirectoryTableTimeouts {
 	Create: *string,
@@ -1220,10 +1220,10 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamondirec
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTableTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_directory_table#create StreamOnDirectoryTable#create}. |
-| <code><a href="#@cdktf/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTableTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_directory_table#delete StreamOnDirectoryTable#delete}. |
-| <code><a href="#@cdktf/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTableTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_directory_table#read StreamOnDirectoryTable#read}. |
-| <code><a href="#@cdktf/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTableTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_directory_table#update StreamOnDirectoryTable#update}. |
+| <code><a href="#@cdktf/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTableTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_directory_table#create StreamOnDirectoryTable#create}. |
+| <code><a href="#@cdktf/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTableTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_directory_table#delete StreamOnDirectoryTable#delete}. |
+| <code><a href="#@cdktf/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTableTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_directory_table#read StreamOnDirectoryTable#read}. |
+| <code><a href="#@cdktf/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTableTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_directory_table#update StreamOnDirectoryTable#update}. |
 
 ---
 
@@ -1235,7 +1235,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_directory_table#create StreamOnDirectoryTable#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_directory_table#create StreamOnDirectoryTable#create}.
 
 ---
 
@@ -1247,7 +1247,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_directory_table#delete StreamOnDirectoryTable#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_directory_table#delete StreamOnDirectoryTable#delete}.
 
 ---
 
@@ -1259,7 +1259,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_directory_table#read StreamOnDirectoryTable#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_directory_table#read StreamOnDirectoryTable#read}.
 
 ---
 
@@ -1271,7 +1271,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/stream_on_directory_table#update StreamOnDirectoryTable#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/stream_on_directory_table#update StreamOnDirectoryTable#update}.
 
 ---
 
@@ -1282,7 +1282,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTableDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamondirectorytable"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/streamondirectorytable"
 
 streamondirectorytable.NewStreamOnDirectoryTableDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StreamOnDirectoryTableDescribeOutputList
 ```
@@ -1431,7 +1431,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTableDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamondirectorytable"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/streamondirectorytable"
 
 streamondirectorytable.NewStreamOnDirectoryTableDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StreamOnDirectoryTableDescribeOutputOutputReference
 ```
@@ -1863,7 +1863,7 @@ func InternalValue() StreamOnDirectoryTableDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTableShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamondirectorytable"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/streamondirectorytable"
 
 streamondirectorytable.NewStreamOnDirectoryTableShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StreamOnDirectoryTableShowOutputList
 ```
@@ -2012,7 +2012,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTableShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamondirectorytable"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/streamondirectorytable"
 
 streamondirectorytable.NewStreamOnDirectoryTableShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StreamOnDirectoryTableShowOutputOutputReference
 ```
@@ -2444,7 +2444,7 @@ func InternalValue() StreamOnDirectoryTableShowOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.streamOnDirectoryTable.StreamOnDirectoryTableTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/streamondirectorytable"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/streamondirectorytable"
 
 streamondirectorytable.NewStreamOnDirectoryTableTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StreamOnDirectoryTableTimeoutsOutputReference
 ```

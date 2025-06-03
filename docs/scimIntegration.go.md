@@ -4,12 +4,12 @@
 
 ### ScimIntegration <a name="ScimIntegration" id="@cdktf/provider-snowflake.scimIntegration.ScimIntegration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/scim_integration snowflake_scim_integration}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/scim_integration snowflake_scim_integration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.scimIntegration.ScimIntegration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/scimintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/scimintegration"
 
 scimintegration.NewScimIntegration(scope Construct, id *string, config ScimIntegrationConfig) ScimIntegration
 ```
@@ -426,7 +426,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.scimIntegration.ScimIntegration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/scimintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/scimintegration"
 
 scimintegration.ScimIntegration_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.scimIntegration.ScimIntegration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/scimintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/scimintegration"
 
 scimintegration.ScimIntegration_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ scimintegration.ScimIntegration_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.scimIntegration.ScimIntegration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/scimintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/scimintegration"
 
 scimintegration.ScimIntegration_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ scimintegration.ScimIntegration_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.scimIntegration.ScimIntegration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/scimintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/scimintegration"
 
 scimintegration.ScimIntegration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -515,7 +515,7 @@ The construct id used in the generated config for the ScimIntegration to import.
 
 The id of the existing ScimIntegration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/scim_integration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/scim_integration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -946,7 +946,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.scimIntegration.ScimIntegrationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/scimintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/scimintegration"
 
 &scimintegration.ScimIntegrationConfig {
 	Connection: interface{},
@@ -964,7 +964,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/scimintegrati
 	Id: *string,
 	NetworkPolicy: *string,
 	SyncPassword: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14.scimIntegration.ScimIntegrationTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.scimIntegration.ScimIntegrationTimeouts,
 }
 ```
 
@@ -984,7 +984,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/scimintegrati
 | <code><a href="#@cdktf/provider-snowflake.scimIntegration.ScimIntegrationConfig.property.runAsRole">RunAsRole</a></code> | <code>*string</code> | Specify the SCIM role in Snowflake that owns any users and roles that are imported from the identity provider into Snowflake using SCIM. |
 | <code><a href="#@cdktf/provider-snowflake.scimIntegration.ScimIntegrationConfig.property.scimClient">ScimClient</a></code> | <code>*string</code> | Specifies the client type for the scim integration. Valid options are: `OKTA` \| `AZURE` \| `GENERIC`. |
 | <code><a href="#@cdktf/provider-snowflake.scimIntegration.ScimIntegrationConfig.property.comment">Comment</a></code> | <code>*string</code> | Specifies a comment for the integration. |
-| <code><a href="#@cdktf/provider-snowflake.scimIntegration.ScimIntegrationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/scim_integration#id ScimIntegration#id}. |
+| <code><a href="#@cdktf/provider-snowflake.scimIntegration.ScimIntegrationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/scim_integration#id ScimIntegration#id}. |
 | <code><a href="#@cdktf/provider-snowflake.scimIntegration.ScimIntegrationConfig.property.networkPolicy">NetworkPolicy</a></code> | <code>*string</code> | Specifies an existing network policy that controls SCIM network traffic. For more information about this resource, see [docs](./network_policy). |
 | <code><a href="#@cdktf/provider-snowflake.scimIntegration.ScimIntegrationConfig.property.syncPassword">SyncPassword</a></code> | <code>*string</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether to enable or disable the synchronization of a user password from an Okta SCIM client as part of the API request to Snowflake. |
 | <code><a href="#@cdktf/provider-snowflake.scimIntegration.ScimIntegrationConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.scimIntegration.ScimIntegrationTimeouts">ScimIntegrationTimeouts</a></code> | timeouts block. |
@@ -1071,7 +1071,7 @@ Enabled interface{}
 
 Specify whether the security integration is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/scim_integration#enabled ScimIntegration#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/scim_integration#enabled ScimIntegration#enabled}
 
 ---
 
@@ -1085,7 +1085,7 @@ Name *string
 
 String that specifies the identifier (i.e. name) for the integration; must be unique in your account. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/scim_integration#name ScimIntegration#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/scim_integration#name ScimIntegration#name}
 
 ---
 
@@ -1101,7 +1101,7 @@ Specify the SCIM role in Snowflake that owns any users and roles that are import
 
 Provider assumes that the specified role is already provided. Valid options are: `OKTA_PROVISIONER` | `AAD_PROVISIONER` | `GENERIC_SCIM_PROVISIONER`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/scim_integration#run_as_role ScimIntegration#run_as_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/scim_integration#run_as_role ScimIntegration#run_as_role}
 
 ---
 
@@ -1115,7 +1115,7 @@ ScimClient *string
 
 Specifies the client type for the scim integration. Valid options are: `OKTA` | `AZURE` | `GENERIC`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/scim_integration#scim_client ScimIntegration#scim_client}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/scim_integration#scim_client ScimIntegration#scim_client}
 
 ---
 
@@ -1129,7 +1129,7 @@ Comment *string
 
 Specifies a comment for the integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/scim_integration#comment ScimIntegration#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/scim_integration#comment ScimIntegration#comment}
 
 ---
 
@@ -1141,7 +1141,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/scim_integration#id ScimIntegration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/scim_integration#id ScimIntegration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1158,7 +1158,7 @@ NetworkPolicy *string
 
 Specifies an existing network policy that controls SCIM network traffic. For more information about this resource, see [docs](./network_policy).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/scim_integration#network_policy ScimIntegration#network_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/scim_integration#network_policy ScimIntegration#network_policy}
 
 ---
 
@@ -1174,7 +1174,7 @@ SyncPassword *string
 
 This property is not supported for Azure SCIM. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/scim_integration#sync_password ScimIntegration#sync_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/scim_integration#sync_password ScimIntegration#sync_password}
 
 ---
 
@@ -1188,7 +1188,7 @@ Timeouts ScimIntegrationTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/scim_integration#timeouts ScimIntegration#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/scim_integration#timeouts ScimIntegration#timeouts}
 
 ---
 
@@ -1197,7 +1197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.scimIntegration.ScimIntegrationDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/scimintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/scimintegration"
 
 &scimintegration.ScimIntegrationDescribeOutput {
 
@@ -1210,7 +1210,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/scimintegrati
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.scimIntegration.ScimIntegrationDescribeOutputComment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/scimintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/scimintegration"
 
 &scimintegration.ScimIntegrationDescribeOutputComment {
 
@@ -1223,7 +1223,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/scimintegrati
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.scimIntegration.ScimIntegrationDescribeOutputEnabled.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/scimintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/scimintegration"
 
 &scimintegration.ScimIntegrationDescribeOutputEnabled {
 
@@ -1236,7 +1236,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/scimintegrati
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.scimIntegration.ScimIntegrationDescribeOutputNetworkPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/scimintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/scimintegration"
 
 &scimintegration.ScimIntegrationDescribeOutputNetworkPolicy {
 
@@ -1249,7 +1249,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/scimintegrati
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.scimIntegration.ScimIntegrationDescribeOutputRunAsRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/scimintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/scimintegration"
 
 &scimintegration.ScimIntegrationDescribeOutputRunAsRole {
 
@@ -1262,7 +1262,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/scimintegrati
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.scimIntegration.ScimIntegrationDescribeOutputSyncPassword.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/scimintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/scimintegration"
 
 &scimintegration.ScimIntegrationDescribeOutputSyncPassword {
 
@@ -1275,7 +1275,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/scimintegrati
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.scimIntegration.ScimIntegrationShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/scimintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/scimintegration"
 
 &scimintegration.ScimIntegrationShowOutput {
 
@@ -1288,7 +1288,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/scimintegrati
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.scimIntegration.ScimIntegrationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/scimintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/scimintegration"
 
 &scimintegration.ScimIntegrationTimeouts {
 	Create: *string,
@@ -1302,10 +1302,10 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/scimintegrati
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.scimIntegration.ScimIntegrationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/scim_integration#create ScimIntegration#create}. |
-| <code><a href="#@cdktf/provider-snowflake.scimIntegration.ScimIntegrationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/scim_integration#delete ScimIntegration#delete}. |
-| <code><a href="#@cdktf/provider-snowflake.scimIntegration.ScimIntegrationTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/scim_integration#read ScimIntegration#read}. |
-| <code><a href="#@cdktf/provider-snowflake.scimIntegration.ScimIntegrationTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/scim_integration#update ScimIntegration#update}. |
+| <code><a href="#@cdktf/provider-snowflake.scimIntegration.ScimIntegrationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/scim_integration#create ScimIntegration#create}. |
+| <code><a href="#@cdktf/provider-snowflake.scimIntegration.ScimIntegrationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/scim_integration#delete ScimIntegration#delete}. |
+| <code><a href="#@cdktf/provider-snowflake.scimIntegration.ScimIntegrationTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/scim_integration#read ScimIntegration#read}. |
+| <code><a href="#@cdktf/provider-snowflake.scimIntegration.ScimIntegrationTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/scim_integration#update ScimIntegration#update}. |
 
 ---
 
@@ -1317,7 +1317,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/scim_integration#create ScimIntegration#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/scim_integration#create ScimIntegration#create}.
 
 ---
 
@@ -1329,7 +1329,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/scim_integration#delete ScimIntegration#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/scim_integration#delete ScimIntegration#delete}.
 
 ---
 
@@ -1341,7 +1341,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/scim_integration#read ScimIntegration#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/scim_integration#read ScimIntegration#read}.
 
 ---
 
@@ -1353,7 +1353,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/scim_integration#update ScimIntegration#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/scim_integration#update ScimIntegration#update}.
 
 ---
 
@@ -1364,7 +1364,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.scimIntegration.ScimIntegrationDescribeOutputCommentList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/scimintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/scimintegration"
 
 scimintegration.NewScimIntegrationDescribeOutputCommentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ScimIntegrationDescribeOutputCommentList
 ```
@@ -1513,7 +1513,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.scimIntegration.ScimIntegrationDescribeOutputCommentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/scimintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/scimintegration"
 
 scimintegration.NewScimIntegrationDescribeOutputCommentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ScimIntegrationDescribeOutputCommentOutputReference
 ```
@@ -1824,7 +1824,7 @@ func InternalValue() ScimIntegrationDescribeOutputComment
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.scimIntegration.ScimIntegrationDescribeOutputEnabledList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/scimintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/scimintegration"
 
 scimintegration.NewScimIntegrationDescribeOutputEnabledList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ScimIntegrationDescribeOutputEnabledList
 ```
@@ -1973,7 +1973,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.scimIntegration.ScimIntegrationDescribeOutputEnabledOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/scimintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/scimintegration"
 
 scimintegration.NewScimIntegrationDescribeOutputEnabledOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ScimIntegrationDescribeOutputEnabledOutputReference
 ```
@@ -2284,7 +2284,7 @@ func InternalValue() ScimIntegrationDescribeOutputEnabled
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.scimIntegration.ScimIntegrationDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/scimintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/scimintegration"
 
 scimintegration.NewScimIntegrationDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ScimIntegrationDescribeOutputList
 ```
@@ -2433,7 +2433,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.scimIntegration.ScimIntegrationDescribeOutputNetworkPolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/scimintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/scimintegration"
 
 scimintegration.NewScimIntegrationDescribeOutputNetworkPolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ScimIntegrationDescribeOutputNetworkPolicyList
 ```
@@ -2582,7 +2582,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.scimIntegration.ScimIntegrationDescribeOutputNetworkPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/scimintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/scimintegration"
 
 scimintegration.NewScimIntegrationDescribeOutputNetworkPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ScimIntegrationDescribeOutputNetworkPolicyOutputReference
 ```
@@ -2893,7 +2893,7 @@ func InternalValue() ScimIntegrationDescribeOutputNetworkPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.scimIntegration.ScimIntegrationDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/scimintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/scimintegration"
 
 scimintegration.NewScimIntegrationDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ScimIntegrationDescribeOutputOutputReference
 ```
@@ -3215,7 +3215,7 @@ func InternalValue() ScimIntegrationDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.scimIntegration.ScimIntegrationDescribeOutputRunAsRoleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/scimintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/scimintegration"
 
 scimintegration.NewScimIntegrationDescribeOutputRunAsRoleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ScimIntegrationDescribeOutputRunAsRoleList
 ```
@@ -3364,7 +3364,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.scimIntegration.ScimIntegrationDescribeOutputRunAsRoleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/scimintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/scimintegration"
 
 scimintegration.NewScimIntegrationDescribeOutputRunAsRoleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ScimIntegrationDescribeOutputRunAsRoleOutputReference
 ```
@@ -3675,7 +3675,7 @@ func InternalValue() ScimIntegrationDescribeOutputRunAsRole
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.scimIntegration.ScimIntegrationDescribeOutputSyncPasswordList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/scimintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/scimintegration"
 
 scimintegration.NewScimIntegrationDescribeOutputSyncPasswordList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ScimIntegrationDescribeOutputSyncPasswordList
 ```
@@ -3824,7 +3824,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.scimIntegration.ScimIntegrationDescribeOutputSyncPasswordOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/scimintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/scimintegration"
 
 scimintegration.NewScimIntegrationDescribeOutputSyncPasswordOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ScimIntegrationDescribeOutputSyncPasswordOutputReference
 ```
@@ -4135,7 +4135,7 @@ func InternalValue() ScimIntegrationDescribeOutputSyncPassword
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.scimIntegration.ScimIntegrationShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/scimintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/scimintegration"
 
 scimintegration.NewScimIntegrationShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ScimIntegrationShowOutputList
 ```
@@ -4284,7 +4284,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.scimIntegration.ScimIntegrationShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/scimintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/scimintegration"
 
 scimintegration.NewScimIntegrationShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ScimIntegrationShowOutputOutputReference
 ```
@@ -4617,7 +4617,7 @@ func InternalValue() ScimIntegrationShowOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.scimIntegration.ScimIntegrationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/scimintegration"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/scimintegration"
 
 scimintegration.NewScimIntegrationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ScimIntegrationTimeoutsOutputReference
 ```

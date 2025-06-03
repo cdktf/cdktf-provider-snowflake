@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/network_policy_attachment
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/network_policy_attachment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface NetworkPolicyAttachmentConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/network_policy_attachment#id NetworkPolicyAttachment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/network_policy_attachment#id NetworkPolicyAttachment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,43 +17,43 @@ export interface NetworkPolicyAttachmentConfig extends cdktf.TerraformMetaArgume
   /**
   * Specifies the identifier for the network policy; must be unique for the account in which the network policy is created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/network_policy_attachment#network_policy_name NetworkPolicyAttachment#network_policy_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/network_policy_attachment#network_policy_name NetworkPolicyAttachment#network_policy_name}
   */
   readonly networkPolicyName: string;
   /**
   * (Default: `false`) Specifies whether the network policy should be applied globally to your Snowflake account<br><br>**Note:** The Snowflake user running `terraform apply` must be on an IP address allowed by the network policy to set that policy globally on the Snowflake account.<br><br>Additionally, a Snowflake account can only have one network policy set globally at any given time. This resource does not enforce one-policy-per-account, it is the user's responsibility to enforce this. If multiple network policy resources have `set_for_account: true`, the final policy set on the account will be non-deterministic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/network_policy_attachment#set_for_account NetworkPolicyAttachment#set_for_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/network_policy_attachment#set_for_account NetworkPolicyAttachment#set_for_account}
   */
   readonly setForAccount?: boolean | cdktf.IResolvable;
   /**
   * Specifies which users the network policy should be attached to
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/network_policy_attachment#users NetworkPolicyAttachment#users}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/network_policy_attachment#users NetworkPolicyAttachment#users}
   */
   readonly users?: string[];
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/network_policy_attachment#timeouts NetworkPolicyAttachment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/network_policy_attachment#timeouts NetworkPolicyAttachment#timeouts}
   */
   readonly timeouts?: NetworkPolicyAttachmentTimeouts;
 }
 export interface NetworkPolicyAttachmentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/network_policy_attachment#create NetworkPolicyAttachment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/network_policy_attachment#create NetworkPolicyAttachment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/network_policy_attachment#delete NetworkPolicyAttachment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/network_policy_attachment#delete NetworkPolicyAttachment#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/network_policy_attachment#read NetworkPolicyAttachment#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/network_policy_attachment#read NetworkPolicyAttachment#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/network_policy_attachment#update NetworkPolicyAttachment#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/network_policy_attachment#update NetworkPolicyAttachment#update}
   */
   readonly update?: string;
 }
@@ -239,7 +234,7 @@ export class NetworkPolicyAttachmentTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/network_policy_attachment snowflake_network_policy_attachment}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/network_policy_attachment snowflake_network_policy_attachment}
 */
 export class NetworkPolicyAttachment extends cdktf.TerraformResource {
 
@@ -255,7 +250,7 @@ export class NetworkPolicyAttachment extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a NetworkPolicyAttachment resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkPolicyAttachment to import
-  * @param importFromId The id of the existing NetworkPolicyAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/network_policy_attachment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetworkPolicyAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/network_policy_attachment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkPolicyAttachment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -267,7 +262,7 @@ export class NetworkPolicyAttachment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/network_policy_attachment snowflake_network_policy_attachment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/network_policy_attachment snowflake_network_policy_attachment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -278,8 +273,8 @@ export class NetworkPolicyAttachment extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_network_policy_attachment',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '1.2.1',
-        providerVersionConstraint: ' ~> 1.0'
+        providerVersion: '2.1.0',
+        providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

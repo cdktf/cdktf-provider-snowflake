@@ -4,12 +4,12 @@
 
 ### View <a name="View" id="@cdktf/provider-snowflake.view.View"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/view snowflake_view}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/view snowflake_view}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.view.View.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
 
 view.NewView(scope Construct, id *string, config ViewConfig) View
 ```
@@ -547,7 +547,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.view.View.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
 
 view.View_IsConstruct(x interface{}) *bool
 ```
@@ -579,7 +579,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.view.View.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
 
 view.View_IsTerraformElement(x interface{}) *bool
 ```
@@ -593,7 +593,7 @@ view.View_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.view.View.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
 
 view.View_IsTerraformResource(x interface{}) *bool
 ```
@@ -607,7 +607,7 @@ view.View_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.view.View.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
 
 view.View_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -636,7 +636,7 @@ The construct id used in the generated config for the View to import.
 
 The id of the existing View that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/view#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/view#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1243,7 +1243,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.view.ViewAggregationPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
 
 &view.ViewAggregationPolicy {
 	PolicyName: *string,
@@ -1270,7 +1270,7 @@ PolicyName *string
 
 Aggregation policy name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/view#policy_name View#policy_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/view#policy_name View#policy_name}
 
 ---
 
@@ -1284,7 +1284,7 @@ EntityKey *[]*string
 
 Defines which columns uniquely identify an entity within the view.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/view#entity_key View#entity_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/view#entity_key View#entity_key}
 
 ---
 
@@ -1293,13 +1293,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.view.ViewColumn.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
 
 &view.ViewColumn {
 	ColumnName: *string,
 	Comment: *string,
-	MaskingPolicy: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14.view.ViewColumnMaskingPolicy,
-	ProjectionPolicy: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14.view.ViewColumnProjectionPolicy,
+	MaskingPolicy: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.view.ViewColumnMaskingPolicy,
+	ProjectionPolicy: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.view.ViewColumnProjectionPolicy,
 }
 ```
 
@@ -1324,7 +1324,7 @@ ColumnName *string
 
 Specifies affected column name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/view#column_name View#column_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/view#column_name View#column_name}
 
 ---
 
@@ -1338,7 +1338,7 @@ Comment *string
 
 Specifies a comment for the column.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/view#comment View#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/view#comment View#comment}
 
 ---
 
@@ -1352,7 +1352,7 @@ MaskingPolicy ViewColumnMaskingPolicy
 
 masking_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/view#masking_policy View#masking_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/view#masking_policy View#masking_policy}
 
 ---
 
@@ -1366,7 +1366,7 @@ ProjectionPolicy ViewColumnProjectionPolicy
 
 projection_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/view#projection_policy View#projection_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/view#projection_policy View#projection_policy}
 
 ---
 
@@ -1375,7 +1375,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.view.ViewColumnMaskingPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
 
 &view.ViewColumnMaskingPolicy {
 	PolicyName: *string,
@@ -1402,7 +1402,7 @@ PolicyName *string
 
 Specifies the masking policy to set on a column. For more information about this resource, see [docs](./masking_policy).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/view#policy_name View#policy_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/view#policy_name View#policy_name}
 
 ---
 
@@ -1418,7 +1418,7 @@ Specifies the arguments to pass into the conditional masking policy SQL expressi
 
 The first column in the list specifies the column for the policy conditions to mask or tokenize the data and must match the column to which the masking policy is set. The additional columns specify the columns to evaluate to determine whether to mask or tokenize the data in each row of the query result when a query is made on the first column. If the USING clause is omitted, Snowflake treats the conditional masking policy as a normal masking policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/view#using View#using}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/view#using View#using}
 
 ---
 
@@ -1427,7 +1427,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.view.ViewColumnProjectionPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
 
 &view.ViewColumnProjectionPolicy {
 	PolicyName: *string,
@@ -1452,7 +1452,7 @@ PolicyName *string
 
 Specifies the projection policy to set on a column.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/view#policy_name View#policy_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/view#policy_name View#policy_name}
 
 ---
 
@@ -1461,7 +1461,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.view.ViewConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
 
 &view.ViewConfig {
 	Connection: interface{},
@@ -1475,19 +1475,19 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/view"
 	Name: *string,
 	Schema: *string,
 	Statement: *string,
-	AggregationPolicy: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14.view.ViewAggregationPolicy,
+	AggregationPolicy: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.view.ViewAggregationPolicy,
 	ChangeTracking: *string,
 	Column: interface{},
 	Comment: *string,
 	CopyGrants: interface{},
 	DataMetricFunction: interface{},
-	DataMetricSchedule: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14.view.ViewDataMetricSchedule,
+	DataMetricSchedule: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.view.ViewDataMetricSchedule,
 	Id: *string,
 	IsRecursive: *string,
 	IsSecure: *string,
 	IsTemporary: *string,
-	RowAccessPolicy: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14.view.ViewRowAccessPolicy,
-	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14.view.ViewTimeouts,
+	RowAccessPolicy: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.view.ViewRowAccessPolicy,
+	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.view.ViewTimeouts,
 }
 ```
 
@@ -1513,7 +1513,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/view"
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.copyGrants">CopyGrants</a></code> | <code>interface{}</code> | (Default: `false`) Retains the access permissions from the original view when a view is recreated using the OR REPLACE clause. |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.dataMetricFunction">DataMetricFunction</a></code> | <code>interface{}</code> | data_metric_function block. |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.dataMetricSchedule">DataMetricSchedule</a></code> | <code><a href="#@cdktf/provider-snowflake.view.ViewDataMetricSchedule">ViewDataMetricSchedule</a></code> | data_metric_schedule block. |
-| <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/view#id View#id}. |
+| <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/view#id View#id}. |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.isRecursive">IsRecursive</a></code> | <code>*string</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies that the view can refer to itself using recursive syntax without necessarily using a CTE (common table expression). |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.isSecure">IsSecure</a></code> | <code>*string</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies that the view is secure. |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.isTemporary">IsTemporary</a></code> | <code>*string</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies that the view persists only for the duration of the session that you created it in. |
@@ -1604,7 +1604,7 @@ The database in which to create the view.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/view#database View#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/view#database View#database}
 
 ---
 
@@ -1620,7 +1620,7 @@ Specifies the identifier for the view;
 
 must be unique for the schema in which the view is created. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/view#name View#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/view#name View#name}
 
 ---
 
@@ -1636,7 +1636,7 @@ The schema in which to create the view.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/view#schema View#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/view#schema View#schema}
 
 ---
 
@@ -1652,7 +1652,7 @@ Specifies the query used to create the view.
 
 To mitigate permadiff on this field, the provider replaces blank characters with a space. This can lead to false positives in cases where a change in case or run of whitespace is semantically significant.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/view#statement View#statement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/view#statement View#statement}
 
 ---
 
@@ -1666,7 +1666,7 @@ AggregationPolicy ViewAggregationPolicy
 
 aggregation_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/view#aggregation_policy View#aggregation_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/view#aggregation_policy View#aggregation_policy}
 
 ---
 
@@ -1682,7 +1682,7 @@ ChangeTracking *string
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/view#change_tracking View#change_tracking}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/view#change_tracking View#change_tracking}
 
 ---
 
@@ -1696,7 +1696,7 @@ Column interface{}
 
 column block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/view#column View#column}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/view#column View#column}
 
 ---
 
@@ -1710,7 +1710,7 @@ Comment *string
 
 Specifies a comment for the view.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/view#comment View#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/view#comment View#comment}
 
 ---
 
@@ -1726,7 +1726,7 @@ CopyGrants interface{}
 
 This is used when the provider detects changes for fields that can not be changed by ALTER. This value will not have any effect during creating a new object with Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/view#copy_grants View#copy_grants}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/view#copy_grants View#copy_grants}
 
 ---
 
@@ -1740,7 +1740,7 @@ DataMetricFunction interface{}
 
 data_metric_function block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/view#data_metric_function View#data_metric_function}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/view#data_metric_function View#data_metric_function}
 
 ---
 
@@ -1754,7 +1754,7 @@ DataMetricSchedule ViewDataMetricSchedule
 
 data_metric_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/view#data_metric_schedule View#data_metric_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/view#data_metric_schedule View#data_metric_schedule}
 
 ---
 
@@ -1766,7 +1766,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/view#id View#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/view#id View#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1785,7 +1785,7 @@ IsRecursive *string
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/view#is_recursive View#is_recursive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/view#is_recursive View#is_recursive}
 
 ---
 
@@ -1801,7 +1801,7 @@ IsSecure *string
 
 By design, the Snowflake's `SHOW VIEWS` command does not provide information about secure views (consult [view usage notes](https://docs.snowflake.com/en/sql-reference/sql/create-view#usage-notes)) which is essential to manage/import view with Terraform. Use the role owning the view while managing secure views. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/view#is_secure View#is_secure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/view#is_secure View#is_secure}
 
 ---
 
@@ -1817,7 +1817,7 @@ IsTemporary *string
 
 A temporary view and all its contents are dropped at the end of the session. In context of this provider, it means that it's dropped after a Terraform operation. This results in a permanent plan with object creation. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/view#is_temporary View#is_temporary}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/view#is_temporary View#is_temporary}
 
 ---
 
@@ -1831,7 +1831,7 @@ RowAccessPolicy ViewRowAccessPolicy
 
 row_access_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/view#row_access_policy View#row_access_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/view#row_access_policy View#row_access_policy}
 
 ---
 
@@ -1845,7 +1845,7 @@ Timeouts ViewTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/view#timeouts View#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/view#timeouts View#timeouts}
 
 ---
 
@@ -1854,7 +1854,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.view.ViewDataMetricFunction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
 
 &view.ViewDataMetricFunction {
 	FunctionName: *string,
@@ -1885,7 +1885,7 @@ Identifier of the data metric function to add to the table or view or drop from 
 
 This function identifier must be provided without arguments in parenthesis.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/view#function_name View#function_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/view#function_name View#function_name}
 
 ---
 
@@ -1901,7 +1901,7 @@ The table or view columns on which to associate the data metric function.
 
 The data types of the columns must match the data types of the columns specified in the data metric function definition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/view#on View#on}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/view#on View#on}
 
 ---
 
@@ -1917,7 +1917,7 @@ The status of the metrics association.
 
 Valid values are: `STARTED` | `SUSPENDED`. When status of a data metric function is changed, it is being reassigned with `DROP DATA METRIC FUNCTION` and `ADD DATA METRIC FUNCTION`, and then its status is changed by `MODIFY DATA METRIC FUNCTION`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/view#schedule_status View#schedule_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/view#schedule_status View#schedule_status}
 
 ---
 
@@ -1926,7 +1926,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.view.ViewDataMetricSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
 
 &view.ViewDataMetricSchedule {
 	Minutes: *f64,
@@ -1955,7 +1955,7 @@ Specifies an interval (in minutes) of wait time inserted between runs of the dat
 
 Conflicts with `using_cron`. Valid values are: `5` | `15` | `30` | `60` | `720` | `1440`. Due to Snowflake limitations, changes in this field are not managed by the provider. Please consider using [taint](https://developer.hashicorp.com/terraform/cli/commands/taint) command, `using_cron` field, or [replace_triggered_by](https://developer.hashicorp.com/terraform/language/meta-arguments/lifecycle#replace_triggered_by) metadata argument.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/view#minutes View#minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/view#minutes View#minutes}
 
 ---
 
@@ -1971,7 +1971,7 @@ Specifies a cron expression and time zone for periodically running the data metr
 
 Supports a subset of standard cron utility syntax. Conflicts with `minutes`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/view#using_cron View#using_cron}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/view#using_cron View#using_cron}
 
 ---
 
@@ -1980,7 +1980,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.view.ViewDescribeOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
 
 &view.ViewDescribeOutput {
 
@@ -1993,7 +1993,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/view"
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.view.ViewRowAccessPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
 
 &view.ViewRowAccessPolicy {
 	On: *[]*string,
@@ -2020,7 +2020,7 @@ On *[]*string
 
 Defines which columns are affected by the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/view#on View#on}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/view#on View#on}
 
 ---
 
@@ -2034,7 +2034,7 @@ PolicyName *string
 
 Row access policy name. For more information about this resource, see [docs](./row_access_policy).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/view#policy_name View#policy_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/view#policy_name View#policy_name}
 
 ---
 
@@ -2043,7 +2043,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.view.ViewShowOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
 
 &view.ViewShowOutput {
 
@@ -2056,7 +2056,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/view"
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.view.ViewTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
 
 &view.ViewTimeouts {
 	Create: *string,
@@ -2070,10 +2070,10 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/view"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.view.ViewTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/view#create View#create}. |
-| <code><a href="#@cdktf/provider-snowflake.view.ViewTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/view#delete View#delete}. |
-| <code><a href="#@cdktf/provider-snowflake.view.ViewTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/view#read View#read}. |
-| <code><a href="#@cdktf/provider-snowflake.view.ViewTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/view#update View#update}. |
+| <code><a href="#@cdktf/provider-snowflake.view.ViewTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/view#create View#create}. |
+| <code><a href="#@cdktf/provider-snowflake.view.ViewTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/view#delete View#delete}. |
+| <code><a href="#@cdktf/provider-snowflake.view.ViewTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/view#read View#read}. |
+| <code><a href="#@cdktf/provider-snowflake.view.ViewTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/view#update View#update}. |
 
 ---
 
@@ -2085,7 +2085,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/view#create View#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/view#create View#create}.
 
 ---
 
@@ -2097,7 +2097,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/view#delete View#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/view#delete View#delete}.
 
 ---
 
@@ -2109,7 +2109,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/view#read View#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/view#read View#read}.
 
 ---
 
@@ -2121,7 +2121,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/view#update View#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/view#update View#update}.
 
 ---
 
@@ -2132,7 +2132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.view.ViewAggregationPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
 
 view.NewViewAggregationPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ViewAggregationPolicyOutputReference
 ```
@@ -2432,7 +2432,7 @@ func InternalValue() ViewAggregationPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.view.ViewColumnList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
 
 view.NewViewColumnList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ViewColumnList
 ```
@@ -2592,7 +2592,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.view.ViewColumnMaskingPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
 
 view.NewViewColumnMaskingPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ViewColumnMaskingPolicyOutputReference
 ```
@@ -2892,7 +2892,7 @@ func InternalValue() ViewColumnMaskingPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.view.ViewColumnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
 
 view.NewViewColumnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ViewColumnOutputReference
 ```
@@ -3294,7 +3294,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.view.ViewColumnProjectionPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
 
 view.NewViewColumnProjectionPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ViewColumnProjectionPolicyOutputReference
 ```
@@ -3565,7 +3565,7 @@ func InternalValue() ViewColumnProjectionPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.view.ViewDataMetricFunctionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
 
 view.NewViewDataMetricFunctionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ViewDataMetricFunctionList
 ```
@@ -3725,7 +3725,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.view.ViewDataMetricFunctionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
 
 view.NewViewDataMetricFunctionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ViewDataMetricFunctionOutputReference
 ```
@@ -4058,7 +4058,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.view.ViewDataMetricScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
 
 view.NewViewDataMetricScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ViewDataMetricScheduleOutputReference
 ```
@@ -4365,7 +4365,7 @@ func InternalValue() ViewDataMetricSchedule
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.view.ViewDescribeOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
 
 view.NewViewDescribeOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ViewDescribeOutputList
 ```
@@ -4514,7 +4514,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.view.ViewDescribeOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
 
 view.NewViewDescribeOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ViewDescribeOutputOutputReference
 ```
@@ -4913,7 +4913,7 @@ func InternalValue() ViewDescribeOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.view.ViewRowAccessPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
 
 view.NewViewRowAccessPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ViewRowAccessPolicyOutputReference
 ```
@@ -5206,7 +5206,7 @@ func InternalValue() ViewRowAccessPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.view.ViewShowOutputList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
 
 view.NewViewShowOutputList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ViewShowOutputList
 ```
@@ -5355,7 +5355,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.view.ViewShowOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
 
 view.NewViewShowOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ViewShowOutputOutputReference
 ```
@@ -5765,7 +5765,7 @@ func InternalValue() ViewShowOutput
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.view.ViewTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/view"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/view"
 
 view.NewViewTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ViewTimeoutsOutputReference
 ```

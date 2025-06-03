@@ -4,12 +4,12 @@
 
 ### Execute <a name="Execute" id="@cdktf/provider-snowflake.execute.Execute"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/execute snowflake_execute}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/execute snowflake_execute}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.execute.Execute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/execute"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/execute"
 
 execute.NewExecute(scope Construct, id *string, config ExecuteConfig) Execute
 ```
@@ -412,7 +412,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.execute.Execute.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/execute"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/execute"
 
 execute.Execute_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.execute.Execute.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/execute"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/execute"
 
 execute.Execute_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ execute.Execute_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.execute.Execute.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/execute"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/execute"
 
 execute.Execute_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ execute.Execute_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.execute.Execute.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/execute"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/execute"
 
 execute.Execute_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -501,7 +501,7 @@ The construct id used in the generated config for the Execute to import.
 
 The id of the existing Execute that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/execute#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/execute#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -822,7 +822,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.execute.ExecuteConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/execute"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/execute"
 
 &execute.ExecuteConfig {
 	Connection: interface{},
@@ -836,7 +836,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/execute"
 	Revert: *string,
 	Id: *string,
 	Query: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14.execute.ExecuteTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake.execute.ExecuteTimeouts,
 }
 ```
 
@@ -853,7 +853,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/execute"
 | <code><a href="#@cdktf/provider-snowflake.execute.ExecuteConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.execute.ExecuteConfig.property.execute">Execute</a></code> | <code>*string</code> | SQL statement to execute. Forces recreation of resource on change. |
 | <code><a href="#@cdktf/provider-snowflake.execute.ExecuteConfig.property.revert">Revert</a></code> | <code>*string</code> | SQL statement to revert the execute statement. Invoked when resource is being destroyed. |
-| <code><a href="#@cdktf/provider-snowflake.execute.ExecuteConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/execute#id Execute#id}. |
+| <code><a href="#@cdktf/provider-snowflake.execute.ExecuteConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/execute#id Execute#id}. |
 | <code><a href="#@cdktf/provider-snowflake.execute.ExecuteConfig.property.query">Query</a></code> | <code>*string</code> | Optional SQL statement to do a read. Invoked on every resource refresh and every time it is changed. |
 | <code><a href="#@cdktf/provider-snowflake.execute.ExecuteConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.execute.ExecuteTimeouts">ExecuteTimeouts</a></code> | timeouts block. |
 
@@ -939,7 +939,7 @@ Execute *string
 
 SQL statement to execute. Forces recreation of resource on change.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/execute#execute Execute#execute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/execute#execute Execute#execute}
 
 ---
 
@@ -953,7 +953,7 @@ Revert *string
 
 SQL statement to revert the execute statement. Invoked when resource is being destroyed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/execute#revert Execute#revert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/execute#revert Execute#revert}
 
 ---
 
@@ -965,7 +965,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/execute#id Execute#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/execute#id Execute#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -982,7 +982,7 @@ Query *string
 
 Optional SQL statement to do a read. Invoked on every resource refresh and every time it is changed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/execute#query Execute#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/execute#query Execute#query}
 
 ---
 
@@ -996,7 +996,7 @@ Timeouts ExecuteTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/execute#timeouts Execute#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/execute#timeouts Execute#timeouts}
 
 ---
 
@@ -1005,7 +1005,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.execute.ExecuteTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/execute"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/execute"
 
 &execute.ExecuteTimeouts {
 	Create: *string,
@@ -1019,10 +1019,10 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/execute"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.execute.ExecuteTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/execute#create Execute#create}. |
-| <code><a href="#@cdktf/provider-snowflake.execute.ExecuteTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/execute#delete Execute#delete}. |
-| <code><a href="#@cdktf/provider-snowflake.execute.ExecuteTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/execute#read Execute#read}. |
-| <code><a href="#@cdktf/provider-snowflake.execute.ExecuteTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/execute#update Execute#update}. |
+| <code><a href="#@cdktf/provider-snowflake.execute.ExecuteTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/execute#create Execute#create}. |
+| <code><a href="#@cdktf/provider-snowflake.execute.ExecuteTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/execute#delete Execute#delete}. |
+| <code><a href="#@cdktf/provider-snowflake.execute.ExecuteTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/execute#read Execute#read}. |
+| <code><a href="#@cdktf/provider-snowflake.execute.ExecuteTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/execute#update Execute#update}. |
 
 ---
 
@@ -1034,7 +1034,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/execute#create Execute#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/execute#create Execute#create}.
 
 ---
 
@@ -1046,7 +1046,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/execute#delete Execute#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/execute#delete Execute#delete}.
 
 ---
 
@@ -1058,7 +1058,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/execute#read Execute#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/execute#read Execute#read}.
 
 ---
 
@@ -1070,7 +1070,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/resources/execute#update Execute#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/resources/execute#update Execute#update}.
 
 ---
 
@@ -1081,7 +1081,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.execute.ExecuteTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/execute"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/execute"
 
 execute.NewExecuteTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ExecuteTimeoutsOutputReference
 ```

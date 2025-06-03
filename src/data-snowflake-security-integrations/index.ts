@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/security_integrations
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/data-sources/security_integrations
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataSnowflakeSecurityIntegrationsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/security_integrations#id DataSnowflakeSecurityIntegrations#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/data-sources/security_integrations#id DataSnowflakeSecurityIntegrations#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,13 +17,13 @@ export interface DataSnowflakeSecurityIntegrationsConfig extends cdktf.Terraform
   /**
   * Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/security_integrations#like DataSnowflakeSecurityIntegrations#like}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/data-sources/security_integrations#like DataSnowflakeSecurityIntegrations#like}
   */
   readonly like?: string;
   /**
   * (Default: `true`) Runs DESC SECURITY INTEGRATION for each security integration returned by SHOW SECURITY INTEGRATIONS. The output of describe is saved to the description field. By default this value is set to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/security_integrations#with_describe DataSnowflakeSecurityIntegrations#with_describe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/data-sources/security_integrations#with_describe DataSnowflakeSecurityIntegrations#with_describe}
   */
   readonly withDescribe?: boolean | cdktf.IResolvable;
 }
@@ -2282,96 +2277,6 @@ export class DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutput
     return new DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientAuthMethodOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientId {
-}
-
-export function dataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientIdToTerraform(struct?: DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientId): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-  }
-}
-
-
-export function dataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientIdToHclTerraform(struct?: DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientId): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientIdOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientId | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientId | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // default - computed: true, optional: false, required: false
-  public get default() {
-    return this.getStringAttribute('default');
-  }
-
-  // name - computed: true, optional: false, required: false
-  public get name() {
-    return this.getStringAttribute('name');
-  }
-
-  // type - computed: true, optional: false, required: false
-  public get type() {
-    return this.getStringAttribute('type');
-  }
-
-  // value - computed: true, optional: false, required: false
-  public get value() {
-    return this.getStringAttribute('value');
-  }
-}
-
-export class DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientIdList extends cdktf.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientIdOutputReference {
-    return new DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientIdOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
 export interface DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientRsaPublicKey2Fp {
 }
 
@@ -2910,96 +2815,6 @@ export class DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutput
   */
   public get(index: number): DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthIssueRefreshTokensOutputReference {
     return new DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthIssueRefreshTokensOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthRedirectUri {
-}
-
-export function dataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthRedirectUriToTerraform(struct?: DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthRedirectUri): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-  }
-}
-
-
-export function dataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthRedirectUriToHclTerraform(struct?: DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthRedirectUri): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthRedirectUriOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthRedirectUri | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthRedirectUri | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // default - computed: true, optional: false, required: false
-  public get default() {
-    return this.getStringAttribute('default');
-  }
-
-  // name - computed: true, optional: false, required: false
-  public get name() {
-    return this.getStringAttribute('name');
-  }
-
-  // type - computed: true, optional: false, required: false
-  public get type() {
-    return this.getStringAttribute('type');
-  }
-
-  // value - computed: true, optional: false, required: false
-  public get value() {
-    return this.getStringAttribute('value');
-  }
-}
-
-export class DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthRedirectUriList extends cdktf.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthRedirectUriOutputReference {
-    return new DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthRedirectUriOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthRefreshTokenValidity {
@@ -4622,96 +4437,6 @@ export class DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutput
     return new DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SnowflakeMetadataOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SnowflakeX509Cert {
-}
-
-export function dataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SnowflakeX509CertToTerraform(struct?: DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SnowflakeX509Cert): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-  }
-}
-
-
-export function dataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SnowflakeX509CertToHclTerraform(struct?: DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SnowflakeX509Cert): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SnowflakeX509CertOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SnowflakeX509Cert | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SnowflakeX509Cert | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // default - computed: true, optional: false, required: false
-  public get default() {
-    return this.getStringAttribute('default');
-  }
-
-  // name - computed: true, optional: false, required: false
-  public get name() {
-    return this.getStringAttribute('name');
-  }
-
-  // type - computed: true, optional: false, required: false
-  public get type() {
-    return this.getStringAttribute('type');
-  }
-
-  // value - computed: true, optional: false, required: false
-  public get value() {
-    return this.getStringAttribute('value');
-  }
-}
-
-export class DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SnowflakeX509CertList extends cdktf.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SnowflakeX509CertOutputReference {
-    return new DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SnowflakeX509CertOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
 export interface DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SpInitiatedLoginPageLabel {
 }
 
@@ -4890,96 +4615,6 @@ export class DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutput
   */
   public get(index: number): DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SsoUrlOutputReference {
     return new DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SsoUrlOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2X509Cert {
-}
-
-export function dataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2X509CertToTerraform(struct?: DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2X509Cert): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-  }
-}
-
-
-export function dataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2X509CertToHclTerraform(struct?: DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2X509Cert): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2X509CertOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2X509Cert | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2X509Cert | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // default - computed: true, optional: false, required: false
-  public get default() {
-    return this.getStringAttribute('default');
-  }
-
-  // name - computed: true, optional: false, required: false
-  public get name() {
-    return this.getStringAttribute('name');
-  }
-
-  // type - computed: true, optional: false, required: false
-  public get type() {
-    return this.getStringAttribute('type');
-  }
-
-  // value - computed: true, optional: false, required: false
-  public get value() {
-    return this.getStringAttribute('value');
-  }
-}
-
-export class DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2X509CertList extends cdktf.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2X509CertOutputReference {
-    return new DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2X509CertOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSyncPassword {
@@ -5273,12 +4908,6 @@ export class DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutput
     return this._oauthClientAuthMethod;
   }
 
-  // oauth_client_id - computed: true, optional: false, required: false
-  private _oauthClientId = new DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientIdList(this, "oauth_client_id", false);
-  public get oauthClientId() {
-    return this._oauthClientId;
-  }
-
   // oauth_client_rsa_public_key_2_fp - computed: true, optional: false, required: false
   private _oauthClientRsaPublicKey2Fp = new DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthClientRsaPublicKey2FpList(this, "oauth_client_rsa_public_key_2_fp", false);
   public get oauthClientRsaPublicKey2Fp() {
@@ -5313,12 +4942,6 @@ export class DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutput
   private _oauthIssueRefreshTokens = new DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthIssueRefreshTokensList(this, "oauth_issue_refresh_tokens", false);
   public get oauthIssueRefreshTokens() {
     return this._oauthIssueRefreshTokens;
-  }
-
-  // oauth_redirect_uri - computed: true, optional: false, required: false
-  private _oauthRedirectUri = new DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputOauthRedirectUriList(this, "oauth_redirect_uri", false);
-  public get oauthRedirectUri() {
-    return this._oauthRedirectUri;
   }
 
   // oauth_refresh_token_validity - computed: true, optional: false, required: false
@@ -5429,12 +5052,6 @@ export class DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutput
     return this._saml2SnowflakeMetadata;
   }
 
-  // saml2_snowflake_x509_cert - computed: true, optional: false, required: false
-  private _saml2SnowflakeX509Cert = new DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SnowflakeX509CertList(this, "saml2_snowflake_x509_cert", false);
-  public get saml2SnowflakeX509Cert() {
-    return this._saml2SnowflakeX509Cert;
-  }
-
   // saml2_sp_initiated_login_page_label - computed: true, optional: false, required: false
   private _saml2SpInitiatedLoginPageLabel = new DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SpInitiatedLoginPageLabelList(this, "saml2_sp_initiated_login_page_label", false);
   public get saml2SpInitiatedLoginPageLabel() {
@@ -5445,12 +5062,6 @@ export class DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutput
   private _saml2SsoUrl = new DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2SsoUrlList(this, "saml2_sso_url", false);
   public get saml2SsoUrl() {
     return this._saml2SsoUrl;
-  }
-
-  // saml2_x509_cert - computed: true, optional: false, required: false
-  private _saml2X509Cert = new DataSnowflakeSecurityIntegrationsSecurityIntegrationsDescribeOutputSaml2X509CertList(this, "saml2_x509_cert", false);
-  public get saml2X509Cert() {
-    return this._saml2X509Cert;
   }
 
   // sync_password - computed: true, optional: false, required: false
@@ -5662,7 +5273,7 @@ export class DataSnowflakeSecurityIntegrationsSecurityIntegrationsList extends c
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/security_integrations snowflake_security_integrations}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/data-sources/security_integrations snowflake_security_integrations}
 */
 export class DataSnowflakeSecurityIntegrations extends cdktf.TerraformDataSource {
 
@@ -5678,7 +5289,7 @@ export class DataSnowflakeSecurityIntegrations extends cdktf.TerraformDataSource
   * Generates CDKTF code for importing a DataSnowflakeSecurityIntegrations resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataSnowflakeSecurityIntegrations to import
-  * @param importFromId The id of the existing DataSnowflakeSecurityIntegrations that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/security_integrations#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataSnowflakeSecurityIntegrations that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/data-sources/security_integrations#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataSnowflakeSecurityIntegrations to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -5690,7 +5301,7 @@ export class DataSnowflakeSecurityIntegrations extends cdktf.TerraformDataSource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/1.2.1/docs/data-sources/security_integrations snowflake_security_integrations} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.0/docs/data-sources/security_integrations snowflake_security_integrations} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -5701,8 +5312,8 @@ export class DataSnowflakeSecurityIntegrations extends cdktf.TerraformDataSource
       terraformResourceType: 'snowflake_security_integrations',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '1.2.1',
-        providerVersionConstraint: ' ~> 1.0'
+        providerVersion: '2.1.0',
+        providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
