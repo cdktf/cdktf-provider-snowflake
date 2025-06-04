@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.grantPrivilegesToAccountRole.GrantPrivilegesToAccountRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/grantprivilegestoaccountrole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/grantprivilegestoaccountrole"
 
 grantprivilegestoaccountrole.NewGrantPrivilegesToAccountRole(scope Construct, id *string, config GrantPrivilegesToAccountRoleConfig) GrantPrivilegesToAccountRole
 ```
@@ -507,7 +507,7 @@ func ResetWithGrantOption()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.grantPrivilegesToAccountRole.GrantPrivilegesToAccountRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/grantprivilegestoaccountrole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/grantprivilegestoaccountrole"
 
 grantprivilegestoaccountrole.GrantPrivilegesToAccountRole_IsConstruct(x interface{}) *bool
 ```
@@ -539,7 +539,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.grantPrivilegesToAccountRole.GrantPrivilegesToAccountRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/grantprivilegestoaccountrole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/grantprivilegestoaccountrole"
 
 grantprivilegestoaccountrole.GrantPrivilegesToAccountRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -553,7 +553,7 @@ grantprivilegestoaccountrole.GrantPrivilegesToAccountRole_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.grantPrivilegesToAccountRole.GrantPrivilegesToAccountRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/grantprivilegestoaccountrole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/grantprivilegestoaccountrole"
 
 grantprivilegestoaccountrole.GrantPrivilegesToAccountRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -567,7 +567,7 @@ grantprivilegestoaccountrole.GrantPrivilegesToAccountRole_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.grantPrivilegesToAccountRole.GrantPrivilegesToAccountRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/grantprivilegestoaccountrole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/grantprivilegestoaccountrole"
 
 grantprivilegestoaccountrole.GrantPrivilegesToAccountRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1060,7 +1060,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.grantPrivilegesToAccountRole.GrantPrivilegesToAccountRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/grantprivilegestoaccountrole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/grantprivilegestoaccountrole"
 
 &grantprivilegestoaccountrole.GrantPrivilegesToAccountRoleConfig {
 	Connection: interface{},
@@ -1076,11 +1076,11 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/grantprivileg
 	AlwaysApplyTrigger: *string,
 	Id: *string,
 	OnAccount: interface{},
-	OnAccountObject: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14.grantPrivilegesToAccountRole.GrantPrivilegesToAccountRoleOnAccountObject,
-	OnSchema: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14.grantPrivilegesToAccountRole.GrantPrivilegesToAccountRoleOnSchema,
-	OnSchemaObject: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14.grantPrivilegesToAccountRole.GrantPrivilegesToAccountRoleOnSchemaObject,
+	OnAccountObject: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.grantPrivilegesToAccountRole.GrantPrivilegesToAccountRoleOnAccountObject,
+	OnSchema: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.grantPrivilegesToAccountRole.GrantPrivilegesToAccountRoleOnSchema,
+	OnSchemaObject: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.grantPrivilegesToAccountRole.GrantPrivilegesToAccountRoleOnSchemaObject,
 	Privileges: *[]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14.grantPrivilegesToAccountRole.GrantPrivilegesToAccountRoleTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.grantPrivilegesToAccountRole.GrantPrivilegesToAccountRoleTimeouts,
 	WithGrantOption: interface{},
 }
 ```
@@ -1363,7 +1363,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.grantPrivilegesToAccountRole.GrantPrivilegesToAccountRoleOnAccountObject.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/grantprivilegestoaccountrole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/grantprivilegestoaccountrole"
 
 &grantprivilegestoaccountrole.GrantPrivilegesToAccountRoleOnAccountObject {
 	ObjectName: *string,
@@ -1415,7 +1415,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.grantPrivilegesToAccountRole.GrantPrivilegesToAccountRoleOnSchema.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/grantprivilegestoaccountrole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/grantprivilegestoaccountrole"
 
 &grantprivilegestoaccountrole.GrantPrivilegesToAccountRoleOnSchema {
 	AllSchemasInDatabase: *string,
@@ -1481,11 +1481,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.grantPrivilegesToAccountRole.GrantPrivilegesToAccountRoleOnSchemaObject.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/grantprivilegestoaccountrole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/grantprivilegestoaccountrole"
 
 &grantprivilegestoaccountrole.GrantPrivilegesToAccountRoleOnSchemaObject {
-	All: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14.grantPrivilegesToAccountRole.GrantPrivilegesToAccountRoleOnSchemaObjectAll,
-	Future: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14.grantPrivilegesToAccountRole.GrantPrivilegesToAccountRoleOnSchemaObjectFuture,
+	All: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.grantPrivilegesToAccountRole.GrantPrivilegesToAccountRoleOnSchemaObjectAll,
+	Future: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.grantPrivilegesToAccountRole.GrantPrivilegesToAccountRoleOnSchemaObjectFuture,
 	ObjectName: *string,
 	ObjectType: *string,
 }
@@ -1565,7 +1565,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.grantPrivilegesToAccountRole.GrantPrivilegesToAccountRoleOnSchemaObjectAll.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/grantprivilegestoaccountrole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/grantprivilegestoaccountrole"
 
 &grantprivilegestoaccountrole.GrantPrivilegesToAccountRoleOnSchemaObjectAll {
 	ObjectTypePlural: *string,
@@ -1629,7 +1629,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.grantPrivilegesToAccountRole.GrantPrivilegesToAccountRoleOnSchemaObjectFuture.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/grantprivilegestoaccountrole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/grantprivilegestoaccountrole"
 
 &grantprivilegestoaccountrole.GrantPrivilegesToAccountRoleOnSchemaObjectFuture {
 	ObjectTypePlural: *string,
@@ -1693,7 +1693,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.grantPrivilegesToAccountRole.GrantPrivilegesToAccountRoleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/grantprivilegestoaccountrole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/grantprivilegestoaccountrole"
 
 &grantprivilegestoaccountrole.GrantPrivilegesToAccountRoleTimeouts {
 	Create: *string,
@@ -1769,7 +1769,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.grantPrivilegesToAccountRole.GrantPrivilegesToAccountRoleOnAccountObjectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/grantprivilegestoaccountrole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/grantprivilegestoaccountrole"
 
 grantprivilegestoaccountrole.NewGrantPrivilegesToAccountRoleOnAccountObjectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GrantPrivilegesToAccountRoleOnAccountObjectOutputReference
 ```
@@ -2062,7 +2062,7 @@ func InternalValue() GrantPrivilegesToAccountRoleOnAccountObject
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.grantPrivilegesToAccountRole.GrantPrivilegesToAccountRoleOnSchemaObjectAllOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/grantprivilegestoaccountrole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/grantprivilegestoaccountrole"
 
 grantprivilegestoaccountrole.NewGrantPrivilegesToAccountRoleOnSchemaObjectAllOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GrantPrivilegesToAccountRoleOnSchemaObjectAllOutputReference
 ```
@@ -2391,7 +2391,7 @@ func InternalValue() GrantPrivilegesToAccountRoleOnSchemaObjectAll
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.grantPrivilegesToAccountRole.GrantPrivilegesToAccountRoleOnSchemaObjectFutureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/grantprivilegestoaccountrole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/grantprivilegestoaccountrole"
 
 grantprivilegestoaccountrole.NewGrantPrivilegesToAccountRoleOnSchemaObjectFutureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GrantPrivilegesToAccountRoleOnSchemaObjectFutureOutputReference
 ```
@@ -2720,7 +2720,7 @@ func InternalValue() GrantPrivilegesToAccountRoleOnSchemaObjectFuture
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.grantPrivilegesToAccountRole.GrantPrivilegesToAccountRoleOnSchemaObjectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/grantprivilegestoaccountrole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/grantprivilegestoaccountrole"
 
 grantprivilegestoaccountrole.NewGrantPrivilegesToAccountRoleOnSchemaObjectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GrantPrivilegesToAccountRoleOnSchemaObjectOutputReference
 ```
@@ -3111,7 +3111,7 @@ func InternalValue() GrantPrivilegesToAccountRoleOnSchemaObject
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.grantPrivilegesToAccountRole.GrantPrivilegesToAccountRoleOnSchemaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/grantprivilegestoaccountrole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/grantprivilegestoaccountrole"
 
 grantprivilegestoaccountrole.NewGrantPrivilegesToAccountRoleOnSchemaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GrantPrivilegesToAccountRoleOnSchemaOutputReference
 ```
@@ -3447,7 +3447,7 @@ func InternalValue() GrantPrivilegesToAccountRoleOnSchema
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.grantPrivilegesToAccountRole.GrantPrivilegesToAccountRoleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/grantprivilegestoaccountrole"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/grantprivilegestoaccountrole"
 
 grantprivilegestoaccountrole.NewGrantPrivilegesToAccountRoleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GrantPrivilegesToAccountRoleTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.grantOwnership.GrantOwnership.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/grantownership"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/grantownership"
 
 grantownership.NewGrantOwnership(scope Construct, id *string, config GrantOwnershipConfig) GrantOwnership
 ```
@@ -439,7 +439,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.grantOwnership.GrantOwnership.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/grantownership"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/grantownership"
 
 grantownership.GrantOwnership_IsConstruct(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.grantOwnership.GrantOwnership.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/grantownership"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/grantownership"
 
 grantownership.GrantOwnership_IsTerraformElement(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ grantownership.GrantOwnership_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.grantOwnership.GrantOwnership.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/grantownership"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/grantownership"
 
 grantownership.GrantOwnership_IsTerraformResource(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ grantownership.GrantOwnership_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.grantOwnership.GrantOwnership.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/grantownership"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/grantownership"
 
 grantownership.GrantOwnership_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -860,7 +860,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.grantOwnership.GrantOwnershipConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/grantownership"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/grantownership"
 
 &grantownership.GrantOwnershipConfig {
 	Connection: interface{},
@@ -870,12 +870,12 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/grantownershi
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	On: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14.grantOwnership.GrantOwnershipOn,
+	On: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.grantOwnership.GrantOwnershipOn,
 	AccountRoleName: *string,
 	DatabaseRoleName: *string,
 	Id: *string,
 	OutboundPrivileges: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14.grantOwnership.GrantOwnershipTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.grantOwnership.GrantOwnershipTimeouts,
 }
 ```
 
@@ -1065,11 +1065,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.grantOwnership.GrantOwnershipOn.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/grantownership"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/grantownership"
 
 &grantownership.GrantOwnershipOn {
-	All: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14.grantOwnership.GrantOwnershipOnAll,
-	Future: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14.grantOwnership.GrantOwnershipOnFuture,
+	All: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.grantOwnership.GrantOwnershipOnAll,
+	Future: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.grantOwnership.GrantOwnershipOnFuture,
 	ObjectName: *string,
 	ObjectType: *string,
 }
@@ -1149,7 +1149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.grantOwnership.GrantOwnershipOnAll.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/grantownership"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/grantownership"
 
 &grantownership.GrantOwnershipOnAll {
 	ObjectTypePlural: *string,
@@ -1217,7 +1217,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.grantOwnership.GrantOwnershipOnFuture.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/grantownership"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/grantownership"
 
 &grantownership.GrantOwnershipOnFuture {
 	ObjectTypePlural: *string,
@@ -1285,7 +1285,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.grantOwnership.GrantOwnershipTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/grantownership"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/grantownership"
 
 &grantownership.GrantOwnershipTimeouts {
 	Create: *string,
@@ -1361,7 +1361,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.grantOwnership.GrantOwnershipOnAllOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/grantownership"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/grantownership"
 
 grantownership.NewGrantOwnershipOnAllOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GrantOwnershipOnAllOutputReference
 ```
@@ -1690,7 +1690,7 @@ func InternalValue() GrantOwnershipOnAll
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.grantOwnership.GrantOwnershipOnFutureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/grantownership"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/grantownership"
 
 grantownership.NewGrantOwnershipOnFutureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GrantOwnershipOnFutureOutputReference
 ```
@@ -2019,7 +2019,7 @@ func InternalValue() GrantOwnershipOnFuture
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.grantOwnership.GrantOwnershipOnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/grantownership"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/grantownership"
 
 grantownership.NewGrantOwnershipOnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GrantOwnershipOnOutputReference
 ```
@@ -2410,7 +2410,7 @@ func InternalValue() GrantOwnershipOn
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.grantOwnership.GrantOwnershipTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/grantownership"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/grantownership"
 
 grantownership.NewGrantOwnershipTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GrantOwnershipTimeoutsOutputReference
 ```

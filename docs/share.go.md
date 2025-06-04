@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.share.Share.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/share"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/share"
 
 share.NewShare(scope Construct, id *string, config ShareConfig) Share
 ```
@@ -419,7 +419,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.share.Share.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/share"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/share"
 
 share.Share_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.share.Share.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/share"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/share"
 
 share.Share_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ share.Share_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.share.Share.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/share"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/share"
 
 share.Share_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ share.Share_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.share.Share.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/share"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/share"
 
 share.Share_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -829,7 +829,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.share.ShareConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/share"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/share"
 
 &share.ShareConfig {
 	Connection: interface{},
@@ -843,7 +843,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/share"
 	Accounts: *[]*string,
 	Comment: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14.share.ShareTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.share.ShareTimeouts,
 }
 ```
 
@@ -1014,7 +1014,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.share.ShareTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/share"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/share"
 
 &share.ShareTimeouts {
 	Create: *string,
@@ -1090,7 +1090,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.share.ShareTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/share"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/share"
 
 share.NewShareTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ShareTimeoutsOutputReference
 ```
