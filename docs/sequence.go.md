@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.sequence.Sequence.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/sequence"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/sequence"
 
 sequence.NewSequence(scope Construct, id *string, config SequenceConfig) Sequence
 ```
@@ -426,7 +426,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-snowflake.sequence.Sequence.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/sequence"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/sequence"
 
 sequence.Sequence_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-snowflake.sequence.Sequence.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/sequence"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/sequence"
 
 sequence.Sequence_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ sequence.Sequence_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-snowflake.sequence.Sequence.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/sequence"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/sequence"
 
 sequence.Sequence_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ sequence.Sequence_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-snowflake.sequence.Sequence.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/sequence"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/sequence"
 
 sequence.Sequence_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -913,7 +913,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.sequence.SequenceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/sequence"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/sequence"
 
 &sequence.SequenceConfig {
 	Connection: interface{},
@@ -930,7 +930,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/sequence"
 	Id: *string,
 	Increment: *f64,
 	Ordering: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14.sequence.SequenceTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15.sequence.SequenceTimeouts,
 }
 ```
 
@@ -1144,7 +1144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializer <a name="Initializer" id="@cdktf/provider-snowflake.sequence.SequenceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/sequence"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/sequence"
 
 &sequence.SequenceTimeouts {
 	Create: *string,
@@ -1220,7 +1220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.sequence.SequenceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v14/sequence"
+import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/sequence"
 
 sequence.NewSequenceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SequenceTimeoutsOutputReference
 ```
