@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.1/docs/resources/cortex_search_service
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.2.0/docs/resources/cortex_search_service
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,29 @@ export interface CortexSearchServiceConfig extends cdktf.TerraformMetaArguments 
   /**
   * Specifies the list of columns in the base table to enable filtering on when issuing queries to the service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.1/docs/resources/cortex_search_service#attributes CortexSearchService#attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.2.0/docs/resources/cortex_search_service#attributes CortexSearchService#attributes}
   */
   readonly attributes?: string[];
   /**
   * Specifies a comment for the Cortex search service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.1/docs/resources/cortex_search_service#comment CortexSearchService#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.2.0/docs/resources/cortex_search_service#comment CortexSearchService#comment}
   */
   readonly comment?: string;
   /**
   * The database in which to create the Cortex search service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.1/docs/resources/cortex_search_service#database CortexSearchService#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.2.0/docs/resources/cortex_search_service#database CortexSearchService#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.1/docs/resources/cortex_search_service#id CortexSearchService#id}
+  * Specifies the embedding model to use for the Cortex search service.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.2.0/docs/resources/cortex_search_service#embedding_model CortexSearchService#embedding_model}
+  */
+  readonly embeddingModel?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.2.0/docs/resources/cortex_search_service#id CortexSearchService#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,61 +46,216 @@ export interface CortexSearchServiceConfig extends cdktf.TerraformMetaArguments 
   /**
   * Specifies the name of the Cortex search service. The name must be unique for the schema in which the service is created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.1/docs/resources/cortex_search_service#name CortexSearchService#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.2.0/docs/resources/cortex_search_service#name CortexSearchService#name}
   */
   readonly name: string;
   /**
   * Specifies the column to use as the search column for the Cortex search service; must be a text value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.1/docs/resources/cortex_search_service#on CortexSearchService#on}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.2.0/docs/resources/cortex_search_service#on CortexSearchService#on}
   */
   readonly on: string;
   /**
   * Specifies the query to use to populate the Cortex search service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.1/docs/resources/cortex_search_service#query CortexSearchService#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.2.0/docs/resources/cortex_search_service#query CortexSearchService#query}
   */
   readonly query: string;
   /**
   * The schema in which to create the Cortex search service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.1/docs/resources/cortex_search_service#schema CortexSearchService#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.2.0/docs/resources/cortex_search_service#schema CortexSearchService#schema}
   */
   readonly schema: string;
   /**
   * Specifies the maximum target lag time for the Cortex search service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.1/docs/resources/cortex_search_service#target_lag CortexSearchService#target_lag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.2.0/docs/resources/cortex_search_service#target_lag CortexSearchService#target_lag}
   */
   readonly targetLag: string;
   /**
   * The warehouse in which to create the Cortex search service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.1/docs/resources/cortex_search_service#warehouse CortexSearchService#warehouse}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.2.0/docs/resources/cortex_search_service#warehouse CortexSearchService#warehouse}
   */
   readonly warehouse: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.1/docs/resources/cortex_search_service#timeouts CortexSearchService#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.2.0/docs/resources/cortex_search_service#timeouts CortexSearchService#timeouts}
   */
   readonly timeouts?: CortexSearchServiceTimeouts;
 }
+export interface CortexSearchServiceDescribeOutput {
+}
+
+export function cortexSearchServiceDescribeOutputToTerraform(struct?: CortexSearchServiceDescribeOutput): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function cortexSearchServiceDescribeOutputToHclTerraform(struct?: CortexSearchServiceDescribeOutput): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class CortexSearchServiceDescribeOutputOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CortexSearchServiceDescribeOutput | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CortexSearchServiceDescribeOutput | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // attribute_columns - computed: true, optional: false, required: false
+  public get attributeColumns() {
+    return this.getListAttribute('attribute_columns');
+  }
+
+  // columns - computed: true, optional: false, required: false
+  public get columns() {
+    return this.getListAttribute('columns');
+  }
+
+  // comment - computed: true, optional: false, required: false
+  public get comment() {
+    return this.getStringAttribute('comment');
+  }
+
+  // created_on - computed: true, optional: false, required: false
+  public get createdOn() {
+    return this.getStringAttribute('created_on');
+  }
+
+  // data_timestamp - computed: true, optional: false, required: false
+  public get dataTimestamp() {
+    return this.getStringAttribute('data_timestamp');
+  }
+
+  // database_name - computed: true, optional: false, required: false
+  public get databaseName() {
+    return this.getStringAttribute('database_name');
+  }
+
+  // definition - computed: true, optional: false, required: false
+  public get definition() {
+    return this.getStringAttribute('definition');
+  }
+
+  // embedding_model - computed: true, optional: false, required: false
+  public get embeddingModel() {
+    return this.getStringAttribute('embedding_model');
+  }
+
+  // indexing_error - computed: true, optional: false, required: false
+  public get indexingError() {
+    return this.getStringAttribute('indexing_error');
+  }
+
+  // indexing_state - computed: true, optional: false, required: false
+  public get indexingState() {
+    return this.getStringAttribute('indexing_state');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // schema_name - computed: true, optional: false, required: false
+  public get schemaName() {
+    return this.getStringAttribute('schema_name');
+  }
+
+  // search_column - computed: true, optional: false, required: false
+  public get searchColumn() {
+    return this.getStringAttribute('search_column');
+  }
+
+  // service_query_url - computed: true, optional: false, required: false
+  public get serviceQueryUrl() {
+    return this.getStringAttribute('service_query_url');
+  }
+
+  // source_data_num_rows - computed: true, optional: false, required: false
+  public get sourceDataNumRows() {
+    return this.getNumberAttribute('source_data_num_rows');
+  }
+
+  // target_lag - computed: true, optional: false, required: false
+  public get targetLag() {
+    return this.getStringAttribute('target_lag');
+  }
+
+  // warehouse - computed: true, optional: false, required: false
+  public get warehouse() {
+    return this.getStringAttribute('warehouse');
+  }
+}
+
+export class CortexSearchServiceDescribeOutputList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CortexSearchServiceDescribeOutputOutputReference {
+    return new CortexSearchServiceDescribeOutputOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface CortexSearchServiceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.1/docs/resources/cortex_search_service#create CortexSearchService#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.2.0/docs/resources/cortex_search_service#create CortexSearchService#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.1/docs/resources/cortex_search_service#delete CortexSearchService#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.2.0/docs/resources/cortex_search_service#delete CortexSearchService#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.1/docs/resources/cortex_search_service#read CortexSearchService#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.2.0/docs/resources/cortex_search_service#read CortexSearchService#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.1/docs/resources/cortex_search_service#update CortexSearchService#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.2.0/docs/resources/cortex_search_service#update CortexSearchService#update}
   */
   readonly update?: string;
 }
@@ -275,7 +436,7 @@ export class CortexSearchServiceTimeoutsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.1/docs/resources/cortex_search_service snowflake_cortex_search_service}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.2.0/docs/resources/cortex_search_service snowflake_cortex_search_service}
 */
 export class CortexSearchService extends cdktf.TerraformResource {
 
@@ -291,7 +452,7 @@ export class CortexSearchService extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CortexSearchService resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CortexSearchService to import
-  * @param importFromId The id of the existing CortexSearchService that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.1/docs/resources/cortex_search_service#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CortexSearchService that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.2.0/docs/resources/cortex_search_service#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CortexSearchService to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -303,7 +464,7 @@ export class CortexSearchService extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.1.1/docs/resources/cortex_search_service snowflake_cortex_search_service} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.2.0/docs/resources/cortex_search_service snowflake_cortex_search_service} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -314,7 +475,7 @@ export class CortexSearchService extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_cortex_search_service',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.1.1',
+        providerVersion: '2.2.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
@@ -328,6 +489,7 @@ export class CortexSearchService extends cdktf.TerraformResource {
     this._attributes = config.attributes;
     this._comment = config.comment;
     this._database = config.database;
+    this._embeddingModel = config.embeddingModel;
     this._id = config.id;
     this._name = config.name;
     this._on = config.on;
@@ -390,6 +552,28 @@ export class CortexSearchService extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get databaseInput() {
     return this._database;
+  }
+
+  // describe_output - computed: true, optional: false, required: false
+  private _describeOutput = new CortexSearchServiceDescribeOutputList(this, "describe_output", false);
+  public get describeOutput() {
+    return this._describeOutput;
+  }
+
+  // embedding_model - computed: false, optional: true, required: false
+  private _embeddingModel?: string; 
+  public get embeddingModel() {
+    return this.getStringAttribute('embedding_model');
+  }
+  public set embeddingModel(value: string) {
+    this._embeddingModel = value;
+  }
+  public resetEmbeddingModel() {
+    this._embeddingModel = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get embeddingModelInput() {
+    return this._embeddingModel;
   }
 
   // fully_qualified_name - computed: true, optional: false, required: false
@@ -516,6 +700,7 @@ export class CortexSearchService extends cdktf.TerraformResource {
       attributes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._attributes),
       comment: cdktf.stringToTerraform(this._comment),
       database: cdktf.stringToTerraform(this._database),
+      embedding_model: cdktf.stringToTerraform(this._embeddingModel),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       on: cdktf.stringToTerraform(this._on),
@@ -543,6 +728,12 @@ export class CortexSearchService extends cdktf.TerraformResource {
       },
       database: {
         value: cdktf.stringToHclTerraform(this._database),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      embedding_model: {
+        value: cdktf.stringToHclTerraform(this._embeddingModel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
