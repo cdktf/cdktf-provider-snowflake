@@ -18,6 +18,7 @@ Object.defineProperty(exports, 'authenticationPolicy', { get: function () { retu
 Object.defineProperty(exports, 'computePool', { get: function () { return require('./compute-pool'); } });
 Object.defineProperty(exports, 'cortexSearchService', { get: function () { return require('./cortex-search-service'); } });
 Object.defineProperty(exports, 'currentAccount', { get: function () { return require('./current-account'); } });
+Object.defineProperty(exports, 'currentOrganizationAccount', { get: function () { return require('./current-organization-account'); } });
 Object.defineProperty(exports, 'database', { get: function () { return require('./database'); } });
 Object.defineProperty(exports, 'databaseRole', { get: function () { return require('./database-role'); } });
 Object.defineProperty(exports, 'dynamicTable', { get: function () { return require('./dynamic-table'); } });
@@ -95,6 +96,7 @@ Object.defineProperty(exports, 'task', { get: function () { return require('./ta
 Object.defineProperty(exports, 'user', { get: function () { return require('./user'); } });
 Object.defineProperty(exports, 'userAuthenticationPolicyAttachment', { get: function () { return require('./user-authentication-policy-attachment'); } });
 Object.defineProperty(exports, 'userPasswordPolicyAttachment', { get: function () { return require('./user-password-policy-attachment'); } });
+Object.defineProperty(exports, 'userProgrammaticAccessToken', { get: function () { return require('./user-programmatic-access-token'); } });
 Object.defineProperty(exports, 'userPublicKeys', { get: function () { return require('./user-public-keys'); } });
 Object.defineProperty(exports, 'view', { get: function () { return require('./view'); } });
 Object.defineProperty(exports, 'warehouse', { get: function () { return require('./warehouse'); } });
@@ -144,6 +146,7 @@ Object.defineProperty(exports, 'dataSnowflakeSystemGetSnowflakePlatformInfo', { 
 Object.defineProperty(exports, 'dataSnowflakeTables', { get: function () { return require('./data-snowflake-tables'); } });
 Object.defineProperty(exports, 'dataSnowflakeTags', { get: function () { return require('./data-snowflake-tags'); } });
 Object.defineProperty(exports, 'dataSnowflakeTasks', { get: function () { return require('./data-snowflake-tasks'); } });
+Object.defineProperty(exports, 'dataSnowflakeUserProgrammaticAccessTokens', { get: function () { return require('./data-snowflake-user-programmatic-access-tokens'); } });
 Object.defineProperty(exports, 'dataSnowflakeUsers', { get: function () { return require('./data-snowflake-users'); } });
 Object.defineProperty(exports, 'dataSnowflakeViews', { get: function () { return require('./data-snowflake-views'); } });
 Object.defineProperty(exports, 'dataSnowflakeWarehouses', { get: function () { return require('./data-snowflake-warehouses'); } });

@@ -1,3 +1,3 @@
 # `snowflake_procedure_java`
 
-Refer to the Terraform Registry for docs: [`snowflake_procedure_java`](https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/procedure_java).
+Refer to the Terraform Registry for docs: [`snowflake_procedure_java`](https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/procedure_java).

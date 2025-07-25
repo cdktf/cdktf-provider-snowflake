@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/dynamic_table
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/dynamic_table
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface DynamicTableConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies a comment for the dynamic table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/dynamic_table#comment DynamicTable#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/dynamic_table#comment DynamicTable#comment}
   */
   readonly comment?: string;
   /**
   * The database in which to create the dynamic table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/dynamic_table#database DynamicTable#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/dynamic_table#database DynamicTable#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/dynamic_table#id DynamicTable#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/dynamic_table#id DynamicTable#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,55 +34,55 @@ export interface DynamicTableConfig extends cdktf.TerraformMetaArguments {
   /**
   * (Default: `ON_CREATE`) Initialize trigger for the dynamic table. Can only be set on creation. Available options are ON_CREATE and ON_SCHEDULE.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/dynamic_table#initialize DynamicTable#initialize}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/dynamic_table#initialize DynamicTable#initialize}
   */
   readonly initialize?: string;
   /**
   * Specifies the identifier (i.e. name) for the dynamic table; must be unique for the schema in which the dynamic table is created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/dynamic_table#name DynamicTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/dynamic_table#name DynamicTable#name}
   */
   readonly name: string;
   /**
   * (Default: `false`) Specifies whether to replace the dynamic table if it already exists.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/dynamic_table#or_replace DynamicTable#or_replace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/dynamic_table#or_replace DynamicTable#or_replace}
   */
   readonly orReplace?: boolean | cdktf.IResolvable;
   /**
   * Specifies the query to use to populate the dynamic table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/dynamic_table#query DynamicTable#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/dynamic_table#query DynamicTable#query}
   */
   readonly query: string;
   /**
   * (Default: `AUTO`) INCREMENTAL to use incremental refreshes, FULL to recompute the whole table on every refresh, or AUTO to let Snowflake decide.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/dynamic_table#refresh_mode DynamicTable#refresh_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/dynamic_table#refresh_mode DynamicTable#refresh_mode}
   */
   readonly refreshMode?: string;
   /**
   * The schema in which to create the dynamic table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/dynamic_table#schema DynamicTable#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/dynamic_table#schema DynamicTable#schema}
   */
   readonly schema: string;
   /**
   * The warehouse in which to create the dynamic table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/dynamic_table#warehouse DynamicTable#warehouse}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/dynamic_table#warehouse DynamicTable#warehouse}
   */
   readonly warehouse: string;
   /**
   * target_lag block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/dynamic_table#target_lag DynamicTable#target_lag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/dynamic_table#target_lag DynamicTable#target_lag}
   */
   readonly targetLag: DynamicTableTargetLag;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/dynamic_table#timeouts DynamicTable#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/dynamic_table#timeouts DynamicTable#timeouts}
   */
   readonly timeouts?: DynamicTableTimeouts;
 }
@@ -90,13 +90,13 @@ export interface DynamicTableTargetLag {
   /**
   * Specifies whether the target lag time is downstream.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/dynamic_table#downstream DynamicTable#downstream}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/dynamic_table#downstream DynamicTable#downstream}
   */
   readonly downstream?: boolean | cdktf.IResolvable;
   /**
   * Specifies the maximum target lag time for the dynamic table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/dynamic_table#maximum_duration DynamicTable#maximum_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/dynamic_table#maximum_duration DynamicTable#maximum_duration}
   */
   readonly maximumDuration?: string;
 }
@@ -209,19 +209,19 @@ export class DynamicTableTargetLagOutputReference extends cdktf.ComplexObject {
 }
 export interface DynamicTableTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/dynamic_table#create DynamicTable#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/dynamic_table#create DynamicTable#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/dynamic_table#delete DynamicTable#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/dynamic_table#delete DynamicTable#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/dynamic_table#read DynamicTable#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/dynamic_table#read DynamicTable#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/dynamic_table#update DynamicTable#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/dynamic_table#update DynamicTable#update}
   */
   readonly update?: string;
 }
@@ -402,7 +402,7 @@ export class DynamicTableTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/dynamic_table snowflake_dynamic_table}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/dynamic_table snowflake_dynamic_table}
 */
 export class DynamicTable extends cdktf.TerraformResource {
 
@@ -418,7 +418,7 @@ export class DynamicTable extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DynamicTable resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DynamicTable to import
-  * @param importFromId The id of the existing DynamicTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/dynamic_table#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DynamicTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/dynamic_table#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DynamicTable to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -430,7 +430,7 @@ export class DynamicTable extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/dynamic_table snowflake_dynamic_table} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/dynamic_table snowflake_dynamic_table} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -441,7 +441,7 @@ export class DynamicTable extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_dynamic_table',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.3.0',
+        providerVersion: '2.4.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,

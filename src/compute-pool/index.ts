@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/compute_pool
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/compute_pool
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,29 +15,29 @@ export interface ComputePoolConfig extends cdktf.TerraformMetaArguments {
   /**
   * (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether to automatically resume a compute pool when a service or job is submitted to it. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/compute_pool#auto_resume ComputePool#auto_resume}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/compute_pool#auto_resume ComputePool#auto_resume}
   */
   readonly autoResume?: string;
   /**
   * (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) Number of seconds of inactivity after which you want Snowflake to automatically suspend the compute pool.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/compute_pool#auto_suspend_secs ComputePool#auto_suspend_secs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/compute_pool#auto_suspend_secs ComputePool#auto_suspend_secs}
   */
   readonly autoSuspendSecs?: number;
   /**
   * Specifies a comment for the compute pool.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/compute_pool#comment ComputePool#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/compute_pool#comment ComputePool#comment}
   */
   readonly comment?: string;
   /**
   * Specifies the Snowflake Native App name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/compute_pool#for_application ComputePool#for_application}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/compute_pool#for_application ComputePool#for_application}
   */
   readonly forApplication?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/compute_pool#id ComputePool#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/compute_pool#id ComputePool#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,37 +46,37 @@ export interface ComputePoolConfig extends cdktf.TerraformMetaArguments {
   /**
   * (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether the compute pool is created initially in the suspended state. This field is used only when creating a compute pool. Changes on this field are ignored after creation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/compute_pool#initially_suspended ComputePool#initially_suspended}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/compute_pool#initially_suspended ComputePool#initially_suspended}
   */
   readonly initiallySuspended?: string;
   /**
   * Identifies the type of machine you want to provision for the nodes in the compute pool. Valid values are (case-insensitive): `CPU_X64_XS` | `CPU_X64_S` | `CPU_X64_M` | `CPU_X64_L` | `HIGHMEM_X64_S` | `HIGHMEM_X64_M` | `HIGHMEM_X64_L` | `HIGHMEM_X64_SL` | `GPU_NV_S` | `GPU_NV_M` | `GPU_NV_L` | `GPU_NV_XS` | `GPU_NV_SM` | `GPU_NV_2M` | `GPU_NV_3M` | `GPU_NV_SL`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/compute_pool#instance_family ComputePool#instance_family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/compute_pool#instance_family ComputePool#instance_family}
   */
   readonly instanceFamily: string;
   /**
   * Specifies the maximum number of nodes for the compute pool.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/compute_pool#max_nodes ComputePool#max_nodes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/compute_pool#max_nodes ComputePool#max_nodes}
   */
   readonly maxNodes: number;
   /**
   * Specifies the minimum number of nodes for the compute pool.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/compute_pool#min_nodes ComputePool#min_nodes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/compute_pool#min_nodes ComputePool#min_nodes}
   */
   readonly minNodes: number;
   /**
   * Specifies the identifier for the compute pool; must be unique for the account. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/compute_pool#name ComputePool#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/compute_pool#name ComputePool#name}
   */
   readonly name: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/compute_pool#timeouts ComputePool#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/compute_pool#timeouts ComputePool#timeouts}
   */
   readonly timeouts?: ComputePoolTimeouts;
 }
@@ -422,19 +422,19 @@ export class ComputePoolShowOutputList extends cdktf.ComplexList {
 }
 export interface ComputePoolTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/compute_pool#create ComputePool#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/compute_pool#create ComputePool#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/compute_pool#delete ComputePool#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/compute_pool#delete ComputePool#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/compute_pool#read ComputePool#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/compute_pool#read ComputePool#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/compute_pool#update ComputePool#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/compute_pool#update ComputePool#update}
   */
   readonly update?: string;
 }
@@ -615,7 +615,7 @@ export class ComputePoolTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/compute_pool snowflake_compute_pool}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/compute_pool snowflake_compute_pool}
 */
 export class ComputePool extends cdktf.TerraformResource {
 
@@ -631,7 +631,7 @@ export class ComputePool extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ComputePool resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputePool to import
-  * @param importFromId The id of the existing ComputePool that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/compute_pool#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ComputePool that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/compute_pool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputePool to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -643,7 +643,7 @@ export class ComputePool extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/compute_pool snowflake_compute_pool} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/compute_pool snowflake_compute_pool} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -654,7 +654,7 @@ export class ComputePool extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_compute_pool',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.3.0',
+        providerVersion: '2.4.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,

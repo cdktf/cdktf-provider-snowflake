@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/user_public_keys
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/user_public_keys
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface UserPublicKeysConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/user_public_keys#id UserPublicKeys#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/user_public_keys#id UserPublicKeys#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,43 +22,43 @@ export interface UserPublicKeysConfig extends cdktf.TerraformMetaArguments {
   /**
   * Name of the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/user_public_keys#name UserPublicKeys#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/user_public_keys#name UserPublicKeys#name}
   */
   readonly name: string;
   /**
   * Specifies the user’s RSA public key; used for key-pair authentication. Must be on 1 line without header and trailer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/user_public_keys#rsa_public_key UserPublicKeys#rsa_public_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/user_public_keys#rsa_public_key UserPublicKeys#rsa_public_key}
   */
   readonly rsaPublicKey?: string;
   /**
   * Specifies the user’s second RSA public key; used to rotate the public and Public keys for key-pair authentication based on an expiration schedule set by your organization. Must be on 1 line without header and trailer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/user_public_keys#rsa_public_key_2 UserPublicKeys#rsa_public_key_2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/user_public_keys#rsa_public_key_2 UserPublicKeys#rsa_public_key_2}
   */
   readonly rsaPublicKey2?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/user_public_keys#timeouts UserPublicKeys#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/user_public_keys#timeouts UserPublicKeys#timeouts}
   */
   readonly timeouts?: UserPublicKeysTimeouts;
 }
 export interface UserPublicKeysTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/user_public_keys#create UserPublicKeys#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/user_public_keys#create UserPublicKeys#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/user_public_keys#delete UserPublicKeys#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/user_public_keys#delete UserPublicKeys#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/user_public_keys#read UserPublicKeys#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/user_public_keys#read UserPublicKeys#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/user_public_keys#update UserPublicKeys#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/user_public_keys#update UserPublicKeys#update}
   */
   readonly update?: string;
 }
@@ -239,7 +239,7 @@ export class UserPublicKeysTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/user_public_keys snowflake_user_public_keys}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/user_public_keys snowflake_user_public_keys}
 */
 export class UserPublicKeys extends cdktf.TerraformResource {
 
@@ -255,7 +255,7 @@ export class UserPublicKeys extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a UserPublicKeys resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the UserPublicKeys to import
-  * @param importFromId The id of the existing UserPublicKeys that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/user_public_keys#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing UserPublicKeys that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/user_public_keys#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the UserPublicKeys to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -267,7 +267,7 @@ export class UserPublicKeys extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/user_public_keys snowflake_user_public_keys} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/user_public_keys snowflake_user_public_keys} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -278,7 +278,7 @@ export class UserPublicKeys extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_user_public_keys',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.3.0',
+        providerVersion: '2.4.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,

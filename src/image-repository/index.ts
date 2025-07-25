@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/image_repository
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/image_repository
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface ImageRepositoryConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies a comment for the object.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/image_repository#comment ImageRepository#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/image_repository#comment ImageRepository#comment}
   */
   readonly comment?: string;
   /**
   * The database in which to create the image repository. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/image_repository#database ImageRepository#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/image_repository#database ImageRepository#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/image_repository#id ImageRepository#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/image_repository#id ImageRepository#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,19 +34,19 @@ export interface ImageRepositoryConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies the identifier for the image repository; must be unique for the schema in which the image repository is created. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/image_repository#name ImageRepository#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/image_repository#name ImageRepository#name}
   */
   readonly name: string;
   /**
   * The schema in which to create the image repository. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/image_repository#schema ImageRepository#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/image_repository#schema ImageRepository#schema}
   */
   readonly schema: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/image_repository#timeouts ImageRepository#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/image_repository#timeouts ImageRepository#timeouts}
   */
   readonly timeouts?: ImageRepositoryTimeouts;
 }
@@ -167,19 +167,19 @@ export class ImageRepositoryShowOutputList extends cdktf.ComplexList {
 }
 export interface ImageRepositoryTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/image_repository#create ImageRepository#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/image_repository#create ImageRepository#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/image_repository#delete ImageRepository#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/image_repository#delete ImageRepository#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/image_repository#read ImageRepository#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/image_repository#read ImageRepository#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/image_repository#update ImageRepository#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/image_repository#update ImageRepository#update}
   */
   readonly update?: string;
 }
@@ -360,7 +360,7 @@ export class ImageRepositoryTimeoutsOutputReference extends cdktf.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/image_repository snowflake_image_repository}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/image_repository snowflake_image_repository}
 */
 export class ImageRepository extends cdktf.TerraformResource {
 
@@ -376,7 +376,7 @@ export class ImageRepository extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ImageRepository resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ImageRepository to import
-  * @param importFromId The id of the existing ImageRepository that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/image_repository#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ImageRepository that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/image_repository#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ImageRepository to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -388,7 +388,7 @@ export class ImageRepository extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/image_repository snowflake_image_repository} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/image_repository snowflake_image_repository} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -399,7 +399,7 @@ export class ImageRepository extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_image_repository',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.3.0',
+        providerVersion: '2.4.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
