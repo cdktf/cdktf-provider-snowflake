@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/cortex_search_service
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/cortex_search_service
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,29 +15,29 @@ export interface CortexSearchServiceConfig extends cdktf.TerraformMetaArguments 
   /**
   * Specifies the list of columns in the base table to enable filtering on when issuing queries to the service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/cortex_search_service#attributes CortexSearchService#attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/cortex_search_service#attributes CortexSearchService#attributes}
   */
   readonly attributes?: string[];
   /**
   * Specifies a comment for the Cortex search service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/cortex_search_service#comment CortexSearchService#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/cortex_search_service#comment CortexSearchService#comment}
   */
   readonly comment?: string;
   /**
   * The database in which to create the Cortex search service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/cortex_search_service#database CortexSearchService#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/cortex_search_service#database CortexSearchService#database}
   */
   readonly database: string;
   /**
   * Specifies the embedding model to use for the Cortex search service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/cortex_search_service#embedding_model CortexSearchService#embedding_model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/cortex_search_service#embedding_model CortexSearchService#embedding_model}
   */
   readonly embeddingModel?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/cortex_search_service#id CortexSearchService#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/cortex_search_service#id CortexSearchService#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,43 +46,43 @@ export interface CortexSearchServiceConfig extends cdktf.TerraformMetaArguments 
   /**
   * Specifies the name of the Cortex search service. The name must be unique for the schema in which the service is created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/cortex_search_service#name CortexSearchService#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/cortex_search_service#name CortexSearchService#name}
   */
   readonly name: string;
   /**
   * Specifies the column to use as the search column for the Cortex search service; must be a text value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/cortex_search_service#on CortexSearchService#on}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/cortex_search_service#on CortexSearchService#on}
   */
   readonly on: string;
   /**
   * Specifies the query to use to populate the Cortex search service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/cortex_search_service#query CortexSearchService#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/cortex_search_service#query CortexSearchService#query}
   */
   readonly query: string;
   /**
   * The schema in which to create the Cortex search service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/cortex_search_service#schema CortexSearchService#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/cortex_search_service#schema CortexSearchService#schema}
   */
   readonly schema: string;
   /**
   * Specifies the maximum target lag time for the Cortex search service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/cortex_search_service#target_lag CortexSearchService#target_lag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/cortex_search_service#target_lag CortexSearchService#target_lag}
   */
   readonly targetLag: string;
   /**
   * The warehouse in which to create the Cortex search service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/cortex_search_service#warehouse CortexSearchService#warehouse}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/cortex_search_service#warehouse CortexSearchService#warehouse}
   */
   readonly warehouse: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/cortex_search_service#timeouts CortexSearchService#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/cortex_search_service#timeouts CortexSearchService#timeouts}
   */
   readonly timeouts?: CortexSearchServiceTimeouts;
 }
@@ -243,19 +243,19 @@ export class CortexSearchServiceDescribeOutputList extends cdktf.ComplexList {
 }
 export interface CortexSearchServiceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/cortex_search_service#create CortexSearchService#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/cortex_search_service#create CortexSearchService#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/cortex_search_service#delete CortexSearchService#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/cortex_search_service#delete CortexSearchService#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/cortex_search_service#read CortexSearchService#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/cortex_search_service#read CortexSearchService#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/cortex_search_service#update CortexSearchService#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/cortex_search_service#update CortexSearchService#update}
   */
   readonly update?: string;
 }
@@ -436,7 +436,7 @@ export class CortexSearchServiceTimeoutsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/cortex_search_service snowflake_cortex_search_service}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/cortex_search_service snowflake_cortex_search_service}
 */
 export class CortexSearchService extends cdktf.TerraformResource {
 
@@ -452,7 +452,7 @@ export class CortexSearchService extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CortexSearchService resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CortexSearchService to import
-  * @param importFromId The id of the existing CortexSearchService that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/cortex_search_service#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CortexSearchService that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/cortex_search_service#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CortexSearchService to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -464,7 +464,7 @@ export class CortexSearchService extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.3.0/docs/resources/cortex_search_service snowflake_cortex_search_service} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.4.0/docs/resources/cortex_search_service snowflake_cortex_search_service} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -475,7 +475,7 @@ export class CortexSearchService extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_cortex_search_service',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.3.0',
+        providerVersion: '2.4.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
