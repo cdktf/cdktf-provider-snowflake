@@ -96,6 +96,7 @@ The following submodules are available:
 - [imageRepository](./imageRepository.csharp.md)
 - [jobService](./jobService.csharp.md)
 - [legacyServiceUser](./legacyServiceUser.csharp.md)
+- [listing](./listing.csharp.md)
 - [managedAccount](./managedAccount.csharp.md)
 - [maskingPolicy](./maskingPolicy.csharp.md)
 - [materializedView](./materializedView.csharp.md)

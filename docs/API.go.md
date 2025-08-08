@@ -96,6 +96,7 @@ The following submodules are available:
 - [imageRepository](./imageRepository.go.md)
 - [jobService](./jobService.go.md)
 - [legacyServiceUser](./legacyServiceUser.go.md)
+- [listing](./listing.go.md)
 - [managedAccount](./managedAccount.go.md)
 - [maskingPolicy](./maskingPolicy.go.md)
 - [materializedView](./materializedView.go.md)

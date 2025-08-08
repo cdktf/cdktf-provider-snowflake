@@ -96,6 +96,7 @@ The following submodules are available:
 - [imageRepository](./imageRepository.typescript.md)
 - [jobService](./jobService.typescript.md)
 - [legacyServiceUser](./legacyServiceUser.typescript.md)
+- [listing](./listing.typescript.md)
 - [managedAccount](./managedAccount.typescript.md)
 - [maskingPolicy](./maskingPolicy.typescript.md)
 - [materializedView](./materializedView.typescript.md)

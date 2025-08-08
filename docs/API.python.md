@@ -96,6 +96,7 @@ The following submodules are available:
 - [imageRepository](./imageRepository.python.md)
 - [jobService](./jobService.python.md)
 - [legacyServiceUser](./legacyServiceUser.python.md)
+- [listing](./listing.python.md)
 - [managedAccount](./managedAccount.python.md)
 - [maskingPolicy](./maskingPolicy.python.md)
 - [materializedView](./materializedView.python.md)
