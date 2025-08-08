@@ -96,6 +96,7 @@ The following submodules are available:
 - [imageRepository](./imageRepository.java.md)
 - [jobService](./jobService.java.md)
 - [legacyServiceUser](./legacyServiceUser.java.md)
+- [listing](./listing.java.md)
 - [managedAccount](./managedAccount.java.md)
 - [maskingPolicy](./maskingPolicy.java.md)
 - [materializedView](./materializedView.java.md)

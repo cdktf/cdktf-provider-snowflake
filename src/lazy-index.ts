@@ -46,6 +46,7 @@ Object.defineProperty(exports, 'grantPrivilegesToShare', { get: function () { re
 Object.defineProperty(exports, 'imageRepository', { get: function () { return require('./image-repository'); } });
 Object.defineProperty(exports, 'jobService', { get: function () { return require('./job-service'); } });
 Object.defineProperty(exports, 'legacyServiceUser', { get: function () { return require('./legacy-service-user'); } });
+Object.defineProperty(exports, 'listing', { get: function () { return require('./listing'); } });
 Object.defineProperty(exports, 'managedAccount', { get: function () { return require('./managed-account'); } });
 Object.defineProperty(exports, 'maskingPolicy', { get: function () { return require('./masking-policy'); } });
 Object.defineProperty(exports, 'materializedView', { get: function () { return require('./materialized-view'); } });

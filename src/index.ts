@@ -46,6 +46,7 @@ export * as grantPrivilegesToShare from './grant-privileges-to-share';
 export * as imageRepository from './image-repository';
 export * as jobService from './job-service';
 export * as legacyServiceUser from './legacy-service-user';
+export * as listing from './listing';
 export * as managedAccount from './managed-account';
 export * as maskingPolicy from './masking-policy';
 export * as materializedView from './materialized-view';
