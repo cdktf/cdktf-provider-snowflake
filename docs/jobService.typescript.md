@@ -4,7 +4,7 @@
 
 ### JobService <a name="JobService" id="@cdktf/provider-snowflake.jobService.JobService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.5.0/docs/resources/job_service snowflake_job_service}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/job_service snowflake_job_service}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.jobService.JobService.Initializer"></a>
 
@@ -555,7 +555,7 @@ The construct id used in the generated config for the JobService to import.
 
 The id of the existing JobService that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.5.0/docs/resources/job_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/job_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1065,7 +1065,7 @@ const jobServiceConfig: jobService.JobServiceConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.jobService.JobServiceConfig.property.externalAccessIntegrations">externalAccessIntegrations</a></code> | <code>string[]</code> | Specifies the names of the external access integrations that allow your service to access external sites. |
 | <code><a href="#@cdktf/provider-snowflake.jobService.JobServiceConfig.property.fromSpecification">fromSpecification</a></code> | <code><a href="#@cdktf/provider-snowflake.jobService.JobServiceFromSpecification">JobServiceFromSpecification</a></code> | from_specification block. |
 | <code><a href="#@cdktf/provider-snowflake.jobService.JobServiceConfig.property.fromSpecificationTemplate">fromSpecificationTemplate</a></code> | <code><a href="#@cdktf/provider-snowflake.jobService.JobServiceFromSpecificationTemplate">JobServiceFromSpecificationTemplate</a></code> | from_specification_template block. |
-| <code><a href="#@cdktf/provider-snowflake.jobService.JobServiceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.5.0/docs/resources/job_service#id JobService#id}. |
+| <code><a href="#@cdktf/provider-snowflake.jobService.JobServiceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/job_service#id JobService#id}. |
 | <code><a href="#@cdktf/provider-snowflake.jobService.JobServiceConfig.property.queryWarehouse">queryWarehouse</a></code> | <code>string</code> | Warehouse to use if a service container connects to Snowflake to execute a query but does not explicitly specify a warehouse to use. |
 | <code><a href="#@cdktf/provider-snowflake.jobService.JobServiceConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.jobService.JobServiceTimeouts">JobServiceTimeouts</a></code> | timeouts block. |
 
@@ -1153,7 +1153,7 @@ Specifies the name of the compute pool in your account on which to run the servi
 
 Identifiers with special or lower-case characters are not supported. This limitation in the provider follows the limitation in Snowflake (see [docs](https://docs.snowflake.com/en/sql-reference/sql/create-compute-pool)). Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.5.0/docs/resources/job_service#compute_pool JobService#compute_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/job_service#compute_pool JobService#compute_pool}
 
 ---
 
@@ -1169,7 +1169,7 @@ The database in which to create the service.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.5.0/docs/resources/job_service#database JobService#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/job_service#database JobService#database}
 
 ---
 
@@ -1185,7 +1185,7 @@ Specifies the identifier for the service;
 
 must be unique for the schema in which the service is created. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.5.0/docs/resources/job_service#name JobService#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/job_service#name JobService#name}
 
 ---
 
@@ -1201,7 +1201,7 @@ The schema in which to create the service.
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.5.0/docs/resources/job_service#schema JobService#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/job_service#schema JobService#schema}
 
 ---
 
@@ -1215,7 +1215,7 @@ public readonly comment: string;
 
 Specifies a comment for the service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.5.0/docs/resources/job_service#comment JobService#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/job_service#comment JobService#comment}
 
 ---
 
@@ -1229,7 +1229,7 @@ public readonly externalAccessIntegrations: string[];
 
 Specifies the names of the external access integrations that allow your service to access external sites.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.5.0/docs/resources/job_service#external_access_integrations JobService#external_access_integrations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/job_service#external_access_integrations JobService#external_access_integrations}
 
 ---
 
@@ -1243,7 +1243,7 @@ public readonly fromSpecification: JobServiceFromSpecification;
 
 from_specification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.5.0/docs/resources/job_service#from_specification JobService#from_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/job_service#from_specification JobService#from_specification}
 
 ---
 
@@ -1257,7 +1257,7 @@ public readonly fromSpecificationTemplate: JobServiceFromSpecificationTemplate;
 
 from_specification_template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.5.0/docs/resources/job_service#from_specification_template JobService#from_specification_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/job_service#from_specification_template JobService#from_specification_template}
 
 ---
 
@@ -1269,7 +1269,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.5.0/docs/resources/job_service#id JobService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/job_service#id JobService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1288,7 +1288,7 @@ Warehouse to use if a service container connects to Snowflake to execute a query
 
 Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.5.0/docs/resources/job_service#query_warehouse JobService#query_warehouse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/job_service#query_warehouse JobService#query_warehouse}
 
 ---
 
@@ -1302,7 +1302,7 @@ public readonly timeouts: JobServiceTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.5.0/docs/resources/job_service#timeouts JobService#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/job_service#timeouts JobService#timeouts}
 
 ---
 
@@ -1348,7 +1348,7 @@ public readonly file: string;
 
 The file name of the service specification. Example: `spec.yaml`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.5.0/docs/resources/job_service#file JobService#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/job_service#file JobService#file}
 
 ---
 
@@ -1364,7 +1364,7 @@ The path to the service specification file on the given stage.
 
 When the path is specified, the `/` character is automatically added as a path prefix. Example: `path/to/spec`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.5.0/docs/resources/job_service#path JobService#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/job_service#path JobService#path}
 
 ---
 
@@ -1380,7 +1380,7 @@ The fully qualified name of the stage containing the service specification file.
 
 At symbol (`@`) is added automatically. Example: `"\"<db_name>\".\"<schema_name>\".\"<stage_name>\""`. For more information about this resource, see [docs](./stage).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.5.0/docs/resources/job_service#stage JobService#stage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/job_service#stage JobService#stage}
 
 ---
 
@@ -1394,7 +1394,7 @@ public readonly text: string;
 
 The embedded text of the service specification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.5.0/docs/resources/job_service#text JobService#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/job_service#text JobService#text}
 
 ---
 
@@ -1430,7 +1430,7 @@ public readonly using: IResolvable | JobServiceFromSpecificationTemplateUsing[];
 
 using block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.5.0/docs/resources/job_service#using JobService#using}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/job_service#using JobService#using}
 
 ---
 
@@ -1444,7 +1444,7 @@ public readonly file: string;
 
 The file name of the service specification template. Example: `spec.yaml`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.5.0/docs/resources/job_service#file JobService#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/job_service#file JobService#file}
 
 ---
 
@@ -1460,7 +1460,7 @@ The path to the service specification template file on the given stage.
 
 When the path is specified, the `/` character is automatically added as a path prefix. Example: `path/to/spec`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.5.0/docs/resources/job_service#path JobService#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/job_service#path JobService#path}
 
 ---
 
@@ -1476,7 +1476,7 @@ The fully qualified name of the stage containing the service specification templ
 
 At symbol (`@`) is added automatically. Example: `"\"<db_name>\".\"<schema_name>\".\"<stage_name>\""`. For more information about this resource, see [docs](./stage).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.5.0/docs/resources/job_service#stage JobService#stage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/job_service#stage JobService#stage}
 
 ---
 
@@ -1490,7 +1490,7 @@ public readonly text: string;
 
 The embedded text of the service specification template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.5.0/docs/resources/job_service#text JobService#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/job_service#text JobService#text}
 
 ---
 
@@ -1525,7 +1525,7 @@ The name of the template variable.
 
 The provider wraps it in double quotes by default, so be aware of that while referencing the argument in the spec definition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.5.0/docs/resources/job_service#key JobService#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/job_service#key JobService#key}
 
 ---
 
@@ -1541,7 +1541,7 @@ The value to assign to the variable in the template.
 
 The provider wraps it in `$$` by default, so be aware of that while referencing the argument in the spec definition. The value must either be alphanumeric or valid JSON.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.5.0/docs/resources/job_service#value JobService#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/job_service#value JobService#value}
 
 ---
 
@@ -1570,10 +1570,10 @@ const jobServiceTimeouts: jobService.JobServiceTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.jobService.JobServiceTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.5.0/docs/resources/job_service#create JobService#create}. |
-| <code><a href="#@cdktf/provider-snowflake.jobService.JobServiceTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.5.0/docs/resources/job_service#delete JobService#delete}. |
-| <code><a href="#@cdktf/provider-snowflake.jobService.JobServiceTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.5.0/docs/resources/job_service#read JobService#read}. |
-| <code><a href="#@cdktf/provider-snowflake.jobService.JobServiceTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.5.0/docs/resources/job_service#update JobService#update}. |
+| <code><a href="#@cdktf/provider-snowflake.jobService.JobServiceTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/job_service#create JobService#create}. |
+| <code><a href="#@cdktf/provider-snowflake.jobService.JobServiceTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/job_service#delete JobService#delete}. |
+| <code><a href="#@cdktf/provider-snowflake.jobService.JobServiceTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/job_service#read JobService#read}. |
+| <code><a href="#@cdktf/provider-snowflake.jobService.JobServiceTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/job_service#update JobService#update}. |
 
 ---
 
@@ -1585,7 +1585,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.5.0/docs/resources/job_service#create JobService#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/job_service#create JobService#create}.
 
 ---
 
@@ -1597,7 +1597,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.5.0/docs/resources/job_service#delete JobService#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/job_service#delete JobService#delete}.
 
 ---
 
@@ -1609,7 +1609,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.5.0/docs/resources/job_service#read JobService#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/job_service#read JobService#read}.
 
 ---
 
@@ -1621,7 +1621,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.5.0/docs/resources/job_service#update JobService#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/job_service#update JobService#update}.
 
 ---
 
