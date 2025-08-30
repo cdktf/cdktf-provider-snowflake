@@ -4,7 +4,7 @@
 
 ### DataSnowflakeCurrentAccount <a name="DataSnowflakeCurrentAccount" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.5.0/docs/data-sources/current_account snowflake_current_account}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/data-sources/current_account snowflake_current_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccount.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataSnowflakeCurrentAccoun
 
 The id of the existing DataSnowflakeCurrentAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.5.0/docs/data-sources/current_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/data-sources/current_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -630,7 +630,7 @@ import "github.com/cdktf/cdktf-provider-snowflake-go/snowflake/v15/datasnowflake
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.5.0/docs/data-sources/current_account#id DataSnowflakeCurrentAccount#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeCurrentAccount.DataSnowflakeCurrentAccountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/data-sources/current_account#id DataSnowflakeCurrentAccount#id}. |
 
 ---
 
@@ -712,7 +712,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.5.0/docs/data-sources/current_account#id DataSnowflakeCurrentAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/data-sources/current_account#id DataSnowflakeCurrentAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
