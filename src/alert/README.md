@@ -1,3 +1,3 @@
 # `snowflake_alert`
 
-Refer to the Terraform Registry for docs: [`snowflake_alert`](https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/alert).
+Refer to the Terraform Registry for docs: [`snowflake_alert`](https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/alert).
