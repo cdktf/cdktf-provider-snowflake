@@ -1,3 +1,3 @@
 # `data_snowflake_warehouses`
 
-Refer to the Terraform Registry for docs: [`data_snowflake_warehouses`](https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/data-sources/warehouses).
+Refer to the Terraform Registry for docs: [`data_snowflake_warehouses`](https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/data-sources/warehouses).

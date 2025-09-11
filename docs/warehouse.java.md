@@ -4,7 +4,7 @@
 
 ### Warehouse <a name="Warehouse" id="@cdktf/provider-snowflake.warehouse.Warehouse"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/warehouse snowflake_warehouse}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse snowflake_warehouse}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.warehouse.Warehouse.Initializer"></a>
 
@@ -28,6 +28,7 @@ Warehouse.Builder.create(Construct scope, java.lang.String id)
 //  .autoSuspend(java.lang.Number)
 //  .comment(java.lang.String)
 //  .enableQueryAcceleration(java.lang.String)
+//  .generation(java.lang.String)
 //  .id(java.lang.String)
 //  .initiallySuspended(java.lang.Boolean)
 //  .initiallySuspended(IResolvable)
@@ -35,6 +36,7 @@ Warehouse.Builder.create(Construct scope, java.lang.String id)
 //  .maxConcurrencyLevel(java.lang.Number)
 //  .minClusterCount(java.lang.Number)
 //  .queryAccelerationMaxScaleFactor(java.lang.Number)
+//  .resourceConstraint(java.lang.String)
 //  .resourceMonitor(java.lang.String)
 //  .scalingPolicy(java.lang.String)
 //  .statementQueuedTimeoutInSeconds(java.lang.Number)
@@ -61,12 +63,14 @@ Warehouse.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.Initializer.parameter.autoSuspend">autoSuspend</a></code> | <code>java.lang.Number</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) Specifies the number of seconds of inactivity after which a warehouse is automatically suspended. |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.Initializer.parameter.comment">comment</a></code> | <code>java.lang.String</code> | Specifies a comment for the warehouse. |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.Initializer.parameter.enableQueryAcceleration">enableQueryAcceleration</a></code> | <code>java.lang.String</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether to enable the query acceleration service for queries that rely on this warehouse for compute resources. |
-| <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/warehouse#id Warehouse#id}. |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.Initializer.parameter.generation">generation</a></code> | <code>java.lang.String</code> | Specifies the generation for the warehouse. Only available for standard warehouses. Valid values are (case-insensitive): `1` \| `2`. |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse#id Warehouse#id}. |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.Initializer.parameter.initiallySuspended">initiallySuspended</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Specifies whether the warehouse is created initially in the ‘Suspended’ state. |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.Initializer.parameter.maxClusterCount">maxClusterCount</a></code> | <code>java.lang.Number</code> | Specifies the maximum number of server clusters for the warehouse. |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.Initializer.parameter.maxConcurrencyLevel">maxConcurrencyLevel</a></code> | <code>java.lang.Number</code> | Object parameter that specifies the concurrency level for SQL statements (i.e. queries and DML) executed by a warehouse. |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.Initializer.parameter.minClusterCount">minClusterCount</a></code> | <code>java.lang.Number</code> | Specifies the minimum number of server clusters for the warehouse (only applies to multi-cluster warehouses). |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.Initializer.parameter.queryAccelerationMaxScaleFactor">queryAccelerationMaxScaleFactor</a></code> | <code>java.lang.Number</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) Specifies the maximum scale factor for leasing compute resources for query acceleration. |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.Initializer.parameter.resourceConstraint">resourceConstraint</a></code> | <code>java.lang.String</code> | Specifies the resource constraint for the warehouse. |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.Initializer.parameter.resourceMonitor">resourceMonitor</a></code> | <code>java.lang.String</code> | Specifies the name of a resource monitor that is explicitly assigned to the warehouse. |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.Initializer.parameter.scalingPolicy">scalingPolicy</a></code> | <code>java.lang.String</code> | Specifies the policy for automatically starting and shutting down clusters in a multi-cluster warehouse running in Auto-scale mode. |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.Initializer.parameter.statementQueuedTimeoutInSeconds">statementQueuedTimeoutInSeconds</a></code> | <code>java.lang.Number</code> | Object parameter that specifies the time, in seconds, a SQL statement (query, DDL, DML, etc.) can be queued on a warehouse before it is canceled by the system. |
@@ -145,7 +149,7 @@ Identifier for the virtual warehouse;
 
 must be unique for your account. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/warehouse#name Warehouse#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse#name Warehouse#name}
 
 ---
 
@@ -155,7 +159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether to automatically resume a warehouse when a SQL statement (e.g. query) is submitted to it. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/warehouse#auto_resume Warehouse#auto_resume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse#auto_resume Warehouse#auto_resume}
 
 ---
 
@@ -165,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) Specifies the number of seconds of inactivity after which a warehouse is automatically suspended.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/warehouse#auto_suspend Warehouse#auto_suspend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse#auto_suspend Warehouse#auto_suspend}
 
 ---
 
@@ -175,7 +179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies a comment for the warehouse.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/warehouse#comment Warehouse#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse#comment Warehouse#comment}
 
 ---
 
@@ -187,7 +191,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/warehouse#enable_query_acceleration Warehouse#enable_query_acceleration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse#enable_query_acceleration Warehouse#enable_query_acceleration}
+
+---
+
+##### `generation`<sup>Optional</sup> <a name="generation" id="@cdktf/provider-snowflake.warehouse.Warehouse.Initializer.parameter.generation"></a>
+
+- *Type:* java.lang.String
+
+Specifies the generation for the warehouse. Only available for standard warehouses. Valid values are (case-insensitive): `1` | `2`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse#generation Warehouse#generation}
 
 ---
 
@@ -195,7 +209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/warehouse#id Warehouse#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse#id Warehouse#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -208,7 +222,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Specifies whether the warehouse is created initially in the ‘Suspended’ state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/warehouse#initially_suspended Warehouse#initially_suspended}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse#initially_suspended Warehouse#initially_suspended}
 
 ---
 
@@ -218,7 +232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the maximum number of server clusters for the warehouse.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/warehouse#max_cluster_count Warehouse#max_cluster_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse#max_cluster_count Warehouse#max_cluster_count}
 
 ---
 
@@ -228,7 +242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Object parameter that specifies the concurrency level for SQL statements (i.e. queries and DML) executed by a warehouse.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/warehouse#max_concurrency_level Warehouse#max_concurrency_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse#max_concurrency_level Warehouse#max_concurrency_level}
 
 ---
 
@@ -238,7 +252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the minimum number of server clusters for the warehouse (only applies to multi-cluster warehouses).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/warehouse#min_cluster_count Warehouse#min_cluster_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse#min_cluster_count Warehouse#min_cluster_count}
 
 ---
 
@@ -250,7 +264,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 The scale factor is used as a multiplier based on warehouse size.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/warehouse#query_acceleration_max_scale_factor Warehouse#query_acceleration_max_scale_factor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse#query_acceleration_max_scale_factor Warehouse#query_acceleration_max_scale_factor}
+
+---
+
+##### `resourceConstraint`<sup>Optional</sup> <a name="resourceConstraint" id="@cdktf/provider-snowflake.warehouse.Warehouse.Initializer.parameter.resourceConstraint"></a>
+
+- *Type:* java.lang.String
+
+Specifies the resource constraint for the warehouse.
+
+Only available for snowpark-optimized warehouses. For setting generation please use the `generation` field. Please check [Snowflake documentation](https://docs.snowflake.com/en/sql-reference/sql/create-warehouse#optional-properties-objectproperties) for required warehouse sizes for each resource constraint. Valid values are (case-insensitive): `MEMORY_1X` | `MEMORY_1X_x86` | `MEMORY_16X` | `MEMORY_16X_x86` | `MEMORY_64X` | `MEMORY_64X_x86`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse#resource_constraint Warehouse#resource_constraint}
 
 ---
 
@@ -262,7 +288,7 @@ Specifies the name of a resource monitor that is explicitly assigned to the ware
 
 For more information about this resource, see [docs](./resource_monitor).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/warehouse#resource_monitor Warehouse#resource_monitor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse#resource_monitor Warehouse#resource_monitor}
 
 ---
 
@@ -274,7 +300,7 @@ Specifies the policy for automatically starting and shutting down clusters in a 
 
 Valid values are (case-insensitive): `STANDARD` | `ECONOMY`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/warehouse#scaling_policy Warehouse#scaling_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse#scaling_policy Warehouse#scaling_policy}
 
 ---
 
@@ -284,7 +310,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Object parameter that specifies the time, in seconds, a SQL statement (query, DDL, DML, etc.) can be queued on a warehouse before it is canceled by the system.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/warehouse#statement_queued_timeout_in_seconds Warehouse#statement_queued_timeout_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse#statement_queued_timeout_in_seconds Warehouse#statement_queued_timeout_in_seconds}
 
 ---
 
@@ -294,7 +320,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the time, in seconds, after which a running SQL statement (query, DDL, DML, etc.) is canceled by the system.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/warehouse#statement_timeout_in_seconds Warehouse#statement_timeout_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse#statement_timeout_in_seconds Warehouse#statement_timeout_in_seconds}
 
 ---
 
@@ -304,7 +330,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/warehouse#timeouts Warehouse#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse#timeouts Warehouse#timeouts}
 
 ---
 
@@ -316,7 +342,7 @@ Specifies the size of the virtual warehouse.
 
 Valid values are (case-insensitive): `XSMALL` | `X-SMALL` | `SMALL` | `MEDIUM` | `LARGE` | `XLARGE` | `X-LARGE` | `XXLARGE` | `X2LARGE` | `2X-LARGE` | `XXXLARGE` | `X3LARGE` | `3X-LARGE` | `X4LARGE` | `4X-LARGE` | `X5LARGE` | `5X-LARGE` | `X6LARGE` | `6X-LARGE`. Consult [warehouse documentation](https://docs.snowflake.com/en/sql-reference/sql/create-warehouse#optional-properties-objectproperties) for the details. Note: removing the size from config will result in the resource recreation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/warehouse#warehouse_size Warehouse#warehouse_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse#warehouse_size Warehouse#warehouse_size}
 
 ---
 
@@ -328,7 +354,7 @@ Specifies warehouse type.
 
 Valid values are (case-insensitive): `STANDARD` | `SNOWPARK-OPTIMIZED`. Warehouse needs to be suspended to change its type. Provider will handle automatic suspension and resumption if needed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/warehouse#warehouse_type Warehouse#warehouse_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse#warehouse_type Warehouse#warehouse_type}
 
 ---
 
@@ -364,12 +390,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.resetAutoSuspend">resetAutoSuspend</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.resetComment">resetComment</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.resetEnableQueryAcceleration">resetEnableQueryAcceleration</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.resetGeneration">resetGeneration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.resetInitiallySuspended">resetInitiallySuspended</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.resetMaxClusterCount">resetMaxClusterCount</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.resetMaxConcurrencyLevel">resetMaxConcurrencyLevel</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.resetMinClusterCount">resetMinClusterCount</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.resetQueryAccelerationMaxScaleFactor">resetQueryAccelerationMaxScaleFactor</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.resetResourceConstraint">resetResourceConstraint</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.resetResourceMonitor">resetResourceMonitor</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.resetScalingPolicy">resetScalingPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.resetStatementQueuedTimeoutInSeconds">resetStatementQueuedTimeoutInSeconds</a></code> | *No description.* |
@@ -706,6 +734,12 @@ public void resetComment()
 public void resetEnableQueryAcceleration()
 ```
 
+##### `resetGeneration` <a name="resetGeneration" id="@cdktf/provider-snowflake.warehouse.Warehouse.resetGeneration"></a>
+
+```java
+public void resetGeneration()
+```
+
 ##### `resetId` <a name="resetId" id="@cdktf/provider-snowflake.warehouse.Warehouse.resetId"></a>
 
 ```java
@@ -740,6 +774,12 @@ public void resetMinClusterCount()
 
 ```java
 public void resetQueryAccelerationMaxScaleFactor()
+```
+
+##### `resetResourceConstraint` <a name="resetResourceConstraint" id="@cdktf/provider-snowflake.warehouse.Warehouse.resetResourceConstraint"></a>
+
+```java
+public void resetResourceConstraint()
 ```
 
 ##### `resetResourceMonitor` <a name="resetResourceMonitor" id="@cdktf/provider-snowflake.warehouse.Warehouse.resetResourceMonitor"></a>
@@ -887,7 +927,7 @@ The construct id used in the generated config for the Warehouse to import.
 
 The id of the existing Warehouse that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/warehouse#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -925,6 +965,7 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.property.autoSuspendInput">autoSuspendInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.property.commentInput">commentInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.property.enableQueryAccelerationInput">enableQueryAccelerationInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.property.generationInput">generationInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.property.initiallySuspendedInput">initiallySuspendedInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.property.maxClusterCountInput">maxClusterCountInput</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -932,6 +973,7 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.property.minClusterCountInput">minClusterCountInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.property.queryAccelerationMaxScaleFactorInput">queryAccelerationMaxScaleFactorInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.property.resourceConstraintInput">resourceConstraintInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.property.resourceMonitorInput">resourceMonitorInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.property.scalingPolicyInput">scalingPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.property.statementQueuedTimeoutInSecondsInput">statementQueuedTimeoutInSecondsInput</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -943,6 +985,7 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.property.autoSuspend">autoSuspend</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.property.comment">comment</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.property.enableQueryAcceleration">enableQueryAcceleration</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.property.generation">generation</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.property.initiallySuspended">initiallySuspended</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.property.maxClusterCount">maxClusterCount</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -950,6 +993,7 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.property.minClusterCount">minClusterCount</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.property.queryAccelerationMaxScaleFactor">queryAccelerationMaxScaleFactor</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.property.resourceConstraint">resourceConstraint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.property.resourceMonitor">resourceMonitor</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.property.scalingPolicy">scalingPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.Warehouse.property.statementQueuedTimeoutInSeconds">statementQueuedTimeoutInSeconds</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -1181,6 +1225,16 @@ public java.lang.String getEnableQueryAccelerationInput();
 
 ---
 
+##### `generationInput`<sup>Optional</sup> <a name="generationInput" id="@cdktf/provider-snowflake.warehouse.Warehouse.property.generationInput"></a>
+
+```java
+public java.lang.String getGenerationInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-snowflake.warehouse.Warehouse.property.idInput"></a>
 
 ```java
@@ -1248,6 +1302,16 @@ public java.lang.Number getQueryAccelerationMaxScaleFactorInput();
 ```
 
 - *Type:* java.lang.Number
+
+---
+
+##### `resourceConstraintInput`<sup>Optional</sup> <a name="resourceConstraintInput" id="@cdktf/provider-snowflake.warehouse.Warehouse.property.resourceConstraintInput"></a>
+
+```java
+public java.lang.String getResourceConstraintInput();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -1361,6 +1425,16 @@ public java.lang.String getEnableQueryAcceleration();
 
 ---
 
+##### `generation`<sup>Required</sup> <a name="generation" id="@cdktf/provider-snowflake.warehouse.Warehouse.property.generation"></a>
+
+```java
+public java.lang.String getGeneration();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-snowflake.warehouse.Warehouse.property.id"></a>
 
 ```java
@@ -1428,6 +1502,16 @@ public java.lang.Number getQueryAccelerationMaxScaleFactor();
 ```
 
 - *Type:* java.lang.Number
+
+---
+
+##### `resourceConstraint`<sup>Required</sup> <a name="resourceConstraint" id="@cdktf/provider-snowflake.warehouse.Warehouse.property.resourceConstraint"></a>
+
+```java
+public java.lang.String getResourceConstraint();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -1535,6 +1619,7 @@ WarehouseConfig.builder()
 //  .autoSuspend(java.lang.Number)
 //  .comment(java.lang.String)
 //  .enableQueryAcceleration(java.lang.String)
+//  .generation(java.lang.String)
 //  .id(java.lang.String)
 //  .initiallySuspended(java.lang.Boolean)
 //  .initiallySuspended(IResolvable)
@@ -1542,6 +1627,7 @@ WarehouseConfig.builder()
 //  .maxConcurrencyLevel(java.lang.Number)
 //  .minClusterCount(java.lang.Number)
 //  .queryAccelerationMaxScaleFactor(java.lang.Number)
+//  .resourceConstraint(java.lang.String)
 //  .resourceMonitor(java.lang.String)
 //  .scalingPolicy(java.lang.String)
 //  .statementQueuedTimeoutInSeconds(java.lang.Number)
@@ -1568,12 +1654,14 @@ WarehouseConfig.builder()
 | <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseConfig.property.autoSuspend">autoSuspend</a></code> | <code>java.lang.Number</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) Specifies the number of seconds of inactivity after which a warehouse is automatically suspended. |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseConfig.property.comment">comment</a></code> | <code>java.lang.String</code> | Specifies a comment for the warehouse. |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseConfig.property.enableQueryAcceleration">enableQueryAcceleration</a></code> | <code>java.lang.String</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether to enable the query acceleration service for queries that rely on this warehouse for compute resources. |
-| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/warehouse#id Warehouse#id}. |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseConfig.property.generation">generation</a></code> | <code>java.lang.String</code> | Specifies the generation for the warehouse. Only available for standard warehouses. Valid values are (case-insensitive): `1` \| `2`. |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse#id Warehouse#id}. |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseConfig.property.initiallySuspended">initiallySuspended</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Specifies whether the warehouse is created initially in the ‘Suspended’ state. |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseConfig.property.maxClusterCount">maxClusterCount</a></code> | <code>java.lang.Number</code> | Specifies the maximum number of server clusters for the warehouse. |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseConfig.property.maxConcurrencyLevel">maxConcurrencyLevel</a></code> | <code>java.lang.Number</code> | Object parameter that specifies the concurrency level for SQL statements (i.e. queries and DML) executed by a warehouse. |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseConfig.property.minClusterCount">minClusterCount</a></code> | <code>java.lang.Number</code> | Specifies the minimum number of server clusters for the warehouse (only applies to multi-cluster warehouses). |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseConfig.property.queryAccelerationMaxScaleFactor">queryAccelerationMaxScaleFactor</a></code> | <code>java.lang.Number</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) Specifies the maximum scale factor for leasing compute resources for query acceleration. |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseConfig.property.resourceConstraint">resourceConstraint</a></code> | <code>java.lang.String</code> | Specifies the resource constraint for the warehouse. |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseConfig.property.resourceMonitor">resourceMonitor</a></code> | <code>java.lang.String</code> | Specifies the name of a resource monitor that is explicitly assigned to the warehouse. |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseConfig.property.scalingPolicy">scalingPolicy</a></code> | <code>java.lang.String</code> | Specifies the policy for automatically starting and shutting down clusters in a multi-cluster warehouse running in Auto-scale mode. |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseConfig.property.statementQueuedTimeoutInSeconds">statementQueuedTimeoutInSeconds</a></code> | <code>java.lang.Number</code> | Object parameter that specifies the time, in seconds, a SQL statement (query, DDL, DML, etc.) can be queued on a warehouse before it is canceled by the system. |
@@ -1666,7 +1754,7 @@ Identifier for the virtual warehouse;
 
 must be unique for your account. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/warehouse#name Warehouse#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse#name Warehouse#name}
 
 ---
 
@@ -1680,7 +1768,7 @@ public java.lang.String getAutoResume();
 
 (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether to automatically resume a warehouse when a SQL statement (e.g. query) is submitted to it. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/warehouse#auto_resume Warehouse#auto_resume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse#auto_resume Warehouse#auto_resume}
 
 ---
 
@@ -1694,7 +1782,7 @@ public java.lang.Number getAutoSuspend();
 
 (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) Specifies the number of seconds of inactivity after which a warehouse is automatically suspended.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/warehouse#auto_suspend Warehouse#auto_suspend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse#auto_suspend Warehouse#auto_suspend}
 
 ---
 
@@ -1708,7 +1796,7 @@ public java.lang.String getComment();
 
 Specifies a comment for the warehouse.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/warehouse#comment Warehouse#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse#comment Warehouse#comment}
 
 ---
 
@@ -1724,7 +1812,21 @@ public java.lang.String getEnableQueryAcceleration();
 
 Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/warehouse#enable_query_acceleration Warehouse#enable_query_acceleration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse#enable_query_acceleration Warehouse#enable_query_acceleration}
+
+---
+
+##### `generation`<sup>Optional</sup> <a name="generation" id="@cdktf/provider-snowflake.warehouse.WarehouseConfig.property.generation"></a>
+
+```java
+public java.lang.String getGeneration();
+```
+
+- *Type:* java.lang.String
+
+Specifies the generation for the warehouse. Only available for standard warehouses. Valid values are (case-insensitive): `1` | `2`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse#generation Warehouse#generation}
 
 ---
 
@@ -1736,7 +1838,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/warehouse#id Warehouse#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse#id Warehouse#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1753,7 +1855,7 @@ public java.lang.Object getInitiallySuspended();
 
 Specifies whether the warehouse is created initially in the ‘Suspended’ state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/warehouse#initially_suspended Warehouse#initially_suspended}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse#initially_suspended Warehouse#initially_suspended}
 
 ---
 
@@ -1767,7 +1869,7 @@ public java.lang.Number getMaxClusterCount();
 
 Specifies the maximum number of server clusters for the warehouse.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/warehouse#max_cluster_count Warehouse#max_cluster_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse#max_cluster_count Warehouse#max_cluster_count}
 
 ---
 
@@ -1781,7 +1883,7 @@ public java.lang.Number getMaxConcurrencyLevel();
 
 Object parameter that specifies the concurrency level for SQL statements (i.e. queries and DML) executed by a warehouse.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/warehouse#max_concurrency_level Warehouse#max_concurrency_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse#max_concurrency_level Warehouse#max_concurrency_level}
 
 ---
 
@@ -1795,7 +1897,7 @@ public java.lang.Number getMinClusterCount();
 
 Specifies the minimum number of server clusters for the warehouse (only applies to multi-cluster warehouses).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/warehouse#min_cluster_count Warehouse#min_cluster_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse#min_cluster_count Warehouse#min_cluster_count}
 
 ---
 
@@ -1811,7 +1913,23 @@ public java.lang.Number getQueryAccelerationMaxScaleFactor();
 
 The scale factor is used as a multiplier based on warehouse size.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/warehouse#query_acceleration_max_scale_factor Warehouse#query_acceleration_max_scale_factor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse#query_acceleration_max_scale_factor Warehouse#query_acceleration_max_scale_factor}
+
+---
+
+##### `resourceConstraint`<sup>Optional</sup> <a name="resourceConstraint" id="@cdktf/provider-snowflake.warehouse.WarehouseConfig.property.resourceConstraint"></a>
+
+```java
+public java.lang.String getResourceConstraint();
+```
+
+- *Type:* java.lang.String
+
+Specifies the resource constraint for the warehouse.
+
+Only available for snowpark-optimized warehouses. For setting generation please use the `generation` field. Please check [Snowflake documentation](https://docs.snowflake.com/en/sql-reference/sql/create-warehouse#optional-properties-objectproperties) for required warehouse sizes for each resource constraint. Valid values are (case-insensitive): `MEMORY_1X` | `MEMORY_1X_x86` | `MEMORY_16X` | `MEMORY_16X_x86` | `MEMORY_64X` | `MEMORY_64X_x86`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse#resource_constraint Warehouse#resource_constraint}
 
 ---
 
@@ -1827,7 +1945,7 @@ Specifies the name of a resource monitor that is explicitly assigned to the ware
 
 For more information about this resource, see [docs](./resource_monitor).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/warehouse#resource_monitor Warehouse#resource_monitor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse#resource_monitor Warehouse#resource_monitor}
 
 ---
 
@@ -1843,7 +1961,7 @@ Specifies the policy for automatically starting and shutting down clusters in a 
 
 Valid values are (case-insensitive): `STANDARD` | `ECONOMY`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/warehouse#scaling_policy Warehouse#scaling_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse#scaling_policy Warehouse#scaling_policy}
 
 ---
 
@@ -1857,7 +1975,7 @@ public java.lang.Number getStatementQueuedTimeoutInSeconds();
 
 Object parameter that specifies the time, in seconds, a SQL statement (query, DDL, DML, etc.) can be queued on a warehouse before it is canceled by the system.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/warehouse#statement_queued_timeout_in_seconds Warehouse#statement_queued_timeout_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse#statement_queued_timeout_in_seconds Warehouse#statement_queued_timeout_in_seconds}
 
 ---
 
@@ -1871,7 +1989,7 @@ public java.lang.Number getStatementTimeoutInSeconds();
 
 Specifies the time, in seconds, after which a running SQL statement (query, DDL, DML, etc.) is canceled by the system.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/warehouse#statement_timeout_in_seconds Warehouse#statement_timeout_in_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse#statement_timeout_in_seconds Warehouse#statement_timeout_in_seconds}
 
 ---
 
@@ -1885,7 +2003,7 @@ public WarehouseTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/warehouse#timeouts Warehouse#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse#timeouts Warehouse#timeouts}
 
 ---
 
@@ -1901,7 +2019,7 @@ Specifies the size of the virtual warehouse.
 
 Valid values are (case-insensitive): `XSMALL` | `X-SMALL` | `SMALL` | `MEDIUM` | `LARGE` | `XLARGE` | `X-LARGE` | `XXLARGE` | `X2LARGE` | `2X-LARGE` | `XXXLARGE` | `X3LARGE` | `3X-LARGE` | `X4LARGE` | `4X-LARGE` | `X5LARGE` | `5X-LARGE` | `X6LARGE` | `6X-LARGE`. Consult [warehouse documentation](https://docs.snowflake.com/en/sql-reference/sql/create-warehouse#optional-properties-objectproperties) for the details. Note: removing the size from config will result in the resource recreation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/warehouse#warehouse_size Warehouse#warehouse_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse#warehouse_size Warehouse#warehouse_size}
 
 ---
 
@@ -1917,7 +2035,7 @@ Specifies warehouse type.
 
 Valid values are (case-insensitive): `STANDARD` | `SNOWPARK-OPTIMIZED`. Warehouse needs to be suspended to change its type. Provider will handle automatic suspension and resumption if needed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/warehouse#warehouse_type Warehouse#warehouse_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse#warehouse_type Warehouse#warehouse_type}
 
 ---
 
@@ -2000,10 +2118,10 @@ WarehouseTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/warehouse#create Warehouse#create}. |
-| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/warehouse#delete Warehouse#delete}. |
-| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/warehouse#read Warehouse#read}. |
-| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/warehouse#update Warehouse#update}. |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse#create Warehouse#create}. |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse#delete Warehouse#delete}. |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse#read Warehouse#read}. |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse#update Warehouse#update}. |
 
 ---
 
@@ -2015,7 +2133,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/warehouse#create Warehouse#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse#create Warehouse#create}.
 
 ---
 
@@ -2027,7 +2145,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/warehouse#delete Warehouse#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse#delete Warehouse#delete}.
 
 ---
 
@@ -2039,7 +2157,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/warehouse#read Warehouse#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse#read Warehouse#read}.
 
 ---
 
@@ -2051,7 +2169,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/warehouse#update Warehouse#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/warehouse#update Warehouse#update}.
 
 ---
 
@@ -4302,6 +4420,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseShowOutputOutputReference.property.comment">comment</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseShowOutputOutputReference.property.createdOn">createdOn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseShowOutputOutputReference.property.enableQueryAcceleration">enableQueryAcceleration</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseShowOutputOutputReference.property.generation">generation</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseShowOutputOutputReference.property.isCurrent">isCurrent</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseShowOutputOutputReference.property.isDefault">isDefault</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseShowOutputOutputReference.property.maxClusterCount">maxClusterCount</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -4314,6 +4433,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseShowOutputOutputReference.property.queryAccelerationMaxScaleFactor">queryAccelerationMaxScaleFactor</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseShowOutputOutputReference.property.queued">queued</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseShowOutputOutputReference.property.quiescing">quiescing</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseShowOutputOutputReference.property.resourceConstraint">resourceConstraint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseShowOutputOutputReference.property.resourceMonitor">resourceMonitor</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseShowOutputOutputReference.property.resumedOn">resumedOn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.warehouse.WarehouseShowOutputOutputReference.property.running">running</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -4408,6 +4528,16 @@ public IResolvable getEnableQueryAcceleration();
 ```
 
 - *Type:* com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `generation`<sup>Required</sup> <a name="generation" id="@cdktf/provider-snowflake.warehouse.WarehouseShowOutputOutputReference.property.generation"></a>
+
+```java
+public java.lang.String getGeneration();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -4528,6 +4658,16 @@ public java.lang.Number getQuiescing();
 ```
 
 - *Type:* java.lang.Number
+
+---
+
+##### `resourceConstraint`<sup>Required</sup> <a name="resourceConstraint" id="@cdktf/provider-snowflake.warehouse.WarehouseShowOutputOutputReference.property.resourceConstraint"></a>
+
+```java
+public java.lang.String getResourceConstraint();
+```
+
+- *Type:* java.lang.String
 
 ---
 

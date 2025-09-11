@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/execute
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/execute
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface ExecuteConfig extends cdktf.TerraformMetaArguments {
   /**
   * SQL statement to execute. Forces recreation of resource on change.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/execute#execute Execute#execute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/execute#execute Execute#execute}
   */
   readonly execute: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/execute#id Execute#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/execute#id Execute#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,37 +28,37 @@ export interface ExecuteConfig extends cdktf.TerraformMetaArguments {
   /**
   * Optional SQL statement to do a read. Invoked on every resource refresh and every time it is changed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/execute#query Execute#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/execute#query Execute#query}
   */
   readonly query?: string;
   /**
   * SQL statement to revert the execute statement. Invoked when resource is being destroyed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/execute#revert Execute#revert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/execute#revert Execute#revert}
   */
   readonly revert: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/execute#timeouts Execute#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/execute#timeouts Execute#timeouts}
   */
   readonly timeouts?: ExecuteTimeouts;
 }
 export interface ExecuteTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/execute#create Execute#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/execute#create Execute#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/execute#delete Execute#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/execute#delete Execute#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/execute#read Execute#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/execute#read Execute#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/execute#update Execute#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/execute#update Execute#update}
   */
   readonly update?: string;
 }
@@ -239,7 +239,7 @@ export class ExecuteTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/execute snowflake_execute}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/execute snowflake_execute}
 */
 export class Execute extends cdktf.TerraformResource {
 
@@ -255,7 +255,7 @@ export class Execute extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Execute resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Execute to import
-  * @param importFromId The id of the existing Execute that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/execute#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Execute that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/execute#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Execute to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -267,7 +267,7 @@ export class Execute extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.6.0/docs/resources/execute snowflake_execute} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/execute snowflake_execute} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -278,7 +278,7 @@ export class Execute extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_execute',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.6.0',
+        providerVersion: '2.7.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
