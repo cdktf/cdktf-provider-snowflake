@@ -344,7 +344,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-snowflake.task.Task.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-snowflake.task.Task.importFrom"></a>
@@ -398,7 +398,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-snowflake.task.Task.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -413,7 +413,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-snowflake.task.Task.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -999,72 +999,72 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.fullyQualifiedName">FullyQualifiedName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.parameters">Parameters</a></code> | <code><a href="#@cdktf/provider-snowflake.task.TaskParametersList">TaskParametersList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.schedule">Schedule</a></code> | <code><a href="#@cdktf/provider-snowflake.task.TaskScheduleOutputReference">TaskScheduleOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.showOutput">ShowOutput</a></code> | <code><a href="#@cdktf/provider-snowflake.task.TaskShowOutputList">TaskShowOutputList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.task.TaskTimeoutsOutputReference">TaskTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.abortDetachedQueryInput">AbortDetachedQueryInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.abortDetachedQueryInput">AbortDetachedQueryInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.afterInput">AfterInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.allowOverlappingExecutionInput">AllowOverlappingExecutionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.autocommitInput">AutocommitInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.autocommitInput">AutocommitInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.binaryInputFormatInput">BinaryInputFormatInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.binaryOutputFormatInput">BinaryOutputFormatInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.clientMemoryLimitInput">ClientMemoryLimitInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.clientMetadataRequestUseConnectionCtxInput">ClientMetadataRequestUseConnectionCtxInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.clientMetadataRequestUseConnectionCtxInput">ClientMetadataRequestUseConnectionCtxInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.clientPrefetchThreadsInput">ClientPrefetchThreadsInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.clientResultChunkSizeInput">ClientResultChunkSizeInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.clientResultColumnCaseInsensitiveInput">ClientResultColumnCaseInsensitiveInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.clientResultColumnCaseInsensitiveInput">ClientResultColumnCaseInsensitiveInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.clientSessionKeepAliveHeartbeatFrequencyInput">ClientSessionKeepAliveHeartbeatFrequencyInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.clientSessionKeepAliveInput">ClientSessionKeepAliveInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.clientSessionKeepAliveInput">ClientSessionKeepAliveInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.clientTimestampTypeMappingInput">ClientTimestampTypeMappingInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.commentInput">CommentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.configInput">ConfigInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.databaseInput">DatabaseInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.dateInputFormatInput">DateInputFormatInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.dateOutputFormatInput">DateOutputFormatInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.enableUnloadPhysicalTypeOptimizationInput">EnableUnloadPhysicalTypeOptimizationInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.enableUnloadPhysicalTypeOptimizationInput">EnableUnloadPhysicalTypeOptimizationInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.errorIntegrationInput">ErrorIntegrationInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.errorOnNondeterministicMergeInput">ErrorOnNondeterministicMergeInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.errorOnNondeterministicUpdateInput">ErrorOnNondeterministicUpdateInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.errorOnNondeterministicMergeInput">ErrorOnNondeterministicMergeInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.errorOnNondeterministicUpdateInput">ErrorOnNondeterministicUpdateInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.finalizeInput">FinalizeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.geographyOutputFormatInput">GeographyOutputFormatInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.geometryOutputFormatInput">GeometryOutputFormatInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.jdbcTreatTimestampNtzAsUtcInput">JdbcTreatTimestampNtzAsUtcInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.jdbcUseSessionTimezoneInput">JdbcUseSessionTimezoneInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.jdbcTreatTimestampNtzAsUtcInput">JdbcTreatTimestampNtzAsUtcInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.jdbcUseSessionTimezoneInput">JdbcUseSessionTimezoneInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.jsonIndentInput">JsonIndentInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.lockTimeoutInput">LockTimeoutInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.logLevelInput">LogLevelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.multiStatementCountInput">MultiStatementCountInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.noorderSequenceAsDefaultInput">NoorderSequenceAsDefaultInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.odbcTreatDecimalAsIntInput">OdbcTreatDecimalAsIntInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.noorderSequenceAsDefaultInput">NoorderSequenceAsDefaultInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.odbcTreatDecimalAsIntInput">OdbcTreatDecimalAsIntInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.queryTagInput">QueryTagInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.quotedIdentifiersIgnoreCaseInput">QuotedIdentifiersIgnoreCaseInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.quotedIdentifiersIgnoreCaseInput">QuotedIdentifiersIgnoreCaseInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.rowsPerResultsetInput">RowsPerResultsetInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.s3StageVpceDnsNameInput">S3StageVpceDnsNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.scheduleInput">ScheduleInput</a></code> | <code><a href="#@cdktf/provider-snowflake.task.TaskSchedule">TaskSchedule</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.schemaInput">SchemaInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.searchPathInput">SearchPathInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.sqlStatementInput">SqlStatementInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.startedInput">StartedInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.startedInput">StartedInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.statementQueuedTimeoutInSecondsInput">StatementQueuedTimeoutInSecondsInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.statementTimeoutInSecondsInput">StatementTimeoutInSecondsInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.strictJsonOutputInput">StrictJsonOutputInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.strictJsonOutputInput">StrictJsonOutputInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.suspendTaskAfterNumFailuresInput">SuspendTaskAfterNumFailuresInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.taskAutoRetryAttemptsInput">TaskAutoRetryAttemptsInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.timeInputFormatInput">TimeInputFormatInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.timeOutputFormatInput">TimeOutputFormatInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.timeoutsInput">TimeoutsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.timestampDayIsAlways24HInput">TimestampDayIsAlways24HInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.timeoutsInput">TimeoutsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-snowflake.task.TaskTimeouts">TaskTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.timestampDayIsAlways24HInput">TimestampDayIsAlways24HInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.timestampInputFormatInput">TimestampInputFormatInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.timestampLtzOutputFormatInput">TimestampLtzOutputFormatInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.timestampNtzOutputFormatInput">TimestampNtzOutputFormatInput</a></code> | <code>string</code> | *No description.* |
@@ -1073,11 +1073,11 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.timestampTzOutputFormatInput">TimestampTzOutputFormatInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.timezoneInput">TimezoneInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.traceLevelInput">TraceLevelInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.transactionAbortOnErrorInput">TransactionAbortOnErrorInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.transactionAbortOnErrorInput">TransactionAbortOnErrorInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.transactionDefaultIsolationLevelInput">TransactionDefaultIsolationLevelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.twoDigitCenturyStartInput">TwoDigitCenturyStartInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.unsupportedDdlActionInput">UnsupportedDdlActionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.useCachedResultInput">UseCachedResultInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.useCachedResultInput">UseCachedResultInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.userTaskManagedInitialWarehouseSizeInput">UserTaskManagedInitialWarehouseSizeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.userTaskMinimumTriggerIntervalInSecondsInput">UserTaskMinimumTriggerIntervalInSecondsInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.userTaskTimeoutMsInput">UserTaskTimeoutMsInput</a></code> | <code>double</code> | *No description.* |
@@ -1085,18 +1085,18 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.weekOfYearPolicyInput">WeekOfYearPolicyInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.weekStartInput">WeekStartInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.whenInput">WhenInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.abortDetachedQuery">AbortDetachedQuery</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.abortDetachedQuery">AbortDetachedQuery</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.after">After</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.allowOverlappingExecution">AllowOverlappingExecution</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.autocommit">Autocommit</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.autocommit">Autocommit</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.binaryInputFormat">BinaryInputFormat</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.binaryOutputFormat">BinaryOutputFormat</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.clientMemoryLimit">ClientMemoryLimit</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.clientMetadataRequestUseConnectionCtx">ClientMetadataRequestUseConnectionCtx</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.clientMetadataRequestUseConnectionCtx">ClientMetadataRequestUseConnectionCtx</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.clientPrefetchThreads">ClientPrefetchThreads</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.clientResultChunkSize">ClientResultChunkSize</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.clientResultColumnCaseInsensitive">ClientResultColumnCaseInsensitive</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.clientSessionKeepAlive">ClientSessionKeepAlive</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.clientResultColumnCaseInsensitive">ClientResultColumnCaseInsensitive</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.clientSessionKeepAlive">ClientSessionKeepAlive</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.clientSessionKeepAliveHeartbeatFrequency">ClientSessionKeepAliveHeartbeatFrequency</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.clientTimestampTypeMapping">ClientTimestampTypeMapping</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.comment">Comment</a></code> | <code>string</code> | *No description.* |
@@ -1104,39 +1104,39 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.database">Database</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.dateInputFormat">DateInputFormat</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.dateOutputFormat">DateOutputFormat</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.enableUnloadPhysicalTypeOptimization">EnableUnloadPhysicalTypeOptimization</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.enableUnloadPhysicalTypeOptimization">EnableUnloadPhysicalTypeOptimization</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.errorIntegration">ErrorIntegration</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.errorOnNondeterministicMerge">ErrorOnNondeterministicMerge</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.errorOnNondeterministicUpdate">ErrorOnNondeterministicUpdate</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.errorOnNondeterministicMerge">ErrorOnNondeterministicMerge</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.errorOnNondeterministicUpdate">ErrorOnNondeterministicUpdate</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.finalize">Finalize</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.geographyOutputFormat">GeographyOutputFormat</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.geometryOutputFormat">GeometryOutputFormat</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.id">Id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.jdbcTreatTimestampNtzAsUtc">JdbcTreatTimestampNtzAsUtc</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.jdbcUseSessionTimezone">JdbcUseSessionTimezone</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.jdbcTreatTimestampNtzAsUtc">JdbcTreatTimestampNtzAsUtc</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.jdbcUseSessionTimezone">JdbcUseSessionTimezone</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.jsonIndent">JsonIndent</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.lockTimeout">LockTimeout</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.logLevel">LogLevel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.multiStatementCount">MultiStatementCount</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.noorderSequenceAsDefault">NoorderSequenceAsDefault</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.odbcTreatDecimalAsInt">OdbcTreatDecimalAsInt</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.noorderSequenceAsDefault">NoorderSequenceAsDefault</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.odbcTreatDecimalAsInt">OdbcTreatDecimalAsInt</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.queryTag">QueryTag</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.quotedIdentifiersIgnoreCase">QuotedIdentifiersIgnoreCase</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.quotedIdentifiersIgnoreCase">QuotedIdentifiersIgnoreCase</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.rowsPerResultset">RowsPerResultset</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.s3StageVpceDnsName">S3StageVpceDnsName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.schema">Schema</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.searchPath">SearchPath</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.sqlStatement">SqlStatement</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.started">Started</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.started">Started</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.statementQueuedTimeoutInSeconds">StatementQueuedTimeoutInSeconds</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.statementTimeoutInSeconds">StatementTimeoutInSeconds</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.strictJsonOutput">StrictJsonOutput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.strictJsonOutput">StrictJsonOutput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.suspendTaskAfterNumFailures">SuspendTaskAfterNumFailures</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.taskAutoRetryAttempts">TaskAutoRetryAttempts</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.timeInputFormat">TimeInputFormat</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.timeOutputFormat">TimeOutputFormat</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.timestampDayIsAlways24H">TimestampDayIsAlways24H</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.timestampDayIsAlways24H">TimestampDayIsAlways24H</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.timestampInputFormat">TimestampInputFormat</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.timestampLtzOutputFormat">TimestampLtzOutputFormat</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.timestampNtzOutputFormat">TimestampNtzOutputFormat</a></code> | <code>string</code> | *No description.* |
@@ -1145,11 +1145,11 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.timestampTzOutputFormat">TimestampTzOutputFormat</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.timezone">Timezone</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.traceLevel">TraceLevel</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.transactionAbortOnError">TransactionAbortOnError</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.transactionAbortOnError">TransactionAbortOnError</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.transactionDefaultIsolationLevel">TransactionDefaultIsolationLevel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.twoDigitCenturyStart">TwoDigitCenturyStart</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.unsupportedDdlAction">UnsupportedDdlAction</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.useCachedResult">UseCachedResult</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.useCachedResult">UseCachedResult</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.userTaskManagedInitialWarehouseSize">UserTaskManagedInitialWarehouseSize</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.userTaskMinimumTriggerIntervalInSeconds">UserTaskMinimumTriggerIntervalInSeconds</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.userTaskTimeoutMs">UserTaskTimeoutMs</a></code> | <code>double</code> | *No description.* |
@@ -1235,20 +1235,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-snowflake.task.Task.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-snowflake.task.Task.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1295,10 +1295,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-snowflake.task.Task.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1355,10 +1355,10 @@ public TaskTimeoutsOutputReference Timeouts { get; }
 ##### `AbortDetachedQueryInput`<sup>Optional</sup> <a name="AbortDetachedQueryInput" id="@cdktf/provider-snowflake.task.Task.property.abortDetachedQueryInput"></a>
 
 ```csharp
-public object AbortDetachedQueryInput { get; }
+public bool|IResolvable AbortDetachedQueryInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1385,10 +1385,10 @@ public string AllowOverlappingExecutionInput { get; }
 ##### `AutocommitInput`<sup>Optional</sup> <a name="AutocommitInput" id="@cdktf/provider-snowflake.task.Task.property.autocommitInput"></a>
 
 ```csharp
-public object AutocommitInput { get; }
+public bool|IResolvable AutocommitInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1425,10 +1425,10 @@ public double ClientMemoryLimitInput { get; }
 ##### `ClientMetadataRequestUseConnectionCtxInput`<sup>Optional</sup> <a name="ClientMetadataRequestUseConnectionCtxInput" id="@cdktf/provider-snowflake.task.Task.property.clientMetadataRequestUseConnectionCtxInput"></a>
 
 ```csharp
-public object ClientMetadataRequestUseConnectionCtxInput { get; }
+public bool|IResolvable ClientMetadataRequestUseConnectionCtxInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1455,10 +1455,10 @@ public double ClientResultChunkSizeInput { get; }
 ##### `ClientResultColumnCaseInsensitiveInput`<sup>Optional</sup> <a name="ClientResultColumnCaseInsensitiveInput" id="@cdktf/provider-snowflake.task.Task.property.clientResultColumnCaseInsensitiveInput"></a>
 
 ```csharp
-public object ClientResultColumnCaseInsensitiveInput { get; }
+public bool|IResolvable ClientResultColumnCaseInsensitiveInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1475,10 +1475,10 @@ public double ClientSessionKeepAliveHeartbeatFrequencyInput { get; }
 ##### `ClientSessionKeepAliveInput`<sup>Optional</sup> <a name="ClientSessionKeepAliveInput" id="@cdktf/provider-snowflake.task.Task.property.clientSessionKeepAliveInput"></a>
 
 ```csharp
-public object ClientSessionKeepAliveInput { get; }
+public bool|IResolvable ClientSessionKeepAliveInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1545,10 +1545,10 @@ public string DateOutputFormatInput { get; }
 ##### `EnableUnloadPhysicalTypeOptimizationInput`<sup>Optional</sup> <a name="EnableUnloadPhysicalTypeOptimizationInput" id="@cdktf/provider-snowflake.task.Task.property.enableUnloadPhysicalTypeOptimizationInput"></a>
 
 ```csharp
-public object EnableUnloadPhysicalTypeOptimizationInput { get; }
+public bool|IResolvable EnableUnloadPhysicalTypeOptimizationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1565,20 +1565,20 @@ public string ErrorIntegrationInput { get; }
 ##### `ErrorOnNondeterministicMergeInput`<sup>Optional</sup> <a name="ErrorOnNondeterministicMergeInput" id="@cdktf/provider-snowflake.task.Task.property.errorOnNondeterministicMergeInput"></a>
 
 ```csharp
-public object ErrorOnNondeterministicMergeInput { get; }
+public bool|IResolvable ErrorOnNondeterministicMergeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ErrorOnNondeterministicUpdateInput`<sup>Optional</sup> <a name="ErrorOnNondeterministicUpdateInput" id="@cdktf/provider-snowflake.task.Task.property.errorOnNondeterministicUpdateInput"></a>
 
 ```csharp
-public object ErrorOnNondeterministicUpdateInput { get; }
+public bool|IResolvable ErrorOnNondeterministicUpdateInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1625,20 +1625,20 @@ public string IdInput { get; }
 ##### `JdbcTreatTimestampNtzAsUtcInput`<sup>Optional</sup> <a name="JdbcTreatTimestampNtzAsUtcInput" id="@cdktf/provider-snowflake.task.Task.property.jdbcTreatTimestampNtzAsUtcInput"></a>
 
 ```csharp
-public object JdbcTreatTimestampNtzAsUtcInput { get; }
+public bool|IResolvable JdbcTreatTimestampNtzAsUtcInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `JdbcUseSessionTimezoneInput`<sup>Optional</sup> <a name="JdbcUseSessionTimezoneInput" id="@cdktf/provider-snowflake.task.Task.property.jdbcUseSessionTimezoneInput"></a>
 
 ```csharp
-public object JdbcUseSessionTimezoneInput { get; }
+public bool|IResolvable JdbcUseSessionTimezoneInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1695,20 +1695,20 @@ public string NameInput { get; }
 ##### `NoorderSequenceAsDefaultInput`<sup>Optional</sup> <a name="NoorderSequenceAsDefaultInput" id="@cdktf/provider-snowflake.task.Task.property.noorderSequenceAsDefaultInput"></a>
 
 ```csharp
-public object NoorderSequenceAsDefaultInput { get; }
+public bool|IResolvable NoorderSequenceAsDefaultInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `OdbcTreatDecimalAsIntInput`<sup>Optional</sup> <a name="OdbcTreatDecimalAsIntInput" id="@cdktf/provider-snowflake.task.Task.property.odbcTreatDecimalAsIntInput"></a>
 
 ```csharp
-public object OdbcTreatDecimalAsIntInput { get; }
+public bool|IResolvable OdbcTreatDecimalAsIntInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1725,10 +1725,10 @@ public string QueryTagInput { get; }
 ##### `QuotedIdentifiersIgnoreCaseInput`<sup>Optional</sup> <a name="QuotedIdentifiersIgnoreCaseInput" id="@cdktf/provider-snowflake.task.Task.property.quotedIdentifiersIgnoreCaseInput"></a>
 
 ```csharp
-public object QuotedIdentifiersIgnoreCaseInput { get; }
+public bool|IResolvable QuotedIdentifiersIgnoreCaseInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1795,10 +1795,10 @@ public string SqlStatementInput { get; }
 ##### `StartedInput`<sup>Optional</sup> <a name="StartedInput" id="@cdktf/provider-snowflake.task.Task.property.startedInput"></a>
 
 ```csharp
-public object StartedInput { get; }
+public bool|IResolvable StartedInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1825,10 +1825,10 @@ public double StatementTimeoutInSecondsInput { get; }
 ##### `StrictJsonOutputInput`<sup>Optional</sup> <a name="StrictJsonOutputInput" id="@cdktf/provider-snowflake.task.Task.property.strictJsonOutputInput"></a>
 
 ```csharp
-public object StrictJsonOutputInput { get; }
+public bool|IResolvable StrictJsonOutputInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1875,20 +1875,20 @@ public string TimeOutputFormatInput { get; }
 ##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktf/provider-snowflake.task.Task.property.timeoutsInput"></a>
 
 ```csharp
-public object TimeoutsInput { get; }
+public IResolvable|TaskTimeouts TimeoutsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-snowflake.task.TaskTimeouts">TaskTimeouts</a>
 
 ---
 
 ##### `TimestampDayIsAlways24HInput`<sup>Optional</sup> <a name="TimestampDayIsAlways24HInput" id="@cdktf/provider-snowflake.task.Task.property.timestampDayIsAlways24HInput"></a>
 
 ```csharp
-public object TimestampDayIsAlways24HInput { get; }
+public bool|IResolvable TimestampDayIsAlways24HInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1975,10 +1975,10 @@ public string TraceLevelInput { get; }
 ##### `TransactionAbortOnErrorInput`<sup>Optional</sup> <a name="TransactionAbortOnErrorInput" id="@cdktf/provider-snowflake.task.Task.property.transactionAbortOnErrorInput"></a>
 
 ```csharp
-public object TransactionAbortOnErrorInput { get; }
+public bool|IResolvable TransactionAbortOnErrorInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2015,10 +2015,10 @@ public string UnsupportedDdlActionInput { get; }
 ##### `UseCachedResultInput`<sup>Optional</sup> <a name="UseCachedResultInput" id="@cdktf/provider-snowflake.task.Task.property.useCachedResultInput"></a>
 
 ```csharp
-public object UseCachedResultInput { get; }
+public bool|IResolvable UseCachedResultInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2095,10 +2095,10 @@ public string WhenInput { get; }
 ##### `AbortDetachedQuery`<sup>Required</sup> <a name="AbortDetachedQuery" id="@cdktf/provider-snowflake.task.Task.property.abortDetachedQuery"></a>
 
 ```csharp
-public object AbortDetachedQuery { get; }
+public bool|IResolvable AbortDetachedQuery { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2125,10 +2125,10 @@ public string AllowOverlappingExecution { get; }
 ##### `Autocommit`<sup>Required</sup> <a name="Autocommit" id="@cdktf/provider-snowflake.task.Task.property.autocommit"></a>
 
 ```csharp
-public object Autocommit { get; }
+public bool|IResolvable Autocommit { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2165,10 +2165,10 @@ public double ClientMemoryLimit { get; }
 ##### `ClientMetadataRequestUseConnectionCtx`<sup>Required</sup> <a name="ClientMetadataRequestUseConnectionCtx" id="@cdktf/provider-snowflake.task.Task.property.clientMetadataRequestUseConnectionCtx"></a>
 
 ```csharp
-public object ClientMetadataRequestUseConnectionCtx { get; }
+public bool|IResolvable ClientMetadataRequestUseConnectionCtx { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2195,20 +2195,20 @@ public double ClientResultChunkSize { get; }
 ##### `ClientResultColumnCaseInsensitive`<sup>Required</sup> <a name="ClientResultColumnCaseInsensitive" id="@cdktf/provider-snowflake.task.Task.property.clientResultColumnCaseInsensitive"></a>
 
 ```csharp
-public object ClientResultColumnCaseInsensitive { get; }
+public bool|IResolvable ClientResultColumnCaseInsensitive { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ClientSessionKeepAlive`<sup>Required</sup> <a name="ClientSessionKeepAlive" id="@cdktf/provider-snowflake.task.Task.property.clientSessionKeepAlive"></a>
 
 ```csharp
-public object ClientSessionKeepAlive { get; }
+public bool|IResolvable ClientSessionKeepAlive { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2285,10 +2285,10 @@ public string DateOutputFormat { get; }
 ##### `EnableUnloadPhysicalTypeOptimization`<sup>Required</sup> <a name="EnableUnloadPhysicalTypeOptimization" id="@cdktf/provider-snowflake.task.Task.property.enableUnloadPhysicalTypeOptimization"></a>
 
 ```csharp
-public object EnableUnloadPhysicalTypeOptimization { get; }
+public bool|IResolvable EnableUnloadPhysicalTypeOptimization { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2305,20 +2305,20 @@ public string ErrorIntegration { get; }
 ##### `ErrorOnNondeterministicMerge`<sup>Required</sup> <a name="ErrorOnNondeterministicMerge" id="@cdktf/provider-snowflake.task.Task.property.errorOnNondeterministicMerge"></a>
 
 ```csharp
-public object ErrorOnNondeterministicMerge { get; }
+public bool|IResolvable ErrorOnNondeterministicMerge { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ErrorOnNondeterministicUpdate`<sup>Required</sup> <a name="ErrorOnNondeterministicUpdate" id="@cdktf/provider-snowflake.task.Task.property.errorOnNondeterministicUpdate"></a>
 
 ```csharp
-public object ErrorOnNondeterministicUpdate { get; }
+public bool|IResolvable ErrorOnNondeterministicUpdate { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2365,20 +2365,20 @@ public string Id { get; }
 ##### `JdbcTreatTimestampNtzAsUtc`<sup>Required</sup> <a name="JdbcTreatTimestampNtzAsUtc" id="@cdktf/provider-snowflake.task.Task.property.jdbcTreatTimestampNtzAsUtc"></a>
 
 ```csharp
-public object JdbcTreatTimestampNtzAsUtc { get; }
+public bool|IResolvable JdbcTreatTimestampNtzAsUtc { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `JdbcUseSessionTimezone`<sup>Required</sup> <a name="JdbcUseSessionTimezone" id="@cdktf/provider-snowflake.task.Task.property.jdbcUseSessionTimezone"></a>
 
 ```csharp
-public object JdbcUseSessionTimezone { get; }
+public bool|IResolvable JdbcUseSessionTimezone { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2435,20 +2435,20 @@ public string Name { get; }
 ##### `NoorderSequenceAsDefault`<sup>Required</sup> <a name="NoorderSequenceAsDefault" id="@cdktf/provider-snowflake.task.Task.property.noorderSequenceAsDefault"></a>
 
 ```csharp
-public object NoorderSequenceAsDefault { get; }
+public bool|IResolvable NoorderSequenceAsDefault { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `OdbcTreatDecimalAsInt`<sup>Required</sup> <a name="OdbcTreatDecimalAsInt" id="@cdktf/provider-snowflake.task.Task.property.odbcTreatDecimalAsInt"></a>
 
 ```csharp
-public object OdbcTreatDecimalAsInt { get; }
+public bool|IResolvable OdbcTreatDecimalAsInt { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2465,10 +2465,10 @@ public string QueryTag { get; }
 ##### `QuotedIdentifiersIgnoreCase`<sup>Required</sup> <a name="QuotedIdentifiersIgnoreCase" id="@cdktf/provider-snowflake.task.Task.property.quotedIdentifiersIgnoreCase"></a>
 
 ```csharp
-public object QuotedIdentifiersIgnoreCase { get; }
+public bool|IResolvable QuotedIdentifiersIgnoreCase { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2525,10 +2525,10 @@ public string SqlStatement { get; }
 ##### `Started`<sup>Required</sup> <a name="Started" id="@cdktf/provider-snowflake.task.Task.property.started"></a>
 
 ```csharp
-public object Started { get; }
+public bool|IResolvable Started { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2555,10 +2555,10 @@ public double StatementTimeoutInSeconds { get; }
 ##### `StrictJsonOutput`<sup>Required</sup> <a name="StrictJsonOutput" id="@cdktf/provider-snowflake.task.Task.property.strictJsonOutput"></a>
 
 ```csharp
-public object StrictJsonOutput { get; }
+public bool|IResolvable StrictJsonOutput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2605,10 +2605,10 @@ public string TimeOutputFormat { get; }
 ##### `TimestampDayIsAlways24H`<sup>Required</sup> <a name="TimestampDayIsAlways24H" id="@cdktf/provider-snowflake.task.Task.property.timestampDayIsAlways24H"></a>
 
 ```csharp
-public object TimestampDayIsAlways24H { get; }
+public bool|IResolvable TimestampDayIsAlways24H { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2695,10 +2695,10 @@ public string TraceLevel { get; }
 ##### `TransactionAbortOnError`<sup>Required</sup> <a name="TransactionAbortOnError" id="@cdktf/provider-snowflake.task.Task.property.transactionAbortOnError"></a>
 
 ```csharp
-public object TransactionAbortOnError { get; }
+public bool|IResolvable TransactionAbortOnError { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2735,10 +2735,10 @@ public string UnsupportedDdlAction { get; }
 ##### `UseCachedResult`<sup>Required</sup> <a name="UseCachedResult" id="@cdktf/provider-snowflake.task.Task.property.useCachedResult"></a>
 
 ```csharp
-public object UseCachedResult { get; }
+public bool|IResolvable UseCachedResult { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2840,67 +2840,67 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Snowflake;
 
 new TaskConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Database,
     string Name,
     string Schema,
     string SqlStatement,
-    object Started,
-    object AbortDetachedQuery = null,
+    bool|IResolvable Started,
+    bool|IResolvable AbortDetachedQuery = null,
     string[] After = null,
     string AllowOverlappingExecution = null,
-    object Autocommit = null,
+    bool|IResolvable Autocommit = null,
     string BinaryInputFormat = null,
     string BinaryOutputFormat = null,
     double ClientMemoryLimit = null,
-    object ClientMetadataRequestUseConnectionCtx = null,
+    bool|IResolvable ClientMetadataRequestUseConnectionCtx = null,
     double ClientPrefetchThreads = null,
     double ClientResultChunkSize = null,
-    object ClientResultColumnCaseInsensitive = null,
-    object ClientSessionKeepAlive = null,
+    bool|IResolvable ClientResultColumnCaseInsensitive = null,
+    bool|IResolvable ClientSessionKeepAlive = null,
     double ClientSessionKeepAliveHeartbeatFrequency = null,
     string ClientTimestampTypeMapping = null,
     string Comment = null,
     string Config = null,
     string DateInputFormat = null,
     string DateOutputFormat = null,
-    object EnableUnloadPhysicalTypeOptimization = null,
+    bool|IResolvable EnableUnloadPhysicalTypeOptimization = null,
     string ErrorIntegration = null,
-    object ErrorOnNondeterministicMerge = null,
-    object ErrorOnNondeterministicUpdate = null,
+    bool|IResolvable ErrorOnNondeterministicMerge = null,
+    bool|IResolvable ErrorOnNondeterministicUpdate = null,
     string Finalize = null,
     string GeographyOutputFormat = null,
     string GeometryOutputFormat = null,
     string Id = null,
-    object JdbcTreatTimestampNtzAsUtc = null,
-    object JdbcUseSessionTimezone = null,
+    bool|IResolvable JdbcTreatTimestampNtzAsUtc = null,
+    bool|IResolvable JdbcUseSessionTimezone = null,
     double JsonIndent = null,
     double LockTimeout = null,
     string LogLevel = null,
     double MultiStatementCount = null,
-    object NoorderSequenceAsDefault = null,
-    object OdbcTreatDecimalAsInt = null,
+    bool|IResolvable NoorderSequenceAsDefault = null,
+    bool|IResolvable OdbcTreatDecimalAsInt = null,
     string QueryTag = null,
-    object QuotedIdentifiersIgnoreCase = null,
+    bool|IResolvable QuotedIdentifiersIgnoreCase = null,
     double RowsPerResultset = null,
     string S3StageVpceDnsName = null,
     TaskSchedule Schedule = null,
     string SearchPath = null,
     double StatementQueuedTimeoutInSeconds = null,
     double StatementTimeoutInSeconds = null,
-    object StrictJsonOutput = null,
+    bool|IResolvable StrictJsonOutput = null,
     double SuspendTaskAfterNumFailures = null,
     double TaskAutoRetryAttempts = null,
     string TimeInputFormat = null,
     string TimeOutputFormat = null,
     TaskTimeouts Timeouts = null,
-    object TimestampDayIsAlways24H = null,
+    bool|IResolvable TimestampDayIsAlways24H = null,
     string TimestampInputFormat = null,
     string TimestampLtzOutputFormat = null,
     string TimestampNtzOutputFormat = null,
@@ -2909,11 +2909,11 @@ new TaskConfig {
     string TimestampTzOutputFormat = null,
     string Timezone = null,
     string TraceLevel = null,
-    object TransactionAbortOnError = null,
+    bool|IResolvable TransactionAbortOnError = null,
     string TransactionDefaultIsolationLevel = null,
     double TwoDigitCenturyStart = null,
     string UnsupportedDdlAction = null,
-    object UseCachedResult = null,
+    bool|IResolvable UseCachedResult = null,
     string UserTaskManagedInitialWarehouseSize = null,
     double UserTaskMinimumTriggerIntervalInSeconds = null,
     double UserTaskTimeoutMs = null,
@@ -2928,67 +2928,67 @@ new TaskConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.database">Database</a></code> | <code>string</code> | The database in which to create the task. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.name">Name</a></code> | <code>string</code> | Specifies the identifier for the task; |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.schema">Schema</a></code> | <code>string</code> | The schema in which to create the task. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.sqlStatement">SqlStatement</a></code> | <code>string</code> | Any single SQL statement, or a call to a stored procedure, executed when the task runs. |
-| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.started">Started</a></code> | <code>object</code> | Specifies if the task should be started or suspended. |
-| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.abortDetachedQuery">AbortDetachedQuery</a></code> | <code>object</code> | Specifies the action that Snowflake performs for in-progress queries if connectivity is lost due to abrupt termination of a session (e.g. network outage, browser termination, service interruption). For more information, check [ABORT_DETACHED_QUERY docs](https://docs.snowflake.com/en/sql-reference/parameters#abort-detached-query). |
+| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.started">Started</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specifies if the task should be started or suspended. |
+| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.abortDetachedQuery">AbortDetachedQuery</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specifies the action that Snowflake performs for in-progress queries if connectivity is lost due to abrupt termination of a session (e.g. network outage, browser termination, service interruption). For more information, check [ABORT_DETACHED_QUERY docs](https://docs.snowflake.com/en/sql-reference/parameters#abort-detached-query). |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.after">After</a></code> | <code>string[]</code> | Specifies one or more predecessor tasks for the current task. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.allowOverlappingExecution">AllowOverlappingExecution</a></code> | <code>string</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) By default, Snowflake ensures that only one instance of a particular DAG is allowed to run at a time, setting the parameter value to TRUE permits DAG runs to overlap. |
-| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.autocommit">Autocommit</a></code> | <code>object</code> | Specifies whether autocommit is enabled for the session. |
+| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.autocommit">Autocommit</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specifies whether autocommit is enabled for the session. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.binaryInputFormat">BinaryInputFormat</a></code> | <code>string</code> | The format of VARCHAR values passed as input to VARCHAR-to-BINARY conversion functions. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.binaryOutputFormat">BinaryOutputFormat</a></code> | <code>string</code> | The format for VARCHAR values returned as output by BINARY-to-VARCHAR conversion functions. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.clientMemoryLimit">ClientMemoryLimit</a></code> | <code>double</code> | Parameter that specifies the maximum amount of memory the JDBC driver or ODBC driver should use for the result set from queries (in MB). |
-| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.clientMetadataRequestUseConnectionCtx">ClientMetadataRequestUseConnectionCtx</a></code> | <code>object</code> | For specific ODBC functions and JDBC methods, this parameter can change the default search scope from all databases/schemas to the current database/schema. |
+| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.clientMetadataRequestUseConnectionCtx">ClientMetadataRequestUseConnectionCtx</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | For specific ODBC functions and JDBC methods, this parameter can change the default search scope from all databases/schemas to the current database/schema. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.clientPrefetchThreads">ClientPrefetchThreads</a></code> | <code>double</code> | Parameter that specifies the number of threads used by the client to pre-fetch large result sets. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.clientResultChunkSize">ClientResultChunkSize</a></code> | <code>double</code> | Parameter that specifies the maximum size of each set (or chunk) of query results to download (in MB). |
-| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.clientResultColumnCaseInsensitive">ClientResultColumnCaseInsensitive</a></code> | <code>object</code> | Parameter that indicates whether to match column name case-insensitively in ResultSet.get* methods in JDBC. For more information, check [CLIENT_RESULT_COLUMN_CASE_INSENSITIVE docs](https://docs.snowflake.com/en/sql-reference/parameters#client-result-column-case-insensitive). |
-| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.clientSessionKeepAlive">ClientSessionKeepAlive</a></code> | <code>object</code> | Parameter that indicates whether to force a user to log in again after a period of inactivity in the session. |
+| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.clientResultColumnCaseInsensitive">ClientResultColumnCaseInsensitive</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Parameter that indicates whether to match column name case-insensitively in ResultSet.get* methods in JDBC. For more information, check [CLIENT_RESULT_COLUMN_CASE_INSENSITIVE docs](https://docs.snowflake.com/en/sql-reference/parameters#client-result-column-case-insensitive). |
+| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.clientSessionKeepAlive">ClientSessionKeepAlive</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Parameter that indicates whether to force a user to log in again after a period of inactivity in the session. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.clientSessionKeepAliveHeartbeatFrequency">ClientSessionKeepAliveHeartbeatFrequency</a></code> | <code>double</code> | Number of seconds in-between client attempts to update the token for the session. For more information, check [CLIENT_SESSION_KEEP_ALIVE_HEARTBEAT_FREQUENCY docs](https://docs.snowflake.com/en/sql-reference/parameters#client-session-keep-alive-heartbeat-frequency). |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.clientTimestampTypeMapping">ClientTimestampTypeMapping</a></code> | <code>string</code> | Specifies the [TIMESTAMP_* variation](https://docs.snowflake.com/en/sql-reference/data-types-datetime.html#label-datatypes-timestamp-variations) to use when binding timestamp variables for JDBC or ODBC applications that use the bind API to load data. For more information, check [CLIENT_TIMESTAMP_TYPE_MAPPING docs](https://docs.snowflake.com/en/sql-reference/parameters#client-timestamp-type-mapping). |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.comment">Comment</a></code> | <code>string</code> | Specifies a comment for the task. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.config">Config</a></code> | <code>string</code> | Specifies a string representation of key value pairs that can be accessed by all tasks in the task graph. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.dateInputFormat">DateInputFormat</a></code> | <code>string</code> | Specifies the input format for the DATE data type. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.dateOutputFormat">DateOutputFormat</a></code> | <code>string</code> | Specifies the display format for the DATE data type. |
-| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.enableUnloadPhysicalTypeOptimization">EnableUnloadPhysicalTypeOptimization</a></code> | <code>object</code> | Specifies whether to set the schema for unloaded Parquet files based on the logical column data types (i.e. the types in the unload SQL query or source table) or on the unloaded column values (i.e. the smallest data types and precision that support the values in the output columns of the unload SQL statement or source table). For more information, check [ENABLE_UNLOAD_PHYSICAL_TYPE_OPTIMIZATION docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-unload-physical-type-optimization). |
+| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.enableUnloadPhysicalTypeOptimization">EnableUnloadPhysicalTypeOptimization</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specifies whether to set the schema for unloaded Parquet files based on the logical column data types (i.e. the types in the unload SQL query or source table) or on the unloaded column values (i.e. the smallest data types and precision that support the values in the output columns of the unload SQL statement or source table). For more information, check [ENABLE_UNLOAD_PHYSICAL_TYPE_OPTIMIZATION docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-unload-physical-type-optimization). |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.errorIntegration">ErrorIntegration</a></code> | <code>string</code> | Specifies the name of the notification integration used for error notifications. |
-| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.errorOnNondeterministicMerge">ErrorOnNondeterministicMerge</a></code> | <code>object</code> | Specifies whether to return an error when the [MERGE](https://docs.snowflake.com/en/sql-reference/sql/merge) command is used to update or delete a target row that joins multiple source rows and the system cannot determine the action to perform on the target row. For more information, check [ERROR_ON_NONDETERMINISTIC_MERGE docs](https://docs.snowflake.com/en/sql-reference/parameters#error-on-nondeterministic-merge). |
-| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.errorOnNondeterministicUpdate">ErrorOnNondeterministicUpdate</a></code> | <code>object</code> | Specifies whether to return an error when the [UPDATE](https://docs.snowflake.com/en/sql-reference/sql/update) command is used to update a target row that joins multiple source rows and the system cannot determine the action to perform on the target row. For more information, check [ERROR_ON_NONDETERMINISTIC_UPDATE docs](https://docs.snowflake.com/en/sql-reference/parameters#error-on-nondeterministic-update). |
+| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.errorOnNondeterministicMerge">ErrorOnNondeterministicMerge</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specifies whether to return an error when the [MERGE](https://docs.snowflake.com/en/sql-reference/sql/merge) command is used to update or delete a target row that joins multiple source rows and the system cannot determine the action to perform on the target row. For more information, check [ERROR_ON_NONDETERMINISTIC_MERGE docs](https://docs.snowflake.com/en/sql-reference/parameters#error-on-nondeterministic-merge). |
+| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.errorOnNondeterministicUpdate">ErrorOnNondeterministicUpdate</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specifies whether to return an error when the [UPDATE](https://docs.snowflake.com/en/sql-reference/sql/update) command is used to update a target row that joins multiple source rows and the system cannot determine the action to perform on the target row. For more information, check [ERROR_ON_NONDETERMINISTIC_UPDATE docs](https://docs.snowflake.com/en/sql-reference/parameters#error-on-nondeterministic-update). |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.finalize">Finalize</a></code> | <code>string</code> | Specifies the name of a root task that the finalizer task is associated with. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.geographyOutputFormat">GeographyOutputFormat</a></code> | <code>string</code> | Display format for [GEOGRAPHY values](https://docs.snowflake.com/en/sql-reference/data-types-geospatial.html#label-data-types-geography). For more information, check [GEOGRAPHY_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#geography-output-format). |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.geometryOutputFormat">GeometryOutputFormat</a></code> | <code>string</code> | Display format for [GEOMETRY values](https://docs.snowflake.com/en/sql-reference/data-types-geospatial.html#label-data-types-geometry). For more information, check [GEOMETRY_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#geometry-output-format). |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/task#id Task#id}. |
-| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.jdbcTreatTimestampNtzAsUtc">JdbcTreatTimestampNtzAsUtc</a></code> | <code>object</code> | Specifies how JDBC processes TIMESTAMP_NTZ values. For more information, check [JDBC_TREAT_TIMESTAMP_NTZ_AS_UTC docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-treat-timestamp-ntz-as-utc). |
-| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.jdbcUseSessionTimezone">JdbcUseSessionTimezone</a></code> | <code>object</code> | Specifies whether the JDBC Driver uses the time zone of the JVM or the time zone of the session (specified by the [TIMEZONE](https://docs.snowflake.com/en/sql-reference/parameters#label-timezone) parameter) for the getDate(), getTime(), and getTimestamp() methods of the ResultSet class. For more information, check [JDBC_USE_SESSION_TIMEZONE docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-use-session-timezone). |
+| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.jdbcTreatTimestampNtzAsUtc">JdbcTreatTimestampNtzAsUtc</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specifies how JDBC processes TIMESTAMP_NTZ values. For more information, check [JDBC_TREAT_TIMESTAMP_NTZ_AS_UTC docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-treat-timestamp-ntz-as-utc). |
+| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.jdbcUseSessionTimezone">JdbcUseSessionTimezone</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specifies whether the JDBC Driver uses the time zone of the JVM or the time zone of the session (specified by the [TIMEZONE](https://docs.snowflake.com/en/sql-reference/parameters#label-timezone) parameter) for the getDate(), getTime(), and getTimestamp() methods of the ResultSet class. For more information, check [JDBC_USE_SESSION_TIMEZONE docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-use-session-timezone). |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.jsonIndent">JsonIndent</a></code> | <code>double</code> | Specifies the number of blank spaces to indent each new element in JSON output in the session. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.lockTimeout">LockTimeout</a></code> | <code>double</code> | Number of seconds to wait while trying to lock a resource, before timing out and aborting the statement. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.logLevel">LogLevel</a></code> | <code>string</code> | Specifies the severity level of messages that should be ingested and made available in the active event table. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.multiStatementCount">MultiStatementCount</a></code> | <code>double</code> | Number of statements to execute when using the multi-statement capability. For more information, check [MULTI_STATEMENT_COUNT docs](https://docs.snowflake.com/en/sql-reference/parameters#multi-statement-count). |
-| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.noorderSequenceAsDefault">NoorderSequenceAsDefault</a></code> | <code>object</code> | Specifies whether the ORDER or NOORDER property is set by default when you create a new sequence or add a new table column. |
-| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.odbcTreatDecimalAsInt">OdbcTreatDecimalAsInt</a></code> | <code>object</code> | Specifies how ODBC processes columns that have a scale of zero (0). For more information, check [ODBC_TREAT_DECIMAL_AS_INT docs](https://docs.snowflake.com/en/sql-reference/parameters#odbc-treat-decimal-as-int). |
+| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.noorderSequenceAsDefault">NoorderSequenceAsDefault</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specifies whether the ORDER or NOORDER property is set by default when you create a new sequence or add a new table column. |
+| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.odbcTreatDecimalAsInt">OdbcTreatDecimalAsInt</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specifies how ODBC processes columns that have a scale of zero (0). For more information, check [ODBC_TREAT_DECIMAL_AS_INT docs](https://docs.snowflake.com/en/sql-reference/parameters#odbc-treat-decimal-as-int). |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.queryTag">QueryTag</a></code> | <code>string</code> | Optional string that can be used to tag queries and other SQL statements executed within a session. |
-| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.quotedIdentifiersIgnoreCase">QuotedIdentifiersIgnoreCase</a></code> | <code>object</code> | Specifies whether letters in double-quoted object identifiers are stored and resolved as uppercase letters. |
+| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.quotedIdentifiersIgnoreCase">QuotedIdentifiersIgnoreCase</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specifies whether letters in double-quoted object identifiers are stored and resolved as uppercase letters. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.rowsPerResultset">RowsPerResultset</a></code> | <code>double</code> | Specifies the maximum number of rows returned in a result set. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.s3StageVpceDnsName">S3StageVpceDnsName</a></code> | <code>string</code> | Specifies the DNS name of an Amazon S3 interface endpoint. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.schedule">Schedule</a></code> | <code><a href="#@cdktf/provider-snowflake.task.TaskSchedule">TaskSchedule</a></code> | schedule block. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.searchPath">SearchPath</a></code> | <code>string</code> | Specifies the path to search to resolve unqualified object names in queries. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.statementQueuedTimeoutInSeconds">StatementQueuedTimeoutInSeconds</a></code> | <code>double</code> | Amount of time, in seconds, a SQL statement (query, DDL, DML, etc.) remains queued for a warehouse before it is canceled by the system. This parameter can be used in conjunction with the [MAX_CONCURRENCY_LEVEL](https://docs.snowflake.com/en/sql-reference/parameters#label-max-concurrency-level) parameter to ensure a warehouse is never backlogged. For more information, check [STATEMENT_QUEUED_TIMEOUT_IN_SECONDS docs](https://docs.snowflake.com/en/sql-reference/parameters#statement-queued-timeout-in-seconds). |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.statementTimeoutInSeconds">StatementTimeoutInSeconds</a></code> | <code>double</code> | Amount of time, in seconds, after which a running SQL statement (query, DDL, DML, etc.) is canceled by the system. For more information, check [STATEMENT_TIMEOUT_IN_SECONDS docs](https://docs.snowflake.com/en/sql-reference/parameters#statement-timeout-in-seconds). |
-| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.strictJsonOutput">StrictJsonOutput</a></code> | <code>object</code> | This parameter specifies whether JSON output in a session is compatible with the general standard (as described by [http://json.org](http://json.org)). By design, Snowflake allows JSON input that contains non-standard values; however, these non-standard values might result in Snowflake outputting JSON that is incompatible with other platforms and languages. This parameter, when enabled, ensures that Snowflake outputs valid/compatible JSON. For more information, check [STRICT_JSON_OUTPUT docs](https://docs.snowflake.com/en/sql-reference/parameters#strict-json-output). |
+| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.strictJsonOutput">StrictJsonOutput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | This parameter specifies whether JSON output in a session is compatible with the general standard (as described by [http://json.org](http://json.org)). By design, Snowflake allows JSON input that contains non-standard values; however, these non-standard values might result in Snowflake outputting JSON that is incompatible with other platforms and languages. This parameter, when enabled, ensures that Snowflake outputs valid/compatible JSON. For more information, check [STRICT_JSON_OUTPUT docs](https://docs.snowflake.com/en/sql-reference/parameters#strict-json-output). |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.suspendTaskAfterNumFailures">SuspendTaskAfterNumFailures</a></code> | <code>double</code> | Specifies the number of consecutive failed task runs after which the current task is suspended automatically. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.taskAutoRetryAttempts">TaskAutoRetryAttempts</a></code> | <code>double</code> | Specifies the number of automatic task graph retry attempts. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.timeInputFormat">TimeInputFormat</a></code> | <code>string</code> | Specifies the input format for the TIME data type. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.timeOutputFormat">TimeOutputFormat</a></code> | <code>string</code> | Specifies the display format for the TIME data type. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.task.TaskTimeouts">TaskTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.timestampDayIsAlways24H">TimestampDayIsAlways24H</a></code> | <code>object</code> | Specifies whether the [DATEADD](https://docs.snowflake.com/en/sql-reference/functions/dateadd) function (and its aliases) always consider a day to be exactly 24 hours for expressions that span multiple days. For more information, check [TIMESTAMP_DAY_IS_ALWAYS_24H docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-day-is-always-24h). |
+| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.timestampDayIsAlways24H">TimestampDayIsAlways24H</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specifies whether the [DATEADD](https://docs.snowflake.com/en/sql-reference/functions/dateadd) function (and its aliases) always consider a day to be exactly 24 hours for expressions that span multiple days. For more information, check [TIMESTAMP_DAY_IS_ALWAYS_24H docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-day-is-always-24h). |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.timestampInputFormat">TimestampInputFormat</a></code> | <code>string</code> | Specifies the input format for the TIMESTAMP data type alias. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.timestampLtzOutputFormat">TimestampLtzOutputFormat</a></code> | <code>string</code> | Specifies the display format for the TIMESTAMP_LTZ data type. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.timestampNtzOutputFormat">TimestampNtzOutputFormat</a></code> | <code>string</code> | Specifies the display format for the TIMESTAMP_NTZ data type. For more information, check [TIMESTAMP_NTZ_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-ntz-output-format). |
@@ -2997,11 +2997,11 @@ new TaskConfig {
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.timestampTzOutputFormat">TimestampTzOutputFormat</a></code> | <code>string</code> | Specifies the display format for the TIMESTAMP_TZ data type. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.timezone">Timezone</a></code> | <code>string</code> | Specifies the time zone for the session. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.traceLevel">TraceLevel</a></code> | <code>string</code> | Controls how trace events are ingested into the event table. |
-| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.transactionAbortOnError">TransactionAbortOnError</a></code> | <code>object</code> | Specifies the action to perform when a statement issued within a non-autocommit transaction returns with an error. |
+| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.transactionAbortOnError">TransactionAbortOnError</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specifies the action to perform when a statement issued within a non-autocommit transaction returns with an error. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.transactionDefaultIsolationLevel">TransactionDefaultIsolationLevel</a></code> | <code>string</code> | Specifies the isolation level for transactions in the user session. For more information, check [TRANSACTION_DEFAULT_ISOLATION_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#transaction-default-isolation-level). |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.twoDigitCenturyStart">TwoDigitCenturyStart</a></code> | <code>double</code> | Specifies the “century start” year for 2-digit years (i.e. the earliest year such dates can represent). This parameter prevents ambiguous dates when importing or converting data with the `YY` date format component (i.e. years represented as 2 digits). For more information, check [TWO_DIGIT_CENTURY_START docs](https://docs.snowflake.com/en/sql-reference/parameters#two-digit-century-start). |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.unsupportedDdlAction">UnsupportedDdlAction</a></code> | <code>string</code> | Determines if an unsupported (i.e. non-default) value specified for a constraint property returns an error. For more information, check [UNSUPPORTED_DDL_ACTION docs](https://docs.snowflake.com/en/sql-reference/parameters#unsupported-ddl-action). |
-| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.useCachedResult">UseCachedResult</a></code> | <code>object</code> | Specifies whether to reuse persisted query results, if available, when a matching query is submitted. |
+| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.useCachedResult">UseCachedResult</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specifies whether to reuse persisted query results, if available, when a matching query is submitted. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.userTaskManagedInitialWarehouseSize">UserTaskManagedInitialWarehouseSize</a></code> | <code>string</code> | Specifies the size of the compute resources to provision for the first run of the task, before a task history is available for Snowflake to determine an ideal size. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.userTaskMinimumTriggerIntervalInSeconds">UserTaskMinimumTriggerIntervalInSeconds</a></code> | <code>double</code> | Minimum amount of time between Triggered Task executions in seconds For more information, check [USER_TASK_MINIMUM_TRIGGER_INTERVAL_IN_SECONDS docs](https://docs.snowflake.com/en/sql-reference/parameters#user-task-minimum-trigger-interval-in-seconds). |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.userTaskTimeoutMs">UserTaskTimeoutMs</a></code> | <code>double</code> | Specifies the time limit on a single run of the task before it times out (in milliseconds). |
@@ -3015,20 +3015,20 @@ new TaskConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-snowflake.task.TaskConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-snowflake.task.TaskConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -3075,10 +3075,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-snowflake.task.TaskConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -3147,10 +3147,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `Started`<sup>Required</sup> <a name="Started" id="@cdktf/provider-snowflake.task.TaskConfig.property.started"></a>
 
 ```csharp
-public object Started { get; set; }
+public bool|IResolvable Started { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specifies if the task should be started or suspended.
 
@@ -3161,10 +3161,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `AbortDetachedQuery`<sup>Optional</sup> <a name="AbortDetachedQuery" id="@cdktf/provider-snowflake.task.TaskConfig.property.abortDetachedQuery"></a>
 
 ```csharp
-public object AbortDetachedQuery { get; set; }
+public bool|IResolvable AbortDetachedQuery { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specifies the action that Snowflake performs for in-progress queries if connectivity is lost due to abrupt termination of a session (e.g. network outage, browser termination, service interruption). For more information, check [ABORT_DETACHED_QUERY docs](https://docs.snowflake.com/en/sql-reference/parameters#abort-detached-query).
 
@@ -3207,10 +3207,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `Autocommit`<sup>Optional</sup> <a name="Autocommit" id="@cdktf/provider-snowflake.task.TaskConfig.property.autocommit"></a>
 
 ```csharp
-public object Autocommit { get; set; }
+public bool|IResolvable Autocommit { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specifies whether autocommit is enabled for the session.
 
@@ -3271,10 +3271,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `ClientMetadataRequestUseConnectionCtx`<sup>Optional</sup> <a name="ClientMetadataRequestUseConnectionCtx" id="@cdktf/provider-snowflake.task.TaskConfig.property.clientMetadataRequestUseConnectionCtx"></a>
 
 ```csharp
-public object ClientMetadataRequestUseConnectionCtx { get; set; }
+public bool|IResolvable ClientMetadataRequestUseConnectionCtx { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 For specific ODBC functions and JDBC methods, this parameter can change the default search scope from all databases/schemas to the current database/schema.
 
@@ -3319,10 +3319,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `ClientResultColumnCaseInsensitive`<sup>Optional</sup> <a name="ClientResultColumnCaseInsensitive" id="@cdktf/provider-snowflake.task.TaskConfig.property.clientResultColumnCaseInsensitive"></a>
 
 ```csharp
-public object ClientResultColumnCaseInsensitive { get; set; }
+public bool|IResolvable ClientResultColumnCaseInsensitive { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Parameter that indicates whether to match column name case-insensitively in ResultSet.get* methods in JDBC. For more information, check [CLIENT_RESULT_COLUMN_CASE_INSENSITIVE docs](https://docs.snowflake.com/en/sql-reference/parameters#client-result-column-case-insensitive).
 
@@ -3333,10 +3333,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `ClientSessionKeepAlive`<sup>Optional</sup> <a name="ClientSessionKeepAlive" id="@cdktf/provider-snowflake.task.TaskConfig.property.clientSessionKeepAlive"></a>
 
 ```csharp
-public object ClientSessionKeepAlive { get; set; }
+public bool|IResolvable ClientSessionKeepAlive { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Parameter that indicates whether to force a user to log in again after a period of inactivity in the session.
 
@@ -3439,10 +3439,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `EnableUnloadPhysicalTypeOptimization`<sup>Optional</sup> <a name="EnableUnloadPhysicalTypeOptimization" id="@cdktf/provider-snowflake.task.TaskConfig.property.enableUnloadPhysicalTypeOptimization"></a>
 
 ```csharp
-public object EnableUnloadPhysicalTypeOptimization { get; set; }
+public bool|IResolvable EnableUnloadPhysicalTypeOptimization { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specifies whether to set the schema for unloaded Parquet files based on the logical column data types (i.e. the types in the unload SQL query or source table) or on the unloaded column values (i.e. the smallest data types and precision that support the values in the output columns of the unload SQL statement or source table). For more information, check [ENABLE_UNLOAD_PHYSICAL_TYPE_OPTIMIZATION docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-unload-physical-type-optimization).
 
@@ -3469,10 +3469,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `ErrorOnNondeterministicMerge`<sup>Optional</sup> <a name="ErrorOnNondeterministicMerge" id="@cdktf/provider-snowflake.task.TaskConfig.property.errorOnNondeterministicMerge"></a>
 
 ```csharp
-public object ErrorOnNondeterministicMerge { get; set; }
+public bool|IResolvable ErrorOnNondeterministicMerge { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specifies whether to return an error when the [MERGE](https://docs.snowflake.com/en/sql-reference/sql/merge) command is used to update or delete a target row that joins multiple source rows and the system cannot determine the action to perform on the target row. For more information, check [ERROR_ON_NONDETERMINISTIC_MERGE docs](https://docs.snowflake.com/en/sql-reference/parameters#error-on-nondeterministic-merge).
 
@@ -3483,10 +3483,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `ErrorOnNondeterministicUpdate`<sup>Optional</sup> <a name="ErrorOnNondeterministicUpdate" id="@cdktf/provider-snowflake.task.TaskConfig.property.errorOnNondeterministicUpdate"></a>
 
 ```csharp
-public object ErrorOnNondeterministicUpdate { get; set; }
+public bool|IResolvable ErrorOnNondeterministicUpdate { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specifies whether to return an error when the [UPDATE](https://docs.snowflake.com/en/sql-reference/sql/update) command is used to update a target row that joins multiple source rows and the system cannot determine the action to perform on the target row. For more information, check [ERROR_ON_NONDETERMINISTIC_UPDATE docs](https://docs.snowflake.com/en/sql-reference/parameters#error-on-nondeterministic-update).
 
@@ -3556,10 +3556,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `JdbcTreatTimestampNtzAsUtc`<sup>Optional</sup> <a name="JdbcTreatTimestampNtzAsUtc" id="@cdktf/provider-snowflake.task.TaskConfig.property.jdbcTreatTimestampNtzAsUtc"></a>
 
 ```csharp
-public object JdbcTreatTimestampNtzAsUtc { get; set; }
+public bool|IResolvable JdbcTreatTimestampNtzAsUtc { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specifies how JDBC processes TIMESTAMP_NTZ values. For more information, check [JDBC_TREAT_TIMESTAMP_NTZ_AS_UTC docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-treat-timestamp-ntz-as-utc).
 
@@ -3570,10 +3570,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `JdbcUseSessionTimezone`<sup>Optional</sup> <a name="JdbcUseSessionTimezone" id="@cdktf/provider-snowflake.task.TaskConfig.property.jdbcUseSessionTimezone"></a>
 
 ```csharp
-public object JdbcUseSessionTimezone { get; set; }
+public bool|IResolvable JdbcUseSessionTimezone { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specifies whether the JDBC Driver uses the time zone of the JVM or the time zone of the session (specified by the [TIMEZONE](https://docs.snowflake.com/en/sql-reference/parameters#label-timezone) parameter) for the getDate(), getTime(), and getTimestamp() methods of the ResultSet class. For more information, check [JDBC_USE_SESSION_TIMEZONE docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-use-session-timezone).
 
@@ -3646,10 +3646,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `NoorderSequenceAsDefault`<sup>Optional</sup> <a name="NoorderSequenceAsDefault" id="@cdktf/provider-snowflake.task.TaskConfig.property.noorderSequenceAsDefault"></a>
 
 ```csharp
-public object NoorderSequenceAsDefault { get; set; }
+public bool|IResolvable NoorderSequenceAsDefault { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specifies whether the ORDER or NOORDER property is set by default when you create a new sequence or add a new table column.
 
@@ -3662,10 +3662,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `OdbcTreatDecimalAsInt`<sup>Optional</sup> <a name="OdbcTreatDecimalAsInt" id="@cdktf/provider-snowflake.task.TaskConfig.property.odbcTreatDecimalAsInt"></a>
 
 ```csharp
-public object OdbcTreatDecimalAsInt { get; set; }
+public bool|IResolvable OdbcTreatDecimalAsInt { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specifies how ODBC processes columns that have a scale of zero (0). For more information, check [ODBC_TREAT_DECIMAL_AS_INT docs](https://docs.snowflake.com/en/sql-reference/parameters#odbc-treat-decimal-as-int).
 
@@ -3692,10 +3692,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `QuotedIdentifiersIgnoreCase`<sup>Optional</sup> <a name="QuotedIdentifiersIgnoreCase" id="@cdktf/provider-snowflake.task.TaskConfig.property.quotedIdentifiersIgnoreCase"></a>
 
 ```csharp
-public object QuotedIdentifiersIgnoreCase { get; set; }
+public bool|IResolvable QuotedIdentifiersIgnoreCase { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specifies whether letters in double-quoted object identifiers are stored and resolved as uppercase letters.
 
@@ -3798,10 +3798,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `StrictJsonOutput`<sup>Optional</sup> <a name="StrictJsonOutput" id="@cdktf/provider-snowflake.task.TaskConfig.property.strictJsonOutput"></a>
 
 ```csharp
-public object StrictJsonOutput { get; set; }
+public bool|IResolvable StrictJsonOutput { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 This parameter specifies whether JSON output in a session is compatible with the general standard (as described by [http://json.org](http://json.org)). By design, Snowflake allows JSON input that contains non-standard values; however, these non-standard values might result in Snowflake outputting JSON that is incompatible with other platforms and languages. This parameter, when enabled, ensures that Snowflake outputs valid/compatible JSON. For more information, check [STRICT_JSON_OUTPUT docs](https://docs.snowflake.com/en/sql-reference/parameters#strict-json-output).
 
@@ -3890,10 +3890,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `TimestampDayIsAlways24H`<sup>Optional</sup> <a name="TimestampDayIsAlways24H" id="@cdktf/provider-snowflake.task.TaskConfig.property.timestampDayIsAlways24H"></a>
 
 ```csharp
-public object TimestampDayIsAlways24H { get; set; }
+public bool|IResolvable TimestampDayIsAlways24H { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specifies whether the [DATEADD](https://docs.snowflake.com/en/sql-reference/functions/dateadd) function (and its aliases) always consider a day to be exactly 24 hours for expressions that span multiple days. For more information, check [TIMESTAMP_DAY_IS_ALWAYS_24H docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-day-is-always-24h).
 
@@ -4028,10 +4028,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `TransactionAbortOnError`<sup>Optional</sup> <a name="TransactionAbortOnError" id="@cdktf/provider-snowflake.task.TaskConfig.property.transactionAbortOnError"></a>
 
 ```csharp
-public object TransactionAbortOnError { get; set; }
+public bool|IResolvable TransactionAbortOnError { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specifies the action to perform when a statement issued within a non-autocommit transaction returns with an error.
 
@@ -4086,10 +4086,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `UseCachedResult`<sup>Optional</sup> <a name="UseCachedResult" id="@cdktf/provider-snowflake.task.TaskConfig.property.useCachedResult"></a>
 
 ```csharp
-public object UseCachedResult { get; set; }
+public bool|IResolvable UseCachedResult { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specifies whether to reuse persisted query results, if available, when a matching query is submitted.
 
@@ -35164,7 +35164,7 @@ private void ResetUpdate()
 | <code><a href="#@cdktf/provider-snowflake.task.TaskTimeoutsOutputReference.property.delete">Delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskTimeoutsOutputReference.property.read">Read</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskTimeoutsOutputReference.property.update">Update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.TaskTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.TaskTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-snowflake.task.TaskTimeouts">TaskTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -35275,10 +35275,10 @@ public string Update { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-snowflake.task.TaskTimeoutsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|TaskTimeouts InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-snowflake.task.TaskTimeouts">TaskTimeouts</a>
 
 ---
 

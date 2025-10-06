@@ -292,7 +292,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-snowflake.view.View.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-snowflake.view.View.importFrom"></a>
@@ -346,7 +346,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-snowflake.view.View.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -361,7 +361,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-snowflake.view.View.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -398,24 +398,24 @@ private void PutAggregationPolicy(ViewAggregationPolicy Value)
 ##### `PutColumn` <a name="PutColumn" id="@cdktf/provider-snowflake.view.View.putColumn"></a>
 
 ```csharp
-private void PutColumn(object Value)
+private void PutColumn(IResolvable|ViewColumn[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-snowflake.view.View.putColumn.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-snowflake.view.ViewColumn">ViewColumn</a>[]
 
 ---
 
 ##### `PutDataMetricFunction` <a name="PutDataMetricFunction" id="@cdktf/provider-snowflake.view.View.putDataMetricFunction"></a>
 
 ```csharp
-private void PutDataMetricFunction(object Value)
+private void PutDataMetricFunction(IResolvable|ViewDataMetricFunction[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-snowflake.view.View.putDataMetricFunction.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-snowflake.view.ViewDataMetricFunction">ViewDataMetricFunction</a>[]
 
 ---
 
@@ -659,13 +659,13 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.view.View.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.view.View.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.view.View.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.view.View.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.view.View.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.view.View.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.aggregationPolicy">AggregationPolicy</a></code> | <code><a href="#@cdktf/provider-snowflake.view.ViewAggregationPolicyOutputReference">ViewAggregationPolicyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.column">Column</a></code> | <code><a href="#@cdktf/provider-snowflake.view.ViewColumnList">ViewColumnList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.dataMetricFunction">DataMetricFunction</a></code> | <code><a href="#@cdktf/provider-snowflake.view.ViewDataMetricFunctionList">ViewDataMetricFunctionList</a></code> | *No description.* |
@@ -677,11 +677,11 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.view.ViewTimeoutsOutputReference">ViewTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.aggregationPolicyInput">AggregationPolicyInput</a></code> | <code><a href="#@cdktf/provider-snowflake.view.ViewAggregationPolicy">ViewAggregationPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.changeTrackingInput">ChangeTrackingInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.view.View.property.columnInput">ColumnInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.view.View.property.columnInput">ColumnInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-snowflake.view.ViewColumn">ViewColumn</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.commentInput">CommentInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.view.View.property.copyGrantsInput">CopyGrantsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.view.View.property.copyGrantsInput">CopyGrantsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.databaseInput">DatabaseInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.view.View.property.dataMetricFunctionInput">DataMetricFunctionInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.view.View.property.dataMetricFunctionInput">DataMetricFunctionInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-snowflake.view.ViewDataMetricFunction">ViewDataMetricFunction</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.dataMetricScheduleInput">DataMetricScheduleInput</a></code> | <code><a href="#@cdktf/provider-snowflake.view.ViewDataMetricSchedule">ViewDataMetricSchedule</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.isRecursiveInput">IsRecursiveInput</a></code> | <code>string</code> | *No description.* |
@@ -691,10 +691,10 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.rowAccessPolicyInput">RowAccessPolicyInput</a></code> | <code><a href="#@cdktf/provider-snowflake.view.ViewRowAccessPolicy">ViewRowAccessPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.schemaInput">SchemaInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.statementInput">StatementInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.view.View.property.timeoutsInput">TimeoutsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.view.View.property.timeoutsInput">TimeoutsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-snowflake.view.ViewTimeouts">ViewTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.changeTracking">ChangeTracking</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.comment">Comment</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.view.View.property.copyGrants">CopyGrants</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.view.View.property.copyGrants">CopyGrants</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.database">Database</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.View.property.isRecursive">IsRecursive</a></code> | <code>string</code> | *No description.* |
@@ -781,20 +781,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-snowflake.view.View.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-snowflake.view.View.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -841,10 +841,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-snowflake.view.View.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -961,10 +961,10 @@ public string ChangeTrackingInput { get; }
 ##### `ColumnInput`<sup>Optional</sup> <a name="ColumnInput" id="@cdktf/provider-snowflake.view.View.property.columnInput"></a>
 
 ```csharp
-public object ColumnInput { get; }
+public IResolvable|ViewColumn[] ColumnInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-snowflake.view.ViewColumn">ViewColumn</a>[]
 
 ---
 
@@ -981,10 +981,10 @@ public string CommentInput { get; }
 ##### `CopyGrantsInput`<sup>Optional</sup> <a name="CopyGrantsInput" id="@cdktf/provider-snowflake.view.View.property.copyGrantsInput"></a>
 
 ```csharp
-public object CopyGrantsInput { get; }
+public bool|IResolvable CopyGrantsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1001,10 +1001,10 @@ public string DatabaseInput { get; }
 ##### `DataMetricFunctionInput`<sup>Optional</sup> <a name="DataMetricFunctionInput" id="@cdktf/provider-snowflake.view.View.property.dataMetricFunctionInput"></a>
 
 ```csharp
-public object DataMetricFunctionInput { get; }
+public IResolvable|ViewDataMetricFunction[] DataMetricFunctionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-snowflake.view.ViewDataMetricFunction">ViewDataMetricFunction</a>[]
 
 ---
 
@@ -1101,10 +1101,10 @@ public string StatementInput { get; }
 ##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktf/provider-snowflake.view.View.property.timeoutsInput"></a>
 
 ```csharp
-public object TimeoutsInput { get; }
+public IResolvable|ViewTimeouts TimeoutsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-snowflake.view.ViewTimeouts">ViewTimeouts</a>
 
 ---
 
@@ -1131,10 +1131,10 @@ public string Comment { get; }
 ##### `CopyGrants`<sup>Required</sup> <a name="CopyGrants" id="@cdktf/provider-snowflake.view.View.property.copyGrants"></a>
 
 ```csharp
-public object CopyGrants { get; }
+public bool|IResolvable CopyGrants { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1464,23 +1464,23 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 using HashiCorp.Cdktf.Providers.Snowflake;
 
 new ViewConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Database,
     string Name,
     string Schema,
     string Statement,
     ViewAggregationPolicy AggregationPolicy = null,
     string ChangeTracking = null,
-    object Column = null,
+    IResolvable|ViewColumn[] Column = null,
     string Comment = null,
-    object CopyGrants = null,
-    object DataMetricFunction = null,
+    bool|IResolvable CopyGrants = null,
+    IResolvable|ViewDataMetricFunction[] DataMetricFunction = null,
     ViewDataMetricSchedule DataMetricSchedule = null,
     string Id = null,
     string IsRecursive = null,
@@ -1495,23 +1495,23 @@ new ViewConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.database">Database</a></code> | <code>string</code> | The database in which to create the view. |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.name">Name</a></code> | <code>string</code> | Specifies the identifier for the view; |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.schema">Schema</a></code> | <code>string</code> | The schema in which to create the view. |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.statement">Statement</a></code> | <code>string</code> | Specifies the query used to create the view. |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.aggregationPolicy">AggregationPolicy</a></code> | <code><a href="#@cdktf/provider-snowflake.view.ViewAggregationPolicy">ViewAggregationPolicy</a></code> | aggregation_policy block. |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.changeTracking">ChangeTracking</a></code> | <code>string</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies to enable or disable change tracking on the table. |
-| <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.column">Column</a></code> | <code>object</code> | column block. |
+| <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.column">Column</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-snowflake.view.ViewColumn">ViewColumn</a>[]</code> | column block. |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.comment">Comment</a></code> | <code>string</code> | Specifies a comment for the view. |
-| <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.copyGrants">CopyGrants</a></code> | <code>object</code> | (Default: `false`) Retains the access permissions from the original view when a view is recreated using the OR REPLACE clause. |
-| <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.dataMetricFunction">DataMetricFunction</a></code> | <code>object</code> | data_metric_function block. |
+| <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.copyGrants">CopyGrants</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | (Default: `false`) Retains the access permissions from the original view when a view is recreated using the OR REPLACE clause. |
+| <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.dataMetricFunction">DataMetricFunction</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-snowflake.view.ViewDataMetricFunction">ViewDataMetricFunction</a>[]</code> | data_metric_function block. |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.dataMetricSchedule">DataMetricSchedule</a></code> | <code><a href="#@cdktf/provider-snowflake.view.ViewDataMetricSchedule">ViewDataMetricSchedule</a></code> | data_metric_schedule block. |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/view#id View#id}. |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewConfig.property.isRecursive">IsRecursive</a></code> | <code>string</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies that the view can refer to itself using recursive syntax without necessarily using a CTE (common table expression). |
@@ -1525,20 +1525,20 @@ new ViewConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-snowflake.view.ViewConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-snowflake.view.ViewConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1585,10 +1585,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-snowflake.view.ViewConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1689,10 +1689,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `Column`<sup>Optional</sup> <a name="Column" id="@cdktf/provider-snowflake.view.ViewConfig.property.column"></a>
 
 ```csharp
-public object Column { get; set; }
+public IResolvable|ViewColumn[] Column { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-snowflake.view.ViewColumn">ViewColumn</a>[]
 
 column block.
 
@@ -1717,10 +1717,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `CopyGrants`<sup>Optional</sup> <a name="CopyGrants" id="@cdktf/provider-snowflake.view.ViewConfig.property.copyGrants"></a>
 
 ```csharp
-public object CopyGrants { get; set; }
+public bool|IResolvable CopyGrants { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 (Default: `false`) Retains the access permissions from the original view when a view is recreated using the OR REPLACE clause.
 
@@ -1733,10 +1733,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `DataMetricFunction`<sup>Optional</sup> <a name="DataMetricFunction" id="@cdktf/provider-snowflake.view.ViewConfig.property.dataMetricFunction"></a>
 
 ```csharp
-public object DataMetricFunction { get; set; }
+public IResolvable|ViewDataMetricFunction[] DataMetricFunction { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-snowflake.view.ViewDataMetricFunction">ViewDataMetricFunction</a>[]
 
 data_metric_function block.
 
@@ -2548,7 +2548,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewColumnList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewColumnList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.view.ViewColumnList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.view.ViewColumnList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-snowflake.view.ViewColumn">ViewColumn</a>[]</code> | *No description.* |
 
 ---
 
@@ -2579,10 +2579,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-snowflake.view.ViewColumnList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ViewColumn[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-snowflake.view.ViewColumn">ViewColumn</a>[]
 
 ---
 
@@ -3170,7 +3170,7 @@ private void ResetProjectionPolicy()
 | <code><a href="#@cdktf/provider-snowflake.view.ViewColumnOutputReference.property.projectionPolicyInput">ProjectionPolicyInput</a></code> | <code><a href="#@cdktf/provider-snowflake.view.ViewColumnProjectionPolicy">ViewColumnProjectionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewColumnOutputReference.property.columnName">ColumnName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewColumnOutputReference.property.comment">Comment</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.view.ViewColumnOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.view.ViewColumnOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-snowflake.view.ViewColumn">ViewColumn</a></code> | *No description.* |
 
 ---
 
@@ -3281,10 +3281,10 @@ public string Comment { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-snowflake.view.ViewColumnOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ViewColumn InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-snowflake.view.ViewColumn">ViewColumn</a>
 
 ---
 
@@ -3681,7 +3681,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewDataMetricFunctionList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewDataMetricFunctionList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.view.ViewDataMetricFunctionList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.view.ViewDataMetricFunctionList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-snowflake.view.ViewDataMetricFunction">ViewDataMetricFunction</a>[]</code> | *No description.* |
 
 ---
 
@@ -3712,10 +3712,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-snowflake.view.ViewDataMetricFunctionList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ViewDataMetricFunction[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-snowflake.view.ViewDataMetricFunction">ViewDataMetricFunction</a>[]
 
 ---
 
@@ -3954,7 +3954,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-snowflake.view.ViewDataMetricFunctionOutputReference.property.functionName">FunctionName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewDataMetricFunctionOutputReference.property.on">On</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewDataMetricFunctionOutputReference.property.scheduleStatus">ScheduleStatus</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.view.ViewDataMetricFunctionOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.view.ViewDataMetricFunctionOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-snowflake.view.ViewDataMetricFunction">ViewDataMetricFunction</a></code> | *No description.* |
 
 ---
 
@@ -4045,10 +4045,10 @@ public string ScheduleStatus { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-snowflake.view.ViewDataMetricFunctionOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ViewDataMetricFunction InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-snowflake.view.ViewDataMetricFunction">ViewDataMetricFunction</a>
 
 ---
 
@@ -6006,7 +6006,7 @@ private void ResetUpdate()
 | <code><a href="#@cdktf/provider-snowflake.view.ViewTimeoutsOutputReference.property.delete">Delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewTimeoutsOutputReference.property.read">Read</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.view.ViewTimeoutsOutputReference.property.update">Update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.view.ViewTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.view.ViewTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-snowflake.view.ViewTimeouts">ViewTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -6117,10 +6117,10 @@ public string Update { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-snowflake.view.ViewTimeoutsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ViewTimeouts InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-snowflake.view.ViewTimeouts">ViewTimeouts</a>
 
 ---
 

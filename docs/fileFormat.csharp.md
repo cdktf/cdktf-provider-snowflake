@@ -308,7 +308,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-snowflake.fileFormat.FileFormat.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-snowflake.fileFormat.FileFormat.importFrom"></a>
@@ -362,7 +362,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-snowflake.fileFormat.FileFormat.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -377,7 +377,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-snowflake.fileFormat.FileFormat.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -741,28 +741,28 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.fullyQualifiedName">FullyQualifiedName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference">FileFormatTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.allowDuplicateInput">AllowDuplicateInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.binaryAsTextInput">BinaryAsTextInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.allowDuplicateInput">AllowDuplicateInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.binaryAsTextInput">BinaryAsTextInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.binaryFormatInput">BinaryFormatInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.commentInput">CommentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.compressionInput">CompressionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.databaseInput">DatabaseInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.dateFormatInput">DateFormatInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.disableAutoConvertInput">DisableAutoConvertInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.disableSnowflakeDataInput">DisableSnowflakeDataInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.emptyFieldAsNullInput">EmptyFieldAsNullInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.enableOctalInput">EnableOctalInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.disableAutoConvertInput">DisableAutoConvertInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.disableSnowflakeDataInput">DisableSnowflakeDataInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.emptyFieldAsNullInput">EmptyFieldAsNullInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.enableOctalInput">EnableOctalInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.encodingInput">EncodingInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.errorOnColumnCountMismatchInput">ErrorOnColumnCountMismatchInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.errorOnColumnCountMismatchInput">ErrorOnColumnCountMismatchInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.escapeInput">EscapeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.escapeUnenclosedFieldInput">EscapeUnenclosedFieldInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.fieldDelimiterInput">FieldDelimiterInput</a></code> | <code>string</code> | *No description.* |
@@ -770,37 +770,37 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.fileExtensionInput">FileExtensionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.formatTypeInput">FormatTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.ignoreUtf8ErrorsInput">IgnoreUtf8ErrorsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.ignoreUtf8ErrorsInput">IgnoreUtf8ErrorsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.nullIfInput">NullIfInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.parseHeaderInput">ParseHeaderInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.preserveSpaceInput">PreserveSpaceInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.parseHeaderInput">ParseHeaderInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.preserveSpaceInput">PreserveSpaceInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.recordDelimiterInput">RecordDelimiterInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.replaceInvalidCharactersInput">ReplaceInvalidCharactersInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.replaceInvalidCharactersInput">ReplaceInvalidCharactersInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.schemaInput">SchemaInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.skipBlankLinesInput">SkipBlankLinesInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.skipByteOrderMarkInput">SkipByteOrderMarkInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.skipBlankLinesInput">SkipBlankLinesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.skipByteOrderMarkInput">SkipByteOrderMarkInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.skipHeaderInput">SkipHeaderInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.stripNullValuesInput">StripNullValuesInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.stripOuterArrayInput">StripOuterArrayInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.stripOuterElementInput">StripOuterElementInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.stripNullValuesInput">StripNullValuesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.stripOuterArrayInput">StripOuterArrayInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.stripOuterElementInput">StripOuterElementInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.timeFormatInput">TimeFormatInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.timeoutsInput">TimeoutsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.timeoutsInput">TimeoutsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeouts">FileFormatTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.timestampFormatInput">TimestampFormatInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.trimSpaceInput">TrimSpaceInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.allowDuplicate">AllowDuplicate</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.binaryAsText">BinaryAsText</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.trimSpaceInput">TrimSpaceInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.allowDuplicate">AllowDuplicate</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.binaryAsText">BinaryAsText</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.binaryFormat">BinaryFormat</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.comment">Comment</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.compression">Compression</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.database">Database</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.dateFormat">DateFormat</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.disableAutoConvert">DisableAutoConvert</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.disableSnowflakeData">DisableSnowflakeData</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.emptyFieldAsNull">EmptyFieldAsNull</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.enableOctal">EnableOctal</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.disableAutoConvert">DisableAutoConvert</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.disableSnowflakeData">DisableSnowflakeData</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.emptyFieldAsNull">EmptyFieldAsNull</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.enableOctal">EnableOctal</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.encoding">Encoding</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.errorOnColumnCountMismatch">ErrorOnColumnCountMismatch</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.errorOnColumnCountMismatch">ErrorOnColumnCountMismatch</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.escape">Escape</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.escapeUnenclosedField">EscapeUnenclosedField</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.fieldDelimiter">FieldDelimiter</a></code> | <code>string</code> | *No description.* |
@@ -808,23 +808,23 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.fileExtension">FileExtension</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.formatType">FormatType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.id">Id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.ignoreUtf8Errors">IgnoreUtf8Errors</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.ignoreUtf8Errors">IgnoreUtf8Errors</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.nullIf">NullIf</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.parseHeader">ParseHeader</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.preserveSpace">PreserveSpace</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.parseHeader">ParseHeader</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.preserveSpace">PreserveSpace</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.recordDelimiter">RecordDelimiter</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.replaceInvalidCharacters">ReplaceInvalidCharacters</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.replaceInvalidCharacters">ReplaceInvalidCharacters</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.schema">Schema</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.skipBlankLines">SkipBlankLines</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.skipByteOrderMark">SkipByteOrderMark</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.skipBlankLines">SkipBlankLines</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.skipByteOrderMark">SkipByteOrderMark</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.skipHeader">SkipHeader</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.stripNullValues">StripNullValues</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.stripOuterArray">StripOuterArray</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.stripOuterElement">StripOuterElement</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.stripNullValues">StripNullValues</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.stripOuterArray">StripOuterArray</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.stripOuterElement">StripOuterElement</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.timeFormat">TimeFormat</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.timestampFormat">TimestampFormat</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.trimSpace">TrimSpace</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.trimSpace">TrimSpace</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -903,20 +903,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -963,10 +963,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -993,20 +993,20 @@ public FileFormatTimeoutsOutputReference Timeouts { get; }
 ##### `AllowDuplicateInput`<sup>Optional</sup> <a name="AllowDuplicateInput" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.allowDuplicateInput"></a>
 
 ```csharp
-public object AllowDuplicateInput { get; }
+public bool|IResolvable AllowDuplicateInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `BinaryAsTextInput`<sup>Optional</sup> <a name="BinaryAsTextInput" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.binaryAsTextInput"></a>
 
 ```csharp
-public object BinaryAsTextInput { get; }
+public bool|IResolvable BinaryAsTextInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1063,40 +1063,40 @@ public string DateFormatInput { get; }
 ##### `DisableAutoConvertInput`<sup>Optional</sup> <a name="DisableAutoConvertInput" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.disableAutoConvertInput"></a>
 
 ```csharp
-public object DisableAutoConvertInput { get; }
+public bool|IResolvable DisableAutoConvertInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DisableSnowflakeDataInput`<sup>Optional</sup> <a name="DisableSnowflakeDataInput" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.disableSnowflakeDataInput"></a>
 
 ```csharp
-public object DisableSnowflakeDataInput { get; }
+public bool|IResolvable DisableSnowflakeDataInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EmptyFieldAsNullInput`<sup>Optional</sup> <a name="EmptyFieldAsNullInput" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.emptyFieldAsNullInput"></a>
 
 ```csharp
-public object EmptyFieldAsNullInput { get; }
+public bool|IResolvable EmptyFieldAsNullInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableOctalInput`<sup>Optional</sup> <a name="EnableOctalInput" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.enableOctalInput"></a>
 
 ```csharp
-public object EnableOctalInput { get; }
+public bool|IResolvable EnableOctalInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1113,10 +1113,10 @@ public string EncodingInput { get; }
 ##### `ErrorOnColumnCountMismatchInput`<sup>Optional</sup> <a name="ErrorOnColumnCountMismatchInput" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.errorOnColumnCountMismatchInput"></a>
 
 ```csharp
-public object ErrorOnColumnCountMismatchInput { get; }
+public bool|IResolvable ErrorOnColumnCountMismatchInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1193,10 +1193,10 @@ public string IdInput { get; }
 ##### `IgnoreUtf8ErrorsInput`<sup>Optional</sup> <a name="IgnoreUtf8ErrorsInput" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.ignoreUtf8ErrorsInput"></a>
 
 ```csharp
-public object IgnoreUtf8ErrorsInput { get; }
+public bool|IResolvable IgnoreUtf8ErrorsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1223,20 +1223,20 @@ public string[] NullIfInput { get; }
 ##### `ParseHeaderInput`<sup>Optional</sup> <a name="ParseHeaderInput" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.parseHeaderInput"></a>
 
 ```csharp
-public object ParseHeaderInput { get; }
+public bool|IResolvable ParseHeaderInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `PreserveSpaceInput`<sup>Optional</sup> <a name="PreserveSpaceInput" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.preserveSpaceInput"></a>
 
 ```csharp
-public object PreserveSpaceInput { get; }
+public bool|IResolvable PreserveSpaceInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1253,10 +1253,10 @@ public string RecordDelimiterInput { get; }
 ##### `ReplaceInvalidCharactersInput`<sup>Optional</sup> <a name="ReplaceInvalidCharactersInput" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.replaceInvalidCharactersInput"></a>
 
 ```csharp
-public object ReplaceInvalidCharactersInput { get; }
+public bool|IResolvable ReplaceInvalidCharactersInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1273,20 +1273,20 @@ public string SchemaInput { get; }
 ##### `SkipBlankLinesInput`<sup>Optional</sup> <a name="SkipBlankLinesInput" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.skipBlankLinesInput"></a>
 
 ```csharp
-public object SkipBlankLinesInput { get; }
+public bool|IResolvable SkipBlankLinesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `SkipByteOrderMarkInput`<sup>Optional</sup> <a name="SkipByteOrderMarkInput" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.skipByteOrderMarkInput"></a>
 
 ```csharp
-public object SkipByteOrderMarkInput { get; }
+public bool|IResolvable SkipByteOrderMarkInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1303,30 +1303,30 @@ public double SkipHeaderInput { get; }
 ##### `StripNullValuesInput`<sup>Optional</sup> <a name="StripNullValuesInput" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.stripNullValuesInput"></a>
 
 ```csharp
-public object StripNullValuesInput { get; }
+public bool|IResolvable StripNullValuesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `StripOuterArrayInput`<sup>Optional</sup> <a name="StripOuterArrayInput" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.stripOuterArrayInput"></a>
 
 ```csharp
-public object StripOuterArrayInput { get; }
+public bool|IResolvable StripOuterArrayInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `StripOuterElementInput`<sup>Optional</sup> <a name="StripOuterElementInput" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.stripOuterElementInput"></a>
 
 ```csharp
-public object StripOuterElementInput { get; }
+public bool|IResolvable StripOuterElementInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1343,10 +1343,10 @@ public string TimeFormatInput { get; }
 ##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.timeoutsInput"></a>
 
 ```csharp
-public object TimeoutsInput { get; }
+public IResolvable|FileFormatTimeouts TimeoutsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeouts">FileFormatTimeouts</a>
 
 ---
 
@@ -1363,30 +1363,30 @@ public string TimestampFormatInput { get; }
 ##### `TrimSpaceInput`<sup>Optional</sup> <a name="TrimSpaceInput" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.trimSpaceInput"></a>
 
 ```csharp
-public object TrimSpaceInput { get; }
+public bool|IResolvable TrimSpaceInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AllowDuplicate`<sup>Required</sup> <a name="AllowDuplicate" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.allowDuplicate"></a>
 
 ```csharp
-public object AllowDuplicate { get; }
+public bool|IResolvable AllowDuplicate { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `BinaryAsText`<sup>Required</sup> <a name="BinaryAsText" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.binaryAsText"></a>
 
 ```csharp
-public object BinaryAsText { get; }
+public bool|IResolvable BinaryAsText { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1443,40 +1443,40 @@ public string DateFormat { get; }
 ##### `DisableAutoConvert`<sup>Required</sup> <a name="DisableAutoConvert" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.disableAutoConvert"></a>
 
 ```csharp
-public object DisableAutoConvert { get; }
+public bool|IResolvable DisableAutoConvert { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DisableSnowflakeData`<sup>Required</sup> <a name="DisableSnowflakeData" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.disableSnowflakeData"></a>
 
 ```csharp
-public object DisableSnowflakeData { get; }
+public bool|IResolvable DisableSnowflakeData { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EmptyFieldAsNull`<sup>Required</sup> <a name="EmptyFieldAsNull" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.emptyFieldAsNull"></a>
 
 ```csharp
-public object EmptyFieldAsNull { get; }
+public bool|IResolvable EmptyFieldAsNull { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableOctal`<sup>Required</sup> <a name="EnableOctal" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.enableOctal"></a>
 
 ```csharp
-public object EnableOctal { get; }
+public bool|IResolvable EnableOctal { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1493,10 +1493,10 @@ public string Encoding { get; }
 ##### `ErrorOnColumnCountMismatch`<sup>Required</sup> <a name="ErrorOnColumnCountMismatch" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.errorOnColumnCountMismatch"></a>
 
 ```csharp
-public object ErrorOnColumnCountMismatch { get; }
+public bool|IResolvable ErrorOnColumnCountMismatch { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1573,10 +1573,10 @@ public string Id { get; }
 ##### `IgnoreUtf8Errors`<sup>Required</sup> <a name="IgnoreUtf8Errors" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.ignoreUtf8Errors"></a>
 
 ```csharp
-public object IgnoreUtf8Errors { get; }
+public bool|IResolvable IgnoreUtf8Errors { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1603,20 +1603,20 @@ public string[] NullIf { get; }
 ##### `ParseHeader`<sup>Required</sup> <a name="ParseHeader" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.parseHeader"></a>
 
 ```csharp
-public object ParseHeader { get; }
+public bool|IResolvable ParseHeader { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `PreserveSpace`<sup>Required</sup> <a name="PreserveSpace" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.preserveSpace"></a>
 
 ```csharp
-public object PreserveSpace { get; }
+public bool|IResolvable PreserveSpace { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1633,10 +1633,10 @@ public string RecordDelimiter { get; }
 ##### `ReplaceInvalidCharacters`<sup>Required</sup> <a name="ReplaceInvalidCharacters" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.replaceInvalidCharacters"></a>
 
 ```csharp
-public object ReplaceInvalidCharacters { get; }
+public bool|IResolvable ReplaceInvalidCharacters { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1653,20 +1653,20 @@ public string Schema { get; }
 ##### `SkipBlankLines`<sup>Required</sup> <a name="SkipBlankLines" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.skipBlankLines"></a>
 
 ```csharp
-public object SkipBlankLines { get; }
+public bool|IResolvable SkipBlankLines { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `SkipByteOrderMark`<sup>Required</sup> <a name="SkipByteOrderMark" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.skipByteOrderMark"></a>
 
 ```csharp
-public object SkipByteOrderMark { get; }
+public bool|IResolvable SkipByteOrderMark { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1683,30 +1683,30 @@ public double SkipHeader { get; }
 ##### `StripNullValues`<sup>Required</sup> <a name="StripNullValues" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.stripNullValues"></a>
 
 ```csharp
-public object StripNullValues { get; }
+public bool|IResolvable StripNullValues { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `StripOuterArray`<sup>Required</sup> <a name="StripOuterArray" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.stripOuterArray"></a>
 
 ```csharp
-public object StripOuterArray { get; }
+public bool|IResolvable StripOuterArray { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `StripOuterElement`<sup>Required</sup> <a name="StripOuterElement" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.stripOuterElement"></a>
 
 ```csharp
-public object StripOuterElement { get; }
+public bool|IResolvable StripOuterElement { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1733,10 +1733,10 @@ public string TimestampFormat { get; }
 ##### `TrimSpace`<sup>Required</sup> <a name="TrimSpace" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.trimSpace"></a>
 
 ```csharp
-public object TrimSpace { get; }
+public bool|IResolvable TrimSpace { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1768,51 +1768,51 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Snowflake;
 
 new FileFormatConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Database,
     string FormatType,
     string Name,
     string Schema,
-    object AllowDuplicate = null,
-    object BinaryAsText = null,
+    bool|IResolvable AllowDuplicate = null,
+    bool|IResolvable BinaryAsText = null,
     string BinaryFormat = null,
     string Comment = null,
     string Compression = null,
     string DateFormat = null,
-    object DisableAutoConvert = null,
-    object DisableSnowflakeData = null,
-    object EmptyFieldAsNull = null,
-    object EnableOctal = null,
+    bool|IResolvable DisableAutoConvert = null,
+    bool|IResolvable DisableSnowflakeData = null,
+    bool|IResolvable EmptyFieldAsNull = null,
+    bool|IResolvable EnableOctal = null,
     string Encoding = null,
-    object ErrorOnColumnCountMismatch = null,
+    bool|IResolvable ErrorOnColumnCountMismatch = null,
     string Escape = null,
     string EscapeUnenclosedField = null,
     string FieldDelimiter = null,
     string FieldOptionallyEnclosedBy = null,
     string FileExtension = null,
     string Id = null,
-    object IgnoreUtf8Errors = null,
+    bool|IResolvable IgnoreUtf8Errors = null,
     string[] NullIf = null,
-    object ParseHeader = null,
-    object PreserveSpace = null,
+    bool|IResolvable ParseHeader = null,
+    bool|IResolvable PreserveSpace = null,
     string RecordDelimiter = null,
-    object ReplaceInvalidCharacters = null,
-    object SkipBlankLines = null,
-    object SkipByteOrderMark = null,
+    bool|IResolvable ReplaceInvalidCharacters = null,
+    bool|IResolvable SkipBlankLines = null,
+    bool|IResolvable SkipByteOrderMark = null,
     double SkipHeader = null,
-    object StripNullValues = null,
-    object StripOuterArray = null,
-    object StripOuterElement = null,
+    bool|IResolvable StripNullValues = null,
+    bool|IResolvable StripOuterArray = null,
+    bool|IResolvable StripOuterElement = null,
     string TimeFormat = null,
     FileFormatTimeouts Timeouts = null,
     string TimestampFormat = null,
-    object TrimSpace = null
+    bool|IResolvable TrimSpace = null
 };
 ```
 
@@ -1820,71 +1820,71 @@ new FileFormatConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.database">Database</a></code> | <code>string</code> | The database in which to create the file format. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.formatType">FormatType</a></code> | <code>string</code> | Specifies the format of the input files (for data loading) or output files (for data unloading). |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.name">Name</a></code> | <code>string</code> | Specifies the identifier for the file format; |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.schema">Schema</a></code> | <code>string</code> | The schema in which to create the file format. |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.allowDuplicate">AllowDuplicate</a></code> | <code>object</code> | Boolean that specifies to allow duplicate object field names (only the last one will be preserved). |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.binaryAsText">BinaryAsText</a></code> | <code>object</code> | Boolean that specifies whether to interpret columns with no defined logical data type as UTF-8 text. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.allowDuplicate">AllowDuplicate</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Boolean that specifies to allow duplicate object field names (only the last one will be preserved). |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.binaryAsText">BinaryAsText</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Boolean that specifies whether to interpret columns with no defined logical data type as UTF-8 text. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.binaryFormat">BinaryFormat</a></code> | <code>string</code> | Defines the encoding format for binary input or output. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.comment">Comment</a></code> | <code>string</code> | Specifies a comment for the file format. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.compression">Compression</a></code> | <code>string</code> | Specifies the current compression algorithm for the data file. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.dateFormat">DateFormat</a></code> | <code>string</code> | Defines the format of date values in the data files (data loading) or table (data unloading). |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.disableAutoConvert">DisableAutoConvert</a></code> | <code>object</code> | Boolean that specifies whether the XML parser disables automatic conversion of numeric and Boolean values from text to native representation. |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.disableSnowflakeData">DisableSnowflakeData</a></code> | <code>object</code> | Boolean that specifies whether the XML parser disables recognition of Snowflake semi-structured data tags. |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.emptyFieldAsNull">EmptyFieldAsNull</a></code> | <code>object</code> | Specifies whether to insert SQL NULL for empty fields in an input file, which are represented by two successive delimiters. |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.enableOctal">EnableOctal</a></code> | <code>object</code> | Boolean that enables parsing of octal numbers. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.disableAutoConvert">DisableAutoConvert</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Boolean that specifies whether the XML parser disables automatic conversion of numeric and Boolean values from text to native representation. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.disableSnowflakeData">DisableSnowflakeData</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Boolean that specifies whether the XML parser disables recognition of Snowflake semi-structured data tags. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.emptyFieldAsNull">EmptyFieldAsNull</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specifies whether to insert SQL NULL for empty fields in an input file, which are represented by two successive delimiters. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.enableOctal">EnableOctal</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Boolean that enables parsing of octal numbers. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.encoding">Encoding</a></code> | <code>string</code> | String (constant) that specifies the character set of the source data when loading data into a table. |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.errorOnColumnCountMismatch">ErrorOnColumnCountMismatch</a></code> | <code>object</code> | Boolean that specifies whether to generate a parsing error if the number of delimited columns (i.e. fields) in an input file does not match the number of columns in the corresponding table. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.errorOnColumnCountMismatch">ErrorOnColumnCountMismatch</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Boolean that specifies whether to generate a parsing error if the number of delimited columns (i.e. fields) in an input file does not match the number of columns in the corresponding table. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.escape">Escape</a></code> | <code>string</code> | Single character string used as the escape character for field values. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.escapeUnenclosedField">EscapeUnenclosedField</a></code> | <code>string</code> | Single character string used as the escape character for unenclosed field values only. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.fieldDelimiter">FieldDelimiter</a></code> | <code>string</code> | Specifies one or more singlebyte or multibyte characters that separate fields in an input file (data loading) or unloaded file (data unloading). |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.fieldOptionallyEnclosedBy">FieldOptionallyEnclosedBy</a></code> | <code>string</code> | Character used to enclose strings. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.fileExtension">FileExtension</a></code> | <code>string</code> | Specifies the extension for files unloaded to a stage. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/file_format#id FileFormat#id}. |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.ignoreUtf8Errors">IgnoreUtf8Errors</a></code> | <code>object</code> | Boolean that specifies whether UTF-8 encoding errors produce error conditions. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.ignoreUtf8Errors">IgnoreUtf8Errors</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Boolean that specifies whether UTF-8 encoding errors produce error conditions. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.nullIf">NullIf</a></code> | <code>string[]</code> | String used to convert to and from SQL NULL. |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.parseHeader">ParseHeader</a></code> | <code>object</code> | Boolean that specifies whether to use the first row headers in the data files to determine column names. |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.preserveSpace">PreserveSpace</a></code> | <code>object</code> | Boolean that specifies whether the XML parser preserves leading and trailing spaces in element content. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.parseHeader">ParseHeader</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Boolean that specifies whether to use the first row headers in the data files to determine column names. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.preserveSpace">PreserveSpace</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Boolean that specifies whether the XML parser preserves leading and trailing spaces in element content. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.recordDelimiter">RecordDelimiter</a></code> | <code>string</code> | Specifies one or more singlebyte or multibyte characters that separate records in an input file (data loading) or unloaded file (data unloading). |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.replaceInvalidCharacters">ReplaceInvalidCharacters</a></code> | <code>object</code> | Boolean that specifies whether to replace invalid UTF-8 characters with the Unicode replacement character (�). |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.skipBlankLines">SkipBlankLines</a></code> | <code>object</code> | Boolean that specifies to skip any blank lines encountered in the data files. |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.skipByteOrderMark">SkipByteOrderMark</a></code> | <code>object</code> | Boolean that specifies whether to skip the BOM (byte order mark), if present in a data file. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.replaceInvalidCharacters">ReplaceInvalidCharacters</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Boolean that specifies whether to replace invalid UTF-8 characters with the Unicode replacement character (�). |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.skipBlankLines">SkipBlankLines</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Boolean that specifies to skip any blank lines encountered in the data files. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.skipByteOrderMark">SkipByteOrderMark</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Boolean that specifies whether to skip the BOM (byte order mark), if present in a data file. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.skipHeader">SkipHeader</a></code> | <code>double</code> | Number of lines at the start of the file to skip. |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.stripNullValues">StripNullValues</a></code> | <code>object</code> | Boolean that instructs the JSON parser to remove object fields or array elements containing null values. |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.stripOuterArray">StripOuterArray</a></code> | <code>object</code> | Boolean that instructs the JSON parser to remove outer brackets. |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.stripOuterElement">StripOuterElement</a></code> | <code>object</code> | Boolean that specifies whether the XML parser strips out the outer XML element, exposing 2nd level elements as separate documents. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.stripNullValues">StripNullValues</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Boolean that instructs the JSON parser to remove object fields or array elements containing null values. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.stripOuterArray">StripOuterArray</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Boolean that instructs the JSON parser to remove outer brackets. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.stripOuterElement">StripOuterElement</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Boolean that specifies whether the XML parser strips out the outer XML element, exposing 2nd level elements as separate documents. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.timeFormat">TimeFormat</a></code> | <code>string</code> | Defines the format of time values in the data files (data loading) or table (data unloading). |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeouts">FileFormatTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.timestampFormat">TimestampFormat</a></code> | <code>string</code> | Defines the format of timestamp values in the data files (data loading) or table (data unloading). |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.trimSpace">TrimSpace</a></code> | <code>object</code> | Boolean that specifies whether to remove white space from fields. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.trimSpace">TrimSpace</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Boolean that specifies whether to remove white space from fields. |
 
 ---
 
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1931,10 +1931,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1999,10 +1999,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `AllowDuplicate`<sup>Optional</sup> <a name="AllowDuplicate" id="@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.allowDuplicate"></a>
 
 ```csharp
-public object AllowDuplicate { get; set; }
+public bool|IResolvable AllowDuplicate { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Boolean that specifies to allow duplicate object field names (only the last one will be preserved).
 
@@ -2013,10 +2013,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `BinaryAsText`<sup>Optional</sup> <a name="BinaryAsText" id="@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.binaryAsText"></a>
 
 ```csharp
-public object BinaryAsText { get; set; }
+public bool|IResolvable BinaryAsText { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Boolean that specifies whether to interpret columns with no defined logical data type as UTF-8 text.
 
@@ -2083,10 +2083,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `DisableAutoConvert`<sup>Optional</sup> <a name="DisableAutoConvert" id="@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.disableAutoConvert"></a>
 
 ```csharp
-public object DisableAutoConvert { get; set; }
+public bool|IResolvable DisableAutoConvert { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Boolean that specifies whether the XML parser disables automatic conversion of numeric and Boolean values from text to native representation.
 
@@ -2097,10 +2097,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `DisableSnowflakeData`<sup>Optional</sup> <a name="DisableSnowflakeData" id="@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.disableSnowflakeData"></a>
 
 ```csharp
-public object DisableSnowflakeData { get; set; }
+public bool|IResolvable DisableSnowflakeData { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Boolean that specifies whether the XML parser disables recognition of Snowflake semi-structured data tags.
 
@@ -2111,10 +2111,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `EmptyFieldAsNull`<sup>Optional</sup> <a name="EmptyFieldAsNull" id="@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.emptyFieldAsNull"></a>
 
 ```csharp
-public object EmptyFieldAsNull { get; set; }
+public bool|IResolvable EmptyFieldAsNull { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specifies whether to insert SQL NULL for empty fields in an input file, which are represented by two successive delimiters.
 
@@ -2125,10 +2125,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `EnableOctal`<sup>Optional</sup> <a name="EnableOctal" id="@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.enableOctal"></a>
 
 ```csharp
-public object EnableOctal { get; set; }
+public bool|IResolvable EnableOctal { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Boolean that enables parsing of octal numbers.
 
@@ -2153,10 +2153,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `ErrorOnColumnCountMismatch`<sup>Optional</sup> <a name="ErrorOnColumnCountMismatch" id="@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.errorOnColumnCountMismatch"></a>
 
 ```csharp
-public object ErrorOnColumnCountMismatch { get; set; }
+public bool|IResolvable ErrorOnColumnCountMismatch { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Boolean that specifies whether to generate a parsing error if the number of delimited columns (i.e. fields) in an input file does not match the number of columns in the corresponding table.
 
@@ -2252,10 +2252,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `IgnoreUtf8Errors`<sup>Optional</sup> <a name="IgnoreUtf8Errors" id="@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.ignoreUtf8Errors"></a>
 
 ```csharp
-public object IgnoreUtf8Errors { get; set; }
+public bool|IResolvable IgnoreUtf8Errors { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Boolean that specifies whether UTF-8 encoding errors produce error conditions.
 
@@ -2280,10 +2280,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `ParseHeader`<sup>Optional</sup> <a name="ParseHeader" id="@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.parseHeader"></a>
 
 ```csharp
-public object ParseHeader { get; set; }
+public bool|IResolvable ParseHeader { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Boolean that specifies whether to use the first row headers in the data files to determine column names.
 
@@ -2294,10 +2294,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `PreserveSpace`<sup>Optional</sup> <a name="PreserveSpace" id="@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.preserveSpace"></a>
 
 ```csharp
-public object PreserveSpace { get; set; }
+public bool|IResolvable PreserveSpace { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Boolean that specifies whether the XML parser preserves leading and trailing spaces in element content.
 
@@ -2322,10 +2322,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `ReplaceInvalidCharacters`<sup>Optional</sup> <a name="ReplaceInvalidCharacters" id="@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.replaceInvalidCharacters"></a>
 
 ```csharp
-public object ReplaceInvalidCharacters { get; set; }
+public bool|IResolvable ReplaceInvalidCharacters { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Boolean that specifies whether to replace invalid UTF-8 characters with the Unicode replacement character (�).
 
@@ -2336,10 +2336,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `SkipBlankLines`<sup>Optional</sup> <a name="SkipBlankLines" id="@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.skipBlankLines"></a>
 
 ```csharp
-public object SkipBlankLines { get; set; }
+public bool|IResolvable SkipBlankLines { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Boolean that specifies to skip any blank lines encountered in the data files.
 
@@ -2350,10 +2350,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `SkipByteOrderMark`<sup>Optional</sup> <a name="SkipByteOrderMark" id="@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.skipByteOrderMark"></a>
 
 ```csharp
-public object SkipByteOrderMark { get; set; }
+public bool|IResolvable SkipByteOrderMark { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Boolean that specifies whether to skip the BOM (byte order mark), if present in a data file.
 
@@ -2378,10 +2378,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `StripNullValues`<sup>Optional</sup> <a name="StripNullValues" id="@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.stripNullValues"></a>
 
 ```csharp
-public object StripNullValues { get; set; }
+public bool|IResolvable StripNullValues { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Boolean that instructs the JSON parser to remove object fields or array elements containing null values.
 
@@ -2392,10 +2392,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `StripOuterArray`<sup>Optional</sup> <a name="StripOuterArray" id="@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.stripOuterArray"></a>
 
 ```csharp
-public object StripOuterArray { get; set; }
+public bool|IResolvable StripOuterArray { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Boolean that instructs the JSON parser to remove outer brackets.
 
@@ -2406,10 +2406,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `StripOuterElement`<sup>Optional</sup> <a name="StripOuterElement" id="@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.stripOuterElement"></a>
 
 ```csharp
-public object StripOuterElement { get; set; }
+public bool|IResolvable StripOuterElement { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Boolean that specifies whether the XML parser strips out the outer XML element, exposing 2nd level elements as separate documents.
 
@@ -2462,10 +2462,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `TrimSpace`<sup>Optional</sup> <a name="TrimSpace" id="@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.trimSpace"></a>
 
 ```csharp
-public object TrimSpace { get; set; }
+public bool|IResolvable TrimSpace { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Boolean that specifies whether to remove white space from fields.
 
@@ -2795,7 +2795,7 @@ private void ResetUpdate()
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.property.delete">Delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.property.read">Read</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.property.update">Update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeouts">FileFormatTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -2906,10 +2906,10 @@ public string Update { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|FileFormatTimeouts InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeouts">FileFormatTimeouts</a>
 
 ---
 

@@ -285,7 +285,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-snowflake.table.Table.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-snowflake.table.Table.importFrom"></a>
@@ -339,7 +339,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-snowflake.table.Table.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -354,7 +354,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-snowflake.table.Table.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -379,12 +379,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `PutColumn` <a name="PutColumn" id="@cdktf/provider-snowflake.table.Table.putColumn"></a>
 
 ```csharp
-private void PutColumn(object Value)
+private void PutColumn(IResolvable|TableColumn[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-snowflake.table.Table.putColumn.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-snowflake.table.TableColumn">TableColumn</a>[]
 
 ---
 
@@ -403,12 +403,12 @@ private void PutPrimaryKey(TablePrimaryKey Value)
 ##### `PutTag` <a name="PutTag" id="@cdktf/provider-snowflake.table.Table.putTag"></a>
 
 ```csharp
-private void PutTag(object Value)
+private void PutTag(IResolvable|TableTag[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-snowflake.table.Table.putTag.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-snowflake.table.TableTag">TableTag</a>[]
 
 ---
 
@@ -598,22 +598,22 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktf/provider-snowflake.table.Table.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.table.Table.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.table.Table.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.table.Table.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.table.Table.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.table.Table.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.table.Table.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.property.column">Column</a></code> | <code><a href="#@cdktf/provider-snowflake.table.TableColumnList">TableColumnList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.property.fullyQualifiedName">FullyQualifiedName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.property.owner">Owner</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.property.primaryKey">PrimaryKey</a></code> | <code><a href="#@cdktf/provider-snowflake.table.TablePrimaryKeyOutputReference">TablePrimaryKeyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.property.tag">Tag</a></code> | <code><a href="#@cdktf/provider-snowflake.table.TableTagList">TableTagList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.table.TableTimeoutsOutputReference">TableTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.table.Table.property.changeTrackingInput">ChangeTrackingInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.table.Table.property.changeTrackingInput">ChangeTrackingInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.property.clusterByInput">ClusterByInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.table.Table.property.columnInput">ColumnInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.table.Table.property.columnInput">ColumnInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-snowflake.table.TableColumn">TableColumn</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.property.commentInput">CommentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.property.databaseInput">DatabaseInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.property.dataRetentionTimeInDaysInput">DataRetentionTimeInDaysInput</a></code> | <code>double</code> | *No description.* |
@@ -621,9 +621,9 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktf/provider-snowflake.table.Table.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.property.primaryKeyInput">PrimaryKeyInput</a></code> | <code><a href="#@cdktf/provider-snowflake.table.TablePrimaryKey">TablePrimaryKey</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.property.schemaInput">SchemaInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.table.Table.property.tagInput">TagInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.table.Table.property.timeoutsInput">TimeoutsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.table.Table.property.changeTracking">ChangeTracking</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.table.Table.property.tagInput">TagInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-snowflake.table.TableTag">TableTag</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.table.Table.property.timeoutsInput">TimeoutsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-snowflake.table.TableTimeouts">TableTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.table.Table.property.changeTracking">ChangeTracking</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.property.clusterBy">ClusterBy</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.property.comment">Comment</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.Table.property.database">Database</a></code> | <code>string</code> | *No description.* |
@@ -709,20 +709,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-snowflake.table.Table.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-snowflake.table.Table.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -769,10 +769,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-snowflake.table.Table.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -839,10 +839,10 @@ public TableTimeoutsOutputReference Timeouts { get; }
 ##### `ChangeTrackingInput`<sup>Optional</sup> <a name="ChangeTrackingInput" id="@cdktf/provider-snowflake.table.Table.property.changeTrackingInput"></a>
 
 ```csharp
-public object ChangeTrackingInput { get; }
+public bool|IResolvable ChangeTrackingInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -859,10 +859,10 @@ public string[] ClusterByInput { get; }
 ##### `ColumnInput`<sup>Optional</sup> <a name="ColumnInput" id="@cdktf/provider-snowflake.table.Table.property.columnInput"></a>
 
 ```csharp
-public object ColumnInput { get; }
+public IResolvable|TableColumn[] ColumnInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-snowflake.table.TableColumn">TableColumn</a>[]
 
 ---
 
@@ -939,30 +939,30 @@ public string SchemaInput { get; }
 ##### `TagInput`<sup>Optional</sup> <a name="TagInput" id="@cdktf/provider-snowflake.table.Table.property.tagInput"></a>
 
 ```csharp
-public object TagInput { get; }
+public IResolvable|TableTag[] TagInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-snowflake.table.TableTag">TableTag</a>[]
 
 ---
 
 ##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktf/provider-snowflake.table.Table.property.timeoutsInput"></a>
 
 ```csharp
-public object TimeoutsInput { get; }
+public IResolvable|TableTimeouts TimeoutsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-snowflake.table.TableTimeouts">TableTimeouts</a>
 
 ---
 
 ##### `ChangeTracking`<sup>Required</sup> <a name="ChangeTracking" id="@cdktf/provider-snowflake.table.Table.property.changeTracking"></a>
 
 ```csharp
-public object ChangeTracking { get; }
+public bool|IResolvable ChangeTracking { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1071,7 +1071,7 @@ new TableColumn {
     TableColumnDefault Default = null,
     TableColumnIdentity Identity = null,
     string MaskingPolicy = null,
-    object Nullable = null
+    bool|IResolvable Nullable = null
 };
 ```
 
@@ -1086,7 +1086,7 @@ new TableColumn {
 | <code><a href="#@cdktf/provider-snowflake.table.TableColumn.property.default">Default</a></code> | <code><a href="#@cdktf/provider-snowflake.table.TableColumnDefault">TableColumnDefault</a></code> | default block. |
 | <code><a href="#@cdktf/provider-snowflake.table.TableColumn.property.identity">Identity</a></code> | <code><a href="#@cdktf/provider-snowflake.table.TableColumnIdentity">TableColumnIdentity</a></code> | identity block. |
 | <code><a href="#@cdktf/provider-snowflake.table.TableColumn.property.maskingPolicy">MaskingPolicy</a></code> | <code>string</code> | (Default: ``) Masking policy to apply on column. It has to be a fully qualified name. |
-| <code><a href="#@cdktf/provider-snowflake.table.TableColumn.property.nullable">Nullable</a></code> | <code>object</code> | (Default: `true`) Whether this column can contain null values. |
+| <code><a href="#@cdktf/provider-snowflake.table.TableColumn.property.nullable">Nullable</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | (Default: `true`) Whether this column can contain null values. |
 
 ---
 
@@ -1191,10 +1191,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `Nullable`<sup>Optional</sup> <a name="Nullable" id="@cdktf/provider-snowflake.table.TableColumn.property.nullable"></a>
 
 ```csharp
-public object Nullable { get; set; }
+public bool|IResolvable Nullable { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 (Default: `true`) Whether this column can contain null values.
 
@@ -1328,24 +1328,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 using HashiCorp.Cdktf.Providers.Snowflake;
 
 new TableConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
-    object Column,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
+    IResolvable|TableColumn[] Column,
     string Database,
     string Name,
     string Schema,
-    object ChangeTracking = null,
+    bool|IResolvable ChangeTracking = null,
     string[] ClusterBy = null,
     string Comment = null,
     double DataRetentionTimeInDays = null,
     string Id = null,
     TablePrimaryKey PrimaryKey = null,
-    object Tag = null,
+    IResolvable|TableTag[] Tag = null,
     TableTimeouts Timeouts = null
 };
 ```
@@ -1354,24 +1354,24 @@ new TableConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.table.TableConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.table.TableConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.table.TableConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.table.TableConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.TableConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.TableConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.TableConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.TableConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.table.TableConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.table.TableConfig.property.column">Column</a></code> | <code>object</code> | column block. |
+| <code><a href="#@cdktf/provider-snowflake.table.TableConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.table.TableConfig.property.column">Column</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-snowflake.table.TableColumn">TableColumn</a>[]</code> | column block. |
 | <code><a href="#@cdktf/provider-snowflake.table.TableConfig.property.database">Database</a></code> | <code>string</code> | The database in which to create the table. |
 | <code><a href="#@cdktf/provider-snowflake.table.TableConfig.property.name">Name</a></code> | <code>string</code> | Specifies the identifier for the table; |
 | <code><a href="#@cdktf/provider-snowflake.table.TableConfig.property.schema">Schema</a></code> | <code>string</code> | The schema in which to create the table. |
-| <code><a href="#@cdktf/provider-snowflake.table.TableConfig.property.changeTracking">ChangeTracking</a></code> | <code>object</code> | (Default: `false`) Specifies whether to enable change tracking on the table. Default false. |
+| <code><a href="#@cdktf/provider-snowflake.table.TableConfig.property.changeTracking">ChangeTracking</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | (Default: `false`) Specifies whether to enable change tracking on the table. Default false. |
 | <code><a href="#@cdktf/provider-snowflake.table.TableConfig.property.clusterBy">ClusterBy</a></code> | <code>string[]</code> | A list of one or more table columns/expressions to be used as clustering key(s) for the table. |
 | <code><a href="#@cdktf/provider-snowflake.table.TableConfig.property.comment">Comment</a></code> | <code>string</code> | Specifies a comment for the table. |
 | <code><a href="#@cdktf/provider-snowflake.table.TableConfig.property.dataRetentionTimeInDays">DataRetentionTimeInDays</a></code> | <code>double</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`-1`)) Specifies the retention period for the table so that Time Travel actions (SELECT, CLONE, UNDROP) can be performed on historical data in the table. |
 | <code><a href="#@cdktf/provider-snowflake.table.TableConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/table#id Table#id}. |
 | <code><a href="#@cdktf/provider-snowflake.table.TableConfig.property.primaryKey">PrimaryKey</a></code> | <code><a href="#@cdktf/provider-snowflake.table.TablePrimaryKey">TablePrimaryKey</a></code> | primary_key block. |
-| <code><a href="#@cdktf/provider-snowflake.table.TableConfig.property.tag">Tag</a></code> | <code>object</code> | tag block. |
+| <code><a href="#@cdktf/provider-snowflake.table.TableConfig.property.tag">Tag</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-snowflake.table.TableTag">TableTag</a>[]</code> | tag block. |
 | <code><a href="#@cdktf/provider-snowflake.table.TableConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.table.TableTimeouts">TableTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1379,20 +1379,20 @@ new TableConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-snowflake.table.TableConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-snowflake.table.TableConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1439,20 +1439,20 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-snowflake.table.TableConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
 ##### `Column`<sup>Required</sup> <a name="Column" id="@cdktf/provider-snowflake.table.TableConfig.property.column"></a>
 
 ```csharp
-public object Column { get; set; }
+public IResolvable|TableColumn[] Column { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-snowflake.table.TableColumn">TableColumn</a>[]
 
 column block.
 
@@ -1507,10 +1507,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `ChangeTracking`<sup>Optional</sup> <a name="ChangeTracking" id="@cdktf/provider-snowflake.table.TableConfig.property.changeTracking"></a>
 
 ```csharp
-public object ChangeTracking { get; set; }
+public bool|IResolvable ChangeTracking { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 (Default: `false`) Specifies whether to enable change tracking on the table. Default false.
 
@@ -1594,10 +1594,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `Tag`<sup>Optional</sup> <a name="Tag" id="@cdktf/provider-snowflake.table.TableConfig.property.tag"></a>
 
 ```csharp
-public object Tag { get; set; }
+public IResolvable|TableTag[] Tag { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-snowflake.table.TableTag">TableTag</a>[]
 
 tag block.
 
@@ -2591,7 +2591,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-snowflake.table.TableColumnList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-snowflake.table.TableColumnList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.table.TableColumnList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.table.TableColumnList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-snowflake.table.TableColumn">TableColumn</a>[]</code> | *No description.* |
 
 ---
 
@@ -2622,10 +2622,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-snowflake.table.TableColumnList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|TableColumn[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-snowflake.table.TableColumn">TableColumn</a>[]
 
 ---
 
@@ -2935,15 +2935,15 @@ private void ResetNullable()
 | <code><a href="#@cdktf/provider-snowflake.table.TableColumnOutputReference.property.identityInput">IdentityInput</a></code> | <code><a href="#@cdktf/provider-snowflake.table.TableColumnIdentity">TableColumnIdentity</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.TableColumnOutputReference.property.maskingPolicyInput">MaskingPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.TableColumnOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.table.TableColumnOutputReference.property.nullableInput">NullableInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.table.TableColumnOutputReference.property.nullableInput">NullableInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.TableColumnOutputReference.property.typeInput">TypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.TableColumnOutputReference.property.collate">Collate</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.TableColumnOutputReference.property.comment">Comment</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.TableColumnOutputReference.property.maskingPolicy">MaskingPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.TableColumnOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.table.TableColumnOutputReference.property.nullable">Nullable</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.table.TableColumnOutputReference.property.nullable">Nullable</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.TableColumnOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.table.TableColumnOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.table.TableColumnOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-snowflake.table.TableColumn">TableColumn</a></code> | *No description.* |
 
 ---
 
@@ -3064,10 +3064,10 @@ public string NameInput { get; }
 ##### `NullableInput`<sup>Optional</sup> <a name="NullableInput" id="@cdktf/provider-snowflake.table.TableColumnOutputReference.property.nullableInput"></a>
 
 ```csharp
-public object NullableInput { get; }
+public bool|IResolvable NullableInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -3124,10 +3124,10 @@ public string Name { get; }
 ##### `Nullable`<sup>Required</sup> <a name="Nullable" id="@cdktf/provider-snowflake.table.TableColumnOutputReference.property.nullable"></a>
 
 ```csharp
-public object Nullable { get; }
+public bool|IResolvable Nullable { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -3144,10 +3144,10 @@ public string Type { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-snowflake.table.TableColumnOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|TableColumn InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-snowflake.table.TableColumn">TableColumn</a>
 
 ---
 
@@ -3573,7 +3573,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-snowflake.table.TableTagList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-snowflake.table.TableTagList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.table.TableTagList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.table.TableTagList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-snowflake.table.TableTag">TableTag</a>[]</code> | *No description.* |
 
 ---
 
@@ -3604,10 +3604,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-snowflake.table.TableTagList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|TableTag[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-snowflake.table.TableTag">TableTag</a>[]
 
 ---
 
@@ -3862,7 +3862,7 @@ private void ResetSchema()
 | <code><a href="#@cdktf/provider-snowflake.table.TableTagOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.TableTagOutputReference.property.schema">Schema</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.TableTagOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.table.TableTagOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.table.TableTagOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-snowflake.table.TableTag">TableTag</a></code> | *No description.* |
 
 ---
 
@@ -3973,10 +3973,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-snowflake.table.TableTagOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|TableTag InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-snowflake.table.TableTag">TableTag</a>
 
 ---
 
@@ -4227,7 +4227,7 @@ private void ResetUpdate()
 | <code><a href="#@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.property.delete">Delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.property.read">Read</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.property.update">Update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-snowflake.table.TableTimeouts">TableTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -4338,10 +4338,10 @@ public string Update { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-snowflake.table.TableTimeoutsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|TableTimeouts InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-snowflake.table.TableTimeouts">TableTimeouts</a>
 
 ---
 

@@ -12,32 +12,25 @@ Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 import com.hashicorp.cdktf.providers.snowflake.function_java.FunctionJava;
 
 FunctionJava.Builder.create(Construct scope, java.lang.String id)
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .database(java.lang.String)
     .handler(java.lang.String)
     .name(java.lang.String)
     .returnType(java.lang.String)
     .schema(java.lang.String)
-//  .arguments(IResolvable)
-//  .arguments(java.util.List<FunctionJavaArguments>)
+//  .arguments(IResolvable|java.util.List<FunctionJavaArguments>)
 //  .comment(java.lang.String)
-//  .enableConsoleOutput(java.lang.Boolean)
-//  .enableConsoleOutput(IResolvable)
+//  .enableConsoleOutput(java.lang.Boolean|IResolvable)
 //  .externalAccessIntegrations(java.util.List<java.lang.String>)
 //  .functionDefinition(java.lang.String)
 //  .id(java.lang.String)
-//  .imports(IResolvable)
-//  .imports(java.util.List<FunctionJavaImports>)
+//  .imports(IResolvable|java.util.List<FunctionJavaImports>)
 //  .isSecure(java.lang.String)
 //  .logLevel(java.lang.String)
 //  .metricLevel(java.lang.String)
@@ -45,8 +38,7 @@ FunctionJava.Builder.create(Construct scope, java.lang.String id)
 //  .packages(java.util.List<java.lang.String>)
 //  .returnResultsBehavior(java.lang.String)
 //  .runtimeVersion(java.lang.String)
-//  .secrets(IResolvable)
-//  .secrets(java.util.List<FunctionJavaSecrets>)
+//  .secrets(IResolvable|java.util.List<FunctionJavaSecrets>)
 //  .targetPath(FunctionJavaTargetPath)
 //  .timeouts(FunctionJavaTimeouts)
 //  .traceLevel(java.lang.String)
@@ -57,25 +49,25 @@ FunctionJava.Builder.create(Construct scope, java.lang.String id)
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.Initializer.parameter.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.Initializer.parameter.database">database</a></code> | <code>java.lang.String</code> | The database in which to create the function. |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.Initializer.parameter.handler">handler</a></code> | <code>java.lang.String</code> | The name of the handler method or class. |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the function; |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.Initializer.parameter.returnType">returnType</a></code> | <code>java.lang.String</code> | Specifies the results returned by the UDF, which determines the UDF type. |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.Initializer.parameter.schema">schema</a></code> | <code>java.lang.String</code> | The schema in which to create the function. |
-| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.Initializer.parameter.arguments">arguments</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaArguments">FunctionJavaArguments</a>></code> | arguments block. |
+| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.Initializer.parameter.arguments">arguments</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaArguments">FunctionJavaArguments</a>></code> | arguments block. |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.Initializer.parameter.comment">comment</a></code> | <code>java.lang.String</code> | (Default: `user-defined function`) Specifies a comment for the function. |
-| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.Initializer.parameter.enableConsoleOutput">enableConsoleOutput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Enable stdout/stderr fast path logging for anonymous stored procs. |
+| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.Initializer.parameter.enableConsoleOutput">enableConsoleOutput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Enable stdout/stderr fast path logging for anonymous stored procs. |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.Initializer.parameter.externalAccessIntegrations">externalAccessIntegrations</a></code> | <code>java.util.List<java.lang.String></code> | The names of [external access integrations](https://docs.snowflake.com/en/sql-reference/sql/create-external-access-integration) needed in order for this function’s handler code to access external networks. An external access integration specifies [network rules](https://docs.snowflake.com/en/sql-reference/sql/create-network-rule) and [secrets](https://docs.snowflake.com/en/sql-reference/sql/create-secret) that specify external locations and credentials (if any) allowed for use by handler code when making requests of an external network, such as an external REST API. |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.Initializer.parameter.functionDefinition">functionDefinition</a></code> | <code>java.lang.String</code> | Defines the handler code executed when the UDF is called. |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/function_java#id FunctionJava#id}. |
-| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.Initializer.parameter.imports">imports</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaImports">FunctionJavaImports</a>></code> | imports block. |
+| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.Initializer.parameter.imports">imports</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaImports">FunctionJavaImports</a>></code> | imports block. |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.Initializer.parameter.isSecure">isSecure</a></code> | <code>java.lang.String</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies that the function is secure. |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.Initializer.parameter.logLevel">logLevel</a></code> | <code>java.lang.String</code> | LOG_LEVEL to use when filtering events For more information, check [LOG_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#log-level). |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.Initializer.parameter.metricLevel">metricLevel</a></code> | <code>java.lang.String</code> | METRIC_LEVEL value to control whether to emit metrics to Event Table For more information, check [METRIC_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#metric-level). |
@@ -83,7 +75,7 @@ FunctionJava.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.Initializer.parameter.packages">packages</a></code> | <code>java.util.List<java.lang.String></code> | The name and version number of Snowflake system packages required as dependencies. |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.Initializer.parameter.returnResultsBehavior">returnResultsBehavior</a></code> | <code>java.lang.String</code> | Specifies the behavior of the function when returning results. Valid values are (case-insensitive): `VOLATILE` \| `IMMUTABLE`. |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.Initializer.parameter.runtimeVersion">runtimeVersion</a></code> | <code>java.lang.String</code> | Specifies the Java JDK runtime version to use. |
-| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.Initializer.parameter.secrets">secrets</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaSecrets">FunctionJavaSecrets</a>></code> | secrets block. |
+| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.Initializer.parameter.secrets">secrets</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaSecrets">FunctionJavaSecrets</a>></code> | secrets block. |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.Initializer.parameter.targetPath">targetPath</a></code> | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaTargetPath">FunctionJavaTargetPath</a></code> | target_path block. |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaTimeouts">FunctionJavaTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.Initializer.parameter.traceLevel">traceLevel</a></code> | <code>java.lang.String</code> | Trace level value to use when generating/filtering trace events For more information, check [TRACE_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#trace-level). |
@@ -110,13 +102,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.functionJava.FunctionJava.Initializer.parameter.connection"></a>
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.functionJava.FunctionJava.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -146,7 +138,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.functionJava.FunctionJava.Initializer.parameter.provisioners"></a>
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -212,7 +204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `arguments`<sup>Optional</sup> <a name="arguments" id="@cdktf/provider-snowflake.functionJava.FunctionJava.Initializer.parameter.arguments"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaArguments">FunctionJavaArguments</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaArguments">FunctionJavaArguments</a>>
 
 arguments block.
 
@@ -232,7 +224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `enableConsoleOutput`<sup>Optional</sup> <a name="enableConsoleOutput" id="@cdktf/provider-snowflake.functionJava.FunctionJava.Initializer.parameter.enableConsoleOutput"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Enable stdout/stderr fast path logging for anonymous stored procs.
 
@@ -277,7 +269,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ##### `imports`<sup>Optional</sup> <a name="imports" id="@cdktf/provider-snowflake.functionJava.FunctionJava.Initializer.parameter.imports"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaImports">FunctionJavaImports</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaImports">FunctionJavaImports</a>>
 
 imports block.
 
@@ -365,7 +357,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `secrets`<sup>Optional</sup> <a name="secrets" id="@cdktf/provider-snowflake.functionJava.FunctionJava.Initializer.parameter.secrets"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaSecrets">FunctionJavaSecrets</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaSecrets">FunctionJavaSecrets</a>>
 
 secrets block.
 
@@ -653,7 +645,7 @@ public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(j
 ##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-snowflake.functionJava.FunctionJava.hasResourceMove"></a>
 
 ```java
-public TerraformResourceMoveByTarget OR TerraformResourceMoveById hasResourceMove()
+public TerraformResourceMoveByTarget|TerraformResourceMoveById hasResourceMove()
 ```
 
 ##### `importFrom` <a name="importFrom" id="@cdktf/provider-snowflake.functionJava.FunctionJava.importFrom"></a>
@@ -709,7 +701,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ```java
 public void moveTo(java.lang.String moveTarget)
-public void moveTo(java.lang.String moveTarget, java.lang.String OR java.lang.Number index)
+public void moveTo(java.lang.String moveTarget, java.lang.String|java.lang.Number index)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -724,7 +716,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-snowflake.functionJava.FunctionJava.moveTo.parameter.index"></a>
 
-- *Type:* java.lang.String OR java.lang.Number
+- *Type:* java.lang.String|java.lang.Number
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -749,36 +741,36 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `putArguments` <a name="putArguments" id="@cdktf/provider-snowflake.functionJava.FunctionJava.putArguments"></a>
 
 ```java
-public void putArguments(IResolvable OR java.util.List<FunctionJavaArguments> value)
+public void putArguments(IResolvable|java.util.List<FunctionJavaArguments> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-snowflake.functionJava.FunctionJava.putArguments.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaArguments">FunctionJavaArguments</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaArguments">FunctionJavaArguments</a>>
 
 ---
 
 ##### `putImports` <a name="putImports" id="@cdktf/provider-snowflake.functionJava.FunctionJava.putImports"></a>
 
 ```java
-public void putImports(IResolvable OR java.util.List<FunctionJavaImports> value)
+public void putImports(IResolvable|java.util.List<FunctionJavaImports> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-snowflake.functionJava.FunctionJava.putImports.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaImports">FunctionJavaImports</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaImports">FunctionJavaImports</a>>
 
 ---
 
 ##### `putSecrets` <a name="putSecrets" id="@cdktf/provider-snowflake.functionJava.FunctionJava.putSecrets"></a>
 
 ```java
-public void putSecrets(IResolvable OR java.util.List<FunctionJavaSecrets> value)
+public void putSecrets(IResolvable|java.util.List<FunctionJavaSecrets> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-snowflake.functionJava.FunctionJava.putSecrets.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaSecrets">FunctionJavaSecrets</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaSecrets">FunctionJavaSecrets</a>>
 
 ---
 
@@ -1040,13 +1032,13 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.property.arguments">arguments</a></code> | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaArgumentsList">FunctionJavaArgumentsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.property.fullyQualifiedName">fullyQualifiedName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.property.functionLanguage">functionLanguage</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1056,15 +1048,15 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.property.showOutput">showOutput</a></code> | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaShowOutputList">FunctionJavaShowOutputList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.property.targetPath">targetPath</a></code> | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaTargetPathOutputReference">FunctionJavaTargetPathOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaTimeoutsOutputReference">FunctionJavaTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.property.argumentsInput">argumentsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaArguments">FunctionJavaArguments</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.property.argumentsInput">argumentsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaArguments">FunctionJavaArguments</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.property.commentInput">commentInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.property.databaseInput">databaseInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.property.enableConsoleOutputInput">enableConsoleOutputInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.property.enableConsoleOutputInput">enableConsoleOutputInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.property.externalAccessIntegrationsInput">externalAccessIntegrationsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.property.functionDefinitionInput">functionDefinitionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.property.handlerInput">handlerInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.property.importsInput">importsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaImports">FunctionJavaImports</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.property.importsInput">importsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaImports">FunctionJavaImports</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.property.isSecureInput">isSecureInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.property.logLevelInput">logLevelInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.property.metricLevelInput">metricLevelInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1075,13 +1067,13 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.property.returnTypeInput">returnTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.property.runtimeVersionInput">runtimeVersionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.property.schemaInput">schemaInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.property.secretsInput">secretsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaSecrets">FunctionJavaSecrets</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.property.secretsInput">secretsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaSecrets">FunctionJavaSecrets</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.property.targetPathInput">targetPathInput</a></code> | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaTargetPath">FunctionJavaTargetPath</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.property.timeoutsInput">timeoutsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaTimeouts">FunctionJavaTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.property.timeoutsInput">timeoutsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaTimeouts">FunctionJavaTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.property.traceLevelInput">traceLevelInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.property.comment">comment</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.property.database">database</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.property.enableConsoleOutput">enableConsoleOutput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.property.enableConsoleOutput">enableConsoleOutput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.property.externalAccessIntegrations">externalAccessIntegrations</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.property.functionDefinition">functionDefinition</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJava.property.handler">handler</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1175,20 +1167,20 @@ public TerraformProviderGeneratorMetadata getTerraformGeneratorMetadata();
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.functionJava.FunctionJava.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.functionJava.FunctionJava.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1235,10 +1227,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.functionJava.FunctionJava.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -1335,10 +1327,10 @@ public FunctionJavaTimeoutsOutputReference getTimeouts();
 ##### `argumentsInput`<sup>Optional</sup> <a name="argumentsInput" id="@cdktf/provider-snowflake.functionJava.FunctionJava.property.argumentsInput"></a>
 
 ```java
-public java.lang.Object getArgumentsInput();
+public IResolvable|java.util.List<FunctionJavaArguments> getArgumentsInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaArguments">FunctionJavaArguments</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaArguments">FunctionJavaArguments</a>>
 
 ---
 
@@ -1365,10 +1357,10 @@ public java.lang.String getDatabaseInput();
 ##### `enableConsoleOutputInput`<sup>Optional</sup> <a name="enableConsoleOutputInput" id="@cdktf/provider-snowflake.functionJava.FunctionJava.property.enableConsoleOutputInput"></a>
 
 ```java
-public java.lang.Object getEnableConsoleOutputInput();
+public java.lang.Boolean|IResolvable getEnableConsoleOutputInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1415,10 +1407,10 @@ public java.lang.String getIdInput();
 ##### `importsInput`<sup>Optional</sup> <a name="importsInput" id="@cdktf/provider-snowflake.functionJava.FunctionJava.property.importsInput"></a>
 
 ```java
-public java.lang.Object getImportsInput();
+public IResolvable|java.util.List<FunctionJavaImports> getImportsInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaImports">FunctionJavaImports</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaImports">FunctionJavaImports</a>>
 
 ---
 
@@ -1525,10 +1517,10 @@ public java.lang.String getSchemaInput();
 ##### `secretsInput`<sup>Optional</sup> <a name="secretsInput" id="@cdktf/provider-snowflake.functionJava.FunctionJava.property.secretsInput"></a>
 
 ```java
-public java.lang.Object getSecretsInput();
+public IResolvable|java.util.List<FunctionJavaSecrets> getSecretsInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaSecrets">FunctionJavaSecrets</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaSecrets">FunctionJavaSecrets</a>>
 
 ---
 
@@ -1545,10 +1537,10 @@ public FunctionJavaTargetPath getTargetPathInput();
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-snowflake.functionJava.FunctionJava.property.timeoutsInput"></a>
 
 ```java
-public java.lang.Object getTimeoutsInput();
+public IResolvable|FunctionJavaTimeouts getTimeoutsInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaTimeouts">FunctionJavaTimeouts</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaTimeouts">FunctionJavaTimeouts</a>
 
 ---
 
@@ -1585,10 +1577,10 @@ public java.lang.String getDatabase();
 ##### `enableConsoleOutput`<sup>Required</sup> <a name="enableConsoleOutput" id="@cdktf/provider-snowflake.functionJava.FunctionJava.property.enableConsoleOutput"></a>
 
 ```java
-public java.lang.Object getEnableConsoleOutput();
+public java.lang.Boolean|IResolvable getEnableConsoleOutput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1840,32 +1832,25 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 import com.hashicorp.cdktf.providers.snowflake.function_java.FunctionJavaConfig;
 
 FunctionJavaConfig.builder()
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .database(java.lang.String)
     .handler(java.lang.String)
     .name(java.lang.String)
     .returnType(java.lang.String)
     .schema(java.lang.String)
-//  .arguments(IResolvable)
-//  .arguments(java.util.List<FunctionJavaArguments>)
+//  .arguments(IResolvable|java.util.List<FunctionJavaArguments>)
 //  .comment(java.lang.String)
-//  .enableConsoleOutput(java.lang.Boolean)
-//  .enableConsoleOutput(IResolvable)
+//  .enableConsoleOutput(java.lang.Boolean|IResolvable)
 //  .externalAccessIntegrations(java.util.List<java.lang.String>)
 //  .functionDefinition(java.lang.String)
 //  .id(java.lang.String)
-//  .imports(IResolvable)
-//  .imports(java.util.List<FunctionJavaImports>)
+//  .imports(IResolvable|java.util.List<FunctionJavaImports>)
 //  .isSecure(java.lang.String)
 //  .logLevel(java.lang.String)
 //  .metricLevel(java.lang.String)
@@ -1873,8 +1858,7 @@ FunctionJavaConfig.builder()
 //  .packages(java.util.List<java.lang.String>)
 //  .returnResultsBehavior(java.lang.String)
 //  .runtimeVersion(java.lang.String)
-//  .secrets(IResolvable)
-//  .secrets(java.util.List<FunctionJavaSecrets>)
+//  .secrets(IResolvable|java.util.List<FunctionJavaSecrets>)
 //  .targetPath(FunctionJavaTargetPath)
 //  .timeouts(FunctionJavaTimeouts)
 //  .traceLevel(java.lang.String)
@@ -1885,25 +1869,25 @@ FunctionJavaConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaConfig.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaConfig.property.database">database</a></code> | <code>java.lang.String</code> | The database in which to create the function. |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaConfig.property.handler">handler</a></code> | <code>java.lang.String</code> | The name of the handler method or class. |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the function; |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaConfig.property.returnType">returnType</a></code> | <code>java.lang.String</code> | Specifies the results returned by the UDF, which determines the UDF type. |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaConfig.property.schema">schema</a></code> | <code>java.lang.String</code> | The schema in which to create the function. |
-| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaConfig.property.arguments">arguments</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaArguments">FunctionJavaArguments</a>></code> | arguments block. |
+| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaConfig.property.arguments">arguments</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaArguments">FunctionJavaArguments</a>></code> | arguments block. |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaConfig.property.comment">comment</a></code> | <code>java.lang.String</code> | (Default: `user-defined function`) Specifies a comment for the function. |
-| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaConfig.property.enableConsoleOutput">enableConsoleOutput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Enable stdout/stderr fast path logging for anonymous stored procs. |
+| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaConfig.property.enableConsoleOutput">enableConsoleOutput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Enable stdout/stderr fast path logging for anonymous stored procs. |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaConfig.property.externalAccessIntegrations">externalAccessIntegrations</a></code> | <code>java.util.List<java.lang.String></code> | The names of [external access integrations](https://docs.snowflake.com/en/sql-reference/sql/create-external-access-integration) needed in order for this function’s handler code to access external networks. An external access integration specifies [network rules](https://docs.snowflake.com/en/sql-reference/sql/create-network-rule) and [secrets](https://docs.snowflake.com/en/sql-reference/sql/create-secret) that specify external locations and credentials (if any) allowed for use by handler code when making requests of an external network, such as an external REST API. |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaConfig.property.functionDefinition">functionDefinition</a></code> | <code>java.lang.String</code> | Defines the handler code executed when the UDF is called. |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/function_java#id FunctionJava#id}. |
-| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaConfig.property.imports">imports</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaImports">FunctionJavaImports</a>></code> | imports block. |
+| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaConfig.property.imports">imports</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaImports">FunctionJavaImports</a>></code> | imports block. |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaConfig.property.isSecure">isSecure</a></code> | <code>java.lang.String</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies that the function is secure. |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaConfig.property.logLevel">logLevel</a></code> | <code>java.lang.String</code> | LOG_LEVEL to use when filtering events For more information, check [LOG_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#log-level). |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaConfig.property.metricLevel">metricLevel</a></code> | <code>java.lang.String</code> | METRIC_LEVEL value to control whether to emit metrics to Event Table For more information, check [METRIC_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#metric-level). |
@@ -1911,7 +1895,7 @@ FunctionJavaConfig.builder()
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaConfig.property.packages">packages</a></code> | <code>java.util.List<java.lang.String></code> | The name and version number of Snowflake system packages required as dependencies. |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaConfig.property.returnResultsBehavior">returnResultsBehavior</a></code> | <code>java.lang.String</code> | Specifies the behavior of the function when returning results. Valid values are (case-insensitive): `VOLATILE` \| `IMMUTABLE`. |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaConfig.property.runtimeVersion">runtimeVersion</a></code> | <code>java.lang.String</code> | Specifies the Java JDK runtime version to use. |
-| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaConfig.property.secrets">secrets</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaSecrets">FunctionJavaSecrets</a>></code> | secrets block. |
+| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaConfig.property.secrets">secrets</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaSecrets">FunctionJavaSecrets</a>></code> | secrets block. |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaConfig.property.targetPath">targetPath</a></code> | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaTargetPath">FunctionJavaTargetPath</a></code> | target_path block. |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaTimeouts">FunctionJavaTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaConfig.property.traceLevel">traceLevel</a></code> | <code>java.lang.String</code> | Trace level value to use when generating/filtering trace events For more information, check [TRACE_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#trace-level). |
@@ -1921,20 +1905,20 @@ FunctionJavaConfig.builder()
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.functionJava.FunctionJavaConfig.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.functionJava.FunctionJavaConfig.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1981,10 +1965,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.functionJava.FunctionJavaConfig.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -2071,10 +2055,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `arguments`<sup>Optional</sup> <a name="arguments" id="@cdktf/provider-snowflake.functionJava.FunctionJavaConfig.property.arguments"></a>
 
 ```java
-public java.lang.Object getArguments();
+public IResolvable|java.util.List<FunctionJavaArguments> getArguments();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaArguments">FunctionJavaArguments</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaArguments">FunctionJavaArguments</a>>
 
 arguments block.
 
@@ -2099,10 +2083,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `enableConsoleOutput`<sup>Optional</sup> <a name="enableConsoleOutput" id="@cdktf/provider-snowflake.functionJava.FunctionJavaConfig.property.enableConsoleOutput"></a>
 
 ```java
-public java.lang.Object getEnableConsoleOutput();
+public java.lang.Boolean|IResolvable getEnableConsoleOutput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Enable stdout/stderr fast path logging for anonymous stored procs.
 
@@ -2160,10 +2144,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `imports`<sup>Optional</sup> <a name="imports" id="@cdktf/provider-snowflake.functionJava.FunctionJavaConfig.property.imports"></a>
 
 ```java
-public java.lang.Object getImports();
+public IResolvable|java.util.List<FunctionJavaImports> getImports();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaImports">FunctionJavaImports</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaImports">FunctionJavaImports</a>>
 
 imports block.
 
@@ -2280,10 +2264,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `secrets`<sup>Optional</sup> <a name="secrets" id="@cdktf/provider-snowflake.functionJava.FunctionJavaConfig.property.secrets"></a>
 
 ```java
-public java.lang.Object getSecrets();
+public IResolvable|java.util.List<FunctionJavaSecrets> getSecrets();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaSecrets">FunctionJavaSecrets</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaSecrets">FunctionJavaSecrets</a>>
 
 secrets block.
 
@@ -2756,7 +2740,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaArgumentsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaArgumentsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaArgumentsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaArguments">FunctionJavaArguments</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaArgumentsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaArguments">FunctionJavaArguments</a>></code> | *No description.* |
 
 ---
 
@@ -2787,10 +2771,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-snowflake.functionJava.FunctionJavaArgumentsList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<FunctionJavaArguments> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaArguments">FunctionJavaArguments</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaArguments">FunctionJavaArguments</a>>
 
 ---
 
@@ -3036,7 +3020,7 @@ public void resetArgDefaultValue()
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaArgumentsOutputReference.property.argDataType">argDataType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaArgumentsOutputReference.property.argDefaultValue">argDefaultValue</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaArgumentsOutputReference.property.argName">argName</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaArgumentsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaArguments">FunctionJavaArguments</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaArgumentsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaArguments">FunctionJavaArguments</a></code> | *No description.* |
 
 ---
 
@@ -3127,10 +3111,10 @@ public java.lang.String getArgName();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-snowflake.functionJava.FunctionJavaArgumentsOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|FunctionJavaArguments getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaArguments">FunctionJavaArguments</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaArguments">FunctionJavaArguments</a>
 
 ---
 
@@ -3256,7 +3240,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaImportsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaImportsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaImportsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaImports">FunctionJavaImports</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaImportsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaImports">FunctionJavaImports</a>></code> | *No description.* |
 
 ---
 
@@ -3287,10 +3271,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-snowflake.functionJava.FunctionJavaImportsList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<FunctionJavaImports> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaImports">FunctionJavaImports</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaImports">FunctionJavaImports</a>>
 
 ---
 
@@ -3527,7 +3511,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaImportsOutputReference.property.stageLocationInput">stageLocationInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaImportsOutputReference.property.pathOnStage">pathOnStage</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaImportsOutputReference.property.stageLocation">stageLocation</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaImportsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaImports">FunctionJavaImports</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaImportsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaImports">FunctionJavaImports</a></code> | *No description.* |
 
 ---
 
@@ -3598,10 +3582,10 @@ public java.lang.String getStageLocation();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-snowflake.functionJava.FunctionJavaImportsOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|FunctionJavaImports getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaImports">FunctionJavaImports</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaImports">FunctionJavaImports</a>
 
 ---
 
@@ -6071,7 +6055,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaSecretsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaSecretsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaSecretsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaSecrets">FunctionJavaSecrets</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaSecretsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaSecrets">FunctionJavaSecrets</a>></code> | *No description.* |
 
 ---
 
@@ -6102,10 +6086,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-snowflake.functionJava.FunctionJavaSecretsList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<FunctionJavaSecrets> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaSecrets">FunctionJavaSecrets</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaSecrets">FunctionJavaSecrets</a>>
 
 ---
 
@@ -6342,7 +6326,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaSecretsOutputReference.property.secretVariableNameInput">secretVariableNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaSecretsOutputReference.property.secretId">secretId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaSecretsOutputReference.property.secretVariableName">secretVariableName</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaSecretsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaSecrets">FunctionJavaSecrets</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaSecretsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaSecrets">FunctionJavaSecrets</a></code> | *No description.* |
 
 ---
 
@@ -6413,10 +6397,10 @@ public java.lang.String getSecretVariableName();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-snowflake.functionJava.FunctionJavaSecretsOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|FunctionJavaSecrets getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaSecrets">FunctionJavaSecrets</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaSecrets">FunctionJavaSecrets</a>
 
 ---
 
@@ -7596,7 +7580,7 @@ public void resetUpdate()
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaTimeoutsOutputReference.property.delete">delete</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaTimeoutsOutputReference.property.read">read</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaTimeoutsOutputReference.property.update">update</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaTimeouts">FunctionJavaTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaTimeouts">FunctionJavaTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -7707,10 +7691,10 @@ public java.lang.String getUpdate();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-snowflake.functionJava.FunctionJavaTimeoutsOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|FunctionJavaTimeouts getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaTimeouts">FunctionJavaTimeouts</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-snowflake.functionJava.FunctionJavaTimeouts">FunctionJavaTimeouts</a>
 
 ---
 

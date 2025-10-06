@@ -14,51 +14,51 @@ from cdktf_cdktf_provider_snowflake import file_format
 fileFormat.FileFormat(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   database: str,
   format_type: str,
   name: str,
   schema: str,
-  allow_duplicate: typing.Union[bool, IResolvable] = None,
-  binary_as_text: typing.Union[bool, IResolvable] = None,
+  allow_duplicate: bool | IResolvable = None,
+  binary_as_text: bool | IResolvable = None,
   binary_format: str = None,
   comment: str = None,
   compression: str = None,
   date_format: str = None,
-  disable_auto_convert: typing.Union[bool, IResolvable] = None,
-  disable_snowflake_data: typing.Union[bool, IResolvable] = None,
-  empty_field_as_null: typing.Union[bool, IResolvable] = None,
-  enable_octal: typing.Union[bool, IResolvable] = None,
+  disable_auto_convert: bool | IResolvable = None,
+  disable_snowflake_data: bool | IResolvable = None,
+  empty_field_as_null: bool | IResolvable = None,
+  enable_octal: bool | IResolvable = None,
   encoding: str = None,
-  error_on_column_count_mismatch: typing.Union[bool, IResolvable] = None,
+  error_on_column_count_mismatch: bool | IResolvable = None,
   escape: str = None,
   escape_unenclosed_field: str = None,
   field_delimiter: str = None,
   field_optionally_enclosed_by: str = None,
   file_extension: str = None,
   id: str = None,
-  ignore_utf8_errors: typing.Union[bool, IResolvable] = None,
+  ignore_utf8_errors: bool | IResolvable = None,
   null_if: typing.List[str] = None,
-  parse_header: typing.Union[bool, IResolvable] = None,
-  preserve_space: typing.Union[bool, IResolvable] = None,
+  parse_header: bool | IResolvable = None,
+  preserve_space: bool | IResolvable = None,
   record_delimiter: str = None,
-  replace_invalid_characters: typing.Union[bool, IResolvable] = None,
-  skip_blank_lines: typing.Union[bool, IResolvable] = None,
-  skip_byte_order_mark: typing.Union[bool, IResolvable] = None,
+  replace_invalid_characters: bool | IResolvable = None,
+  skip_blank_lines: bool | IResolvable = None,
+  skip_byte_order_mark: bool | IResolvable = None,
   skip_header: typing.Union[int, float] = None,
-  strip_null_values: typing.Union[bool, IResolvable] = None,
-  strip_outer_array: typing.Union[bool, IResolvable] = None,
-  strip_outer_element: typing.Union[bool, IResolvable] = None,
+  strip_null_values: bool | IResolvable = None,
+  strip_outer_array: bool | IResolvable = None,
+  strip_outer_element: bool | IResolvable = None,
   time_format: str = None,
   timeouts: FileFormatTimeouts = None,
   timestamp_format: str = None,
-  trim_space: typing.Union[bool, IResolvable] = None
+  trim_space: bool | IResolvable = None
 )
 ```
 
@@ -66,51 +66,51 @@ fileFormat.FileFormat(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.database">database</a></code> | <code>str</code> | The database in which to create the file format. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.formatType">format_type</a></code> | <code>str</code> | Specifies the format of the input files (for data loading) or output files (for data unloading). |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.name">name</a></code> | <code>str</code> | Specifies the identifier for the file format; |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.schema">schema</a></code> | <code>str</code> | The schema in which to create the file format. |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.allowDuplicate">allow_duplicate</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Boolean that specifies to allow duplicate object field names (only the last one will be preserved). |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.binaryAsText">binary_as_text</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Boolean that specifies whether to interpret columns with no defined logical data type as UTF-8 text. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.allowDuplicate">allow_duplicate</a></code> | <code>bool \| cdktf.IResolvable</code> | Boolean that specifies to allow duplicate object field names (only the last one will be preserved). |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.binaryAsText">binary_as_text</a></code> | <code>bool \| cdktf.IResolvable</code> | Boolean that specifies whether to interpret columns with no defined logical data type as UTF-8 text. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.binaryFormat">binary_format</a></code> | <code>str</code> | Defines the encoding format for binary input or output. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.comment">comment</a></code> | <code>str</code> | Specifies a comment for the file format. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.compression">compression</a></code> | <code>str</code> | Specifies the current compression algorithm for the data file. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.dateFormat">date_format</a></code> | <code>str</code> | Defines the format of date values in the data files (data loading) or table (data unloading). |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.disableAutoConvert">disable_auto_convert</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Boolean that specifies whether the XML parser disables automatic conversion of numeric and Boolean values from text to native representation. |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.disableSnowflakeData">disable_snowflake_data</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Boolean that specifies whether the XML parser disables recognition of Snowflake semi-structured data tags. |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.emptyFieldAsNull">empty_field_as_null</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether to insert SQL NULL for empty fields in an input file, which are represented by two successive delimiters. |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.enableOctal">enable_octal</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Boolean that enables parsing of octal numbers. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.disableAutoConvert">disable_auto_convert</a></code> | <code>bool \| cdktf.IResolvable</code> | Boolean that specifies whether the XML parser disables automatic conversion of numeric and Boolean values from text to native representation. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.disableSnowflakeData">disable_snowflake_data</a></code> | <code>bool \| cdktf.IResolvable</code> | Boolean that specifies whether the XML parser disables recognition of Snowflake semi-structured data tags. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.emptyFieldAsNull">empty_field_as_null</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether to insert SQL NULL for empty fields in an input file, which are represented by two successive delimiters. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.enableOctal">enable_octal</a></code> | <code>bool \| cdktf.IResolvable</code> | Boolean that enables parsing of octal numbers. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.encoding">encoding</a></code> | <code>str</code> | String (constant) that specifies the character set of the source data when loading data into a table. |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.errorOnColumnCountMismatch">error_on_column_count_mismatch</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Boolean that specifies whether to generate a parsing error if the number of delimited columns (i.e. fields) in an input file does not match the number of columns in the corresponding table. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.errorOnColumnCountMismatch">error_on_column_count_mismatch</a></code> | <code>bool \| cdktf.IResolvable</code> | Boolean that specifies whether to generate a parsing error if the number of delimited columns (i.e. fields) in an input file does not match the number of columns in the corresponding table. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.escape">escape</a></code> | <code>str</code> | Single character string used as the escape character for field values. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.escapeUnenclosedField">escape_unenclosed_field</a></code> | <code>str</code> | Single character string used as the escape character for unenclosed field values only. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.fieldDelimiter">field_delimiter</a></code> | <code>str</code> | Specifies one or more singlebyte or multibyte characters that separate fields in an input file (data loading) or unloaded file (data unloading). |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.fieldOptionallyEnclosedBy">field_optionally_enclosed_by</a></code> | <code>str</code> | Character used to enclose strings. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.fileExtension">file_extension</a></code> | <code>str</code> | Specifies the extension for files unloaded to a stage. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/file_format#id FileFormat#id}. |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.ignoreUtf8Errors">ignore_utf8_errors</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Boolean that specifies whether UTF-8 encoding errors produce error conditions. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.ignoreUtf8Errors">ignore_utf8_errors</a></code> | <code>bool \| cdktf.IResolvable</code> | Boolean that specifies whether UTF-8 encoding errors produce error conditions. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.nullIf">null_if</a></code> | <code>typing.List[str]</code> | String used to convert to and from SQL NULL. |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.parseHeader">parse_header</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Boolean that specifies whether to use the first row headers in the data files to determine column names. |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.preserveSpace">preserve_space</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Boolean that specifies whether the XML parser preserves leading and trailing spaces in element content. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.parseHeader">parse_header</a></code> | <code>bool \| cdktf.IResolvable</code> | Boolean that specifies whether to use the first row headers in the data files to determine column names. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.preserveSpace">preserve_space</a></code> | <code>bool \| cdktf.IResolvable</code> | Boolean that specifies whether the XML parser preserves leading and trailing spaces in element content. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.recordDelimiter">record_delimiter</a></code> | <code>str</code> | Specifies one or more singlebyte or multibyte characters that separate records in an input file (data loading) or unloaded file (data unloading). |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.replaceInvalidCharacters">replace_invalid_characters</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Boolean that specifies whether to replace invalid UTF-8 characters with the Unicode replacement character (�). |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.skipBlankLines">skip_blank_lines</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Boolean that specifies to skip any blank lines encountered in the data files. |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.skipByteOrderMark">skip_byte_order_mark</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Boolean that specifies whether to skip the BOM (byte order mark), if present in a data file. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.replaceInvalidCharacters">replace_invalid_characters</a></code> | <code>bool \| cdktf.IResolvable</code> | Boolean that specifies whether to replace invalid UTF-8 characters with the Unicode replacement character (�). |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.skipBlankLines">skip_blank_lines</a></code> | <code>bool \| cdktf.IResolvable</code> | Boolean that specifies to skip any blank lines encountered in the data files. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.skipByteOrderMark">skip_byte_order_mark</a></code> | <code>bool \| cdktf.IResolvable</code> | Boolean that specifies whether to skip the BOM (byte order mark), if present in a data file. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.skipHeader">skip_header</a></code> | <code>typing.Union[int, float]</code> | Number of lines at the start of the file to skip. |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.stripNullValues">strip_null_values</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Boolean that instructs the JSON parser to remove object fields or array elements containing null values. |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.stripOuterArray">strip_outer_array</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Boolean that instructs the JSON parser to remove outer brackets. |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.stripOuterElement">strip_outer_element</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Boolean that specifies whether the XML parser strips out the outer XML element, exposing 2nd level elements as separate documents. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.stripNullValues">strip_null_values</a></code> | <code>bool \| cdktf.IResolvable</code> | Boolean that instructs the JSON parser to remove object fields or array elements containing null values. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.stripOuterArray">strip_outer_array</a></code> | <code>bool \| cdktf.IResolvable</code> | Boolean that instructs the JSON parser to remove outer brackets. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.stripOuterElement">strip_outer_element</a></code> | <code>bool \| cdktf.IResolvable</code> | Boolean that specifies whether the XML parser strips out the outer XML element, exposing 2nd level elements as separate documents. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.timeFormat">time_format</a></code> | <code>str</code> | Defines the format of time values in the data files (data loading) or table (data unloading). |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeouts">FileFormatTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.timestampFormat">timestamp_format</a></code> | <code>str</code> | Defines the format of timestamp values in the data files (data loading) or table (data unloading). |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.trimSpace">trim_space</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Boolean that specifies whether to remove white space from fields. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.trimSpace">trim_space</a></code> | <code>bool \| cdktf.IResolvable</code> | Boolean that specifies whether to remove white space from fields. |
 
 ---
 
@@ -134,13 +134,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -170,7 +170,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -218,7 +218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `allow_duplicate`<sup>Optional</sup> <a name="allow_duplicate" id="@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.allowDuplicate"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Boolean that specifies to allow duplicate object field names (only the last one will be preserved).
 
@@ -228,7 +228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `binary_as_text`<sup>Optional</sup> <a name="binary_as_text" id="@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.binaryAsText"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Boolean that specifies whether to interpret columns with no defined logical data type as UTF-8 text.
 
@@ -278,7 +278,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `disable_auto_convert`<sup>Optional</sup> <a name="disable_auto_convert" id="@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.disableAutoConvert"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Boolean that specifies whether the XML parser disables automatic conversion of numeric and Boolean values from text to native representation.
 
@@ -288,7 +288,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `disable_snowflake_data`<sup>Optional</sup> <a name="disable_snowflake_data" id="@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.disableSnowflakeData"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Boolean that specifies whether the XML parser disables recognition of Snowflake semi-structured data tags.
 
@@ -298,7 +298,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `empty_field_as_null`<sup>Optional</sup> <a name="empty_field_as_null" id="@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.emptyFieldAsNull"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether to insert SQL NULL for empty fields in an input file, which are represented by two successive delimiters.
 
@@ -308,7 +308,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `enable_octal`<sup>Optional</sup> <a name="enable_octal" id="@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.enableOctal"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Boolean that enables parsing of octal numbers.
 
@@ -328,7 +328,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `error_on_column_count_mismatch`<sup>Optional</sup> <a name="error_on_column_count_mismatch" id="@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.errorOnColumnCountMismatch"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Boolean that specifies whether to generate a parsing error if the number of delimited columns (i.e. fields) in an input file does not match the number of columns in the corresponding table.
 
@@ -399,7 +399,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ##### `ignore_utf8_errors`<sup>Optional</sup> <a name="ignore_utf8_errors" id="@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.ignoreUtf8Errors"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Boolean that specifies whether UTF-8 encoding errors produce error conditions.
 
@@ -419,7 +419,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `parse_header`<sup>Optional</sup> <a name="parse_header" id="@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.parseHeader"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Boolean that specifies whether to use the first row headers in the data files to determine column names.
 
@@ -429,7 +429,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `preserve_space`<sup>Optional</sup> <a name="preserve_space" id="@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.preserveSpace"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Boolean that specifies whether the XML parser preserves leading and trailing spaces in element content.
 
@@ -449,7 +449,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `replace_invalid_characters`<sup>Optional</sup> <a name="replace_invalid_characters" id="@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.replaceInvalidCharacters"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Boolean that specifies whether to replace invalid UTF-8 characters with the Unicode replacement character (�).
 
@@ -459,7 +459,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `skip_blank_lines`<sup>Optional</sup> <a name="skip_blank_lines" id="@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.skipBlankLines"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Boolean that specifies to skip any blank lines encountered in the data files.
 
@@ -469,7 +469,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `skip_byte_order_mark`<sup>Optional</sup> <a name="skip_byte_order_mark" id="@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.skipByteOrderMark"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Boolean that specifies whether to skip the BOM (byte order mark), if present in a data file.
 
@@ -489,7 +489,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `strip_null_values`<sup>Optional</sup> <a name="strip_null_values" id="@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.stripNullValues"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Boolean that instructs the JSON parser to remove object fields or array elements containing null values.
 
@@ -499,7 +499,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `strip_outer_array`<sup>Optional</sup> <a name="strip_outer_array" id="@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.stripOuterArray"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Boolean that instructs the JSON parser to remove outer brackets.
 
@@ -509,7 +509,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `strip_outer_element`<sup>Optional</sup> <a name="strip_outer_element" id="@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.stripOuterElement"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Boolean that specifies whether the XML parser strips out the outer XML element, exposing 2nd level elements as separate documents.
 
@@ -549,7 +549,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `trim_space`<sup>Optional</sup> <a name="trim_space" id="@cdktf/provider-snowflake.fileFormat.FileFormat.Initializer.parameter.trimSpace"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Boolean that specifies whether to remove white space from fields.
 
@@ -844,7 +844,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-snowflake.fileFormat.FileFormat.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-snowflake.fileFormat.FileFormat.importFrom"></a>
@@ -907,7 +907,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -923,7 +923,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-snowflake.fileFormat.FileFormat.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -1331,28 +1331,28 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.fullyQualifiedName">fully_qualified_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference">FileFormatTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.allowDuplicateInput">allow_duplicate_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.binaryAsTextInput">binary_as_text_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.allowDuplicateInput">allow_duplicate_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.binaryAsTextInput">binary_as_text_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.binaryFormatInput">binary_format_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.commentInput">comment_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.compressionInput">compression_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.databaseInput">database_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.dateFormatInput">date_format_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.disableAutoConvertInput">disable_auto_convert_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.disableSnowflakeDataInput">disable_snowflake_data_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.emptyFieldAsNullInput">empty_field_as_null_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.enableOctalInput">enable_octal_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.disableAutoConvertInput">disable_auto_convert_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.disableSnowflakeDataInput">disable_snowflake_data_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.emptyFieldAsNullInput">empty_field_as_null_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.enableOctalInput">enable_octal_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.encodingInput">encoding_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.errorOnColumnCountMismatchInput">error_on_column_count_mismatch_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.errorOnColumnCountMismatchInput">error_on_column_count_mismatch_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.escapeInput">escape_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.escapeUnenclosedFieldInput">escape_unenclosed_field_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.fieldDelimiterInput">field_delimiter_input</a></code> | <code>str</code> | *No description.* |
@@ -1360,37 +1360,37 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.fileExtensionInput">file_extension_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.formatTypeInput">format_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.ignoreUtf8ErrorsInput">ignore_utf8_errors_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.ignoreUtf8ErrorsInput">ignore_utf8_errors_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.nullIfInput">null_if_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.parseHeaderInput">parse_header_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.preserveSpaceInput">preserve_space_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.parseHeaderInput">parse_header_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.preserveSpaceInput">preserve_space_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.recordDelimiterInput">record_delimiter_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.replaceInvalidCharactersInput">replace_invalid_characters_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.replaceInvalidCharactersInput">replace_invalid_characters_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.schemaInput">schema_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.skipBlankLinesInput">skip_blank_lines_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.skipByteOrderMarkInput">skip_byte_order_mark_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.skipBlankLinesInput">skip_blank_lines_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.skipByteOrderMarkInput">skip_byte_order_mark_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.skipHeaderInput">skip_header_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.stripNullValuesInput">strip_null_values_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.stripOuterArrayInput">strip_outer_array_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.stripOuterElementInput">strip_outer_element_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.stripNullValuesInput">strip_null_values_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.stripOuterArrayInput">strip_outer_array_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.stripOuterElementInput">strip_outer_element_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.timeFormatInput">time_format_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeouts">FileFormatTimeouts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeouts">FileFormatTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.timestampFormatInput">timestamp_format_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.trimSpaceInput">trim_space_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.allowDuplicate">allow_duplicate</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.binaryAsText">binary_as_text</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.trimSpaceInput">trim_space_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.allowDuplicate">allow_duplicate</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.binaryAsText">binary_as_text</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.binaryFormat">binary_format</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.comment">comment</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.compression">compression</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.database">database</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.dateFormat">date_format</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.disableAutoConvert">disable_auto_convert</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.disableSnowflakeData">disable_snowflake_data</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.emptyFieldAsNull">empty_field_as_null</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.enableOctal">enable_octal</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.disableAutoConvert">disable_auto_convert</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.disableSnowflakeData">disable_snowflake_data</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.emptyFieldAsNull">empty_field_as_null</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.enableOctal">enable_octal</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.encoding">encoding</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.errorOnColumnCountMismatch">error_on_column_count_mismatch</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.errorOnColumnCountMismatch">error_on_column_count_mismatch</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.escape">escape</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.escapeUnenclosedField">escape_unenclosed_field</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.fieldDelimiter">field_delimiter</a></code> | <code>str</code> | *No description.* |
@@ -1398,23 +1398,23 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.fileExtension">file_extension</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.formatType">format_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.ignoreUtf8Errors">ignore_utf8_errors</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.ignoreUtf8Errors">ignore_utf8_errors</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.nullIf">null_if</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.parseHeader">parse_header</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.preserveSpace">preserve_space</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.parseHeader">parse_header</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.preserveSpace">preserve_space</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.recordDelimiter">record_delimiter</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.replaceInvalidCharacters">replace_invalid_characters</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.replaceInvalidCharacters">replace_invalid_characters</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.schema">schema</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.skipBlankLines">skip_blank_lines</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.skipByteOrderMark">skip_byte_order_mark</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.skipBlankLines">skip_blank_lines</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.skipByteOrderMark">skip_byte_order_mark</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.skipHeader">skip_header</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.stripNullValues">strip_null_values</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.stripOuterArray">strip_outer_array</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.stripOuterElement">strip_outer_element</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.stripNullValues">strip_null_values</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.stripOuterArray">strip_outer_array</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.stripOuterElement">strip_outer_element</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.timeFormat">time_format</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.timestampFormat">timestamp_format</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.trimSpace">trim_space</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormat.property.trimSpace">trim_space</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -1493,20 +1493,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1553,10 +1553,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1583,20 +1583,20 @@ timeouts: FileFormatTimeoutsOutputReference
 ##### `allow_duplicate_input`<sup>Optional</sup> <a name="allow_duplicate_input" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.allowDuplicateInput"></a>
 
 ```python
-allow_duplicate_input: typing.Union[bool, IResolvable]
+allow_duplicate_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `binary_as_text_input`<sup>Optional</sup> <a name="binary_as_text_input" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.binaryAsTextInput"></a>
 
 ```python
-binary_as_text_input: typing.Union[bool, IResolvable]
+binary_as_text_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1653,40 +1653,40 @@ date_format_input: str
 ##### `disable_auto_convert_input`<sup>Optional</sup> <a name="disable_auto_convert_input" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.disableAutoConvertInput"></a>
 
 ```python
-disable_auto_convert_input: typing.Union[bool, IResolvable]
+disable_auto_convert_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `disable_snowflake_data_input`<sup>Optional</sup> <a name="disable_snowflake_data_input" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.disableSnowflakeDataInput"></a>
 
 ```python
-disable_snowflake_data_input: typing.Union[bool, IResolvable]
+disable_snowflake_data_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `empty_field_as_null_input`<sup>Optional</sup> <a name="empty_field_as_null_input" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.emptyFieldAsNullInput"></a>
 
 ```python
-empty_field_as_null_input: typing.Union[bool, IResolvable]
+empty_field_as_null_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `enable_octal_input`<sup>Optional</sup> <a name="enable_octal_input" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.enableOctalInput"></a>
 
 ```python
-enable_octal_input: typing.Union[bool, IResolvable]
+enable_octal_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1703,10 +1703,10 @@ encoding_input: str
 ##### `error_on_column_count_mismatch_input`<sup>Optional</sup> <a name="error_on_column_count_mismatch_input" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.errorOnColumnCountMismatchInput"></a>
 
 ```python
-error_on_column_count_mismatch_input: typing.Union[bool, IResolvable]
+error_on_column_count_mismatch_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1783,10 +1783,10 @@ id_input: str
 ##### `ignore_utf8_errors_input`<sup>Optional</sup> <a name="ignore_utf8_errors_input" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.ignoreUtf8ErrorsInput"></a>
 
 ```python
-ignore_utf8_errors_input: typing.Union[bool, IResolvable]
+ignore_utf8_errors_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1813,20 +1813,20 @@ null_if_input: typing.List[str]
 ##### `parse_header_input`<sup>Optional</sup> <a name="parse_header_input" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.parseHeaderInput"></a>
 
 ```python
-parse_header_input: typing.Union[bool, IResolvable]
+parse_header_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `preserve_space_input`<sup>Optional</sup> <a name="preserve_space_input" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.preserveSpaceInput"></a>
 
 ```python
-preserve_space_input: typing.Union[bool, IResolvable]
+preserve_space_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1843,10 +1843,10 @@ record_delimiter_input: str
 ##### `replace_invalid_characters_input`<sup>Optional</sup> <a name="replace_invalid_characters_input" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.replaceInvalidCharactersInput"></a>
 
 ```python
-replace_invalid_characters_input: typing.Union[bool, IResolvable]
+replace_invalid_characters_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1863,20 +1863,20 @@ schema_input: str
 ##### `skip_blank_lines_input`<sup>Optional</sup> <a name="skip_blank_lines_input" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.skipBlankLinesInput"></a>
 
 ```python
-skip_blank_lines_input: typing.Union[bool, IResolvable]
+skip_blank_lines_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `skip_byte_order_mark_input`<sup>Optional</sup> <a name="skip_byte_order_mark_input" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.skipByteOrderMarkInput"></a>
 
 ```python
-skip_byte_order_mark_input: typing.Union[bool, IResolvable]
+skip_byte_order_mark_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1893,30 +1893,30 @@ skip_header_input: typing.Union[int, float]
 ##### `strip_null_values_input`<sup>Optional</sup> <a name="strip_null_values_input" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.stripNullValuesInput"></a>
 
 ```python
-strip_null_values_input: typing.Union[bool, IResolvable]
+strip_null_values_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `strip_outer_array_input`<sup>Optional</sup> <a name="strip_outer_array_input" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.stripOuterArrayInput"></a>
 
 ```python
-strip_outer_array_input: typing.Union[bool, IResolvable]
+strip_outer_array_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `strip_outer_element_input`<sup>Optional</sup> <a name="strip_outer_element_input" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.stripOuterElementInput"></a>
 
 ```python
-strip_outer_element_input: typing.Union[bool, IResolvable]
+strip_outer_element_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1933,10 +1933,10 @@ time_format_input: str
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[IResolvable, FileFormatTimeouts]
+timeouts_input: IResolvable | FileFormatTimeouts
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeouts">FileFormatTimeouts</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeouts">FileFormatTimeouts</a>
 
 ---
 
@@ -1953,30 +1953,30 @@ timestamp_format_input: str
 ##### `trim_space_input`<sup>Optional</sup> <a name="trim_space_input" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.trimSpaceInput"></a>
 
 ```python
-trim_space_input: typing.Union[bool, IResolvable]
+trim_space_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `allow_duplicate`<sup>Required</sup> <a name="allow_duplicate" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.allowDuplicate"></a>
 
 ```python
-allow_duplicate: typing.Union[bool, IResolvable]
+allow_duplicate: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `binary_as_text`<sup>Required</sup> <a name="binary_as_text" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.binaryAsText"></a>
 
 ```python
-binary_as_text: typing.Union[bool, IResolvable]
+binary_as_text: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2033,40 +2033,40 @@ date_format: str
 ##### `disable_auto_convert`<sup>Required</sup> <a name="disable_auto_convert" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.disableAutoConvert"></a>
 
 ```python
-disable_auto_convert: typing.Union[bool, IResolvable]
+disable_auto_convert: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `disable_snowflake_data`<sup>Required</sup> <a name="disable_snowflake_data" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.disableSnowflakeData"></a>
 
 ```python
-disable_snowflake_data: typing.Union[bool, IResolvable]
+disable_snowflake_data: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `empty_field_as_null`<sup>Required</sup> <a name="empty_field_as_null" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.emptyFieldAsNull"></a>
 
 ```python
-empty_field_as_null: typing.Union[bool, IResolvable]
+empty_field_as_null: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `enable_octal`<sup>Required</sup> <a name="enable_octal" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.enableOctal"></a>
 
 ```python
-enable_octal: typing.Union[bool, IResolvable]
+enable_octal: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2083,10 +2083,10 @@ encoding: str
 ##### `error_on_column_count_mismatch`<sup>Required</sup> <a name="error_on_column_count_mismatch" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.errorOnColumnCountMismatch"></a>
 
 ```python
-error_on_column_count_mismatch: typing.Union[bool, IResolvable]
+error_on_column_count_mismatch: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2163,10 +2163,10 @@ id: str
 ##### `ignore_utf8_errors`<sup>Required</sup> <a name="ignore_utf8_errors" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.ignoreUtf8Errors"></a>
 
 ```python
-ignore_utf8_errors: typing.Union[bool, IResolvable]
+ignore_utf8_errors: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2193,20 +2193,20 @@ null_if: typing.List[str]
 ##### `parse_header`<sup>Required</sup> <a name="parse_header" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.parseHeader"></a>
 
 ```python
-parse_header: typing.Union[bool, IResolvable]
+parse_header: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `preserve_space`<sup>Required</sup> <a name="preserve_space" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.preserveSpace"></a>
 
 ```python
-preserve_space: typing.Union[bool, IResolvable]
+preserve_space: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2223,10 +2223,10 @@ record_delimiter: str
 ##### `replace_invalid_characters`<sup>Required</sup> <a name="replace_invalid_characters" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.replaceInvalidCharacters"></a>
 
 ```python
-replace_invalid_characters: typing.Union[bool, IResolvable]
+replace_invalid_characters: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2243,20 +2243,20 @@ schema: str
 ##### `skip_blank_lines`<sup>Required</sup> <a name="skip_blank_lines" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.skipBlankLines"></a>
 
 ```python
-skip_blank_lines: typing.Union[bool, IResolvable]
+skip_blank_lines: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `skip_byte_order_mark`<sup>Required</sup> <a name="skip_byte_order_mark" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.skipByteOrderMark"></a>
 
 ```python
-skip_byte_order_mark: typing.Union[bool, IResolvable]
+skip_byte_order_mark: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2273,30 +2273,30 @@ skip_header: typing.Union[int, float]
 ##### `strip_null_values`<sup>Required</sup> <a name="strip_null_values" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.stripNullValues"></a>
 
 ```python
-strip_null_values: typing.Union[bool, IResolvable]
+strip_null_values: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `strip_outer_array`<sup>Required</sup> <a name="strip_outer_array" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.stripOuterArray"></a>
 
 ```python
-strip_outer_array: typing.Union[bool, IResolvable]
+strip_outer_array: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `strip_outer_element`<sup>Required</sup> <a name="strip_outer_element" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.stripOuterElement"></a>
 
 ```python
-strip_outer_element: typing.Union[bool, IResolvable]
+strip_outer_element: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2323,10 +2323,10 @@ timestamp_format: str
 ##### `trim_space`<sup>Required</sup> <a name="trim_space" id="@cdktf/provider-snowflake.fileFormat.FileFormat.property.trimSpace"></a>
 
 ```python
-trim_space: typing.Union[bool, IResolvable]
+trim_space: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2358,51 +2358,51 @@ tfResourceType: str
 from cdktf_cdktf_provider_snowflake import file_format
 
 fileFormat.FileFormatConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   database: str,
   format_type: str,
   name: str,
   schema: str,
-  allow_duplicate: typing.Union[bool, IResolvable] = None,
-  binary_as_text: typing.Union[bool, IResolvable] = None,
+  allow_duplicate: bool | IResolvable = None,
+  binary_as_text: bool | IResolvable = None,
   binary_format: str = None,
   comment: str = None,
   compression: str = None,
   date_format: str = None,
-  disable_auto_convert: typing.Union[bool, IResolvable] = None,
-  disable_snowflake_data: typing.Union[bool, IResolvable] = None,
-  empty_field_as_null: typing.Union[bool, IResolvable] = None,
-  enable_octal: typing.Union[bool, IResolvable] = None,
+  disable_auto_convert: bool | IResolvable = None,
+  disable_snowflake_data: bool | IResolvable = None,
+  empty_field_as_null: bool | IResolvable = None,
+  enable_octal: bool | IResolvable = None,
   encoding: str = None,
-  error_on_column_count_mismatch: typing.Union[bool, IResolvable] = None,
+  error_on_column_count_mismatch: bool | IResolvable = None,
   escape: str = None,
   escape_unenclosed_field: str = None,
   field_delimiter: str = None,
   field_optionally_enclosed_by: str = None,
   file_extension: str = None,
   id: str = None,
-  ignore_utf8_errors: typing.Union[bool, IResolvable] = None,
+  ignore_utf8_errors: bool | IResolvable = None,
   null_if: typing.List[str] = None,
-  parse_header: typing.Union[bool, IResolvable] = None,
-  preserve_space: typing.Union[bool, IResolvable] = None,
+  parse_header: bool | IResolvable = None,
+  preserve_space: bool | IResolvable = None,
   record_delimiter: str = None,
-  replace_invalid_characters: typing.Union[bool, IResolvable] = None,
-  skip_blank_lines: typing.Union[bool, IResolvable] = None,
-  skip_byte_order_mark: typing.Union[bool, IResolvable] = None,
+  replace_invalid_characters: bool | IResolvable = None,
+  skip_blank_lines: bool | IResolvable = None,
+  skip_byte_order_mark: bool | IResolvable = None,
   skip_header: typing.Union[int, float] = None,
-  strip_null_values: typing.Union[bool, IResolvable] = None,
-  strip_outer_array: typing.Union[bool, IResolvable] = None,
-  strip_outer_element: typing.Union[bool, IResolvable] = None,
+  strip_null_values: bool | IResolvable = None,
+  strip_outer_array: bool | IResolvable = None,
+  strip_outer_element: bool | IResolvable = None,
   time_format: str = None,
   timeouts: FileFormatTimeouts = None,
   timestamp_format: str = None,
-  trim_space: typing.Union[bool, IResolvable] = None
+  trim_space: bool | IResolvable = None
 )
 ```
 
@@ -2410,71 +2410,71 @@ fileFormat.FileFormatConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.database">database</a></code> | <code>str</code> | The database in which to create the file format. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.formatType">format_type</a></code> | <code>str</code> | Specifies the format of the input files (for data loading) or output files (for data unloading). |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.name">name</a></code> | <code>str</code> | Specifies the identifier for the file format; |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.schema">schema</a></code> | <code>str</code> | The schema in which to create the file format. |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.allowDuplicate">allow_duplicate</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Boolean that specifies to allow duplicate object field names (only the last one will be preserved). |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.binaryAsText">binary_as_text</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Boolean that specifies whether to interpret columns with no defined logical data type as UTF-8 text. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.allowDuplicate">allow_duplicate</a></code> | <code>bool \| cdktf.IResolvable</code> | Boolean that specifies to allow duplicate object field names (only the last one will be preserved). |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.binaryAsText">binary_as_text</a></code> | <code>bool \| cdktf.IResolvable</code> | Boolean that specifies whether to interpret columns with no defined logical data type as UTF-8 text. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.binaryFormat">binary_format</a></code> | <code>str</code> | Defines the encoding format for binary input or output. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.comment">comment</a></code> | <code>str</code> | Specifies a comment for the file format. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.compression">compression</a></code> | <code>str</code> | Specifies the current compression algorithm for the data file. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.dateFormat">date_format</a></code> | <code>str</code> | Defines the format of date values in the data files (data loading) or table (data unloading). |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.disableAutoConvert">disable_auto_convert</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Boolean that specifies whether the XML parser disables automatic conversion of numeric and Boolean values from text to native representation. |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.disableSnowflakeData">disable_snowflake_data</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Boolean that specifies whether the XML parser disables recognition of Snowflake semi-structured data tags. |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.emptyFieldAsNull">empty_field_as_null</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether to insert SQL NULL for empty fields in an input file, which are represented by two successive delimiters. |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.enableOctal">enable_octal</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Boolean that enables parsing of octal numbers. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.disableAutoConvert">disable_auto_convert</a></code> | <code>bool \| cdktf.IResolvable</code> | Boolean that specifies whether the XML parser disables automatic conversion of numeric and Boolean values from text to native representation. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.disableSnowflakeData">disable_snowflake_data</a></code> | <code>bool \| cdktf.IResolvable</code> | Boolean that specifies whether the XML parser disables recognition of Snowflake semi-structured data tags. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.emptyFieldAsNull">empty_field_as_null</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether to insert SQL NULL for empty fields in an input file, which are represented by two successive delimiters. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.enableOctal">enable_octal</a></code> | <code>bool \| cdktf.IResolvable</code> | Boolean that enables parsing of octal numbers. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.encoding">encoding</a></code> | <code>str</code> | String (constant) that specifies the character set of the source data when loading data into a table. |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.errorOnColumnCountMismatch">error_on_column_count_mismatch</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Boolean that specifies whether to generate a parsing error if the number of delimited columns (i.e. fields) in an input file does not match the number of columns in the corresponding table. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.errorOnColumnCountMismatch">error_on_column_count_mismatch</a></code> | <code>bool \| cdktf.IResolvable</code> | Boolean that specifies whether to generate a parsing error if the number of delimited columns (i.e. fields) in an input file does not match the number of columns in the corresponding table. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.escape">escape</a></code> | <code>str</code> | Single character string used as the escape character for field values. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.escapeUnenclosedField">escape_unenclosed_field</a></code> | <code>str</code> | Single character string used as the escape character for unenclosed field values only. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.fieldDelimiter">field_delimiter</a></code> | <code>str</code> | Specifies one or more singlebyte or multibyte characters that separate fields in an input file (data loading) or unloaded file (data unloading). |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.fieldOptionallyEnclosedBy">field_optionally_enclosed_by</a></code> | <code>str</code> | Character used to enclose strings. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.fileExtension">file_extension</a></code> | <code>str</code> | Specifies the extension for files unloaded to a stage. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/file_format#id FileFormat#id}. |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.ignoreUtf8Errors">ignore_utf8_errors</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Boolean that specifies whether UTF-8 encoding errors produce error conditions. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.ignoreUtf8Errors">ignore_utf8_errors</a></code> | <code>bool \| cdktf.IResolvable</code> | Boolean that specifies whether UTF-8 encoding errors produce error conditions. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.nullIf">null_if</a></code> | <code>typing.List[str]</code> | String used to convert to and from SQL NULL. |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.parseHeader">parse_header</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Boolean that specifies whether to use the first row headers in the data files to determine column names. |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.preserveSpace">preserve_space</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Boolean that specifies whether the XML parser preserves leading and trailing spaces in element content. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.parseHeader">parse_header</a></code> | <code>bool \| cdktf.IResolvable</code> | Boolean that specifies whether to use the first row headers in the data files to determine column names. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.preserveSpace">preserve_space</a></code> | <code>bool \| cdktf.IResolvable</code> | Boolean that specifies whether the XML parser preserves leading and trailing spaces in element content. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.recordDelimiter">record_delimiter</a></code> | <code>str</code> | Specifies one or more singlebyte or multibyte characters that separate records in an input file (data loading) or unloaded file (data unloading). |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.replaceInvalidCharacters">replace_invalid_characters</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Boolean that specifies whether to replace invalid UTF-8 characters with the Unicode replacement character (�). |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.skipBlankLines">skip_blank_lines</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Boolean that specifies to skip any blank lines encountered in the data files. |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.skipByteOrderMark">skip_byte_order_mark</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Boolean that specifies whether to skip the BOM (byte order mark), if present in a data file. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.replaceInvalidCharacters">replace_invalid_characters</a></code> | <code>bool \| cdktf.IResolvable</code> | Boolean that specifies whether to replace invalid UTF-8 characters with the Unicode replacement character (�). |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.skipBlankLines">skip_blank_lines</a></code> | <code>bool \| cdktf.IResolvable</code> | Boolean that specifies to skip any blank lines encountered in the data files. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.skipByteOrderMark">skip_byte_order_mark</a></code> | <code>bool \| cdktf.IResolvable</code> | Boolean that specifies whether to skip the BOM (byte order mark), if present in a data file. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.skipHeader">skip_header</a></code> | <code>typing.Union[int, float]</code> | Number of lines at the start of the file to skip. |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.stripNullValues">strip_null_values</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Boolean that instructs the JSON parser to remove object fields or array elements containing null values. |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.stripOuterArray">strip_outer_array</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Boolean that instructs the JSON parser to remove outer brackets. |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.stripOuterElement">strip_outer_element</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Boolean that specifies whether the XML parser strips out the outer XML element, exposing 2nd level elements as separate documents. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.stripNullValues">strip_null_values</a></code> | <code>bool \| cdktf.IResolvable</code> | Boolean that instructs the JSON parser to remove object fields or array elements containing null values. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.stripOuterArray">strip_outer_array</a></code> | <code>bool \| cdktf.IResolvable</code> | Boolean that instructs the JSON parser to remove outer brackets. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.stripOuterElement">strip_outer_element</a></code> | <code>bool \| cdktf.IResolvable</code> | Boolean that specifies whether the XML parser strips out the outer XML element, exposing 2nd level elements as separate documents. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.timeFormat">time_format</a></code> | <code>str</code> | Defines the format of time values in the data files (data loading) or table (data unloading). |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeouts">FileFormatTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.timestampFormat">timestamp_format</a></code> | <code>str</code> | Defines the format of timestamp values in the data files (data loading) or table (data unloading). |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.trimSpace">trim_space</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Boolean that specifies whether to remove white space from fields. |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.trimSpace">trim_space</a></code> | <code>bool \| cdktf.IResolvable</code> | Boolean that specifies whether to remove white space from fields. |
 
 ---
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -2521,10 +2521,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -2589,10 +2589,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `allow_duplicate`<sup>Optional</sup> <a name="allow_duplicate" id="@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.allowDuplicate"></a>
 
 ```python
-allow_duplicate: typing.Union[bool, IResolvable]
+allow_duplicate: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Boolean that specifies to allow duplicate object field names (only the last one will be preserved).
 
@@ -2603,10 +2603,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `binary_as_text`<sup>Optional</sup> <a name="binary_as_text" id="@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.binaryAsText"></a>
 
 ```python
-binary_as_text: typing.Union[bool, IResolvable]
+binary_as_text: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Boolean that specifies whether to interpret columns with no defined logical data type as UTF-8 text.
 
@@ -2673,10 +2673,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `disable_auto_convert`<sup>Optional</sup> <a name="disable_auto_convert" id="@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.disableAutoConvert"></a>
 
 ```python
-disable_auto_convert: typing.Union[bool, IResolvable]
+disable_auto_convert: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Boolean that specifies whether the XML parser disables automatic conversion of numeric and Boolean values from text to native representation.
 
@@ -2687,10 +2687,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `disable_snowflake_data`<sup>Optional</sup> <a name="disable_snowflake_data" id="@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.disableSnowflakeData"></a>
 
 ```python
-disable_snowflake_data: typing.Union[bool, IResolvable]
+disable_snowflake_data: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Boolean that specifies whether the XML parser disables recognition of Snowflake semi-structured data tags.
 
@@ -2701,10 +2701,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `empty_field_as_null`<sup>Optional</sup> <a name="empty_field_as_null" id="@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.emptyFieldAsNull"></a>
 
 ```python
-empty_field_as_null: typing.Union[bool, IResolvable]
+empty_field_as_null: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether to insert SQL NULL for empty fields in an input file, which are represented by two successive delimiters.
 
@@ -2715,10 +2715,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `enable_octal`<sup>Optional</sup> <a name="enable_octal" id="@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.enableOctal"></a>
 
 ```python
-enable_octal: typing.Union[bool, IResolvable]
+enable_octal: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Boolean that enables parsing of octal numbers.
 
@@ -2743,10 +2743,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `error_on_column_count_mismatch`<sup>Optional</sup> <a name="error_on_column_count_mismatch" id="@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.errorOnColumnCountMismatch"></a>
 
 ```python
-error_on_column_count_mismatch: typing.Union[bool, IResolvable]
+error_on_column_count_mismatch: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Boolean that specifies whether to generate a parsing error if the number of delimited columns (i.e. fields) in an input file does not match the number of columns in the corresponding table.
 
@@ -2842,10 +2842,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `ignore_utf8_errors`<sup>Optional</sup> <a name="ignore_utf8_errors" id="@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.ignoreUtf8Errors"></a>
 
 ```python
-ignore_utf8_errors: typing.Union[bool, IResolvable]
+ignore_utf8_errors: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Boolean that specifies whether UTF-8 encoding errors produce error conditions.
 
@@ -2870,10 +2870,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `parse_header`<sup>Optional</sup> <a name="parse_header" id="@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.parseHeader"></a>
 
 ```python
-parse_header: typing.Union[bool, IResolvable]
+parse_header: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Boolean that specifies whether to use the first row headers in the data files to determine column names.
 
@@ -2884,10 +2884,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `preserve_space`<sup>Optional</sup> <a name="preserve_space" id="@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.preserveSpace"></a>
 
 ```python
-preserve_space: typing.Union[bool, IResolvable]
+preserve_space: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Boolean that specifies whether the XML parser preserves leading and trailing spaces in element content.
 
@@ -2912,10 +2912,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `replace_invalid_characters`<sup>Optional</sup> <a name="replace_invalid_characters" id="@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.replaceInvalidCharacters"></a>
 
 ```python
-replace_invalid_characters: typing.Union[bool, IResolvable]
+replace_invalid_characters: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Boolean that specifies whether to replace invalid UTF-8 characters with the Unicode replacement character (�).
 
@@ -2926,10 +2926,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `skip_blank_lines`<sup>Optional</sup> <a name="skip_blank_lines" id="@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.skipBlankLines"></a>
 
 ```python
-skip_blank_lines: typing.Union[bool, IResolvable]
+skip_blank_lines: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Boolean that specifies to skip any blank lines encountered in the data files.
 
@@ -2940,10 +2940,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `skip_byte_order_mark`<sup>Optional</sup> <a name="skip_byte_order_mark" id="@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.skipByteOrderMark"></a>
 
 ```python
-skip_byte_order_mark: typing.Union[bool, IResolvable]
+skip_byte_order_mark: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Boolean that specifies whether to skip the BOM (byte order mark), if present in a data file.
 
@@ -2968,10 +2968,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `strip_null_values`<sup>Optional</sup> <a name="strip_null_values" id="@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.stripNullValues"></a>
 
 ```python
-strip_null_values: typing.Union[bool, IResolvable]
+strip_null_values: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Boolean that instructs the JSON parser to remove object fields or array elements containing null values.
 
@@ -2982,10 +2982,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `strip_outer_array`<sup>Optional</sup> <a name="strip_outer_array" id="@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.stripOuterArray"></a>
 
 ```python
-strip_outer_array: typing.Union[bool, IResolvable]
+strip_outer_array: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Boolean that instructs the JSON parser to remove outer brackets.
 
@@ -2996,10 +2996,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `strip_outer_element`<sup>Optional</sup> <a name="strip_outer_element" id="@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.stripOuterElement"></a>
 
 ```python
-strip_outer_element: typing.Union[bool, IResolvable]
+strip_outer_element: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Boolean that specifies whether the XML parser strips out the outer XML element, exposing 2nd level elements as separate documents.
 
@@ -3052,10 +3052,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `trim_space`<sup>Optional</sup> <a name="trim_space" id="@cdktf/provider-snowflake.fileFormat.FileFormatConfig.property.trimSpace"></a>
 
 ```python
-trim_space: typing.Union[bool, IResolvable]
+trim_space: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Boolean that specifies whether to remove white space from fields.
 
@@ -3410,7 +3410,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeouts">FileFormatTimeouts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeouts">FileFormatTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -3521,10 +3521,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-snowflake.fileFormat.FileFormatTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, FileFormatTimeouts]
+internal_value: IResolvable | FileFormatTimeouts
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeouts">FileFormatTimeouts</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-snowflake.fileFormat.FileFormatTimeouts">FileFormatTimeouts</a>
 
 ---
 

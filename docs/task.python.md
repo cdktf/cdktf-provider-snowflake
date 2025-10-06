@@ -14,67 +14,67 @@ from cdktf_cdktf_provider_snowflake import task
 task.Task(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   database: str,
   name: str,
   schema: str,
   sql_statement: str,
-  started: typing.Union[bool, IResolvable],
-  abort_detached_query: typing.Union[bool, IResolvable] = None,
+  started: bool | IResolvable,
+  abort_detached_query: bool | IResolvable = None,
   after: typing.List[str] = None,
   allow_overlapping_execution: str = None,
-  autocommit: typing.Union[bool, IResolvable] = None,
+  autocommit: bool | IResolvable = None,
   binary_input_format: str = None,
   binary_output_format: str = None,
   client_memory_limit: typing.Union[int, float] = None,
-  client_metadata_request_use_connection_ctx: typing.Union[bool, IResolvable] = None,
+  client_metadata_request_use_connection_ctx: bool | IResolvable = None,
   client_prefetch_threads: typing.Union[int, float] = None,
   client_result_chunk_size: typing.Union[int, float] = None,
-  client_result_column_case_insensitive: typing.Union[bool, IResolvable] = None,
-  client_session_keep_alive: typing.Union[bool, IResolvable] = None,
+  client_result_column_case_insensitive: bool | IResolvable = None,
+  client_session_keep_alive: bool | IResolvable = None,
   client_session_keep_alive_heartbeat_frequency: typing.Union[int, float] = None,
   client_timestamp_type_mapping: str = None,
   comment: str = None,
   config: str = None,
   date_input_format: str = None,
   date_output_format: str = None,
-  enable_unload_physical_type_optimization: typing.Union[bool, IResolvable] = None,
+  enable_unload_physical_type_optimization: bool | IResolvable = None,
   error_integration: str = None,
-  error_on_nondeterministic_merge: typing.Union[bool, IResolvable] = None,
-  error_on_nondeterministic_update: typing.Union[bool, IResolvable] = None,
+  error_on_nondeterministic_merge: bool | IResolvable = None,
+  error_on_nondeterministic_update: bool | IResolvable = None,
   finalize: str = None,
   geography_output_format: str = None,
   geometry_output_format: str = None,
   id: str = None,
-  jdbc_treat_timestamp_ntz_as_utc: typing.Union[bool, IResolvable] = None,
-  jdbc_use_session_timezone: typing.Union[bool, IResolvable] = None,
+  jdbc_treat_timestamp_ntz_as_utc: bool | IResolvable = None,
+  jdbc_use_session_timezone: bool | IResolvable = None,
   json_indent: typing.Union[int, float] = None,
   lock_timeout: typing.Union[int, float] = None,
   log_level: str = None,
   multi_statement_count: typing.Union[int, float] = None,
-  noorder_sequence_as_default: typing.Union[bool, IResolvable] = None,
-  odbc_treat_decimal_as_int: typing.Union[bool, IResolvable] = None,
+  noorder_sequence_as_default: bool | IResolvable = None,
+  odbc_treat_decimal_as_int: bool | IResolvable = None,
   query_tag: str = None,
-  quoted_identifiers_ignore_case: typing.Union[bool, IResolvable] = None,
+  quoted_identifiers_ignore_case: bool | IResolvable = None,
   rows_per_resultset: typing.Union[int, float] = None,
   s3_stage_vpce_dns_name: str = None,
   schedule: TaskSchedule = None,
   search_path: str = None,
   statement_queued_timeout_in_seconds: typing.Union[int, float] = None,
   statement_timeout_in_seconds: typing.Union[int, float] = None,
-  strict_json_output: typing.Union[bool, IResolvable] = None,
+  strict_json_output: bool | IResolvable = None,
   suspend_task_after_num_failures: typing.Union[int, float] = None,
   task_auto_retry_attempts: typing.Union[int, float] = None,
   time_input_format: str = None,
   time_output_format: str = None,
   timeouts: TaskTimeouts = None,
-  timestamp_day_is_always24_h: typing.Union[bool, IResolvable] = None,
+  timestamp_day_is_always24_h: bool | IResolvable = None,
   timestamp_input_format: str = None,
   timestamp_ltz_output_format: str = None,
   timestamp_ntz_output_format: str = None,
@@ -83,11 +83,11 @@ task.Task(
   timestamp_tz_output_format: str = None,
   timezone: str = None,
   trace_level: str = None,
-  transaction_abort_on_error: typing.Union[bool, IResolvable] = None,
+  transaction_abort_on_error: bool | IResolvable = None,
   transaction_default_isolation_level: str = None,
   two_digit_century_start: typing.Union[int, float] = None,
   unsupported_ddl_action: str = None,
-  use_cached_result: typing.Union[bool, IResolvable] = None,
+  use_cached_result: bool | IResolvable = None,
   user_task_managed_initial_warehouse_size: str = None,
   user_task_minimum_trigger_interval_in_seconds: typing.Union[int, float] = None,
   user_task_timeout_ms: typing.Union[int, float] = None,
@@ -102,67 +102,67 @@ task.Task(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.database">database</a></code> | <code>str</code> | The database in which to create the task. |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.name">name</a></code> | <code>str</code> | Specifies the identifier for the task; |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.schema">schema</a></code> | <code>str</code> | The schema in which to create the task. |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.sqlStatement">sql_statement</a></code> | <code>str</code> | Any single SQL statement, or a call to a stored procedure, executed when the task runs. |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.started">started</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies if the task should be started or suspended. |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.abortDetachedQuery">abort_detached_query</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies the action that Snowflake performs for in-progress queries if connectivity is lost due to abrupt termination of a session (e.g. network outage, browser termination, service interruption). For more information, check [ABORT_DETACHED_QUERY docs](https://docs.snowflake.com/en/sql-reference/parameters#abort-detached-query). |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.started">started</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies if the task should be started or suspended. |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.abortDetachedQuery">abort_detached_query</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies the action that Snowflake performs for in-progress queries if connectivity is lost due to abrupt termination of a session (e.g. network outage, browser termination, service interruption). For more information, check [ABORT_DETACHED_QUERY docs](https://docs.snowflake.com/en/sql-reference/parameters#abort-detached-query). |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.after">after</a></code> | <code>typing.List[str]</code> | Specifies one or more predecessor tasks for the current task. |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.allowOverlappingExecution">allow_overlapping_execution</a></code> | <code>str</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) By default, Snowflake ensures that only one instance of a particular DAG is allowed to run at a time, setting the parameter value to TRUE permits DAG runs to overlap. |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.autocommit">autocommit</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether autocommit is enabled for the session. |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.autocommit">autocommit</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether autocommit is enabled for the session. |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.binaryInputFormat">binary_input_format</a></code> | <code>str</code> | The format of VARCHAR values passed as input to VARCHAR-to-BINARY conversion functions. |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.binaryOutputFormat">binary_output_format</a></code> | <code>str</code> | The format for VARCHAR values returned as output by BINARY-to-VARCHAR conversion functions. |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.clientMemoryLimit">client_memory_limit</a></code> | <code>typing.Union[int, float]</code> | Parameter that specifies the maximum amount of memory the JDBC driver or ODBC driver should use for the result set from queries (in MB). |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.clientMetadataRequestUseConnectionCtx">client_metadata_request_use_connection_ctx</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | For specific ODBC functions and JDBC methods, this parameter can change the default search scope from all databases/schemas to the current database/schema. |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.clientMetadataRequestUseConnectionCtx">client_metadata_request_use_connection_ctx</a></code> | <code>bool \| cdktf.IResolvable</code> | For specific ODBC functions and JDBC methods, this parameter can change the default search scope from all databases/schemas to the current database/schema. |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.clientPrefetchThreads">client_prefetch_threads</a></code> | <code>typing.Union[int, float]</code> | Parameter that specifies the number of threads used by the client to pre-fetch large result sets. |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.clientResultChunkSize">client_result_chunk_size</a></code> | <code>typing.Union[int, float]</code> | Parameter that specifies the maximum size of each set (or chunk) of query results to download (in MB). |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.clientResultColumnCaseInsensitive">client_result_column_case_insensitive</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Parameter that indicates whether to match column name case-insensitively in ResultSet.get* methods in JDBC. For more information, check [CLIENT_RESULT_COLUMN_CASE_INSENSITIVE docs](https://docs.snowflake.com/en/sql-reference/parameters#client-result-column-case-insensitive). |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.clientSessionKeepAlive">client_session_keep_alive</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Parameter that indicates whether to force a user to log in again after a period of inactivity in the session. |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.clientResultColumnCaseInsensitive">client_result_column_case_insensitive</a></code> | <code>bool \| cdktf.IResolvable</code> | Parameter that indicates whether to match column name case-insensitively in ResultSet.get* methods in JDBC. For more information, check [CLIENT_RESULT_COLUMN_CASE_INSENSITIVE docs](https://docs.snowflake.com/en/sql-reference/parameters#client-result-column-case-insensitive). |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.clientSessionKeepAlive">client_session_keep_alive</a></code> | <code>bool \| cdktf.IResolvable</code> | Parameter that indicates whether to force a user to log in again after a period of inactivity in the session. |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.clientSessionKeepAliveHeartbeatFrequency">client_session_keep_alive_heartbeat_frequency</a></code> | <code>typing.Union[int, float]</code> | Number of seconds in-between client attempts to update the token for the session. For more information, check [CLIENT_SESSION_KEEP_ALIVE_HEARTBEAT_FREQUENCY docs](https://docs.snowflake.com/en/sql-reference/parameters#client-session-keep-alive-heartbeat-frequency). |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.clientTimestampTypeMapping">client_timestamp_type_mapping</a></code> | <code>str</code> | Specifies the [TIMESTAMP_* variation](https://docs.snowflake.com/en/sql-reference/data-types-datetime.html#label-datatypes-timestamp-variations) to use when binding timestamp variables for JDBC or ODBC applications that use the bind API to load data. For more information, check [CLIENT_TIMESTAMP_TYPE_MAPPING docs](https://docs.snowflake.com/en/sql-reference/parameters#client-timestamp-type-mapping). |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.comment">comment</a></code> | <code>str</code> | Specifies a comment for the task. |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.config">config</a></code> | <code>str</code> | Specifies a string representation of key value pairs that can be accessed by all tasks in the task graph. |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.dateInputFormat">date_input_format</a></code> | <code>str</code> | Specifies the input format for the DATE data type. |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.dateOutputFormat">date_output_format</a></code> | <code>str</code> | Specifies the display format for the DATE data type. |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.enableUnloadPhysicalTypeOptimization">enable_unload_physical_type_optimization</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether to set the schema for unloaded Parquet files based on the logical column data types (i.e. the types in the unload SQL query or source table) or on the unloaded column values (i.e. the smallest data types and precision that support the values in the output columns of the unload SQL statement or source table). For more information, check [ENABLE_UNLOAD_PHYSICAL_TYPE_OPTIMIZATION docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-unload-physical-type-optimization). |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.enableUnloadPhysicalTypeOptimization">enable_unload_physical_type_optimization</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether to set the schema for unloaded Parquet files based on the logical column data types (i.e. the types in the unload SQL query or source table) or on the unloaded column values (i.e. the smallest data types and precision that support the values in the output columns of the unload SQL statement or source table). For more information, check [ENABLE_UNLOAD_PHYSICAL_TYPE_OPTIMIZATION docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-unload-physical-type-optimization). |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.errorIntegration">error_integration</a></code> | <code>str</code> | Specifies the name of the notification integration used for error notifications. |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.errorOnNondeterministicMerge">error_on_nondeterministic_merge</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether to return an error when the [MERGE](https://docs.snowflake.com/en/sql-reference/sql/merge) command is used to update or delete a target row that joins multiple source rows and the system cannot determine the action to perform on the target row. For more information, check [ERROR_ON_NONDETERMINISTIC_MERGE docs](https://docs.snowflake.com/en/sql-reference/parameters#error-on-nondeterministic-merge). |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.errorOnNondeterministicUpdate">error_on_nondeterministic_update</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether to return an error when the [UPDATE](https://docs.snowflake.com/en/sql-reference/sql/update) command is used to update a target row that joins multiple source rows and the system cannot determine the action to perform on the target row. For more information, check [ERROR_ON_NONDETERMINISTIC_UPDATE docs](https://docs.snowflake.com/en/sql-reference/parameters#error-on-nondeterministic-update). |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.errorOnNondeterministicMerge">error_on_nondeterministic_merge</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether to return an error when the [MERGE](https://docs.snowflake.com/en/sql-reference/sql/merge) command is used to update or delete a target row that joins multiple source rows and the system cannot determine the action to perform on the target row. For more information, check [ERROR_ON_NONDETERMINISTIC_MERGE docs](https://docs.snowflake.com/en/sql-reference/parameters#error-on-nondeterministic-merge). |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.errorOnNondeterministicUpdate">error_on_nondeterministic_update</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether to return an error when the [UPDATE](https://docs.snowflake.com/en/sql-reference/sql/update) command is used to update a target row that joins multiple source rows and the system cannot determine the action to perform on the target row. For more information, check [ERROR_ON_NONDETERMINISTIC_UPDATE docs](https://docs.snowflake.com/en/sql-reference/parameters#error-on-nondeterministic-update). |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.finalize">finalize</a></code> | <code>str</code> | Specifies the name of a root task that the finalizer task is associated with. |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.geographyOutputFormat">geography_output_format</a></code> | <code>str</code> | Display format for [GEOGRAPHY values](https://docs.snowflake.com/en/sql-reference/data-types-geospatial.html#label-data-types-geography). For more information, check [GEOGRAPHY_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#geography-output-format). |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.geometryOutputFormat">geometry_output_format</a></code> | <code>str</code> | Display format for [GEOMETRY values](https://docs.snowflake.com/en/sql-reference/data-types-geospatial.html#label-data-types-geometry). For more information, check [GEOMETRY_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#geometry-output-format). |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/task#id Task#id}. |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.jdbcTreatTimestampNtzAsUtc">jdbc_treat_timestamp_ntz_as_utc</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies how JDBC processes TIMESTAMP_NTZ values. For more information, check [JDBC_TREAT_TIMESTAMP_NTZ_AS_UTC docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-treat-timestamp-ntz-as-utc). |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.jdbcUseSessionTimezone">jdbc_use_session_timezone</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether the JDBC Driver uses the time zone of the JVM or the time zone of the session (specified by the [TIMEZONE](https://docs.snowflake.com/en/sql-reference/parameters#label-timezone) parameter) for the getDate(), getTime(), and getTimestamp() methods of the ResultSet class. For more information, check [JDBC_USE_SESSION_TIMEZONE docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-use-session-timezone). |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.jdbcTreatTimestampNtzAsUtc">jdbc_treat_timestamp_ntz_as_utc</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies how JDBC processes TIMESTAMP_NTZ values. For more information, check [JDBC_TREAT_TIMESTAMP_NTZ_AS_UTC docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-treat-timestamp-ntz-as-utc). |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.jdbcUseSessionTimezone">jdbc_use_session_timezone</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether the JDBC Driver uses the time zone of the JVM or the time zone of the session (specified by the [TIMEZONE](https://docs.snowflake.com/en/sql-reference/parameters#label-timezone) parameter) for the getDate(), getTime(), and getTimestamp() methods of the ResultSet class. For more information, check [JDBC_USE_SESSION_TIMEZONE docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-use-session-timezone). |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.jsonIndent">json_indent</a></code> | <code>typing.Union[int, float]</code> | Specifies the number of blank spaces to indent each new element in JSON output in the session. |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.lockTimeout">lock_timeout</a></code> | <code>typing.Union[int, float]</code> | Number of seconds to wait while trying to lock a resource, before timing out and aborting the statement. |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.logLevel">log_level</a></code> | <code>str</code> | Specifies the severity level of messages that should be ingested and made available in the active event table. |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.multiStatementCount">multi_statement_count</a></code> | <code>typing.Union[int, float]</code> | Number of statements to execute when using the multi-statement capability. For more information, check [MULTI_STATEMENT_COUNT docs](https://docs.snowflake.com/en/sql-reference/parameters#multi-statement-count). |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.noorderSequenceAsDefault">noorder_sequence_as_default</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether the ORDER or NOORDER property is set by default when you create a new sequence or add a new table column. |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.odbcTreatDecimalAsInt">odbc_treat_decimal_as_int</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies how ODBC processes columns that have a scale of zero (0). For more information, check [ODBC_TREAT_DECIMAL_AS_INT docs](https://docs.snowflake.com/en/sql-reference/parameters#odbc-treat-decimal-as-int). |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.noorderSequenceAsDefault">noorder_sequence_as_default</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether the ORDER or NOORDER property is set by default when you create a new sequence or add a new table column. |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.odbcTreatDecimalAsInt">odbc_treat_decimal_as_int</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies how ODBC processes columns that have a scale of zero (0). For more information, check [ODBC_TREAT_DECIMAL_AS_INT docs](https://docs.snowflake.com/en/sql-reference/parameters#odbc-treat-decimal-as-int). |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.queryTag">query_tag</a></code> | <code>str</code> | Optional string that can be used to tag queries and other SQL statements executed within a session. |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.quotedIdentifiersIgnoreCase">quoted_identifiers_ignore_case</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether letters in double-quoted object identifiers are stored and resolved as uppercase letters. |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.quotedIdentifiersIgnoreCase">quoted_identifiers_ignore_case</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether letters in double-quoted object identifiers are stored and resolved as uppercase letters. |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.rowsPerResultset">rows_per_resultset</a></code> | <code>typing.Union[int, float]</code> | Specifies the maximum number of rows returned in a result set. |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.s3StageVpceDnsName">s3_stage_vpce_dns_name</a></code> | <code>str</code> | Specifies the DNS name of an Amazon S3 interface endpoint. |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.schedule">schedule</a></code> | <code><a href="#@cdktf/provider-snowflake.task.TaskSchedule">TaskSchedule</a></code> | schedule block. |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.searchPath">search_path</a></code> | <code>str</code> | Specifies the path to search to resolve unqualified object names in queries. |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.statementQueuedTimeoutInSeconds">statement_queued_timeout_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Amount of time, in seconds, a SQL statement (query, DDL, DML, etc.) remains queued for a warehouse before it is canceled by the system. This parameter can be used in conjunction with the [MAX_CONCURRENCY_LEVEL](https://docs.snowflake.com/en/sql-reference/parameters#label-max-concurrency-level) parameter to ensure a warehouse is never backlogged. For more information, check [STATEMENT_QUEUED_TIMEOUT_IN_SECONDS docs](https://docs.snowflake.com/en/sql-reference/parameters#statement-queued-timeout-in-seconds). |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.statementTimeoutInSeconds">statement_timeout_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Amount of time, in seconds, after which a running SQL statement (query, DDL, DML, etc.) is canceled by the system. For more information, check [STATEMENT_TIMEOUT_IN_SECONDS docs](https://docs.snowflake.com/en/sql-reference/parameters#statement-timeout-in-seconds). |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.strictJsonOutput">strict_json_output</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | This parameter specifies whether JSON output in a session is compatible with the general standard (as described by [http://json.org](http://json.org)). By design, Snowflake allows JSON input that contains non-standard values; however, these non-standard values might result in Snowflake outputting JSON that is incompatible with other platforms and languages. This parameter, when enabled, ensures that Snowflake outputs valid/compatible JSON. For more information, check [STRICT_JSON_OUTPUT docs](https://docs.snowflake.com/en/sql-reference/parameters#strict-json-output). |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.strictJsonOutput">strict_json_output</a></code> | <code>bool \| cdktf.IResolvable</code> | This parameter specifies whether JSON output in a session is compatible with the general standard (as described by [http://json.org](http://json.org)). By design, Snowflake allows JSON input that contains non-standard values; however, these non-standard values might result in Snowflake outputting JSON that is incompatible with other platforms and languages. This parameter, when enabled, ensures that Snowflake outputs valid/compatible JSON. For more information, check [STRICT_JSON_OUTPUT docs](https://docs.snowflake.com/en/sql-reference/parameters#strict-json-output). |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.suspendTaskAfterNumFailures">suspend_task_after_num_failures</a></code> | <code>typing.Union[int, float]</code> | Specifies the number of consecutive failed task runs after which the current task is suspended automatically. |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.taskAutoRetryAttempts">task_auto_retry_attempts</a></code> | <code>typing.Union[int, float]</code> | Specifies the number of automatic task graph retry attempts. |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.timeInputFormat">time_input_format</a></code> | <code>str</code> | Specifies the input format for the TIME data type. |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.timeOutputFormat">time_output_format</a></code> | <code>str</code> | Specifies the display format for the TIME data type. |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.task.TaskTimeouts">TaskTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.timestampDayIsAlways24H">timestamp_day_is_always24_h</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether the [DATEADD](https://docs.snowflake.com/en/sql-reference/functions/dateadd) function (and its aliases) always consider a day to be exactly 24 hours for expressions that span multiple days. For more information, check [TIMESTAMP_DAY_IS_ALWAYS_24H docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-day-is-always-24h). |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.timestampDayIsAlways24H">timestamp_day_is_always24_h</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether the [DATEADD](https://docs.snowflake.com/en/sql-reference/functions/dateadd) function (and its aliases) always consider a day to be exactly 24 hours for expressions that span multiple days. For more information, check [TIMESTAMP_DAY_IS_ALWAYS_24H docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-day-is-always-24h). |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.timestampInputFormat">timestamp_input_format</a></code> | <code>str</code> | Specifies the input format for the TIMESTAMP data type alias. |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.timestampLtzOutputFormat">timestamp_ltz_output_format</a></code> | <code>str</code> | Specifies the display format for the TIMESTAMP_LTZ data type. |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.timestampNtzOutputFormat">timestamp_ntz_output_format</a></code> | <code>str</code> | Specifies the display format for the TIMESTAMP_NTZ data type. For more information, check [TIMESTAMP_NTZ_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-ntz-output-format). |
@@ -171,11 +171,11 @@ task.Task(
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.timestampTzOutputFormat">timestamp_tz_output_format</a></code> | <code>str</code> | Specifies the display format for the TIMESTAMP_TZ data type. |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.timezone">timezone</a></code> | <code>str</code> | Specifies the time zone for the session. |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.traceLevel">trace_level</a></code> | <code>str</code> | Controls how trace events are ingested into the event table. |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.transactionAbortOnError">transaction_abort_on_error</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies the action to perform when a statement issued within a non-autocommit transaction returns with an error. |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.transactionAbortOnError">transaction_abort_on_error</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies the action to perform when a statement issued within a non-autocommit transaction returns with an error. |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.transactionDefaultIsolationLevel">transaction_default_isolation_level</a></code> | <code>str</code> | Specifies the isolation level for transactions in the user session. For more information, check [TRANSACTION_DEFAULT_ISOLATION_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#transaction-default-isolation-level). |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.twoDigitCenturyStart">two_digit_century_start</a></code> | <code>typing.Union[int, float]</code> | Specifies the “century start” year for 2-digit years (i.e. the earliest year such dates can represent). This parameter prevents ambiguous dates when importing or converting data with the `YY` date format component (i.e. years represented as 2 digits). For more information, check [TWO_DIGIT_CENTURY_START docs](https://docs.snowflake.com/en/sql-reference/parameters#two-digit-century-start). |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.unsupportedDdlAction">unsupported_ddl_action</a></code> | <code>str</code> | Determines if an unsupported (i.e. non-default) value specified for a constraint property returns an error. For more information, check [UNSUPPORTED_DDL_ACTION docs](https://docs.snowflake.com/en/sql-reference/parameters#unsupported-ddl-action). |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.useCachedResult">use_cached_result</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether to reuse persisted query results, if available, when a matching query is submitted. |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.useCachedResult">use_cached_result</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether to reuse persisted query results, if available, when a matching query is submitted. |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.userTaskManagedInitialWarehouseSize">user_task_managed_initial_warehouse_size</a></code> | <code>str</code> | Specifies the size of the compute resources to provision for the first run of the task, before a task history is available for Snowflake to determine an ideal size. |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.userTaskMinimumTriggerIntervalInSeconds">user_task_minimum_trigger_interval_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Minimum amount of time between Triggered Task executions in seconds For more information, check [USER_TASK_MINIMUM_TRIGGER_INTERVAL_IN_SECONDS docs](https://docs.snowflake.com/en/sql-reference/parameters#user-task-minimum-trigger-interval-in-seconds). |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.Initializer.parameter.userTaskTimeoutMs">user_task_timeout_ms</a></code> | <code>typing.Union[int, float]</code> | Specifies the time limit on a single run of the task before it times out (in milliseconds). |
@@ -206,13 +206,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.task.Task.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.task.Task.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -242,7 +242,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.task.Task.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -294,7 +294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `started`<sup>Required</sup> <a name="started" id="@cdktf/provider-snowflake.task.Task.Initializer.parameter.started"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies if the task should be started or suspended.
 
@@ -304,7 +304,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `abort_detached_query`<sup>Optional</sup> <a name="abort_detached_query" id="@cdktf/provider-snowflake.task.Task.Initializer.parameter.abortDetachedQuery"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies the action that Snowflake performs for in-progress queries if connectivity is lost due to abrupt termination of a session (e.g. network outage, browser termination, service interruption). For more information, check [ABORT_DETACHED_QUERY docs](https://docs.snowflake.com/en/sql-reference/parameters#abort-detached-query).
 
@@ -338,7 +338,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `autocommit`<sup>Optional</sup> <a name="autocommit" id="@cdktf/provider-snowflake.task.Task.Initializer.parameter.autocommit"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether autocommit is enabled for the session.
 
@@ -386,7 +386,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `client_metadata_request_use_connection_ctx`<sup>Optional</sup> <a name="client_metadata_request_use_connection_ctx" id="@cdktf/provider-snowflake.task.Task.Initializer.parameter.clientMetadataRequestUseConnectionCtx"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 For specific ODBC functions and JDBC methods, this parameter can change the default search scope from all databases/schemas to the current database/schema.
 
@@ -422,7 +422,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `client_result_column_case_insensitive`<sup>Optional</sup> <a name="client_result_column_case_insensitive" id="@cdktf/provider-snowflake.task.Task.Initializer.parameter.clientResultColumnCaseInsensitive"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Parameter that indicates whether to match column name case-insensitively in ResultSet.get* methods in JDBC. For more information, check [CLIENT_RESULT_COLUMN_CASE_INSENSITIVE docs](https://docs.snowflake.com/en/sql-reference/parameters#client-result-column-case-insensitive).
 
@@ -432,7 +432,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `client_session_keep_alive`<sup>Optional</sup> <a name="client_session_keep_alive" id="@cdktf/provider-snowflake.task.Task.Initializer.parameter.clientSessionKeepAlive"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Parameter that indicates whether to force a user to log in again after a period of inactivity in the session.
 
@@ -510,7 +510,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `enable_unload_physical_type_optimization`<sup>Optional</sup> <a name="enable_unload_physical_type_optimization" id="@cdktf/provider-snowflake.task.Task.Initializer.parameter.enableUnloadPhysicalTypeOptimization"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether to set the schema for unloaded Parquet files based on the logical column data types (i.e. the types in the unload SQL query or source table) or on the unloaded column values (i.e. the smallest data types and precision that support the values in the output columns of the unload SQL statement or source table). For more information, check [ENABLE_UNLOAD_PHYSICAL_TYPE_OPTIMIZATION docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-unload-physical-type-optimization).
 
@@ -532,7 +532,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `error_on_nondeterministic_merge`<sup>Optional</sup> <a name="error_on_nondeterministic_merge" id="@cdktf/provider-snowflake.task.Task.Initializer.parameter.errorOnNondeterministicMerge"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether to return an error when the [MERGE](https://docs.snowflake.com/en/sql-reference/sql/merge) command is used to update or delete a target row that joins multiple source rows and the system cannot determine the action to perform on the target row. For more information, check [ERROR_ON_NONDETERMINISTIC_MERGE docs](https://docs.snowflake.com/en/sql-reference/parameters#error-on-nondeterministic-merge).
 
@@ -542,7 +542,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `error_on_nondeterministic_update`<sup>Optional</sup> <a name="error_on_nondeterministic_update" id="@cdktf/provider-snowflake.task.Task.Initializer.parameter.errorOnNondeterministicUpdate"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether to return an error when the [UPDATE](https://docs.snowflake.com/en/sql-reference/sql/update) command is used to update a target row that joins multiple source rows and the system cannot determine the action to perform on the target row. For more information, check [ERROR_ON_NONDETERMINISTIC_UPDATE docs](https://docs.snowflake.com/en/sql-reference/parameters#error-on-nondeterministic-update).
 
@@ -595,7 +595,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ##### `jdbc_treat_timestamp_ntz_as_utc`<sup>Optional</sup> <a name="jdbc_treat_timestamp_ntz_as_utc" id="@cdktf/provider-snowflake.task.Task.Initializer.parameter.jdbcTreatTimestampNtzAsUtc"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies how JDBC processes TIMESTAMP_NTZ values. For more information, check [JDBC_TREAT_TIMESTAMP_NTZ_AS_UTC docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-treat-timestamp-ntz-as-utc).
 
@@ -605,7 +605,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `jdbc_use_session_timezone`<sup>Optional</sup> <a name="jdbc_use_session_timezone" id="@cdktf/provider-snowflake.task.Task.Initializer.parameter.jdbcUseSessionTimezone"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether the JDBC Driver uses the time zone of the JVM or the time zone of the session (specified by the [TIMEZONE](https://docs.snowflake.com/en/sql-reference/parameters#label-timezone) parameter) for the getDate(), getTime(), and getTimestamp() methods of the ResultSet class. For more information, check [JDBC_USE_SESSION_TIMEZONE docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-use-session-timezone).
 
@@ -661,7 +661,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `noorder_sequence_as_default`<sup>Optional</sup> <a name="noorder_sequence_as_default" id="@cdktf/provider-snowflake.task.Task.Initializer.parameter.noorderSequenceAsDefault"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether the ORDER or NOORDER property is set by default when you create a new sequence or add a new table column.
 
@@ -673,7 +673,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `odbc_treat_decimal_as_int`<sup>Optional</sup> <a name="odbc_treat_decimal_as_int" id="@cdktf/provider-snowflake.task.Task.Initializer.parameter.odbcTreatDecimalAsInt"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies how ODBC processes columns that have a scale of zero (0). For more information, check [ODBC_TREAT_DECIMAL_AS_INT docs](https://docs.snowflake.com/en/sql-reference/parameters#odbc-treat-decimal-as-int).
 
@@ -695,7 +695,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `quoted_identifiers_ignore_case`<sup>Optional</sup> <a name="quoted_identifiers_ignore_case" id="@cdktf/provider-snowflake.task.Task.Initializer.parameter.quotedIdentifiersIgnoreCase"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether letters in double-quoted object identifiers are stored and resolved as uppercase letters.
 
@@ -773,7 +773,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `strict_json_output`<sup>Optional</sup> <a name="strict_json_output" id="@cdktf/provider-snowflake.task.Task.Initializer.parameter.strictJsonOutput"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 This parameter specifies whether JSON output in a session is compatible with the general standard (as described by [http://json.org](http://json.org)). By design, Snowflake allows JSON input that contains non-standard values; however, these non-standard values might result in Snowflake outputting JSON that is incompatible with other platforms and languages. This parameter, when enabled, ensures that Snowflake outputs valid/compatible JSON. For more information, check [STRICT_JSON_OUTPUT docs](https://docs.snowflake.com/en/sql-reference/parameters#strict-json-output).
 
@@ -841,7 +841,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `timestamp_day_is_always24_h`<sup>Optional</sup> <a name="timestamp_day_is_always24_h" id="@cdktf/provider-snowflake.task.Task.Initializer.parameter.timestampDayIsAlways24H"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether the [DATEADD](https://docs.snowflake.com/en/sql-reference/functions/dateadd) function (and its aliases) always consider a day to be exactly 24 hours for expressions that span multiple days. For more information, check [TIMESTAMP_DAY_IS_ALWAYS_24H docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-day-is-always-24h).
 
@@ -943,7 +943,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `transaction_abort_on_error`<sup>Optional</sup> <a name="transaction_abort_on_error" id="@cdktf/provider-snowflake.task.Task.Initializer.parameter.transactionAbortOnError"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies the action to perform when a statement issued within a non-autocommit transaction returns with an error.
 
@@ -985,7 +985,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `use_cached_result`<sup>Optional</sup> <a name="use_cached_result" id="@cdktf/provider-snowflake.task.Task.Initializer.parameter.useCachedResult"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether to reuse persisted query results, if available, when a matching query is submitted.
 
@@ -1400,7 +1400,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-snowflake.task.Task.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-snowflake.task.Task.importFrom"></a>
@@ -1463,7 +1463,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -1479,7 +1479,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-snowflake.task.Task.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -2130,72 +2130,72 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.fullyQualifiedName">fully_qualified_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.parameters">parameters</a></code> | <code><a href="#@cdktf/provider-snowflake.task.TaskParametersList">TaskParametersList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.schedule">schedule</a></code> | <code><a href="#@cdktf/provider-snowflake.task.TaskScheduleOutputReference">TaskScheduleOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.showOutput">show_output</a></code> | <code><a href="#@cdktf/provider-snowflake.task.TaskShowOutputList">TaskShowOutputList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.task.TaskTimeoutsOutputReference">TaskTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.abortDetachedQueryInput">abort_detached_query_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.abortDetachedQueryInput">abort_detached_query_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.afterInput">after_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.allowOverlappingExecutionInput">allow_overlapping_execution_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.autocommitInput">autocommit_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.autocommitInput">autocommit_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.binaryInputFormatInput">binary_input_format_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.binaryOutputFormatInput">binary_output_format_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.clientMemoryLimitInput">client_memory_limit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.clientMetadataRequestUseConnectionCtxInput">client_metadata_request_use_connection_ctx_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.clientMetadataRequestUseConnectionCtxInput">client_metadata_request_use_connection_ctx_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.clientPrefetchThreadsInput">client_prefetch_threads_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.clientResultChunkSizeInput">client_result_chunk_size_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.clientResultColumnCaseInsensitiveInput">client_result_column_case_insensitive_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.clientResultColumnCaseInsensitiveInput">client_result_column_case_insensitive_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.clientSessionKeepAliveHeartbeatFrequencyInput">client_session_keep_alive_heartbeat_frequency_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.clientSessionKeepAliveInput">client_session_keep_alive_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.clientSessionKeepAliveInput">client_session_keep_alive_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.clientTimestampTypeMappingInput">client_timestamp_type_mapping_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.commentInput">comment_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.configInput">config_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.databaseInput">database_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.dateInputFormatInput">date_input_format_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.dateOutputFormatInput">date_output_format_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.enableUnloadPhysicalTypeOptimizationInput">enable_unload_physical_type_optimization_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.enableUnloadPhysicalTypeOptimizationInput">enable_unload_physical_type_optimization_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.errorIntegrationInput">error_integration_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.errorOnNondeterministicMergeInput">error_on_nondeterministic_merge_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.errorOnNondeterministicUpdateInput">error_on_nondeterministic_update_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.errorOnNondeterministicMergeInput">error_on_nondeterministic_merge_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.errorOnNondeterministicUpdateInput">error_on_nondeterministic_update_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.finalizeInput">finalize_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.geographyOutputFormatInput">geography_output_format_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.geometryOutputFormatInput">geometry_output_format_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.jdbcTreatTimestampNtzAsUtcInput">jdbc_treat_timestamp_ntz_as_utc_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.jdbcUseSessionTimezoneInput">jdbc_use_session_timezone_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.jdbcTreatTimestampNtzAsUtcInput">jdbc_treat_timestamp_ntz_as_utc_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.jdbcUseSessionTimezoneInput">jdbc_use_session_timezone_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.jsonIndentInput">json_indent_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.lockTimeoutInput">lock_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.logLevelInput">log_level_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.multiStatementCountInput">multi_statement_count_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.noorderSequenceAsDefaultInput">noorder_sequence_as_default_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.odbcTreatDecimalAsIntInput">odbc_treat_decimal_as_int_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.noorderSequenceAsDefaultInput">noorder_sequence_as_default_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.odbcTreatDecimalAsIntInput">odbc_treat_decimal_as_int_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.queryTagInput">query_tag_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.quotedIdentifiersIgnoreCaseInput">quoted_identifiers_ignore_case_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.quotedIdentifiersIgnoreCaseInput">quoted_identifiers_ignore_case_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.rowsPerResultsetInput">rows_per_resultset_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.s3StageVpceDnsNameInput">s3_stage_vpce_dns_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.scheduleInput">schedule_input</a></code> | <code><a href="#@cdktf/provider-snowflake.task.TaskSchedule">TaskSchedule</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.schemaInput">schema_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.searchPathInput">search_path_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.sqlStatementInput">sql_statement_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.startedInput">started_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.startedInput">started_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.statementQueuedTimeoutInSecondsInput">statement_queued_timeout_in_seconds_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.statementTimeoutInSecondsInput">statement_timeout_in_seconds_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.strictJsonOutputInput">strict_json_output_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.strictJsonOutputInput">strict_json_output_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.suspendTaskAfterNumFailuresInput">suspend_task_after_num_failures_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.taskAutoRetryAttemptsInput">task_auto_retry_attempts_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.timeInputFormatInput">time_input_format_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.timeOutputFormatInput">time_output_format_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-snowflake.task.TaskTimeouts">TaskTimeouts</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.timestampDayIsAlways24HInput">timestamp_day_is_always24_h_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.task.TaskTimeouts">TaskTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.timestampDayIsAlways24HInput">timestamp_day_is_always24_h_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.timestampInputFormatInput">timestamp_input_format_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.timestampLtzOutputFormatInput">timestamp_ltz_output_format_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.timestampNtzOutputFormatInput">timestamp_ntz_output_format_input</a></code> | <code>str</code> | *No description.* |
@@ -2204,11 +2204,11 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.timestampTzOutputFormatInput">timestamp_tz_output_format_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.timezoneInput">timezone_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.traceLevelInput">trace_level_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.transactionAbortOnErrorInput">transaction_abort_on_error_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.transactionAbortOnErrorInput">transaction_abort_on_error_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.transactionDefaultIsolationLevelInput">transaction_default_isolation_level_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.twoDigitCenturyStartInput">two_digit_century_start_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.unsupportedDdlActionInput">unsupported_ddl_action_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.useCachedResultInput">use_cached_result_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.useCachedResultInput">use_cached_result_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.userTaskManagedInitialWarehouseSizeInput">user_task_managed_initial_warehouse_size_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.userTaskMinimumTriggerIntervalInSecondsInput">user_task_minimum_trigger_interval_in_seconds_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.userTaskTimeoutMsInput">user_task_timeout_ms_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -2216,18 +2216,18 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.weekOfYearPolicyInput">week_of_year_policy_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.weekStartInput">week_start_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.whenInput">when_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.abortDetachedQuery">abort_detached_query</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.abortDetachedQuery">abort_detached_query</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.after">after</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.allowOverlappingExecution">allow_overlapping_execution</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.autocommit">autocommit</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.autocommit">autocommit</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.binaryInputFormat">binary_input_format</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.binaryOutputFormat">binary_output_format</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.clientMemoryLimit">client_memory_limit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.clientMetadataRequestUseConnectionCtx">client_metadata_request_use_connection_ctx</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.clientMetadataRequestUseConnectionCtx">client_metadata_request_use_connection_ctx</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.clientPrefetchThreads">client_prefetch_threads</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.clientResultChunkSize">client_result_chunk_size</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.clientResultColumnCaseInsensitive">client_result_column_case_insensitive</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.clientSessionKeepAlive">client_session_keep_alive</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.clientResultColumnCaseInsensitive">client_result_column_case_insensitive</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.clientSessionKeepAlive">client_session_keep_alive</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.clientSessionKeepAliveHeartbeatFrequency">client_session_keep_alive_heartbeat_frequency</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.clientTimestampTypeMapping">client_timestamp_type_mapping</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.comment">comment</a></code> | <code>str</code> | *No description.* |
@@ -2235,39 +2235,39 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.database">database</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.dateInputFormat">date_input_format</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.dateOutputFormat">date_output_format</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.enableUnloadPhysicalTypeOptimization">enable_unload_physical_type_optimization</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.enableUnloadPhysicalTypeOptimization">enable_unload_physical_type_optimization</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.errorIntegration">error_integration</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.errorOnNondeterministicMerge">error_on_nondeterministic_merge</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.errorOnNondeterministicUpdate">error_on_nondeterministic_update</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.errorOnNondeterministicMerge">error_on_nondeterministic_merge</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.errorOnNondeterministicUpdate">error_on_nondeterministic_update</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.finalize">finalize</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.geographyOutputFormat">geography_output_format</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.geometryOutputFormat">geometry_output_format</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.jdbcTreatTimestampNtzAsUtc">jdbc_treat_timestamp_ntz_as_utc</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.jdbcUseSessionTimezone">jdbc_use_session_timezone</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.jdbcTreatTimestampNtzAsUtc">jdbc_treat_timestamp_ntz_as_utc</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.jdbcUseSessionTimezone">jdbc_use_session_timezone</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.jsonIndent">json_indent</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.lockTimeout">lock_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.logLevel">log_level</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.multiStatementCount">multi_statement_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.noorderSequenceAsDefault">noorder_sequence_as_default</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.odbcTreatDecimalAsInt">odbc_treat_decimal_as_int</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.noorderSequenceAsDefault">noorder_sequence_as_default</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.odbcTreatDecimalAsInt">odbc_treat_decimal_as_int</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.queryTag">query_tag</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.quotedIdentifiersIgnoreCase">quoted_identifiers_ignore_case</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.quotedIdentifiersIgnoreCase">quoted_identifiers_ignore_case</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.rowsPerResultset">rows_per_resultset</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.s3StageVpceDnsName">s3_stage_vpce_dns_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.schema">schema</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.searchPath">search_path</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.sqlStatement">sql_statement</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.started">started</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.started">started</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.statementQueuedTimeoutInSeconds">statement_queued_timeout_in_seconds</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.statementTimeoutInSeconds">statement_timeout_in_seconds</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.strictJsonOutput">strict_json_output</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.strictJsonOutput">strict_json_output</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.suspendTaskAfterNumFailures">suspend_task_after_num_failures</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.taskAutoRetryAttempts">task_auto_retry_attempts</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.timeInputFormat">time_input_format</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.timeOutputFormat">time_output_format</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.timestampDayIsAlways24H">timestamp_day_is_always24_h</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.timestampDayIsAlways24H">timestamp_day_is_always24_h</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.timestampInputFormat">timestamp_input_format</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.timestampLtzOutputFormat">timestamp_ltz_output_format</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.timestampNtzOutputFormat">timestamp_ntz_output_format</a></code> | <code>str</code> | *No description.* |
@@ -2276,11 +2276,11 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.timestampTzOutputFormat">timestamp_tz_output_format</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.timezone">timezone</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.traceLevel">trace_level</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.transactionAbortOnError">transaction_abort_on_error</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.transactionAbortOnError">transaction_abort_on_error</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.transactionDefaultIsolationLevel">transaction_default_isolation_level</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.twoDigitCenturyStart">two_digit_century_start</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.unsupportedDdlAction">unsupported_ddl_action</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.Task.property.useCachedResult">use_cached_result</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.Task.property.useCachedResult">use_cached_result</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.userTaskManagedInitialWarehouseSize">user_task_managed_initial_warehouse_size</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.userTaskMinimumTriggerIntervalInSeconds">user_task_minimum_trigger_interval_in_seconds</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.Task.property.userTaskTimeoutMs">user_task_timeout_ms</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -2366,20 +2366,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.task.Task.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.task.Task.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -2426,10 +2426,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.task.Task.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -2486,10 +2486,10 @@ timeouts: TaskTimeoutsOutputReference
 ##### `abort_detached_query_input`<sup>Optional</sup> <a name="abort_detached_query_input" id="@cdktf/provider-snowflake.task.Task.property.abortDetachedQueryInput"></a>
 
 ```python
-abort_detached_query_input: typing.Union[bool, IResolvable]
+abort_detached_query_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2516,10 +2516,10 @@ allow_overlapping_execution_input: str
 ##### `autocommit_input`<sup>Optional</sup> <a name="autocommit_input" id="@cdktf/provider-snowflake.task.Task.property.autocommitInput"></a>
 
 ```python
-autocommit_input: typing.Union[bool, IResolvable]
+autocommit_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2556,10 +2556,10 @@ client_memory_limit_input: typing.Union[int, float]
 ##### `client_metadata_request_use_connection_ctx_input`<sup>Optional</sup> <a name="client_metadata_request_use_connection_ctx_input" id="@cdktf/provider-snowflake.task.Task.property.clientMetadataRequestUseConnectionCtxInput"></a>
 
 ```python
-client_metadata_request_use_connection_ctx_input: typing.Union[bool, IResolvable]
+client_metadata_request_use_connection_ctx_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2586,10 +2586,10 @@ client_result_chunk_size_input: typing.Union[int, float]
 ##### `client_result_column_case_insensitive_input`<sup>Optional</sup> <a name="client_result_column_case_insensitive_input" id="@cdktf/provider-snowflake.task.Task.property.clientResultColumnCaseInsensitiveInput"></a>
 
 ```python
-client_result_column_case_insensitive_input: typing.Union[bool, IResolvable]
+client_result_column_case_insensitive_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2606,10 +2606,10 @@ client_session_keep_alive_heartbeat_frequency_input: typing.Union[int, float]
 ##### `client_session_keep_alive_input`<sup>Optional</sup> <a name="client_session_keep_alive_input" id="@cdktf/provider-snowflake.task.Task.property.clientSessionKeepAliveInput"></a>
 
 ```python
-client_session_keep_alive_input: typing.Union[bool, IResolvable]
+client_session_keep_alive_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2676,10 +2676,10 @@ date_output_format_input: str
 ##### `enable_unload_physical_type_optimization_input`<sup>Optional</sup> <a name="enable_unload_physical_type_optimization_input" id="@cdktf/provider-snowflake.task.Task.property.enableUnloadPhysicalTypeOptimizationInput"></a>
 
 ```python
-enable_unload_physical_type_optimization_input: typing.Union[bool, IResolvable]
+enable_unload_physical_type_optimization_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2696,20 +2696,20 @@ error_integration_input: str
 ##### `error_on_nondeterministic_merge_input`<sup>Optional</sup> <a name="error_on_nondeterministic_merge_input" id="@cdktf/provider-snowflake.task.Task.property.errorOnNondeterministicMergeInput"></a>
 
 ```python
-error_on_nondeterministic_merge_input: typing.Union[bool, IResolvable]
+error_on_nondeterministic_merge_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `error_on_nondeterministic_update_input`<sup>Optional</sup> <a name="error_on_nondeterministic_update_input" id="@cdktf/provider-snowflake.task.Task.property.errorOnNondeterministicUpdateInput"></a>
 
 ```python
-error_on_nondeterministic_update_input: typing.Union[bool, IResolvable]
+error_on_nondeterministic_update_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2756,20 +2756,20 @@ id_input: str
 ##### `jdbc_treat_timestamp_ntz_as_utc_input`<sup>Optional</sup> <a name="jdbc_treat_timestamp_ntz_as_utc_input" id="@cdktf/provider-snowflake.task.Task.property.jdbcTreatTimestampNtzAsUtcInput"></a>
 
 ```python
-jdbc_treat_timestamp_ntz_as_utc_input: typing.Union[bool, IResolvable]
+jdbc_treat_timestamp_ntz_as_utc_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `jdbc_use_session_timezone_input`<sup>Optional</sup> <a name="jdbc_use_session_timezone_input" id="@cdktf/provider-snowflake.task.Task.property.jdbcUseSessionTimezoneInput"></a>
 
 ```python
-jdbc_use_session_timezone_input: typing.Union[bool, IResolvable]
+jdbc_use_session_timezone_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2826,20 +2826,20 @@ name_input: str
 ##### `noorder_sequence_as_default_input`<sup>Optional</sup> <a name="noorder_sequence_as_default_input" id="@cdktf/provider-snowflake.task.Task.property.noorderSequenceAsDefaultInput"></a>
 
 ```python
-noorder_sequence_as_default_input: typing.Union[bool, IResolvable]
+noorder_sequence_as_default_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `odbc_treat_decimal_as_int_input`<sup>Optional</sup> <a name="odbc_treat_decimal_as_int_input" id="@cdktf/provider-snowflake.task.Task.property.odbcTreatDecimalAsIntInput"></a>
 
 ```python
-odbc_treat_decimal_as_int_input: typing.Union[bool, IResolvable]
+odbc_treat_decimal_as_int_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2856,10 +2856,10 @@ query_tag_input: str
 ##### `quoted_identifiers_ignore_case_input`<sup>Optional</sup> <a name="quoted_identifiers_ignore_case_input" id="@cdktf/provider-snowflake.task.Task.property.quotedIdentifiersIgnoreCaseInput"></a>
 
 ```python
-quoted_identifiers_ignore_case_input: typing.Union[bool, IResolvable]
+quoted_identifiers_ignore_case_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2926,10 +2926,10 @@ sql_statement_input: str
 ##### `started_input`<sup>Optional</sup> <a name="started_input" id="@cdktf/provider-snowflake.task.Task.property.startedInput"></a>
 
 ```python
-started_input: typing.Union[bool, IResolvable]
+started_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2956,10 +2956,10 @@ statement_timeout_in_seconds_input: typing.Union[int, float]
 ##### `strict_json_output_input`<sup>Optional</sup> <a name="strict_json_output_input" id="@cdktf/provider-snowflake.task.Task.property.strictJsonOutputInput"></a>
 
 ```python
-strict_json_output_input: typing.Union[bool, IResolvable]
+strict_json_output_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3006,20 +3006,20 @@ time_output_format_input: str
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-snowflake.task.Task.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[IResolvable, TaskTimeouts]
+timeouts_input: IResolvable | TaskTimeouts
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-snowflake.task.TaskTimeouts">TaskTimeouts</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-snowflake.task.TaskTimeouts">TaskTimeouts</a>
 
 ---
 
 ##### `timestamp_day_is_always24_h_input`<sup>Optional</sup> <a name="timestamp_day_is_always24_h_input" id="@cdktf/provider-snowflake.task.Task.property.timestampDayIsAlways24HInput"></a>
 
 ```python
-timestamp_day_is_always24_h_input: typing.Union[bool, IResolvable]
+timestamp_day_is_always24_h_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3106,10 +3106,10 @@ trace_level_input: str
 ##### `transaction_abort_on_error_input`<sup>Optional</sup> <a name="transaction_abort_on_error_input" id="@cdktf/provider-snowflake.task.Task.property.transactionAbortOnErrorInput"></a>
 
 ```python
-transaction_abort_on_error_input: typing.Union[bool, IResolvable]
+transaction_abort_on_error_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3146,10 +3146,10 @@ unsupported_ddl_action_input: str
 ##### `use_cached_result_input`<sup>Optional</sup> <a name="use_cached_result_input" id="@cdktf/provider-snowflake.task.Task.property.useCachedResultInput"></a>
 
 ```python
-use_cached_result_input: typing.Union[bool, IResolvable]
+use_cached_result_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3226,10 +3226,10 @@ when_input: str
 ##### `abort_detached_query`<sup>Required</sup> <a name="abort_detached_query" id="@cdktf/provider-snowflake.task.Task.property.abortDetachedQuery"></a>
 
 ```python
-abort_detached_query: typing.Union[bool, IResolvable]
+abort_detached_query: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3256,10 +3256,10 @@ allow_overlapping_execution: str
 ##### `autocommit`<sup>Required</sup> <a name="autocommit" id="@cdktf/provider-snowflake.task.Task.property.autocommit"></a>
 
 ```python
-autocommit: typing.Union[bool, IResolvable]
+autocommit: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3296,10 +3296,10 @@ client_memory_limit: typing.Union[int, float]
 ##### `client_metadata_request_use_connection_ctx`<sup>Required</sup> <a name="client_metadata_request_use_connection_ctx" id="@cdktf/provider-snowflake.task.Task.property.clientMetadataRequestUseConnectionCtx"></a>
 
 ```python
-client_metadata_request_use_connection_ctx: typing.Union[bool, IResolvable]
+client_metadata_request_use_connection_ctx: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3326,20 +3326,20 @@ client_result_chunk_size: typing.Union[int, float]
 ##### `client_result_column_case_insensitive`<sup>Required</sup> <a name="client_result_column_case_insensitive" id="@cdktf/provider-snowflake.task.Task.property.clientResultColumnCaseInsensitive"></a>
 
 ```python
-client_result_column_case_insensitive: typing.Union[bool, IResolvable]
+client_result_column_case_insensitive: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `client_session_keep_alive`<sup>Required</sup> <a name="client_session_keep_alive" id="@cdktf/provider-snowflake.task.Task.property.clientSessionKeepAlive"></a>
 
 ```python
-client_session_keep_alive: typing.Union[bool, IResolvable]
+client_session_keep_alive: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3416,10 +3416,10 @@ date_output_format: str
 ##### `enable_unload_physical_type_optimization`<sup>Required</sup> <a name="enable_unload_physical_type_optimization" id="@cdktf/provider-snowflake.task.Task.property.enableUnloadPhysicalTypeOptimization"></a>
 
 ```python
-enable_unload_physical_type_optimization: typing.Union[bool, IResolvable]
+enable_unload_physical_type_optimization: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3436,20 +3436,20 @@ error_integration: str
 ##### `error_on_nondeterministic_merge`<sup>Required</sup> <a name="error_on_nondeterministic_merge" id="@cdktf/provider-snowflake.task.Task.property.errorOnNondeterministicMerge"></a>
 
 ```python
-error_on_nondeterministic_merge: typing.Union[bool, IResolvable]
+error_on_nondeterministic_merge: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `error_on_nondeterministic_update`<sup>Required</sup> <a name="error_on_nondeterministic_update" id="@cdktf/provider-snowflake.task.Task.property.errorOnNondeterministicUpdate"></a>
 
 ```python
-error_on_nondeterministic_update: typing.Union[bool, IResolvable]
+error_on_nondeterministic_update: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3496,20 +3496,20 @@ id: str
 ##### `jdbc_treat_timestamp_ntz_as_utc`<sup>Required</sup> <a name="jdbc_treat_timestamp_ntz_as_utc" id="@cdktf/provider-snowflake.task.Task.property.jdbcTreatTimestampNtzAsUtc"></a>
 
 ```python
-jdbc_treat_timestamp_ntz_as_utc: typing.Union[bool, IResolvable]
+jdbc_treat_timestamp_ntz_as_utc: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `jdbc_use_session_timezone`<sup>Required</sup> <a name="jdbc_use_session_timezone" id="@cdktf/provider-snowflake.task.Task.property.jdbcUseSessionTimezone"></a>
 
 ```python
-jdbc_use_session_timezone: typing.Union[bool, IResolvable]
+jdbc_use_session_timezone: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3566,20 +3566,20 @@ name: str
 ##### `noorder_sequence_as_default`<sup>Required</sup> <a name="noorder_sequence_as_default" id="@cdktf/provider-snowflake.task.Task.property.noorderSequenceAsDefault"></a>
 
 ```python
-noorder_sequence_as_default: typing.Union[bool, IResolvable]
+noorder_sequence_as_default: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `odbc_treat_decimal_as_int`<sup>Required</sup> <a name="odbc_treat_decimal_as_int" id="@cdktf/provider-snowflake.task.Task.property.odbcTreatDecimalAsInt"></a>
 
 ```python
-odbc_treat_decimal_as_int: typing.Union[bool, IResolvable]
+odbc_treat_decimal_as_int: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3596,10 +3596,10 @@ query_tag: str
 ##### `quoted_identifiers_ignore_case`<sup>Required</sup> <a name="quoted_identifiers_ignore_case" id="@cdktf/provider-snowflake.task.Task.property.quotedIdentifiersIgnoreCase"></a>
 
 ```python
-quoted_identifiers_ignore_case: typing.Union[bool, IResolvable]
+quoted_identifiers_ignore_case: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3656,10 +3656,10 @@ sql_statement: str
 ##### `started`<sup>Required</sup> <a name="started" id="@cdktf/provider-snowflake.task.Task.property.started"></a>
 
 ```python
-started: typing.Union[bool, IResolvable]
+started: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3686,10 +3686,10 @@ statement_timeout_in_seconds: typing.Union[int, float]
 ##### `strict_json_output`<sup>Required</sup> <a name="strict_json_output" id="@cdktf/provider-snowflake.task.Task.property.strictJsonOutput"></a>
 
 ```python
-strict_json_output: typing.Union[bool, IResolvable]
+strict_json_output: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3736,10 +3736,10 @@ time_output_format: str
 ##### `timestamp_day_is_always24_h`<sup>Required</sup> <a name="timestamp_day_is_always24_h" id="@cdktf/provider-snowflake.task.Task.property.timestampDayIsAlways24H"></a>
 
 ```python
-timestamp_day_is_always24_h: typing.Union[bool, IResolvable]
+timestamp_day_is_always24_h: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3826,10 +3826,10 @@ trace_level: str
 ##### `transaction_abort_on_error`<sup>Required</sup> <a name="transaction_abort_on_error" id="@cdktf/provider-snowflake.task.Task.property.transactionAbortOnError"></a>
 
 ```python
-transaction_abort_on_error: typing.Union[bool, IResolvable]
+transaction_abort_on_error: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3866,10 +3866,10 @@ unsupported_ddl_action: str
 ##### `use_cached_result`<sup>Required</sup> <a name="use_cached_result" id="@cdktf/provider-snowflake.task.Task.property.useCachedResult"></a>
 
 ```python
-use_cached_result: typing.Union[bool, IResolvable]
+use_cached_result: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3971,67 +3971,67 @@ tfResourceType: str
 from cdktf_cdktf_provider_snowflake import task
 
 task.TaskConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   database: str,
   name: str,
   schema: str,
   sql_statement: str,
-  started: typing.Union[bool, IResolvable],
-  abort_detached_query: typing.Union[bool, IResolvable] = None,
+  started: bool | IResolvable,
+  abort_detached_query: bool | IResolvable = None,
   after: typing.List[str] = None,
   allow_overlapping_execution: str = None,
-  autocommit: typing.Union[bool, IResolvable] = None,
+  autocommit: bool | IResolvable = None,
   binary_input_format: str = None,
   binary_output_format: str = None,
   client_memory_limit: typing.Union[int, float] = None,
-  client_metadata_request_use_connection_ctx: typing.Union[bool, IResolvable] = None,
+  client_metadata_request_use_connection_ctx: bool | IResolvable = None,
   client_prefetch_threads: typing.Union[int, float] = None,
   client_result_chunk_size: typing.Union[int, float] = None,
-  client_result_column_case_insensitive: typing.Union[bool, IResolvable] = None,
-  client_session_keep_alive: typing.Union[bool, IResolvable] = None,
+  client_result_column_case_insensitive: bool | IResolvable = None,
+  client_session_keep_alive: bool | IResolvable = None,
   client_session_keep_alive_heartbeat_frequency: typing.Union[int, float] = None,
   client_timestamp_type_mapping: str = None,
   comment: str = None,
   config: str = None,
   date_input_format: str = None,
   date_output_format: str = None,
-  enable_unload_physical_type_optimization: typing.Union[bool, IResolvable] = None,
+  enable_unload_physical_type_optimization: bool | IResolvable = None,
   error_integration: str = None,
-  error_on_nondeterministic_merge: typing.Union[bool, IResolvable] = None,
-  error_on_nondeterministic_update: typing.Union[bool, IResolvable] = None,
+  error_on_nondeterministic_merge: bool | IResolvable = None,
+  error_on_nondeterministic_update: bool | IResolvable = None,
   finalize: str = None,
   geography_output_format: str = None,
   geometry_output_format: str = None,
   id: str = None,
-  jdbc_treat_timestamp_ntz_as_utc: typing.Union[bool, IResolvable] = None,
-  jdbc_use_session_timezone: typing.Union[bool, IResolvable] = None,
+  jdbc_treat_timestamp_ntz_as_utc: bool | IResolvable = None,
+  jdbc_use_session_timezone: bool | IResolvable = None,
   json_indent: typing.Union[int, float] = None,
   lock_timeout: typing.Union[int, float] = None,
   log_level: str = None,
   multi_statement_count: typing.Union[int, float] = None,
-  noorder_sequence_as_default: typing.Union[bool, IResolvable] = None,
-  odbc_treat_decimal_as_int: typing.Union[bool, IResolvable] = None,
+  noorder_sequence_as_default: bool | IResolvable = None,
+  odbc_treat_decimal_as_int: bool | IResolvable = None,
   query_tag: str = None,
-  quoted_identifiers_ignore_case: typing.Union[bool, IResolvable] = None,
+  quoted_identifiers_ignore_case: bool | IResolvable = None,
   rows_per_resultset: typing.Union[int, float] = None,
   s3_stage_vpce_dns_name: str = None,
   schedule: TaskSchedule = None,
   search_path: str = None,
   statement_queued_timeout_in_seconds: typing.Union[int, float] = None,
   statement_timeout_in_seconds: typing.Union[int, float] = None,
-  strict_json_output: typing.Union[bool, IResolvable] = None,
+  strict_json_output: bool | IResolvable = None,
   suspend_task_after_num_failures: typing.Union[int, float] = None,
   task_auto_retry_attempts: typing.Union[int, float] = None,
   time_input_format: str = None,
   time_output_format: str = None,
   timeouts: TaskTimeouts = None,
-  timestamp_day_is_always24_h: typing.Union[bool, IResolvable] = None,
+  timestamp_day_is_always24_h: bool | IResolvable = None,
   timestamp_input_format: str = None,
   timestamp_ltz_output_format: str = None,
   timestamp_ntz_output_format: str = None,
@@ -4040,11 +4040,11 @@ task.TaskConfig(
   timestamp_tz_output_format: str = None,
   timezone: str = None,
   trace_level: str = None,
-  transaction_abort_on_error: typing.Union[bool, IResolvable] = None,
+  transaction_abort_on_error: bool | IResolvable = None,
   transaction_default_isolation_level: str = None,
   two_digit_century_start: typing.Union[int, float] = None,
   unsupported_ddl_action: str = None,
-  use_cached_result: typing.Union[bool, IResolvable] = None,
+  use_cached_result: bool | IResolvable = None,
   user_task_managed_initial_warehouse_size: str = None,
   user_task_minimum_trigger_interval_in_seconds: typing.Union[int, float] = None,
   user_task_timeout_ms: typing.Union[int, float] = None,
@@ -4059,67 +4059,67 @@ task.TaskConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.database">database</a></code> | <code>str</code> | The database in which to create the task. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.name">name</a></code> | <code>str</code> | Specifies the identifier for the task; |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.schema">schema</a></code> | <code>str</code> | The schema in which to create the task. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.sqlStatement">sql_statement</a></code> | <code>str</code> | Any single SQL statement, or a call to a stored procedure, executed when the task runs. |
-| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.started">started</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies if the task should be started or suspended. |
-| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.abortDetachedQuery">abort_detached_query</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies the action that Snowflake performs for in-progress queries if connectivity is lost due to abrupt termination of a session (e.g. network outage, browser termination, service interruption). For more information, check [ABORT_DETACHED_QUERY docs](https://docs.snowflake.com/en/sql-reference/parameters#abort-detached-query). |
+| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.started">started</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies if the task should be started or suspended. |
+| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.abortDetachedQuery">abort_detached_query</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies the action that Snowflake performs for in-progress queries if connectivity is lost due to abrupt termination of a session (e.g. network outage, browser termination, service interruption). For more information, check [ABORT_DETACHED_QUERY docs](https://docs.snowflake.com/en/sql-reference/parameters#abort-detached-query). |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.after">after</a></code> | <code>typing.List[str]</code> | Specifies one or more predecessor tasks for the current task. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.allowOverlappingExecution">allow_overlapping_execution</a></code> | <code>str</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) By default, Snowflake ensures that only one instance of a particular DAG is allowed to run at a time, setting the parameter value to TRUE permits DAG runs to overlap. |
-| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.autocommit">autocommit</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether autocommit is enabled for the session. |
+| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.autocommit">autocommit</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether autocommit is enabled for the session. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.binaryInputFormat">binary_input_format</a></code> | <code>str</code> | The format of VARCHAR values passed as input to VARCHAR-to-BINARY conversion functions. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.binaryOutputFormat">binary_output_format</a></code> | <code>str</code> | The format for VARCHAR values returned as output by BINARY-to-VARCHAR conversion functions. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.clientMemoryLimit">client_memory_limit</a></code> | <code>typing.Union[int, float]</code> | Parameter that specifies the maximum amount of memory the JDBC driver or ODBC driver should use for the result set from queries (in MB). |
-| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.clientMetadataRequestUseConnectionCtx">client_metadata_request_use_connection_ctx</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | For specific ODBC functions and JDBC methods, this parameter can change the default search scope from all databases/schemas to the current database/schema. |
+| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.clientMetadataRequestUseConnectionCtx">client_metadata_request_use_connection_ctx</a></code> | <code>bool \| cdktf.IResolvable</code> | For specific ODBC functions and JDBC methods, this parameter can change the default search scope from all databases/schemas to the current database/schema. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.clientPrefetchThreads">client_prefetch_threads</a></code> | <code>typing.Union[int, float]</code> | Parameter that specifies the number of threads used by the client to pre-fetch large result sets. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.clientResultChunkSize">client_result_chunk_size</a></code> | <code>typing.Union[int, float]</code> | Parameter that specifies the maximum size of each set (or chunk) of query results to download (in MB). |
-| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.clientResultColumnCaseInsensitive">client_result_column_case_insensitive</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Parameter that indicates whether to match column name case-insensitively in ResultSet.get* methods in JDBC. For more information, check [CLIENT_RESULT_COLUMN_CASE_INSENSITIVE docs](https://docs.snowflake.com/en/sql-reference/parameters#client-result-column-case-insensitive). |
-| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.clientSessionKeepAlive">client_session_keep_alive</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Parameter that indicates whether to force a user to log in again after a period of inactivity in the session. |
+| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.clientResultColumnCaseInsensitive">client_result_column_case_insensitive</a></code> | <code>bool \| cdktf.IResolvable</code> | Parameter that indicates whether to match column name case-insensitively in ResultSet.get* methods in JDBC. For more information, check [CLIENT_RESULT_COLUMN_CASE_INSENSITIVE docs](https://docs.snowflake.com/en/sql-reference/parameters#client-result-column-case-insensitive). |
+| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.clientSessionKeepAlive">client_session_keep_alive</a></code> | <code>bool \| cdktf.IResolvable</code> | Parameter that indicates whether to force a user to log in again after a period of inactivity in the session. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.clientSessionKeepAliveHeartbeatFrequency">client_session_keep_alive_heartbeat_frequency</a></code> | <code>typing.Union[int, float]</code> | Number of seconds in-between client attempts to update the token for the session. For more information, check [CLIENT_SESSION_KEEP_ALIVE_HEARTBEAT_FREQUENCY docs](https://docs.snowflake.com/en/sql-reference/parameters#client-session-keep-alive-heartbeat-frequency). |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.clientTimestampTypeMapping">client_timestamp_type_mapping</a></code> | <code>str</code> | Specifies the [TIMESTAMP_* variation](https://docs.snowflake.com/en/sql-reference/data-types-datetime.html#label-datatypes-timestamp-variations) to use when binding timestamp variables for JDBC or ODBC applications that use the bind API to load data. For more information, check [CLIENT_TIMESTAMP_TYPE_MAPPING docs](https://docs.snowflake.com/en/sql-reference/parameters#client-timestamp-type-mapping). |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.comment">comment</a></code> | <code>str</code> | Specifies a comment for the task. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.config">config</a></code> | <code>str</code> | Specifies a string representation of key value pairs that can be accessed by all tasks in the task graph. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.dateInputFormat">date_input_format</a></code> | <code>str</code> | Specifies the input format for the DATE data type. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.dateOutputFormat">date_output_format</a></code> | <code>str</code> | Specifies the display format for the DATE data type. |
-| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.enableUnloadPhysicalTypeOptimization">enable_unload_physical_type_optimization</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether to set the schema for unloaded Parquet files based on the logical column data types (i.e. the types in the unload SQL query or source table) or on the unloaded column values (i.e. the smallest data types and precision that support the values in the output columns of the unload SQL statement or source table). For more information, check [ENABLE_UNLOAD_PHYSICAL_TYPE_OPTIMIZATION docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-unload-physical-type-optimization). |
+| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.enableUnloadPhysicalTypeOptimization">enable_unload_physical_type_optimization</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether to set the schema for unloaded Parquet files based on the logical column data types (i.e. the types in the unload SQL query or source table) or on the unloaded column values (i.e. the smallest data types and precision that support the values in the output columns of the unload SQL statement or source table). For more information, check [ENABLE_UNLOAD_PHYSICAL_TYPE_OPTIMIZATION docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-unload-physical-type-optimization). |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.errorIntegration">error_integration</a></code> | <code>str</code> | Specifies the name of the notification integration used for error notifications. |
-| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.errorOnNondeterministicMerge">error_on_nondeterministic_merge</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether to return an error when the [MERGE](https://docs.snowflake.com/en/sql-reference/sql/merge) command is used to update or delete a target row that joins multiple source rows and the system cannot determine the action to perform on the target row. For more information, check [ERROR_ON_NONDETERMINISTIC_MERGE docs](https://docs.snowflake.com/en/sql-reference/parameters#error-on-nondeterministic-merge). |
-| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.errorOnNondeterministicUpdate">error_on_nondeterministic_update</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether to return an error when the [UPDATE](https://docs.snowflake.com/en/sql-reference/sql/update) command is used to update a target row that joins multiple source rows and the system cannot determine the action to perform on the target row. For more information, check [ERROR_ON_NONDETERMINISTIC_UPDATE docs](https://docs.snowflake.com/en/sql-reference/parameters#error-on-nondeterministic-update). |
+| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.errorOnNondeterministicMerge">error_on_nondeterministic_merge</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether to return an error when the [MERGE](https://docs.snowflake.com/en/sql-reference/sql/merge) command is used to update or delete a target row that joins multiple source rows and the system cannot determine the action to perform on the target row. For more information, check [ERROR_ON_NONDETERMINISTIC_MERGE docs](https://docs.snowflake.com/en/sql-reference/parameters#error-on-nondeterministic-merge). |
+| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.errorOnNondeterministicUpdate">error_on_nondeterministic_update</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether to return an error when the [UPDATE](https://docs.snowflake.com/en/sql-reference/sql/update) command is used to update a target row that joins multiple source rows and the system cannot determine the action to perform on the target row. For more information, check [ERROR_ON_NONDETERMINISTIC_UPDATE docs](https://docs.snowflake.com/en/sql-reference/parameters#error-on-nondeterministic-update). |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.finalize">finalize</a></code> | <code>str</code> | Specifies the name of a root task that the finalizer task is associated with. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.geographyOutputFormat">geography_output_format</a></code> | <code>str</code> | Display format for [GEOGRAPHY values](https://docs.snowflake.com/en/sql-reference/data-types-geospatial.html#label-data-types-geography). For more information, check [GEOGRAPHY_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#geography-output-format). |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.geometryOutputFormat">geometry_output_format</a></code> | <code>str</code> | Display format for [GEOMETRY values](https://docs.snowflake.com/en/sql-reference/data-types-geospatial.html#label-data-types-geometry). For more information, check [GEOMETRY_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#geometry-output-format). |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/task#id Task#id}. |
-| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.jdbcTreatTimestampNtzAsUtc">jdbc_treat_timestamp_ntz_as_utc</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies how JDBC processes TIMESTAMP_NTZ values. For more information, check [JDBC_TREAT_TIMESTAMP_NTZ_AS_UTC docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-treat-timestamp-ntz-as-utc). |
-| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.jdbcUseSessionTimezone">jdbc_use_session_timezone</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether the JDBC Driver uses the time zone of the JVM or the time zone of the session (specified by the [TIMEZONE](https://docs.snowflake.com/en/sql-reference/parameters#label-timezone) parameter) for the getDate(), getTime(), and getTimestamp() methods of the ResultSet class. For more information, check [JDBC_USE_SESSION_TIMEZONE docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-use-session-timezone). |
+| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.jdbcTreatTimestampNtzAsUtc">jdbc_treat_timestamp_ntz_as_utc</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies how JDBC processes TIMESTAMP_NTZ values. For more information, check [JDBC_TREAT_TIMESTAMP_NTZ_AS_UTC docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-treat-timestamp-ntz-as-utc). |
+| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.jdbcUseSessionTimezone">jdbc_use_session_timezone</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether the JDBC Driver uses the time zone of the JVM or the time zone of the session (specified by the [TIMEZONE](https://docs.snowflake.com/en/sql-reference/parameters#label-timezone) parameter) for the getDate(), getTime(), and getTimestamp() methods of the ResultSet class. For more information, check [JDBC_USE_SESSION_TIMEZONE docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-use-session-timezone). |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.jsonIndent">json_indent</a></code> | <code>typing.Union[int, float]</code> | Specifies the number of blank spaces to indent each new element in JSON output in the session. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.lockTimeout">lock_timeout</a></code> | <code>typing.Union[int, float]</code> | Number of seconds to wait while trying to lock a resource, before timing out and aborting the statement. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.logLevel">log_level</a></code> | <code>str</code> | Specifies the severity level of messages that should be ingested and made available in the active event table. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.multiStatementCount">multi_statement_count</a></code> | <code>typing.Union[int, float]</code> | Number of statements to execute when using the multi-statement capability. For more information, check [MULTI_STATEMENT_COUNT docs](https://docs.snowflake.com/en/sql-reference/parameters#multi-statement-count). |
-| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.noorderSequenceAsDefault">noorder_sequence_as_default</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether the ORDER or NOORDER property is set by default when you create a new sequence or add a new table column. |
-| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.odbcTreatDecimalAsInt">odbc_treat_decimal_as_int</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies how ODBC processes columns that have a scale of zero (0). For more information, check [ODBC_TREAT_DECIMAL_AS_INT docs](https://docs.snowflake.com/en/sql-reference/parameters#odbc-treat-decimal-as-int). |
+| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.noorderSequenceAsDefault">noorder_sequence_as_default</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether the ORDER or NOORDER property is set by default when you create a new sequence or add a new table column. |
+| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.odbcTreatDecimalAsInt">odbc_treat_decimal_as_int</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies how ODBC processes columns that have a scale of zero (0). For more information, check [ODBC_TREAT_DECIMAL_AS_INT docs](https://docs.snowflake.com/en/sql-reference/parameters#odbc-treat-decimal-as-int). |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.queryTag">query_tag</a></code> | <code>str</code> | Optional string that can be used to tag queries and other SQL statements executed within a session. |
-| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.quotedIdentifiersIgnoreCase">quoted_identifiers_ignore_case</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether letters in double-quoted object identifiers are stored and resolved as uppercase letters. |
+| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.quotedIdentifiersIgnoreCase">quoted_identifiers_ignore_case</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether letters in double-quoted object identifiers are stored and resolved as uppercase letters. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.rowsPerResultset">rows_per_resultset</a></code> | <code>typing.Union[int, float]</code> | Specifies the maximum number of rows returned in a result set. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.s3StageVpceDnsName">s3_stage_vpce_dns_name</a></code> | <code>str</code> | Specifies the DNS name of an Amazon S3 interface endpoint. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.schedule">schedule</a></code> | <code><a href="#@cdktf/provider-snowflake.task.TaskSchedule">TaskSchedule</a></code> | schedule block. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.searchPath">search_path</a></code> | <code>str</code> | Specifies the path to search to resolve unqualified object names in queries. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.statementQueuedTimeoutInSeconds">statement_queued_timeout_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Amount of time, in seconds, a SQL statement (query, DDL, DML, etc.) remains queued for a warehouse before it is canceled by the system. This parameter can be used in conjunction with the [MAX_CONCURRENCY_LEVEL](https://docs.snowflake.com/en/sql-reference/parameters#label-max-concurrency-level) parameter to ensure a warehouse is never backlogged. For more information, check [STATEMENT_QUEUED_TIMEOUT_IN_SECONDS docs](https://docs.snowflake.com/en/sql-reference/parameters#statement-queued-timeout-in-seconds). |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.statementTimeoutInSeconds">statement_timeout_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Amount of time, in seconds, after which a running SQL statement (query, DDL, DML, etc.) is canceled by the system. For more information, check [STATEMENT_TIMEOUT_IN_SECONDS docs](https://docs.snowflake.com/en/sql-reference/parameters#statement-timeout-in-seconds). |
-| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.strictJsonOutput">strict_json_output</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | This parameter specifies whether JSON output in a session is compatible with the general standard (as described by [http://json.org](http://json.org)). By design, Snowflake allows JSON input that contains non-standard values; however, these non-standard values might result in Snowflake outputting JSON that is incompatible with other platforms and languages. This parameter, when enabled, ensures that Snowflake outputs valid/compatible JSON. For more information, check [STRICT_JSON_OUTPUT docs](https://docs.snowflake.com/en/sql-reference/parameters#strict-json-output). |
+| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.strictJsonOutput">strict_json_output</a></code> | <code>bool \| cdktf.IResolvable</code> | This parameter specifies whether JSON output in a session is compatible with the general standard (as described by [http://json.org](http://json.org)). By design, Snowflake allows JSON input that contains non-standard values; however, these non-standard values might result in Snowflake outputting JSON that is incompatible with other platforms and languages. This parameter, when enabled, ensures that Snowflake outputs valid/compatible JSON. For more information, check [STRICT_JSON_OUTPUT docs](https://docs.snowflake.com/en/sql-reference/parameters#strict-json-output). |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.suspendTaskAfterNumFailures">suspend_task_after_num_failures</a></code> | <code>typing.Union[int, float]</code> | Specifies the number of consecutive failed task runs after which the current task is suspended automatically. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.taskAutoRetryAttempts">task_auto_retry_attempts</a></code> | <code>typing.Union[int, float]</code> | Specifies the number of automatic task graph retry attempts. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.timeInputFormat">time_input_format</a></code> | <code>str</code> | Specifies the input format for the TIME data type. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.timeOutputFormat">time_output_format</a></code> | <code>str</code> | Specifies the display format for the TIME data type. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.task.TaskTimeouts">TaskTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.timestampDayIsAlways24H">timestamp_day_is_always24_h</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether the [DATEADD](https://docs.snowflake.com/en/sql-reference/functions/dateadd) function (and its aliases) always consider a day to be exactly 24 hours for expressions that span multiple days. For more information, check [TIMESTAMP_DAY_IS_ALWAYS_24H docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-day-is-always-24h). |
+| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.timestampDayIsAlways24H">timestamp_day_is_always24_h</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether the [DATEADD](https://docs.snowflake.com/en/sql-reference/functions/dateadd) function (and its aliases) always consider a day to be exactly 24 hours for expressions that span multiple days. For more information, check [TIMESTAMP_DAY_IS_ALWAYS_24H docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-day-is-always-24h). |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.timestampInputFormat">timestamp_input_format</a></code> | <code>str</code> | Specifies the input format for the TIMESTAMP data type alias. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.timestampLtzOutputFormat">timestamp_ltz_output_format</a></code> | <code>str</code> | Specifies the display format for the TIMESTAMP_LTZ data type. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.timestampNtzOutputFormat">timestamp_ntz_output_format</a></code> | <code>str</code> | Specifies the display format for the TIMESTAMP_NTZ data type. For more information, check [TIMESTAMP_NTZ_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-ntz-output-format). |
@@ -4128,11 +4128,11 @@ task.TaskConfig(
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.timestampTzOutputFormat">timestamp_tz_output_format</a></code> | <code>str</code> | Specifies the display format for the TIMESTAMP_TZ data type. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.timezone">timezone</a></code> | <code>str</code> | Specifies the time zone for the session. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.traceLevel">trace_level</a></code> | <code>str</code> | Controls how trace events are ingested into the event table. |
-| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.transactionAbortOnError">transaction_abort_on_error</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies the action to perform when a statement issued within a non-autocommit transaction returns with an error. |
+| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.transactionAbortOnError">transaction_abort_on_error</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies the action to perform when a statement issued within a non-autocommit transaction returns with an error. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.transactionDefaultIsolationLevel">transaction_default_isolation_level</a></code> | <code>str</code> | Specifies the isolation level for transactions in the user session. For more information, check [TRANSACTION_DEFAULT_ISOLATION_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#transaction-default-isolation-level). |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.twoDigitCenturyStart">two_digit_century_start</a></code> | <code>typing.Union[int, float]</code> | Specifies the “century start” year for 2-digit years (i.e. the earliest year such dates can represent). This parameter prevents ambiguous dates when importing or converting data with the `YY` date format component (i.e. years represented as 2 digits). For more information, check [TWO_DIGIT_CENTURY_START docs](https://docs.snowflake.com/en/sql-reference/parameters#two-digit-century-start). |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.unsupportedDdlAction">unsupported_ddl_action</a></code> | <code>str</code> | Determines if an unsupported (i.e. non-default) value specified for a constraint property returns an error. For more information, check [UNSUPPORTED_DDL_ACTION docs](https://docs.snowflake.com/en/sql-reference/parameters#unsupported-ddl-action). |
-| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.useCachedResult">use_cached_result</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether to reuse persisted query results, if available, when a matching query is submitted. |
+| <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.useCachedResult">use_cached_result</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether to reuse persisted query results, if available, when a matching query is submitted. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.userTaskManagedInitialWarehouseSize">user_task_managed_initial_warehouse_size</a></code> | <code>str</code> | Specifies the size of the compute resources to provision for the first run of the task, before a task history is available for Snowflake to determine an ideal size. |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.userTaskMinimumTriggerIntervalInSeconds">user_task_minimum_trigger_interval_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Minimum amount of time between Triggered Task executions in seconds For more information, check [USER_TASK_MINIMUM_TRIGGER_INTERVAL_IN_SECONDS docs](https://docs.snowflake.com/en/sql-reference/parameters#user-task-minimum-trigger-interval-in-seconds). |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskConfig.property.userTaskTimeoutMs">user_task_timeout_ms</a></code> | <code>typing.Union[int, float]</code> | Specifies the time limit on a single run of the task before it times out (in milliseconds). |
@@ -4146,20 +4146,20 @@ task.TaskConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.task.TaskConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.task.TaskConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -4206,10 +4206,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.task.TaskConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -4278,10 +4278,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `started`<sup>Required</sup> <a name="started" id="@cdktf/provider-snowflake.task.TaskConfig.property.started"></a>
 
 ```python
-started: typing.Union[bool, IResolvable]
+started: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies if the task should be started or suspended.
 
@@ -4292,10 +4292,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `abort_detached_query`<sup>Optional</sup> <a name="abort_detached_query" id="@cdktf/provider-snowflake.task.TaskConfig.property.abortDetachedQuery"></a>
 
 ```python
-abort_detached_query: typing.Union[bool, IResolvable]
+abort_detached_query: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies the action that Snowflake performs for in-progress queries if connectivity is lost due to abrupt termination of a session (e.g. network outage, browser termination, service interruption). For more information, check [ABORT_DETACHED_QUERY docs](https://docs.snowflake.com/en/sql-reference/parameters#abort-detached-query).
 
@@ -4338,10 +4338,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `autocommit`<sup>Optional</sup> <a name="autocommit" id="@cdktf/provider-snowflake.task.TaskConfig.property.autocommit"></a>
 
 ```python
-autocommit: typing.Union[bool, IResolvable]
+autocommit: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether autocommit is enabled for the session.
 
@@ -4402,10 +4402,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `client_metadata_request_use_connection_ctx`<sup>Optional</sup> <a name="client_metadata_request_use_connection_ctx" id="@cdktf/provider-snowflake.task.TaskConfig.property.clientMetadataRequestUseConnectionCtx"></a>
 
 ```python
-client_metadata_request_use_connection_ctx: typing.Union[bool, IResolvable]
+client_metadata_request_use_connection_ctx: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 For specific ODBC functions and JDBC methods, this parameter can change the default search scope from all databases/schemas to the current database/schema.
 
@@ -4450,10 +4450,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `client_result_column_case_insensitive`<sup>Optional</sup> <a name="client_result_column_case_insensitive" id="@cdktf/provider-snowflake.task.TaskConfig.property.clientResultColumnCaseInsensitive"></a>
 
 ```python
-client_result_column_case_insensitive: typing.Union[bool, IResolvable]
+client_result_column_case_insensitive: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Parameter that indicates whether to match column name case-insensitively in ResultSet.get* methods in JDBC. For more information, check [CLIENT_RESULT_COLUMN_CASE_INSENSITIVE docs](https://docs.snowflake.com/en/sql-reference/parameters#client-result-column-case-insensitive).
 
@@ -4464,10 +4464,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `client_session_keep_alive`<sup>Optional</sup> <a name="client_session_keep_alive" id="@cdktf/provider-snowflake.task.TaskConfig.property.clientSessionKeepAlive"></a>
 
 ```python
-client_session_keep_alive: typing.Union[bool, IResolvable]
+client_session_keep_alive: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Parameter that indicates whether to force a user to log in again after a period of inactivity in the session.
 
@@ -4570,10 +4570,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `enable_unload_physical_type_optimization`<sup>Optional</sup> <a name="enable_unload_physical_type_optimization" id="@cdktf/provider-snowflake.task.TaskConfig.property.enableUnloadPhysicalTypeOptimization"></a>
 
 ```python
-enable_unload_physical_type_optimization: typing.Union[bool, IResolvable]
+enable_unload_physical_type_optimization: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether to set the schema for unloaded Parquet files based on the logical column data types (i.e. the types in the unload SQL query or source table) or on the unloaded column values (i.e. the smallest data types and precision that support the values in the output columns of the unload SQL statement or source table). For more information, check [ENABLE_UNLOAD_PHYSICAL_TYPE_OPTIMIZATION docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-unload-physical-type-optimization).
 
@@ -4600,10 +4600,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `error_on_nondeterministic_merge`<sup>Optional</sup> <a name="error_on_nondeterministic_merge" id="@cdktf/provider-snowflake.task.TaskConfig.property.errorOnNondeterministicMerge"></a>
 
 ```python
-error_on_nondeterministic_merge: typing.Union[bool, IResolvable]
+error_on_nondeterministic_merge: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether to return an error when the [MERGE](https://docs.snowflake.com/en/sql-reference/sql/merge) command is used to update or delete a target row that joins multiple source rows and the system cannot determine the action to perform on the target row. For more information, check [ERROR_ON_NONDETERMINISTIC_MERGE docs](https://docs.snowflake.com/en/sql-reference/parameters#error-on-nondeterministic-merge).
 
@@ -4614,10 +4614,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `error_on_nondeterministic_update`<sup>Optional</sup> <a name="error_on_nondeterministic_update" id="@cdktf/provider-snowflake.task.TaskConfig.property.errorOnNondeterministicUpdate"></a>
 
 ```python
-error_on_nondeterministic_update: typing.Union[bool, IResolvable]
+error_on_nondeterministic_update: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether to return an error when the [UPDATE](https://docs.snowflake.com/en/sql-reference/sql/update) command is used to update a target row that joins multiple source rows and the system cannot determine the action to perform on the target row. For more information, check [ERROR_ON_NONDETERMINISTIC_UPDATE docs](https://docs.snowflake.com/en/sql-reference/parameters#error-on-nondeterministic-update).
 
@@ -4687,10 +4687,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `jdbc_treat_timestamp_ntz_as_utc`<sup>Optional</sup> <a name="jdbc_treat_timestamp_ntz_as_utc" id="@cdktf/provider-snowflake.task.TaskConfig.property.jdbcTreatTimestampNtzAsUtc"></a>
 
 ```python
-jdbc_treat_timestamp_ntz_as_utc: typing.Union[bool, IResolvable]
+jdbc_treat_timestamp_ntz_as_utc: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies how JDBC processes TIMESTAMP_NTZ values. For more information, check [JDBC_TREAT_TIMESTAMP_NTZ_AS_UTC docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-treat-timestamp-ntz-as-utc).
 
@@ -4701,10 +4701,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `jdbc_use_session_timezone`<sup>Optional</sup> <a name="jdbc_use_session_timezone" id="@cdktf/provider-snowflake.task.TaskConfig.property.jdbcUseSessionTimezone"></a>
 
 ```python
-jdbc_use_session_timezone: typing.Union[bool, IResolvable]
+jdbc_use_session_timezone: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether the JDBC Driver uses the time zone of the JVM or the time zone of the session (specified by the [TIMEZONE](https://docs.snowflake.com/en/sql-reference/parameters#label-timezone) parameter) for the getDate(), getTime(), and getTimestamp() methods of the ResultSet class. For more information, check [JDBC_USE_SESSION_TIMEZONE docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-use-session-timezone).
 
@@ -4777,10 +4777,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `noorder_sequence_as_default`<sup>Optional</sup> <a name="noorder_sequence_as_default" id="@cdktf/provider-snowflake.task.TaskConfig.property.noorderSequenceAsDefault"></a>
 
 ```python
-noorder_sequence_as_default: typing.Union[bool, IResolvable]
+noorder_sequence_as_default: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether the ORDER or NOORDER property is set by default when you create a new sequence or add a new table column.
 
@@ -4793,10 +4793,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `odbc_treat_decimal_as_int`<sup>Optional</sup> <a name="odbc_treat_decimal_as_int" id="@cdktf/provider-snowflake.task.TaskConfig.property.odbcTreatDecimalAsInt"></a>
 
 ```python
-odbc_treat_decimal_as_int: typing.Union[bool, IResolvable]
+odbc_treat_decimal_as_int: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies how ODBC processes columns that have a scale of zero (0). For more information, check [ODBC_TREAT_DECIMAL_AS_INT docs](https://docs.snowflake.com/en/sql-reference/parameters#odbc-treat-decimal-as-int).
 
@@ -4823,10 +4823,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `quoted_identifiers_ignore_case`<sup>Optional</sup> <a name="quoted_identifiers_ignore_case" id="@cdktf/provider-snowflake.task.TaskConfig.property.quotedIdentifiersIgnoreCase"></a>
 
 ```python
-quoted_identifiers_ignore_case: typing.Union[bool, IResolvable]
+quoted_identifiers_ignore_case: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether letters in double-quoted object identifiers are stored and resolved as uppercase letters.
 
@@ -4929,10 +4929,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `strict_json_output`<sup>Optional</sup> <a name="strict_json_output" id="@cdktf/provider-snowflake.task.TaskConfig.property.strictJsonOutput"></a>
 
 ```python
-strict_json_output: typing.Union[bool, IResolvable]
+strict_json_output: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 This parameter specifies whether JSON output in a session is compatible with the general standard (as described by [http://json.org](http://json.org)). By design, Snowflake allows JSON input that contains non-standard values; however, these non-standard values might result in Snowflake outputting JSON that is incompatible with other platforms and languages. This parameter, when enabled, ensures that Snowflake outputs valid/compatible JSON. For more information, check [STRICT_JSON_OUTPUT docs](https://docs.snowflake.com/en/sql-reference/parameters#strict-json-output).
 
@@ -5021,10 +5021,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `timestamp_day_is_always24_h`<sup>Optional</sup> <a name="timestamp_day_is_always24_h" id="@cdktf/provider-snowflake.task.TaskConfig.property.timestampDayIsAlways24H"></a>
 
 ```python
-timestamp_day_is_always24_h: typing.Union[bool, IResolvable]
+timestamp_day_is_always24_h: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether the [DATEADD](https://docs.snowflake.com/en/sql-reference/functions/dateadd) function (and its aliases) always consider a day to be exactly 24 hours for expressions that span multiple days. For more information, check [TIMESTAMP_DAY_IS_ALWAYS_24H docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-day-is-always-24h).
 
@@ -5159,10 +5159,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `transaction_abort_on_error`<sup>Optional</sup> <a name="transaction_abort_on_error" id="@cdktf/provider-snowflake.task.TaskConfig.property.transactionAbortOnError"></a>
 
 ```python
-transaction_abort_on_error: typing.Union[bool, IResolvable]
+transaction_abort_on_error: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies the action to perform when a statement issued within a non-autocommit transaction returns with an error.
 
@@ -5217,10 +5217,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `use_cached_result`<sup>Optional</sup> <a name="use_cached_result" id="@cdktf/provider-snowflake.task.TaskConfig.property.useCachedResult"></a>
 
 ```python
-use_cached_result: typing.Union[bool, IResolvable]
+use_cached_result: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether to reuse persisted query results, if available, when a matching query is submitted.
 
@@ -38480,7 +38480,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-snowflake.task.TaskTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.task.TaskTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.task.TaskTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-snowflake.task.TaskTimeouts">TaskTimeouts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.task.TaskTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-snowflake.task.TaskTimeouts">TaskTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -38591,10 +38591,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-snowflake.task.TaskTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, TaskTimeouts]
+internal_value: IResolvable | TaskTimeouts
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-snowflake.task.TaskTimeouts">TaskTimeouts</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-snowflake.task.TaskTimeouts">TaskTimeouts</a>
 
 ---
 

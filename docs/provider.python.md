@@ -22,16 +22,16 @@ provider.SnowflakeProvider(
   client_store_temporary_credential: str = None,
   client_timeout: typing.Union[int, float] = None,
   disable_console_login: str = None,
-  disable_query_context_cache: typing.Union[bool, IResolvable] = None,
-  disable_telemetry: typing.Union[bool, IResolvable] = None,
+  disable_query_context_cache: bool | IResolvable = None,
+  disable_telemetry: bool | IResolvable = None,
   driver_tracing: str = None,
   external_browser_timeout: typing.Union[int, float] = None,
   host: str = None,
   include_retry_reason: str = None,
-  insecure_mode: typing.Union[bool, IResolvable] = None,
+  insecure_mode: bool | IResolvable = None,
   jwt_client_timeout: typing.Union[int, float] = None,
   jwt_expire_timeout: typing.Union[int, float] = None,
-  keep_session_alive: typing.Union[bool, IResolvable] = None,
+  keep_session_alive: bool | IResolvable = None,
   login_timeout: typing.Union[int, float] = None,
   max_retry_count: typing.Union[int, float] = None,
   ocsp_fail_open: str = None,
@@ -39,7 +39,7 @@ provider.SnowflakeProvider(
   organization_name: str = None,
   params: typing.Mapping[str] = None,
   passcode: str = None,
-  passcode_in_password: typing.Union[bool, IResolvable] = None,
+  passcode_in_password: bool | IResolvable = None,
   password: str = None,
   port: typing.Union[int, float] = None,
   preview_features_enabled: typing.List[str] = None,
@@ -49,11 +49,11 @@ provider.SnowflakeProvider(
   protocol: str = None,
   request_timeout: typing.Union[int, float] = None,
   role: str = None,
-  skip_toml_file_permission_verification: typing.Union[bool, IResolvable] = None,
+  skip_toml_file_permission_verification: bool | IResolvable = None,
   tmp_directory_path: str = None,
   token: str = None,
   token_accessor: SnowflakeProviderTokenAccessor = None,
-  use_legacy_toml_file: typing.Union[bool, IResolvable] = None,
+  use_legacy_toml_file: bool | IResolvable = None,
   user: str = None,
   validate_default_parameters: str = None,
   warehouse: str = None
@@ -72,16 +72,16 @@ provider.SnowflakeProvider(
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.clientStoreTemporaryCredential">client_store_temporary_credential</a></code> | <code>str</code> | When true the ID token is cached in the credential manager. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.clientTimeout">client_timeout</a></code> | <code>typing.Union[int, float]</code> | The timeout in seconds for the client to complete the authentication. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.disableConsoleLogin">disable_console_login</a></code> | <code>str</code> | Indicates whether console login should be disabled in the driver. Can also be sourced from the `SNOWFLAKE_DISABLE_CONSOLE_LOGIN` environment variable. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.disableQueryContextCache">disable_query_context_cache</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Disables HTAP query context cache in the driver. Can also be sourced from the `SNOWFLAKE_DISABLE_QUERY_CONTEXT_CACHE` environment variable. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.disableTelemetry">disable_telemetry</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Disables telemetry in the driver. Can also be sourced from the `DISABLE_TELEMETRY` environment variable. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.disableQueryContextCache">disable_query_context_cache</a></code> | <code>bool \| cdktf.IResolvable</code> | Disables HTAP query context cache in the driver. Can also be sourced from the `SNOWFLAKE_DISABLE_QUERY_CONTEXT_CACHE` environment variable. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.disableTelemetry">disable_telemetry</a></code> | <code>bool \| cdktf.IResolvable</code> | Disables telemetry in the driver. Can also be sourced from the `DISABLE_TELEMETRY` environment variable. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.driverTracing">driver_tracing</a></code> | <code>str</code> | Specifies the logging level to be used by the driver. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.externalBrowserTimeout">external_browser_timeout</a></code> | <code>typing.Union[int, float]</code> | The timeout in seconds for the external browser to complete the authentication. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.host">host</a></code> | <code>str</code> | Specifies a custom host value used by the driver for privatelink connections. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.includeRetryReason">include_retry_reason</a></code> | <code>str</code> | Should retried request contain retry reason. Can also be sourced from the `SNOWFLAKE_INCLUDE_RETRY_REASON` environment variable. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.insecureMode">insecure_mode</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, bypass the Online Certificate Status Protocol (OCSP) certificate revocation check. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.insecureMode">insecure_mode</a></code> | <code>bool \| cdktf.IResolvable</code> | If true, bypass the Online Certificate Status Protocol (OCSP) certificate revocation check. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.jwtClientTimeout">jwt_client_timeout</a></code> | <code>typing.Union[int, float]</code> | The timeout in seconds for the JWT client to complete the authentication. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.jwtExpireTimeout">jwt_expire_timeout</a></code> | <code>typing.Union[int, float]</code> | JWT expire after timeout in seconds. Can also be sourced from the `SNOWFLAKE_JWT_EXPIRE_TIMEOUT` environment variable. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.keepSessionAlive">keep_session_alive</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enables the session to persist even after the connection is closed. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.keepSessionAlive">keep_session_alive</a></code> | <code>bool \| cdktf.IResolvable</code> | Enables the session to persist even after the connection is closed. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.loginTimeout">login_timeout</a></code> | <code>typing.Union[int, float]</code> | Login retry timeout in seconds EXCLUDING network roundtrip and read out http response. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.maxRetryCount">max_retry_count</a></code> | <code>typing.Union[int, float]</code> | Specifies how many times non-periodic HTTP request can be retried by the driver. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.ocspFailOpen">ocsp_fail_open</a></code> | <code>str</code> | True represents OCSP fail open mode. |
@@ -89,7 +89,7 @@ provider.SnowflakeProvider(
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.organizationName">organization_name</a></code> | <code>str</code> | Specifies your Snowflake organization name assigned by Snowflake. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.params">params</a></code> | <code>typing.Mapping[str]</code> | Sets other connection (i.e. session) parameters. [Parameters](https://docs.snowflake.com/en/sql-reference/parameters). This field can not be set with environmental variables. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.passcode">passcode</a></code> | <code>str</code> | Specifies the passcode provided by Duo when using multi-factor authentication (MFA) for login. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.passcodeInPassword">passcode_in_password</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | False by default. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.passcodeInPassword">passcode_in_password</a></code> | <code>bool \| cdktf.IResolvable</code> | False by default. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.password">password</a></code> | <code>str</code> | Password for user + password or [token](https://docs.snowflake.com/en/user-guide/programmatic-access-tokens#generating-a-programmatic-access-token) for [PAT auth](https://docs.snowflake.com/en/user-guide/programmatic-access-tokens). Cannot be used with `private_key` and `private_key_passphrase`. Can also be sourced from the `SNOWFLAKE_PASSWORD` environment variable. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.port">port</a></code> | <code>typing.Union[int, float]</code> | Specifies a custom port value used by the driver for privatelink connections. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.previewFeaturesEnabled">preview_features_enabled</a></code> | <code>typing.List[str]</code> | A list of preview features that are handled by the provider. |
@@ -99,11 +99,11 @@ provider.SnowflakeProvider(
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.protocol">protocol</a></code> | <code>str</code> | A protocol used in the connection. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.requestTimeout">request_timeout</a></code> | <code>typing.Union[int, float]</code> | request retry timeout in seconds EXCLUDING network roundtrip and read out http response. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.role">role</a></code> | <code>str</code> | Specifies the role to use by default for accessing Snowflake objects in the client session. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.skipTomlFilePermissionVerification">skip_toml_file_permission_verification</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | False by default. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.skipTomlFilePermissionVerification">skip_toml_file_permission_verification</a></code> | <code>bool \| cdktf.IResolvable</code> | False by default. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.tmpDirectoryPath">tmp_directory_path</a></code> | <code>str</code> | Sets temporary directory used by the driver for operations like encrypting, compressing etc. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.token">token</a></code> | <code>str</code> | Token to use for OAuth and other forms of token based auth. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.tokenAccessor">token_accessor</a></code> | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderTokenAccessor">SnowflakeProviderTokenAccessor</a></code> | token_accessor block. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.useLegacyTomlFile">use_legacy_toml_file</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | False by default. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.useLegacyTomlFile">use_legacy_toml_file</a></code> | <code>bool \| cdktf.IResolvable</code> | False by default. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.user">user</a></code> | <code>str</code> | Username. Required unless using `profile`. Can also be sourced from the `SNOWFLAKE_USER` environment variable. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.validateDefaultParameters">validate_default_parameters</a></code> | <code>str</code> | True by default. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.warehouse">warehouse</a></code> | <code>str</code> | Specifies the virtual warehouse to use by default for queries, loading, etc. |
@@ -218,7 +218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `disable_query_context_cache`<sup>Optional</sup> <a name="disable_query_context_cache" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.disableQueryContextCache"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Disables HTAP query context cache in the driver. Can also be sourced from the `SNOWFLAKE_DISABLE_QUERY_CONTEXT_CACHE` environment variable.
 
@@ -228,7 +228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `disable_telemetry`<sup>Optional</sup> <a name="disable_telemetry" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.disableTelemetry"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Disables telemetry in the driver. Can also be sourced from the `DISABLE_TELEMETRY` environment variable.
 
@@ -284,7 +284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `insecure_mode`<sup>Optional</sup> <a name="insecure_mode" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.insecureMode"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If true, bypass the Online Certificate Status Protocol (OCSP) certificate revocation check.
 
@@ -318,7 +318,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `keep_session_alive`<sup>Optional</sup> <a name="keep_session_alive" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.keepSessionAlive"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enables the session to persist even after the connection is closed.
 
@@ -412,7 +412,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `passcode_in_password`<sup>Optional</sup> <a name="passcode_in_password" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.passcodeInPassword"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 False by default.
 
@@ -526,7 +526,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `skip_toml_file_permission_verification`<sup>Optional</sup> <a name="skip_toml_file_permission_verification" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.skipTomlFilePermissionVerification"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 False by default.
 
@@ -572,7 +572,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `use_legacy_toml_file`<sup>Optional</sup> <a name="use_legacy_toml_file" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.Initializer.parameter.useLegacyTomlFile"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 False by default.
 
@@ -1153,23 +1153,23 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.clientStoreTemporaryCredentialInput">client_store_temporary_credential_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.clientTimeoutInput">client_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.disableConsoleLoginInput">disable_console_login_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.disableQueryContextCacheInput">disable_query_context_cache_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.disableTelemetryInput">disable_telemetry_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.disableQueryContextCacheInput">disable_query_context_cache_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.disableTelemetryInput">disable_telemetry_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.driverTracingInput">driver_tracing_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.externalBrowserTimeoutInput">external_browser_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.hostInput">host_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.includeRetryReasonInput">include_retry_reason_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.insecureModeInput">insecure_mode_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.insecureModeInput">insecure_mode_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.jwtClientTimeoutInput">jwt_client_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.jwtExpireTimeoutInput">jwt_expire_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.keepSessionAliveInput">keep_session_alive_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.keepSessionAliveInput">keep_session_alive_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.loginTimeoutInput">login_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.maxRetryCountInput">max_retry_count_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.ocspFailOpenInput">ocsp_fail_open_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.oktaUrlInput">okta_url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.organizationNameInput">organization_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.paramsInput">params_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.passcodeInPasswordInput">passcode_in_password_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.passcodeInPasswordInput">passcode_in_password_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.passcodeInput">passcode_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.passwordInput">password_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.portInput">port_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -1180,11 +1180,11 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.protocolInput">protocol_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.requestTimeoutInput">request_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.roleInput">role_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.skipTomlFilePermissionVerificationInput">skip_toml_file_permission_verification_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.skipTomlFilePermissionVerificationInput">skip_toml_file_permission_verification_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.tmpDirectoryPathInput">tmp_directory_path_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.tokenAccessorInput">token_accessor_input</a></code> | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderTokenAccessor">SnowflakeProviderTokenAccessor</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.tokenInput">token_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.useLegacyTomlFileInput">use_legacy_toml_file_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.useLegacyTomlFileInput">use_legacy_toml_file_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.userInput">user_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.validateDefaultParametersInput">validate_default_parameters_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.warehouseInput">warehouse_input</a></code> | <code>str</code> | *No description.* |
@@ -1195,16 +1195,16 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.clientStoreTemporaryCredential">client_store_temporary_credential</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.clientTimeout">client_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.disableConsoleLogin">disable_console_login</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.disableQueryContextCache">disable_query_context_cache</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.disableTelemetry">disable_telemetry</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.disableQueryContextCache">disable_query_context_cache</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.disableTelemetry">disable_telemetry</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.driverTracing">driver_tracing</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.externalBrowserTimeout">external_browser_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.host">host</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.includeRetryReason">include_retry_reason</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.insecureMode">insecure_mode</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.insecureMode">insecure_mode</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.jwtClientTimeout">jwt_client_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.jwtExpireTimeout">jwt_expire_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.keepSessionAlive">keep_session_alive</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.keepSessionAlive">keep_session_alive</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.loginTimeout">login_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.maxRetryCount">max_retry_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.ocspFailOpen">ocsp_fail_open</a></code> | <code>str</code> | *No description.* |
@@ -1212,7 +1212,7 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.organizationName">organization_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.params">params</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.passcode">passcode</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.passcodeInPassword">passcode_in_password</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.passcodeInPassword">passcode_in_password</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.password">password</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.port">port</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.previewFeaturesEnabled">preview_features_enabled</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -1222,11 +1222,11 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.protocol">protocol</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.requestTimeout">request_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.role">role</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.skipTomlFilePermissionVerification">skip_toml_file_permission_verification</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.skipTomlFilePermissionVerification">skip_toml_file_permission_verification</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.tmpDirectoryPath">tmp_directory_path</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.token">token</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.tokenAccessor">token_accessor</a></code> | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderTokenAccessor">SnowflakeProviderTokenAccessor</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.useLegacyTomlFile">use_legacy_toml_file</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.useLegacyTomlFile">use_legacy_toml_file</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.user">user</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.validateDefaultParameters">validate_default_parameters</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProvider.property.warehouse">warehouse</a></code> | <code>str</code> | *No description.* |
@@ -1408,20 +1408,20 @@ disable_console_login_input: str
 ##### `disable_query_context_cache_input`<sup>Optional</sup> <a name="disable_query_context_cache_input" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.disableQueryContextCacheInput"></a>
 
 ```python
-disable_query_context_cache_input: typing.Union[bool, IResolvable]
+disable_query_context_cache_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `disable_telemetry_input`<sup>Optional</sup> <a name="disable_telemetry_input" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.disableTelemetryInput"></a>
 
 ```python
-disable_telemetry_input: typing.Union[bool, IResolvable]
+disable_telemetry_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1468,10 +1468,10 @@ include_retry_reason_input: str
 ##### `insecure_mode_input`<sup>Optional</sup> <a name="insecure_mode_input" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.insecureModeInput"></a>
 
 ```python
-insecure_mode_input: typing.Union[bool, IResolvable]
+insecure_mode_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1498,10 +1498,10 @@ jwt_expire_timeout_input: typing.Union[int, float]
 ##### `keep_session_alive_input`<sup>Optional</sup> <a name="keep_session_alive_input" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.keepSessionAliveInput"></a>
 
 ```python
-keep_session_alive_input: typing.Union[bool, IResolvable]
+keep_session_alive_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1568,10 +1568,10 @@ params_input: typing.Mapping[str]
 ##### `passcode_in_password_input`<sup>Optional</sup> <a name="passcode_in_password_input" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.passcodeInPasswordInput"></a>
 
 ```python
-passcode_in_password_input: typing.Union[bool, IResolvable]
+passcode_in_password_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1678,10 +1678,10 @@ role_input: str
 ##### `skip_toml_file_permission_verification_input`<sup>Optional</sup> <a name="skip_toml_file_permission_verification_input" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.skipTomlFilePermissionVerificationInput"></a>
 
 ```python
-skip_toml_file_permission_verification_input: typing.Union[bool, IResolvable]
+skip_toml_file_permission_verification_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1718,10 +1718,10 @@ token_input: str
 ##### `use_legacy_toml_file_input`<sup>Optional</sup> <a name="use_legacy_toml_file_input" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.useLegacyTomlFileInput"></a>
 
 ```python
-use_legacy_toml_file_input: typing.Union[bool, IResolvable]
+use_legacy_toml_file_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1828,20 +1828,20 @@ disable_console_login: str
 ##### `disable_query_context_cache`<sup>Optional</sup> <a name="disable_query_context_cache" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.disableQueryContextCache"></a>
 
 ```python
-disable_query_context_cache: typing.Union[bool, IResolvable]
+disable_query_context_cache: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `disable_telemetry`<sup>Optional</sup> <a name="disable_telemetry" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.disableTelemetry"></a>
 
 ```python
-disable_telemetry: typing.Union[bool, IResolvable]
+disable_telemetry: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1888,10 +1888,10 @@ include_retry_reason: str
 ##### `insecure_mode`<sup>Optional</sup> <a name="insecure_mode" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.insecureMode"></a>
 
 ```python
-insecure_mode: typing.Union[bool, IResolvable]
+insecure_mode: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1918,10 +1918,10 @@ jwt_expire_timeout: typing.Union[int, float]
 ##### `keep_session_alive`<sup>Optional</sup> <a name="keep_session_alive" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.keepSessionAlive"></a>
 
 ```python
-keep_session_alive: typing.Union[bool, IResolvable]
+keep_session_alive: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1998,10 +1998,10 @@ passcode: str
 ##### `passcode_in_password`<sup>Optional</sup> <a name="passcode_in_password" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.passcodeInPassword"></a>
 
 ```python
-passcode_in_password: typing.Union[bool, IResolvable]
+passcode_in_password: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2098,10 +2098,10 @@ role: str
 ##### `skip_toml_file_permission_verification`<sup>Optional</sup> <a name="skip_toml_file_permission_verification" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.skipTomlFilePermissionVerification"></a>
 
 ```python
-skip_toml_file_permission_verification: typing.Union[bool, IResolvable]
+skip_toml_file_permission_verification: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2138,10 +2138,10 @@ token_accessor: SnowflakeProviderTokenAccessor
 ##### `use_legacy_toml_file`<sup>Optional</sup> <a name="use_legacy_toml_file" id="@cdktf/provider-snowflake.provider.SnowflakeProvider.property.useLegacyTomlFile"></a>
 
 ```python
-use_legacy_toml_file: typing.Union[bool, IResolvable]
+use_legacy_toml_file: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2211,16 +2211,16 @@ provider.SnowflakeProviderConfig(
   client_store_temporary_credential: str = None,
   client_timeout: typing.Union[int, float] = None,
   disable_console_login: str = None,
-  disable_query_context_cache: typing.Union[bool, IResolvable] = None,
-  disable_telemetry: typing.Union[bool, IResolvable] = None,
+  disable_query_context_cache: bool | IResolvable = None,
+  disable_telemetry: bool | IResolvable = None,
   driver_tracing: str = None,
   external_browser_timeout: typing.Union[int, float] = None,
   host: str = None,
   include_retry_reason: str = None,
-  insecure_mode: typing.Union[bool, IResolvable] = None,
+  insecure_mode: bool | IResolvable = None,
   jwt_client_timeout: typing.Union[int, float] = None,
   jwt_expire_timeout: typing.Union[int, float] = None,
-  keep_session_alive: typing.Union[bool, IResolvable] = None,
+  keep_session_alive: bool | IResolvable = None,
   login_timeout: typing.Union[int, float] = None,
   max_retry_count: typing.Union[int, float] = None,
   ocsp_fail_open: str = None,
@@ -2228,7 +2228,7 @@ provider.SnowflakeProviderConfig(
   organization_name: str = None,
   params: typing.Mapping[str] = None,
   passcode: str = None,
-  passcode_in_password: typing.Union[bool, IResolvable] = None,
+  passcode_in_password: bool | IResolvable = None,
   password: str = None,
   port: typing.Union[int, float] = None,
   preview_features_enabled: typing.List[str] = None,
@@ -2238,11 +2238,11 @@ provider.SnowflakeProviderConfig(
   protocol: str = None,
   request_timeout: typing.Union[int, float] = None,
   role: str = None,
-  skip_toml_file_permission_verification: typing.Union[bool, IResolvable] = None,
+  skip_toml_file_permission_verification: bool | IResolvable = None,
   tmp_directory_path: str = None,
   token: str = None,
   token_accessor: SnowflakeProviderTokenAccessor = None,
-  use_legacy_toml_file: typing.Union[bool, IResolvable] = None,
+  use_legacy_toml_file: bool | IResolvable = None,
   user: str = None,
   validate_default_parameters: str = None,
   warehouse: str = None
@@ -2261,16 +2261,16 @@ provider.SnowflakeProviderConfig(
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.clientStoreTemporaryCredential">client_store_temporary_credential</a></code> | <code>str</code> | When true the ID token is cached in the credential manager. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.clientTimeout">client_timeout</a></code> | <code>typing.Union[int, float]</code> | The timeout in seconds for the client to complete the authentication. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.disableConsoleLogin">disable_console_login</a></code> | <code>str</code> | Indicates whether console login should be disabled in the driver. Can also be sourced from the `SNOWFLAKE_DISABLE_CONSOLE_LOGIN` environment variable. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.disableQueryContextCache">disable_query_context_cache</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Disables HTAP query context cache in the driver. Can also be sourced from the `SNOWFLAKE_DISABLE_QUERY_CONTEXT_CACHE` environment variable. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.disableTelemetry">disable_telemetry</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Disables telemetry in the driver. Can also be sourced from the `DISABLE_TELEMETRY` environment variable. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.disableQueryContextCache">disable_query_context_cache</a></code> | <code>bool \| cdktf.IResolvable</code> | Disables HTAP query context cache in the driver. Can also be sourced from the `SNOWFLAKE_DISABLE_QUERY_CONTEXT_CACHE` environment variable. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.disableTelemetry">disable_telemetry</a></code> | <code>bool \| cdktf.IResolvable</code> | Disables telemetry in the driver. Can also be sourced from the `DISABLE_TELEMETRY` environment variable. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.driverTracing">driver_tracing</a></code> | <code>str</code> | Specifies the logging level to be used by the driver. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.externalBrowserTimeout">external_browser_timeout</a></code> | <code>typing.Union[int, float]</code> | The timeout in seconds for the external browser to complete the authentication. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.host">host</a></code> | <code>str</code> | Specifies a custom host value used by the driver for privatelink connections. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.includeRetryReason">include_retry_reason</a></code> | <code>str</code> | Should retried request contain retry reason. Can also be sourced from the `SNOWFLAKE_INCLUDE_RETRY_REASON` environment variable. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.insecureMode">insecure_mode</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, bypass the Online Certificate Status Protocol (OCSP) certificate revocation check. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.insecureMode">insecure_mode</a></code> | <code>bool \| cdktf.IResolvable</code> | If true, bypass the Online Certificate Status Protocol (OCSP) certificate revocation check. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.jwtClientTimeout">jwt_client_timeout</a></code> | <code>typing.Union[int, float]</code> | The timeout in seconds for the JWT client to complete the authentication. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.jwtExpireTimeout">jwt_expire_timeout</a></code> | <code>typing.Union[int, float]</code> | JWT expire after timeout in seconds. Can also be sourced from the `SNOWFLAKE_JWT_EXPIRE_TIMEOUT` environment variable. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.keepSessionAlive">keep_session_alive</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enables the session to persist even after the connection is closed. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.keepSessionAlive">keep_session_alive</a></code> | <code>bool \| cdktf.IResolvable</code> | Enables the session to persist even after the connection is closed. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.loginTimeout">login_timeout</a></code> | <code>typing.Union[int, float]</code> | Login retry timeout in seconds EXCLUDING network roundtrip and read out http response. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.maxRetryCount">max_retry_count</a></code> | <code>typing.Union[int, float]</code> | Specifies how many times non-periodic HTTP request can be retried by the driver. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.ocspFailOpen">ocsp_fail_open</a></code> | <code>str</code> | True represents OCSP fail open mode. |
@@ -2278,7 +2278,7 @@ provider.SnowflakeProviderConfig(
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.organizationName">organization_name</a></code> | <code>str</code> | Specifies your Snowflake organization name assigned by Snowflake. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.params">params</a></code> | <code>typing.Mapping[str]</code> | Sets other connection (i.e. session) parameters. [Parameters](https://docs.snowflake.com/en/sql-reference/parameters). This field can not be set with environmental variables. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.passcode">passcode</a></code> | <code>str</code> | Specifies the passcode provided by Duo when using multi-factor authentication (MFA) for login. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.passcodeInPassword">passcode_in_password</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | False by default. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.passcodeInPassword">passcode_in_password</a></code> | <code>bool \| cdktf.IResolvable</code> | False by default. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.password">password</a></code> | <code>str</code> | Password for user + password or [token](https://docs.snowflake.com/en/user-guide/programmatic-access-tokens#generating-a-programmatic-access-token) for [PAT auth](https://docs.snowflake.com/en/user-guide/programmatic-access-tokens). Cannot be used with `private_key` and `private_key_passphrase`. Can also be sourced from the `SNOWFLAKE_PASSWORD` environment variable. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.port">port</a></code> | <code>typing.Union[int, float]</code> | Specifies a custom port value used by the driver for privatelink connections. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.previewFeaturesEnabled">preview_features_enabled</a></code> | <code>typing.List[str]</code> | A list of preview features that are handled by the provider. |
@@ -2288,11 +2288,11 @@ provider.SnowflakeProviderConfig(
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.protocol">protocol</a></code> | <code>str</code> | A protocol used in the connection. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.requestTimeout">request_timeout</a></code> | <code>typing.Union[int, float]</code> | request retry timeout in seconds EXCLUDING network roundtrip and read out http response. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.role">role</a></code> | <code>str</code> | Specifies the role to use by default for accessing Snowflake objects in the client session. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.skipTomlFilePermissionVerification">skip_toml_file_permission_verification</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | False by default. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.skipTomlFilePermissionVerification">skip_toml_file_permission_verification</a></code> | <code>bool \| cdktf.IResolvable</code> | False by default. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.tmpDirectoryPath">tmp_directory_path</a></code> | <code>str</code> | Sets temporary directory used by the driver for operations like encrypting, compressing etc. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.token">token</a></code> | <code>str</code> | Token to use for OAuth and other forms of token based auth. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.tokenAccessor">token_accessor</a></code> | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderTokenAccessor">SnowflakeProviderTokenAccessor</a></code> | token_accessor block. |
-| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.useLegacyTomlFile">use_legacy_toml_file</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | False by default. |
+| <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.useLegacyTomlFile">use_legacy_toml_file</a></code> | <code>bool \| cdktf.IResolvable</code> | False by default. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.user">user</a></code> | <code>str</code> | Username. Required unless using `profile`. Can also be sourced from the `SNOWFLAKE_USER` environment variable. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.validateDefaultParameters">validate_default_parameters</a></code> | <code>str</code> | True by default. |
 | <code><a href="#@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.warehouse">warehouse</a></code> | <code>str</code> | Specifies the virtual warehouse to use by default for queries, loading, etc. |
@@ -2422,10 +2422,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `disable_query_context_cache`<sup>Optional</sup> <a name="disable_query_context_cache" id="@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.disableQueryContextCache"></a>
 
 ```python
-disable_query_context_cache: typing.Union[bool, IResolvable]
+disable_query_context_cache: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Disables HTAP query context cache in the driver. Can also be sourced from the `SNOWFLAKE_DISABLE_QUERY_CONTEXT_CACHE` environment variable.
 
@@ -2436,10 +2436,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `disable_telemetry`<sup>Optional</sup> <a name="disable_telemetry" id="@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.disableTelemetry"></a>
 
 ```python
-disable_telemetry: typing.Union[bool, IResolvable]
+disable_telemetry: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Disables telemetry in the driver. Can also be sourced from the `DISABLE_TELEMETRY` environment variable.
 
@@ -2512,10 +2512,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `insecure_mode`<sup>Optional</sup> <a name="insecure_mode" id="@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.insecureMode"></a>
 
 ```python
-insecure_mode: typing.Union[bool, IResolvable]
+insecure_mode: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If true, bypass the Online Certificate Status Protocol (OCSP) certificate revocation check.
 
@@ -2558,10 +2558,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `keep_session_alive`<sup>Optional</sup> <a name="keep_session_alive" id="@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.keepSessionAlive"></a>
 
 ```python
-keep_session_alive: typing.Union[bool, IResolvable]
+keep_session_alive: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enables the session to persist even after the connection is closed.
 
@@ -2684,10 +2684,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `passcode_in_password`<sup>Optional</sup> <a name="passcode_in_password" id="@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.passcodeInPassword"></a>
 
 ```python
-passcode_in_password: typing.Union[bool, IResolvable]
+passcode_in_password: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 False by default.
 
@@ -2838,10 +2838,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `skip_toml_file_permission_verification`<sup>Optional</sup> <a name="skip_toml_file_permission_verification" id="@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.skipTomlFilePermissionVerification"></a>
 
 ```python
-skip_toml_file_permission_verification: typing.Union[bool, IResolvable]
+skip_toml_file_permission_verification: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 False by default.
 
@@ -2900,10 +2900,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `use_legacy_toml_file`<sup>Optional</sup> <a name="use_legacy_toml_file" id="@cdktf/provider-snowflake.provider.SnowflakeProviderConfig.property.useLegacyTomlFile"></a>
 
 ```python
-use_legacy_toml_file: typing.Union[bool, IResolvable]
+use_legacy_toml_file: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 False by default.
 

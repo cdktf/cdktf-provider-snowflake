@@ -285,7 +285,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-snowflake.tableConstraint.TableConstraint.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-snowflake.tableConstraint.TableConstraint.importFrom"></a>
@@ -339,7 +339,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-snowflake.tableConstraint.TableConstraint.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -354,7 +354,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-snowflake.tableConstraint.TableConstraint.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -586,41 +586,41 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.foreignKeyProperties">ForeignKeyProperties</a></code> | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintForeignKeyPropertiesOutputReference">TableConstraintForeignKeyPropertiesOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference">TableConstraintTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.columnsInput">ColumnsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.commentInput">CommentInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.deferrableInput">DeferrableInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.enableInput">EnableInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.enforcedInput">EnforcedInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.deferrableInput">DeferrableInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.enableInput">EnableInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.enforcedInput">EnforcedInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.foreignKeyPropertiesInput">ForeignKeyPropertiesInput</a></code> | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintForeignKeyProperties">TableConstraintForeignKeyProperties</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.initiallyInput">InitiallyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.relyInput">RelyInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.relyInput">RelyInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.tableIdInput">TableIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.timeoutsInput">TimeoutsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.timeoutsInput">TimeoutsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeouts">TableConstraintTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.typeInput">TypeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.validateInput">ValidateInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.validateInput">ValidateInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.columns">Columns</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.comment">Comment</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.deferrable">Deferrable</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.enable">Enable</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.enforced">Enforced</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.deferrable">Deferrable</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.enable">Enable</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.enforced">Enforced</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.initially">Initially</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.rely">Rely</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.rely">Rely</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.tableId">TableId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.type">Type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.validate">Validate</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.validate">Validate</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -699,20 +699,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -759,10 +759,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -809,30 +809,30 @@ public string CommentInput { get; }
 ##### `DeferrableInput`<sup>Optional</sup> <a name="DeferrableInput" id="@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.deferrableInput"></a>
 
 ```csharp
-public object DeferrableInput { get; }
+public bool|IResolvable DeferrableInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableInput`<sup>Optional</sup> <a name="EnableInput" id="@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.enableInput"></a>
 
 ```csharp
-public object EnableInput { get; }
+public bool|IResolvable EnableInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnforcedInput`<sup>Optional</sup> <a name="EnforcedInput" id="@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.enforcedInput"></a>
 
 ```csharp
-public object EnforcedInput { get; }
+public bool|IResolvable EnforcedInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -879,10 +879,10 @@ public string NameInput { get; }
 ##### `RelyInput`<sup>Optional</sup> <a name="RelyInput" id="@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.relyInput"></a>
 
 ```csharp
-public object RelyInput { get; }
+public bool|IResolvable RelyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -899,10 +899,10 @@ public string TableIdInput { get; }
 ##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.timeoutsInput"></a>
 
 ```csharp
-public object TimeoutsInput { get; }
+public IResolvable|TableConstraintTimeouts TimeoutsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeouts">TableConstraintTimeouts</a>
 
 ---
 
@@ -919,10 +919,10 @@ public string TypeInput { get; }
 ##### `ValidateInput`<sup>Optional</sup> <a name="ValidateInput" id="@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.validateInput"></a>
 
 ```csharp
-public object ValidateInput { get; }
+public bool|IResolvable ValidateInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -949,30 +949,30 @@ public string Comment { get; }
 ##### `Deferrable`<sup>Required</sup> <a name="Deferrable" id="@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.deferrable"></a>
 
 ```csharp
-public object Deferrable { get; }
+public bool|IResolvable Deferrable { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `Enable`<sup>Required</sup> <a name="Enable" id="@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.enable"></a>
 
 ```csharp
-public object Enable { get; }
+public bool|IResolvable Enable { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `Enforced`<sup>Required</sup> <a name="Enforced" id="@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.enforced"></a>
 
 ```csharp
-public object Enforced { get; }
+public bool|IResolvable Enforced { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1009,10 +1009,10 @@ public string Name { get; }
 ##### `Rely`<sup>Required</sup> <a name="Rely" id="@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.rely"></a>
 
 ```csharp
-public object Rely { get; }
+public bool|IResolvable Rely { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1039,10 +1039,10 @@ public string Type { get; }
 ##### `Validate`<sup>Required</sup> <a name="Validate" id="@cdktf/provider-snowflake.tableConstraint.TableConstraint.property.validate"></a>
 
 ```csharp
-public object Validate { get; }
+public bool|IResolvable Validate { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1074,27 +1074,27 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Snowflake;
 
 new TableConstraintConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string[] Columns,
     string Name,
     string TableId,
     string Type,
     string Comment = null,
-    object Deferrable = null,
-    object Enable = null,
-    object Enforced = null,
+    bool|IResolvable Deferrable = null,
+    bool|IResolvable Enable = null,
+    bool|IResolvable Enforced = null,
     TableConstraintForeignKeyProperties ForeignKeyProperties = null,
     string Id = null,
     string Initially = null,
-    object Rely = null,
+    bool|IResolvable Rely = null,
     TableConstraintTimeouts Timeouts = null,
-    object Validate = null
+    bool|IResolvable Validate = null
 };
 ```
 
@@ -1102,47 +1102,47 @@ new TableConstraintConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.columns">Columns</a></code> | <code>string[]</code> | Columns to use in constraint key. |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.name">Name</a></code> | <code>string</code> | Name of constraint. |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.tableId">TableId</a></code> | <code>string</code> | Identifier for table to create constraint on. Format must follow: "\"&lt;db_name&gt;\".\"&lt;schema_name&gt;\".\"&lt;table_name&gt;\"" or "&lt;db_name&gt;.&lt;schema_name&gt;.&lt;table_name&gt;" (snowflake_table.my_table.id). |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.type">Type</a></code> | <code>string</code> | Type of constraint, one of 'UNIQUE', 'PRIMARY KEY', or 'FOREIGN KEY'. |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.comment">Comment</a></code> | <code>string</code> | Comment for the table constraint. |
-| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.deferrable">Deferrable</a></code> | <code>object</code> | (Default: `true`) Whether the constraint is deferrable. |
-| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.enable">Enable</a></code> | <code>object</code> | (Default: `true`) Specifies whether the constraint is enabled or disabled. These properties are provided for compatibility with Oracle. |
-| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.enforced">Enforced</a></code> | <code>object</code> | (Default: `false`) Whether the constraint is enforced. |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.deferrable">Deferrable</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | (Default: `true`) Whether the constraint is deferrable. |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.enable">Enable</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | (Default: `true`) Specifies whether the constraint is enabled or disabled. These properties are provided for compatibility with Oracle. |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.enforced">Enforced</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | (Default: `false`) Whether the constraint is enforced. |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.foreignKeyProperties">ForeignKeyProperties</a></code> | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintForeignKeyProperties">TableConstraintForeignKeyProperties</a></code> | foreign_key_properties block. |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/table_constraint#id TableConstraint#id}. |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.initially">Initially</a></code> | <code>string</code> | (Default: `DEFERRED`) Whether the constraint is initially deferred or immediate. |
-| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.rely">Rely</a></code> | <code>object</code> | (Default: `true`) Specifies whether a constraint in NOVALIDATE mode is taken into account during query rewrite. |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.rely">Rely</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | (Default: `true`) Specifies whether a constraint in NOVALIDATE mode is taken into account during query rewrite. |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeouts">TableConstraintTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.validate">Validate</a></code> | <code>object</code> | (Default: `false`) Specifies whether to validate existing data on the table when a constraint is created. |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.validate">Validate</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | (Default: `false`) Specifies whether to validate existing data on the table when a constraint is created. |
 
 ---
 
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1189,10 +1189,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1269,10 +1269,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `Deferrable`<sup>Optional</sup> <a name="Deferrable" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.deferrable"></a>
 
 ```csharp
-public object Deferrable { get; set; }
+public bool|IResolvable Deferrable { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 (Default: `true`) Whether the constraint is deferrable.
 
@@ -1283,10 +1283,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `Enable`<sup>Optional</sup> <a name="Enable" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.enable"></a>
 
 ```csharp
-public object Enable { get; set; }
+public bool|IResolvable Enable { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 (Default: `true`) Specifies whether the constraint is enabled or disabled. These properties are provided for compatibility with Oracle.
 
@@ -1297,10 +1297,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `Enforced`<sup>Optional</sup> <a name="Enforced" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.enforced"></a>
 
 ```csharp
-public object Enforced { get; set; }
+public bool|IResolvable Enforced { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 (Default: `false`) Whether the constraint is enforced.
 
@@ -1354,10 +1354,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `Rely`<sup>Optional</sup> <a name="Rely" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.rely"></a>
 
 ```csharp
-public object Rely { get; set; }
+public bool|IResolvable Rely { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 (Default: `true`) Specifies whether a constraint in NOVALIDATE mode is taken into account during query rewrite.
 
@@ -1382,10 +1382,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `Validate`<sup>Optional</sup> <a name="Validate" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintConfig.property.validate"></a>
 
 ```csharp
-public object Validate { get; set; }
+public bool|IResolvable Validate { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 (Default: `false`) Specifies whether to validate existing data on the table when a constraint is created.
 
@@ -2517,7 +2517,7 @@ private void ResetUpdate()
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.property.delete">Delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.property.read">Read</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.property.update">Update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeouts">TableConstraintTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -2628,10 +2628,10 @@ public string Update { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeoutsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|TableConstraintTimeouts InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-snowflake.tableConstraint.TableConstraintTimeouts">TableConstraintTimeouts</a>
 
 ---
 

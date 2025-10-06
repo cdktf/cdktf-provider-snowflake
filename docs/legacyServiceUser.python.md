@@ -14,24 +14,24 @@ from cdktf_cdktf_provider_snowflake import legacy_service_user
 legacyServiceUser.LegacyServiceUser(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
-  abort_detached_query: typing.Union[bool, IResolvable] = None,
-  autocommit: typing.Union[bool, IResolvable] = None,
+  abort_detached_query: bool | IResolvable = None,
+  autocommit: bool | IResolvable = None,
   binary_input_format: str = None,
   binary_output_format: str = None,
   client_memory_limit: typing.Union[int, float] = None,
-  client_metadata_request_use_connection_ctx: typing.Union[bool, IResolvable] = None,
+  client_metadata_request_use_connection_ctx: bool | IResolvable = None,
   client_prefetch_threads: typing.Union[int, float] = None,
   client_result_chunk_size: typing.Union[int, float] = None,
-  client_result_column_case_insensitive: typing.Union[bool, IResolvable] = None,
-  client_session_keep_alive: typing.Union[bool, IResolvable] = None,
+  client_result_column_case_insensitive: bool | IResolvable = None,
+  client_session_keep_alive: bool | IResolvable = None,
   client_session_keep_alive_heartbeat_frequency: typing.Union[int, float] = None,
   client_timestamp_type_mapping: str = None,
   comment: str = None,
@@ -45,16 +45,16 @@ legacyServiceUser.LegacyServiceUser(
   disabled: str = None,
   display_name: str = None,
   email: str = None,
-  enable_unload_physical_type_optimization: typing.Union[bool, IResolvable] = None,
-  enable_unredacted_query_syntax_error: typing.Union[bool, IResolvable] = None,
-  error_on_nondeterministic_merge: typing.Union[bool, IResolvable] = None,
-  error_on_nondeterministic_update: typing.Union[bool, IResolvable] = None,
+  enable_unload_physical_type_optimization: bool | IResolvable = None,
+  enable_unredacted_query_syntax_error: bool | IResolvable = None,
+  error_on_nondeterministic_merge: bool | IResolvable = None,
+  error_on_nondeterministic_update: bool | IResolvable = None,
   geography_output_format: str = None,
   geometry_output_format: str = None,
   id: str = None,
-  jdbc_treat_decimal_as_int: typing.Union[bool, IResolvable] = None,
-  jdbc_treat_timestamp_ntz_as_utc: typing.Union[bool, IResolvable] = None,
-  jdbc_use_session_timezone: typing.Union[bool, IResolvable] = None,
+  jdbc_treat_decimal_as_int: bool | IResolvable = None,
+  jdbc_treat_timestamp_ntz_as_utc: bool | IResolvable = None,
+  jdbc_use_session_timezone: bool | IResolvable = None,
   json_indent: typing.Union[int, float] = None,
   lock_timeout: typing.Union[int, float] = None,
   login_name: str = None,
@@ -63,12 +63,12 @@ legacyServiceUser.LegacyServiceUser(
   multi_statement_count: typing.Union[int, float] = None,
   must_change_password: str = None,
   network_policy: str = None,
-  noorder_sequence_as_default: typing.Union[bool, IResolvable] = None,
-  odbc_treat_decimal_as_int: typing.Union[bool, IResolvable] = None,
+  noorder_sequence_as_default: bool | IResolvable = None,
+  odbc_treat_decimal_as_int: bool | IResolvable = None,
   password: str = None,
-  prevent_unload_to_internal_stages: typing.Union[bool, IResolvable] = None,
+  prevent_unload_to_internal_stages: bool | IResolvable = None,
   query_tag: str = None,
-  quoted_identifiers_ignore_case: typing.Union[bool, IResolvable] = None,
+  quoted_identifiers_ignore_case: bool | IResolvable = None,
   rows_per_resultset: typing.Union[int, float] = None,
   rsa_public_key: str = None,
   rsa_public_key2: str = None,
@@ -77,10 +77,10 @@ legacyServiceUser.LegacyServiceUser(
   simulated_data_sharing_consumer: str = None,
   statement_queued_timeout_in_seconds: typing.Union[int, float] = None,
   statement_timeout_in_seconds: typing.Union[int, float] = None,
-  strict_json_output: typing.Union[bool, IResolvable] = None,
+  strict_json_output: bool | IResolvable = None,
   time_input_format: str = None,
   time_output_format: str = None,
-  timestamp_day_is_always24_h: typing.Union[bool, IResolvable] = None,
+  timestamp_day_is_always24_h: bool | IResolvable = None,
   timestamp_input_format: str = None,
   timestamp_ltz_output_format: str = None,
   timestamp_ntz_output_format: str = None,
@@ -89,11 +89,11 @@ legacyServiceUser.LegacyServiceUser(
   timestamp_tz_output_format: str = None,
   timezone: str = None,
   trace_level: str = None,
-  transaction_abort_on_error: typing.Union[bool, IResolvable] = None,
+  transaction_abort_on_error: bool | IResolvable = None,
   transaction_default_isolation_level: str = None,
   two_digit_century_start: typing.Union[int, float] = None,
   unsupported_ddl_action: str = None,
-  use_cached_result: typing.Union[bool, IResolvable] = None,
+  use_cached_result: bool | IResolvable = None,
   week_of_year_policy: typing.Union[int, float] = None,
   week_start: typing.Union[int, float] = None
 )
@@ -103,24 +103,24 @@ legacyServiceUser.LegacyServiceUser(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the user. |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.abortDetachedQuery">abort_detached_query</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies the action that Snowflake performs for in-progress queries if connectivity is lost due to abrupt termination of a session (e.g. network outage, browser termination, service interruption). For more information, check [ABORT_DETACHED_QUERY docs](https://docs.snowflake.com/en/sql-reference/parameters#abort-detached-query). |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.autocommit">autocommit</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether autocommit is enabled for the session. |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.abortDetachedQuery">abort_detached_query</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies the action that Snowflake performs for in-progress queries if connectivity is lost due to abrupt termination of a session (e.g. network outage, browser termination, service interruption). For more information, check [ABORT_DETACHED_QUERY docs](https://docs.snowflake.com/en/sql-reference/parameters#abort-detached-query). |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.autocommit">autocommit</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether autocommit is enabled for the session. |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.binaryInputFormat">binary_input_format</a></code> | <code>str</code> | The format of VARCHAR values passed as input to VARCHAR-to-BINARY conversion functions. |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.binaryOutputFormat">binary_output_format</a></code> | <code>str</code> | The format for VARCHAR values returned as output by BINARY-to-VARCHAR conversion functions. |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.clientMemoryLimit">client_memory_limit</a></code> | <code>typing.Union[int, float]</code> | Parameter that specifies the maximum amount of memory the JDBC driver or ODBC driver should use for the result set from queries (in MB). |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.clientMetadataRequestUseConnectionCtx">client_metadata_request_use_connection_ctx</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | For specific ODBC functions and JDBC methods, this parameter can change the default search scope from all databases/schemas to the current database/schema. |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.clientMetadataRequestUseConnectionCtx">client_metadata_request_use_connection_ctx</a></code> | <code>bool \| cdktf.IResolvable</code> | For specific ODBC functions and JDBC methods, this parameter can change the default search scope from all databases/schemas to the current database/schema. |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.clientPrefetchThreads">client_prefetch_threads</a></code> | <code>typing.Union[int, float]</code> | Parameter that specifies the number of threads used by the client to pre-fetch large result sets. |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.clientResultChunkSize">client_result_chunk_size</a></code> | <code>typing.Union[int, float]</code> | Parameter that specifies the maximum size of each set (or chunk) of query results to download (in MB). |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.clientResultColumnCaseInsensitive">client_result_column_case_insensitive</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Parameter that indicates whether to match column name case-insensitively in ResultSet.get* methods in JDBC. For more information, check [CLIENT_RESULT_COLUMN_CASE_INSENSITIVE docs](https://docs.snowflake.com/en/sql-reference/parameters#client-result-column-case-insensitive). |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.clientSessionKeepAlive">client_session_keep_alive</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Parameter that indicates whether to force a user to log in again after a period of inactivity in the session. |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.clientResultColumnCaseInsensitive">client_result_column_case_insensitive</a></code> | <code>bool \| cdktf.IResolvable</code> | Parameter that indicates whether to match column name case-insensitively in ResultSet.get* methods in JDBC. For more information, check [CLIENT_RESULT_COLUMN_CASE_INSENSITIVE docs](https://docs.snowflake.com/en/sql-reference/parameters#client-result-column-case-insensitive). |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.clientSessionKeepAlive">client_session_keep_alive</a></code> | <code>bool \| cdktf.IResolvable</code> | Parameter that indicates whether to force a user to log in again after a period of inactivity in the session. |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.clientSessionKeepAliveHeartbeatFrequency">client_session_keep_alive_heartbeat_frequency</a></code> | <code>typing.Union[int, float]</code> | Number of seconds in-between client attempts to update the token for the session. For more information, check [CLIENT_SESSION_KEEP_ALIVE_HEARTBEAT_FREQUENCY docs](https://docs.snowflake.com/en/sql-reference/parameters#client-session-keep-alive-heartbeat-frequency). |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.clientTimestampTypeMapping">client_timestamp_type_mapping</a></code> | <code>str</code> | Specifies the [TIMESTAMP_* variation](https://docs.snowflake.com/en/sql-reference/data-types-datetime.html#label-datatypes-timestamp-variations) to use when binding timestamp variables for JDBC or ODBC applications that use the bind API to load data. For more information, check [CLIENT_TIMESTAMP_TYPE_MAPPING docs](https://docs.snowflake.com/en/sql-reference/parameters#client-timestamp-type-mapping). |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.comment">comment</a></code> | <code>str</code> | Specifies a comment for the user. |
@@ -134,16 +134,16 @@ legacyServiceUser.LegacyServiceUser(
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.disabled">disabled</a></code> | <code>str</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether the user is disabled, which prevents logging in and aborts all the currently-running queries for the user. |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | Name displayed for the user in the Snowflake web interface. |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.email">email</a></code> | <code>str</code> | Email address for the user. |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.enableUnloadPhysicalTypeOptimization">enable_unload_physical_type_optimization</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether to set the schema for unloaded Parquet files based on the logical column data types (i.e. the types in the unload SQL query or source table) or on the unloaded column values (i.e. the smallest data types and precision that support the values in the output columns of the unload SQL statement or source table). For more information, check [ENABLE_UNLOAD_PHYSICAL_TYPE_OPTIMIZATION docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-unload-physical-type-optimization). |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.enableUnredactedQuerySyntaxError">enable_unredacted_query_syntax_error</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Controls whether query text is redacted if a SQL query fails due to a syntax or parsing error. |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.errorOnNondeterministicMerge">error_on_nondeterministic_merge</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether to return an error when the [MERGE](https://docs.snowflake.com/en/sql-reference/sql/merge) command is used to update or delete a target row that joins multiple source rows and the system cannot determine the action to perform on the target row. For more information, check [ERROR_ON_NONDETERMINISTIC_MERGE docs](https://docs.snowflake.com/en/sql-reference/parameters#error-on-nondeterministic-merge). |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.errorOnNondeterministicUpdate">error_on_nondeterministic_update</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether to return an error when the [UPDATE](https://docs.snowflake.com/en/sql-reference/sql/update) command is used to update a target row that joins multiple source rows and the system cannot determine the action to perform on the target row. For more information, check [ERROR_ON_NONDETERMINISTIC_UPDATE docs](https://docs.snowflake.com/en/sql-reference/parameters#error-on-nondeterministic-update). |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.enableUnloadPhysicalTypeOptimization">enable_unload_physical_type_optimization</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether to set the schema for unloaded Parquet files based on the logical column data types (i.e. the types in the unload SQL query or source table) or on the unloaded column values (i.e. the smallest data types and precision that support the values in the output columns of the unload SQL statement or source table). For more information, check [ENABLE_UNLOAD_PHYSICAL_TYPE_OPTIMIZATION docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-unload-physical-type-optimization). |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.enableUnredactedQuerySyntaxError">enable_unredacted_query_syntax_error</a></code> | <code>bool \| cdktf.IResolvable</code> | Controls whether query text is redacted if a SQL query fails due to a syntax or parsing error. |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.errorOnNondeterministicMerge">error_on_nondeterministic_merge</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether to return an error when the [MERGE](https://docs.snowflake.com/en/sql-reference/sql/merge) command is used to update or delete a target row that joins multiple source rows and the system cannot determine the action to perform on the target row. For more information, check [ERROR_ON_NONDETERMINISTIC_MERGE docs](https://docs.snowflake.com/en/sql-reference/parameters#error-on-nondeterministic-merge). |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.errorOnNondeterministicUpdate">error_on_nondeterministic_update</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether to return an error when the [UPDATE](https://docs.snowflake.com/en/sql-reference/sql/update) command is used to update a target row that joins multiple source rows and the system cannot determine the action to perform on the target row. For more information, check [ERROR_ON_NONDETERMINISTIC_UPDATE docs](https://docs.snowflake.com/en/sql-reference/parameters#error-on-nondeterministic-update). |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.geographyOutputFormat">geography_output_format</a></code> | <code>str</code> | Display format for [GEOGRAPHY values](https://docs.snowflake.com/en/sql-reference/data-types-geospatial.html#label-data-types-geography). For more information, check [GEOGRAPHY_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#geography-output-format). |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.geometryOutputFormat">geometry_output_format</a></code> | <code>str</code> | Display format for [GEOMETRY values](https://docs.snowflake.com/en/sql-reference/data-types-geospatial.html#label-data-types-geometry). For more information, check [GEOMETRY_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#geometry-output-format). |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/legacy_service_user#id LegacyServiceUser#id}. |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.jdbcTreatDecimalAsInt">jdbc_treat_decimal_as_int</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies how JDBC processes columns that have a scale of zero (0). For more information, check [JDBC_TREAT_DECIMAL_AS_INT docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-treat-decimal-as-int). |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.jdbcTreatTimestampNtzAsUtc">jdbc_treat_timestamp_ntz_as_utc</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies how JDBC processes TIMESTAMP_NTZ values. For more information, check [JDBC_TREAT_TIMESTAMP_NTZ_AS_UTC docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-treat-timestamp-ntz-as-utc). |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.jdbcUseSessionTimezone">jdbc_use_session_timezone</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether the JDBC Driver uses the time zone of the JVM or the time zone of the session (specified by the [TIMEZONE](https://docs.snowflake.com/en/sql-reference/parameters#label-timezone) parameter) for the getDate(), getTime(), and getTimestamp() methods of the ResultSet class. For more information, check [JDBC_USE_SESSION_TIMEZONE docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-use-session-timezone). |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.jdbcTreatDecimalAsInt">jdbc_treat_decimal_as_int</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies how JDBC processes columns that have a scale of zero (0). For more information, check [JDBC_TREAT_DECIMAL_AS_INT docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-treat-decimal-as-int). |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.jdbcTreatTimestampNtzAsUtc">jdbc_treat_timestamp_ntz_as_utc</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies how JDBC processes TIMESTAMP_NTZ values. For more information, check [JDBC_TREAT_TIMESTAMP_NTZ_AS_UTC docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-treat-timestamp-ntz-as-utc). |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.jdbcUseSessionTimezone">jdbc_use_session_timezone</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether the JDBC Driver uses the time zone of the JVM or the time zone of the session (specified by the [TIMEZONE](https://docs.snowflake.com/en/sql-reference/parameters#label-timezone) parameter) for the getDate(), getTime(), and getTimestamp() methods of the ResultSet class. For more information, check [JDBC_USE_SESSION_TIMEZONE docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-use-session-timezone). |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.jsonIndent">json_indent</a></code> | <code>typing.Union[int, float]</code> | Specifies the number of blank spaces to indent each new element in JSON output in the session. |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.lockTimeout">lock_timeout</a></code> | <code>typing.Union[int, float]</code> | Number of seconds to wait while trying to lock a resource, before timing out and aborting the statement. |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.loginName">login_name</a></code> | <code>str</code> | The name users use to log in. |
@@ -152,12 +152,12 @@ legacyServiceUser.LegacyServiceUser(
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.multiStatementCount">multi_statement_count</a></code> | <code>typing.Union[int, float]</code> | Number of statements to execute when using the multi-statement capability. For more information, check [MULTI_STATEMENT_COUNT docs](https://docs.snowflake.com/en/sql-reference/parameters#multi-statement-count). |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.mustChangePassword">must_change_password</a></code> | <code>str</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether the user is forced to change their password on next login (including their first/initial login) into the system. |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.networkPolicy">network_policy</a></code> | <code>str</code> | Specifies the network policy to enforce for your account. |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.noorderSequenceAsDefault">noorder_sequence_as_default</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether the ORDER or NOORDER property is set by default when you create a new sequence or add a new table column. |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.odbcTreatDecimalAsInt">odbc_treat_decimal_as_int</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies how ODBC processes columns that have a scale of zero (0). For more information, check [ODBC_TREAT_DECIMAL_AS_INT docs](https://docs.snowflake.com/en/sql-reference/parameters#odbc-treat-decimal-as-int). |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.noorderSequenceAsDefault">noorder_sequence_as_default</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether the ORDER or NOORDER property is set by default when you create a new sequence or add a new table column. |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.odbcTreatDecimalAsInt">odbc_treat_decimal_as_int</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies how ODBC processes columns that have a scale of zero (0). For more information, check [ODBC_TREAT_DECIMAL_AS_INT docs](https://docs.snowflake.com/en/sql-reference/parameters#odbc-treat-decimal-as-int). |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.password">password</a></code> | <code>str</code> | Password for the user. |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.preventUnloadToInternalStages">prevent_unload_to_internal_stages</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether to prevent data unload operations to internal (Snowflake) stages using [COPY INTO <location>](https://docs.snowflake.com/en/sql-reference/sql/copy-into-location) statements. For more information, check [PREVENT_UNLOAD_TO_INTERNAL_STAGES docs](https://docs.snowflake.com/en/sql-reference/parameters#prevent-unload-to-internal-stages). |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.preventUnloadToInternalStages">prevent_unload_to_internal_stages</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether to prevent data unload operations to internal (Snowflake) stages using [COPY INTO <location>](https://docs.snowflake.com/en/sql-reference/sql/copy-into-location) statements. For more information, check [PREVENT_UNLOAD_TO_INTERNAL_STAGES docs](https://docs.snowflake.com/en/sql-reference/parameters#prevent-unload-to-internal-stages). |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.queryTag">query_tag</a></code> | <code>str</code> | Optional string that can be used to tag queries and other SQL statements executed within a session. |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.quotedIdentifiersIgnoreCase">quoted_identifiers_ignore_case</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether letters in double-quoted object identifiers are stored and resolved as uppercase letters. |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.quotedIdentifiersIgnoreCase">quoted_identifiers_ignore_case</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether letters in double-quoted object identifiers are stored and resolved as uppercase letters. |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.rowsPerResultset">rows_per_resultset</a></code> | <code>typing.Union[int, float]</code> | Specifies the maximum number of rows returned in a result set. |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.rsaPublicKey">rsa_public_key</a></code> | <code>str</code> | Specifies the user’s RSA public key; used for key-pair authentication. Must be on 1 line without header and trailer. |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.rsaPublicKey2">rsa_public_key2</a></code> | <code>str</code> | Specifies the user’s second RSA public key; |
@@ -166,10 +166,10 @@ legacyServiceUser.LegacyServiceUser(
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.simulatedDataSharingConsumer">simulated_data_sharing_consumer</a></code> | <code>str</code> | Specifies the name of a consumer account to simulate for testing/validating shared data, particularly shared secure views. |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.statementQueuedTimeoutInSeconds">statement_queued_timeout_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Amount of time, in seconds, a SQL statement (query, DDL, DML, etc.) remains queued for a warehouse before it is canceled by the system. This parameter can be used in conjunction with the [MAX_CONCURRENCY_LEVEL](https://docs.snowflake.com/en/sql-reference/parameters#label-max-concurrency-level) parameter to ensure a warehouse is never backlogged. For more information, check [STATEMENT_QUEUED_TIMEOUT_IN_SECONDS docs](https://docs.snowflake.com/en/sql-reference/parameters#statement-queued-timeout-in-seconds). |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.statementTimeoutInSeconds">statement_timeout_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Amount of time, in seconds, after which a running SQL statement (query, DDL, DML, etc.) is canceled by the system. For more information, check [STATEMENT_TIMEOUT_IN_SECONDS docs](https://docs.snowflake.com/en/sql-reference/parameters#statement-timeout-in-seconds). |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.strictJsonOutput">strict_json_output</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | This parameter specifies whether JSON output in a session is compatible with the general standard (as described by [http://json.org](http://json.org)). By design, Snowflake allows JSON input that contains non-standard values; however, these non-standard values might result in Snowflake outputting JSON that is incompatible with other platforms and languages. This parameter, when enabled, ensures that Snowflake outputs valid/compatible JSON. For more information, check [STRICT_JSON_OUTPUT docs](https://docs.snowflake.com/en/sql-reference/parameters#strict-json-output). |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.strictJsonOutput">strict_json_output</a></code> | <code>bool \| cdktf.IResolvable</code> | This parameter specifies whether JSON output in a session is compatible with the general standard (as described by [http://json.org](http://json.org)). By design, Snowflake allows JSON input that contains non-standard values; however, these non-standard values might result in Snowflake outputting JSON that is incompatible with other platforms and languages. This parameter, when enabled, ensures that Snowflake outputs valid/compatible JSON. For more information, check [STRICT_JSON_OUTPUT docs](https://docs.snowflake.com/en/sql-reference/parameters#strict-json-output). |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.timeInputFormat">time_input_format</a></code> | <code>str</code> | Specifies the input format for the TIME data type. |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.timeOutputFormat">time_output_format</a></code> | <code>str</code> | Specifies the display format for the TIME data type. |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.timestampDayIsAlways24H">timestamp_day_is_always24_h</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether the [DATEADD](https://docs.snowflake.com/en/sql-reference/functions/dateadd) function (and its aliases) always consider a day to be exactly 24 hours for expressions that span multiple days. For more information, check [TIMESTAMP_DAY_IS_ALWAYS_24H docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-day-is-always-24h). |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.timestampDayIsAlways24H">timestamp_day_is_always24_h</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether the [DATEADD](https://docs.snowflake.com/en/sql-reference/functions/dateadd) function (and its aliases) always consider a day to be exactly 24 hours for expressions that span multiple days. For more information, check [TIMESTAMP_DAY_IS_ALWAYS_24H docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-day-is-always-24h). |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.timestampInputFormat">timestamp_input_format</a></code> | <code>str</code> | Specifies the input format for the TIMESTAMP data type alias. |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.timestampLtzOutputFormat">timestamp_ltz_output_format</a></code> | <code>str</code> | Specifies the display format for the TIMESTAMP_LTZ data type. |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.timestampNtzOutputFormat">timestamp_ntz_output_format</a></code> | <code>str</code> | Specifies the display format for the TIMESTAMP_NTZ data type. For more information, check [TIMESTAMP_NTZ_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-ntz-output-format). |
@@ -178,11 +178,11 @@ legacyServiceUser.LegacyServiceUser(
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.timestampTzOutputFormat">timestamp_tz_output_format</a></code> | <code>str</code> | Specifies the display format for the TIMESTAMP_TZ data type. |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.timezone">timezone</a></code> | <code>str</code> | Specifies the time zone for the session. |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.traceLevel">trace_level</a></code> | <code>str</code> | Controls how trace events are ingested into the event table. |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.transactionAbortOnError">transaction_abort_on_error</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies the action to perform when a statement issued within a non-autocommit transaction returns with an error. |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.transactionAbortOnError">transaction_abort_on_error</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies the action to perform when a statement issued within a non-autocommit transaction returns with an error. |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.transactionDefaultIsolationLevel">transaction_default_isolation_level</a></code> | <code>str</code> | Specifies the isolation level for transactions in the user session. For more information, check [TRANSACTION_DEFAULT_ISOLATION_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#transaction-default-isolation-level). |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.twoDigitCenturyStart">two_digit_century_start</a></code> | <code>typing.Union[int, float]</code> | Specifies the “century start” year for 2-digit years (i.e. the earliest year such dates can represent). This parameter prevents ambiguous dates when importing or converting data with the `YY` date format component (i.e. years represented as 2 digits). For more information, check [TWO_DIGIT_CENTURY_START docs](https://docs.snowflake.com/en/sql-reference/parameters#two-digit-century-start). |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.unsupportedDdlAction">unsupported_ddl_action</a></code> | <code>str</code> | Determines if an unsupported (i.e. non-default) value specified for a constraint property returns an error. For more information, check [UNSUPPORTED_DDL_ACTION docs](https://docs.snowflake.com/en/sql-reference/parameters#unsupported-ddl-action). |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.useCachedResult">use_cached_result</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether to reuse persisted query results, if available, when a matching query is submitted. |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.useCachedResult">use_cached_result</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether to reuse persisted query results, if available, when a matching query is submitted. |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.weekOfYearPolicy">week_of_year_policy</a></code> | <code>typing.Union[int, float]</code> | Specifies how the weeks in a given year are computed. |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.weekStart">week_start</a></code> | <code>typing.Union[int, float]</code> | Specifies the first day of the week (used by week-related date functions). |
 
@@ -208,13 +208,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -244,7 +244,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -262,7 +262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `abort_detached_query`<sup>Optional</sup> <a name="abort_detached_query" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.abortDetachedQuery"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies the action that Snowflake performs for in-progress queries if connectivity is lost due to abrupt termination of a session (e.g. network outage, browser termination, service interruption). For more information, check [ABORT_DETACHED_QUERY docs](https://docs.snowflake.com/en/sql-reference/parameters#abort-detached-query).
 
@@ -272,7 +272,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `autocommit`<sup>Optional</sup> <a name="autocommit" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.autocommit"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether autocommit is enabled for the session.
 
@@ -320,7 +320,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `client_metadata_request_use_connection_ctx`<sup>Optional</sup> <a name="client_metadata_request_use_connection_ctx" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.clientMetadataRequestUseConnectionCtx"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 For specific ODBC functions and JDBC methods, this parameter can change the default search scope from all databases/schemas to the current database/schema.
 
@@ -356,7 +356,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `client_result_column_case_insensitive`<sup>Optional</sup> <a name="client_result_column_case_insensitive" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.clientResultColumnCaseInsensitive"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Parameter that indicates whether to match column name case-insensitively in ResultSet.get* methods in JDBC. For more information, check [CLIENT_RESULT_COLUMN_CASE_INSENSITIVE docs](https://docs.snowflake.com/en/sql-reference/parameters#client-result-column-case-insensitive).
 
@@ -366,7 +366,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `client_session_keep_alive`<sup>Optional</sup> <a name="client_session_keep_alive" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.clientSessionKeepAlive"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Parameter that indicates whether to force a user to log in again after a period of inactivity in the session.
 
@@ -524,7 +524,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `enable_unload_physical_type_optimization`<sup>Optional</sup> <a name="enable_unload_physical_type_optimization" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.enableUnloadPhysicalTypeOptimization"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether to set the schema for unloaded Parquet files based on the logical column data types (i.e. the types in the unload SQL query or source table) or on the unloaded column values (i.e. the smallest data types and precision that support the values in the output columns of the unload SQL statement or source table). For more information, check [ENABLE_UNLOAD_PHYSICAL_TYPE_OPTIMIZATION docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-unload-physical-type-optimization).
 
@@ -534,7 +534,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `enable_unredacted_query_syntax_error`<sup>Optional</sup> <a name="enable_unredacted_query_syntax_error" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.enableUnredactedQuerySyntaxError"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Controls whether query text is redacted if a SQL query fails due to a syntax or parsing error.
 
@@ -546,7 +546,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `error_on_nondeterministic_merge`<sup>Optional</sup> <a name="error_on_nondeterministic_merge" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.errorOnNondeterministicMerge"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether to return an error when the [MERGE](https://docs.snowflake.com/en/sql-reference/sql/merge) command is used to update or delete a target row that joins multiple source rows and the system cannot determine the action to perform on the target row. For more information, check [ERROR_ON_NONDETERMINISTIC_MERGE docs](https://docs.snowflake.com/en/sql-reference/parameters#error-on-nondeterministic-merge).
 
@@ -556,7 +556,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `error_on_nondeterministic_update`<sup>Optional</sup> <a name="error_on_nondeterministic_update" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.errorOnNondeterministicUpdate"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether to return an error when the [UPDATE](https://docs.snowflake.com/en/sql-reference/sql/update) command is used to update a target row that joins multiple source rows and the system cannot determine the action to perform on the target row. For more information, check [ERROR_ON_NONDETERMINISTIC_UPDATE docs](https://docs.snowflake.com/en/sql-reference/parameters#error-on-nondeterministic-update).
 
@@ -597,7 +597,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ##### `jdbc_treat_decimal_as_int`<sup>Optional</sup> <a name="jdbc_treat_decimal_as_int" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.jdbcTreatDecimalAsInt"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies how JDBC processes columns that have a scale of zero (0). For more information, check [JDBC_TREAT_DECIMAL_AS_INT docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-treat-decimal-as-int).
 
@@ -607,7 +607,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `jdbc_treat_timestamp_ntz_as_utc`<sup>Optional</sup> <a name="jdbc_treat_timestamp_ntz_as_utc" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.jdbcTreatTimestampNtzAsUtc"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies how JDBC processes TIMESTAMP_NTZ values. For more information, check [JDBC_TREAT_TIMESTAMP_NTZ_AS_UTC docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-treat-timestamp-ntz-as-utc).
 
@@ -617,7 +617,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `jdbc_use_session_timezone`<sup>Optional</sup> <a name="jdbc_use_session_timezone" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.jdbcUseSessionTimezone"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether the JDBC Driver uses the time zone of the JVM or the time zone of the session (specified by the [TIMEZONE](https://docs.snowflake.com/en/sql-reference/parameters#label-timezone) parameter) for the getDate(), getTime(), and getTimestamp() methods of the ResultSet class. For more information, check [JDBC_USE_SESSION_TIMEZONE docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-use-session-timezone).
 
@@ -721,7 +721,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `noorder_sequence_as_default`<sup>Optional</sup> <a name="noorder_sequence_as_default" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.noorderSequenceAsDefault"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether the ORDER or NOORDER property is set by default when you create a new sequence or add a new table column.
 
@@ -733,7 +733,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `odbc_treat_decimal_as_int`<sup>Optional</sup> <a name="odbc_treat_decimal_as_int" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.odbcTreatDecimalAsInt"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies how ODBC processes columns that have a scale of zero (0). For more information, check [ODBC_TREAT_DECIMAL_AS_INT docs](https://docs.snowflake.com/en/sql-reference/parameters#odbc-treat-decimal-as-int).
 
@@ -755,7 +755,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `prevent_unload_to_internal_stages`<sup>Optional</sup> <a name="prevent_unload_to_internal_stages" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.preventUnloadToInternalStages"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether to prevent data unload operations to internal (Snowflake) stages using [COPY INTO <location>](https://docs.snowflake.com/en/sql-reference/sql/copy-into-location) statements. For more information, check [PREVENT_UNLOAD_TO_INTERNAL_STAGES docs](https://docs.snowflake.com/en/sql-reference/parameters#prevent-unload-to-internal-stages).
 
@@ -777,7 +777,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `quoted_identifiers_ignore_case`<sup>Optional</sup> <a name="quoted_identifiers_ignore_case" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.quotedIdentifiersIgnoreCase"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether letters in double-quoted object identifiers are stored and resolved as uppercase letters.
 
@@ -879,7 +879,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `strict_json_output`<sup>Optional</sup> <a name="strict_json_output" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.strictJsonOutput"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 This parameter specifies whether JSON output in a session is compatible with the general standard (as described by [http://json.org](http://json.org)). By design, Snowflake allows JSON input that contains non-standard values; however, these non-standard values might result in Snowflake outputting JSON that is incompatible with other platforms and languages. This parameter, when enabled, ensures that Snowflake outputs valid/compatible JSON. For more information, check [STRICT_JSON_OUTPUT docs](https://docs.snowflake.com/en/sql-reference/parameters#strict-json-output).
 
@@ -913,7 +913,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `timestamp_day_is_always24_h`<sup>Optional</sup> <a name="timestamp_day_is_always24_h" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.timestampDayIsAlways24H"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether the [DATEADD](https://docs.snowflake.com/en/sql-reference/functions/dateadd) function (and its aliases) always consider a day to be exactly 24 hours for expressions that span multiple days. For more information, check [TIMESTAMP_DAY_IS_ALWAYS_24H docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-day-is-always-24h).
 
@@ -1015,7 +1015,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `transaction_abort_on_error`<sup>Optional</sup> <a name="transaction_abort_on_error" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.transactionAbortOnError"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies the action to perform when a statement issued within a non-autocommit transaction returns with an error.
 
@@ -1057,7 +1057,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 ##### `use_cached_result`<sup>Optional</sup> <a name="use_cached_result" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.Initializer.parameter.useCachedResult"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether to reuse persisted query results, if available, when a matching query is submitted.
 
@@ -1417,7 +1417,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.importFrom"></a>
@@ -1480,7 +1480,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -1496,7 +1496,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -2101,28 +2101,28 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.fullyQualifiedName">fully_qualified_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.parameters">parameters</a></code> | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserParametersList">LegacyServiceUserParametersList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.showOutput">show_output</a></code> | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserShowOutputList">LegacyServiceUserShowOutputList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.userType">user_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.abortDetachedQueryInput">abort_detached_query_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.autocommitInput">autocommit_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.abortDetachedQueryInput">abort_detached_query_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.autocommitInput">autocommit_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.binaryInputFormatInput">binary_input_format_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.binaryOutputFormatInput">binary_output_format_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.clientMemoryLimitInput">client_memory_limit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.clientMetadataRequestUseConnectionCtxInput">client_metadata_request_use_connection_ctx_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.clientMetadataRequestUseConnectionCtxInput">client_metadata_request_use_connection_ctx_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.clientPrefetchThreadsInput">client_prefetch_threads_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.clientResultChunkSizeInput">client_result_chunk_size_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.clientResultColumnCaseInsensitiveInput">client_result_column_case_insensitive_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.clientResultColumnCaseInsensitiveInput">client_result_column_case_insensitive_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.clientSessionKeepAliveHeartbeatFrequencyInput">client_session_keep_alive_heartbeat_frequency_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.clientSessionKeepAliveInput">client_session_keep_alive_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.clientSessionKeepAliveInput">client_session_keep_alive_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.clientTimestampTypeMappingInput">client_timestamp_type_mapping_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.commentInput">comment_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.dateInputFormatInput">date_input_format_input</a></code> | <code>str</code> | *No description.* |
@@ -2135,16 +2135,16 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.disabledInput">disabled_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.displayNameInput">display_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.emailInput">email_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.enableUnloadPhysicalTypeOptimizationInput">enable_unload_physical_type_optimization_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.enableUnredactedQuerySyntaxErrorInput">enable_unredacted_query_syntax_error_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.errorOnNondeterministicMergeInput">error_on_nondeterministic_merge_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.errorOnNondeterministicUpdateInput">error_on_nondeterministic_update_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.enableUnloadPhysicalTypeOptimizationInput">enable_unload_physical_type_optimization_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.enableUnredactedQuerySyntaxErrorInput">enable_unredacted_query_syntax_error_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.errorOnNondeterministicMergeInput">error_on_nondeterministic_merge_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.errorOnNondeterministicUpdateInput">error_on_nondeterministic_update_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.geographyOutputFormatInput">geography_output_format_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.geometryOutputFormatInput">geometry_output_format_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.jdbcTreatDecimalAsIntInput">jdbc_treat_decimal_as_int_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.jdbcTreatTimestampNtzAsUtcInput">jdbc_treat_timestamp_ntz_as_utc_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.jdbcUseSessionTimezoneInput">jdbc_use_session_timezone_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.jdbcTreatDecimalAsIntInput">jdbc_treat_decimal_as_int_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.jdbcTreatTimestampNtzAsUtcInput">jdbc_treat_timestamp_ntz_as_utc_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.jdbcUseSessionTimezoneInput">jdbc_use_session_timezone_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.jsonIndentInput">json_indent_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.lockTimeoutInput">lock_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.loginNameInput">login_name_input</a></code> | <code>str</code> | *No description.* |
@@ -2154,12 +2154,12 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.mustChangePasswordInput">must_change_password_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.networkPolicyInput">network_policy_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.noorderSequenceAsDefaultInput">noorder_sequence_as_default_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.odbcTreatDecimalAsIntInput">odbc_treat_decimal_as_int_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.noorderSequenceAsDefaultInput">noorder_sequence_as_default_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.odbcTreatDecimalAsIntInput">odbc_treat_decimal_as_int_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.passwordInput">password_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.preventUnloadToInternalStagesInput">prevent_unload_to_internal_stages_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.preventUnloadToInternalStagesInput">prevent_unload_to_internal_stages_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.queryTagInput">query_tag_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.quotedIdentifiersIgnoreCaseInput">quoted_identifiers_ignore_case_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.quotedIdentifiersIgnoreCaseInput">quoted_identifiers_ignore_case_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.rowsPerResultsetInput">rows_per_resultset_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.rsaPublicKey2Input">rsa_public_key2_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.rsaPublicKeyInput">rsa_public_key_input</a></code> | <code>str</code> | *No description.* |
@@ -2168,10 +2168,10 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.simulatedDataSharingConsumerInput">simulated_data_sharing_consumer_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.statementQueuedTimeoutInSecondsInput">statement_queued_timeout_in_seconds_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.statementTimeoutInSecondsInput">statement_timeout_in_seconds_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.strictJsonOutputInput">strict_json_output_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.strictJsonOutputInput">strict_json_output_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.timeInputFormatInput">time_input_format_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.timeOutputFormatInput">time_output_format_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.timestampDayIsAlways24HInput">timestamp_day_is_always24_h_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.timestampDayIsAlways24HInput">timestamp_day_is_always24_h_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.timestampInputFormatInput">timestamp_input_format_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.timestampLtzOutputFormatInput">timestamp_ltz_output_format_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.timestampNtzOutputFormatInput">timestamp_ntz_output_format_input</a></code> | <code>str</code> | *No description.* |
@@ -2180,23 +2180,23 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.timestampTzOutputFormatInput">timestamp_tz_output_format_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.timezoneInput">timezone_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.traceLevelInput">trace_level_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.transactionAbortOnErrorInput">transaction_abort_on_error_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.transactionAbortOnErrorInput">transaction_abort_on_error_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.transactionDefaultIsolationLevelInput">transaction_default_isolation_level_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.twoDigitCenturyStartInput">two_digit_century_start_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.unsupportedDdlActionInput">unsupported_ddl_action_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.useCachedResultInput">use_cached_result_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.useCachedResultInput">use_cached_result_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.weekOfYearPolicyInput">week_of_year_policy_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.weekStartInput">week_start_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.abortDetachedQuery">abort_detached_query</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.autocommit">autocommit</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.abortDetachedQuery">abort_detached_query</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.autocommit">autocommit</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.binaryInputFormat">binary_input_format</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.binaryOutputFormat">binary_output_format</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.clientMemoryLimit">client_memory_limit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.clientMetadataRequestUseConnectionCtx">client_metadata_request_use_connection_ctx</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.clientMetadataRequestUseConnectionCtx">client_metadata_request_use_connection_ctx</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.clientPrefetchThreads">client_prefetch_threads</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.clientResultChunkSize">client_result_chunk_size</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.clientResultColumnCaseInsensitive">client_result_column_case_insensitive</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.clientSessionKeepAlive">client_session_keep_alive</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.clientResultColumnCaseInsensitive">client_result_column_case_insensitive</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.clientSessionKeepAlive">client_session_keep_alive</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.clientSessionKeepAliveHeartbeatFrequency">client_session_keep_alive_heartbeat_frequency</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.clientTimestampTypeMapping">client_timestamp_type_mapping</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.comment">comment</a></code> | <code>str</code> | *No description.* |
@@ -2210,16 +2210,16 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.disabled">disabled</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.email">email</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.enableUnloadPhysicalTypeOptimization">enable_unload_physical_type_optimization</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.enableUnredactedQuerySyntaxError">enable_unredacted_query_syntax_error</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.errorOnNondeterministicMerge">error_on_nondeterministic_merge</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.errorOnNondeterministicUpdate">error_on_nondeterministic_update</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.enableUnloadPhysicalTypeOptimization">enable_unload_physical_type_optimization</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.enableUnredactedQuerySyntaxError">enable_unredacted_query_syntax_error</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.errorOnNondeterministicMerge">error_on_nondeterministic_merge</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.errorOnNondeterministicUpdate">error_on_nondeterministic_update</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.geographyOutputFormat">geography_output_format</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.geometryOutputFormat">geometry_output_format</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.jdbcTreatDecimalAsInt">jdbc_treat_decimal_as_int</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.jdbcTreatTimestampNtzAsUtc">jdbc_treat_timestamp_ntz_as_utc</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.jdbcUseSessionTimezone">jdbc_use_session_timezone</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.jdbcTreatDecimalAsInt">jdbc_treat_decimal_as_int</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.jdbcTreatTimestampNtzAsUtc">jdbc_treat_timestamp_ntz_as_utc</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.jdbcUseSessionTimezone">jdbc_use_session_timezone</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.jsonIndent">json_indent</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.lockTimeout">lock_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.loginName">login_name</a></code> | <code>str</code> | *No description.* |
@@ -2229,12 +2229,12 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.mustChangePassword">must_change_password</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.networkPolicy">network_policy</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.noorderSequenceAsDefault">noorder_sequence_as_default</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.odbcTreatDecimalAsInt">odbc_treat_decimal_as_int</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.noorderSequenceAsDefault">noorder_sequence_as_default</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.odbcTreatDecimalAsInt">odbc_treat_decimal_as_int</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.password">password</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.preventUnloadToInternalStages">prevent_unload_to_internal_stages</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.preventUnloadToInternalStages">prevent_unload_to_internal_stages</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.queryTag">query_tag</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.quotedIdentifiersIgnoreCase">quoted_identifiers_ignore_case</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.quotedIdentifiersIgnoreCase">quoted_identifiers_ignore_case</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.rowsPerResultset">rows_per_resultset</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.rsaPublicKey">rsa_public_key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.rsaPublicKey2">rsa_public_key2</a></code> | <code>str</code> | *No description.* |
@@ -2243,10 +2243,10 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.simulatedDataSharingConsumer">simulated_data_sharing_consumer</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.statementQueuedTimeoutInSeconds">statement_queued_timeout_in_seconds</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.statementTimeoutInSeconds">statement_timeout_in_seconds</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.strictJsonOutput">strict_json_output</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.strictJsonOutput">strict_json_output</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.timeInputFormat">time_input_format</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.timeOutputFormat">time_output_format</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.timestampDayIsAlways24H">timestamp_day_is_always24_h</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.timestampDayIsAlways24H">timestamp_day_is_always24_h</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.timestampInputFormat">timestamp_input_format</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.timestampLtzOutputFormat">timestamp_ltz_output_format</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.timestampNtzOutputFormat">timestamp_ntz_output_format</a></code> | <code>str</code> | *No description.* |
@@ -2255,11 +2255,11 @@ Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflak
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.timestampTzOutputFormat">timestamp_tz_output_format</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.timezone">timezone</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.traceLevel">trace_level</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.transactionAbortOnError">transaction_abort_on_error</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.transactionAbortOnError">transaction_abort_on_error</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.transactionDefaultIsolationLevel">transaction_default_isolation_level</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.twoDigitCenturyStart">two_digit_century_start</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.unsupportedDdlAction">unsupported_ddl_action</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.useCachedResult">use_cached_result</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.useCachedResult">use_cached_result</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.weekOfYearPolicy">week_of_year_policy</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.weekStart">week_start</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 
@@ -2340,20 +2340,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -2400,10 +2400,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -2450,20 +2450,20 @@ user_type: str
 ##### `abort_detached_query_input`<sup>Optional</sup> <a name="abort_detached_query_input" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.abortDetachedQueryInput"></a>
 
 ```python
-abort_detached_query_input: typing.Union[bool, IResolvable]
+abort_detached_query_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `autocommit_input`<sup>Optional</sup> <a name="autocommit_input" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.autocommitInput"></a>
 
 ```python
-autocommit_input: typing.Union[bool, IResolvable]
+autocommit_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2500,10 +2500,10 @@ client_memory_limit_input: typing.Union[int, float]
 ##### `client_metadata_request_use_connection_ctx_input`<sup>Optional</sup> <a name="client_metadata_request_use_connection_ctx_input" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.clientMetadataRequestUseConnectionCtxInput"></a>
 
 ```python
-client_metadata_request_use_connection_ctx_input: typing.Union[bool, IResolvable]
+client_metadata_request_use_connection_ctx_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2530,10 +2530,10 @@ client_result_chunk_size_input: typing.Union[int, float]
 ##### `client_result_column_case_insensitive_input`<sup>Optional</sup> <a name="client_result_column_case_insensitive_input" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.clientResultColumnCaseInsensitiveInput"></a>
 
 ```python
-client_result_column_case_insensitive_input: typing.Union[bool, IResolvable]
+client_result_column_case_insensitive_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2550,10 +2550,10 @@ client_session_keep_alive_heartbeat_frequency_input: typing.Union[int, float]
 ##### `client_session_keep_alive_input`<sup>Optional</sup> <a name="client_session_keep_alive_input" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.clientSessionKeepAliveInput"></a>
 
 ```python
-client_session_keep_alive_input: typing.Union[bool, IResolvable]
+client_session_keep_alive_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2680,40 +2680,40 @@ email_input: str
 ##### `enable_unload_physical_type_optimization_input`<sup>Optional</sup> <a name="enable_unload_physical_type_optimization_input" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.enableUnloadPhysicalTypeOptimizationInput"></a>
 
 ```python
-enable_unload_physical_type_optimization_input: typing.Union[bool, IResolvable]
+enable_unload_physical_type_optimization_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `enable_unredacted_query_syntax_error_input`<sup>Optional</sup> <a name="enable_unredacted_query_syntax_error_input" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.enableUnredactedQuerySyntaxErrorInput"></a>
 
 ```python
-enable_unredacted_query_syntax_error_input: typing.Union[bool, IResolvable]
+enable_unredacted_query_syntax_error_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `error_on_nondeterministic_merge_input`<sup>Optional</sup> <a name="error_on_nondeterministic_merge_input" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.errorOnNondeterministicMergeInput"></a>
 
 ```python
-error_on_nondeterministic_merge_input: typing.Union[bool, IResolvable]
+error_on_nondeterministic_merge_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `error_on_nondeterministic_update_input`<sup>Optional</sup> <a name="error_on_nondeterministic_update_input" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.errorOnNondeterministicUpdateInput"></a>
 
 ```python
-error_on_nondeterministic_update_input: typing.Union[bool, IResolvable]
+error_on_nondeterministic_update_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2750,30 +2750,30 @@ id_input: str
 ##### `jdbc_treat_decimal_as_int_input`<sup>Optional</sup> <a name="jdbc_treat_decimal_as_int_input" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.jdbcTreatDecimalAsIntInput"></a>
 
 ```python
-jdbc_treat_decimal_as_int_input: typing.Union[bool, IResolvable]
+jdbc_treat_decimal_as_int_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `jdbc_treat_timestamp_ntz_as_utc_input`<sup>Optional</sup> <a name="jdbc_treat_timestamp_ntz_as_utc_input" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.jdbcTreatTimestampNtzAsUtcInput"></a>
 
 ```python
-jdbc_treat_timestamp_ntz_as_utc_input: typing.Union[bool, IResolvable]
+jdbc_treat_timestamp_ntz_as_utc_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `jdbc_use_session_timezone_input`<sup>Optional</sup> <a name="jdbc_use_session_timezone_input" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.jdbcUseSessionTimezoneInput"></a>
 
 ```python
-jdbc_use_session_timezone_input: typing.Union[bool, IResolvable]
+jdbc_use_session_timezone_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2870,20 +2870,20 @@ network_policy_input: str
 ##### `noorder_sequence_as_default_input`<sup>Optional</sup> <a name="noorder_sequence_as_default_input" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.noorderSequenceAsDefaultInput"></a>
 
 ```python
-noorder_sequence_as_default_input: typing.Union[bool, IResolvable]
+noorder_sequence_as_default_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `odbc_treat_decimal_as_int_input`<sup>Optional</sup> <a name="odbc_treat_decimal_as_int_input" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.odbcTreatDecimalAsIntInput"></a>
 
 ```python
-odbc_treat_decimal_as_int_input: typing.Union[bool, IResolvable]
+odbc_treat_decimal_as_int_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2900,10 +2900,10 @@ password_input: str
 ##### `prevent_unload_to_internal_stages_input`<sup>Optional</sup> <a name="prevent_unload_to_internal_stages_input" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.preventUnloadToInternalStagesInput"></a>
 
 ```python
-prevent_unload_to_internal_stages_input: typing.Union[bool, IResolvable]
+prevent_unload_to_internal_stages_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2920,10 +2920,10 @@ query_tag_input: str
 ##### `quoted_identifiers_ignore_case_input`<sup>Optional</sup> <a name="quoted_identifiers_ignore_case_input" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.quotedIdentifiersIgnoreCaseInput"></a>
 
 ```python
-quoted_identifiers_ignore_case_input: typing.Union[bool, IResolvable]
+quoted_identifiers_ignore_case_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3010,10 +3010,10 @@ statement_timeout_in_seconds_input: typing.Union[int, float]
 ##### `strict_json_output_input`<sup>Optional</sup> <a name="strict_json_output_input" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.strictJsonOutputInput"></a>
 
 ```python
-strict_json_output_input: typing.Union[bool, IResolvable]
+strict_json_output_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3040,10 +3040,10 @@ time_output_format_input: str
 ##### `timestamp_day_is_always24_h_input`<sup>Optional</sup> <a name="timestamp_day_is_always24_h_input" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.timestampDayIsAlways24HInput"></a>
 
 ```python
-timestamp_day_is_always24_h_input: typing.Union[bool, IResolvable]
+timestamp_day_is_always24_h_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3130,10 +3130,10 @@ trace_level_input: str
 ##### `transaction_abort_on_error_input`<sup>Optional</sup> <a name="transaction_abort_on_error_input" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.transactionAbortOnErrorInput"></a>
 
 ```python
-transaction_abort_on_error_input: typing.Union[bool, IResolvable]
+transaction_abort_on_error_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3170,10 +3170,10 @@ unsupported_ddl_action_input: str
 ##### `use_cached_result_input`<sup>Optional</sup> <a name="use_cached_result_input" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.useCachedResultInput"></a>
 
 ```python
-use_cached_result_input: typing.Union[bool, IResolvable]
+use_cached_result_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3200,20 +3200,20 @@ week_start_input: typing.Union[int, float]
 ##### `abort_detached_query`<sup>Required</sup> <a name="abort_detached_query" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.abortDetachedQuery"></a>
 
 ```python
-abort_detached_query: typing.Union[bool, IResolvable]
+abort_detached_query: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `autocommit`<sup>Required</sup> <a name="autocommit" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.autocommit"></a>
 
 ```python
-autocommit: typing.Union[bool, IResolvable]
+autocommit: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3250,10 +3250,10 @@ client_memory_limit: typing.Union[int, float]
 ##### `client_metadata_request_use_connection_ctx`<sup>Required</sup> <a name="client_metadata_request_use_connection_ctx" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.clientMetadataRequestUseConnectionCtx"></a>
 
 ```python
-client_metadata_request_use_connection_ctx: typing.Union[bool, IResolvable]
+client_metadata_request_use_connection_ctx: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3280,20 +3280,20 @@ client_result_chunk_size: typing.Union[int, float]
 ##### `client_result_column_case_insensitive`<sup>Required</sup> <a name="client_result_column_case_insensitive" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.clientResultColumnCaseInsensitive"></a>
 
 ```python
-client_result_column_case_insensitive: typing.Union[bool, IResolvable]
+client_result_column_case_insensitive: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `client_session_keep_alive`<sup>Required</sup> <a name="client_session_keep_alive" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.clientSessionKeepAlive"></a>
 
 ```python
-client_session_keep_alive: typing.Union[bool, IResolvable]
+client_session_keep_alive: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3430,40 +3430,40 @@ email: str
 ##### `enable_unload_physical_type_optimization`<sup>Required</sup> <a name="enable_unload_physical_type_optimization" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.enableUnloadPhysicalTypeOptimization"></a>
 
 ```python
-enable_unload_physical_type_optimization: typing.Union[bool, IResolvable]
+enable_unload_physical_type_optimization: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `enable_unredacted_query_syntax_error`<sup>Required</sup> <a name="enable_unredacted_query_syntax_error" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.enableUnredactedQuerySyntaxError"></a>
 
 ```python
-enable_unredacted_query_syntax_error: typing.Union[bool, IResolvable]
+enable_unredacted_query_syntax_error: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `error_on_nondeterministic_merge`<sup>Required</sup> <a name="error_on_nondeterministic_merge" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.errorOnNondeterministicMerge"></a>
 
 ```python
-error_on_nondeterministic_merge: typing.Union[bool, IResolvable]
+error_on_nondeterministic_merge: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `error_on_nondeterministic_update`<sup>Required</sup> <a name="error_on_nondeterministic_update" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.errorOnNondeterministicUpdate"></a>
 
 ```python
-error_on_nondeterministic_update: typing.Union[bool, IResolvable]
+error_on_nondeterministic_update: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3500,30 +3500,30 @@ id: str
 ##### `jdbc_treat_decimal_as_int`<sup>Required</sup> <a name="jdbc_treat_decimal_as_int" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.jdbcTreatDecimalAsInt"></a>
 
 ```python
-jdbc_treat_decimal_as_int: typing.Union[bool, IResolvable]
+jdbc_treat_decimal_as_int: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `jdbc_treat_timestamp_ntz_as_utc`<sup>Required</sup> <a name="jdbc_treat_timestamp_ntz_as_utc" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.jdbcTreatTimestampNtzAsUtc"></a>
 
 ```python
-jdbc_treat_timestamp_ntz_as_utc: typing.Union[bool, IResolvable]
+jdbc_treat_timestamp_ntz_as_utc: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `jdbc_use_session_timezone`<sup>Required</sup> <a name="jdbc_use_session_timezone" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.jdbcUseSessionTimezone"></a>
 
 ```python
-jdbc_use_session_timezone: typing.Union[bool, IResolvable]
+jdbc_use_session_timezone: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3620,20 +3620,20 @@ network_policy: str
 ##### `noorder_sequence_as_default`<sup>Required</sup> <a name="noorder_sequence_as_default" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.noorderSequenceAsDefault"></a>
 
 ```python
-noorder_sequence_as_default: typing.Union[bool, IResolvable]
+noorder_sequence_as_default: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `odbc_treat_decimal_as_int`<sup>Required</sup> <a name="odbc_treat_decimal_as_int" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.odbcTreatDecimalAsInt"></a>
 
 ```python
-odbc_treat_decimal_as_int: typing.Union[bool, IResolvable]
+odbc_treat_decimal_as_int: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3650,10 +3650,10 @@ password: str
 ##### `prevent_unload_to_internal_stages`<sup>Required</sup> <a name="prevent_unload_to_internal_stages" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.preventUnloadToInternalStages"></a>
 
 ```python
-prevent_unload_to_internal_stages: typing.Union[bool, IResolvable]
+prevent_unload_to_internal_stages: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3670,10 +3670,10 @@ query_tag: str
 ##### `quoted_identifiers_ignore_case`<sup>Required</sup> <a name="quoted_identifiers_ignore_case" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.quotedIdentifiersIgnoreCase"></a>
 
 ```python
-quoted_identifiers_ignore_case: typing.Union[bool, IResolvable]
+quoted_identifiers_ignore_case: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3760,10 +3760,10 @@ statement_timeout_in_seconds: typing.Union[int, float]
 ##### `strict_json_output`<sup>Required</sup> <a name="strict_json_output" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.strictJsonOutput"></a>
 
 ```python
-strict_json_output: typing.Union[bool, IResolvable]
+strict_json_output: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3790,10 +3790,10 @@ time_output_format: str
 ##### `timestamp_day_is_always24_h`<sup>Required</sup> <a name="timestamp_day_is_always24_h" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.timestampDayIsAlways24H"></a>
 
 ```python
-timestamp_day_is_always24_h: typing.Union[bool, IResolvable]
+timestamp_day_is_always24_h: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3880,10 +3880,10 @@ trace_level: str
 ##### `transaction_abort_on_error`<sup>Required</sup> <a name="transaction_abort_on_error" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.transactionAbortOnError"></a>
 
 ```python
-transaction_abort_on_error: typing.Union[bool, IResolvable]
+transaction_abort_on_error: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3920,10 +3920,10 @@ unsupported_ddl_action: str
 ##### `use_cached_result`<sup>Required</sup> <a name="use_cached_result" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUser.property.useCachedResult"></a>
 
 ```python
-use_cached_result: typing.Union[bool, IResolvable]
+use_cached_result: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3975,24 +3975,24 @@ tfResourceType: str
 from cdktf_cdktf_provider_snowflake import legacy_service_user
 
 legacyServiceUser.LegacyServiceUserConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
-  abort_detached_query: typing.Union[bool, IResolvable] = None,
-  autocommit: typing.Union[bool, IResolvable] = None,
+  abort_detached_query: bool | IResolvable = None,
+  autocommit: bool | IResolvable = None,
   binary_input_format: str = None,
   binary_output_format: str = None,
   client_memory_limit: typing.Union[int, float] = None,
-  client_metadata_request_use_connection_ctx: typing.Union[bool, IResolvable] = None,
+  client_metadata_request_use_connection_ctx: bool | IResolvable = None,
   client_prefetch_threads: typing.Union[int, float] = None,
   client_result_chunk_size: typing.Union[int, float] = None,
-  client_result_column_case_insensitive: typing.Union[bool, IResolvable] = None,
-  client_session_keep_alive: typing.Union[bool, IResolvable] = None,
+  client_result_column_case_insensitive: bool | IResolvable = None,
+  client_session_keep_alive: bool | IResolvable = None,
   client_session_keep_alive_heartbeat_frequency: typing.Union[int, float] = None,
   client_timestamp_type_mapping: str = None,
   comment: str = None,
@@ -4006,16 +4006,16 @@ legacyServiceUser.LegacyServiceUserConfig(
   disabled: str = None,
   display_name: str = None,
   email: str = None,
-  enable_unload_physical_type_optimization: typing.Union[bool, IResolvable] = None,
-  enable_unredacted_query_syntax_error: typing.Union[bool, IResolvable] = None,
-  error_on_nondeterministic_merge: typing.Union[bool, IResolvable] = None,
-  error_on_nondeterministic_update: typing.Union[bool, IResolvable] = None,
+  enable_unload_physical_type_optimization: bool | IResolvable = None,
+  enable_unredacted_query_syntax_error: bool | IResolvable = None,
+  error_on_nondeterministic_merge: bool | IResolvable = None,
+  error_on_nondeterministic_update: bool | IResolvable = None,
   geography_output_format: str = None,
   geometry_output_format: str = None,
   id: str = None,
-  jdbc_treat_decimal_as_int: typing.Union[bool, IResolvable] = None,
-  jdbc_treat_timestamp_ntz_as_utc: typing.Union[bool, IResolvable] = None,
-  jdbc_use_session_timezone: typing.Union[bool, IResolvable] = None,
+  jdbc_treat_decimal_as_int: bool | IResolvable = None,
+  jdbc_treat_timestamp_ntz_as_utc: bool | IResolvable = None,
+  jdbc_use_session_timezone: bool | IResolvable = None,
   json_indent: typing.Union[int, float] = None,
   lock_timeout: typing.Union[int, float] = None,
   login_name: str = None,
@@ -4024,12 +4024,12 @@ legacyServiceUser.LegacyServiceUserConfig(
   multi_statement_count: typing.Union[int, float] = None,
   must_change_password: str = None,
   network_policy: str = None,
-  noorder_sequence_as_default: typing.Union[bool, IResolvable] = None,
-  odbc_treat_decimal_as_int: typing.Union[bool, IResolvable] = None,
+  noorder_sequence_as_default: bool | IResolvable = None,
+  odbc_treat_decimal_as_int: bool | IResolvable = None,
   password: str = None,
-  prevent_unload_to_internal_stages: typing.Union[bool, IResolvable] = None,
+  prevent_unload_to_internal_stages: bool | IResolvable = None,
   query_tag: str = None,
-  quoted_identifiers_ignore_case: typing.Union[bool, IResolvable] = None,
+  quoted_identifiers_ignore_case: bool | IResolvable = None,
   rows_per_resultset: typing.Union[int, float] = None,
   rsa_public_key: str = None,
   rsa_public_key2: str = None,
@@ -4038,10 +4038,10 @@ legacyServiceUser.LegacyServiceUserConfig(
   simulated_data_sharing_consumer: str = None,
   statement_queued_timeout_in_seconds: typing.Union[int, float] = None,
   statement_timeout_in_seconds: typing.Union[int, float] = None,
-  strict_json_output: typing.Union[bool, IResolvable] = None,
+  strict_json_output: bool | IResolvable = None,
   time_input_format: str = None,
   time_output_format: str = None,
-  timestamp_day_is_always24_h: typing.Union[bool, IResolvable] = None,
+  timestamp_day_is_always24_h: bool | IResolvable = None,
   timestamp_input_format: str = None,
   timestamp_ltz_output_format: str = None,
   timestamp_ntz_output_format: str = None,
@@ -4050,11 +4050,11 @@ legacyServiceUser.LegacyServiceUserConfig(
   timestamp_tz_output_format: str = None,
   timezone: str = None,
   trace_level: str = None,
-  transaction_abort_on_error: typing.Union[bool, IResolvable] = None,
+  transaction_abort_on_error: bool | IResolvable = None,
   transaction_default_isolation_level: str = None,
   two_digit_century_start: typing.Union[int, float] = None,
   unsupported_ddl_action: str = None,
-  use_cached_result: typing.Union[bool, IResolvable] = None,
+  use_cached_result: bool | IResolvable = None,
   week_of_year_policy: typing.Union[int, float] = None,
   week_start: typing.Union[int, float] = None
 )
@@ -4064,24 +4064,24 @@ legacyServiceUser.LegacyServiceUserConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.name">name</a></code> | <code>str</code> | Name of the user. |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.abortDetachedQuery">abort_detached_query</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies the action that Snowflake performs for in-progress queries if connectivity is lost due to abrupt termination of a session (e.g. network outage, browser termination, service interruption). For more information, check [ABORT_DETACHED_QUERY docs](https://docs.snowflake.com/en/sql-reference/parameters#abort-detached-query). |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.autocommit">autocommit</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether autocommit is enabled for the session. |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.abortDetachedQuery">abort_detached_query</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies the action that Snowflake performs for in-progress queries if connectivity is lost due to abrupt termination of a session (e.g. network outage, browser termination, service interruption). For more information, check [ABORT_DETACHED_QUERY docs](https://docs.snowflake.com/en/sql-reference/parameters#abort-detached-query). |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.autocommit">autocommit</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether autocommit is enabled for the session. |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.binaryInputFormat">binary_input_format</a></code> | <code>str</code> | The format of VARCHAR values passed as input to VARCHAR-to-BINARY conversion functions. |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.binaryOutputFormat">binary_output_format</a></code> | <code>str</code> | The format for VARCHAR values returned as output by BINARY-to-VARCHAR conversion functions. |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.clientMemoryLimit">client_memory_limit</a></code> | <code>typing.Union[int, float]</code> | Parameter that specifies the maximum amount of memory the JDBC driver or ODBC driver should use for the result set from queries (in MB). |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.clientMetadataRequestUseConnectionCtx">client_metadata_request_use_connection_ctx</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | For specific ODBC functions and JDBC methods, this parameter can change the default search scope from all databases/schemas to the current database/schema. |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.clientMetadataRequestUseConnectionCtx">client_metadata_request_use_connection_ctx</a></code> | <code>bool \| cdktf.IResolvable</code> | For specific ODBC functions and JDBC methods, this parameter can change the default search scope from all databases/schemas to the current database/schema. |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.clientPrefetchThreads">client_prefetch_threads</a></code> | <code>typing.Union[int, float]</code> | Parameter that specifies the number of threads used by the client to pre-fetch large result sets. |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.clientResultChunkSize">client_result_chunk_size</a></code> | <code>typing.Union[int, float]</code> | Parameter that specifies the maximum size of each set (or chunk) of query results to download (in MB). |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.clientResultColumnCaseInsensitive">client_result_column_case_insensitive</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Parameter that indicates whether to match column name case-insensitively in ResultSet.get* methods in JDBC. For more information, check [CLIENT_RESULT_COLUMN_CASE_INSENSITIVE docs](https://docs.snowflake.com/en/sql-reference/parameters#client-result-column-case-insensitive). |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.clientSessionKeepAlive">client_session_keep_alive</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Parameter that indicates whether to force a user to log in again after a period of inactivity in the session. |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.clientResultColumnCaseInsensitive">client_result_column_case_insensitive</a></code> | <code>bool \| cdktf.IResolvable</code> | Parameter that indicates whether to match column name case-insensitively in ResultSet.get* methods in JDBC. For more information, check [CLIENT_RESULT_COLUMN_CASE_INSENSITIVE docs](https://docs.snowflake.com/en/sql-reference/parameters#client-result-column-case-insensitive). |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.clientSessionKeepAlive">client_session_keep_alive</a></code> | <code>bool \| cdktf.IResolvable</code> | Parameter that indicates whether to force a user to log in again after a period of inactivity in the session. |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.clientSessionKeepAliveHeartbeatFrequency">client_session_keep_alive_heartbeat_frequency</a></code> | <code>typing.Union[int, float]</code> | Number of seconds in-between client attempts to update the token for the session. For more information, check [CLIENT_SESSION_KEEP_ALIVE_HEARTBEAT_FREQUENCY docs](https://docs.snowflake.com/en/sql-reference/parameters#client-session-keep-alive-heartbeat-frequency). |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.clientTimestampTypeMapping">client_timestamp_type_mapping</a></code> | <code>str</code> | Specifies the [TIMESTAMP_* variation](https://docs.snowflake.com/en/sql-reference/data-types-datetime.html#label-datatypes-timestamp-variations) to use when binding timestamp variables for JDBC or ODBC applications that use the bind API to load data. For more information, check [CLIENT_TIMESTAMP_TYPE_MAPPING docs](https://docs.snowflake.com/en/sql-reference/parameters#client-timestamp-type-mapping). |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.comment">comment</a></code> | <code>str</code> | Specifies a comment for the user. |
@@ -4095,16 +4095,16 @@ legacyServiceUser.LegacyServiceUserConfig(
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.disabled">disabled</a></code> | <code>str</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether the user is disabled, which prevents logging in and aborts all the currently-running queries for the user. |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.displayName">display_name</a></code> | <code>str</code> | Name displayed for the user in the Snowflake web interface. |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.email">email</a></code> | <code>str</code> | Email address for the user. |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.enableUnloadPhysicalTypeOptimization">enable_unload_physical_type_optimization</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether to set the schema for unloaded Parquet files based on the logical column data types (i.e. the types in the unload SQL query or source table) or on the unloaded column values (i.e. the smallest data types and precision that support the values in the output columns of the unload SQL statement or source table). For more information, check [ENABLE_UNLOAD_PHYSICAL_TYPE_OPTIMIZATION docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-unload-physical-type-optimization). |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.enableUnredactedQuerySyntaxError">enable_unredacted_query_syntax_error</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Controls whether query text is redacted if a SQL query fails due to a syntax or parsing error. |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.errorOnNondeterministicMerge">error_on_nondeterministic_merge</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether to return an error when the [MERGE](https://docs.snowflake.com/en/sql-reference/sql/merge) command is used to update or delete a target row that joins multiple source rows and the system cannot determine the action to perform on the target row. For more information, check [ERROR_ON_NONDETERMINISTIC_MERGE docs](https://docs.snowflake.com/en/sql-reference/parameters#error-on-nondeterministic-merge). |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.errorOnNondeterministicUpdate">error_on_nondeterministic_update</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether to return an error when the [UPDATE](https://docs.snowflake.com/en/sql-reference/sql/update) command is used to update a target row that joins multiple source rows and the system cannot determine the action to perform on the target row. For more information, check [ERROR_ON_NONDETERMINISTIC_UPDATE docs](https://docs.snowflake.com/en/sql-reference/parameters#error-on-nondeterministic-update). |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.enableUnloadPhysicalTypeOptimization">enable_unload_physical_type_optimization</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether to set the schema for unloaded Parquet files based on the logical column data types (i.e. the types in the unload SQL query or source table) or on the unloaded column values (i.e. the smallest data types and precision that support the values in the output columns of the unload SQL statement or source table). For more information, check [ENABLE_UNLOAD_PHYSICAL_TYPE_OPTIMIZATION docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-unload-physical-type-optimization). |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.enableUnredactedQuerySyntaxError">enable_unredacted_query_syntax_error</a></code> | <code>bool \| cdktf.IResolvable</code> | Controls whether query text is redacted if a SQL query fails due to a syntax or parsing error. |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.errorOnNondeterministicMerge">error_on_nondeterministic_merge</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether to return an error when the [MERGE](https://docs.snowflake.com/en/sql-reference/sql/merge) command is used to update or delete a target row that joins multiple source rows and the system cannot determine the action to perform on the target row. For more information, check [ERROR_ON_NONDETERMINISTIC_MERGE docs](https://docs.snowflake.com/en/sql-reference/parameters#error-on-nondeterministic-merge). |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.errorOnNondeterministicUpdate">error_on_nondeterministic_update</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether to return an error when the [UPDATE](https://docs.snowflake.com/en/sql-reference/sql/update) command is used to update a target row that joins multiple source rows and the system cannot determine the action to perform on the target row. For more information, check [ERROR_ON_NONDETERMINISTIC_UPDATE docs](https://docs.snowflake.com/en/sql-reference/parameters#error-on-nondeterministic-update). |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.geographyOutputFormat">geography_output_format</a></code> | <code>str</code> | Display format for [GEOGRAPHY values](https://docs.snowflake.com/en/sql-reference/data-types-geospatial.html#label-data-types-geography). For more information, check [GEOGRAPHY_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#geography-output-format). |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.geometryOutputFormat">geometry_output_format</a></code> | <code>str</code> | Display format for [GEOMETRY values](https://docs.snowflake.com/en/sql-reference/data-types-geospatial.html#label-data-types-geometry). For more information, check [GEOMETRY_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#geometry-output-format). |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/legacy_service_user#id LegacyServiceUser#id}. |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.jdbcTreatDecimalAsInt">jdbc_treat_decimal_as_int</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies how JDBC processes columns that have a scale of zero (0). For more information, check [JDBC_TREAT_DECIMAL_AS_INT docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-treat-decimal-as-int). |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.jdbcTreatTimestampNtzAsUtc">jdbc_treat_timestamp_ntz_as_utc</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies how JDBC processes TIMESTAMP_NTZ values. For more information, check [JDBC_TREAT_TIMESTAMP_NTZ_AS_UTC docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-treat-timestamp-ntz-as-utc). |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.jdbcUseSessionTimezone">jdbc_use_session_timezone</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether the JDBC Driver uses the time zone of the JVM or the time zone of the session (specified by the [TIMEZONE](https://docs.snowflake.com/en/sql-reference/parameters#label-timezone) parameter) for the getDate(), getTime(), and getTimestamp() methods of the ResultSet class. For more information, check [JDBC_USE_SESSION_TIMEZONE docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-use-session-timezone). |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.jdbcTreatDecimalAsInt">jdbc_treat_decimal_as_int</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies how JDBC processes columns that have a scale of zero (0). For more information, check [JDBC_TREAT_DECIMAL_AS_INT docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-treat-decimal-as-int). |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.jdbcTreatTimestampNtzAsUtc">jdbc_treat_timestamp_ntz_as_utc</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies how JDBC processes TIMESTAMP_NTZ values. For more information, check [JDBC_TREAT_TIMESTAMP_NTZ_AS_UTC docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-treat-timestamp-ntz-as-utc). |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.jdbcUseSessionTimezone">jdbc_use_session_timezone</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether the JDBC Driver uses the time zone of the JVM or the time zone of the session (specified by the [TIMEZONE](https://docs.snowflake.com/en/sql-reference/parameters#label-timezone) parameter) for the getDate(), getTime(), and getTimestamp() methods of the ResultSet class. For more information, check [JDBC_USE_SESSION_TIMEZONE docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-use-session-timezone). |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.jsonIndent">json_indent</a></code> | <code>typing.Union[int, float]</code> | Specifies the number of blank spaces to indent each new element in JSON output in the session. |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.lockTimeout">lock_timeout</a></code> | <code>typing.Union[int, float]</code> | Number of seconds to wait while trying to lock a resource, before timing out and aborting the statement. |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.loginName">login_name</a></code> | <code>str</code> | The name users use to log in. |
@@ -4113,12 +4113,12 @@ legacyServiceUser.LegacyServiceUserConfig(
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.multiStatementCount">multi_statement_count</a></code> | <code>typing.Union[int, float]</code> | Number of statements to execute when using the multi-statement capability. For more information, check [MULTI_STATEMENT_COUNT docs](https://docs.snowflake.com/en/sql-reference/parameters#multi-statement-count). |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.mustChangePassword">must_change_password</a></code> | <code>str</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether the user is forced to change their password on next login (including their first/initial login) into the system. |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.networkPolicy">network_policy</a></code> | <code>str</code> | Specifies the network policy to enforce for your account. |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.noorderSequenceAsDefault">noorder_sequence_as_default</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether the ORDER or NOORDER property is set by default when you create a new sequence or add a new table column. |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.odbcTreatDecimalAsInt">odbc_treat_decimal_as_int</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies how ODBC processes columns that have a scale of zero (0). For more information, check [ODBC_TREAT_DECIMAL_AS_INT docs](https://docs.snowflake.com/en/sql-reference/parameters#odbc-treat-decimal-as-int). |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.noorderSequenceAsDefault">noorder_sequence_as_default</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether the ORDER or NOORDER property is set by default when you create a new sequence or add a new table column. |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.odbcTreatDecimalAsInt">odbc_treat_decimal_as_int</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies how ODBC processes columns that have a scale of zero (0). For more information, check [ODBC_TREAT_DECIMAL_AS_INT docs](https://docs.snowflake.com/en/sql-reference/parameters#odbc-treat-decimal-as-int). |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.password">password</a></code> | <code>str</code> | Password for the user. |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.preventUnloadToInternalStages">prevent_unload_to_internal_stages</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether to prevent data unload operations to internal (Snowflake) stages using [COPY INTO <location>](https://docs.snowflake.com/en/sql-reference/sql/copy-into-location) statements. For more information, check [PREVENT_UNLOAD_TO_INTERNAL_STAGES docs](https://docs.snowflake.com/en/sql-reference/parameters#prevent-unload-to-internal-stages). |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.preventUnloadToInternalStages">prevent_unload_to_internal_stages</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether to prevent data unload operations to internal (Snowflake) stages using [COPY INTO <location>](https://docs.snowflake.com/en/sql-reference/sql/copy-into-location) statements. For more information, check [PREVENT_UNLOAD_TO_INTERNAL_STAGES docs](https://docs.snowflake.com/en/sql-reference/parameters#prevent-unload-to-internal-stages). |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.queryTag">query_tag</a></code> | <code>str</code> | Optional string that can be used to tag queries and other SQL statements executed within a session. |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.quotedIdentifiersIgnoreCase">quoted_identifiers_ignore_case</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether letters in double-quoted object identifiers are stored and resolved as uppercase letters. |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.quotedIdentifiersIgnoreCase">quoted_identifiers_ignore_case</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether letters in double-quoted object identifiers are stored and resolved as uppercase letters. |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.rowsPerResultset">rows_per_resultset</a></code> | <code>typing.Union[int, float]</code> | Specifies the maximum number of rows returned in a result set. |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.rsaPublicKey">rsa_public_key</a></code> | <code>str</code> | Specifies the user’s RSA public key; used for key-pair authentication. Must be on 1 line without header and trailer. |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.rsaPublicKey2">rsa_public_key2</a></code> | <code>str</code> | Specifies the user’s second RSA public key; |
@@ -4127,10 +4127,10 @@ legacyServiceUser.LegacyServiceUserConfig(
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.simulatedDataSharingConsumer">simulated_data_sharing_consumer</a></code> | <code>str</code> | Specifies the name of a consumer account to simulate for testing/validating shared data, particularly shared secure views. |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.statementQueuedTimeoutInSeconds">statement_queued_timeout_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Amount of time, in seconds, a SQL statement (query, DDL, DML, etc.) remains queued for a warehouse before it is canceled by the system. This parameter can be used in conjunction with the [MAX_CONCURRENCY_LEVEL](https://docs.snowflake.com/en/sql-reference/parameters#label-max-concurrency-level) parameter to ensure a warehouse is never backlogged. For more information, check [STATEMENT_QUEUED_TIMEOUT_IN_SECONDS docs](https://docs.snowflake.com/en/sql-reference/parameters#statement-queued-timeout-in-seconds). |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.statementTimeoutInSeconds">statement_timeout_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Amount of time, in seconds, after which a running SQL statement (query, DDL, DML, etc.) is canceled by the system. For more information, check [STATEMENT_TIMEOUT_IN_SECONDS docs](https://docs.snowflake.com/en/sql-reference/parameters#statement-timeout-in-seconds). |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.strictJsonOutput">strict_json_output</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | This parameter specifies whether JSON output in a session is compatible with the general standard (as described by [http://json.org](http://json.org)). By design, Snowflake allows JSON input that contains non-standard values; however, these non-standard values might result in Snowflake outputting JSON that is incompatible with other platforms and languages. This parameter, when enabled, ensures that Snowflake outputs valid/compatible JSON. For more information, check [STRICT_JSON_OUTPUT docs](https://docs.snowflake.com/en/sql-reference/parameters#strict-json-output). |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.strictJsonOutput">strict_json_output</a></code> | <code>bool \| cdktf.IResolvable</code> | This parameter specifies whether JSON output in a session is compatible with the general standard (as described by [http://json.org](http://json.org)). By design, Snowflake allows JSON input that contains non-standard values; however, these non-standard values might result in Snowflake outputting JSON that is incompatible with other platforms and languages. This parameter, when enabled, ensures that Snowflake outputs valid/compatible JSON. For more information, check [STRICT_JSON_OUTPUT docs](https://docs.snowflake.com/en/sql-reference/parameters#strict-json-output). |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.timeInputFormat">time_input_format</a></code> | <code>str</code> | Specifies the input format for the TIME data type. |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.timeOutputFormat">time_output_format</a></code> | <code>str</code> | Specifies the display format for the TIME data type. |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.timestampDayIsAlways24H">timestamp_day_is_always24_h</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether the [DATEADD](https://docs.snowflake.com/en/sql-reference/functions/dateadd) function (and its aliases) always consider a day to be exactly 24 hours for expressions that span multiple days. For more information, check [TIMESTAMP_DAY_IS_ALWAYS_24H docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-day-is-always-24h). |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.timestampDayIsAlways24H">timestamp_day_is_always24_h</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether the [DATEADD](https://docs.snowflake.com/en/sql-reference/functions/dateadd) function (and its aliases) always consider a day to be exactly 24 hours for expressions that span multiple days. For more information, check [TIMESTAMP_DAY_IS_ALWAYS_24H docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-day-is-always-24h). |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.timestampInputFormat">timestamp_input_format</a></code> | <code>str</code> | Specifies the input format for the TIMESTAMP data type alias. |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.timestampLtzOutputFormat">timestamp_ltz_output_format</a></code> | <code>str</code> | Specifies the display format for the TIMESTAMP_LTZ data type. |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.timestampNtzOutputFormat">timestamp_ntz_output_format</a></code> | <code>str</code> | Specifies the display format for the TIMESTAMP_NTZ data type. For more information, check [TIMESTAMP_NTZ_OUTPUT_FORMAT docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-ntz-output-format). |
@@ -4139,11 +4139,11 @@ legacyServiceUser.LegacyServiceUserConfig(
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.timestampTzOutputFormat">timestamp_tz_output_format</a></code> | <code>str</code> | Specifies the display format for the TIMESTAMP_TZ data type. |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.timezone">timezone</a></code> | <code>str</code> | Specifies the time zone for the session. |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.traceLevel">trace_level</a></code> | <code>str</code> | Controls how trace events are ingested into the event table. |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.transactionAbortOnError">transaction_abort_on_error</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies the action to perform when a statement issued within a non-autocommit transaction returns with an error. |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.transactionAbortOnError">transaction_abort_on_error</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies the action to perform when a statement issued within a non-autocommit transaction returns with an error. |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.transactionDefaultIsolationLevel">transaction_default_isolation_level</a></code> | <code>str</code> | Specifies the isolation level for transactions in the user session. For more information, check [TRANSACTION_DEFAULT_ISOLATION_LEVEL docs](https://docs.snowflake.com/en/sql-reference/parameters#transaction-default-isolation-level). |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.twoDigitCenturyStart">two_digit_century_start</a></code> | <code>typing.Union[int, float]</code> | Specifies the “century start” year for 2-digit years (i.e. the earliest year such dates can represent). This parameter prevents ambiguous dates when importing or converting data with the `YY` date format component (i.e. years represented as 2 digits). For more information, check [TWO_DIGIT_CENTURY_START docs](https://docs.snowflake.com/en/sql-reference/parameters#two-digit-century-start). |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.unsupportedDdlAction">unsupported_ddl_action</a></code> | <code>str</code> | Determines if an unsupported (i.e. non-default) value specified for a constraint property returns an error. For more information, check [UNSUPPORTED_DDL_ACTION docs](https://docs.snowflake.com/en/sql-reference/parameters#unsupported-ddl-action). |
-| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.useCachedResult">use_cached_result</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether to reuse persisted query results, if available, when a matching query is submitted. |
+| <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.useCachedResult">use_cached_result</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether to reuse persisted query results, if available, when a matching query is submitted. |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.weekOfYearPolicy">week_of_year_policy</a></code> | <code>typing.Union[int, float]</code> | Specifies how the weeks in a given year are computed. |
 | <code><a href="#@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.weekStart">week_start</a></code> | <code>typing.Union[int, float]</code> | Specifies the first day of the week (used by week-related date functions). |
 
@@ -4152,20 +4152,20 @@ legacyServiceUser.LegacyServiceUserConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -4212,10 +4212,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -4238,10 +4238,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `abort_detached_query`<sup>Optional</sup> <a name="abort_detached_query" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.abortDetachedQuery"></a>
 
 ```python
-abort_detached_query: typing.Union[bool, IResolvable]
+abort_detached_query: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies the action that Snowflake performs for in-progress queries if connectivity is lost due to abrupt termination of a session (e.g. network outage, browser termination, service interruption). For more information, check [ABORT_DETACHED_QUERY docs](https://docs.snowflake.com/en/sql-reference/parameters#abort-detached-query).
 
@@ -4252,10 +4252,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `autocommit`<sup>Optional</sup> <a name="autocommit" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.autocommit"></a>
 
 ```python
-autocommit: typing.Union[bool, IResolvable]
+autocommit: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether autocommit is enabled for the session.
 
@@ -4316,10 +4316,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `client_metadata_request_use_connection_ctx`<sup>Optional</sup> <a name="client_metadata_request_use_connection_ctx" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.clientMetadataRequestUseConnectionCtx"></a>
 
 ```python
-client_metadata_request_use_connection_ctx: typing.Union[bool, IResolvable]
+client_metadata_request_use_connection_ctx: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 For specific ODBC functions and JDBC methods, this parameter can change the default search scope from all databases/schemas to the current database/schema.
 
@@ -4364,10 +4364,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `client_result_column_case_insensitive`<sup>Optional</sup> <a name="client_result_column_case_insensitive" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.clientResultColumnCaseInsensitive"></a>
 
 ```python
-client_result_column_case_insensitive: typing.Union[bool, IResolvable]
+client_result_column_case_insensitive: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Parameter that indicates whether to match column name case-insensitively in ResultSet.get* methods in JDBC. For more information, check [CLIENT_RESULT_COLUMN_CASE_INSENSITIVE docs](https://docs.snowflake.com/en/sql-reference/parameters#client-result-column-case-insensitive).
 
@@ -4378,10 +4378,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `client_session_keep_alive`<sup>Optional</sup> <a name="client_session_keep_alive" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.clientSessionKeepAlive"></a>
 
 ```python
-client_session_keep_alive: typing.Union[bool, IResolvable]
+client_session_keep_alive: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Parameter that indicates whether to force a user to log in again after a period of inactivity in the session.
 
@@ -4592,10 +4592,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `enable_unload_physical_type_optimization`<sup>Optional</sup> <a name="enable_unload_physical_type_optimization" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.enableUnloadPhysicalTypeOptimization"></a>
 
 ```python
-enable_unload_physical_type_optimization: typing.Union[bool, IResolvable]
+enable_unload_physical_type_optimization: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether to set the schema for unloaded Parquet files based on the logical column data types (i.e. the types in the unload SQL query or source table) or on the unloaded column values (i.e. the smallest data types and precision that support the values in the output columns of the unload SQL statement or source table). For more information, check [ENABLE_UNLOAD_PHYSICAL_TYPE_OPTIMIZATION docs](https://docs.snowflake.com/en/sql-reference/parameters#enable-unload-physical-type-optimization).
 
@@ -4606,10 +4606,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `enable_unredacted_query_syntax_error`<sup>Optional</sup> <a name="enable_unredacted_query_syntax_error" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.enableUnredactedQuerySyntaxError"></a>
 
 ```python
-enable_unredacted_query_syntax_error: typing.Union[bool, IResolvable]
+enable_unredacted_query_syntax_error: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Controls whether query text is redacted if a SQL query fails due to a syntax or parsing error.
 
@@ -4622,10 +4622,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `error_on_nondeterministic_merge`<sup>Optional</sup> <a name="error_on_nondeterministic_merge" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.errorOnNondeterministicMerge"></a>
 
 ```python
-error_on_nondeterministic_merge: typing.Union[bool, IResolvable]
+error_on_nondeterministic_merge: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether to return an error when the [MERGE](https://docs.snowflake.com/en/sql-reference/sql/merge) command is used to update or delete a target row that joins multiple source rows and the system cannot determine the action to perform on the target row. For more information, check [ERROR_ON_NONDETERMINISTIC_MERGE docs](https://docs.snowflake.com/en/sql-reference/parameters#error-on-nondeterministic-merge).
 
@@ -4636,10 +4636,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `error_on_nondeterministic_update`<sup>Optional</sup> <a name="error_on_nondeterministic_update" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.errorOnNondeterministicUpdate"></a>
 
 ```python
-error_on_nondeterministic_update: typing.Union[bool, IResolvable]
+error_on_nondeterministic_update: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether to return an error when the [UPDATE](https://docs.snowflake.com/en/sql-reference/sql/update) command is used to update a target row that joins multiple source rows and the system cannot determine the action to perform on the target row. For more information, check [ERROR_ON_NONDETERMINISTIC_UPDATE docs](https://docs.snowflake.com/en/sql-reference/parameters#error-on-nondeterministic-update).
 
@@ -4693,10 +4693,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `jdbc_treat_decimal_as_int`<sup>Optional</sup> <a name="jdbc_treat_decimal_as_int" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.jdbcTreatDecimalAsInt"></a>
 
 ```python
-jdbc_treat_decimal_as_int: typing.Union[bool, IResolvable]
+jdbc_treat_decimal_as_int: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies how JDBC processes columns that have a scale of zero (0). For more information, check [JDBC_TREAT_DECIMAL_AS_INT docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-treat-decimal-as-int).
 
@@ -4707,10 +4707,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `jdbc_treat_timestamp_ntz_as_utc`<sup>Optional</sup> <a name="jdbc_treat_timestamp_ntz_as_utc" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.jdbcTreatTimestampNtzAsUtc"></a>
 
 ```python
-jdbc_treat_timestamp_ntz_as_utc: typing.Union[bool, IResolvable]
+jdbc_treat_timestamp_ntz_as_utc: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies how JDBC processes TIMESTAMP_NTZ values. For more information, check [JDBC_TREAT_TIMESTAMP_NTZ_AS_UTC docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-treat-timestamp-ntz-as-utc).
 
@@ -4721,10 +4721,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `jdbc_use_session_timezone`<sup>Optional</sup> <a name="jdbc_use_session_timezone" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.jdbcUseSessionTimezone"></a>
 
 ```python
-jdbc_use_session_timezone: typing.Union[bool, IResolvable]
+jdbc_use_session_timezone: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether the JDBC Driver uses the time zone of the JVM or the time zone of the session (specified by the [TIMEZONE](https://docs.snowflake.com/en/sql-reference/parameters#label-timezone) parameter) for the getDate(), getTime(), and getTimestamp() methods of the ResultSet class. For more information, check [JDBC_USE_SESSION_TIMEZONE docs](https://docs.snowflake.com/en/sql-reference/parameters#jdbc-use-session-timezone).
 
@@ -4861,10 +4861,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `noorder_sequence_as_default`<sup>Optional</sup> <a name="noorder_sequence_as_default" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.noorderSequenceAsDefault"></a>
 
 ```python
-noorder_sequence_as_default: typing.Union[bool, IResolvable]
+noorder_sequence_as_default: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether the ORDER or NOORDER property is set by default when you create a new sequence or add a new table column.
 
@@ -4877,10 +4877,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `odbc_treat_decimal_as_int`<sup>Optional</sup> <a name="odbc_treat_decimal_as_int" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.odbcTreatDecimalAsInt"></a>
 
 ```python
-odbc_treat_decimal_as_int: typing.Union[bool, IResolvable]
+odbc_treat_decimal_as_int: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies how ODBC processes columns that have a scale of zero (0). For more information, check [ODBC_TREAT_DECIMAL_AS_INT docs](https://docs.snowflake.com/en/sql-reference/parameters#odbc-treat-decimal-as-int).
 
@@ -4907,10 +4907,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `prevent_unload_to_internal_stages`<sup>Optional</sup> <a name="prevent_unload_to_internal_stages" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.preventUnloadToInternalStages"></a>
 
 ```python
-prevent_unload_to_internal_stages: typing.Union[bool, IResolvable]
+prevent_unload_to_internal_stages: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether to prevent data unload operations to internal (Snowflake) stages using [COPY INTO <location>](https://docs.snowflake.com/en/sql-reference/sql/copy-into-location) statements. For more information, check [PREVENT_UNLOAD_TO_INTERNAL_STAGES docs](https://docs.snowflake.com/en/sql-reference/parameters#prevent-unload-to-internal-stages).
 
@@ -4937,10 +4937,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `quoted_identifiers_ignore_case`<sup>Optional</sup> <a name="quoted_identifiers_ignore_case" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.quotedIdentifiersIgnoreCase"></a>
 
 ```python
-quoted_identifiers_ignore_case: typing.Union[bool, IResolvable]
+quoted_identifiers_ignore_case: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether letters in double-quoted object identifiers are stored and resolved as uppercase letters.
 
@@ -5075,10 +5075,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `strict_json_output`<sup>Optional</sup> <a name="strict_json_output" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.strictJsonOutput"></a>
 
 ```python
-strict_json_output: typing.Union[bool, IResolvable]
+strict_json_output: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 This parameter specifies whether JSON output in a session is compatible with the general standard (as described by [http://json.org](http://json.org)). By design, Snowflake allows JSON input that contains non-standard values; however, these non-standard values might result in Snowflake outputting JSON that is incompatible with other platforms and languages. This parameter, when enabled, ensures that Snowflake outputs valid/compatible JSON. For more information, check [STRICT_JSON_OUTPUT docs](https://docs.snowflake.com/en/sql-reference/parameters#strict-json-output).
 
@@ -5121,10 +5121,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `timestamp_day_is_always24_h`<sup>Optional</sup> <a name="timestamp_day_is_always24_h" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.timestampDayIsAlways24H"></a>
 
 ```python
-timestamp_day_is_always24_h: typing.Union[bool, IResolvable]
+timestamp_day_is_always24_h: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether the [DATEADD](https://docs.snowflake.com/en/sql-reference/functions/dateadd) function (and its aliases) always consider a day to be exactly 24 hours for expressions that span multiple days. For more information, check [TIMESTAMP_DAY_IS_ALWAYS_24H docs](https://docs.snowflake.com/en/sql-reference/parameters#timestamp-day-is-always-24h).
 
@@ -5259,10 +5259,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `transaction_abort_on_error`<sup>Optional</sup> <a name="transaction_abort_on_error" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.transactionAbortOnError"></a>
 
 ```python
-transaction_abort_on_error: typing.Union[bool, IResolvable]
+transaction_abort_on_error: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies the action to perform when a statement issued within a non-autocommit transaction returns with an error.
 
@@ -5317,10 +5317,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 ##### `use_cached_result`<sup>Optional</sup> <a name="use_cached_result" id="@cdktf/provider-snowflake.legacyServiceUser.LegacyServiceUserConfig.property.useCachedResult"></a>
 
 ```python
-use_cached_result: typing.Union[bool, IResolvable]
+use_cached_result: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether to reuse persisted query results, if available, when a matching query is submitted.
 
