@@ -4,7 +4,7 @@
 
 ### GrantAccountRole <a name="GrantAccountRole" id="@cdktf/provider-snowflake.grantAccountRole.GrantAccountRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/grant_account_role snowflake_grant_account_role}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/grant_account_role snowflake_grant_account_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.grantAccountRole.GrantAccountRole.Initializer"></a>
 
@@ -508,7 +508,7 @@ The construct id used in the generated config for the GrantAccountRole to import
 
 The id of the existing GrantAccountRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/grant_account_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/grant_account_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -848,7 +848,7 @@ new GrantAccountRoleConfig {
 | <code><a href="#@cdktf/provider-snowflake.grantAccountRole.GrantAccountRoleConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.grantAccountRole.GrantAccountRoleConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.grantAccountRole.GrantAccountRoleConfig.property.roleName">RoleName</a></code> | <code>string</code> | The fully qualified name of the role which will be granted to the user or parent role. |
-| <code><a href="#@cdktf/provider-snowflake.grantAccountRole.GrantAccountRoleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/grant_account_role#id GrantAccountRole#id}. |
+| <code><a href="#@cdktf/provider-snowflake.grantAccountRole.GrantAccountRoleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/grant_account_role#id GrantAccountRole#id}. |
 | <code><a href="#@cdktf/provider-snowflake.grantAccountRole.GrantAccountRoleConfig.property.parentRoleName">ParentRoleName</a></code> | <code>string</code> | The fully qualified name of the parent role which will create a parent-child relationship between the roles. |
 | <code><a href="#@cdktf/provider-snowflake.grantAccountRole.GrantAccountRoleConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.grantAccountRole.GrantAccountRoleTimeouts">GrantAccountRoleTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-snowflake.grantAccountRole.GrantAccountRoleConfig.property.userName">UserName</a></code> | <code>string</code> | The fully qualified name of the user on which specified role will be granted. |
@@ -937,7 +937,7 @@ The fully qualified name of the role which will be granted to the user or parent
 
 For more information about this resource, see [docs](./account_role).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/grant_account_role#role_name GrantAccountRole#role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/grant_account_role#role_name GrantAccountRole#role_name}
 
 ---
 
@@ -949,7 +949,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/grant_account_role#id GrantAccountRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/grant_account_role#id GrantAccountRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -968,7 +968,7 @@ The fully qualified name of the parent role which will create a parent-child rel
 
 For more information about this resource, see [docs](./account_role).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/grant_account_role#parent_role_name GrantAccountRole#parent_role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/grant_account_role#parent_role_name GrantAccountRole#parent_role_name}
 
 ---
 
@@ -982,7 +982,7 @@ public GrantAccountRoleTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/grant_account_role#timeouts GrantAccountRole#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/grant_account_role#timeouts GrantAccountRole#timeouts}
 
 ---
 
@@ -998,7 +998,7 @@ The fully qualified name of the user on which specified role will be granted.
 
 For more information about this resource, see [docs](./user).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/grant_account_role#user_name GrantAccountRole#user_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/grant_account_role#user_name GrantAccountRole#user_name}
 
 ---
 
@@ -1021,10 +1021,10 @@ new GrantAccountRoleTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.grantAccountRole.GrantAccountRoleTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/grant_account_role#create GrantAccountRole#create}. |
-| <code><a href="#@cdktf/provider-snowflake.grantAccountRole.GrantAccountRoleTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/grant_account_role#delete GrantAccountRole#delete}. |
-| <code><a href="#@cdktf/provider-snowflake.grantAccountRole.GrantAccountRoleTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/grant_account_role#read GrantAccountRole#read}. |
-| <code><a href="#@cdktf/provider-snowflake.grantAccountRole.GrantAccountRoleTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/grant_account_role#update GrantAccountRole#update}. |
+| <code><a href="#@cdktf/provider-snowflake.grantAccountRole.GrantAccountRoleTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/grant_account_role#create GrantAccountRole#create}. |
+| <code><a href="#@cdktf/provider-snowflake.grantAccountRole.GrantAccountRoleTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/grant_account_role#delete GrantAccountRole#delete}. |
+| <code><a href="#@cdktf/provider-snowflake.grantAccountRole.GrantAccountRoleTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/grant_account_role#read GrantAccountRole#read}. |
+| <code><a href="#@cdktf/provider-snowflake.grantAccountRole.GrantAccountRoleTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/grant_account_role#update GrantAccountRole#update}. |
 
 ---
 
@@ -1036,7 +1036,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/grant_account_role#create GrantAccountRole#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/grant_account_role#create GrantAccountRole#create}.
 
 ---
 
@@ -1048,7 +1048,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/grant_account_role#delete GrantAccountRole#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/grant_account_role#delete GrantAccountRole#delete}.
 
 ---
 
@@ -1060,7 +1060,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/grant_account_role#read GrantAccountRole#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/grant_account_role#read GrantAccountRole#read}.
 
 ---
 
@@ -1072,7 +1072,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/grant_account_role#update GrantAccountRole#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/grant_account_role#update GrantAccountRole#update}.
 
 ---
 

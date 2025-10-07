@@ -4,7 +4,7 @@
 
 ### PrimaryConnection <a name="PrimaryConnection" id="@cdktf/provider-snowflake.primaryConnection.PrimaryConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/primary_connection snowflake_primary_connection}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/primary_connection snowflake_primary_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.primaryConnection.PrimaryConnection.Initializer"></a>
 
@@ -508,7 +508,7 @@ The construct id used in the generated config for the PrimaryConnection to impor
 
 The id of the existing PrimaryConnection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/primary_connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/primary_connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -870,7 +870,7 @@ const primaryConnectionConfig: primaryConnection.PrimaryConnectionConfig = { ...
 | <code><a href="#@cdktf/provider-snowflake.primaryConnection.PrimaryConnectionConfig.property.name">name</a></code> | <code>string</code> | String that specifies the identifier (i.e. name) for the connection. Must start with an alphabetic character and may only contain letters, decimal digits (0-9), and underscores (_). For a primary connection, the name must be unique across connection names and account names in the organization.  Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `\|`, `.`, `"`. |
 | <code><a href="#@cdktf/provider-snowflake.primaryConnection.PrimaryConnectionConfig.property.comment">comment</a></code> | <code>string</code> | Specifies a comment for the connection. |
 | <code><a href="#@cdktf/provider-snowflake.primaryConnection.PrimaryConnectionConfig.property.enableFailoverToAccounts">enableFailoverToAccounts</a></code> | <code>string[]</code> | Enables failover for given connection to provided accounts. |
-| <code><a href="#@cdktf/provider-snowflake.primaryConnection.PrimaryConnectionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/primary_connection#id PrimaryConnection#id}. |
+| <code><a href="#@cdktf/provider-snowflake.primaryConnection.PrimaryConnectionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/primary_connection#id PrimaryConnection#id}. |
 | <code><a href="#@cdktf/provider-snowflake.primaryConnection.PrimaryConnectionConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.primaryConnection.PrimaryConnectionTimeouts">PrimaryConnectionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -955,7 +955,7 @@ public readonly name: string;
 
 String that specifies the identifier (i.e. name) for the connection. Must start with an alphabetic character and may only contain letters, decimal digits (0-9), and underscores (_). For a primary connection, the name must be unique across connection names and account names in the organization.  Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/primary_connection#name PrimaryConnection#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/primary_connection#name PrimaryConnection#name}
 
 ---
 
@@ -969,7 +969,7 @@ public readonly comment: string;
 
 Specifies a comment for the connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/primary_connection#comment PrimaryConnection#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/primary_connection#comment PrimaryConnection#comment}
 
 ---
 
@@ -985,7 +985,7 @@ Enables failover for given connection to provided accounts.
 
 Specifies a list of accounts in your organization where a secondary connection for this primary connection can be promoted to serve as the primary connection. Include your organization name for each account in the list. For more information about this resource, see [docs](./account).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/primary_connection#enable_failover_to_accounts PrimaryConnection#enable_failover_to_accounts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/primary_connection#enable_failover_to_accounts PrimaryConnection#enable_failover_to_accounts}
 
 ---
 
@@ -997,7 +997,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/primary_connection#id PrimaryConnection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/primary_connection#id PrimaryConnection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1014,7 +1014,7 @@ public readonly timeouts: PrimaryConnectionTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/primary_connection#timeouts PrimaryConnection#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/primary_connection#timeouts PrimaryConnection#timeouts}
 
 ---
 
@@ -1043,10 +1043,10 @@ const primaryConnectionTimeouts: primaryConnection.PrimaryConnectionTimeouts = {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.primaryConnection.PrimaryConnectionTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/primary_connection#create PrimaryConnection#create}. |
-| <code><a href="#@cdktf/provider-snowflake.primaryConnection.PrimaryConnectionTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/primary_connection#delete PrimaryConnection#delete}. |
-| <code><a href="#@cdktf/provider-snowflake.primaryConnection.PrimaryConnectionTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/primary_connection#read PrimaryConnection#read}. |
-| <code><a href="#@cdktf/provider-snowflake.primaryConnection.PrimaryConnectionTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/primary_connection#update PrimaryConnection#update}. |
+| <code><a href="#@cdktf/provider-snowflake.primaryConnection.PrimaryConnectionTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/primary_connection#create PrimaryConnection#create}. |
+| <code><a href="#@cdktf/provider-snowflake.primaryConnection.PrimaryConnectionTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/primary_connection#delete PrimaryConnection#delete}. |
+| <code><a href="#@cdktf/provider-snowflake.primaryConnection.PrimaryConnectionTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/primary_connection#read PrimaryConnection#read}. |
+| <code><a href="#@cdktf/provider-snowflake.primaryConnection.PrimaryConnectionTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/primary_connection#update PrimaryConnection#update}. |
 
 ---
 
@@ -1058,7 +1058,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/primary_connection#create PrimaryConnection#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/primary_connection#create PrimaryConnection#create}.
 
 ---
 
@@ -1070,7 +1070,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/primary_connection#delete PrimaryConnection#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/primary_connection#delete PrimaryConnection#delete}.
 
 ---
 
@@ -1082,7 +1082,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/primary_connection#read PrimaryConnection#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/primary_connection#read PrimaryConnection#read}.
 
 ---
 
@@ -1094,7 +1094,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/primary_connection#update PrimaryConnection#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/primary_connection#update PrimaryConnection#update}.
 
 ---
 
