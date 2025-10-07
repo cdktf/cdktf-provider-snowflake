@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/table_constraint
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/table_constraint
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,35 +15,35 @@ export interface TableConstraintConfig extends cdktf.TerraformMetaArguments {
   /**
   * Columns to use in constraint key
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/table_constraint#columns TableConstraint#columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/table_constraint#columns TableConstraint#columns}
   */
   readonly columns: string[];
   /**
   * Comment for the table constraint
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/table_constraint#comment TableConstraint#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/table_constraint#comment TableConstraint#comment}
   */
   readonly comment?: string;
   /**
   * (Default: `true`) Whether the constraint is deferrable
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/table_constraint#deferrable TableConstraint#deferrable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/table_constraint#deferrable TableConstraint#deferrable}
   */
   readonly deferrable?: boolean | cdktf.IResolvable;
   /**
   * (Default: `true`) Specifies whether the constraint is enabled or disabled. These properties are provided for compatibility with Oracle.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/table_constraint#enable TableConstraint#enable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/table_constraint#enable TableConstraint#enable}
   */
   readonly enable?: boolean | cdktf.IResolvable;
   /**
   * (Default: `false`) Whether the constraint is enforced
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/table_constraint#enforced TableConstraint#enforced}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/table_constraint#enforced TableConstraint#enforced}
   */
   readonly enforced?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/table_constraint#id TableConstraint#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/table_constraint#id TableConstraint#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -52,49 +52,49 @@ export interface TableConstraintConfig extends cdktf.TerraformMetaArguments {
   /**
   * (Default: `DEFERRED`) Whether the constraint is initially deferred or immediate
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/table_constraint#initially TableConstraint#initially}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/table_constraint#initially TableConstraint#initially}
   */
   readonly initially?: string;
   /**
   * Name of constraint
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/table_constraint#name TableConstraint#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/table_constraint#name TableConstraint#name}
   */
   readonly name: string;
   /**
   * (Default: `true`) Specifies whether a constraint in NOVALIDATE mode is taken into account during query rewrite.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/table_constraint#rely TableConstraint#rely}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/table_constraint#rely TableConstraint#rely}
   */
   readonly rely?: boolean | cdktf.IResolvable;
   /**
   * Identifier for table to create constraint on. Format must follow: "\"&lt;db_name&gt;\".\"&lt;schema_name&gt;\".\"&lt;table_name&gt;\"" or "&lt;db_name&gt;.&lt;schema_name&gt;.&lt;table_name&gt;" (snowflake_table.my_table.id)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/table_constraint#table_id TableConstraint#table_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/table_constraint#table_id TableConstraint#table_id}
   */
   readonly tableId: string;
   /**
   * Type of constraint, one of 'UNIQUE', 'PRIMARY KEY', or 'FOREIGN KEY'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/table_constraint#type TableConstraint#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/table_constraint#type TableConstraint#type}
   */
   readonly type: string;
   /**
   * (Default: `false`) Specifies whether to validate existing data on the table when a constraint is created. Only used in conjunction with the ENABLE property.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/table_constraint#validate TableConstraint#validate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/table_constraint#validate TableConstraint#validate}
   */
   readonly validate?: boolean | cdktf.IResolvable;
   /**
   * foreign_key_properties block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/table_constraint#foreign_key_properties TableConstraint#foreign_key_properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/table_constraint#foreign_key_properties TableConstraint#foreign_key_properties}
   */
   readonly foreignKeyProperties?: TableConstraintForeignKeyProperties;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/table_constraint#timeouts TableConstraint#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/table_constraint#timeouts TableConstraint#timeouts}
   */
   readonly timeouts?: TableConstraintTimeouts;
 }
@@ -102,13 +102,13 @@ export interface TableConstraintForeignKeyPropertiesReferences {
   /**
   * Columns to use in foreign key reference
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/table_constraint#columns TableConstraint#columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/table_constraint#columns TableConstraint#columns}
   */
   readonly columns: string[];
   /**
   * Name of constraint
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/table_constraint#table_id TableConstraint#table_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/table_constraint#table_id TableConstraint#table_id}
   */
   readonly tableId: string;
 }
@@ -217,25 +217,25 @@ export interface TableConstraintForeignKeyProperties {
   /**
   * (Default: `FULL`) The match type for the foreign key. Not applicable for primary/unique keys
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/table_constraint#match TableConstraint#match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/table_constraint#match TableConstraint#match}
   */
   readonly match?: string;
   /**
   * (Default: `NO ACTION`) Specifies the action performed when the primary/unique key for the foreign key is deleted. Not applicable for primary/unique keys
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/table_constraint#on_delete TableConstraint#on_delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/table_constraint#on_delete TableConstraint#on_delete}
   */
   readonly onDelete?: string;
   /**
   * (Default: `NO ACTION`) Specifies the action performed when the primary/unique key for the foreign key is updated. Not applicable for primary/unique keys
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/table_constraint#on_update TableConstraint#on_update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/table_constraint#on_update TableConstraint#on_update}
   */
   readonly onUpdate?: string;
   /**
   * references block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/table_constraint#references TableConstraint#references}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/table_constraint#references TableConstraint#references}
   */
   readonly references: TableConstraintForeignKeyPropertiesReferences;
 }
@@ -403,19 +403,19 @@ export class TableConstraintForeignKeyPropertiesOutputReference extends cdktf.Co
 }
 export interface TableConstraintTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/table_constraint#create TableConstraint#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/table_constraint#create TableConstraint#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/table_constraint#delete TableConstraint#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/table_constraint#delete TableConstraint#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/table_constraint#read TableConstraint#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/table_constraint#read TableConstraint#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/table_constraint#update TableConstraint#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/table_constraint#update TableConstraint#update}
   */
   readonly update?: string;
 }
@@ -596,7 +596,7 @@ export class TableConstraintTimeoutsOutputReference extends cdktf.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/table_constraint snowflake_table_constraint}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/table_constraint snowflake_table_constraint}
 */
 export class TableConstraint extends cdktf.TerraformResource {
 
@@ -612,7 +612,7 @@ export class TableConstraint extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a TableConstraint resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TableConstraint to import
-  * @param importFromId The id of the existing TableConstraint that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/table_constraint#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing TableConstraint that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/table_constraint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TableConstraint to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -624,7 +624,7 @@ export class TableConstraint extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/table_constraint snowflake_table_constraint} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/table_constraint snowflake_table_constraint} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -635,7 +635,7 @@ export class TableConstraint extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_table_constraint',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.7.0',
+        providerVersion: '2.8.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,

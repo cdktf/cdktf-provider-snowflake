@@ -4,7 +4,7 @@
 
 ### Listing <a name="Listing" id="@cdktf/provider-snowflake.listing.Listing"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/listing snowflake_listing}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/listing snowflake_listing}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.listing.Listing.Initializer"></a>
 
@@ -45,7 +45,7 @@ Listing.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-snowflake.listing.Listing.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Specifies the listing identifier (name). |
 | <code><a href="#@cdktf/provider-snowflake.listing.Listing.Initializer.parameter.applicationPackage">applicationPackage</a></code> | <code>java.lang.String</code> | Specifies the application package attached to the listing. |
 | <code><a href="#@cdktf/provider-snowflake.listing.Listing.Initializer.parameter.comment">comment</a></code> | <code>java.lang.String</code> | Specifies a comment for the listing. |
-| <code><a href="#@cdktf/provider-snowflake.listing.Listing.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/listing#id Listing#id}. |
+| <code><a href="#@cdktf/provider-snowflake.listing.Listing.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/listing#id Listing#id}. |
 | <code><a href="#@cdktf/provider-snowflake.listing.Listing.Initializer.parameter.publish">publish</a></code> | <code>java.lang.String</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Determines if the listing should be published. |
 | <code><a href="#@cdktf/provider-snowflake.listing.Listing.Initializer.parameter.share">share</a></code> | <code>java.lang.String</code> | Specifies the identifier for the share to attach to the listing. |
 | <code><a href="#@cdktf/provider-snowflake.listing.Listing.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.listing.ListingTimeouts">ListingTimeouts</a></code> | timeouts block. |
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 manifest block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/listing#manifest Listing#manifest}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/listing#manifest Listing#manifest}
 
 ---
 
@@ -130,7 +130,7 @@ Specifies the listing identifier (name).
 
 It must be unique within the organization, regardless of which Snowflake region the account is located in. Must start with an alphabetic character and cannot contain spaces or special characters except for underscores.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/listing#name Listing#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/listing#name Listing#name}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the application package attached to the listing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/listing#application_package Listing#application_package}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/listing#application_package Listing#application_package}
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies a comment for the listing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/listing#comment Listing#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/listing#comment Listing#comment}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/listing#id Listing#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/listing#id Listing#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -171,7 +171,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Determines if the listing should be published.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/listing#publish Listing#publish}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/listing#publish Listing#publish}
 
 ---
 
@@ -181,7 +181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 Specifies the identifier for the share to attach to the listing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/listing#share Listing#share}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/listing#share Listing#share}
 
 ---
 
@@ -191,7 +191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/listing#timeouts Listing#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/listing#timeouts Listing#timeouts}
 
 ---
 
@@ -686,7 +686,7 @@ The construct id used in the generated config for the Listing to import.
 
 The id of the existing Listing that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/listing#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/listing#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1120,7 +1120,7 @@ ListingConfig.builder()
 | <code><a href="#@cdktf/provider-snowflake.listing.ListingConfig.property.name">name</a></code> | <code>java.lang.String</code> | Specifies the listing identifier (name). |
 | <code><a href="#@cdktf/provider-snowflake.listing.ListingConfig.property.applicationPackage">applicationPackage</a></code> | <code>java.lang.String</code> | Specifies the application package attached to the listing. |
 | <code><a href="#@cdktf/provider-snowflake.listing.ListingConfig.property.comment">comment</a></code> | <code>java.lang.String</code> | Specifies a comment for the listing. |
-| <code><a href="#@cdktf/provider-snowflake.listing.ListingConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/listing#id Listing#id}. |
+| <code><a href="#@cdktf/provider-snowflake.listing.ListingConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/listing#id Listing#id}. |
 | <code><a href="#@cdktf/provider-snowflake.listing.ListingConfig.property.publish">publish</a></code> | <code>java.lang.String</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Determines if the listing should be published. |
 | <code><a href="#@cdktf/provider-snowflake.listing.ListingConfig.property.share">share</a></code> | <code>java.lang.String</code> | Specifies the identifier for the share to attach to the listing. |
 | <code><a href="#@cdktf/provider-snowflake.listing.ListingConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.listing.ListingTimeouts">ListingTimeouts</a></code> | timeouts block. |
@@ -1207,7 +1207,7 @@ public ListingManifest getManifest();
 
 manifest block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/listing#manifest Listing#manifest}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/listing#manifest Listing#manifest}
 
 ---
 
@@ -1223,7 +1223,7 @@ Specifies the listing identifier (name).
 
 It must be unique within the organization, regardless of which Snowflake region the account is located in. Must start with an alphabetic character and cannot contain spaces or special characters except for underscores.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/listing#name Listing#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/listing#name Listing#name}
 
 ---
 
@@ -1237,7 +1237,7 @@ public java.lang.String getApplicationPackage();
 
 Specifies the application package attached to the listing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/listing#application_package Listing#application_package}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/listing#application_package Listing#application_package}
 
 ---
 
@@ -1251,7 +1251,7 @@ public java.lang.String getComment();
 
 Specifies a comment for the listing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/listing#comment Listing#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/listing#comment Listing#comment}
 
 ---
 
@@ -1263,7 +1263,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/listing#id Listing#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/listing#id Listing#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1280,7 +1280,7 @@ public java.lang.String getPublish();
 
 (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Determines if the listing should be published.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/listing#publish Listing#publish}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/listing#publish Listing#publish}
 
 ---
 
@@ -1294,7 +1294,7 @@ public java.lang.String getShare();
 
 Specifies the identifier for the share to attach to the listing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/listing#share Listing#share}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/listing#share Listing#share}
 
 ---
 
@@ -1308,7 +1308,7 @@ public ListingTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/listing#timeouts Listing#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/listing#timeouts Listing#timeouts}
 
 ---
 
@@ -1344,7 +1344,7 @@ public ListingManifestFromStage getFromStage();
 
 from_stage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/listing#from_stage Listing#from_stage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/listing#from_stage Listing#from_stage}
 
 ---
 
@@ -1360,7 +1360,7 @@ Manifest provided as a string.
 
 Wrapping `$$` signs are added by the provider automatically; do not include them. For more information on manifest syntax, see [Listing manifest reference](https://docs.snowflake.com/en/progaccess/listing-manifest-reference). Also, the [multiline string syntax](https://developer.hashicorp.com/terraform/language/expressions/strings#heredoc-strings) is a must here. A proper YAML indentation (2 spaces) is required.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/listing#from_string Listing#from_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/listing#from_string Listing#from_string}
 
 ---
 
@@ -1400,7 +1400,7 @@ public java.lang.String getStage();
 
 Identifier of the stage where the manifest file is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/listing#stage Listing#stage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/listing#stage Listing#stage}
 
 ---
 
@@ -1416,7 +1416,7 @@ Location of the manifest file in the stage.
 
 If not specified, the manifest file will be expected to be at the root of the stage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/listing#location Listing#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/listing#location Listing#location}
 
 ---
 
@@ -1432,7 +1432,7 @@ Specifies a comment for the listing version.
 
 Whenever a new version is created, this comment will be associated with it. The comment on the version will be visible in the [SHOW VERSIONS IN LISTING](https://docs.snowflake.com/en/sql-reference/sql/show-versions-in-listing) command output.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/listing#version_comment Listing#version_comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/listing#version_comment Listing#version_comment}
 
 ---
 
@@ -1448,7 +1448,7 @@ Represents manifest version name.
 
 It's case-sensitive and used in manifest versioning. Version name should be specified or changed whenever any changes in the manifest should be applied to the listing. Later on the versions of the listing can be analyzed by calling the [SHOW VERSIONS IN LISTING](https://docs.snowflake.com/en/sql-reference/sql/show-versions-in-listing) command. The resource does not track the changes on the specified stage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/listing#version_name Listing#version_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/listing#version_name Listing#version_name}
 
 ---
 
@@ -1483,10 +1483,10 @@ ListingTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.listing.ListingTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/listing#create Listing#create}. |
-| <code><a href="#@cdktf/provider-snowflake.listing.ListingTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/listing#delete Listing#delete}. |
-| <code><a href="#@cdktf/provider-snowflake.listing.ListingTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/listing#read Listing#read}. |
-| <code><a href="#@cdktf/provider-snowflake.listing.ListingTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/listing#update Listing#update}. |
+| <code><a href="#@cdktf/provider-snowflake.listing.ListingTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/listing#create Listing#create}. |
+| <code><a href="#@cdktf/provider-snowflake.listing.ListingTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/listing#delete Listing#delete}. |
+| <code><a href="#@cdktf/provider-snowflake.listing.ListingTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/listing#read Listing#read}. |
+| <code><a href="#@cdktf/provider-snowflake.listing.ListingTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/listing#update Listing#update}. |
 
 ---
 
@@ -1498,7 +1498,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/listing#create Listing#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/listing#create Listing#create}.
 
 ---
 
@@ -1510,7 +1510,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/listing#delete Listing#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/listing#delete Listing#delete}.
 
 ---
 
@@ -1522,7 +1522,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/listing#read Listing#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/listing#read Listing#read}.
 
 ---
 
@@ -1534,7 +1534,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.7.0/docs/resources/listing#update Listing#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/listing#update Listing#update}.
 
 ---
 
