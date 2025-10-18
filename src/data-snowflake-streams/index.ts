@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/data-sources/streams
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/data-sources/streams
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataSnowflakeStreamsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/data-sources/streams#id DataSnowflakeStreams#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/data-sources/streams#id DataSnowflakeStreams#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,31 +22,31 @@ export interface DataSnowflakeStreamsConfig extends cdktf.TerraformMetaArguments
   /**
   * Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/data-sources/streams#like DataSnowflakeStreams#like}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/data-sources/streams#like DataSnowflakeStreams#like}
   */
   readonly like?: string;
   /**
   * Filters the output with **case-sensitive** characters indicating the beginning of the object name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/data-sources/streams#starts_with DataSnowflakeStreams#starts_with}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/data-sources/streams#starts_with DataSnowflakeStreams#starts_with}
   */
   readonly startsWith?: string;
   /**
   * (Default: `true`) Runs DESC STREAM for each user returned by SHOW STREAMS. The output of describe is saved to the description field. By default this value is set to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/data-sources/streams#with_describe DataSnowflakeStreams#with_describe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/data-sources/streams#with_describe DataSnowflakeStreams#with_describe}
   */
   readonly withDescribe?: boolean | cdktf.IResolvable;
   /**
   * in block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/data-sources/streams#in DataSnowflakeStreams#in}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/data-sources/streams#in DataSnowflakeStreams#in}
   */
   readonly in?: DataSnowflakeStreamsIn;
   /**
   * limit block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/data-sources/streams#limit DataSnowflakeStreams#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/data-sources/streams#limit DataSnowflakeStreams#limit}
   */
   readonly limit?: DataSnowflakeStreamsLimit;
 }
@@ -426,31 +426,31 @@ export interface DataSnowflakeStreamsIn {
   /**
   * Returns records for the entire account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/data-sources/streams#account DataSnowflakeStreams#account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/data-sources/streams#account DataSnowflakeStreams#account}
   */
   readonly account?: boolean | cdktf.IResolvable;
   /**
   * Returns records for the specified application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/data-sources/streams#application DataSnowflakeStreams#application}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/data-sources/streams#application DataSnowflakeStreams#application}
   */
   readonly application?: string;
   /**
   * Returns records for the specified application package.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/data-sources/streams#application_package DataSnowflakeStreams#application_package}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/data-sources/streams#application_package DataSnowflakeStreams#application_package}
   */
   readonly applicationPackage?: string;
   /**
   * Returns records for the current database in use or for a specified database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/data-sources/streams#database DataSnowflakeStreams#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/data-sources/streams#database DataSnowflakeStreams#database}
   */
   readonly database?: string;
   /**
   * Returns records for the current schema in use or a specified schema. Use fully qualified name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/data-sources/streams#schema DataSnowflakeStreams#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/data-sources/streams#schema DataSnowflakeStreams#schema}
   */
   readonly schema?: string;
 }
@@ -652,13 +652,13 @@ export interface DataSnowflakeStreamsLimit {
   /**
   * Specifies a **case-sensitive** pattern that is used to match object name. After the first match, the limit on the number of rows will be applied.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/data-sources/streams#from DataSnowflakeStreams#from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/data-sources/streams#from DataSnowflakeStreams#from}
   */
   readonly from?: string;
   /**
   * The maximum number of rows to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/data-sources/streams#rows DataSnowflakeStreams#rows}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/data-sources/streams#rows DataSnowflakeStreams#rows}
   */
   readonly rows: number;
 }
@@ -768,7 +768,7 @@ export class DataSnowflakeStreamsLimitOutputReference extends cdktf.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/data-sources/streams snowflake_streams}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/data-sources/streams snowflake_streams}
 */
 export class DataSnowflakeStreams extends cdktf.TerraformDataSource {
 
@@ -784,7 +784,7 @@ export class DataSnowflakeStreams extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataSnowflakeStreams resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataSnowflakeStreams to import
-  * @param importFromId The id of the existing DataSnowflakeStreams that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/data-sources/streams#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataSnowflakeStreams that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/data-sources/streams#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataSnowflakeStreams to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -796,7 +796,7 @@ export class DataSnowflakeStreams extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/data-sources/streams snowflake_streams} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/data-sources/streams snowflake_streams} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -807,7 +807,7 @@ export class DataSnowflakeStreams extends cdktf.TerraformDataSource {
       terraformResourceType: 'snowflake_streams',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.8.0',
+        providerVersion: '2.9.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,

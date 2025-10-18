@@ -4,7 +4,7 @@
 
 ### AccountRole <a name="AccountRole" id="@cdktf/provider-snowflake.accountRole.AccountRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/account_role snowflake_account_role}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/account_role snowflake_account_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.accountRole.AccountRole.Initializer"></a>
 
@@ -501,7 +501,7 @@ The construct id used in the generated config for the AccountRole to import.
 
 The id of the existing AccountRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/account_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/account_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -840,8 +840,8 @@ new AccountRoleConfig {
 | <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleConfig.property.name">Name</a></code> | <code>string</code> | Identifier for the role; |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleConfig.property.comment">Comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/account_role#comment AccountRole#comment}. |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/account_role#id AccountRole#id}. |
+| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleConfig.property.comment">Comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/account_role#comment AccountRole#comment}. |
+| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/account_role#id AccountRole#id}. |
 | <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeouts">AccountRoleTimeouts</a></code> | timeouts block. |
 
 ---
@@ -928,7 +928,7 @@ Identifier for the role;
 
 must be unique for your account. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/account_role#name AccountRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/account_role#name AccountRole#name}
 
 ---
 
@@ -940,7 +940,7 @@ public string Comment { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/account_role#comment AccountRole#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/account_role#comment AccountRole#comment}.
 
 ---
 
@@ -952,7 +952,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/account_role#id AccountRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/account_role#id AccountRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -969,7 +969,7 @@ public AccountRoleTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/account_role#timeouts AccountRole#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/account_role#timeouts AccountRole#timeouts}
 
 ---
 
@@ -1005,10 +1005,10 @@ new AccountRoleTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/account_role#create AccountRole#create}. |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/account_role#delete AccountRole#delete}. |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/account_role#read AccountRole#read}. |
-| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/account_role#update AccountRole#update}. |
+| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/account_role#create AccountRole#create}. |
+| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/account_role#delete AccountRole#delete}. |
+| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/account_role#read AccountRole#read}. |
+| <code><a href="#@cdktf/provider-snowflake.accountRole.AccountRoleTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/account_role#update AccountRole#update}. |
 
 ---
 
@@ -1020,7 +1020,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/account_role#create AccountRole#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/account_role#create AccountRole#create}.
 
 ---
 
@@ -1032,7 +1032,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/account_role#delete AccountRole#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/account_role#delete AccountRole#delete}.
 
 ---
 
@@ -1044,7 +1044,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/account_role#read AccountRole#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/account_role#read AccountRole#read}.
 
 ---
 
@@ -1056,7 +1056,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/account_role#update AccountRole#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/account_role#update AccountRole#update}.
 
 ---
 

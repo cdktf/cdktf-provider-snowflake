@@ -4,7 +4,7 @@
 
 ### DataSnowflakeDatabase <a name="DataSnowflakeDatabase" id="@cdktf/provider-snowflake.dataSnowflakeDatabase.DataSnowflakeDatabase"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/data-sources/database snowflake_database}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/data-sources/database snowflake_database}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.dataSnowflakeDatabase.DataSnowflakeDatabase.Initializer"></a>
 
@@ -38,7 +38,7 @@ dataSnowflakeDatabase.DataSnowflakeDatabase(
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabase.DataSnowflakeDatabase.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabase.DataSnowflakeDatabase.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabase.DataSnowflakeDatabase.Initializer.parameter.name">name</a></code> | <code>str</code> | The database from which to return its metadata. |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabase.DataSnowflakeDatabase.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/data-sources/database#id DataSnowflakeDatabase#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabase.DataSnowflakeDatabase.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/data-sources/database#id DataSnowflakeDatabase#id}. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 The database from which to return its metadata.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/data-sources/database#name DataSnowflakeDatabase#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/data-sources/database#name DataSnowflakeDatabase#name}
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowf
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/data-sources/database#id DataSnowflakeDatabase#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/data-sources/database#id DataSnowflakeDatabase#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -485,7 +485,7 @@ The construct id used in the generated config for the DataSnowflakeDatabase to i
 
 The id of the existing DataSnowflakeDatabase that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/data-sources/database#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/data-sources/database#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -822,7 +822,7 @@ dataSnowflakeDatabase.DataSnowflakeDatabaseConfig(
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabase.DataSnowflakeDatabaseConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabase.DataSnowflakeDatabaseConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabase.DataSnowflakeDatabaseConfig.property.name">name</a></code> | <code>str</code> | The database from which to return its metadata. |
-| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabase.DataSnowflakeDatabaseConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/data-sources/database#id DataSnowflakeDatabase#id}. |
+| <code><a href="#@cdktf/provider-snowflake.dataSnowflakeDatabase.DataSnowflakeDatabaseConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/data-sources/database#id DataSnowflakeDatabase#id}. |
 
 ---
 
@@ -906,7 +906,7 @@ name: str
 
 The database from which to return its metadata.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/data-sources/database#name DataSnowflakeDatabase#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/data-sources/database#name DataSnowflakeDatabase#name}
 
 ---
 
@@ -918,7 +918,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/data-sources/database#id DataSnowflakeDatabase#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/data-sources/database#id DataSnowflakeDatabase#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -4,7 +4,7 @@
 
 ### Sequence <a name="Sequence" id="@cdktf/provider-snowflake.sequence.Sequence"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/sequence snowflake_sequence}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/sequence snowflake_sequence}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.sequence.Sequence.Initializer"></a>
 
@@ -515,7 +515,7 @@ The construct id used in the generated config for the Sequence to import.
 
 The id of the existing Sequence that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/sequence#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/sequence#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -933,7 +933,7 @@ const sequenceConfig: sequence.SequenceConfig = { ... }
 | <code><a href="#@cdktf/provider-snowflake.sequence.SequenceConfig.property.name">name</a></code> | <code>string</code> | Specifies the name for the sequence. |
 | <code><a href="#@cdktf/provider-snowflake.sequence.SequenceConfig.property.schema">schema</a></code> | <code>string</code> | The schema in which to create the sequence. Don't use the \| character. |
 | <code><a href="#@cdktf/provider-snowflake.sequence.SequenceConfig.property.comment">comment</a></code> | <code>string</code> | (Default: ``) Specifies a comment for the sequence. |
-| <code><a href="#@cdktf/provider-snowflake.sequence.SequenceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/sequence#id Sequence#id}. |
+| <code><a href="#@cdktf/provider-snowflake.sequence.SequenceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/sequence#id Sequence#id}. |
 | <code><a href="#@cdktf/provider-snowflake.sequence.SequenceConfig.property.increment">increment</a></code> | <code>number</code> | (Default: `1`) The amount the sequence will increase by each time it is used. |
 | <code><a href="#@cdktf/provider-snowflake.sequence.SequenceConfig.property.ordering">ordering</a></code> | <code>string</code> | (Default: `ORDER`) The ordering of the sequence. Either ORDER or NOORDER. Default is ORDER. |
 | <code><a href="#@cdktf/provider-snowflake.sequence.SequenceConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-snowflake.sequence.SequenceTimeouts">SequenceTimeouts</a></code> | timeouts block. |
@@ -1020,7 +1020,7 @@ public readonly database: string;
 
 The database in which to create the sequence. Don't use the | character.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/sequence#database Sequence#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/sequence#database Sequence#database}
 
 ---
 
@@ -1034,7 +1034,7 @@ public readonly name: string;
 
 Specifies the name for the sequence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/sequence#name Sequence#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/sequence#name Sequence#name}
 
 ---
 
@@ -1048,7 +1048,7 @@ public readonly schema: string;
 
 The schema in which to create the sequence. Don't use the | character.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/sequence#schema Sequence#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/sequence#schema Sequence#schema}
 
 ---
 
@@ -1062,7 +1062,7 @@ public readonly comment: string;
 
 (Default: ``) Specifies a comment for the sequence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/sequence#comment Sequence#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/sequence#comment Sequence#comment}
 
 ---
 
@@ -1074,7 +1074,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/sequence#id Sequence#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/sequence#id Sequence#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1091,7 +1091,7 @@ public readonly increment: number;
 
 (Default: `1`) The amount the sequence will increase by each time it is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/sequence#increment Sequence#increment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/sequence#increment Sequence#increment}
 
 ---
 
@@ -1105,7 +1105,7 @@ public readonly ordering: string;
 
 (Default: `ORDER`) The ordering of the sequence. Either ORDER or NOORDER. Default is ORDER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/sequence#ordering Sequence#ordering}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/sequence#ordering Sequence#ordering}
 
 ---
 
@@ -1119,7 +1119,7 @@ public readonly timeouts: SequenceTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/sequence#timeouts Sequence#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/sequence#timeouts Sequence#timeouts}
 
 ---
 
@@ -1137,10 +1137,10 @@ const sequenceTimeouts: sequence.SequenceTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.sequence.SequenceTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/sequence#create Sequence#create}. |
-| <code><a href="#@cdktf/provider-snowflake.sequence.SequenceTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/sequence#delete Sequence#delete}. |
-| <code><a href="#@cdktf/provider-snowflake.sequence.SequenceTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/sequence#read Sequence#read}. |
-| <code><a href="#@cdktf/provider-snowflake.sequence.SequenceTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/sequence#update Sequence#update}. |
+| <code><a href="#@cdktf/provider-snowflake.sequence.SequenceTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/sequence#create Sequence#create}. |
+| <code><a href="#@cdktf/provider-snowflake.sequence.SequenceTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/sequence#delete Sequence#delete}. |
+| <code><a href="#@cdktf/provider-snowflake.sequence.SequenceTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/sequence#read Sequence#read}. |
+| <code><a href="#@cdktf/provider-snowflake.sequence.SequenceTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/sequence#update Sequence#update}. |
 
 ---
 
@@ -1152,7 +1152,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/sequence#create Sequence#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/sequence#create Sequence#create}.
 
 ---
 
@@ -1164,7 +1164,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/sequence#delete Sequence#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/sequence#delete Sequence#delete}.
 
 ---
 
@@ -1176,7 +1176,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/sequence#read Sequence#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/sequence#read Sequence#read}.
 
 ---
 
@@ -1188,7 +1188,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/sequence#update Sequence#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/sequence#update Sequence#update}.
 
 ---
 

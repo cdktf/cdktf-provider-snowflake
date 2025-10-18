@@ -4,7 +4,7 @@
 
 ### Account <a name="Account" id="@cdktf/provider-snowflake.account.Account"></a>
 
-Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/account snowflake_account}.
+Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/account snowflake_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-snowflake.account.Account.Initializer"></a>
 
@@ -571,7 +571,7 @@ The construct id used in the generated config for the Account to import.
 
 The id of the existing Account that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1242,7 +1242,7 @@ new AccountConfig {
 | <code><a href="#@cdktf/provider-snowflake.account.AccountConfig.property.comment">Comment</a></code> | <code>string</code> | Specifies a comment for the account. |
 | <code><a href="#@cdktf/provider-snowflake.account.AccountConfig.property.consumptionBillingEntity">ConsumptionBillingEntity</a></code> | <code>string</code> | Determines which billing entity is responsible for the account's consumption-based billing. |
 | <code><a href="#@cdktf/provider-snowflake.account.AccountConfig.property.firstName">FirstName</a></code> | <code>string</code> | First name of the initial administrative user of the account. |
-| <code><a href="#@cdktf/provider-snowflake.account.AccountConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/account#id Account#id}. |
+| <code><a href="#@cdktf/provider-snowflake.account.AccountConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/account#id Account#id}. |
 | <code><a href="#@cdktf/provider-snowflake.account.AccountConfig.property.isOrgAdmin">IsOrgAdmin</a></code> | <code>string</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Sets an account property that determines whether the ORGADMIN role is enabled in the account. |
 | <code><a href="#@cdktf/provider-snowflake.account.AccountConfig.property.lastName">LastName</a></code> | <code>string</code> | Last name of the initial administrative user of the account. |
 | <code><a href="#@cdktf/provider-snowflake.account.AccountConfig.property.mustChangePassword">MustChangePassword</a></code> | <code>string</code> | (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether the new user created to administer the account is forced to change their password upon first login into the account. |
@@ -1334,7 +1334,7 @@ Login name of the initial administrative user of the account.
 
 A new user is created in the new account with this name and password and granted the ACCOUNTADMIN role in the account. A login name can be any string consisting of letters, numbers, and underscores. Login names are always case-insensitive. External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/account#admin_name Account#admin_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/account#admin_name Account#admin_name}
 
 ---
 
@@ -1350,7 +1350,7 @@ Snowflake Edition of the account.
 
 See more about Snowflake Editions in the [official documentation](https://docs.snowflake.com/en/user-guide/intro-editions). Valid options are: `STANDARD` | `ENTERPRISE` | `BUSINESS_CRITICAL`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/account#edition Account#edition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/account#edition Account#edition}
 
 ---
 
@@ -1366,7 +1366,7 @@ Email address of the initial administrative user of the account.
 
 This email address is used to send any notifications about the account. External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/account#email Account#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/account#email Account#email}
 
 ---
 
@@ -1382,7 +1382,7 @@ Specifies the number of days during which the account can be restored (“undrop
 
 The minimum is 3 days and the maximum is 90 days.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/account#grace_period_in_days Account#grace_period_in_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/account#grace_period_in_days Account#grace_period_in_days}
 
 ---
 
@@ -1396,7 +1396,7 @@ public string Name { get; set; }
 
 Specifies the identifier (i.e. name) for the account. It must be unique within an organization, regardless of which Snowflake Region the account is in and must start with an alphabetic character and cannot contain spaces or special characters except for underscores (_). Note that if the account name includes underscores, features that do not accept account names with underscores (e.g. Okta SSO or SCIM) can reference a version of the account name that substitutes hyphens (-) for the underscores.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/account#name Account#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/account#name Account#name}
 
 ---
 
@@ -1412,7 +1412,7 @@ Password for the initial administrative user of the account.
 
 Either admin_password or admin_rsa_public_key has to be specified. This field cannot be used whenever admin_user_type is set to SERVICE. External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/account#admin_password Account#admin_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/account#admin_password Account#admin_password}
 
 ---
 
@@ -1428,7 +1428,7 @@ Assigns a public key to the initial administrative user of the account.
 
 Either admin_password or admin_rsa_public_key has to be specified. External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/account#admin_rsa_public_key Account#admin_rsa_public_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/account#admin_rsa_public_key Account#admin_rsa_public_key}
 
 ---
 
@@ -1444,7 +1444,7 @@ Used for setting the type of the first user that is assigned the ACCOUNTADMIN ro
 
 Valid options are: `PERSON` | `SERVICE` | `LEGACY_SERVICE` External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/account#admin_user_type Account#admin_user_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/account#admin_user_type Account#admin_user_type}
 
 ---
 
@@ -1458,7 +1458,7 @@ public string Comment { get; set; }
 
 Specifies a comment for the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/account#comment Account#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/account#comment Account#comment}
 
 ---
 
@@ -1472,7 +1472,7 @@ public string ConsumptionBillingEntity { get; set; }
 
 Determines which billing entity is responsible for the account's consumption-based billing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/account#consumption_billing_entity Account#consumption_billing_entity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/account#consumption_billing_entity Account#consumption_billing_entity}
 
 ---
 
@@ -1488,7 +1488,7 @@ First name of the initial administrative user of the account.
 
 This field cannot be used whenever admin_user_type is set to SERVICE. External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/account#first_name Account#first_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/account#first_name Account#first_name}
 
 ---
 
@@ -1500,7 +1500,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/account#id Account#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/account#id Account#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1519,7 +1519,7 @@ public string IsOrgAdmin { get; set; }
 
 Only an organization administrator (i.e. user with the ORGADMIN role) can set the property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/account#is_org_admin Account#is_org_admin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/account#is_org_admin Account#is_org_admin}
 
 ---
 
@@ -1535,7 +1535,7 @@ Last name of the initial administrative user of the account.
 
 This field cannot be used whenever admin_user_type is set to SERVICE. External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/account#last_name Account#last_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/account#last_name Account#last_name}
 
 ---
 
@@ -1551,7 +1551,7 @@ public string MustChangePassword { get; set; }
 
 This field cannot be used whenever admin_user_type is set to SERVICE. External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/account#must_change_password Account#must_change_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/account#must_change_password Account#must_change_password}
 
 ---
 
@@ -1565,7 +1565,7 @@ public string Region { get; set; }
 
 [Snowflake Region ID](https://docs.snowflake.com/en/user-guide/admin-account-identifier.html#label-snowflake-region-ids) of the region where the account is created. If no value is provided, Snowflake creates the account in the same Snowflake Region as the current account (i.e. the account in which the CREATE ACCOUNT statement is executed.).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/account#region Account#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/account#region Account#region}
 
 ---
 
@@ -1581,7 +1581,7 @@ ID of the region group where the account is created.
 
 To retrieve the region group ID for existing accounts in your organization, execute the [SHOW REGIONS](https://docs.snowflake.com/en/sql-reference/sql/show-regions) command. For information about when you might need to specify region group, see [Region groups](https://docs.snowflake.com/en/user-guide/admin-account-identifier.html#label-region-groups).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/account#region_group Account#region_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/account#region_group Account#region_group}
 
 ---
 
@@ -1595,7 +1595,7 @@ public AccountTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/account#timeouts Account#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/account#timeouts Account#timeouts}
 
 ---
 
@@ -1631,10 +1631,10 @@ new AccountTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-snowflake.account.AccountTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/account#create Account#create}. |
-| <code><a href="#@cdktf/provider-snowflake.account.AccountTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/account#delete Account#delete}. |
-| <code><a href="#@cdktf/provider-snowflake.account.AccountTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/account#read Account#read}. |
-| <code><a href="#@cdktf/provider-snowflake.account.AccountTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/account#update Account#update}. |
+| <code><a href="#@cdktf/provider-snowflake.account.AccountTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/account#create Account#create}. |
+| <code><a href="#@cdktf/provider-snowflake.account.AccountTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/account#delete Account#delete}. |
+| <code><a href="#@cdktf/provider-snowflake.account.AccountTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/account#read Account#read}. |
+| <code><a href="#@cdktf/provider-snowflake.account.AccountTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/account#update Account#update}. |
 
 ---
 
@@ -1646,7 +1646,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/account#create Account#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/account#create Account#create}.
 
 ---
 
@@ -1658,7 +1658,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/account#delete Account#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/account#delete Account#delete}.
 
 ---
 
@@ -1670,7 +1670,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/account#read Account#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/account#read Account#read}.
 
 ---
 
@@ -1682,7 +1682,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/account#update Account#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/account#update Account#update}.
 
 ---
 

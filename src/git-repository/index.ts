@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/git_repository
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/git_repository
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,29 +15,29 @@ export interface GitRepositoryConfig extends cdktf.TerraformMetaArguments {
   /**
   * Identifier of API INTEGRATION containing information about the remote Git repository such as allowed credentials and prefixes for target URLs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/git_repository#api_integration GitRepository#api_integration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/git_repository#api_integration GitRepository#api_integration}
   */
   readonly apiIntegration: string;
   /**
   * Specifies a comment for the git repository.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/git_repository#comment GitRepository#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/git_repository#comment GitRepository#comment}
   */
   readonly comment?: string;
   /**
   * The database in which to create the git repository. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/git_repository#database GitRepository#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/git_repository#database GitRepository#database}
   */
   readonly database: string;
   /**
   * Specifies the Snowflake secret fully qualified name (e.g `"\"<db_name>\".\"<schema_name>\".\"<secret_name>\""`) containing the credentials to use for authenticating with the remote Git repository. Omit this parameter to use the default secret specified by the API integration or if this integration does not require authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/git_repository#git_credentials GitRepository#git_credentials}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/git_repository#git_credentials GitRepository#git_credentials}
   */
   readonly gitCredentials?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/git_repository#id GitRepository#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/git_repository#id GitRepository#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,25 +46,25 @@ export interface GitRepositoryConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies the identifier for the git repository; must be unique for the schema in which the git repository is created. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/git_repository#name GitRepository#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/git_repository#name GitRepository#name}
   */
   readonly name: string;
   /**
   * Specifies the origin URL of the remote Git repository that this Git repository clone represents. The URL must use HTTPS.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/git_repository#origin GitRepository#origin}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/git_repository#origin GitRepository#origin}
   */
   readonly origin: string;
   /**
   * The schema in which to create the git repository. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/git_repository#schema GitRepository#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/git_repository#schema GitRepository#schema}
   */
   readonly schema: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/git_repository#timeouts GitRepository#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/git_repository#timeouts GitRepository#timeouts}
   */
   readonly timeouts?: GitRepositoryTimeouts;
 }
@@ -320,19 +320,19 @@ export class GitRepositoryShowOutputList extends cdktf.ComplexList {
 }
 export interface GitRepositoryTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/git_repository#create GitRepository#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/git_repository#create GitRepository#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/git_repository#delete GitRepository#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/git_repository#delete GitRepository#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/git_repository#read GitRepository#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/git_repository#read GitRepository#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/git_repository#update GitRepository#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/git_repository#update GitRepository#update}
   */
   readonly update?: string;
 }
@@ -513,7 +513,7 @@ export class GitRepositoryTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/git_repository snowflake_git_repository}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/git_repository snowflake_git_repository}
 */
 export class GitRepository extends cdktf.TerraformResource {
 
@@ -529,7 +529,7 @@ export class GitRepository extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GitRepository resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GitRepository to import
-  * @param importFromId The id of the existing GitRepository that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/git_repository#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GitRepository that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/git_repository#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GitRepository to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -541,7 +541,7 @@ export class GitRepository extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.8.0/docs/resources/git_repository snowflake_git_repository} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/git_repository snowflake_git_repository} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -552,7 +552,7 @@ export class GitRepository extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_git_repository',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.8.0',
+        providerVersion: '2.9.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
