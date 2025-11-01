@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/secondary_connection
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/secondary_connection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface SecondaryConnectionConfig extends cdktf.TerraformMetaArguments 
   /**
   * Specifies the identifier for a primary connection from which to create a replica (i.e. a secondary connection). For more information about this resource, see [docs](./primary_connection).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/secondary_connection#as_replica_of SecondaryConnection#as_replica_of}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/secondary_connection#as_replica_of SecondaryConnection#as_replica_of}
   */
   readonly asReplicaOf: string;
   /**
   * Specifies a comment for the secondary connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/secondary_connection#comment SecondaryConnection#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/secondary_connection#comment SecondaryConnection#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/secondary_connection#id SecondaryConnection#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/secondary_connection#id SecondaryConnection#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,13 +34,13 @@ export interface SecondaryConnectionConfig extends cdktf.TerraformMetaArguments 
   /**
   * String that specifies the identifier (i.e. name) for the connection. Must start with an alphabetic character and may only contain letters, decimal digits (0-9), and underscores (_). For a secondary connection, the name must match the name of its primary connection. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/secondary_connection#name SecondaryConnection#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/secondary_connection#name SecondaryConnection#name}
   */
   readonly name: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/secondary_connection#timeouts SecondaryConnection#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/secondary_connection#timeouts SecondaryConnection#timeouts}
   */
   readonly timeouts?: SecondaryConnectionTimeouts;
 }
@@ -176,19 +176,19 @@ export class SecondaryConnectionShowOutputList extends cdktf.ComplexList {
 }
 export interface SecondaryConnectionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/secondary_connection#create SecondaryConnection#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/secondary_connection#create SecondaryConnection#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/secondary_connection#delete SecondaryConnection#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/secondary_connection#delete SecondaryConnection#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/secondary_connection#read SecondaryConnection#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/secondary_connection#read SecondaryConnection#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/secondary_connection#update SecondaryConnection#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/secondary_connection#update SecondaryConnection#update}
   */
   readonly update?: string;
 }
@@ -369,7 +369,7 @@ export class SecondaryConnectionTimeoutsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/secondary_connection snowflake_secondary_connection}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/secondary_connection snowflake_secondary_connection}
 */
 export class SecondaryConnection extends cdktf.TerraformResource {
 
@@ -385,7 +385,7 @@ export class SecondaryConnection extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SecondaryConnection resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecondaryConnection to import
-  * @param importFromId The id of the existing SecondaryConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/secondary_connection#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SecondaryConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/secondary_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecondaryConnection to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -397,7 +397,7 @@ export class SecondaryConnection extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/secondary_connection snowflake_secondary_connection} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/secondary_connection snowflake_secondary_connection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -408,7 +408,7 @@ export class SecondaryConnection extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_secondary_connection',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.9.0',
+        providerVersion: '2.10.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,

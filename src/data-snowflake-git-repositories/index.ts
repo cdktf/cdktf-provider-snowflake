@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/data-sources/git_repositories
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/data-sources/git_repositories
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataSnowflakeGitRepositoriesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/data-sources/git_repositories#id DataSnowflakeGitRepositories#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/data-sources/git_repositories#id DataSnowflakeGitRepositories#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,25 +22,25 @@ export interface DataSnowflakeGitRepositoriesConfig extends cdktf.TerraformMetaA
   /**
   * Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/data-sources/git_repositories#like DataSnowflakeGitRepositories#like}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/data-sources/git_repositories#like DataSnowflakeGitRepositories#like}
   */
   readonly like?: string;
   /**
   * (Default: `true`) Runs DESC GIT REPOSITORY for each git repository returned by SHOW GIT REPOSITORIES. The output of describe is saved to the description field. By default this value is set to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/data-sources/git_repositories#with_describe DataSnowflakeGitRepositories#with_describe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/data-sources/git_repositories#with_describe DataSnowflakeGitRepositories#with_describe}
   */
   readonly withDescribe?: boolean | cdktf.IResolvable;
   /**
   * in block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/data-sources/git_repositories#in DataSnowflakeGitRepositories#in}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/data-sources/git_repositories#in DataSnowflakeGitRepositories#in}
   */
   readonly in?: DataSnowflakeGitRepositoriesIn;
   /**
   * limit block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/data-sources/git_repositories#limit DataSnowflakeGitRepositories#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/data-sources/git_repositories#limit DataSnowflakeGitRepositories#limit}
   */
   readonly limit?: DataSnowflakeGitRepositoriesLimit;
 }
@@ -380,19 +380,19 @@ export interface DataSnowflakeGitRepositoriesIn {
   /**
   * Returns records for the entire account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/data-sources/git_repositories#account DataSnowflakeGitRepositories#account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/data-sources/git_repositories#account DataSnowflakeGitRepositories#account}
   */
   readonly account?: boolean | cdktf.IResolvable;
   /**
   * Returns records for the current database in use or for a specified database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/data-sources/git_repositories#database DataSnowflakeGitRepositories#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/data-sources/git_repositories#database DataSnowflakeGitRepositories#database}
   */
   readonly database?: string;
   /**
   * Returns records for the current schema in use or a specified schema. Use fully qualified name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/data-sources/git_repositories#schema DataSnowflakeGitRepositories#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/data-sources/git_repositories#schema DataSnowflakeGitRepositories#schema}
   */
   readonly schema?: string;
 }
@@ -536,13 +536,13 @@ export interface DataSnowflakeGitRepositoriesLimit {
   /**
   * Specifies a **case-sensitive** pattern that is used to match object name. After the first match, the limit on the number of rows will be applied.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/data-sources/git_repositories#from DataSnowflakeGitRepositories#from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/data-sources/git_repositories#from DataSnowflakeGitRepositories#from}
   */
   readonly from?: string;
   /**
   * The maximum number of rows to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/data-sources/git_repositories#rows DataSnowflakeGitRepositories#rows}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/data-sources/git_repositories#rows DataSnowflakeGitRepositories#rows}
   */
   readonly rows: number;
 }
@@ -652,7 +652,7 @@ export class DataSnowflakeGitRepositoriesLimitOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/data-sources/git_repositories snowflake_git_repositories}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/data-sources/git_repositories snowflake_git_repositories}
 */
 export class DataSnowflakeGitRepositories extends cdktf.TerraformDataSource {
 
@@ -668,7 +668,7 @@ export class DataSnowflakeGitRepositories extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataSnowflakeGitRepositories resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataSnowflakeGitRepositories to import
-  * @param importFromId The id of the existing DataSnowflakeGitRepositories that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/data-sources/git_repositories#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataSnowflakeGitRepositories that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/data-sources/git_repositories#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataSnowflakeGitRepositories to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -680,7 +680,7 @@ export class DataSnowflakeGitRepositories extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/data-sources/git_repositories snowflake_git_repositories} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/data-sources/git_repositories snowflake_git_repositories} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -691,7 +691,7 @@ export class DataSnowflakeGitRepositories extends cdktf.TerraformDataSource {
       terraformResourceType: 'snowflake_git_repositories',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.9.0',
+        providerVersion: '2.10.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,

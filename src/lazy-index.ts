@@ -104,6 +104,7 @@ Object.defineProperty(exports, 'warehouse', { get: function () { return require(
 Object.defineProperty(exports, 'dataSnowflakeAccountRoles', { get: function () { return require('./data-snowflake-account-roles'); } });
 Object.defineProperty(exports, 'dataSnowflakeAccounts', { get: function () { return require('./data-snowflake-accounts'); } });
 Object.defineProperty(exports, 'dataSnowflakeAlerts', { get: function () { return require('./data-snowflake-alerts'); } });
+Object.defineProperty(exports, 'dataSnowflakeAuthenticationPolicies', { get: function () { return require('./data-snowflake-authentication-policies'); } });
 Object.defineProperty(exports, 'dataSnowflakeComputePools', { get: function () { return require('./data-snowflake-compute-pools'); } });
 Object.defineProperty(exports, 'dataSnowflakeConnections', { get: function () { return require('./data-snowflake-connections'); } });
 Object.defineProperty(exports, 'dataSnowflakeCortexSearchServices', { get: function () { return require('./data-snowflake-cortex-search-services'); } });
