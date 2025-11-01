@@ -22,6 +22,7 @@ The following submodules are available:
 - [dataSnowflakeAccountRoles](./dataSnowflakeAccountRoles.java.md)
 - [dataSnowflakeAccounts](./dataSnowflakeAccounts.java.md)
 - [dataSnowflakeAlerts](./dataSnowflakeAlerts.java.md)
+- [dataSnowflakeAuthenticationPolicies](./dataSnowflakeAuthenticationPolicies.java.md)
 - [dataSnowflakeComputePools](./dataSnowflakeComputePools.java.md)
 - [dataSnowflakeConnections](./dataSnowflakeConnections.java.md)
 - [dataSnowflakeCortexSearchServices](./dataSnowflakeCortexSearchServices.java.md)

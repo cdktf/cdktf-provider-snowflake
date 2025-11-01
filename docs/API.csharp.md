@@ -22,6 +22,7 @@ The following submodules are available:
 - [dataSnowflakeAccountRoles](./dataSnowflakeAccountRoles.csharp.md)
 - [dataSnowflakeAccounts](./dataSnowflakeAccounts.csharp.md)
 - [dataSnowflakeAlerts](./dataSnowflakeAlerts.csharp.md)
+- [dataSnowflakeAuthenticationPolicies](./dataSnowflakeAuthenticationPolicies.csharp.md)
 - [dataSnowflakeComputePools](./dataSnowflakeComputePools.csharp.md)
 - [dataSnowflakeConnections](./dataSnowflakeConnections.csharp.md)
 - [dataSnowflakeCortexSearchServices](./dataSnowflakeCortexSearchServices.csharp.md)

@@ -22,6 +22,7 @@ The following submodules are available:
 - [dataSnowflakeAccountRoles](./dataSnowflakeAccountRoles.typescript.md)
 - [dataSnowflakeAccounts](./dataSnowflakeAccounts.typescript.md)
 - [dataSnowflakeAlerts](./dataSnowflakeAlerts.typescript.md)
+- [dataSnowflakeAuthenticationPolicies](./dataSnowflakeAuthenticationPolicies.typescript.md)
 - [dataSnowflakeComputePools](./dataSnowflakeComputePools.typescript.md)
 - [dataSnowflakeConnections](./dataSnowflakeConnections.typescript.md)
 - [dataSnowflakeCortexSearchServices](./dataSnowflakeCortexSearchServices.typescript.md)
