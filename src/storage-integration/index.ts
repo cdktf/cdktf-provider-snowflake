@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/storage_integration
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/storage_integration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface StorageIntegrationConfig extends cdktf.TerraformMetaArguments {
   /**
   * (Default: ``) Specifies the ID for your Office 365 tenant that the allowed and blocked storage accounts belong to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/storage_integration#azure_tenant_id StorageIntegration#azure_tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/storage_integration#azure_tenant_id StorageIntegration#azure_tenant_id}
   */
   readonly azureTenantId?: string;
   /**
   * (Default: ``) Specifies a comment for the storage integration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/storage_integration#comment StorageIntegration#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/storage_integration#comment StorageIntegration#comment}
   */
   readonly comment?: string;
   /**
   * (Default: `true`) 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/storage_integration#enabled StorageIntegration#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/storage_integration#enabled StorageIntegration#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/storage_integration#id StorageIntegration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/storage_integration#id StorageIntegration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,61 +40,61 @@ export interface StorageIntegrationConfig extends cdktf.TerraformMetaArguments {
   /**
   * String that specifies the identifier (i.e. name) for the integration; must be unique in your account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/storage_integration#name StorageIntegration#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/storage_integration#name StorageIntegration#name}
   */
   readonly name: string;
   /**
   * Explicitly limits external stages that use the integration to reference one or more storage locations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/storage_integration#storage_allowed_locations StorageIntegration#storage_allowed_locations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/storage_integration#storage_allowed_locations StorageIntegration#storage_allowed_locations}
   */
   readonly storageAllowedLocations: string[];
   /**
   * Optionally specifies an external ID that Snowflake uses to establish a trust relationship with AWS.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/storage_integration#storage_aws_external_id StorageIntegration#storage_aws_external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/storage_integration#storage_aws_external_id StorageIntegration#storage_aws_external_id}
   */
   readonly storageAwsExternalId?: string;
   /**
   * "bucket-owner-full-control" Enables support for AWS access control lists (ACLs) to grant the bucket owner full control.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/storage_integration#storage_aws_object_acl StorageIntegration#storage_aws_object_acl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/storage_integration#storage_aws_object_acl StorageIntegration#storage_aws_object_acl}
   */
   readonly storageAwsObjectAcl?: string;
   /**
   * (Default: ``) Specifies the Amazon Resource Name (ARN) of the AWS identity and access management (IAM) role that grants privileges on the S3 bucket containing your data files.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/storage_integration#storage_aws_role_arn StorageIntegration#storage_aws_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/storage_integration#storage_aws_role_arn StorageIntegration#storage_aws_role_arn}
   */
   readonly storageAwsRoleArn?: string;
   /**
   * Explicitly prohibits external stages that use the integration from referencing one or more storage locations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/storage_integration#storage_blocked_locations StorageIntegration#storage_blocked_locations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/storage_integration#storage_blocked_locations StorageIntegration#storage_blocked_locations}
   */
   readonly storageBlockedLocations?: string[];
   /**
   * Specifies the storage provider for the integration. Valid options are: `S3` | `S3GOV` | `S3CHINA` | `GCS` | `AZURE`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/storage_integration#storage_provider StorageIntegration#storage_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/storage_integration#storage_provider StorageIntegration#storage_provider}
   */
   readonly storageProvider: string;
   /**
   * (Default: `EXTERNAL_STAGE`) Specifies the type of the storage integration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/storage_integration#type StorageIntegration#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/storage_integration#type StorageIntegration#type}
   */
   readonly type?: string;
   /**
   * (Default: fallback to Snowflake default - uses special value that cannot be set in the configuration manually (`default`)) Specifies whether to use outbound private connectivity to harden the security posture. Supported for AWS S3 and Azure storage providers. Available options are: "true" or "false". When the value is not set in the configuration the provider will put "default" there which means to use the Snowflake default for this value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/storage_integration#use_privatelink_endpoint StorageIntegration#use_privatelink_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/storage_integration#use_privatelink_endpoint StorageIntegration#use_privatelink_endpoint}
   */
   readonly usePrivatelinkEndpoint?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/storage_integration#timeouts StorageIntegration#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/storage_integration#timeouts StorageIntegration#timeouts}
   */
   readonly timeouts?: StorageIntegrationTimeouts;
 }
@@ -1418,19 +1418,19 @@ export class StorageIntegrationDescribeOutputList extends cdktf.ComplexList {
 }
 export interface StorageIntegrationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/storage_integration#create StorageIntegration#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/storage_integration#create StorageIntegration#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/storage_integration#delete StorageIntegration#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/storage_integration#delete StorageIntegration#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/storage_integration#read StorageIntegration#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/storage_integration#read StorageIntegration#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/storage_integration#update StorageIntegration#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/storage_integration#update StorageIntegration#update}
   */
   readonly update?: string;
 }
@@ -1611,7 +1611,7 @@ export class StorageIntegrationTimeoutsOutputReference extends cdktf.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/storage_integration snowflake_storage_integration}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/storage_integration snowflake_storage_integration}
 */
 export class StorageIntegration extends cdktf.TerraformResource {
 
@@ -1627,7 +1627,7 @@ export class StorageIntegration extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a StorageIntegration resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StorageIntegration to import
-  * @param importFromId The id of the existing StorageIntegration that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/storage_integration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing StorageIntegration that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/storage_integration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StorageIntegration to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1639,7 +1639,7 @@ export class StorageIntegration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/storage_integration snowflake_storage_integration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/storage_integration snowflake_storage_integration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1650,7 +1650,7 @@ export class StorageIntegration extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_storage_integration',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.9.0',
+        providerVersion: '2.10.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,

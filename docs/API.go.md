@@ -22,6 +22,7 @@ The following submodules are available:
 - [dataSnowflakeAccountRoles](./dataSnowflakeAccountRoles.go.md)
 - [dataSnowflakeAccounts](./dataSnowflakeAccounts.go.md)
 - [dataSnowflakeAlerts](./dataSnowflakeAlerts.go.md)
+- [dataSnowflakeAuthenticationPolicies](./dataSnowflakeAuthenticationPolicies.go.md)
 - [dataSnowflakeComputePools](./dataSnowflakeComputePools.go.md)
 - [dataSnowflakeConnections](./dataSnowflakeConnections.go.md)
 - [dataSnowflakeCortexSearchServices](./dataSnowflakeCortexSearchServices.go.md)

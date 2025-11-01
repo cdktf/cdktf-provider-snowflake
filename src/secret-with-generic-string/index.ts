@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/secret_with_generic_string
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/secret_with_generic_string
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface SecretWithGenericStringConfig extends cdktf.TerraformMetaArgume
   /**
   * Specifies a comment for the secret.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/secret_with_generic_string#comment SecretWithGenericString#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/secret_with_generic_string#comment SecretWithGenericString#comment}
   */
   readonly comment?: string;
   /**
   * The database in which to create the secret Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/secret_with_generic_string#database SecretWithGenericString#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/secret_with_generic_string#database SecretWithGenericString#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/secret_with_generic_string#id SecretWithGenericString#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/secret_with_generic_string#id SecretWithGenericString#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,25 +34,25 @@ export interface SecretWithGenericStringConfig extends cdktf.TerraformMetaArgume
   /**
   * String that specifies the identifier (i.e. name) for the secret, must be unique in your schema. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/secret_with_generic_string#name SecretWithGenericString#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/secret_with_generic_string#name SecretWithGenericString#name}
   */
   readonly name: string;
   /**
   * The schema in which to create the secret. Due to technical limitations (read more [here](../guides/identifiers_rework_design_decisions#known-limitations-and-identifier-recommendations)), avoid using the following characters: `|`, `.`, `"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/secret_with_generic_string#schema SecretWithGenericString#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/secret_with_generic_string#schema SecretWithGenericString#schema}
   */
   readonly schema: string;
   /**
   * Specifies the string to store in the secret. The string can be an API token or a string of sensitive value that can be used in the handler code of a UDF or stored procedure. For details, see [Creating and using an external access integration](https://docs.snowflake.com/en/developer-guide/external-network-access/creating-using-external-network-access). You should not use this property to store any kind of OAuth token; use one of the other secret types for your OAuth use cases. External changes for this field won't be detected. In case you want to apply external changes, you can re-create the resource manually using "terraform taint".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/secret_with_generic_string#secret_string SecretWithGenericString#secret_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/secret_with_generic_string#secret_string SecretWithGenericString#secret_string}
   */
   readonly secretString: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/secret_with_generic_string#timeouts SecretWithGenericString#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/secret_with_generic_string#timeouts SecretWithGenericString#timeouts}
   */
   readonly timeouts?: SecretWithGenericStringTimeouts;
 }
@@ -303,19 +303,19 @@ export class SecretWithGenericStringShowOutputList extends cdktf.ComplexList {
 }
 export interface SecretWithGenericStringTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/secret_with_generic_string#create SecretWithGenericString#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/secret_with_generic_string#create SecretWithGenericString#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/secret_with_generic_string#delete SecretWithGenericString#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/secret_with_generic_string#delete SecretWithGenericString#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/secret_with_generic_string#read SecretWithGenericString#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/secret_with_generic_string#read SecretWithGenericString#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/secret_with_generic_string#update SecretWithGenericString#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/secret_with_generic_string#update SecretWithGenericString#update}
   */
   readonly update?: string;
 }
@@ -496,7 +496,7 @@ export class SecretWithGenericStringTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/secret_with_generic_string snowflake_secret_with_generic_string}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/secret_with_generic_string snowflake_secret_with_generic_string}
 */
 export class SecretWithGenericString extends cdktf.TerraformResource {
 
@@ -512,7 +512,7 @@ export class SecretWithGenericString extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SecretWithGenericString resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecretWithGenericString to import
-  * @param importFromId The id of the existing SecretWithGenericString that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/secret_with_generic_string#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SecretWithGenericString that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/secret_with_generic_string#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecretWithGenericString to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -524,7 +524,7 @@ export class SecretWithGenericString extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.9.0/docs/resources/secret_with_generic_string snowflake_secret_with_generic_string} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/secret_with_generic_string snowflake_secret_with_generic_string} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -535,7 +535,7 @@ export class SecretWithGenericString extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_secret_with_generic_string',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.9.0',
+        providerVersion: '2.10.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,

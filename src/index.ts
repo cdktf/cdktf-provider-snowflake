@@ -104,6 +104,7 @@ export * as warehouse from './warehouse';
 export * as dataSnowflakeAccountRoles from './data-snowflake-account-roles';
 export * as dataSnowflakeAccounts from './data-snowflake-accounts';
 export * as dataSnowflakeAlerts from './data-snowflake-alerts';
+export * as dataSnowflakeAuthenticationPolicies from './data-snowflake-authentication-policies';
 export * as dataSnowflakeComputePools from './data-snowflake-compute-pools';
 export * as dataSnowflakeConnections from './data-snowflake-connections';
 export * as dataSnowflakeCortexSearchServices from './data-snowflake-cortex-search-services';

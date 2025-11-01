@@ -22,6 +22,7 @@ The following submodules are available:
 - [dataSnowflakeAccountRoles](./dataSnowflakeAccountRoles.python.md)
 - [dataSnowflakeAccounts](./dataSnowflakeAccounts.python.md)
 - [dataSnowflakeAlerts](./dataSnowflakeAlerts.python.md)
+- [dataSnowflakeAuthenticationPolicies](./dataSnowflakeAuthenticationPolicies.python.md)
 - [dataSnowflakeComputePools](./dataSnowflakeComputePools.python.md)
 - [dataSnowflakeConnections](./dataSnowflakeConnections.python.md)
 - [dataSnowflakeCortexSearchServices](./dataSnowflakeCortexSearchServices.python.md)
