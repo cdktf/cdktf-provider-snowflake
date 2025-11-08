@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/data-sources/users
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/data-sources/users
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataSnowflakeUsersConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/data-sources/users#id DataSnowflakeUsers#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/data-sources/users#id DataSnowflakeUsers#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,31 +22,31 @@ export interface DataSnowflakeUsersConfig extends cdktf.TerraformMetaArguments {
   /**
   * Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/data-sources/users#like DataSnowflakeUsers#like}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/data-sources/users#like DataSnowflakeUsers#like}
   */
   readonly like?: string;
   /**
   * Filters the output with **case-sensitive** characters indicating the beginning of the object name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/data-sources/users#starts_with DataSnowflakeUsers#starts_with}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/data-sources/users#starts_with DataSnowflakeUsers#starts_with}
   */
   readonly startsWith?: string;
   /**
   * (Default: `true`) Runs DESC USER for each user returned by SHOW USERS. The output of describe is saved to the description field. By default this value is set to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/data-sources/users#with_describe DataSnowflakeUsers#with_describe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/data-sources/users#with_describe DataSnowflakeUsers#with_describe}
   */
   readonly withDescribe?: boolean | cdktf.IResolvable;
   /**
   * (Default: `true`) Runs SHOW PARAMETERS FOR USER for each user returned by SHOW USERS. The output of describe is saved to the parameters field as a map. By default this value is set to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/data-sources/users#with_parameters DataSnowflakeUsers#with_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/data-sources/users#with_parameters DataSnowflakeUsers#with_parameters}
   */
   readonly withParameters?: boolean | cdktf.IResolvable;
   /**
   * limit block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/data-sources/users#limit DataSnowflakeUsers#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/data-sources/users#limit DataSnowflakeUsers#limit}
   */
   readonly limit?: DataSnowflakeUsersLimit;
 }
@@ -6505,13 +6505,13 @@ export interface DataSnowflakeUsersLimit {
   /**
   * Specifies a **case-sensitive** pattern that is used to match object name. After the first match, the limit on the number of rows will be applied.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/data-sources/users#from DataSnowflakeUsers#from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/data-sources/users#from DataSnowflakeUsers#from}
   */
   readonly from?: string;
   /**
   * The maximum number of rows to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/data-sources/users#rows DataSnowflakeUsers#rows}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/data-sources/users#rows DataSnowflakeUsers#rows}
   */
   readonly rows: number;
 }
@@ -6621,7 +6621,7 @@ export class DataSnowflakeUsersLimitOutputReference extends cdktf.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/data-sources/users snowflake_users}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/data-sources/users snowflake_users}
 */
 export class DataSnowflakeUsers extends cdktf.TerraformDataSource {
 
@@ -6637,7 +6637,7 @@ export class DataSnowflakeUsers extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataSnowflakeUsers resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataSnowflakeUsers to import
-  * @param importFromId The id of the existing DataSnowflakeUsers that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/data-sources/users#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataSnowflakeUsers that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/data-sources/users#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataSnowflakeUsers to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -6649,7 +6649,7 @@ export class DataSnowflakeUsers extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/data-sources/users snowflake_users} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/data-sources/users snowflake_users} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -6660,7 +6660,7 @@ export class DataSnowflakeUsers extends cdktf.TerraformDataSource {
       terraformResourceType: 'snowflake_users',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.10.0',
+        providerVersion: '2.10.1',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
