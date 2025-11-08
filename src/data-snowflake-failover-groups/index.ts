@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/data-sources/failover_groups
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/data-sources/failover_groups
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataSnowflakeFailoverGroupsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/data-sources/failover_groups#id DataSnowflakeFailoverGroups#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/data-sources/failover_groups#id DataSnowflakeFailoverGroups#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,7 +22,7 @@ export interface DataSnowflakeFailoverGroupsConfig extends cdktf.TerraformMetaAr
   /**
   * Specifies the identifier for the account
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/data-sources/failover_groups#in_account DataSnowflakeFailoverGroups#in_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/data-sources/failover_groups#in_account DataSnowflakeFailoverGroups#in_account}
   */
   readonly inAccount?: string;
 }
@@ -183,7 +183,7 @@ export class DataSnowflakeFailoverGroupsFailoverGroupsList extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/data-sources/failover_groups snowflake_failover_groups}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/data-sources/failover_groups snowflake_failover_groups}
 */
 export class DataSnowflakeFailoverGroups extends cdktf.TerraformDataSource {
 
@@ -199,7 +199,7 @@ export class DataSnowflakeFailoverGroups extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataSnowflakeFailoverGroups resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataSnowflakeFailoverGroups to import
-  * @param importFromId The id of the existing DataSnowflakeFailoverGroups that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/data-sources/failover_groups#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataSnowflakeFailoverGroups that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/data-sources/failover_groups#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataSnowflakeFailoverGroups to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -211,7 +211,7 @@ export class DataSnowflakeFailoverGroups extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/data-sources/failover_groups snowflake_failover_groups} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/data-sources/failover_groups snowflake_failover_groups} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -222,7 +222,7 @@ export class DataSnowflakeFailoverGroups extends cdktf.TerraformDataSource {
       terraformResourceType: 'snowflake_failover_groups',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.10.0',
+        providerVersion: '2.10.1',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,

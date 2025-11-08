@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/sequence
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/resources/sequence
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface SequenceConfig extends cdktf.TerraformMetaArguments {
   /**
   * (Default: ``) Specifies a comment for the sequence.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/sequence#comment Sequence#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/resources/sequence#comment Sequence#comment}
   */
   readonly comment?: string;
   /**
   * The database in which to create the sequence. Don't use the | character.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/sequence#database Sequence#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/resources/sequence#database Sequence#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/sequence#id Sequence#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/resources/sequence#id Sequence#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,49 +34,49 @@ export interface SequenceConfig extends cdktf.TerraformMetaArguments {
   /**
   * (Default: `1`) The amount the sequence will increase by each time it is used
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/sequence#increment Sequence#increment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/resources/sequence#increment Sequence#increment}
   */
   readonly increment?: number;
   /**
   * Specifies the name for the sequence.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/sequence#name Sequence#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/resources/sequence#name Sequence#name}
   */
   readonly name: string;
   /**
   * (Default: `ORDER`) The ordering of the sequence. Either ORDER or NOORDER. Default is ORDER.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/sequence#ordering Sequence#ordering}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/resources/sequence#ordering Sequence#ordering}
   */
   readonly ordering?: string;
   /**
   * The schema in which to create the sequence. Don't use the | character.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/sequence#schema Sequence#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/resources/sequence#schema Sequence#schema}
   */
   readonly schema: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/sequence#timeouts Sequence#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/resources/sequence#timeouts Sequence#timeouts}
   */
   readonly timeouts?: SequenceTimeouts;
 }
 export interface SequenceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/sequence#create Sequence#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/resources/sequence#create Sequence#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/sequence#delete Sequence#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/resources/sequence#delete Sequence#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/sequence#read Sequence#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/resources/sequence#read Sequence#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/sequence#update Sequence#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/resources/sequence#update Sequence#update}
   */
   readonly update?: string;
 }
@@ -257,7 +257,7 @@ export class SequenceTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/sequence snowflake_sequence}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/resources/sequence snowflake_sequence}
 */
 export class Sequence extends cdktf.TerraformResource {
 
@@ -273,7 +273,7 @@ export class Sequence extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Sequence resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Sequence to import
-  * @param importFromId The id of the existing Sequence that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/sequence#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Sequence that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/resources/sequence#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Sequence to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -285,7 +285,7 @@ export class Sequence extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.0/docs/resources/sequence snowflake_sequence} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/resources/sequence snowflake_sequence} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -296,7 +296,7 @@ export class Sequence extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_sequence',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.10.0',
+        providerVersion: '2.10.1',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
