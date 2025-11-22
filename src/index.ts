@@ -53,6 +53,7 @@ export * as materializedView from './materialized-view';
 export * as networkPolicy from './network-policy';
 export * as networkPolicyAttachment from './network-policy-attachment';
 export * as networkRule from './network-rule';
+export * as notebook from './notebook';
 export * as notificationIntegration from './notification-integration';
 export * as oauthIntegrationForCustomClients from './oauth-integration-for-custom-clients';
 export * as oauthIntegrationForPartnerApplications from './oauth-integration-for-partner-applications';
@@ -76,6 +77,7 @@ export * as secretWithAuthorizationCodeGrant from './secret-with-authorization-c
 export * as secretWithBasicAuthentication from './secret-with-basic-authentication';
 export * as secretWithClientCredentials from './secret-with-client-credentials';
 export * as secretWithGenericString from './secret-with-generic-string';
+export * as semanticView from './semantic-view';
 export * as sequence from './sequence';
 export * as service from './service';
 export * as serviceUser from './service-user';
@@ -126,6 +128,7 @@ export * as dataSnowflakeImageRepositories from './data-snowflake-image-reposito
 export * as dataSnowflakeMaskingPolicies from './data-snowflake-masking-policies';
 export * as dataSnowflakeMaterializedViews from './data-snowflake-materialized-views';
 export * as dataSnowflakeNetworkPolicies from './data-snowflake-network-policies';
+export * as dataSnowflakeNotebooks from './data-snowflake-notebooks';
 export * as dataSnowflakeParameters from './data-snowflake-parameters';
 export * as dataSnowflakePipes from './data-snowflake-pipes';
 export * as dataSnowflakeProcedures from './data-snowflake-procedures';
@@ -134,6 +137,7 @@ export * as dataSnowflakeRowAccessPolicies from './data-snowflake-row-access-pol
 export * as dataSnowflakeSchemas from './data-snowflake-schemas';
 export * as dataSnowflakeSecrets from './data-snowflake-secrets';
 export * as dataSnowflakeSecurityIntegrations from './data-snowflake-security-integrations';
+export * as dataSnowflakeSemanticViews from './data-snowflake-semantic-views';
 export * as dataSnowflakeSequences from './data-snowflake-sequences';
 export * as dataSnowflakeServices from './data-snowflake-services';
 export * as dataSnowflakeShares from './data-snowflake-shares';

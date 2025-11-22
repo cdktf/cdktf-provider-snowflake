@@ -1,3 +1,3 @@
 # `snowflake_grant_privileges_to_share`
 
-Refer to the Terraform Registry for docs: [`snowflake_grant_privileges_to_share`](https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/resources/grant_privileges_to_share).
+Refer to the Terraform Registry for docs: [`snowflake_grant_privileges_to_share`](https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_privileges_to_share).

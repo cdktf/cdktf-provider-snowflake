@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/data-sources/procedures
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/procedures
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface DataSnowflakeProceduresConfig extends cdktf.TerraformMetaArgume
   /**
   * The database from which to return the schemas from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/data-sources/procedures#database DataSnowflakeProcedures#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/procedures#database DataSnowflakeProcedures#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/data-sources/procedures#id DataSnowflakeProcedures#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/procedures#id DataSnowflakeProcedures#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,7 +28,7 @@ export interface DataSnowflakeProceduresConfig extends cdktf.TerraformMetaArgume
   /**
   * The schema from which to return the procedures from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/data-sources/procedures#schema DataSnowflakeProcedures#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/procedures#schema DataSnowflakeProcedures#schema}
   */
   readonly schema: string;
 }
@@ -134,7 +134,7 @@ export class DataSnowflakeProceduresProceduresList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/data-sources/procedures snowflake_procedures}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/procedures snowflake_procedures}
 */
 export class DataSnowflakeProcedures extends cdktf.TerraformDataSource {
 
@@ -150,7 +150,7 @@ export class DataSnowflakeProcedures extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataSnowflakeProcedures resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataSnowflakeProcedures to import
-  * @param importFromId The id of the existing DataSnowflakeProcedures that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/data-sources/procedures#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataSnowflakeProcedures that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/procedures#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataSnowflakeProcedures to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -162,7 +162,7 @@ export class DataSnowflakeProcedures extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/data-sources/procedures snowflake_procedures} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/procedures snowflake_procedures} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -173,7 +173,7 @@ export class DataSnowflakeProcedures extends cdktf.TerraformDataSource {
       terraformResourceType: 'snowflake_procedures',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.10.1',
+        providerVersion: '2.11.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,
