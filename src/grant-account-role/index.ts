@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/resources/grant_account_role
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_account_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface GrantAccountRoleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/resources/grant_account_role#id GrantAccountRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_account_role#id GrantAccountRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,43 +22,43 @@ export interface GrantAccountRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The fully qualified name of the parent role which will create a parent-child relationship between the roles. For more information about this resource, see [docs](./account_role).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/resources/grant_account_role#parent_role_name GrantAccountRole#parent_role_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_account_role#parent_role_name GrantAccountRole#parent_role_name}
   */
   readonly parentRoleName?: string;
   /**
   * The fully qualified name of the role which will be granted to the user or parent role. For more information about this resource, see [docs](./account_role).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/resources/grant_account_role#role_name GrantAccountRole#role_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_account_role#role_name GrantAccountRole#role_name}
   */
   readonly roleName: string;
   /**
   * The fully qualified name of the user on which specified role will be granted. For more information about this resource, see [docs](./user).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/resources/grant_account_role#user_name GrantAccountRole#user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_account_role#user_name GrantAccountRole#user_name}
   */
   readonly userName?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/resources/grant_account_role#timeouts GrantAccountRole#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_account_role#timeouts GrantAccountRole#timeouts}
   */
   readonly timeouts?: GrantAccountRoleTimeouts;
 }
 export interface GrantAccountRoleTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/resources/grant_account_role#create GrantAccountRole#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_account_role#create GrantAccountRole#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/resources/grant_account_role#delete GrantAccountRole#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_account_role#delete GrantAccountRole#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/resources/grant_account_role#read GrantAccountRole#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_account_role#read GrantAccountRole#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/resources/grant_account_role#update GrantAccountRole#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_account_role#update GrantAccountRole#update}
   */
   readonly update?: string;
 }
@@ -239,7 +239,7 @@ export class GrantAccountRoleTimeoutsOutputReference extends cdktf.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/resources/grant_account_role snowflake_grant_account_role}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_account_role snowflake_grant_account_role}
 */
 export class GrantAccountRole extends cdktf.TerraformResource {
 
@@ -255,7 +255,7 @@ export class GrantAccountRole extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GrantAccountRole resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GrantAccountRole to import
-  * @param importFromId The id of the existing GrantAccountRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/resources/grant_account_role#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GrantAccountRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_account_role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GrantAccountRole to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -267,7 +267,7 @@ export class GrantAccountRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/resources/grant_account_role snowflake_grant_account_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/resources/grant_account_role snowflake_grant_account_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -278,7 +278,7 @@ export class GrantAccountRole extends cdktf.TerraformResource {
       terraformResourceType: 'snowflake_grant_account_role',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.10.1',
+        providerVersion: '2.11.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,

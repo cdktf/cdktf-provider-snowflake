@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/data-sources/image_repositories
+// https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/image_repositories
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataSnowflakeImageRepositoriesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/data-sources/image_repositories#id DataSnowflakeImageRepositories#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/image_repositories#id DataSnowflakeImageRepositories#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,13 +22,13 @@ export interface DataSnowflakeImageRepositoriesConfig extends cdktf.TerraformMet
   /**
   * Filters the output with **case-insensitive** pattern, with support for SQL wildcard characters (`%` and `_`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/data-sources/image_repositories#like DataSnowflakeImageRepositories#like}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/image_repositories#like DataSnowflakeImageRepositories#like}
   */
   readonly like?: string;
   /**
   * in block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/data-sources/image_repositories#in DataSnowflakeImageRepositories#in}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/image_repositories#in DataSnowflakeImageRepositories#in}
   */
   readonly in?: DataSnowflakeImageRepositoriesIn;
 }
@@ -227,19 +227,19 @@ export interface DataSnowflakeImageRepositoriesIn {
   /**
   * Returns records for the entire account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/data-sources/image_repositories#account DataSnowflakeImageRepositories#account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/image_repositories#account DataSnowflakeImageRepositories#account}
   */
   readonly account?: boolean | cdktf.IResolvable;
   /**
   * Returns records for the current database in use or for a specified database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/data-sources/image_repositories#database DataSnowflakeImageRepositories#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/image_repositories#database DataSnowflakeImageRepositories#database}
   */
   readonly database?: string;
   /**
   * Returns records for the current schema in use or a specified schema. Use fully qualified name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/data-sources/image_repositories#schema DataSnowflakeImageRepositories#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/image_repositories#schema DataSnowflakeImageRepositories#schema}
   */
   readonly schema?: string;
 }
@@ -381,7 +381,7 @@ export class DataSnowflakeImageRepositoriesInOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/data-sources/image_repositories snowflake_image_repositories}
+* Represents a {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/image_repositories snowflake_image_repositories}
 */
 export class DataSnowflakeImageRepositories extends cdktf.TerraformDataSource {
 
@@ -397,7 +397,7 @@ export class DataSnowflakeImageRepositories extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataSnowflakeImageRepositories resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataSnowflakeImageRepositories to import
-  * @param importFromId The id of the existing DataSnowflakeImageRepositories that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/data-sources/image_repositories#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataSnowflakeImageRepositories that should be imported. Refer to the {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/image_repositories#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataSnowflakeImageRepositories to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -409,7 +409,7 @@ export class DataSnowflakeImageRepositories extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.10.1/docs/data-sources/image_repositories snowflake_image_repositories} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/snowflakedb/snowflake/2.11.0/docs/data-sources/image_repositories snowflake_image_repositories} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -420,7 +420,7 @@ export class DataSnowflakeImageRepositories extends cdktf.TerraformDataSource {
       terraformResourceType: 'snowflake_image_repositories',
       terraformGeneratorMetadata: {
         providerName: 'snowflake',
-        providerVersion: '2.10.1',
+        providerVersion: '2.11.0',
         providerVersionConstraint: ' ~> 2.0'
       },
       provider: config.provider,

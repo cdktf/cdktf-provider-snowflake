@@ -53,6 +53,7 @@ Object.defineProperty(exports, 'materializedView', { get: function () { return r
 Object.defineProperty(exports, 'networkPolicy', { get: function () { return require('./network-policy'); } });
 Object.defineProperty(exports, 'networkPolicyAttachment', { get: function () { return require('./network-policy-attachment'); } });
 Object.defineProperty(exports, 'networkRule', { get: function () { return require('./network-rule'); } });
+Object.defineProperty(exports, 'notebook', { get: function () { return require('./notebook'); } });
 Object.defineProperty(exports, 'notificationIntegration', { get: function () { return require('./notification-integration'); } });
 Object.defineProperty(exports, 'oauthIntegrationForCustomClients', { get: function () { return require('./oauth-integration-for-custom-clients'); } });
 Object.defineProperty(exports, 'oauthIntegrationForPartnerApplications', { get: function () { return require('./oauth-integration-for-partner-applications'); } });
@@ -76,6 +77,7 @@ Object.defineProperty(exports, 'secretWithAuthorizationCodeGrant', { get: functi
 Object.defineProperty(exports, 'secretWithBasicAuthentication', { get: function () { return require('./secret-with-basic-authentication'); } });
 Object.defineProperty(exports, 'secretWithClientCredentials', { get: function () { return require('./secret-with-client-credentials'); } });
 Object.defineProperty(exports, 'secretWithGenericString', { get: function () { return require('./secret-with-generic-string'); } });
+Object.defineProperty(exports, 'semanticView', { get: function () { return require('./semantic-view'); } });
 Object.defineProperty(exports, 'sequence', { get: function () { return require('./sequence'); } });
 Object.defineProperty(exports, 'service', { get: function () { return require('./service'); } });
 Object.defineProperty(exports, 'serviceUser', { get: function () { return require('./service-user'); } });
@@ -126,6 +128,7 @@ Object.defineProperty(exports, 'dataSnowflakeImageRepositories', { get: function
 Object.defineProperty(exports, 'dataSnowflakeMaskingPolicies', { get: function () { return require('./data-snowflake-masking-policies'); } });
 Object.defineProperty(exports, 'dataSnowflakeMaterializedViews', { get: function () { return require('./data-snowflake-materialized-views'); } });
 Object.defineProperty(exports, 'dataSnowflakeNetworkPolicies', { get: function () { return require('./data-snowflake-network-policies'); } });
+Object.defineProperty(exports, 'dataSnowflakeNotebooks', { get: function () { return require('./data-snowflake-notebooks'); } });
 Object.defineProperty(exports, 'dataSnowflakeParameters', { get: function () { return require('./data-snowflake-parameters'); } });
 Object.defineProperty(exports, 'dataSnowflakePipes', { get: function () { return require('./data-snowflake-pipes'); } });
 Object.defineProperty(exports, 'dataSnowflakeProcedures', { get: function () { return require('./data-snowflake-procedures'); } });
@@ -134,6 +137,7 @@ Object.defineProperty(exports, 'dataSnowflakeRowAccessPolicies', { get: function
 Object.defineProperty(exports, 'dataSnowflakeSchemas', { get: function () { return require('./data-snowflake-schemas'); } });
 Object.defineProperty(exports, 'dataSnowflakeSecrets', { get: function () { return require('./data-snowflake-secrets'); } });
 Object.defineProperty(exports, 'dataSnowflakeSecurityIntegrations', { get: function () { return require('./data-snowflake-security-integrations'); } });
+Object.defineProperty(exports, 'dataSnowflakeSemanticViews', { get: function () { return require('./data-snowflake-semantic-views'); } });
 Object.defineProperty(exports, 'dataSnowflakeSequences', { get: function () { return require('./data-snowflake-sequences'); } });
 Object.defineProperty(exports, 'dataSnowflakeServices', { get: function () { return require('./data-snowflake-services'); } });
 Object.defineProperty(exports, 'dataSnowflakeShares', { get: function () { return require('./data-snowflake-shares'); } });
